@@ -1,0 +1,1696 @@
+{
+ "utc": "2026-10-26T16:49:51.476841+00:00",
+ "scope": "Cheap ephemeris screen of 77 S/N>=15, RUWE<=1.4 groups with positive reported paired FLAME mass and radius. Reuses dated2026-10-25 NASA DR25 TCE/KOI snapshots; not a fresh literature search or contamination proof. 120arcsec is a review/reporting radius, not a science veto. Broad durations can inflate chance matches.",
+ "rows": {
+  "BOI-2073666564790289664-3": {
+   "clock": {
+    "period_days": 0.5773150987471779,
+    "epoch_bkjd": 131.94210235897452,
+    "duration_days": 0.05000000000000001,
+    "ra": 297.70697920056307,
+    "dec": 40.03181438539134
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7715905150853674,
+   "expected_fieldwide_low_order_chance": 0.14556830301332008,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2073666564790289664-5": {
+   "clock": {
+    "period_days": 7.506780129990006,
+    "epoch_bkjd": 136.37210235897453,
+    "duration_days": 0.4000000000000001,
+    "ra": 297.70697920056307,
+    "dec": 40.03181438539134
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 11.11441192506629,
+   "expected_fieldwide_low_order_chance": 1.6020264251235474,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2073769231689080192-1": {
+   "clock": {
+    "period_days": 96.91450595999702,
+    "epoch_bkjd": 184.3886512284167,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.23516758666955,
+    "dec": 40.36918539464821
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7016512808973923,
+   "expected_fieldwide_low_order_chance": 0.06041969422235684,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2073896294004902272-1": {
+   "clock": {
+    "period_days": 13.430379458594654,
+    "epoch_bkjd": 122.34866820642725,
+    "duration_days": 0.10000000000000002,
+    "ra": 297.86868739862155,
+    "dec": 41.455534519113876
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.32628335225159244,
+   "expected_fieldwide_low_order_chance": 0.03345523798836942,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2074285727289857536-1": {
+   "clock": {
+    "period_days": 3.0402352422855734,
+    "epoch_bkjd": 261.8654624762572,
+    "duration_days": 0.4000000000000001,
+    "ra": 299.70221482558395,
+    "dec": 40.38441691746062
+   },
+   "total_field_matches": 20,
+   "low_order_other_star_matches": 6,
+   "expected_fieldwide_chance": 27.306656483108277,
+   "expected_fieldwide_low_order_chance": 3.1243971382187867,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 5219708,
+     "tce_plnt_num": 1,
+     "tce_period": 1.52031,
+     "tce_time0bk": 132.581,
+     "ra": 299.332466,
+     "dec": 40.388313
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.058112476257230594,
+    "separation_deg": 0.28166165811778354,
+    "same_star": false
+   }
+  },
+  "BOI-2075343560542057984-1": {
+   "clock": {
+    "period_days": 15.286787652005676,
+    "epoch_bkjd": 138.96193226268514,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.83110438430816,
+    "dec": 41.60309761745814
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.48292647206174,
+   "expected_fieldwide_low_order_chance": 0.5134572319846196,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2075394481676290944-1": {
+   "clock": {
+    "period_days": 15.276463501415783,
+    "epoch_bkjd": 139.01693226268515,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.64240780275424,
+    "dec": 41.665536909668475
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 4.556811150352705,
+   "expected_fieldwide_low_order_chance": 0.4964916872699755,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 3836727,
+     "tce_plnt_num": 2,
+     "tce_period": 7.6372,
+     "tce_time0bk": 138.68,
+     "ra": 287.05407,
+     "dec": 38.9581
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.33693226268513854,
+    "separation_deg": 9.23345200970985,
+    "same_star": false
+   }
+  },
+  "BOI-2075429219372562176-1": {
+   "clock": {
+    "period_days": 15.313099314449785,
+    "epoch_bkjd": 123.53856702055782,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.7200868581391,
+    "dec": 42.17556702956565
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.460877076659913,
+   "expected_fieldwide_low_order_chance": 0.5340441079793098,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2076057590261131392-1": {
+   "clock": {
+    "period_days": 3.672143327872001,
+    "epoch_bkjd": 132.01168116088957,
+    "duration_days": 0.20000000000000004,
+    "ra": 300.7094903385412,
+    "dec": 44.02331922582735
+   },
+   "total_field_matches": 15,
+   "low_order_other_star_matches": 4,
+   "expected_fieldwide_chance": 5.901896922254663,
+   "expected_fieldwide_low_order_chance": 0.5569889773091404,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 8196180,
+     "kepoi_name": "K06990.01",
+     "koi_disposition": "FALSE POSITIVE",
+     "koi_period": 3.671661096,
+     "koi_time0bk": 132.0909174,
+     "ra": 300.63577,
+     "dec": 44.053398
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.0792362391104291,
+    "separation_deg": 0.060936639375909055,
+    "same_star": false
+   }
+  },
+  "BOI-2076248557386606336-3": {
+   "clock": {
+    "period_days": 0.9995687788763589,
+    "epoch_bkjd": 132.4023415426351,
+    "duration_days": 0.05000000000000001,
+    "ra": 294.7364726304006,
+    "dec": 39.334909240503734
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7573348514028598,
+   "expected_fieldwide_low_order_chance": 0.12264082708762332,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2076451043623754624-1": {
+   "clock": {
+    "period_days": 45.84848200027086,
+    "epoch_bkjd": 154.27728794455527,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.7721959560036,
+    "dec": 39.75296508151354
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.2755475663280667,
+   "expected_fieldwide_low_order_chance": 0.15029149763318708,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2076458087370311808-1": {
+   "clock": {
+    "period_days": 1.699101260020767,
+    "epoch_bkjd": 132.8422879445553,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.8064752680637,
+    "dec": 39.96975335866746
+   },
+   "total_field_matches": 30,
+   "low_order_other_star_matches": 7,
+   "expected_fieldwide_chance": 46.647063995906244,
+   "expected_fieldwide_low_order_chance": 6.259597854935346,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 3129539,
+     "tce_plnt_num": 1,
+     "tce_period": 0.849419,
+     "tce_time0bk": 132.033,
+     "ra": 294.366919,
+     "dec": 38.25101
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.040131055444691976,
+    "separation_deg": 1.7522495208287723,
+    "same_star": false
+   }
+  },
+  "BOI-2076797973904269184-1": {
+   "clock": {
+    "period_days": 39.66610003782266,
+    "epoch_bkjd": 135.19212863391266,
+    "duration_days": 0.4000000000000001,
+    "ra": 296.2981194543773,
+    "dec": 40.80067660248706
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.693644832442631,
+   "expected_fieldwide_low_order_chance": 0.20616196607286721,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2076931255328549504-1": {
+   "clock": {
+    "period_days": 12.45826533813597,
+    "epoch_bkjd": 272.2653052759916,
+    "duration_days": 0.4000000000000001,
+    "ra": 297.5868188315061,
+    "dec": 42.09070651194639
+   },
+   "total_field_matches": 9,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 6.146728501803865,
+   "expected_fieldwide_low_order_chance": 0.8982305241285787,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2076931255328549504-2": {
+   "clock": {
+    "period_days": 13.089704053044336,
+    "epoch_bkjd": 267.09530527599156,
+    "duration_days": 0.4000000000000001,
+    "ra": 297.5868188315061,
+    "dec": 42.09070651194639
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 5.519627912174747,
+   "expected_fieldwide_low_order_chance": 0.5917917674197118,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2077405350997460992-1": {
+   "clock": {
+    "period_days": 2.960994086051299,
+    "epoch_bkjd": 445.7291250256263,
+    "duration_days": 0.4000000000000001,
+    "ra": 293.9824228881408,
+    "dec": 41.4060427335747
+   },
+   "total_field_matches": 36,
+   "low_order_other_star_matches": 9,
+   "expected_fieldwide_chance": 29.5190186838769,
+   "expected_fieldwide_low_order_chance": 3.6070484655229444,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 5370023,
+     "tce_plnt_num": 1,
+     "tce_period": 5.92217,
+     "tce_time0bk": 134.505,
+     "ra": 293.98761,
+     "dec": 40.52733
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": -0.3197459902398956,
+    "separation_deg": 0.8787214621400803,
+    "same_star": false
+   }
+  },
+  "BOI-2077515199080043264-2": {
+   "clock": {
+    "period_days": 48.60086691800657,
+    "epoch_bkjd": 178.6772920870781,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.0338286233527,
+    "dec": 41.68076175875479
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.198968019044452,
+   "expected_fieldwide_low_order_chance": 0.1507897174829767,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2077624600485371136-1": {
+   "clock": {
+    "period_days": 9.548870140277844,
+    "epoch_bkjd": 136.39731729611754,
+    "duration_days": 0.20000000000000004,
+    "ra": 293.32157126424437,
+    "dec": 41.776869618526455
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.0669099824029766,
+   "expected_fieldwide_low_order_chance": 0.26470531109533785,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2077775577176408832-1": {
+   "clock": {
+    "period_days": 15.412486835113924,
+    "epoch_bkjd": 138.08223205821588,
+    "duration_days": 0.4000000000000001,
+    "ra": 293.7210102932746,
+    "dec": 42.87546266011695
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.6557253570206685,
+   "expected_fieldwide_low_order_chance": 0.5891077597560405,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2078082581439033856-1": {
+   "clock": {
+    "period_days": 2.255428286841493,
+    "epoch_bkjd": 132.32703690236434,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.7179467199349,
+    "dec": 43.39454555534701
+   },
+   "total_field_matches": 32,
+   "low_order_other_star_matches": 5,
+   "expected_fieldwide_chance": 40.87648289263512,
+   "expected_fieldwide_low_order_chance": 4.5423482945745866,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 9415108,
+     "kepoi_name": "K02121.01",
+     "koi_disposition": "CONFIRMED",
+     "koi_period": 4.51005082,
+     "koi_time0bk": 134.56954,
+     "ra": 296.04233,
+     "dec": 45.985142
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": -0.012925189205844845,
+    "separation_deg": 2.7562775775864625,
+    "same_star": false
+   }
+  },
+  "BOI-2078194972142049280-1": {
+   "clock": {
+    "period_days": 2.9593577765539547,
+    "epoch_bkjd": 132.40210621511562,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.2451229261321,
+    "dec": 43.59565147868793
+   },
+   "total_field_matches": 18,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 29.28902726319883,
+   "expected_fieldwide_low_order_chance": 3.6018134341419774,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2078222219414706048-1": {
+   "clock": {
+    "period_days": 25.386605165418217,
+    "epoch_bkjd": 144.8572305690311,
+    "duration_days": 0.4000000000000001,
+    "ra": 293.3499551324053,
+    "dec": 43.340420232938094
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.9031644148077604,
+   "expected_fieldwide_low_order_chance": 0.32754439008883,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2078854679119178624-1": {
+   "clock": {
+    "period_days": 2.9839361222577847,
+    "epoch_bkjd": 132.22193674188108,
+    "duration_days": 0.4000000000000001,
+    "ra": 297.2683659235876,
+    "dec": 43.809917817461226
+   },
+   "total_field_matches": 12,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 27.256079244653954,
+   "expected_fieldwide_low_order_chance": 3.483127915989429,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2079085988881291008-1": {
+   "clock": {
+    "period_days": 2.9759441324928533,
+    "epoch_bkjd": 354.3070647291094,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.6040254773939,
+    "dec": 44.44914114180962
+   },
+   "total_field_matches": 22,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 28.39645460447277,
+   "expected_fieldwide_low_order_chance": 3.6038885890259587,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 11465134,
+     "tce_plnt_num": 1,
+     "tce_period": 1.48778,
+     "tce_time0bk": 132.664,
+     "ra": 296.41177,
+     "dec": 49.37443
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.03615527089058246,
+    "separation_deg": 5.147325038861032,
+    "same_star": false
+   }
+  },
+  "BOI-2079166218868440576-1": {
+   "clock": {
+    "period_days": 45.90040228662783,
+    "epoch_bkjd": 154.62666176982225,
+    "duration_days": 0.4000000000000001,
+    "ra": 299.8572825531182,
+    "dec": 45.09770057097975
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.2417781012996416,
+   "expected_fieldwide_low_order_chance": 0.14288636661812032,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2079565719538722560-1": {
+   "clock": {
+    "period_days": 46.07648377001033,
+    "epoch_bkjd": 153.81698460999877,
+    "duration_days": 0.4000000000000001,
+    "ra": 296.0175225474795,
+    "dec": 43.92132599010624
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.2569225067093284,
+   "expected_fieldwide_low_order_chance": 0.14172976959210803,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2079630350212046848-1": {
+   "clock": {
+    "period_days": 2.9104493115648715,
+    "epoch_bkjd": 120.91384038282558,
+    "duration_days": 0.4000000000000001,
+    "ra": 295.21262719264524,
+    "dec": 44.19566951382197
+   },
+   "total_field_matches": 26,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 30.297627880730058,
+   "expected_fieldwide_low_order_chance": 3.1048011392567605,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 8782002,
+     "tce_plnt_num": 1,
+     "tce_period": 2.90975,
+     "tce_time0bk": 132.839,
+     "ra": 300.60636,
+     "dec": 44.94388
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.2861596171744156,
+    "separation_deg": 3.9138530027857295,
+    "same_star": false
+   }
+  },
+  "BOI-2079714428492352768-1": {
+   "clock": {
+    "period_days": 3.4468242608596364,
+    "epoch_bkjd": 123.93870696062223,
+    "duration_days": 0.10000000000000002,
+    "ra": 296.682919029827,
+    "dec": 44.68248720196234
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.561055519033662,
+   "expected_fieldwide_low_order_chance": 0.19962140257346447,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2079751876308505984-1": {
+   "clock": {
+    "period_days": 37.26549413296859,
+    "epoch_bkjd": 162.83196489064022,
+    "duration_days": 0.4000000000000001,
+    "ra": 295.96255383612106,
+    "dec": 44.80148744157226
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.029599309061192,
+   "expected_fieldwide_low_order_chance": 0.23180329472323874,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2080330292442539008-1": {
+   "clock": {
+    "period_days": 0.2815751982986806,
+    "epoch_bkjd": 352.39920565032213,
+    "duration_days": 0.04,
+    "ra": 296.56455332935917,
+    "dec": 46.48037186510888
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.8212118045533576,
+   "expected_fieldwide_low_order_chance": 0.41255190181353535,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2085317775964234880-1": {
+   "clock": {
+    "period_days": 2.9876649046494075,
+    "epoch_bkjd": 260.4502577217296,
+    "duration_days": 0.4000000000000001,
+    "ra": 300.5488829402295,
+    "dec": 46.11556736088225
+   },
+   "total_field_matches": 16,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 27.234791659903003,
+   "expected_fieldwide_low_order_chance": 3.588801506070507,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 3558981,
+     "kepoi_name": "K00052.01",
+     "koi_disposition": "FALSE POSITIVE",
+     "koi_period": 2.98786272,
+     "koi_time0bk": 168.011233,
+     "ra": 294.97745,
+     "dec": 38.678352
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.17858732240204356,
+    "separation_deg": 8.494205904261939,
+    "same_star": false
+   }
+  },
+  "BOI-2085331867759290752-1": {
+   "clock": {
+    "period_days": 9.200187422081694,
+    "epoch_bkjd": 135.61161336153745,
+    "duration_days": 0.4000000000000001,
+    "ra": 300.1684896320821,
+    "dec": 46.22823659061792
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 7.26553416054476,
+   "expected_fieldwide_low_order_chance": 0.8958242041794745,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 5702939,
+     "tce_plnt_num": 1,
+     "tce_period": 18.3981,
+     "tce_time0bk": 144.926,
+     "ra": 290.97224,
+     "dec": 40.99468
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": 0.11419921638084318,
+    "separation_deg": 8.459564768700618,
+    "same_star": false
+   }
+  },
+  "BOI-2085625540434817664-3": {
+   "clock": {
+    "period_days": 91.09964904332162,
+    "epoch_bkjd": 181.05671142095701,
+    "duration_days": 0.4000000000000001,
+    "ra": 299.65813762788304,
+    "dec": 47.079796387091875
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7632181117975118,
+   "expected_fieldwide_low_order_chance": 0.06816858983880869,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2086313628562378624-1": {
+   "clock": {
+    "period_days": 2.0829450774672327,
+    "epoch_bkjd": 133.22679601624608,
+    "duration_days": 0.05000000000000001,
+    "ra": 297.65549505190006,
+    "dec": 46.963871161503
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.5684871205506928,
+   "expected_fieldwide_low_order_chance": 0.07947126615294081,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2086390560018194816-1": {
+   "clock": {
+    "period_days": 17.947929751472337,
+    "epoch_bkjd": 139.881862186715,
+    "duration_days": 0.4000000000000001,
+    "ra": 297.18198727137667,
+    "dec": 47.45376544953851
+   },
+   "total_field_matches": 5,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 4.105509187505042,
+   "expected_fieldwide_low_order_chance": 0.4583311715532762,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 5769810,
+     "tce_plnt_num": 1,
+     "tce_period": 8.97376,
+     "tce_time0bk": 139.741,
+     "ra": 283.67881,
+     "dec": 41.09688
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.1408621867149975,
+    "separation_deg": 11.545694446901976,
+    "same_star": false
+   }
+  },
+  "BOI-2086476455063907840-1": {
+   "clock": {
+    "period_days": 2.972655967400685,
+    "epoch_bkjd": 133.44211165545508,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.5064939184957,
+    "dec": 48.04289864232579
+   },
+   "total_field_matches": 37,
+   "low_order_other_star_matches": 5,
+   "expected_fieldwide_chance": 28.32037070872785,
+   "expected_fieldwide_low_order_chance": 3.542113461653722,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 11465134,
+     "tce_plnt_num": 3,
+     "tce_period": 1.48652,
+     "tce_time0bk": 131.86,
+     "ra": 296.41177,
+     "dec": 49.37443
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.09559165545506554,
+    "separation_deg": 1.9191514344008653,
+    "same_star": false
+   }
+  },
+  "BOI-2086497556243295744-1": {
+   "clock": {
+    "period_days": 15.429535197580494,
+    "epoch_bkjd": 137.9917330988869,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.5646795681591,
+    "dec": 48.31837000643902
+   },
+   "total_field_matches": 5,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 4.6440838980098995,
+   "expected_fieldwide_low_order_chance": 0.5885201037330349,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 7816992,
+     "tce_plnt_num": 4,
+     "tce_period": 30.852,
+     "tce_time0bk": 153.561,
+     "ra": 290.0276,
+     "dec": 43.552328
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": 0.13973170353261555,
+    "separation_deg": 7.605741554928895,
+    "same_star": false
+   }
+  },
+  "BOI-2086840397710393728-1": {
+   "clock": {
+    "period_days": 2.932039141044871,
+    "epoch_bkjd": 133.2067492438294,
+    "duration_days": 0.4000000000000001,
+    "ra": 296.73283943188284,
+    "dec": 49.26485124997158
+   },
+   "total_field_matches": 32,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 28.95003523501259,
+   "expected_fieldwide_low_order_chance": 3.177148449269836,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 5620305,
+     "tce_plnt_num": 1,
+     "tce_period": 1.46586,
+     "tce_time0bk": 131.749,
+     "ra": 291.9087,
+     "dec": 40.88389
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.00811075617060264,
+    "separation_deg": 9.042113360889344,
+    "same_star": false
+   }
+  },
+  "BOI-2086876269277888384-1": {
+   "clock": {
+    "period_days": 2.9729602720237396,
+    "epoch_bkjd": 121.51349433455616,
+    "duration_days": 0.4000000000000001,
+    "ra": 298.74328429038803,
+    "dec": 48.550061444514206
+   },
+   "total_field_matches": 29,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 28.273940458118872,
+   "expected_fieldwide_low_order_chance": 3.5345673872432664,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 11465134,
+     "tce_plnt_num": 3,
+     "tce_period": 1.48652,
+     "tce_time0bk": 131.86,
+     "ra": 296.41177,
+     "dec": 49.37443
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.05913433455614414,
+    "separation_deg": 1.7385212974216198,
+    "same_star": false
+   }
+  },
+  "BOI-2100154070473374976-1": {
+   "clock": {
+    "period_days": 15.313412802809074,
+    "epoch_bkjd": 144.26298948191106,
+    "duration_days": 0.20000000000000004,
+    "ra": 285.0767972845759,
+    "dec": 38.936277100506445
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.1175676059441477,
+   "expected_fieldwide_low_order_chance": 0.13385702531199,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2100413245985138560-1": {
+   "clock": {
+    "period_days": 95.13177347604625,
+    "epoch_bkjd": 182.8228183537163,
+    "duration_days": 0.4000000000000001,
+    "ra": 287.5496844447071,
+    "dec": 39.465056431795425
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7625505157741409,
+   "expected_fieldwide_low_order_chance": 0.08024305655673429,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2101046397179609344-1": {
+   "clock": {
+    "period_days": 5.345778019961459,
+    "epoch_bkjd": 444.33933668451385,
+    "duration_days": 0.10000000000000002,
+    "ra": 289.98856868145805,
+    "dec": 39.8165204216537
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.973594704827007,
+   "expected_fieldwide_low_order_chance": 0.11145487734554027,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2101591033392607104-1": {
+   "clock": {
+    "period_days": 15.331293196624976,
+    "epoch_bkjd": 138.60752893637866,
+    "duration_days": 0.4000000000000001,
+    "ra": 290.7521919385974,
+    "dec": 41.19471443797802
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.477581915985545,
+   "expected_fieldwide_low_order_chance": 0.5532566301182844,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2102056779643698560-1": {
+   "clock": {
+    "period_days": 49.24883594144944,
+    "epoch_bkjd": 168.444438795764,
+    "duration_days": 0.4000000000000001,
+    "ra": 288.2808128264945,
+    "dec": 40.3345600551923
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.525362988627046,
+   "expected_fieldwide_low_order_chance": 0.16067439009784912,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2102266442767690112-1": {
+   "clock": {
+    "period_days": 0.9337713617117456,
+    "epoch_bkjd": 132.42766433717682,
+    "duration_days": 0.10000000000000002,
+    "ra": 288.6456583807184,
+    "dec": 41.451013801321146
+   },
+   "total_field_matches": 87,
+   "low_order_other_star_matches": 84,
+   "expected_fieldwide_chance": 3.206982189180561,
+   "expected_fieldwide_low_order_chance": 0.6166392962343463,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 6114140,
+     "tce_plnt_num": 1,
+     "tce_period": 0.93374,
+     "tce_time0bk": 131.52,
+     "ra": 288.770891,
+     "dec": 41.41257
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.026075662823188628,
+    "separation_deg": 0.10145790827498143,
+    "same_star": false
+   }
+  },
+  "BOI-2102597430124845440-1": {
+   "clock": {
+    "period_days": 0.28194957254272857,
+    "epoch_bkjd": 131.77251937868073,
+    "duration_days": 0.04,
+    "ra": 287.7007918176104,
+    "dec": 43.02154260530181
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.8232308598585335,
+   "expected_fieldwide_low_order_chance": 0.41744567681211847,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2102952297504813184-1": {
+   "clock": {
+    "period_days": 4.075202215791458,
+    "epoch_bkjd": 132.67757436256855,
+    "duration_days": 0.05000000000000001,
+    "ra": 288.5800032724472,
+    "dec": 43.597064145906316
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.30870185851372595,
+   "expected_fieldwide_low_order_chance": 0.03598651273101374,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2104817618979591168-1": {
+   "clock": {
+    "period_days": 28.03612979545473,
+    "epoch_bkjd": 146.08480071237312,
+    "duration_days": 0.4000000000000001,
+    "ra": 281.68905145864835,
+    "dec": 42.49962269810008
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.4253394580463272,
+   "expected_fieldwide_low_order_chance": 0.28525499993017206,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2104885200286773632-1": {
+   "clock": {
+    "period_days": 15.237731617388848,
+    "epoch_bkjd": 139.7428011042252,
+    "duration_days": 0.4000000000000001,
+    "ra": 283.8502670543642,
+    "dec": 42.28768940600232
+   },
+   "total_field_matches": 7,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.519737022432082,
+   "expected_fieldwide_low_order_chance": 0.5067479464477516,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2105657989458802560-1": {
+   "clock": {
+    "period_days": 25.991922287744107,
+    "epoch_bkjd": 139.11448635002597,
+    "duration_days": 0.4000000000000001,
+    "ra": 286.45542053325744,
+    "dec": 43.4115355732247
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.8823870798708326,
+   "expected_fieldwide_low_order_chance": 0.3029983851310991,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2106555362748081152-1": {
+   "clock": {
+    "period_days": 45.98199146915069,
+    "epoch_bkjd": 154.48259581092745,
+    "duration_days": 0.4000000000000001,
+    "ra": 285.5688308534852,
+    "dec": 46.39545381024761
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.2768557072805635,
+   "expected_fieldwide_low_order_chance": 0.1536157277563287,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2107158513594933504-1": {
+   "clock": {
+    "period_days": 46.34633731135351,
+    "epoch_bkjd": 153.28301223553717,
+    "duration_days": 0.4000000000000001,
+    "ra": 285.058686214288,
+    "dec": 45.49801113817781
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.332811121804205,
+   "expected_fieldwide_low_order_chance": 0.14665064838404834,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2107173460081536128-1": {
+   "clock": {
+    "period_days": 8.193724735414811,
+    "epoch_bkjd": 120.68942378843204,
+    "duration_days": 0.10000000000000002,
+    "ra": 284.9631641413826,
+    "dec": 45.869745059556465
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.5267024488469474,
+   "expected_fieldwide_low_order_chance": 0.07257854002296409,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2117126514212876416-1": {
+   "clock": {
+    "period_days": 33.12144430546639,
+    "epoch_bkjd": 147.5748332090117,
+    "duration_days": 0.4000000000000001,
+    "ra": 280.0850027127066,
+    "dec": 43.811901231736435
+   },
+   "total_field_matches": 1,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.8318403692134941,
+   "expected_fieldwide_low_order_chance": 0.21983238475836978,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2117442967403355008-1": {
+   "clock": {
+    "period_days": 2.959176053975324,
+    "epoch_bkjd": 132.37282972609626,
+    "duration_days": 0.4000000000000001,
+    "ra": 281.89643133288473,
+    "dec": 44.994312402233334
+   },
+   "total_field_matches": 21,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 29.296434396838038,
+   "expected_fieldwide_low_order_chance": 3.6019130393051197,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 4733318,
+     "tce_plnt_num": 1,
+     "tce_period": 1.47924,
+     "tce_time0bk": 132.067,
+     "ra": 287.42658,
+     "dec": 39.84531
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.30582972609624903,
+    "separation_deg": 6.567619937110325,
+    "same_star": false
+   }
+  },
+  "BOI-2117442967403355008-2": {
+   "clock": {
+    "period_days": 3.007917925384191,
+    "epoch_bkjd": 132.46782972609626,
+    "duration_days": 0.4000000000000001,
+    "ra": 281.89643133288473,
+    "dec": 44.994312402233334
+   },
+   "total_field_matches": 31,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 27.378508125263185,
+   "expected_fieldwide_low_order_chance": 3.0052653897088923,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 10417704,
+     "kepoi_name": "K07324.01",
+     "koi_disposition": "FALSE POSITIVE",
+     "koi_period": 3.0082548,
+     "koi_time0bk": 132.68976,
+     "ra": 296.65329,
+     "dec": 47.515259
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.22193027390375164,
+    "separation_deg": 10.49272714478035,
+    "same_star": false
+   }
+  },
+  "BOI-2125731116119557248-1": {
+   "clock": {
+    "period_days": 46.925529529045264,
+    "epoch_bkjd": 163.6023652694747,
+    "duration_days": 0.4000000000000001,
+    "ra": 292.1154923332592,
+    "dec": 42.41081740607775
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.3682057200252045,
+   "expected_fieldwide_low_order_chance": 0.1569574339145908,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2125883059180190336-1": {
+   "clock": {
+    "period_days": 15.428903453532556,
+    "epoch_bkjd": 138.01226757839322,
+    "duration_days": 0.4000000000000001,
+    "ra": 292.84702838732414,
+    "dec": 43.32094503240329
+   },
+   "total_field_matches": 5,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 4.630905363247797,
+   "expected_fieldwide_low_order_chance": 0.5885294098896933,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 6364582,
+     "kepoi_name": "K03456.01",
+     "koi_disposition": "CONFIRMED",
+     "koi_period": 30.8609783,
+     "koi_time0bk": 138.31416,
+     "ra": 292.00204,
+     "dec": 41.786961
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": 0.301892421606766,
+    "separation_deg": 1.6554364410893438,
+    "same_star": false
+   }
+  },
+  "BOI-2126217104555818240-4": {
+   "clock": {
+    "period_days": 0.9846202224553557,
+    "epoch_bkjd": 121.06907040366903,
+    "duration_days": 0.10000000000000002,
+    "ra": 290.76318644575707,
+    "dec": 44.29675999075551
+   },
+   "total_field_matches": 3,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 2.913805684577951,
+   "expected_fieldwide_low_order_chance": 0.4151954512232642,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 6187341,
+     "tce_plnt_num": 2,
+     "tce_period": 0.984574,
+     "tce_time0bk": 131.905,
+     "ra": 285.25617,
+     "dec": 41.59559
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.005615596330970363,
+    "separation_deg": 4.850718671266727,
+    "same_star": false
+   }
+  },
+  "BOI-2126238304514968064-1": {
+   "clock": {
+    "period_days": 84.26162931103839,
+    "epoch_bkjd": 323.93481052903456,
+    "duration_days": 0.4000000000000001,
+    "ra": 291.4831673116425,
+    "dec": 44.57944712733938
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.739346793176838,
+   "expected_fieldwide_low_order_chance": 0.10001943566850145,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2127087883405155456-1": {
+   "clock": {
+    "period_days": 15.451030346671885,
+    "epoch_bkjd": 137.86732855720444,
+    "duration_days": 0.4000000000000001,
+    "ra": 290.1587946594711,
+    "dec": 45.486786101359876
+   },
+   "total_field_matches": 1,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 4.6179562739404645,
+   "expected_fieldwide_low_order_chance": 0.5820330045000401,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 8261920,
+     "kepoi_name": "K02174.03",
+     "koi_disposition": "CONFIRMED",
+     "koi_period": 7.72513619,
+     "koi_time0bk": 176.80202,
+     "ra": 300.24222,
+     "dec": 44.141399
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.3090104927955557,
+    "separation_deg": 7.27342560437282,
+    "same_star": false
+   }
+  },
+  "BOI-2127087883405155456-2": {
+   "clock": {
+    "period_days": 15.409962767247308,
+    "epoch_bkjd": 138.10732855720445,
+    "duration_days": 0.4000000000000001,
+    "ra": 290.1587946594711,
+    "dec": 45.486786101359876
+   },
+   "total_field_matches": 5,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 4.605506944088787,
+   "expected_fieldwide_low_order_chance": 0.5877799122008173,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2127186564572468352-2": {
+   "clock": {
+    "period_days": 2.7399326581954284,
+    "epoch_bkjd": 445.7245607318543,
+    "duration_days": 0.10000000000000002,
+    "ra": 288.65463567008493,
+    "dec": 44.929889695658105
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.0394759055838723,
+   "expected_fieldwide_low_order_chance": 0.19698582155242195,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2127413545004364800-1": {
+   "clock": {
+    "period_days": 32.07437215420238,
+    "epoch_bkjd": 149.70901572339238,
+    "duration_days": 0.4000000000000001,
+    "ra": 290.47882597737066,
+    "dec": 45.498635778144894
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.0501330740556565,
+   "expected_fieldwide_low_order_chance": 0.25253324089878626,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2127936912539397632-1": {
+   "clock": {
+    "period_days": 13.744702376615713,
+    "epoch_bkjd": 139.13723116880283,
+    "duration_days": 0.20000000000000004,
+    "ra": 289.3229790799673,
+    "dec": 47.76115704155028
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 1.2319814798674458,
+   "expected_fieldwide_low_order_chance": 0.16911687016323795,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2127936912539397632-2": {
+   "clock": {
+    "period_days": 8.555779566765446,
+    "epoch_bkjd": 134.71223116880282,
+    "duration_days": 0.20000000000000004,
+    "ra": 289.3229790799673,
+    "dec": 47.76115704155028
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 2.207260385227867,
+   "expected_fieldwide_low_order_chance": 0.3237042990651915,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 7300184,
+     "tce_plnt_num": 1,
+     "tce_period": 4.27797,
+     "tce_time0bk": 134.908,
+     "ra": 296.7857,
+     "dec": 42.80331
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.1957688311971708,
+    "separation_deg": 7.2154320743362215,
+    "same_star": false
+   }
+  },
+  "BOI-2128034597276971520-1": {
+   "clock": {
+    "period_days": 28.7687488541,
+    "epoch_bkjd": 151.48209245575592,
+    "duration_days": 0.20000000000000004,
+    "ra": 293.38720505093164,
+    "dec": 45.74405105097237
+   },
+   "total_field_matches": 2,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.5963568362820697,
+   "expected_fieldwide_low_order_chance": 0.06899370489044739,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2128598715460826240-1": {
+   "clock": {
+    "period_days": 2.9312588897318004,
+    "epoch_bkjd": 121.71368095995858,
+    "duration_days": 0.4000000000000001,
+    "ra": 294.108714023973,
+    "dec": 47.35311444706868
+   },
+   "total_field_matches": 30,
+   "low_order_other_star_matches": 4,
+   "expected_fieldwide_chance": 28.938973831798304,
+   "expected_fieldwide_low_order_chance": 3.0588403817230647,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "koi",
+    "row": {
+     "kepid": 10876237,
+     "kepoi_name": "K02960.01",
+     "koi_disposition": "FALSE POSITIVE",
+     "koi_period": 1.465943491,
+     "koi_time0bk": 132.32801,
+     "ra": 297.3176,
+     "dec": 48.239368
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.3527246030414264,
+    "separation_deg": 2.3304703464045855,
+    "same_star": false
+   }
+  },
+  "BOI-2128925785810616832-1": {
+   "clock": {
+    "period_days": 3.544577861754921,
+    "epoch_bkjd": 355.5921666912362,
+    "duration_days": 0.10000000000000002,
+    "ra": 292.9199801314346,
+    "dec": 48.64600751591146
+   },
+   "total_field_matches": 1,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 1.4510148508647722,
+   "expected_fieldwide_low_order_chance": 0.17028160617488872,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 8740898,
+     "tce_plnt_num": 2,
+     "tce_period": 3.54452,
+     "tce_time0bk": 132.319,
+     "ra": 286.03494,
+     "dec": 44.91088
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.0315933087637974,
+    "separation_deg": 6.011137936075484,
+    "same_star": false
+   }
+  },
+  "BOI-2129405688275182336-1": {
+   "clock": {
+    "period_days": 0.4761773027177255,
+    "epoch_bkjd": 120.9329505038038,
+    "duration_days": 0.12,
+    "ra": 290.7535854487727,
+    "dec": 48.1474314283305
+   },
+   "total_field_matches": 24,
+   "low_order_other_star_matches": 15,
+   "expected_fieldwide_chance": 5.047810308396854,
+   "expected_fieldwide_low_order_chance": 0.9114027804401712,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [
+    {
+     "catalogue": "dr25_tce",
+     "row": {
+      "kepid": 10794509,
+      "tce_plnt_num": 1,
+      "tce_period": 0.952349,
+      "tce_time0bk": 132.348,
+      "ra": 290.734309,
+      "dec": 48.16341
+     },
+     "ratio": "1/2",
+     "epoch_offset_days": -0.013205769029193848,
+     "separation_deg": 0.02051055641477114,
+     "same_star": false
+    },
+    {
+     "catalogue": "dr25_tce",
+     "row": {
+      "kepid": 10794509,
+      "tce_plnt_num": 2,
+      "tce_period": 0.952348,
+      "tce_time0bk": 131.866,
+      "ra": 290.734309,
+      "dec": 48.16341
+     },
+     "ratio": "1/2",
+     "epoch_offset_days": -0.01902846631146765,
+     "separation_deg": 0.02051055641477114,
+     "same_star": false
+    }
+   ],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 10794509,
+     "tce_plnt_num": 1,
+     "tce_period": 0.952349,
+     "tce_time0bk": 132.348,
+     "ra": 290.734309,
+     "dec": 48.16341
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": -0.013205769029193848,
+    "separation_deg": 0.02051055641477114,
+    "same_star": false
+   }
+  },
+  "BOI-2129890847781113344-1": {
+   "clock": {
+    "period_days": 15.5334941327192,
+    "epoch_bkjd": 137.67192648382857,
+    "duration_days": 0.4000000000000001,
+    "ra": 292.2807648302185,
+    "dec": 49.87105995221645
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 2,
+   "expected_fieldwide_chance": 4.795308653844775,
+   "expected_fieldwide_low_order_chance": 0.5763550172573565,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 6209677,
+     "tce_plnt_num": 1,
+     "tce_period": 7.76845,
+     "tce_time0bk": 138.069,
+     "ra": 293.30023,
+     "dec": 41.52334
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.3970735161714174,
+    "separation_deg": 8.377810195852081,
+    "same_star": false
+   }
+  },
+  "BOI-2129966404845098880-1": {
+   "clock": {
+    "period_days": 84.41699669811725,
+    "epoch_bkjd": 429.4822332170047,
+    "duration_days": 0.4000000000000001,
+    "ra": 291.50007975750117,
+    "dec": 49.59921679228935
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 0.7497889133405384,
+   "expected_fieldwide_low_order_chance": 0.10034270651502146,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2130546156710144256-1": {
+   "clock": {
+    "period_days": 25.995115370763617,
+    "epoch_bkjd": 139.08422851337122,
+    "duration_days": 0.4000000000000001,
+    "ra": 286.6240532076215,
+    "dec": 46.64041831893687
+   },
+   "total_field_matches": 0,
+   "low_order_other_star_matches": 0,
+   "expected_fieldwide_chance": 2.8745470462132507,
+   "expected_fieldwide_low_order_chance": 0.30298002289056725,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": null
+  },
+  "BOI-2130923460997369728-1": {
+   "clock": {
+    "period_days": 15.274899905640893,
+    "epoch_bkjd": 123.60402592230588,
+    "duration_days": 0.4000000000000001,
+    "ra": 288.8347934408541,
+    "dec": 47.88242777662177
+   },
+   "total_field_matches": 4,
+   "low_order_other_star_matches": 1,
+   "expected_fieldwide_chance": 4.565920842948772,
+   "expected_fieldwide_low_order_chance": 0.5023090599876531,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 3836727,
+     "tce_plnt_num": 2,
+     "tce_period": 7.6372,
+     "tce_time0bk": 138.68,
+     "ra": 287.05407,
+     "dec": 38.9581
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": -0.19842592230587286,
+    "separation_deg": 9.016870136608777,
+    "same_star": false
+   }
+  },
+  "BOI-2131141576613252224-1": {
+   "clock": {
+    "period_days": 3.01383544373833,
+    "epoch_bkjd": 132.98243056869134,
+    "duration_days": 0.4000000000000001,
+    "ra": 286.1255856902986,
+    "dec": 48.224226687648695
+   },
+   "total_field_matches": 19,
+   "low_order_other_star_matches": 4,
+   "expected_fieldwide_chance": 27.047674827933946,
+   "expected_fieldwide_low_order_chance": 2.977206795405359,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 8823397,
+     "tce_plnt_num": 1,
+     "tce_period": 1.50652,
+     "tce_time0bk": 132.988,
+     "ra": 293.60985,
+     "dec": 45.01863
+    },
+    "ratio": "2/1",
+    "epoch_offset_days": 0.005569431308657613,
+    "separation_deg": 6.0538197861869945,
+    "same_star": false
+   }
+  },
+  "BOI-2131933293706828672-1": {
+   "clock": {
+    "period_days": 3.0142673945877143,
+    "epoch_bkjd": 132.87240048650654,
+    "duration_days": 0.4000000000000001,
+    "ra": 286.0853436619472,
+    "dec": 48.75305351498255
+   },
+   "total_field_matches": 21,
+   "low_order_other_star_matches": 3,
+   "expected_fieldwide_chance": 27.016555630066247,
+   "expected_fieldwide_low_order_chance": 2.998530626358947,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 10905239,
+     "tce_plnt_num": 2,
+     "tce_period": 6.02974,
+     "tce_time0bk": 132.481,
+     "ra": 283.255495,
+     "dec": 48.355232
+    },
+    "ratio": "1/2",
+    "epoch_offset_days": -0.3914004865065408,
+    "separation_deg": 1.914768137732909,
+    "same_star": false
+   }
+  },
+  "BOI-2132193603084255744-1": {
+   "clock": {
+    "period_days": 2.981432504702711,
+    "epoch_bkjd": 171.8204913212359,
+    "duration_days": 0.4000000000000001,
+    "ra": 284.37726366368236,
+    "dec": 49.31459506094052
+   },
+   "total_field_matches": 24,
+   "low_order_other_star_matches": 4,
+   "expected_fieldwide_chance": 27.567967849516066,
+   "expected_fieldwide_low_order_chance": 3.429175293203287,
+   "same_star_matches": [],
+   "low_order_matches_within120arcsec": [],
+   "nearest_low_order_match": {
+    "catalogue": "dr25_tce",
+    "row": {
+     "kepid": 8106592,
+     "tce_plnt_num": 1,
+     "tce_period": 2.98221,
+     "tce_time0bk": 133.439,
+     "ra": 294.90111,
+     "dec": 43.96725
+    },
+    "ratio": "1/1",
+    "epoch_offset_days": 0.37713123989934405,
+    "separation_deg": 8.975330972796787,
+    "same_star": false
+   }
+  }
+ }
+}

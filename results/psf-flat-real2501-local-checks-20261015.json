@@ -1,0 +1,47 @@
+{
+  "status": "LOCAL_AVAILABLE_SUBSET_SEARCH_RUNNING_WITH_AUTOMATIC_VETTING_QUEUED",
+  "recorded_at": "2026-10-15T07:41:51.552170+00:00",
+  "sources": 2501,
+  "population_counts": {
+    "K": 2369,
+    "M": 132
+  },
+  "unavailable_from_original_5000": 2499,
+  "selection": "results/psf-flat-real2501-20261015.csv",
+  "detector_policy": "results/psf-flat-real2501-local-20261015.json",
+  "detector_launch": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/available2501-v1/launch.json",
+  "vetting_launch": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v1/launch.json",
+  "vetting_launch_plan": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v1/launch-plan.json",
+  "folder_tests": {
+    "passed": 49,
+    "skipped": 2,
+    "log": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/final-subset-tests.log"
+  },
+  "changed_python_ruff": "PASSED",
+  "folder_complexity_maximum_10": "PASSED",
+  "folder_ruff_baseline": "Six pre-existing style findings in unchanged compare_photometry.py, reprocess_summary.py and reprocess_validation.py; changed files pass",
+  "vetting_verification": {
+    "status": "PASSED",
+    "pipeline_files_byte_identical": 194,
+    "all_scientific_vetting_settings_unchanged": true,
+    "end_to_end_stages_completed": 16,
+    "sources": 1,
+    "signals": 2,
+    "original_alerts_preserved": 496,
+    "held_signals": 1,
+    "dismissed_signals": 1,
+    "vetting_runtime_preserves_venv_path": true,
+    "preflight": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/vetting-preflight-v3",
+    "preview_results_are_not_the_full_subset_results": true
+  },
+  "previous_5000_scope_change": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/run/scope-change-20261015.json",
+  "reference_receipts": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting-resources/receipts.json",
+  "science_boundaries": [
+    "Unchanged adopted detector, numeric runtime and configuration",
+    "Every available prepared source inherited only after archive and frozen record verification",
+    "All emitted proposals enter the unchanged shared vetting gates",
+    "Availability-selected subset; incomplete inputs are not replaced",
+    "Vetting BOIs are pipeline objects of interest, not confirmed planets or measured recall",
+    "No server job, corpus file, sealed pilot result or repository dump symlink changed"
+  ]
+}

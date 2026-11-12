@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-20T05:04:47.875070+00:00",
+  "status": "PREPARATION_LIMITS_RETAINED_NO_BUDGET_OR_SCIENTIFIC_INPUT_SUBSTITUTION",
+  "binary_reference": {
+    "source_id": "2133476355197071616",
+    "identity": "Kepler16stellarprimaryeclipses,notcircumbinaryplanet",
+    "fixture": "Two adjacent native primary eclipses inQ1/Q2, with exact270frame native integration and published-order localTTV support.",
+    "fixed_endpoint_steps": 24000,
+    "framework_diagnostics": {
+      "rank_rhat_maximum": 1.1294629860851182,
+      "reference_epoch_bulk_ess": 418.5904884770581,
+      "radius_ratio_median_over_std": 54.98812636176594,
+      "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+      "passed": false
+    },
+    "declared_native_gate": {
+      "passed": false,
+      "radius_ratio_snr": 153.57515371274783,
+      "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+    },
+    "outcome": "NOT_CONVERGED_REQUIRES_MODEL_AND_IDENTIFIABILITY_REVIEW",
+    "evidence": [
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v3/2133476355197071616/endpoint-24000.json",
+        "sha256": "46e1f7447c652d8836b73e0299c8cf829d6a100efdd022776bf761f9fed65b55"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v3/2133476355197071616/native-input-freeze.json",
+        "sha256": "e060aa1a5d3f156ff1c80a54e743a7a6c9c8b5336ede8090ec07815ceeeed790"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/known-binary-native-v3-status.json",
+        "sha256": "2591925e5384df03a1a4ffcf89a96c41e6bf4e20a15a3929fcd02bf79cee03be"
+      }
+    ],
+    "preservation": "All four independent ensemble backends, every fixed endpoint, posterior outputs and earlier single-event54/270failures remain. No additional sampling, automatic extension, reset or fullFPPcontrol run.",
+    "scope": "A known binary failing the declared conditional native fit gate does not diagnose a newBOI. The18paired prospective model-control repeats remain unlaunched; the54point probability-renderer accuracy gate is still open."
+  },
+  "dust_service": {
+    "failed_queries": [
+      {
+        "source_id": "2131705076324568448",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=30)\"))",
+        "receipt": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/recovered-dust-v7/2131705076324568448-dust.receipt.json",
+          "sha256": "1266fa7e4cb7d6ffa1c5204f0fed2846384827b789beb9119e11f20df56e551e"
+        }
+      },
+      {
+        "source_id": "2130921124535127424",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "ParseError('mismatched tag: line 6, column 2')",
+        "receipt": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/recovered-dust-v7/2130921124535127424-dust.receipt.json",
+          "sha256": "76e45e00bbe4251379ae18c5ecd2fda9cc367962f278d805928f582a8114b60d"
+        }
+      },
+      {
+        "source_id": "2103792461826460288",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "ParseError('mismatched tag: line 6, column 2')",
+        "receipt": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/recovered-dust-v7/2103792461826460288-dust.receipt.json",
+          "sha256": "540bdccef99bcaf04506256bb8012a7863143c83e44b561e0facaa709fc8c3bd"
+        }
+      },
+      {
+        "source_id": "2135189836694773504",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=30)\"))",
+        "receipt": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/recovered-dust-v7/2135189836694773504-dust.receipt.json",
+          "sha256": "1f9200469703a5ca3ab06cfc854414fdb5604c638fdf284af5c123f80b5572d6"
+        }
+      },
+      {
+        "source_id": "2104058096963805696",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=30)\"))",
+        "receipt": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-dust-v1/2104058096963805696-dust.receipt.json",
+          "sha256": "13b81903e2cc215d5b9f2d17c864037228e139c5f7590a59cf748d902daf8505"
+        }
+      }
+    ],
+    "bounded_get_diagnostic": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/irsa-service-diagnostic-v1/receipt.json",
+      "sha256": "c703d8d4f9d295c1c04367714a4c28831a2a48b084ddd53b875f404d5a63ad36"
+    },
+    "outcome": "OFFICIAL_ASYMPTOTIC_EXTINCTION_UNAVAILABLE_IN_THESE_REQUESTS",
+    "scope": "Timeouts/invalid responses are acquisition failures, not a measurement of zero extinction. No hostTICEBV or nearby sightline value substitutes for the required field asymptotic input. The new affected population requests are not scientifically admitted; native fits and the existing primary campaign continue independently."
+  },
+  "goal": {
+    "validated_new": 0,
+    "target": 50,
+    "false_positive_rate": null
+  },
+  "scope": "Server-only preparation and model review. Existing production inputs/coordinator, exactly20primarycandidatebudgets, originalBOIs and immutable survey evidence remain unchanged."
+}

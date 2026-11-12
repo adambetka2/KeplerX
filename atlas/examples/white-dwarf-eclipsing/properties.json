@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "name": "KOI-74",
+  "reference_class": "Transiting white-dwarf companion",
+  "class_label_origin": "Published follow-up classification; not inferred solely from this image",
+  "observable_signature": "Shallow transit plus deeper occultation of a hot compact companion.",
+  "lookalikes": [
+    "other compact-object lens / eclipse",
+    "blended stellar system",
+    "instrumental transient"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "Published observed figure, with fitted model overlays",
+    "processing": "Detrended Kepler light curve and folded events; transit and occultation are vertically offset in the lower panel. The plotted curves are fits; white-dwarf classification is established in follow-up literature."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "orbital_period_d": {
+      "value": 5.188754,
+      "uncertainty": 8.3e-05
+    },
+    "occultation_depth_ppm": {
+      "value": 1238.2,
+      "uncertainty": 6.6
+    },
+    "observed_baseline_d": {
+      "value": 43,
+      "approximate": true
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Figure reference; no raw measurements downloaded or image digitization. Numeric fields are source-reported photometric quantities.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1001.3420",
+    "classification_paper_url": "https://arxiv.org/abs/1009.1873",
+    "pdf_url": "https://arxiv.org/pdf/1001.3420",
+    "pdf_page_one_based": 4,
+    "figure": "1",
+    "credit": "Authors of linked papers and observing projects",
+    "retrieved": "2026-09-06"
+  },
+  "provenance": {
+    "source_pdf_sha256": "c65fed41859866013d26ddcb7866a7808e4e5657fc7b532d740c4b4583954e76",
+    "page_crop_fraction_xyxy": [
+      0.12,
+      0.14,
+      0.9,
+      0.674
+    ],
+    "image_sha256": "94a7b8cedf7d709397b2542c784f9dedbfb7035a2fa434a8c3eb2260e885eb20"
+  },
+  "classification_limit": "Light-curve morphology alone does not establish a compact-object mass or identity; the reference classification uses the full published evidence. No intrinsic stellar parameters are inferred here."
+}

@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-20T09:20:25.539224+00:00",
+  "kic": 10196617,
+  "source_id": "2130658616133595264",
+  "status": "EARLY_FUTILITY_NON_ADMISSION",
+  "completed_primary": 2,
+  "planned_primary_maximum": 20,
+  "futility_rule": "Both first FPP>=0.10 or both first NFPP>=0.01",
+  "FPP": [
+    0.5384760920332312,
+    0.65680404640491
+  ],
+  "results": [
+    {
+      "index": 0,
+      "seed": 6158369255356578228,
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5/runs/2130658616133595264/final/seed-00/result.json",
+      "sha256": "76bc26fe2fad8eaf891c7b905fc93557658ba6638874b1303b30d708086d9d50",
+      "probabilities": {
+        "FPP": {
+          "log_probability": -0.6190121807097597,
+          "probability": 0.5384760920332312,
+          "probability_lower": 0.5384760920332312,
+          "probability_upper": 0.5384760920332312
+        },
+        "NFPP": {
+          "log_probability": -103.77797001870407,
+          "probability": 8.50746708989831e-46,
+          "probability_lower": 8.50746708989831e-46,
+          "probability_upper": 9.271245906061175e-23
+        },
+        "EB": {
+          "log_probability": -0.6564904359800181,
+          "probability": 0.5186684441050534,
+          "probability_lower": 0.5186684441050534,
+          "probability_upper": 0.5186684441050534
+        },
+        "bounded_posterior_mass_upper": 9.271245906061175e-23
+      }
+    },
+    {
+      "index": 1,
+      "seed": 561089804785235540,
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5/runs/2130658616133595264/final/seed-01/result.json",
+      "sha256": "bce1ef283ca6682ab4acbeb5628048fc322955e7223f14d31a952d30575beec5",
+      "probabilities": {
+        "FPP": {
+          "log_probability": -0.42036956007588344,
+          "probability": 0.65680404640491,
+          "probability_lower": 0.65680404640491,
+          "probability_upper": 0.65680404640491
+        },
+        "NFPP": {
+          "log_probability": -117.31208917073197,
+          "probability": 1.1272156573248238e-51,
+          "probability_lower": 1.1272156573248238e-51,
+          "probability_upper": 6.102291897256224e-23
+        },
+        "EB": {
+          "log_probability": -0.4741214456695815,
+          "probability": 0.6224316563480891,
+          "probability_lower": 0.6224316563480978,
+          "probability_upper": 0.6224316563480978
+        },
+        "bounded_posterior_mass_upper": 6.102291897256224e-23
+      }
+    }
+  ],
+  "scientific_disposition": "REMAINS_PC",
+  "scope": "Stopped after two as predeclared. No full20mean or complete deep numerical audit claimed. Every result, failure and generation remains preserved; no recovery or extra repeats planned."
+}

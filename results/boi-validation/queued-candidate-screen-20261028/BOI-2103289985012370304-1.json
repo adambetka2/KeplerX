@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-28T07:40:47.017381+00:00",
+  "boi_id": "BOI-2103289985012370304-1",
+  "source_id": "2103289985012370304",
+  "signal_id": "rust-v6-2103289985012370304-1",
+  "clock": {
+    "period_days": 0.35587468927015964,
+    "epoch_bkjd": 169.79376998092428,
+    "duration_days": 0.041704065148846836
+  },
+  "original": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2103289985012370304-1/acquired/original-kbonus-attempt1.response",
+  "sha256": "06195d1170a95ea486ebd15a91f0108a82860a2d1fe06e8bf6fc7fd85b02adbb",
+  "psf_flat_depth": {
+    "status": "MEASURED",
+    "depth_fraction": 0.011449496594815634,
+    "depth_error": 0.00020560362984288507,
+    "events": 4008,
+    "depth_chi2": 4608.603069399636,
+    "degrees_of_freedom": 2632,
+    "largest_information_fraction": 0.005624074522264101,
+    "sample_count": 118305
+  },
+  "psf_flat_train": {
+    "status": "MEASURED",
+    "events": 2633,
+    "observed_positive_fraction": 0.8241549563235853,
+    "expected_positive_fraction": 0.7667466654474915,
+    "positive_deficit_z": 7.463040575694424,
+    "scope": "Predicted-event dip signs under a shared measured depth and local errors; the z score is a coherence diagnostic, not a calibrated false-alarm probability"
+  },
+  "odd_even": {
+    "status": "MEASURED",
+    "difference": -2.919038277749038e-05,
+    "error": 0.00041121097892503556,
+    "sigma": 0.07098638964795692,
+    "two_depth_bic_gain": -11.67598224698495
+  },
+  "secondary_phase_half": {
+    "status": "MEASURED",
+    "depth_fraction": 0.0053252114660163824,
+    "depth_error": 0.00020879724436113437,
+    "events": 4009,
+    "depth_chi2": 3568.0506564048846,
+    "degrees_of_freedom": 2639,
+    "largest_information_fraction": 0.00641755913087607,
+    "sample_count": 118467
+  },
+  "helper_loading": "Unchanged array-only lc2 function ASTs loaded without the unused Parquet reader dependency.",
+  "scope": "Diagnostic at the already-declared clock and duration, using unchanged vetting_periodic functions and config. No detection search, fit, acceptance decision, probability allocation or queue change."
+}

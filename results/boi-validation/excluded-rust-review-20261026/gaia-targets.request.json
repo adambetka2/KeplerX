@@ -1,0 +1,12 @@
+{
+ "utc": "2026-10-26T16:40:41.149253+00:00",
+ "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+ "parameters": {
+  "REQUEST": "doQuery",
+  "LANG": "ADQL",
+  "FORMAT": "json",
+  "QUERY": "SELECT g.source_id,g.ra,g.dec,g.pmra,g.pmdec,g.parallax,g.parallax_error,g.ruwe,g.phot_g_mean_mag,g.phot_bp_mean_mag,g.phot_rp_mean_mag,g.bp_rp,g.phot_bp_rp_excess_factor,a.teff_gspphot,a.teff_gspphot_lower,a.teff_gspphot_upper,a.logg_gspphot,a.mh_gspphot,a.mh_gspphot_lower,a.mh_gspphot_upper,a.distance_gspphot,a.radius_gspphot,a.radius_gspphot_lower,a.radius_gspphot_upper,a.mass_flame,a.mass_flame_lower,a.mass_flame_upper,a.radius_flame,a.radius_flame_lower,a.radius_flame_upper,a.ag_gspphot,a.azero_gspphot FROM gaiadr3.gaia_source AS g LEFT OUTER JOIN gaiadr3.astrophysical_parameters AS a ON g.source_id=a.source_id WHERE g.source_id IN (2076038211367869312,2079376637907047040,2126446588949629952,2131801043071611776,2051317406099391360,2051702720499620224,2073774278260250880,2076066111476425728,2076229075413220352,2076535358120385536,2076587142546708352,2076784878540898560,2078414771391537280,2079821420415898368,2080033974058174080,2080290396483263616,2085457035981896448,2086489481704614016,2100220316049730304,2100223614584673664,2103289985012370304,2106533368217988864,2107167653281504256,2125795682366018176,2126865915195358720,2127355099085636864,2127702609183750528,2131971879690727168,2133034969998575360,2133051978069556352,2133767416541087232,2077554781499350144,2077967368932890752,2126354436132009088)",
+  "MAXREC": "100000"
+ },
+ "scope": "New exact-target properties query only; does not substitute for the complete scene census that timed out."
+}

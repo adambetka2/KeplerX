@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "name": "Beta Pictoris",
+  "reference_class": "Exocomet-like dip",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Isolated shallow asymmetric dips following removal of stellar pulsations.",
+  "lookalikes": [
+    "dust occultation",
+    "instrumental dip",
+    "planet transit"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "TESS; 54 fitted sinusoidal pulsation frequencies removed; 30-minute bins. Three events, not a periodic fold."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "depth_range": {
+      "value": [
+        0.5,
+        2
+      ],
+      "unit": "mmag",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "maximum_event_duration": {
+      "value": 2,
+      "unit": "d",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "display_bin_width": {
+      "value": 30,
+      "unit": "min",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1903.11071",
+    "pdf_url": "https://arxiv.org/pdf/1903.11071",
+    "pdf_page_one_based": 3,
+    "figure": "2",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "016c0fd403358a6a11d2cf724e9c1a57324107b3b89e1517724447e7a6dd7ebd",
+    "page_crop_fraction_xyxy": [
+      0.07,
+      0.29,
+      0.92,
+      0.495
+    ],
+    "image_sha256": "cb2ea9b5d9e9a8f243ae9151a95a4f03a8d34c2c80a5908a43394be01496fd7a"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

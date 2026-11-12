@@ -1,0 +1,94 @@
+{
+  "utc": "2026-10-21T14:45:08.042931+00:00",
+  "release": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-response-20261021-bb153cd4",
+  "synced_commit": "fb929445",
+  "signal_id": "mk-sap-20261019-2085171201622187904-3",
+  "kic": 8911748,
+  "freeze_sha256": "0f47c3902dfac1ce6434bd45f40e864f78f3fcd686066128bdc3d76cd48ee58c",
+  "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+  "primary": {
+    "FPP": {
+      "repeats": [
+        0.2818047197907091,
+        0.28592453081339386
+      ],
+      "mean": 0.2838646253020515,
+      "sample_standard_deviation": 0.0029131463113474874,
+      "minimum": 0.2818047197907091,
+      "maximum": 0.28592453081339386,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.2142946732918889,
+        0.21953275979029677
+      ],
+      "mean": 0.21691371654109282,
+      "sample_standard_deviation": 0.003703886483465905,
+      "minimum": 0.2142946732918889,
+      "maximum": 0.21953275979029677,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    }
+  },
+  "completed_integrations": 2,
+  "remaining_prescribed_integrations_not_allocated": 18,
+  "fresh_verification": true,
+  "records": [
+    {
+      "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2085171201622187904/generation-signal-3-02-probability-calibrated/campaign/plan.json",
+      "sha256": "33e3a323965ab3d20bb969fe9b1c335ca7bc2421d3fc3ede5e85fc37e8f0dc0e"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2085171201622187904/generation-signal-3-02-probability-calibrated/campaign/audit-20261021T144256650285Z.json",
+      "sha256": "fe6be20932c3d20d52c8d84374509fc8a790600cbc9b499aaea368c56d691f41"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2085171201622187904/generation-signal-3-02-probability-calibrated/campaign/runs/final/seed-00/result.json",
+      "sha256": "4b23e0bc7dea5e3f616cb05ac4b9a2ca9b5b3e84f494ccdef99641c28800228d"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2085171201622187904/generation-signal-3-02-probability-calibrated/campaign/runs/final/seed-01/result.json",
+      "sha256": "a73fda95b88de5c66a12f3c843a0fbe48f5e795c20ec7332e130b5d7346e34e6"
+    }
+  ],
+  "server_totals": {
+    "completed_integrations": 112,
+    "candidates": 47,
+    "stopped_after_first_two": 46,
+    "completed_all_twenty_but_numerical_fail": 1,
+    "validated": 0
+  },
+  "native_group3851142": {
+    "signal_id": "mk-sap-20261019-2052781685012928512-1",
+    "diagnostic": {
+      "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2052781685012928512/generation-signal-1-02-calibrated-group/native-diagnostics.json",
+      "sha256": "20104e6c3dc118fda62f23a87c2364ec7f963f8315325b5b5dd78f99111df583"
+    },
+    "status": "COMPLETE_NO_FPP_MISSING_CONTAMINANT_STELLAR_INPUTS"
+  },
+  "catalogue_retrieval": {
+    "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/contaminant-catalogue-retrieval-v01",
+    "queries": [
+      "DR25 KIC4160068",
+      "GaiaDR3 APsupp exact eight sourceIDs",
+      "EDR3StarHorse exact eight sourceIDs"
+    ],
+    "all_successful_queries_returned_zero_rows": true,
+    "scope": "Queries do not establish global absence of stellar properties."
+  },
+  "next_signal": {
+    "source_id": "2132664155406348672",
+    "signal_id": "mk-sap-20261019-2132664155406348672-1",
+    "unit": "mk-ten-readiness11758900-s1-bb153cd4",
+    "status": "DATA_COLLECTION_RUNNING"
+  },
+  "scope": "Server-only numerical work. Numericalscreen is not physicalvalidation/FPdenial. Allpreviousstops/protectedstudies/attempts preserved,no favorable repeats."
+}

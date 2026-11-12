@@ -1,0 +1,229 @@
+{
+ "created_utc": "2026-10-25T16:54:15.503687+00:00",
+ "system": "KIC 6267058 (Gaia DR3 2104058096963805696, TIC 120318420)",
+ "decision_authority": "PI (Adam), explicit message of 25 October 2026: use V3 for M/K; validate KIC 6267058's 16.74-day and 29.31-day signals as a separately labelled tier, planets of that system with the host undetermined; run the 11.79-day signal under V3. Later the same day: 'if those cases arrive, validate further by multiplicity (or dismiss if it comes out negative)'; the 11.79-day signal completed V3 at 17:52 UTC and passed every condition (tools/multiplicity.py).",
+ "tier": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+ "framework": "Validation by multiplicity (Lissauer et al. 2012, ApJ 750 112; Lissauer et al. 2014, ApJ 784 44; Rowe et al. 2014, ApJ 784 45), applied to TRICERATOPS FPPs as in Hord et al. 2024 (AJ 167 233). Planets orbiting a star bound to the target count as planets (Lissauer et al. 2014); the host star (target or unresolved bound companion) is not determined, so radii hold for the target.",
+ "boost": {
+  "b": 5.5,
+  "form": "FPP' = FPP / (FPP + b (1 - FPP))",
+  "basis": "Smallest published boost (K2, Christiansen et al. 2022, AJ 163 244: 5.5-70 by campaign); Kepler 25-50 (Lissauer et al. 2012) and TESS 20-54 (Guerrero et al. 2021) are larger. No KBonus-specific boost is computed; any b above about 1.6 gives both signals FPP' < 1.5%."
+ },
+ "conditions": {
+  "candidates_on_source": [
+   "mk-sap-20261019-2104058096963805696-3 (11.79 d)",
+   "mk-sap-20261019-2104058096963805696-4 (16.74 d)",
+   "mk-sap-20261019-2104058096963805696-2 (29.31 d)"
+  ],
+  "independence": "Distinct transit events: 56 of 61, 31 of 36 and 79 of 81 event windows of the 16.74, 29.31 and 11.79-day signals overlap no other BOI. The 29.31/16.74 ratio (1.7512) lies 0.07% from 7:4, inside the 0.1% commensurability screen; with non-overlapping windows this is a near-resonance, not an alias. The 11.79-day signal is commensurate with neither (1.419, 2.485).",
+  "lissauer_rowe": [
+   "not a known FP: no catalogue match (M/K frozen association; NASA Exoplanet Archive checks, literature/dated-6267058)",
+   "S/N > 10 and at least three transits",
+   "at least two candidates",
+   "off-target probability below 1%: V3 NFPP <= 1e-8",
+   "radius below 9 Earth radii"
+  ],
+  "protocol": [
+   "20 V3 repeats each",
+   "native acceptance rules",
+   "RUWE <= 1.4",
+   "no Gaia source within 1.5 arcsec",
+   "no low-order ephemeris match on another star",
+   "no phase-0.5 secondary at SNR >= 3",
+   "distinct signals: no candidate is an S/N-consistent alias of a stronger one (S/N <= 2 S/N_strong / sqrt(m n) at a commensurate m/n) or shares two or more events with it",
+   "Hill-stable system: adjacent candidates more than 2 sqrt(3) mutual Hill radii apart (Gladman 1993) with M = R^2.06 (Lissauer et al. 2011)",
+   "Rowe et al. 2014 section 5.9, checked on 25 October: S/N of the fitted transit model > 10 (> 15 below 4 days), period above 1.6 days, not V-shaped (b + sigma_b + Rp/R* <= 1); all pass (b + sigma_b + k 0.57-0.79)."
+  ]
+ },
+ "signals": {
+  "mk-sap-20261019-2104058096963805696-4": {
+   "label": "16.74 d",
+   "period_days": 16.735278049750374,
+   "epoch_bkjd": 796.6019200475172,
+   "duration_days": 0.140685814790588,
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.0232202404757888,
+    "FPP_sd": 0.003687200847899909,
+    "FPP_range": [
+     0.011959446133456342,
+     0.02952564668172042
+    ],
+    "unfavourable": 19,
+    "NFPP_mean": 1.0121651549005976e-08,
+    "NFPP_max": 1.1750594064999088e-08,
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4/probability-v3/campaign/audit-20261025T151118759108Z.json",
+     "sha256": "d5eb926e799dc32095e8d97b12eb0c3509c841eed2ca298e30816e09bb5671d1"
+    }
+   },
+   "boosted_FPP": {
+    "b": 5.5,
+    "value": 0.0043036237784596365
+   },
+   "boosted_FPP_lissauer_25": 0.0009499861700562363,
+   "closeout": {
+    "matched_filter_snr": 16.40764689862634,
+    "ruwe": 1.0299473,
+    "gaia_sources_within_1p5_arcsec": [],
+    "tp_radius_earth": {
+     "median": 2.8205760501704615,
+     "minimum": 2.7499301866010892,
+     "maximum": 3.0025311833380486
+    },
+    "record": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4/closeout-v1.json",
+     "sha256": "ec231aad0bc3e91af09445d81cbf54c84f0157bc60322b412c7af6268796bb0d"
+    }
+   },
+   "multiplicity_record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4/multiplicity-v3.json",
+    "sha256": "af8c19febe5861f4838f1b8602217a8105f0af0c6ef698357922db547dd63a8a"
+   }
+  },
+  "mk-sap-20261019-2104058096963805696-2": {
+   "label": "29.31 d",
+   "period_days": 29.306932682028183,
+   "epoch_bkjd": 796.6047050590328,
+   "duration_days": 0.18950827946350396,
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.025662644479096997,
+    "FPP_sd": 0.009152415753359814,
+    "FPP_range": [
+     0.012398938570988838,
+     0.04790452852462512
+    ],
+    "unfavourable": 18,
+    "NFPP_mean": 7.746469028662877e-26,
+    "NFPP_max": 1.1792513903548862e-25,
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2/probability-v3/campaign/audit-20261025T124818999894Z.json",
+     "sha256": "fe94e01248348b722c11132b88ff2c6e7c5734cf2fb15f6ee4d605143a5bfb98"
+    }
+   },
+   "boosted_FPP": {
+    "b": 5.5,
+    "value": 0.004766005797220775
+   },
+   "boosted_FPP_lissauer_25": 0.0010524336813090918,
+   "closeout": {
+    "matched_filter_snr": 28.578885140407206,
+    "ruwe": 1.0299473,
+    "gaia_sources_within_1p5_arcsec": [],
+    "tp_radius_earth": {
+     "median": 4.24571895630935,
+     "minimum": 4.098439036185863,
+     "maximum": 4.391849706110806
+    },
+    "record": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2/closeout-v1.json",
+     "sha256": "16c8abb06bf89c074554842ff579fe99d6f3e3dcc5a153bc352e46078fc08c6c"
+    }
+   },
+   "multiplicity_record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2/multiplicity-v3.json",
+    "sha256": "6a59151600b1deaf83e9a9b3d7f2ae1b5f2b0dee83b560514a29bfb0e38e8be5"
+   }
+  },
+  "mk-sap-20261019-2104058096963805696-3": {
+   "label": "11.79 d",
+   "period_days": 11.792725841946442,
+   "epoch_bkjd": 787.7039796914426,
+   "duration_days": 0.11948601588701123,
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.020276843740353025,
+    "FPP_sd": 0.004025529920485811,
+    "FPP_range": [
+     0.013062171997562988,
+     0.025980238809306
+    ],
+    "unfavourable": 17,
+    "NFPP_mean": 1.3845449116648965e-22,
+    "NFPP_max": 1.6544091537777367e-22,
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-3/probability-v3/campaign/audit-20261025T175237723738Z.json",
+     "sha256": "321a9c657d71113cfc2adc90f87ea4452f3ac4d8595905db6a7856bad56c44fe"
+    }
+   },
+   "boosted_FPP": {
+    "b": 5.5,
+    "value": 0.0037488935489941445
+   },
+   "boosted_FPP_lissauer_25": 0.0008271753548129171,
+   "closeout": {
+    "matched_filter_snr": 22.322624759733024,
+    "ruwe": 1.0299473,
+    "gaia_sources_within_1p5_arcsec": [],
+    "tp_radius_earth": {
+     "median": 3.3203795957860036,
+     "minimum": 3.077486167921335,
+     "maximum": 3.4535555134674167
+    },
+    "record": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-3/closeout-v1.json",
+     "sha256": "a271bbcd6a0d5165dda506ad74f35e6f7ba0ad4ef64ddf685c7e42ef198b287d"
+    }
+   },
+   "search_snr": 23.60251777376367,
+   "observed_transits": 80,
+   "dominant_residual": "Planet on an unresolved bound companion (STP ~1.9% of 2.0%); BTP and BEB below 0.1%.",
+   "multiplicity_record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-3/multiplicity-v3.json",
+    "sha256": "6767f05bf86d28af164aa0f2dd525fa1886c6c4f29bc5bb9ef1c61e60eeb982e"
+   }
+  }
+ },
+ "evidence": {
+  "ephemeris": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/ephemeris-v2/screen-6267058.json",
+   "sha256": "03055dc2562c0c42bf400ab3cbc0b2f93df62c4fe84db8f2691cc8ac7df9817e"
+  },
+  "occultation": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/occultation-6267058-20261025.json",
+   "sha256": "da1f4929c621ef753aaf91881f7dca64f464e5fe9ce2d1bc034fd954a48cf7d2"
+  },
+  "dated": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/dated-6267058/dated-checks-6267058-20261025.json",
+   "sha256": "8b617317944801acf95fcf97076ac6e7defe984b9d1909f6c860053c708971cb"
+  },
+  "literature": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/mk-method-and-multiplicity-20261025.json",
+   "sha256": "ef418896076b9830633acae357ba3d4d6a72b86c2f9b92cbcfddcdf3ecc306ea"
+  },
+  "paired_stock": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/paired-stock2-20261025.json",
+   "sha256": "3c8ec362402461916fa825456537300ec982318025d83d4cad2ba653473d952d"
+  },
+  "multiplicity_tool": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/multiplicity.py",
+   "sha256": "6a57f73a99658f9a272f167c6bafb817868275e9d2bb948efaab47455a312a42"
+  },
+  "event_review": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/event-review-20261025.csv",
+   "sha256": "77a4b5532e9d52b36a23b616479f764bffea002400be04d90b2e20f899798c4b"
+  },
+  "event_review_tool": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/event_review.py",
+   "sha256": "c0ce8d28a0a5f67d9e52a85f9968ffafe1963a173f42029f6678dee39362ed6a"
+  },
+  "search_clock_screen": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/ephemeris-v2/screen-mk-all-20261025.json",
+   "sha256": "9185a95683ef9fe5ae4f0439c5aeb7ac0d5f7d026136e552f69a4b1d9dfbbc6f"
+  }
+ },
+ "caveats": [
+  "G 16.2 KBonus source; Lissauer et al. (2012) report higher FP rates around faint targets and Guerrero et al. (2021) a smaller boost in crowded fields.",
+  "Host undetermined: on an unresolved bound companion the planets would be larger.",
+  "Statistical validation, not RV confirmation or a novelty claim.",
+  "Search-clock ephemeris screen: the detector clock of the 29.31-day signal (duration 0.200 d) matches DR25 TCE 7620844-2 at 1:2 (58.6216 d, the secondary eclipse of false positive K03551.01, 8.2 deg away; drift just inside one duration) and TCE 6442340-3 at 5:4 (5.2 deg). With the accepted native clock and duration there is no match (literature/ephemeris-v2/screen-6267058.json). The binary's eclipses are not evenly spaced (secondary at phase 0.458), so at most every other candidate event could coincide with them; the stars are neither close nor antipodal about the field centre; and the M/K search-clock screen is null as a population (38 low-order other-star matches against 35.3 expected over 663 signals). Recorded as chance."
+ ],
+ "updated_utc": "2026-10-25T22:08:05.434646+00:00",
+ "updates": [
+  {
+   "utc": "2026-10-25T22:08:05.434646+00:00",
+   "change": "multiplicity-v3.json records rewritten at 21:30 UTC with the event-review check (every check passes); receipts refreshed; search-clock ephemeris note added."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PREPARATION_RUNNING_AWAITING_REMAINING_CORPUS",
+  "checked_at": "2026-10-15T06:08:04.887674+00:00",
+  "policy": "/Users/adam/Other/spacelab/results/psf-flat-real5000-local-20261015.json",
+  "policy_sha256": "66e060e34e875a681494a8a8a92f143829b365dd50ae298b9417160f81d1fc1b",
+  "launch": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/run/launch.json",
+  "frozen_selection": {
+    "sources": 5000,
+    "K": 4753,
+    "M": 247,
+    "g_min": 12.173,
+    "g_max": 16.399
+  },
+  "folder_tests": {
+    "passed": 48,
+    "skipped": 2,
+    "reason_skipped": "Old full-receipt M/K replay requires disconnected workspace disk; replacement lean-receipt gold replays both passed"
+  },
+  "changed_files_ruff": "PASSED",
+  "folder_complexity_maximum_10": "PASSED",
+  "folder_ruff_existing_issues": {
+    "count": 6,
+    "files": [
+      "dwarfs/experiments/compare_photometry.py",
+      "dwarfs/experiments/reprocess_summary.py",
+      "dwarfs/experiments/reprocess_validation.py"
+    ],
+    "note": "All three files are unchanged; these pre-existing style findings are outside this run"
+  },
+  "frozen_M_K_spawn_replays": "PASSED; both record arrays and cadence counts reproduced byte for byte",
+  "prepared_input_audit": {
+    "status": "PASSED",
+    "sources": 2501,
+    "report": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/prepared-input-audit.json",
+    "sha256": "fbf433b3d2249939ab82e0ba96c721d5afb0bb69eccda8df95d62c1d837c5d7e"
+  },
+  "detector_endpoint": {
+    "status": "PASSED",
+    "source_id": "2073839527410089600",
+    "frozen_records_sha256": "e438fb81b531829be77fabe1af94d40db416ea9d3db7f25b754e81616f1ec5d2",
+    "detector_status": "SEARCHED",
+    "proposals": 0,
+    "search_seconds": 29.359652041923255
+  },
+  "detector_preflight_report": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/detector-preflight/preflight.json",
+  "detector_preflight_report_sha256": "9f3519f9ee6871fc4aae3a20762b01c9828f790a8b0d400605b1c513150245fc",
+  "new_runtime": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/runtime/bin/python",
+  "runtime_limits": "Pinned numerical versions rebuilt internally. Prepared bytes and source/config bindings verified; original pilot runtime on the removed disk is not independently compared.",
+  "current_availability": {
+    "prepared": 2501,
+    "missing": 2499,
+    "expected_volume": "/Volumes/discPCIe",
+    "mounted_external_volumes": [
+      "/Volumes/discSSD",
+      "/Volumes/Nowy",
+      "/Volumes/Untitled"
+    ]
+  },
+  "server_changes": false,
+  "scientific_limits": "One endpoint search is execution verification, not a yield estimate. The 5000-source search will start only after all exact prepared inputs exist."
+}

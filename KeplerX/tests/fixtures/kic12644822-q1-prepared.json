@@ -1,0 +1,69 @@
+{
+ "packet": {
+  "source_id": "2133476080319167104",
+  "parent_kic": 12644822,
+  "kic": 12644822,
+  "ra_deg": 289.1122291424336,
+  "dec_deg": 51.73736830410008,
+  "coordinate_epoch": "J2016",
+  "exposure_days": 0.02043361111111111,
+  "time_system": "BKJD_TDB",
+  "view": "psf_flat",
+  "schema": 1,
+  "stellar": {
+   "teff": 5459.023,
+   "logg": 4.1503,
+   "density_solar": 0.3182518801748087,
+   "basis": "Gaia DR3 GSP-Phot Teff, logg and radius; density = (g/g_sun)/R_solar",
+   "input": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/confirmed-12644822/stellar-inventory-retained.json",
+    "bytes": 160683,
+    "sha256": "29d187e9d114c450007b9ae01c855b26add61b79391b5b0ba22cfde5e1c21f24"
+   }
+  },
+  "flux_convention": "delivered_psf_flat",
+  "additional_detrending": false,
+  "normalization_by_quarter": {
+   "1": 11866.779899603302
+  },
+  "original_product": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/confirmed-12644822/original-kbonus-attempt1.response",
+   "bytes": 11419200,
+   "sha256": "ae85a7f4592f731864f24b13402992cfc35368da22953681a92a5fa306896dd5"
+  },
+  "stored_cadences": 1624,
+  "usable_cadences": 1376,
+  "arrays": {
+   "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/calibration/known-objects-v1/prepared/control-1e25d3f07e72/photometry.npz",
+   "bytes": 2342533,
+   "sha256": "ad6c0731cc5ab8cfdbe42af102e60fb282c96501cd42a537e9d521f3f717d965"
+  },
+  "baseline_days": 33.47109668236226,
+  "first_valid_bkjd": 131.51207685889676,
+  "last_valid_bkjd": 164.98317354125902
+ },
+ "koi": "K00791.01",
+ "clock": {
+  "signal_id": "2133476080319167104:K00791.01",
+  "period": 12.611904345,
+  "t0": 180.892284,
+  "tdur": 0.21457083333333335
+ },
+ "native_localization_20261027": {
+  "engine": "upstream.MultiLocalize",
+  "metrics": {
+   "centerra": 289.11228593566676,
+   "sigmara": 7.082472948163838e-05,
+   "centerdec": 51.73752529373879,
+   "sigmadec": 3.5885699624906795e-05
+  },
+  "chi_square": 50.41002302510932,
+  "degrees_of_freedom": 24
+ },
+ "source": {
+  "packet": "data/known-object-checks/prepared/control-1e25d3f07e72 (known-object control, quarter 1 kept)",
+  "packet_sha256": "ad6c0731cc5ab8cfdbe42af102e60fb282c96501cd42a537e9d521f3f717d965"
+ },
+ "sha256": "c1458548ba02dbb44f098403860953485ef218b39f77e554fb4f87ca27fe7e55",
+ "scope": "KIC 12644822 (Gaia DR3 2133476080319167104), the host of KOI K00791.01: quarter-1 KBonus PSF Flat, prepared, for localization tests; catalogue clock, not a blind detection"
+}

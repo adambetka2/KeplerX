@@ -1,0 +1,6 @@
+{
+  "source": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+  "reference": "Pecaut and Mamajek 2013 with the author-maintained 2022.04.16 table",
+  "sha256": "1de2edeec17bb3346e0e4e70b999de5ee29947df38474e64cddb7cfacc164b7f",
+  "scope": "Frozen factual stellar-sequence reference for portable software controls"
+}

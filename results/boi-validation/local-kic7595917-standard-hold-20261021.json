@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-21T03:50:25.122755+00:00",
+  "source_id": "2102612750272489216",
+  "kic": 7595917,
+  "signal_id": "rust-v6-2102612750272489216-1",
+  "status": "HELD_NATIVE_DETRENDING_PROTECTION_EDGE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Seeded dynamic nested fit completed successfully, native weightESS5530.55 and final stopping0.904<1; independent log-prior/posterior and batman replay passed. Representative exact4.7068h transit plus fitted-period accumulation extends original detrending protection by up to5.84minutes. Only one actual valid unprotected cadence has7.19ppm modeled loss, so this is a small preparation-edge effect, not demonstrated major bias or astrophysical rejection. Across the complete observed baseline9.62percent of equal samples meet approximate continuous-event coverage. Original protection is not sufficient to declare the full fitted transit covered; no silent wider-mask adoption under the frozen protocol.",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-nested-review-v1.json",
+    "sha256": "b9f0512a9addad768f53c2e78f1f6a9e99edf7b0ca2392611e2736b567228790"
+  },
+  "coverage": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-posterior-review-measurements-v1.json",
+    "sha256": "bd894c889c3eabfb2c8446550a199ad6ee6504e5e95cfbddcc3ffbb2045fd2d1"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-freeze.json",
+    "sha256": "1e4f8e3bc04a50cda422d313c0572ecc3e0796eda542fa63a0bf1315e67b9374"
+  },
+  "original_undecided_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native/review.json",
+    "sha256": "7664c0be58f39ceeced6ecacc0aad0b827a28d2db224349851b7c8fe76894692"
+  },
+  "parent_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/parent-authentication-v1.json",
+    "sha256": "8b95732a13f7aa0c4f7225e65fe7116a73463d746e1d4042ac71195d831f398d"
+  },
+  "prf_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/prf-authentication-v1.json",
+    "sha256": "fcab7365786b2b34ca06057bcbfb38baf17ef85d6594f470e3ea83f0f35e23be"
+  },
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve all outputs and inputs. Future candidate-specific clock/duration-aware preparation requires separate generation, not a desired FPP rescue. Advance another eligible host tonight; no prolonged rescue."
+}

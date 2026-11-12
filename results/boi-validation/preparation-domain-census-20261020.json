@@ -1,0 +1,60 @@
+{
+  "scope": "Actual retained BOI proposal durations, not astrophysically measured posterior durations or an occurrence sample; duplicate aliases/proposals retained. Missing durations counted separately. M/K663 exact source/signal matches; no server analysis/jobs changed. The broad survey BOI label includes unclassified/shallow/event hypotheses; use TRANSIT_LIKE and delivered125 for actual follow-up-domain comparisons, not its default9.6h windows.",
+  "mk": {
+    "proposals": 663,
+    "with_positive_duration": 663,
+    "missing_or_nonpositive": 0,
+    "minimum_hours": 0.672,
+    "p01_hours": 0.8400000000000001,
+    "median_hours": 2.688,
+    "p99_hours": 7.199999999999999,
+    "maximum_hours": 8.064000000000002,
+    "above_old_six_hours": 32,
+    "below_old_0p2496hours": 0
+  },
+  "input_receipts": [
+    {
+      "path": "/Users/adam/Other/spacelab/results/kbonus-20261010/bois.csv",
+      "sha256": "c200362e8b06d10414a8d0a8eb1fb25ea1400b19a81d964e59be4c123585175b"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/mk-bois.tar",
+      "sha256": "63329e06d5a8aa2159f008c8ff77fa82f36a33dfb4ee8ca845eb178323e7402a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/mk-boi-queues.tar",
+      "sha256": "86c9b6aa349e8473a88381b26782228481c46f4281f1bcba90c70a2cd482e939"
+    }
+  ],
+  "policy": "Percentiles describe preparation demand; they are not hard physical cutoffs. No p01/p99 proposal is removed.",
+  "all_survey_boi_labels_context_only": {
+    "proposals": 3447,
+    "with_positive_duration": 2617,
+    "missing_or_nonpositive": 830,
+    "minimum_hours": 0.5053182613482372,
+    "p01_hours": 1.0024511907254239,
+    "median_hours": 9.600000000000001,
+    "p99_hours": 9.600000000000001,
+    "maximum_hours": 13.760520650637055,
+    "above_old_six_hours": 1917,
+    "below_old_0p2496hours": 0
+  },
+  "survey_transit_like_proposals": {
+    "proposals": 156,
+    "minimum_hours": 0.5053182613482372,
+    "p01_hours": 0.5079015535290549,
+    "median_hours": 2.9511191250809965,
+    "p99_hours": 12.343714585782132,
+    "maximum_hours": 13.760520650637055,
+    "above_old_six_hours": 21
+  },
+  "delivered_survey_followup_125": {
+    "proposals": 125,
+    "minimum_hours": 0.505,
+    "p01_hours": 0.6204,
+    "median_hours": 2.991,
+    "p99_hours": 12.424880000000002,
+    "maximum_hours": 13.761,
+    "above_old_six_hours": 18
+  }
+}

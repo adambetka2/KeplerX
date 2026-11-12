@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-27T01:25:57.359151+00:00",
+  "control": "Kepler565 b conditional PSF_FLAT clock/shape",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/controls/kepler565-native-v1/native-v3/native-review-v3.json",
+    "sha256": "2aa8e3d4fb985eaf4be7116d39e51346d661fa2e4397b31422ee1611f335e7ec"
+  },
+  "native_weight_ess": 5118.006557009843,
+  "radius_ratio_quantile_snr": 75.92276322146027,
+  "native_matched_filter_snr": 151.1746412765206,
+  "period_days": 4.243747849197546,
+  "known_catalogue_period_days": 4.243747226,
+  "period_difference_days": 6.231975460124772e-07,
+  "apparent_radius_earth": 3.5975127783056258,
+  "max_abs_replay_delta_loglike": 7.275957614183426e-12,
+  "additional_preparation_gains": [
+    1.0013646003430159,
+    1.0001477556684124
+  ],
+  "additional_preparation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/controls/kepler565-native-v1/psf-postfit-v1/checks.json",
+    "sha256": "5703847d30679e87a80a0b022b6a2da59024feb01dbdbef23637da446c7fa75b"
+  },
+  "native_residual_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/controls/kepler565-native-v1/psf-postfit-v1/residual-review-v1/review.json",
+    "sha256": "cde9e6c77baaaa3bafd7b7ad4b82c1cdc311cf82f50f67ad92579e2901d50382"
+  },
+  "ruwe": 1.9889424,
+  "known_companion_separation_arcsec": 0.91,
+  "new_admission_control": false,
+  "new_validation": false,
+  "probability_qualified": false,
+  "scope": "Known clock/shape and reader/native controls only. High RUWE and the unresolved close companion prevent interpreting this as physical host admission or validation. Actual PSF probability response remains unqualified."
+}

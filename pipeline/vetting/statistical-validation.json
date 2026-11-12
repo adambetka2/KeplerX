@@ -1,0 +1,51 @@
+{
+  "evidence_root": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011",
+  "output_root": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1",
+  "catalogue": "TIC",
+  "ephemeris": "DISCOVERY",
+  "draws_per_scenario": 1000000,
+  "seed_entropy": [
+    2026,
+    10,
+    15,
+    20,
+    2
+  ],
+  "thresholds": {
+    "FPP_lt": 0.015,
+    "NFPP_lt": 0.001,
+    "RUWE_le": 1.4,
+    "rank_rhat_le": 1.03,
+    "epoch_ess_ge": 100,
+    "radius_ratio_snr_gt": 3
+  },
+  "scope": "Paper-aligned primary statistical validation: exactly 20 independent TIC discovery-ephemeris runs for each of the two active BOIs. Gaia stellar alternatives, final-ephemeris repeats and modified-noise likelihoods are not part of this census.",
+  "targets": [
+    {
+      "source_id": "2077554781499350144",
+      "scenario_count": 210,
+      "route": "DR2_FIELD",
+      "packet": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/validation-input-2077554781499350144/tic-sap-1/binned-original-discovery-complete-groups.npz",
+      "native_summary": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/native-2077554781499350144/tic-sap-1/native-summary.json",
+      "field": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field-2077554781499350144",
+      "config": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field-2077554781499350144/scenario-config.v22.json",
+      "geometry": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field-2077554781499350144/prf-wing-throughputs.npz",
+      "unresolved_geometry": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field-2077554781499350144/unresolved-wing-throughputs.npz",
+      "closure": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/local-scientific-closure.v22-tic-sap1.json"
+    },
+    {
+      "source_id": "2127186564572468352",
+      "scenario_count": 114,
+      "route": "PAIRED_FIELD",
+      "packet": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/binned-2127186564572468352/binned-total200-tic-original-discovery.npz",
+      "native_summary": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/native-2127186564572468352/native-summary.json",
+      "field": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field-2127186564572468352",
+      "config": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field-2127186564572468352/model-inputs.json",
+      "geometry": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/prf-wing-throughputs.npz",
+      "unresolved_geometry": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/unresolved-wing-throughputs.npz",
+      "closure": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/server-bundle.v2.json"
+    }
+  ],
+  "likelihood_bound_log_budget": 48,
+  "background_area_multiplier": 3.141592653589793
+}

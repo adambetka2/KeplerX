@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "V2493 Cyg / HBC 722",
+  "reference_class": "FU Orionis-type outburst",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Large non-repeating brightening sustained over many months.",
+  "lookalikes": [
+    "other young-star eruptions",
+    "nova",
+    "long instrumental offset"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "Historical BVRI photometry; sparse early sampling does not constrain detailed rise shape. Published physical subtype also uses spectroscopy."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "historical_photometry_span": {
+      "value": [
+        1973,
+        2012
+      ],
+      "unit": "calendar year",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1205.2532",
+    "pdf_url": "https://arxiv.org/pdf/1205.2532",
+    "pdf_page_one_based": 5,
+    "figure": "2",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "22841a348e788ddd450bf87e9dedd218106962cb534305cbf4e793cad3f9a3a5",
+    "page_crop_fraction_xyxy": [
+      0.065,
+      0.065,
+      0.955,
+      0.345
+    ],
+    "image_sha256": "df4ebf21de235aabf262562c6fb842a9e4b658603bab54c4d9496f1a94ec0dd5"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

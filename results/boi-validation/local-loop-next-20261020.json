@@ -1,0 +1,44 @@
+{
+  "recorded_utc": "2026-10-20T08:11:45.100837+00:00",
+  "status": "RUNNING_FIRST_TWO_PRIMARY",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "active_kic": 10196617,
+  "source_id": "2130658616133595264",
+  "campaign": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5",
+  "freeze_sha256": "a96ed754e18e23d98eae63b03316917affaa37f0ec88b77639fbfc1ac39e68a3",
+  "dependencies": 865,
+  "launchctl_label": "local.spacelab.job.boi-local-2130658616133595264-v5",
+  "planned_primary": 20,
+  "initial_concurrent_workers": 2,
+  "recovered_diagnostics": 0,
+  "scenario_families": 96,
+  "draws_per_scenario": 1000000,
+  "futility_screen": {
+    "first_primary_runs": 2,
+    "both_at_or_above": {
+      "FPP": 0.1,
+      "NFPP": 0.01
+    }
+  },
+  "admission": "Still requires all20primary repeats and unchanged mean-upper thresholds plus physical closeout.",
+  "abandoned_case": {
+    "kic": 8540098,
+    "source_id": "2105418399005125376",
+    "status": "ABANDONED_BY_USER_NO_MORE_WORK",
+    "record": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2105418399005125376/user-abandoned-20261020.json"
+  },
+  "preserved_holds": [
+    "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2126585921988564224/readiness-hold.json",
+    "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2086643310248820352/readiness-hold.json"
+  ],
+  "next_after_current": {
+    "kic": 7300018,
+    "source_id": "2077209775366626944",
+    "status": "STOPPED_BY_USER_SINGLE_BOI_FOCUS_PARTIAL_NATIVE_PRESERVED"
+  },
+  "server_compute_started": false,
+  "resource_policy": "One active BOI; share10Numba threads across live repeats. No competing candidate work. Hourly quiet monitoring.",
+  "cpu_budget": 10,
+  "initial_numba_threads_per_worker": 5,
+  "checkpoint_imported_families": 122
+}

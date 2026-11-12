@@ -1,0 +1,198 @@
+{
+ "utc": "2026-10-26T17:45:31.759828+00:00",
+ "boi_id": "BOI-2102266442767690112-1",
+ "kic": 6113801,
+ "state": "INTAKE_STOPPED_REQUIRES_METHOD_REVIEW",
+ "failure": "Saved mask does not contain the declared full aperture",
+ "source_fits_sha256": "e1a3c22136b3260384b51adcedf1a2248f843999b693c9c356e6d8e4cea20555",
+ "quarters": [
+  {
+   "quarter": 1,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 2,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    6
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 3,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 4,
+   "declared_NPIXSAP": 4,
+   "saved_mask_pixels": 4,
+   "mask_shape": [
+    4,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 5,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 6,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    6
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 7,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 8,
+   "declared_NPIXSAP": 4,
+   "saved_mask_pixels": 4,
+   "mask_shape": [
+    4,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 9,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 10,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    6
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 11,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 12,
+   "declared_NPIXSAP": 4,
+   "saved_mask_pixels": 4,
+   "mask_shape": [
+    4,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 13,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 14,
+   "declared_NPIXSAP": 6,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    6
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 15,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  },
+  {
+   "quarter": 16,
+   "declared_NPIXSAP": 4,
+   "saved_mask_pixels": 4,
+   "mask_shape": [
+    4,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": true
+  },
+  {
+   "quarter": 17,
+   "declared_NPIXSAP": 7,
+   "saved_mask_pixels": 6,
+   "mask_shape": [
+    5,
+    5
+   ],
+   "binary_mask": true,
+   "same_pixel_count": false
+  }
+ ],
+ "scope": "Read-only diagnosis only. No mask modified, aperture guard bypassed, stopped attempt restarted or further case parked for this unresolved instrument issue. Existing queued cases can finish; no new FPP allocation without standard scientific post-fit review."
+}

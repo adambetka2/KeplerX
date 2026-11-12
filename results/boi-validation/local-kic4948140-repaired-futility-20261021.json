@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-21T14:01:10.761701+00:00",
+  "source_id": "2073666564790289664",
+  "signal_id": "rust-v6-2073666564790289664-1",
+  "kic": 4948140,
+  "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+  "admission": "REMAINS_PC",
+  "primary": {
+    "FPP": {
+      "repeats": [
+        0.1685628140571961,
+        0.30434399052586025
+      ],
+      "mean": 0.23645340229152817,
+      "sample_standard_deviation": 0.09601179063847971,
+      "minimum": 0.1685628140571961,
+      "maximum": 0.30434399052586025,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.12154706327092864,
+        0.11611330864870488
+      ],
+      "mean": 0.11883018595981676,
+      "sample_standard_deviation": 0.003842244740678166,
+      "minimum": 0.11611330864870488,
+      "maximum": 0.12154706327092864,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    }
+  },
+  "primary_repeats_completed": 2,
+  "remaining18_not_started": true,
+  "numerical_primary_pass": false,
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/probability-aperture-v1/campaign/audit-20261021T140031971635Z.json",
+      "sha256": "31fe394159c02fc0139498cfc4381c7aca22a86e4e6cf2dde42045245cd8c52d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/probability-aperture-v1/campaign/runs/final/seed-00/result.json",
+      "sha256": "4a16742f6e2bbf45e341911f51a00f0a9e9cfe2f5dbc5065c2a6ace70c40f476"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/probability-aperture-v1/campaign/runs/final/seed-01/result.json",
+      "sha256": "e55717a378b96dbd5c8456cfaf512a8f41b8d84284115f5590f64bace4d1f738"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/probability-aperture-v1/terminal-process-check.json",
+      "sha256": "36c1cbe716a19db2efd652a9c0110914edcf5fefd5d98bbb56deef96a90ffe14"
+    }
+  ],
+  "scientific_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/probability-aperture-v1/campaign/freeze.json",
+    "sha256": "01824859d61ae627261a39342dbe7d763b9dfe55f4f998e978467da7a5ebc9de"
+  },
+  "all_saved_evidence_verified": true,
+  "scope": "Both first stock primary runs complete with repaired dependencies and declared calibrated aperture/clock selection. BothFPP>=.10 and bothNFPP>=.01;allocation stops. No remaining18,recovered-clock or favorable-prior rescue. Grazing apparent body and scene uncertainty remain conditional. No reproduced astrophysical FP mechanism or confirmation established."
+}

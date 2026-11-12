@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-21T02:53:16.554018+00:00",
+  "source_id": "2077020448903232640",
+  "kic": 6139064,
+  "signal_id": "rust-v6-2077020448903232640-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_clock_accepted": true,
+  "conditional_native": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-accepted-clock-review-v1.json",
+    "sha256": "5f01819cca2f1ff1a260de762686fadbc654d27df9cd3979c9e690516b28e755"
+  },
+  "probability_runs": 0,
+  "reason": "Upstream Gaussian and official calibrated Kepler core comparison differ materially for the same three capable sources: target Gaussian.0699..2518 versus core-normalized.09996..47079; Q2.16579vs.47079 and Q6.15333vs.42991. This changes contaminant allocation by factors approaching3. Core diagnostic is not full far-source measurement.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/scene-preview-review-v1.json",
+      "sha256": "2be001bb485d5495f25d67934cef48b9ed8b98f160e9eac2f85756e7def30299"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/aperture-response-review-v1.json",
+      "sha256": "6d167b4d60bc41958a8dfcae38381d466e03c07771210201113d0b843136340e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/prf-retained-lineage-v1.json",
+      "sha256": "389cbbdbfcfbc5b7590f09d34bcdb549622312cf173dd37f253b67bc308333dd"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/parent-authentication-v1.json",
+      "sha256": "9d04d665b2473718f41392ddefeb3e7e8c33e40e79941e9f327144beeb6e4efa"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-nested-review-v1.json",
+      "sha256": "cd15f524173e1e64ddd45829d7f29cbaac9b4748ba8b9fd01dfe99f6b9c6a578"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-posterior-review-measurements-v1.json",
+      "sha256": "85c44b00b8ab96044a6c281fdf40e6ed6b36994d47e04648e1012fc53fba2dac"
+    }
+  ],
+  "scope": "All85Gaia rows retained, selected reported FLAME host route preserved in scene; no omitted alternatives.15source-quarter parent frames authenticated to original cadence/hash context; all10original signal-level calibrated PRF hashes match. Parent KIC6139062 differs from source6139064. No favorable response selection, invented wings/pointing prior, universal numeric veto, astrophysical FP denial or new FPP plan.",
+  "next": "Preserve precise scene hold and advance full queue; do not reconstruct extraction response or reopen earlier holds tonight."
+}

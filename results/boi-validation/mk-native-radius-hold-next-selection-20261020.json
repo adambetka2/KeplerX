@@ -1,0 +1,123 @@
+{
+  "utc": "2026-10-20T10:58:28.552579+00:00",
+  "classification": "NATIVE_INFORMATION_HOLD_AND_NEXT_LONGER_TRANSIT_SELECTION",
+  "validated_new": 0,
+  "goal": 50,
+  "physical_false_positive_rate": null,
+  "hold": {
+    "utc": "2026-10-20T10:58:28.552579+00:00",
+    "source_id": "2052740174146478464",
+    "kic": 3544862,
+    "signal_id": "mk-sap-20261019-2052740174146478464-1",
+    "status": "PREPARATION_HOLD_CONVERGED_NATIVE_RADIUS_INFORMATION_INSUFFICIENT_NO_AUTO_RESUME",
+    "boi_disposition": "BOI",
+    "astrophysical_false_positive_status": "UNDETERMINED_NO_REPRODUCED_MECHANISM",
+    "native_parameter_convergence_met": true,
+    "radius_ratio_precision_gate_met": false,
+    "accepted_native_endpoint": false,
+    "reference_endpoint": 12000,
+    "gate": {
+      "rank_rhat_maximum": 1.018863651789995,
+      "reference_epoch_bulk_ess": 327.01258694332773,
+      "radius_ratio_snr": 1.6996664406447186,
+      "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+      "passed": false
+    },
+    "posterior": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/posterior-samples-12000.npz",
+      "sha256": "2b74b04da3f56d5f5bee803377ed2b4eb2c91467df0e63b9181750b575cc0dc0"
+    },
+    "endpoint": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/endpoint-12000.json",
+      "sha256": "4f2cfaa8c7b4874bf53b5690cb669adb1cb8a2539e812112c2932d9212e20052"
+    },
+    "partial_backend_readability": [
+      {
+        "ensemble": 0,
+        "iterations": 23320,
+        "shape": [
+          24,
+          8
+        ],
+        "last_log_probabilities_finite": true,
+        "checkpoint": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/duration-ensemble-0.h5",
+          "sha256": "165c545aff4e95da5e387aa5f0086bbebdc1afd5f11b24f60e50acd21d27e41c"
+        }
+      },
+      {
+        "ensemble": 1,
+        "iterations": 23318,
+        "shape": [
+          24,
+          8
+        ],
+        "last_log_probabilities_finite": true,
+        "checkpoint": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/duration-ensemble-1.h5",
+          "sha256": "b527c5549dd9ff8d37dddc253ef627172de76edb074f73146c62c7aea793381c"
+        }
+      },
+      {
+        "ensemble": 2,
+        "iterations": 23345,
+        "shape": [
+          24,
+          8
+        ],
+        "last_log_probabilities_finite": true,
+        "checkpoint": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/duration-ensemble-2.h5",
+          "sha256": "82f903877f5ffa772fc89524f1b2b6dffe313213a2f8a2793daf0f224c1bdbed"
+        }
+      },
+      {
+        "ensemble": 3,
+        "iterations": 23330,
+        "shape": [
+          24,
+          8
+        ],
+        "last_log_probabilities_finite": true,
+        "checkpoint": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/duration-ensemble-3.h5",
+          "sha256": "1fc8025e7103481f7c136105315408fb5db979c6af8731a94ef81c0a5d3ed8b5"
+        }
+      }
+    ],
+    "all_four_partial_backends_readable": true,
+    "unit_terminal_snapshot": "MainPID=0\nResult=exit-code\nActiveState=failed\n",
+    "stop_intent": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/native-radius-information-stop-v1/intent.json",
+      "sha256": "9baac3d01b8f4678358254637207002d62a6e5d4241f8d6c02abc83802e2735d"
+    },
+    "stop_actions": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/native-radius-information-stop-v1/actions.json",
+      "sha256": "910a1d1545c04a4f2fa53328290b195287b52977c992800d1867785640b79cd4"
+    },
+    "probability_runs": 0,
+    "statistically_validated": false,
+    "preserved_closeout_recording_failure": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/native-radius-information-stop-v1/review.json",
+      "sha256": "8aa62374ed2c4491b41446b40262811390dd391f8eaf9f83313da24f604ee29a"
+    },
+    "scope": "12kconverges but radius-ratioSNR1.69967fails>3. Extra sampling is not new physical radius information. Completed posterior/checkpoints and partial final-block chains remain. The first closeout file failed on a NumPy shape integer; preserve it and use this separately serialized complete receipt. This is an information/readiness hold, not a denied planet."
+  },
+  "next_selected_source": {
+    "source_id": "2126998926041980032",
+    "kic": null,
+    "tic_id": 1882613763,
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/plan.json",
+      "sha256": "31142526fab29f81a9a98c1b0cff91837e98cee12f8e7b0c1deffca912428d61"
+    },
+    "native_diagnostic_snr": 14.19095733719064,
+    "measured_events": 139,
+    "transit_duration_days": 0.128,
+    "transit_duration_cadences": 6.264192857330916,
+    "neighbors": 34,
+    "stage": "DATED_EXACT_SOURCE_INPUT_ACQUISITION"
+  },
+  "prospective_native_schedule": "Stop at first converged native endpoint when radius-ratioSNR<=3; no extra MonteCarlo budget to turn physical posterior uncertainty into information. This optimization still needs application to the next coordinator.",
+  "scope": "No fullFPP or validation on held case. Preserve allBOIs and the full50object goal; no clipping or scope reduction."
+}

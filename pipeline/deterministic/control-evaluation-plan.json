@@ -1,0 +1,89 @@
+{
+  "schema": 3,
+  "protocol": "fsc-kepler-proposal-control-evaluation-v3",
+  "status": "DEVELOPMENT_AND_EVALUATION_PARENT_IDENTITIES_FROZEN",
+  "purpose": "Calibrate downstream gates on opened development parents, then report candidate incidence on untouched ordinary parents as a deferred secondary evaluation.",
+  "ordinary_source_ids": {
+    "path": "dump/release-injections-v1/ordinary-source-ids.json",
+    "sha256": "d9e19a89fc021b9baf9038821e80a41f1d4214710b6311bafa16b91fd4957724",
+    "ordering": "Frozen injection materializer acceptance order"
+  },
+  "parent_partition_freeze": {
+    "path": "dump/deadline-controls-20260925/ordinary-evaluation-v5-partitions/freeze.json",
+    "sha256": "2558e3360f599dcf27590cc1235e35b6374b80ac6aa0b90a2a9528f892208fab",
+    "claim_boundary": "Expanded historical exposure, reserved control parents and source/raw identity exclusions are applied before this identity freeze. Input eligibility uses existing photometry; no detector, vetter, pixel or disposition outcomes opened."
+  },
+  "partitions": {
+    "development": {
+      "selection": "First representative source for each parent among the 500 already opened development identities",
+      "source_ids": "dump/deadline-controls-20260925/ordinary-evaluation-v5-partitions/development-source-ids.json",
+      "source_ids_sha256": "c5faeb738feecf5b26a039ea765fa4b0b2edf839d8f8cfa9c286ea06123751ab",
+      "sources": 496,
+      "parents": 496,
+      "status": "OPENED_DEVELOPMENT"
+    },
+    "evaluation": {
+      "selection": "First eligible independent parent in the original fixed order, excluding all declared opened and other control identities, replenished from the fixed eligible reserve.",
+      "source_ids": "dump/deadline-controls-20260925/ordinary-evaluation-v5-partitions/evaluation-source-ids.json",
+      "source_ids_sha256": "e0016d1fa860155ebdd13a0cd8ef57bdf17321c8fd30e0bf8cb3384f666d2a9a",
+      "sources": 4500,
+      "parents": 4500,
+      "status": "DETECTOR_AND_VETTER_OUTCOMES_UNOPENED"
+    }
+  },
+  "independence": {
+    "unit": "One source per parent TPF",
+    "parent_overlap": 0,
+    "excluded_source_ids": "dump/deadline-controls-20260925/ordinary-evaluation-v5-partitions/excluded-sources.csv",
+    "excluded_source_ids_sha256": "ef29c21499ac27ad86d4655921f0a4f945c3a25634e4290ae9a7d22a6c373bf9",
+    "raw_input_overlap": 0,
+    "parent_map": "dump/deadline-controls-20260925/ordinary-evaluation-v5-partitions/parent-map.csv",
+    "parent_map_sha256": "4f16f71be6bd5e9554d983604bd878923f291a1732b11d5d27ff95bc7f787a28",
+    "exposure_inputs": [
+      {
+        "path": "dump/deadline-controls-20260925/ordinary-v3-excluded-parent-map.csv",
+        "sha256": "2a412d5d1693bfc4572df8e54204b95c88e49ed8fd2bb899d34838e147e5d71d"
+      },
+      {
+        "path": "dump/deadline-controls-20260925/paused-survey-opened-parent-map.csv",
+        "sha256": "90c0c4e21618c069341b873f9ed3164ad769fe013a67762d70a0d6c985aae276"
+      },
+      {
+        "path": "dump/deadline-controls-20260925/ordinary-expanded-exposure-reserved-parent-map.csv",
+        "sha256": "b93157812a4fcd38e0a88e130e588759089c307071d880d1dc87ce6ee3df2e96"
+      }
+    ]
+  },
+  "proposal_contract": {
+    "periodic": "Current TRANSIT_LIKE rows plus the frozen narrow SURVIVOR_REVIEW lane",
+    "sparse": "Current EVENT_LIKE intervals, including unresolved repeat and TTV hypotheses",
+    "boi_designation": "Pass every existing triage gate; preserve independent view eligibility and all other signal labels"
+  },
+  "interpretation": [
+    "Count proposal rows and unique parent TPFs separately.",
+    "A detector proposal is not a Bonus Object of Interest or a false positive.",
+    "Choose all numerical disposition thresholds using development parents only.",
+    "Do not inspect evaluation detector or vetter outcomes until the implementation and automatic disposition policy are frozen.",
+    "Count completed scientific abstentions separately from incomplete execution and automatic candidate incidence. Execution or identity failures prevent a measured incidence bound.",
+    "The former first-500 versus remaining-4500 source split is superseded because 34 parent TPFs crossed that boundary."
+  ],
+  "superseded_partition": {
+    "freeze": {
+      "path": "dump/deadline-controls-20260925/ordinary-evaluation-v4-partitions/freeze.json",
+      "sha256": "7a740bc4f6d9d6c6fc9641b1166606283e772f10dc2d175135cce19062c58ecd"
+    },
+    "evaluation_source_ids": "dump/deadline-controls-20260925/ordinary-evaluation-v4-partitions/evaluation-source-ids.json",
+    "evaluation_source_ids_sha256": "a3987aa6f650fe15430c373b8c4ac5c52b8c9bff3cb849ece10d661f52e5a8e2",
+    "exposure_audit": {
+      "path": "dump/deadline-controls-20260925/paused-survey-exposure-audit.json",
+      "sha256": "8dc73d58cb5c81ecc51778bb2cf75f0052f3abecbcfae6b9367555baef183d56"
+    }
+  },
+  "outcome_contract": "boi-and-triage-v1",
+  "ordinary_candidate_incidence": {
+    "confidence": 0.9875,
+    "trials": 4500,
+    "launch_blocker": false,
+    "interpretation": "Ordinary-parent truth is unknown. Candidate incidence is not a false-BOI rate and zero output is not a release gate."
+  }
+}

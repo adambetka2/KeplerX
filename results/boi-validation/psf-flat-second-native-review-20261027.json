@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-27T00:17:10.628043+00:00",
+  "boi_id": "BOI-2079714428492352768-1",
+  "kic": 8573780,
+  "source_id": "2079714428492352768",
+  "signal_id": "shallow-v1-2079714428492352768-1",
+  "stage": "conditional-native-fit-reviewed-in-part",
+  "likelihood_view": "PSF_FLAT",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079714428492352768-1/native-v3/native-review-v3.json",
+    "sha256": "94de6a1a53f9e9512ad2c8ef4e5dcfc45a2af4a12ff2fd8a3bbb8ad34b72d28d"
+  },
+  "postfit_checks": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079714428492352768-1/psf-postfit-v1/checks.json",
+    "sha256": "53a6547e9a6f62a55a03bd4730a8cc756c15934934f082cfcbaf02cdbcf290bc"
+  },
+  "native_weight_ess": 5455.654035611208,
+  "max_abs_replay_delta_loglike": 7.275957614183426e-12,
+  "provisional_period_days": 3.446776953446837,
+  "provisional_duration_hours": 2.0194431750942385,
+  "observed_integrated_depth_ppm": 868.8608456388636,
+  "radius_ratio_snr": 27.637667485781826,
+  "apparent_radius_earth_at_assumed_host": 2.1408292308531625,
+  "radius_is_not_physical_closeout": true,
+  "preparation_transfer_gains": [
+    0.9983792438304058,
+    1.0005500174784792
+  ],
+  "reviewed_folded_noise_ppm": 78.69965608263605,
+  "posterior_clock_catalogue_screen": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-native-v1/screen.json",
+    "sha256": "4090947f0adb933f6ea5b037991d3d264db36fab6a9c98c9c4757c6738eee466"
+  },
+  "pending": [
+    "Archived PSF target and contaminant extraction-response qualification",
+    "Candidate-specific archived flattening transfer",
+    "Independent timing/alias/source-ownership review",
+    "Physical body radius and complete stellar/companion closeout",
+    "Residual/noise adequacy: structured negative residuals remain in the transit relative to the displayed representative model; largest individual preparation residual 871 ppm. No photons or masks changed."
+  ],
+  "native_gate_accepted": null,
+  "probability_started": false,
+  "validated": false,
+  "plot": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079714428492352768-1/psf-postfit-v1/native-fold.png",
+    "sha256": "ffcdcb0e1058f01f5c6fb0cd823605697c8e2f322077ae156b393ebfb9b246cf"
+  }
+}

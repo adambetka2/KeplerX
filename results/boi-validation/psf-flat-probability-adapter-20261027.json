@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-27T09:03:47.879732+00:00",
+  "status": "SOFTWARE_INTEGRATION_CONTROLS_PASSED_PHYSICAL_QUALIFICATION_OPEN",
+  "implementation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/psf-probability-adapter-v1/result.json",
+    "sha256": "912659b75792203ea5755df2e63479da1ce70e02f88751c7e67545a709aa19c7"
+  },
+  "new_modules": [
+    "/Users/adam/Other/spacelab/post_boi/psf_response.py",
+    "/Users/adam/Other/spacelab/post_boi/psf_scene.py"
+  ],
+  "tests_passed": 58,
+  "software_controls": {
+    "stock_kepler10_gold_unchanged": true,
+    "direct_observed_photon_gaussian": true,
+    "negative_response_brightening": true,
+    "exact_aperture_limit_evidence_bitwise": true,
+    "exact_fast_engine_signed_response_evidence_bitwise": true,
+    "signed_engine_scenarios": 21,
+    "original_photon_times_indices_and_dilution_binding": true,
+    "unaccepted_method_blocks_freeze": true,
+    "frozen_source_response_integrity": true,
+    "existing_fast_coordinator_two_seed_control": true
+  },
+  "production_protocol": {
+    "repeats": 20,
+    "attempted_draws_per_scenario": 1000000,
+    "first_two_futility_unchanged": true,
+    "seeds_and_thresholds_unchanged": true
+  },
+  "probability_qualified": false,
+  "candidate_acceptances": 0,
+  "boi_fpp_jobs_started": 0,
+  "remaining": [
+    "Candidate-specific complete physical footprints/scenes and source-flux normalization with uncertainty",
+    "Calibrated quarter/shape/phase processing response and adequacy of the diagonal likelihood",
+    "Intrinsic-source scalar noise for the unchanged upstream secondary screen; no mean/max response replacement",
+    "Native noise, source ownership, clock/alias, radius, imaging and exact-signal literature gates"
+  ],
+  "scope": "Separate PSF_FLAT input/scene/freeze/likelihood path in the standard V3 framework and exact fast engine. Synthetic software acceptances and responses in tests are not candidate acceptance or an instrument calibration. All historical frozen studies and production runtime packages remain unchanged."
+}

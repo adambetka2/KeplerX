@@ -1,0 +1,8 @@
+{
+  "cutout_size_pixels": 11,
+  "aperture_radius_pixels": 1.5,
+  "background_inner_pixels": 3.0,
+  "background_outer_pixels": 5.0,
+  "quality_bitmask": 17087,
+  "window_durations": 3.0
+}

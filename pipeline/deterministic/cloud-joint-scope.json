@@ -1,0 +1,1123 @@
+{
+  "schema": 1,
+  "status": "CLOUD_METADATA_PROJECTION_ONLY",
+  "artifact": {
+    "path": "cloud-joint-scope.json.gz",
+    "bytes": 3271755,
+    "sha256": "04a51858ddd4b6d891bc97bed3749e8aaaebb2c8729e599814ba41cf913b8df0",
+    "canonical_json_bytes": 19229056,
+    "canonical_json_sha256": "aff2e0baea45bd89dd4e9b36eb93e4e441a3310ad96c15f2f7cbe6cd7ce1049f"
+  },
+  "program": {
+    "sha256": "44efd581f7726ee2e700ba3ce70cedd32d6e018a8917122096a63f78fdb1537a",
+    "origin_path": "dump/overnight-20261001/joint-scope-audit/cloud-projection/project.py"
+  },
+  "provenance": {
+    "core_original_inputs": [
+      {
+        "bytes": 17975,
+        "origin_path": "dump/todo-20260926/joint-control-components-v11/audit.json",
+        "sha256": "ea0359c04bd70fb7f58b318bb45f85063a784377afaf0ff7f0165c36e36442b9"
+      },
+      {
+        "bytes": 2107930,
+        "origin_path": "dump/todo-20260926/joint-control-components-v11/trials.csv",
+        "sha256": "e9df84fa03b700811f8a92b076852b5b1132e479d99f146d931bcdbd0912fb67"
+      },
+      {
+        "bytes": 11012648,
+        "origin_path": "dump/todo-20260926/required-pixel-receipts-v1/frozen-ledger.json",
+        "sha256": "310e5c5e327845a47e325a7a3c2a95a5e29069e309a4e51278d4ff2913703fae"
+      },
+      {
+        "bytes": 2772,
+        "origin_path": "dump/todo-20260926/required-pixel-receipts-v1/audit.json",
+        "sha256": "945a19eed6d20af148694c72ad7f4bf5fe4eed404b1066a3f32c32946101b52b"
+      },
+      {
+        "bytes": 994,
+        "origin_path": "dump/todo-20260926/required-pixel-receipts-v1/independent-verification.json",
+        "sha256": "c71dbe7bd360fc4a61c3de503b06c67fedbe0dfd16a3dc14b53053b883e46caf"
+      },
+      {
+        "bytes": 8450265,
+        "origin_path": "dump/todo-20260926/required-pixel-receipts-v1/quarters.jsonl",
+        "sha256": "987a786ec7e9f58ed689b946aa92d7053602fcb23b82f81ad886327c813a86a6"
+      },
+      {
+        "bytes": 65435,
+        "origin_path": "dump/todo-20260926/required-control-input-census-v1/independent-verification.json",
+        "sha256": "6679f59af41c41efdf0b488b9c5b99a6cbf9cbe6cb73b794dcb11930767ccba4"
+      },
+      {
+        "bytes": 2978,
+        "origin_path": "dump/holdout-materialization-20260930/inputs-v1/freeze.json",
+        "sha256": "3bd43bec1b65c270e82141b6673252af42be49b9fd2828c45021c5a0727ee1c9"
+      },
+      {
+        "bytes": 136470,
+        "origin_path": "dump/holdout-materialization-20260930/inputs-v1/eligibility.jsonl",
+        "sha256": "3dc2324f06eef0ebe180eb3cbb6f3110fcabc1f4e474dddc5d9c712ae1f37689"
+      },
+      {
+        "bytes": 339209,
+        "origin_path": "dump/holdout-materialization-20260930/inputs-v1/input-manifest.json",
+        "sha256": "9969f4f4fc546d99463ee2cd417ce3e84cb31209c040a2029bae4ef8bad3a96e"
+      },
+      {
+        "bytes": 12778,
+        "origin_path": "dump/holdout-materialization-20260930/inputs-v1/source-ids.json",
+        "sha256": "88752599d1e4d8d0617bae38eeff32ee7918b3c7b0b956a8c522ef7c3ec2dfb1"
+      },
+      {
+        "bytes": 365,
+        "origin_path": "dump/holdout-materialization-20260930/verification.json",
+        "sha256": "f3647de85b27ddfc71ebe70f5f611deea01712595908461ee51d63b618748b30"
+      },
+      {
+        "bytes": 1808,
+        "origin_path": "dump/holdout-materialization-20260930/exposure.json",
+        "sha256": "dca1300435bb49af9238bba6e07c44fe46b8f9b113d50f1eb4e4f7279951de60"
+      },
+      {
+        "bytes": 10260,
+        "origin_path": "dump/holdout-materialization-20260930/holdout-source-ids.txt",
+        "sha256": "19cbd257abce6b7e4320586a1e27a42376785fe14e278832d2bbc049d99aa8a2"
+      },
+      {
+        "bytes": 5315,
+        "origin_path": "dump/deadline-controls-20260925/opened-resolved-parent-map.csv",
+        "sha256": "3cfaeaf392a51768647ab97ba6e802dcdae6d304f2622d0c42da9f2c2e11d620"
+      },
+      {
+        "bytes": 4708512,
+        "origin_path": "dump/deadline-controls-20260925/historical-opened-survey-parent-map.csv",
+        "sha256": "ca6451b7adb0268815297d29a44f3094be821460243359b219ffd74aa7385b0f"
+      },
+      {
+        "bytes": 11525490,
+        "origin_path": "dump/deadline-controls-20260925/paused-survey-opened-parent-map.csv",
+        "sha256": "90c0c4e21618c069341b873f9ed3164ad769fe013a67762d70a0d6c985aae276"
+      },
+      {
+        "bytes": 26564,
+        "origin_path": "dump/deadline-controls-20260925/ordinary-expanded-exposure-reserved-parent-map.csv",
+        "sha256": "b93157812a4fcd38e0a88e130e588759089c307071d880d1dc87ce6ee3df2e96"
+      }
+    ],
+    "full_local_audit": {
+      "bytes": 3961,
+      "origin_path": "dump/overnight-20261001/joint-scope-audit/audit.json",
+      "sha256": "9a53b111771f87f77bf382ca508ddb77828d8961508a059bfd58efa56605f876"
+    },
+    "full_local_input_inventory": {
+      "availability": "FULL_INVENTORY_PRESERVED_AT_ORIGIN_NOT_COPIED_HERE",
+      "bound_metadata_bytes": 189533338,
+      "canonical_bytes": 3290566,
+      "canonical_sha256": "d7159fcf6e825c706127649756b6000a343809cdd6ab8622133c8260dc9ae044",
+      "files": 13371
+    },
+    "full_local_witnesses": {
+      "bytes": 29516283,
+      "origin_path": "dump/overnight-20261001/joint-scope-audit/witnesses.json",
+      "sha256": "77779395f7239687ffc7a6622e6208798de2854dfcba43d2c585644024882999"
+    },
+    "observed_native_header_parents": {
+      "audit": {
+        "origin_path": "dump/overnight-20261001/header-parent-supplement/audit.json",
+        "bytes": 48745,
+        "sha256": "e05e3c2ed35d3f4234bc9d5215dcb31842ff37e0731c90e1481613d1a9f04a9f"
+      },
+      "historical_scope_specification": {
+        "origin_path": "dump/overnight-20261001/header-parent-supplement/historical/cloud-joint-scope.json",
+        "bytes": 9951,
+        "sha256": "eda9791dc7271c5756cba047998262c2d45db0714b59a7e3e148ceec6c4d8df6"
+      },
+      "historical_scope_gzip": {
+        "origin_path": "dump/overnight-20261001/header-parent-supplement/historical/cloud-joint-scope.json.gz",
+        "bytes": 3265901,
+        "sha256": "f09dd75405e16e2cec9dd714050338b6a8344d3781ef99b5f05f355630a98160"
+      },
+      "historical_canonical_json_sha256": "f909828407e328ca30d39cd7b5b0bbfbe97a29549273b98e3bcd205b06a44028",
+      "edges": {
+        "boundary": "Bind these actual parents and historical/reservation links in future joint/null connectivity before selecting or freezing roles. Do not edit existing freezes or relabel source domains.",
+        "edges": [
+          {
+            "actual_raw_header_TPFORG": "8587058",
+            "historical_reservation_identity_rows": [
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "a0ced6ddb8ec3b82516368cf01deeab4c429c7cd42364dbad590644b04524afd",
+                "row": 5629,
+                "source_id": "2076144795274951296"
+              },
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "1b4515e87e8f811fb4304a0338e704429e460271f077fee0db739a374d539ef5",
+                "row": 5633,
+                "source_id": "2076145001433374848"
+              },
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "2aec8763451e1eca1cbf8fed23cf54673246e48a279c19fb9d737ff77fb10f1d",
+                "row": 5634,
+                "source_id": "2076145001437171968"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "a0ced6ddb8ec3b82516368cf01deeab4c429c7cd42364dbad590644b04524afd",
+                "row": 69907,
+                "source_id": "2076144795274951296"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "1b4515e87e8f811fb4304a0338e704429e460271f077fee0db739a374d539ef5",
+                "row": 69911,
+                "source_id": "2076145001433374848"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8587058",
+                "raw_fits_sha256": "2aec8763451e1eca1cbf8fed23cf54673246e48a279c19fb9d737ff77fb10f1d",
+                "row": 69912,
+                "source_id": "2076145001437171968"
+              }
+            ],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 3,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 3
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "8587078",
+            "raw_file": {
+              "bytes": 2134080,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-008587078.fits",
+              "sha256": "c8bf9a6815ae31b2ab6fb18ace748a81590f087f5ef019042ffd0cfd88000293"
+            },
+            "raw_fits_sha256": "c8bf9a6815ae31b2ab6fb18ace748a81590f087f5ef019042ffd0cfd88000293",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2076145035796918656",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 8587078,
+              "TPFORG": 8587058,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q4",
+                "APERTURE_Q4",
+                "LIGHTCURVE_Q8",
+                "APERTURE_Q8",
+                "LIGHTCURVE_Q16",
+                "APERTURE_Q16",
+                "LIGHTCURVE_Q17",
+                "APERTURE_Q17"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 8587078
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2076145035796918656",
+            "supplemental_identity_edge": [
+              "parent",
+              "8587058"
+            ],
+            "trial_id": "native_eb:development:2076145035796918656",
+            "would_connect_previously_separate_metadata_components": true
+          },
+          {
+            "actual_raw_header_TPFORG": "12023078",
+            "historical_reservation_identity_rows": [],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 0,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 0
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "12023089",
+            "raw_file": {
+              "bytes": 11514240,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-012023089.fits",
+              "sha256": "60c6be15750b75c877a3564e9fc05f93b99adf79f7ae30b844791064bc075931"
+            },
+            "raw_fits_sha256": "60c6be15750b75c877a3564e9fc05f93b99adf79f7ae30b844791064bc075931",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2135325665039158784",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 12023089,
+              "TPFORG": 12023078,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q0",
+                "APERTURE_Q0",
+                "LIGHTCURVE_Q1",
+                "APERTURE_Q1",
+                "LIGHTCURVE_Q2",
+                "APERTURE_Q2",
+                "LIGHTCURVE_Q3",
+                "APERTURE_Q3",
+                "LIGHTCURVE_Q4",
+                "APERTURE_Q4",
+                "LIGHTCURVE_Q5",
+                "APERTURE_Q5",
+                "LIGHTCURVE_Q6",
+                "APERTURE_Q6",
+                "LIGHTCURVE_Q7",
+                "APERTURE_Q7",
+                "LIGHTCURVE_Q8",
+                "APERTURE_Q8",
+                "LIGHTCURVE_Q9",
+                "APERTURE_Q9",
+                "LIGHTCURVE_Q10",
+                "APERTURE_Q10",
+                "LIGHTCURVE_Q11",
+                "APERTURE_Q11",
+                "LIGHTCURVE_Q12",
+                "APERTURE_Q12",
+                "LIGHTCURVE_Q13",
+                "APERTURE_Q13",
+                "LIGHTCURVE_Q14",
+                "APERTURE_Q14",
+                "LIGHTCURVE_Q15",
+                "APERTURE_Q15",
+                "LIGHTCURVE_Q16",
+                "APERTURE_Q16",
+                "LIGHTCURVE_Q17",
+                "APERTURE_Q17"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 12023089
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2135325665039158784",
+            "supplemental_identity_edge": [
+              "parent",
+              "12023078"
+            ],
+            "trial_id": "native_eb:development:2135325665039158784",
+            "would_connect_previously_separate_metadata_components": false
+          },
+          {
+            "actual_raw_header_TPFORG": "3246460",
+            "historical_reservation_identity_rows": [
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "3797678ca54fd7a3f617f7f6e1caf0b1ef08c6343c09b96dbbbc79d2becaaecc",
+                "row": 13151,
+                "source_id": "2052116785411458688"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "922c522f5e4bdfb3fb1b8efcdc71b34c7fae760c0f255a1a55bc512868b366f3",
+                "row": 13152,
+                "source_id": "2052116888490706944"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "1df70a6033a41c0c0a9bc11812bbadff39642c34cc4b6c85e4986eb4c198da46",
+                "row": 13153,
+                "source_id": "2052116892797870080"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "dcebed5e3029083b7d352ef35a77ca6ae546fa65799b405ba5ae8e3ac6f6c415",
+                "row": 14701,
+                "source_id": "2052163793842184064"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "75c5b86e4b067b14e9135ba29967c7994cde14cc89dd525ea05a304c4c1839a4",
+                "row": 14707,
+                "source_id": "2052163828201926912"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "77850c80c16eeb3ce2042e0bd28b75e3b77a14f88b69f9feefd4c9fc23c90630",
+                "row": 14715,
+                "source_id": "2052163892612871040"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "2b24e6cbc8666d9552741a6e67f67fa7c074cc3dd9f8ee281f22d0fdfe8bbd37",
+                "row": 14716,
+                "source_id": "2052163892612882176"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "45c7bbb36fa4e699a53feffb60a47298efa9564f98605fddd12f4d7de7074bca",
+                "row": 14717,
+                "source_id": "2052163892612895616"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "88c4786822b72cefa74de8d617fc8e1ffa7da3098b96b996384d490541971207",
+                "row": 14723,
+                "source_id": "2052163999992944128"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "41bcaaab2430763a7bfccafd61c4354f256e79556a7906b17be6b3528fdc71a2",
+                "row": 14724,
+                "source_id": "2052164068720092416"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "cd2d2f2a4255b09e4f74b49d604106938b9c06801faf4fad7a1352c252c03919",
+                "row": 14725,
+                "source_id": "2052164103079838848"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "56e36ace1ee6eac84bb449fb606c177b3c4c8c71e70db364d2ca59c04c8f5ec1",
+                "row": 14726,
+                "source_id": "2052164103079843712"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "6221605da876983ecd2e2360ba55efe1ff8ca0fda282c777695626701441038c",
+                "row": 14727,
+                "source_id": "2052164103079844352"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "57843ce64659c5adf76f721a88260746f29b35fbe0d777e3d322ee51e747b223",
+                "row": 14728,
+                "source_id": "2052164167497277312"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "d437f30950726fd05f447bdb54455a52c26e9a27fe7dd5421aea125e1d8ab491",
+                "row": 14729,
+                "source_id": "2052164171791680256"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "0cf13e2542235c30c2002ad7d0bd29923be76a852e9e8477d268d5167d9ec286",
+                "row": 14730,
+                "source_id": "2052164171799321728"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "f5aec0fefc458d2d34eaa87dadb34a9a321e24f69d087c46baad03220109c967",
+                "row": 14746,
+                "source_id": "2052164927705941248"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "c3b8f26a7e2e15e5231cd615a2cd7efc5af839c6e4287061f3319033c0685b54",
+                "row": 14747,
+                "source_id": "2052164927705945856"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "50ecda873e43630998321e3b7e3217a17c90b8b00a5a1c0f65f6831afe6c46e1",
+                "row": 14748,
+                "source_id": "2052164927713556736"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "32a15b569e97f58613d2025e88bcf1b22aaa2c4227e7a4d6274af397d188a663",
+                "row": 14758,
+                "source_id": "2052164996425435264"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "927bf0351992fd55f8451daf4813e78bf85f753f7af2d9efc4c02716399242af",
+                "row": 14759,
+                "source_id": "2052164996433032064"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "a563f9a3ebe00866e916f9e3727db9fbb15bb8af1b1ccb56083c8fc6e39016d9",
+                "row": 14760,
+                "source_id": "2052164996433035392"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "1ed11eb98ac602fea577758178cbfda33072f5156b65e12c50dde85feef6a880",
+                "row": 14761,
+                "source_id": "2052164996433036928"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "c5754683a47835785bdb90883ebc98bb281c95299321ac9f6a3189ebd98fcb7d",
+                "row": 14764,
+                "source_id": "2052165198287311616"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "e561afa36bbaaf8f7aee2b364bcf66a046dd3cdf80f89605e2db87f5567b52db",
+                "row": 14765,
+                "source_id": "2052165202583818496"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "8c8315c4da9f0e3f75091840eab7765830350d9d999774e0ce486e5863f2fb69",
+                "row": 14769,
+                "source_id": "2052165232647057408"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "89c5e8da270f23bb663a969f984eaae2cbb7e5329311669414e1f714f144cee9",
+                "row": 14770,
+                "source_id": "2052165267006792192"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "cd6378f37c4735a6dd1f12b40f7d2d8a00f8c440298fe1d780facce4cd81daab",
+                "row": 14771,
+                "source_id": "2052165267006798464"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "5d7f8dfece8fe827afbf63bc7156edebdc2ad5c949525b7032de28acf867356a",
+                "row": 14772,
+                "source_id": "2052165267006799104"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "aa61db25580f337dfec5a7dc7c0b35fdead2faaf27d7890985415042b3bb0be1",
+                "row": 14773,
+                "source_id": "2052165267006801664"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "6dfa80b19ab486f1e418e38e2ca5f63e6d3e3c993ba6285e6148388dbedc7184",
+                "row": 14774,
+                "source_id": "2052165271303313408"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "9e4d0790008d2156ff7caa43b12e060bd4aaf9f1acdb24d2fecdcd1643898484",
+                "row": 14775,
+                "source_id": "2052165305670694144"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "7d85cd8643a69232829ff29669c9275caf5230a9baae6c552bea963238e8f69c",
+                "row": 14840,
+                "source_id": "2052168226248449536"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "1cbfba2e5bff028c78fdf621f62299e01c77037abe78e84a7c66443971ffe4c5",
+                "row": 14841,
+                "source_id": "2052168226248452096"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "7e06cc49a4179bd0c318b15943af997fff6f6a7053e2f475a018842aabc59de8",
+                "row": 14842,
+                "source_id": "2052168256304045056"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "60c47ae156574b5851f65d38a78dc0bdb8d4d59aa9579ffc517aee7afe0a1f12",
+                "row": 14845,
+                "source_id": "2052168290663795328"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "ccdb5efadb03e5fe9c28fc7512822df0c3a7ec183a19db4ea297bdc6db787978",
+                "row": 14846,
+                "source_id": "2052168294967926400"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "b72c5be13c3efc7773c8b5a7f2fb994d05a7d597a313021f23155037dd902ca1",
+                "row": 14847,
+                "source_id": "2052168294967929728"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "efd0b6b24e49ae957cf19283ed1ebe0db75019ec62a2446546e18a2d58cf7101",
+                "row": 14848,
+                "source_id": "2052168325023530496"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "3246460",
+                "raw_fits_sha256": "a53fe170ed47bf1d7baf0d4359e1d72e493304f2f3372e4e5862c616bb655d27",
+                "row": 14849,
+                "source_id": "2052168325023531520"
+              }
+            ],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 0,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 40
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "3353233",
+            "raw_file": {
+              "bytes": 4302720,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-003353233.fits",
+              "sha256": "e07dc07af911ea564d521b123354eca935a956aaa18a83b1f19f42da1d412479"
+            },
+            "raw_fits_sha256": "e07dc07af911ea564d521b123354eca935a956aaa18a83b1f19f42da1d412479",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2052168221944309376",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 3353233,
+              "TPFORG": 3246460,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q5",
+                "APERTURE_Q5",
+                "LIGHTCURVE_Q8",
+                "APERTURE_Q8",
+                "LIGHTCURVE_Q9",
+                "APERTURE_Q9",
+                "LIGHTCURVE_Q11",
+                "APERTURE_Q11",
+                "LIGHTCURVE_Q13",
+                "APERTURE_Q13",
+                "LIGHTCURVE_Q16",
+                "APERTURE_Q16"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 3353233
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2052168221944309376",
+            "supplemental_identity_edge": [
+              "parent",
+              "3246460"
+            ],
+            "trial_id": "native_eb:development:2052168221944309376",
+            "would_connect_previously_separate_metadata_components": true
+          },
+          {
+            "actual_raw_header_TPFORG": "12418275",
+            "historical_reservation_identity_rows": [],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 0,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 0
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "12418274",
+            "raw_file": {
+              "bytes": 11514240,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-012418274.fits",
+              "sha256": "601e7a06809a44d86856bc55297b49880f8f5d99f1e756cc707576d4801de57b"
+            },
+            "raw_fits_sha256": "601e7a06809a44d86856bc55297b49880f8f5d99f1e756cc707576d4801de57b",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2135499731472792704",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 12418274,
+              "TPFORG": 12418275,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q0",
+                "APERTURE_Q0",
+                "LIGHTCURVE_Q1",
+                "APERTURE_Q1",
+                "LIGHTCURVE_Q2",
+                "APERTURE_Q2",
+                "LIGHTCURVE_Q3",
+                "APERTURE_Q3",
+                "LIGHTCURVE_Q4",
+                "APERTURE_Q4",
+                "LIGHTCURVE_Q5",
+                "APERTURE_Q5",
+                "LIGHTCURVE_Q6",
+                "APERTURE_Q6",
+                "LIGHTCURVE_Q7",
+                "APERTURE_Q7",
+                "LIGHTCURVE_Q8",
+                "APERTURE_Q8",
+                "LIGHTCURVE_Q9",
+                "APERTURE_Q9",
+                "LIGHTCURVE_Q10",
+                "APERTURE_Q10",
+                "LIGHTCURVE_Q11",
+                "APERTURE_Q11",
+                "LIGHTCURVE_Q12",
+                "APERTURE_Q12",
+                "LIGHTCURVE_Q13",
+                "APERTURE_Q13",
+                "LIGHTCURVE_Q14",
+                "APERTURE_Q14",
+                "LIGHTCURVE_Q15",
+                "APERTURE_Q15",
+                "LIGHTCURVE_Q16",
+                "APERTURE_Q16",
+                "LIGHTCURVE_Q17",
+                "APERTURE_Q17"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 12418274
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2135499731472792704",
+            "supplemental_identity_edge": [
+              "parent",
+              "12418275"
+            ],
+            "trial_id": "native_eb:development:2135499731472792704",
+            "would_connect_previously_separate_metadata_components": false
+          },
+          {
+            "actual_raw_header_TPFORG": "8394004",
+            "historical_reservation_identity_rows": [
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "64bf660321573695c42a7f29048e2576e7fe026cef38f12258155bb79e21214a",
+                "row": 5311,
+                "source_id": "2076126752110533376"
+              },
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "866a41a36b95c73256cebe1d1ebd9852901ddf22ec6573ab352761ad840732e2",
+                "row": 5312,
+                "source_id": "2076126756411206784"
+              },
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "e276a9d9453e82f8efe010586eaed57b3061a323a35853be4147bc3a0a460684",
+                "row": 5313,
+                "source_id": "2076126756415855744"
+              },
+              {
+                "namespace": "historical-opened-survey-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "6f7b2132cc7493b848acd8dca08bb912cc7fc36e240f53f7e760cb01f70228d9",
+                "row": 5314,
+                "source_id": "2076126756415861888"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "64bf660321573695c42a7f29048e2576e7fe026cef38f12258155bb79e21214a",
+                "row": 69589,
+                "source_id": "2076126752110533376"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "866a41a36b95c73256cebe1d1ebd9852901ddf22ec6573ab352761ad840732e2",
+                "row": 69590,
+                "source_id": "2076126756411206784"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "e276a9d9453e82f8efe010586eaed57b3061a323a35853be4147bc3a0a460684",
+                "row": 69591,
+                "source_id": "2076126756415855744"
+              },
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "8394004",
+                "raw_fits_sha256": "6f7b2132cc7493b848acd8dca08bb912cc7fc36e240f53f7e760cb01f70228d9",
+                "row": 69592,
+                "source_id": "2076126756415861888"
+              }
+            ],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 4,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 4
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "8394040",
+            "raw_file": {
+              "bytes": 11514240,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-008394040.fits",
+              "sha256": "5bcf00748b96ceac7c032d16561b2c7429022a91a6f2c7e4e2e8723c8b47ce51"
+            },
+            "raw_fits_sha256": "5bcf00748b96ceac7c032d16561b2c7429022a91a6f2c7e4e2e8723c8b47ce51",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2076126653336649984",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 8394040,
+              "TPFORG": 8394004,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q0",
+                "APERTURE_Q0",
+                "LIGHTCURVE_Q1",
+                "APERTURE_Q1",
+                "LIGHTCURVE_Q2",
+                "APERTURE_Q2",
+                "LIGHTCURVE_Q3",
+                "APERTURE_Q3",
+                "LIGHTCURVE_Q4",
+                "APERTURE_Q4",
+                "LIGHTCURVE_Q5",
+                "APERTURE_Q5",
+                "LIGHTCURVE_Q6",
+                "APERTURE_Q6",
+                "LIGHTCURVE_Q7",
+                "APERTURE_Q7",
+                "LIGHTCURVE_Q8",
+                "APERTURE_Q8",
+                "LIGHTCURVE_Q9",
+                "APERTURE_Q9",
+                "LIGHTCURVE_Q10",
+                "APERTURE_Q10",
+                "LIGHTCURVE_Q11",
+                "APERTURE_Q11",
+                "LIGHTCURVE_Q12",
+                "APERTURE_Q12",
+                "LIGHTCURVE_Q13",
+                "APERTURE_Q13",
+                "LIGHTCURVE_Q14",
+                "APERTURE_Q14",
+                "LIGHTCURVE_Q15",
+                "APERTURE_Q15",
+                "LIGHTCURVE_Q16",
+                "APERTURE_Q16",
+                "LIGHTCURVE_Q17",
+                "APERTURE_Q17"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 8394040
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2076126653336649984",
+            "supplemental_identity_edge": [
+              "parent",
+              "8394004"
+            ],
+            "trial_id": "native_eb:development:2076126653336649984",
+            "would_connect_previously_separate_metadata_components": true
+          },
+          {
+            "actual_raw_header_TPFORG": "5041847",
+            "historical_reservation_identity_rows": [
+              {
+                "namespace": "paused-survey-opened-parent-map.csv",
+                "parent_tpf": "5041847",
+                "raw_fits_sha256": "0aef9566dc2c21fba4735779fb73e8e67b0910013e6eb72fb92e7889dc4b2db3",
+                "row": 42157,
+                "source_id": "2073516167908130304"
+              }
+            ],
+            "historical_reservation_namespace_counts": {
+              "historical-opened-survey-parent-map.csv": 0,
+              "opened-resolved-parent-map.csv": 0,
+              "ordinary-expanded-exposure-reserved-parent-map.csv": 1,
+              "paused-survey-opened-parent-map.csv": 1
+            },
+            "historical_stage_exposure": "UNRESOLVED_BY_STAGE_IN_ORIGINAL_IDENTITY_MAPS",
+            "joint_independence_complete": false,
+            "known_protected_link_found": false,
+            "must_enter_future_joint_null_connectivity_before_selection_or_freezing": true,
+            "native_reader_contract": "catalogue_controls.read_product, exact original21 arrays",
+            "original_reader_parent": "5041843",
+            "raw_file": {
+              "bytes": 4881600,
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/deadline-controls-20260925/catalogue-eb-independent-v1-inputs/downloads/catalogue_eclipsing_binary/kic-005041843.fits",
+              "sha256": "25e28b0c4e03df5e42aca0707a9a96b6c9bc15ca54a2508c34e04f61710b58d3"
+            },
+            "raw_fits_sha256": "25e28b0c4e03df5e42aca0707a9a96b6c9bc15ca54a2508c34e04f61710b58d3",
+            "raw_header": {
+              "GAIAID": "Gaia DR3 2073516137862754688",
+              "HLSPID": "KBONUS-BKG",
+              "HLSPVER": "V1.0",
+              "KEPLERID": 5041843,
+              "TPFORG": 5041847,
+              "actual_header_parent_matches_original_declared": false,
+              "extensions": [
+                "PRIMARY",
+                "LIGHTCURVE_STITCHED",
+                "LIGHTCURVE_Q2",
+                "APERTURE_Q2",
+                "LIGHTCURVE_Q5",
+                "APERTURE_Q5",
+                "LIGHTCURVE_Q9",
+                "APERTURE_Q9",
+                "LIGHTCURVE_Q10",
+                "APERTURE_Q10",
+                "LIGHTCURVE_Q11",
+                "APERTURE_Q11",
+                "LIGHTCURVE_Q15",
+                "APERTURE_Q15",
+                "LIGHTCURVE_Q17",
+                "APERTURE_Q17"
+              ],
+              "header_origin_binding": "ORIGINAL_CATALOGUE_PRODUCT",
+              "original_declared_parent": 5041843
+            },
+            "scientific_acceptance": false,
+            "source_domain": "KBonus_LC1",
+            "source_id": "2073516137862754688",
+            "supplemental_identity_edge": [
+              "parent",
+              "5041847"
+            ],
+            "trial_id": "native_eb:development:2073516137862754688",
+            "would_connect_previously_separate_metadata_components": false
+          }
+        ],
+        "inputs": [
+          {
+            "bytes": 538713,
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-cloud-expansion-feasibility/proof.json",
+            "sha256": "3b0cf734b30a985bd2827956fee71f1dd943c81c41db28e4c96a41ae4be281bc"
+          },
+          {
+            "bytes": 23889,
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-cloud-expansion-feasibility/header-parent-review.json",
+            "sha256": "52947bc1f3d7390e37a5fac4f5e1db79c97f1fd938cec7913cdb29c38dff435b"
+          },
+          {
+            "bytes": 34388,
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-cloud-expansion-feasibility/verification.json",
+            "sha256": "bf4b1f480485e3537e251fe1ad2ffb10df155ae14af5bfc45dd7a9dc7b5593a9"
+          },
+          {
+            "bytes": 10279,
+            "path": "/Users/adam/Other/spacelab/dump/overnight-20261001/opened-cloud-expansion-feasibility/finish_parent_qualified.py",
+            "sha256": "88ab043efabe49ccf5036070105853a38d8717d31d67fd937ae4816ae63c13fe"
+          },
+          {
+            "bytes": 18924,
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-cloud-expansion-feasibility/prove_retained.py",
+            "sha256": "e23c4a393747a5af6c2f143874425f2ff0d91c4fdf918386a04f5b51a05f3c89"
+          },
+          {
+            "bytes": 18416,
+            "path": "/Users/adam/Other/spacelab/pipeline/deterministic/cloud_public.py",
+            "sha256": "2bcb30e7c656e254cfb9ff1b386fac38adeb15264d26a896b1ff293239a14467"
+          },
+          {
+            "bytes": 21364,
+            "path": "/Users/adam/Other/spacelab/pipeline/deterministic/catalogue_controls.py",
+            "sha256": "49af71dd5ce7efb9d664d13c7f555c1584a4daa154fc9c62bbb1810b5aa500a0"
+          },
+          {
+            "bytes": 73979,
+            "path": "/Users/adam/Other/spacelab/pipeline/deterministic/run.py",
+            "sha256": "3ffa249a51a277fdc9884960b48209ef691e7f20d5948478e978d66f4e113d3b"
+          },
+          {
+            "bytes": 13524,
+            "path": "/Users/adam/Other/spacelab/pipeline/photometry/lc2.py",
+            "sha256": "5a391ba00e145c52e523cf99ae9f4d3159496c292c7b1a1b8dddcbb589632de8"
+          }
+        ],
+        "joint_independence_complete": false,
+        "schema": 1,
+        "scientific_acceptance": false,
+        "status": "SUPPLEMENTAL_NATIVE_RAW_HEADER_PARENT_METADATA"
+      }
+    }
+  },
+  "counts": {
+    "trials": 9007,
+    "scope_counts": {
+      "CURRENT_OPENED_DEVELOPMENT": 876,
+      "CURRENT_CORE_FINAL": 1520,
+      "DROPPED_CLASS_IDENTITY_PRESERVED": 1100,
+      "DEFERRED_FINAL": 5000,
+      "HOLDOUT_VETTING_DISPOSITION_ONLY": 511
+    },
+    "trial_only_components": 8960,
+    "full_witness_components": 8960,
+    "qualified_external_connectivity_links": 0,
+    "quarter_rows": 21143,
+    "quarter_states": {
+      "NOMINAL": 11525,
+      "SPATIAL": 275,
+      "UNAVAILABLE": 1422,
+      "REPLACEMENT_RESERVE_ROLE_BOUND": 130,
+      "REQUIRED_UNPROVISIONED": 7791
+    },
+    "holdout_overlap_witnesses": 19,
+    "preserved_exclusions": 2
+  },
+  "whitelist": {
+    "trial": [
+      "trial_id",
+      "source_domain",
+      "cohort",
+      "role",
+      "scope",
+      "source_id",
+      "raw_fits_sha256",
+      "origin_parent",
+      "resolved_scope",
+      "contaminant_source_id",
+      "contaminant_raw_fits_sha256",
+      "original_component_id",
+      "original_historically_exposed_component",
+      "full_witness_component_id",
+      "trial_only_component_id",
+      "resolved_parents",
+      "additional_parent_identities",
+      "required_pixel_quarters",
+      "original_verified_pixel_quarters",
+      "original_missing_pixel_quarters",
+      "original_spatial_parent_by_quarter",
+      "pixel_quarter_metadata_state",
+      "pixel_quarters",
+      "stage_exposure"
+    ],
+    "quarter": [
+      "quarter",
+      "state",
+      "reason",
+      "actual_parent_kic",
+      "content_sha256",
+      "receipt_sha256",
+      "attempt_index",
+      "nominal_receipt_sha256",
+      "spatial_receipt_sha256"
+    ],
+    "excluded_identity": [
+      "source_id",
+      "kic_id",
+      "extraction_tpf_kic",
+      "fits_sha256",
+      "conflicts",
+      "status"
+    ],
+    "full_component": [
+      "component_id",
+      "trial_ids",
+      "identity_map_members",
+      "historical_stage_exposure"
+    ],
+    "holdout_overlap_edge": [
+      "identity_kind",
+      "identity_value",
+      "control_trial_id",
+      "control_scope"
+    ],
+    "unresolved_scope": [
+      "contamination_cohort",
+      "guide_cohort",
+      "historical_stage_exposure",
+      "holdout_core_overlap",
+      "holdout_quarter_parents",
+      "injected_pixel_metadata",
+      "injection_scope",
+      "null_partitions",
+      "payload_availability",
+      "scope_definition",
+      "observed_header_parents"
+    ],
+    "scientific_truth_labels_or_outcomes": "NONE; cohort names retained only as identity namespaces"
+  },
+  "verified": {
+    "all_trial_fields_reconciled": true,
+    "all_quarter_fields_reconciled": true,
+    "projected_union_find_full_trial_bfs_agree": true,
+    "all_holdout_edges_reconciled": true,
+    "full_witness_connectivity_preserved": true,
+    "whitelist_and_provenance_reconciled": true
+  },
+  "joint_independence_complete": false,
+  "boundary": "Metadata for scope preparation only. Cohort names are identity namespaces, not new scientific truth labels. Empty projected quarter receipts do not mean absent data. Direct trial components omit historical/reservation rows; full witnessed components and qualified external connectivity remain authoritative context. No scientific independence or release is claimed. Observed native raw-header parents supplement the historical witness graph without changing reader parents, trial memberships, scope names or scientific roles.",
+  "unresolved": {
+    "contamination_cohort": "Prospective pool is not the frozen 100-pair cohort with donor/component dependencies.",
+    "guide_cohort": "Prospective pool is not the frozen 100-source guide-star cohort.",
+    "historical_stage_exposure": "Identity maps do not establish detector/vetter/disposition exposure separately.",
+    "holdout_core_overlap": "Three heldout hosts share a parent with core sealed controls; count/account shared components before independent evaluation.",
+    "holdout_quarter_parents": "7791 required quarters lack provisioned actual-TPF/header/content receipts in this audit.",
+    "injected_pixel_metadata": "Existing injected resolved-parent links are preserved from v11; injected pixel payloads/content receipts are not reverified.",
+    "injection_scope": "Future injection measurement roles/denominators are not added; current graph identity links are preserved.",
+    "null_partitions": "Frozen development/sealed source/raw/parent/variant/seed/dependency manifests absent.",
+    "payload_availability": "No raw arrays or TPF/PRF payloads are opened or rehashed; metadata receipts are provenance only.",
+    "scope_definition": "Current scope categories here are the coordinator instruction, not a new frozen release scope.",
+    "observed_header_parents": "Six exact native-header parents are added to known connectivity; unknown actual-quarter, donor, null and stage-exposure dependencies remain unresolved."
+  },
+  "commands": [
+    "python pipeline/deterministic/cloud.py scopes"
+  ]
+}

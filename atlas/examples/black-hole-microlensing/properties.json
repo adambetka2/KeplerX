@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "OGLE-2011-BLG-0462",
+  "reference_class": "Black-hole microlensing",
+  "class_label_origin": "Published follow-up classification; not inferred solely from this image",
+  "observable_signature": "Long smooth magnification with a sharp high-amplification peak; no planetary-style dimming.",
+  "lookalikes": [
+    "other compact-object lens / eclipse",
+    "blended stellar system",
+    "instrumental transient"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "Published observed figure, with fitted model overlays",
+    "processing": "Observed ground photometry from 16 telescopes transformed to OGLE I scale; full event and peak zoom, with fitted curve. BH identity relies on astrometry and lens-light constraints as well as photometry."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "einstein_crossing_time_d": {
+      "value": 273.1,
+      "uncertainty": 6.3,
+      "origin": "Table 2 joint photometric/astrometric fit; not a duration measured directly from pixels"
+    },
+    "maximum_magnification_approx": {
+      "value": 400,
+      "origin": "introductory description; source amplification, not diluted total brightness"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Figure reference; no raw measurements downloaded or image digitization. Numeric fields are source-reported photometric quantities.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/2503.07820",
+    "classification_paper_url": "https://arxiv.org/abs/2503.07820",
+    "pdf_url": "https://arxiv.org/pdf/2503.07820",
+    "pdf_page_one_based": 7,
+    "figure": "4",
+    "credit": "Authors of linked papers and observing projects",
+    "retrieved": "2026-09-06"
+  },
+  "provenance": {
+    "source_pdf_sha256": "3fff29f942277923ebead1ff4a43aa320f70fc62107a4829eb579d5fec7c2a83",
+    "page_crop_fraction_xyxy": [
+      0.08,
+      0.1,
+      0.94,
+      0.695
+    ],
+    "image_sha256": "1879f7878ec45e356c023a51a9042f41e0ec8afb07a5abb91717a468ee0a9931"
+  },
+  "classification_limit": "Light-curve morphology alone does not establish a compact-object mass or identity; the reference classification uses the full published evidence. No intrinsic stellar parameters are inferred here."
+}

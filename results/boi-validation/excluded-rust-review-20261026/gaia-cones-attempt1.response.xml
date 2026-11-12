@@ -1,0 +1,9 @@
+<VOTABLE version="1.2" xmlns="http://www.ivoa.net/xml/VOTable/v1.2">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="ERROR">
+Job timeout/aborted.
+</INFO>
+<INFO name="HttpErrorCode" value="408"/>
+<INFO name="Action" value="Handling request"/>
+</RESOURCE>
+</VOTABLE>

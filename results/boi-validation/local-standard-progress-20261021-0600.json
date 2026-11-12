@@ -1,0 +1,2980 @@
+{
+  "utc": "2026-10-21T06:04:13.438824+00:00",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "previous_outcome": {
+    "utc": "2026-10-21T05:53:12.998065+00:00",
+    "source_id": "2077967368932890752",
+    "kic": 7373485,
+    "tic": 271347162,
+    "signal_id": "rust-v6-2077967368932890752-1",
+    "status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_NO_PRODUCTION",
+    "disposition": "REMAINS_PC",
+    "reason": "Native nested completed exit0,ESS5893.48,stopping.848,21708equal samples,finite independent priors/posteriors and exact batman likelihood replays. Representative exact2.59084h transit has zero unprotected real cadences; all approximate full-baseline coverage passes,minmargin.47727h. But all57source scene Gaussian targetQ2.6114 vs calibrated dominant core.8183,Q6.6078/.8429,Q10.6034/.8398,Q14.6049/.8409,with other quarters also retained. Material seasonal allocation difference; core diagnostic is not complete far-source measured fractions. All binary source apertures verified. Full probability-readiness, including native20vs40integration sensitivity77.76ppm, unresolved; original native/review stays undecided. No FPP, source omission, custom response or FP denial.",
+    "native_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-nested-review-v1.json",
+      "sha256": "32897afe77ae1ef126d1dda07d81ef02d9a089bf525e556ebb990d467c069adc"
+    },
+    "coverage_noise": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-posterior-review-measurements-v1.json",
+      "sha256": "c202367f723835514110efa54f757d6fe27738828131ceeaa2772a07f67947b8"
+    },
+    "aperture_masks": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/aperture-mask-encoding-review-v1.json",
+      "sha256": "401d655215c725d7c4a62ed05c3917b10ace6b92ae3a7e9d57969681462a4352"
+    },
+    "response": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/aperture-response-review-v1.json",
+      "sha256": "35e8d06875a669633d511be4368cf0f15d816fc1afde1e265ba4cff99ac63490"
+    },
+    "scene": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/scene-preview-review-v1.json",
+      "sha256": "c0a8846dbc21a08fc42a7ea975fb33eb99a5e2b97fb559eef84049fa0e1b2c1c"
+    },
+    "native_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-freeze.json",
+      "sha256": "8e41a5c64a32a62ce9c81b4b48a615ccb477aa16b633b76f7feba3fa915e89cd"
+    },
+    "probability_runs": 0,
+    "clock_adopted_for_probability": false,
+    "physical_false_positive_denied": false,
+    "next": "Preserve complete native output and all favorable/unfavorable scene diagnostics. No response reconstruction/rescue tonight; advance eligible queue by readiness/cost."
+  },
+  "previous_native": {
+    "utc": "2026-10-21T05:49:34.490163+00:00",
+    "source_id": "2077967368932890752",
+    "signal_id": "rust-v6-2077967368932890752-1",
+    "accepted": null,
+    "sampler": "dynamic_dynesty",
+    "weighted_samples": 21708,
+    "equal_samples": 21708,
+    "likelihood_calls": 610204,
+    "native_weight_ess": 5893.480120716881,
+    "max_native_weight": 0.0002899712204484354,
+    "logz": 29121.523808334146,
+    "logzerr": 0.274041860727949,
+    "batches": {
+      "live_points": [
+        500,
+        500
+      ],
+      "loglike_bounds": [
+        [
+          {
+            "nonfinite": "-inf"
+          },
+          {
+            "nonfinite": "inf"
+          }
+        ],
+        [
+          29152.616526943802,
+          29155.21346564448
+        ]
+      ]
+    },
+    "all_equal_logprior_and_posterior_finite": true,
+    "weighted_equal_quantiles": {
+      "P_p1": {
+        "weighted_quantiles": [
+          4.358490926261586,
+          4.358493105716466,
+          4.358495341534298
+        ],
+        "equal_quantiles": [
+          4.358490920027619,
+          4.358493104504988,
+          4.358495341548461
+        ]
+      },
+      "t0_p1": {
+        "weighted_quantiles": [
+          857.9969390499965,
+          857.9971931161404,
+          857.997442075311
+        ],
+        "equal_quantiles": [
+          857.9969398403601,
+          857.9971931644219,
+          857.9974420677135
+        ]
+      },
+      "p_p1": {
+        "weighted_quantiles": [
+          0.1313936291687468,
+          0.13344620437509702,
+          0.13609089733056864
+        ],
+        "equal_quantiles": [
+          0.13139251950872693,
+          0.13344648166357997,
+          0.1360871608370175
+        ]
+      },
+      "b_p1": {
+        "weighted_quantiles": [
+          0.3852560298128178,
+          0.4588393647054359,
+          0.5636522301784699
+        ],
+        "equal_quantiles": [
+          0.38524027493778273,
+          0.4588301582152148,
+          0.5633343600428382
+        ]
+      },
+      "rho": {
+        "weighted_quantiles": [
+          1786.364527775598,
+          2251.5312108096923,
+          2579.3346711937156
+        ],
+        "equal_quantiles": [
+          1789.135262459712,
+          2251.831449445841,
+          2579.590510932766
+        ]
+      },
+      "q1_Kepler": {
+        "weighted_quantiles": [
+          0.15502135833368777,
+          0.21845265218456458,
+          0.32917407875784704
+        ],
+        "equal_quantiles": [
+          0.15508983950260866,
+          0.21856596267636377,
+          0.32903859382197753
+        ]
+      },
+      "q2_Kepler": {
+        "weighted_quantiles": [
+          0.41187083826429705,
+          0.7083175094911774,
+          0.878607265971904
+        ],
+        "equal_quantiles": [
+          0.4115371167159843,
+          0.7083755819205944,
+          0.8783975354944649
+        ]
+      },
+      "ecc_p1": {
+        "weighted_quantiles": [
+          0.014507355719941481,
+          0.057138214187096435,
+          0.13657647334582512
+        ],
+        "equal_quantiles": [
+          0.01447760534903642,
+          0.05713226477767854,
+          0.1368253919437253
+        ]
+      },
+      "omega_p1": {
+        "weighted_quantiles": [
+          109.90367134977794,
+          184.4662564578297,
+          327.2834870473606
+        ],
+        "equal_quantiles": [
+          109.83690872071512,
+          184.466618733328,
+          327.28546582303767
+        ]
+      },
+      "mflux_Kepler": {
+        "weighted_quantiles": [
+          -0.00015293046821650513,
+          -0.00011034155980563648,
+          -6.73658878301841e-05
+        ],
+        "equal_quantiles": [
+          -0.00015284057713062455,
+          -0.00011030933068114396,
+          -6.740050940114849e-05
+        ]
+      },
+      "sigma_w_Kepler": {
+        "weighted_quantiles": [
+          1408.7592709067055,
+          1479.2790498140523,
+          1548.897086597439
+        ],
+        "equal_quantiles": [
+          1408.728727354618,
+          1479.4553384709347,
+          1548.9673136265917
+        ]
+      }
+    },
+    "direct_batman_replay": [
+      {
+        "index": 0,
+        "loglike_difference": 0.0
+      },
+      {
+        "index": 13839,
+        "loglike_difference": 3.637978807091713e-12
+      },
+      {
+        "index": 21707,
+        "loglike_difference": 3.637978807091713e-12
+      }
+    ],
+    "representative_joint_sample_index": 13839,
+    "representative_exact_contacts_bkjd": [
+      857.943188753039,
+      858.0511405700321
+    ],
+    "representative_exact_duration_hours": 2.590843607835268,
+    "representative_periastron_over_stellar_radius": 12.361231417722253,
+    "representative_body_radius_earth": 13.212553303686086,
+    "integration20_vs40_max_ppm": 77.76277887006077,
+    "residual_rms_ppm": 4464.882858273026,
+    "unprotected_real_model_cadences": 0,
+    "unprotected_by_quarter": [],
+    "event_protection": [
+      {
+        "cycle": -166,
+        "fitted_center_bkjd": 134.48729346806374,
+        "shift_hours": 0.09303020804736661,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -165,
+        "fitted_center_bkjd": 138.84578634016782,
+        "shift_hours": 0.09242342540505888,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -164,
+        "fitted_center_bkjd": 143.204279212272,
+        "shift_hours": 0.09181664276547963,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -163,
+        "fitted_center_bkjd": 147.5627720843761,
+        "shift_hours": 0.09120986012385401,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -162,
+        "fitted_center_bkjd": 151.92126495648017,
+        "shift_hours": 0.0906030774822284,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -161,
+        "fitted_center_bkjd": 156.27975782858437,
+        "shift_hours": 0.08999629484264915,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -160,
+        "fitted_center_bkjd": 160.63825070068845,
+        "shift_hours": 0.08938951220034141,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -159,
+        "fitted_center_bkjd": 164.99674357279252,
+        "shift_hours": 0.0887827295587158,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -158,
+        "fitted_center_bkjd": 169.35523644489672,
+        "shift_hours": 0.08817594691913655,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -157,
+        "fitted_center_bkjd": 173.7137293170008,
+        "shift_hours": 0.08756916427682881,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -156,
+        "fitted_center_bkjd": 178.07222218910488,
+        "shift_hours": 0.0869623816352032,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -155,
+        "fitted_center_bkjd": 182.43071506120907,
+        "shift_hours": 0.08635559899630607,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -154,
+        "fitted_center_bkjd": 186.78920793331315,
+        "shift_hours": 0.08574881635399834,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -153,
+        "fitted_center_bkjd": 191.14770080541723,
+        "shift_hours": 0.0851420337116906,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -152,
+        "fitted_center_bkjd": 195.5061936775213,
+        "shift_hours": 0.08453525107006499,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -151,
+        "fitted_center_bkjd": 199.8646865496255,
+        "shift_hours": 0.08392846843116786,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -150,
+        "fitted_center_bkjd": 204.22317942172958,
+        "shift_hours": 0.08332168578886012,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -149,
+        "fitted_center_bkjd": 208.58167229383366,
+        "shift_hours": 0.08271490314655239,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -148,
+        "fitted_center_bkjd": 212.94016516593786,
+        "shift_hours": 0.08210812050765526,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -147,
+        "fitted_center_bkjd": 217.29865803804194,
+        "shift_hours": 0.08150133786534752,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -146,
+        "fitted_center_bkjd": 221.65715091014602,
+        "shift_hours": 0.08089455522372191,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -145,
+        "fitted_center_bkjd": 226.0156437822502,
+        "shift_hours": 0.08028777258414266,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -144,
+        "fitted_center_bkjd": 230.3741366543543,
+        "shift_hours": 0.07968098994251704,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -143,
+        "fitted_center_bkjd": 234.73262952645837,
+        "shift_hours": 0.07907420730020931,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -142,
+        "fitted_center_bkjd": 239.09112239856256,
+        "shift_hours": 0.07846742466131218,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -141,
+        "fitted_center_bkjd": 243.44961527066664,
+        "shift_hours": 0.07786064201900444,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -140,
+        "fitted_center_bkjd": 247.80810814277072,
+        "shift_hours": 0.07725385937737883,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -139,
+        "fitted_center_bkjd": 252.1666010148749,
+        "shift_hours": 0.07664707673779958,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -138,
+        "fitted_center_bkjd": 256.525093886979,
+        "shift_hours": 0.07604029409549184,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -137,
+        "fitted_center_bkjd": 260.8835867590831,
+        "shift_hours": 0.07543351145386623,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -136,
+        "fitted_center_bkjd": 265.24207963118727,
+        "shift_hours": 0.0748267288149691,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -135,
+        "fitted_center_bkjd": 269.60057250329135,
+        "shift_hours": 0.07421994617197925,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -134,
+        "fitted_center_bkjd": 273.9590653753954,
+        "shift_hours": 0.07361316353035363,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -133,
+        "fitted_center_bkjd": 278.3175582474995,
+        "shift_hours": 0.07300638088872802,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -132,
+        "fitted_center_bkjd": 282.6760511196037,
+        "shift_hours": 0.07239959824983089,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -131,
+        "fitted_center_bkjd": 287.0345439917078,
+        "shift_hours": 0.07179281560684103,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -130,
+        "fitted_center_bkjd": 291.39303686381186,
+        "shift_hours": 0.07118603296521542,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -129,
+        "fitted_center_bkjd": 295.75152973591605,
+        "shift_hours": 0.07057925032631829,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -128,
+        "fitted_center_bkjd": 300.11002260802013,
+        "shift_hours": 0.06997246768469267,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -127,
+        "fitted_center_bkjd": 304.4685154801242,
+        "shift_hours": 0.06936568504170282,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -126,
+        "fitted_center_bkjd": 308.8270083522284,
+        "shift_hours": 0.06875890240280569,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -125,
+        "fitted_center_bkjd": 313.1855012243325,
+        "shift_hours": 0.06815211976118007,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -124,
+        "fitted_center_bkjd": 317.54399409643656,
+        "shift_hours": 0.06754533711955446,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -123,
+        "fitted_center_bkjd": 321.90248696854076,
+        "shift_hours": 0.06693855447929309,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -122,
+        "fitted_center_bkjd": 326.26097984064484,
+        "shift_hours": 0.06633177183766747,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -121,
+        "fitted_center_bkjd": 330.6194727127489,
+        "shift_hours": 0.06572498919604186,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -120,
+        "fitted_center_bkjd": 334.977965584853,
+        "shift_hours": 0.065118206553052,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -119,
+        "fitted_center_bkjd": 339.3364584569572,
+        "shift_hours": 0.06451142391415488,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -118,
+        "fitted_center_bkjd": 343.69495132906127,
+        "shift_hours": 0.06390464127252926,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -117,
+        "fitted_center_bkjd": 348.0534442011654,
+        "shift_hours": 0.06329785863226789,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -116,
+        "fitted_center_bkjd": 352.41193707326954,
+        "shift_hours": 0.06269107599200652,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -115,
+        "fitted_center_bkjd": 356.7704299453736,
+        "shift_hours": 0.06208429334901666,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -114,
+        "fitted_center_bkjd": 361.12892281747776,
+        "shift_hours": 0.06147751070875529,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -113,
+        "fitted_center_bkjd": 365.48741568958184,
+        "shift_hours": 0.060870728065765434,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -112,
+        "fitted_center_bkjd": 369.845908561686,
+        "shift_hours": 0.06026394542550406,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -111,
+        "fitted_center_bkjd": 374.2044014337901,
+        "shift_hours": 0.05965716278524269,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -110,
+        "fitted_center_bkjd": 378.5628943058942,
+        "shift_hours": 0.059050380143617076,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -109,
+        "fitted_center_bkjd": 382.9213871779983,
+        "shift_hours": 0.058443597503355704,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -108,
+        "fitted_center_bkjd": 387.2798800501024,
+        "shift_hours": 0.05783681486036585,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -107,
+        "fitted_center_bkjd": 391.63837292220654,
+        "shift_hours": 0.057230032220104476,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -106,
+        "fitted_center_bkjd": 395.9968657943107,
+        "shift_hours": 0.056623249579843105,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -105,
+        "fitted_center_bkjd": 400.35535866641476,
+        "shift_hours": 0.05601646693685325,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -104,
+        "fitted_center_bkjd": 404.7138515385189,
+        "shift_hours": 0.05540968429659188,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -103,
+        "fitted_center_bkjd": 409.07234441062303,
+        "shift_hours": 0.054802901656330505,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -102,
+        "fitted_center_bkjd": 413.4308372827271,
+        "shift_hours": 0.05419611901470489,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -101,
+        "fitted_center_bkjd": 417.78933015483125,
+        "shift_hours": 0.05358933637444352,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -100,
+        "fitted_center_bkjd": 422.1478230269354,
+        "shift_hours": 0.052982553732817905,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -99,
+        "fitted_center_bkjd": 426.50631589903946,
+        "shift_hours": 0.05237577109119229,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -98,
+        "fitted_center_bkjd": 430.8648087711436,
+        "shift_hours": 0.05176898844956668,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -97,
+        "fitted_center_bkjd": 435.2233016432477,
+        "shift_hours": 0.051162205807941064,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -96,
+        "fitted_center_bkjd": 439.5817945153518,
+        "shift_hours": 0.05055542316767969,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -95,
+        "fitted_center_bkjd": 443.94028738745595,
+        "shift_hours": 0.04994864052741832,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -94,
+        "fitted_center_bkjd": 448.29878025956003,
+        "shift_hours": 0.049341857885792706,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -93,
+        "fitted_center_bkjd": 452.65727313166417,
+        "shift_hours": 0.048735075245531334,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -92,
+        "fitted_center_bkjd": 457.01576600376825,
+        "shift_hours": 0.04812829260254148,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -91,
+        "fitted_center_bkjd": 461.3742588758724,
+        "shift_hours": 0.047521509962280106,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -90,
+        "fitted_center_bkjd": 465.7327517479765,
+        "shift_hours": 0.04691472732065449,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -89,
+        "fitted_center_bkjd": 470.0912446200806,
+        "shift_hours": 0.04630794467902888,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -88,
+        "fitted_center_bkjd": 474.44973749218474,
+        "shift_hours": 0.04570116203876751,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -87,
+        "fitted_center_bkjd": 478.8082303642889,
+        "shift_hours": 0.045094379398506135,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -86,
+        "fitted_center_bkjd": 483.16672323639295,
+        "shift_hours": 0.04448759675688052,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -85,
+        "fitted_center_bkjd": 487.5252161084971,
+        "shift_hours": 0.04388081411525491,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -84,
+        "fitted_center_bkjd": 491.8837089806012,
+        "shift_hours": 0.043274031474993535,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -83,
+        "fitted_center_bkjd": 496.2422018527053,
+        "shift_hours": 0.04266724883200368,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -82,
+        "fitted_center_bkjd": 500.60069472480944,
+        "shift_hours": 0.04206046619174231,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -81,
+        "fitted_center_bkjd": 504.9591875969135,
+        "shift_hours": 0.04145368355011669,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -80,
+        "fitted_center_bkjd": 509.31768046901766,
+        "shift_hours": 0.04084690090985532,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -79,
+        "fitted_center_bkjd": 513.6761733411217,
+        "shift_hours": 0.04024011826822971,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -78,
+        "fitted_center_bkjd": 518.0346662132258,
+        "shift_hours": 0.03963333562387561,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -77,
+        "fitted_center_bkjd": 522.39315908533,
+        "shift_hours": 0.03902655298497848,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -76,
+        "fitted_center_bkjd": 526.7516519574341,
+        "shift_hours": 0.038419770343352866,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -75,
+        "fitted_center_bkjd": 531.1101448295383,
+        "shift_hours": 0.037812987704455736,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -74,
+        "fitted_center_bkjd": 535.4686377016424,
+        "shift_hours": 0.03720620506283012,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -73,
+        "fitted_center_bkjd": 539.8271305737464,
+        "shift_hours": 0.03659942242120451,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -72,
+        "fitted_center_bkjd": 544.1856234458505,
+        "shift_hours": 0.035992639779578894,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -71,
+        "fitted_center_bkjd": 548.5441163179547,
+        "shift_hours": 0.035385857140681765,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -70,
+        "fitted_center_bkjd": 552.9026091900588,
+        "shift_hours": 0.03477907449905615,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -69,
+        "fitted_center_bkjd": 557.261102062163,
+        "shift_hours": 0.03417229186015902,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -68,
+        "fitted_center_bkjd": 561.6195949342671,
+        "shift_hours": 0.03356550921853341,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -67,
+        "fitted_center_bkjd": 565.9780878063711,
+        "shift_hours": 0.03295872657417931,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -66,
+        "fitted_center_bkjd": 570.3365806784752,
+        "shift_hours": 0.032351943932553695,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -65,
+        "fitted_center_bkjd": 574.6950735505793,
+        "shift_hours": 0.03174516129092808,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -64,
+        "fitted_center_bkjd": 579.0535664226835,
+        "shift_hours": 0.03113837865203095,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -63,
+        "fitted_center_bkjd": 583.4120592947877,
+        "shift_hours": 0.030531596010405337,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -62,
+        "fitted_center_bkjd": 587.7705521668918,
+        "shift_hours": 0.029924813368779724,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -61,
+        "fitted_center_bkjd": 592.1290450389959,
+        "shift_hours": 0.02931803072715411,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -60,
+        "fitted_center_bkjd": 596.4875379110999,
+        "shift_hours": 0.028711248085528496,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -59,
+        "fitted_center_bkjd": 600.846030783204,
+        "shift_hours": 0.028104465443902882,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -58,
+        "fitted_center_bkjd": 605.2045236553082,
+        "shift_hours": 0.027497682805005752,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -57,
+        "fitted_center_bkjd": 609.5630165274123,
+        "shift_hours": 0.026890900163380138,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -56,
+        "fitted_center_bkjd": 613.9215093995165,
+        "shift_hours": 0.02628411752448301,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -55,
+        "fitted_center_bkjd": 618.2800022716206,
+        "shift_hours": 0.025677334882857394,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -54,
+        "fitted_center_bkjd": 622.6384951437246,
+        "shift_hours": 0.02507055224123178,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -53,
+        "fitted_center_bkjd": 626.9969880158287,
+        "shift_hours": 0.024463769599606167,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -52,
+        "fitted_center_bkjd": 631.3554808879329,
+        "shift_hours": 0.023856986957980553,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -51,
+        "fitted_center_bkjd": 635.713973760037,
+        "shift_hours": 0.02325020431635494,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -50,
+        "fitted_center_bkjd": 640.0724666321412,
+        "shift_hours": 0.02264342167745781,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -49,
+        "fitted_center_bkjd": 644.4309595042453,
+        "shift_hours": 0.022036639035832195,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -48,
+        "fitted_center_bkjd": 648.7894523763493,
+        "shift_hours": 0.021429856391478097,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -47,
+        "fitted_center_bkjd": 653.1479452484534,
+        "shift_hours": 0.020823073749852483,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -46,
+        "fitted_center_bkjd": 657.5064381205575,
+        "shift_hours": 0.02021629110822687,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -45,
+        "fitted_center_bkjd": 661.8649309926617,
+        "shift_hours": 0.01960950846932974,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -44,
+        "fitted_center_bkjd": 666.2234238647658,
+        "shift_hours": 0.019002725827704126,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -43,
+        "fitted_center_bkjd": 670.58191673687,
+        "shift_hours": 0.018395943188806996,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -42,
+        "fitted_center_bkjd": 674.940409608974,
+        "shift_hours": 0.017789160547181382,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -41,
+        "fitted_center_bkjd": 679.2989024810781,
+        "shift_hours": 0.017182377905555768,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -40,
+        "fitted_center_bkjd": 683.6573953531822,
+        "shift_hours": 0.016575595263930154,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -39,
+        "fitted_center_bkjd": 688.0158882252864,
+        "shift_hours": 0.015968812625033024,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -38,
+        "fitted_center_bkjd": 692.3743810973905,
+        "shift_hours": 0.01536202998340741,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -37,
+        "fitted_center_bkjd": 696.7328739694947,
+        "shift_hours": 0.014755247341781796,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -36,
+        "fitted_center_bkjd": 701.0913668415988,
+        "shift_hours": 0.014148464700156183,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -35,
+        "fitted_center_bkjd": 705.4498597137028,
+        "shift_hours": 0.013541682058530569,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -34,
+        "fitted_center_bkjd": 709.8083525858069,
+        "shift_hours": 0.012934899416904955,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -33,
+        "fitted_center_bkjd": 714.1668454579111,
+        "shift_hours": 0.01232811677527934,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -32,
+        "fitted_center_bkjd": 718.5253383300152,
+        "shift_hours": 0.011721334133653727,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -31,
+        "fitted_center_bkjd": 722.8838312021193,
+        "shift_hours": 0.011114551492028113,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -30,
+        "fitted_center_bkjd": 727.2423240742235,
+        "shift_hours": 0.010507768853130983,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -29,
+        "fitted_center_bkjd": 731.6008169463275,
+        "shift_hours": 0.00990098621150537,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -28,
+        "fitted_center_bkjd": 735.9593098184316,
+        "shift_hours": 0.009294203569879755,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -27,
+        "fitted_center_bkjd": 740.3178026905357,
+        "shift_hours": 0.008687420928254141,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -26,
+        "fitted_center_bkjd": 744.6762955626399,
+        "shift_hours": 0.008080638289357012,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -25,
+        "fitted_center_bkjd": 749.034788434744,
+        "shift_hours": 0.007473855647731398,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -24,
+        "fitted_center_bkjd": 753.3932813068482,
+        "shift_hours": 0.006867073008834268,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -23,
+        "fitted_center_bkjd": 757.7517741789522,
+        "shift_hours": 0.006260290367208654,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -22,
+        "fitted_center_bkjd": 762.1102670510563,
+        "shift_hours": 0.005653507722854556,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -21,
+        "fitted_center_bkjd": 766.4687599231604,
+        "shift_hours": 0.005046725081228942,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -20,
+        "fitted_center_bkjd": 770.8272527952646,
+        "shift_hours": 0.004439942442331812,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -19,
+        "fitted_center_bkjd": 775.1857456673687,
+        "shift_hours": 0.0038331597979777143,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -18,
+        "fitted_center_bkjd": 779.5442385394728,
+        "shift_hours": 0.0032263771563521004,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -17,
+        "fitted_center_bkjd": 783.902731411577,
+        "shift_hours": 0.0026195945174549706,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -16,
+        "fitted_center_bkjd": 788.261224283681,
+        "shift_hours": 0.0020128118758293567,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -15,
+        "fitted_center_bkjd": 792.6197171557851,
+        "shift_hours": 0.0014060292342037428,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -14,
+        "fitted_center_bkjd": 796.9782100278893,
+        "shift_hours": 0.000799246595306613,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -13,
+        "fitted_center_bkjd": 801.3367028999934,
+        "shift_hours": 0.0001924639536809991,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -12,
+        "fitted_center_bkjd": 805.6951957720975,
+        "shift_hours": -0.0004143186879446148,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -11,
+        "fitted_center_bkjd": 810.0536886442017,
+        "shift_hours": -0.0010211013268417446,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -10,
+        "fitted_center_bkjd": 814.4121815163057,
+        "shift_hours": -0.0016278839684673585,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -9,
+        "fitted_center_bkjd": 818.7706743884098,
+        "shift_hours": -0.0022346666100929724,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -8,
+        "fitted_center_bkjd": 823.1291672605139,
+        "shift_hours": -0.0028414492517185863,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -7,
+        "fitted_center_bkjd": 827.4876601326181,
+        "shift_hours": -0.003448231890615716,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -6,
+        "fitted_center_bkjd": 831.8461530047222,
+        "shift_hours": -0.00405501453224133,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -5,
+        "fitted_center_bkjd": 836.2046458768262,
+        "shift_hours": -0.004661797179323912,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -4,
+        "fitted_center_bkjd": 840.5631387489304,
+        "shift_hours": -0.005268579818221042,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -3,
+        "fitted_center_bkjd": 844.9216316210345,
+        "shift_hours": -0.005875362459846656,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -2,
+        "fitted_center_bkjd": 849.2801244931386,
+        "shift_hours": -0.00648214510147227,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": -1,
+        "fitted_center_bkjd": 853.6386173652428,
+        "shift_hours": -0.0070889277403693995,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 0,
+        "fitted_center_bkjd": 857.9971102373469,
+        "shift_hours": -0.0076957103819950134,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 1,
+        "fitted_center_bkjd": 862.355603109451,
+        "shift_hours": -0.008302493023620627,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 2,
+        "fitted_center_bkjd": 866.7140959815551,
+        "shift_hours": -0.008909275662517757,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 3,
+        "fitted_center_bkjd": 871.0725888536592,
+        "shift_hours": -0.009516058304143371,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 4,
+        "fitted_center_bkjd": 875.4310817257633,
+        "shift_hours": -0.010122840945768985,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 5,
+        "fitted_center_bkjd": 879.7895745978675,
+        "shift_hours": -0.010729623584666115,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 6,
+        "fitted_center_bkjd": 884.1480674699716,
+        "shift_hours": -0.011336406226291729,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 7,
+        "fitted_center_bkjd": 888.5065603420757,
+        "shift_hours": -0.011943188867917343,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 8,
+        "fitted_center_bkjd": 892.8650532141799,
+        "shift_hours": -0.012549971506814472,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 9,
+        "fitted_center_bkjd": 897.2235460862839,
+        "shift_hours": -0.013156754148440086,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 10,
+        "fitted_center_bkjd": 901.582038958388,
+        "shift_hours": -0.013763536795522668,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 11,
+        "fitted_center_bkjd": 905.9405318304921,
+        "shift_hours": -0.014370319437148282,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 12,
+        "fitted_center_bkjd": 910.2990247025963,
+        "shift_hours": -0.014977102076045412,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 13,
+        "fitted_center_bkjd": 914.6575175747004,
+        "shift_hours": -0.015583884717671026,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 14,
+        "fitted_center_bkjd": 919.0160104468044,
+        "shift_hours": -0.01619066735929664,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 15,
+        "fitted_center_bkjd": 923.3745033189086,
+        "shift_hours": -0.01679744999819377,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 16,
+        "fitted_center_bkjd": 927.7329961910127,
+        "shift_hours": -0.017404232639819384,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 17,
+        "fitted_center_bkjd": 932.0914890631168,
+        "shift_hours": -0.018011015281444998,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 18,
+        "fitted_center_bkjd": 936.449981935221,
+        "shift_hours": -0.018617797920342127,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 19,
+        "fitted_center_bkjd": 940.8084748073251,
+        "shift_hours": -0.01922458056196774,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 20,
+        "fitted_center_bkjd": 945.1669676794291,
+        "shift_hours": -0.019831363203593355,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 21,
+        "fitted_center_bkjd": 949.5254605515333,
+        "shift_hours": -0.020438145842490485,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 22,
+        "fitted_center_bkjd": 953.8839534236374,
+        "shift_hours": -0.0210449284841161,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 23,
+        "fitted_center_bkjd": 958.2424462957415,
+        "shift_hours": -0.021651711125741713,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 24,
+        "fitted_center_bkjd": 962.6009391678456,
+        "shift_hours": -0.022258493767367327,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 25,
+        "fitted_center_bkjd": 966.9594320399498,
+        "shift_hours": -0.022865276411721425,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 26,
+        "fitted_center_bkjd": 971.3179249120539,
+        "shift_hours": -0.02347205905334704,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 27,
+        "fitted_center_bkjd": 975.676417784158,
+        "shift_hours": -0.02407884169224417,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 28,
+        "fitted_center_bkjd": 980.0349106562621,
+        "shift_hours": -0.024685624333869782,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 29,
+        "fitted_center_bkjd": 984.3934035283662,
+        "shift_hours": -0.025292406975495396,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 30,
+        "fitted_center_bkjd": 988.7518964004703,
+        "shift_hours": -0.02589918961712101,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 31,
+        "fitted_center_bkjd": 993.1103892725745,
+        "shift_hours": -0.02650597225601814,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 32,
+        "fitted_center_bkjd": 997.4688821446786,
+        "shift_hours": -0.027112754897643754,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 33,
+        "fitted_center_bkjd": 1001.8273750167826,
+        "shift_hours": -0.027719537539269368,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 34,
+        "fitted_center_bkjd": 1006.1858678888868,
+        "shift_hours": -0.028326320178166497,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 35,
+        "fitted_center_bkjd": 1010.5443607609909,
+        "shift_hours": -0.02893310281979211,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 36,
+        "fitted_center_bkjd": 1014.902853633095,
+        "shift_hours": -0.029539885461417725,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 37,
+        "fitted_center_bkjd": 1019.2613465051991,
+        "shift_hours": -0.03014666810304334,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 38,
+        "fitted_center_bkjd": 1023.6198393773033,
+        "shift_hours": -0.03075345074194047,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 39,
+        "fitted_center_bkjd": 1027.9783322494075,
+        "shift_hours": -0.0313602333808376,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 40,
+        "fitted_center_bkjd": 1032.3368251215115,
+        "shift_hours": -0.03196701602792018,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 41,
+        "fitted_center_bkjd": 1036.6953179936156,
+        "shift_hours": -0.032573798669545795,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 42,
+        "fitted_center_bkjd": 1041.0538108657197,
+        "shift_hours": -0.03318058131117141,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 43,
+        "fitted_center_bkjd": 1045.4123037378238,
+        "shift_hours": -0.03378736395279702,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 44,
+        "fitted_center_bkjd": 1049.7707966099279,
+        "shift_hours": -0.03439414659442264,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 45,
+        "fitted_center_bkjd": 1054.1292894820322,
+        "shift_hours": -0.03500092923059128,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 46,
+        "fitted_center_bkjd": 1058.4877823541362,
+        "shift_hours": -0.035607711872216896,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 47,
+        "fitted_center_bkjd": 1062.8462752262403,
+        "shift_hours": -0.03621449451384251,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 48,
+        "fitted_center_bkjd": 1067.2047680983444,
+        "shift_hours": -0.036821277155468124,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 49,
+        "fitted_center_bkjd": 1071.5632609704485,
+        "shift_hours": -0.03742805979709374,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 50,
+        "fitted_center_bkjd": 1075.9217538425526,
+        "shift_hours": -0.03803484243871935,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 51,
+        "fitted_center_bkjd": 1080.2802467146566,
+        "shift_hours": -0.038641625080344966,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 52,
+        "fitted_center_bkjd": 1084.638739586761,
+        "shift_hours": -0.03924840771651361,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 53,
+        "fitted_center_bkjd": 1088.997232458865,
+        "shift_hours": -0.039855190358139225,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 54,
+        "fitted_center_bkjd": 1093.355725330969,
+        "shift_hours": -0.04046197299976484,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 55,
+        "fitted_center_bkjd": 1097.7142182030732,
+        "shift_hours": -0.04106875564684742,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 56,
+        "fitted_center_bkjd": 1102.0727110751773,
+        "shift_hours": -0.041675538288473035,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 57,
+        "fitted_center_bkjd": 1106.4312039472813,
+        "shift_hours": -0.04228232093009865,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 58,
+        "fitted_center_bkjd": 1110.7896968193854,
+        "shift_hours": -0.04288910357172426,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 59,
+        "fitted_center_bkjd": 1115.1481896914897,
+        "shift_hours": -0.04349588620789291,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 60,
+        "fitted_center_bkjd": 1119.5066825635938,
+        "shift_hours": -0.04410266884951852,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 61,
+        "fitted_center_bkjd": 1123.865175435698,
+        "shift_hours": -0.044709451491144137,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 62,
+        "fitted_center_bkjd": 1128.223668307802,
+        "shift_hours": -0.04531623413276975,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 63,
+        "fitted_center_bkjd": 1132.582161179906,
+        "shift_hours": -0.045923016774395364,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 64,
+        "fitted_center_bkjd": 1136.9406540520104,
+        "shift_hours": -0.04652979941056401,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 65,
+        "fitted_center_bkjd": 1141.2991469241144,
+        "shift_hours": -0.047136582052189624,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 66,
+        "fitted_center_bkjd": 1145.6576397962185,
+        "shift_hours": -0.04774336469381524,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 67,
+        "fitted_center_bkjd": 1150.0161326683226,
+        "shift_hours": -0.04835014733544085,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 68,
+        "fitted_center_bkjd": 1154.3746255404267,
+        "shift_hours": -0.048956929977066466,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 69,
+        "fitted_center_bkjd": 1158.7331184125308,
+        "shift_hours": -0.04956371261869208,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 70,
+        "fitted_center_bkjd": 1163.0916112846348,
+        "shift_hours": -0.05017049526031769,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 71,
+        "fitted_center_bkjd": 1167.4501041567391,
+        "shift_hours": -0.05077727790194331,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 72,
+        "fitted_center_bkjd": 1171.8085970288432,
+        "shift_hours": -0.05138406054356892,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 73,
+        "fitted_center_bkjd": 1176.1670899009473,
+        "shift_hours": -0.051990843185194535,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 74,
+        "fitted_center_bkjd": 1180.5255827730514,
+        "shift_hours": -0.05259762582682015,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 75,
+        "fitted_center_bkjd": 1184.8840756451555,
+        "shift_hours": -0.05320440846844576,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 76,
+        "fitted_center_bkjd": 1189.2425685172598,
+        "shift_hours": -0.05381119110461441,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 77,
+        "fitted_center_bkjd": 1193.6010613893636,
+        "shift_hours": -0.05441797375169699,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 78,
+        "fitted_center_bkjd": 1197.959554261468,
+        "shift_hours": -0.055024756387865636,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 79,
+        "fitted_center_bkjd": 1202.318047133572,
+        "shift_hours": -0.05563153902949125,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 80,
+        "fitted_center_bkjd": 1206.676540005676,
+        "shift_hours": -0.056238321671116864,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 81,
+        "fitted_center_bkjd": 1211.0350328777802,
+        "shift_hours": -0.05684510431274248,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 82,
+        "fitted_center_bkjd": 1215.3935257498842,
+        "shift_hours": -0.05745188695436809,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 83,
+        "fitted_center_bkjd": 1219.7520186219886,
+        "shift_hours": -0.05805866959053674,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 84,
+        "fitted_center_bkjd": 1224.1105114940924,
+        "shift_hours": -0.05866545223761932,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 85,
+        "fitted_center_bkjd": 1228.4690043661967,
+        "shift_hours": -0.059272234873787966,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 86,
+        "fitted_center_bkjd": 1232.8274972383008,
+        "shift_hours": -0.05987901752087055,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 87,
+        "fitted_center_bkjd": 1237.1859901104049,
+        "shift_hours": -0.06048580016249616,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 88,
+        "fitted_center_bkjd": 1241.544482982509,
+        "shift_hours": -0.061092582804121776,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 89,
+        "fitted_center_bkjd": 1245.902975854613,
+        "shift_hours": -0.06169936544574739,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 90,
+        "fitted_center_bkjd": 1250.2614687267173,
+        "shift_hours": -0.062306148081916035,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 91,
+        "fitted_center_bkjd": 1254.6199615988214,
+        "shift_hours": -0.06291293072354165,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 92,
+        "fitted_center_bkjd": 1258.9784544709255,
+        "shift_hours": -0.06351971336516726,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 93,
+        "fitted_center_bkjd": 1263.3369473430296,
+        "shift_hours": -0.06412649600679288,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 94,
+        "fitted_center_bkjd": 1267.6954402151337,
+        "shift_hours": -0.06473327864841849,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 95,
+        "fitted_center_bkjd": 1272.0539330872377,
+        "shift_hours": -0.0653400612900441,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 96,
+        "fitted_center_bkjd": 1276.4124259593418,
+        "shift_hours": -0.06594684393166972,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 97,
+        "fitted_center_bkjd": 1280.7709188314461,
+        "shift_hours": -0.06655362656783836,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 98,
+        "fitted_center_bkjd": 1285.1294117035502,
+        "shift_hours": -0.06716040921492095,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 99,
+        "fitted_center_bkjd": 1289.4879045756543,
+        "shift_hours": -0.06776719185654656,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 100,
+        "fitted_center_bkjd": 1293.8463974477584,
+        "shift_hours": -0.06837397449817217,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 101,
+        "fitted_center_bkjd": 1298.2048903198624,
+        "shift_hours": -0.06898075713979779,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 102,
+        "fitted_center_bkjd": 1302.5633831919668,
+        "shift_hours": -0.06958753977596643,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 103,
+        "fitted_center_bkjd": 1306.9218760640706,
+        "shift_hours": -0.07019432242304902,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 104,
+        "fitted_center_bkjd": 1311.280368936175,
+        "shift_hours": -0.07080110505921766,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 105,
+        "fitted_center_bkjd": 1315.638861808279,
+        "shift_hours": -0.07140788770084328,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 106,
+        "fitted_center_bkjd": 1319.997354680383,
+        "shift_hours": -0.07201467034246889,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 107,
+        "fitted_center_bkjd": 1324.3558475524871,
+        "shift_hours": -0.0726214529840945,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 108,
+        "fitted_center_bkjd": 1328.7143404245912,
+        "shift_hours": -0.07322823562572012,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 109,
+        "fitted_center_bkjd": 1333.0728332966955,
+        "shift_hours": -0.07383501826188876,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 110,
+        "fitted_center_bkjd": 1337.4313261687996,
+        "shift_hours": -0.07444180090351438,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 111,
+        "fitted_center_bkjd": 1341.7898190409037,
+        "shift_hours": -0.07504858354513999,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 112,
+        "fitted_center_bkjd": 1346.1483119130078,
+        "shift_hours": -0.07565536619222257,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 113,
+        "fitted_center_bkjd": 1350.5068047851119,
+        "shift_hours": -0.07626214883384819,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 114,
+        "fitted_center_bkjd": 1354.865297657216,
+        "shift_hours": -0.0768689314754738,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 115,
+        "fitted_center_bkjd": 1359.22379052932,
+        "shift_hours": -0.07747571411709941,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 116,
+        "fitted_center_bkjd": 1363.5822834014243,
+        "shift_hours": -0.07808249675326806,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 117,
+        "fitted_center_bkjd": 1367.9407762735284,
+        "shift_hours": -0.07868927939489367,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 118,
+        "fitted_center_bkjd": 1372.2992691456325,
+        "shift_hours": -0.07929606203651929,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 119,
+        "fitted_center_bkjd": 1376.6577620177366,
+        "shift_hours": -0.0799028446781449,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 120,
+        "fitted_center_bkjd": 1381.0162548898406,
+        "shift_hours": -0.08050962731977052,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 121,
+        "fitted_center_bkjd": 1385.374747761945,
+        "shift_hours": -0.08111640995593916,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 122,
+        "fitted_center_bkjd": 1389.7332406340488,
+        "shift_hours": -0.08172319260302174,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 123,
+        "fitted_center_bkjd": 1394.091733506153,
+        "shift_hours": -0.08232997523919039,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 124,
+        "fitted_center_bkjd": 1398.4502263782572,
+        "shift_hours": -0.082936757880816,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 125,
+        "fitted_center_bkjd": 1402.8087192503613,
+        "shift_hours": -0.08354354052244162,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 126,
+        "fitted_center_bkjd": 1407.1672121224653,
+        "shift_hours": -0.08415032316406723,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 127,
+        "fitted_center_bkjd": 1411.5257049945694,
+        "shift_hours": -0.08475710581114981,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 128,
+        "fitted_center_bkjd": 1415.8841978666737,
+        "shift_hours": -0.08536388844731846,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 129,
+        "fitted_center_bkjd": 1420.2426907387776,
+        "shift_hours": -0.08597067109440104,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 130,
+        "fitted_center_bkjd": 1424.601183610882,
+        "shift_hours": -0.08657745373056969,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 131,
+        "fitted_center_bkjd": 1428.959676482986,
+        "shift_hours": -0.0871842363721953,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 132,
+        "fitted_center_bkjd": 1433.31816935509,
+        "shift_hours": -0.08779101901382091,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 133,
+        "fitted_center_bkjd": 1437.6766622271944,
+        "shift_hours": -0.08839780164998956,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 134,
+        "fitted_center_bkjd": 1442.0351550992982,
+        "shift_hours": -0.08900458429707214,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 135,
+        "fitted_center_bkjd": 1446.3936479714025,
+        "shift_hours": -0.08961136693324079,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 136,
+        "fitted_center_bkjd": 1450.7521408435064,
+        "shift_hours": -0.09021814958032337,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 137,
+        "fitted_center_bkjd": 1455.1106337156107,
+        "shift_hours": -0.09082493221649202,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 138,
+        "fitted_center_bkjd": 1459.4691265877148,
+        "shift_hours": -0.09143171485811763,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 139,
+        "fitted_center_bkjd": 1463.8276194598188,
+        "shift_hours": -0.09203849749974324,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 140,
+        "fitted_center_bkjd": 1468.1861123319231,
+        "shift_hours": -0.09264528013591189,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 141,
+        "fitted_center_bkjd": 1472.544605204027,
+        "shift_hours": -0.09325206278299447,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 142,
+        "fitted_center_bkjd": 1476.9030980761313,
+        "shift_hours": -0.09385884542462009,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 143,
+        "fitted_center_bkjd": 1481.2615909482354,
+        "shift_hours": -0.0944656280662457,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 144,
+        "fitted_center_bkjd": 1485.6200838203395,
+        "shift_hours": -0.09507241070787131,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 145,
+        "fitted_center_bkjd": 1489.9785766924435,
+        "shift_hours": -0.09567919334949693,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 146,
+        "fitted_center_bkjd": 1494.3370695645476,
+        "shift_hours": -0.09628597599112254,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 147,
+        "fitted_center_bkjd": 1498.695562436652,
+        "shift_hours": -0.09689275862729119,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 148,
+        "fitted_center_bkjd": 1503.0540553087558,
+        "shift_hours": -0.09749954127437377,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 149,
+        "fitted_center_bkjd": 1507.41254818086,
+        "shift_hours": -0.09810632391054241,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 150,
+        "fitted_center_bkjd": 1511.7710410529642,
+        "shift_hours": -0.09871310655216803,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 151,
+        "fitted_center_bkjd": 1516.1295339250682,
+        "shift_hours": -0.09931988919379364,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 152,
+        "fitted_center_bkjd": 1520.4880267971726,
+        "shift_hours": -0.09992667182996229,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 153,
+        "fitted_center_bkjd": 1524.8465196692764,
+        "shift_hours": -0.10053345447704487,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 154,
+        "fitted_center_bkjd": 1529.2050125413807,
+        "shift_hours": -0.10114023711321352,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 155,
+        "fitted_center_bkjd": 1533.5635054134846,
+        "shift_hours": -0.1017470197602961,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 156,
+        "fitted_center_bkjd": 1537.9219982855889,
+        "shift_hours": -0.10235380239646474,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 157,
+        "fitted_center_bkjd": 1542.280491157693,
+        "shift_hours": -0.10296058504354733,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 158,
+        "fitted_center_bkjd": 1546.638984029797,
+        "shift_hours": -0.10356736768517294,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 159,
+        "fitted_center_bkjd": 1550.9974769019013,
+        "shift_hours": -0.10417415032134159,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 160,
+        "fitted_center_bkjd": 1555.3559697740052,
+        "shift_hours": -0.10478093296842417,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 161,
+        "fitted_center_bkjd": 1559.7144626461095,
+        "shift_hours": -0.10538771560459281,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 162,
+        "fitted_center_bkjd": 1564.0729555182136,
+        "shift_hours": -0.10599449824621843,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 163,
+        "fitted_center_bkjd": 1568.4314483903177,
+        "shift_hours": -0.10660128088784404,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 164,
+        "fitted_center_bkjd": 1572.7899412624217,
+        "shift_hours": -0.10720806352946965,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 165,
+        "fitted_center_bkjd": 1577.1484341345258,
+        "shift_hours": -0.10781484617109527,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 166,
+        "fitted_center_bkjd": 1581.5069270066301,
+        "shift_hours": -0.10842162880726391,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 167,
+        "fitted_center_bkjd": 1585.865419878734,
+        "shift_hours": -0.1090284114543465,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      },
+      {
+        "cycle": 168,
+        "fitted_center_bkjd": 1590.2239127508383,
+        "shift_hours": -0.10963519409051514,
+        "left_exposure_outside_protection_hours": 0,
+        "right_exposure_outside_protection_hours": 0
+      }
+    ],
+    "original_outputs": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native/juliet/_dynesty_DNS_posteriors.pkl",
+        "sha256": "572e6a9221dce950eeaa0a86df8728308918d5add8fc02c9ceb1fb5d6eb4ece8"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native/posterior.npz",
+        "sha256": "615f51bcf1f9d95dd98a3baebd2445902cc13cace87b5ba995fc67c82cb0bfe5"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native/summary.json",
+        "sha256": "3fbb851e15be87245fd976ae85dddce004c02e4139ffd8e2b7aa6e3b85cb06eb"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native/review.json",
+        "sha256": "da920213078f4b9ce823028f987003a4a6244d612920763c45a786c014c1fbcd"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launcher.log",
+        "sha256": "6354527f15acdcbe5597d1ad5c72e5f43cff3a80f8e5342563748f9bc68341f1"
+      }
+    ],
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/review_nested_v1.py",
+      "sha256": "045aba7c3e444e3bdf51bb4a4aca2b92e4f4451c6eafad23e2d3887d94a3d11f"
+    },
+    "scope": "Native nested weight diagnostics are not stock FPP weight audits. No MCMC stationarity or Rhat applied. A finite, well-supported nested fit does not establish detrending coverage, scene/body admission or FPP. Original native review remains undecided."
+  },
+  "previous_measurements": {
+    "source_id": "2077967368932890752",
+    "signal_id": "rust-v6-2077967368932890752-1",
+    "clock": {
+      "period_days": 4.358493104504988,
+      "epoch_bkjd": 857.9971931644219,
+      "duration_days": 0.10803044892757857
+    },
+    "representative_joint_index": 13839,
+    "observed_integrated_depth": 0.020354258670249314,
+    "equal_posterior_count": 21708,
+    "all_equal_periastron_outside_star_and_body": true,
+    "duration_approx_protection_fraction": 1.0,
+    "minimum_protected_margin_hours": 0.4772744559912192,
+    "coverage_scope": "Approximate posterior duration checked across every real-time event and equal-weight sample; exact contacts and actual-photon model checked independently for representative joint sample. No prior support or photons changed.",
+    "folded_bins": 200,
+    "folded_points": 6136,
+    "mean_formal_bin_error": 0.0005697347164345336,
+    "mean_bin_error_with_native_jitter": 0.0006481081369986521,
+    "out_of_transit_folded_residual_rms": 0.0005906033384418727,
+    "out_of_transit_folded_residual_robust_sigma": 0.0005831167819143999,
+    "adjacent_bin_residual_rms": [
+      {
+        "adjacent_phase_bins": 2,
+        "rms_ppm": 446.50480431884637
+      },
+      {
+        "adjacent_phase_bins": 4,
+        "rms_ppm": 348.99024344155504
+      },
+      {
+        "adjacent_phase_bins": 8,
+        "rms_ppm": 268.10314786383276
+      }
+    ],
+    "review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-nested-review-v1.json",
+      "sha256": "32897afe77ae1ef126d1dda07d81ef02d9a089bf525e556ebb990d467c069adc"
+    },
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/measure_native_v1.py",
+      "sha256": "64fc8f48b74d74a455ecf83965380b0aef782d3f3a1f190507f905938362b4a8"
+    },
+    "scope": "Conditional native diagnostics, not scene/body/statistical admission. Scalar FPP noise still needs explicit adequacy decision; formal errors alone are not substituted for total noise."
+  },
+  "active": {
+    "utc": "2026-10-21T05:59:17.626039+00:00",
+    "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+    "execution_host": "LOCAL_MACBOOK_ONLY",
+    "source_id": "2100325529865507712",
+    "kic": 4543190,
+    "tic": 399820148,
+    "signal_id": "rust-v6-2100325529865507712-1",
+    "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712",
+    "protocol": "TRICERATOPS_KEPLER_V2",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launch.json",
+      "sha256": "8d1e6f639cf14091ecd0084b17f7603e66c4831ab7f23a713d4d6accbbd168f6"
+    },
+    "native_input_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-freeze.json",
+      "sha256": "a21debe56701a1c3de3da19fe3eeabd69cd17ec5c20a795b979f06fea91d0fa5"
+    },
+    "selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/selection.json",
+      "sha256": "5c7a55672ca58dcc98eb0edbf5c5e67287b281a2a339488e38244ec0c1d317f3"
+    },
+    "native_stellar_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-stellar-review.json",
+      "sha256": "11dc61368e534328af3c933afc7315170f4b713a29f7eb9b02e2cf0873b4c1d5"
+    },
+    "pre_native_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/pre-native-retained-review.json",
+      "sha256": "f7977fb11aa7ab37248bb17c23a5e0632a415c1c81b3a85548267622b4b2b33e"
+    },
+    "seed_source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-seed-source-review.json",
+      "sha256": "8e2758f024272375014da238c1c55e122daf7470640d04dd87428e50e0d7e797"
+    },
+    "seed_revalidation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-seed-revalidation.json",
+      "sha256": "cb0d1a78694d125178caea4c68d2523cad0e4c8f6cdfcc2499cb05632749a552"
+    },
+    "live_check": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/live-check-20261021T055917Z.json",
+      "sha256": "144066ed29cb0e49dc479f51ed508f1625dc11d319aa2a4a4e33a4dbdfc24e0e"
+    },
+    "previous_terminal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/readiness-hold-v1.json",
+      "sha256": "ce0f94651ac9a910fb4058b368cb8dea97540cd7e216d4a50837145530d3c37e"
+    },
+    "native_points": 13107,
+    "probability_runs": 0,
+    "clock_adopted": false,
+    "parent_staging": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/parent-authentication-v1.json",
+      "sha256": "e15348f3907472f5ac441f4c7c8cf0c462d8805cfb0a92d33d828c2abce60b4d"
+    },
+    "prf_staging": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prf-authentication-v1.json",
+      "sha256": "79b4e288833f30eee89d23907c0fddb154236af61eb8ba3721b022f2a82b5e1f"
+    },
+    "next": "Let seeded dynamic nested finish. Review actual weighted/equal posterior support and stopping, finite priors/posteriors, valid joint eccentric contacts/residuals/exposure and original protection across full observed baseline before clock adoption. Same-Gaia3.263day published-candidate match retained, not novelty or physical admission. All alternative proposals remain unmasked. Reuse staged parents/PRFs; finish same-source26star scene/extraction, selected FLAME route, final-clock spacecraft/pixels/aliases, seasonal dilution/folded noise and dated catalogue/companion readiness before stockFPP. Preserve outcome/hold then advance full eligible queue; no prior held-case rescue."
+  },
+  "hardware": {
+    "utc": "2026-10-21T05:59:17.626039+00:00",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launch.json",
+      "sha256": "8d1e6f639cf14091ecd0084b17f7603e66c4831ab7f23a713d4d6accbbd168f6"
+    },
+    "label": "local.spacelab.job.boi-standard-native-2100325529865507712-v2",
+    "root_pid": 12067,
+    "launchctl": "{\n\t\"StandardOutPath\" = \"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launcher.log\";\n\t\"LimitLoadToSessionType\" = \"Aqua\";\n\t\"StandardErrorPath\" = \"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launcher.log\";\n\t\"Label\" = \"local.spacelab.job.boi-standard-native-2100325529865507712-v2\";\n\t\"OnDemand\" = true;\n\t\"LastExitStatus\" = 0;\n\t\"PID\" = 12067;\n\t\"Program\" = \"/usr/bin/caffeinate\";\n\t\"ProgramArguments\" = (\n\t\t\"/usr/bin/caffeinate\";\n\t\t\"-i\";\n\t\t\"/opt/homebrew/bin/uv\";\n\t\t\"run\";\n\t\t\"--python\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python\";\n\t\t\"python\";\n\t\t\"-B\";\n\t\t\"-m\";\n\t\t\"post_boi.native\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native\";\n\t);\n};\n",
+    "processes": [
+      {
+        "pid": 12067,
+        "ppid": 1,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 15712256,
+        "args": [
+          "/opt/homebrew/bin/uv",
+          "run",
+          "--python",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native"
+        ]
+      },
+      {
+        "pid": 12068,
+        "ppid": 12067,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 688128,
+        "args": [
+          "/usr/bin/caffeinate",
+          "-i",
+          "/opt/homebrew/bin/uv",
+          "run",
+          "--python",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native"
+        ]
+      },
+      {
+        "pid": 12069,
+        "ppid": 12067,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 106496000,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native"
+        ]
+      },
+      {
+        "pid": 12096,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 9945088,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(6)"
+        ]
+      },
+      {
+        "pid": 12097,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 152059904,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12098,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 153976832,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=20)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12099,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 152207360,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12100,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 79.2,
+        "rss_bytes": 156565504,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=24)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12101,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 150683648,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12102,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 150749184,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=28)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12103,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 100.1,
+        "rss_bytes": 157237248,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=30)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12104,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 166674432,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=32)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12105,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 151617536,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=34)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 12106,
+        "ppid": 12069,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 153878528,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=36)",
+          "--multiprocessing-fork"
+        ]
+      }
+    ],
+    "cpu_sample_seconds": 1.0083561250939965,
+    "cpu_percent_sum": 179.3,
+    "memory": {
+      "total": 17179869184,
+      "available": 3634790400,
+      "percent": 78.8,
+      "used": 7388495872,
+      "free": 79511552,
+      "active": 3566993408,
+      "inactive": 3543547904,
+      "wired": 3821502464
+    },
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=24051811)\t80%; AC attached; not charging present: true\n",
+    "thermal": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+    "frozen_files_verified": 96,
+    "full_relevant_ps": [
+      "12067     1 S      0.0  0.1       01:52 /opt/homebrew/bin/uv run --python /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native",
+      "12068 12067 S      0.0  0.0       01:52 /usr/bin/caffeinate -i /opt/homebrew/bin/uv run --python /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native",
+      "12069 12067 S      0.0  0.6       01:52 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native",
+      "12097 12069 S      0.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=18) --multiprocessing-fork",
+      "12098 12069 S      0.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=20) --multiprocessing-fork",
+      "12099 12069 S      0.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=22) --multiprocessing-fork",
+      "12100 12069 S     44.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=24) --multiprocessing-fork",
+      "12101 12069 S      0.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=26) --multiprocessing-fork",
+      "12102 12069 S      1.3  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=28) --multiprocessing-fork",
+      "12103 12069 R     99.6  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=30) --multiprocessing-fork",
+      "12104 12069 S      0.0  1.0       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=32) --multiprocessing-fork",
+      "12105 12069 S      0.3  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=34) --multiprocessing-fork",
+      "12106 12069 S      0.0  0.9       01:36 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=36) --multiprocessing-fork"
+    ],
+    "latest_log_records": [
+      " 13%|\u2588\u258e        | 1335/10138 [01:30<29:15,  5.01it/s, batch: 0 | bound: 0 | nc: 42 | ncall: 7129 | eff(%): 17.499 | loglstar: 45185.232 | logz: 45175.614 | dlogz: 18627.140 >  0.100]  ",
+      " 10%|\u2588         | 1345/12914 [01:31<35:10,  5.48it/s, batch: 0 | bound: 0 | nc: 12 | ncall: 7307 | eff(%): 17.228 | loglstar: 45372.246 | logz: 45362.618 | dlogz: 18432.952 >  0.100]",
+      "  8%|\u258a         | 1355/17229 [01:33<46:11,  5.73it/s, batch: 0 | bound: 0 | nc: 5 | ncall: 7444 | eff(%): 17.057 | loglstar: 45488.847 | logz: 45479.296 | dlogz: 18314.024 >  0.100] "
+    ],
+    "scope": "Short production sample, not continuous/full hardware saturation proof. No runtime/kernel/priors/seeds/counts edits, restart to fill idle cores, server action or competing numerical job."
+  },
+  "new_statistical_admissions": 0,
+  "new_probability_runs": 0,
+  "all_prior_records_preserved": true,
+  "server_actions": false,
+  "global_runtime_or_science_changed": false,
+  "scope": "KIC7373485 passed native sampling and original-protection checks but remains held for seasonal response, with integration sensitivity also explicit before any probability adoption. No astrophysical FP denial. KIC4543190 exact published-candidate identity and reported stellar uncertainty reviewed before seeded native launch. All computation sequential local-only; no competing candidate jobs, broad audit or optimization."
+}

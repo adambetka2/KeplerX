@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-20T22:43:00.473657+00:00",
+  "source_id": "2102918384442366592",
+  "kic": 7271045,
+  "status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_clock_accepted": false,
+  "production_fpp_runs": 0,
+  "reason": "The reviewed beta-support repair allowed real sampling, but batman raised RuntimeError: Eccentric anomaly computation reached the maximum number of interations. Native sampler aborted before exporting a chain or usable posterior. This is an upstream orbital-solver/runtime failure, not a reproduced EB mechanism or scientific falsification.",
+  "native_generation": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3",
+  "freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/freeze.json",
+    "sha256": "669c1181b3f920bb4ea189711ae0f35805db387daa88d4aadaa07ccab42e483e"
+  },
+  "source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/source-review.json",
+    "sha256": "f13ebbdb2d9548277afaf23a1d5696e5bc254569f2fbc99898b8bb1e86016351"
+  },
+  "same_input_reference_revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/revalidation.json",
+    "sha256": "37270eda2686cdf39513791bf5cffc5c3f871846c4e35c763d5d4f820cd3d921"
+  },
+  "prior_stuck_sampler_failure": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-sampler-failure-v1.json",
+    "sha256": "f0ed72a22a0684143ab2159959bd441c2c6aafbe15bdeaf20d1d7f207fa289c5"
+  },
+  "failure": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native/failure.json",
+    "sha256": "5795340af59b96be072e74dfa42326a44b2e71e1056abe3d187c0cad8d1563d9"
+  },
+  "launcher_log": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native-launcher.log",
+    "sha256": "843318c4a5d6af1b089137fadb1867f2c7034611ed367375dfddc7ffbdede5ee"
+  },
+  "partial_files": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native/failure.json",
+      "sha256": "5795340af59b96be072e74dfa42326a44b2e71e1056abe3d187c0cad8d1563d9"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native/inputs.json",
+      "sha256": "14b101dc7556b520048944c1460d32966029cbcf5f587450275a7a89f4d64b94"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native/juliet/lc.dat",
+      "sha256": "3b34474990c09ee97b2bbcfd0472ccf897734f17fed80e77772f27fbb3c54793"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native/juliet/priors.dat",
+      "sha256": "527cea51c14a6afd2220802f34f8a653805f8b13d6b9a750c0e5229ba8b50e8e"
+    }
+  ],
+  "originals_preserved": true,
+  "scope": "No native checkpoint was exported; no supported resume/clock/FPP adoption. Do not clip eccentricity, switch priors after this failure, suppress solver exceptions, manufacture a posterior, or claim all-infinite likelihood. No prolonged rescue tonight; precise failure and inputs remain for future reviewed diagnosis.",
+  "next": "Advance next eligible full-queue host by actual input readiness and cost. Local Mac only; no new scientific optimization project.",
+  "freeze_files_verified": 82
+}

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "status": "LOCAL_EXPORT_VERIFIED",
+  "finished_utc": "2026-10-11T03:42:18.719545+00:00",
+  "files": 457159,
+  "bytes": 181491898238,
+  "gzip_original_hashes_verified": 10113,
+  "volume_uuid": "5617B8CF-DE4E-45F6-AA95-0AA9D902D992",
+  "manifest_sha256": "ece2fed73a34f1974dae83af1efcb7bbb3e00749b9adb6bdb09f49bb9453c209"
+}

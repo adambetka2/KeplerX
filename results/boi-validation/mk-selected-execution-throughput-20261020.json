@@ -1,0 +1,378 @@
+{
+  "utc": "2026-10-20T07:37:43.854381+00:00",
+  "classification": "PROGRESS_MEASURED_RENDER_PARALLELISM_AND_CURRENT_FIRST_FIVE_CORE_PRIORITY",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_adjudications": 0,
+  "false_positive_rate": null,
+  "selected_source_id": "2128845796339643392",
+  "selected_kic": 10865762,
+  "complete_full_repeats": 0,
+  "selected_progress": {
+    "final": {
+      "repeats": 20,
+      "minimum_scenarios": 105,
+      "maximum_scenarios": 112,
+      "per_seed": [
+        {
+          "index": 0,
+          "scenarios": 106
+        },
+        {
+          "index": 1,
+          "scenarios": 106
+        },
+        {
+          "index": 2,
+          "scenarios": 110
+        },
+        {
+          "index": 3,
+          "scenarios": 106
+        },
+        {
+          "index": 4,
+          "scenarios": 106
+        },
+        {
+          "index": 5,
+          "scenarios": 107
+        },
+        {
+          "index": 6,
+          "scenarios": 111
+        },
+        {
+          "index": 7,
+          "scenarios": 109
+        },
+        {
+          "index": 8,
+          "scenarios": 108
+        },
+        {
+          "index": 9,
+          "scenarios": 111
+        },
+        {
+          "index": 10,
+          "scenarios": 108
+        },
+        {
+          "index": 11,
+          "scenarios": 106
+        },
+        {
+          "index": 12,
+          "scenarios": 112
+        },
+        {
+          "index": 13,
+          "scenarios": 112
+        },
+        {
+          "index": 14,
+          "scenarios": 112
+        },
+        {
+          "index": 15,
+          "scenarios": 105
+        },
+        {
+          "index": 16,
+          "scenarios": 105
+        },
+        {
+          "index": 17,
+          "scenarios": 105
+        },
+        {
+          "index": 18,
+          "scenarios": 111
+        },
+        {
+          "index": 19,
+          "scenarios": 105
+        }
+      ]
+    },
+    "recovered": {
+      "repeats": 3,
+      "minimum_scenarios": 101,
+      "maximum_scenarios": 107,
+      "per_seed": [
+        {
+          "index": 0,
+          "scenarios": 101
+        },
+        {
+          "index": 1,
+          "scenarios": 105
+        },
+        {
+          "index": 2,
+          "scenarios": 107
+        }
+      ]
+    }
+  },
+  "observer_status": "WAITING_FOR_COMPLETE_FIRST_FIVE",
+  "thread_equivalence": {
+    "scenario_count": 132,
+    "attempts_per_scenario": 128,
+    "compared_threads": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "all_weights_and_bound_flags_bitwise_identical": true,
+    "method": "Physical draws and proposal ratios are generated once; renderer threading assigns independent model cells without changing random draws or the per-cell exposure sum. Every alternative must equal the one-thread values before timings run.",
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-render-threads-v2/summary.json",
+      "sha256": "cabcce2c75983cb73754c27ced1c1e3d2b7bc6853337a14d73e7478f8f2bff3a"
+    },
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-render-threads-v2/plan.json",
+      "sha256": "cd27cb571917c4fb05712e29eaa2b95a9f8b9a0fa1d35f072a861619af63156f"
+    },
+    "implementation": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/compare_selected_render_threads_v2.py",
+      "sha256": "5fff9675ac7c1bcecf4b9c3e2b0ae415da18d04a6a9a6f76e48d2fb7e0a5a48a"
+    },
+    "scope": "Operational numerical comparison only, not132primary repeats, empirical FPP calibration, evidence of source ownership or physical admission."
+  },
+  "timing": [
+    {
+      "scenario": "TP",
+      "fixed_physical_attempts": 512,
+      "speedup_vs_one_thread": {
+        "1": 1.0,
+        "2": 1.7874370194553775,
+        "4": 2.9801312761069925,
+        "6": 3.790841517806793
+      },
+      "median_seconds": {
+        "1": 0.20454636972863227,
+        "2": 0.11443556752055883,
+        "4": 0.06863669777521864,
+        "6": 0.053958037751726806
+      }
+    },
+    {
+      "scenario": "EB",
+      "fixed_physical_attempts": 512,
+      "speedup_vs_one_thread": {
+        "1": 1.0,
+        "2": 1.1120690814001195,
+        "4": 1.4913196701525329,
+        "6": 1.763225382048421
+      },
+      "median_seconds": {
+        "1": 0.053706438513472676,
+        "2": 0.048294156731572,
+        "4": 0.036012693715747446,
+        "6": 0.030459202243946493
+      }
+    },
+    {
+      "scenario": "NTP:2128845757679157248",
+      "fixed_physical_attempts": 512,
+      "speedup_vs_one_thread": {
+        "1": 1.0,
+        "2": 1.8113491297245616,
+        "4": 3.0632684450419467,
+        "6": 3.9386117055736904
+      },
+      "median_seconds": {
+        "1": 0.25086912023834884,
+        "2": 0.13849849050166085,
+        "4": 0.08189589803805575,
+        "6": 0.06369480898138136
+      }
+    },
+    {
+      "scenario": "NTP:2128859020537121792",
+      "fixed_physical_attempts": 512,
+      "speedup_vs_one_thread": {
+        "1": 1.0,
+        "2": 1.7916858655021684,
+        "4": 2.9828125890547788,
+        "6": 3.723980994538084
+      },
+      "median_seconds": {
+        "1": 0.17403970524901524,
+        "2": 0.09713739925064147,
+        "4": 0.05834751599468291,
+        "6": 0.04673485324019566
+      }
+    }
+  ],
+  "timing_scope": "Four fixed512attempt physical samples; counterbalanced thread orders and repeated renders under concurrent selected-target load. Renderer timing excludes physical sampling and full-campaign overhead; no two-hour whole-candidate guarantee follows.",
+  "prospective_scheduler": {
+    "one_target": true,
+    "cpu_slots": 32,
+    "first_five_renderer_threads": 6,
+    "first_five_maximum_reserved_slots": 30,
+    "remaining_renderer_threads": 2,
+    "maximum_concurrent_later_workers": 16,
+    "fixed_first_five_screen_unchanged": true,
+    "twenty_primary_and_zero_or_three_diagnostic_counts_unchanged": true,
+    "scientific_batch_render_phase_integration_unchanged": [
+      256,
+      64,
+      800,
+      54
+    ],
+    "other_numerical_library_threads": 1,
+    "execution_evidence_inside_plan_freeze": true,
+    "worker_checks_environment_and_actual_numba_thread_count": true,
+    "canonical_resume_uses_same_weighted_reviewed_policy": true,
+    "current_production_workers_restarted_or_changed": false
+  },
+  "frozen_worker_boundary_controls": {
+    "role": "ZERO_DRAW_EXECUTION_CONTROLS_ONLY",
+    "directory": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/threaded-execution-control-v1",
+    "checks": [
+      {
+        "stage": "final",
+        "index": 0,
+        "renderer_threads": 6,
+        "freeze_sha256": "81ecd7e3d8f84d54bccfb440e0b60797cf876b44336ec66b8ac5ec49fc4c047a",
+        "zero_probability_attempts": true,
+        "scientific_counts_and_model_preserved": true
+      },
+      {
+        "stage": "final",
+        "index": 5,
+        "renderer_threads": 2,
+        "freeze_sha256": "81ecd7e3d8f84d54bccfb440e0b60797cf876b44336ec66b8ac5ec49fc4c047a",
+        "zero_probability_attempts": true,
+        "scientific_counts_and_model_preserved": true
+      },
+      {
+        "stage": "recovered",
+        "index": 0,
+        "renderer_threads": 2,
+        "freeze_sha256": "81ecd7e3d8f84d54bccfb440e0b60797cf876b44336ec66b8ac5ec49fc4c047a",
+        "zero_probability_attempts": true,
+        "scientific_counts_and_model_preserved": true
+      }
+    ],
+    "actual_new_probability_attempts": 0,
+    "current_functions_ast_equal_to_tested_frozen_worker": {
+      "run": true,
+      "integrate_run": true,
+      "inspect_result": true,
+      "execute": true
+    },
+    "first_operational_failure_retained": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/threaded-execution-control-v1/first-operational-failure.json",
+      "sha256": "eafddd479c001b60dbd0b8097aade4a1412a091fde0b0d256be1017842f45958"
+    },
+    "scope": "Actual verified frozen entry and pinned scientific runtime exercised, with integration intercepted before any draw. No probability result was created."
+  },
+  "current_live_core_priority": {
+    "first_five_cpus": [
+      8,
+      10,
+      0,
+      2,
+      4
+    ],
+    "first_five_on_fastest_five_distinct_p_cores": true,
+    "other_workers_on_distinct_3p_plus15e_cores": true,
+    "same_all23pids_and_thread_environment": true,
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/selected-first-five-core-priority-v1.json",
+      "sha256": "e635a1c1a2b175b36afa19900a6b3e2992c00c3f42a210d07a1cda804bfb9aba"
+    }
+  },
+  "conditional_target_planet_radius": {
+    "role": "CONDITIONAL_ON_PLANET_ON_TARGET_ONLY",
+    "median_radius_range_earth": [
+      2.0238153132173142,
+      2.066943126287454
+    ],
+    "per_seed": [
+      {
+        "seed_index": 0,
+        "radius_quantiles_earth_radii": [
+          1.682222162549901,
+          1.826161802205428,
+          2.0506062456493677,
+          2.3013960891180476,
+          2.48760443180758
+        ],
+        "weight_effective_draws": 374.6744614687829,
+        "maximum_normalized_weight": 0.014887927067195774
+      },
+      {
+        "seed_index": 1,
+        "radius_quantiles_earth_radii": [
+          1.7094706323917324,
+          1.8335656983972353,
+          2.055678032927327,
+          2.2840056426397686,
+          2.4904093978416935
+        ],
+        "weight_effective_draws": 415.41093327259426,
+        "maximum_normalized_weight": 0.015899872371997803
+      },
+      {
+        "seed_index": 2,
+        "radius_quantiles_earth_radii": [
+          1.6833377853102591,
+          1.8359875935200496,
+          2.066943126287454,
+          2.3250335248952014,
+          2.5265280854781498
+        ],
+        "weight_effective_draws": 519.9438669873833,
+        "maximum_normalized_weight": 0.011015637457580139
+      },
+      {
+        "seed_index": 3,
+        "radius_quantiles_earth_radii": [
+          1.6803368483372676,
+          1.8274197871909665,
+          2.0546115825312605,
+          2.320989176664078,
+          2.5331692272291546
+        ],
+        "weight_effective_draws": 516.1737764082894,
+        "maximum_normalized_weight": 0.00985444656978593
+      },
+      {
+        "seed_index": 4,
+        "radius_quantiles_earth_radii": [
+          1.6807740394511241,
+          1.815620199499473,
+          2.0238153132173142,
+          2.3276023565185167,
+          2.5646867361084094
+        ],
+        "weight_effective_draws": 482.9057492007842,
+        "maximum_normalized_weight": 0.013760157321248655
+      }
+    ],
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-tp-radius-v1/review.json",
+      "sha256": "aede4dc0cab81948d1a75fe5bf2c509b55300f03dbd3e1e172cc9c67ff482c34"
+    },
+    "new_draws": 0,
+    "scope": "Radius diagnostic from saved complete TP scenario weights, including stellar/scene/dilution priors. It is conditional on the declared prepared likelihood and a planet on this target. It does not establish source ownership, FPP, native joint-dilution model acceptance, physical validation or novelty."
+  },
+  "physical_closeout_still_open": [
+    "Native-clock source localization is target-compatible, but fixed-PRF source attribution is weak and the nearest resolved neighbor is6.71arcsec away and1.58mag brighter inG.",
+    "Parent pointing/background regression reduces the depth diagnosticSNRfrom5.26to2.94; it is not a reproduced instrumental mechanism.",
+    "Off-grid companion limb-darkening approximation remains conditional, not supported physical-atmosphere evidence.",
+    "Native joint-dilution/radius acceptance, available imaging and dated exact-signal literature require explicit final closeout."
+  ],
+  "verification": {
+    "post_boi_tests": "42 passed",
+    "ruff_and_complexity10": "PASS post_boi",
+    "artifacts": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v9"
+  },
+  "scope": "All scientific work in this step uses the selected source only and runs over ssh kbonus. No other candidate or stopped native/geometry queue was resumed. Preparation/control outcomes do not count toward the50planet goal."
+}

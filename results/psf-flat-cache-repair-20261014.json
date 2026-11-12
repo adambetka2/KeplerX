@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-14T16:47:33.028950+00:00",
+  "status": "CORRECTED_CANDIDATE_RETRY_RUNNING",
+  "defect": "Shared Numba disk cache restored an incumbent private module name in a candidate worker.",
+  "fix": "Per-study, per-engine cache set before spawning workers; coordinator environment restored after pool shutdown.",
+  "detector_source_or_threshold_changes": false,
+  "preserved_failed_report": {
+    "path": "dump/psf-flat-retrieval-20261014-v1/usable1000-v1/retrieval-report.json",
+    "sha256": "03fd5dd076b531ec1c712b19edb0d0f22e6f0f681f52ed8c5e9f975045f53688"
+  },
+  "reproduction": {
+    "path": "dump/psf-flat-retrieval-20261014-v1/cache-repair-20261014-v1/reproduction.json",
+    "sha256": "ce90e97dcebd2777b73bf774ba8fb16967170061df8ebb0fed04d5f5ccfff53d"
+  },
+  "checks": {
+    "tests_passed": 59,
+    "test_command": "uv run --no-project --python <study runtime> python -m pytest dwarfs/experiments dwarfs/shallow -q",
+    "changed_file_ruff": "PASS",
+    "folder_complexity_max_10": "PASS",
+    "existing_unchanged_lint": [
+      {
+        "path": "dwarfs/experiments/compare_photometry.py",
+        "code": "I001",
+        "line": 3
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 111
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 114
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 116
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 118
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_validation.py",
+        "code": "RUF046",
+        "line": 407
+      }
+    ]
+  },
+  "preflight": {
+    "status": "WORKER_PREFLIGHT_PASSED",
+    "incumbent_replays": [
+      {
+        "key": "00233b0cfae64e012988d7d4",
+        "proposals_identical": true
+      },
+      {
+        "key": "c2557d409230b3cfa7bbbbc2",
+        "proposals_identical": true
+      }
+    ],
+    "candidate_cold_warm_replays": [
+      {
+        "case_id": "final10000:synthetic_planet:2080377743242277504",
+        "status": "SEARCHED",
+        "proposal_count": 0,
+        "cold_warm_proposals_identical": true,
+        "recovered": false,
+        "exact_clock_match": false
+      },
+      {
+        "case_id": "golden1000:real_planet:K00492.01",
+        "status": "SEARCHED",
+        "proposal_count": 7,
+        "cold_warm_proposals_identical": true,
+        "recovered": true,
+        "exact_clock_match": true
+      }
+    ],
+    "receipt_sha256": "f8c2b564e52fce60535a772ee292a4e4b428099b7a51e1ca66cf76dca06532d5"
+  },
+  "retry": {
+    "folder": "dump/psf-flat-retrieval-20261014-v1/usable1000-v2",
+    "driver_sha256": "b7bdb3125ca55f5189d026cbcffe00cb1138914e85ebc06029526729e8fbac77",
+    "prepared_cases": 1000,
+    "prepared_cases_byte_identical": true,
+    "prepared_cases_sha256": "8424b45dd5ec7eaec7422d5e04e671b22d804d4f09cebba468b41f6b4bcc73e5",
+    "incumbent_unique_results_reused": 997,
+    "inherited_incumbent_errors": 2,
+    "detector_snapshots_identical": true,
+    "numerical_runtime_identical": true,
+    "workers": 10,
+    "nice": 0,
+    "launch_receipt_sha256": "f6cf98dabb4e6fc3f779badcba45d0f2c31daa5fbabfbade3fd03c8bb0b24ec1",
+    "inheritance_receipt_sha256": "7218c543a5cd3ceae2c896836a68a63bfe5fc6344f8723d6a4a0a2eda7296dbd",
+    "resource_check_sha256": "ec2cdb97f1e514ed1042fec9cbfcdc10228eab739dc43f6cd6776fdb35e0300c",
+    "cpu_percent_sum_at_check": 931.3999999999999,
+    "unique_input_statuses_at_check": {
+      "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002": {
+        "SEARCHED": 990,
+        "DETECTOR_INELIGIBLE": 5,
+        "UNEXPECTED_ERROR": 2
+      },
+      "delivered_psf_flat_segment_intercepts_v1": {
+        "SEARCHED": 4
+      }
+    }
+  },
+  "monitor": {
+    "automation_id": "notify-when-psf-flat-pilot-finishes",
+    "status": "ACTIVE",
+    "cadence": "HOURLY",
+    "target": "usable1000-v2"
+  },
+  "limits": "Candidate retrieval is pending. The original two incumbent rank errors remain recorded and block the strict zero-error admission gate. No real5000 run or server changes were made."
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-21T12:27:05.755794+00:00",
+  "source_commit": "bf5294338c41a95b876c141672017fe14d056d41",
+  "synchronization_commit_before_this_record": "8b4255bdf6eb97e4de7bb6da2ec6cbfeb5d435d6",
+  "release": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-repairs-20261021-bf529433",
+  "active_release_alias": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-current",
+  "versions": {
+    "juliet": "2.2.10+spacelab.1",
+    "batman_package": "2.5.3+spacelab.2",
+    "triceratops_commit": "d20875c27d6761349cf032728bb4a59ec732a84d"
+  },
+  "linux_tests_passed": 33,
+  "other_checks": [
+    "package compatibility",
+    "Ruff E4,E7,E9,F,I,C90,maxcomplexity10"
+  ],
+  "checks": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/deployment-bf529433",
+  "native": {
+    "unit": "mk-ten-resume-native-bf529433-v02",
+    "plan": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/resume-native-bf529433/prospective-plan.json",
+    "prepared_cases": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/resume-native-bf529433/prepared-cases.json",
+    "selected": 16,
+    "source_commit": "bf5294338c41a95b876c141672017fe14d056d41",
+    "live_at_last_check": 16,
+    "sum_ps_cpu_percent": 1598.9,
+    "cpu_measure": "ps pcpu average since process start",
+    "recorded_utc": "2026-10-21T12:27:05.755794+00:00"
+  },
+  "all16_prepared_arrays_identical": true,
+  "first_coordinator_import_failure": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/resume-native-bf529433/launch-failure-v01.json",
+  "fpp_status": "Await reviewed response comparison;none dispatched",
+  "completed_fpp_integrations": 106,
+  "exact_signals_integrated": 44,
+  "new_full_validations": 0,
+  "automation": "DELETED_BY_USER",
+  "preservation": "Original releases,all interrupted/completed attempts,all stopped campaigns,and historical serverrecords preserved. No stoppedcampaign rerun orsource omission."
+}

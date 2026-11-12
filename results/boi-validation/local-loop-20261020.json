@@ -1,0 +1,73 @@
+{
+  "recorded_utc": "2026-10-20T13:40:32.899494+00:00",
+  "status": "RUNNING_FIRST_TWO_PRIMARY",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "active_kic": 4904094,
+  "source_id": "2103348117391603840",
+  "tic": 120316276,
+  "campaign": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2",
+  "launchctl_label": "local.spacelab.job.boi-local-2103348117391603840-v2",
+  "freeze_sha256": "259c8824e50f59223d1bad337601642f71eeb849767447361508bc383b0060c7",
+  "frozen_dependencies": 1390,
+  "native_convergence": {
+    "rank_rhat_maximum": 1.0119390241635648,
+    "reference_epoch_bulk_ess": 738.972379671717,
+    "radius_ratio_median_over_std": 6.044896537526583,
+    "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+    "passed": true
+  },
+  "adopted_final_period_days": 35.89368458751281,
+  "adopted_final_epoch_bkjd_tdb": 953.1132745473803,
+  "median_fitted_T14_hours": 4.072494411142544,
+  "scene_source_count": 31,
+  "scenario_count_per_repeat": 105,
+  "planned_primary_maximum": 20,
+  "completed_full_probability_runs": 0,
+  "recovered_diagnostics": 0,
+  "futility_rule": "Stop if both first FPP>=0.10 or both first NFPP>=0.01; otherwise finish all20including first2.",
+  "cpu_budget": 10,
+  "first_two_threads_each": 5,
+  "resource_policy": "One BOI only; no competing numerical work. Dynamic shared ten-thread renderer budget; BLAS/OpenMP1. Durable Interactive launchctl, with separate idle-sleep inhibitor tied to the coordinator PID.",
+  "numerical_revalidation": {
+    "all105families_reference_posterior_L1": 5.589505991901168e-17,
+    "thread_masks_1_5_10_bitwise_equal": true,
+    "zero_quarter_projection_observed_model_covariance_errors": 0.0,
+    "protocol_tests_passed": 11
+  },
+  "readiness_recovery": "Initial pixel helper could not regress Q1 because all9raw primary cadences fail the original quality mask. Reused12successful paired stacks; retainedQ1as no localization coverage. The first phase helper then lackedQ1native noise. Separate reviewed v2 projects only its complete independent B-null groups:1420valid Q1photons, zero in either fixed clock window. All raw photons/masks retained; full-reference operator tests pass exactly without invented production noise. Failedv1logs and receipts remain.",
+  "stellar_inputs": "Exact APOKASC3 Gold neighbor KIC4904086/Gaia2103348121689134592:4096supported measured particles, median physicalGresidual0.0034mag. All30other source routes retained. Sparse empirical neighbors and missing parameter covariance remain limitations.",
+  "physical_closeout_pending": [
+    "All20primary means, any threshold crossings and automatic deep weight replay.",
+    "Dilution-aware radius/body; native apparent fit is grazing and retains upper-radius-prior influence.",
+    "Q1has no clean primary pixel coverage; weak Q7timing/rolling-band context retained. Twelve measured quarterly paired stacks prefer the target in24of24comparisons.",
+    "RUWE, companions/imaging and dated exact-signal catalogue/literature closeout before physical admission."
+  ],
+  "selection": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/next-selection-20261020-v6.json",
+  "server_compute_started": false,
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/native-clock-adoption.json",
+      "sha256": "1455f7b1c0b45d434c1226f17951f6e45f11ba5106f7bca7e2427d4d761d3c7c"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/spacecraft-review-closeout-v1.json",
+      "sha256": "3dd1ad0b34005e7801bd7112b6148ebc1279824a1a7d3dcd88036fe6a009041a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/readiness-recovery-v1.json",
+      "sha256": "e34835259432a4077bb5b17a9d99867303b4dd8ab46194ca9b5fcfd82be57e30"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/next-stage-static-binding-v2.json",
+      "sha256": "f5739d3b75302effdb53bf7e2d2ecb39943825df692024b9c62c6897e892a6a7"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/audit/readiness-review.json",
+      "sha256": "0a81e154410b70869ea77fb7349236eb3ed1ccc0775f592a1e7818897f612c9d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/audit/revalidation/report.json",
+      "sha256": "5ade220418d911b6863cb45928b968c9ec614431159e39e24dadaf38f7790d8e"
+    }
+  ]
+}

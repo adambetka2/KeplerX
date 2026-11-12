@@ -1,0 +1,193 @@
+{
+  "utc": "2026-10-20T14:16:53.653859+00:00",
+  "status": "ONE_TARGET_FIRST_FIVE_FULL_CENSUS_PRIMARY_RUNS_LIVE",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_fixed_five_screens": 1,
+  "screen_rejections": 1,
+  "completed_full_probability_repeats": 7,
+  "preparation_holds": 12,
+  "physical_false_positive_rate": null,
+  "recent_holds": [
+    {
+      "source_id": "2052124108331844608",
+      "kic": 3354627,
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/physical-hold-v1.json",
+        "sha256": "856162116b0d222f6cbdea4873f4fb6697758699dfcd3fcb81713356d693caf6"
+      }
+    },
+    {
+      "source_id": "2052257699003730176",
+      "kic": 3241025,
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205225-v1/physical-hold-v1.json",
+        "sha256": "26eb73982aeff00ff7877e10027b4f61ec49e0840a8ef7c4ba4e94ce18edd316"
+      }
+    },
+    {
+      "source_id": "2078543826571859840",
+      "kic": 7468536,
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207854-v1/physical-hold-v1.json",
+        "sha256": "fb9cd7a0485b9538d1be6ebe9feea921538872526905a490ba202e5fd91e5554"
+      }
+    }
+  ],
+  "aperture_preflight": {
+    "unrecovered_source": "2052257699003730176",
+    "unrecovered_quarters": 17,
+    "passing_sources": [
+      {
+        "source_id": "2078543826571859840",
+        "quarters": 18
+      },
+      {
+        "source_id": "2104058096963805696",
+        "quarters": 13
+      }
+    ],
+    "scope": "Complete delivered-SAP aperture authentication now precedes new native sampling. Declared provider permits multi-TPF aperture photometry; no missing pixel zero-fill or false-positive denial."
+  },
+  "signal_scope": {
+    "previous_source_proposals": 39,
+    "previous_sources": 33,
+    "measured": 38,
+    "unavailable_measurement": 1,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/priority-signal-v7/queue.json",
+      "sha256": "8c1dbe4b13c25b48a971f5e6c86752083c4788d4ecddd09c5dd17162c2617b23"
+    },
+    "scope": "Each different proposal requires exact old-clock/photon review; not automatically a new planet."
+  },
+  "selected": {
+    "source_id": "2104058096963805696",
+    "kic": 6267058,
+    "tic": 120318420,
+    "signal_id": "mk-sap-20261019-2104058096963805696-3",
+    "period_days": 11.792761307979013,
+    "epoch_bkjd": 716.9472305364367,
+    "duration_days": 0.11663349201022648,
+    "scenario_count": 93,
+    "attempted_draws_per_scenario": 1000000,
+    "primary_budget": 20,
+    "recovery_budget": 0,
+    "first_five_renderer_threads": 6,
+    "first_five_mean_FPP_stop_ge": 0.03,
+    "live_worker_count": 5,
+    "live_workers": [
+      "3778726 3778720 python          /srv/kbonus/dump/boi-further-validation-20261019/runtime/bin/python -B -m post_boi.campaign /srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json run --source 2104058096963805696 --stage final --index 0",
+      "3778727 3778720 python          /srv/kbonus/dump/boi-further-validation-20261019/runtime/bin/python -B -m post_boi.campaign /srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json run --source 2104058096963805696 --stage final --index 1",
+      "3778730 3778720 python          /srv/kbonus/dump/boi-further-validation-20261019/runtime/bin/python -B -m post_boi.campaign /srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json run --source 2104058096963805696 --stage final --index 2",
+      "3778731 3778720 python          /srv/kbonus/dump/boi-further-validation-20261019/runtime/bin/python -B -m post_boi.campaign /srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json run --source 2104058096963805696 --stage final --index 4",
+      "3778732 3778720 python          /srv/kbonus/dump/boi-further-validation-20261019/runtime/bin/python -B -m post_boi.campaign /srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json run --source 2104058096963805696 --stage final --index 3"
+    ],
+    "unit": "mk-210405-probability-triage-v2.service",
+    "coordinator_snapshot": {
+      "attempt": "20261020T141438414280Z",
+      "status": "RUNNING_AUTHORIZED_FIVE_PRIMARY_TRIAGE",
+      "workers_completed": [],
+      "policy": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/policy.json",
+      "physical_holds": {},
+      "freeze_sha256": "82c97712a2c57c095efc7274b58f29c51bf7ce229a7e7da6bdbe904044dfde7a",
+      "statistical_validations": 0,
+      "utc": "2026-10-20T14:14:38.648192+00:00",
+      "screening": {
+        "2104058096963805696": {
+          "decision": "WAIT_FOR_FIRST_FIVE",
+          "mean_fpp": null
+        }
+      },
+      "deep_verified_complete_runs": 0
+    },
+    "evidence": [
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/completed-native-reuse-review-v2.json",
+        "sha256": "0cd0bb62eae92749b7d3e4a82583c4f05816957c7be6dbe05693099e5c15170b"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/aperture-identity-v1/review.json",
+        "sha256": "0b498fe6bac13838cc9396720d05dcef06374891f5c3127afe1522e908066f15"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/joint-source-hypotheses-v1/review.json",
+        "sha256": "047f20b415912d5ac9f085090b6d4cdb3c5d1158054aaa87a475b3521d8da56f"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/scene-geometry-reuse-review-v1.json",
+        "sha256": "2cc60e9522456bf8b14c39b7933dd0f13c5aa101d2a5de42ce4a566969a885cf"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-readiness-review-v1.json",
+        "sha256": "805b641eb787a7b07f9f07462ee7a6adbea3f6481997a37308e3a4dcd33a64be"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/plan.json",
+        "sha256": "c656d3ec988ecbad526b3a6e4aaddd683519aa9ea5e7822b0f810205587288ff"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/freeze.json",
+        "sha256": "82c97712a2c57c095efc7274b58f29c51bf7ce229a7e7da6bdbe904044dfde7a"
+      }
+    ]
+  },
+  "throughput": {
+    "census_scenarios": 93,
+    "workers": 5,
+    "draws_per_scenario": 1024,
+    "orders": [
+      [
+        1,
+        2,
+        4,
+        6
+      ],
+      [
+        6,
+        4,
+        2,
+        1
+      ]
+    ],
+    "median_slowest_worker_seconds": {
+      "1": 9.16878084500786,
+      "2": 8.169044284382835,
+      "4": 8.1880091620842,
+      "6": 8.099002518574707
+    },
+    "selected_threads": 6,
+    "all_weights_bitwise_equal": true,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/execution-throughput-v2/review.json",
+      "sha256": "cac41b50f151c475fad3a19a2473cefe8119eb8b1586f110e316ecfd35ac7dd7"
+    },
+    "scope": "Bounded full-census control including sampling/rendering/persistence; does not establish full1Mdraw or globally maximum throughput."
+  },
+  "preserved_first_failures": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/205212-amplitude-timing-fork-first-failure.json",
+      "sha256": "74cb64e93a6491d39f8204799262959e943aaba4d8721f221777e83dd17628f6"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/205225-followup-first-failures.json",
+      "sha256": "0656eb9f5c642917db3608a7fb09a01ecce2d8db9977fd45cd40dfa071f8fd8c"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/205225-auxiliary-template-domain-failure.json",
+      "sha256": "0da7c3da78489b6397847c456622486310d2382e01e6ab39cce9f6f42977a890"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/210405-native-reuse-serialization-first-failure.json",
+      "sha256": "f4aa499a01dcb338b0b79f836f5af065a52eb2fee07cc340b7be5764dd086d22"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/210405-probability-launch-cwd-first-failure.json",
+      "sha256": "19dfa4c1278245c9cf3bf1be65544413ee0f8eaccc1bfff5315eaaef03b08642"
+    }
+  ],
+  "ledger": {
+    "path": "/home/adam/spacelab/results/boi-validation/mk-sequential-candidate-ledger-20261020.csv",
+    "sha256": "527c949158076b64cacbfdb456fd43e89a5c10d939c95383df1a82b4016f82cb"
+  },
+  "scope": "Progress snapshot only. No physical/statistical validation, novelty claim or physical false-positive rate is inferred."
+}

@@ -1,0 +1,55 @@
+{
+  "protocol": "TRICERATOPS_KEPLER_V3",
+  "source_id": "2126055064030395392",
+  "signal_id": "mk-sap-20261019-2126055064030395392-1",
+  "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+  "photometry": "native-photons.npz",
+  "flux_convention": "raw_aperture",
+  "exposure_days": 0.02043361111111111,
+  "recovered": {
+    "period_days": 50.435747551267816,
+    "epoch_bkjd": 393.06624436222984,
+    "duration_days": 0.168
+  },
+  "other_signals": [],
+  "protection_mask": null,
+  "detrending": {
+    "window_days": 1.6800000000000002,
+    "polyorder": 2
+  },
+  "prepared": "prepared",
+  "native": {
+    "priors": "native-priors.json",
+    "prior_basis": "Reported paired FLAME M/R with half-interval errors (first-order density); trend window 10 supplied durations; free eccentricity Beta(.867,3.03); direct k 0..1, b 0..2, physical LD, local OOT noise; no duration/k/density box.",
+    "seed": 892549426,
+    "starting_point": null,
+    "supersample": 20,
+    "fit_options": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 5,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    }
+  },
+  "native_review": "native/review.json",
+  "readiness": null,
+  "scene": null,
+  "geometry": null,
+  "aperture_response": null,
+  "background": null,
+  "probability": {
+    "noise": null,
+    "noise_basis": null,
+    "supersample": 20,
+    "contrast_curve": null,
+    "contrast_filter": null,
+    "molusc": null
+  },
+  "timing_review": "Exact delivered clock; recovery 0 unless a documented timing sensitivity justifies 3 before freeze.",
+  "recovery_diagnostics": 0,
+  "cpu_budget": 5
+}

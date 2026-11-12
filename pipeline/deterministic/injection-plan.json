@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "protocol": "fsc-kepler-release-injections-v1",
+  "seed": "forgotten-stars-release-injections-2026-09",
+  "source_freeze": "dump/release-controls-v2/freeze.json",
+  "source_pools": "dump/release-controls-v2/source-pools.csv",
+  "selection_rule": "Assign each frozen pool source deterministically to its predeclared stratum, test eligibility in pool-rank order, and accept the first eligible sources until every stratum quota is filled. Eligibility uses only coverage and the physical injected signal, never detector output.",
+  "cohorts": {
+    "ordinary": {
+      "target": 5000
+    },
+    "periodic_injection": {
+      "target": 5000,
+      "strata": [
+        {
+          "name": "ultra_short",
+          "count": 500,
+          "period_days": [0.2, 0.5]
+        },
+        {
+          "name": "core",
+          "count": 3500,
+          "period_days": [0.5, 100.0]
+        },
+        {
+          "name": "long_period",
+          "count": 1000,
+          "period_days": [100.0, 500.0]
+        }
+      ]
+    },
+    "sparse_injection": {
+      "target": 1000,
+      "shape_period_days": [30.0, 1000.0]
+    },
+    "ttv_injection": {
+      "target": 1000,
+      "period_days": [2.0, 100.0],
+      "amplitude_durations": [1.0, 3.0],
+      "superperiod_cycles": [4.0, 20.0]
+    }
+  },
+  "signal": {
+    "radius_ratio": [0.008, 0.16],
+    "depth_ppm": [40.0, 50000.0],
+    "duration_hours": [0.5, 24.0],
+    "stellar_density_solar": [0.3, 5.0],
+    "impact_parameter": [0.0, 0.8],
+    "limb_darkening": [0.3, 0.2],
+    "exposure_days": 0.02043361111111111,
+    "supersample_factor": 7,
+    "minimum_periodic_events": 3,
+    "minimum_periodic_quarters": 2,
+    "minimum_sparse_cadences": 3
+  },
+  "claim_boundary": "Flux-level on-target injections measure discovery and flux-vetting completeness. They do not measure detrending loss, source localization, background-contaminant rejection, occurrence rates, or planetary validation."
+}

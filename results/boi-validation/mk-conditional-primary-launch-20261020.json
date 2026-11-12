@@ -1,0 +1,68 @@
+{
+  "snapshot_utc": "2026-10-19T23:44:49.565158+00:00",
+  "status": "CONDITIONAL_PROBABILITY_CAMPAIGN_RUNNING_NOT_VALIDATION_ADMISSIONS",
+  "server": "kbonus",
+  "workspace": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1",
+  "plan": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/probability-campaign-v1/plan.json",
+  "freeze_sha256": "df51d31339117a49cecc3573111821272211397e7d8099feaac89f561039988b",
+  "service": "mk-boi-probability-primary-20261020-v1",
+  "maximum_workers": 32,
+  "numerical_threads_per_worker": 1,
+  "counts": {
+    "repeats": 20,
+    "draws_per_scenario": 1000000,
+    "batch": 256,
+    "render_batch": 64,
+    "likelihood_bound_log_budget": 48
+  },
+  "targets": [
+    {
+      "source_id": "2128845796339643392",
+      "signal_id": "mk-sap-20261019-2128845796339643392-1",
+      "scenarios": 132,
+      "primary_repeats": 20,
+      "recovered_diagnostics": 3,
+      "fitted_period_days": 17.464480396042873,
+      "fitted_reference_epoch_bkjd_tdb": 935.2624781717118
+    },
+    {
+      "source_id": "2127732197218050304",
+      "signal_id": "mk-sap-20261019-2127732197218050304-2",
+      "scenarios": 105,
+      "primary_repeats": 20,
+      "recovered_diagnostics": 0,
+      "fitted_period_days": 20.34027917759874,
+      "fitted_reference_epoch_bkjd_tdb": 852.6865427321594
+    }
+  ],
+  "new_statistically_validated": 0,
+  "goal": 50,
+  "completed_primary_studies": 0,
+  "probability_criteria_failure_fraction": null,
+  "reproduced_false_positive_fraction": null,
+  "readiness_holds": [
+    {
+      "source_id": "2105840847691288832",
+      "reason": "Quarter depths are not explained by the declared target dilution"
+    },
+    {
+      "source_id": "2073684805507947136",
+      "reason": "Engineering sensitivity and other same-source proposal need review"
+    },
+    {
+      "source_id": "2126063585245659136",
+      "reason": "Separate corrected native prior prepared from supplied TIC uncertainties"
+    },
+    {
+      "source_id": "2078419994072017664",
+      "reason": "Native convergence criteria not met at the fixed maximum endpoint"
+    }
+  ],
+  "limitations": [
+    "The two primary hosts lie within the retained Kepler limb-darkening table. Off-grid companion nearest-row approximations are explicitly inventoried and remain a physical-model closeout issue. Published cool PHOENIX coefficients at Solar composition were not substituted for measured non-Solar stars.",
+    "Candidate-specific populations, fields, aperture geometry, native photons and likelihood packets replace all former host-specific packets.",
+    "Current catalogue comparisons and bounded exact-host literature queries are not novelty certificates.",
+    "M/K detector recovery calibration remains separately deferred/open.",
+    "Numerical criteria failure is separate from a reproduced astrophysical/instrumental false positive. Original BOI dispositions are preserved."
+  ]
+}

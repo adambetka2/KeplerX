@@ -1,0 +1,11 @@
+{
+  "scope": "PERFORMANCE_PROTOTYPE_PRESERVED_FAILURE",
+  "local_date": "2026-10-25",
+  "stage": "In-memory MCJIT finalization before orbit evaluation",
+  "exit_code": 134,
+  "llvm_version": "22.1.0",
+  "error": "LLVM ERROR: Unsupported stack probing method",
+  "cause": "Apple Clang IR contains probe-stack=__chkstk_darwin, unsupported by this LLVM JIT",
+  "repair": "Compile the bounded-stack numerical kernel for generic arm64 with Clang's -mno-stack-arg-probe; keep the matching host module layout",
+  "scientific_fit_or_campaign_modified": false
+}

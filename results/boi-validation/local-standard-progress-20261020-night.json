@@ -1,0 +1,141 @@
+{
+  "utc": "2026-10-20T22:47:20.415413+00:00",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "current": {
+    "utc": "2026-10-20T22:47:20.415413+00:00",
+    "status": "NATIVE_FIT_RUNNING",
+    "execution_host": "LOCAL_MACBOOK_ONLY",
+    "source_id": "2079517512834068480",
+    "kic": 9606750,
+    "signal_id": "rust-v6-2079517512834068480-1",
+    "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480",
+    "protocol": "TRICERATOPS_KEPLER_V2",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/native-launch.json",
+      "sha256": "5bcfcfb656ebcbcf01722c495f51d6252b9b092f8fd5748da269bf65bcea52c9"
+    },
+    "native_input_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/native-freeze.json",
+      "sha256": "6e81e272ce88ab81760b0054b2b51aea91d34cc3348bf2bc0a36eb568b1d0e6d"
+    },
+    "native_stellar_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/native-stellar-review.json",
+      "sha256": "ffed1c31c79c470fb446fd98deae8cd4db56321f287ff6dcd9a4880ff0afe252"
+    },
+    "pre_native_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/pre-native-retained-review.json",
+      "sha256": "d42c7b342a637f20b794698a85bb2b108e4c5b1b9161c8f81582f24a4d059da9"
+    },
+    "selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/selection.json",
+      "sha256": "4abc4804702618695a855feda2851de454ffc9a0390f721600c9fd1141678242"
+    },
+    "live_check": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/live-check-20261020T224720Z.json",
+      "sha256": "4f356e597df0904e8a1194b14f518dc8b835ed2e9cd498b83f635825fd76d703"
+    },
+    "previous_terminal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/readiness-hold-v1.json",
+      "sha256": "2b70cdb532bbf5d19762321285f14e5dedc170784b71ef8b2d325efb58c0f216"
+    },
+    "previous_diagnosis": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/solver-proposal-diagnosis-v1.json",
+      "sha256": "6c8d5d395a95c096cfed6a2c1b98d446385538668e2f754876d6faf7cefb4e71"
+    },
+    "native_points": 8177,
+    "probability_runs": 0,
+    "clock_adopted": false,
+    "night_priority_record": "/Users/adam/Other/spacelab/results/boi-validation/night-validation-priorities-20261020.json",
+    "next": "Let this new9D circular conditional native fit finish. Inspect actual sampler movement/log-prior, stationarity/autocorrelation/effective samples, radius/density geometry, timing/aliases, exposure and detrending protection before adopting any clock. Then review same source actual SAP aperture/72source scene, bright12arcsec neighbor, Kepler issues/pixels/PRF, dilution/noise and dated catalogue evidence before FPP. Do not choose clock/model by FPP; no competing numerical work. On outcome/precise hold preserve and advance next eligible full queue. No rescue of7271045 or earlier evening holds tonight."
+  },
+  "terminal_or_deferred_this_evening": [
+    {
+      "source_id": "2077209775366626944",
+      "kic": 7300018,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/readiness-hold-v1.json",
+        "sha256": "3b71b58f1d790d7e03f8d014a04f2f7ea955b84f080db5a4c17980feef858077"
+      }
+    },
+    {
+      "source_id": "2099560128037101952",
+      "kic": 3330404,
+      "status": "HELD_NATIVE_JOINT_POSTERIOR_NONSTATIONARY_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/readiness-hold-v1.json",
+        "sha256": "23aec580addf4ad4b5df4984171623d83c8d5604e34f032375454321e452df01"
+      }
+    },
+    {
+      "source_id": "2073609042284178176",
+      "kic": 5303927,
+      "status": "HELD_UNRESOLVED_HOST_STELLAR_AND_BLEND_MODEL_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073609042284178176/readiness-hold-v1.json",
+        "sha256": "55eb244c06db5f7eae625d550df042e54890b9062fc203c040236da498a84d1d"
+      }
+    },
+    {
+      "source_id": "2100123494603868416",
+      "kic": 3322939,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100123494603868416/readiness-hold-v1.json",
+        "sha256": "4beb7bd476695a585fbd6f8fd41e2c6907ab6f5e749bea11e0a8890aaa6511ba"
+      }
+    },
+    {
+      "source_id": "2104484363877066752",
+      "kic": 6184073,
+      "status": "PARKED_NATIVE_STELLAR_MASS_UNCERTAINTY_MODEL_NOT_STARTED",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2104484363877066752/readiness-hold-v1.json",
+        "sha256": "2ac1bcefa3df83309378799558b35d6f429cb7acae3a29b34d14253a4c3b5ab2"
+      }
+    },
+    {
+      "source_id": "2100203999471640064",
+      "kic": 3935011,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100203999471640064/readiness-hold-v1.json",
+        "sha256": "0b035fb89cfcdf71e1e40b0f37e947025614c9b6df17180617403fbcd8aee23a"
+      }
+    },
+    {
+      "source_id": "2102918384442366592",
+      "kic": 7271045,
+      "status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/readiness-hold-v1.json",
+        "sha256": "2b70cdb532bbf5d19762321285f14e5dedc170784b71ef8b2d325efb58c0f216"
+      },
+      "bounded_diagnosis": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/solver-proposal-diagnosis-v1.json",
+        "sha256": "6c8d5d395a95c096cfed6a2c1b98d446385538668e2f754876d6faf7cefb4e71"
+      }
+    }
+  ],
+  "new_completed_probability_runs_this_check": 0,
+  "interpretation": "Readiness/convergence/scene holds remain candidates, not astrophysical false-positive denials. No new planet admission. All accepted historical studies unchanged. Original priorities both assessed and preserved; no selected scientific inputs/counts/seeds/thresholds changed to obtain a desired outcome.",
+  "native_actual_cpu_snapshot_percent": 272.3,
+  "core_code_changed": false,
+  "checks": "New candidate original hash/HDU checks, exact72-source identities, reported uncertainty route, initial finite native likelihood and20vs40 exposure check,121-file freeze verification. Helpers pass E/F/C901 correctness/complexity checks. No numerical tests/benchmarks competing with native production.",
+  "acquisition_followup": "KIC9606750 Gaia/TIC and original KBonus all downloaded successfully with ordinary TLS, bodies/requests retained. Prior NEA failures remain failed acquisitions, not no-match."
+}

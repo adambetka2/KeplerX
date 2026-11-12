@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "protocol": "fsc-kepler-pixel-planet-controls-v1",
+  "injections": "dump/release-injections-v1",
+  "opened_periodic_cohort": "dump/release-periodic-injections-v1/cohort.csv",
+  "minimum_expected_white_mes": 8.0,
+  "partitions": {
+    "development": {
+      "status": "OPENED_DEVELOPMENT",
+      "strata": {
+        "ultra_short": 10,
+        "core": 70,
+        "long_period": 20
+      }
+    },
+    "evaluation": {
+      "status": "PIXEL_AND_DETECTOR_OUTCOMES_UNOPENED",
+      "strata": {
+        "ultra_short": 30,
+        "core": 210,
+        "long_period": 60
+      }
+    }
+  },
+  "opened_source_manifests": [
+    {
+      "path": "dump/detector-benchmark-20260921/ordinary-sources-3000.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v4-survey-50000-20260921/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v6-1-survey-10000-c/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/release-controls-v1/source-pools.csv",
+      "column": "source_id"
+    }
+  ],
+  "excluded_parent_csv": [
+    {
+      "path": "dump/detector-benchmark-20260921/confirmed-signals.csv",
+      "column": "kic_id"
+    },
+    {
+      "path": "dump/detector-benchmark-20260921/false-positive-sources.csv",
+      "column": "kic_id"
+    },
+    {
+      "path": "dump/release-control-partitions-v2/parent-map.csv",
+      "column": "parent_tpf"
+    }
+  ],
+  "excluded_parent_jsonl": [
+    {
+      "path": "dump/release-catalogue-controls-v2/truth.jsonl",
+      "field": "kic_id"
+    },
+    {
+      "path": "dump/release-catalogue-evaluation-v2/truth.jsonl",
+      "field": "kic_id"
+    }
+  ],
+  "claim_boundary": "Frozen parent- and raw-input-disjoint on-target physical-injection identities for pixel-level development and final evaluation. Selection uses immutable injection truth and expected white-noise MES only; no evaluation detector, vetter, or pixel outcome is inspected."
+}

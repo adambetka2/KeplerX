@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-21T04:51:20.481471+00:00",
+  "source_id": "2076383384993192576",
+  "kic": 5115632,
+  "tic": 184247483,
+  "signal_id": "rust-v6-2076383384993192576-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Native completed exit0 with accepted conditional clock, weightESS6286.65 and adequate original transit protection. However all108source scene Gaussian targetQ4.2120 vs calibrated dominant core.6557,Q8.2377/.6998,Q12.1773/.6411,Q16.1896/.6697 changes target/alternative allocation substantially. These quarters have real primary coverage. Core diagnostic is not full far-source measured fractions; no supported complete response selected. Other quarters and six missing-property rows remain preserved. No FPP plan/run, omission, custom wing model or favorable response choice.",
+  "native_clock": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-accepted-clock-review-v1.json",
+    "sha256": "fe49d1dc296e31c59e3dd6842bea95848ddfe365d06530a88dc23ae1fbd0c49b"
+  },
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/aperture-response-review-v1.json",
+    "sha256": "bef3e670fff9c4a16f41bbb44ec0869be5c293c2f0afdd721a3c5264f4d3caf9"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/scene-preview-review-v1.json",
+    "sha256": "ab875b37b595c3e5d656142bed3f4bc02d0a592047fd4449616ffa95144d73f0"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-freeze.json",
+    "sha256": "77c5c0c1788ea53bd58aa6a1334b7909b7e7b9a0c6f800431ccb53ce356ac3e1"
+  },
+  "native_launched": true,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve accepted conditional native clock/noise, every source/output and unfavorable response. No response reconstruction/rescue tonight. Advance next eligible host."
+}

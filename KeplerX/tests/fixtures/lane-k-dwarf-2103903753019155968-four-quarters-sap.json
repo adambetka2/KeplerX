@@ -1,0 +1,40 @@
+{
+  "source_id": "2103903753019155968",
+  "quarters": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "cadences": 16586,
+  "columns": "LC2 cadence table: time_bkjd, cadenceno, quarter, sap_stitched_flux and error, sap_quality, flatten_mask (the same rows as the PSF Flat fixture)",
+  "lc2_shard": "/Volumes/discPCIe/data/kbonus/lc2/shard-0603",
+  "sha256": "19af801dd861e8b2353cd8d54cbaa5a20b0a4e5ec60666ec42c850de671a5d15",
+  "star_share_inputs": {
+    "source": "LC2 source, quarter and header tables of the same shard (photometry.star_share.lc2_quarters)",
+    "g_mag": 14.339599609375,
+    "bp_rp": 1.0286006927490305,
+    "quarters": {
+      "2": {
+        "level": 24315.705078125,
+        "FLFRCSAP": 0.9402075824,
+        "PSFFRAC": 0.8456265636171374
+      },
+      "3": {
+        "level": 23425.19921875,
+        "FLFRCSAP": 0.9736299613,
+        "PSFFRAC": 0.9120491434160825
+      },
+      "4": {
+        "level": 21717.0927734375,
+        "FLFRCSAP": 0.862690376,
+        "PSFFRAC": 0.8828335416241848
+      },
+      "6": {
+        "level": 24437.7451171875,
+        "FLFRCSAP": 0.9773041568,
+        "PSFFRAC": 0.8472562192368527
+      }
+    }
+  }
+}

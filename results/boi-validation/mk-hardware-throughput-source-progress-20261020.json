@@ -1,0 +1,217 @@
+{
+  "utc": "2026-10-20T11:21:48.960044+00:00",
+  "source_id": "2126998926041980032",
+  "tic_id": "1882613763",
+  "kic": null,
+  "validated_new": 0,
+  "goal": 50,
+  "current_stage": "NATIVE_AND_SOURCE_DIAGNOSTICS_COMPLETE_TIMING_AND_STELLAR_REVIEW_REQUIRED",
+  "hardware": {
+    "start_utc": "2026-10-20T11:05:18.848576+00:00",
+    "end_utc": "2026-10-20T11:15:41.129607+00:00",
+    "wall_seconds": 622.281031,
+    "cpu_seconds": 8449.064,
+    "average_logical_cpus_used": 13.577569585276336,
+    "average_percent_of_32_logical_cpus": 42.42990495398855,
+    "journal_message": "mk-boi-single-212699-native-v1.service: Consumed 2h 20min 49.064s CPU time, 1.0G memory peak, 0B memory swap peak."
+  },
+  "native_short_benchmark": {
+    "timings": [
+      {
+        "likelihood_workers_per_ensemble": 0,
+        "total_evaluation_workers": 0,
+        "group_wall_seconds": 15.484208429930732
+      },
+      {
+        "likelihood_workers_per_ensemble": 6,
+        "total_evaluation_workers": 24,
+        "group_wall_seconds": 7.994683830067515
+      },
+      {
+        "likelihood_workers_per_ensemble": 8,
+        "total_evaluation_workers": 32,
+        "group_wall_seconds": 7.633692607050762
+      }
+    ],
+    "speedup_32worker_vs_four_serial": 2.0284034512509637,
+    "seeded_chains_and_log_densities_bitwise_equal": true,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/native-execution-controls-v2/review.json",
+      "sha256": "c9ced5c0dc7f98d6fb65c26381f0dbfbb98651e910d3d6e7abd98c1ac5bf20bd"
+    }
+  },
+  "prior_probability_benchmark": {
+    "median_slowest_worker_seconds": {
+      "1": 2.8311842455295846,
+      "2": 2.372395775979385,
+      "4": 2.323038108064793,
+      "6": 2.1887302430113778
+    },
+    "selected_renderer_threads": 6,
+    "mixed_component_speedup_6_vs_1": 1.2935281789839403,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/execution-throughput-v2/review.json",
+      "sha256": "fc9f08f3f11b5b2bc9838991f700d2fd47a478dd9fe3d07f52040b11bba3e4e2"
+    },
+    "scope": "Small mixed-scenario control on prior target, not an end-to-end or current-target speed guarantee."
+  },
+  "current_science_jobs_running": false,
+  "current_probability_jobs_running": false,
+  "native_gate": {
+    "rank_rhat_maximum": 1.011940887097137,
+    "reference_epoch_bulk_ess": 538.3018597262485,
+    "radius_ratio_snr": 38.04894786775041,
+    "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+    "passed": true
+  },
+  "adopted_native_period_days": 4.805710924349894,
+  "adopted_native_epoch_bkjd": 851.962198096159,
+  "individual_pixel_summary": [
+    {
+      "source_id": "2126998926041980032",
+      "event_count": 140,
+      "failures": 0,
+      "source_attribution": {
+        "status": "TARGET_COMPATIBLE",
+        "good_quarters": 6,
+        "minimum_good_quarters": 3,
+        "robust_offset_arcsec": [
+          0.01951697676782231,
+          0.03178153675274102
+        ],
+        "offset_distance_arcsec": 0.03729582363377358,
+        "offset_uncertainty_arcsec": 0.17936382870621345,
+        "offset_significance": 0.207933917907505,
+        "required_significance": 4.0,
+        "uncertainty_variance_arcsec2": {
+          "formal": 0.006571383048151875,
+          "quarter_scatter": 0.0016302173575627654,
+          "jackknife": 0.0036992322189944495
+        },
+        "aggregate_systematic_arcsec": 0.16,
+        "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+      },
+      "scene_prf_compared_quarters": 6,
+      "scene_prf_target_preferred_quarters": 6
+    }
+  ],
+  "joint_source_diagnostic": {
+    "quality_quarters": 5,
+    "proposed_source": {
+      "source_id": "2126998926041980032",
+      "is_proposed_source": true,
+      "gaia_G": 16.5497,
+      "tic_kic": [
+        {
+          "tic_id": 1882613763,
+          "kic": null
+        }
+      ],
+      "astrometry": [
+        "PROPAGATED_GAIA_POSITION"
+      ],
+      "source_offset_diagnostic": {
+        "status": "TARGET_COMPATIBLE",
+        "good_quarters": 5,
+        "minimum_good_quarters": 3,
+        "robust_offset_arcsec": [
+          0.032333946013497435,
+          -0.010682593816998156
+        ],
+        "offset_distance_arcsec": 0.034052927560824106,
+        "offset_uncertainty_arcsec": 0.16180391226130694,
+        "offset_significance": 0.210457998727682,
+        "required_significance": 4.0,
+        "uncertainty_variance_arcsec2": {
+          "formal": 0.0002520166231591744,
+          "quarter_scatter": 0.0005805060230647111,
+          "jackknife": 0.00018633370844981287
+        },
+        "aggregate_systematic_arcsec": 0.16,
+        "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+      }
+    },
+    "nearby_parent": {
+      "source_id": "2126998926041980416",
+      "is_proposed_source": false,
+      "gaia_G": 15.710864,
+      "tic_kic": [
+        {
+          "tic_id": 159386408,
+          "kic": 8685222
+        },
+        {
+          "tic_id": 1882613764,
+          "kic": null
+        }
+      ],
+      "astrometry": [
+        "PROPAGATED_GAIA_POSITION"
+      ],
+      "source_offset_diagnostic": {
+        "status": "ROBUST_OFFSET_CONFLICT",
+        "good_quarters": 5,
+        "minimum_good_quarters": 3,
+        "robust_offset_arcsec": [
+          1.2535771135411529,
+          -2.028538995742598
+        ],
+        "offset_distance_arcsec": 2.384622829053382,
+        "offset_uncertainty_arcsec": 0.16600937238102176,
+        "offset_significance": 14.364386750286835,
+        "required_significance": 3.0,
+        "uncertainty_variance_arcsec2": {
+          "formal": 0.0005288872910134138,
+          "quarter_scatter": 0.001015018183067826,
+          "jackknife": 0.0019591117183407436
+        },
+        "aggregate_systematic_arcsec": 0.16,
+        "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+      }
+    },
+    "single_event_gold_passed": true,
+    "scope": "Same joint-quarter maps, native masks and quality selection for every source; each hypothesis recomputes directional formal/scatter/jackknife uncertainty. This is a spatial diagnostic, not a calibrated source probability, independent FPP factor, source reassignment or false-positive mechanism."
+  },
+  "open_review": {
+    "timing_boundary_quarters": [
+      1,
+      3,
+      5,
+      15,
+      17
+    ],
+    "best_profile_period_on_grid_boundary": true,
+    "native_duration_days": 0.25510845641796315,
+    "native_duration_prior_upper_days": 0.256,
+    "stellar": "TIC3987K versus Gaia4968K; own dust and resolved PS1 photometry acquired, component and stellar-prior review pending."
+  },
+  "full_capacity_claim": false,
+  "globally_optimal_throughput_claim": false,
+  "inputs": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/hardware-audit-v2/review.json",
+      "sha256": "d41715e8bc5e4b9bbd5ff80d10dd611720e63b32aa5a8bd8e68bf9531e30c7a7"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/joint-source-hypotheses-v1/review.json",
+      "sha256": "8ab35a237d2f1d458873d5ba1328333068244ec569f02310968d3866514f8a77"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/joint-quarter-pixels-v1/review.json",
+      "sha256": "27bf59f71c119d19b02adade640a2d23992c2afbe05e58bcde3cd9dbc27c0546"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/postfit-pixels-v1/input-freeze.json",
+      "sha256": "d3634b6fd5313fc2bb2900ae4997a73e4347287e7a8b9540ae23f67afedecd1e"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/timing-review-v1/2126998926041980032/review.json",
+      "sha256": "0d94e1f7260e5f4b09567d0d139b608a9f29f9577221d9dd24cf7e4bb19fbbf4"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/native-acceptance-v1/2126998926041980032/native-fit-review.json",
+      "sha256": "a7e1367e9bed96d58ae8706257ed2c6ae1430963c5d1815a16a2cf19ff04983d"
+    }
+  ],
+  "scope": "One selected target only. No production probability run, source reassignment, astrophysical false-positive mechanism, physical validation or novelty is claimed. No prior campaign is resumed."
+}

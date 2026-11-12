@@ -1,0 +1,1047 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-19T15:59:06.733135+00:00",
+  "source_id": "2101047904706267264",
+  "boi_id": "BOI-2101047904706267264-1",
+  "kic": 4829494,
+  "disposition": "STATISTICALLY_VALIDATED",
+  "status": "COMPLETE_TWENTY_REPEAT_NUMERICAL_AND_CONDITIONAL_PHYSICAL_CLOSEOUT",
+  "model": {
+    "repeats": 20,
+    "scenario_families": 135,
+    "attempted_draws_per_scenario": 1000000,
+    "total_attempted_draws": 2700000000,
+    "seed_entropy": [
+      2026,
+      10,
+      19,
+      20,
+      1
+    ],
+    "freeze_sha256": "138f462af25e9091e621a0579801d9ee025bd3bb64ac288303248b362f5077d5",
+    "frozen_dependencies": 935,
+    "original_period_days": 16.10546917493381,
+    "original_epoch_bkjd_tdb": 120.83078713381138,
+    "stellar_prior": "Photometry/parallax-conditioned empirical population for the target; exact paired Gaia/Kepler simulation rows. Two exact-identity APOKASC3 Gold giant priors; all resolved and unresolved scenario support retained.",
+    "scope": "A separately reviewed and revalidated Kepler adaptation at the frozen original discovery clock. The target's low-significance parallax does not support the strict TIC/Gaia distance route. Native TIC shape sensitivities are separate from the adopted population-prior FPP model; no solar fill or PSF/SAP probability multiplication."
+  },
+  "statistics": {
+    "FPP": {
+      "count": 20,
+      "mean": 0.013325335770597335,
+      "sample_standard_deviation": 0.012696967030484072,
+      "minimum": 0.001227401760149325,
+      "maximum": 0.04134578530095341,
+      "mean_numerical_lower": 0.013325335770597265,
+      "mean_numerical_upper": 0.013325335770597265
+    },
+    "NFPP": {
+      "count": 20,
+      "mean": 0.0009308340408758588,
+      "sample_standard_deviation": 0.000372866564136139,
+      "minimum": 0.0004824064514177817,
+      "maximum": 0.001805543216635278,
+      "mean_numerical_lower": 0.0009308340408758598,
+      "mean_numerical_upper": 0.0009308340408758598
+    },
+    "EB": {
+      "count": 20,
+      "mean": 0.004507366609867064,
+      "sample_standard_deviation": 0.006761016188108712,
+      "minimum": 0.0007985922147850385,
+      "maximum": 0.026354581733537687,
+      "mean_numerical_lower": 0.004507366609867066,
+      "mean_numerical_upper": 0.004507366609867066
+    }
+  },
+  "declared_thresholds": {
+    "FPP_lt": 0.015,
+    "NFPP_lt": 0.001,
+    "rank_rhat_le": 1.03,
+    "epoch_ess_ge": 100,
+    "radius_ratio_snr_gt": 3,
+    "RUWE_le": 1.4
+  },
+  "declared_mean_threshold_outcomes": {
+    "FPP": true,
+    "NFPP": true
+  },
+  "repeats": [
+    {
+      "run_index": 0,
+      "seed": 13662261308238736994,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.456311668161206,
+          "probability": 0.031545899455349934,
+          "probability_lower": 0.03154589945534948,
+          "probability_upper": 0.03154589945534948
+        },
+        "NFPP": {
+          "log_probability": -7.1128454312516,
+          "probability": 0.0008145738774174241,
+          "probability_lower": 0.0008145738774174241,
+          "probability_upper": 0.0008145738774174241
+        },
+        "EB": {
+          "log_probability": -6.790899799773712,
+          "probability": 0.0011239569827994928,
+          "probability_lower": 0.0011239569827994928,
+          "probability_upper": 0.0011239569827994928
+        },
+        "bounded_posterior_mass_upper": 1.0675251078070159e-22
+      },
+      "result_sha256": "7a6d4dd5e566b6909604d181dd2255e3c9e511450ed3ddefa8be821888705d1d",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 1,
+      "seed": 4316466312462204759,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -5.747478568076801,
+          "probability": 0.0031908160875771274,
+          "probability_lower": 0.0031908160875771274,
+          "probability_upper": 0.0031908160875771274
+        },
+        "NFPP": {
+          "log_probability": -7.125216070812684,
+          "probability": 0.0008045591495928918,
+          "probability_lower": 0.0008045591495928918,
+          "probability_upper": 0.0008045591495928918
+        },
+        "EB": {
+          "log_probability": -5.775412269115662,
+          "probability": 0.0031029181575932445,
+          "probability_lower": 0.0031029181575932883,
+          "probability_upper": 0.0031029181575932883
+        },
+        "bounded_posterior_mass_upper": 8.053481165996238e-23
+      },
+      "result_sha256": "fb7db28506b09a328bbb41108ec2a4f06707a395cf137700a4483dccc6705d61",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 2,
+      "seed": 198553022740986752,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -6.7028557339632755,
+          "probability": 0.001227401760149325,
+          "probability_lower": 0.001227401760149325,
+          "probability_upper": 0.001227401760149325
+        },
+        "NFPP": {
+          "log_probability": -7.636723539054941,
+          "probability": 0.0004824064514177817,
+          "probability_lower": 0.0004824064514177817,
+          "probability_upper": 0.0004824064514177817
+        },
+        "EB": {
+          "log_probability": -7.054359514522986,
+          "probability": 0.0008636357061079552,
+          "probability_lower": 0.0008636357061079552,
+          "probability_upper": 0.0008636357061079552
+        },
+        "bounded_posterior_mass_upper": 1.1475439963259713e-22
+      },
+      "result_sha256": "7894935d7bfc5c5c2a169fd9dae5a1c2999c1702c58a95e2c8e62894e869758f",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 3,
+      "seed": 12291797588878755338,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -5.406533329876368,
+          "probability": 0.004487168813591741,
+          "probability_lower": 0.004487168813591741,
+          "probability_upper": 0.004487168813591741
+        },
+        "NFPP": {
+          "log_probability": -7.03165583039798,
+          "probability": 0.0008834676961256666,
+          "probability_lower": 0.0008834676961256666,
+          "probability_upper": 0.0008834676961256666
+        },
+        "EB": {
+          "log_probability": -5.8299821335643145,
+          "probability": 0.0029381294736558904,
+          "probability_lower": 0.0029381294736558487,
+          "probability_upper": 0.0029381294736558487
+        },
+        "bounded_posterior_mass_upper": 8.258025170277481e-23
+      },
+      "result_sha256": "2f5c7834987a05adbfa5f11b6858d1cb1c1d73c5871875f64f491f6f6456ebe8",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 4,
+      "seed": 13044721653689574184,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.377798305128934,
+          "probability": 0.012552966019290047,
+          "probability_lower": 0.012552966019290047,
+          "probability_upper": 0.012552966019290047
+        },
+        "NFPP": {
+          "log_probability": -6.670456299447608,
+          "probability": 0.0012678201133838616,
+          "probability_lower": 0.0012678201133838616,
+          "probability_upper": 0.0012678201133838616
+        },
+        "EB": {
+          "log_probability": -6.475360370893412,
+          "probability": 0.0015409435260827413,
+          "probability_lower": 0.0015409435260827413,
+          "probability_upper": 0.0015409435260827413
+        },
+        "bounded_posterior_mass_upper": 8.339760487560699e-23
+      },
+      "result_sha256": "ea29c41cfc44f7585ee9e01a3af6d87adf84733e00b507e9f645400547a35ca8",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 5,
+      "seed": 8352821462250065899,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -6.678520797589584,
+          "probability": 0.0012576368968900532,
+          "probability_lower": 0.0012576368968900532,
+          "probability_upper": 0.0012576368968900532
+        },
+        "NFPP": {
+          "log_probability": -7.631019737879797,
+          "probability": 0.00048516586399154283,
+          "probability_lower": 0.00048516586399154283,
+          "probability_upper": 0.00048516586399154283
+        },
+        "EB": {
+          "log_probability": -6.722207827155671,
+          "probability": 0.0012038773245976783,
+          "probability_lower": 0.0012038773245976783,
+          "probability_upper": 0.0012038773245976783
+        },
+        "bounded_posterior_mass_upper": 1.0435386138776202e-22
+      },
+      "result_sha256": "2f083e3b359795cc5b710e4c6715e7d4d5140cd7db20658f94ac4ef6c2396c79",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 6,
+      "seed": 5958965977877800969,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -5.371634598389861,
+          "probability": 0.004646529889065253,
+          "probability_lower": 0.004646529889065253,
+          "probability_upper": 0.004646529889065253
+        },
+        "NFPP": {
+          "log_probability": -7.410416671988685,
+          "probability": 0.0006049185893844922,
+          "probability_lower": 0.0006049185893845008,
+          "probability_upper": 0.0006049185893845008
+        },
+        "EB": {
+          "log_probability": -6.78221943411117,
+          "probability": 0.0011337558075628102,
+          "probability_lower": 0.0011337558075628263,
+          "probability_upper": 0.0011337558075628263
+        },
+        "bounded_posterior_mass_upper": 1.0648580113259592e-22
+      },
+      "result_sha256": "a1c4e6da77520167ba19110441091b6fb15622518cd566a49432505c531deebf",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 7,
+      "seed": 13072362862109032082,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -6.479480573733312,
+          "probability": 0.0015346075878291186,
+          "probability_lower": 0.0015346075878291186,
+          "probability_upper": 0.0015346075878291186
+        },
+        "NFPP": {
+          "log_probability": -6.852413730397629,
+          "probability": 0.0010569015362595314,
+          "probability_lower": 0.0010569015362595314,
+          "probability_upper": 0.0010569015362595314
+        },
+        "EB": {
+          "log_probability": -6.6236201951979155,
+          "probability": 0.0013286123926210867,
+          "probability_lower": 0.0013286123926210867,
+          "probability_upper": 0.0013286123926210867
+        },
+        "bounded_posterior_mass_upper": 9.565411548125649e-23
+      },
+      "result_sha256": "f07cc0b37157c546211ce5190a456d20e0676b33dc340fe5580788e1d7da0c08",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 8,
+      "seed": 13039453746947967453,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.299774062603106,
+          "probability": 0.03689150162954332,
+          "probability_lower": 0.03689150162954332,
+          "probability_upper": 0.03689150162954332
+        },
+        "NFPP": {
+          "log_probability": -7.487716750295789,
+          "probability": 0.0005599199391295329,
+          "probability_lower": 0.0005599199391295329,
+          "probability_upper": 0.0005599199391295329
+        },
+        "EB": {
+          "log_probability": -5.160003990791225,
+          "probability": 0.005741676771775205,
+          "probability_lower": 0.005741676771775205,
+          "probability_upper": 0.005741676771775205
+        },
+        "bounded_posterior_mass_upper": 9.37680492749941e-23
+      },
+      "result_sha256": "f0ac84806293b8a2977945d6c2833c6f2a49848fa073a8495d161ccd3897e989",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 9,
+      "seed": 1561701494193323596,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.626026201601846,
+          "probability": 0.026621764017127864,
+          "probability_lower": 0.026621764017127483,
+          "probability_upper": 0.026621764017127483
+        },
+        "NFPP": {
+          "log_probability": -6.316893781429499,
+          "probability": 0.001805543216635278,
+          "probability_lower": 0.001805543216635278,
+          "probability_upper": 0.001805543216635278
+        },
+        "EB": {
+          "log_probability": -3.636113139279459,
+          "probability": 0.026354581733537687,
+          "probability_lower": 0.026354581733537687,
+          "probability_upper": 0.026354581733537687
+        },
+        "bounded_posterior_mass_upper": 6.332994915559036e-23
+      },
+      "result_sha256": "5d838abec2fd8e240358f62697462ceba3288b78b0df7c7762c23b4122ca51bc",
+      "platform": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "python": "3.12.13",
+        "host": "MacBookPro"
+      }
+    },
+    {
+      "run_index": 10,
+      "seed": 11849743583002305289,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.7303388679120957,
+          "probability": 0.023984706811934552,
+          "probability_lower": 0.02398470681193421,
+          "probability_upper": 0.02398470681193421
+        },
+        "NFPP": {
+          "log_probability": -7.391799878360175,
+          "probability": 0.0006162857153397546,
+          "probability_lower": 0.0006162857153397546,
+          "probability_upper": 0.0006162857153397546
+        },
+        "EB": {
+          "log_probability": -7.1326601119613855,
+          "probability": 0.0007985922147850385,
+          "probability_lower": 0.0007985922147850271,
+          "probability_upper": 0.0007985922147850271
+        },
+        "bounded_posterior_mass_upper": 1.0533911433104455e-22
+      },
+      "result_sha256": "be384db5311507350b73c952c5049b9eb05d0fea1e11ab7dcb1692626452577a",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 11,
+      "seed": 6560523418774383506,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -6.264460218343416,
+          "probability": 0.001902740205568889,
+          "probability_lower": 0.001902740205568889,
+          "probability_upper": 0.001902740205568889
+        },
+        "NFPP": {
+          "log_probability": -7.198254791327898,
+          "probability": 0.0007478898940237234,
+          "probability_lower": 0.0007478898940237234,
+          "probability_upper": 0.0007478898940237234
+        },
+        "EB": {
+          "log_probability": -6.648876326325492,
+          "probability": 0.0012954769812897403,
+          "probability_lower": 0.0012954769812897403,
+          "probability_upper": 0.0012954769812897403
+        },
+        "bounded_posterior_mass_upper": 1.0832036900671388e-22
+      },
+      "result_sha256": "5d874fe419bf063809fe8e4715c8b4f7afb9a2135994f6ad71a4d55374c056ec",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 12,
+      "seed": 6631618165768069956,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.185784790132942,
+          "probability": 0.04134578530095341,
+          "probability_lower": 0.04134578530095341,
+          "probability_upper": 0.04134578530095341
+        },
+        "NFPP": {
+          "log_probability": -6.963723185853766,
+          "probability": 0.0009455694816862074,
+          "probability_lower": 0.0009455694816862074,
+          "probability_upper": 0.0009455694816862074
+        },
+        "EB": {
+          "log_probability": -6.286640904822022,
+          "probability": 0.0018610007378866487,
+          "probability_lower": 0.0018610007378866487,
+          "probability_upper": 0.0018610007378866487
+        },
+        "bounded_posterior_mass_upper": 6.738441286551043e-23
+      },
+      "result_sha256": "40d8fe4a327ce0c6f43f399bc38384b1d23d46af3c2ea8e18010575066e6581a",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 13,
+      "seed": 8917143564906835554,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.981009536003768,
+          "probability": 0.006867126445568751,
+          "probability_lower": 0.006867126445568751,
+          "probability_upper": 0.006867126445568751
+        },
+        "NFPP": {
+          "log_probability": -6.810575730173042,
+          "probability": 0.0011020582291007095,
+          "probability_lower": 0.0011020582291007095,
+          "probability_upper": 0.0011020582291007095
+        },
+        "EB": {
+          "log_probability": -6.59065825630006,
+          "probability": 0.0013731357907800067,
+          "probability_lower": 0.0013731357907800067,
+          "probability_upper": 0.0013731357907800067
+        },
+        "bounded_posterior_mass_upper": 6.382172764607498e-23
+      },
+      "result_sha256": "60fe81c2f9eb6484e3df53e8f5bb31ddf10eecc5307dd9c6d285fd6b4197ab25",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 14,
+      "seed": 11859376006401572322,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.010153599912584,
+          "probability": 0.01813061016277688,
+          "probability_lower": 0.018130610162776624,
+          "probability_upper": 0.018130610162776624
+        },
+        "NFPP": {
+          "log_probability": -6.460518291936083,
+          "probability": 0.0015639848995323683,
+          "probability_lower": 0.0015639848995323683,
+          "probability_upper": 0.0015639848995323683
+        },
+        "EB": {
+          "log_probability": -6.131479248257037,
+          "probability": 0.002173363637319373,
+          "probability_lower": 0.002173363637319373,
+          "probability_upper": 0.002173363637319373
+        },
+        "bounded_posterior_mass_upper": 4.844018545808528e-23
+      },
+      "result_sha256": "f0ca450dffd72f9a0422de7e86d70cd24b397498b709fce156f38a5a16c64a00",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 15,
+      "seed": 15395766517884656165,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -3.992203382877676,
+          "probability": 0.0184589970406164,
+          "probability_lower": 0.0184589970406164,
+          "probability_upper": 0.0184589970406164
+        },
+        "NFPP": {
+          "log_probability": -7.054527762812754,
+          "probability": 0.0008634904131004128,
+          "probability_lower": 0.0008634904131004128,
+          "probability_upper": 0.0008634904131004128
+        },
+        "EB": {
+          "log_probability": -3.9978523272539803,
+          "probability": 0.018355017157883156,
+          "probability_lower": 0.018355017157883156,
+          "probability_upper": 0.018355017157883156
+        },
+        "bounded_posterior_mass_upper": 8.569637677022755e-23
+      },
+      "result_sha256": "14ee68676fb93d0348768baf17d503e50bac4ddb0c50383ff78a36d93346a6d9",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 16,
+      "seed": 8497089808849492715,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.996516716966269,
+          "probability": 0.006761458099686284,
+          "probability_lower": 0.006761458099686284,
+          "probability_upper": 0.006761458099686284
+        },
+        "NFPP": {
+          "log_probability": -7.114063577941408,
+          "probability": 0.0008135822110652119,
+          "probability_lower": 0.0008135822110652119,
+          "probability_upper": 0.0008135822110652119
+        },
+        "EB": {
+          "log_probability": -6.67531883708736,
+          "probability": 0.0012616702544398016,
+          "probability_lower": 0.0012616702544398016,
+          "probability_upper": 0.0012616702544398016
+        },
+        "bounded_posterior_mass_upper": 9.649638397254353e-23
+      },
+      "result_sha256": "19b2fcba7612c37b7eb5adf387cc16eab85f8e00eb8c57a3310468182838eec8",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 17,
+      "seed": 8571235400557506478,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.5644914086712305,
+          "probability": 0.010415174927621873,
+          "probability_lower": 0.010415174927621873,
+          "probability_upper": 0.010415174927621873
+        },
+        "NFPP": {
+          "log_probability": -6.47518768864002,
+          "probability": 0.0015412096426593196,
+          "probability_lower": 0.0015412096426593196,
+          "probability_upper": 0.0015412096426593196
+        },
+        "EB": {
+          "log_probability": -5.51356849338039,
+          "probability": 0.004031694607051529,
+          "probability_lower": 0.004031694607051587,
+          "probability_upper": 0.004031694607051587
+        },
+        "bounded_posterior_mass_upper": 2.8809952922834233e-23
+      },
+      "result_sha256": "f9467999d017c773e1caa7ed8c337266783ffb44201ad37d4c064bbf93240c69",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 18,
+      "seed": 6918077124441062044,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -4.330919054311906,
+          "probability": 0.013155451358134307,
+          "probability_lower": 0.013155451358134307,
+          "probability_upper": 0.013155451358134307
+        },
+        "NFPP": {
+          "log_probability": -6.859760983879397,
+          "probability": 0.0010491646699307467,
+          "probability_lower": 0.0010491646699307615,
+          "probability_upper": 0.0010491646699307615
+        },
+        "EB": {
+          "log_probability": -4.398632187947683,
+          "probability": 0.012294144486694268,
+          "probability_lower": 0.012294144486694268,
+          "probability_upper": 0.012294144486694268
+        },
+        "bounded_posterior_mass_upper": 9.248482139394054e-23
+      },
+      "result_sha256": "d44d36dc5c0b6a3c76ffb2a3824b69a0ea6f107ce7422560034f8d18a7706179",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    },
+    {
+      "run_index": 19,
+      "seed": 4172508081160933281,
+      "probabilities": {
+        "FPP": {
+          "log_probability": -6.483551571761211,
+          "probability": 0.0015283729026715881,
+          "probability_lower": 0.0015283729026715881,
+          "probability_upper": 0.0015283729026715881
+        },
+        "NFPP": {
+          "log_probability": -7.405057379626271,
+          "probability": 0.0006081692277407172,
+          "probability_lower": 0.0006081692277407172,
+          "probability_upper": 0.0006081692277407172
+        },
+        "EB": {
+          "log_probability": -6.592106603536024,
+          "probability": 0.0013711484528779105,
+          "probability_lower": 0.0013711484528779105,
+          "probability_upper": 0.0013711484528779105
+        },
+        "bounded_posterior_mass_upper": 8.613838182263879e-23
+      },
+      "result_sha256": "145bdef69ceacf9310937b16934104be9e9e29930f28ad902a72606cb0cd346d",
+      "platform": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "python": "3.12.13",
+        "host": "kbonus"
+      }
+    }
+  ],
+  "all_twenty_repeats_retained": true,
+  "unfavorable_run_indices": {
+    "FPP": [
+      0,
+      8,
+      9,
+      10,
+      12,
+      14,
+      15
+    ],
+    "NFPP": [
+      4,
+      7,
+      9,
+      13,
+      14,
+      17,
+      18
+    ]
+  },
+  "numerical_audit": {
+    "status": "DEEP_WEIGHT_REPLAY_COMPLETE",
+    "path": "production/audit/final-numerical-and-physical-audit-20261019T155841561661Z.json",
+    "sha256": "b9f132610d8b20cc8da786494ae038a085bb6cda8ae727049c2a674a0b696e8e",
+    "weight_files": 2700,
+    "attempted_draw_weights": 2700000000,
+    "support_accounting_all_2700_families_passed": true,
+    "scope": "Every preserved numerical weight, bound flag, hash, support count, log evidence, ESS and maximum weight is replayed. Probabilities independently checked by positive rescaling and math.fsum. No second physical Monte Carlo simulation."
+  },
+  "weight_concentration": {
+    "TP_effective_draws": {
+      "count": 20,
+      "mean": 5.3512763769379115,
+      "sample_standard_deviation": 1.5378863401459746,
+      "minimum": 2.68085867143012,
+      "maximum": 8.445422170692662
+    },
+    "TP_maximum_weight": {
+      "count": 20,
+      "mean": 0.34821187108007845,
+      "sample_standard_deviation": 0.10092425108859789,
+      "minimum": 0.24967041678505417,
+      "maximum": 0.5690158399224674
+    },
+    "maximum_bounded_posterior_mass_upper": 1.1475439963259713e-22
+  },
+  "dominant_resolved_alternative": {
+    "scenario": "NEB:2101047909004685440",
+    "mean_probability": 0.0008967760765499162,
+    "maximum_repeat_probability": 0.0017801791408716548,
+    "neighbor": {
+      "source_id": "2101047909004685440",
+      "ra": 289.9416574407647,
+      "dec": 39.90322228070032,
+      "pmra": -1.7339394275144124,
+      "pmdec": -4.789309170610923,
+      "phot_g_mean_mag": 18.799118,
+      "separation_arcsec": 9.934418705824816
+    }
+  },
+  "native_fit_summary": {
+    "passed_cases": [
+      "tic-sap-all",
+      "tic-psf-flat"
+    ],
+    "cases": {
+      "tic-sap-all": {
+        "convergence": {
+          "rank_rhat_maximum": 1.0126529380386542,
+          "reference_epoch_bulk_ess": 626.9783436360212,
+          "radius_ratio_median_over_std": 27.704681531377368,
+          "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+          "passed": true
+        },
+        "maximum_log_density_error": 0.0006940707612557162,
+        "maximum_point_noise_error": 5.249252407599551e-05,
+        "maximum_live_frame_correction_ppm": 0.003926325042868939
+      },
+      "tic-psf-flat": {
+        "convergence": {
+          "rank_rhat_maximum": 1.019064930229316,
+          "reference_epoch_bulk_ess": 282.9445087609819,
+          "radius_ratio_median_over_std": 22.44706059593593,
+          "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+          "passed": true
+        },
+        "maximum_log_density_error": 0.000614200979839552,
+        "maximum_point_noise_error": 4.667796162723972e-05,
+        "maximum_live_frame_correction_ppm": 0.003861390096560058
+      }
+    },
+    "scope": "Conditional transit shape/noise inference; correlated views are not independent probability votes."
+  },
+  "retained_pipeline_vetting": [
+    {
+      "stage": "shape",
+      "decision": "PASS",
+      "reason": "TRANSIT_MODEL_PREFERRED"
+    },
+    {
+      "stage": "orbital",
+      "decision": "PASS",
+      "reason": "NO_MATERIAL_ORBITAL_CONFLICT"
+    },
+    {
+      "stage": "instrument",
+      "decision": "PASS",
+      "reason": "INSTRUMENT_MEASUREMENTS_AVAILABLE"
+    },
+    {
+      "stage": "localization",
+      "decision": "PASS",
+      "reason": "SOURCE_LOCALIZATION_COMPATIBLE"
+    },
+    {
+      "stage": "contamination",
+      "decision": "PASS",
+      "reason": "NO_MATERIAL_COMPETING_SOURCE_EVIDENCE"
+    }
+  ],
+  "physical_closeout": {
+    "native_conditional_shape": {
+      "tic-sap-all": {
+        "rank_rhat_maximum": 1.0126529380386542,
+        "reference_epoch_bulk_ess": 626.9783436360212,
+        "radius_ratio_median_over_std": 27.704681531377368,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": true
+      },
+      "tic-psf-flat": {
+        "rank_rhat_maximum": 1.019064930229316,
+        "reference_epoch_bulk_ess": 282.9445087609819,
+        "radius_ratio_median_over_std": 22.44706059593593,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": true
+      }
+    },
+    "quadrature": {
+      "tic-sap-all": true,
+      "tic-psf-flat": true
+    },
+    "target_RUWE": 0.98885196,
+    "stellar_prior": "Target uses a photometry/parallax-conditioned empirical population. Parallax SNR<5 prevents strict TIC/Gaia distance route. Two exact-identity APOKASC3 Gold giants use measured M/R/Teff/FeH; other neighbors retain their declared catalogue/population route. Catalogue covariance and abundance limitations remain recorded.",
+    "planet_radius": {
+      "conditional_on_target_planet_families": true,
+      "earth_radii_quantiles_16_50_84": [
+        6.656028218492166,
+        7.510170341338095,
+        8.561690012135628
+      ],
+      "mean_target_planet_probability": 0.9866746642294021,
+      "probability_radius_below_8_earth_conditional": 0.6920285397080942,
+      "quantile_summation": {
+        "compensated_total": 0.9866746642294028,
+        "math_fsum_total": 0.9866746642294028,
+        "ordinary_cumsum_total": 0.9866746642189341,
+        "ordinary_minus_reference": -1.0468625966097989e-11
+      },
+      "quantile_implementation_sha256": "d2c72444700a645451b9bb170fca97356a0687d4f20aeb1362d640e0f2219b7e",
+      "scope": "Average each of the20 complete scenario posteriors with equal run weight, then condition on TP/PTP/DTP. Includes recorded physical priors and dilution; native unit-dilution radius ratio is separate. No RV mass."
+    },
+    "localization": "All16 SAP aperture/background modes reproduce within8.13e-5 point formal noise. The conditional spatial prototype has SAP-noise orthogonality below4.78e-16 but has no admitted marginalized likelihood. Target versus dominant neighbor best-grid chi-square advantage9.8338 is diagnostic only. It is not multiplied into FPP/NFPP; full background-estimation and correlated-noise response remain explicit.",
+    "catalogues": "October19 exact-host NASA/ExoFOP/SIMBAD queries and exact-alias literature searches retained; no universal absence or novelty claim.",
+    "RV": "No usable exact-host RV time series found in retained all94host archive searches; no RV confirmation or mass.",
+    "false_positive_status": "Failure to cross a threshold or missing evidence does not establish a false-positive mechanism.",
+    "current_companion_queries": {
+      "utc": "2026-10-19T11:43:23.550355+00:00",
+      "source_id": "2101047904706267264",
+      "gaia_host": {
+        "ruwe": "0.98885196",
+        "duplicated_source": "false",
+        "non_single_star": "0",
+        "astrometric_excess_noise": "0.0",
+        "astrometric_excess_noise_sig": "0.0",
+        "ipd_frac_multi_peak": "0",
+        "ipd_frac_odd_win": "0",
+        "radial_velocity": "",
+        "rv_nb_transits": "",
+        "rv_renormalised_gof": "",
+        "rv_chisq_pvalue": ""
+      },
+      "NSS_table_rows": {
+        "gaiadr3.nss_two_body_orbit": 0,
+        "gaiadr3.nss_acceleration_astro": 0,
+        "gaiadr3.nss_non_linear_spectro": 0,
+        "gaiadr3.nss_vim_fl": 0
+      },
+      "NSS_rows": {
+        "gaiadr3.nss_two_body_orbit": [],
+        "gaiadr3.nss_acceleration_astro": [],
+        "gaiadr3.nss_non_linear_spectro": [],
+        "gaiadr3.nss_vim_fl": []
+      },
+      "exofop_response_sha256": "d6a5b71a6a96223131c6f27d14711e7ff61148e07e5d30aac9a3d8b14c4fe8ae",
+      "exofop_stellar_companions": [],
+      "exofop_imaging": [],
+      "interpretation": "Dated exact-host archive coverage only. Empty tables do not exclude all physical companions; the complete frozen unresolved-companion priors remain in FPP. No new contrast curve is assumed or invented.",
+      "production_changed": false,
+      "implementation_sha256": "90fbbab4a3b4053f8dad730c1f1f0a3218b33fff53ec72e4bcd1cf491f1a3b8d"
+    },
+    "retained_localization": {
+      "status": "TARGET_COMPATIBLE",
+      "good_quarters": 3,
+      "minimum_good_quarters": 3,
+      "robust_offset_arcsec": [
+        0.5322331565364942,
+        1.5963396487690538
+      ],
+      "offset_distance_arcsec": 1.682727668741709,
+      "offset_uncertainty_arcsec": 1.9448203262802264,
+      "offset_significance": 0.8652355418149035,
+      "required_significance": 4.0,
+      "uncertainty_variance_arcsec2": {
+        "formal": 3.7567261015127262,
+        "quarter_scatter": 1.5054235316422928,
+        "jackknife": 1.5054235316422924
+      },
+      "aggregate_systematic_arcsec": 0.16,
+      "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+    },
+    "auxiliary_wrapper_scope": "The saved auxiliary assessment wrapper carries BOI_CATALOGUE policy status; assessment_rule() activates only RELEASED or authorized FROZEN_EVALUATION policies. The actual ordered triage uses a separate RELEASED assessment_policy overlay and its5PASSresults are retained above. Auxiliary UNASSESSED fields are not represented here as passing independent tests, and no sealed source outcome has been changed.",
+    "classification_scope": "Declared conditional statistical validation uses all 20 repeat means, native-fit criteria, RUWE and retained five-gate vetting. No new per-repeat veto, radius cutoff or mass gate is introduced. No RV orbit, mass, composition or universal literature novelty is established."
+  },
+  "next_evidence": "Preserve the audited statistical admission; improve physical characterization or obtain RV mass separately if pursued.",
+  "preservation": {
+    "original_campaigns_untouched": true,
+    "production_results_deleted": false,
+    "seed_replacements": false,
+    "failed_native_endpoints_and_all_operational_records_retained": true,
+    "original_integrity_record": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/operational/original-generations-integrity-20261019T152310700539Z.json",
+    "full_study_root": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run"
+  },
+  "bindings": [
+    {
+      "path": "production/audit/final-numerical-and-physical-audit-20261019T155841561661Z.json",
+      "sha256": "b9f132610d8b20cc8da786494ae038a085bb6cda8ae727049c2a674a0b696e8e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production-freeze.json",
+      "sha256": "138f462af25e9091e621a0579801d9ee025bd3bb64ac288303248b362f5077d5"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production-plan.json",
+      "sha256": "eed7fa52e328e4f6e3500b1fd6f565347d094bcffee0faf53e1e473e30439e88"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/operational/retained-vetting-binding.json",
+      "sha256": "5a62ea0a927f63853c28e7f5df96370d3382a89e2640e84bc1395cf231e674ec"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/current-companion-queries-v2/summary.json",
+      "sha256": "c1fd0f0765a720d9111d1000634c64380d00eda06ccd7a2b1589a2a5ece8e0b0"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/parent-acquisition-verified-v2.json",
+      "sha256": "0488f0e1ec31802ff609d4c15150d5101e007581e270a773e12625136b019742"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/sap-background-complete-authentication.json",
+      "sha256": "c95818969f13ead6464c8b87177dfb2f505bd09c8c53423ccd4ad5e7f6e69dc1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/scene/selected-prior-readiness-v2.json",
+      "sha256": "dddedf136bc1dc13e662d19b89b541ff58008acee6e278b0df356a114aae8a57"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/scene/stellar-prior-summary.json",
+      "sha256": "39a61aad1dc39f35ba0aeafa0e1bd29d7cce4d658662f5bf20a8ce46b51ff1c0"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/operational/active-audit-implementation.json",
+      "sha256": "7c299c5c16ce5c44345d9d999fc632388ea7811fd13aa8a272c59e86ea72b28e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/operational/original-generations-integrity-20261019T152310700539Z.json",
+      "sha256": "ac992e007fc69009601ca0210bd8312d025b6dcb6a2c2f032018db5855148471"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/further-study-status-20261019.json",
+      "sha256": "4030f3638477c93b36f61d74b450a0d808d7812bf7e60ded4711da2a09612ccc"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/convergence.json",
+      "sha256": "f899232d4386a4c3e1ac9075ab7bdc9f967667fa427e56d98131d72a2fda9a77"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/posterior-numerical-check.json",
+      "sha256": "ae825621caa67df26fa08f42df5a396db9b6637d799d1394c1a4792d3ed561f3"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-psf-flat/convergence.json",
+      "sha256": "b9a88b6f5d0198447a144bf963e868699e910b7a50a8bfd02b1acfae7de911a7"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-psf-flat/posterior-numerical-check.json",
+      "sha256": "c628b855dbfec6520aae43bdc7e5f1f5ebafd6506af58c1c8e5fb840f68c57c0"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/native-freeze.json",
+      "sha256": "4d4f9af80e0e9556adbf99abbb42da9e5299042e2b67b84a5a3bc05a7e49bc28"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/localization/all-quarter-source-response.json",
+      "sha256": "771488f5893008611f927422f5a1db82401ebf2dd77fa04eb1d7f5a2275c83ed"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/conditional-spatial-diagnostic-v2/report.json",
+      "sha256": "fa7e1740b6fa6c2067878b9ebb8803c3e1b28df164cee68620c679f7fe9f0d31"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/secondary-prediction-diagnostic/report.json",
+      "sha256": "79d984c6dcd5a2821cc05f6e61c683c4271415c5d1f2e71aa60ad9e5210b1589"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/background-pulse-diagnostic-v2.json",
+      "sha256": "0f6cdb4ff20b61bc6c98f9f3b5def5c369a56a6c3ddc80a957823960ff332823"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/residual-diagnostic/report.json",
+      "sha256": "3a21ef1f0093c947815007d0f2284b6fe1fe9874fab75c105e6e08eb8468d2e4"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-psf-flat/residual-diagnostic/report.json",
+      "sha256": "d8b96a422072a0d0b57038ce46291b1db26fb89af5da492c555e7335c898ed45"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/operational/preparation-failures-and-recoveries.json",
+      "sha256": "2c1830ad9b291f5e3e54f344cdf36458f507496cb7b2817be0ca10d82a57280a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/audit/best-draw-grid-sensitivity-20261019T141839962178Z.json",
+      "sha256": "036fdb9cc81c9c7e749438e47299884413ffca2db703c84159b003f6e02e98c9"
+    }
+  ],
+  "implementation_sha256": "ac1cd745a9653e70f7d80b2d85c4250eaccc82ed24a7f7b19b6cd976e71ba4e3"
+}

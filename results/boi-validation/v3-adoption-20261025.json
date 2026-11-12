@@ -1,0 +1,417 @@
+{
+ "created_utc": "2026-10-25T11:13:30.925002+00:00",
+ "protocol": "TRICERATOPS_KEPLER_V3",
+ "decision_authority": "PI (Adam), explicit message of October 25, 2026: a V3 pass is a statistical validation; stock TRICERATOPS is not suited to KBonus; KIC 8878385 is accepted; KIC 7373485 and KIC 8293530 are Possible Planets; the second half of the fourth known-object sample is not run.",
+ "policy": {
+  "admission": "Complete 20-repeat V3 campaign with mean FPP < 0.015 and mean NFPP < 0.001, and a complete physical closeout: radius below 8 Earth radii, RUWE <= 1.4, SNR >= 15, no Gaia source within 1.5 arcsec, no low-order ephemeris match on another star, no phase-0.5 secondary at SNR >= 3, dated exact-signal literature.",
+  "stock_triceratops": "Diagnostic only, not an admission requirement.",
+  "categories": "Gomez Barrientos et al. (2025): below 8 Earth radii VP FPP < 1.5% and NFPP < 0.1%, PP 1.5% <= FPP <= 50% and NFPP < 0.1%; at or above 8 Earth radii PP FPP <= 50% and NFPP < 0.1%; FP FPP > 70% or NFPP > 10%; otherwise inconclusive. A TRICERATOPS+ FP category is not a denied false positive, which needs a reproduced mechanism."
+ },
+ "accepted": [
+  {
+   "kic": 8878385,
+   "boi_id": "BOI-2127169041106093184-1",
+   "signal_id": "rust-v6-2127169041106093184-1",
+   "period_days": 5.905437859340942,
+   "tp_radius_earth": 3.454387906338307,
+   "FPP": {
+    "mean": 0.002762231547741406,
+    "sd": 0.0010410145343302257,
+    "min": 0.0012726425505513728,
+    "max": 0.005173204777588425,
+    "unfavourable": 0
+   },
+   "NFPP": {
+    "mean": 4.981943884061084e-25,
+    "max": 1.7256341239297327e-24,
+    "unfavourable": 0
+   },
+   "closeout": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/closeout-v1.json",
+    "sha256": "cefba68206912790095b4ef5bc2d2fd030cbee3edd460930c1bdb49b322b2ec8"
+   },
+   "closeout_summary": "SNR 31.2, RUWE 1.034, no Gaia source within 1.5 arcsec, no low-order ephemeris match on another star (expected chance 0.31), phase-0.5 depth 3.7 +/- 11.8 ppm, background-area upper envelope FPP 0.42%.",
+   "stock_diagnostic": "Stock TRICERATOPS fails on NFPP (2.9% calibrated mean fractions, 6.3% upstream Gaussian) from the Tmag 14.5 neighbour; V3 attributes injected transits to the target (FPP 0.0002-0.0065) and to that neighbour (FPP 1.0).",
+   "campaign": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/probability-v3/campaign/audit-20261025T011526037969Z.json",
+    "sha256": "1ab614f7487d3977b14142fe5dfcce1716a072974c6eca92b2317e23ec1dacc3"
+   }
+  }
+ ],
+ "validated": [
+  {
+   "kic": 6699887,
+   "boi_id": "BOI-2077554781499350144-1",
+   "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+   "accepted": "2026-10-19"
+  },
+  {
+   "kic": 8745833,
+   "boi_id": "BOI-2127186564572468352-1",
+   "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+   "accepted": "2026-10-19"
+  },
+  {
+   "kic": 4829494,
+   "boi_id": "BOI-2101047904706267264-1",
+   "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+   "accepted": "2026-10-19"
+  },
+  {
+   "kic": 8878385,
+   "boi_id": "BOI-2127169041106093184-1",
+   "protocol": "TRICERATOPS_KEPLER_V3",
+   "accepted": "2026-10-25"
+  }
+ ],
+ "possible_planets_pi_accepted": [
+  7373485,
+  8293530
+ ],
+ "completed_v3_campaigns": [
+  {
+   "source_id": "2127169041106093184",
+   "signal_id": "rust-v6-2127169041106093184-1",
+   "period_days": 5.905437859340942,
+   "representative_radius_earth": 2.7490214710143763,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.002762231547741406,
+    "sd": 0.0010410145343302257,
+    "min": 0.0012726425505513728,
+    "max": 0.005173204777588425,
+    "unfavourable": 0
+   },
+   "NFPP": {
+    "mean": 4.981943884061084e-25,
+    "max": 1.7256341239297327e-24,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/probability-v3/campaign/audit-20261025T011526037969Z.json",
+    "sha256": "1ab614f7487d3977b14142fe5dfcce1716a072974c6eca92b2317e23ec1dacc3"
+   },
+   "kic": 8878385,
+   "radius_for_category_earth": 3.454387906338307,
+   "triceratops_plus_category": "VP"
+  },
+  {
+   "source_id": "2077967368932890752",
+   "signal_id": "rust-v6-2077967368932890752-1",
+   "period_days": 4.3584934960560355,
+   "representative_radius_earth": 12.909748409463267,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.005881508823394976,
+    "sd": 0.01852275891716512,
+    "min": 5.946132475287413e-12,
+    "max": 0.07414483303398878,
+    "unfavourable": 2
+   },
+   "NFPP": {
+    "mean": 0.0,
+    "max": 0.0,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/probability-v3/campaign/audit-20261025T005205217027Z.json",
+    "sha256": "62fcdb52640b29e36a3aedabf37f72296d74dcabebd87b33b8a2dfdf16731747"
+   },
+   "kic": 7373485,
+   "radius_for_category_earth": 12.803483162788432,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2126910621514995968",
+   "signal_id": "rust-v6-2126910621514995968-1",
+   "period_days": 3.622888433626116,
+   "representative_radius_earth": 15.475034744316416,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.0015789086509245098,
+    "sd": 0.007015681219849924,
+    "min": -6.856737400084967e-13,
+    "max": 0.03138496916482958,
+    "unfavourable": 1
+   },
+   "NFPP": {
+    "mean": 0.0,
+    "max": 0.0,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968/probability-v3/campaign/audit-20261025T060640227250Z.json",
+    "sha256": "b30b9d630b900de942adc2b0149faf12d8c95f7946a03bab9e57f9953a09602d"
+   },
+   "kic": 8293530,
+   "radius_for_category_earth": 16.22211850705247,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2100325529865507712",
+   "signal_id": "rust-v6-2100325529865507712-1",
+   "period_days": 3.263015801958549,
+   "representative_radius_earth": 14.955768825932067,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.30370653949267457,
+    "sd": 0.467537878190189,
+    "min": -3.028022277362652e-12,
+    "max": 0.9999999999980479,
+    "unfavourable": 7
+   },
+   "NFPP": {
+    "mean": 0.0,
+    "max": 0.0,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/probability-v3/campaign/audit-20261025T092729704485Z.json",
+    "sha256": "b0f7ada2b0ec78aaf0884e6144a484a0862a128a4b5c92e2ae5eeab781814002"
+   },
+   "kic": 4543190,
+   "radius_for_category_earth": 14.955768825932067,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2130460704041437824",
+   "signal_id": "rust-v6-2130460704041437824-1",
+   "period_days": 3.148252539854221,
+   "representative_radius_earth": 4.486351932946369,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.019032203747453152,
+    "sd": 0.009368625502396807,
+    "min": 0.008458387291520486,
+    "max": 0.04560105508433232,
+    "unfavourable": 12
+   },
+   "NFPP": {
+    "mean": 1.9223166355766597e-25,
+    "max": 3.0847688816059543e-25,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/probability-v3/campaign/audit-20261025T005925882855Z.json",
+    "sha256": "79f4367551daaaf188bdeb8c050503069e0aaa65f7fcbbf31f6812d37507fd41"
+   },
+   "kic": 10002974,
+   "radius_for_category_earth": 5.359109476901331,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2077020448903232640",
+   "signal_id": "rust-v6-2077020448903232640-1",
+   "period_days": 6.652099393877959,
+   "representative_radius_earth": 7.534066216052904,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.03420619103570123,
+    "sd": 0.03646599433418729,
+    "min": 0.004284513768355369,
+    "max": 0.1463160670369109,
+    "unfavourable": 13
+   },
+   "NFPP": {
+    "mean": 1.0452246682574306e-112,
+    "max": 9.481893039705534e-112,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/probability-v3/campaign/audit-20261025T014956413046Z.json",
+    "sha256": "13b8d7061d4b8fac951dfa7267f71a063254d8b29da02c21634e43858370f1f2"
+   },
+   "kic": 6139064,
+   "radius_for_category_earth": 7.534066216052904,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2106817012155835904",
+   "signal_id": "rust-v6-2106817012155835904-1",
+   "period_days": 4.516815102976094,
+   "representative_radius_earth": 4.557800156027715,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.03529778016704752,
+    "sd": 0.03513970334986005,
+    "min": 0.0016396686400597105,
+    "max": 0.1521422930600258,
+    "unfavourable": 14
+   },
+   "NFPP": {
+    "mean": 0.0,
+    "max": 0.0,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/probability-v3/campaign/audit-20261025T010222423994Z.json",
+    "sha256": "b20dca419a01225b2d0684477a0452725f1386da6fd0e101b2c384eab09833be"
+   },
+   "kic": 9073544,
+   "radius_for_category_earth": 6.551185253070044,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2079517512834068480",
+   "signal_id": "rust-v6-2079517512834068480-1",
+   "period_days": 2.864063649157755,
+   "representative_radius_earth": 7.693560085548492,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.08014242162164267,
+    "sd": 0.019403968483119875,
+    "min": 0.04083736189359077,
+    "max": 0.11171916857793285,
+    "unfavourable": 20
+   },
+   "NFPP": {
+    "mean": 2.0992841699594793e-97,
+    "max": 2.755693799673781e-96,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/probability-v3/campaign/audit-20261025T064126366002Z.json",
+    "sha256": "bcc1274995d2ba9ea7f0f0444dd625447f6fcb5d3f14f0bf9b4f2e52259adfd2"
+   },
+   "kic": 9606750,
+   "radius_for_category_earth": 7.693560085548492,
+   "triceratops_plus_category": "PP"
+  },
+  {
+   "source_id": "2076383384993192576",
+   "signal_id": "rust-v6-2076383384993192576-1",
+   "period_days": 51.528195064709784,
+   "representative_radius_earth": 8.579739103755898,
+   "repeats": 20,
+   "FPP": {
+    "mean": 0.18305409334633632,
+    "sd": 0.24433363828636406,
+    "min": 1.830064488839156e-08,
+    "max": 0.7899184525317187,
+    "unfavourable": 13
+   },
+   "NFPP": {
+    "mean": 0.0,
+    "max": 0.0,
+    "unfavourable": 0
+   },
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/audit-20261025T012022411844Z.json",
+    "sha256": "2a9a89c373cdd2e837b86a079cad408126d0162af6816b2a3ba1a8e0c80a40b9"
+   },
+   "kic": 5115632,
+   "radius_for_category_earth": 8.579739103755898,
+   "triceratops_plus_category": "PP"
+  }
+ ],
+ "paired_known_object_comparison": {
+  "record": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/paired-stock-summary-20261025.json",
+   "sha256": "3576f0754b73193f1884986a6054902ed4821ccd8b561f2745f0527403df2f41"
+  },
+  "classes": {
+   "confirmed": {
+    "pairs": 34,
+    "v3_passing": 11,
+    "stock_calibrated": {
+     "passing": 11,
+     "v3_only": 2,
+     "stock_only": 2,
+     "mcnemar_p": 1.0
+    },
+    "stock_gaussian": {
+     "passing": 12,
+     "v3_only": 1,
+     "stock_only": 2,
+     "mcnemar_p": 1.0
+    }
+   },
+   "fp-ss": {
+    "pairs": 20,
+    "v3_passing": 2,
+    "stock_calibrated": {
+     "passing": 1,
+     "v3_only": 1,
+     "stock_only": 0,
+     "mcnemar_p": 1.0
+    },
+    "stock_gaussian": {
+     "passing": 1,
+     "v3_only": 1,
+     "stock_only": 0,
+     "mcnemar_p": 1.0
+    }
+   },
+   "fp-co": {
+    "pairs": 21,
+    "v3_passing": 2,
+    "stock_calibrated": {
+     "passing": 2,
+     "v3_only": 1,
+     "stock_only": 1,
+     "mcnemar_p": 1.0
+    },
+    "stock_gaussian": {
+     "passing": 2,
+     "v3_only": 1,
+     "stock_only": 1,
+     "mcnemar_p": 1.0
+    }
+   }
+  },
+  "reading": "Two seeds per arm on 75 known objects. Confirmed planets passing: V3 11/34, stock calibrated 11/34, stock Gaussian 12/34. False positives passing: V3 4/41, stock 3/41. Every V3 false pass (K07102.01, K03979.01, K00895.01, K00256.01) and the stock-only false pass K02567.01 is flagged by the ephemeris or occultation closeout rule; V3 rejects K02567.01 (FPP 1.0), whose signal is on a neighbour."
+ },
+ "fourth_sample": {
+  "stopped": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/stopped-fourth-odd-20261025.json",
+   "sha256": "a66448fc0c16195aff9d322ef31072ae2b15fb4cc1a11740f7b6854454405068"
+  }
+ },
+ "next_v3_bois": [
+  "BOI-2077554781499350144-3 (KIC 6699887, 47.69 d)",
+  "BOI-2099560128037101952-1 (KIC 3330404)",
+  "BOI-2126728304441865728-1 (KIC 9220619)",
+  "BOI-2073609042284178176-1 (KIC 5303927; needs host and 1.2-arcsec neighbour properties first)"
+ ],
+ "scope": "Statistical validation, not RV confirmation or novelty. KIC 8293530 and KIC 4543190 are published Bienias & Szabo (2025) candidates. The three October 19 studies remain under their original protocol and are not rerun.",
+ "validated_by_multiplicity_host_undetermined": [
+  {
+   "kic": 6267058,
+   "signal_id": "mk-sap-20261019-2104058096963805696-3",
+   "period_days": 11.79,
+   "protocol": "TRICERATOPS_KEPLER_V3 + multiplicity (b = 5.5)",
+   "accepted": "2026-10-25"
+  },
+  {
+   "kic": 6267058,
+   "signal_id": "mk-sap-20261019-2104058096963805696-4",
+   "period_days": 16.74,
+   "protocol": "TRICERATOPS_KEPLER_V3 + multiplicity (b = 5.5)",
+   "accepted": "2026-10-25"
+  },
+  {
+   "kic": 6267058,
+   "signal_id": "mk-sap-20261019-2104058096963805696-2",
+   "period_days": 29.31,
+   "protocol": "TRICERATOPS_KEPLER_V3 + multiplicity (b = 5.5)",
+   "accepted": "2026-10-25"
+  },
+  {
+   "kic": 6699887,
+   "signal_id": "rust-v6-2077554781499350144-6",
+   "boi_id": "BOI-2077554781499350144-3",
+   "period_days": 47.69,
+   "protocol": "TRICERATOPS_KEPLER_V3 + multiplicity (b = 5.5)",
+   "accepted": "2026-10-25",
+   "record": {
+    "path": "results/boi-validation/kic6699887c-multiplicity-validation-20261025.json",
+    "sha256": "d3185349201e148d49b9098b7ca2e80f67c0bed7061adcb776ae89d62b77632a"
+   }
+  }
+ ],
+ "validated_by_multiplicity_record": {
+  "path": "results/boi-validation/mk-multiplicity-validation-20261025.json",
+  "sha256": "125d0a3c41bb4784ea4f6926d411f8e9846b5ba8b756109a07359530540bc4ae"
+ },
+ "updated_utc": "2026-10-25T20:44:43.745637+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "protocol": "fsc-kepler-false-class-controls-v1",
+  "seed": "forgotten-stars-false-classes-2026-09-23",
+  "candidate_pool_per_class": 2500,
+  "development_per_class": 100,
+  "evaluation_per_class": 450,
+  "classes": ["instrumental_artifact", "eclipsing_binary", "background_contaminant"],
+  "minimum_quarters": 4,
+  "minimum_finite_primary_cadences": 1000,
+  "background_separation_arcsec": [3.0, 12.0],
+  "background_max_magnitude_difference": 3.5,
+  "exclude_csv": [
+    {"path": "dump/release-controls-v2/source-pools.csv", "column": "source_id", "kind": "source"},
+    {"path": "dump/release-controls-v2/catalogue-pools.csv", "column": "kic_id", "kind": "parent"},
+    {"path": "dump/detector-benchmark-20260921/ordinary-sources-3000.csv", "column": "source_id", "kind": "source"},
+    {"path": "dump/v4-survey-50000-20260921/cohort.csv", "column": "source_id", "kind": "source"},
+    {"path": "dump/v6-1-survey-10000-c/cohort.csv", "column": "source_id", "kind": "source"},
+    {"path": "dump/release-control-partitions-v2/parent-map.csv", "column": "parent_tpf", "kind": "parent"},
+    {"path": "dump/release-planet-control-partitions-v1/parent-map.csv", "column": "parent_tpf", "kind": "parent"},
+    {"path": "dump/release-planet-morphology-control-partitions-v2/parent-map.csv", "column": "resolved_parent_tpf", "kind": "parent"},
+    {"path": "pipeline/deterministic/false-class-development-exclusions.csv", "column": "parent_tpf", "kind": "parent"}
+  ],
+  "exclude_jsonl": [
+    {"path": "dump/release-catalogue-controls-v2/truth.jsonl", "field": "kic_id"},
+    {"path": "dump/release-catalogue-evaluation-v2/truth.jsonl", "field": "kic_id"}
+  ],
+  "exclude_parent_audits": [
+    "dump/release-planet-pixels-development-v9/parent-audit.json",
+    "dump/release-planet-morphology-development-v2/sparse/parent-audit.json",
+    "dump/release-planet-morphology-development-v2/ttv/parent-audit.json"
+  ],
+  "claim_boundary": "Outcome-blind, parent-disjoint candidate pool only. Pixel support, source-signal materialization, and an identity-exact control audit are required before these become evaluation trials."
+}

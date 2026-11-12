@@ -1,0 +1,725 @@
+{
+  "scope": "PERFORMANCE_EXPERIMENT_ONLY_NOT_CANDIDATE_ADMISSION",
+  "date": "2026-10-25",
+  "source_id": "2076383384993192576",
+  "method": {
+    "workers": 1,
+    "threads_per_worker": 1,
+    "nice": 19,
+    "attempted_draws_per_scenario": 1000000,
+    "independent_original_seeds": 2,
+    "execution_order": [
+      "stock seed 0",
+      "stock seed 1",
+      "engine seed 0",
+      "engine seed 1"
+    ],
+    "source_campaign_write_operations": 0,
+    "cold_first_seed_includes_calculation_JIT": true,
+    "warm_second_seed_reuses_worker": true,
+    "all_repeat_phases_exclude_worker_and_subprocess_startup": true,
+    "loaded_mac_unpinned_cpu_frequency_and_placement": true
+  },
+  "main_result": {
+    "warm_calculation_cpu_speedup": 2.177555226449682,
+    "warm_calculation_cpu_s": {
+      "stock": 31.733115999999995,
+      "engine": 14.572817999999998
+    },
+    "warm_all_repeat_phases_cpu_speedup": 2.16832127955702,
+    "warm_all_repeat_phases_cpu_s": {
+      "stock": 31.865835999999987,
+      "engine": 14.69608599999999
+    },
+    "warm_calculation_cpu_reduction_percent": 54.076939686603744,
+    "both_seeds_bitwise_equal_to_stock_and_original_saved_evidence": true
+  },
+  "comparison_receipt": {
+    "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/comparison.json",
+    "sha256": "a0adecfa0c7e7a4058dbd4c687e8f8e9c2f38ab2009124241554170ea900fafb"
+  },
+  "paired_results": [
+    {
+      "index": 0,
+      "same": {
+        "lnZ": true,
+        "scenarios.csv": true,
+        "stars.csv": true,
+        "FPP": true,
+        "NFPP": true
+      },
+      "calculate_cpu_s": {
+        "stock": 44.436656,
+        "engine": 24.506228999999998
+      },
+      "source_comparison": {
+        "stock": {
+          "lnZ": true,
+          "scenarios": true,
+          "stars": true,
+          "FPP": true,
+          "NFPP": true
+        },
+        "engine": {
+          "lnZ": true,
+          "scenarios": true,
+          "stars": true,
+          "FPP": true,
+          "NFPP": true
+        }
+      },
+      "calculate_cpu_speedup": 1.8132800440247254,
+      "calculate_wall_s": {
+        "stock": 70.37976012472063,
+        "engine": 29.07928195875138
+      },
+      "all_repeat_phases_cpu_s": {
+        "stock": 44.54236,
+        "engine": 24.628577999999997
+      },
+      "all_repeat_phases_cpu_speedup": 1.8085640185966079,
+      "serialized_target_bitwise": true
+    },
+    {
+      "index": 1,
+      "same": {
+        "lnZ": true,
+        "scenarios.csv": true,
+        "stars.csv": true,
+        "FPP": true,
+        "NFPP": true
+      },
+      "calculate_cpu_s": {
+        "stock": 31.733115999999995,
+        "engine": 14.572817999999998
+      },
+      "source_comparison": {
+        "stock": {
+          "lnZ": true,
+          "scenarios": true,
+          "stars": true,
+          "FPP": true,
+          "NFPP": true
+        },
+        "engine": {
+          "lnZ": true,
+          "scenarios": true,
+          "stars": true,
+          "FPP": true,
+          "NFPP": true
+        }
+      },
+      "calculate_cpu_speedup": 2.177555226449682,
+      "calculate_wall_s": {
+        "stock": 36.2308904575184,
+        "engine": 17.394989291206002
+      },
+      "all_repeat_phases_cpu_s": {
+        "stock": 31.865835999999987,
+        "engine": 14.69608599999999
+      },
+      "all_repeat_phases_cpu_speedup": 2.16832127955702,
+      "serialized_target_bitwise": true
+    }
+  ],
+  "modes": {
+    "stock": {
+      "experiment": {
+        "scope": "PERFORMANCE_EXPERIMENT_ONLY_NOT_CANDIDATE_ADMISSION",
+        "source_plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/plan.json",
+          "sha256": "920bdd06478692e208ecead1533fb59a898153cca04e09dbe1ce9bb19e9da52a"
+        },
+        "source_freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/freeze.json",
+          "sha256": "54575a1e2d3ce22313f9e2972c376e3dee0cd2180e64ea808d7c0b6092532768"
+        },
+        "mode": "stock",
+        "workers": 1,
+        "threads_per_worker": 1,
+        "draws": 1000000,
+        "repeats": 2,
+        "profile": false,
+        "seeds": [
+          391193619,
+          910759103,
+          782104951,
+          3912980696,
+          3816791375,
+          486401123,
+          2497275537,
+          2577031080,
+          456493892,
+          4008237061,
+          417295612,
+          608880144,
+          3411813672,
+          3865944028,
+          3369757954,
+          2772243960,
+          1864608062,
+          608952778,
+          4040440392,
+          3535753791
+        ],
+        "created_utc": "20261025T211931174409Z"
+      },
+      "experiment_receipt": {
+        "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/experiment.json",
+        "sha256": "41e9c1a79e80215e630b16aa0ef28479cc0bf740e5066a94ae99bfcb086f8717"
+      },
+      "freeze_receipt": {
+        "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/freeze.json",
+        "sha256": "615d3ef93dabea95173a82db27be8dc77b864b821dae5f7612d37a8d5858f100"
+      },
+      "frozen_source_and_config": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/LICENSE.batman",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/__init__.py",
+          "sha256": "ff61f89e7deb0334a4926f078a07442d6f63480718dbd35600d74fb6f529f07c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/bench.py",
+          "sha256": "5075b346ed9712eb9e5f674646dbcd6ea1670464ad6b25afc0c0f02ff99146d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/engine/LICENSE",
+          "sha256": "5e2205788f6caa5cf5620ae2687f025ab0a4d25e0a004293dbdc9d305c9d3331"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/engine/__init__.py",
+          "sha256": "b52bc3b7e06e539d12932c24c79db98696303c964dfc11f4d79e1257ecce3d9d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/engine/marginal_likelihoods.py",
+          "sha256": "b56d7fd7e359b80ad1524c6ebb0a7514798a3ab0d5241205e4b445b9fc3557e0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/engine/splines.py",
+          "sha256": "ab8fd559938526d6eb5fd0c5edc0d6bfe7228a0fd3dfe72783861a39c2112581"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/engine/triceratops.py",
+          "sha256": "cdedf8d15c49bc3132ab4b1b27f2b8c3a89b0f48794eba09c42e2d7b90cc0c84"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/gold.py",
+          "sha256": "1ef6fa8f4d29d3c45f90397c7063406f6cd187e0848f7069ef1559f7358d585c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/joint.py",
+          "sha256": "c5f32135bae881a9cc15d3cd7a053464f4eae81178cf6af74278074c07e1ff97"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/kernels.py",
+          "sha256": "72fc295a18b86a08da8d8603a8a53821e058bccb934f529775b8a106e0ef4a71"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/native.py",
+          "sha256": "abc54242da062595983fcb60f1e1e4380e3b1e72388da84ffd4ce0e8b28752ad"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/native_orbits.c",
+          "sha256": "917b77e5a258d25474f79a9c3ae9cef363fe57f80c0fdcd2c8f8bb568493cba2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/requirements.txt",
+          "sha256": "c4028cdac6e614cbda875d843e4e8c3d0def4b17d2f00472c653f6aa2b595f7a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/scenarios.py",
+          "sha256": "5d60193525360b64402d4dbdd89703dd9c20e85c7cd19d85fdca6e82d24a4d25"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/source/fast_triceratops/workflow.py",
+          "sha256": "b7ec1968c7b99dd2e94dea439e996553f3dd3c128d8aad0cc58a57002adeb08e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/experiment.json",
+          "sha256": "41e9c1a79e80215e630b16aa0ef28479cc0bf740e5066a94ae99bfcb086f8717"
+        }
+      ],
+      "records": [
+        {
+          "status": "COMPLETE_PERFORMANCE_EXPERIMENT_REPEAT",
+          "stage": "final",
+          "index": 0,
+          "seed": 391193619,
+          "freeze_sha256": "615d3ef93dabea95173a82db27be8dc77b864b821dae5f7612d37a8d5858f100",
+          "draws_per_scenario": 1000000,
+          "FPP": 2.4719707944376168e-05,
+          "NFPP": 0.0,
+          "files": [
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/attempt-20261025T211933249926Z/evidence.npz",
+              "sha256": "cddfea943e7002c0713fd5affc4ce808a5d483590fc3bc7a26758623f8fa6317"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/attempt-20261025T211933249926Z/identity.json",
+              "sha256": "9d747d5db33671ed4ef366efd793a3b9bb07989239d5c95071dc0a51f3a4be87"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/attempt-20261025T211933249926Z/scenarios.csv",
+              "sha256": "2532e7b77d7e59ae3ce4fd2a6e5a9899b8d9650dfaa37e1ecf71cccdd0938c09"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/attempt-20261025T211933249926Z/stars.csv",
+              "sha256": "7ccf5e15c321777f89943df57ea01dfcb4f520f405e237c82b610b9e16dbf6d2"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/attempt-20261025T211933249926Z/upstream-output.pkl",
+              "sha256": "0d9f3216c8ec66a81b2089bda61aad0d60df2b93d97dc0fca94131b8b4d8efdd"
+            }
+          ],
+          "timings": {
+            "verify_inputs": {
+              "cpu_s": 0.0027690000000000214,
+              "wall_s": 0.0052720410749316216
+            },
+            "verify_source": {
+              "cpu_s": 0.08962800000000004,
+              "wall_s": 0.09591950010508299
+            },
+            "load_packet": {
+              "cpu_s": 0.0012280000000000069,
+              "wall_s": 0.0019739167764782906
+            },
+            "calculate_quarters": {
+              "cpu_s": 44.436656,
+              "wall_s": 70.37976012472063
+            },
+            "compare_source": {
+              "cpu_s": 0.008099999999998886,
+              "wall_s": 0.011649624444544315
+            },
+            "preserve": {
+              "cpu_s": 0.003979000000001065,
+              "wall_s": 0.004356624558568001
+            }
+          },
+          "source_comparison": {
+            "lnZ": true,
+            "scenarios": true,
+            "stars": true,
+            "FPP": true,
+            "NFPP": true
+          },
+          "worker_initialization": {
+            "cpu_s": 0.70584,
+            "wall_s": 0.8388708746060729
+          },
+          "calculation_in_worker": 1,
+          "pid": 78694,
+          "peak_rss_bytes": 1485799424,
+          "result_receipt": {
+            "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-00/result.json",
+            "sha256": "f8a08f51dc132849baa05c45ff6fbb4f9d564fd275e540dd37249632c6fa3e3d"
+          }
+        },
+        {
+          "status": "COMPLETE_PERFORMANCE_EXPERIMENT_REPEAT",
+          "stage": "final",
+          "index": 1,
+          "seed": 910759103,
+          "freeze_sha256": "615d3ef93dabea95173a82db27be8dc77b864b821dae5f7612d37a8d5858f100",
+          "draws_per_scenario": 1000000,
+          "FPP": 0.14540150103535687,
+          "NFPP": 0.0,
+          "files": [
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/attempt-20261025T212043840331Z/evidence.npz",
+              "sha256": "f4a87340025ecc3850a2abccacac498661c0e3099ae1ab80579ae1deb605e438"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/attempt-20261025T212043840331Z/identity.json",
+              "sha256": "efd34c4eb27adfc4db4f4a0b548412c4295a22c3959f06e8b1a22b9e1b6371f4"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/attempt-20261025T212043840331Z/scenarios.csv",
+              "sha256": "b455d745e314887e4f790739c5c4c6fcceef4090b58b2b2c7649007f67787b82"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/attempt-20261025T212043840331Z/stars.csv",
+              "sha256": "7ccf5e15c321777f89943df57ea01dfcb4f520f405e237c82b610b9e16dbf6d2"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/attempt-20261025T212043840331Z/upstream-output.pkl",
+              "sha256": "83876acee4c2e7ef80476c702c493adc6571e68f75cc398356cb8e8d8a2d6876"
+            }
+          ],
+          "timings": {
+            "verify_inputs": {
+              "cpu_s": 0.0035340000000019245,
+              "wall_s": 0.006423125043511391
+            },
+            "verify_source": {
+              "cpu_s": 0.11632900000000035,
+              "wall_s": 0.17548887431621552
+            },
+            "load_packet": {
+              "cpu_s": 8.000000001118224e-06,
+              "wall_s": 8.500181138515472e-06
+            },
+            "calculate_quarters": {
+              "cpu_s": 31.733115999999995,
+              "wall_s": 36.2308904575184
+            },
+            "compare_source": {
+              "cpu_s": 0.00683099999999115,
+              "wall_s": 0.00911287497729063
+            },
+            "preserve": {
+              "cpu_s": 0.006017999999997414,
+              "wall_s": 0.01347954198718071
+            }
+          },
+          "source_comparison": {
+            "lnZ": true,
+            "scenarios": true,
+            "stars": true,
+            "FPP": true,
+            "NFPP": true
+          },
+          "worker_initialization": {
+            "cpu_s": 0.70584,
+            "wall_s": 0.8388708746060729
+          },
+          "calculation_in_worker": 2,
+          "pid": 78694,
+          "peak_rss_bytes": 1485799424,
+          "result_receipt": {
+            "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/stock/runs/final/seed-01/result.json",
+            "sha256": "ea955e6371e8ab54fe0377ebbb9b943e624edf72237c349ce8d33a57af3fa78b"
+          }
+        }
+      ]
+    },
+    "engine": {
+      "experiment": {
+        "scope": "PERFORMANCE_EXPERIMENT_ONLY_NOT_CANDIDATE_ADMISSION",
+        "source_plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/plan.json",
+          "sha256": "920bdd06478692e208ecead1533fb59a898153cca04e09dbe1ce9bb19e9da52a"
+        },
+        "source_freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/freeze.json",
+          "sha256": "54575a1e2d3ce22313f9e2972c376e3dee0cd2180e64ea808d7c0b6092532768"
+        },
+        "mode": "engine",
+        "workers": 1,
+        "threads_per_worker": 1,
+        "draws": 1000000,
+        "repeats": 2,
+        "profile": false,
+        "seeds": [
+          391193619,
+          910759103,
+          782104951,
+          3912980696,
+          3816791375,
+          486401123,
+          2497275537,
+          2577031080,
+          456493892,
+          4008237061,
+          417295612,
+          608880144,
+          3411813672,
+          3865944028,
+          3369757954,
+          2772243960,
+          1864608062,
+          608952778,
+          4040440392,
+          3535753791
+        ],
+        "created_utc": "20261025T212121195403Z"
+      },
+      "experiment_receipt": {
+        "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/experiment.json",
+        "sha256": "325eec53e1cdf48e486b17030b349e8fd90ba84f8d057fc95ca74e34a66a5ee9"
+      },
+      "freeze_receipt": {
+        "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/freeze.json",
+        "sha256": "38bb4dd556dba73556237249d99d503431570b1c040e5d5ed42b4b44c589a931"
+      },
+      "frozen_source_and_config": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/LICENSE.batman",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/__init__.py",
+          "sha256": "ff61f89e7deb0334a4926f078a07442d6f63480718dbd35600d74fb6f529f07c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/bench.py",
+          "sha256": "5075b346ed9712eb9e5f674646dbcd6ea1670464ad6b25afc0c0f02ff99146d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/engine/LICENSE",
+          "sha256": "5e2205788f6caa5cf5620ae2687f025ab0a4d25e0a004293dbdc9d305c9d3331"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/engine/__init__.py",
+          "sha256": "b52bc3b7e06e539d12932c24c79db98696303c964dfc11f4d79e1257ecce3d9d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/engine/marginal_likelihoods.py",
+          "sha256": "b56d7fd7e359b80ad1524c6ebb0a7514798a3ab0d5241205e4b445b9fc3557e0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/engine/splines.py",
+          "sha256": "ab8fd559938526d6eb5fd0c5edc0d6bfe7228a0fd3dfe72783861a39c2112581"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/engine/triceratops.py",
+          "sha256": "cdedf8d15c49bc3132ab4b1b27f2b8c3a89b0f48794eba09c42e2d7b90cc0c84"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/gold.py",
+          "sha256": "1ef6fa8f4d29d3c45f90397c7063406f6cd187e0848f7069ef1559f7358d585c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/joint.py",
+          "sha256": "c5f32135bae881a9cc15d3cd7a053464f4eae81178cf6af74278074c07e1ff97"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/kernels.py",
+          "sha256": "72fc295a18b86a08da8d8603a8a53821e058bccb934f529775b8a106e0ef4a71"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/native.py",
+          "sha256": "abc54242da062595983fcb60f1e1e4380e3b1e72388da84ffd4ce0e8b28752ad"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/native_orbits.c",
+          "sha256": "917b77e5a258d25474f79a9c3ae9cef363fe57f80c0fdcd2c8f8bb568493cba2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/requirements.txt",
+          "sha256": "c4028cdac6e614cbda875d843e4e8c3d0def4b17d2f00472c653f6aa2b595f7a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/scenarios.py",
+          "sha256": "5d60193525360b64402d4dbdd89703dd9c20e85c7cd19d85fdca6e82d24a4d25"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/source/fast_triceratops/workflow.py",
+          "sha256": "b7ec1968c7b99dd2e94dea439e996553f3dd3c128d8aad0cc58a57002adeb08e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/experiment.json",
+          "sha256": "325eec53e1cdf48e486b17030b349e8fd90ba84f8d057fc95ca74e34a66a5ee9"
+        }
+      ],
+      "records": [
+        {
+          "status": "COMPLETE_PERFORMANCE_EXPERIMENT_REPEAT",
+          "stage": "final",
+          "index": 0,
+          "seed": 391193619,
+          "freeze_sha256": "38bb4dd556dba73556237249d99d503431570b1c040e5d5ed42b4b44c589a931",
+          "draws_per_scenario": 1000000,
+          "FPP": 2.4719707944376168e-05,
+          "NFPP": 0.0,
+          "files": [
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/attempt-20261025T212147420022Z/evidence.npz",
+              "sha256": "cddfea943e7002c0713fd5affc4ce808a5d483590fc3bc7a26758623f8fa6317"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/attempt-20261025T212147420022Z/identity.json",
+              "sha256": "97f00da58878c790e72400cf802b1b436943c32b44ef4d9c3e93dedc04b235f9"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/attempt-20261025T212147420022Z/scenarios.csv",
+              "sha256": "2532e7b77d7e59ae3ce4fd2a6e5a9899b8d9650dfaa37e1ecf71cccdd0938c09"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/attempt-20261025T212147420022Z/stars.csv",
+              "sha256": "7ccf5e15c321777f89943df57ea01dfcb4f520f405e237c82b610b9e16dbf6d2"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/attempt-20261025T212147420022Z/upstream-output.pkl",
+              "sha256": "0d9f3216c8ec66a81b2089bda61aad0d60df2b93d97dc0fca94131b8b4d8efdd"
+            }
+          ],
+          "timings": {
+            "verify_inputs": {
+              "cpu_s": 0.0034250000000000114,
+              "wall_s": 0.0037161661311984062
+            },
+            "verify_source": {
+              "cpu_s": 0.10263299999999997,
+              "wall_s": 0.10863679088652134
+            },
+            "load_packet": {
+              "cpu_s": 0.0016159999999993957,
+              "wall_s": 0.0021177902817726135
+            },
+            "calculate_quarters": {
+              "cpu_s": 24.506228999999998,
+              "wall_s": 29.07928195875138
+            },
+            "compare_source": {
+              "cpu_s": 0.011134999999999451,
+              "wall_s": 0.01632704120129347
+            },
+            "preserve": {
+              "cpu_s": 0.003540000000000987,
+              "wall_s": 0.004203000105917454
+            }
+          },
+          "source_comparison": {
+            "lnZ": true,
+            "scenarios": true,
+            "stars": true,
+            "FPP": true,
+            "NFPP": true
+          },
+          "worker_initialization": {
+            "cpu_s": 7.204886,
+            "wall_s": 24.987918666563928
+          },
+          "calculation_in_worker": 1,
+          "pid": 78976,
+          "peak_rss_bytes": 817479680,
+          "result_receipt": {
+            "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-00/result.json",
+            "sha256": "ce3966ddc6699861ce73f701236d274ce37628ca2765078bf4b5c0ac5179f978"
+          }
+        },
+        {
+          "status": "COMPLETE_PERFORMANCE_EXPERIMENT_REPEAT",
+          "stage": "final",
+          "index": 1,
+          "seed": 910759103,
+          "freeze_sha256": "38bb4dd556dba73556237249d99d503431570b1c040e5d5ed42b4b44c589a931",
+          "draws_per_scenario": 1000000,
+          "FPP": 0.14540150103535687,
+          "NFPP": 0.0,
+          "files": [
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/attempt-20261025T212216692375Z/evidence.npz",
+              "sha256": "f4a87340025ecc3850a2abccacac498661c0e3099ae1ab80579ae1deb605e438"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/attempt-20261025T212216692375Z/identity.json",
+              "sha256": "3335f411e12098ddab7f75ee541fda0f571aa8194b27399afd563961f7280d63"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/attempt-20261025T212216692375Z/scenarios.csv",
+              "sha256": "b455d745e314887e4f790739c5c4c6fcceef4090b58b2b2c7649007f67787b82"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/attempt-20261025T212216692375Z/stars.csv",
+              "sha256": "7ccf5e15c321777f89943df57ea01dfcb4f520f405e237c82b610b9e16dbf6d2"
+            },
+            {
+              "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/attempt-20261025T212216692375Z/upstream-output.pkl",
+              "sha256": "83876acee4c2e7ef80476c702c493adc6571e68f75cc398356cb8e8d8a2d6876"
+            }
+          ],
+          "timings": {
+            "verify_inputs": {
+              "cpu_s": 0.003139000000000891,
+              "wall_s": 0.00597862433642149
+            },
+            "verify_source": {
+              "cpu_s": 0.1125550000000004,
+              "wall_s": 0.15660316683351994
+            },
+            "load_packet": {
+              "cpu_s": 9.999999996068709e-06,
+              "wall_s": 7.875263690948486e-06
+            },
+            "calculate_quarters": {
+              "cpu_s": 14.572817999999998,
+              "wall_s": 17.394989291206002
+            },
+            "compare_source": {
+              "cpu_s": 0.004354999999996778,
+              "wall_s": 0.006946291774511337
+            },
+            "preserve": {
+              "cpu_s": 0.003208999999998241,
+              "wall_s": 0.003670666366815567
+            }
+          },
+          "source_comparison": {
+            "lnZ": true,
+            "scenarios": true,
+            "stars": true,
+            "FPP": true,
+            "NFPP": true
+          },
+          "worker_initialization": {
+            "cpu_s": 7.204886,
+            "wall_s": 24.987918666563928
+          },
+          "calculation_in_worker": 2,
+          "pid": 78976,
+          "peak_rss_bytes": 817479680,
+          "result_receipt": {
+            "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/engine-final-1m/engine/runs/final/seed-01/result.json",
+            "sha256": "cb78c5f65dabbf4e234bea564df65d1e443b0c978f1518f9a8d8cb03c9f86a7e"
+          }
+        }
+      ]
+    }
+  },
+  "native_likelihood": {
+    "report": {
+      "path": "/Users/adam/Other/spacelab/results/fast-triceratops/native-likelihood-20261025.json",
+      "sha256": "d053e32bc75c740ea768cd8e8494fc54368845e809bc349c95d4069aa25b9253"
+    },
+    "median_cpu_speedup": 1.416831808920987,
+    "scope": "Fixed accepted posterior-point replay, not a new accepted fit",
+    "serial_synthetic_sampler_controls": 3
+  },
+  "checks": {
+    "ruff_and_complexity": "PASS; inherited scientific branches have explicit complexity exceptions",
+    "stock_suite": {
+      "passed": 101,
+      "skipped": 53,
+      "seconds": 83.67,
+      "warnings": 70,
+      "files": "fast_triceratops, excluding scratch",
+      "skip_reason": "V3 or reviewed native runtime required"
+    },
+    "v3_suite": {
+      "passed": 122,
+      "skipped": 0,
+      "seconds": 190.41,
+      "warnings": 58,
+      "files": [
+        "test_joint.py",
+        "test_engine.py",
+        "test_splines.py",
+        "test_native.py",
+        "test_workflow.py"
+      ]
+    },
+    "git_diff_cached_check": "PASS after CSV line-ending normalization; measurement fields unchanged",
+    "final_status": "PASS"
+  },
+  "limits": [
+    "Two seeds of one case at the original full draw count; no population-wide speedup claim.",
+    "Cold worker initialization and launch costs are recorded separately and not hidden in warm ratios.",
+    "No complete acquisition-to-review wall-time measurement or equal-CPU-budget throughput comparison.",
+    "The separate native and probability-stage gains are not multiplied.",
+    "Performance code remains experimental; no frozen evidence or accepted campaign adopted it.",
+    "Native parent contexts do not initialize spawned fitter workers."
+  ],
+  "scratch": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025",
+  "documentation": [
+    "docs/fast-triceratops.md",
+    "docs/fast-triceratops-workflow.md",
+    "docs/fast-triceratops-native.md"
+  ],
+  "scratch_size_mib_at_closeout": 37
+}

@@ -1,0 +1,83 @@
+{
+ "utc": "2026-10-25T19:06:32.682774+00:00",
+ "decision": "Adam, 25 October 2026 (about 19:00 UTC): 'yes use tmag', answering whether scene sources with no Gaia G may use their TIC Tmag flux.",
+ "rule": "tools/response.py relative_flux: a scene source without Gaia G uses its TIC Tmag flux relative to the target's Tmag (the flux proxy of upstream TRICERATOPS); the target and every other source keep Gaia G; a source with neither stops the case. Each substitution is listed in response-review.json gaia_g_substituted_by_tmag.",
+ "regression": "On mk/cases/2104058096963805696-3 (no missing G) the edited tool reproduces geometry.npz and every quarter record exactly.",
+ "helper": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/response.py",
+  "sha256": "baa0f6135515ac5519f74726745e6eecbbe93fcd870872a2409501b6a2a4a382"
+ },
+ "restaging": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/mk_prepare.py",
+  "sha256": "9c7d38323b21b3a45e3aa360b95d885bf77758c649105662bb7b4d4282de5d75"
+ },
+ "outcomes": [
+  {
+   "case": "cases/2077554781499350144",
+   "substituted": [
+    {
+     "source_id": "2077554815853755392",
+     "tmag": 20.1261,
+     "relative_flux": 0.01473262043445375
+    }
+   ],
+   "outcome": "READY_QUEUED",
+   "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144/response-v1/response-review.json",
+    "sha256": "96a497f7d692dc12d2a900a480a015ee5a9ba7f083b79bc255dff98692c56597"
+   }
+  },
+  {
+   "case": "cases/2077209775366626944",
+   "substituted": [
+    {
+     "source_id": "2077209569202573312",
+     "tmag": 20.5801,
+     "relative_flux": 0.017876397373298655
+    }
+   ],
+   "outcome": "READY_QUEUED",
+   "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077209775366626944/response-v1/response-review.json",
+    "sha256": "2074754c0ffca88cc245e0cd3200f32061c91632c7c892a57dd0280f0309aab2"
+   }
+  },
+  {
+   "case": "mk/cases/2052536768794843136-2",
+   "substituted": [
+    {
+     "source_id": "2052536768793230336",
+     "tmag": 19.0336,
+     "relative_flux": 0.11659501966242393
+    }
+   ],
+   "outcome": "HELD_RESPONSE_CLOSURE_FEWER_THAN_TWO_QUARTERS",
+   "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052536768794843136-2/response-v1/response-review.json",
+    "sha256": "2e275601adfaf1c64b696b777c833451fc7f53ce71479f2bc00f4156ff5c671f"
+   }
+  },
+  {
+   "case": "mk/cases/2073632716137904768-4",
+   "substituted": [
+    {
+     "source_id": "2073632651713432320",
+     "tmag": 20.4842,
+     "relative_flux": 0.046216813609224416
+    }
+   ],
+   "outcome": "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE",
+   "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073632716137904768-4/response-v1/response-review.json",
+    "sha256": "64f202e9b03cd385dd1d86e243b9207dca30719fda4d572744d25df1ec52958c"
+   }
+  },
+  {
+   "case": "mk/cases/2086402753427454848-1",
+   "substituted": null,
+   "outcome": "HELD_RESPONSE_FAILED",
+   "response": null
+  }
+ ],
+ "unchanged": "Capable sources without mass, radius or Teff stay held (no solar default, the PI's rule of 25 October)."
+}

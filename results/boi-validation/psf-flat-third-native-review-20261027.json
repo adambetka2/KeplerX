@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-27T01:25:57.356814+00:00",
+  "boi_id": "BOI-2127936912539397632-2",
+  "kic": 10528996,
+  "source_id": "2127936912539397632",
+  "signal_id": "shallow-v1-2127936912539397632-4",
+  "likelihood_view": "PSF_FLAT",
+  "stage": "conditional-native-fit-reviewed-in-part",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/native-v3/native-review-v3.json",
+    "sha256": "b64e77a1796f167565bd3b54c34e72c8f9720f637d43a71ac82d726b029abfb0"
+  },
+  "native_weight_ess": 5360.044990072554,
+  "max_abs_replay_delta_loglike": 2.1827872842550278e-11,
+  "provisional_period_days": 8.55571815549596,
+  "provisional_duration_hours": 4.219612262657392,
+  "radius_ratio_quantile_snr": 12.442768576729968,
+  "native_matched_filter_snr": 23.94662699397212,
+  "matched_filter_definition": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/psf-postfit-v1/native-significance-v1.json",
+    "sha256": "02dd074dd9fd443e73d94bac730b583729eadb8f75832ac6cc6d01d457ab0eb1"
+  },
+  "observed_integrated_depth_ppm": 266.40529085075747,
+  "apparent_radius_earth_at_assumed_host": 1.9118798569168236,
+  "radius_is_not_physical_closeout": true,
+  "additional_preparation_gains": [
+    0.9993558363604436,
+    1.0000075681132852
+  ],
+  "preparation_checks": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/psf-postfit-v1/checks.json",
+    "sha256": "792cf85a5b4cd885071ccc709aa4030299e01841fd1692224c15cc0709660f02"
+  },
+  "native_residual_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/psf-postfit-v1/residual-review-v1/review.json",
+    "sha256": "9d1b02975a5bec9d0b6135c1c28011a0f4edf70dc7f943822922dd0edb73d907"
+  },
+  "reviewed_bin_noise_ppm": 65.89163420339652,
+  "phase_half_secondary": {
+    "phase": 0.5,
+    "depth_ppm": -8.654098056541239,
+    "error_ppm": 10.50538664668535,
+    "snr": -0.8237772056939734,
+    "events": 148,
+    "reduced_chi2": 1.6420195270672173
+  },
+  "phase_half_secondary_gate_triggered": false,
+  "posterior_catalogue_screen": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/psf-postfit-v1/posterior-catalogue-v1.json",
+    "sha256": "6a764db3aefa6de9fd659bbab7a0054722560021e4bc943acad85c5f066cd9c0"
+  },
+  "native_gate_accepted": null,
+  "probability_started": false,
+  "validated": false,
+  "pending": [
+    "PSF extraction and archived flattening response qualification",
+    "Noise, timing/aliases and full scene/source ownership",
+    "Physical radius and full V3 closeout"
+  ],
+  "plot": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/psf-postfit-v1/native-fold.png",
+    "sha256": "499d07cd1774987e5364b38aef04ffcdb644d13b347b90fc72295969696946ef"
+  }
+}

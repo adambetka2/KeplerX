@@ -1,0 +1,17 @@
+{
+  "target": "Kepler-10b / KIC11904151 / TIC377780790",
+  "upstream_commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+  "lightcurve_url": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/examples/Kepler10b_lightcurve.csv",
+  "example_url": "https://triceratops.readthedocs.io/en/latest/tutorials/kepler_example.html",
+  "acquired_utc": "2026-10-20",
+  "scene": "Fresh official target constructor, mission Kepler quarter3 and official five-pixel aperture; actual returned TIC rows and projected positions. Upstream fills missing stellar parameters; these estimates are not new measured values.",
+  "background": "Official query_gaia_background route, complete returned273688-byte file, dwarf/Solar-metallicity population approximations retained.",
+  "reference": "Direct unmodified acquired official target calc_probs, seed20261020, N32768, parallelTrue, flatpriorsFalse, exptime.020433598216918748,nsamples20; stock probability/depth arrays matched adapter exactly. Production N remains1million. Not an independent astrophysical reliability calibration.",
+  "sha256": {
+    "lightcurve.csv": "37e2dbf9af98418e68c09b81fa943ccbd39d5e4a3262c18601f314f192f2d441",
+    "stars.csv": "1ae65342e5aaa60f9168e4163e1f9d292053501082476912c9ef4475597cf1aa",
+    "expected.npz": "0aa823aa2843602b80d8d51a200a331378239b6de089338c629e6123dc867d7c",
+    "background.csv": "b4aa4b60e8e53411aad8b2c9bb9769d32da322d9725bc76988c73041001f2cda",
+    "geometry.npz": "8ab9c8be0a1fb36879bf9e834e8196b4281f6ca82023c14077e6c2580f021c32"
+  }
+}

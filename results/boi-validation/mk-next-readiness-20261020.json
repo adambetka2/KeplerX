@@ -1,0 +1,97 @@
+{
+  "snapshot_utc": "2026-10-20T00:15:05.914555+00:00",
+  "scope": "Next-readiness and model-development evidence; no statistical validation admission",
+  "server": "kbonus",
+  "workspace": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1",
+  "new_validated": 0,
+  "goal": 50,
+  "previous_goal_turn_classification": "PROGRESS",
+  "native_queue": {
+    "service": "mk-boi-native-fits-20261020-v5",
+    "sources": [
+      "2126063585245659136",
+      "2105665750463516800",
+      "2131263686828359808"
+    ],
+    "worker_limit": 4,
+    "nice": 10,
+    "reason": "Correct supplied TIC M/R uncertainties for2126063585245659136; authenticate missing Q17 products for2105665750463516800 and2131263686828359808. Original conditional fits/failures preserved.",
+    "assumptions": "The latter two hosts lack supplied M/R errors; retained10%/6% assumptions are explicit. Another same-source BOI is protected with a declared mask where applicable."
+  },
+  "transit_first_priority": [
+    {
+      "source_id": "2053566049119753216",
+      "signal_id": "mk-sap-20261019-2053566049119753216-3",
+      "native_depth_snr": 13.705514245178946,
+      "events": 32,
+      "duration_days": 0.19200000000000003
+    },
+    {
+      "source_id": "2126055064030395392",
+      "signal_id": "mk-sap-20261019-2126055064030395392-1",
+      "native_depth_snr": 12.518909297870055,
+      "events": 22,
+      "duration_days": 0.16800000000000004
+    },
+    {
+      "source_id": "2100447124681568896",
+      "signal_id": "mk-sap-20261019-2100447124681568896-5",
+      "native_depth_snr": 8.864444490097194,
+      "events": 43,
+      "duration_days": 0.24
+    },
+    {
+      "source_id": "2127108975982923008",
+      "signal_id": "mk-sap-20261019-2127108975982923008-5",
+      "native_depth_snr": 8.554781080114239,
+      "events": 31,
+      "duration_days": 0.08400000000000002
+    }
+  ],
+  "ranking_rule": "Transit SNR and event consistency first within observational/identity readiness tiers; then scene cost. Preserve scientific holds and current stages. Preferences are not new calibrated dispositions.",
+  "global_clock_screen": {
+    "broad_flagged_signals": 85,
+    "narrow_phase_drift_duration_flags": 4,
+    "scope": "All flags retained. Neither clock coincidence nor a period ratio proves a contaminating source or spacecraft mechanism."
+  },
+  "prospective_ld": {
+    "research_plan": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/physical-ld-prospective-v1/research_plan.json",
+    "research_plan_sha256": "f8e92472a6a92ff53ac26c630ef36d5995db4032cccfdb92bd833a86fedfa203",
+    "physical_intensity_check": "PHYSICAL_INTENSITY_AND_INDEPENDENT_DISK_INTEGRATION_PASSED",
+    "normalization_error": 2.1605533599977633e-06,
+    "scenario_replay": [
+      {
+        "model": "RETAINED_FIXED_CONTROL",
+        "families": 132,
+        "posterior_l1_error": 0.0
+      },
+      {
+        "model": "UNIFORM_PHYSICAL_QUADRATIC",
+        "families": 132,
+        "posterior_l1_error": 0.0
+      }
+    ],
+    "admitted_for_production": false,
+    "empirical_calibration_complete": false,
+    "scope": "Physical quadratic q1/q2 prior recorded before a full current candidate probability repeat completed. No Solar-metallicity fill or off-grid atmosphere assignment. Existing frozen campaigns and accepted oldthree studies unchanged."
+  },
+  "known_controls": {
+    "names": [
+      "Kepler-42 b",
+      "Kepler-442 b",
+      "Kepler-16 binary orbit"
+    ],
+    "native_products": 52,
+    "acquisition_failures": 0,
+    "authenticated_quarters": 52,
+    "route": "Official Kepler native SAP products; controls are absent from LC2. Actual optimal aperture bit2 and Gaia proper-motion positions checked.",
+    "remaining": [
+      "Full stellar/scene/prior and likelihood freeze",
+      "Paired model comparison and blind known-object scoring",
+      "Review empirical adequacy and limitations before any new-model production freeze"
+    ]
+  },
+  "probability_criteria_failure_fraction": null,
+  "reproduced_false_positive_fraction": null,
+  "detector_recovery_calibration": "Separately deferred/open"
+}

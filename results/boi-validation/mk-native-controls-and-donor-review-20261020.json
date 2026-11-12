@@ -1,0 +1,403 @@
+{
+  "utc": "2026-10-20T02:39:38.690480+00:00",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_followups": 0,
+  "reproduced_astrophysical_false_positives": 0,
+  "reproduced_instrumental_mechanisms": 0,
+  "false_positive_rate": null,
+  "rate_denominator_rule": "Only fully closed followups; a numerical FPP failure or unresolved ownership conflict is not a reproduced false-positive mechanism.",
+  "probability": {
+    "status": "RUNNING",
+    "first_failure": null,
+    "required_full_repeats": 43,
+    "completed_full_repeats": 0,
+    "completed_million_draw_scenario_blocks": 1109,
+    "planned_million_draw_scenario_blocks": 5136,
+    "active_checkpoints": 32,
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/probability-campaign-v1/plan.json",
+      "sha256": "0d1c7c424986bd4b7aed067d7b96aebc8aaffa61e4b5719937ea05929d2e7f5d"
+    },
+    "freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/probability-campaign-v1/freeze.json",
+      "sha256": "df51d31339117a49cecc3573111821272211397e7d8099feaac89f561039988b"
+    },
+    "conditional_physical_admission": false
+  },
+  "cross_source_clock_review": {
+    "utc": "2026-10-20T02:11:10.977079+00:00",
+    "status": "PERIODIC_CROSS_SOURCE_SCREEN_COMPLETE_UNRESOLVED_PRIOR_CLOCKS_EXPLICIT",
+    "targets": 663,
+    "sealed_boi_proposal_donors": 2617,
+    "current_mk_donors": 663,
+    "historical_clock_variants": 7,
+    "old_proposals_without_periodic_clock": 830,
+    "targets_near_prior_boi_without_periodic_clock": 14,
+    "flagged_targets": 18,
+    "local_flagged_targets": 0,
+    "local_pairs": 0,
+    "matched_donor_sources_missing_coordinates": [],
+    "positive_and_quarter_cycle_negative_controls_passed": true
+  },
+  "cross_source_boundaries": "Only usable periodic1:1,2:1,1:2 lattices.830 old proposals without periodic clocks remain explicit.14 current proposals have nearby such sources and require event-level review. No local periodic match or mechanism was found. This is not a novelty certificate.",
+  "donor_readiness_overlay": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/donor-readiness-overlay-20261020T023938Z.json",
+    "sha256": "35bac7b0fafb7cf295e02211d51bc11a9f410b2f6e92d065450a742ffd473407"
+  },
+  "known_native_controls": [
+    {
+      "source_id": "2126556132093765888",
+      "endpoint_steps": 12000,
+      "rank_rhat_maximum": 1.0196509101623157,
+      "reference_epoch_bulk_ess": 644.8922044390633,
+      "native_gate": {
+        "passed": true,
+        "radius_ratio_snr": 13.247694901619116,
+        "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+      },
+      "published_parameter_recovery": "KNOWN_NATIVE_PARAMETER_RECOVERY_PASSED",
+      "recovery_receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native-acceptance-v1/published-recovery-control.json",
+        "sha256": "42b6c5b47990a21feec3358e78b0942539361ab352b27ed2f5ae99318f86737d"
+      },
+      "endpoint": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native42-v1/2126556132093765888/endpoint-12000.json",
+        "sha256": "8c8522510f23f3c221fd35fb14f53f3c213fa36f3aba75f127c8237d945cd71b"
+      },
+      "scope": "Known native photon/parameter recovery and numerical controls only. Empirical probability calibration remains open.",
+      "posterior_numerical_check": {
+        "passed": true,
+        "draws": 80,
+        "maximum_log_density_error": 0.008283561151984031,
+        "maximum_point_noise_error": 0.0020345514145984505,
+        "maximum_live_frame_correction_ppm": 0.024757221717131017
+      },
+      "posterior_numerical_receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native-acceptance-v1/2126556132093765888/posterior-numerical-check.json",
+        "sha256": "b3e2744b25ce5348b86f75f8dfa036982e1fa6e3dc17197ceeabf7d947d83a21"
+      },
+      "probability_input_packet": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-probability-packets-v1/2126556132093765888/preparation.receipt.json",
+        "sha256": "c9335e5b57c285c3a496aecb98fd846f73ebd3472b78e4185c017dfdf8b8f63e"
+      }
+    },
+    {
+      "source_id": "2100258047339711488",
+      "endpoint_steps": 6000,
+      "rank_rhat_maximum": 1.0222522800228744,
+      "reference_epoch_bulk_ess": 352.91959400271077,
+      "native_gate": {
+        "passed": true,
+        "radius_ratio_snr": 16.175970370867027,
+        "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+      },
+      "published_parameter_recovery": "KNOWN_NATIVE_PARAMETER_RECOVERY_PASSED",
+      "recovery_receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native-v2/2100258047339711488/published-recovery-control.json",
+        "sha256": "d936703f5f77cb677d5043f63a4a2abaa7c2610ea3b8535834d3eea4f4d13914"
+      },
+      "endpoint": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native-v2/2100258047339711488/endpoint-6000.json",
+        "sha256": "b60c6af4343d329de5419dc649b2948fb9388fdf5ad3f492527e8f45177b2b70"
+      },
+      "scope": "Known native photon/parameter recovery and numerical controls only. Empirical probability calibration remains open.",
+      "posterior_numerical_check": {
+        "passed": true,
+        "draws": 80,
+        "maximum_log_density_error": 0.0004206206535855017,
+        "maximum_point_noise_error": 8.110341489445093e-05,
+        "maximum_live_frame_correction_ppm": 0.0009484683038962771
+      },
+      "posterior_numerical_receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-native-acceptance-v2/2100258047339711488/posterior-numerical-check.json",
+        "sha256": "28d6228ca9566ff8a0d65766d1da5bf3817e80c3639b81b856a7c4d070701aa0"
+      }
+    }
+  ],
+  "known_scene_preparation": {
+    "results": [
+      {
+        "source_id": "2126556132093765888",
+        "status": "KNOWN_CONTROL_SCENE_PREPARED_REQUIRES_EMPIRICAL_REVIEW",
+        "source_count": 28,
+        "missing_scene_log_prior_mass_upper": {
+          "nonfinite": "-inf"
+        }
+      },
+      {
+        "source_id": "2100258047339711488",
+        "status": "KNOWN_CONTROL_SCENE_PREPARED_REQUIRES_EMPIRICAL_REVIEW",
+        "source_count": 30,
+        "missing_scene_log_prior_mass_upper": {
+          "nonfinite": "-inf"
+        }
+      },
+      {
+        "source_id": "2133476355197071616",
+        "status": "KNOWN_CONTROL_SCENE_PREPARED_REQUIRES_EMPIRICAL_REVIEW",
+        "source_count": 15,
+        "missing_scene_log_prior_mass_upper": {
+          "nonfinite": "-inf"
+        }
+      }
+    ],
+    "scope": "Explicit known-object inputs only. Empirical controls, model-domain checks and probability calibration remain open."
+  },
+  "control_extinction_assumption": "Known42/16 have rawTIC EBV=e_EBV=0 and nullEBVflag. The documented TICnearby-star policy and measured distances justify an explicitly conditional fixed-zero control model only. No zero-width measured Gaussian, physical dust exclusion or new-BOI repair is asserted.",
+  "control_calibration_gate": "OPEN: paired blinded empirical planet/EB probability comparisons, complete negative-control preparation and prospective model review still required.",
+  "joint_aperture_source_ownership": {
+    "source_id": "2127732197218050304",
+    "physical_admission": false,
+    "false_positive_mechanism": false,
+    "matched_native_pixel_identity_quarters": 17,
+    "maximum_profile_vs_independent_whitened_chi2_error": 2.1316282072803006e-14,
+    "maximum_frozen_aperture_response_error": 0.0,
+    "profiles": [
+      {
+        "source_id": "2127732197218050304",
+        "diagnostic_covariance_sensitivities": [
+          {
+            "covariance": "raw_pair_formal_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 27.08621299159033,
+            "sum_of_per_quarter_pointing_maximum_chi2": 31.53180332489506
+          },
+          {
+            "covariance": "raw_pair_common_scalar_inflated_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 15.449988195137447,
+            "sum_of_per_quarter_pointing_maximum_chi2": 17.675685528955675
+          }
+        ]
+      },
+      {
+        "source_id": "2127732197218050048",
+        "diagnostic_covariance_sensitivities": [
+          {
+            "covariance": "raw_pair_formal_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 90.4231112089703,
+            "sum_of_per_quarter_pointing_maximum_chi2": 108.11398752928477
+          },
+          {
+            "covariance": "raw_pair_common_scalar_inflated_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 38.99555727652353,
+            "sum_of_per_quarter_pointing_maximum_chi2": 45.88898328830241
+          }
+        ]
+      },
+      {
+        "source_id": "2127732162858310528",
+        "diagnostic_covariance_sensitivities": [
+          {
+            "covariance": "raw_pair_formal_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 105.96389233487292,
+            "sum_of_per_quarter_pointing_maximum_chi2": 109.79517152830898
+          },
+          {
+            "covariance": "raw_pair_common_scalar_inflated_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 44.884863097289454,
+            "sum_of_per_quarter_pointing_maximum_chi2": 47.044978852047294
+          }
+        ]
+      },
+      {
+        "source_id": "2127732162858310656",
+        "diagnostic_covariance_sensitivities": [
+          {
+            "covariance": "raw_pair_formal_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 32.530812655277956,
+            "sum_of_per_quarter_pointing_maximum_chi2": 39.71229219562864
+          },
+          {
+            "covariance": "raw_pair_common_scalar_inflated_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 17.734746848986962,
+            "sum_of_per_quarter_pointing_maximum_chi2": 21.00170728077499
+          }
+        ]
+      },
+      {
+        "source_id": "2127732261638645632",
+        "diagnostic_covariance_sensitivities": [
+          {
+            "covariance": "raw_pair_formal_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 112.74595208235827,
+            "sum_of_per_quarter_pointing_maximum_chi2": 112.81675951368271
+          },
+          {
+            "covariance": "raw_pair_common_scalar_inflated_covariance",
+            "family": "EXP_MEDIAN_FIT",
+            "sum_of_per_quarter_pointing_minimum_chi2": 48.005598113290766,
+            "sum_of_per_quarter_pointing_maximum_chi2": 48.0459335563759
+          }
+        ]
+      }
+    ],
+    "scope": "Shared photons and exact overlap covariance. These are per-quarter profiled nuisance amplitudes and PRF/pointing sensitivities, not source probabilities or integrated evidences. Bright-parent-only contamination is not supported; target and another neighbor remain compatible. Free-centroid conflict remains unresolved. Scalar inflation does not bound temporal/background correlations.",
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/joint-aperture-source-profiles-v2/review.json",
+      "sha256": "aba2c9188a14f9b9a857e49a046652abed60ec5091d691d10ebea4545bbf82de"
+    }
+  },
+  "next_four_scenes": {
+    "results": [
+      {
+        "source_id": "2053566049119753216",
+        "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+        "source_count": 50,
+        "missing_scene_log_prior_mass_upper": {
+          "nonfinite": "-inf"
+        }
+      },
+      {
+        "source_id": "2126055064030395392",
+        "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+        "source_count": 37,
+        "missing_scene_log_prior_mass_upper": -7.037781698661615
+      },
+      {
+        "source_id": "2100447124681568896",
+        "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+        "source_count": 40,
+        "missing_scene_log_prior_mass_upper": {
+          "nonfinite": "-inf"
+        }
+      },
+      {
+        "source_id": "2127108975982923008",
+        "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+        "source_count": 29,
+        "missing_scene_log_prior_mass_upper": -165.65261166158106
+      }
+    ],
+    "scope": "Preparation only, not scientific readiness or validation."
+  },
+  "scene_support_hold": {
+    "source_id": "2126055064030395392",
+    "unsupported_model_prior_mass_upper": 0.000878072,
+    "neighbor_source_id": "2126054995303897216",
+    "required_review": "Explicit stellar/radiometry support and omitted-evidence bound before probability admission. Do not drop or renormalize unsupported mass. Zero missing mass in a finite particle bank is not proof of zero continuous prior-tail mass."
+  },
+  "next_six_k_inputs": {
+    "prepared": 6,
+    "identities": [
+      {
+        "source_id": "2079240642062921984",
+        "tic_id": 268391058,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      },
+      {
+        "source_id": "2052257699003730176",
+        "tic_id": 137892458,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      },
+      {
+        "source_id": "2078045679079431168",
+        "tic_id": 271957473,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      },
+      {
+        "source_id": "2081879847927750016",
+        "tic_id": 185184356,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      },
+      {
+        "source_id": "2134855001041019904",
+        "tic_id": 27648110,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      },
+      {
+        "source_id": "2080571429081419520",
+        "tic_id": 1881690369,
+        "status": "EXACT_GAIA_TIC_IDENTITY_ACQUIRED_REQUIRES_PRIOR_REVIEW"
+      }
+    ],
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/summary.json",
+      "sha256": "db3a3e7b6e1f2fb2a6da47ce2febb6ba93b84fc6141e964676f2c4f4eb775bd5"
+    },
+    "strongest_additional_native_fit": {
+      "source_id": "2080571429081419520",
+      "exact_tic_id": "1881690369",
+      "workers": 2,
+      "service": "mk-boi-strong-k-native-20261020-v1",
+      "launch_plan": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/strong-k-native-v1-plan.json",
+        "sha256": "76c2f7fb818d5f51d0aff841cbb642af0b043ec7c43365604c308599529941aa"
+      },
+      "physical_hold": "GaiaTeff4642.76K versus exactTIC4130K requires stellar/scene review before production. Native fit alone cannot resolve that model-family disagreement."
+    }
+  },
+  "preserved_failures": [
+    "Initial next-six preparationv9 referenced old-four proposal paths and failed before native export or chains; correctedv10 retains the first failure log.",
+    "Kepler42 preparation helper signature failed after export/prior; continuation completed only missing metadata/freeze before inference.",
+    "Original joint-aperture background identity failedQ2/Q12 where nativeSAP_BKG is identicallyzero; corrected declared native-product background branches reproduce all17quarters without changing photons.",
+    "Known442 fullphase packetv1 failed because native event-only normalization/noise has no inputs for7quarters.3 contain partially covered transits, so they cannot be omitted. A separate declared chronological-cell OOT extension is preparing all missing inputs; existing native posterior and primary-quarter errors remain untouched. No control probability run has started."
+  ],
+  "receipts": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/cross-source-ephemeris-v2/input-manifest.json",
+      "sha256": "fb01f3e6d825eb26bbc6b6004a86c4920cc7cc58a4b470f9b3d1db05c6b68092"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-scene-v3/summary.json",
+      "sha256": "98fda4ac4bac9cf326b0843e11bbf2dc28adac28e9666c09775ca25ba367e25c"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/transit-first-scene-v4/summary.json",
+      "sha256": "f802f52aff17028f53d7a5c65bd968ecfd0fa94a884229840d0a6756771996ca"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/joint-aperture-ownership-v2/review.json",
+      "sha256": "0bc6c08378db3a2e0aa84efca085a533220ea40349851dbd07b0f0807d7053de"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-product-provenance-v2/manifest.json",
+      "sha256": "25910edba05331aed2ddb547213fe270200b9275074088b429619b9e46ecccbf"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-source-v1/provenance.json",
+      "sha256": "a71b1ad74f616873cf700754404212e8253d25be900597bf32cf9edd04b406ae"
+    }
+  ],
+  "scope": "Server-only prospective research and conditional integrations. All original BOIs, accepted prior studies, active probability inputs and deferred detector calibration remain preserved.",
+  "known442_quarter_input_extension": {
+    "status": "DECLARED_PREPARATION_RUNNING_REQUIRES_NOISE_REVIEW",
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/known442-quarter-noise-extension-v1-plan.json",
+      "sha256": "a0630b56423391a9cb1bdb1f904aeccc78292fef349de66df4912b8a84a0d316"
+    },
+    "preserved_first_failure": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-probability-packets-v1/2100258047339711488/first-failure.json",
+      "sha256": "61376e7cd2846b5ee01cd915db2e1f919a26949a557524c6e76c58bf9178773b"
+    },
+    "service": "mk-boi-known442-packet-20261020-v2"
+  },
+  "verification": {
+    "ruff_and_complexity": "PASS",
+    "post_boi_tests_passed": 13,
+    "active_probability_freeze": "PASS",
+    "receipts": [
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v6/ruff.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v6/tests.log",
+        "sha256": "f3590a2500131c319f31260590123aaab8006c49d111aa4bd4fe02dfbb2e7ea7"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/active-campaign-verify-v6-corrected.log",
+        "sha256": "c8cafcc5b076ee71c3ab8abbdd5ee6822097349bf5a134493e5697c66a92f7e7"
+      }
+    ],
+    "invocation_first_failure": "An initial verification invoked the repository package outside the frozen runner path and was rejected. Running from the declared campaign root with the frozen package passed; no frozen file changed."
+  }
+}

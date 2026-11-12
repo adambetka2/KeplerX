@@ -1,0 +1,85 @@
+{
+  "P_p1": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      50.41522510095035,
+      50.45627000158528
+    ]
+  },
+  "t0_p1": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      947.6914674261758,
+      948.0274674261758
+    ]
+  },
+  "p_p1": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      1.0
+    ]
+  },
+  "b_p1": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      2.0
+    ]
+  },
+  "rho": {
+    "distribution": "truncatednormal",
+    "hyperparameters": [
+      26588.79919930469,
+      8532.707823192972,
+      0.0,
+      1.7976931348623157e+308
+    ]
+  },
+  "q1_Kepler": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      1.0
+    ]
+  },
+  "q2_Kepler": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      1.0
+    ]
+  },
+  "ecc_p1": {
+    "distribution": "beta",
+    "hyperparameters": [
+      0.867,
+      3.03
+    ]
+  },
+  "omega_p1": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      360.0
+    ]
+  },
+  "mdilution_Kepler": {
+    "distribution": "fixed",
+    "hyperparameters": 1.0
+  },
+  "mflux_Kepler": {
+    "distribution": "normal",
+    "hyperparameters": [
+      0.0,
+      0.003039683567682697
+    ]
+  },
+  "sigma_w_Kepler": {
+    "distribution": "uniform",
+    "hyperparameters": [
+      0.0,
+      21022.064286771558
+    ]
+  }
+}

@@ -1,0 +1,6692 @@
+{
+ "schema": 1,
+ "updated_utc": "2026-10-26T16:32:42.344335+00:00",
+ "authorization": "2026-10-26: PI restores original first Rust catalogue membership before manual exclusions for completeness and fair reporting; assess restored signals for standard statistical follow-up.",
+ "scope": "Current selection. Main Rust membership equals the full frozen 147-group catalogue. The other 12 entries preserve historical non-main-Rust delivery; no claim of complete other-lane follow-up.",
+ "counts": {
+  "bois": 159,
+  "hosts": 125,
+  "main_rust_bois": 147,
+  "main_rust_sources": 116,
+  "main_rust_proposals": 156,
+  "restored_main_rust": 34,
+  "restored_initial_manual_no": 33,
+  "restored_later_delivery_exclusion": 1,
+  "other_historical_delivery": 12
+ },
+ "frozen_catalogue": {
+  "path": "results/kbonus-20261010/transit-boi-catalogue.json.gz",
+  "compressed_sha256": "0beaf8316a0bb4ee36dec99ff36cd60b434322b8a14236fa1e85aac77ab625ea",
+  "decompressed_sha256": "cb64386423d3b01add2ca757b5f2ee3043eaa81c315e8c8e81d4e1f9ce7bc7d2"
+ },
+ "historical_records": [
+  {
+   "path": "results/boi-validation/boi-manual-selection-20261011.json",
+   "sha256": "fb8a7437585d9571e0c58c69633e5d235b7059d03ea4cc436a6b91fe90360bcf",
+   "role": "Historical review or follow-up subset, not the completeness denominator"
+  },
+  {
+   "path": "results/boi-validation/boi-delivery-selection-20261011.json",
+   "sha256": "51a3f065e1d130ff10910bf9a5524a163e72fa517416f644ca2d965ea8de185a",
+   "role": "Historical review or follow-up subset, not the completeness denominator"
+  }
+ ],
+ "restored_main_rust_ids": [
+  "BOI-2051317406099391360-1",
+  "BOI-2051702720499620224-1",
+  "BOI-2073774278260250880-1",
+  "BOI-2076038211367869312-1",
+  "BOI-2076066111476425728-1",
+  "BOI-2076229075413220352-1",
+  "BOI-2076535358120385536-1",
+  "BOI-2076587142546708352-1",
+  "BOI-2076784878540898560-1",
+  "BOI-2077554781499350144-2",
+  "BOI-2077967368932890752-3",
+  "BOI-2078414771391537280-1",
+  "BOI-2079376637907047040-1",
+  "BOI-2079821420415898368-1",
+  "BOI-2080033974058174080-1",
+  "BOI-2080290396483263616-1",
+  "BOI-2085457035981896448-1",
+  "BOI-2086489481704614016-1",
+  "BOI-2100220316049730304-1",
+  "BOI-2100223614584673664-1",
+  "BOI-2103289985012370304-1",
+  "BOI-2106533368217988864-1",
+  "BOI-2107167653281504256-1",
+  "BOI-2125795682366018176-1",
+  "BOI-2126354436132009088-2",
+  "BOI-2126446588949629952-1",
+  "BOI-2126865915195358720-1",
+  "BOI-2127355099085636864-1",
+  "BOI-2127702609183750528-1",
+  "BOI-2131801043071611776-1",
+  "BOI-2131971879690727168-1",
+  "BOI-2133034969998575360-1",
+  "BOI-2133051978069556352-1",
+  "BOI-2133767416541087232-1"
+ ],
+ "accepted": [
+  {
+   "boi_id": "BOI-2050231500928700032-1",
+   "source_id": "2050231500928700032",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2050231500928700032-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 39.81077302538616,
+     "epoch_bkjd": 132.1734605523835,
+     "duration_days": 0.33046051827713124
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 39.81077302538616,
+    "epoch_bkjd": 132.1734605523835,
+    "duration_hours": 7.93105243865115,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 39.81077302538616,
+    "epoch_bkjd": 132.1734605523835,
+    "duration_hours": 7.931,
+    "depth_ppm": 38013.54
+   }
+  },
+  {
+   "boi_id": "BOI-2051317406099391360-1",
+   "source_id": "2051317406099391360",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2051317406099391360-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.0815623076693663,
+     "epoch_bkjd": 170.5770848377188,
+     "duration_days": 0.12674558293000387
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.0815623076693663,
+    "epoch_bkjd": 170.5770848377188,
+    "duration_hours": 3.041893990320093,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2051702720499620224-1",
+   "source_id": "2051702720499620224",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2051702720499620224-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.39186738945557764,
+     "epoch_bkjd": 352.7106785234579,
+     "duration_days": 0.04132976373164295
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.39186738945557764,
+    "epoch_bkjd": 352.7106785234579,
+    "duration_hours": 0.9919143295594308,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2052194442729351680-1",
+   "source_id": "2052194442729351680",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2052194442729351680-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.4211537898788165,
+     "epoch_bkjd": 353.7809273091027,
+     "duration_days": 0.08511868792542714
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.4211537898788165,
+    "epoch_bkjd": 353.7809273091027,
+    "duration_hours": 2.042848510210251,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.4211537898788165,
+    "epoch_bkjd": 353.7809273091027,
+    "duration_hours": 2.043,
+    "depth_ppm": 2289.92
+   }
+  },
+  {
+   "boi_id": "BOI-2052625863598225536-1",
+   "source_id": "2052625863598225536",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2052625863598225536-3",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.970661204505046,
+     "epoch_bkjd": 261.5130085561503,
+     "duration_days": 0.12464312746175017
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.970661204505046,
+    "epoch_bkjd": 261.5130085561503,
+    "duration_hours": 2.9914350590820042,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.970661204505046,
+    "epoch_bkjd": 261.5130085561503,
+    "duration_hours": 2.991,
+    "depth_ppm": 7677.79
+   }
+  },
+  {
+   "boi_id": "BOI-2052625863598225536-2",
+   "source_id": "2052625863598225536",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2052625863598225536-9",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.782431836812724,
+     "epoch_bkjd": 260.315543689092,
+     "duration_days": 0.12532723852589467
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.782431836812724,
+    "epoch_bkjd": 260.315543689092,
+    "duration_hours": 3.007853724621472,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.782431836812724,
+    "epoch_bkjd": 260.315543689092,
+    "duration_hours": 3.008,
+    "depth_ppm": 4838.3
+   }
+  },
+  {
+   "boi_id": "BOI-2073175632853699968-1",
+   "source_id": "2073175632853699968",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073175632853699968-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 147.24827825546475,
+     "epoch_bkjd": 319.61348924651827,
+     "duration_days": 0.4313914402015569
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 147.24827825546475,
+    "epoch_bkjd": 319.61348924651827,
+    "duration_hours": 10.353394564837366,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 147.24827825546475,
+    "epoch_bkjd": 319.61348924651827,
+    "duration_hours": 10.353,
+    "depth_ppm": 22189.89
+   }
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-1",
+   "source_id": "2073226966298407552",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073226966298407552-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.405335807406375,
+     "epoch_bkjd": 133.24101544572477,
+     "duration_days": 0.08331604363889124
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.405335807406375,
+    "epoch_bkjd": 133.24101544572477,
+    "duration_hours": 1.9995850473333898,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.405335807406375,
+    "epoch_bkjd": 133.24101544572477,
+    "duration_hours": 2.0,
+    "depth_ppm": 10557.18
+   }
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-2",
+   "source_id": "2073226966298407552",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073226966298407552-12",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6293102013152644,
+     "epoch_bkjd": 132.01491822837784,
+     "duration_days": 0.06145607434719378
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.6293102013152644,
+    "epoch_bkjd": 132.01491822837784,
+    "duration_hours": 1.4749457843326508,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.6293102013152644,
+    "epoch_bkjd": 132.01491822837784,
+    "duration_hours": 1.475,
+    "depth_ppm": 1562.44
+   }
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-3",
+   "source_id": "2073226966298407552",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073226966298407552-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.468425105027744,
+     "epoch_bkjd": 131.78466922962724,
+     "duration_days": 0.08604053349771938
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.468425105027744,
+    "epoch_bkjd": 131.78466922962724,
+    "duration_hours": 2.064972803945265,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.468425105027744,
+    "epoch_bkjd": 131.78466922962724,
+    "duration_hours": 2.065,
+    "depth_ppm": 2449.13
+   }
+  },
+  {
+   "boi_id": "BOI-2073476658526284800-1",
+   "source_id": "2073476658526284800",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073476658526284800-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 92.27859361201608,
+     "epoch_bkjd": 196.3261006142372,
+     "duration_days": 0.1802316281484689
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 92.27859361201608,
+    "epoch_bkjd": 196.3261006142372,
+    "duration_hours": 4.325559075563254,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 92.27859361201608,
+    "epoch_bkjd": 196.3261006142372,
+    "duration_hours": 4.326,
+    "depth_ppm": 12144.43
+   }
+  },
+  {
+   "boi_id": "BOI-2073609042284178176-1",
+   "source_id": "2073609042284178176",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073609042284178176-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.724456004642377,
+     "epoch_bkjd": 131.61598556293362,
+     "duration_days": 0.06239212224371856
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.724456004642377,
+    "epoch_bkjd": 131.61598556293362,
+    "duration_hours": 1.4974109338492454,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.724456004642377,
+    "epoch_bkjd": 131.61598556293362,
+    "duration_hours": 1.497,
+    "depth_ppm": 3950.12
+   }
+  },
+  {
+   "boi_id": "BOI-2073628180652139904-1",
+   "source_id": "2073628180652139904",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073628180652139904-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 55.5236057723728,
+     "epoch_bkjd": 162.4661159414396,
+     "duration_days": 0.13555567815520703
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 55.5236057723728,
+    "epoch_bkjd": 162.4661159414396,
+    "duration_hours": 3.2533362757249686,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 55.5236057723728,
+    "epoch_bkjd": 162.4661159414396,
+    "duration_hours": 3.253,
+    "depth_ppm": 7695.34
+   }
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-1",
+   "source_id": "2073666564790289664",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073666564790289664-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.505349051366385,
+     "epoch_bkjd": 136.5399575487248,
+     "duration_days": 0.06245782844410306
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.505349051366385,
+    "epoch_bkjd": 136.5399575487248,
+    "duration_hours": 1.4989878826584735,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.505349051366385,
+    "epoch_bkjd": 136.5399575487248,
+    "duration_hours": 1.499,
+    "depth_ppm": 5978.75
+   }
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-2",
+   "source_id": "2073666564790289664",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073666564790289664-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.501701062115308,
+     "epoch_bkjd": 131.56096370784397,
+     "duration_days": 0.058633618643327536
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.501701062115308,
+    "epoch_bkjd": 131.56096370784397,
+    "duration_hours": 1.407206847439861,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.501701062115308,
+    "epoch_bkjd": 131.56096370784397,
+    "duration_hours": 1.407,
+    "depth_ppm": 1351.1
+   }
+  },
+  {
+   "boi_id": "BOI-2073774278260250880-1",
+   "source_id": "2073774278260250880",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073774278260250880-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.47085293264999717,
+     "epoch_bkjd": 120.98467402594649,
+     "duration_days": 0.04230319316777318
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.47085293264999717,
+    "epoch_bkjd": 120.98467402594649,
+    "duration_hours": 1.0152766360265564,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2075057270893091200-1",
+   "source_id": "2075057270893091200",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2075057270893091200-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.8443278623003745,
+     "epoch_bkjd": 133.17435391551152,
+     "duration_days": 0.16624120485623242
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.8443278623003745,
+    "epoch_bkjd": 133.17435391551152,
+    "duration_hours": 3.9897889165495783,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.8443278623003745,
+    "epoch_bkjd": 133.17435391551152,
+    "duration_hours": 3.99,
+    "depth_ppm": 6211.59
+   }
+  },
+  {
+   "boi_id": "BOI-2075066857261081600-1",
+   "source_id": "2075066857261081600",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2075066857261081600-11",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.92806923212526,
+     "epoch_bkjd": 122.77094697952138,
+     "duration_days": 0.12459869072873447
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.92806923212526,
+    "epoch_bkjd": 122.77094697952138,
+    "duration_hours": 2.9903685774896274,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.92806923212526,
+    "epoch_bkjd": 122.77094697952138,
+    "duration_hours": 2.99,
+    "depth_ppm": 1122.68
+   }
+  },
+  {
+   "boi_id": "BOI-2075066857261081600-2",
+   "source_id": "2075066857261081600",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2075066857261081600-22",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.626891332015521,
+     "epoch_bkjd": 120.76098031993055,
+     "duration_days": 0.16523115090782634
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.626891332015521,
+    "epoch_bkjd": 120.76098031993055,
+    "duration_hours": 3.965547621787832,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.626891332015521,
+    "epoch_bkjd": 120.76098031993055,
+    "duration_hours": 3.966,
+    "depth_ppm": 724.26
+   }
+  },
+  {
+   "boi_id": "BOI-2075875758527635968-1",
+   "source_id": "2075875758527635968",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2075875758527635968-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8732439979500266,
+     "epoch_bkjd": 541.9060463215969,
+     "duration_days": 0.3331297388927567
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8732439979500266,
+    "epoch_bkjd": 541.9060463215969,
+    "duration_hours": 7.995113733426161,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8732439979500266,
+    "epoch_bkjd": 541.9060463215969,
+    "duration_hours": 7.995,
+    "depth_ppm": 2890.1
+   }
+  },
+  {
+   "boi_id": "BOI-2076038211367869312-1",
+   "source_id": "2076038211367869312",
+   "category": "transit",
+   "passing_views": [
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.087932409954759,
+     "epoch_bkjd": 120.74887379520642,
+     "duration_days": 0.12324234331518753
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 1.087932409954759,
+    "epoch_bkjd": 120.74887379520642,
+    "duration_hours": 2.957816239564501,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076066111476425728-1",
+   "source_id": "2076066111476425728",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076066111476425728-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8724977707887085,
+     "epoch_bkjd": 541.9782668550744,
+     "duration_days": 0.3330432198015894
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8724977707887085,
+    "epoch_bkjd": 541.9782668550744,
+    "duration_hours": 7.993037275238146,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076221417495492736-1",
+   "source_id": "2076221417495492736",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076221417495492736-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.127946287483789,
+     "epoch_bkjd": 124.28495445805687,
+     "duration_days": 0.1664921760580155
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.127946287483789,
+    "epoch_bkjd": 124.28495445805687,
+    "duration_hours": 3.9958122253923722,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.127946287483789,
+    "epoch_bkjd": 124.28495445805687,
+    "duration_hours": 3.996,
+    "depth_ppm": 3003.0
+   }
+  },
+  {
+   "boi_id": "BOI-2076229075413220352-1",
+   "source_id": "2076229075413220352",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.629078096447198,
+     "epoch_bkjd": 131.7603980556814,
+     "duration_days": 0.16545324417041854
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 1.629078096447198,
+    "epoch_bkjd": 131.7603980556814,
+    "duration_hours": 3.970877860090045,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076248557386606336-1",
+   "source_id": "2076248557386606336",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076248557386606336-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.9987267023951945,
+     "epoch_bkjd": 132.39738240966147,
+     "duration_days": 0.06247347296656655
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.9987267023951945,
+    "epoch_bkjd": 132.39738240966147,
+    "duration_hours": 1.4993633511975972,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.9987267023951945,
+    "epoch_bkjd": 132.39738240966147,
+    "duration_hours": 1.499,
+    "depth_ppm": 2454.15
+   }
+  },
+  {
+   "boi_id": "BOI-2076248557386606336-2",
+   "source_id": "2076248557386606336",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076248557386606336-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.5997286263090634,
+     "epoch_bkjd": 131.81337720076291,
+     "duration_days": 0.06325262855603403
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.5997286263090634,
+    "epoch_bkjd": 131.81337720076291,
+    "duration_hours": 1.5180630853448167,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.5997286263090634,
+    "epoch_bkjd": 131.81337720076291,
+    "duration_hours": 1.518,
+    "depth_ppm": 494.31
+   }
+  },
+  {
+   "boi_id": "BOI-2076324737227600768-1",
+   "source_id": "2076324737227600768",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076324737227600768-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.0373295502574225,
+     "epoch_bkjd": 132.62638278722278,
+     "duration_days": 0.07958318555693056
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0373295502574225,
+    "epoch_bkjd": 132.62638278722278,
+    "duration_hours": 1.9099964533663334,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0373295502574225,
+    "epoch_bkjd": 132.62638278722278,
+    "duration_hours": 1.91,
+    "depth_ppm": 16263.33
+   }
+  },
+  {
+   "boi_id": "BOI-2076383384993192576-1",
+   "source_id": "2076383384993192576",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076383384993192576-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 51.52785678255664,
+     "epoch_bkjd": 138.4905626046994,
+     "duration_days": 0.17612060423725415
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 51.52785678255664,
+    "epoch_bkjd": 138.4905626046994,
+    "duration_hours": 4.226894501694099,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 51.52785678255664,
+    "epoch_bkjd": 138.4905626046994,
+    "duration_hours": 4.227,
+    "depth_ppm": 15509.23
+   }
+  },
+  {
+   "boi_id": "BOI-2076468876327949568-1",
+   "source_id": "2076468876327949568",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076468876327949568-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 11.146283067382873,
+     "epoch_bkjd": 120.69503237611762,
+     "duration_days": 0.16651776757994957
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 11.146283067382873,
+    "epoch_bkjd": 120.69503237611762,
+    "duration_hours": 3.9964264219187897,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 11.146283067382873,
+    "epoch_bkjd": 120.69503237611762,
+    "duration_hours": 3.996,
+    "depth_ppm": 48175.34
+   }
+  },
+  {
+   "boi_id": "BOI-2076476504190366336-1",
+   "source_id": "2076476504190366336",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076476504190366336-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 28.436406646904473,
+     "epoch_bkjd": 149.7709869170015,
+     "duration_days": 0.4998587105901177
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 28.436406646904473,
+    "epoch_bkjd": 149.7709869170015,
+    "duration_hours": 11.996609054162825,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 28.436406646904473,
+    "epoch_bkjd": 149.7709869170015,
+    "duration_hours": 11.997,
+    "depth_ppm": 2321.67
+   }
+  },
+  {
+   "boi_id": "BOI-2076535358120385536-1",
+   "source_id": "2076535358120385536",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076535358120385536-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.1353694369249425,
+     "epoch_bkjd": 131.8094695538671,
+     "duration_days": 0.12418103216366559
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.1353694369249425,
+    "epoch_bkjd": 131.8094695538671,
+    "duration_hours": 2.980344771927974,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076587142546708352-1",
+   "source_id": "2076587142546708352",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076587142546708352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.3345798512159655,
+     "epoch_bkjd": 736.990984832474,
+     "duration_days": 0.24622521868293382
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.3345798512159655,
+    "epoch_bkjd": 736.990984832474,
+    "duration_hours": 5.909405248390412,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076784878540898560-1",
+   "source_id": "2076784878540898560",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076784878540898560-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.2742865968847172,
+     "epoch_bkjd": 132.18726378879973,
+     "duration_days": 0.24875009653426594
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.2742865968847172,
+    "epoch_bkjd": 132.18726378879973,
+    "duration_hours": 5.970002316822383,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2076894554826018304-1",
+   "source_id": "2076894554826018304",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat",
+    "psf_qdiag",
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076894554826018304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.6530131343160726,
+     "epoch_bkjd": 132.9801860091182,
+     "duration_days": 0.12494715321332366
+    },
+    {
+     "signal_id": "rust-v6-2076894554826018304-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.653004202178319,
+     "epoch_bkjd": 132.98018429560605,
+     "duration_days": 0.12494700738250315
+    },
+    {
+     "signal_id": "rust-v6-2076894554826018304-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.652997796948885,
+     "epoch_bkjd": 132.98018306684776,
+     "duration_days": 0.12494690280732874
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 7.6530131343160726,
+    "epoch_bkjd": 132.9801860091182,
+    "duration_hours": 2.9987316771197676,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 7.6530131343160726,
+    "epoch_bkjd": 132.9801860091182,
+    "duration_hours": 2.999,
+    "depth_ppm": 21137.6
+   }
+  },
+  {
+   "boi_id": "BOI-2076894554826018304-2",
+   "source_id": "2076894554826018304",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076894554826018304-7",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.550867571465122,
+     "epoch_bkjd": 133.0116880897425,
+     "duration_days": 0.12953624386346324
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.550867571465122,
+    "epoch_bkjd": 133.0116880897425,
+    "duration_hours": 3.1088698527231178,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 99.4896645151852,
+    "epoch_bkjd": 136.53997701614762,
+    "duration_hours": 3.498,
+    "depth_ppm": 13619.11
+   }
+  },
+  {
+   "boi_id": "BOI-2076927677610525056-1",
+   "source_id": "2076927677610525056",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076927677610525056-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 61.873472291409016,
+     "epoch_bkjd": 178.212720259308,
+     "duration_days": 0.24169325113831644
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 61.873472291409016,
+    "epoch_bkjd": 178.212720259308,
+    "duration_hours": 5.800638027319595,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 61.873472291409016,
+    "epoch_bkjd": 178.212720259308,
+    "duration_hours": 5.801,
+    "depth_ppm": 22765.81
+   }
+  },
+  {
+   "boi_id": "BOI-2077020448903232640-1",
+   "source_id": "2077020448903232640",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077020448903232640-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.652082936084828,
+     "epoch_bkjd": 133.87523017960459,
+     "duration_days": 0.08328116351905888
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.652082936084828,
+    "epoch_bkjd": 133.87523017960459,
+    "duration_hours": 1.9987479244574131,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.652082936084828,
+    "epoch_bkjd": 133.87523017960459,
+    "duration_hours": 1.999,
+    "depth_ppm": 18817.47
+   }
+  },
+  {
+   "boi_id": "BOI-2077209775366626944-1",
+   "source_id": "2077209775366626944",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077209775366626944-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.865673380654453,
+     "epoch_bkjd": 170.2436250852323,
+     "duration_days": 0.08320104086034685
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.865673380654453,
+    "epoch_bkjd": 170.2436250852323,
+    "duration_hours": 1.9968249806483245,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.865673380654453,
+    "epoch_bkjd": 170.2436250852323,
+    "duration_hours": 1.997,
+    "depth_ppm": 4417.19
+   }
+  },
+  {
+   "boi_id": "BOI-2077240046296834304-1",
+   "source_id": "2077240046296834304",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077240046296834304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.9967580095024005,
+     "epoch_bkjd": 355.22910438024644,
+     "duration_days": 0.08327930015837334
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.9967580095024005,
+    "epoch_bkjd": 355.22910438024644,
+    "duration_hours": 1.9987032038009602,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.9967580095024005,
+    "epoch_bkjd": 355.22910438024644,
+    "duration_hours": 1.999,
+    "depth_ppm": 5469.94
+   }
+  },
+  {
+   "boi_id": "BOI-2077532516388848512-1",
+   "source_id": "2077532516388848512",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077532516388848512-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.669613288341822,
+     "epoch_bkjd": 353.20891608954946,
+     "duration_days": 0.08322368129676071
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 5.669613288341822,
+    "epoch_bkjd": 353.20891608954946,
+    "duration_hours": 1.9973683511222569,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 5.669613288341822,
+    "epoch_bkjd": 353.20891608954946,
+    "duration_hours": 1.997,
+    "depth_ppm": 16537.06
+   }
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-1",
+   "source_id": "2077554781499350144",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077554781499350144-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 15.113702872318472,
+     "epoch_bkjd": 134.73079465929638,
+     "duration_days": 0.124992718447844
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 15.113702872318472,
+    "epoch_bkjd": 134.73079465929638,
+    "duration_hours": 2.999825242748256,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 15.113702872318472,
+    "epoch_bkjd": 134.73079465929638,
+    "duration_hours": 3.0,
+    "depth_ppm": 1060.75
+   }
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-2",
+   "source_id": "2077554781499350144",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077554781499350144-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.038009790103395,
+     "epoch_bkjd": 134.7078292781936,
+     "duration_days": 0.1665457781852362
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.038009790103395,
+    "epoch_bkjd": 134.7078292781936,
+    "duration_hours": 3.9970986764456686,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-3",
+   "source_id": "2077554781499350144",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077554781499350144-6",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 47.687170030434544,
+     "epoch_bkjd": 135.76169921519912,
+     "duration_days": 0.1629932569399618
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 47.687170030434544,
+    "epoch_bkjd": 135.76169921519912,
+    "duration_hours": 3.9118381665590833,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 47.687170030434544,
+    "epoch_bkjd": 135.76169921519912,
+    "duration_hours": 3.912,
+    "depth_ppm": 897.66
+   }
+  },
+  {
+   "boi_id": "BOI-2077595974520134144-1",
+   "source_id": "2077595974520134144",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077595974520134144-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 14.226578632436448,
+     "epoch_bkjd": 134.10941232993036,
+     "duration_days": 0.062488632353307975
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.226578632436448,
+    "epoch_bkjd": 134.10941232993036,
+    "duration_hours": 1.4997271764793914,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.226578632436448,
+    "epoch_bkjd": 134.10941232993036,
+    "duration_hours": 1.5,
+    "depth_ppm": 24662.61
+   }
+  },
+  {
+   "boi_id": "BOI-2077621538166116736-1",
+   "source_id": "2077621538166116736",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077621538166116736-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 57.95679954589309,
+     "epoch_bkjd": 561.5722218140659,
+     "duration_days": 0.509385933508826
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 57.95679954589309,
+    "epoch_bkjd": 561.5722218140659,
+    "duration_hours": 12.225262404211824,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 57.95679954589309,
+    "epoch_bkjd": 561.5722218140659,
+    "duration_hours": 12.225,
+    "depth_ppm": 15234.44
+   }
+  },
+  {
+   "boi_id": "BOI-2077663010371347072-1",
+   "source_id": "2077663010371347072",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077663010371347072-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 10.349374156641412,
+     "epoch_bkjd": 135.80205535913572,
+     "duration_days": 0.12494214273611363
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 10.349374156641412,
+    "epoch_bkjd": 135.80205535913572,
+    "duration_hours": 2.998611425666727,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 10.349374156641412,
+    "epoch_bkjd": 135.80205535913572,
+    "duration_hours": 2.999,
+    "depth_ppm": 12801.78
+   }
+  },
+  {
+   "boi_id": "BOI-2077663010371347072-2",
+   "source_id": "2077663010371347072",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077663010371347072-7",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.449425104149178,
+     "epoch_bkjd": 132.43707040913944,
+     "duration_days": 0.16623735441682785
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.449425104149178,
+    "epoch_bkjd": 132.43707040913944,
+    "duration_hours": 3.9896965060038685,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.449425104149178,
+    "epoch_bkjd": 132.43707040913944,
+    "duration_hours": 3.99,
+    "depth_ppm": 3705.73
+   }
+  },
+  {
+   "boi_id": "BOI-2077839967326211328-1",
+   "source_id": "2077839967326211328",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag",
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077839967326211328-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.2784725757313928,
+     "epoch_bkjd": 352.8586403537486,
+     "duration_days": 0.06492243548635979
+    },
+    {
+     "signal_id": "rust-v6-2077839967326211328-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.2784749782051377,
+     "epoch_bkjd": 352.8586412593686,
+     "duration_days": 0.06492255748697964
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 1.2784725757313928,
+    "epoch_bkjd": 352.8586403537486,
+    "duration_hours": 1.5581384516726349,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 1.2784725757313928,
+    "epoch_bkjd": 352.8586403537486,
+    "duration_hours": 1.558,
+    "depth_ppm": 46195.92
+   }
+  },
+  {
+   "boi_id": "BOI-2077839967326211328-2",
+   "source_id": "2077839967326211328",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077839967326211328-6-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.4261384906995397,
+     "epoch_bkjd": 352.4641078037629,
+     "duration_days": 0.041615086982376925
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 0.4261384906995397,
+    "epoch_bkjd": 352.4641078037629,
+    "duration_hours": 0.9987620875770462,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 0.4261384906995397,
+    "epoch_bkjd": 352.4641078037629,
+    "duration_hours": 0.999,
+    "depth_ppm": 11375.92
+   }
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-1",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat",
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.3585181547141625,
+     "epoch_bkjd": 260.88044369610583,
+     "duration_days": 0.08321753040027041
+    },
+    {
+     "signal_id": "rust-v6-2077967368932890752-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.358495670879626,
+     "epoch_bkjd": 134.48712514509754,
+     "duration_days": 0.08321710111464681
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 4.3585181547141625,
+    "epoch_bkjd": 260.88044369610583,
+    "duration_hours": 1.9972207296064899,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 4.3585181547141625,
+    "epoch_bkjd": 260.88044369610583,
+    "duration_hours": 1.997,
+    "depth_ppm": 21040.74
+   }
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-2",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat",
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-13",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.8717294963201196,
+     "epoch_bkjd": 260.86528199306383,
+     "duration_days": 0.08172464028001122
+    },
+    {
+     "signal_id": "rust-v6-2077967368932890752-13-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.8717300839629482,
+     "epoch_bkjd": 131.84922814865647,
+     "duration_days": 0.08172469537152639
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 0.8717294963201196,
+    "epoch_bkjd": 260.86528199306383,
+    "duration_hours": 1.9613913667202694,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 0.8717294963201196,
+    "epoch_bkjd": 260.86528199306383,
+    "duration_hours": 1.961,
+    "depth_ppm": 4647.46
+   }
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-3",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-20",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6226153981433231,
+     "epoch_bkjd": 260.2859079291787,
+     "duration_days": 0.06323437637393126
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.6226153981433231,
+    "epoch_bkjd": 260.2859079291787,
+    "duration_hours": 1.5176250329743501,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-4",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-22",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.4842887326973306,
+     "epoch_bkjd": 260.38401288462,
+     "duration_days": 0.041618562966176845
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.4842887326973306,
+    "epoch_bkjd": 260.38401288462,
+    "duration_hours": 0.9988455111882443,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.4842887326973306,
+    "epoch_bkjd": 260.38401288462,
+    "duration_hours": 0.999,
+    "depth_ppm": 3472.23
+   }
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-5",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-27",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.396207567802008,
+     "epoch_bkjd": 260.51993979133766,
+     "duration_days": 0.04178751691661803
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.396207567802008,
+    "epoch_bkjd": 260.51993979133766,
+    "duration_hours": 1.0029004059988327,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.396207567802008,
+    "epoch_bkjd": 260.51993979133766,
+    "duration_hours": 1.003,
+    "depth_ppm": 2683.24
+   }
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-6",
+   "source_id": "2077967368932890752",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-17-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6226501157999892,
+     "epoch_bkjd": 131.98883027515828,
+     "duration_days": 0.0632379023859364
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 0.6226501157999892,
+    "epoch_bkjd": 131.98883027515828,
+    "duration_hours": 1.5177096572624738,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 0.6226501157999892,
+    "epoch_bkjd": 131.98883027515828,
+    "duration_hours": 1.518,
+    "depth_ppm": 2620.33
+   }
+  },
+  {
+   "boi_id": "BOI-2078045782158649216-1",
+   "source_id": "2078045782158649216",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078045782158649216-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.327340860198641,
+     "epoch_bkjd": 356.1736223238477,
+     "duration_days": 0.04160904673267924
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.327340860198641,
+    "epoch_bkjd": 356.1736223238477,
+    "duration_hours": 0.9986171215843018,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.327340860198641,
+    "epoch_bkjd": 356.1736223238477,
+    "duration_hours": 0.999,
+    "depth_ppm": 3142.59
+   }
+  },
+  {
+   "boi_id": "BOI-2078414771391537280-1",
+   "source_id": "2078414771391537280",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078414771391537280-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.368095861528385,
+     "epoch_bkjd": 352.6234153778881,
+     "duration_days": 0.04169835931376237
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.368095861528385,
+    "epoch_bkjd": 352.6234153778881,
+    "duration_hours": 1.0007606235302968,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2078603367689924608-1",
+   "source_id": "2078603367689924608",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078603367689924608-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 11.027950450787165,
+     "epoch_bkjd": 170.06712123602162,
+     "duration_days": 0.24992522268072895
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.027950450787165,
+    "epoch_bkjd": 170.06712123602162,
+    "duration_hours": 5.998205344337495,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.027950450787165,
+    "epoch_bkjd": 170.06712123602162,
+    "duration_hours": 5.998,
+    "depth_ppm": 1446.86
+   }
+  },
+  {
+   "boi_id": "BOI-2078783726253023360-1",
+   "source_id": "2078783726253023360",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078783726253023360-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 14.00014074875728,
+     "epoch_bkjd": 139.20418579710304,
+     "duration_days": 0.08327221263201356
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.00014074875728,
+    "epoch_bkjd": 139.20418579710304,
+    "duration_hours": 1.9985331031683256,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.00014074875728,
+    "epoch_bkjd": 139.20418579710304,
+    "duration_hours": 1.999,
+    "depth_ppm": 23288.78
+   }
+  },
+  {
+   "boi_id": "BOI-2079376637907047040-1",
+   "source_id": "2079376637907047040",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079376637907047040-8",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.0905598979783184,
+     "epoch_bkjd": 352.6092471261108,
+     "duration_days": 0.12353998844285637
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.0905598979783184,
+    "epoch_bkjd": 352.6092471261108,
+    "duration_hours": 2.964959722628553,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2079433846869397376-1",
+   "source_id": "2079433846869397376",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079433846869397376-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 33.01717998422323,
+     "epoch_bkjd": 152.4780464131094,
+     "duration_days": 0.0806083495708575
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 33.01717998422323,
+    "epoch_bkjd": 152.4780464131094,
+    "duration_hours": 1.93460038970058,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 33.01717998422323,
+    "epoch_bkjd": 152.4780464131094,
+    "duration_hours": 1.935,
+    "depth_ppm": 9692.99
+   }
+  },
+  {
+   "boi_id": "BOI-2079517512834068480-1",
+   "source_id": "2079517512834068480",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079517512834068480-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8640878106585927,
+     "epoch_bkjd": 122.40285019522153,
+     "duration_days": 0.08331891812824997
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8640878106585927,
+    "epoch_bkjd": 122.40285019522153,
+    "duration_hours": 1.9996540350779992,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8640878106585927,
+    "epoch_bkjd": 122.40285019522153,
+    "duration_hours": 2.0,
+    "depth_ppm": 22724.05
+   }
+  },
+  {
+   "boi_id": "BOI-2079536067092694016-1",
+   "source_id": "2079536067092694016",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079536067092694016-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.2720077189074989,
+     "epoch_bkjd": 120.76065820386626,
+     "duration_days": 0.021250603039648357
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.2720077189074989,
+    "epoch_bkjd": 120.76065820386626,
+    "duration_hours": 0.5100144729515605,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.2720077189074989,
+    "epoch_bkjd": 120.76065820386626,
+    "duration_hours": 0.51,
+    "depth_ppm": 6771.18
+   }
+  },
+  {
+   "boi_id": "BOI-2079595131475231616-1",
+   "source_id": "2079595131475231616",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079595131475231616-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.121880873763588,
+     "epoch_bkjd": 132.11897465440862,
+     "duration_days": 0.12708806773103146
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.121880873763588,
+    "epoch_bkjd": 132.11897465440862,
+    "duration_hours": 3.050113625544755,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.121880873763588,
+    "epoch_bkjd": 132.11897465440862,
+    "duration_hours": 3.05,
+    "depth_ppm": 654.43
+   }
+  },
+  {
+   "boi_id": "BOI-2079821420415898368-1",
+   "source_id": "2079821420415898368",
+   "category": "transit",
+   "passing_views": [
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.44626691930044815,
+     "epoch_bkjd": 131.810162887277,
+     "duration_days": 0.04183752368441701
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 0.44626691930044815,
+    "epoch_bkjd": 131.810162887277,
+    "duration_hours": 1.0041005684260083,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2080033974058174080-1",
+   "source_id": "2080033974058174080",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080033974058174080-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.4327297330752664,
+     "epoch_bkjd": 170.6488535107888,
+     "duration_days": 0.24707411351545674
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.4327297330752664,
+    "epoch_bkjd": 170.6488535107888,
+    "duration_hours": 5.929778724370962,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2080290396483263616-1",
+   "source_id": "2080290396483263616",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.3715110965226389,
+     "epoch_bkjd": 131.5154313912573,
+     "duration_days": 0.04208524140295519
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 0.3715110965226389,
+    "epoch_bkjd": 131.5154313912573,
+    "duration_hours": 1.0100457936709246,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2080290503866069888-1",
+   "source_id": "2080290503866069888",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080290503866069888-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.0694275174849697,
+     "epoch_bkjd": 132.9789951282972,
+     "duration_days": 0.040418506200878314
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0694275174849697,
+    "epoch_bkjd": 132.9789951282972,
+    "duration_hours": 0.9700441488210796,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0694275174849697,
+    "epoch_bkjd": 132.9789951282972,
+    "duration_hours": 0.97,
+    "depth_ppm": 3322.83
+   }
+  },
+  {
+   "boi_id": "BOI-2080481745869519488-1",
+   "source_id": "2080481745869519488",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080481745869519488-6",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.3277493289124815,
+     "epoch_bkjd": 540.0302244878333,
+     "duration_days": 0.12447649958554514
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.3277493289124815,
+    "epoch_bkjd": 540.0302244878333,
+    "duration_hours": 2.9874359900530836,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.3277493289124815,
+    "epoch_bkjd": 540.0302244878333,
+    "duration_hours": 2.987,
+    "depth_ppm": 3718.43
+   }
+  },
+  {
+   "boi_id": "BOI-2085457035981896448-1",
+   "source_id": "2085457035981896448",
+   "category": "transit",
+   "passing_views": [
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.4760665172077027,
+     "epoch_bkjd": 131.53024320860757,
+     "duration_days": 0.04091196632253695
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 0.4760665172077027,
+    "epoch_bkjd": 131.53024320860757,
+    "duration_hours": 0.9818871917408868,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2086489481704614016-1",
+   "source_id": "2086489481704614016",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2086489481704614016-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8725068642362737,
+     "epoch_bkjd": 452.98245197141387,
+     "duration_days": 0.33304427411435056
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8725068642362737,
+    "epoch_bkjd": 452.98245197141387,
+    "duration_hours": 7.993062578744413,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2086643310248820352-1",
+   "source_id": "2086643310248820352",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2086643310248820352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 18.59386574836072,
+     "epoch_bkjd": 140.0175107940814,
+     "duration_days": 0.062465394451379795
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 18.59386574836072,
+    "epoch_bkjd": 140.0175107940814,
+    "duration_hours": 1.499169466833115,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 18.59386574836072,
+    "epoch_bkjd": 140.0175107940814,
+    "duration_hours": 1.499,
+    "depth_ppm": 5229.05
+   }
+  },
+  {
+   "boi_id": "BOI-2087252538472180608-1",
+   "source_id": "2087252538472180608",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2087252538472180608-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 14.34363301814802,
+     "epoch_bkjd": 365.0231533890524,
+     "duration_days": 0.16666530740041272
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.34363301814802,
+    "epoch_bkjd": 365.0231533890524,
+    "duration_hours": 3.999967377609905,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 14.34363301814802,
+    "epoch_bkjd": 365.0231533890524,
+    "duration_hours": 4.0,
+    "depth_ppm": 30569.58
+   }
+  },
+  {
+   "boi_id": "BOI-2099129463076304128-1",
+   "source_id": "2099129463076304128",
+   "category": "transit",
+   "passing_views": [
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2099129463076304128-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.700600782991918,
+     "epoch_bkjd": 135.45635306365622,
+     "duration_days": 0.12485591521102953
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 6.700600782991918,
+    "epoch_bkjd": 135.45635306365622,
+    "duration_hours": 2.9965419650647087,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 6.700600782991918,
+    "epoch_bkjd": 135.45635306365622,
+    "duration_hours": 2.997,
+    "depth_ppm": 19837.17
+   }
+  },
+  {
+   "boi_id": "BOI-2099197705814100480-1",
+   "source_id": "2099197705814100480",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2099197705814100480-3",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 96.88040319509776,
+     "epoch_bkjd": 168.3411655729358,
+     "duration_days": 0.5203537280986696
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 96.88040319509776,
+    "epoch_bkjd": 168.3411655729358,
+    "duration_hours": 12.488489474368071,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 96.88040319509776,
+    "epoch_bkjd": 168.3411655729358,
+    "duration_hours": 12.488,
+    "depth_ppm": 12835.08
+   }
+  },
+  {
+   "boi_id": "BOI-2099560128037101952-1",
+   "source_id": "2099560128037101952",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2099560128037101952-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 11.253472382955353,
+     "epoch_bkjd": 135.49992026246622,
+     "duration_days": 0.062461456334627304
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.253472382955353,
+    "epoch_bkjd": 135.49992026246622,
+    "duration_hours": 1.4990749520310553,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.253472382955353,
+    "epoch_bkjd": 135.49992026246622,
+    "duration_hours": 1.499,
+    "depth_ppm": 3399.51
+   }
+  },
+  {
+   "boi_id": "BOI-2100123494603868416-1",
+   "source_id": "2100123494603868416",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100123494603868416-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.108701132874583,
+     "epoch_bkjd": 357.18548984956766,
+     "duration_days": 0.04163221746925085
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.108701132874583,
+    "epoch_bkjd": 357.18548984956766,
+    "duration_hours": 0.9991732192620204,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.108701132874583,
+    "epoch_bkjd": 357.18548984956766,
+    "duration_hours": 0.999,
+    "depth_ppm": 18573.03
+   }
+  },
+  {
+   "boi_id": "BOI-2100203999471640064-1",
+   "source_id": "2100203999471640064",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100203999471640064-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.1412645576658482,
+     "epoch_bkjd": 134.47742788897983,
+     "duration_days": 0.04160615308166686
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.1412645576658482,
+    "epoch_bkjd": 134.47742788897983,
+    "duration_hours": 0.9985476739600047,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.1412645576658482,
+    "epoch_bkjd": 134.47742788897983,
+    "duration_hours": 0.999,
+    "depth_ppm": 16806.88
+   }
+  },
+  {
+   "boi_id": "BOI-2100220316049730304-1",
+   "source_id": "2100220316049730304",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100220316049730304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.5883364426944233,
+     "epoch_bkjd": 169.93040673315141,
+     "duration_days": 0.16751985919042744
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.5883364426944233,
+    "epoch_bkjd": 169.93040673315141,
+    "duration_hours": 4.020476620570259,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2100223614584673664-1",
+   "source_id": "2100223614584673664",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100223614584673664-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.5820921418186908,
+     "epoch_bkjd": 131.74479551236607,
+     "duration_days": 0.16686128058244
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.5820921418186908,
+    "epoch_bkjd": 131.74479551236607,
+    "duration_hours": 4.0046707339785605,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2100325529865507712-1",
+   "source_id": "2100325529865507712",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100325529865507712-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.2630240802227224,
+     "epoch_bkjd": 122.34789240649398,
+     "duration_days": 0.12470155720596392
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.2630240802227224,
+    "epoch_bkjd": 122.34789240649398,
+    "duration_hours": 2.992837372943134,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.2630240802227224,
+    "epoch_bkjd": 122.34789240649398,
+    "duration_hours": 2.993,
+    "depth_ppm": 6576.91
+   }
+  },
+  {
+   "boi_id": "BOI-2100442657917279616-1",
+   "source_id": "2100442657917279616",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100442657917279616-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 11.258747720048545,
+     "epoch_bkjd": 140.69900006440452,
+     "duration_days": 0.49992589321214637
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.258747720048545,
+    "epoch_bkjd": 140.69900006440452,
+    "duration_hours": 11.998221437091512,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 11.258747720048545,
+    "epoch_bkjd": 140.69900006440452,
+    "duration_hours": 11.998,
+    "depth_ppm": 217.46
+   }
+  },
+  {
+   "boi_id": "BOI-2100986778733554048-1",
+   "source_id": "2100986778733554048",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100986778733554048-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 13.45413166205373,
+     "epoch_bkjd": 175.17035288716525,
+     "duration_days": 0.24992195037870704
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 13.45413166205373,
+    "epoch_bkjd": 175.17035288716525,
+    "duration_hours": 5.998126809088969,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 13.45413166205373,
+    "epoch_bkjd": 175.17035288716525,
+    "duration_hours": 5.998,
+    "depth_ppm": 42045.7
+   }
+  },
+  {
+   "boi_id": "BOI-2101047904706267264-1",
+   "source_id": "2101047904706267264",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2101047904706267264-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 16.10546917493381,
+     "epoch_bkjd": 120.83078713381138,
+     "duration_days": 0.16657240258496506
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 16.10546917493381,
+    "epoch_bkjd": 120.83078713381138,
+    "duration_hours": 3.997737662039161,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 16.10546917493381,
+    "epoch_bkjd": 120.83078713381138,
+    "duration_hours": 3.998,
+    "depth_ppm": 2519.57
+   }
+  },
+  {
+   "boi_id": "BOI-2101095943921811328-1",
+   "source_id": "2101095943921811328",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2101095943921811328-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 35.63814469888045,
+     "epoch_bkjd": 164.15770036950272,
+     "duration_days": 0.17401437841250222
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 35.63814469888045,
+    "epoch_bkjd": 164.15770036950272,
+    "duration_hours": 4.176345081900053,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 35.63814469888045,
+    "epoch_bkjd": 164.15770036950272,
+    "duration_hours": 4.176,
+    "depth_ppm": 405.4
+   }
+  },
+  {
+   "boi_id": "BOI-2101354466593873152-1",
+   "source_id": "2101354466593873152",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2101354466593873152-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 133.49233164035337,
+     "epoch_bkjd": 202.09202490995966,
+     "duration_days": 0.2607272102350652
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 133.49233164035337,
+    "epoch_bkjd": 202.09202490995966,
+    "duration_hours": 6.257453045641564,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 133.49233164035337,
+    "epoch_bkjd": 202.09202490995966,
+    "duration_hours": 6.257,
+    "depth_ppm": 3213.7
+   }
+  },
+  {
+   "boi_id": "BOI-2101435138957164672-1",
+   "source_id": "2101435138957164672",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2101435138957164672-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 80.72162778644471,
+     "epoch_bkjd": 141.70134669535844,
+     "duration_days": 0.11824457195279987
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 80.72162778644471,
+    "epoch_bkjd": 141.70134669535844,
+    "duration_hours": 2.837869726867197,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 80.72162778644471,
+    "epoch_bkjd": 141.70134669535844,
+    "duration_hours": 2.838,
+    "depth_ppm": 44199.3
+   }
+  },
+  {
+   "boi_id": "BOI-2101926796748446336-1",
+   "source_id": "2101926796748446336",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2101926796748446336-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 293.5577738802572,
+     "epoch_bkjd": 215.7956612249406,
+     "duration_days": 0.5733550271098773
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 293.5577738802572,
+    "epoch_bkjd": 215.7956612249406,
+    "duration_hours": 13.760520650637055,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 293.5577738802572,
+    "epoch_bkjd": 215.7956612249406,
+    "duration_hours": 13.761,
+    "depth_ppm": 693.96
+   }
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-1",
+   "source_id": "2102612750272489216",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2102612750272489216-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 22.131362632516982,
+     "epoch_bkjd": 138.22325135768918,
+     "duration_days": 0.1296759529249042
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 22.131362632516982,
+    "epoch_bkjd": 138.22325135768918,
+    "duration_hours": 3.1122228701977006,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 22.131362632516982,
+    "epoch_bkjd": 138.22325135768918,
+    "duration_hours": 3.112,
+    "depth_ppm": 8770.73
+   }
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-2",
+   "source_id": "2102612750272489216",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2102612750272489216-13",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.426955510678392,
+     "epoch_bkjd": 133.67912490258092,
+     "duration_days": 0.16666185451965712
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.426955510678392,
+    "epoch_bkjd": 133.67912490258092,
+    "duration_hours": 3.999884508471771,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.426955510678392,
+    "epoch_bkjd": 133.67912490258092,
+    "duration_hours": 4.0,
+    "depth_ppm": 1597.92
+   }
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-3",
+   "source_id": "2102612750272489216",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2102612750272489216-15",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.161481729034638,
+     "epoch_bkjd": 131.92850523185626,
+     "duration_days": 0.16639377521234938
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.161481729034638,
+    "epoch_bkjd": 131.92850523185626,
+    "duration_hours": 3.993450605096385,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.161481729034638,
+    "epoch_bkjd": 131.92850523185626,
+    "duration_hours": 3.993,
+    "depth_ppm": 1033.83
+   }
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-4",
+   "source_id": "2102612750272489216",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2102612750272489216-3",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 7.377476214509098,
+     "epoch_bkjd": 138.1824252416397,
+     "duration_days": 0.16648747451642534
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.377476214509098,
+    "epoch_bkjd": 138.1824252416397,
+    "duration_hours": 3.9956993883942085,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.377476214509098,
+    "epoch_bkjd": 138.1824252416397,
+    "duration_hours": 3.996,
+    "depth_ppm": 3079.34
+   }
+  },
+  {
+   "boi_id": "BOI-2102918384442366592-1",
+   "source_id": "2102918384442366592",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2102918384442366592-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 9.688714189144962,
+     "epoch_bkjd": 123.49475072259551,
+     "duration_days": 0.06244069294830266
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 9.688714189144962,
+    "epoch_bkjd": 123.49475072259551,
+    "duration_hours": 1.4985766307592638,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 9.688714189144962,
+    "epoch_bkjd": 123.49475072259551,
+    "duration_hours": 1.499,
+    "depth_ppm": 15240.66
+   }
+  },
+  {
+   "boi_id": "BOI-2103289985012370304-1",
+   "source_id": "2103289985012370304",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2103289985012370304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.35587468927015964,
+     "epoch_bkjd": 169.79376998092428,
+     "duration_days": 0.041704065148846836
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.35587468927015964,
+    "epoch_bkjd": 169.79376998092428,
+    "duration_hours": 1.000897563572324,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2103348117391603840-1",
+   "source_id": "2103348117391603840",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2103348117391603840-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 35.893906414902766,
+     "epoch_bkjd": 127.55901808318295,
+     "duration_days": 0.12268425044156218
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 35.893906414902766,
+    "epoch_bkjd": 127.55901808318295,
+    "duration_hours": 2.9444220105974925,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 35.893906414902766,
+    "epoch_bkjd": 127.55901808318295,
+    "duration_hours": 2.944,
+    "depth_ppm": 25123.2
+   }
+  },
+  {
+   "boi_id": "BOI-2103418559153168128-1",
+   "source_id": "2103418559153168128",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2103418559153168128-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 198.14806007956133,
+     "epoch_bkjd": 193.91924191200025,
+     "duration_days": 0.38700792984289323
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 198.14806007956133,
+    "epoch_bkjd": 193.91924191200025,
+    "duration_hours": 9.288190316229437,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 198.14806007956133,
+    "epoch_bkjd": 193.91924191200025,
+    "duration_hours": 9.288,
+    "depth_ppm": 4345.19
+   }
+  },
+  {
+   "boi_id": "BOI-2104048368859231232-1",
+   "source_id": "2104048368859231232",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2104048368859231232-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 17.46659471309668,
+     "epoch_bkjd": 132.49648231366473,
+     "duration_days": 0.33329220680923893
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 17.46659471309668,
+    "epoch_bkjd": 132.49648231366473,
+    "duration_hours": 7.999012963421734,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 17.46659471309668,
+    "epoch_bkjd": 132.49648231366473,
+    "duration_hours": 7.999,
+    "depth_ppm": 4538.42
+   }
+  },
+  {
+   "boi_id": "BOI-2104132687658252160-1",
+   "source_id": "2104132687658252160",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2104132687658252160-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.705837971497813,
+     "epoch_bkjd": 264.68116895865,
+     "duration_days": 0.08330233504966227
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.705837971497813,
+    "epoch_bkjd": 264.68116895865,
+    "duration_hours": 1.9992560411918943,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.705837971497813,
+    "epoch_bkjd": 264.68116895865,
+    "duration_hours": 1.999,
+    "depth_ppm": 3719.71
+   }
+  },
+  {
+   "boi_id": "BOI-2104132687658252160-2",
+   "source_id": "2104132687658252160",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2104132687658252160-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.2352578292690657,
+     "epoch_bkjd": 262.45102038686656,
+     "duration_days": 0.0873147589558229
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.2352578292690657,
+    "epoch_bkjd": 262.45102038686656,
+    "duration_hours": 2.0955542149397495,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.2352578292690657,
+    "epoch_bkjd": 262.45102038686656,
+    "duration_hours": 2.096,
+    "depth_ppm": 1094.32
+   }
+  },
+  {
+   "boi_id": "BOI-2104484363877066752-1",
+   "source_id": "2104484363877066752",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2104484363877066752-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 105.36614774355272,
+     "epoch_bkjd": 223.84785272533904,
+     "duration_days": 0.3086898859674396
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 105.36614774355272,
+    "epoch_bkjd": 223.84785272533904,
+    "duration_hours": 7.408557263218551,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 105.36614774355272,
+    "epoch_bkjd": 223.84785272533904,
+    "duration_hours": 7.409,
+    "depth_ppm": 59233.97
+   }
+  },
+  {
+   "boi_id": "BOI-2105418399005125376-1",
+   "source_id": "2105418399005125376",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2105418399005125376-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.950815509597985,
+     "epoch_bkjd": 123.71325938249518,
+     "duration_days": 0.08324329951614354
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.950815509597985,
+    "epoch_bkjd": 123.71325938249518,
+    "duration_hours": 1.997839188387445,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.950815509597985,
+    "epoch_bkjd": 123.71325938249518,
+    "duration_hours": 1.998,
+    "depth_ppm": 6427.5
+   }
+  },
+  {
+   "boi_id": "BOI-2106383701495087232-1",
+   "source_id": "2106383701495087232",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2106383701495087232-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.6903662883094943,
+     "epoch_bkjd": 260.8946267148284,
+     "duration_days": 0.0858389130782165
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.6903662883094943,
+    "epoch_bkjd": 260.8946267148284,
+    "duration_hours": 2.060133913877196,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.6903662883094943,
+    "epoch_bkjd": 260.8946267148284,
+    "duration_hours": 2.06,
+    "depth_ppm": 1750.54
+   }
+  },
+  {
+   "boi_id": "BOI-2106533368217988864-1",
+   "source_id": "2106533368217988864",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2106533368217988864-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.017490646410615,
+     "epoch_bkjd": 132.97972184661057,
+     "duration_days": 0.33296448512117127
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.017490646410615,
+    "epoch_bkjd": 132.97972184661057,
+    "duration_hours": 7.9911476429081105,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2106817012155835904-1",
+   "source_id": "2106817012155835904",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2106817012155835904-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.51679788972674,
+     "epoch_bkjd": 123.69286168034833,
+     "duration_days": 0.08325894727606893
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.51679788972674,
+    "epoch_bkjd": 123.69286168034833,
+    "duration_hours": 1.9982147346256545,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.51679788972674,
+    "epoch_bkjd": 123.69286168034833,
+    "duration_hours": 1.998,
+    "depth_ppm": 2707.84
+   }
+  },
+  {
+   "boi_id": "BOI-2106817012155835904-2",
+   "source_id": "2106817012155835904",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2106817012155835904-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.505593827461951,
+     "epoch_bkjd": 120.68057847359178,
+     "duration_days": 0.08233716243932544
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.505593827461951,
+    "epoch_bkjd": 120.68057847359178,
+    "duration_hours": 1.9760918985438107,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.505593827461951,
+    "epoch_bkjd": 120.68057847359178,
+    "duration_hours": 1.976,
+    "depth_ppm": 647.87
+   }
+  },
+  {
+   "boi_id": "BOI-2107167653281504256-1",
+   "source_id": "2107167653281504256",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2107167653281504256-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7716603400760801,
+     "epoch_bkjd": 131.78388452957572,
+     "duration_days": 0.08440034969582126
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.7716603400760801,
+    "epoch_bkjd": 131.78388452957572,
+    "duration_hours": 2.02560839269971,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-1",
+   "source_id": "2107574403864920576",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2107574403864920576-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.243721331403645,
+     "epoch_bkjd": 135.3714532378264,
+     "duration_days": 0.12481533327657779
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.243721331403645,
+    "epoch_bkjd": 135.3714532378264,
+    "duration_hours": 2.995567998637867,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.243721331403645,
+    "epoch_bkjd": 135.3714532378264,
+    "duration_hours": 2.996,
+    "depth_ppm": 1380.11
+   }
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-2",
+   "source_id": "2107574403864920576",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2107574403864920576-13",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.848749992938107,
+     "epoch_bkjd": 131.97839705124352,
+     "duration_days": 0.08288574149786201
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.848749992938107,
+    "epoch_bkjd": 131.97839705124352,
+    "duration_hours": 1.9892577959486883,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.848749992938107,
+    "epoch_bkjd": 131.97839705124352,
+    "duration_hours": 1.989,
+    "depth_ppm": 270.98
+   }
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-3",
+   "source_id": "2107574403864920576",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2107574403864920576-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.4145907157441178,
+     "epoch_bkjd": 132.53760487844167,
+     "duration_days": 0.12709213461763558
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.4145907157441178,
+    "epoch_bkjd": 132.53760487844167,
+    "duration_hours": 3.050211230823254,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.4145907157441178,
+    "epoch_bkjd": 132.53760487844167,
+    "duration_hours": 3.05,
+    "depth_ppm": 429.82
+   }
+  },
+  {
+   "boi_id": "BOI-2116924474653194112-1",
+   "source_id": "2116924474653194112",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2116924474653194112-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.4688727153091685,
+     "epoch_bkjd": 264.3529557603808,
+     "duration_days": 0.083200935245134
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.4688727153091685,
+    "epoch_bkjd": 264.3529557603808,
+    "duration_hours": 1.996822445883216,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.4688727153091685,
+    "epoch_bkjd": 264.3529557603808,
+    "duration_hours": 1.997,
+    "depth_ppm": 13426.9
+   }
+  },
+  {
+   "boi_id": "BOI-2125795682366018176-1",
+   "source_id": "2125795682366018176",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2125795682366018176-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.566778848216587,
+     "epoch_bkjd": 169.82085787482072,
+     "duration_days": 0.06199143652368919
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.566778848216587,
+    "epoch_bkjd": 169.82085787482072,
+    "duration_hours": 1.4877944765685407,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2125801656663271552-1",
+   "source_id": "2125801656663271552",
+   "category": "transit",
+   "passing_views": [
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2125801656663271552-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.5667689676806291,
+     "epoch_bkjd": 131.8666432404099,
+     "duration_days": 0.06199035584006881
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 0.5667689676806291,
+    "epoch_bkjd": 131.8666432404099,
+    "duration_hours": 1.4877685401616514,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "sap_qdiag",
+    "passing_views": [
+     "sap_qdiag"
+    ],
+    "period_days": 0.5667689676806291,
+    "epoch_bkjd": 131.8666432404099,
+    "duration_hours": 1.488,
+    "depth_ppm": 3603.58
+   }
+  },
+  {
+   "boi_id": "BOI-2126097738825919104-1",
+   "source_id": "2126097738825919104",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126097738825919104-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 23.789359559971764,
+     "epoch_bkjd": 143.83101876084663,
+     "duration_days": 0.05807949111321231
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 23.789359559971764,
+    "epoch_bkjd": 143.83101876084663,
+    "duration_hours": 1.3939077867170955,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 23.789359559971764,
+    "epoch_bkjd": 143.83101876084663,
+    "duration_hours": 1.394,
+    "depth_ppm": 51722.37
+   }
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-1",
+   "source_id": "2126217104555818240",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126217104555818240-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.9536185072553347,
+     "epoch_bkjd": 123.10788649976786,
+     "duration_days": 0.06240039099835213
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.9536185072553347,
+    "epoch_bkjd": 123.10788649976786,
+    "duration_hours": 1.4976093839604512,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.9536185072553347,
+    "epoch_bkjd": 123.10788649976786,
+    "duration_hours": 1.498,
+    "depth_ppm": 5778.01
+   }
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-2",
+   "source_id": "2126217104555818240",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126217104555818240-18",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.421938147913737,
+     "epoch_bkjd": 120.59593316188396,
+     "duration_days": 0.04120489725720088
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.421938147913737,
+    "epoch_bkjd": 120.59593316188396,
+    "duration_hours": 0.9889175341728211,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.421938147913737,
+    "epoch_bkjd": 120.59593316188396,
+    "duration_hours": 0.989,
+    "depth_ppm": 804.96
+   }
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-3",
+   "source_id": "2126217104555818240",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126217104555818240-8",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.984481640708828,
+     "epoch_bkjd": 121.19667337461125,
+     "duration_days": 0.08460389099841491
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.984481640708828,
+    "epoch_bkjd": 121.19667337461125,
+    "duration_hours": 2.0304933839619577,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.984481640708828,
+    "epoch_bkjd": 121.19667337461125,
+    "duration_hours": 2.03,
+    "depth_ppm": 1182.07
+   }
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-1",
+   "source_id": "2126354436132009088",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126354436132009088-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 18.670730620555183,
+     "epoch_bkjd": 140.2592970414537,
+     "duration_days": 0.1666099776513569
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 18.670730620555183,
+    "epoch_bkjd": 140.2592970414537,
+    "duration_hours": 3.998639463632566,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 18.670730620555183,
+    "epoch_bkjd": 140.2592970414537,
+    "duration_hours": 3.999,
+    "depth_ppm": 13114.76
+   }
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-2",
+   "source_id": "2126354436132009088",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126354436132009088-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.2240084609703095,
+     "epoch_bkjd": 134.01020303186928,
+     "duration_days": 0.1248964908555915
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 6.2240084609703095,
+    "epoch_bkjd": 134.01020303186928,
+    "duration_hours": 2.997515780534196,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2126446588949629952-1",
+   "source_id": "2126446588949629952",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126446588949629952-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.9982215828410337,
+     "epoch_bkjd": 444.26430727060415,
+     "duration_days": 0.08188536421742855
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.9982215828410337,
+    "epoch_bkjd": 444.26430727060415,
+    "duration_hours": 1.9652487412182853,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2126585921988564224-1",
+   "source_id": "2126585921988564224",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126585921988564224-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 39.52711869808169,
+     "epoch_bkjd": 143.40986003955464,
+     "duration_days": 0.07720140370719081
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 39.52711869808169,
+    "epoch_bkjd": 143.40986003955464,
+    "duration_hours": 1.8528336889725794,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 39.52711869808169,
+    "epoch_bkjd": 143.40986003955464,
+    "duration_hours": 1.853,
+    "depth_ppm": 8777.8
+   }
+  },
+  {
+   "boi_id": "BOI-2126728304441865728-1",
+   "source_id": "2126728304441865728",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126728304441865728-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 56.25670797322824,
+     "epoch_bkjd": 186.16189800638907,
+     "duration_days": 0.24722186121047565
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 56.25670797322824,
+    "epoch_bkjd": 186.16189800638907,
+    "duration_hours": 5.933324669051416,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 56.25670797322824,
+    "epoch_bkjd": 186.16189800638907,
+    "duration_hours": 5.933,
+    "depth_ppm": 1152.14
+   }
+  },
+  {
+   "boi_id": "BOI-2126865915195358720-1",
+   "source_id": "2126865915195358720",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.319192110709287,
+     "epoch_bkjd": 122.45062355888743,
+     "duration_days": 0.2536616371088283
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 2.319192110709287,
+    "epoch_bkjd": 122.45062355888743,
+    "duration_hours": 6.087879290611879,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2126910621514995968-1",
+   "source_id": "2126910621514995968",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126910621514995968-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.622872552000436,
+     "epoch_bkjd": 121.91338249346207,
+     "duration_days": 0.12492663972415297
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.622872552000436,
+    "epoch_bkjd": 121.91338249346207,
+    "duration_hours": 2.998239353379671,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.622872552000436,
+    "epoch_bkjd": 121.91338249346207,
+    "duration_hours": 2.998,
+    "depth_ppm": 13862.92
+   }
+  },
+  {
+   "boi_id": "BOI-2127002808692040320-1",
+   "source_id": "2127002808692040320",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag",
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127002808692040320-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.3368788408988248,
+     "epoch_bkjd": 120.87464314217102,
+     "duration_days": 0.02105492755617655
+    },
+    {
+     "signal_id": "rust-v6-2127002808692040320-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.336879397638069,
+     "epoch_bkjd": 120.87464369673552,
+     "duration_days": 0.021054962352379313
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 0.3368788408988248,
+    "epoch_bkjd": 120.87464314217102,
+    "duration_hours": 0.5053182613482372,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 0.3368788408988248,
+    "epoch_bkjd": 120.87464314217102,
+    "duration_hours": 0.505,
+    "depth_ppm": 44584.53
+   }
+  },
+  {
+   "boi_id": "BOI-2127169041106093184-1",
+   "source_id": "2127169041106093184",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127169041106093184-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.905339659659415,
+     "epoch_bkjd": 136.4387306334621,
+     "duration_days": 0.16664097805035386
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.905339659659415,
+    "epoch_bkjd": 136.4387306334621,
+    "duration_hours": 3.9993834732084927,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.905339659659415,
+    "epoch_bkjd": 136.4387306334621,
+    "duration_hours": 3.999,
+    "depth_ppm": 576.27
+   }
+  },
+  {
+   "boi_id": "BOI-2127186564572468352-1",
+   "source_id": "2127186564572468352",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127186564572468352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 4.566536246516616,
+     "epoch_bkjd": 444.81414414233365,
+     "duration_days": 0.1248255921599075
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.566536246516616,
+    "epoch_bkjd": 444.81414414233365,
+    "duration_hours": 2.99581421183778,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 4.566536246516616,
+    "epoch_bkjd": 444.81414414233365,
+    "duration_hours": 2.996,
+    "depth_ppm": 1449.6
+   }
+  },
+  {
+   "boi_id": "BOI-2127355099085636864-1",
+   "source_id": "2127355099085636864",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127355099085636864-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.129806309927018,
+     "epoch_bkjd": 132.12799859163022,
+     "duration_days": 0.2495866769445724
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.129806309927018,
+    "epoch_bkjd": 132.12799859163022,
+    "duration_hours": 5.990080246669738,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2127460755284375168-1",
+   "source_id": "2127460755284375168",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127460755284375168-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 36.97539769112266,
+     "epoch_bkjd": 157.32484228377442,
+     "duration_days": 0.41525104828897524
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 36.97539769112266,
+    "epoch_bkjd": 157.32484228377442,
+    "duration_hours": 9.966025158935405,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 36.97539769112266,
+    "epoch_bkjd": 157.32484228377442,
+    "duration_hours": 9.966,
+    "depth_ppm": 6429.09
+   }
+  },
+  {
+   "boi_id": "BOI-2127460755284375168-2",
+   "source_id": "2127460755284375168",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127460755284375168-6",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 12.326245646634689,
+     "epoch_bkjd": 132.60499435890725,
+     "duration_days": 0.4164272177917125
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 12.326245646634689,
+    "epoch_bkjd": 132.60499435890725,
+    "duration_hours": 9.9942532270011,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 12.326245646634689,
+    "epoch_bkjd": 132.60499435890725,
+    "duration_hours": 9.994,
+    "depth_ppm": 1951.32
+   }
+  },
+  {
+   "boi_id": "BOI-2127702609183750528-1",
+   "source_id": "2127702609183750528",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127702609183750528-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.747202655090855,
+     "epoch_bkjd": 131.73080030752965,
+     "duration_days": 0.24974569591735044
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.747202655090855,
+    "epoch_bkjd": 131.73080030752965,
+    "duration_hours": 5.993896702016411,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2127956355854461952-1",
+   "source_id": "2127956355854461952",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127956355854461952-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7510169789864735,
+     "epoch_bkjd": 120.73532667642,
+     "duration_days": 0.08214248207664554
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.7510169789864735,
+    "epoch_bkjd": 120.73532667642,
+    "duration_hours": 1.971419569839493,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.7510169789864735,
+    "epoch_bkjd": 120.73532667642,
+    "duration_hours": 1.971,
+    "depth_ppm": 1452.94
+   }
+  },
+  {
+   "boi_id": "BOI-2128059130130482432-1",
+   "source_id": "2128059130130482432",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2128059130130482432-3",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.0939414795549114,
+     "epoch_bkjd": 133.40972222447715,
+     "duration_days": 0.16358917809022744
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0939414795549114,
+    "epoch_bkjd": 133.40972222447715,
+    "duration_hours": 3.9261402741654585,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.0939414795549114,
+    "epoch_bkjd": 133.40972222447715,
+    "duration_hours": 3.926,
+    "depth_ppm": 5943.51
+   }
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-1",
+   "source_id": "2128959007378441472",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat",
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2128959007378441472-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.5089084254512004,
+     "epoch_bkjd": 133.3201087917303,
+     "duration_days": 0.08820381183226876
+    },
+    {
+     "signal_id": "rust-v6-2128959007378441472-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.5089095185199772,
+     "epoch_bkjd": 133.32010957950837,
+     "duration_days": 0.08820385026046795
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 2.5089084254512004,
+    "epoch_bkjd": 133.3201087917303,
+    "duration_hours": 2.11689148397445,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag"
+    ],
+    "period_days": 2.5089084254512004,
+    "epoch_bkjd": 133.3201087917303,
+    "duration_hours": 2.117,
+    "depth_ppm": 11813.45
+   }
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-2",
+   "source_id": "2128959007378441472",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2128959007378441472-22",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.35841720017201245,
+     "epoch_bkjd": 131.53853192574405,
+     "duration_days": 0.04200201564515771
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.35841720017201245,
+    "epoch_bkjd": 131.53853192574405,
+    "duration_hours": 1.008048375483785,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.35841720017201245,
+    "epoch_bkjd": 131.53853192574405,
+    "duration_hours": 1.008,
+    "depth_ppm": 1521.08
+   }
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-3",
+   "source_id": "2128959007378441472",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2128959007378441472-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.8362821817397267,
+     "epoch_bkjd": 131.66546683097258,
+     "duration_days": 0.08493490908294099
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.8362821817397267,
+    "epoch_bkjd": 131.66546683097258,
+    "duration_hours": 2.0384378179905838,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.8362821817397267,
+    "epoch_bkjd": 131.66546683097258,
+    "duration_hours": 2.038,
+    "depth_ppm": 3558.99
+   }
+  },
+  {
+   "boi_id": "BOI-2130460704041437824-1",
+   "source_id": "2130460704041437824",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2130460704041437824-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.148262055340526,
+     "epoch_bkjd": 170.0976906889853,
+     "duration_days": 0.08312243050404029
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.148262055340526,
+    "epoch_bkjd": 170.0976906889853,
+    "duration_hours": 1.9949383320969671,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.148262055340526,
+    "epoch_bkjd": 170.0976906889853,
+    "duration_hours": 1.995,
+    "depth_ppm": 3501.39
+   }
+  },
+  {
+   "boi_id": "BOI-2130460704041437824-2",
+   "source_id": "2130460704041437824",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2130460704041437824-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.0494200835278598,
+     "epoch_bkjd": 170.09724404027287,
+     "duration_days": 0.08198594402561404
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.0494200835278598,
+    "epoch_bkjd": 170.09724404027287,
+    "duration_hours": 1.967662656614737,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.0494200835278598,
+    "epoch_bkjd": 170.09724404027287,
+    "duration_hours": 1.968,
+    "depth_ppm": 1299.33
+   }
+  },
+  {
+   "boi_id": "BOI-2130658616133595264-1",
+   "source_id": "2130658616133595264",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2130658616133595264-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 32.95441924270739,
+     "epoch_bkjd": 124.87575975649114,
+     "duration_days": 0.08045512510426608
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 32.95441924270739,
+    "epoch_bkjd": 124.87575975649114,
+    "duration_hours": 1.930923002502386,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 32.95441924270739,
+    "epoch_bkjd": 124.87575975649114,
+    "duration_hours": 1.931,
+    "depth_ppm": 11544.88
+   }
+  },
+  {
+   "boi_id": "BOI-2130965547378157568-1",
+   "source_id": "2130965547378157568",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2130965547378157568-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.4408382240214117,
+     "epoch_bkjd": 132.5647481129788,
+     "duration_days": 0.12382203487684007
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.4408382240214117,
+    "epoch_bkjd": 132.5647481129788,
+    "duration_hours": 2.9717288370441617,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.4408382240214117,
+    "epoch_bkjd": 132.5647481129788,
+    "duration_hours": 2.972,
+    "depth_ppm": 5537.35
+   }
+  },
+  {
+   "boi_id": "BOI-2131801043071611776-1",
+   "source_id": "2131801043071611776",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2131801043071611776-10",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.014603662810688,
+     "epoch_bkjd": 132.8534422256698,
+     "duration_days": 0.3326459214135931
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.014603662810688,
+    "epoch_bkjd": 132.8534422256698,
+    "duration_hours": 7.983502113926235,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2131971879690727168-1",
+   "source_id": "2131971879690727168",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2131971879690727168-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6131828225023351,
+     "epoch_bkjd": 131.58907893093757,
+     "duration_days": 0.06227638041039341
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 0.6131828225023351,
+    "epoch_bkjd": 131.58907893093757,
+    "duration_hours": 1.494633129849442,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2132313759090098688-1",
+   "source_id": "2132313759090098688",
+   "category": "transit",
+   "passing_views": [
+    "psf_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2132313759090098688-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 8.279882146715567,
+     "epoch_bkjd": 137.74051389533278,
+     "duration_days": 0.12497935315797082
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 8.279882146715567,
+    "epoch_bkjd": 137.74051389533278,
+    "duration_hours": 2.9995044757912996,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_qdiag",
+    "passing_views": [
+     "psf_qdiag"
+    ],
+    "period_days": 8.279882146715567,
+    "epoch_bkjd": 137.74051389533278,
+    "duration_hours": 3.0,
+    "depth_ppm": 36913.83
+   }
+  },
+  {
+   "boi_id": "BOI-2133034969998575360-1",
+   "source_id": "2133034969998575360",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat",
+    "psf_qdiag",
+    "sap_qdiag"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133034969998575360-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833617874810778,
+     "epoch_bkjd": 132.07058934342015,
+     "duration_days": 0.08262018852339492
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833689166837658,
+     "epoch_bkjd": 132.06447435610033,
+     "duration_days": 0.08262094043149093
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833675776082751,
+     "epoch_bkjd": 132.0675334415475,
+     "duration_days": 0.08262079920087277
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat",
+     "psf_qdiag",
+     "sap_qdiag"
+    ],
+    "period_days": 0.7833617874810778,
+    "epoch_bkjd": 132.07058934342015,
+    "duration_hours": 1.9828845245614781,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2133051978069556352-1",
+   "source_id": "2133051978069556352",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133051978069556352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.2326998918929055,
+     "epoch_bkjd": 131.6996172795802,
+     "duration_days": 0.2529230346284932
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.2326998918929055,
+    "epoch_bkjd": 131.6996172795802,
+    "duration_hours": 6.070152831083837,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2133767416541087232-1",
+   "source_id": "2133767416541087232",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133767416541087232-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.207264857398472,
+     "epoch_bkjd": 132.3348118374629,
+     "duration_days": 0.33322232284659453
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.207264857398472,
+    "epoch_bkjd": 132.3348118374629,
+    "duration_hours": 7.997335748318269,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "NO",
+   "historical_delivery_included": false
+  },
+  {
+   "boi_id": "BOI-2134754193866263936-1",
+   "source_id": "2134754193866263936",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2134754193866263936-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 17.79164009002915,
+     "epoch_bkjd": 149.2305444600111,
+     "duration_days": 0.08333320885259556
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 17.79164009002915,
+    "epoch_bkjd": 149.2305444600111,
+    "duration_hours": 1.9999970124622934,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 17.79164009002915,
+    "epoch_bkjd": 149.2305444600111,
+    "duration_hours": 2.0,
+    "depth_ppm": 396.57
+   }
+  },
+  {
+   "boi_id": "BOI-2134754193866263936-2",
+   "source_id": "2134754193866263936",
+   "category": "transit",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2134754193866263936-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.930045739827822,
+     "epoch_bkjd": 137.4210594895213,
+     "duration_days": 0.12484306820690151
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.930045739827822,
+    "epoch_bkjd": 137.4210594895213,
+    "duration_hours": 2.9962336369656364,
+    "depth_ppm": null
+   },
+   "catalogue_included": true,
+   "membership_basis": "All frozen main Rust TRANSIT_LIKE groups, independent of manual review",
+   "historical_manual_choice": "YES",
+   "historical_delivery_included": true,
+   "historical_display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 5.930045739827822,
+    "epoch_bkjd": 137.4210594895213,
+    "duration_hours": 2.996,
+    "depth_ppm": 113.1
+   }
+  },
+  {
+   "boi_id": "BOI-2052563599452804096-1",
+   "source_id": "2052563599452804096",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2052563599452804096-6",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 63.27137148509081,
+     "epoch_bkjd": 135.9525671257265,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 63.27137148509081,
+    "epoch_bkjd": 135.9525671257265,
+    "duration_hours": 9.6,
+    "depth_ppm": 432.07
+   },
+   "page": 3,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2053539145443677056-1",
+   "source_id": "2053539145443677056",
+   "category": "legacy",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2053539145443677056-10",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "SYSTEMATIC_LIKE"
+     ],
+     "period_days": 2.8340119700195716,
+     "epoch_bkjd": 133.30832178055863,
+     "duration_days": 0.24914390945227005
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 2.8340119700195716,
+    "epoch_bkjd": 133.30832178055863,
+    "duration_hours": 5.979,
+    "depth_ppm": 541.87
+   },
+   "page": 6,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-4",
+   "source_id": "2073226966298407552",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073226966298407552-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 1.4626340246158054,
+     "epoch_bkjd": 131.7472075402178,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.4626340246158054,
+    "epoch_bkjd": 131.7472075402178,
+    "duration_hours": 9.6,
+    "depth_ppm": 725.09
+   },
+   "page": 11,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073237338631093888-1",
+   "source_id": "2073237338631093888",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073237338631093888-3",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 10.195389597161656,
+     "epoch_bkjd": 122.98881441242993,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 10.195389597161656,
+    "epoch_bkjd": 122.98881441242993,
+    "duration_hours": 4.8,
+    "depth_ppm": 584.53
+   },
+   "page": 12,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073285721453427712-1",
+   "source_id": "2073285721453427712",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073285721453427712-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 3.054772258749627,
+     "epoch_bkjd": 134.27220754021778,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.054772258749627,
+    "epoch_bkjd": 134.27220754021778,
+    "duration_hours": 9.6,
+    "depth_ppm": 248.04
+   },
+   "page": 13,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073296372971801728-1",
+   "source_id": "2073296372971801728",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073296372971801728-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 25.66041163330246,
+     "epoch_bkjd": 138.12388049675153,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 25.66041163330246,
+    "epoch_bkjd": 138.12388049675153,
+    "duration_hours": 9.6,
+    "depth_ppm": 183.48
+   },
+   "page": 14,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073482357931911424-1",
+   "source_id": "2073482357931911424",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073482357931911424-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 97.61070645739063,
+     "epoch_bkjd": 142.3920829916559,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 97.61070645739063,
+    "epoch_bkjd": 142.3920829916559,
+    "duration_hours": 4.8,
+    "depth_ppm": 567.53
+   },
+   "page": 16,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2073628180652139904-2",
+   "source_id": "2073628180652139904",
+   "category": "shallow",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "shallow-v1-2073628180652139904-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [],
+     "period_days": 7.931624466655407,
+     "epoch_bkjd": 122.82374468803405,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 7.931624466655407,
+    "epoch_bkjd": 122.82374468803405,
+    "duration_hours": 2.4,
+    "depth_ppm": 551.64
+   },
+   "page": 19,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2076055902327710720-1",
+   "source_id": "2076055902327710720",
+   "category": "legacy",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076055902327710720-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "SYSTEMATIC_LIKE"
+     ],
+     "period_days": 3.6716554080822177,
+     "epoch_bkjd": 132.09415340693093,
+     "duration_days": 0.12481548129457964
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.6716554080822177,
+    "epoch_bkjd": 132.09415340693093,
+    "duration_hours": 2.996,
+    "depth_ppm": 2437.34
+   },
+   "page": 26,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2076062434975364864-1",
+   "source_id": "2076062434975364864",
+   "category": "legacy",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076062434975364864-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "SYSTEMATIC_LIKE"
+     ],
+     "period_days": 3.6719127523638098,
+     "epoch_bkjd": 539.6364835797597,
+     "duration_days": 0.12482422954211253
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 3.6719127523638098,
+    "epoch_bkjd": 539.6364835797597,
+    "duration_hours": 2.996,
+    "depth_ppm": 7303.18
+   },
+   "page": 27,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2076894554826018304-2",
+   "source_id": "2076894554826018304",
+   "category": "legacy",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076894554826018304-25",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "SYSTEMATIC_LIKE"
+     ],
+     "period_days": 99.4896645151852,
+     "epoch_bkjd": 136.53997701614762,
+     "duration_days": 0.1457368132546658
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 99.4896645151852,
+    "epoch_bkjd": 136.53997701614762,
+    "duration_hours": 3.498,
+    "depth_ppm": 13619.11
+   },
+   "page": 36,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  },
+  {
+   "boi_id": "BOI-2078857015581291008-1",
+   "source_id": "2078857015581291008",
+   "category": "legacy",
+   "passing_views": [
+    "psf_flat"
+   ],
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078857015581291008-2",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "SYSTEMATIC_LIKE"
+     ],
+     "period_days": 1.6894824208977344,
+     "epoch_bkjd": 132.94737873227194,
+     "duration_days": 0.16498851766579437
+    }
+   ],
+   "display_signal": {
+    "photometry_view": "psf_flat",
+    "passing_views": [
+     "psf_flat"
+    ],
+    "period_days": 1.6894824208977344,
+    "epoch_bkjd": 132.94737873227194,
+    "duration_hours": 3.96,
+    "depth_ppm": 3951.59
+   },
+   "page": 59,
+   "membership_basis": "Non-main-Rust historical delivery retained; outside the requested main Rust restoration"
+  }
+ ],
+ "limitations": [
+  "BOI membership does not imply physical validation or confirmation.",
+  "No detector, vetting gate, original proposal, frozen catalogue byte, or validation outcome has changed.",
+  "Display depths are null when unavailable; historical display measurements are separately preserved where available.",
+  "Restored signals require exact-signal literature, ownership, native-fit and complete-scene checks before probability integration."
+ ],
+ "proposal_evidence": "Lean proposal clocks/views/classifications. Full original event arrays, masks and evidence paths remain in the unchanged frozen catalogue referenced by current-catalogue.json; this file does not replace that evidence."
+}

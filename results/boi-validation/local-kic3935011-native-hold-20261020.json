@@ -1,0 +1,130 @@
+{
+  "utc": "2026-10-20T12:43:17.213657+00:00",
+  "source_id": "2100203999471640064",
+  "kic": 3935011,
+  "status": "HELD_NATIVE_RADIUS_RATIO_PRECISION_AFTER_FIXED_MAXIMUM",
+  "disposition": "REMAINS_PC",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "native_steps_each_ensemble": [
+    24000,
+    24000,
+    24000,
+    24000
+  ],
+  "convergence": {
+    "rank_rhat_maximum": 1.0266707576083183,
+    "reference_epoch_bulk_ess": 467.9152889132881,
+    "radius_ratio_median_over_std": 2.8671970454623597,
+    "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+    "passed": false
+  },
+  "completed_endpoints": [
+    {
+      "endpoint": 3000,
+      "checks": {
+        "rank_rhat_maximum": 1.2105082766209356,
+        "reference_epoch_bulk_ess": 48.87784399181873,
+        "radius_ratio_median_over_std": 2.9275715812266045,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": false
+      },
+      "posterior_sha256": "a02727f34f5713c7284264c908dc70898448a9dc3be964c631791cbb688e8936"
+    },
+    {
+      "endpoint": 6000,
+      "checks": {
+        "rank_rhat_maximum": 1.0513661077764824,
+        "reference_epoch_bulk_ess": 82.2874077641474,
+        "radius_ratio_median_over_std": 2.8579083580735007,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": false
+      },
+      "posterior_sha256": "a1dffeb167069f721429e6c0d54b57c6e6b2b4b509afd0d5ccc2a5636c6d6536"
+    },
+    {
+      "endpoint": 12000,
+      "checks": {
+        "rank_rhat_maximum": 1.0537536687602158,
+        "reference_epoch_bulk_ess": 242.686590770679,
+        "radius_ratio_median_over_std": 2.8693036569968555,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": false
+      },
+      "posterior_sha256": "7838f7d7edbcbfe7600cf51b25b57320e3ef8907c3cceb317e01ab10cff8afea"
+    },
+    {
+      "endpoint": 24000,
+      "checks": {
+        "rank_rhat_maximum": 1.0266707576083183,
+        "reference_epoch_bulk_ess": 467.9152889132881,
+        "radius_ratio_median_over_std": 2.8671970454623597,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": false
+      },
+      "posterior_sha256": "4e89d7069179a8b0c01c5163a9d372ff4e91ac26eb947fbd82670249781ebe70"
+    }
+  ],
+  "reason": "The final Rhat and epoch ESS pass, but radius-ratio median/std=2.8671970454623597 does not exceed3. This is the remaining framework gate, not a spacecraft or population failure.",
+  "action": "Preserve all chains/endpoints and move to next eligible host. No extra sampling, seed change, weakened gate, native restart, timing adoption, geometry/pixel diagnostics or FPP production.",
+  "completed_full_probability_runs": 0,
+  "fpp_production_ready": false,
+  "interpretation": "No planet admission or reproduced astrophysical false-positive mechanism. All27source prior routes and original population pairing/domain passed; those readiness results do not close the native precision gate.",
+  "readiness_continuation": "Exited after observing the native gate failure; it started no diagnostic or probability stage. Its failure record is an expected hold, not a download retry.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/native-supervisor-status.json",
+      "sha256": "90502b9f45e4d0942b28e41403a169f38c78248c6890d539a0635512ea0a743b",
+      "bytes": 4839
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/readiness-supervisor-status.json",
+      "sha256": "de5cb202014f538115a9dfdceda8c500906f0e5f16e3c185ea678f491b2535c5",
+      "bytes": 451
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/convergence.json",
+      "sha256": "a3df782bf575e74b0bda3f88b22ebcce4e7939d706f3e8be50388a4717472368",
+      "bytes": 4777
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/posterior-samples.npz",
+      "sha256": "4e89d7069179a8b0c01c5163a9d372ff4e91ac26eb947fbd82670249781ebe70",
+      "bytes": 21415614
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/native-freeze.json",
+      "sha256": "4462e47740d3a68fcc85652dd538e9d74a6721255c9956f5cd5d506bd78f73aa",
+      "bytes": 5692
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/native-capacity-review.json",
+      "sha256": "6a135d3a8a7c4e33f6ce59cd4500de51300ae8c5f19fda3c41017f8b98d347bd",
+      "bytes": 4914
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/resolved-stellar-support-review.json",
+      "sha256": "0f99cfe5f5d4154e9bc6deeea1ed3207e4e4f4bdc44c0843cc53996e2e978742",
+      "bytes": 8432
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/duration-ensemble-0.h5",
+      "sha256": "7eb488935cb808f1b7aff0e002441600e6a288b6d2a71c9412a1fa497da75ba7",
+      "bytes": 140012448
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/duration-ensemble-1.h5",
+      "sha256": "ab121eadb5e0d4fcf3f5263e146a57cfd7437572c65e04591ffcccab7d7c1136",
+      "bytes": 140012448
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/duration-ensemble-2.h5",
+      "sha256": "37bcf0189e5a7753743de9b7197f05d1e48bf2cd0482e9005fe3d91febc79081",
+      "bytes": 140012448
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/tic-sap-all/duration-ensemble-3.h5",
+      "sha256": "99bb8adcf409f90a937d646e959faa62ea339ba4353eb0ae0deb051335e14c06",
+      "bytes": 140012448
+    }
+  ]
+}

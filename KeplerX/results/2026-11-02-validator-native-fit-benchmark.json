@@ -1,0 +1,460 @@
+{
+ "created": "2026-11-02",
+ "machine": "M1 Pro MacBook Pro (8 performance + 2 efficiency cores), shared with another 8-worker job (load averages 13-49)",
+ "baselines": {
+  "production": "stored native fits (25-28 Oct), frozen V3 runtime, juliet + batman 2.5.3+spacelab.2 with the production orbit kernel, dynesty 3.1.0; elapsed and calls from each case's native.log",
+  "paired": "production's own commands rerun just before the Validator under the same load (validator.benchmark --baseline)",
+  "per_call": "juliet log-likelihood with the production orbit kernel and the Validator's, one process, 40 production posterior samples each"
+ },
+ "fits": [
+  {
+   "run": "2026-11-02-native-fit-paired",
+   "case": "mk/cases/2126055064030395392-1/native-v3",
+   "native_points": 142,
+   "calls": 250589,
+   "queue_size": 5,
+   "production_elapsed_seconds": 147.0,
+   "validator_preparation_seconds": 0.6519196247681975,
+   "validator_fit_seconds": 7.974981042556465,
+   "validator_elapsed_seconds": 8.626900667324662,
+   "validator_cpu_seconds": 19.43687299999999,
+   "validator_sampling_seconds": 7.310069541446865,
+   "validator_posterior_seconds": 0.03282862436026335,
+   "validator_main_peak_rss_bytes": 223133696,
+   "validator_worker_peak_rss_bytes": 93372416,
+   "speedup_vs_production_elapsed": 17.039723264321186,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 6.393747753463686e-10,
+   "load_average": [
+    22.08203125,
+    35.56591796875,
+    31.16015625
+   ],
+   "kernel_sha256": "deaa3ebd8d02374c7f9bac24fe20eab65eb47b0faba1c22c0ee494c03766ab77",
+   "per_call_stock_cpu_ms": 0.5385000000000029,
+   "per_call_validator_cpu_ms": 0.015049999999999786,
+   "per_call_ratio": 35.78073089701066,
+   "production_cpu_estimate_seconds": 140.48172600000075,
+   "cpu_speedup_vs_production_estimate": 7.227588820485724,
+   "baseline_preparation_seconds": 43.15826433338225,
+   "baseline_fit_seconds": 92.28746366687119,
+   "baseline_elapsed_seconds": 135.44572800025344,
+   "baseline_cpu_seconds": 254.386659,
+   "baseline_posterior_equals_production": true,
+   "speedup_vs_baseline_elapsed": 15.700392669788013,
+   "speedup_vs_baseline_cpu": 13.087838717678514
+  },
+  {
+   "run": "2026-11-02-native-fit-paired",
+   "case": "cases/2099560128037101952/native-v3",
+   "native_points": 543,
+   "calls": 465365,
+   "queue_size": 5,
+   "production_elapsed_seconds": 701.0,
+   "validator_preparation_seconds": 0.6580423749983311,
+   "validator_fit_seconds": 37.89634083304554,
+   "validator_elapsed_seconds": 38.55438320804387,
+   "validator_cpu_seconds": 97.53330000000008,
+   "validator_sampling_seconds": 36.667994167655706,
+   "validator_posterior_seconds": 0.48505987506359816,
+   "validator_main_peak_rss_bytes": 264568832,
+   "validator_worker_peak_rss_bytes": 94928896,
+   "speedup_vs_production_elapsed": 18.182109054042535,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 2.4510882212780416e-10,
+   "load_average": [
+    27.76416015625,
+    30.00146484375,
+    28.962890625
+   ],
+   "kernel_sha256": "4336f8e54ffbc246993047dccd438c7e9114f86e4c34cb81f15d301d72e9aea8",
+   "per_call_stock_cpu_ms": 1.760050000000002,
+   "per_call_validator_cpu_ms": 0.12439999999999118,
+   "per_call_ratio": 14.148311897107128,
+   "production_cpu_estimate_seconds": 849.217084800001,
+   "cpu_speedup_vs_production_estimate": 8.70694506184042,
+   "baseline_preparation_seconds": 15.895404124632478,
+   "baseline_fit_seconds": 537.1900735832751,
+   "baseline_elapsed_seconds": 553.0854777079076,
+   "baseline_cpu_seconds": 1140.30477,
+   "baseline_posterior_equals_production": true,
+   "speedup_vs_baseline_elapsed": 14.345592684582577,
+   "speedup_vs_baseline_cpu": 11.691440461873011
+  },
+  {
+   "run": "2026-11-02-native-fit-final",
+   "case": "mk/cases/2073177071654296448-3/native-v3",
+   "native_points": 1795,
+   "calls": 323405,
+   "queue_size": 5,
+   "production_elapsed_seconds": 1214.0,
+   "validator_preparation_seconds": 1.2949872082099319,
+   "validator_fit_seconds": 33.733668458648026,
+   "validator_elapsed_seconds": 35.02865566685796,
+   "validator_cpu_seconds": 97.14382,
+   "validator_sampling_seconds": 32.27636004053056,
+   "validator_posterior_seconds": 0.7268343325704336,
+   "validator_main_peak_rss_bytes": 235454464,
+   "validator_worker_peak_rss_bytes": 95027200,
+   "speedup_vs_production_elapsed": 34.657339166704446,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 1.0277290130034089e-10,
+   "load_average": [
+    12.11865234375,
+    26.07080078125,
+    27.998046875
+   ],
+   "kernel_sha256": "deaa3ebd8d02374c7f9bac24fe20eab65eb47b0faba1c22c0ee494c03766ab77",
+   "per_call_stock_cpu_ms": 7.4743,
+   "per_call_validator_cpu_ms": 0.2366749999999973,
+   "per_call_ratio": 31.580437308545836,
+   "production_cpu_estimate_seconds": 2510.766856,
+   "cpu_speedup_vs_production_estimate": 25.845873221786007
+  },
+  {
+   "run": "2026-11-02-native-fit-final",
+   "case": "intake-104-20261026/cases/BOI-2127936912539397632-1/native-v3",
+   "native_points": 4979,
+   "calls": 472696,
+   "queue_size": 5,
+   "production_elapsed_seconds": 2984.0,
+   "validator_preparation_seconds": 0.7968689575791359,
+   "validator_fit_seconds": 137.57606700062752,
+   "validator_elapsed_seconds": 138.37293595820665,
+   "validator_cpu_seconds": 360.875361,
+   "validator_sampling_seconds": 127.98312004096806,
+   "validator_posterior_seconds": 7.680640458129346,
+   "validator_main_peak_rss_bytes": 263045120,
+   "validator_worker_peak_rss_bytes": 94945280,
+   "speedup_vs_production_elapsed": 21.564910647709823,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 1.6007106751203537e-10,
+   "load_average": [
+    20.4267578125,
+    23.60302734375,
+    26.6435546875
+   ],
+   "kernel_sha256": "deaa3ebd8d02374c7f9bac24fe20eab65eb47b0faba1c22c0ee494c03766ab77",
+   "per_call_stock_cpu_ms": 17.667699999999996,
+   "per_call_validator_cpu_ms": 0.7483999999999824,
+   "per_call_ratio": 23.607295563870142,
+   "production_cpu_estimate_seconds": 8658.586415999998,
+   "cpu_speedup_vs_production_estimate": 23.993287854307123
+  },
+  {
+   "run": "2026-11-02-native-fit-final",
+   "case": "intake-104-20261026/cases/BOI-2127936912539397632-2/native-v3",
+   "native_points": 8174,
+   "calls": 484725,
+   "queue_size": 5,
+   "production_elapsed_seconds": 4703.0,
+   "validator_preparation_seconds": 1.9440480414777994,
+   "validator_fit_seconds": 282.06535829231143,
+   "validator_elapsed_seconds": 284.00940633378923,
+   "validator_cpu_seconds": 523.24317,
+   "validator_sampling_seconds": 272.4796984177083,
+   "validator_posterior_seconds": 4.704832999967039,
+   "validator_main_peak_rss_bytes": 319324160,
+   "validator_worker_peak_rss_bytes": 94846976,
+   "speedup_vs_production_elapsed": 16.559310695761535,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 3.5652192309498787e-10,
+   "load_average": [
+    28.9443359375,
+    30.29296875,
+    29.0517578125
+   ],
+   "kernel_sha256": "deaa3ebd8d02374c7f9bac24fe20eab65eb47b0faba1c22c0ee494c03766ab77",
+   "per_call_stock_cpu_ms": 29.997700000000016,
+   "per_call_validator_cpu_ms": 1.1732000000000298,
+   "per_call_ratio": 25.569127173541812,
+   "production_cpu_estimate_seconds": 15073.394284500007,
+   "cpu_speedup_vs_production_estimate": 28.80762740677534
+  },
+  {
+   "run": "2026-11-02-native-fit-final",
+   "case": "mk/cases/2086861666381019648-2/native-v3",
+   "native_points": 788,
+   "calls": 649414,
+   "queue_size": 5,
+   "production_elapsed_seconds": 1242.0,
+   "validator_preparation_seconds": 0.5529561657458544,
+   "validator_fit_seconds": 69.23570324946195,
+   "validator_elapsed_seconds": 69.7886594152078,
+   "validator_cpu_seconds": 209.2686089999999,
+   "validator_sampling_seconds": 59.827118042856455,
+   "validator_posterior_seconds": 6.977335083298385,
+   "validator_main_peak_rss_bytes": 359710720,
+   "validator_worker_peak_rss_bytes": 94928896,
+   "speedup_vs_production_elapsed": 17.796587732266325,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 1.1004885891452432e-10,
+   "load_average": [
+    26.23779296875,
+    29.078125,
+    28.67529296875
+   ],
+   "kernel_sha256": "4336f8e54ffbc246993047dccd438c7e9114f86e4c34cb81f15d301d72e9aea8",
+   "per_call_stock_cpu_ms": 5.702449999999993,
+   "per_call_validator_cpu_ms": 0.6295750000000044,
+   "per_call_ratio": 9.057618234523215,
+   "production_cpu_estimate_seconds": 3834.823493149995,
+   "cpu_speedup_vs_production_estimate": 18.324886429335404
+  },
+  {
+   "run": "2026-11-02-native-fit-final-large",
+   "case": "cases/2076476504190366336-boi1-g2/native-v3",
+   "native_points": 9171,
+   "calls": 1208366,
+   "queue_size": 5,
+   "production_elapsed_seconds": 21121.0,
+   "validator_preparation_seconds": 0.6913349591195583,
+   "validator_fit_seconds": 1035.7729917503893,
+   "validator_elapsed_seconds": 1036.464326709509,
+   "validator_cpu_seconds": 4003.225318,
+   "validator_sampling_seconds": 1001.5114792501554,
+   "validator_posterior_seconds": 31.254923082888126,
+   "validator_main_peak_rss_bytes": 357023744,
+   "validator_worker_peak_rss_bytes": 94584832,
+   "speedup_vs_production_elapsed": 20.377932414763762,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 1.5279510989785194e-10,
+   "load_average": [
+    8.8173828125,
+    12.2431640625,
+    16.5546875
+   ],
+   "kernel_sha256": "4336f8e54ffbc246993047dccd438c7e9114f86e4c34cb81f15d301d72e9aea8",
+   "per_call_stock_cpu_ms": 58.663774999999994,
+   "per_call_validator_cpu_ms": 3.8168250000000015,
+   "per_call_ratio": 15.369783786262134,
+   "production_cpu_estimate_seconds": 73265.951226575,
+   "cpu_speedup_vs_production_estimate": 18.301730581374933
+  },
+  {
+   "run": "2026-11-02-native-fit-final-large",
+   "case": "cases/2079536067092694016-boi1/native-v3",
+   "native_points": 12758,
+   "calls": 563142,
+   "queue_size": 5,
+   "production_elapsed_seconds": 10035.0,
+   "validator_preparation_seconds": 0.6616897918283939,
+   "validator_fit_seconds": 3008.142518458888,
+   "validator_elapsed_seconds": 3008.8042082507163,
+   "validator_cpu_seconds": 6131.885836000001,
+   "validator_sampling_seconds": 2936.9688178328797,
+   "validator_posterior_seconds": 67.9377411250025,
+   "validator_main_peak_rss_bytes": 325992448,
+   "validator_worker_peak_rss_bytes": 94666752,
+   "speedup_vs_production_elapsed": 3.3352120329006825,
+   "posterior_bitwise_equal": true,
+   "prepared_bitwise_equal": true,
+   "calls_equal": true,
+   "review_clock_equal": true,
+   "loglike_max_abs_difference": 2.1391315385699272e-09,
+   "load_average": [
+    19.09765625,
+    20.1142578125,
+    22.16357421875
+   ],
+   "kernel_sha256": "3063954fc464a203aa68156587df5149ad804a489471a3079887180bfbabac89",
+   "per_call_stock_cpu_ms": 50.21204999999999,
+   "per_call_validator_cpu_ms": 8.530674999999999,
+   "per_call_ratio": 5.88605825447576,
+   "production_cpu_estimate_seconds": 29292.906577199996,
+   "cpu_speedup_vs_production_estimate": 4.777144806777513
+  },
+  {
+   "run": "2026-11-02-native-fit-psf",
+   "case": "psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3",
+   "native_points": 38815,
+   "calls": 631241,
+   "queue_size": 3,
+   "production_elapsed_seconds": 34389.083605,
+   "validator_preparation_seconds": 0.7968137906864285,
+   "validator_fit_seconds": 4567.8097792919725,
+   "validator_elapsed_seconds": 4568.606593082659,
+   "validator_cpu_seconds": 6810.029217,
+   "validator_sampling_seconds": 4316.670637999661,
+   "validator_posterior_seconds": 247.519530874677,
+   "validator_main_peak_rss_bytes": 300384256,
+   "validator_worker_peak_rss_bytes": 94994432,
+   "speedup_vs_production_elapsed": 7.527258673808468,
+   "posterior_bitwise_equal": false,
+   "prepared_bitwise_equal": true,
+   "calls_equal": false,
+   "review_clock_equal": false,
+   "loglike_max_abs_difference": null,
+   "load_average": [
+    31.298828125,
+    28.78466796875,
+    25.701171875
+   ],
+   "kernel_sha256": "4336f8e54ffbc246993047dccd438c7e9114f86e4c34cb81f15d301d72e9aea8",
+   "per_call_stock_cpu_ms": 196.07277500000004,
+   "per_call_validator_cpu_ms": 15.04569999999994,
+   "per_call_ratio": 13.031814737765663,
+   "production_cpu_estimate_seconds": 128180.41985572502,
+   "cpu_speedup_vs_production_estimate": 18.822301016821765
+  }
+ ],
+ "per_call": [
+  {
+   "case": "mk/cases/2126055064030395392-1/native-v3",
+   "native_points": 142,
+   "stock_cpu_ms": 0.5385000000000029,
+   "validator_cpu_ms": 0.015049999999999786,
+   "ratio": 35.78073089701066
+  },
+  {
+   "case": "cases/2099560128037101952/native-v3",
+   "native_points": 543,
+   "stock_cpu_ms": 1.760050000000002,
+   "validator_cpu_ms": 0.12439999999999118,
+   "ratio": 14.148311897107128
+  },
+  {
+   "case": "mk/cases/2086861666381019648-2/native-v3",
+   "native_points": 788,
+   "stock_cpu_ms": 5.702449999999993,
+   "validator_cpu_ms": 0.6295750000000044,
+   "ratio": 9.057618234523215
+  },
+  {
+   "case": "mk/cases/2073177071654296448-3/native-v3",
+   "native_points": 1795,
+   "stock_cpu_ms": 7.4743,
+   "validator_cpu_ms": 0.2366749999999973,
+   "ratio": 31.580437308545836
+  },
+  {
+   "case": "intake-104-20261026/cases/BOI-2127936912539397632-1/native-v3",
+   "native_points": 4979,
+   "stock_cpu_ms": 17.667699999999996,
+   "validator_cpu_ms": 0.7483999999999824,
+   "ratio": 23.607295563870142
+  },
+  {
+   "case": "intake-104-20261026/cases/BOI-2127936912539397632-2/native-v3",
+   "native_points": 8174,
+   "stock_cpu_ms": 29.997700000000016,
+   "validator_cpu_ms": 1.1732000000000298,
+   "ratio": 25.569127173541812
+  },
+  {
+   "case": "cases/2079536067092694016-boi1/native-v3",
+   "native_points": 12758,
+   "stock_cpu_ms": 50.21204999999999,
+   "validator_cpu_ms": 8.530674999999999,
+   "ratio": 5.88605825447576
+  },
+  {
+   "case": "cases/2076476504190366336-boi1-g2/native-v3",
+   "native_points": 9171,
+   "stock_cpu_ms": 58.663774999999994,
+   "validator_cpu_ms": 3.8168250000000015,
+   "ratio": 15.369783786262134
+  },
+  {
+   "case": "mk/cases/2052149122233322368-1-g2/native-v3",
+   "native_points": 21892,
+   "stock_cpu_ms": 106.785175,
+   "validator_cpu_ms": 15.215274999999995,
+   "ratio": 7.01828754327477
+  },
+  {
+   "case": "psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3",
+   "native_points": 38815,
+   "stock_cpu_ms": 196.07277500000004,
+   "validator_cpu_ms": 15.04569999999994,
+   "ratio": 13.031814737765663
+  }
+ ],
+ "per_call_cost_weighted_ratio": 10.28320284199708,
+ "production_census": {
+  "fits": 150,
+  "elapsed_hours": 128.26632341805555,
+  "calls": 66239113
+ },
+ "psf_divergence": {
+  "case": "psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3",
+  "shared_dead_points": 14250,
+  "production_dead_points": 22487,
+  "validator_dead_points": 22498,
+  "production_calls": 631706,
+  "validator_calls": 631241,
+  "validator_minus_juliet_loglike_max_abs_on_300_validator_posterior_samples": 3.2e-10,
+  "lnZ": {
+   "production": 209639.71523173377,
+   "production_error": 0.28995391579706414,
+   "validator": 209639.68117879392,
+   "validator_error": 0.2541232952536432
+  },
+  "largest_quantile_shift_posterior_widths": {
+   "median": 0.287,
+   "any_quantile": 0.894
+  },
+  "review_clock": {
+   "production": {
+    "period_days": 0.9337589651988605,
+    "epoch_bkjd": 857.9785340642055,
+    "duration_days": 0.2044698983083729
+   },
+   "validator": {
+    "period_days": 0.9337569576817846,
+    "epoch_bkjd": 857.9804160588702,
+    "duration_days": 0.20892161854088748
+   }
+  },
+  "shift_rms_in_resample_run_sigma": 10.4,
+  "second_seed_run": {
+   "folder": "results/validator-benchmarks/2026-11-02-native-fit-psf-second-seed",
+   "seed_offset": 1,
+   "calls": 590740,
+   "wall_seconds": 3979,
+   "lnZ": 209642.035,
+   "lnZerr": 0.251,
+   "review_clock": {
+    "period_days": 0.9337615,
+    "epoch_bkjd": 857.97894,
+    "duration_days": 0.1976
+   },
+   "median_shift_posterior_widths": {
+    "production_vs_same_seed": {
+     "rms": 0.162,
+     "max": 0.287
+    },
+    "production_vs_new_seed": {
+     "rms": 0.274,
+     "max": 0.6
+    },
+    "same_seed_vs_new_seed": {
+     "rms": 0.316,
+     "max": 0.643
+    }
+   },
+   "conclusion": "The same-seed divergence lies within this fit configuration's seed-to-seed scatter."
+  }
+ }
+}

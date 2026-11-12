@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-20T15:48:25.746180+00:00",
+  "change": "Compiled ordered aperture-flux fractions in versioned post_boi runner",
+  "status": "PARITY_CONTROLS_PASSED_FOR_NEW_FROZEN_RUNTIMES",
+  "source_id": "2104058096963805696",
+  "source_implementation": {
+    "path": "post_boi/aperture.py",
+    "sha256": "7b065a8969418a505575cec20fa409db3f1677bfb842d5c35864225318ac24a0"
+  },
+  "fraction_controls": {
+    "scenarios": 93,
+    "draws_per_scenario": 256,
+    "invalid_input_controls": 20,
+    "all_fractions_weights_and_flags_bitwise_equal": true,
+    "median_seconds": {
+      "reference": 0.15808605158235878,
+      "fused": 0.022192001109942794
+    },
+    "kernel_speedup": 7.123560007012197,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/review.json",
+      "sha256": "370741e7f67f7f80593f8df539ae58e01a7906da91d3f97baf805861e932faaf"
+    }
+  },
+  "whole_census_controls": {
+    "scenarios": 93,
+    "draws_per_scenario": 2048,
+    "threads": 1,
+    "orders": [
+      [
+        "reference",
+        "fused"
+      ],
+      [
+        "fused",
+        "reference"
+      ]
+    ],
+    "all_saved_weights_radii_bounds_and_rng_states_exact": true,
+    "median_seconds": {
+      "reference": 9.691424243501388,
+      "fused": 7.873572505544871
+    },
+    "speedup": 1.2308801673797143,
+    "timings": [
+      {
+        "rep": 0,
+        "implementation": "reference",
+        "wall_seconds": 10.479720300994813,
+        "cpu_seconds": 10.477928327999997,
+        "root": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/whole-census-control-v1/rep0-reference"
+      },
+      {
+        "rep": 0,
+        "implementation": "fused",
+        "wall_seconds": 7.8794142480473965,
+        "cpu_seconds": 7.878657121,
+        "root": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/whole-census-control-v1/rep0-fused"
+      },
+      {
+        "rep": 1,
+        "implementation": "fused",
+        "wall_seconds": 7.867730763042346,
+        "cpu_seconds": 7.867205859000002,
+        "root": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/whole-census-control-v1/rep1-fused"
+      },
+      {
+        "rep": 1,
+        "implementation": "reference",
+        "wall_seconds": 8.903128186007962,
+        "cpu_seconds": 8.902692088000002,
+        "root": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/whole-census-control-v1/rep1-reference"
+      }
+    ],
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prospective-fractions-packaged-v1/whole-census-control-v1/review.json",
+      "sha256": "c37f404bbfc4bf2468a9da2e01615454e2b619d4f9d74367c8defcdfaf16eec0"
+    }
+  },
+  "gold_fixture": {
+    "path": "post_boi/fixtures/aperture-fractions-v1.npz",
+    "sha256": "45be92fea3aa21745ca3e1e1d8a5ecab151e9bd4049dbd78f60fc1f7d5291b35"
+  },
+  "checks": [
+    "16 post_boi tests including frozen real-scene gold and adapter/freeze wiring",
+    "ruff check --ignore C408 post_boi (existing dict-call style retained)",
+    "ruff check --select C901 --config lint.mccabe.max-complexity=10 post_boi",
+    "git diff --check"
+  ],
+  "scope": "Performance-only arithmetic fusion with unchanged source order and strict floating evaluation. No model, priors, seeds, batching, attempted-draw count, screening, concurrency or validation threshold change. Old frozen studies retain their runtime. No candidate production job was resumed. Bounded control timings do not predict full 1,000,000-draw or twenty-repeat completion time."
+}

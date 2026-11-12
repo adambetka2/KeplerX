@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "name": "J1407",
+  "reference_class": "Complex ring-system-candidate occultation",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "One complex, prolonged dimming episode with many sharp substructures.",
+  "lookalikes": [
+    "circumstellar dust",
+    "blended eclipses",
+    "other irregular obscuration"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "SuperWASP; red measurements and green ring-model curve. Model-only geometry and proposed ring properties are excluded. The ring-system interpretation is a hypothesis."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "event_duration": {
+      "value": 56,
+      "unit": "d",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "maximum_dimming": {
+      "value": 0.95,
+      "unit": "relative flux",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1501.05652",
+    "pdf_url": "https://arxiv.org/pdf/1501.05652",
+    "pdf_page_one_based": 8,
+    "figure": "4",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "f8cc4c05de4a8270473542cd782aaa5f8d668c40bdeef86a94314a5a4c07fba6",
+    "page_crop_fraction_xyxy": [
+      0.17,
+      0.16,
+      0.82,
+      0.77
+    ],
+    "image_sha256": "5e7f92649d54d71aa8e9d28e8808cc2b3a745e4735411dc02ed6d428b21e9985"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

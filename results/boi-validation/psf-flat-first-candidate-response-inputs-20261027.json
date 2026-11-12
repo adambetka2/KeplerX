@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-27T09:15:07.136546+00:00",
+  "source_id": "2079714428492352768",
+  "signal_id": "shallow-v1-2079714428492352768-1",
+  "source_kic": 8573780,
+  "parent_kic": 8573783,
+  "quarter": 5,
+  "channel": 67,
+  "batch": 6,
+  "state": "CANDIDATE_SPECIFIC_RECONSTRUCTION_RUNNING",
+  "published_tpfs": 197,
+  "payloads_exact": 197,
+  "compressed_crc_and_raw_hdu_checksums_passed": true,
+  "readonly_payloads": true,
+  "reader_control": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/input-controls-v1/reader-control.json",
+    "sha256": "eaf8175d9b7a9867ff9b8fda06aac68ce6e67ec48d83b857ad8634148c6be8ed"
+  },
+  "instrument_inputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/input-controls-v1/result.json",
+    "sha256": "19325310851480d93bbe171aea1f20b038e334e448a1055a406f61aea02d72bb"
+  },
+  "cbv_control": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/cbv-control-v1.json",
+    "sha256": "fb16a006f853da59331a6d233893ef791af9b2d608f59d47477e51a6117a668c"
+  },
+  "staged_inputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/result.json",
+    "sha256": "a43d28ac08d10d6fe1d374da48ba66a17352f9544d01073ab9f3c089ad9fbedf"
+  },
+  "reconstruction": {
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1-replay-launch/launch.json",
+      "sha256": "3bb10971ebb308458b02c9e5bfafa1398f912ff40263b92bf391a1785d902cac"
+    },
+    "allocation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/replay-v1/allocation.json",
+      "sha256": "d0267c703ea98a3146791a3828b33b5322d7502f5cd152d416acfd88dcd3f99c"
+    },
+    "manifest": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/replay-v1/manifest.json",
+      "sha256": "e2e978ea4b18a1c3bae8b2c0ee7e56c632d8244716c3c549724eee8bed8ffc7d"
+    },
+    "namespace_preflight": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/replay-v1/namespace-preflight.json",
+      "sha256": "740a3dcd8fc3daaf8014129c0f1242695a03232bd67a3a549b4de9b8127163f3"
+    },
+    "live_python_processes": [
+      "95230     1   0.0       01:55 uv run --no-project --python /Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/extraction-runtime-v3/bin/python python -B /Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/replay_8573780_q05_response_v1.py",
+      "95232 95230 598.3       01:55 /Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/extraction-runtime-v3/bin/python -B /Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/replay_8573780_q05_response_v1.py"
+    ],
+    "threads": 6,
+    "idle_cores_at_admission": 9.096,
+    "os_available_bytes_estimate": 10136122818.56,
+    "authored_scientific_prefix_matches_completed_control": true
+  },
+  "native_transit_refits_started": 0,
+  "boi_fpp_jobs_started": 0,
+  "probability_qualified": false,
+  "next": "Inspect the terminal reconstruction and archived PSF/Flat parity. Then calibrate actual target/physical-contaminant transfer and source normalization for supported quarter/clock/shape coverage; keep source ownership, noise and all physical gates explicit.",
+  "scope": "First candidate-specific response reconstruction only. Original discovery photons and all prior fits remain unchanged; neither software controls nor a reconstruction result constitutes statistical validation."
+}

@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-21T14:24:48.547311+00:00",
+  "source_id": "2102918384442366592",
+  "signal_id": "rust-v6-2102918384442366592-1",
+  "kic": 7271045,
+  "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+  "admission": "REMAINS_PC",
+  "primary": {
+    "FPP": {
+      "repeats": [
+        0.9999999999922111,
+        1.0
+      ],
+      "mean": 0.9999999999961056,
+      "sample_standard_deviation": 5.507570326570946e-12,
+      "minimum": 0.9999999999922111,
+      "maximum": 1.0,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.007741067980723618,
+        0.12402798760695545
+      ],
+      "mean": 0.06588452779383953,
+      "sample_standard_deviation": 0.08222726943100354,
+      "minimum": 0.007741067980723618,
+      "maximum": 0.12402798760695545,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    }
+  },
+  "primary_repeats_completed": 2,
+  "remaining18_not_started": true,
+  "numerical_primary_pass": false,
+  "scientific_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/probability-aperture-v1/campaign/freeze.json",
+    "sha256": "97e6f33805017d390ea83a36dcf765787092781b09b6709d9748e289e176d4af"
+  },
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/probability-aperture-v1/campaign/audit-20261021T142336931174Z.json",
+      "sha256": "c7b9890accfd2b1de1c86287a7797dde3bc2041ed33aa35a3aa98c684857181d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/probability-aperture-v1/campaign/runs/final/seed-00/result.json",
+      "sha256": "454ad55787c5bde4bc8cd53a1634d78fd5fccbc032cfbce6ece1f273f32bf790"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/probability-aperture-v1/campaign/runs/final/seed-01/result.json",
+      "sha256": "e296663ecd6815886b1b217a66b47dc3c6ec7393669d201e97192a6828896e54"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/probability-aperture-v1/terminal-process-check.json",
+      "sha256": "f2a994bf755ce618392c7c8bc1655212055d014ca76c16213278def2ea58995d"
+    }
+  ],
+  "all_saved_evidence_verified": true,
+  "scope": "Completed repaired native and all18stockscenario families at1Mdraws perseed. BothFPP>=.10;fixedallocation stop,not another technicalhold. NFPPvariation retained. Same predeclaredstellarroute,physicalpriors and seed;declared identicalaperture data beforeFPP. Broadgrazing apparentbody and physicalmechanism remain conditional;no reproducedEBmechanism or RVconfirmation claimed. No remaining18,recoveredclock or favorable rescue."
+}

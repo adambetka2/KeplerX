@@ -1,0 +1,1501 @@
+{
+ "utc": "2026-10-26T00:52:38.314475+00:00",
+ "decision": "Adam, 26 October 2026: stop the queue after the 59 higher-value cases and record the low-S/N signals as not run (search S/N below 10, cannot validate under the agreed rules); keep them resumable.",
+ "category": "NOT_RUN_LOW_SNR_PARKED",
+ "reason": "Search S/N below 10 on a single host: single K/M dwarfs stop near FPP 2-4% without imaging, and validation by multiplicity needs a fitted S/N above 10 and qualifying siblings. The cases are acquired and staged; no native fit or campaign has run.",
+ "resume": "Append these case paths to queue-4.json (atomic replace) and restart tools/scheduler.py queue-4.json if it has exited.",
+ "cases": [
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100447124681568896-5",
+   "signal_id": "mk-sap-20261019-2100447124681568896-5",
+   "batch": "batch6",
+   "search_snr": 9.864264161079896
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085691786019036416-1",
+   "signal_id": "mk-sap-20261019-2085691786019036416-1",
+   "batch": "batch6",
+   "search_snr": 9.851946805875778
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2119597357358238848-1",
+   "signal_id": "mk-sap-20261019-2119597357358238848-1",
+   "batch": "batch6",
+   "search_snr": 9.315125495041006
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101795302036101760-3",
+   "signal_id": "mk-sap-20261019-2101795302036101760-3",
+   "batch": "batch6",
+   "search_snr": 9.271856154404942
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086836304602671104-1",
+   "signal_id": "mk-sap-20261019-2086836304602671104-1",
+   "batch": "batch6",
+   "search_snr": 9.190605947226564
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052822779256711808-1",
+   "signal_id": "mk-sap-20261019-2052822779256711808-1",
+   "batch": "batch6",
+   "search_snr": 9.082225441855275
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102201086244449408-1",
+   "signal_id": "mk-sap-20261019-2102201086244449408-1",
+   "batch": "batch6",
+   "search_snr": 9.072439847007765
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080325683938898432-1",
+   "signal_id": "mk-sap-20261019-2080325683938898432-1",
+   "batch": "batch6",
+   "search_snr": 8.935743743028919
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102755897242214784-1",
+   "signal_id": "mk-sap-20261019-2102755897242214784-1",
+   "batch": "batch6",
+   "search_snr": 8.789596911225132
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104112419710183296-3",
+   "signal_id": "mk-sap-20261019-2104112419710183296-3",
+   "batch": "batch6",
+   "search_snr": 8.783530843790663
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079009637241329408-2",
+   "signal_id": "mk-sap-20261019-2079009637241329408-2",
+   "batch": "batch6",
+   "search_snr": 8.62848566409711
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076866998314644480-1",
+   "signal_id": "mk-sap-20261019-2076866998314644480-1",
+   "batch": "batch6",
+   "search_snr": 8.533807634510682
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2099840744019548928-1",
+   "signal_id": "mk-sap-20261019-2099840744019548928-1",
+   "batch": "batch6",
+   "search_snr": 8.509253212074833
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052401391429650176-1",
+   "signal_id": "mk-sap-20261019-2052401391429650176-1",
+   "batch": "batch6",
+   "search_snr": 8.500864658055495
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2135245263250336896-1",
+   "signal_id": "mk-sap-20261019-2135245263250336896-1",
+   "batch": "batch6",
+   "search_snr": 8.372150929127777
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2053084218204804736-1",
+   "signal_id": "mk-sap-20261019-2053084218204804736-1",
+   "batch": "batch6",
+   "search_snr": 8.3400058550796
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2107640645144785536-1",
+   "signal_id": "mk-sap-20261019-2107640645144785536-1",
+   "batch": "batch6",
+   "search_snr": 8.25055962683069
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2051753160604610176-1",
+   "signal_id": "mk-sap-20261019-2051753160604610176-1",
+   "batch": "batch6",
+   "search_snr": 8.225873418768042
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127122891679981184-1",
+   "signal_id": "mk-sap-20261019-2127122891679981184-1",
+   "batch": "batch6",
+   "search_snr": 8.191160486979067
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101696891447214720-1",
+   "signal_id": "mk-sap-20261019-2101696891447214720-1",
+   "batch": "batch6",
+   "search_snr": 8.156626967062477
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130792550394099200-2",
+   "signal_id": "mk-sap-20261019-2130792550394099200-2",
+   "batch": "batch6",
+   "search_snr": 8.139023424899959
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078232252458378240-1",
+   "signal_id": "mk-sap-20261019-2078232252458378240-1",
+   "batch": "batch6",
+   "search_snr": 8.06366852188594
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128134614177479680-2",
+   "signal_id": "mk-sap-20261019-2128134614177479680-2",
+   "batch": "batch6",
+   "search_snr": 8.043592845528709
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131246854854532352-1",
+   "signal_id": "mk-sap-20261019-2131246854854532352-1",
+   "batch": "batch6",
+   "search_snr": 8.034560056834321
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080056990781428352-1",
+   "signal_id": "mk-sap-20261019-2080056990781428352-1",
+   "batch": "batch6",
+   "search_snr": 8.009278689622203
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100558798130147968-1",
+   "signal_id": "mk-sap-20261019-2100558798130147968-1",
+   "batch": "batch6",
+   "search_snr": 8.008997847137715
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101786093625766912-1",
+   "signal_id": "mk-sap-20261019-2101786093625766912-1",
+   "batch": "batch6",
+   "search_snr": 8.00338909357826
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073614986520024576-2",
+   "signal_id": "mk-sap-20261019-2073614986520024576-2",
+   "batch": "batch6",
+   "search_snr": 7.938766459588316
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052987224966490752-1",
+   "signal_id": "mk-sap-20261019-2052987224966490752-1",
+   "batch": "batch6",
+   "search_snr": 7.929871951047187
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130289725684926720-1",
+   "signal_id": "mk-sap-20261019-2130289725684926720-1",
+   "batch": "batch6",
+   "search_snr": 7.912754671661131
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079240642062921984-11",
+   "signal_id": "mk-sap-20261019-2079240642062921984-11",
+   "batch": "batch6",
+   "search_snr": 7.905851495318871
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2051902380646667904-1",
+   "signal_id": "mk-sap-20261019-2051902380646667904-1",
+   "batch": "batch6",
+   "search_snr": 7.900008814734817
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076797321069234816-2",
+   "signal_id": "mk-sap-20261019-2076797321069234816-2",
+   "batch": "batch6",
+   "search_snr": 7.861408378274548
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126908108955999872-1",
+   "signal_id": "mk-sap-20261019-2126908108955999872-1",
+   "batch": "batch6",
+   "search_snr": 7.840480705997608
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079240642062921984-4",
+   "signal_id": "mk-sap-20261019-2079240642062921984-4",
+   "batch": "batch6",
+   "search_snr": 7.807049288350761
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077014401590203904-1",
+   "signal_id": "mk-sap-20261019-2077014401590203904-1",
+   "batch": "batch6",
+   "search_snr": 7.805318683152287
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2087158637605945984-2",
+   "signal_id": "mk-sap-20261019-2087158637605945984-2",
+   "batch": "batch6",
+   "search_snr": 7.784853490267418
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078091858563529472-2",
+   "signal_id": "mk-sap-20261019-2078091858563529472-2",
+   "batch": "batch6",
+   "search_snr": 7.780412162778449
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2133039642922984704-1",
+   "signal_id": "mk-sap-20261019-2133039642922984704-1",
+   "batch": "batch6",
+   "search_snr": 7.777002639137431
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103719447380073344-1",
+   "signal_id": "mk-sap-20261019-2103719447380073344-1",
+   "batch": "batch6",
+   "search_snr": 7.771038347371363
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127357671771804288-1",
+   "signal_id": "mk-sap-20261019-2127357671771804288-1",
+   "batch": "batch6",
+   "search_snr": 7.769374372183893
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101507573587554176-1",
+   "signal_id": "mk-sap-20261019-2101507573587554176-1",
+   "batch": "batch6",
+   "search_snr": 7.73210131812795
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052478387302513152-7",
+   "signal_id": "mk-sap-20261019-2052478387302513152-7",
+   "batch": "batch6",
+   "search_snr": 7.727411020287738
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100146206391315072-1",
+   "signal_id": "mk-sap-20261019-2100146206391315072-1",
+   "batch": "batch6",
+   "search_snr": 7.714896771013481
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078543826571859840-1",
+   "signal_id": "mk-sap-20261019-2078543826571859840-1",
+   "batch": "batch6",
+   "search_snr": 7.7094058438927
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052130533614548352-2",
+   "signal_id": "mk-sap-20261019-2052130533614548352-2",
+   "batch": "batch6",
+   "search_snr": 7.6850205030152
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128296452838131456-1",
+   "signal_id": "mk-sap-20261019-2128296452838131456-1",
+   "batch": "batch6",
+   "search_snr": 7.682526479471414
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126899244143287168-1",
+   "signal_id": "mk-sap-20261019-2126899244143287168-1",
+   "batch": "batch6",
+   "search_snr": 7.655387543207747
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076063637566815360-1",
+   "signal_id": "mk-sap-20261019-2076063637566815360-1",
+   "batch": "batch6",
+   "search_snr": 7.639951153628897
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103790159724004352-1",
+   "signal_id": "mk-sap-20261019-2103790159724004352-1",
+   "batch": "batch6",
+   "search_snr": 7.633862507009599
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102514275259811968-1",
+   "signal_id": "mk-sap-20261019-2102514275259811968-1",
+   "batch": "batch6",
+   "search_snr": 7.629096217725253
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100952801250498432-2",
+   "signal_id": "mk-sap-20261019-2100952801250498432-2",
+   "batch": "batch6",
+   "search_snr": 7.622396208924993
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125786199078358400-2",
+   "signal_id": "mk-sap-20261019-2125786199078358400-2",
+   "batch": "batch6",
+   "search_snr": 7.616941963552193
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105649914922789376-1",
+   "signal_id": "mk-sap-20261019-2105649914922789376-1",
+   "batch": "batch6",
+   "search_snr": 7.613212136643463
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2129778418418294784-1",
+   "signal_id": "mk-sap-20261019-2129778418418294784-1",
+   "batch": "batch6",
+   "search_snr": 7.60169400028537
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078604299708716928-2",
+   "signal_id": "mk-sap-20261019-2078604299708716928-2",
+   "batch": "batch6",
+   "search_snr": 7.600879715222381
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101496303593238144-1",
+   "signal_id": "mk-sap-20261019-2101496303593238144-1",
+   "batch": "batch6",
+   "search_snr": 7.586239024898275
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-3",
+   "signal_id": "mk-sap-20261019-2085171201622187904-3",
+   "batch": "batch6",
+   "search_snr": 7.571438982627003
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105283983709212800-2",
+   "signal_id": "mk-sap-20261019-2105283983709212800-2",
+   "batch": "batch6",
+   "search_snr": 7.56457583433649
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132707556052641920-1",
+   "signal_id": "mk-sap-20261019-2132707556052641920-1",
+   "batch": "batch6",
+   "search_snr": 7.547957296059011
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-4",
+   "signal_id": "mk-sap-20261019-2085171201622187904-4",
+   "batch": "batch6",
+   "search_snr": 7.543849977738891
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101490496798027648-2",
+   "signal_id": "mk-sap-20261019-2101490496798027648-2",
+   "batch": "batch6",
+   "search_snr": 7.543002260376759
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104098740236025984-4",
+   "signal_id": "mk-sap-20261019-2104098740236025984-4",
+   "batch": "batch6",
+   "search_snr": 7.542453797290153
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052868752586501888-5",
+   "signal_id": "mk-sap-20261019-2052868752586501888-5",
+   "batch": "batch6",
+   "search_snr": 7.532959414727817
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077128441564972672-1",
+   "signal_id": "mk-sap-20261019-2077128441564972672-1",
+   "batch": "batch6",
+   "search_snr": 7.51947999039924
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101781588198479872-1",
+   "signal_id": "mk-sap-20261019-2101781588198479872-1",
+   "batch": "batch6",
+   "search_snr": 7.51386196621984
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078045679079431168-1",
+   "signal_id": "mk-sap-20261019-2078045679079431168-1",
+   "batch": "batch6",
+   "search_snr": 7.513700950890924
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102580387696949120-1",
+   "signal_id": "mk-sap-20261019-2102580387696949120-1",
+   "batch": "batch6",
+   "search_snr": 7.50795629713922
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103600077351781632-2",
+   "signal_id": "mk-sap-20261019-2103600077351781632-2",
+   "batch": "batch6",
+   "search_snr": 7.500953042926891
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102931402484312448-1",
+   "signal_id": "mk-sap-20261019-2102931402484312448-1",
+   "batch": "batch6",
+   "search_snr": 7.489288016586897
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130696063949550208-1",
+   "signal_id": "mk-sap-20261019-2130696063949550208-1",
+   "batch": "batch6",
+   "search_snr": 7.487396342920309
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2099070540423517440-1",
+   "signal_id": "mk-sap-20261019-2099070540423517440-1",
+   "batch": "batch6",
+   "search_snr": 7.484190477970651
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2129965374052952192-1",
+   "signal_id": "mk-sap-20261019-2129965374052952192-1",
+   "batch": "batch6",
+   "search_snr": 7.481372308024026
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2133013598241552512-1",
+   "signal_id": "mk-sap-20261019-2133013598241552512-1",
+   "batch": "batch6",
+   "search_snr": 7.480558864762275
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2134855001041019904-2",
+   "signal_id": "mk-sap-20261019-2134855001041019904-2",
+   "batch": "batch6",
+   "search_snr": 7.452345683763023
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2129922901116371456-1",
+   "signal_id": "mk-sap-20261019-2129922901116371456-1",
+   "batch": "batch6",
+   "search_snr": 7.451894406314123
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079696046032025216-2",
+   "signal_id": "mk-sap-20261019-2079696046032025216-2",
+   "batch": "batch6",
+   "search_snr": 7.446008452965592
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2133161516914824320-1",
+   "signal_id": "mk-sap-20261019-2133161516914824320-1",
+   "batch": "batch6",
+   "search_snr": 7.445407242163827
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106499940489473152-2",
+   "signal_id": "mk-sap-20261019-2106499940489473152-2",
+   "batch": "batch6",
+   "search_snr": 7.4346549101154356
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078812691521628928-1",
+   "signal_id": "mk-sap-20261019-2078812691521628928-1",
+   "batch": "batch6",
+   "search_snr": 7.427511773668229
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132699653313037824-1",
+   "signal_id": "mk-sap-20261019-2132699653313037824-1",
+   "batch": "batch6",
+   "search_snr": 7.423653688440388
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132685600179508608-1",
+   "signal_id": "mk-sap-20261019-2132685600179508608-1",
+   "batch": "batch6",
+   "search_snr": 7.422933942700692
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052147060648946432-1",
+   "signal_id": "mk-sap-20261019-2052147060648946432-1",
+   "batch": "batch6",
+   "search_snr": 7.416594385247543
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2051785664917654528-3",
+   "signal_id": "mk-sap-20261019-2051785664917654528-3",
+   "batch": "batch6",
+   "search_snr": 7.412369568050713
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101290007722749696-2",
+   "signal_id": "mk-sap-20261019-2101290007722749696-2",
+   "batch": "batch6",
+   "search_snr": 7.410655068861707
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101731770880606464-1",
+   "signal_id": "mk-sap-20261019-2101731770880606464-1",
+   "batch": "batch6",
+   "search_snr": 7.389888880252079
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080533908251169152-1",
+   "signal_id": "mk-sap-20261019-2080533908251169152-1",
+   "batch": "batch6",
+   "search_snr": 7.387970632700825
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078219878651924864-4",
+   "signal_id": "mk-sap-20261019-2078219878651924864-4",
+   "batch": "batch6",
+   "search_snr": 7.387827189915832
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100047589646141568-1",
+   "signal_id": "mk-sap-20261019-2100047589646141568-1",
+   "batch": "batch6",
+   "search_snr": 7.37982132466559
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100454825560519936-2",
+   "signal_id": "mk-sap-20261019-2100454825560519936-2",
+   "batch": "batch6",
+   "search_snr": 7.373925785095341
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079429517541939968-1",
+   "signal_id": "mk-sap-20261019-2079429517541939968-1",
+   "batch": "batch6",
+   "search_snr": 7.370801476257899
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128041744103181312-2",
+   "signal_id": "mk-sap-20261019-2128041744103181312-2",
+   "batch": "batch6",
+   "search_snr": 7.362108994160134
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078045679079431168-4",
+   "signal_id": "mk-sap-20261019-2078045679079431168-4",
+   "batch": "batch6",
+   "search_snr": 7.360260730125333
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2075973065307394688-2",
+   "signal_id": "mk-sap-20261019-2075973065307394688-2",
+   "batch": "batch6",
+   "search_snr": 7.359250898662784
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2075973065307394688-3",
+   "signal_id": "mk-sap-20261019-2075973065307394688-3",
+   "batch": "batch6",
+   "search_snr": 7.357447246166378
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077710568549765248-1",
+   "signal_id": "mk-sap-20261019-2077710568549765248-1",
+   "batch": "batch6",
+   "search_snr": 7.356345815108217
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132664155406348672-1",
+   "signal_id": "mk-sap-20261019-2132664155406348672-1",
+   "batch": "batch6",
+   "search_snr": 7.35327994542665
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131263686828359808-1",
+   "signal_id": "mk-sap-20261019-2131263686828359808-1",
+   "batch": "batch6",
+   "search_snr": 7.35012726558326
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127059467901330560-1",
+   "signal_id": "mk-sap-20261019-2127059467901330560-1",
+   "batch": "batch6",
+   "search_snr": 7.348201716777093
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106195066531892480-1",
+   "signal_id": "mk-sap-20261019-2106195066531892480-1",
+   "batch": "batch6",
+   "search_snr": 7.347453866833883
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103249028204312576-4",
+   "signal_id": "mk-sap-20261019-2103249028204312576-4",
+   "batch": "batch6",
+   "search_snr": 7.342239754986941
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078960743329067392-1",
+   "signal_id": "mk-sap-20261019-2078960743329067392-1",
+   "batch": "batch6",
+   "search_snr": 7.342205935844032
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2099177566706609536-1",
+   "signal_id": "mk-sap-20261019-2099177566706609536-1",
+   "batch": "batch6",
+   "search_snr": 7.326833361325493
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126264486635196544-1",
+   "signal_id": "mk-sap-20261019-2126264486635196544-1",
+   "batch": "batch6",
+   "search_snr": 7.322206684570865
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086801227608007936-1",
+   "signal_id": "mk-sap-20261019-2086801227608007936-1",
+   "batch": "batch6",
+   "search_snr": 7.312774586361281
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079173468773244672-5",
+   "signal_id": "mk-sap-20261019-2079173468773244672-5",
+   "batch": "batch6",
+   "search_snr": 7.311666812743967
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2053176925084014976-2",
+   "signal_id": "mk-sap-20261019-2053176925084014976-2",
+   "batch": "batch6",
+   "search_snr": 7.311559419504879
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105979424813844224-1",
+   "signal_id": "mk-sap-20261019-2105979424813844224-1",
+   "batch": "batch6",
+   "search_snr": 7.311306880321802
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128538242321280128-1",
+   "signal_id": "mk-sap-20261019-2128538242321280128-1",
+   "batch": "batch6",
+   "search_snr": 7.297977665099182
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076923863678888064-2",
+   "signal_id": "mk-sap-20261019-2076923863678888064-2",
+   "batch": "batch6",
+   "search_snr": 7.297524880340333
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130385490573769216-1",
+   "signal_id": "mk-sap-20261019-2130385490573769216-1",
+   "batch": "batch6",
+   "search_snr": 7.295654207657594
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2053097343624152320-1",
+   "signal_id": "mk-sap-20261019-2053097343624152320-1",
+   "batch": "batch6",
+   "search_snr": 7.29352225288315
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130376724543379712-1",
+   "signal_id": "mk-sap-20261019-2130376724543379712-1",
+   "batch": "batch6",
+   "search_snr": 7.288123541241959
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078726272474776704-2",
+   "signal_id": "mk-sap-20261019-2078726272474776704-2",
+   "batch": "batch6",
+   "search_snr": 7.287904936023556
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132102751639472128-2",
+   "signal_id": "mk-sap-20261019-2132102751639472128-2",
+   "batch": "batch6",
+   "search_snr": 7.284666517425605
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102459544497276032-1",
+   "signal_id": "mk-sap-20261019-2102459544497276032-1",
+   "batch": "batch6",
+   "search_snr": 7.278805122506502
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2087158637605945984-3",
+   "signal_id": "mk-sap-20261019-2087158637605945984-3",
+   "batch": "batch6",
+   "search_snr": 7.278704985553334
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080368569187710720-1",
+   "signal_id": "mk-sap-20261019-2080368569187710720-1",
+   "batch": "batch6",
+   "search_snr": 7.277490753832913
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132699653313037824-2",
+   "signal_id": "mk-sap-20261019-2132699653313037824-2",
+   "batch": "batch6",
+   "search_snr": 7.272375809405188
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101259118318278656-2",
+   "signal_id": "mk-sap-20261019-2101259118318278656-2",
+   "batch": "batch6",
+   "search_snr": 7.263990916604647
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052387407016236544-3",
+   "signal_id": "mk-sap-20261019-2052387407016236544-3",
+   "batch": "batch6",
+   "search_snr": 7.256174931565536
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2134798105616093696-1",
+   "signal_id": "mk-sap-20261019-2134798105616093696-1",
+   "batch": "batch6",
+   "search_snr": 7.255094826514827
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126362755487897344-1",
+   "signal_id": "mk-sap-20261019-2126362755487897344-1",
+   "batch": "batch6",
+   "search_snr": 7.25338267780064
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102701368336765312-1",
+   "signal_id": "mk-sap-20261019-2102701368336765312-1",
+   "batch": "batch6",
+   "search_snr": 7.253108405219522
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2134855001041019904-4",
+   "signal_id": "mk-sap-20261019-2134855001041019904-4",
+   "batch": "batch6",
+   "search_snr": 7.249932621652958
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080365953548890880-1",
+   "signal_id": "mk-sap-20261019-2080365953548890880-1",
+   "batch": "batch6",
+   "search_snr": 7.249506266308263
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079652615317982720-1",
+   "signal_id": "mk-sap-20261019-2079652615317982720-1",
+   "batch": "batch6",
+   "search_snr": 7.24118729277413
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073721506013269888-1",
+   "signal_id": "mk-sap-20261019-2073721506013269888-1",
+   "batch": "batch6",
+   "search_snr": 7.2354564887433614
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2053629614635355776-1",
+   "signal_id": "mk-sap-20261019-2053629614635355776-1",
+   "batch": "batch6",
+   "search_snr": 7.235363825847808
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052046004354048128-4",
+   "signal_id": "mk-sap-20261019-2052046004354048128-4",
+   "batch": "batch6",
+   "search_snr": 7.235247133077148
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125735685964343936-1",
+   "signal_id": "mk-sap-20261019-2125735685964343936-1",
+   "batch": "batch6",
+   "search_snr": 7.234175534549385
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103417661502905856-1",
+   "signal_id": "mk-sap-20261019-2103417661502905856-1",
+   "batch": "batch6",
+   "search_snr": 7.231736510502959
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126188654692933120-1",
+   "signal_id": "mk-sap-20261019-2126188654692933120-1",
+   "batch": "batch6",
+   "search_snr": 7.230625812836368
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104054214313107840-1",
+   "signal_id": "mk-sap-20261019-2104054214313107840-1",
+   "batch": "batch6",
+   "search_snr": 7.228795707039517
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104893622721003264-1",
+   "signal_id": "mk-sap-20261019-2104893622721003264-1",
+   "batch": "batch6",
+   "search_snr": 7.226493245519698
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080550881961867776-1",
+   "signal_id": "mk-sap-20261019-2080550881961867776-1",
+   "batch": "batch6",
+   "search_snr": 7.222287504273871
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052147060648946432-2",
+   "signal_id": "mk-sap-20261019-2052147060648946432-2",
+   "batch": "batch6",
+   "search_snr": 7.22004413428981
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2129100951755358336-1",
+   "signal_id": "mk-sap-20261019-2129100951755358336-1",
+   "batch": "batch6",
+   "search_snr": 7.219217841104259
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078308526777088256-1",
+   "signal_id": "mk-sap-20261019-2078308526777088256-1",
+   "batch": "batch6",
+   "search_snr": 7.218976201324538
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105155439627981312-1",
+   "signal_id": "mk-sap-20261019-2105155439627981312-1",
+   "batch": "batch6",
+   "search_snr": 7.215800383180984
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078845848666742144-1",
+   "signal_id": "mk-sap-20261019-2078845848666742144-1",
+   "batch": "batch6",
+   "search_snr": 7.213129791769864
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079450511342639872-2",
+   "signal_id": "mk-sap-20261019-2079450511342639872-2",
+   "batch": "batch6",
+   "search_snr": 7.203878953437969
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2135290583745110272-1",
+   "signal_id": "mk-sap-20261019-2135290583745110272-1",
+   "batch": "batch6",
+   "search_snr": 7.203665777107495
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126844268562210048-1",
+   "signal_id": "mk-sap-20261019-2126844268562210048-1",
+   "batch": "batch6",
+   "search_snr": 7.180292223129882
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052046004354048128-5",
+   "signal_id": "mk-sap-20261019-2052046004354048128-5",
+   "batch": "batch6",
+   "search_snr": 7.174927885783553
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102364196222606336-1",
+   "signal_id": "mk-sap-20261019-2102364196222606336-1",
+   "batch": "batch6",
+   "search_snr": 7.173409806489411
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101343673337333504-1",
+   "signal_id": "mk-sap-20261019-2101343673337333504-1",
+   "batch": "batch6",
+   "search_snr": 7.170551704823958
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078177032055736832-1",
+   "signal_id": "mk-sap-20261019-2078177032055736832-1",
+   "batch": "batch6",
+   "search_snr": 7.169273352125948
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106385282043078272-1",
+   "signal_id": "mk-sap-20261019-2106385282043078272-1",
+   "batch": "batch6",
+   "search_snr": 7.167085112528153
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125862374617349760-1",
+   "signal_id": "mk-sap-20261019-2125862374617349760-1",
+   "batch": "batch6",
+   "search_snr": 7.162558005781889
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2051785664917654528-4",
+   "signal_id": "mk-sap-20261019-2051785664917654528-4",
+   "batch": "batch6",
+   "search_snr": 7.156913787701108
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128294386959140992-2",
+   "signal_id": "mk-sap-20261019-2128294386959140992-2",
+   "batch": "batch6",
+   "search_snr": 7.156361367169543
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130782448631033856-1",
+   "signal_id": "mk-sap-20261019-2130782448631033856-1",
+   "batch": "batch6",
+   "search_snr": 7.153836292874924
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078045679079431168-5",
+   "signal_id": "mk-sap-20261019-2078045679079431168-5",
+   "batch": "batch6",
+   "search_snr": 7.153012253718723
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130318008048101632-1",
+   "signal_id": "mk-sap-20261019-2130318008048101632-1",
+   "batch": "batch6",
+   "search_snr": 7.15179639118434
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076251516627169792-2",
+   "signal_id": "mk-sap-20261019-2076251516627169792-2",
+   "batch": "batch6",
+   "search_snr": 7.149504116654315
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132887498001161088-3",
+   "signal_id": "mk-sap-20261019-2132887498001161088-3",
+   "batch": "batch6",
+   "search_snr": 7.147854183737019
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078195590617415808-2",
+   "signal_id": "mk-sap-20261019-2078195590617415808-2",
+   "batch": "batch6",
+   "search_snr": 7.1453253228307325
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2139290435246258432-1",
+   "signal_id": "mk-sap-20261019-2139290435246258432-1",
+   "batch": "batch6",
+   "search_snr": 7.144271767560596
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132664155406348672-2",
+   "signal_id": "mk-sap-20261019-2132664155406348672-2",
+   "batch": "batch6",
+   "search_snr": 7.144231704287066
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127035381724667648-2",
+   "signal_id": "mk-sap-20261019-2127035381724667648-2",
+   "batch": "batch6",
+   "search_snr": 7.142636257393324
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132758030507745920-1",
+   "signal_id": "mk-sap-20261019-2132758030507745920-1",
+   "batch": "batch6",
+   "search_snr": 7.1375382901026985
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105443065000738176-1",
+   "signal_id": "mk-sap-20261019-2105443065000738176-1",
+   "batch": "batch6",
+   "search_snr": 7.794175912383655
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106248633364018944-1",
+   "signal_id": "mk-sap-20261019-2106248633364018944-1",
+   "batch": "batch6",
+   "search_snr": 8.561919299429498
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073643097088467328-1",
+   "signal_id": "mk-sap-20261019-2073643097088467328-1",
+   "batch": "batch6",
+   "search_snr": 7.133792309485161
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052441764115512192-1",
+   "signal_id": "mk-sap-20261019-2052441764115512192-1",
+   "batch": "batch6",
+   "search_snr": 7.130796556693949
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086340390500095616-1",
+   "signal_id": "mk-sap-20261019-2086340390500095616-1",
+   "batch": "batch6",
+   "search_snr": 7.125477430675441
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052903520343327744-1",
+   "signal_id": "mk-sap-20261019-2052903520343327744-1",
+   "batch": "batch6",
+   "search_snr": 7.124338544398601
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078198232014870656-1",
+   "signal_id": "mk-sap-20261019-2078198232014870656-1",
+   "batch": "batch6",
+   "search_snr": 7.121857603337971
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127732197218050304-2",
+   "signal_id": "mk-sap-20261019-2127732197218050304-2",
+   "batch": "batch6",
+   "search_snr": 7.119966632962573
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077705169771648128-1",
+   "signal_id": "mk-sap-20261019-2077705169771648128-1",
+   "batch": "batch6",
+   "search_snr": 7.119038406281272
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126267475932376064-1",
+   "signal_id": "mk-sap-20261019-2126267475932376064-1",
+   "batch": "batch6",
+   "search_snr": 7.117456889767252
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077992211022300800-1",
+   "signal_id": "mk-sap-20261019-2077992211022300800-1",
+   "batch": "batch6",
+   "search_snr": 7.116077126742187
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052868752586501888-4",
+   "signal_id": "mk-sap-20261019-2052868752586501888-4",
+   "batch": "batch6",
+   "search_snr": 7.115670402667291
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076660461927914880-1",
+   "signal_id": "mk-sap-20261019-2076660461927914880-1",
+   "batch": "batch6",
+   "search_snr": 7.114893561174864
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052086175192865920-1",
+   "signal_id": "mk-sap-20261019-2052086175192865920-1",
+   "batch": "batch6",
+   "search_snr": 7.114288896317612
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131877046815135872-1",
+   "signal_id": "mk-sap-20261019-2131877046815135872-1",
+   "batch": "batch6",
+   "search_snr": 7.113058449439451
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128845796339643392-1",
+   "signal_id": "mk-sap-20261019-2128845796339643392-1",
+   "batch": "batch6",
+   "search_snr": 7.105042711913276
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086721856611936256-1",
+   "signal_id": "mk-sap-20261019-2086721856611936256-1",
+   "batch": "batch6",
+   "search_snr": 7.104163880269718
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2053520861759767808-2",
+   "signal_id": "mk-sap-20261019-2053520861759767808-2",
+   "batch": "batch6",
+   "search_snr": 7.103555750524288
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080003737488271232-1",
+   "signal_id": "mk-sap-20261019-2080003737488271232-1",
+   "batch": "batch6",
+   "search_snr": 7.542312225435198
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101897144296690304-4",
+   "signal_id": "mk-sap-20261019-2101897144296690304-4",
+   "batch": "batch6",
+   "search_snr": 8.637809209806917
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106132080832931712-1",
+   "signal_id": "mk-sap-20261019-2106132080832931712-1",
+   "batch": "batch6",
+   "search_snr": 7.428164014887026
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078749396579524864-1",
+   "signal_id": "mk-sap-20261019-2078749396579524864-1",
+   "batch": "batch6",
+   "search_snr": 7.401558557762749
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052802919327281280-3",
+   "signal_id": "mk-sap-20261019-2052802919327281280-3",
+   "batch": "batch6",
+   "search_snr": 7.400683044993976
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2051101901832796160-1",
+   "signal_id": "mk-sap-20261019-2051101901832796160-1",
+   "batch": "batch6",
+   "search_snr": 7.335168402209528
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132887390623346816-1",
+   "signal_id": "mk-sap-20261019-2132887390623346816-1",
+   "batch": "batch6",
+   "search_snr": 7.286535180021567
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073787609840935808-1",
+   "signal_id": "mk-sap-20261019-2073787609840935808-1",
+   "batch": "batch6",
+   "search_snr": 7.281702521738878
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2099599263776077440-1",
+   "signal_id": "mk-sap-20261019-2099599263776077440-1",
+   "batch": "batch6",
+   "search_snr": 7.222731136492162
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085288089150505600-4",
+   "signal_id": "mk-sap-20261019-2085288089150505600-4",
+   "batch": "batch6",
+   "search_snr": 7.197774360142496
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-1",
+   "signal_id": "mk-sap-20261019-2052956541719360000-1",
+   "batch": "batch7",
+   "search_snr": 8.8816239519066
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102672643595635072-2",
+   "signal_id": "mk-sap-20261019-2102672643595635072-2",
+   "batch": "batch7",
+   "search_snr": 8.698827013888529
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073168623466565248-1",
+   "signal_id": "mk-sap-20261019-2073168623466565248-1",
+   "batch": "batch7",
+   "search_snr": 8.297870316019123
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076216877703677952-1",
+   "signal_id": "mk-sap-20261019-2076216877703677952-1",
+   "batch": "batch7",
+   "search_snr": 7.99569234925764
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052844425891698944-1",
+   "signal_id": "mk-sap-20261019-2052844425891698944-1",
+   "batch": "batch7",
+   "search_snr": 7.736562746575522
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106386789574432384-1",
+   "signal_id": "mk-sap-20261019-2106386789574432384-1",
+   "batch": "batch6",
+   "search_snr": 9.907983637696836
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2119148752317213312-1",
+   "signal_id": "mk-sap-20261019-2119148752317213312-1",
+   "batch": "batch6",
+   "search_snr": 9.063410018388888
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2132102751639472128-1",
+   "signal_id": "mk-sap-20261019-2132102751639472128-1",
+   "batch": "batch6",
+   "search_snr": 8.823753305519688
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126364640975110912-1",
+   "signal_id": "mk-sap-20261019-2126364640975110912-1",
+   "batch": "batch6",
+   "search_snr": 8.785289824776093
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-9",
+   "signal_id": "mk-sap-20261019-2076573394349070464-9",
+   "batch": "batch6",
+   "search_snr": 8.585775373444012
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102335437123349248-2",
+   "signal_id": "mk-sap-20261019-2102335437123349248-2",
+   "batch": "batch6",
+   "search_snr": 8.491299132403714
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105205742286747136-1",
+   "signal_id": "mk-sap-20261019-2105205742286747136-1",
+   "batch": "batch6",
+   "search_snr": 8.466393904094746
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077858109267416064-1",
+   "signal_id": "mk-sap-20261019-2077858109267416064-1",
+   "batch": "batch6",
+   "search_snr": 8.465073971873982
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105590777515829760-1",
+   "signal_id": "mk-sap-20261019-2105590777515829760-1",
+   "batch": "batch6",
+   "search_snr": 8.403411901977336
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131942399037544064-1",
+   "signal_id": "mk-sap-20261019-2131942399037544064-1",
+   "batch": "batch6",
+   "search_snr": 8.318403915285561
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101875944342587904-1",
+   "signal_id": "mk-sap-20261019-2101875944342587904-1",
+   "batch": "batch6",
+   "search_snr": 8.30814206000181
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130172460196048896-1",
+   "signal_id": "mk-sap-20261019-2130172460196048896-1",
+   "batch": "batch6",
+   "search_snr": 8.297375175359035
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126350454701406848-1",
+   "signal_id": "mk-sap-20261019-2126350454701406848-1",
+   "batch": "batch6",
+   "search_snr": 8.025774416852828
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101742108862933376-2",
+   "signal_id": "mk-sap-20261019-2101742108862933376-2",
+   "batch": "batch6",
+   "search_snr": 7.900659382972198
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079500569178849280-1",
+   "signal_id": "mk-sap-20261019-2079500569178849280-1",
+   "batch": "batch6",
+   "search_snr": 7.849402231661908
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2116837514453906944-2",
+   "signal_id": "mk-sap-20261019-2116837514453906944-2",
+   "batch": "batch6",
+   "search_snr": 7.776551463210947
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2117299064521538944-1",
+   "signal_id": "mk-sap-20261019-2117299064521538944-1",
+   "batch": "batch6",
+   "search_snr": 7.734185060491171
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105973824176821504-1",
+   "signal_id": "mk-sap-20261019-2105973824176821504-1",
+   "batch": "batch6",
+   "search_snr": 7.539118961555794
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052805492007712640-1",
+   "signal_id": "mk-sap-20261019-2052805492007712640-1",
+   "batch": "batch6",
+   "search_snr": 7.460757630105313
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-5",
+   "signal_id": "mk-sap-20261019-2101482490978833920-5",
+   "batch": "batch6",
+   "search_snr": 9.681566236731005
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127108975982923008-3",
+   "signal_id": "mk-sap-20261019-2127108975982923008-3",
+   "batch": "batch6",
+   "search_snr": 8.752610589059667
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127108975982923008-4",
+   "signal_id": "mk-sap-20261019-2127108975982923008-4",
+   "batch": "batch6",
+   "search_snr": 8.59237448177398
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2134824283437523456-5",
+   "signal_id": "mk-sap-20261019-2134824283437523456-5",
+   "batch": "batch6",
+   "search_snr": 8.164342077085765
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130041446512200576-2",
+   "signal_id": "mk-sap-20261019-2130041446512200576-2",
+   "batch": "batch6",
+   "search_snr": 8.138451397879303
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086533565249277440-4",
+   "signal_id": "mk-sap-20261019-2086533565249277440-4",
+   "batch": "batch6",
+   "search_snr": 7.891137815705209
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127108975982923008-5",
+   "signal_id": "mk-sap-20261019-2127108975982923008-5",
+   "batch": "batch6",
+   "search_snr": 7.861036946996718
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2134824283437523456-7",
+   "signal_id": "mk-sap-20261019-2134824283437523456-7",
+   "batch": "batch6",
+   "search_snr": 7.663620991790288
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073168623466565248-3",
+   "signal_id": "mk-sap-20261019-2073168623466565248-3",
+   "batch": "batch6",
+   "search_snr": 7.588874610750399
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073168623466565248-7",
+   "signal_id": "mk-sap-20261019-2073168623466565248-7",
+   "batch": "batch6",
+   "search_snr": 7.533402288073234
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073168623466565248-4",
+   "signal_id": "mk-sap-20261019-2073168623466565248-4",
+   "batch": "batch6",
+   "search_snr": 7.512703453761755
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127108975982923008-6",
+   "signal_id": "mk-sap-20261019-2127108975982923008-6",
+   "batch": "batch6",
+   "search_snr": 7.509456797895038
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086533565249277440-5",
+   "signal_id": "mk-sap-20261019-2086533565249277440-5",
+   "batch": "batch6",
+   "search_snr": 7.498595270817062
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126586845401492480-1",
+   "signal_id": "mk-sap-20261019-2126586845401492480-1",
+   "batch": "batch6",
+   "search_snr": 7.469390235895751
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126586845401492480-2",
+   "signal_id": "mk-sap-20261019-2126586845401492480-2",
+   "batch": "batch6",
+   "search_snr": 7.438766116152967
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105665750463516800-1",
+   "signal_id": "mk-sap-20261019-2105665750463516800-1",
+   "batch": "batch6",
+   "search_snr": 7.42723577089975
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130041446512200576-4",
+   "signal_id": "mk-sap-20261019-2130041446512200576-4",
+   "batch": "batch6",
+   "search_snr": 7.355727741043012
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126586845401492480-3",
+   "signal_id": "mk-sap-20261019-2126586845401492480-3",
+   "batch": "batch6",
+   "search_snr": 7.303957030186237
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086533565249277440-1",
+   "signal_id": "mk-sap-20261019-2086533565249277440-1",
+   "batch": "batch6",
+   "search_snr": 7.294118089452213
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052844425891698944-4",
+   "signal_id": "mk-sap-20261019-2052844425891698944-4",
+   "batch": "batch6",
+   "search_snr": 7.201511167580418
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073168623466565248-6",
+   "signal_id": "mk-sap-20261019-2073168623466565248-6",
+   "batch": "batch6",
+   "search_snr": 7.1934606248136745
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130041446512200576-5",
+   "signal_id": "mk-sap-20261019-2130041446512200576-5",
+   "batch": "batch6",
+   "search_snr": 7.171323707393558
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105665750463516800-2",
+   "signal_id": "mk-sap-20261019-2105665750463516800-2",
+   "batch": "batch6",
+   "search_snr": 7.163803226272997
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086533565249277440-2",
+   "signal_id": "mk-sap-20261019-2086533565249277440-2",
+   "batch": "batch6",
+   "search_snr": 7.120561914793379
+  }
+ ],
+ "amendments": [
+  {
+   "utc": "2026-10-26T01:00:46.251468+00:00",
+   "change": "Adam, 26 October 2026: incorporate strong single-star signals. Returned to the queue: 8 parked signals whose local KBonus SAP event S/N is at least 13 (at least 10 after the measured 1.3x per-event error underestimate, mk/event-review-calibration-20261025.json) with a clean event review.",
+   "returned": [
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126063585245659136-1",
+     "signal_id": "mk-sap-20261019-2126063585245659136-1",
+     "batch": "batch6",
+     "search_snr": 9.288713943942309,
+     "local_snr": 18.472089474940077
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2",
+     "signal_id": "mk-sap-20261019-2106616626158535296-2",
+     "batch": "batch6",
+     "search_snr": 9.217932687301529,
+     "local_snr": 14.072212253483013
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8",
+     "signal_id": "mk-sap-20261019-2128554563197278080-8",
+     "batch": "batch6",
+     "search_snr": 8.816252212229811,
+     "local_snr": 14.21583843159944
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125763418571547392-2",
+     "signal_id": "mk-sap-20261019-2125763418571547392-2",
+     "batch": "batch6",
+     "search_snr": 7.858832874936795,
+     "local_snr": 13.819444745163596
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078180571109230848-1",
+     "signal_id": "mk-sap-20261019-2078180571109230848-1",
+     "batch": "batch6",
+     "search_snr": 7.773431771911898,
+     "local_snr": 41.848642967792976
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101518671782975488-3",
+     "signal_id": "mk-sap-20261019-2101518671782975488-3",
+     "batch": "batch6",
+     "search_snr": 9.971821330737514,
+     "local_snr": 17.20949957663384
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6",
+     "signal_id": "mk-sap-20261019-2101482490978833920-6",
+     "batch": "batch7",
+     "search_snr": 9.6380207898213,
+     "local_snr": 16.34375248519479
+    },
+    {
+     "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11",
+     "signal_id": "mk-sap-20261019-2101482490978833920-11",
+     "batch": "batch6",
+     "search_snr": 8.187326114893946,
+     "local_snr": 39.846432278676495
+    }
+   ]
+  }
+ ]
+}

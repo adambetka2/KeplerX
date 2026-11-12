@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-20T20:42:22.205500+00:00",
+  "source_id": "2100123494603868416",
+  "kic": 3322939,
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+  "disposition": "REMAINS_PC",
+  "native_fit_started": false,
+  "production_fpp_runs": 0,
+  "model_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100123494603868416/aperture-response-review-v3.json",
+    "sha256": "a86570967d38ba81592228d507afc7ce716c459b1d46bb39dbbf4caea549c0b4"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100123494603868416/scene-preview-review-v1.json",
+    "sha256": "58501ac4e687c85b7279a1535da442a644821865abc847db8550ec0a0c61daba"
+  },
+  "reason": "Pre-native source-response check shows material target/neighbor redistribution: Q3 Gaussian target78.85% vs calibrated dominant core64.47%,Q4 55.74% vs68.28%,Q7 78.43% vs63.69%. Dominant neighbor remains a plausible source. No full measured far-source fractions available; do not pick the favorable response or fabricate wings. The full21-source inventory and all old V1 evidence stay unchanged.",
+  "scope": "New V2 preflight only; no new native or FPP started. Old crossband pairing failure remains independently preserved; no redrawing old populations/resuming old generation. This aperture-model limitation is not a stellar-radius cutoff or reproduced FP mechanism.",
+  "next": "Next untried small-field source with known stellar parameters and authenticated target ownership; local Mac only."
+}

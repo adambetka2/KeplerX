@@ -1,0 +1,2168 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-19T16:45:05.857616+00:00",
+  "status": "DIRECTIONALLY_ALIGNED_MATERIAL_METHOD_GAPS_NOT_CLOSED",
+  "scope": "End-to-end methodological audit requested before any next candidate calculation. Frozen code, seeds, scientific inputs and previous dispositions remain unchanged.",
+  "reference": {
+    "title": "Collier et al. 2026",
+    "url": "https://arxiv.org/html/2608.21560v3",
+    "version": "v3, 2026-09-24",
+    "earlier_version_checked": "v1, 2026-08-21",
+    "foundational_reference": "https://arxiv.org/html/2002.00691",
+    "upstream_commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+    "upstream_url": "https://github.com/stevengiacalone/triceratops/tree/d20875c27d6761349cf032728bb4a59ec732a84d",
+    "exact_paper_pipeline_release_pin": "Not provided in the inspected article; no claim of bitwise paper-pipeline replication."
+  },
+  "reference_numbers": {
+    "repeats": 20,
+    "MC_draws_per_family": 1000000,
+    "FPP_mean_lt": 0.015,
+    "NFPP_mean_lt": 0.001,
+    "RUWE_le": 1.4,
+    "missing_companion_match_arcsec": 1.5,
+    "folded_epoch_ESS_ge": 100,
+    "folded_Rhat_le": 1.03,
+    "NUTS_divergent_fraction_le": 0.05,
+    "native_radius_ratio_SNR_gt": 3,
+    "BLS_SNR_ge": 7,
+    "secondary_SNR_gt": 3,
+    "secondary_depth_ratio_gt": 0.1,
+    "parity_dual_sigma_gt": 3,
+    "parity_BLS_only_sigma_gt": 10,
+    "phase_bins": 200,
+    "validation_half_window_in_durations": 2,
+    "native_half_window_in_durations": 3,
+    "native_walkers": 100,
+    "native_steps": 30000,
+    "native_burn": 5000
+  },
+  "audit_basis": {
+    "main_commit": "db53c1693ad015567a947941cbbc76625daaee33",
+    "sealed_survey_commits": [
+      "87bd04403228f3cd3a67e25e17dc9ade650662b7",
+      "a3647447180953dcbe2f8262f263fc7c20a63006"
+    ],
+    "no_unopened_sealed_benchmark_outcomes_read": true,
+    "new_candidate_campaigns_started": 0,
+    "science_source_modified": false
+  },
+  "stages": [
+    {
+      "id": "P01",
+      "reference_section": "II; III.1",
+      "reference_step": "Select unresolved targets; authenticate source identities.",
+      "stage": "Data selection",
+      "status": "ADAPTED",
+      "ours": "SpaceLab begins with a blind KBonus background-star search and a manually delivered 125-signal subset. BOI, known-planet recovery, alias, candidate and reproduced false-positive dispositions remain distinct. The reference begins with an existing candidate catalogue, so its selection and yield cannot calibrate our discovery reliability.",
+      "evidence": [
+        "docs/survey-protocol.md",
+        "results/boi-validation/boi-delivery-selection-20261011.json"
+      ]
+    },
+    {
+      "id": "P02",
+      "reference_section": "III.1",
+      "reference_step": "Use uniformly processed, quality-filtered photometry.",
+      "stage": "Data preparation",
+      "status": "JUSTIFIED_KEPLER_ADAPTATION",
+      "ours": "LC2 PSF and SAP are different extractions of the same Kepler photons. Discovery filters finite values and positive errors, preserves downward excursions, uses quarter normalization and records masks. Native follow-up authenticates raw products, long-cadence timing and live exposure. Correlated views are not multiplied as independent probability evidence.",
+      "evidence": [
+        "pipeline/photometry/lc2.py",
+        "pipeline/deterministic/run.py",
+        "docs/survey-method.md"
+      ]
+    },
+    {
+      "id": "P03",
+      "reference_section": "IV.1.1",
+      "reference_step": "Remove trends without fitting away transits.",
+      "stage": "Data preparation",
+      "status": "ADAPTED_MODEL_NEEDS_EXTERNAL_CONTROL",
+      "ours": "Our discovery median filter and later local affine-baseline treatment differ. The final likelihood applies the same frozen detrending transformation to observations and alternatives and propagates a first-order covariance. That is a defensible construction to test, but reproducing its algebra does not establish unbiased transit preservation across the KBonus regime.",
+      "evidence": [
+        "docs/survey-method.md",
+        "other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py"
+      ]
+    },
+    {
+      "id": "P04",
+      "reference_section": "IV.1.2",
+      "reference_step": "Recover ephemerides; examine aliases and detection strength.",
+      "stage": "Detection and recovery",
+      "status": "DIRECTIONALLY_ALIGNED_DIFFERENT_SEARCH",
+      "ours": "The Rust event-seeded search and shallow BLS are intentionally different discovery algorithms. They retain original clocks and harmonic hypotheses, use a MES-like threshold of 8, and have bounded development controls. Published regression and recovery evidence is useful; it is not a measured global reliability for every final BOI. The reference's narrow catalogue-centred search is a recovery operation, not an equivalent blind-survey benchmark.",
+      "evidence": [
+        "pipeline/deterministic/run.py",
+        "pipeline/shallow/README.md",
+        "docs/survey-method.md",
+        "results/boi-release-20261005.json"
+      ]
+    },
+    {
+      "id": "P05",
+      "reference_section": "IV.1.3",
+      "reference_step": "Infer folded shapes and verify sampler diagnostics.",
+      "stage": "Shape inference",
+      "status": "ADAPTED",
+      "ours": "Our original vetting fits are optimized shape comparisons rather than posterior inference. Separate native emcee/batman follow-up supplies posterior diagnostics and uncertainties. That can serve the same scientific purpose, but the workflow does not run the reference's folded NUTS stage. HMC divergence rates do not apply to emcee.",
+      "evidence": [
+        "pipeline/vetting/vetting_models.py",
+        "other/boi-validation-20261017/inputs/origin/physical-quality-summary.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/convergence.json"
+      ]
+    },
+    {
+      "id": "P06",
+      "reference_section": "IV.1.3",
+      "reference_step": "Refine timing when accumulated drift smears events.",
+      "stage": "Ephemeris recovery",
+      "status": "PARTIAL",
+      "ours": "The pipeline preserves bounded timing refinements and follow-up fits period and epoch on native times. This provides real timing evidence. It does not by itself establish that the current original-clock FPP remains below the cut when refolded at the final posterior clock.",
+      "evidence": [
+        "pipeline/vetting/vetting_signals.py",
+        "pipeline/vetting/vetting_periodic.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/map.json"
+      ]
+    },
+    {
+      "id": "P07",
+      "reference_section": "IV.2.1",
+      "reference_step": "Compare alternate events with independent noise treatments.",
+      "stage": "Orbital vetting",
+      "status": "DIFFERENT_CALIBRATED_RULE",
+      "ours": "SpaceLab uses local excess-scatter and duration-bin noise inflation, then a weighted odd/even comparison with a BIC-gain cut of 10. This is not a white-noise-only calculation, but it is not the reference's paired BLS and robust-depth decision. A passing BOI does not certify that exact measurement/decision pair.",
+      "evidence": [
+        "pipeline/vetting/vetting_models.py",
+        "pipeline/vetting/vetting_periodic.py",
+        "pipeline/vetting/vetting_disposition.py",
+        "pipeline/vetting/config.json"
+      ]
+    },
+    {
+      "id": "P08",
+      "reference_section": "IV.2.2\u2013IV.2.3",
+      "reference_step": "Screen secondary eclipses; annotate grazing shapes.",
+      "stage": "Orbital vetting",
+      "status": "DIFFERENT_RULE_NO_CONFLICT_IN_FOUR_CHECKED_CASES",
+      "ours": "Our survey secondary rule uses SNR at least 7 and depth ratio above 0.5. Existing measurements for the four studied targets do not cross the reference-like secondary arithmetic screen or show a nominal odd/even discrepancy above 3 sigma. These checks use our measured errors, not a reproduction of the paper's BLS analysis. Apparent size and grazing shape are not automatic false-positive denials.",
+      "evidence": [
+        "pipeline/vetting/config.json",
+        "pipeline/vetting/vetting_disposition.py",
+        "other/boi-validation-20261017/method-audit-20261019/admitted-signal-instrument-and-secondary-review.json"
+      ]
+    },
+    {
+      "id": "P09",
+      "reference_section": "IV.3",
+      "reference_step": "Window and compress the validation light curve.",
+      "stage": "Validation input",
+      "status": "ADAPTED",
+      "ours": "Our final original-clock packets have 200 phase bins, complete contributing baseline groups, and a fixed covariance projection. Native data and bin operators are retained, with observations reproduced to numerical precision. The fixed MAP noise/operator and information projection define a different likelihood from the stock scalar-uncertainty interface.",
+      "evidence": [
+        "other/boi-validation-20261017/further-study-20261019/goal-run/prepare_phase_packet.py",
+        "other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binned_scenario_likelihood.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/phase-packet/preparation.receipt.json"
+      ]
+    },
+    {
+      "id": "P10",
+      "reference_section": "IV.4",
+      "reference_step": "Use pixel geometry to estimate source contributions.",
+      "stage": "Localization and dilution",
+      "status": "JUSTIFIED_KEPLER_ADAPTATION_WITH_LIMITS",
+      "ours": "Kepler PRFs, proper motions, measured quarter masks and aperture responses replace TESS pixel geometry. The new target's 16 parent products and recorded SAP/background extraction equations were independently authenticated. Extended PRF wings and discrete pointing states remain adopted response models. Full counterfactual background-estimation response is explicitly unclosed.",
+      "evidence": [
+        "pipeline/vetting/kepler_prf.py",
+        "pipeline/vetting/vetting_scene_prf.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/parent-acquisition-verified-v2.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/sap-background-complete-authentication.json"
+      ]
+    },
+    {
+      "id": "P11",
+      "reference_section": "IV.4",
+      "reference_step": "Assemble catalogued stars and simulated background populations.",
+      "stage": "Stellar scene",
+      "status": "SAME_CONCEPT_DIFFERENT_PRIOR_MODEL",
+      "ours": "Our Gaia/TIC scenes and TRILEGAL populations retain all modeled resolved neighbors and unresolved configurations. KIC 4829494 uses a population-conditioned host prior, not the reference's TIC target route; two nearby giants use exact-identity seismic priors. MIST/paired-population Kepler radiometry, composite-source flux anchoring and finite stellar banks are material model choices requiring their own validation.",
+      "evidence": [
+        "other/boi-validation-20261017/further-study-20261019/goal-run/scenario_context.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/new_field_prior.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/new_field_prior_paired.py"
+      ]
+    },
+    {
+      "id": "P12",
+      "reference_section": "IV.5",
+      "reference_step": "Integrate competing planetary and stellar-eclipse configurations.",
+      "stage": "Statistical engine",
+      "status": "DIRECTIONALLY_ALIGNED_NOT_STOCK_WORKFLOW",
+      "ours": "The official pinned modules are genuine and unchanged. Our engine reuses PyTransit and several upstream priors, with separately tested vectorized versions. It replaces stock calc_probs/lnZ orchestration, stellar integration, radiometry, dilution, likelihood and sampling allocation. Existing gold checks demonstrate internal/cache/platform parity; they do not establish end-to-end equivalence to the reference pipeline.",
+      "evidence": [
+        "other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical_validation.py",
+        "other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/validation_models.py",
+        "other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/scenario_gold.py"
+      ]
+    },
+    {
+      "id": "P13",
+      "reference_section": "III.2; IV.6.3\u2013IV.6.4",
+      "reference_step": "Use measured companion limits when available.",
+      "stage": "Imaging and companions",
+      "status": "ALIGNED_NO_FABRICATED_CONSTRAINT",
+      "ours": "The studied targets have no adopted contrast curve. We retain unresolved-companion alternatives and do not interpret empty Gaia/ExoFOP rows as imaging exclusions. A no-imaging calculation is allowed; neither new AO imaging nor RV mass is an automatic prerequisite. Any future imaging constraint needs exact source, date, filter and sensitivity provenance.",
+      "evidence": [
+        "other/boi-validation-20261017/campaign-hardware-v1/audit/physical-evidence.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/current-companion-queries-v2/summary.json"
+      ]
+    },
+    {
+      "id": "P14",
+      "reference_section": "IV.6.1",
+      "reference_step": "Repeat independently and retain complete outcome distributions.",
+      "stage": "Monte Carlo census",
+      "status": "ALIGNED_WITHIN_ADOPTED_MODEL",
+      "ours": "The completed campaigns use 20 independent seeds and one million attempted draws per family. Every base and resolved-neighbor family is counted, including invalid and zero-likelihood draws; p/q weights and bounded omitted likelihoods are recorded. The completed 40-run and new 20-run audits replay saved weights. That verifies numerical accounting, not independent astrophysical calibration.",
+      "evidence": [
+        "other/boi-validation-20261017/campaign-hardware-v1/audit/final-numerical-and-physical-audit-20261018T225627229638Z.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/production/audit/final-numerical-and-physical-audit-20261019T155841561661Z.json"
+      ]
+    },
+    {
+      "id": "P15",
+      "reference_section": "IV.7",
+      "reference_step": "Classify arithmetic means using the declared cuts.",
+      "stage": "Statistical decision",
+      "status": "ALIGNED",
+      "ours": "We correctly compare the arithmetic means with FPP <0.015 and NFPP <0.001. We preserve sample SD, min/max and all unfavorable repeats. Seven individual crossings for each probability in the new study do not alone violate this mean-based rule. No new per-repeat or confidence-interval veto is introduced here.",
+      "evidence": [
+        "results/boi-validation/boi-further-study-20261019.json",
+        "other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical_validation.py"
+      ]
+    },
+    {
+      "id": "P16",
+      "reference_section": "IV.7",
+      "reference_step": "Check astrometry and unmodeled catalogued companions.",
+      "stage": "Host and scene readiness",
+      "status": "ALIGNED_FOR_STUDIED_TARGETS",
+      "ours": "The retained host RUWE values pass the declared 1.4 cut; current exact-identity companion queries are recorded. The new scene includes all 40 catalogued neighbors. This is not proof of no unresolved companion. Source counts are not treated as verified for the nine delivered-view records the earlier PSF_FLAT-only scan did not authenticate.",
+      "evidence": [
+        "other/boi-validation-20261017/inputs/origin/physical-quality-summary.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/current-companion-queries-v2/summary.json",
+        "results/boi-validation/boi-server-priorities-20261019.json"
+      ]
+    },
+    {
+      "id": "P17",
+      "reference_section": "IV.8",
+      "reference_step": "Fit native-time parameters independently and report uncertainty.",
+      "stage": "Native physical follow-up",
+      "status": "ADAPTED_DIAGNOSTICS_PASS",
+      "ours": "We use independent emcee ensembles, batman, proper local baseline priors and explicit stellar/noise assumptions. The two new native fits also pass the reference's quantile-width radius-ratio SNR definition, about 27.93 and 22.78. The adopted median/SD version differs generically. Walker counts, noise parametrization and stellar-prior integration are not identical to the reference fit.",
+      "evidence": [
+        "other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/configuration.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/tic-psf-flat/convergence.json",
+        "other/boi-validation-20261017/method-audit-20261019/ephemeris-native-and-precision-review.json"
+      ]
+    },
+    {
+      "id": "P18",
+      "reference_section": "IV.6.2; IV.7",
+      "reference_step": "Recheck final timing with other inputs fixed.",
+      "stage": "Final validation closeout",
+      "status": "MATERIAL_GAP",
+      "ours": "The reference requires both clocks; this appears in both v1 and v3. The current 40-run protocol hard-codes discovery timing and explicitly demotes final timing to sensitivity. Historical final-clock estimates for KIC 6699887 and 8745833 exist, but are not bound as exact same-model closure of the later generation. KIC 4829494 has no final-clock complete scenario calculation. Its mean-cut pass is real; full reference-method closeout is not established.",
+      "evidence": [
+        "docs/boi-validation.md",
+        "other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical-validation.json",
+        "other/boi-validation-20261017/further-study-20261019/goal-run/production-plan.json",
+        "other/boi-validation-20261017/method-audit-20261019/ephemeris-native-and-precision-review.json"
+      ]
+    },
+    {
+      "id": "P19",
+      "reference_section": "IV.7",
+      "reference_step": "Review event coverage, timing ambiguities and prior claims.",
+      "stage": "Manual scientific review",
+      "status": "PARTIAL_EVIDENCE_RETAINED",
+      "ours": "Our aliases, event membership, coverage, source localization and exact-signal catalogue ledgers go beyond a bare FPP calculation. Some unrelated BOIs retain incomplete timing or native evidence. A source-name query is not an exact-signal literature conclusion. There is no demonstrated uniform fresh alias-wide publication review for every delivered signal; novelty claims require a candidate-specific check.",
+      "evidence": [
+        "pipeline/vetting/vetting_alias.py",
+        "pipeline/vetting/catalogue_search.py",
+        "results/boi-validation/boi-catalogue-flags-20261012.json",
+        "results/boi-validation/boi-server-priorities-20261019.json"
+      ]
+    },
+    {
+      "id": "P20",
+      "reference_section": "IV.7\u2013IV.8",
+      "reference_step": "Derive sizes from the adopted physical model.",
+      "stage": "Physical characterization",
+      "status": "DIFFERENT_DECLARED_CONSTRUCTION",
+      "ours": "Our reported radii use scenario/dilution-weighted stellar distributions. The new 7.510 [6.656, 8.562] Earth-radius estimate is conditional on population priors and target-planet families; it is not the same construction as a native radius ratio times TIC radius. No universal 8-Earth-radius veto or mass requirement is imported from a sample-selection description.",
+      "evidence": [
+        "docs/boi-further-study-20261019.md",
+        "docs/boi-validation.md",
+        "results/boi-validation/boi-further-study-20261019.json"
+      ]
+    },
+    {
+      "id": "P21",
+      "reference_section": "V.3; VI.2",
+      "reference_step": "Study imaging impact and follow-up prospects.",
+      "stage": "Optional study products",
+      "status": "NOT_A_PER_CANDIDATE_VALIDATION_REQUIREMENT",
+      "ours": "An imaging-removal population experiment or JWST priority metric is not needed to establish our per-object numerical cut. Archival RV information is useful when adequate, but an RV orbit is a distinct form of confirmation and no such mass claim is made.",
+      "evidence": [
+        "docs/boi-validation.md"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "HIGH",
+      "title": "Final-clock consistency is not closed",
+      "status": "VERIFIED_REQUIREMENT_MISMATCH",
+      "evidence": "The current plans restrict the production census to discovery timing. The paper's final-clock requirement is present in both archived versions. Old passing final estimates are preserved, but matching their full model to the later freezes has not been demonstrated; the new target has no such census.",
+      "effect": "Earlier statements that final ephemerides cannot qualify the paper-based validation were too strong. Preserve all numerical outcomes and qualify the claim of complete paper replication.",
+      "action": "Prepare a separate reviewed final-clock generation with the adopted scene, priors, response, likelihood and all non-timing settings fixed. Bind usable historical checks where that identity can actually be established."
+    },
+    {
+      "id": "F02",
+      "priority": "HIGH",
+      "title": "The instrument triage gate checks availability, not its material-conflict assessment",
+      "status": "REPRODUCED_IN_MAIN_AND_BOTH_SEALED_SURVEY_VERSIONS",
+      "evidence": "A synthetic case with spatial-artifact BIC advantage 100 produces MATERIAL_CONFLICT from the released assessment, PASS from instrument_gate, and BOI from a complete otherwise-passing gate history.",
+      "effect": "The claim that this instrument assessment automatically blocks BOI assignment is not implemented. This gap does not demonstrate an artifact in a real target. All four studied targets separately reassessed as no material conflict.",
+      "action": "Enforce the existing assessment in a reviewed statistical-readiness layer and preserve original survey gate histories. Any frozen survey-code correction needs its own review and revalidation.",
+      "real_case": {
+        "boi_id": "BOI-2080481745869519488-1",
+        "kic_id": "9899369",
+        "previous_preparation_group": "UNTRIED_NATIVE_PREPARATION_POOL",
+        "audit_readiness": "INSTRUMENT_CONFLICT_REVIEW_BEFORE_VALIDATION",
+        "spatial_null_median_bic_advantage": 47.80583573503654,
+        "recorded_conflict_margin": 10,
+        "retained_disposition_unchanged": "REMAINS_PC",
+        "action": "Review the measured instrumental morphology and source attribution before statistical compute. This audit does not establish an astrophysical false-positive mechanism."
+      }
+    },
+    {
+      "id": "F03",
+      "priority": "HIGH",
+      "title": "Custom model correctness is not established by internal replay alone",
+      "status": "VERIFIED_CUSTOM_ENGINE_AND_SCOPE_OF_TESTS",
+      "evidence": "Seven vendored upstream Python modules exactly match the official pinned commit. The running engine nevertheless replaces the high-level evidence calculation and uses custom stellar banks, MIST/paired colors, quarter response, affine detrending covariance, importance sampling and numerical bounds. The 135-family gold comparison uses the same custom physical kernel on both sides.",
+      "effect": "The engine is directionally aligned and numerically reproducible. Those properties do not establish the same methods or empirical probability calibration as the reference pipeline.",
+      "action": "Add a matched-input stock-Kepler reference path on frozen known objects. First check identical physics/priors/likelihoods; then isolate and justify each deliberate amendment with paired, preserved results. Do not substitute current upstream defaults for the paper's explicit settings."
+    },
+    {
+      "id": "F04",
+      "priority": "MEDIUM",
+      "title": "Orbital screening is not the same decision procedure",
+      "status": "VERIFIED_RULE_DIFFERENCES",
+      "evidence": "The survey uses a BIC parity rule and a 7-sigma/0.5 secondary rule, with local duration-noise inflation. The paper uses different measurement/decision definitions. Existing measurements in the four studied cases show no nominal secondary or parity conflict in the checked views.",
+      "effect": "A BOI orbital PASS is not a certificate of exact paper-vetting agreement. Nor does a different calibrated rule by itself establish that the candidate is wrong.",
+      "action": "Retain the Kepler survey rules. Add a separately recorded reference-style cross-check for statistical readiness, preserving disagreements and incomplete coverage rather than relabeling old outcomes."
+    },
+    {
+      "id": "F05",
+      "priority": "MEDIUM",
+      "title": "The newest probability estimate has weak effective-weight precision",
+      "status": "VERIFIED_NUMERICAL_DIAGNOSTIC_NOT_NEW_VETO",
+      "evidence": "KIC 4829494 has target-planet weight ESS 2.68\u20138.45 per repeat, maximum single normalized weight 0.569, and seven crossings for each probability. The mean margins are approximately 0.59 and 0.83 between-run standard errors.",
+      "effect": "The declared mean rule passes. It should not be described as a precise or robustly separated probability estimate. The omitted-likelihood bound does not bound sampling, grid, prior or model uncertainty.",
+      "action": "Preserve all 20 results. Diagnose proposal/support and numerical sensitivity under a reviewed new recipe, rather than selecting seeds or repeating until favorable. Keep precision diagnostics distinct from any admission criterion."
+    },
+    {
+      "id": "F06",
+      "priority": "MEDIUM",
+      "title": "Evidence coverage is bounded, not uniformly complete for all 125 signals",
+      "status": "VERIFIED_SCOPE_LIMIT",
+      "evidence": "The source-scene census only searched original PSF_FLAT records; nine delivered QDIAG signals remain unauthenticated by that scan. Exact-host catalogue and literature work has varying dates and depths. Published development controls and regression receipts do not measure global final-catalogue reliability.",
+      "effect": "These are scoped evidence gaps, not false-positive denials. They do not require blocking already authenticated first-batch sources while every other host is reviewed. This audit additionally found one selected QDIAG signal absent from an authenticated same-host PSF_FLAT record: host-level hash matching is insufficient for per-signal view authentication.",
+      "action": "Before each future candidate, authenticate its actual delivered view and exact signal, review alias-wide catalogues/literature and observed coverage, and record the relevant calibration boundary.",
+      "additional_signal_binding_gap": {
+        "boi_id": "BOI-2077967368932890752-6",
+        "status": "EXACT_SIGNAL_NOT_UNIQUE",
+        "matches": 0
+      }
+    }
+  ],
+  "upstream_software": {
+    "utc": "2026-10-19T16:22:45.614252+00:00",
+    "url": "https://codeload.github.com/stevengiacalone/triceratops/tar.gz/d20875c27d6761349cf032728bb4a59ec732a84d",
+    "archive_sha256": "cf724b323627633005d9ebc9c20164ac50bf2b7332e9b68f4ea5ed6f1d9c0a81",
+    "comparison": [
+      {
+        "path": "triceratops/__init__.py",
+        "official_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "identical": true
+      },
+      {
+        "path": "triceratops/_numerics.py",
+        "official_sha256": "ebb567d0bf2e411605eb6462c7466a3a7e7dedad47616762a4fffc3cbe3cee0e",
+        "retained_sha256": "ebb567d0bf2e411605eb6462c7466a3a7e7dedad47616762a4fffc3cbe3cee0e",
+        "identical": true
+      },
+      {
+        "path": "triceratops/funcs.py",
+        "official_sha256": "234f18fa7fbd7ae122046dfbd50603e47a4a1eaba773a524bd42b04a0e7bdabf",
+        "retained_sha256": "234f18fa7fbd7ae122046dfbd50603e47a4a1eaba773a524bd42b04a0e7bdabf",
+        "identical": true
+      },
+      {
+        "path": "triceratops/likelihoods.py",
+        "official_sha256": "29935ef86963fa7beefac9d2c528daad0a1cc93019eafe192ae9c0da62a6b2d6",
+        "retained_sha256": "29935ef86963fa7beefac9d2c528daad0a1cc93019eafe192ae9c0da62a6b2d6",
+        "identical": true
+      },
+      {
+        "path": "triceratops/marginal_likelihoods.py",
+        "official_sha256": "45a476ea8a17453580e9f561626c229c70920c839f6837ead4804e59c43659f9",
+        "retained_sha256": "45a476ea8a17453580e9f561626c229c70920c839f6837ead4804e59c43659f9",
+        "identical": true
+      },
+      {
+        "path": "triceratops/priors.py",
+        "official_sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722",
+        "retained_sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722",
+        "identical": true
+      },
+      {
+        "path": "triceratops/triceratops.py",
+        "official_sha256": "4082f9c1ccde1c7e6998744a75060203ffaecbce59d039dca4fec7ce7e33aaeb",
+        "retained_sha256": "4082f9c1ccde1c7e6998744a75060203ffaecbce59d039dca4fec7ce7e33aaeb",
+        "identical": true
+      }
+    ],
+    "retained_extra_python": []
+  },
+  "primitive_parity": {
+    "utc": "2026-10-19T16:43:43.512814+00:00",
+    "status": "EIGHT_BOUNDED_VECTOR_TO_PINNED_SCALAR_COMPARISONS_PASS",
+    "checks": [
+      {
+        "name": "sample_q",
+        "points": 72,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 0
+      },
+      {
+        "name": "sample_q_companion",
+        "points": 72,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 0
+      },
+      {
+        "name": "lnprior_bound_TP0.3",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 8
+      },
+      {
+        "name": "lnprior_bound_TP1.0",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 8
+      },
+      {
+        "name": "lnprior_bound_TP5.0",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 16
+      },
+      {
+        "name": "lnprior_bound_EB0.3",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 0
+      },
+      {
+        "name": "lnprior_bound_EB1.0",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 2
+      },
+      {
+        "name": "lnprior_bound_EB5.0",
+        "points": 56,
+        "max_absolute_error": 0.0,
+        "nan_mask_equal": true,
+        "nonfinite_count": 8
+      }
+    ],
+    "maximum_absolute_error": 0.0,
+    "scope": "Independent scalar implementations from the official byte-identical pinned upstream source, compared with custom vector functions. This checks these primitives, not full pipeline probability calibration. No production sampling or output modified."
+  },
+  "actual_retained_record_screen": {
+    "signal_entries_examined": 116,
+    "authenticated_host_file_count": 86,
+    "matched_signal_view_counts": {
+      "psf_flat": 115
+    },
+    "exact_signal_records": 115,
+    "earlier_unverified_delivered_view_records": 9,
+    "additional_unmatched_selected_signal": [
+      {
+        "boi_id": "BOI-2077967368932890752-6",
+        "status": "EXACT_SIGNAL_NOT_UNIQUE",
+        "matches": 0
+      }
+    ],
+    "selected_signal_or_view_bindings_still_unverified": 10,
+    "instrument_assessment_counts": {
+      "ASSESSED_NO_MATERIAL_CONFLICT": 114,
+      "EXACT_SIGNAL_NOT_AVAILABLE": 1,
+      "MATERIAL_CONFLICT": 1
+    },
+    "material_instrument_conflicts": [
+      "BOI-2080481745869519488-1"
+    ],
+    "reference_like_secondary_flags": [
+      "BOI-2100442657917279616-1"
+    ],
+    "interpretation": "Stored measurements only, not a new blind calibration or reproduction of the paper's full BLS/noise measurement. No automatic denial or rewritten BOI disposition."
+  },
+  "studied_targets": [
+    {
+      "source_id": "2077554781499350144",
+      "historical_cases": [
+        {
+          "name": "tic_final",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2077554781499350144/selected-v26-tic-final-1-pool2x65536.json",
+            "sha256": "bbd98119522c7709612e33a9dc1d77bf7e670809795f60d145d99619623030af"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.004622250399429909,
+            "resolved_nfpp": 3.993224125871146e-06,
+            "eb": 3.154381678576353e-05,
+            "intended_host_planet": 0.9953777496005706
+          },
+          "draw_allocation": {
+            "selected_families": 18,
+            "selected_full_N": 135168,
+            "other_families": 192,
+            "other_full_N": 4096
+          }
+        },
+        {
+          "name": "tic_original",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2077554781499350144/selected-v26-tic-original-1-pool2x65536.json",
+            "sha256": "73598d8423aa1ddcc3ff464326e88c416a57e01ccbad8336e1a7caf0d6662239"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.0043433279995138685,
+            "resolved_nfpp": 1.3267440367677353e-05,
+            "eb": 0.0001434329593175124,
+            "intended_host_planet": 0.9956566720004825
+          },
+          "draw_allocation": {
+            "selected_families": 18,
+            "selected_full_N": 135168,
+            "other_families": 192,
+            "other_full_N": 4096
+          }
+        }
+      ],
+      "current_production_ephemeris": "DISCOVERY_ONLY",
+      "closure_status": "HISTORICAL_FINAL_EPHEMERIS_SUPPORT_EXISTS_CURRENT_GENERATION_BINDING_NOT_ESTABLISHED"
+    },
+    {
+      "source_id": "2127186564572468352",
+      "historical_cases": [
+        {
+          "name": "TIC_final_EXP_composite",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v8-tic-final-pool4x262144.json",
+            "sha256": "35033d4231856c87aaf371fbc724aebb49330034253b9cc300719b222c9a7bf7"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.008844384837384534,
+            "resolved_nfpp": 9.120578955669795e-50,
+            "eb": 3.75317214248339e-06,
+            "intended_host_planet": 0.991155615162622
+          },
+          "fullN_distribution": {
+            "65536": 102,
+            "1114112": 12
+          },
+          "scenario_count": 114,
+          "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+          "semantic_recipe": null,
+          "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+        },
+        {
+          "name": "TIC_original_EXP_composite",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-original-pool65536-4x262144.json",
+            "sha256": "07c814d8cdd69b8bfc4fac8214c6c0c3f2451885c83cb2a43ed75392ff79bd2d"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.006462409915172249,
+            "resolved_nfpp": 3.0022815336542436e-86,
+            "eb": 6.005527787914754e-12,
+            "intended_host_planet": 0.9935375900848329
+          },
+          "fullN_distribution": {
+            "65536": 102,
+            "1179648": 12
+          },
+          "scenario_count": 114,
+          "packet_sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+          "semantic_recipe": {
+            "family": "TIC",
+            "tail": "EXP_MEDIAN_FIT",
+            "smoothing": 0.1,
+            "nodes": 800,
+            "component_flux": "COMPOSITE_OBSERVED_G",
+            "noise": "FIXED_EXPORTED_MAP_SCALE",
+            "duration": "fitted-duration",
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "paired_native": false,
+            "packet_sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+            "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+          },
+          "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+        },
+        {
+          "name": "TIC_final_EXP_upstream",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-final-exp-upstream-pool2x65536-4x262144.json",
+            "sha256": "632dda43981b5787dacc3fbd90aa1fe9ab150e72beac402564e3bdf81cfcd0fd"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.008596940306787598,
+            "resolved_nfpp": 4.062239872097145e-51,
+            "eb": 9.332860672931331e-13,
+            "intended_host_planet": 0.991403059693212
+          },
+          "fullN_distribution": {
+            "4096": 102,
+            "1183744": 12
+          },
+          "scenario_count": 114,
+          "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+          "semantic_recipe": {
+            "family": "TIC",
+            "tail": "EXP_MEDIAN_FIT",
+            "smoothing": 0.1,
+            "nodes": 800,
+            "component_flux": "UPSTREAM_PRIMARY_G_ANCHOR",
+            "noise": "FIXED_EXPORTED_MAP_SCALE",
+            "duration": "fitted-duration",
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "paired_native": false,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+          },
+          "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+        },
+        {
+          "name": "TIC_final_common_noise",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-common-noise-pool3x65536-r2.json",
+            "sha256": "1cd84c581371a16b733b48df42d27e8e1f0db60365af45f3a46a8b9f0498ee56"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.007666278013025886,
+            "resolved_nfpp": 1.634831374696731e-50,
+            "eb": 8.940470541972821e-14,
+            "intended_host_planet": 0.9923337219869801
+          },
+          "fullN_distribution": {
+            "4096": 102,
+            "200704": 12
+          },
+          "scenario_count": 114,
+          "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+          "semantic_recipe": {
+            "family": "TIC",
+            "tail": "EXP_MEDIAN_FIT",
+            "smoothing": 0.1,
+            "nodes": 800,
+            "component_flux": "COMPOSITE_OBSERVED_G",
+            "noise": "COMMON_UNIFORM_LOG_SCALE_MINUS1_PLUS1",
+            "duration": "fitted-duration",
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "paired_native": false,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+          },
+          "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+        },
+        {
+          "name": "TIC_final_beta2p5_composite",
+          "receipt": {
+            "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-final-beta2p5-composite-pool65536-4x262144.json",
+            "sha256": "e288e766060fd7e18502094aecb70acb657a4ccb2f86d28afe68156a7d93a019"
+          },
+          "conditional_probabilities_fraction": {
+            "astrophysical_fpp": 0.008576987081652634,
+            "resolved_nfpp": 6.519783599546346e-53,
+            "eb": 7.071307350960162e-13,
+            "intended_host_planet": 0.9914230129183453
+          },
+          "fullN_distribution": {
+            "4096": 102,
+            "1118208": 12
+          },
+          "scenario_count": 114,
+          "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+          "semantic_recipe": {
+            "family": "TIC",
+            "tail": "MOFFAT_BETA2p5_MAX_ENVELOPE",
+            "smoothing": 0.1,
+            "nodes": 800,
+            "component_flux": "COMPOSITE_OBSERVED_G",
+            "noise": "FIXED_EXPORTED_MAP_SCALE",
+            "duration": "fitted-duration",
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "paired_native": false,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+          },
+          "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+        }
+      ],
+      "current_production_ephemeris": "DISCOVERY_ONLY",
+      "closure_status": "HISTORICAL_FINAL_EPHEMERIS_SUPPORT_EXISTS_CURRENT_GENERATION_BINDING_NOT_ESTABLISHED"
+    },
+    {
+      "source_id": "2101047904706267264",
+      "current_production_ephemeris": "DISCOVERY_ONLY",
+      "final_ephemeris_scenario_census_present": false,
+      "closure_status": "SAME_MODEL_FINAL_EPHEMERIS_CALCULATION_MISSING",
+      "numerical_means_pass": {
+        "FPP": true,
+        "NFPP": true
+      }
+    }
+  ],
+  "four_studied_signal_checks": {
+    "utc": "2026-10-19T16:26:06.622580+00:00",
+    "cases": [
+      {
+        "source_id": "2077554781499350144",
+        "period_days": 15.113702872318472,
+        "signal_id": "rust-v6-2077554781499350144-1",
+        "frozen_instrument_gate": {
+          "stage": "instrument",
+          "decision": "PASS",
+          "reason": "INSTRUMENT_MEASUREMENTS_AVAILABLE",
+          "evidence": {
+            "event_units": 86,
+            "evaluated_units": 18,
+            "rule": "Every selected event unit must have a measured instrument record"
+          }
+        },
+        "reassessed_instrument_under_current_released_rule": {
+          "status": "ASSESSED_NO_MATERIAL_CONFLICT",
+          "assessment_rule_id": "instrument-quality-spatial-null-v3",
+          "signal_id": "rust-v6-2077554781499350144-1",
+          "event_ids": [
+            "rust-v6-2077554781499350144-1-psf_flat-c0-q1:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c1-q1:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c10-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c11-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c12-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c13-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c14-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c15-q4:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c17-q4:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c18-q4:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c19-q4:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c2-q1:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c20-q4:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c21-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c22-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c23-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c24-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c25-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c26-q5:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c27-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c28-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c29-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c3-q2:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c30-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c31-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c32-q6:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c34-q7:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c35-q7:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c36-q7:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c37-q7:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c38-q7:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c4-q2:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c40-q8:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c41-q8:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c42-q8:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c43-q8:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c44-q8:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c45-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c46-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c48-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c49-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c5-q2:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c50-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c51-q9:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c52-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c53-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c54-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c55-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c56-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c57-q10:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c58-q11:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c59-q11:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c6-q2:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c60-q11:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c61-q11:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c63-q11:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c64-q12:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c66-q12:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c67-q12:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c69-q12:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c7-q2:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c70-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c71-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c72-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c73-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c74-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c75-q13:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c76-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c77-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c78-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c79-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c80-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c81-q14:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c82-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c83-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c84-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c85-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c86-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c87-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c88-q15:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c9-q3:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c90-q16:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c91-q16:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c93-q16:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c94-q16:psf_flat",
+            "rust-v6-2077554781499350144-1-psf_flat-c95-q17:psf_flat"
+          ],
+          "evidence_refs": [
+            {
+              "artifact": "/instrument",
+              "sha256": "6304693a601d487b3e2b843abd79096589e98f82ea4978989160fd53e0514eab"
+            },
+            {
+              "artifact": "/signals/0/localization/spatial_null",
+              "sha256": "9dc59c9d984953457c666e018eb2f2ca3775139fe8f58bf623b4e7eb2c15c292"
+            }
+          ],
+          "interpretation": "Measured quality and pixel-shape evidence crosses no frozen instrument conflict threshold; shared-time counts are contextual, not a veto.",
+          "automatic": true
+        },
+        "spatial_null": {
+          "status": "MEASURED",
+          "event_units": 18,
+          "median_bic_advantage": -10.710537832965047
+        },
+        "orbital_measurement_checks": [
+          {
+            "view": "psf_flat",
+            "primary_depth": 0.0011571904841463647,
+            "secondary_snr": -0.5539188522387853,
+            "secondary_to_primary": -0.01984625863165598,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.2477922233082586,
+            "odd_even_bic_gain": -6.71991804871849
+          },
+          {
+            "view": "psf_nova",
+            "primary_depth": 0.0011507771574043818,
+            "secondary_snr": -0.5877783058766225,
+            "secondary_to_primary": -0.02127274591112076,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.1713762147229758,
+            "odd_even_bic_gain": -6.90478124484833
+          },
+          {
+            "view": "psf_qdiag",
+            "primary_depth": 0.001159890242073701,
+            "secondary_snr": -0.462226386519683,
+            "secondary_to_primary": -0.01646233312713096,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.1835388779518976,
+            "odd_even_bic_gain": -6.876139205643421
+          },
+          {
+            "view": "sap_qdiag",
+            "primary_depth": 0.0010213753867658111,
+            "secondary_snr": -1.6314476616984626,
+            "secondary_to_primary": -0.0649584525810532,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.126759456603563,
+            "odd_even_bic_gain": -7.007316608221501
+          }
+        ]
+      },
+      {
+        "source_id": "2127186564572468352",
+        "period_days": 4.566536246516616,
+        "signal_id": "rust-v6-2127186564572468352-1",
+        "frozen_instrument_gate": {
+          "stage": "instrument",
+          "decision": "PASS",
+          "reason": "INSTRUMENT_MEASUREMENTS_AVAILABLE",
+          "evidence": {
+            "event_units": 123,
+            "evaluated_units": 18,
+            "rule": "Every selected event unit must have a measured instrument record"
+          }
+        },
+        "reassessed_instrument_under_current_released_rule": {
+          "status": "ASSESSED_NO_MATERIAL_CONFLICT",
+          "assessment_rule_id": "instrument-quality-spatial-null-v3",
+          "signal_id": "rust-v6-2127186564572468352-1",
+          "event_ids": [
+            "rust-v6-2127186564572468352-1-psf_flat-c0-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c1-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c10-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c100-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c11-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c12-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c122-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c124-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c125-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c126-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c127-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c128-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c129-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c130-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c131-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c132-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c133-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c134-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c135-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c136-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c138-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c139-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c14-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c140-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c141-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c142-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c143-q11:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c15-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c16-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c162-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c163-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c164-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c165-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c166-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c167-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c168-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c169-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c17-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c170-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c171-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c172-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c173-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c174-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c175-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c176-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c177-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c178-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c179-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c18-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c180-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c181-q13:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c19-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c2-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c20-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c204-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c205-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c206-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c207-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c208-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c209-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c210-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c211-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c214-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c215-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c216-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c218-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c219-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c220-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c221-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c222-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c223-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c224-q15:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c245-q17:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c246-q17:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c247-q17:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c248-q17:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c3-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c4-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c41-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c42-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c43-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c44-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c45-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c46-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c47-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c48-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c49-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c5-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c50-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c51-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c52-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c53-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c54-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c55-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c56-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c57-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c58-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c59-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c6-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c60-q7:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c7-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c8-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c80-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c81-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c82-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c83-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c84-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c85-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c86-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c87-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c88-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c89-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c9-q5:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c90-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c91-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c92-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c93-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c94-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c95-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c96-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c97-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c98-q9:psf_flat",
+            "rust-v6-2127186564572468352-1-psf_flat-c99-q9:psf_flat"
+          ],
+          "evidence_refs": [
+            {
+              "artifact": "/instrument",
+              "sha256": "6ed9a2daeb409a559da393f014bcab1067b0977bf76d48e2a1a79f107beba796"
+            },
+            {
+              "artifact": "/signals/0/localization/spatial_null",
+              "sha256": "d6a19916ed93531cf98564bf121c16844cca76d158b34d749a632077861c38ff"
+            }
+          ],
+          "interpretation": "Measured quality and pixel-shape evidence crosses no frozen instrument conflict threshold; shared-time counts are contextual, not a veto.",
+          "automatic": true
+        },
+        "spatial_null": {
+          "status": "MEASURED",
+          "event_units": 18,
+          "median_bic_advantage": -257.3497216329727
+        },
+        "orbital_measurement_checks": [
+          {
+            "view": "psf_flat",
+            "primary_depth": 0.0015483666971331032,
+            "secondary_snr": 0.4628693932059752,
+            "secondary_to_primary": 0.0030577177282216047,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.5119509116917835,
+            "odd_even_bic_gain": -6.352884150307222
+          },
+          {
+            "view": "psf_nova",
+            "primary_depth": 0.0015539215091015862,
+            "secondary_snr": 0.06887399012789021,
+            "secondary_to_primary": 0.00044593332247278337,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.7641126247758976,
+            "odd_even_bic_gain": -6.078350387368019
+          },
+          {
+            "view": "psf_qdiag",
+            "primary_depth": 0.001549736898800693,
+            "secondary_snr": 0.5044515382983079,
+            "secondary_to_primary": 0.003256941913267808,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 2.3574855627795235,
+            "odd_even_bic_gain": -3.632705561547839
+          },
+          {
+            "view": "sap_qdiag",
+            "primary_depth": 0.0015812734394659651,
+            "secondary_snr": -0.07812297570028562,
+            "secondary_to_primary": -0.0004906039285987596,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.7328995106414466,
+            "odd_even_bic_gain": -6.1875030262803605
+          }
+        ]
+      },
+      {
+        "source_id": "2127169041106093184",
+        "period_days": 5.905339659659415,
+        "signal_id": "rust-v6-2127169041106093184-1",
+        "frozen_instrument_gate": {
+          "stage": "instrument",
+          "decision": "PASS",
+          "reason": "INSTRUMENT_MEASUREMENTS_AVAILABLE",
+          "evidence": {
+            "event_units": 202,
+            "evaluated_units": 18,
+            "rule": "Every selected event unit must have a measured instrument record"
+          }
+        },
+        "reassessed_instrument_under_current_released_rule": {
+          "status": "ASSESSED_NO_MATERIAL_CONFLICT",
+          "assessment_rule_id": "instrument-quality-spatial-null-v3",
+          "signal_id": "rust-v6-2127169041106093184-1",
+          "event_ids": [
+            "rust-v6-2127169041106093184-1-psf_flat-c0-q1:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c1-q1:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c10-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c102-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c103-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c104-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c105-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c107-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c108-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c109-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c11-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c110-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c111-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c112-q8:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c114-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c115-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c116-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c117-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c118-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c119-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c12-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c121-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c122-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c123-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c124-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c126-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c127-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c128-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c129-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c13-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c130-q9:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c131-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c132-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c133-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c134-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c135-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c136-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c137-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c138-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c139-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c14-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c145-q10:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c148-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c149-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c15-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c150-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c151-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c152-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c153-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c154-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c155-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c156-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c158-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c159-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c160-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c161-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c162-q11:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c164-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c165-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c167-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c168-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c169-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c17-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c170-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c171-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c172-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c173-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c175-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c176-q12:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c179-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c18-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c180-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c181-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c182-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c183-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c184-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c185-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c186-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c187-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c188-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c189-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c19-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c190-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c191-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c192-q13:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c193-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c194-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c195-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c197-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c199-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c2-q1:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c200-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c201-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c202-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c204-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c205-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c208-q14:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c21-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c210-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c211-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c212-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c213-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c214-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c215-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c216-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c218-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c219-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c22-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c221-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c222-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c223-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c224-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c225-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c226-q15:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c227-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c229-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c23-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c230-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c231-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c232-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c233-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c234-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c235-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c236-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c237-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c238-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c239-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c24-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c240-q16:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c241-q17:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c242-q17:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c243-q17:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c244-q17:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c246-q17:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c25-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c26-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c27-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c28-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c29-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c3-q1:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c30-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c31-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c32-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c33-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c34-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c35-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c36-q3:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c37-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c38-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c39-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c4-q1:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c40-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c41-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c42-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c43-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c44-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c45-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c46-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c47-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c48-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c49-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c50-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c51-q4:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c53-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c54-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c55-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c56-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c57-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c58-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c59-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c6-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c60-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c61-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c62-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c63-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c64-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c65-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c66-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c67-q5:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c69-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c7-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c70-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c71-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c78-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c81-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c82-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c83-q6:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c84-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c85-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c87-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c88-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c89-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c9-q2:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c90-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c91-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c92-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c93-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c94-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c95-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c96-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c97-q7:psf_flat",
+            "rust-v6-2127169041106093184-1-psf_flat-c98-q7:psf_flat"
+          ],
+          "evidence_refs": [
+            {
+              "artifact": "/instrument",
+              "sha256": "3e84c1b5dc5bf27aba6de59e971dad638dbdef2e88b9fc7f85115e47692b4247"
+            },
+            {
+              "artifact": "/signals/0/localization/spatial_null",
+              "sha256": "00ff99ca673cfe075c834c02983299ac802e3a11dbc6468d36ad5d8e220f6232"
+            }
+          ],
+          "interpretation": "Measured quality and pixel-shape evidence crosses no frozen instrument conflict threshold; shared-time counts are contextual, not a veto.",
+          "automatic": true
+        },
+        "spatial_null": {
+          "status": "MEASURED",
+          "event_units": 17,
+          "median_bic_advantage": -2.0158681149647215
+        },
+        "orbital_measurement_checks": [
+          {
+            "view": "psf_flat",
+            "primary_depth": 0.0006409547202987173,
+            "secondary_snr": -0.6818670463126727,
+            "secondary_to_primary": -0.022781399148007142,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.3902546565825842,
+            "odd_even_bic_gain": -7.44363984475755
+          },
+          {
+            "view": "psf_nova",
+            "primary_depth": 0.0006649695853343811,
+            "secondary_snr": 0.1696874849575027,
+            "secondary_to_primary": 0.005206801948887973,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.5174032154362647,
+            "odd_even_bic_gain": -7.073935336690795
+          },
+          {
+            "view": "psf_qdiag",
+            "primary_depth": 0.0006666369004070783,
+            "secondary_snr": 0.20581809952650645,
+            "secondary_to_primary": 0.006295830652305854,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.4188848708419588,
+            "odd_even_bic_gain": -7.363213578202908
+          },
+          {
+            "view": "sap_qdiag",
+            "primary_depth": 0.00034134629218764053,
+            "secondary_snr": -0.8127930936872377,
+            "secondary_to_primary": -0.027895853981177336,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 2.2642643434644896,
+            "odd_even_bic_gain": -4.2495548378224335
+          }
+        ]
+      },
+      {
+        "source_id": "2101047904706267264",
+        "period_days": 16.10546917493381,
+        "signal_id": "rust-v6-2101047904706267264-1",
+        "frozen_instrument_gate": {
+          "stage": "instrument",
+          "decision": "PASS",
+          "reason": "INSTRUMENT_MEASUREMENTS_AVAILABLE",
+          "evidence": {
+            "event_units": 31,
+            "evaluated_units": 18,
+            "rule": "Every selected event unit must have a measured instrument record"
+          }
+        },
+        "reassessed_instrument_under_current_released_rule": {
+          "status": "ASSESSED_NO_MATERIAL_CONFLICT",
+          "assessment_rule_id": "instrument-quality-spatial-null-v3",
+          "signal_id": "rust-v6-2101047904706267264-1",
+          "event_ids": [
+            "rust-v6-2101047904706267264-1-psf_flat-c0-q0:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c1-q1:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c15-q4:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c16-q4:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c17-q4:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c18-q4:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c19-q4:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c21-q5:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c23-q5:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c24-q5:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c25-q5:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c39-q8:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c40-q8:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c41-q8:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c42-q8:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c43-q9:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c44-q9:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c46-q9:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c47-q9:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c48-q9:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c61-q12:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c62-q12:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c63-q12:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c64-q12:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c65-q12:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c66-q13:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c67-q13:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c68-q13:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c69-q13:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c70-q13:psf_flat",
+            "rust-v6-2101047904706267264-1-psf_flat-c71-q13:psf_flat"
+          ],
+          "evidence_refs": [
+            {
+              "artifact": "/instrument",
+              "sha256": "e073815de87832c0a33c728864f6eab06f739003115afee91edea9f6d08b4350"
+            },
+            {
+              "artifact": "/signals/0/localization/spatial_null",
+              "sha256": "1b9399313cdb58bf7bde7927bb7a85b3204314a4ee23f3a122a6258f47fb84f2"
+            }
+          ],
+          "interpretation": "Measured quality and pixel-shape evidence crosses no frozen instrument conflict threshold; shared-time counts are contextual, not a veto.",
+          "automatic": true
+        },
+        "spatial_null": {
+          "status": "MEASURED",
+          "event_units": 18,
+          "median_bic_advantage": -8.57246071607052
+        },
+        "orbital_measurement_checks": [
+          {
+            "view": "psf_flat",
+            "primary_depth": 0.002643431595697797,
+            "secondary_snr": 0.7586738549760114,
+            "secondary_to_primary": 0.04285258713575994,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 2.031129511069843,
+            "odd_even_bic_gain": -3.4076717167167443
+          },
+          {
+            "view": "psf_nova",
+            "primary_depth": 0.0027251442080950166,
+            "secondary_snr": -0.07579733980943622,
+            "secondary_to_primary": -0.003953607390187133,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.4592169902522367,
+            "odd_even_bic_gain": -6.3103497642662045
+          },
+          {
+            "view": "psf_qdiag",
+            "primary_depth": 0.002771590519778077,
+            "secondary_snr": 0.013827026697042511,
+            "secondary_to_primary": 0.0007028393405409783,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.3775177541977033,
+            "odd_even_bic_gain": -6.542108825777116
+          },
+          {
+            "view": "sap_qdiag",
+            "primary_depth": 0.002621268896462983,
+            "secondary_snr": -0.6996873149249904,
+            "secondary_to_primary": -0.041377993236718896,
+            "reference_secondary_flag_on_stored_measurement": false,
+            "odd_even_nominal_sigma": 1.2627689215150102,
+            "odd_even_bic_gain": -6.845078639762818
+          }
+        ]
+      }
+    ],
+    "scope": "Read-only application to existing measurements. A nominal secondary check does not reproduce the papers complete BLS and red-noise measurements. Original outcomes unchanged."
+  },
+  "native_and_precision_review": {
+    "utc": "2026-10-19T16:31:13.908132+00:00",
+    "ephemeris_cases": [
+      {
+        "source_id": "2077554781499350144",
+        "historical_cases": [
+          {
+            "name": "tic_final",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2077554781499350144/selected-v26-tic-final-1-pool2x65536.json",
+              "sha256": "bbd98119522c7709612e33a9dc1d77bf7e670809795f60d145d99619623030af"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.004622250399429909,
+              "resolved_nfpp": 3.993224125871146e-06,
+              "eb": 3.154381678576353e-05,
+              "intended_host_planet": 0.9953777496005706
+            },
+            "draw_allocation": {
+              "selected_families": 18,
+              "selected_full_N": 135168,
+              "other_families": 192,
+              "other_full_N": 4096
+            }
+          },
+          {
+            "name": "tic_original",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2077554781499350144/selected-v26-tic-original-1-pool2x65536.json",
+              "sha256": "73598d8423aa1ddcc3ff464326e88c416a57e01ccbad8336e1a7caf0d6662239"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.0043433279995138685,
+              "resolved_nfpp": 1.3267440367677353e-05,
+              "eb": 0.0001434329593175124,
+              "intended_host_planet": 0.9956566720004825
+            },
+            "draw_allocation": {
+              "selected_families": 18,
+              "selected_full_N": 135168,
+              "other_families": 192,
+              "other_full_N": 4096
+            }
+          }
+        ],
+        "current_production_ephemeris": "DISCOVERY_ONLY",
+        "closure_status": "HISTORICAL_FINAL_EPHEMERIS_SUPPORT_EXISTS_CURRENT_GENERATION_BINDING_NOT_ESTABLISHED"
+      },
+      {
+        "source_id": "2127186564572468352",
+        "historical_cases": [
+          {
+            "name": "TIC_final_EXP_composite",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v8-tic-final-pool4x262144.json",
+              "sha256": "35033d4231856c87aaf371fbc724aebb49330034253b9cc300719b222c9a7bf7"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.008844384837384534,
+              "resolved_nfpp": 9.120578955669795e-50,
+              "eb": 3.75317214248339e-06,
+              "intended_host_planet": 0.991155615162622
+            },
+            "fullN_distribution": {
+              "65536": 102,
+              "1114112": 12
+            },
+            "scenario_count": 114,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "semantic_recipe": null,
+            "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+          },
+          {
+            "name": "TIC_original_EXP_composite",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-original-pool65536-4x262144.json",
+              "sha256": "07c814d8cdd69b8bfc4fac8214c6c0c3f2451885c83cb2a43ed75392ff79bd2d"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.006462409915172249,
+              "resolved_nfpp": 3.0022815336542436e-86,
+              "eb": 6.005527787914754e-12,
+              "intended_host_planet": 0.9935375900848329
+            },
+            "fullN_distribution": {
+              "65536": 102,
+              "1179648": 12
+            },
+            "scenario_count": 114,
+            "packet_sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+            "semantic_recipe": {
+              "family": "TIC",
+              "tail": "EXP_MEDIAN_FIT",
+              "smoothing": 0.1,
+              "nodes": 800,
+              "component_flux": "COMPOSITE_OBSERVED_G",
+              "noise": "FIXED_EXPORTED_MAP_SCALE",
+              "duration": "fitted-duration",
+              "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+              "paired_native": false,
+              "packet_sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+              "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+            },
+            "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+          },
+          {
+            "name": "TIC_final_EXP_upstream",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-final-exp-upstream-pool2x65536-4x262144.json",
+              "sha256": "632dda43981b5787dacc3fbd90aa1fe9ab150e72beac402564e3bdf81cfcd0fd"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.008596940306787598,
+              "resolved_nfpp": 4.062239872097145e-51,
+              "eb": 9.332860672931331e-13,
+              "intended_host_planet": 0.991403059693212
+            },
+            "fullN_distribution": {
+              "4096": 102,
+              "1183744": 12
+            },
+            "scenario_count": 114,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "semantic_recipe": {
+              "family": "TIC",
+              "tail": "EXP_MEDIAN_FIT",
+              "smoothing": 0.1,
+              "nodes": 800,
+              "component_flux": "UPSTREAM_PRIMARY_G_ANCHOR",
+              "noise": "FIXED_EXPORTED_MAP_SCALE",
+              "duration": "fitted-duration",
+              "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+              "paired_native": false,
+              "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+              "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+            },
+            "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+          },
+          {
+            "name": "TIC_final_common_noise",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-common-noise-pool3x65536-r2.json",
+              "sha256": "1cd84c581371a16b733b48df42d27e8e1f0db60365af45f3a46a8b9f0498ee56"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.007666278013025886,
+              "resolved_nfpp": 1.634831374696731e-50,
+              "eb": 8.940470541972821e-14,
+              "intended_host_planet": 0.9923337219869801
+            },
+            "fullN_distribution": {
+              "4096": 102,
+              "200704": 12
+            },
+            "scenario_count": 114,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "semantic_recipe": {
+              "family": "TIC",
+              "tail": "EXP_MEDIAN_FIT",
+              "smoothing": 0.1,
+              "nodes": 800,
+              "component_flux": "COMPOSITE_OBSERVED_G",
+              "noise": "COMMON_UNIFORM_LOG_SCALE_MINUS1_PLUS1",
+              "duration": "fitted-duration",
+              "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+              "paired_native": false,
+              "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+              "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+            },
+            "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+          },
+          {
+            "name": "TIC_final_beta2p5_composite",
+            "receipt": {
+              "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-validation-20261011/statistical/field-2127186564572468352/selected-v16-tic-final-beta2p5-composite-pool65536-4x262144.json",
+              "sha256": "e288e766060fd7e18502094aecb70acb657a4ccb2f86d28afe68156a7d93a019"
+            },
+            "conditional_probabilities_fraction": {
+              "astrophysical_fpp": 0.008576987081652634,
+              "resolved_nfpp": 6.519783599546346e-53,
+              "eb": 7.071307350960162e-13,
+              "intended_host_planet": 0.9914230129183453
+            },
+            "fullN_distribution": {
+              "4096": 102,
+              "1118208": 12
+            },
+            "scenario_count": 114,
+            "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+            "semantic_recipe": {
+              "family": "TIC",
+              "tail": "MOFFAT_BETA2p5_MAX_ENVELOPE",
+              "smoothing": 0.1,
+              "nodes": 800,
+              "component_flux": "COMPOSITE_OBSERVED_G",
+              "noise": "FIXED_EXPORTED_MAP_SCALE",
+              "duration": "fitted-duration",
+              "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+              "paired_native": false,
+              "packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+              "closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+            },
+            "precision_scope": "Finite-bank IID/observed-repeat diagnostics. Unrefined families reuse baseline; adaptive allocation has no uniform unseen-mode exclusion guarantee."
+          }
+        ],
+        "current_production_ephemeris": "DISCOVERY_ONLY",
+        "closure_status": "HISTORICAL_FINAL_EPHEMERIS_SUPPORT_EXISTS_CURRENT_GENERATION_BINDING_NOT_ESTABLISHED"
+      },
+      {
+        "source_id": "2101047904706267264",
+        "current_production_ephemeris": "DISCOVERY_ONLY",
+        "final_ephemeris_scenario_census_present": false,
+        "closure_status": "SAME_MODEL_FINAL_EPHEMERIS_CALCULATION_MISSING",
+        "numerical_means_pass": {
+          "FPP": true,
+          "NFPP": true
+        }
+      }
+    ],
+    "new_native_reference_snr": [
+      {
+        "case": "tic-sap-all",
+        "radius_ratio_quantiles_16_50_84": [
+          0.04936257909935235,
+          0.05125924828078916,
+          0.05303366799567784
+        ],
+        "reference_snr_median_over_half16_84_width": 27.92590957527408,
+        "reference_snr_gt3": true,
+        "adopted_median_over_std": 27.704681531377368,
+        "Rhat": 1.0126529380386542,
+        "epoch_ESS": 626.9783436360212,
+        "source_sha256": "f899232d4386a4c3e1ac9075ab7bdc9f967667fa427e56d98131d72a2fda9a77"
+      },
+      {
+        "case": "tic-psf-flat",
+        "radius_ratio_quantiles_16_50_84": [
+          0.04873564125563263,
+          0.05103495365196583,
+          0.053215812202041884
+        ],
+        "reference_snr_median_over_half16_84_width": 22.782592120896222,
+        "reference_snr_gt3": true,
+        "adopted_median_over_std": 22.44706059593593,
+        "Rhat": 1.019064930229316,
+        "epoch_ESS": 282.9445087609819,
+        "source_sha256": "b9a88b6f5d0198447a144bf963e868699e910b7a50a8bfd02b1acfae7de911a7"
+      }
+    ],
+    "new_mean_precision": {
+      "FPP": {
+        "mean": 0.013325335770597335,
+        "sample_sd": 0.012696967030484072,
+        "standard_error_from_between_run_scatter": 0.0028391281388236026,
+        "threshold_minus_mean": 0.0016746642294026646,
+        "margin_in_between_run_SEM": 0.589851583837482,
+        "unfavorable_run_indices": [
+          0,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15
+        ],
+        "scope": "Diagnostic only. The reference classifies the arithmetic means; this review imposes no new confidence-interval or per-repeat veto."
+      },
+      "NFPP": {
+        "mean": 0.0009308340408758588,
+        "sample_sd": 0.000372866564136139,
+        "standard_error_from_between_run_scatter": 8.33754983945192e-05,
+        "threshold_minus_mean": 6.916595912414127e-05,
+        "margin_in_between_run_SEM": 0.8295717621603805,
+        "unfavorable_run_indices": [
+          4,
+          7,
+          9,
+          13,
+          14,
+          17,
+          18
+        ],
+        "scope": "Diagnostic only. The reference classifies the arithmetic means; this review imposes no new confidence-interval or per-repeat veto."
+      }
+    },
+    "upstream_weight_concentration": {
+      "TP_effective_draws": {
+        "count": 20,
+        "mean": 5.3512763769379115,
+        "sample_standard_deviation": 1.5378863401459746,
+        "minimum": 2.68085867143012,
+        "maximum": 8.445422170692662
+      },
+      "TP_maximum_weight": {
+        "count": 20,
+        "mean": 0.34821187108007845,
+        "sample_standard_deviation": 0.10092425108859789,
+        "minimum": 0.24967041678505417,
+        "maximum": 0.5690158399224674
+      },
+      "maximum_bounded_posterior_mass_upper": 1.1475439963259713e-22
+    },
+    "scope": "Historical sensitivity computations are evidence, but neither prose nor an old passing estimate proves same-model final-clock closure for a later frozen generation. No existing outcome is rewritten."
+  },
+  "future_queue_readiness_overlays": [
+    {
+      "boi_id": "BOI-2080481745869519488-1",
+      "kic_id": "9899369",
+      "previous_preparation_group": "UNTRIED_NATIVE_PREPARATION_POOL",
+      "audit_readiness": "INSTRUMENT_CONFLICT_REVIEW_BEFORE_VALIDATION",
+      "spatial_null_median_bic_advantage": 47.80583573503654,
+      "recorded_conflict_margin": 10,
+      "retained_disposition_unchanged": "REMAINS_PC",
+      "action": "Review the measured instrumental morphology and source attribution before statistical compute. This audit does not establish an astrophysical false-positive mechanism."
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-6",
+      "kic_id": "7373485",
+      "audit_readiness": "AUTHENTICATE_SELECTED_VIEW_AND_EXACT_SIGNAL",
+      "retained_disposition_unchanged": "REMAINS_PC",
+      "action": "The exact host PSF_FLAT copy contains no signal at the selected QDIAG period. Obtain the actual delivered view and source receipt. This is not evidence that the signal or data are absent."
+    },
+    {
+      "boi_id": "BOI-2100442657917279616-1",
+      "kic_id": null,
+      "audit_readiness": "REVIEW_EXISTING_SECONDARY_AND_CONTAMINATION_COMPONENT",
+      "retained_disposition_unchanged": "REMAINS_PC_CONTAMINATED",
+      "action": "Already unresolved/contaminated. Reproduce the relevant orbital and residual-source measurements before interpreting another planet calculation."
+    }
+  ],
+  "claim_scope": "The completed runs prove their recorded mean-cut outcomes under the frozen adapted models. Full paper-equivalent validation is not yet demonstrated, particularly for KIC 4829494's missing final-clock calculation. No numerical outcome is erased, no planet is denied, and no new candidate is launched.",
+  "correction": "The earlier claim of full reference-method closeout for KIC 4829494 was too strong. Its complete frozen mean-threshold result remains valid as recorded, but the reference's final-clock requirement and broader method-equivalence assessment are not closed.",
+  "next_actions": [
+    "Record the current instrument assessment explicitly in validation readiness, with a preserved synthetic conflict control and real-candidate checks.",
+    "Build a pinned, matched-input reference comparison and document each deliberate Kepler likelihood/prior amendment.",
+    "Close final-clock consistency using exactly the adopted model; bind historical equivalents only when full identity is demonstrable.",
+    "Cross-check orbital measurements using the reference definitions and retain the existing calibrated survey decisions.",
+    "Review the new target's sparse-weight precision without changing mean cuts or selecting favorable repeats.",
+    "Authenticate the selected candidate's true view and complete its dated exact-signal/alias literature and companion record before launch."
+  ],
+  "not_required": [
+    "A new radial-velocity mass for every statistical validation",
+    "High-resolution imaging when the complete no-contrast calculation already passes",
+    "An invented universal radius cutoff",
+    "A new individual-seed or confidence-interval veto",
+    "Opening unopened sealed benchmark outcomes",
+    "Replacing the Kepler Bonus discovery algorithm with a TESS recovery search"
+  ],
+  "operational_recovery": {
+    "first_remote_quoting_failure": "source-inspection-first-failure.json",
+    "overbroad_collector": "overbroad-collector-recovery.json",
+    "compact_recovery_succeeded": true,
+    "partial_transfer_preserved": true,
+    "unrelated_server_jobs_unchanged": true
+  },
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/docs/boi-further-study-20261019.md",
+      "sha256": "d9885aadf0059d032bbab9a1037b12cb1923bf6d763de01f760374ed6b6c4f9e",
+      "bytes": 3728
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/docs/boi-validation.md",
+      "sha256": "cc423be837f91e731a40d137187f5d0d09a96b0f12a043aa560a2d9c488b390e",
+      "bytes": 33613
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/docs/survey-method.md",
+      "sha256": "4c72c53febd2f7d0e7775090b1ee491570412caefbf2436a5884e526348a1190",
+      "bytes": 23347
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/docs/survey-protocol.md",
+      "sha256": "fd512c3d9e2f80325b4434d12def75f68ba05ac398ef602d9d479683cacf071b",
+      "bytes": 5773
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/audit/final-numerical-and-physical-audit-20261018T225627229638Z.json",
+      "sha256": "3dd75241551a8170aa41b6feedece576b5c341a7f223925af07c7e6f3cdd101b",
+      "bytes": 208038
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/audit/physical-evidence.json",
+      "sha256": "639be7f773527ac68dfd69b04ad2c71ba215cdc0807cbd4950ed2a6ab4069bf5",
+      "bytes": 57626
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/current-companion-queries-v2/summary.json",
+      "sha256": "c1fd0f0765a720d9111d1000634c64380d00eda06ccd7a2b1589a2a5ece8e0b0",
+      "bytes": 1300
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/new_field_prior.py",
+      "sha256": "12d1caa0898170e7d231f08bbe1d0a3ebbf4e6d867b08eb1aa5f51762d9d2399",
+      "bytes": 4288
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/new_field_prior_paired.py",
+      "sha256": "63e26a0ef4b2cf39ccbc521c7cc2ea23cb99a945b3cd35c7d41982f4ff599285",
+      "bytes": 1402
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/parent-acquisition-verified-v2.json",
+      "sha256": "0488f0e1ec31802ff609d4c15150d5101e007581e270a773e12625136b019742",
+      "bytes": 43032
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/phase-packet/preparation.receipt.json",
+      "sha256": "9f4abb00ef58607dac93bb36f6d2086d2e9597358956bdf1d9a3f67d2d328b32",
+      "bytes": 18889
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/prepare_phase_packet.py",
+      "sha256": "c350507aa54de8f8e93976e5118bb5332c0b619a4d0743061dcca8576cd3c8d5",
+      "bytes": 5279
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/audit/final-numerical-and-physical-audit-20261019T155841561661Z.json",
+      "sha256": "b9f132610d8b20cc8da786494ae038a085bb6cda8ae727049c2a674a0b696e8e",
+      "bytes": 3905153
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production-plan.json",
+      "sha256": "eed7fa52e328e4f6e3500b1fd6f565347d094bcffee0faf53e1e473e30439e88",
+      "bytes": 1026
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/sap-background-complete-authentication.json",
+      "sha256": "c95818969f13ead6464c8b87177dfb2f505bd09c8c53423ccd4ad5e7f6e69dc1",
+      "bytes": 3655
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/scenario_context.py",
+      "sha256": "75bc67928b6698ee65eb94817b2e746febc7b29cef92d8c1ce1c7a3bdf0eea37",
+      "bytes": 1563
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/scenario_gold.py",
+      "sha256": "5ef52b818437b10c1a50df0b2cfd95a1805a5e6eb1294695fd1f6071da8f0b23",
+      "bytes": 2888
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-psf-flat/convergence.json",
+      "sha256": "b9a88b6f5d0198447a144bf963e868699e910b7a50a8bfd02b1acfae7de911a7",
+      "bytes": 4750
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/configuration.json",
+      "sha256": "bedf707500d79e7ece10468a3d617b7a04d24783ed7849f2b44113bbddbabdb0",
+      "bytes": 8564
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/convergence.json",
+      "sha256": "f899232d4386a4c3e1ac9075ab7bdc9f967667fa427e56d98131d72a2fda9a77",
+      "bytes": 4779
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/map.json",
+      "sha256": "13fe0a8f4452a383d9cc3cde81f7f6dce85d7165c848ed0a99537957cd30876d",
+      "bytes": 2051
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binned_scenario_likelihood.py",
+      "sha256": "28e048feb9a0c1559eb2ae54cf5534d00ff659af2decf2d0b8a895ce1ecbdb7d",
+      "bytes": 9583
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+      "sha256": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+      "bytes": 8407
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+      "sha256": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+      "bytes": 4705
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/origin/physical-quality-summary.json",
+      "sha256": "312d489a445480bea3f6fc36d99b6a10dfee5b683fb04322c18280187635ca3a",
+      "bytes": 7094
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/admitted-signal-instrument-and-secondary-review.json",
+      "sha256": "481a64104ab566d39d547070d6a27a64c3f4c34356e5ef28ab74e7c125a6759f",
+      "bytes": 42750
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/all-delivery-retained-screen.json",
+      "sha256": "809110926862db69b6add1e6691fbe0c52b7407c4d744d04211196cdf31a2b8e",
+      "bytes": 132470
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/audit-notes.json",
+      "sha256": "c338b67cf911de5a6faf93d47422b04c595821f721f0834b9981372bbbb5d74b",
+      "bytes": 26895
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/build_report.py",
+      "sha256": "c3916390de0bcfd7106e014f6e2f77def1b09b24a6aa7dec19c686dcfac7fab0",
+      "bytes": 17655
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/ephemeris-native-and-precision-review.json",
+      "sha256": "b37857fe872cd494a4b313eee8b783cffbc2e9beae418e63cbe9751602487032",
+      "bytes": 13380
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/inspect_retained_sources.py",
+      "sha256": "84e65d8215a2111ccead918925cfd007de5ee07b59badce37b95e49ee0a968c5",
+      "bytes": 7187
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/instrument-gate-control.json",
+      "sha256": "60ca6e9e7556271f78550e615fd7598c5855bbbcba771e22d38a787dc2c51ef5",
+      "bytes": 3804
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/primitive-upstream-parity.json",
+      "sha256": "e587c51abab3ae68bdc9f1bcdd6d07f93ce812ce7fed3c4cc1ea7bc5da273a16",
+      "bytes": 1698
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/source-acquisition.json",
+      "sha256": "ae9362eee640f30989b2746a85f205049c93b83e54ef2265e8305b0291464eef",
+      "bytes": 4606
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/sources/collier-v1.html",
+      "sha256": "7c4f987e5089bd71f777465d1ddd81b786f3ba11bc9e0a24ad3dca3fcc97e525",
+      "bytes": 790201
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/sources/collier-v3.html",
+      "sha256": "96260b6886d32dda87706040a13c09ee869aafcd50d2b067d58539e2b4a711f4",
+      "bytes": 852659
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/sources/official-triceratops-commit.json",
+      "sha256": "f52d70ed2dfe8aef4c147180a36e09610fafb7d420b7e9a3a55df8d0a6362ff5",
+      "bytes": 211840
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/sources/triceratops-paper.html",
+      "sha256": "5d0a1bd7acf510a73c763ab1ba14e094d17938b40680318d3420223fcb894be1",
+      "bytes": 747037
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/survey-source-copy-receipt.json",
+      "sha256": "9f0f51bc17e888700f61b8addd2affbd2276a11eccb813a080e057f8bd94a39e",
+      "bytes": 1497
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/upstream-software-comparison.json",
+      "sha256": "0d059ab624e4c6e1e34dc3e8a4953164aa355aaa42f4d8542b51bb4b1f9d1663",
+      "bytes": 2166
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical-validation.json",
+      "sha256": "63066fab03484fb0046ed1901be4356aaef6d2300cf84966864f42edcef78e0b",
+      "bytes": 3553
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical_validation.py",
+      "sha256": "349ea8af55ff6a5fbfb373fa6ed2a45e11b752eff451b3ffcf77c971cc8b0b62",
+      "bytes": 26283
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/validation_models.py",
+      "sha256": "bee01d880fab4405b15b4054c21e687bc0b0e93f31614c72a158a32d4181fdb2",
+      "bytes": 12477
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/deterministic/run.py",
+      "sha256": "afc81ac2122c2ef867c5dd1f8a8c53c22436e223febb9f36c0831cf4237b5813",
+      "bytes": 95409
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/photometry/lc2.py",
+      "sha256": "33cc1d728b1c6946372341b15913c7047a0a06c89360f34ae5440b7853bbf85b",
+      "bytes": 16845
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/shallow/README.md",
+      "sha256": "18a0f2e0ecfc6c4ec533be6cd0e741a88524c4c6a7bd058a848898d0e1c93492",
+      "bytes": 1421
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/catalogue_search.py",
+      "sha256": "21cb20dad2eaa6dff62a7577facb02f6d170a84b0cebc1d58092d86b6b87f5b7",
+      "bytes": 16883
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/config.json",
+      "sha256": "79a6a93c4c41519bd40b00a99a16372e402e3d0e0ad076ca1aa92f0e56843759",
+      "bytes": 6345
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/kepler_prf.py",
+      "sha256": "2da2df2a97356c8e51302fc372a74b522fabefbc19c06f2add1bc2d8cc10b9cc",
+      "bytes": 1833
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_alias.py",
+      "sha256": "671d938b0421a2697256e67d12985924a687cbcc42f221d5b0cc679a62773e06",
+      "bytes": 14615
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_disposition.py",
+      "sha256": "01678cadf0619a894afb6e87c5d5c568d552359071a0ea8daec29a21762c74bc",
+      "bytes": 50944
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_models.py",
+      "sha256": "2ec1dcdf7427a19ffc5fb924aafc0bf0a5473725c832cdef3fdcf6dafac518f8",
+      "bytes": 26392
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_periodic.py",
+      "sha256": "cb33d3ac521fdbdc20d8d00135a3886d4d29170f8d57d8597516752c7a6f0d2b",
+      "bytes": 23628
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_scene_prf.py",
+      "sha256": "075d00d97d8a479a452b0c142492f1bf9ba50061ac37774ef3174392dc0ed3e1",
+      "bytes": 8946
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_signals.py",
+      "sha256": "34e93d84a81b756d56c26e60f863349072d2b6cd760b9b2be4010e64c131e781",
+      "bytes": 12609
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-release-20261005.json",
+      "sha256": "e3e1250d0df68c201e18204dff46a76ef83cd4fc72c0292c08845165a76531d6",
+      "bytes": 5273
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-catalogue-flags-20261012.json",
+      "sha256": "8e3ef024e684fed30d3d044b972b5cd6a57638f72e068371cf6854c38f309fd8",
+      "bytes": 125426
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-delivery-selection-20261011.json",
+      "sha256": "51a3f065e1d130ff10910bf9a5524a163e72fa517416f644ca2d965ea8de185a",
+      "bytes": 132618
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-further-study-20261019.json",
+      "sha256": "09a94a3f327e893a579adb56f56efc84adee05c3390eb76e7ac9d7d7fc7bda08",
+      "bytes": 41051
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-server-priorities-20261019.json",
+      "sha256": "5807ef365713ee9b1abe5e73a860dc6d7eebc07435359d4b5434d0ca18c0fc0e",
+      "bytes": 465554
+    }
+  ],
+  "full_audit_root": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019"
+}

@@ -1,0 +1,94 @@
+{
+  "scope": "FIXED_POSTERIOR_LIKELIHOOD_PERFORMANCE_ONLY_NO_NEW_FIT",
+  "source_id": "2076383384993192576",
+  "native_points": 326,
+  "posterior_points": 128,
+  "supersample": 20,
+  "compiler_warmup": {
+    "cpu_s": 0.28684000000000065,
+    "wall_s": 0.5046076253056526
+  },
+  "trials": [
+    {
+      "cycle": 0,
+      "mode": "stock",
+      "calls": 512,
+      "cpu_s": 0.838133,
+      "wall_s": 0.8662587506696582,
+      "log_likelihood_bitwise": true
+    },
+    {
+      "cycle": 0,
+      "mode": "native",
+      "calls": 512,
+      "cpu_s": 0.6478859999999997,
+      "wall_s": 0.7079868745058775,
+      "log_likelihood_bitwise": true
+    },
+    {
+      "cycle": 1,
+      "mode": "native",
+      "calls": 512,
+      "cpu_s": 0.5492110000000006,
+      "wall_s": 0.5583394588902593,
+      "log_likelihood_bitwise": true
+    },
+    {
+      "cycle": 1,
+      "mode": "stock",
+      "calls": 512,
+      "cpu_s": 0.8143339999999997,
+      "wall_s": 0.8233106667175889,
+      "log_likelihood_bitwise": true
+    },
+    {
+      "cycle": 2,
+      "mode": "stock",
+      "calls": 512,
+      "cpu_s": 0.802325999999999,
+      "wall_s": 0.8097173748537898,
+      "log_likelihood_bitwise": true
+    },
+    {
+      "cycle": 2,
+      "mode": "native",
+      "calls": 512,
+      "cpu_s": 0.574757,
+      "wall_s": 0.5858216248452663,
+      "log_likelihood_bitwise": true
+    }
+  ],
+  "median_cpu_s": {
+    "stock": 0.8143339999999997,
+    "native": 0.574757
+  },
+  "likelihood_cpu_speedup": 1.416831808920987,
+  "all_model_flux_and_log_likelihood_bits_equal": true,
+  "minimal_callback_pickle_bytes": 185166,
+  "input_manifest_verified_after": true,
+  "files": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/native-likelihood-01/likelihoods.npz",
+      "sha256": "0e8e95ca0d275612fceb5c4ce12cafc78564014b0804884cbb71ca9556027f19"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/native-likelihood-01/inputs.json",
+      "sha256": "12d6e71b24b3be48d8081fea9843a83d81292ae53ae043f1af876c6d13b9382c"
+    }
+  ],
+  "report_receipt": {
+    "path": "/Users/adam/Other/spacelab/other/fast-triceratops-trial-20261025/native-likelihood-01/report.json",
+    "sha256": "f8fae1a6ab1dff916b3618eb7b313fa784ec3d70abdad6118cd89657646bca6f"
+  },
+  "controls": {
+    "native_tests_passed": 46,
+    "direct_sky_and_anomaly_values": 472320,
+    "exploratory_sky_values": 312960,
+    "accepted_fit_rerun": false
+  },
+  "limits": [
+    "Fixed posterior-point likelihood replay, not a new sampler run or physical admission.",
+    "Loaded Mac, one thread at nice 19; CPU placement and frequency were not pinned.",
+    "Original reviewed getE solver and thresholds retained; future compiler versions require requalification."
+  ]
+}

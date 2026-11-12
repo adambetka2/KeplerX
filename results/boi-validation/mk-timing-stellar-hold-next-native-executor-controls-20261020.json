@@ -1,0 +1,137 @@
+{
+  "utc": "2026-10-20T11:36:58.930666+00:00",
+  "validated_new": 0,
+  "goal": 50,
+  "previous_source_hold": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-212699-v1/physical-hold-v1.json",
+    "sha256": "6278c561e64865c6e4e11567f7b226cb9266d042c8afa967accee9e4643029bd"
+  },
+  "selected_source_id": "2052478387302513152",
+  "kic": 4661212,
+  "tic": 138215498,
+  "signal_id": "mk-sap-20261019-2052478387302513152-7",
+  "membership": "NEW_BOI_SOURCE",
+  "selection": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/selection-v1.json",
+    "sha256": "ffcfa41ca4a920377edb80304c3d32a2aca2543b7762e2fcacab010e8cbcea1a"
+  },
+  "fresh_identity": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/inputs-v1/summary.json",
+    "sha256": "0fd67ae19c8e003c71a5ac59d18fddb4bccc1f5130c5f787e6d6c749c891a0ae"
+  },
+  "native_inputs": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native-inputs-v1/summary.json",
+    "sha256": "3e05cd0acf64834d6df458de4b6ef75137d658ca564af61572c88ae9b3b76d09"
+  },
+  "preliminary_host_model_support": {
+    "utc": "2026-10-20T11:32:08.026797+00:00",
+    "source_id": "2052478387302513152",
+    "particles": 4096,
+    "supported_particles": 4096,
+    "unsupported_weighted_prior_mass": 0.0,
+    "temperature_range": [
+      3647.8552680140538,
+      4511.103925232457
+    ],
+    "logg_range": [
+      4.317517895070245,
+      4.805834534214375
+    ],
+    "status": "PRELIMINARY_HOST_PRIOR_SUPPORT_MEASURED_NOT_FINAL_SCENE",
+    "scope": "Host catalogue draws only; no off-grid draws removed and no new LD model. Native q1/q2 remain freely fitted. Final candidate scene banks and companion support still require review.",
+    "inventory": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/stellar-v1/2052478387302513152/stellar-inventory.json",
+      "sha256": "6309913a2d0988c593527acbd0b372742a0ade7ed81dbb483fb71d6f911acb3c"
+    }
+  },
+  "native_execution_snapshot": {
+    "utc": "2026-10-20T11:36:06.654295+00:00",
+    "source_id": "2052478387302513152",
+    "stage": "NATIVE_PARALLEL_ENSEMBLES_RUNNING",
+    "statistical_validations": 0,
+    "endpoint": 12000,
+    "likelihood_workers_per_ensemble": 8,
+    "evaluation_workers": 32,
+    "executor": "process",
+    "children": [
+      {
+        "pid": 3761747,
+        "ensemble": 0,
+        "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native/sample-12000-ensemble-0.log"
+      },
+      {
+        "pid": 3761748,
+        "ensemble": 1,
+        "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native/sample-12000-ensemble-1.log"
+      },
+      {
+        "pid": 3761749,
+        "ensemble": 2,
+        "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native/sample-12000-ensemble-2.log"
+      },
+      {
+        "pid": 3761750,
+        "ensemble": 3,
+        "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native/sample-12000-ensemble-3.log"
+      }
+    ]
+  },
+  "live_unit_snapshot": "MainPID=3761235\nMemoryCurrent=461037568\nCPUUsageNSec=1353381485000\nActiveState=active\nSubState=running\n",
+  "execution_controls": {
+    "status": "ALL_SEEDED_NATIVE_CHAIN_AND_LOG_DENSITY_PARITY_CHECKS_PASSED",
+    "comparisons": 16,
+    "all_seeded_chain_logp_and_acceptance_arrays_bitwise_equal": true,
+    "timings": [
+      {
+        "executor": "serial",
+        "likelihood_workers_per_ensemble": 0,
+        "total_evaluation_workers": 4,
+        "group_wall_seconds": 4.586990064010024
+      },
+      {
+        "executor": "process",
+        "likelihood_workers_per_ensemble": 6,
+        "total_evaluation_workers": 24,
+        "group_wall_seconds": 3.102818363113329
+      },
+      {
+        "executor": "thread",
+        "likelihood_workers_per_ensemble": 6,
+        "total_evaluation_workers": 24,
+        "group_wall_seconds": 4.287258324911818
+      },
+      {
+        "executor": "process",
+        "likelihood_workers_per_ensemble": 8,
+        "total_evaluation_workers": 32,
+        "group_wall_seconds": 2.8571562480647117
+      },
+      {
+        "executor": "thread",
+        "likelihood_workers_per_ensemble": 8,
+        "total_evaluation_workers": 32,
+        "group_wall_seconds": 4.573755176039413
+      }
+    ],
+    "selected_executor": "process",
+    "selected_workers_per_ensemble": 8,
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/native-execution-controls-v2/review.json",
+      "sha256": "c5bba2b5ce1e4bac062a5629401f8f4432a06fd8091e3bb0814d53504ea5984a"
+    }
+  },
+  "automatic_next_stages": [
+    "native posterior integration accuracy",
+    "native timing profiles",
+    "individual native-clock source localizations",
+    "joint-quarter multistart source measurement with individual-event gold",
+    "all catalogue source hypotheses"
+  ],
+  "automatic_probability_launch": false,
+  "current_probability_results": 0,
+  "literature_gate": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/pre-native-known-signal-review-v1.json",
+    "sha256": "2838a0e075c78c73e733783b06e5c596293441cbdafd21e299bd008919e71c5f"
+  },
+  "scope": "Preparation and numerical diagnostics only. No physical validation, astrophysical denial or public novelty claim. Numerical physical priors, seeds, counts and native endpoints remain unchanged; executor comparison affects scheduling only."
+}

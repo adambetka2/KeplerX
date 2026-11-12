@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "INPUT_ONLY_DEVELOPMENT",
+  "protocol": "fsc-targeted-shallow-pixel-support-v2",
+  "seed": "forgotten-stars-targeted-shallow-2026-09-24",
+  "candidate_pool_per_cell": 24,
+  "input_capacity_evidence": {
+    "path": "dump/shallow-pixel-controls-v1/pool-capacity-diagnostic.json",
+    "sha256": "11c1fc6a621ceef97c766db51a795a7afaa4e46503dc65d754047abdf8ac4259",
+    "finding": "The first 18 options per cell permit at most 202 source-disjoint trials across 35 populated cells; 24 permit 210 before pixel support. The 36th cell has no physical input options."
+  },
+  "trials_per_cell": 6,
+  "development_per_cell": 3,
+  "evaluation_per_cell": 3,
+  "wcs_criterion": "Propagated Gaia target center must have zero distance outside the closed pixel-center rectangle [0,width-1] x [0,height-1] in every observed injection quarter.",
+  "parent_criterion": "Resolved TPF parents are disjoint across all selected trials and from the frozen prior-control exclusion snapshot. Source IDs and raw FITS hashes are disjoint too.",
+  "input_criterion": "Verify source and cadence parquet bytes against their LC2 shard manifest; match its raw FITS SHA to the screened truth; verify every supplied TPF SHA, quarter, KIC, WCS, and cached PRF calibration.",
+  "partition_rule": "Before reading pixel inputs, retain the first 24 screened candidates per cell by keyed hash rank. Select six supported trials per cell with a global maximum-cardinality parent-disjoint optimization and deterministic hash-rank tie break; assign the first three ranked selected trials to opened development and the other three to sealed evaluation.",
+  "claim_boundary": "Pixel-input structural support only. No detector, vetter, localization, or sealed evaluation outcome may inform support, selection, or partition. Missing supplied files remain PENDING, not scientifically unsupported."
+}

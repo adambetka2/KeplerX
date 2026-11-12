@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-27T09:03:47.879732+00:00",
+  "status": "SIGNED_PSF_ADAPTER_INTEGRATED_CANDIDATE_CALIBRATION_REQUIRED",
+  "previous_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-method-qualification-20261027-v4.json",
+    "sha256": "bfb3b3fd4c41af82527c7393be3e84813305a44b5489514e5fb4be567d0a3627"
+  },
+  "probability_adapter": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-probability-adapter-20261027.json",
+    "sha256": "db42b8b2b598ba8e431e67916f135dbad2a862ceb855c63ffec9fbe712264ef7"
+  },
+  "probability_qualified": false,
+  "boi_fpp_jobs_started": 0,
+  "candidate_acceptances": 0,
+  "scientific_dispositions": 8,
+  "remaining_groups": 57,
+  "scope_groups": 65,
+  "remaining": [
+    "Candidate-specific complete physical footprints/scenes and source-flux normalization with uncertainty",
+    "Calibrated quarter/shape/phase processing response and adequacy of the diagonal likelihood",
+    "Intrinsic-source scalar noise for the unchanged upstream secondary screen; no mean/max response replacement",
+    "Native noise, source ownership, clock/alias, radius, imaging and exact-signal literature gates"
+  ],
+  "next": "Finish and review the first candidate-specific Q5 batch inputs, then complete reader parity and calibrated physical response/processing controls. No candidate is admitted by software tests alone."
+}

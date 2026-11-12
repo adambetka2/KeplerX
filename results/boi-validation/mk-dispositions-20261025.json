@@ -1,0 +1,1429 @@
+{
+ "utc": "2026-10-26T17:57:14.365485+00:00",
+ "signals": 663,
+ "sources": 473,
+ "categories": {
+  "NOT_RUN_LOW_SNR_PARKED": 238,
+  "HELD_RESPONSE_CLOSURE_FEWER_THAN_TWO_QUARTERS": 103,
+  "NOT_INDEPENDENT_ALIAS_OR_DUPLICATE": 47,
+  "SAME_SIGNAL_AS_SURVEY_BOI": 43,
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE": 39,
+  "PERIOD_UNSUPPORTED_SINGLE_EVENT": 31,
+  "HELD_ACQUISITION_OR_APERTURE_AUTHENTICATION": 29,
+  "FALSE_POSITIVE_INSTRUMENTAL_DATE": 20,
+  "HELD_NATIVE_RADIUS_RATIO_SNR": 19,
+  "TRICERATOPS_FP_CATEGORY": 15,
+  "POSSIBLE_PLANET": 15,
+  "NOT_RUN_EVENT_REVIEW": 15,
+  "HELD_HOST_WITHOUT_TIC_MASS_RADIUS": 10,
+  "STOPPED_EARLY_REMAINS_PC": 8,
+  "NOT_RUN_SOURCE_HOLD": 8,
+  "HELD_NO_NONDUPLICATE_TIC_RECORD": 5,
+  "VALIDATED_BY_MULTIPLICITY": 3,
+  "HELD_NATIVE_PROTECTION": 3,
+  "HELD_NATIVE_NO_PHYSICAL_ORBIT": 2,
+  "HELD_RESPONSE_FAILED": 2,
+  "HELD_NATIVE_UNSUPPORTED_GEOMETRY": 2,
+  "QUEUED_OR_RUNNING": 1,
+  "HELD_NO_APERTURE_DEPTH": 1,
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_PROBABILITY": 1,
+  "HELD_NATIVE_RADIUS_RATIO_SNR_PROTECTION": 1,
+  "NUMERICAL_PASS_CLOSEOUT_FAILED": 1,
+  "HELD_NO_TIC_REDDENING": 1
+ },
+ "validated_by_multiplicity": [
+  {
+   "signal_id": "mk-sap-20261019-2104058096963805696-2",
+   "source_id": "2104058096963805696",
+   "kic": 6267058,
+   "population": "K",
+   "G": 16.226,
+   "period_days": 29.3068981017,
+   "depth_ppm": 2216.5999236621,
+   "search_snr": 31.4545995999,
+   "FPP": 0.0256626445,
+   "NFPP": 7.746469029e-26,
+   "radius_earth": 4.2457189563
+  },
+  {
+   "signal_id": "mk-sap-20261019-2104058096963805696-3",
+   "source_id": "2104058096963805696",
+   "kic": 6267058,
+   "population": "K",
+   "G": 16.226,
+   "period_days": 11.7928567884,
+   "depth_ppm": 1365.4095925501,
+   "search_snr": 23.6025177738,
+   "FPP": 0.0202768437,
+   "NFPP": 1.384544912e-22,
+   "radius_earth": 3.3203795958
+  },
+  {
+   "signal_id": "mk-sap-20261019-2104058096963805696-4",
+   "source_id": "2104058096963805696",
+   "kic": 6267058,
+   "population": "K",
+   "G": 16.226,
+   "period_days": 16.7353760621,
+   "depth_ppm": 1123.09492905,
+   "search_snr": 19.0009667511,
+   "FPP": 0.0232202405,
+   "NFPP": 1.01e-08,
+   "radius_earth": 2.8205760502
+  }
+ ],
+ "possible_planets": [
+  {
+   "signal_id": "mk-sap-20261019-2127624204560927616-1",
+   "source_id": "2127624204560927616",
+   "kic": 9827536,
+   "population": "K",
+   "G": 15.99,
+   "period_days": 10.5768549942,
+   "depth_ppm": 756.0950280984,
+   "search_snr": 14.4081803345,
+   "FPP": 0.0747746674,
+   "FPP_sd": 0.005404094,
+   "FPP_min": 0.0660572363,
+   "FPP_max": 0.0859930777,
+   "NFPP": 0.0,
+   "radius_earth": 2.3085337516,
+   "dominant_alternative": "STP on target (0.073)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2125749846474905600-1",
+   "source_id": "2125749846474905600",
+   "kic": 7120683,
+   "population": "K",
+   "G": 16.214,
+   "period_days": 13.0360405115,
+   "depth_ppm": 513.0614105034,
+   "search_snr": 10.7209464881,
+   "FPP": 0.0780469333,
+   "FPP_sd": 0.0031692415,
+   "FPP_min": 0.0698940872,
+   "FPP_max": 0.0837969839,
+   "NFPP": 0.0,
+   "radius_earth": 2.0227772163,
+   "dominant_alternative": "STP on target (0.075)",
+   "multiplicity_failed": [
+    "independent sibling candidate",
+    "boosted FPP < 1.5%"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2073896294004902272-4",
+   "source_id": "2073896294004902272",
+   "kic": 6146676,
+   "population": "M",
+   "G": 16.237,
+   "period_days": 40.2913092174,
+   "depth_ppm": 1838.0566993903,
+   "search_snr": 25.6377388032,
+   "FPP": 0.0270856526,
+   "FPP_sd": 0.0066846774,
+   "FPP_min": 0.0190134167,
+   "FPP_max": 0.0438504211,
+   "NFPP": 3.83648539e-40,
+   "radius_earth": 2.6234624832,
+   "dominant_alternative": "STP on target (0.027)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2103792461826460288-1",
+   "source_id": "2103792461826460288",
+   "kic": 5689121,
+   "population": "M",
+   "G": 16.282,
+   "period_days": 13.7694726505,
+   "depth_ppm": 1986.865773277,
+   "search_snr": 30.854435142,
+   "FPP": 0.0488202081,
+   "FPP_sd": 0.0049150253,
+   "FPP_min": 0.0403813953,
+   "FPP_max": 0.0606769873,
+   "NFPP": 1.414552374e-103,
+   "radius_earth": 2.5431168846,
+   "dominant_alternative": "STP on target (0.048)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101046397179609344-1",
+   "source_id": "2101046397179609344",
+   "kic": 4740764,
+   "population": "K",
+   "G": 16.296,
+   "period_days": 5.3456319705,
+   "depth_ppm": 806.9111287294,
+   "search_snr": 20.0384391374,
+   "FPP": 0.0357529045,
+   "FPP_sd": 0.0033228467,
+   "FPP_min": 0.0293083729,
+   "FPP_max": 0.040931295,
+   "NFPP": 0.0003665998,
+   "radius_earth": 2.5024608435,
+   "dominant_alternative": "STP on target (0.034)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101495509016649600-1",
+   "source_id": "2101495509016649600",
+   "kic": 5272880,
+   "population": "K",
+   "G": 16.378,
+   "period_days": 6.1102973394,
+   "depth_ppm": 806.8352838523,
+   "search_snr": 14.8608717345,
+   "FPP": 0.0550334216,
+   "FPP_sd": 0.0034687112,
+   "FPP_min": 0.0489280993,
+   "FPP_max": 0.065262424,
+   "NFPP": 3.71e-08,
+   "radius_earth": 2.1592115469,
+   "dominant_alternative": "STP on target (0.053)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2100041954644727040-1",
+   "source_id": "2100041954644727040",
+   "kic": 3628504,
+   "population": "K",
+   "G": 16.39,
+   "period_days": 7.5370249968,
+   "depth_ppm": 858.9391636817,
+   "search_snr": 16.1211621328,
+   "FPP": 0.0224242009,
+   "FPP_sd": 0.0011157014,
+   "FPP_min": 0.0206553777,
+   "FPP_max": 0.0246342729,
+   "NFPP": 0.0001291245,
+   "radius_earth": 3.0270176626,
+   "dominant_alternative": "STP on target (0.021)",
+   "multiplicity_failed": [
+    "independent sibling candidate",
+    "no low-order ephemeris match on another star"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2086313628562378624-1",
+   "source_id": "2086313628562378624",
+   "kic": 10027832,
+   "population": "K",
+   "G": 16.418,
+   "period_days": 2.0829631003,
+   "depth_ppm": 999.4136905728,
+   "search_snr": 22.2372715113,
+   "FPP": 0.0267817052,
+   "FPP_sd": 0.0041810266,
+   "FPP_min": 0.0183786234,
+   "FPP_max": 0.0328987605,
+   "NFPP": 1.068282867e-26,
+   "radius_earth": 2.6206458376,
+   "dominant_alternative": "STP on target (0.013)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2100154070473374976-1",
+   "source_id": "2100154070473374976",
+   "kic": 3831969,
+   "population": "K",
+   "G": 16.531,
+   "period_days": 15.3134431921,
+   "depth_ppm": 806.9116528109,
+   "search_snr": 14.231829398,
+   "FPP": 0.0181171812,
+   "FPP_sd": 0.0017948368,
+   "FPP_min": 0.0143868416,
+   "FPP_max": 0.02167939,
+   "NFPP": 9.4904e-06,
+   "radius_earth": 3.6558237893,
+   "dominant_alternative": "STP on target (0.017)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2102952297504813184-1",
+   "source_id": "2102952297504813184",
+   "kic": 7813322,
+   "population": "K",
+   "G": 16.621,
+   "period_days": 4.0751901547,
+   "depth_ppm": 857.3721484878,
+   "search_snr": 19.0553214765,
+   "FPP": 0.0603173584,
+   "FPP_sd": 0.0037005715,
+   "FPP_min": 0.0539177758,
+   "FPP_max": 0.0651488402,
+   "NFPP": 2.290275472e-30,
+   "radius_earth": 2.0146204291,
+   "dominant_alternative": "STP on target (0.058)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2131705076324568448-1",
+   "source_id": "2131705076324568448",
+   "kic": 10844387,
+   "population": "K",
+   "G": 16.729,
+   "period_days": 12.0253513634,
+   "depth_ppm": 1506.5163397332,
+   "search_snr": 13.5555673062,
+   "FPP": 0.0220747036,
+   "FPP_sd": 0.002315666,
+   "FPP_min": 0.0185348337,
+   "FPP_max": 0.0266188271,
+   "NFPP": 0.0,
+   "radius_earth": 2.4519340793,
+   "dominant_alternative": "STP on target (0.021)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2125825540978915328-1",
+   "source_id": "2125825540978915328",
+   "kic": 7362934,
+   "population": "K",
+   "G": 16.832,
+   "period_days": 14.6147608351,
+   "depth_ppm": 745.4063849508,
+   "search_snr": 12.9810248117,
+   "FPP": 0.020294449,
+   "FPP_sd": 0.0019213663,
+   "FPP_min": 0.0177804289,
+   "FPP_max": 0.0238162177,
+   "NFPP": 5e-10,
+   "radius_earth": 2.6189774928,
+   "dominant_alternative": "STP on target (0.019)",
+   "multiplicity_failed": [
+    "independent sibling candidate"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2130921124535127424-3",
+   "source_id": "2130921124535127424",
+   "kic": 10527790,
+   "population": "K",
+   "G": 16.998,
+   "period_days": 46.5553642085,
+   "depth_ppm": 2593.9712316751,
+   "search_snr": 11.4878450867,
+   "FPP": 0.0300579942,
+   "FPP_sd": 0.003315475,
+   "FPP_min": 0.0202680828,
+   "FPP_max": 0.0338376682,
+   "NFPP": 4.242e-07,
+   "radius_earth": 2.7615481152,
+   "dominant_alternative": "STP on target (0.016)",
+   "multiplicity_failed": [
+    "independent sibling candidate",
+    "no phase-0.5 secondary at SNR >= 3"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2080026346196588800-1",
+   "source_id": "2080026346196588800",
+   "kic": 9474318,
+   "population": "K",
+   "G": 17.61,
+   "period_days": 3.2873522578,
+   "depth_ppm": 1038.9791512394,
+   "search_snr": 12.2302391467,
+   "FPP": 0.0392455239,
+   "FPP_sd": 0.0018462039,
+   "FPP_min": 0.0362329277,
+   "FPP_max": 0.0426227222,
+   "NFPP": 0.0,
+   "radius_earth": 2.2798664245,
+   "dominant_alternative": "STP on target (0.037)",
+   "multiplicity_failed": [
+    "independent sibling candidate",
+    "model S/N > 15"
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2076573394349070464-4",
+   "source_id": "2076573394349070464",
+   "kic": 5458397,
+   "population": "M",
+   "G": 18.422,
+   "period_days": 1.4087855218,
+   "depth_ppm": 4299.1317465107,
+   "search_snr": 26.2694387367,
+   "FPP": 0.0427489246,
+   "FPP_sd": 0.0012196159,
+   "FPP_min": 0.0406756803,
+   "FPP_max": 0.0455228793,
+   "NFPP": 2.805409629e-16,
+   "radius_earth": 3.288611223,
+   "dominant_alternative": "BEBx2P on target (0.021)",
+   "multiplicity_failed": [
+    "independent sibling candidate",
+    "period above 1.6 days"
+   ]
+  }
+ ],
+ "triceratops_fp_category": [
+  {
+   "signal_id": "mk-sap-20261019-2079529504382583936-10",
+   "source_id": "2079529504382583936",
+   "kic": 9605652,
+   "population": "K",
+   "G": 15.6,
+   "period_days": 31.9966724637,
+   "depth_ppm": 839.5223655296,
+   "search_snr": 10.8046314975,
+   "repeats": 2.0,
+   "FPP": 0.9992633695,
+   "NFPP": 0.9991122154,
+   "dominant_alternative": "NTP on Gaia DR3 2079529504382582144 (0.578)",
+   "secondary_snr": -3.581911368,
+   "secondary_albedo": -751.2552830829
+  },
+  {
+   "signal_id": "mk-sap-20261019-2102521666898377600-2",
+   "source_id": "2102521666898377600",
+   "kic": null,
+   "population": "M",
+   "G": 15.837,
+   "period_days": 11.0628711271,
+   "depth_ppm": 294.8202005394,
+   "search_snr": 13.6914885972,
+   "repeats": 2.0,
+   "FPP": 0.9576680083,
+   "NFPP": 0.9545845598,
+   "dominant_alternative": "NEB on Gaia DR3 2102521666898377472 (0.198)",
+   "secondary_snr": -0.9011841348,
+   "secondary_albedo": -191.9078762114
+  },
+  {
+   "signal_id": "mk-sap-20261019-2052781685012928512-1",
+   "source_id": "2052781685012928512",
+   "kic": 3851142,
+   "population": "K",
+   "G": 15.972,
+   "period_days": 8.158807988,
+   "depth_ppm": 535.2638108301,
+   "search_snr": 16.9515980665,
+   "repeats": 2.0,
+   "FPP": 1.0,
+   "NFPP": 1.0,
+   "dominant_alternative": "NEB on Gaia DR3 2052781680711991808 (0.969)",
+   "secondary_snr": -0.4128771072,
+   "secondary_albedo": -10.3048535498
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101482490978833920-3",
+   "source_id": "2101482490978833920",
+   "kic": 6197519,
+   "population": "K",
+   "G": 16.032,
+   "period_days": 39.308372232,
+   "depth_ppm": 4833.8920327097,
+   "search_snr": 11.4533096927,
+   "repeats": 2.0,
+   "FPP": 0.9891398576,
+   "NFPP": 0.9884665837,
+   "dominant_alternative": "NTP on Gaia DR3 2101482387899618048 (0.838)",
+   "secondary_snr": 1.9952343479,
+   "secondary_albedo": 479.0043362586
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101482490978833920-6",
+   "source_id": "2101482490978833920",
+   "kic": 6197519,
+   "population": "K",
+   "G": 16.032,
+   "period_days": 31.4454819851,
+   "depth_ppm": 3574.3414384845,
+   "search_snr": 9.6380207898,
+   "repeats": 2.0,
+   "FPP": 0.969140987,
+   "NFPP": 0.9675885356,
+   "dominant_alternative": "NTP on Gaia DR3 2101482387899618048 (0.678)",
+   "secondary_snr": 3.026699249,
+   "secondary_albedo": 667.6731802028
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101482490978833920-11",
+   "source_id": "2101482490978833920",
+   "kic": 6197519,
+   "population": "K",
+   "G": 16.032,
+   "period_days": 53.4580451327,
+   "depth_ppm": 4426.2956303793,
+   "search_snr": 8.1873261149,
+   "repeats": 2.0,
+   "FPP": 0.9890535442,
+   "NFPP": 0.9873303136,
+   "dominant_alternative": "NTP on Gaia DR3 2101482387899618048 (0.704)",
+   "secondary_snr": 1.9482751321,
+   "secondary_albedo": 905.4057853723
+  },
+  {
+   "signal_id": "mk-sap-20261019-2052956541719360000-7",
+   "source_id": "2052956541719360000",
+   "kic": 3848284,
+   "population": "K",
+   "G": 16.149,
+   "period_days": 22.6879182741,
+   "depth_ppm": 5761.4789846638,
+   "search_snr": 8.0077893559,
+   "repeats": 2.0,
+   "FPP": 0.9905861593,
+   "NFPP": 0.9865917207,
+   "dominant_alternative": "NEB on Gaia DR3 2052956541719356416 (0.750)",
+   "secondary_snr": -3.0922405649,
+   "secondary_albedo": -682.8873852341
+  },
+  {
+   "signal_id": "mk-sap-20261019-2128518107514419712-1",
+   "source_id": "2128518107514419712",
+   "kic": 9958491,
+   "population": "K",
+   "G": 16.684,
+   "period_days": 11.2446608115,
+   "depth_ppm": 463.280515711,
+   "search_snr": 12.6777231406,
+   "repeats": 2.0,
+   "FPP": 0.8517069911,
+   "NFPP": 0.8288242733,
+   "dominant_alternative": "NEB on Gaia DR3 2128518137575602688 (0.380)",
+   "secondary_snr": 0.2794703634,
+   "secondary_albedo": 55.7788237769
+  },
+  {
+   "signal_id": "mk-sap-20261019-2106616626158535296-2",
+   "source_id": "2106616626158535296",
+   "kic": null,
+   "population": "K",
+   "G": 16.91,
+   "period_days": 7.0905925228,
+   "depth_ppm": 439.432172707,
+   "search_snr": 9.2179326873,
+   "repeats": 2.0,
+   "FPP": 0.5307353253,
+   "NFPP": 0.5184058529,
+   "dominant_alternative": "NTP on Gaia DR3 2106618103630309248 (0.452)",
+   "secondary_snr": -1.2065025782,
+   "secondary_albedo": -125.986344117
+  },
+  {
+   "signal_id": "mk-sap-20261019-2079580081915382400-2",
+   "source_id": "2079580081915382400",
+   "kic": 8178958,
+   "population": "M",
+   "G": 17.145,
+   "period_days": 6.3714012286,
+   "depth_ppm": 355.159064144,
+   "search_snr": 10.862119945,
+   "repeats": 2.0,
+   "FPP": 0.95334507,
+   "NFPP": 0.9494391397,
+   "dominant_alternative": "NEB on Gaia DR3 2079580081910197248 (0.492)",
+   "secondary_snr": -1.3275071365,
+   "secondary_albedo": -114.1969237992
+  },
+  {
+   "signal_id": "mk-sap-20261019-2077526743952548224-1",
+   "source_id": "2077526743952548224",
+   "kic": 6614623,
+   "population": "M",
+   "G": 17.329,
+   "period_days": 32.5782113981,
+   "depth_ppm": 5958.6141521693,
+   "search_snr": 19.1638389873,
+   "repeats": 2.0,
+   "FPP": 0.5440697489,
+   "NFPP": 0.4297778729,
+   "dominant_alternative": "NTP on Gaia DR3 2077526743952549376 (0.266)",
+   "secondary_snr": 0.9340252361,
+   "secondary_albedo": 459.2586797008
+  },
+  {
+   "signal_id": "mk-sap-20261019-2127331661449318016-1",
+   "source_id": "2127331661449318016",
+   "kic": 9274180,
+   "population": "K",
+   "G": 17.385,
+   "period_days": 4.4304515494,
+   "depth_ppm": 1776.4050321058,
+   "search_snr": 20.1051800554,
+   "repeats": 2.0,
+   "FPP": 1.0,
+   "NFPP": 1.0,
+   "dominant_alternative": "NEB on Gaia DR3 2127331665743427456 (0.950)",
+   "secondary_snr": 3.5040795918,
+   "secondary_albedo": 41.9156965077
+  },
+  {
+   "signal_id": "mk-sap-20261019-2127033079618738944-1",
+   "source_id": "2127033079618738944",
+   "kic": null,
+   "population": "K",
+   "G": 17.622,
+   "period_days": 8.2081429436,
+   "depth_ppm": 452.0072415325,
+   "search_snr": 10.5921693353,
+   "repeats": 2.0,
+   "FPP": 0.4298765334,
+   "NFPP": 0.3820209431,
+   "dominant_alternative": "NTP on Gaia DR3 2127033079622090624 (0.382)",
+   "secondary_snr": 0.8172947756,
+   "secondary_albedo": 57.8049936892
+  },
+  {
+   "signal_id": "mk-sap-20261019-2128554563197278080-8",
+   "source_id": "2128554563197278080",
+   "kic": 10149205,
+   "population": "K",
+   "G": 17.673,
+   "period_days": 31.4950508772,
+   "depth_ppm": 1617.9455155136,
+   "search_snr": 8.8162522122,
+   "repeats": 2.0,
+   "FPP": 0.3274207372,
+   "NFPP": 0.3094748701,
+   "dominant_alternative": "NTP on Gaia DR3 2128554563197280512 (0.309)",
+   "secondary_snr": 2.694894588,
+   "secondary_albedo": 878.8404654495
+  },
+  {
+   "signal_id": "mk-sap-20261019-2085686838216472448-1",
+   "source_id": "2085686838216472448",
+   "kic": 10360219,
+   "population": "K",
+   "G": 18.208,
+   "period_days": 19.7145605453,
+   "depth_ppm": 2688.6270195804,
+   "search_snr": 10.3952863355,
+   "repeats": 2.0,
+   "FPP": 1.0,
+   "NFPP": 1.0,
+   "dominant_alternative": "NEB on Gaia DR3 2085686838209342336 (0.622)",
+   "secondary_snr": -0.8839874138,
+   "secondary_albedo": -179.5424602161
+  }
+ ],
+ "stopped_early_remains_pc": [
+  {
+   "signal_id": "mk-sap-20261019-2079968312597885824-1",
+   "source_id": "2079968312597885824",
+   "kic": 8964194,
+   "population": "K",
+   "G": 14.376,
+   "period_days": 8.9770021598,
+   "depth_ppm": 175.149094398,
+   "search_snr": 10.6039300053,
+   "FPP": 0.1029466927,
+   "NFPP": 0.0589305631,
+   "radius_earth": 1.0714382124,
+   "dominant_alternative": "NTP on Gaia DR3 2079968381317362432 (0.059)",
+   "k_16_50_84": [
+    0.0058831135,
+    0.007833602,
+    0.0095896252
+   ],
+   "b_16_50_84": [
+    0.1857139201,
+    0.376081257,
+    0.6305041639
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2085171201622187904-1",
+   "source_id": "2085171201622187904",
+   "kic": 8911748,
+   "population": "K",
+   "G": 14.775,
+   "period_days": 17.9211938446,
+   "depth_ppm": 251.7431799859,
+   "search_snr": 8.0362127642,
+   "FPP": 0.1920298359,
+   "NFPP": 0.0020151382,
+   "radius_earth": 2.4719015416,
+   "dominant_alternative": "STP on target (0.140)",
+   "k_16_50_84": [
+    0.0122137423,
+    0.014193497,
+    0.0167021737
+   ],
+   "b_16_50_84": [
+    0.3277835813,
+    0.7198060106,
+    0.8661821468
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2131579354042736768-1",
+   "source_id": "2131579354042736768",
+   "kic": 10847668,
+   "population": "K",
+   "G": 16.345,
+   "period_days": 10.3179682972,
+   "depth_ppm": 940.0731103659,
+   "search_snr": 15.5274078834,
+   "FPP": 0.0516891954,
+   "NFPP": 0.026440639,
+   "radius_earth": 2.4141937687,
+   "dominant_alternative": "NTP on Gaia DR3 2131579354042735616 (0.026)",
+   "k_16_50_84": [
+    0.0245261668,
+    0.0268385387,
+    0.029117042
+   ],
+   "b_16_50_84": [
+    0.0974033652,
+    0.3187094757,
+    0.5535827148
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2128318374356038400-1",
+   "source_id": "2128318374356038400",
+   "kic": 9832106,
+   "population": "K",
+   "G": 16.544,
+   "period_days": 10.688191654,
+   "depth_ppm": 465.3956084893,
+   "search_snr": 8.6914656889,
+   "FPP": 0.1058719215,
+   "NFPP": 3.31814e-05,
+   "radius_earth": 1.4073257716,
+   "dominant_alternative": "STP on target (0.093)",
+   "k_16_50_84": [
+    0.0158995613,
+    0.0177513424,
+    0.0195904037
+   ],
+   "b_16_50_84": [
+    0.0937701745,
+    0.2983562428,
+    0.5381985159
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2085578158365014528-1",
+   "source_id": "2085578158365014528",
+   "kic": 10094106,
+   "population": "K",
+   "G": 16.665,
+   "period_days": 0.8826137195,
+   "depth_ppm": 3256.0536533908,
+   "search_snr": 32.9839397266,
+   "FPP": 0.6619031468,
+   "NFPP": 6.006290313e-36,
+   "radius_earth": 110.117698569,
+   "dominant_alternative": "EBx2P on target (0.270)",
+   "k_16_50_84": [
+    0.4884028492,
+    0.7977574586,
+    0.9423209173
+   ],
+   "b_16_50_84": [
+    1.4114564515,
+    1.7341012332,
+    1.8847186108
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2104112419710183296-4",
+   "source_id": "2104112419710183296",
+   "kic": 6424403,
+   "population": "K",
+   "G": 16.676,
+   "period_days": 84.175584306,
+   "depth_ppm": 2494.2246373755,
+   "search_snr": 18.0049882754,
+   "FPP": 0.3870879519,
+   "NFPP": 3.812218985e-23,
+   "radius_earth": 4.245351936,
+   "dominant_alternative": "SEB on target (0.203)",
+   "k_16_50_84": [
+    0.0365899484,
+    0.0392879613,
+    0.0425115316
+   ],
+   "b_16_50_84": [
+    0.1083288908,
+    0.3327321513,
+    0.5592432119
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2101496303593238144-2",
+   "source_id": "2101496303593238144",
+   "kic": 5272918,
+   "population": "K",
+   "G": 16.805,
+   "period_days": 59.2956228993,
+   "depth_ppm": 1283.4926722326,
+   "search_snr": 11.1099015625,
+   "FPP": 0.1545698738,
+   "NFPP": 0.0100235234,
+   "radius_earth": 4.3666623923,
+   "dominant_alternative": "STP on target (0.131)",
+   "k_16_50_84": [
+    0.0267642221,
+    0.0332070618,
+    0.0407225711
+   ],
+   "b_16_50_84": [
+    0.4423065861,
+    0.7768698449,
+    0.9116949659
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2080571429081419520-2",
+   "source_id": "2080571429081419520",
+   "kic": 10286954,
+   "population": "K",
+   "G": 17.152,
+   "period_days": 31.0846088256,
+   "depth_ppm": 5647.070480924,
+   "search_snr": 15.0890959608,
+   "FPP": 0.3003290706,
+   "NFPP": 0.0288854161,
+   "radius_earth": 9.7581532506,
+   "dominant_alternative": "SEB on target (0.069)",
+   "k_16_50_84": [
+    0.0715152121,
+    0.0759001406,
+    0.0803369765
+   ],
+   "b_16_50_84": [
+    0.0702392246,
+    0.2124034428,
+    0.4277191584
+   ]
+  }
+ ],
+ "false_positives_instrumental_date": [
+  {
+   "signal_id": "mk-sap-20261019-2119523483920563712-2",
+   "source_id": "2119523483920563712",
+   "kic": 10055389,
+   "population": "K",
+   "G": 16.2,
+   "period_days": 44.4568600167,
+   "depth_ppm": 794.4706601612,
+   "search_snr": 8.5021932745,
+   "local_snr": 6.5524454607,
+   "flagged_share": 0.6074038529,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2129347276720533760-1",
+   "source_id": "2129347276720533760",
+   "kic": 11028417,
+   "population": "K",
+   "G": 16.326,
+   "period_days": 34.1867721552,
+   "depth_ppm": 538.3536869603,
+   "search_snr": 8.9338546442,
+   "local_snr": 6.3298971708,
+   "flagged_share": 0.5588921147,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2128318374356038400-3",
+   "source_id": "2128318374356038400",
+   "kic": 9832106,
+   "population": "K",
+   "G": 16.544,
+   "period_days": 36.7017407132,
+   "depth_ppm": 841.3350842432,
+   "search_snr": 7.5667166955,
+   "local_snr": 7.9027778723,
+   "flagged_share": 0.5395270344,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2132105332916937600-1",
+   "source_id": "2132105332916937600",
+   "kic": 11496630,
+   "population": "K",
+   "G": 16.717,
+   "period_days": 62.544643342,
+   "depth_ppm": 2595.5385799055,
+   "search_snr": 11.5458444139,
+   "local_snr": 6.6340283515,
+   "flagged_share": 0.68253896,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2129207020268608128-1",
+   "source_id": "2129207020268608128",
+   "kic": 10597691,
+   "population": "K",
+   "G": 16.734,
+   "period_days": 91.5847446458,
+   "depth_ppm": 1397.4287256367,
+   "search_snr": 8.7122687494,
+   "local_snr": 5.7093158662,
+   "flagged_share": 0.736470115,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2126889004939295872-1",
+   "source_id": "2126889004939295872",
+   "kic": 8361335,
+   "population": "M",
+   "G": 17.266,
+   "period_days": 90.1263921288,
+   "depth_ppm": 3931.3934379078,
+   "search_snr": 9.2695546611,
+   "local_snr": 6.6868729911,
+   "flagged_share": 0.6517798792,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2127187457926269696-1",
+   "source_id": "2127187457926269696",
+   "kic": 8745722,
+   "population": "K",
+   "G": 17.291,
+   "period_days": 83.3232867621,
+   "depth_ppm": 1459.7226212307,
+   "search_snr": 7.462962029,
+   "local_snr": 7.4559551014,
+   "flagged_share": 0.793031968,
+   "instrumental_dates_bkjd": [
+    373.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2080550881961867776-2",
+   "source_id": "2080550881961867776",
+   "kic": 10087168,
+   "population": "K",
+   "G": 17.605,
+   "period_days": 39.8256361433,
+   "depth_ppm": 1736.3309573159,
+   "search_snr": 7.247421902,
+   "local_snr": 4.4516490409,
+   "flagged_share": 0.6312512915,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2080558681622557696-1",
+   "source_id": "2080558681622557696",
+   "kic": 10087939,
+   "population": "M",
+   "G": 17.687,
+   "period_days": 77.4198580663,
+   "depth_ppm": 5996.3271579004,
+   "search_snr": 11.2468307765,
+   "local_snr": 7.7242446318,
+   "flagged_share": 0.6393889536,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2100269862790031360-1",
+   "source_id": "2100269862790031360",
+   "kic": 4244787,
+   "population": "M",
+   "G": 17.756,
+   "period_days": 50.9469182454,
+   "depth_ppm": 1652.6130538492,
+   "search_snr": 7.5693043792,
+   "local_snr": 6.1041120016,
+   "flagged_share": 0.5280875021,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2135504365739192832-1",
+   "source_id": "2135504365739192832",
+   "kic": 12470130,
+   "population": "K",
+   "G": 17.804,
+   "period_days": 36.6434504619,
+   "depth_ppm": 3138.4898186325,
+   "search_snr": 8.5282042386,
+   "local_snr": 6.8644164768,
+   "flagged_share": 0.5935429251,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2131857972861913344-1",
+   "source_id": "2131857972861913344",
+   "kic": 11283749,
+   "population": "K",
+   "G": 17.852,
+   "period_days": 34.1073777911,
+   "depth_ppm": 2734.1445814923,
+   "search_snr": 9.0503255839,
+   "local_snr": 7.8712754311,
+   "flagged_share": 0.5162532551,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2131065190618583296-1",
+   "source_id": "2131065190618583296",
+   "kic": 10459646,
+   "population": "M",
+   "G": 18.378,
+   "period_days": 80.9396453714,
+   "depth_ppm": 5022.3622797828,
+   "search_snr": 8.3233175658,
+   "local_snr": 6.2173692977,
+   "flagged_share": 0.6276565605,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2103022868108864896-1",
+   "source_id": "2103022868108864896",
+   "kic": 7880880,
+   "population": "M",
+   "G": 18.432,
+   "period_days": 53.8099282008,
+   "depth_ppm": 4626.6083307234,
+   "search_snr": 9.0389735957,
+   "local_snr": 6.8702709745,
+   "flagged_share": 0.500110963,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2103022868108864896-2",
+   "source_id": "2103022868108864896",
+   "kic": 7880880,
+   "population": "M",
+   "G": 18.432,
+   "period_days": 48.625172572,
+   "depth_ppm": 2949.1152154442,
+   "search_snr": 7.3007652525,
+   "local_snr": 5.3030489174,
+   "flagged_share": 0.6298917138,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2102755240105365888-1",
+   "source_id": "2102755240105365888",
+   "kic": 7518649,
+   "population": "M",
+   "G": 18.465,
+   "period_days": 44.5393122364,
+   "depth_ppm": 1800.9889051258,
+   "search_snr": 8.0346866011,
+   "local_snr": 5.9634493349,
+   "flagged_share": 0.6082206552,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2130988774561527296-1",
+   "source_id": "2130988774561527296",
+   "kic": 10788912,
+   "population": "M",
+   "G": 18.612,
+   "period_days": 67.2096571992,
+   "depth_ppm": 4214.0887628198,
+   "search_snr": 8.8874730686,
+   "local_snr": 6.3981038547,
+   "flagged_share": 0.5898330173,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2132636598896204416-3",
+   "source_id": "2132636598896204416",
+   "kic": 11555089,
+   "population": "M",
+   "G": 18.67,
+   "period_days": 15.908523771,
+   "depth_ppm": 584.9685759335,
+   "search_snr": 7.1613774558,
+   "local_snr": 5.3684236275,
+   "flagged_share": 0.5033271926,
+   "instrumental_dates_bkjd": [
+    373.375
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2128313594052496640-1",
+   "source_id": "2128313594052496640",
+   "kic": 9771707,
+   "population": "M",
+   "G": 18.885,
+   "period_days": 82.0910832027,
+   "depth_ppm": 5851.3545489253,
+   "search_snr": 7.9708202378,
+   "local_snr": 6.7187046484,
+   "flagged_share": 0.5514285784,
+   "instrumental_dates_bkjd": [
+    246.125
+   ]
+  },
+  {
+   "signal_id": "mk-sap-20261019-2078067497506274048-2",
+   "source_id": "2078067497506274048",
+   "kic": 7692501,
+   "population": "M",
+   "G": 18.908,
+   "period_days": 31.938705517,
+   "depth_ppm": 2495.7247815777,
+   "search_snr": 7.8634273354,
+   "local_snr": 7.2355794827,
+   "flagged_share": 0.6243152734,
+   "instrumental_dates_bkjd": [
+    200.375
+   ]
+  }
+ ],
+ "held": {
+  "HELD_ACQUISITION_OR_APERTURE_AUTHENTICATION": [
+   "mk-sap-20261019-2053566049119753216-3",
+   "mk-sap-20261019-2052313396140857600-1",
+   "mk-sap-20261019-2052313396140857600-2",
+   "mk-sap-20261019-2052313396140857600-3",
+   "mk-sap-20261019-2136188987822509440-1",
+   "mk-sap-20261019-2080268135675517440-1",
+   "mk-sap-20261019-2052257699003730176-1",
+   "mk-sap-20261019-2052257699003730176-7",
+   "mk-sap-20261019-2052257699003730176-8",
+   "mk-sap-20261019-2077706995138930304-1",
+   "mk-sap-20261019-2130879995928585984-1",
+   "mk-sap-20261019-2105848200675504768-1",
+   "mk-sap-20261019-2107292958952994432-1",
+   "mk-sap-20261019-2053614217172875392-1",
+   "mk-sap-20261019-2077220529966452352-1",
+   "mk-sap-20261019-2051806826218137728-1",
+   "mk-sap-20261019-2075877334768994176-1",
+   "mk-sap-20261019-2076535358120385536-1",
+   "mk-sap-20261019-2073825749153098752-1",
+   "mk-sap-20261019-2105115066937136768-2",
+   "mk-sap-20261019-2073777233197819008-1",
+   "mk-sap-20261019-2073777233197819008-2",
+   "mk-sap-20261019-2073777233197819008-4",
+   "mk-sap-20261019-2073777233197819008-5",
+   "mk-sap-20261019-2075876411359401472-1",
+   "mk-sap-20261019-2078276606581576192-2",
+   "mk-sap-20261019-2099595724725198592-2",
+   "mk-sap-20261019-2081891220993052544-3",
+   "mk-sap-20261019-2073667934874072192-1"
+  ],
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE": [
+   "mk-sap-20261019-2100486883197259904-1",
+   "mk-sap-20261019-2075968014425774976-1",
+   "mk-sap-20261019-2075968014425774976-3",
+   "mk-sap-20261019-2078419994072017664-1",
+   "mk-sap-20261019-2053453830213965312-1",
+   "mk-sap-20261019-2076576250512632192-1",
+   "mk-sap-20261019-2077838008820853120-1",
+   "mk-sap-20261019-2053152460941582208-1",
+   "mk-sap-20261019-2052880331818796032-1",
+   "mk-sap-20261019-2080162719994399488-1",
+   "mk-sap-20261019-2076073292661475584-3",
+   "mk-sap-20261019-2051831603885478016-3",
+   "mk-sap-20261019-2077012103791083008-1",
+   "mk-sap-20261019-2076223474775426432-1",
+   "mk-sap-20261019-2125720022221387264-1",
+   "mk-sap-20261019-2079665190988060672-1",
+   "mk-sap-20261019-2135295084865644032-1",
+   "mk-sap-20261019-2073783662779485184-1",
+   "mk-sap-20261019-2103317953839725440-1",
+   "mk-sap-20261019-2052124108331844608-1",
+   "mk-sap-20261019-2079009675891839488-1",
+   "mk-sap-20261019-2103354611382356096-1",
+   "mk-sap-20261019-2105276901304540800-1",
+   "mk-sap-20261019-2105540062541917696-1",
+   "mk-sap-20261019-2101106694217834880-1",
+   "mk-sap-20261019-2052281819533246080-3",
+   "mk-sap-20261019-2052281819533246080-5",
+   "mk-sap-20261019-2052281819533246080-7",
+   "mk-sap-20261019-2052281819533246080-13",
+   "mk-sap-20261019-2052606514767644160-1",
+   "mk-sap-20261019-2073632716137904768-4",
+   "mk-sap-20261019-2101770936682598528-1",
+   "mk-sap-20261019-2127336712333050624-1",
+   "mk-sap-20261019-2077912462070136960-2",
+   "mk-sap-20261019-2086574998788564864-1",
+   "mk-sap-20261019-2076208704382822912-1",
+   "mk-sap-20261019-2105948050075246720-1",
+   "mk-sap-20261019-2086849052065671424-2",
+   "mk-sap-20261019-2125760257476122368-1"
+  ],
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_PROBABILITY": [
+   "mk-sap-20261019-2125725004377202176-1"
+  ],
+  "HELD_HOST_WITHOUT_TIC_MASS_RADIUS": [
+   "mk-sap-20261019-2052206125040788992-1",
+   "mk-sap-20261019-2079371174708240128-1",
+   "mk-sap-20261019-2104911214904180608-2",
+   "mk-sap-20261019-2129222855810338048-2",
+   "mk-sap-20261019-2086391900040496128-1",
+   "mk-sap-20261019-2077040171395871616-1",
+   "mk-sap-20261019-2052237358038158976-1",
+   "mk-sap-20261019-2086498101695635840-1",
+   "mk-sap-20261019-2132718860406822272-1",
+   "mk-sap-20261019-2128069674274607488-1"
+  ],
+  "HELD_NATIVE_NO_PHYSICAL_ORBIT": [
+   "mk-sap-20261019-2086861666381019648-1",
+   "mk-sap-20261019-2052149122233322368-1"
+  ],
+  "HELD_NATIVE_PROTECTION": [
+   "mk-sap-20261019-2079427760894281088-1",
+   "mk-sap-20261019-2126063585245659136-1",
+   "mk-sap-20261019-2078180571109230848-1"
+  ],
+  "HELD_NATIVE_RADIUS_RATIO_SNR": [
+   "mk-sap-20261019-2086861666381019648-2",
+   "mk-sap-20261019-2125763418571547392-2",
+   "mk-sap-20261019-2101290007722749696-1",
+   "mk-sap-20261019-2052091054275764736-3",
+   "mk-sap-20261019-2101518671782975488-3",
+   "mk-sap-20261019-2052740174146478464-1",
+   "mk-sap-20261019-2105697743679424000-2",
+   "mk-sap-20261019-2104257486526344576-1",
+   "mk-sap-20261019-2106616626158535296-1",
+   "mk-sap-20261019-2117305700249611008-4",
+   "mk-sap-20261019-2125786199078358400-1",
+   "mk-sap-20261019-2078091858563529472-1",
+   "mk-sap-20261019-2101746884862893952-6",
+   "mk-sap-20261019-2079648041177607424-4",
+   "mk-sap-20261019-2078219878651924864-2",
+   "mk-sap-20261019-2126055064030395392-1",
+   "mk-sap-20261019-2073177071654296448-3",
+   "mk-sap-20261019-2086589365462040064-1",
+   "mk-sap-20261019-2101498738831844864-1"
+  ],
+  "HELD_NATIVE_RADIUS_RATIO_SNR_PROTECTION": [
+   "mk-sap-20261019-2133283390907486976-1"
+  ],
+  "HELD_NATIVE_UNSUPPORTED_GEOMETRY": [
+   "mk-sap-20261019-2073177071654296448-4",
+   "mk-sap-20261019-2078321583479039232-1"
+  ],
+  "HELD_NO_APERTURE_DEPTH": [
+   "mk-sap-20261019-2126998926041980032-1"
+  ],
+  "HELD_NO_NONDUPLICATE_TIC_RECORD": [
+   "mk-sap-20261019-2076254471566684288-1",
+   "mk-sap-20261019-2127331665748686976-1",
+   "mk-sap-20261019-2127331665748686976-3",
+   "mk-sap-20261019-2080481097335611520-2",
+   "mk-sap-20261019-2052123764748768256-3"
+  ],
+  "HELD_NO_TIC_REDDENING": [
+   "mk-sap-20261019-2078545299734929664-1"
+  ],
+  "HELD_RESPONSE_CLOSURE_FEWER_THAN_TWO_QUARTERS": [
+   "mk-sap-20261019-2081879847927750016-1",
+   "mk-sap-20261019-2073807989474744320-1",
+   "mk-sap-20261019-2086852767216455552-13",
+   "mk-sap-20261019-2052584765058610176-2",
+   "mk-sap-20261019-2052584765058610176-3",
+   "mk-sap-20261019-2133350186238364544-1",
+   "mk-sap-20261019-2103861696699841152-2",
+   "mk-sap-20261019-2102690643801855360-6",
+   "mk-sap-20261019-2076181766356129024-1",
+   "mk-sap-20261019-2100413245985138560-2",
+   "mk-sap-20261019-2052665377296720512-1",
+   "mk-sap-20261019-2052260963169323776-2",
+   "mk-sap-20261019-2102329458528803712-1",
+   "mk-sap-20261019-2052688982437030016-2",
+   "mk-sap-20261019-2103634608889962752-1",
+   "mk-sap-20261019-2133081145189928960-1",
+   "mk-sap-20261019-2052149225312556800-2",
+   "mk-sap-20261019-2099128878960779392-1",
+   "mk-sap-20261019-2052536768794843136-2",
+   "mk-sap-20261019-2126171298725252096-1",
+   "mk-sap-20261019-2076500074962346368-1",
+   "mk-sap-20261019-2073684805507947136-1",
+   "mk-sap-20261019-2085656670360801152-1",
+   "mk-sap-20261019-2076059647539343488-3",
+   "mk-sap-20261019-2135189836694773504-1",
+   "mk-sap-20261019-2135189836694773504-2",
+   "mk-sap-20261019-2126043480497604352-2",
+   "mk-sap-20261019-2085378631364425600-2",
+   "mk-sap-20261019-2086583554363696640-1",
+   "mk-sap-20261019-2106544466411694848-1",
+   "mk-sap-20261019-2076929155078812416-1",
+   "mk-sap-20261019-2126166247845481472-1",
+   "mk-sap-20261019-2086460683939684352-2",
+   "mk-sap-20261019-2135239112853969920-1",
+   "mk-sap-20261019-2051866062402998912-1",
+   "mk-sap-20261019-2133765110141619968-1",
+   "mk-sap-20261019-2052194644583847168-1",
+   "mk-sap-20261019-2053567419204921472-2",
+   "mk-sap-20261019-2078904741251736832-1",
+   "mk-sap-20261019-2078904741251736832-3",
+   "mk-sap-20261019-2078904741251736832-7",
+   "mk-sap-20261019-2078904741251736832-9",
+   "mk-sap-20261019-2078904741251736832-10",
+   "mk-sap-20261019-2078904741251736832-11",
+   "mk-sap-20261019-2086932000766861568-1",
+   "mk-sap-20261019-2106767843368491776-1",
+   "mk-sap-20261019-2073795168983986816-1",
+   "mk-sap-20261019-2073795168983986816-2",
+   "mk-sap-20261019-2101126382347311104-1",
+   "mk-sap-20261019-2051940038921706368-6",
+   "mk-sap-20261019-2051940038921706368-7",
+   "mk-sap-20261019-2125972115324192768-1",
+   "mk-sap-20261019-2105473168429008640-5",
+   "mk-sap-20261019-2105473168429008640-10",
+   "mk-sap-20261019-2105473168429008640-11",
+   "mk-sap-20261019-2073747821267876608-3",
+   "mk-sap-20261019-2073747821267876608-4",
+   "mk-sap-20261019-2052713545349144064-2",
+   "mk-sap-20261019-2076057830770563712-3",
+   "mk-sap-20261019-2052716706445989248-1",
+   "mk-sap-20261019-2052716706445989248-2",
+   "mk-sap-20261019-2052716706445989248-3",
+   "mk-sap-20261019-2053111160536794624-1",
+   "mk-sap-20261019-2053111160536794624-3",
+   "mk-sap-20261019-2053111160536794624-4",
+   "mk-sap-20261019-2078102230910147712-1",
+   "mk-sap-20261019-2132675768994836352-1",
+   "mk-sap-20261019-2132675768994836352-3",
+   "mk-sap-20261019-2076120979677075456-1",
+   "mk-sap-20261019-2051901452931274368-1",
+   "mk-sap-20261019-2051368636472230272-3",
+   "mk-sap-20261019-2102328943129951616-1",
+   "mk-sap-20261019-2085308189597207552-3",
+   "mk-sap-20261019-2052306764704548608-3",
+   "mk-sap-20261019-2052306764704548608-4",
+   "mk-sap-20261019-2052306764704548608-6",
+   "mk-sap-20261019-2052306764704548608-8",
+   "mk-sap-20261019-2052306764704548608-9",
+   "mk-sap-20261019-2052306764704548608-10",
+   "mk-sap-20261019-2052306764704548608-11",
+   "mk-sap-20261019-2052306764704548608-12",
+   "mk-sap-20261019-2125805612331045888-1",
+   "mk-sap-20261019-2079529740600672768-1",
+   "mk-sap-20261019-2106912012534571392-1",
+   "mk-sap-20261019-2076244713392048128-1",
+   "mk-sap-20261019-2077826287849701376-1",
+   "mk-sap-20261019-2077826287849701376-2",
+   "mk-sap-20261019-2107498670707550976-1",
+   "mk-sap-20261019-2107498670707550976-2",
+   "mk-sap-20261019-2085216487753902720-1",
+   "mk-sap-20261019-2085216487753902720-2",
+   "mk-sap-20261019-2078925730754230400-1",
+   "mk-sap-20261019-2076599920066581888-1",
+   "mk-sap-20261019-2102949235188919680-1",
+   "mk-sap-20261019-2078067497506274048-1",
+   "mk-sap-20261019-2082129776362107136-7",
+   "mk-sap-20261019-2127713402436386304-2",
+   "mk-sap-20261019-2085329733156371200-1",
+   "mk-sap-20261019-2102933640162528896-1",
+   "mk-sap-20261019-2052247696014591616-1",
+   "mk-sap-20261019-2079372613517199360-3",
+   "mk-sap-20261019-2052440179270138880-1",
+   "mk-sap-20261019-2078108999778606336-1"
+  ],
+  "HELD_RESPONSE_FAILED": [
+   "mk-sap-20261019-2078067291355321856-1",
+   "mk-sap-20261019-2086402753427454848-1"
+  ]
+ },
+ "definitions": {
+  "VALIDATED_BY_MULTIPLICITY": "20 V3 repeats, NFPP < 0.1% and boosted FPP < 1.5% (b = 5.5) with every multiplicity condition (Lissauer et al. 2014; Rowe et al. 2014 section 5.9); host star undetermined.",
+  "POSSIBLE_PLANET": "20 V3 repeats, NFPP < 0.1% and FPP 1.5-50% (Gomez Barrientos et al. 2025); without high-resolution imaging the first eight single-host M/K campaigns stopped at FPP 2-4% (planet on an unresolved bound companion), an observed pattern rather than a limit.",
+  "TRICERATOPS_FP_CATEGORY": "FPP > 70% or NFPP > 10%; a statistical category, not a reproduced mechanism. dominant_alternative names the largest scenario.",
+  "NUMERICAL_PASS_PHYSICAL_REVIEW_REQUIRED": "20 V3 repeats with mean FPP < 1.5%, mean NFPP < 0.1% and radius below 8 Earth radii, and the automated closeout items pass (S/N >= 15, RUWE <= 1.4, no Gaia source within 1.5 arcsec, no phase-0.5 secondary at S/N >= 3); the ephemeris-match and literature review and Adam's admission remain.",
+  "NUMERICAL_PASS_CLOSEOUT_FAILED": "20 V3 repeats with mean FPP < 1.5%, mean NFPP < 0.1% and radius below 8 Earth radii, but a declared closeout item fails (closeout_failed): not validated.",
+  "NUMERICAL_PASS_CLOSEOUT_PENDING": "A numerical V3 pass whose closeout or occultation record is not yet written.",
+  "STOPPED_EARLY_REMAINS_PC": "Both first V3 repeats have FPP >= 10% or NFPP >= 1% (futility rule); remains a planet candidate.",
+  "FALSE_POSITIVE_INSTRUMENTAL_DATE": "One event on a date with a population-wide event excess (BKJD 200, 246 or 373; z = 79, 72 and 13 in 0.5-day bins of 17,940 M/K proposals) carries at least half of the S/N squared and the other events fall below S/N 7.1 in local KBonus SAP: the detection is an artifact of that date.",
+  "PERIOD_UNSUPPORTED_SINGLE_EVENT": "One event carries at least half of the S/N squared and the others fall below S/N 7.1: the period is unsupported; the single event may still be real.",
+  "NOT_REPRODUCED_IN_LOCAL_SAP (NOT_RUN_EVENT_REVIEW)": "Local KBonus SAP event S/N below 5 with errors that understate correlated noise.",
+  "NOT_INDEPENDENT_ALIAS_OR_DUPLICATE": "An S/N-consistent alias of, or sharing events with, a stronger signal on the same source (alias_or_duplicate_of).",
+  "SAME_SIGNAL_AS_SURVEY_BOI": "The same signal as a survey BOI; its disposition is in the survey records.",
+  "HELD_*": "A V3 step cannot be completed: hold_reason and the case record give the step and evidence.",
+  "HELD_NATIVE_NO_PHYSICAL_ORBIT": "Every native posterior sample has periastron inside the star, a(1 - e) < R* + Rp (EXOFASTv2 boundary, tools/review_native.py): a planet on this host is excluded; the signal may belong to another star. No mechanism reproduced.",
+  "NOT_RUN_*": "Not prepared for V3 for the first failed selection check (not_run_checks).",
+  "NOT_RUN_LOW_SNR_PARKED": "Acquired and staged, then parked before any native fit (Adam, 26 October 2026): search S/N below 10 on a single host cannot validate under the agreed rules. Resumable from mk/queue-tail-20261026.json."
+ },
+ "evidence": {
+  "bois": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/bois-20261025.csv",
+   "sha256": "8362538c4a94f2926eec1714d1df5c95288020f1a4bc116d738084344989964e"
+  },
+  "event_review": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/event-review-20261025.csv",
+   "sha256": "77a4b5532e9d52b36a23b616479f764bffea002400be04d90b2e20f899798c4b"
+  },
+  "event_review_tool": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/event_review.py",
+   "sha256": "c0ce8d28a0a5f67d9e52a85f9968ffafe1963a173f42029f6678dee39362ed6a"
+  },
+  "event_review_calibration": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/event-review-calibration-20261025.json",
+   "sha256": "ea59eadcf6d60e3b177c613580ce63de235144a93c076ae5a859d824a852cfdb"
+  },
+  "occultation": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/occultation-mk-20261025.json",
+   "sha256": "c35b8db37487fe6512e11f63ff9799ed1cb17b09b6d1555dba1d76e2c7c1b46c"
+  },
+  "search_clock_ephemeris_screen": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/ephemeris-v2/screen-mk-all-20261025.json",
+   "sha256": "9185a95683ef9fe5ae4f0439c5aeb7ac0d5f7d026136e552f69a4b1d9dfbbc6f"
+  },
+  "holds": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/holds-20261025.json",
+   "sha256": "d6bb05a36d097104a5554c9d9ac784653f00b8f431bdf7dbf8ff4a142eb2add7"
+  },
+  "multiplicity_tool": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/multiplicity.py",
+   "sha256": "ebf130d1a518175df2df58c69359d3dc713bfbd3e33dece91003f4d9398cb3d7"
+  },
+  "parked": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/queue-tail-20261026.json",
+   "sha256": "fb39ecb5d5455438e150ef12f5540301ed91ef42ef9a51e489de0d194beeab85"
+  }
+ },
+ "helper": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/mk_dispositions.py",
+  "sha256": "036085e817285490f069d020d81bbe629a58902c04ad574c0bda3882e8528ade"
+ },
+ "scope": "Pipeline dispositions of the 663 M/K BOIs from V3 evidence, 25 October 2026. Only FALSE_POSITIVE_INSTRUMENTAL_DATE asserts a mechanism; a TRICERATOPS FP category is statistical, and HELD and NOT_RUN states are method or data limits, not astrophysical classifications. QUEUED_OR_RUNNING signals are pending."
+}

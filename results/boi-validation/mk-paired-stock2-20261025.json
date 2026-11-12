@@ -1,0 +1,163 @@
+{
+ "utc": "2026-10-25T16:26:54.377166+00:00",
+ "design": "Two-seed stock-TRICERATOPS diagnostics (tools/stock_boi.py --two: every authenticated quarter, formal errors, stock likelihood, mean calibrated fractions or upstream Gaussian) beside the completed 20-repeat V3 campaigns; same signal, adopted native clock, scene, apertures, population and seeds.",
+ "reading": "On the three M/K K-dwarf signals stock fails NFPP (0.14-1.9%) in every seed while V3 gives NFPP near 0; FPP is similar (stock 1.4-4.1%, V3 2.3-2.7%), dominated in V3 by a planet on an unresolved bound companion. On KIC 3975580 stock gives a lower FPP (0.25-1.9% calibrated) than V3 (10.3%): V3's flux-closure gate kept 4 of 14 quarters (the others closed at 1.22-1.31) and uses reviewed noise.",
+ "cases": {
+  "KIC 10027832 (M/K, 2.08 d)": {
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.026781705164691555,
+    "NFPP_mean": 1.0682828665675658e-26,
+    "first_two_FPP": [
+     0.03166399918697371,
+     0.01939117420170422
+    ],
+    "first_two_NFPP": [
+     1.304893661832059e-26,
+     8.192509034958769e-27
+    ],
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086313628562378624-1/probability-v3/campaign/audit-20261025T145613622332Z.json",
+     "sha256": "70c39d3bfb850f05ac5f94edcb9bfd990ad17fd9c389e2b6d574ac597db1cf46"
+    }
+   },
+   "stock_calibrated": {
+    "FPP": [
+     0.02181485052368093,
+     0.022311143617995466
+    ],
+    "NFPP": [
+     0.007235208489955737,
+     0.007081599809650105
+    ]
+   },
+   "stock_gaussian": {
+    "FPP": [
+     0.028334533232519443,
+     0.024603675016835802
+    ],
+    "NFPP": [
+     0.013789411696981693,
+     0.011932080648216365
+    ]
+   }
+  },
+  "KIC 6267058 (M/K, 16.74 d)": {
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.0232202404757888,
+    "NFPP_mean": 1.0121651549005976e-08,
+    "first_two_FPP": [
+     0.024473963343604965,
+     0.011959446133456342
+    ],
+    "first_two_NFPP": [
+     1.031894042945821e-08,
+     1.053657444228699e-08
+    ],
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4/probability-v3/campaign/audit-20261025T151118759108Z.json",
+     "sha256": "d5eb926e799dc32095e8d97b12eb0c3509c841eed2ca298e30816e09bb5671d1"
+    }
+   },
+   "stock_calibrated": {
+    "FPP": [
+     0.02902329534362258,
+     0.018620333974444403
+    ],
+    "NFPP": [
+     0.004604645926458814,
+     0.0044671524636116355
+    ]
+   },
+   "stock_gaussian": {
+    "FPP": [
+     0.03206051840819579,
+     0.023287439413842148
+    ],
+    "NFPP": [
+     0.008891718325059642,
+     0.009476917573623178
+    ]
+   }
+  },
+  "KIC 6267058 (M/K, 29.31 d)": {
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.025662644479096997,
+    "NFPP_mean": 7.746469028662877e-26,
+    "first_two_FPP": [
+     0.025525169071870857,
+     0.0240422639150486
+    ],
+    "first_two_NFPP": [
+     7.055595273099348e-26,
+     7.252632037746005e-26
+    ],
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2/probability-v3/campaign/audit-20261025T124818999894Z.json",
+     "sha256": "fe94e01248348b722c11132b88ff2c6e7c5734cf2fb15f6ee4d605143a5bfb98"
+    }
+   },
+   "stock_calibrated": {
+    "FPP": [
+     0.025501234377407145,
+     0.014339928960869552
+    ],
+    "NFPP": [
+     0.0014042080214064945,
+     0.0014901411490401966
+    ]
+   },
+   "stock_gaussian": {
+    "FPP": [
+     0.04093167559945665,
+     0.03406408485609924
+    ],
+    "NFPP": [
+     0.018713345253409928,
+     0.016711587448962804
+    ]
+   }
+  },
+  "KIC 3975580 (survey, 4.41 d)": {
+   "v3": {
+    "repeats": 20,
+    "FPP_mean": 0.1032377972584491,
+    "NFPP_mean": 3.3010282343796222e-12,
+    "first_two_FPP": [
+     0.09016263070919683,
+     0.08710765654907293
+    ],
+    "first_two_NFPP": [
+     2.509266341412373e-12,
+     4.101670548389098e-12
+    ],
+    "audit": {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073226966298407552/probability-v3/campaign/audit-20261025T122417528777Z.json",
+     "sha256": "bbb333936e4d027b8fea875a7b7aa106beab1d022fd1d2f60b3a669292b9b9bc"
+    }
+   },
+   "stock_calibrated": {
+    "FPP": [
+     0.01870952754025601,
+     0.0025235282698964356
+    ],
+    "NFPP": [
+     3.6226339036861596e-05,
+     0.0003404692229739861
+    ]
+   },
+   "stock_gaussian": {
+    "FPP": [
+     0.05349440122922888,
+     0.04873411529581395
+    ],
+    "NFPP": [
+     1.4578331834049808e-05,
+     3.964570032054349e-06
+    ]
+   }
+  }
+ }
+}

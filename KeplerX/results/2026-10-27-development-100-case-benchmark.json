@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-27T06:50:14.146452+00:00",
+  "state": "DISPATCH_STOPPED_AFTER_VETTING_ERROR; THREE_DETECTORS_PAUSED",
+  "benchmark_root": "/Users/adam/Other/spacelab-runs/3rd-campaign/benchmarks/development100-v1",
+  "source_commit": "c63ac1b0",
+  "selection": {
+    "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/benchmarks/development100-v1/selection.json",
+    "bytes": 1512,
+    "sha256": "60c07dae8ff880bc9ec6c0dc5c0fc79ec17d73d14090c64d9ec56bfb29b2041a"
+  },
+  "config": {
+    "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/benchmarks/development100-v1/config.json",
+    "bytes": 1771,
+    "sha256": "b34e9e2d30f47f587a1bfcb950eeb3aeb3c7fb3cfabadcb0a0387b45a39ba95c"
+  },
+  "selected_cases": 100,
+  "started_cases": 6,
+  "detection_complete": 3,
+  "pipeline_complete": 2,
+  "vetting_errors": 1,
+  "paused_detections": 3,
+  "unstarted_cases": 94,
+  "exact_recoveries_among_completed_detections": 0,
+  "harmonic_recoveries_among_completed_detections": 0,
+  "full_100_case_recovery": null,
+  "recovery_boundary": "Only three short-baseline detections completed; not a representative 100-case recovery estimate. Formal-error oracle SNR is diagnostic and differs from wavelet MES.",
+  "completed_cases": [
+    {
+      "case_id": "16840fedab8e0f5a9486dbc8",
+      "population": "G",
+      "depth_bin": 8,
+      "period_bin": 0,
+      "outcome": "miss",
+      "matched_vetting_states": "",
+      "proposal_count": 0,
+      "detection_seconds": 2.8621518751606345,
+      "vetting_seconds": 0.028145667165517807,
+      "vetting_state": "COMPLETE",
+      "vetting_error": null,
+      "injected_depth_ppm": 11723.894630952142,
+      "injected_period_days": 0.6912284821378386,
+      "observed_events": 14,
+      "three_event_coverage": true,
+      "formal_error_oracle_snr": 6.047419267773948
+    },
+    {
+      "case_id": "ab21f587868e0a9ef90401a7",
+      "population": "K",
+      "depth_bin": 1,
+      "period_bin": 1,
+      "outcome": "miss",
+      "matched_vetting_states": "",
+      "proposal_count": 1,
+      "detection_seconds": 5.534750208258629,
+      "vetting_seconds": 1.5286562498658895,
+      "vetting_state": "COMPLETE",
+      "vetting_error": null,
+      "injected_depth_ppm": 47.9042566408703,
+      "injected_period_days": 4.557868858825629,
+      "observed_events": 2,
+      "three_event_coverage": false,
+      "formal_error_oracle_snr": 0.010895589824788478
+    },
+    {
+      "case_id": "daa1be0931b19e489d3780e0",
+      "population": "G",
+      "depth_bin": 0,
+      "period_bin": 1,
+      "outcome": "miss",
+      "matched_vetting_states": "",
+      "proposal_count": 9,
+      "detection_seconds": 26.442834249697626,
+      "vetting_seconds": 10.197628541849554,
+      "vetting_state": "ERROR",
+      "vetting_error": "RuntimeError: Optimal parameters not found: The maximum number of function evaluations is exceeded.",
+      "injected_depth_ppm": 14.27867483819061,
+      "injected_period_days": 2.8638886325368014,
+      "observed_events": 3,
+      "three_event_coverage": true,
+      "formal_error_oracle_snr": 0.025057590052367462
+    }
+  ],
+  "long_curve_timing": {
+    "case_id": "95cfdf963483eda9d0fc7731",
+    "prepared": {
+      "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/calibration/ppm10000-v1/inputs/95cfdf963483eda9d0fc7731/packet.json",
+      "bytes": 6529,
+      "sha256": "0a630c1e417167bccac58586c8a0952da1a54e1fb1164b12326ebb1f026f5a0e"
+    },
+    "period_trials": 1479482,
+    "cadences": 46046,
+    "construction_seconds": 1.4405373325571418,
+    "ses_seconds": 105.54691249970347,
+    "sampled_periods": 128,
+    "mean_seconds_per_period": 0.009083347329578828,
+    "estimated_one_pass_seconds": 13544.195786359647,
+    "scope": "Bounded timing of unchanged code; estimate excludes repeated passes, vetting and contention changes. No recovery result; all candidate outputs discarded for this profile."
+  },
+  "failure": {
+    "stage": "vet",
+    "case_id": "daa1be0931b19e489d3780e0",
+    "method": "RECYCLEBin cosine_vs_transit_global -> fit_transit -> scipy.optimize.curve_fit",
+    "error": "Maximum number of function evaluations exceeded",
+    "record": {
+      "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/benchmarks/development100-v1/run/daa1be0931b19e489d3780e0/vetting/run.json",
+      "bytes": 15009,
+      "sha256": "919a8f09697bb4fdf1d6d999cf4d8effc41dbecb880634ff15d63d50f7b745c4"
+    }
+  },
+  "pause_record": {
+    "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/benchmarks/development100-v1/paused-detectors.json",
+    "bytes": 1203,
+    "sha256": "d99c0e54012949f6bea52ac53dfa44093dd5885999c1cb9f6bb5b7cfdeb5ff83"
+  },
+  "current_execution": "Coordinator waits for three paused detector processes; no new cases are being dispatched. Processes must be explicitly resumed or stopped before any continuation.",
+  "vetting_policy": "Metrics only; no calibrated PC acceptance policy exists, so no vetting retention rate is claimed.",
+  "next_work": "Resolve the exhaustive period-folding cost and record fit failures without treating them as physical rejections before completing the same frozen 100-case selection."
+}

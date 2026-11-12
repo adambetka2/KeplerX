@@ -1,0 +1,2880 @@
+{
+  "long_periods": {
+    "entries": 5,
+    "baseline_recovered": 0,
+    "extended_recovered": 3,
+    "records": [
+      {
+        "boi_id": "BOI-2073175632853699968-1",
+        "reference": {
+          "photometry_view": "psf_flat",
+          "passing_views": [
+            "psf_flat"
+          ],
+          "period_days": 147.24827825546475,
+          "epoch_bkjd": 319.61348924651827,
+          "duration_hours": 10.353,
+          "depth_ppm": 22189.89
+        },
+        "baseline": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 0,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 79.00626862514764
+        },
+        "extended": {
+          "outcome": "RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 2,
+          "strict_matches": [
+            {
+              "period_days": 147.25682272392635,
+              "t0_bkjd": 172.28584754191937,
+              "duration_hours": 5.040000000000001,
+              "depth_ppm": 19332.557405472253,
+              "search_snr": 10.950411891386759,
+              "search_band": "long",
+              "search_rank": 63
+            }
+          ],
+          "alias_matches": [],
+          "rejected_matches": [
+            {
+              "period_days": 147.25842388024998,
+              "t0_bkjd": 172.33624754191936,
+              "duration_hours": 8.064000000000002,
+              "depth_ppm": 12703.88618982674,
+              "search_snr": 12.083429798220823,
+              "search_band": "long",
+              "search_rank": 13,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/1"
+            },
+            {
+              "period_days": 147.2587062074428,
+              "t0_bkjd": 172.28824754191936,
+              "duration_hours": 5.76,
+              "depth_ppm": 14456.602685487976,
+              "search_snr": 11.649283606238182,
+              "search_band": "long",
+              "search_rank": 9,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/2"
+            },
+            {
+              "period_days": 147.25682272392635,
+              "t0_bkjd": 172.28584754191937,
+              "duration_hours": 4.032000000000001,
+              "depth_ppm": 15285.315881701816,
+              "search_snr": 10.793639324562628,
+              "search_band": "long",
+              "search_rank": 6,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/3"
+            },
+            {
+              "period_days": 147.25029851153738,
+              "t0_bkjd": 172.34824754191936,
+              "duration_hours": 2.88,
+              "depth_ppm": 16734.036169415318,
+              "search_snr": 9.747732894022887,
+              "search_band": "long",
+              "search_rank": 4,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/4"
+            },
+            {
+              "period_days": 147.2411683737899,
+              "t0_bkjd": 172.42024754191937,
+              "duration_hours": 2.0160000000000005,
+              "depth_ppm": 18358.538773318633,
+              "search_snr": 9.06653782899124,
+              "search_band": "long",
+              "search_rank": 2,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/8"
+            },
+            {
+              "period_days": 147.2424626117282,
+              "t0_bkjd": 172.38424754191936,
+              "duration_hours": 1.44,
+              "depth_ppm": 21096.26473546192,
+              "search_snr": 8.218279465642361,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/10"
+            },
+            {
+              "period_days": 147.25984976965785,
+              "t0_bkjd": 172.31224754191936,
+              "duration_hours": 9.216000000000001,
+              "depth_ppm": 20918.990240008687,
+              "search_snr": 13.584031195443785,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/384"
+            },
+            {
+              "period_days": 147.26520336794906,
+              "t0_bkjd": 172.23124754191937,
+              "duration_hours": 10.080000000000002,
+              "depth_ppm": 21886.934239922954,
+              "search_snr": 14.287145477245817,
+              "search_band": "long",
+              "search_rank": 2,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/385"
+            },
+            {
+              "period_days": 147.2635488420755,
+              "t0_bkjd": 172.28824754191936,
+              "duration_hours": 7.199999999999999,
+              "depth_ppm": 19719.89472310494,
+              "search_snr": 12.284339200296957,
+              "search_band": "long",
+              "search_rank": 3,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/386"
+            },
+            {
+              "period_days": 147.2411683737899,
+              "t0_bkjd": 172.42024754191937,
+              "duration_hours": 2.5200000000000005,
+              "depth_ppm": 19354.465061159462,
+              "search_snr": 8.32160871908973,
+              "search_band": "long",
+              "search_rank": 9,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/392"
+            },
+            {
+              "period_days": 147.24367322565269,
+              "t0_bkjd": 172.38424754191936,
+              "duration_hours": 1.7999999999999998,
+              "depth_ppm": 21278.904431809202,
+              "search_snr": 7.729691013944871,
+              "search_band": "long",
+              "search_rank": 11,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/394"
+            },
+            {
+              "period_days": 147.24787725386275,
+              "t0_bkjd": 172.34824754191936,
+              "duration_hours": 3.5999999999999996,
+              "depth_ppm": 19544.833315843396,
+              "search_snr": 9.775389127333838,
+              "search_band": "long",
+              "search_rank": 5,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/449"
+            }
+          ],
+          "near_period_proposals": [
+            {
+              "period_days": 147.25682272392635,
+              "t0_bkjd": 172.28584754191937,
+              "duration_hours": 5.040000000000001,
+              "depth_ppm": 19332.557405472253,
+              "search_snr": 10.950411891386759,
+              "search_band": "long",
+              "search_rank": 63,
+              "relative_period_error": 5.802762900075642e-05
+            }
+          ],
+          "first_failure": null,
+          "search_seconds": 92.33725891727954
+        }
+      },
+      {
+        "boi_id": "BOI-2101354466593873152-1",
+        "reference": {
+          "photometry_view": "psf_flat",
+          "passing_views": [
+            "psf_flat"
+          ],
+          "period_days": 133.49233164035337,
+          "epoch_bkjd": 202.09202490995966,
+          "duration_hours": 6.257,
+          "depth_ppm": 3213.7
+        },
+        "baseline": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 0,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 104.57684433320537
+        },
+        "extended": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 0,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 118.77577499998733
+        }
+      },
+      {
+        "boi_id": "BOI-2101926796748446336-1",
+        "reference": {
+          "photometry_view": "psf_flat",
+          "passing_views": [
+            "psf_flat"
+          ],
+          "period_days": 293.5577738802572,
+          "epoch_bkjd": 215.7956612249406,
+          "duration_hours": 13.761,
+          "depth_ppm": 693.96
+        },
+        "baseline": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 0,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 129.54142970917746
+        },
+        "extended": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 0,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 143.55963437538594
+        }
+      },
+      {
+        "boi_id": "BOI-2103418559153168128-1",
+        "reference": {
+          "photometry_view": "psf_flat",
+          "passing_views": [
+            "psf_flat"
+          ],
+          "period_days": 198.14806007956133,
+          "epoch_bkjd": 193.91924191200025,
+          "duration_hours": 9.288,
+          "depth_ppm": 4345.19
+        },
+        "baseline": {
+          "outcome": "NOT_RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 1,
+          "strict_matches": [],
+          "alias_matches": [],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 76.6336919576861
+        },
+        "extended": {
+          "outcome": "RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 2,
+          "strict_matches": [
+            {
+              "period_days": 198.16247897578776,
+              "t0_bkjd": 193.84097940174118,
+              "duration_hours": 10.080000000000002,
+              "depth_ppm": 6053.0812601553625,
+              "search_snr": 19.738001715690192,
+              "search_band": "long",
+              "search_rank": 3
+            }
+          ],
+          "alias_matches": [],
+          "rejected_matches": [
+            {
+              "period_days": 198.14281690243277,
+              "t0_bkjd": 193.94897940174118,
+              "duration_hours": 1.44,
+              "depth_ppm": 4790.058558368483,
+              "search_snr": 9.422761844033907,
+              "search_band": "long",
+              "search_rank": 6,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/8/decisions/18"
+            },
+            {
+              "period_days": 198.14305711737597,
+              "t0_bkjd": 193.9585794017412,
+              "duration_hours": 2.0160000000000005,
+              "depth_ppm": 4306.786002387156,
+              "search_snr": 10.589695779694312,
+              "search_band": "long",
+              "search_rank": 9,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/9/decisions/29"
+            },
+            {
+              "period_days": 198.17735727949756,
+              "t0_bkjd": 193.76897940174118,
+              "duration_hours": 2.88,
+              "depth_ppm": 4260.049794810779,
+              "search_snr": 11.84154075108752,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/10/decisions/1"
+            },
+            {
+              "period_days": 198.16042159869826,
+              "t0_bkjd": 193.8577794017412,
+              "duration_hours": 4.032000000000001,
+              "depth_ppm": 4088.0611937059207,
+              "search_snr": 13.016261038179548,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/11/decisions/0"
+            },
+            {
+              "period_days": 198.14642000972506,
+              "t0_bkjd": 193.88897940174118,
+              "duration_hours": 5.76,
+              "depth_ppm": 3877.313254680426,
+              "search_snr": 14.210591329662696,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/12/decisions/0"
+            },
+            {
+              "period_days": 198.16269391558143,
+              "t0_bkjd": 193.81697940174118,
+              "duration_hours": 11.52,
+              "depth_ppm": 2479.271693030687,
+              "search_snr": 13.377840219292375,
+              "search_band": "long",
+              "search_rank": 3,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/1"
+            },
+            {
+              "period_days": 198.17448938791532,
+              "t0_bkjd": 193.81097940174118,
+              "duration_hours": 1.44,
+              "depth_ppm": 4746.932733380897,
+              "search_snr": 9.638760986271452,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/8/decisions/0"
+            },
+            {
+              "period_days": 198.17339587053345,
+              "t0_bkjd": 193.8241794017412,
+              "duration_hours": 2.0160000000000005,
+              "depth_ppm": 4413.819259292386,
+              "search_snr": 10.41921953089084,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/9/decisions/0"
+            },
+            {
+              "period_days": 198.17735727949756,
+              "t0_bkjd": 193.76897940174118,
+              "duration_hours": 2.88,
+              "depth_ppm": 4260.049794810779,
+              "search_snr": 11.84154075108752,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/10/decisions/0"
+            },
+            {
+              "period_days": 198.16042159869826,
+              "t0_bkjd": 193.8577794017412,
+              "duration_hours": 4.032000000000001,
+              "depth_ppm": 4088.0611937059207,
+              "search_snr": 13.016261038179548,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/11/decisions/0"
+            },
+            {
+              "period_days": 198.14642000972506,
+              "t0_bkjd": 193.88897940174118,
+              "duration_hours": 5.76,
+              "depth_ppm": 3877.313254680426,
+              "search_snr": 14.210591329662696,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/12/decisions/0"
+            },
+            {
+              "period_days": 198.16042159869826,
+              "t0_bkjd": 193.8577794017412,
+              "duration_hours": 5.040000000000001,
+              "depth_ppm": 5292.726446709285,
+              "search_snr": 14.20069084883832,
+              "search_band": "long",
+              "search_rank": 4,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/387"
+            },
+            {
+              "period_days": 198.17339587053345,
+              "t0_bkjd": 193.7979294017412,
+              "duration_hours": 2.5200000000000005,
+              "depth_ppm": 5210.2313757114625,
+              "search_snr": 10.906378125369729,
+              "search_band": "long",
+              "search_rank": 6,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/389"
+            },
+            {
+              "period_days": 198.17448938791532,
+              "t0_bkjd": 193.81097940174118,
+              "duration_hours": 1.7999999999999998,
+              "depth_ppm": 5701.086616196898,
+              "search_snr": 10.04724672318488,
+              "search_band": "long",
+              "search_rank": 7,
+              "status": "REJECTED",
+              "reasons": [
+                "INVERSE",
+                "HIGH_RANK_INVERSE"
+              ],
+              "first_reason": "INVERSE",
+              "diagnostic_path": "diagnostics/bands/16/decisions/390"
+            },
+            {
+              "period_days": 198.1760282760893,
+              "t0_bkjd": 193.81697940174118,
+              "duration_hours": 11.52,
+              "depth_ppm": 5994.803781717418,
+              "search_snr": 19.429175450913434,
+              "search_band": "long",
+              "search_rank": 3,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/449"
+            },
+            {
+              "period_days": 198.15308730965657,
+              "t0_bkjd": 193.88897940174118,
+              "duration_hours": 7.199999999999999,
+              "depth_ppm": 5533.09687904299,
+              "search_snr": 16.58931884867265,
+              "search_band": "long",
+              "search_rank": 2,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/450"
+            }
+          ],
+          "near_period_proposals": [
+            {
+              "period_days": 198.16247897578776,
+              "t0_bkjd": 193.84097940174118,
+              "duration_hours": 10.080000000000002,
+              "depth_ppm": 6053.0812601553625,
+              "search_snr": 19.738001715690192,
+              "search_band": "long",
+              "search_rank": 3,
+              "relative_period_error": 7.276829367208748e-05
+            }
+          ],
+          "first_failure": null,
+          "search_seconds": 90.03441529208794
+        }
+      },
+      {
+        "boi_id": "BOI-2104484363877066752-1",
+        "reference": {
+          "photometry_view": "psf_flat",
+          "passing_views": [
+            "psf_flat"
+          ],
+          "period_days": 105.36614774355272,
+          "epoch_bkjd": 223.84785272533904,
+          "duration_hours": 7.409,
+          "depth_ppm": 59233.97
+        },
+        "baseline": {
+          "outcome": "ALIAS_ONLY",
+          "status": "SEARCHED",
+          "proposals": 4,
+          "strict_matches": [],
+          "alias_matches": [
+            {
+              "period_days": 11.706519905819151,
+              "t0_bkjd": 130.2426375549026,
+              "duration_hours": 2.4000000000000004,
+              "depth_ppm": 5442.559712315807,
+              "search_snr": 110.90270054936133,
+              "search_band": "baseline",
+              "search_rank": 53,
+              "alias_ratio": "1/9",
+              "alias_timing_fraction": 1.0
+            }
+          ],
+          "rejected_matches": [],
+          "near_period_proposals": [],
+          "first_failure": null,
+          "search_seconds": 110.16740841697901
+        },
+        "extended": {
+          "outcome": "RECOVERED",
+          "status": "SEARCHED",
+          "proposals": 5,
+          "strict_matches": [
+            {
+              "period_days": 105.36977624185833,
+              "t0_bkjd": 223.8260375549026,
+              "duration_hours": 8.064000000000002,
+              "depth_ppm": 50054.64968037909,
+              "search_snr": 476.9930072365143,
+              "search_band": "long",
+              "search_rank": 65
+            }
+          ],
+          "alias_matches": [
+            {
+              "period_days": 11.706519905819151,
+              "t0_bkjd": 130.2426375549026,
+              "duration_hours": 2.4000000000000004,
+              "depth_ppm": 5442.559712315807,
+              "search_snr": 110.90270054936133,
+              "search_band": "baseline",
+              "search_rank": 54,
+              "alias_ratio": "1/9",
+              "alias_timing_fraction": 1.0
+            }
+          ],
+          "rejected_matches": [
+            {
+              "period_days": 105.37067460058933,
+              "t0_bkjd": 223.8092375549026,
+              "duration_hours": 4.032000000000001,
+              "depth_ppm": 51246.993654515354,
+              "search_snr": 521.336383605113,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/11/decisions/0"
+            },
+            {
+              "period_days": 105.36977624185833,
+              "t0_bkjd": 223.8260375549026,
+              "duration_hours": 8.064000000000002,
+              "depth_ppm": 43016.770965751704,
+              "search_snr": 601.5490832103853,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_bands/13/decisions/0"
+            },
+            {
+              "period_days": 105.37476341521558,
+              "t0_bkjd": 223.78763755490257,
+              "duration_hours": 11.52,
+              "depth_ppm": 32463.357639870454,
+              "search_snr": 549.211395195481,
+              "search_band": "long",
+              "search_rank": 16,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/1"
+            },
+            {
+              "period_days": 105.37109062026893,
+              "t0_bkjd": 223.82363755490258,
+              "duration_hours": 2.88,
+              "depth_ppm": 53215.051704753685,
+              "search_snr": 453.0327289753496,
+              "search_band": "long",
+              "search_rank": 6,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/2"
+            },
+            {
+              "period_days": 105.36989234080835,
+              "t0_bkjd": 223.8176375549026,
+              "duration_hours": 2.0160000000000005,
+              "depth_ppm": 54524.31864798238,
+              "search_snr": 393.7850847359196,
+              "search_band": "long",
+              "search_rank": 4,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/3"
+            },
+            {
+              "period_days": 105.36805340033996,
+              "t0_bkjd": 223.82363755490258,
+              "duration_hours": 1.44,
+              "depth_ppm": 54642.06302522819,
+              "search_snr": 335.9982220829385,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/inactive_native_prefix_selection/long/decisions/6"
+            },
+            {
+              "period_days": 105.37772974919402,
+              "t0_bkjd": 223.78763755490257,
+              "duration_hours": 1.44,
+              "depth_ppm": 53132.93242141593,
+              "search_snr": 329.2755493542498,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/bands/8/decisions/0"
+            },
+            {
+              "period_days": 105.37067460058933,
+              "t0_bkjd": 223.8092375549026,
+              "duration_hours": 4.032000000000001,
+              "depth_ppm": 51246.993654515354,
+              "search_snr": 521.336383605113,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/bands/11/decisions/0"
+            },
+            {
+              "period_days": 105.36977624185833,
+              "t0_bkjd": 223.8260375549026,
+              "duration_hours": 8.064000000000002,
+              "depth_ppm": 43016.770965751704,
+              "search_snr": 601.5490832103853,
+              "search_band": "long",
+              "search_rank": 1,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/bands/13/decisions/0"
+            },
+            {
+              "period_days": 105.37860946133397,
+              "t0_bkjd": 223.78763755490257,
+              "duration_hours": 1.7999999999999998,
+              "depth_ppm": 45115.85118302489,
+              "search_snr": 249.19557345134916,
+              "search_band": "long",
+              "search_rank": 19,
+              "status": "REJECTED",
+              "reasons": [
+                "ODD_EVEN"
+              ],
+              "first_reason": "ODD_EVEN",
+              "diagnostic_path": "diagnostics/bands/16/decisions/402"
+            },
+            {
+              "period_days": 105.37476341521558,
+              "t0_bkjd": 223.78763755490257,
+              "duration_hours": 9.216000000000001,
+              "depth_ppm": 48985.24652320081,
+              "search_snr": 476.4134018463507,
+              "search_band": "long",
+              "search_rank": 3,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/449"
+            },
+            {
+              "period_days": 105.3690105865574,
+              "t0_bkjd": 223.83563755490258,
+              "duration_hours": 7.199999999999999,
+              "depth_ppm": 48938.13639272597,
+              "search_snr": 466.2343184068572,
+              "search_band": "long",
+              "search_rank": 2,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/450"
+            },
+            {
+              "period_days": 105.37067460058942,
+              "t0_bkjd": 223.8092375549026,
+              "duration_hours": 5.040000000000001,
+              "depth_ppm": 49629.233154736496,
+              "search_snr": 418.7123584458648,
+              "search_band": "long",
+              "search_rank": 4,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/451"
+            },
+            {
+              "period_days": 105.3693314054054,
+              "t0_bkjd": 223.82363755490258,
+              "duration_hours": 3.5999999999999996,
+              "depth_ppm": 48570.069204576626,
+              "search_snr": 360.14581500481466,
+              "search_band": "long",
+              "search_rank": 5,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/452"
+            },
+            {
+              "period_days": 105.37481841411542,
+              "t0_bkjd": 223.79348755490258,
+              "duration_hours": 2.5200000000000005,
+              "depth_ppm": 47270.011363923324,
+              "search_snr": 298.3170680104304,
+              "search_band": "long",
+              "search_rank": 11,
+              "status": "REJECTED",
+              "reasons": [
+                "OVERLAP"
+              ],
+              "first_reason": "OVERLAP",
+              "diagnostic_path": "diagnostics/bands/16/decisions/456"
+            }
+          ],
+          "near_period_proposals": [
+            {
+              "period_days": 105.36977624185833,
+              "t0_bkjd": 223.8260375549026,
+              "duration_hours": 8.064000000000002,
+              "depth_ppm": 50054.64968037909,
+              "search_snr": 476.9930072365143,
+              "search_band": "long",
+              "search_rank": 65,
+              "relative_period_error": 3.44370405800376e-05
+            }
+          ],
+          "first_failure": null,
+          "search_seconds": 131.20412366697565
+        }
+      }
+    ]
+  },
+  "gold_recoveries": [
+    {
+      "boi_id": "BOI-2077554781499350144-1",
+      "previous_disposition": "STATISTICALLY_VALIDATED",
+      "baseline": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 3,
+        "strict_matches": [
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 1206.2702216218247,
+            "search_snr": 29.554769854712376,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 30.227776833118316,
+            "t0_bkjd": 134.7162321592644,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1214.1249658226343,
+            "search_snr": 20.70965300901901,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "2/1",
+            "alias_timing_fraction": 0.5051546391752577
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 15.11317656457615,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.672,
+            "depth_ppm": 1091.6845272801904,
+            "search_snr": 14.651307505324732,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/0/decisions/0"
+          },
+          {
+            "period_days": 15.113234788396655,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 0.96,
+            "depth_ppm": 991.6274008026408,
+            "search_snr": 16.082903325168108,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/1/decisions/0"
+          },
+          {
+            "period_days": 15.113583032205595,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.344,
+            "depth_ppm": 933.7020613007558,
+            "search_snr": 18.27941303421862,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/2/decisions/0"
+          },
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 684.148697107905,
+            "search_snr": 22.470292420618005,
+            "search_band": "baseline",
+            "search_rank": 16,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 15.113262925188984,
+            "t0_bkjd": 134.7522321592644,
+            "duration_hours": 1.92,
+            "depth_ppm": 882.7193463951182,
+            "search_snr": 20.56115945149589,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 15.11317656457615,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.672,
+            "depth_ppm": 1091.6845272801904,
+            "search_snr": 14.651307505324732,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/0/decisions/0"
+          },
+          {
+            "period_days": 15.113234788396655,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 0.96,
+            "depth_ppm": 991.6274008026408,
+            "search_snr": 16.082903325168108,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/1/decisions/0"
+          },
+          {
+            "period_days": 15.113583032205595,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.344,
+            "depth_ppm": 933.7020613007558,
+            "search_snr": 18.27941303421862,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/2/decisions/0"
+          },
+          {
+            "period_days": 15.113317628572219,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1369.7450256815075,
+            "search_snr": 19.88146121285208,
+            "search_band": "baseline",
+            "search_rank": 7,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE",
+              "HIGH_RANK_INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/15/decisions/391"
+          },
+          {
+            "period_days": 15.113234552707441,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1527.8173624939818,
+            "search_snr": 18.05253322294673,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE",
+              "HIGH_RANK_INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/15/decisions/393"
+          },
+          {
+            "period_days": 15.113738395857123,
+            "t0_bkjd": 134.7154321592644,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1201.7592214432198,
+            "search_snr": 28.737743844263065,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/450"
+          },
+          {
+            "period_days": 15.114204468440999,
+            "t0_bkjd": 134.7154321592644,
+            "duration_hours": 4.300800000000001,
+            "depth_ppm": 1078.0966132324434,
+            "search_snr": 27.53204611961238,
+            "search_band": "baseline",
+            "search_rank": 5,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/451"
+          },
+          {
+            "period_days": 15.113262925188984,
+            "t0_bkjd": 134.7522321592644,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1218.7443848748492,
+            "search_snr": 25.148335848845914,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/452"
+          },
+          {
+            "period_days": 15.113699010505611,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1289.312484557277,
+            "search_snr": 22.429735889408274,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/453"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 1206.2702216218247,
+            "search_snr": 29.554769854712376,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -3.4617965722905097e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 100.25186995789409
+      },
+      "extended": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 3,
+        "strict_matches": [
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 1206.2702216218247,
+            "search_snr": 29.554769854712376,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 30.227777593610295,
+            "t0_bkjd": 134.7162321592644,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1214.0978369275676,
+            "search_snr": 20.709050782154424,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "2/1",
+            "alias_timing_fraction": 0.5051546391752577
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 15.11317656457615,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.672,
+            "depth_ppm": 1091.6845272801904,
+            "search_snr": 14.651307505324732,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/0/decisions/0"
+          },
+          {
+            "period_days": 15.113234788396655,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 0.96,
+            "depth_ppm": 991.6274008026408,
+            "search_snr": 16.082903325168108,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/1/decisions/0"
+          },
+          {
+            "period_days": 15.113583032205595,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.344,
+            "depth_ppm": 933.7020613007558,
+            "search_snr": 18.27941303421862,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/2/decisions/0"
+          },
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 684.148697107905,
+            "search_snr": 22.470292420618005,
+            "search_band": "baseline",
+            "search_rank": 16,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 15.113262925188984,
+            "t0_bkjd": 134.7522321592644,
+            "duration_hours": 1.92,
+            "depth_ppm": 882.7193463951182,
+            "search_snr": 20.56115945149589,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 15.11317656457615,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.672,
+            "depth_ppm": 1091.6845272801904,
+            "search_snr": 14.651307505324732,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/0/decisions/0"
+          },
+          {
+            "period_days": 15.113234788396655,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 0.96,
+            "depth_ppm": 991.6274008026408,
+            "search_snr": 16.082903325168108,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/1/decisions/0"
+          },
+          {
+            "period_days": 15.113583032205595,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.344,
+            "depth_ppm": 933.7020613007558,
+            "search_snr": 18.27941303421862,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/2/decisions/0"
+          },
+          {
+            "period_days": 15.113317628572219,
+            "t0_bkjd": 134.7642321592644,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1369.7450256815075,
+            "search_snr": 19.88146121285208,
+            "search_band": "baseline",
+            "search_rank": 7,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE",
+              "HIGH_RANK_INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/15/decisions/391"
+          },
+          {
+            "period_days": 15.113234552707441,
+            "t0_bkjd": 134.7686321592644,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1527.8173624939818,
+            "search_snr": 18.05253322294673,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE",
+              "HIGH_RANK_INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/15/decisions/393"
+          },
+          {
+            "period_days": 15.113738395857123,
+            "t0_bkjd": 134.7154321592644,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1201.7592214432198,
+            "search_snr": 28.737743844263065,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/450"
+          },
+          {
+            "period_days": 15.114204468440999,
+            "t0_bkjd": 134.7154321592644,
+            "duration_hours": 4.300800000000001,
+            "depth_ppm": 1078.0966132324434,
+            "search_snr": 27.53204611961238,
+            "search_band": "baseline",
+            "search_rank": 5,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/451"
+          },
+          {
+            "period_days": 15.113262925188984,
+            "t0_bkjd": 134.7522321592644,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1218.7443848748492,
+            "search_snr": 25.148335848845914,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/452"
+          },
+          {
+            "period_days": 15.113699010505611,
+            "t0_bkjd": 134.7434321592644,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1289.312484557277,
+            "search_snr": 22.429735889408274,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/453"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 15.113650551753674,
+            "t0_bkjd": 134.7282321592644,
+            "duration_hours": 3.84,
+            "depth_ppm": 1206.2702216218247,
+            "search_snr": 29.554769854712376,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -3.4617965722905097e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 121.70289662480354
+      }
+    },
+    {
+      "boi_id": "BOI-2107574403864920576-1",
+      "previous_disposition": "KNOWN_VALIDATED_PLANET_RECOVERED",
+      "baseline": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 11,
+        "strict_matches": [
+          {
+            "period_days": 4.24375624998594,
+            "t0_bkjd": 135.36537918402553,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1493.2138838525195,
+            "search_snr": 135.96882305654648,
+            "search_band": "baseline",
+            "search_rank": 1
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 33.94981167085776,
+            "t0_bkjd": 139.61257918402552,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1485.1915479065888,
+            "search_snr": 47.767146033410945,
+            "search_band": "long",
+            "search_rank": 2,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.125
+          },
+          {
+            "period_days": 33.94992331990767,
+            "t0_bkjd": 165.0789791840255,
+            "duration_hours": 3.225600000000001,
+            "depth_ppm": 1540.364988308629,
+            "search_snr": 47.11553597633999,
+            "search_band": "long",
+            "search_rank": 5,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.125
+          },
+          {
+            "period_days": 38.19415746232546,
+            "t0_bkjd": 165.06457918402552,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1498.5379447925804,
+            "search_snr": 46.07850155037783,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11046511627906977
+          },
+          {
+            "period_days": 33.94992331990767,
+            "t0_bkjd": 135.37657918402553,
+            "duration_hours": 2.5200000000000005,
+            "depth_ppm": 1590.8400219309501,
+            "search_snr": 44.780868061333074,
+            "search_band": "long",
+            "search_rank": 6,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.125
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 4.243761399068932,
+            "t0_bkjd": 135.36857918402552,
+            "duration_hours": 3.84,
+            "depth_ppm": 929.5912422039426,
+            "search_snr": 114.50000360041821,
+            "search_band": "baseline",
+            "search_rank": 198,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 4.243723187738081,
+            "t0_bkjd": 135.37657918402553,
+            "duration_hours": 1.92,
+            "depth_ppm": 1228.4362829580941,
+            "search_snr": 108.61066423713656,
+            "search_band": "baseline",
+            "search_rank": 119,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 4.243729501858881,
+            "t0_bkjd": 135.37097918402551,
+            "duration_hours": 1.344,
+            "depth_ppm": 1250.9247914117614,
+            "search_snr": 92.97002920101704,
+            "search_band": "baseline",
+            "search_rank": 78,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/3"
+          },
+          {
+            "period_days": 4.243773865017318,
+            "t0_bkjd": 135.36057918402554,
+            "duration_hours": 0.96,
+            "depth_ppm": 1255.5130606290597,
+            "search_snr": 79.32596560124584,
+            "search_band": "baseline",
+            "search_rank": 40,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/6"
+          },
+          {
+            "period_days": 4.243798996502354,
+            "t0_bkjd": 135.3597791840255,
+            "duration_hours": 0.672,
+            "depth_ppm": 1267.764200268935,
+            "search_snr": 67.39300250088024,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/10"
+          },
+          {
+            "period_days": 4.243761399068932,
+            "t0_bkjd": 135.36857918402552,
+            "duration_hours": 3.072,
+            "depth_ppm": 1535.5365598472197,
+            "search_snr": 134.91222321301268,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/476"
+          },
+          {
+            "period_days": 4.243723187738081,
+            "t0_bkjd": 135.37657918402553,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1568.5473121234832,
+            "search_snr": 124.2559797004215,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/477"
+          },
+          {
+            "period_days": 4.243762067302317,
+            "t0_bkjd": 135.37097918402551,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1580.48967584817,
+            "search_snr": 106.14390160995839,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/478"
+          },
+          {
+            "period_days": 4.243797126415488,
+            "t0_bkjd": 135.36057918402554,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1606.4281337174727,
+            "search_snr": 91.46023895409975,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/481"
+          },
+          {
+            "period_days": 4.243668733629631,
+            "t0_bkjd": 135.37622918402553,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1658.4322558080319,
+            "search_snr": 78.79626992535701,
+            "search_band": "baseline",
+            "search_rank": 14,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/485"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 4.24375624998594,
+            "t0_bkjd": 135.36537918402553,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1493.2138838525195,
+            "search_snr": 135.96882305654648,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "relative_period_error": 8.228292945666738e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 110.88016783399507
+      },
+      "extended": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 11,
+        "strict_matches": [
+          {
+            "period_days": 4.24375624998594,
+            "t0_bkjd": 135.36537918402553,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1493.2138838525195,
+            "search_snr": 135.96882305654648,
+            "search_band": "baseline",
+            "search_rank": 1
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 33.94988930733158,
+            "t0_bkjd": 139.61017918402553,
+            "duration_hours": 3.225600000000001,
+            "depth_ppm": 1500.0317554234678,
+            "search_snr": 47.639916076241306,
+            "search_band": "long",
+            "search_rank": 5,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.125
+          },
+          {
+            "period_days": 33.95038388880902,
+            "t0_bkjd": 135.36457918402553,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1499.8951672659057,
+            "search_snr": 47.2641152608086,
+            "search_band": "long",
+            "search_rank": 2,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.125
+          },
+          {
+            "period_days": 38.1941881406204,
+            "t0_bkjd": 165.06457918402552,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1497.988111585739,
+            "search_snr": 46.065431770196476,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11046511627906977
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 4.243761399068932,
+            "t0_bkjd": 135.36857918402552,
+            "duration_hours": 3.84,
+            "depth_ppm": 929.5912422039426,
+            "search_snr": 114.50000360041821,
+            "search_band": "baseline",
+            "search_rank": 198,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 4.243723187738081,
+            "t0_bkjd": 135.37657918402553,
+            "duration_hours": 1.92,
+            "depth_ppm": 1228.4362829580941,
+            "search_snr": 108.61066423713656,
+            "search_band": "baseline",
+            "search_rank": 119,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 4.243729501858881,
+            "t0_bkjd": 135.37097918402551,
+            "duration_hours": 1.344,
+            "depth_ppm": 1250.9247914117614,
+            "search_snr": 92.97002920101704,
+            "search_band": "baseline",
+            "search_rank": 78,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/3"
+          },
+          {
+            "period_days": 4.243773865017318,
+            "t0_bkjd": 135.36057918402554,
+            "duration_hours": 0.96,
+            "depth_ppm": 1255.5130606290597,
+            "search_snr": 79.32596560124584,
+            "search_band": "baseline",
+            "search_rank": 40,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/6"
+          },
+          {
+            "period_days": 4.243798996502354,
+            "t0_bkjd": 135.3597791840255,
+            "duration_hours": 0.672,
+            "depth_ppm": 1267.764200268935,
+            "search_snr": 67.39300250088024,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/10"
+          },
+          {
+            "period_days": 4.243761399068932,
+            "t0_bkjd": 135.36857918402552,
+            "duration_hours": 3.072,
+            "depth_ppm": 1535.5365598472197,
+            "search_snr": 134.91222321301268,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/476"
+          },
+          {
+            "period_days": 4.243723187738081,
+            "t0_bkjd": 135.37657918402553,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1568.5473121234832,
+            "search_snr": 124.2559797004215,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/477"
+          },
+          {
+            "period_days": 4.243762067302317,
+            "t0_bkjd": 135.37097918402551,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1580.48967584817,
+            "search_snr": 106.14390160995839,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/478"
+          },
+          {
+            "period_days": 4.243797126415488,
+            "t0_bkjd": 135.36057918402554,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1606.4281337174727,
+            "search_snr": 91.46023895409975,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/481"
+          },
+          {
+            "period_days": 4.243668733629631,
+            "t0_bkjd": 135.37622918402553,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1658.4322558080319,
+            "search_snr": 78.79626992535701,
+            "search_band": "baseline",
+            "search_rank": 14,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/485"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 4.24375624998594,
+            "t0_bkjd": 135.36537918402553,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1493.2138838525195,
+            "search_snr": 135.96882305654648,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "relative_period_error": 8.228292945666738e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 130.26256566680968
+      }
+    },
+    {
+      "boi_id": "BOI-2127169041106093184-1",
+      "previous_disposition": "STATISTICALLY_VALIDATED",
+      "baseline": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 5,
+        "strict_matches": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 603.659915737972,
+            "search_snr": 28.732062483258876,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 35.432720003125254,
+            "t0_bkjd": 142.32440671984853,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 714.2981835794194,
+            "search_snr": 13.85995252591924,
+            "search_band": "long",
+            "search_rank": 5,
+            "alias_ratio": "6/1",
+            "alias_timing_fraction": 0.1659919028340081
+          },
+          {
+            "period_days": 41.33795308556624,
+            "t0_bkjd": 171.8660067198485,
+            "duration_hours": 4.032000000000001,
+            "depth_ppm": 706.0886798764649,
+            "search_snr": 12.579457089348775,
+            "search_band": "long",
+            "search_rank": 4,
+            "alias_ratio": "7/1",
+            "alias_timing_fraction": 0.1417004048582996
+          },
+          {
+            "period_days": 35.432720003125254,
+            "t0_bkjd": 154.14200671984852,
+            "duration_hours": 4.032000000000001,
+            "depth_ppm": 601.2108177325025,
+            "search_snr": 12.525988031409112,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "6/1",
+            "alias_timing_fraction": 0.1659919028340081
+          },
+          {
+            "period_days": 35.430637823750715,
+            "t0_bkjd": 136.48520671984852,
+            "duration_hours": 6.451200000000002,
+            "depth_ppm": 453.22488833490746,
+            "search_snr": 10.605795427516465,
+            "search_band": "long",
+            "search_rank": 45,
+            "alias_ratio": "6/1",
+            "alias_timing_fraction": 0.1700404858299595
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 2.688,
+            "depth_ppm": 396.58235593910035,
+            "search_snr": 22.47526500725678,
+            "search_band": "baseline",
+            "search_rank": 19,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 5.905165025475074,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 1.92,
+            "depth_ppm": 425.0987749476087,
+            "search_snr": 19.797617842481564,
+            "search_band": "baseline",
+            "search_rank": 11,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 5.905169222473911,
+            "t0_bkjd": 136.46280671984852,
+            "duration_hours": 1.344,
+            "depth_ppm": 425.8242716206617,
+            "search_snr": 16.97380762017607,
+            "search_band": "baseline",
+            "search_rank": 5,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/5"
+          },
+          {
+            "period_days": 5.905029864064142,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 0.96,
+            "depth_ppm": 456.8719605732248,
+            "search_snr": 14.915643912731946,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/7"
+          },
+          {
+            "period_days": 5.905015973793927,
+            "t0_bkjd": 136.47400671984852,
+            "duration_hours": 0.672,
+            "depth_ppm": 488.56855337049126,
+            "search_snr": 13.540333305450336,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/11"
+          },
+          {
+            "period_days": 5.905673065160646,
+            "t0_bkjd": 136.42360671984852,
+            "duration_hours": 0.672,
+            "depth_ppm": 403.2873369161925,
+            "search_snr": 12.383809598412327,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/0/decisions/0"
+          },
+          {
+            "period_days": 5.905435348892561,
+            "t0_bkjd": 136.42440671984852,
+            "duration_hours": 3.072,
+            "depth_ppm": 602.2777629005988,
+            "search_snr": 27.724895903075563,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/452"
+          },
+          {
+            "period_days": 5.905165025475074,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 604.8179993667236,
+            "search_snr": 25.006721937470658,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/453"
+          },
+          {
+            "period_days": 5.905214537439017,
+            "t0_bkjd": 136.46280671984852,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 609.4169043651538,
+            "search_snr": 21.41027842572998,
+            "search_band": "baseline",
+            "search_rank": 6,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/457"
+          },
+          {
+            "period_days": 5.90499749700069,
+            "t0_bkjd": 136.4849067198485,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 633.622157601091,
+            "search_snr": 18.578398411467006,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/459"
+          },
+          {
+            "period_days": 5.905673065160646,
+            "t0_bkjd": 136.4323567198485,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 631.9458420866885,
+            "search_snr": 15.680922889783151,
+            "search_band": "baseline",
+            "search_rank": 20,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/467"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 603.659915737972,
+            "search_snr": 28.732062483258876,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -1.2165333553415536e-05
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 94.32847137516364
+      },
+      "extended": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 4,
+        "strict_matches": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 603.659915737972,
+            "search_snr": 28.732062483258876,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 35.43156664173869,
+            "t0_bkjd": 142.34840671984853,
+            "duration_hours": 2.5200000000000005,
+            "depth_ppm": 774.2514234704904,
+            "search_snr": 13.027915594536635,
+            "search_band": "long",
+            "search_rank": 9,
+            "alias_ratio": "6/1",
+            "alias_timing_fraction": 0.1659919028340081
+          },
+          {
+            "period_days": 41.33784574623118,
+            "t0_bkjd": 171.8660067198485,
+            "duration_hours": 4.032000000000001,
+            "depth_ppm": 709.3694468299942,
+            "search_snr": 12.549394770985018,
+            "search_band": "long",
+            "search_rank": 6,
+            "alias_ratio": "7/1",
+            "alias_timing_fraction": 0.1417004048582996
+          },
+          {
+            "period_days": 35.43157437711313,
+            "t0_bkjd": 165.9764067198485,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 676.5764028695219,
+            "search_snr": 12.409786436023937,
+            "search_band": "long",
+            "search_rank": 5,
+            "alias_ratio": "6/1",
+            "alias_timing_fraction": 0.1659919028340081
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 2.688,
+            "depth_ppm": 396.58235593910035,
+            "search_snr": 22.47526500725678,
+            "search_band": "baseline",
+            "search_rank": 19,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 5.905165025475074,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 1.92,
+            "depth_ppm": 425.0987749476087,
+            "search_snr": 19.797617842481564,
+            "search_band": "baseline",
+            "search_rank": 11,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 5.905169222473911,
+            "t0_bkjd": 136.46280671984852,
+            "duration_hours": 1.344,
+            "depth_ppm": 425.8242716206617,
+            "search_snr": 16.97380762017607,
+            "search_band": "baseline",
+            "search_rank": 5,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/5"
+          },
+          {
+            "period_days": 5.905029864064142,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 0.96,
+            "depth_ppm": 456.8719605732248,
+            "search_snr": 14.915643912731946,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/7"
+          },
+          {
+            "period_days": 5.905015973793927,
+            "t0_bkjd": 136.47400671984852,
+            "duration_hours": 0.672,
+            "depth_ppm": 488.56855337049126,
+            "search_snr": 13.540333305450336,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/11"
+          },
+          {
+            "period_days": 5.905673065160646,
+            "t0_bkjd": 136.42360671984852,
+            "duration_hours": 0.672,
+            "depth_ppm": 403.2873369161925,
+            "search_snr": 12.383809598412327,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "INVERSE"
+            ],
+            "first_reason": "INVERSE",
+            "diagnostic_path": "diagnostics/bands/0/decisions/0"
+          },
+          {
+            "period_days": 5.905435348892561,
+            "t0_bkjd": 136.42440671984852,
+            "duration_hours": 3.072,
+            "depth_ppm": 602.2777629005988,
+            "search_snr": 27.724895903075563,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/452"
+          },
+          {
+            "period_days": 5.905165025475074,
+            "t0_bkjd": 136.47240671984852,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 604.8179993667236,
+            "search_snr": 25.006721937470658,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/453"
+          },
+          {
+            "period_days": 5.905214537439017,
+            "t0_bkjd": 136.46280671984852,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 609.4169043651538,
+            "search_snr": 21.41027842572998,
+            "search_band": "baseline",
+            "search_rank": 6,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/457"
+          },
+          {
+            "period_days": 5.90499749700069,
+            "t0_bkjd": 136.4849067198485,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 633.622157601091,
+            "search_snr": 18.578398411467006,
+            "search_band": "baseline",
+            "search_rank": 9,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/459"
+          },
+          {
+            "period_days": 5.905673065160646,
+            "t0_bkjd": 136.4323567198485,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 631.9458420866885,
+            "search_snr": 15.680922889783151,
+            "search_band": "baseline",
+            "search_rank": 20,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/467"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 5.905267819232709,
+            "t0_bkjd": 136.4516067198485,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 603.659915737972,
+            "search_snr": 28.732062483258876,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -1.2165333553415536e-05
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 110.57797641726211
+      }
+    },
+    {
+      "boi_id": "BOI-2127186564572468352-1",
+      "previous_disposition": "STATISTICALLY_VALIDATED",
+      "baseline": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 11,
+        "strict_matches": [
+          {
+            "period_days": 4.566507245592701,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1828.5162652898327,
+            "search_snr": 169.79736091605963,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 31.965303525682092,
+            "t0_bkjd": 358.0647219618894,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1774.8267588285782,
+            "search_snr": 64.36402108609383,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "7/1",
+            "alias_timing_fraction": 0.14391143911439114
+          },
+          {
+            "period_days": 31.96579226675568,
+            "t0_bkjd": 362.6007219618894,
+            "duration_hours": 4.6080000000000005,
+            "depth_ppm": 1591.3498042373092,
+            "search_snr": 57.90994016398199,
+            "search_band": "long",
+            "search_rank": 19,
+            "alias_ratio": "7/1",
+            "alias_timing_fraction": 0.14391143911439114
+          },
+          {
+            "period_days": 41.09841232157677,
+            "t0_bkjd": 358.0551219618894,
+            "duration_hours": 4.032000000000001,
+            "depth_ppm": 1719.2375003023285,
+            "search_snr": 56.52526025443212,
+            "search_band": "long",
+            "search_rank": 10,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11070110701107011
+          },
+          {
+            "period_days": 41.099042026188165,
+            "t0_bkjd": 371.7447219618894,
+            "duration_hours": 4.6080000000000005,
+            "depth_ppm": 1677.7681488363694,
+            "search_snr": 55.3546522209597,
+            "search_band": "long",
+            "search_rank": 29,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11070110701107011
+          },
+          {
+            "period_days": 45.664832741010535,
+            "t0_bkjd": 353.4927219618894,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1786.2790357118258,
+            "search_snr": 54.9408552661018,
+            "search_band": "long",
+            "search_rank": 9,
+            "alias_ratio": "10/1",
+            "alias_timing_fraction": 0.1033210332103321
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.84,
+            "depth_ppm": 1330.8924565868867,
+            "search_snr": 168.14613186253462,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "ODD_EVEN"
+            ],
+            "first_reason": "ODD_EVEN",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/5/decisions/0"
+          },
+          {
+            "period_days": 4.566551724117144,
+            "t0_bkjd": 353.4807219618894,
+            "duration_hours": 1.92,
+            "depth_ppm": 1597.0076578670369,
+            "search_snr": 144.47282842978865,
+            "search_band": "baseline",
+            "search_rank": 99,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 4.566533825101805,
+            "t0_bkjd": 353.4743219618894,
+            "duration_hours": 1.344,
+            "depth_ppm": 1615.0248386061821,
+            "search_snr": 123.47745813855664,
+            "search_band": "baseline",
+            "search_rank": 67,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 4.566472736327533,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 0.96,
+            "depth_ppm": 1637.890999094082,
+            "search_snr": 105.35610454094984,
+            "search_band": "baseline",
+            "search_rank": 35,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/5"
+          },
+          {
+            "period_days": 4.566540470296754,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 0.672,
+            "depth_ppm": 1634.3012650515864,
+            "search_snr": 90.0259058823796,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/10"
+          },
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.84,
+            "depth_ppm": 1330.8924565868867,
+            "search_snr": 168.14613186253462,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "ODD_EVEN"
+            ],
+            "first_reason": "ODD_EVEN",
+            "diagnostic_path": "diagnostics/bands/5/decisions/0"
+          },
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.072,
+            "depth_ppm": 1846.0188106016733,
+            "search_snr": 165.35240059285502,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/513"
+          },
+          {
+            "period_days": 4.566551724117144,
+            "t0_bkjd": 353.4807219618894,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1857.065425417005,
+            "search_snr": 149.51327534587188,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/514"
+          },
+          {
+            "period_days": 4.566492534138737,
+            "t0_bkjd": 353.4918219618894,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1862.242379353714,
+            "search_snr": 127.21179749764731,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/515"
+          },
+          {
+            "period_days": 4.566472736327533,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1898.6118295106198,
+            "search_snr": 109.99174357181319,
+            "search_band": "baseline",
+            "search_rank": 8,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/519"
+          },
+          {
+            "period_days": 4.56662305419268,
+            "t0_bkjd": 353.47152196188944,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1959.988474119725,
+            "search_snr": 94.62189317293665,
+            "search_band": "baseline",
+            "search_rank": 15,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/524"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 4.566507245592701,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1828.5162652898327,
+            "search_snr": 169.79736091605963,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -6.350748652628191e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 96.90674983430654
+      },
+      "extended": {
+        "outcome": "RECOVERED",
+        "status": "SEARCHED",
+        "proposals": 11,
+        "strict_matches": [
+          {
+            "period_days": 4.566507245592701,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1828.5162652898327,
+            "search_snr": 169.79736091605963,
+            "search_band": "baseline",
+            "search_rank": 2
+          }
+        ],
+        "alias_matches": [
+          {
+            "period_days": 31.965339102177563,
+            "t0_bkjd": 358.0647219618894,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1770.1354046339893,
+            "search_snr": 64.19438344208963,
+            "search_band": "long",
+            "search_rank": 3,
+            "alias_ratio": "7/1",
+            "alias_timing_fraction": 0.14391143911439114
+          },
+          {
+            "period_days": 36.53362284225181,
+            "t0_bkjd": 353.4567219618894,
+            "duration_hours": 4.6080000000000005,
+            "depth_ppm": 1581.1574107744775,
+            "search_snr": 59.132904920089274,
+            "search_band": "long",
+            "search_rank": 17,
+            "alias_ratio": "8/1",
+            "alias_timing_fraction": 0.12546125461254612
+          },
+          {
+            "period_days": 41.09771283449593,
+            "t0_bkjd": 358.0647219618894,
+            "duration_hours": 3.5999999999999996,
+            "depth_ppm": 1742.4602290183598,
+            "search_snr": 56.51552572693833,
+            "search_band": "long",
+            "search_rank": 7,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11070110701107011
+          },
+          {
+            "period_days": 41.0978422851257,
+            "t0_bkjd": 385.45592196188943,
+            "duration_hours": 4.032000000000001,
+            "depth_ppm": 1744.6848735259919,
+            "search_snr": 56.13772303732471,
+            "search_band": "long",
+            "search_rank": 11,
+            "alias_ratio": "9/1",
+            "alias_timing_fraction": 0.11070110701107011
+          }
+        ],
+        "rejected_matches": [
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.84,
+            "depth_ppm": 1330.8924565868867,
+            "search_snr": 168.14613186253462,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "ODD_EVEN"
+            ],
+            "first_reason": "ODD_EVEN",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_bands/5/decisions/0"
+          },
+          {
+            "period_days": 4.566551724117144,
+            "t0_bkjd": 353.4807219618894,
+            "duration_hours": 1.92,
+            "depth_ppm": 1597.0076578670369,
+            "search_snr": 144.47282842978865,
+            "search_band": "baseline",
+            "search_rank": 99,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/1"
+          },
+          {
+            "period_days": 4.566533825101805,
+            "t0_bkjd": 353.4743219618894,
+            "duration_hours": 1.344,
+            "depth_ppm": 1615.0248386061821,
+            "search_snr": 123.47745813855664,
+            "search_band": "baseline",
+            "search_rank": 67,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/2"
+          },
+          {
+            "period_days": 4.566472736327533,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 0.96,
+            "depth_ppm": 1637.890999094082,
+            "search_snr": 105.35610454094984,
+            "search_band": "baseline",
+            "search_rank": 35,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/5"
+          },
+          {
+            "period_days": 4.566540470296754,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 0.672,
+            "depth_ppm": 1634.3012650515864,
+            "search_snr": 90.0259058823796,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/inactive_native_prefix_selection/baseline/decisions/10"
+          },
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.84,
+            "depth_ppm": 1330.8924565868867,
+            "search_snr": 168.14613186253462,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "ODD_EVEN"
+            ],
+            "first_reason": "ODD_EVEN",
+            "diagnostic_path": "diagnostics/bands/5/decisions/0"
+          },
+          {
+            "period_days": 4.566454769954843,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 3.072,
+            "depth_ppm": 1846.0188106016733,
+            "search_snr": 165.35240059285502,
+            "search_band": "baseline",
+            "search_rank": 1,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/513"
+          },
+          {
+            "period_days": 4.566551724117144,
+            "t0_bkjd": 353.4807219618894,
+            "duration_hours": 2.4000000000000004,
+            "depth_ppm": 1857.065425417005,
+            "search_snr": 149.51327534587188,
+            "search_band": "baseline",
+            "search_rank": 3,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/514"
+          },
+          {
+            "period_days": 4.566492534138737,
+            "t0_bkjd": 353.4918219618894,
+            "duration_hours": 1.6800000000000002,
+            "depth_ppm": 1862.242379353714,
+            "search_snr": 127.21179749764731,
+            "search_band": "baseline",
+            "search_rank": 4,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/515"
+          },
+          {
+            "period_days": 4.566472736327533,
+            "t0_bkjd": 353.4967219618894,
+            "duration_hours": 1.2000000000000002,
+            "depth_ppm": 1898.6118295106198,
+            "search_snr": 109.99174357181319,
+            "search_band": "baseline",
+            "search_rank": 8,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/519"
+          },
+          {
+            "period_days": 4.56662305419268,
+            "t0_bkjd": 353.47152196188944,
+            "duration_hours": 0.8400000000000001,
+            "depth_ppm": 1959.988474119725,
+            "search_snr": 94.62189317293665,
+            "search_band": "baseline",
+            "search_rank": 15,
+            "status": "REJECTED",
+            "reasons": [
+              "OVERLAP"
+            ],
+            "first_reason": "OVERLAP",
+            "diagnostic_path": "diagnostics/bands/15/decisions/524"
+          }
+        ],
+        "near_period_proposals": [
+          {
+            "period_days": 4.566507245592701,
+            "t0_bkjd": 353.4855219618894,
+            "duration_hours": 3.3600000000000003,
+            "depth_ppm": 1828.5162652898327,
+            "search_snr": 169.79736091605963,
+            "search_band": "baseline",
+            "search_rank": 2,
+            "relative_period_error": -6.350748652628191e-06
+          }
+        ],
+        "first_failure": null,
+        "search_seconds": 109.81580324983224
+      }
+    }
+  ],
+  "lost_strict_match_outcomes": {
+    "ALIAS_ONLY": 7
+  },
+  "failure_hosts": [
+    "2077240046296834304"
+  ]
+}

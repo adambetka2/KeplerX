@@ -1,0 +1,2 @@
+# Preserve the frozen upstream reference and its original checksum.
+tests/fixtures/dwarf-sequence.txt -whitespace

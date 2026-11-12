@@ -1,0 +1,2996 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-20T14:48:34.325217+00:00",
+  "status": "PARAMETER_AUDIT_NO_SCIENTIFIC_CODE_CHANGED",
+  "scope": "Executed C12frozen native/packet/scene/probability path and local generic preparer, contrasted with stockTRICERATOPS and primary literature. Sealed detector/vetting not reopened; server not accessed.",
+  "campaign_hold": "User audit hold; coordinator24251intentionallySIGSTOPped, two existing workers may finish; no next18/nextBOI; hourly automation honorshold.",
+  "parameter_count": 149,
+  "classification_counts": {
+    "KEEP_INTEGRITY": 1,
+    "WRAPPER_SCOPE_LIMIT": 2,
+    "JUSTIFIED_KEPLER_ADAPTATION": 3,
+    "OBSERVED_INPUT": 3,
+    "NUMERICAL_CHOICE": 15,
+    "DECLARED_DATA_CHOICE": 2,
+    "CUSTOM_MODEL_CHOICE": 5,
+    "UNJUSTIFIED_UNIVERSAL_SCOPE": 3,
+    "CONFIRMED_DESIGN_PROBLEM": 2,
+    "CUSTOM_QUALITY_GATE": 3,
+    "CUSTOM_NOISE_MODEL": 4,
+    "CUSTOM_PRIOR": 3,
+    "LITERATURE_BASED_FORM": 1,
+    "LITERATURE_ANALOGUE_WITH_LIMITS": 2,
+    "NEEDS_PROVENANCE_REVIEW": 1,
+    "CONFIRMED_IMPLEMENTATION_MISMATCH": 2,
+    "CUSTOM_APPROXIMATION": 9,
+    "CONFIRMED_BOOKKEEPING_BUG": 1,
+    "FROZEN_REPRODUCIBILITY": 3,
+    "LOCAL_COMPUTE_POLICY": 1,
+    "LOCAL_ADMISSION_POLICY": 1,
+    "DIAGNOSTIC_ONLY": 3,
+    "KEEP_MEASURED_INPUT": 1,
+    "JUSTIFIED_NUMERICAL_ADAPTATION": 1,
+    "USER_PROTOCOL": 1,
+    "CUSTOM_LIKELIHOOD": 3,
+    "LITERATURE_ANALOGUE": 3,
+    "CUSTOM_ADAPTATION": 1,
+    "CUSTOM_INFORMATION_COMPRESSION": 1,
+    "NUMERICAL_INTEGRITY": 2,
+    "REVIEWED_OPERATOR_EQUIVALENCE": 1,
+    "KEEP_COMPLETENESS": 1,
+    "CUSTOM_CENSUS_SETTING": 1,
+    "IDENTITY_RULE": 1,
+    "KEEP_IDENTITY": 1,
+    "CUSTOM_NUMERICAL_CHOICE": 2,
+    "DECLARED_SCIENTIFIC_CHOICE": 1,
+    "CUSTOM_ROUTE_RESTRICTION": 3,
+    "UPSTREAM_ANALOGUE": 1,
+    "LITERATURE_FALLBACK_WITH_LIMITS": 1,
+    "CUSTOM_MODEL_REQUIREMENT": 1,
+    "CONDITIONAL_HIGH_SNR_APPROXIMATION": 1,
+    "DECLARED_ASTROPHYSICAL_ASSUMPTION": 1,
+    "PHYSICAL_RELATION": 1,
+    "CUSTOM_CONDITIONING": 1,
+    "CUSTOM_SMOOTHING": 2,
+    "DEFENSIBLE_MODEL_FORM": 1,
+    "PRECISION_LIMITATION": 1,
+    "MEASURED_SOURCE_SPECIFIC": 1,
+    "JUSTIFIED_PASSBAND_ROUTING": 1,
+    "MODEL_DOMAIN_NOT_PHYSICAL_CUT": 1,
+    "PHYSICAL_CONVENTION": 1,
+    "CUSTOM_SCIENTIFIC_MODEL": 3,
+    "FRAGILE_WORKFLOW_NOT_UNIVERSAL_REQUIREMENT": 1,
+    "UPSTREAM_STYLE_APPROXIMATION": 1,
+    "CUSTOM_SCIENTIFIC_PRIOR": 1,
+    "UPSTREAM_CONVENTION_WITH_LIMITS": 1,
+    "KEEP_PHYSICAL_INTEGRITY": 1,
+    "DIAGNOSTIC_NOT_EMPIRICAL_PRIOR": 1,
+    "LITERATURE_MODEL": 1,
+    "DECLARED_SELECTION": 1,
+    "CUSTOM_WORKFLOW": 1,
+    "INHERITED_GALACTIC_MODEL": 1,
+    "INHERITED_MODEL_NOT_INDIVIDUALLY_VALIDATED": 1,
+    "INHERITED_SELECTION": 1,
+    "UPSTREAM_STRUCTURE": 1,
+    "UPSTREAM_STYLE_SELECTION": 1,
+    "REVIEWED_GEOMETRIC_NORMALIZATION": 1,
+    "UPSTREAM_PRESCRIPTION": 7,
+    "KEEP_INTEGRATION_MEASURE": 1,
+    "UPSTREAM_MODEL_LIMITATION": 1,
+    "REVIEWED_SPECIAL_BRANCH": 1,
+    "CUSTOM_NUMERICAL_METHOD": 3,
+    "UPSTREAM_DEFAULT_AND_USER_POLICY": 1,
+    "NUMERICAL_RESOURCE_POLICY": 1,
+    "INACTIVE_ARGUMENT": 1,
+    "EXPLICIT_USER_POLICY": 2,
+    "LITERATURE_THRESHOLDS_WITH_NUMERICAL_POLICY": 1,
+    "ADOPTED_PHYSICAL_PROTOCOL": 1,
+    "RESOURCE_POLICY": 1,
+    "KEEP_REPRODUCIBILITY": 1
+  },
+  "sources": {
+    "native_prepare": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+      "sha256": "37dd76aaeed6340563deddf0f200221afb0a9814c7c7c49edf0c6ef891ae10c6",
+      "bytes": 8074
+    },
+    "native_driver": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+      "sha256": "128476515f2481a1af2c51c25bc44570fac96a822fb2110de63e2d9d584966d8",
+      "bytes": 16493
+    },
+    "native_kernel": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+      "sha256": "160c693c20423a07772e2632c288555b20124425b616bd92cdcc5dd742e9bf86",
+      "bytes": 51184
+    },
+    "density": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/source/stellar_density_setup.py",
+      "sha256": "05ff7d29731dab29310fa9a5e99bf982586d2ce83289819bf0be2660aab89442",
+      "bytes": 6882
+    },
+    "packet": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+      "sha256": "e3bd0c792c571aad573ca35104f95cda93e9699105142a50df1379f8f9e640c9",
+      "bytes": 28483
+    },
+    "reduction": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/complete_group_helper.py",
+      "sha256": "d5a61b264c2df872d44c5c11e07da83ac313e92c52b86936fe191ae4ba57eb98",
+      "bytes": 13309
+    },
+    "packet_binding": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/prepare_packets.py",
+      "sha256": "1afafb8fef91323ae047c9b5167dd661b0c1f6557c031bf80422be09ab4114e4",
+      "bytes": 6080
+    },
+    "null_projection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/quarter_null_projection.py",
+      "sha256": "b6fc209a84f49ee7012a480056548c93d95437a7a37bb8d3ffefa369cbf43ca8",
+      "bytes": 4061
+    },
+    "likelihood": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+      "sha256": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+      "bytes": 4705
+    },
+    "scene_catalogue": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+      "sha256": "52f2bf5dfc273c420ca8e682988c7dfbf483380b019668fd093062e7f673dd26",
+      "bytes": 23327
+    },
+    "scene_generic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field_scene_prior.py",
+      "sha256": "26084d96a4dff7b8be6ababba11e6049ade0495cdac73023afd9d12a11f8c083",
+      "bytes": 5231
+    },
+    "scene_geometry": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+      "sha256": "f33ac22abd7fb78e41fcf7e3d91ba5b84650f2e1815e8abba1552838887e678a",
+      "bytes": 9130
+    },
+    "seismic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/candidate_stellar_prior.py",
+      "sha256": "758ca42d816278bd7909aab98b9e37d92cc87024761f331098d5ffb31b90ee75",
+      "bytes": 3068
+    },
+    "scene_acquire": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/acquire_field_inputs.py",
+      "sha256": "65d3666361a6288d849a7c21834a52a34a02c569b3375b1372d464c979510a69",
+      "bytes": 3760
+    },
+    "scene_inputs": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_scene_inputs_v3.py",
+      "sha256": "a96c7bb7fe15916f80db656499882bf82bceff4f67f5b5776793b6ab049fc2f2",
+      "bytes": 7977
+    },
+    "population_request": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+      "sha256": "09a7469b2d2c74e6e33bc3f03a1b26e4241c5726992d8182b6534fb32a841ee8",
+      "bytes": 4991
+    },
+    "population_pair": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/paired_population_photometry.py",
+      "sha256": "1c05f49086b502ec693ac3eed446a39d388586c4e2abb59f43539766341c222d",
+      "bytes": 4516
+    },
+    "wings": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/prf_wing_sensitivity.py",
+      "sha256": "515a3d93e01676dad53366c38d860a28d4159c182af3aae9793c99e565a86d35",
+      "bytes": 16077
+    },
+    "geometry_builder": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/build_wing_geometry.py",
+      "sha256": "a8f8d99f3143e458152a304e872e98b50ff7074d28d2f6dd31273b28d9026b50",
+      "bytes": 4924
+    },
+    "flux": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/kepler_flux.py",
+      "sha256": "c44abff81308e9a0ab7329262c94cc4a22a1cb3ec95a06bb8fc7a5f9b88701f7",
+      "bytes": 9080
+    },
+    "ld": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/nearest_ld_v2.py",
+      "sha256": "569534a7ff7268c683ce23d81c0426445a2a34faa51e1a384a1f85ef2cffda2e",
+      "bytes": 3583
+    },
+    "scenario": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+      "sha256": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+      "bytes": 8407
+    },
+    "core": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios.py",
+      "sha256": "d6d5e858859c8bdf9083556fd2d5985efcbda9e01da38800ec481c96aa605591",
+      "bytes": 19682
+    },
+    "planet_proposal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+      "sha256": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+      "bytes": 6645
+    },
+    "binary_proposal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binary_proposals_v3.py",
+      "sha256": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+      "bytes": 6021
+    },
+    "runtime": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical_validation.py",
+      "sha256": "349ea8af55ff6a5fbfb373fa6ed2a45e11b752eff451b3ffcf77c971cc8b0b62",
+      "bytes": 26283
+    },
+    "renderer": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/validation_models.py",
+      "sha256": "bee01d880fab4405b15b4054c21e687bc0b0e93f31614c72a158a32d4181fdb2",
+      "bytes": 12477
+    },
+    "adapter": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+      "sha256": "b6f7b2ed345535011b8362a78236f12b7402e9bfdeec5ee8a409593051bc1292",
+      "bytes": 2782
+    },
+    "plan": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+      "sha256": "ca2387a2f4ae1f88d543331cbb60f391b010ba0500719343c45f7d253cbc6f31",
+      "bytes": 11220
+    },
+    "protocol": {
+      "path": "/Users/adam/Other/spacelab/post_boi/protocol.py",
+      "sha256": "fe1c2d2bf04abbd17d95f6246eb5649d1999e90b201f3e1674fcb08a2174b72c",
+      "bytes": 7700
+    },
+    "screen": {
+      "path": "/Users/adam/Other/spacelab/post_boi/screen.py",
+      "sha256": "651d5569c168ca1817f539e60ba11d09d0482b941412eb3763bb0db90e2cba10",
+      "bytes": 3918
+    },
+    "capacity": {
+      "path": "/Users/adam/Other/spacelab/post_boi/capacity.py",
+      "sha256": "010c0902878b4e50c4dea5f2af31851414409313f1b7d50db67340143b5b2003",
+      "bytes": 2319
+    },
+    "upstream_priors": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/priors.py",
+      "sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722",
+      "bytes": 32172
+    },
+    "upstream_functions": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/funcs.py",
+      "sha256": "234f18fa7fbd7ae122046dfbd50603e47a4a1eaba773a524bd42b04a0e7bdabf",
+      "bytes": 38351
+    }
+  },
+  "references": {
+    "API": {
+      "title": "Official TRICERATOPS API",
+      "url": "https://triceratops.readthedocs.io/en/latest/user/api.html"
+    },
+    "KEPLER": {
+      "title": "Official Kepler example",
+      "url": "https://triceratops.readthedocs.io/en/latest/tutorials/kepler_example.html"
+    },
+    "CODE": {
+      "title": "Official pinned target API and dilution convention",
+      "url": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/triceratops.py"
+    },
+    "PRIORS": {
+      "title": "Official pinned prior samplers",
+      "url": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/priors.py"
+    },
+    "STELLAR": {
+      "title": "Official pinned stellar prescriptions",
+      "url": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/funcs.py"
+    },
+    "GIACALONE": {
+      "title": "Giacalone et al. 2021, AJ 161, 24",
+      "url": "https://arxiv.org/abs/2002.00691"
+    },
+    "COLLIER": {
+      "title": "Collier et al. 2026, accepted AAS paper, inspected v3",
+      "url": "https://arxiv.org/html/2608.21560v3"
+    },
+    "INTEGRATION": {
+      "title": "Kipping 2010, finite integration effects",
+      "url": "https://arxiv.org/abs/1004.3741"
+    },
+    "LD": {
+      "title": "Kipping 2013, triangular limb darkening",
+      "url": "https://arxiv.org/abs/1308.0009"
+    },
+    "PRF": {
+      "title": "Bryson et al. 2010, Kepler PRF",
+      "url": "https://arxiv.org/abs/1001.0331"
+    },
+    "MIST": {
+      "title": "Official MIST bolometric-correction tables",
+      "url": "https://mist.science/model_grids.html#bolometric"
+    },
+    "GAIA": {
+      "title": "Gaia DR3 GSP-Phot documentation",
+      "url": "https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu8par/sec_cu8par_apsis/ssec_cu8par_apsis_gspphot.html"
+    },
+    "MANN15": {
+      "title": "Mann et al. 2015, empirical cool-star radii",
+      "url": "https://arxiv.org/abs/1501.01635"
+    },
+    "MANN19": {
+      "title": "Mann et al. 2019, empirical cool-star masses",
+      "url": "https://arxiv.org/abs/1811.06938"
+    }
+  },
+  "parameters": [
+    {
+      "id": "P001",
+      "group": "Authenticated inputs",
+      "parameter": "Identity",
+      "current_value": "Gaia DR3 source; KIC/TIC cross-identities; exact extraction owner distinguished",
+      "assessment": "KEEP_INTEGRITY",
+      "comparison_or_recommendation": "Required source authentication; a parent TPF KIC is not the source identity.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P002",
+      "group": "Authenticated inputs",
+      "parameter": "Signal selection",
+      "current_value": "rust_rows: rank 1 and psf_flat; BOI suffix -1",
+      "assessment": "WRAPPER_SCOPE_LIMIT",
+      "comparison_or_recommendation": "This local selector is survey-specific, not a generic M/K or multi-signal implementation. Consume the actual run-scoped signal instead.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P003",
+      "group": "Authenticated inputs",
+      "parameter": "Native view",
+      "current_value": "SAP_QDIAG; PSF_FLAT export retained separately",
+      "assessment": "JUSTIFIED_KEPLER_ADAPTATION",
+      "comparison_or_recommendation": "Raw SAP and crowding-corrected flux require different dilution conventions; never double-correct.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P004",
+      "group": "Authenticated inputs",
+      "parameter": "Bootstrap period, epoch, duration and resolution",
+      "current_value": "Detector values; all exact current values in embedded run_input",
+      "assessment": "OBSERVED_INPUT",
+      "comparison_or_recommendation": "Authenticate clock/time system and fitted signal; no universal numerical value.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P005",
+      "group": "Authenticated inputs",
+      "parameter": "Other-signal exclusions",
+      "current_value": "[] in this single-signal local wrapper",
+      "assessment": "WRAPPER_SCOPE_LIMIT",
+      "comparison_or_recommendation": "Must bind other real signals for multi-signal candidates; never automatically mask unexplained structure.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P006",
+      "group": "Authenticated inputs",
+      "parameter": "Initial radius ratio",
+      "current_value": ".08",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Starting point, not a measured radius; ensure it does not determine the only explored mode.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P007",
+      "group": "Authenticated inputs",
+      "parameter": "Initial density",
+      "current_value": "catalogue M/R^3 in solar units",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Starting point separate from the density prior.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 95,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P008",
+      "group": "Native data preparation",
+      "parameter": "Validity",
+      "current_value": "VET_OK, finite time/flux/errors, error>0; SAP VET_OK uses QUALITY==0",
+      "assessment": "DECLARED_DATA_CHOICE",
+      "comparison_or_recommendation": "Strict quality-zero is our mask, not a TRICERATOPS prerequisite. Retain masks and quantify lost events.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P009",
+      "group": "Native data preparation",
+      "parameter": "Quarter normalization",
+      "current_value": "Median of valid native quarter flux",
+      "assessment": "CUSTOM_MODEL_CHOICE",
+      "comparison_or_recommendation": "Normalized input is required; this normalization is one implementation, needing activity/systematics checks.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P010",
+      "group": "Native data preparation",
+      "parameter": "Event-window half width",
+      "current_value": ".3 days = 7.2 hours",
+      "assessment": "UNJUSTIFIED_UNIVERSAL_SCOPE",
+      "comparison_or_recommendation": "Use duration-aware windows with real pre/post baseline; no universal fixed-hour recommendation in API.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P011",
+      "group": "Native data preparation",
+      "parameter": "Baseline/noise outer-point start",
+      "current_value": "|phase|>=.12 days = 2.88 hours",
+      "assessment": "CONFIRMED_DESIGN_PROBLEM",
+      "comparison_or_recommendation": "Must protect the entire transit plus integration/clock uncertainty. A 9.288h event contaminates this nominal OOT region.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P012",
+      "group": "Native data preparation",
+      "parameter": "Minimum event points",
+      "current_value": "8 native cadences",
+      "assessment": "CUSTOM_QUALITY_GATE",
+      "comparison_or_recommendation": "Coverage criterion is not an API requirement; inspect actual information rather than treating this as physical rejection.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P013",
+      "group": "Native data preparation",
+      "parameter": "Minimum pre/post baseline",
+      "current_value": "4 cadences each side beyond +/-.12 days",
+      "assessment": "CUSTOM_QUALITY_GATE",
+      "comparison_or_recommendation": "Sensible need for baseline, arbitrary fixed placement; short periods and gaps can fail the implementation.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P014",
+      "group": "Native data preparation",
+      "parameter": "Primary overlap",
+      "current_value": "At least one point within supplied T14/2 + exposure/2",
+      "assessment": "CUSTOM_QUALITY_GATE",
+      "comparison_or_recommendation": "Retain coverage evidence. A detector duration need not equal the final transit duration.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P015",
+      "group": "Native data preparation",
+      "parameter": "Baseline coordinate",
+      "current_value": "phase/.3 days; local multiplicative line",
+      "assessment": "CUSTOM_MODEL_CHOICE",
+      "comparison_or_recommendation": "Linear baseline is not universally adequate for active/correlated Kepler SAP.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P016",
+      "group": "Native data preparation",
+      "parameter": "Additive quarter jitter",
+      "current_value": "sqrt(max(0, (1.4826*MAD_OOT)^2 - median(formal_error^2)))",
+      "assessment": "CUSTOM_NOISE_MODEL",
+      "comparison_or_recommendation": "Robust scatter has a basis; fixed white jitter does not model time-correlated stellar/instrument noise.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 64,
+        "anchor": "def prepare():"
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P017",
+      "group": "Native transit and priors",
+      "parameter": "Period support",
+      "current_value": "+/-2 detector resolution elements; +/-170.70066426940878ppm for C12",
+      "assessment": "CUSTOM_PRIOR",
+      "comparison_or_recommendation": "A local bound is defensible only after timing/alias review and boundary checks; detector grid spacing is not a posterior uncertainty.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P018",
+      "group": "Native transit and priors",
+      "parameter": "Central epoch support",
+      "current_value": "+/-2 hours",
+      "assessment": "CUSTOM_PRIOR",
+      "comparison_or_recommendation": "Must cover plausible clock uncertainty; no fixed two-hour API requirement.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P019",
+      "group": "Native transit and priors",
+      "parameter": "Radius-ratio support and measure",
+      "current_value": ".005 < k < .3; uniform log(k)",
+      "assessment": "UNJUSTIFIED_UNIVERSAL_SCOPE",
+      "comparison_or_recommendation": "Not the stock physical planet-radius prior. k ceiling can exclude large planets around small M stars or truncate grazing fits.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P020",
+      "group": "Native transit and priors",
+      "parameter": "Impact coordinate",
+      "current_value": ".001 < b/(1+k) < .999; uniform",
+      "assessment": "CUSTOM_PRIOR",
+      "comparison_or_recommendation": "Allows grazing events, excludes exact endpoints. Not itself a V-shape veto.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P021",
+      "group": "Native transit and priors",
+      "parameter": "Density support and measure",
+      "current_value": ".1 < rho/rho_sun < 50; log-density coordinate times stellar density prior",
+      "assessment": "UNJUSTIFIED_UNIVERSAL_SCOPE",
+      "comparison_or_recommendation": "Broad for many dwarfs but excludes evolved stars and sufficiently dense small M dwarfs; bounds need candidate/model justification.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P022",
+      "group": "Native transit and priors",
+      "parameter": "Limb-darkening priors",
+      "current_value": ".001 < q1,q2 < .999; uniform triangular quadratic coordinates",
+      "assessment": "LITERATURE_BASED_FORM",
+      "comparison_or_recommendation": "Triangular physical LD sampling is established; endpoint padding is ours.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P023",
+      "group": "Native transit and priors",
+      "parameter": "Shared noise scale",
+      "current_value": "-1 < ln(s) < 1, multiplicative s=.368..2.718",
+      "assessment": "CUSTOM_NOISE_MODEL",
+      "comparison_or_recommendation": "A bounded shared scale is not a universal TRICERATOPS requirement; check clipping and quarter dependence.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 31,
+        "anchor": "BOUNDS ="
+      },
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P024",
+      "group": "Native transit and priors",
+      "parameter": "Duration support",
+      "current_value": ".0104 < T14 < .25 days = .2496..6 hours",
+      "assessment": "CONFIRMED_DESIGN_PROBLEM",
+      "comparison_or_recommendation": "Inherited code box, no documented universal scientific justification. Review a duration-aware model rather than crop events or silently widen a frozen run.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 170,
+        "anchor": "duration < .0104"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P025",
+      "group": "Native transit and priors",
+      "parameter": "Orbit and dilution",
+      "current_value": "e=0, omega=90deg; dark single transit; apparent unit dilution",
+      "assessment": "LITERATURE_ANALOGUE_WITH_LIMITS",
+      "comparison_or_recommendation": "Circular native fitting has a paper analogue, but does not prove adequacy for every eccentric/blended object. Probability model subsequently has eccentric/dilution alternatives.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 149,
+        "anchor": "self.params.ecc"
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P026",
+      "group": "Native transit and priors",
+      "parameter": "Baseline Gaussian widths",
+      "current_value": "intercept .1; slope .5 in scaled x; mean [1,0]; analytically marginalized",
+      "assessment": "CUSTOM_MODEL_CHOICE",
+      "comparison_or_recommendation": "Proper nuisance integration is preferable to an undefined prior, but these widths/model need external sensitivity controls.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 23,
+        "anchor": "BASELINE_SIGMA"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P027",
+      "group": "Native stellar density",
+      "parameter": "Native catalogue row choice",
+      "current_value": "First ExoFOP row with mass and radius",
+      "assessment": "NEEDS_PROVENANCE_REVIEW",
+      "comparison_or_recommendation": "Ordering is not evidence ranking; authenticate the adopted catalogue/source and handle disagreements.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 39,
+        "anchor": "family=dict("
+      },
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P028",
+      "group": "Native stellar density",
+      "parameter": "Mass uncertainty",
+      "current_value": "Always 10% of mass in this preparer",
+      "assessment": "CONFIRMED_IMPLEMENTATION_MISMATCH",
+      "comparison_or_recommendation": "Use reported uncertainty when present. The reference fallback does not justify overwriting measurements.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 39,
+        "anchor": "family=dict("
+      },
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P029",
+      "group": "Native stellar density",
+      "parameter": "Radius uncertainty",
+      "current_value": "Always 6% of radius in this preparer",
+      "assessment": "CONFIRMED_IMPLEMENTATION_MISMATCH",
+      "comparison_or_recommendation": "Use reported uncertainty when present; the scene builder already does so. C12 has missing M/R errors, so fallback is applicable there.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 39,
+        "anchor": "family=dict("
+      },
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P030",
+      "group": "Native stellar density",
+      "parameter": "M/R dependence",
+      "current_value": "Independent positive Gaussian M and R",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Joint stellar covariance/systematics are not represented; physically coherent posterior samples are preferable where available.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 39,
+        "anchor": "family=dict("
+      },
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P031",
+      "group": "Native numerical inference",
+      "parameter": "Density quadrature",
+      "current_value": "2049 log-rho grid points; 1024 vs 2048 Legendre nodes; radius centre +/-9 sigma, lower .001Rsun",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Resolution comparison checks this integral, not the astrophysical validity of independent M/R or the density box.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/source/stellar_density_setup.py",
+        "line": 21,
+        "anchor": "def density_prior("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P032",
+      "group": "Native numerical inference",
+      "parameter": "MAP start geometries",
+      "current_value": "impact fractions .5,.8,.94; theta [0,0,ln(.08),fraction,ln(M/R^3),.4,.5,0]",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Multiple starts help, but do not prove discovery of all transit/alias modes.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 165,
+        "anchor": "def optimize():"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P033",
+      "group": "Native numerical inference",
+      "parameter": "MAP optimizer",
+      "current_value": "Nelder-Mead; maxiter2500, then4000 if best unsuccessful; xatol1e-5,fatol1e-4",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "No paper requires these settings; diagnose finite support and optimization separately.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 165,
+        "anchor": "def optimize():"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P034",
+      "group": "Native numerical inference",
+      "parameter": "MAP simplex scales",
+      "current_value": "[2,.06,.06,.04,.12,.08,.08,.03]",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Optimization controls, not physical restrictions.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 165,
+        "anchor": "def optimize():"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P035",
+      "group": "Native numerical inference",
+      "parameter": "MAP serialization",
+      "current_value": "strict JSON allow_nan=False; rejected attempts may contain -inf",
+      "assessment": "CONFIRMED_BOOKKEEPING_BUG",
+      "comparison_or_recommendation": "Represent rejected support explicitly in a reviewed serializer; do not label a finite model all-infinite because the writer failed.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2077554781499350144/native_followup.py",
+        "line": 165,
+        "anchor": "def optimize():"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P036",
+      "group": "Native numerical inference",
+      "parameter": "Ensembles and walkers",
+      "current_value": "4 independent ensembles, 24 walkers each",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Different sampler from the reference is acceptable if posterior exploration and diagnostics are adequate.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P037",
+      "group": "Native numerical inference",
+      "parameter": "Moves",
+      "current_value": "50% StretchMove + 50% DEMove",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Sampler controls; not a TRICERATOPS prerequisite.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P038",
+      "group": "Native numerical inference",
+      "parameter": "Initialization seeds",
+      "current_value": "[934871,934988,935105,935222]",
+      "assessment": "FROZEN_REPRODUCIBILITY",
+      "comparison_or_recommendation": "Preserve all seeds and continuation RNG states.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P039",
+      "group": "Native numerical inference",
+      "parameter": "Sampler seeds",
+      "current_value": "[238017,238226,238435,238644]",
+      "assessment": "FROZEN_REPRODUCIBILITY",
+      "comparison_or_recommendation": "No replacing unsuccessful chains with favourable seeds.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P040",
+      "group": "Native numerical inference",
+      "parameter": "Initialization spread",
+      "current_value": "Native [2,.12,.12,.12,.25,.15,.15,.015]; fresh duration-coordinate starts [2,.12,.08,.12,.2,.15,.15,.02] before exact transformation",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Exact defaults and expressions preserved in static appendix.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P041",
+      "group": "Native numerical inference",
+      "parameter": "Endpoints",
+      "current_value": "3000,6000,12000,24000 steps; deterministic continuation only",
+      "assessment": "LOCAL_COMPUTE_POLICY",
+      "comparison_or_recommendation": "Finite compute budget may hold a real planet; it is not a physical false-positive test.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 291,
+        "anchor": "def sample_one("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P042",
+      "group": "Native numerical inference",
+      "parameter": "Burn-in",
+      "current_value": "min(1000, floor(steps/3))",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Check stationarity and effective independent draws; step count alone is insufficient.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 355,
+        "anchor": "def diagnose("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P043",
+      "group": "Native numerical inference",
+      "parameter": "Rhat/epoch ESS diagnostics",
+      "current_value": "One predeclared walker from each ensemble; all rank Rhat<=1.03, epoch bulk ESS>=100",
+      "assessment": "LITERATURE_ANALOGUE_WITH_LIMITS",
+      "comparison_or_recommendation": "Paper-style numerical thresholds; correlated walkers are not independent chains. Diagnostic construction differs from NUTS.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 355,
+        "anchor": "def diagnose("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P044",
+      "group": "Native numerical inference",
+      "parameter": "Radius precision admission gate",
+      "current_value": "median(k)/std(k)>3, all retained posterior samples",
+      "assessment": "LOCAL_ADMISSION_POLICY",
+      "comparison_or_recommendation": "Not required by calc_probs. The reference applies median(k)/half(16th-84th percentile width)>3 in its final fit; our median/std differs. This may hold a real grazing planet; C10 fails both definitions.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 355,
+        "anchor": "def diagnose("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P045",
+      "group": "Native numerical inference",
+      "parameter": "Additional reported convergence",
+      "current_value": "Rhat<1.01 and chain length>50*tau is reported separately, not the adopted framework gate",
+      "assessment": "DIAGNOSTIC_ONLY",
+      "comparison_or_recommendation": "Do not report the weaker adopted gate as proof the stronger one passed.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 355,
+        "anchor": "def diagnose("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P046",
+      "group": "Timing and acquisition",
+      "parameter": "Local timing profile",
+      "current_value": "65 period x65 epoch grid, epoch +/-1.999h; shape/noise fixed at mode",
+      "assessment": "DIAGNOSTIC_ONLY",
+      "comparison_or_recommendation": "This is a local conditional profile, not a global alias search or marginalized timing evidence.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 394,
+        "anchor": "def period_profile("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P047",
+      "group": "Timing and acquisition",
+      "parameter": "Quarter offset profile",
+      "current_value": "+/-1.5h, 121 points (1.5min spacing)",
+      "assessment": "DIAGNOSTIC_ONLY",
+      "comparison_or_recommendation": "Quarter timing coverage and uncertainty matter; no universal fixed-hour grid.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/evidence/native-2127186564572468352/native-transit-stellar-completion-snapshot.py",
+        "line": 453,
+        "anchor": "offsets = np.linspace(-1.5"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P048",
+      "group": "Timing and acquisition",
+      "parameter": "Acquisition metadata",
+      "current_value": "TDB/BKJD, BJDREF2454833, mid-exposure;270 frames;6.538751429414s spacing,6.01980290327s live",
+      "assessment": "KEEP_MEASURED_INPUT",
+      "comparison_or_recommendation": "Use the actual delivered cadence/exposure; do not inherit TESS exposure defaults for Kepler long cadence.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 99,
+        "anchor": "integration_mode="
+      },
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P049",
+      "group": "Timing and acquisition",
+      "parameter": "Native integration",
+      "current_value": "5 frames/group,54 group centres;270-centre and finite-live-frame checks",
+      "assessment": "JUSTIFIED_NUMERICAL_ADAPTATION",
+      "comparison_or_recommendation": "Resolution must be checked at the accepted posterior and ingress shapes, not justified solely by a large number.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 99,
+        "anchor": "integration_mode="
+      },
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P050",
+      "group": "Timing and acquisition",
+      "parameter": "Clock adoption",
+      "current_value": "Accepted joint posterior median P and central reference epoch, no FPP selection",
+      "assessment": "USER_PROTOCOL",
+      "comparison_or_recommendation": "A defensible adopted ephemeris; no choosing the clock that minimises FPP.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_native_candidate_v2.py",
+        "line": 99,
+        "anchor": "integration_mode="
+      },
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P051",
+      "group": "Probability light-curve packet",
+      "parameter": "Full-phase construction",
+      "current_value": "Retain native primary groups; append other original-valid photons in .6d quarter cells",
+      "assessment": "CUSTOM_LIKELIHOOD",
+      "comparison_or_recommendation": "Additional bookkeeping enables common transforms; it is not an upstream requirement.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 93,
+        "anchor": "def prepare_fullphase("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P052",
+      "group": "Probability light-curve packet",
+      "parameter": "Sparse added cells",
+      "current_value": "Merge cells with fewer than3 points into nearest adjacent same-quarter cell",
+      "assessment": "CUSTOM_LIKELIHOOD",
+      "comparison_or_recommendation": "A numerical/model choice; preserve actual timing and group membership.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 93,
+        "anchor": "def prepare_fullphase("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P053",
+      "group": "Probability light-curve packet",
+      "parameter": "Quarter noise reuse",
+      "current_value": "Native normalization and fixed OOT jitter on all usable photons",
+      "assessment": "CUSTOM_NOISE_MODEL",
+      "comparison_or_recommendation": "Requires adequacy away from the primary as well as in native windows.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 93,
+        "anchor": "def prepare_fullphase("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P054",
+      "group": "Probability light-curve packet",
+      "parameter": "MAP template",
+      "current_value": "Native physical MAP circular template; quadratic LD",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Template uncertainty is not marginalized by internal transform parity.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 144,
+        "anchor": "def export_map("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P055",
+      "group": "Probability light-curve packet",
+      "parameter": "Noise export",
+      "current_value": "Native effective errors times exp(MAP log-noise)",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Probability evidence fixes this scale; no full noise posterior marginalization.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 144,
+        "anchor": "def export_map("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P056",
+      "group": "Probability light-curve packet",
+      "parameter": "Baseline transform",
+      "current_value": "Affine ridge-MAP baseline, prior precision diag[100,4]; same nonlinear y/H(y) for data/models",
+      "assessment": "CUSTOM_LIKELIHOOD",
+      "comparison_or_recommendation": "Applying the same operator is necessary, but does not prove an unbiased astrophysical evidence calculation.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 144,
+        "anchor": "def export_map("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P057",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance",
+      "current_value": "First-order Jacobian J at observed MAP; B J diag(sigma^2) J^T B^T",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Propagates detrending correlations, not a time-correlated stellar-noise GP or full nuisance posterior.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 144,
+        "anchor": "def export_map("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P058",
+      "group": "Probability light-curve packet",
+      "parameter": "Folded range",
+      "current_value": "+/-2 fitted T14",
+      "assessment": "LITERATURE_ANALOGUE",
+      "comparison_or_recommendation": "A duration-scaled probability window has a direct reference analogue; inspect lost longer alternatives.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 179,
+        "anchor": "def prepare_bin("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P059",
+      "group": "Probability light-curve packet",
+      "parameter": "Binning",
+      "current_value": "200 total equal phase bins over4T14; omit empty bins",
+      "assessment": "LITERATURE_ANALOGUE",
+      "comparison_or_recommendation": "Current C12 occupies178 bins. Check numerical effect for long-cadence, short ingress and grazing shapes.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 179,
+        "anchor": "def prepare_bin("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P060",
+      "group": "Probability light-curve packet",
+      "parameter": "Bin weights",
+      "current_value": "Inverse corrected conditional variance; keep full pooled covariance",
+      "assessment": "CUSTOM_ADAPTATION",
+      "comparison_or_recommendation": "Stock API accepts scalar scatter; this is a more complex likelihood, requiring matched-data controls.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 179,
+        "anchor": "def prepare_bin("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P061",
+      "group": "Probability light-curve packet",
+      "parameter": "Flux clipping",
+      "current_value": "No added sigma clipping in this packet; original masks remain",
+      "assessment": "DECLARED_DATA_CHOICE",
+      "comparison_or_recommendation": "No obligation to copy TESS clipping. Inspect outliers without hypothesis-dependent removal.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/packet-helpers/mathematical_helper.py",
+        "line": 179,
+        "anchor": "def prepare_bin("
+      },
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P062",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance mode retention",
+      "current_value": "lambda>1e-6*largest eigenvalue",
+      "assessment": "CUSTOM_INFORMATION_COMPRESSION",
+      "comparison_or_recommendation": "Drops low-variance modes, not just exact null modes. Test evidence sensitivity; normalization cancellation alone does not recover discarded information.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+        "line": 12,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P063",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance integrity tolerances",
+      "current_value": "reconstruction rtol1e-10,atol1e-20; negative mode tolerance1e-10*lambda_max",
+      "assessment": "NUMERICAL_INTEGRITY",
+      "comparison_or_recommendation": "Retain checks; these are not physical cuts.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+        "line": 12,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P064",
+      "group": "Probability light-curve packet",
+      "parameter": "Observed-bin reproduction tolerance",
+      "current_value": "max absolute flux error<=1e-10",
+      "assessment": "NUMERICAL_INTEGRITY",
+      "comparison_or_recommendation": "Necessary operator check, not empirical calibration.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+        "line": 12,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P065",
+      "group": "Probability light-curve packet",
+      "parameter": "Noise family",
+      "current_value": "FIXED_EXPORTED_MAP_SCALE",
+      "assessment": "CUSTOM_NOISE_MODEL",
+      "comparison_or_recommendation": "Config noise_quadrature_nodes128 does not make this active likelihood noise-marginalized.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+        "line": 12,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P066",
+      "group": "Probability light-curve packet",
+      "parameter": "Complete-group / null-quarter reduction",
+      "current_value": "Drop only entire independent groups with exactly zero bin projection; Q1 null at both declared clocks",
+      "assessment": "REVIEWED_OPERATOR_EQUIVALENCE",
+      "comparison_or_recommendation": "C12 full-reference observed/model/covariance differences were exactly zero. This recovery is not a new physical validation.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/quarter_null_projection.py",
+        "line": 9,
+        "anchor": "def "
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P067",
+      "group": "Stellar catalogue scene",
+      "parameter": "Resolved source census",
+      "current_value": "All original Gaia scene IDs + target; C12:31 sources",
+      "assessment": "KEEP_COMPLETENESS",
+      "comparison_or_recommendation": "Audit flux outside the retained60arcsec field and catalogue completeness; no missing source may silently vanish.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/acquire_field_inputs.py",
+        "line": 22,
+        "anchor": "def main("
+      },
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P068",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC search",
+      "current_value": "1arcmin cone; pagesize10000",
+      "assessment": "CUSTOM_CENSUS_SETTING",
+      "comparison_or_recommendation": "Compare with actual extraction and contamination radius, not an arbitrary universal angular radius.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/acquire_field_inputs.py",
+        "line": 22,
+        "anchor": "def main("
+      },
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P069",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia DR2 association",
+      "current_value": "Exact DR3 identity, DR2 neighbourhood<500mas",
+      "assessment": "IDENTITY_RULE",
+      "comparison_or_recommendation": "Astrometric/crossmatch ambiguities require review; a proximity alone is not sufficient.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/acquire_field_inputs.py",
+        "line": 22,
+        "anchor": "def main("
+      },
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P070",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue observables",
+      "current_value": "Gaia G,BP,RP,parallax/error,RUWE,pm/coords,APs; TIC mass/radius/Teff/metallicity/EBV and errors",
+      "assessment": "OBSERVED_INPUT",
+      "comparison_or_recommendation": "Exact field values and missingness embedded in audit; catalogue estimates are not all independent measurements.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/acquire_field_inputs.py",
+        "line": 22,
+        "anchor": "def main("
+      },
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P071",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC duplicate handling",
+      "current_value": "Only unique official DUPLICATE->canonical pointer with exactly agreeing source fields",
+      "assessment": "KEEP_IDENTITY",
+      "comparison_or_recommendation": "Legitimate identity safeguard, not a planet-selection cut. Preserve raw aliases.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/prepare_scene_inputs_v3.py",
+        "line": 24,
+        "anchor": "def resolve_tic("
+      },
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P072",
+      "group": "Stellar catalogue scene",
+      "parameter": "Stellar bank size",
+      "current_value": "4096 particles/catalogue/source",
+      "assessment": "CUSTOM_NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Finite bank error is not removed by1M evidence draws. Check effective support/convergence separately.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field_scene_prior.py",
+        "line": 20,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P073",
+      "group": "Stellar catalogue scene",
+      "parameter": "Bank random seed",
+      "current_value": "20261011, sequential scene construction",
+      "assessment": "FROZEN_REPRODUCIBILITY",
+      "comparison_or_recommendation": "Fixed numerical approximation; preserve it, do not pick a favourable bank.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field_scene_prior.py",
+        "line": 20,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P074",
+      "group": "Stellar catalogue scene",
+      "parameter": "Target family",
+      "current_value": "TIC for active C12; alternatives GAIA_FLAME/POPULATION exist",
+      "assessment": "DECLARED_SCIENTIFIC_CHOICE",
+      "comparison_or_recommendation": "Choose from authenticated stellar evidence before seeing FPP; no universally correct family.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field_scene_prior.py",
+        "line": 20,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P075",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue distance eligibility",
+      "current_value": "parallax/error>=5; error>0",
+      "assessment": "CUSTOM_ROUTE_RESTRICTION",
+      "comparison_or_recommendation": "Not a general TRICERATOPS validation requirement. Low-SNR distance needs a proper posterior/prior rather than a failed inverse-parallax route.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P076",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue extinction eligibility",
+      "current_value": "TIC EBV required, even for Gaia-family route",
+      "assessment": "CUSTOM_ROUTE_RESTRICTION",
+      "comparison_or_recommendation": "Driven by our BC model. Missing TIC EBV is not evidence a planet cannot be validated; do not equate Gaia A0 to Av.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P077",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC M/R/Teff eligibility",
+      "current_value": "All three needed",
+      "assessment": "UPSTREAM_ANALOGUE",
+      "comparison_or_recommendation": "Physical host properties are needed; stock offers estimation routes. Coherent alternative estimation requires review, not fabricated values.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P078",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia-family eligibility",
+      "current_value": "FLAME M,R and GSP-Phot Teff with lower/upper bounds",
+      "assessment": "CUSTOM_ROUTE_RESTRICTION",
+      "comparison_or_recommendation": "More restrictive than a universal API contract; quality/systematic errors of Gaia APs still need consideration.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P079",
+      "group": "Stellar catalogue scene",
+      "parameter": "Scene TIC M/R errors",
+      "current_value": "Reported errors; only missing errors use10%M/6%R",
+      "assessment": "LITERATURE_FALLBACK_WITH_LIMITS",
+      "comparison_or_recommendation": "This differs from native preparer which always assigns10/6. Fallbacks are assumptions, not measured precision.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P080",
+      "group": "Stellar catalogue scene",
+      "parameter": "Metallicity",
+      "current_value": "TIC MH/error else Gaia GSP-Phot MH with bounds; no defaultSolar fill",
+      "assessment": "CUSTOM_MODEL_REQUIREMENT",
+      "comparison_or_recommendation": "Our BC/LD model needs a declared metallicity prior; stock target code setsZ=0. Missing MH need not imply no defensible prior.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P081",
+      "group": "Stellar catalogue scene",
+      "parameter": "Missing Teff/MH/EBV errors",
+      "current_value": "Fixed conditional value when centre exists without error",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Not zero measured uncertainty. Propagate justified systematics/uncertainty in a reviewed model.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P082",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia uncertainty approximation",
+      "current_value": "50:50 split half-Gaussians with median-to16/84percentile widths",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Approximates marginal quantiles; does not reconstruct joint catalogue posterior or include systematic calibration.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P083",
+      "group": "Stellar catalogue scene",
+      "parameter": "Parameter independence",
+      "current_value": "Independent M,R,Teff,MH,EBV,parallax draws",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Can create inconsistent stellar combinations and discard catalogue correlations; require sensitivity/physical checks.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 158,
+        "anchor": "def catalogue_specs("
+      },
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P084",
+      "group": "Stellar catalogue scene",
+      "parameter": "Distance draw",
+      "current_value": "Positive truncated Gaussian parallax then1000/plx pc; no Galactic distance prior",
+      "assessment": "CONDITIONAL_HIGH_SNR_APPROXIMATION",
+      "comparison_or_recommendation": "Limited high-SNR route, not a low-SNR distance solution.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 232,
+        "anchor": "def catalogue_bank("
+      },
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P085",
+      "group": "Stellar catalogue scene",
+      "parameter": "Reddening law",
+      "current_value": "Av=3.1*EBV",
+      "assessment": "DECLARED_ASTROPHYSICAL_ASSUMPTION",
+      "comparison_or_recommendation": "ConventionalRv3.1, not a measured source-specific extinction law.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 232,
+        "anchor": "def catalogue_bank("
+      },
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P086",
+      "group": "Stellar catalogue scene",
+      "parameter": "Derived gravity",
+      "current_value": "GM/R^2 cgs",
+      "assessment": "PHYSICAL_RELATION",
+      "comparison_or_recommendation": "Correct units; still inherits sampled M/R consistency.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 232,
+        "anchor": "def catalogue_bank("
+      },
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P087",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue bank weights",
+      "current_value": "Uniform1/4096; physical-G residual diagnostic only",
+      "assessment": "CUSTOM_CONDITIONING",
+      "comparison_or_recommendation": "Physical luminosity inconsistency is not automatically repaired by observed-G anchoring.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 232,
+        "anchor": "def catalogue_bank("
+      },
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P088",
+      "group": "Empirical scene route",
+      "parameter": "Population G smoothing",
+      "current_value": ".1mag (diagnostic summaries also .05,.2)",
+      "assessment": "CUSTOM_SMOOTHING",
+      "comparison_or_recommendation": "This is a model bandwidth, not measured Gaia photometric uncertainty. Needs adequacy/sensitivity tests.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 266,
+        "anchor": "def population_log_weights("
+      },
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P089",
+      "group": "Empirical scene route",
+      "parameter": "Population BP-RP smoothing",
+      "current_value": ".15mag",
+      "assessment": "CUSTOM_SMOOTHING",
+      "comparison_or_recommendation": "Declared empirical approximation, not TRICERATOPS default.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 266,
+        "anchor": "def population_log_weights("
+      },
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P090",
+      "group": "Empirical scene route",
+      "parameter": "Population parallax conditioning",
+      "current_value": "Measured Gaussian parallax likelihood, including negative values",
+      "assessment": "DEFENSIBLE_MODEL_FORM",
+      "comparison_or_recommendation": "Avoids inverse-parallax failure but finite catalogue/selection prior remains a scientific choice.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 266,
+        "anchor": "def population_log_weights("
+      },
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P091",
+      "group": "Empirical scene route",
+      "parameter": "Effective particles",
+      "current_value": "ESS and maximum weight reported; sparse ESS~1-2 retained",
+      "assessment": "PRECISION_LIMITATION",
+      "comparison_or_recommendation": "Repeating integration cannot add stars to a sparse prior bank; no unreviewed automatic pruning/ESS veto.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/stellar_scene_prior.py",
+        "line": 266,
+        "anchor": "def population_log_weights("
+      },
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P092",
+      "group": "Measured neighbor override",
+      "parameter": "C12 seismic source",
+      "current_value": "Exact APOKASC3 Gold KIC4904086/Gaia2103348121689134592 only",
+      "assessment": "MEASURED_SOURCE_SPECIFIC",
+      "comparison_or_recommendation": "Measured evidence is preferable to fabricating a giant from a main-sequence relation. Other30sources unchanged.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/candidate_stellar_prior.py",
+        "line": 22,
+        "anchor": "class NewStellarPrior("
+      },
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P093",
+      "group": "Measured neighbor override",
+      "parameter": "Seismic parameters",
+      "current_value": "M1.1699+/-.0481,R10.7408+/-.1994,Teff4773.5347+/-44.8615,FeH-.0708+/-.058",
+      "assessment": "OBSERVED_INPUT",
+      "comparison_or_recommendation": "Source identifiers, original values/errors and catalogue receipt retained.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/candidate_stellar_prior.py",
+        "line": 22,
+        "anchor": "class NewStellarPrior("
+      },
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P094",
+      "group": "Measured neighbor override",
+      "parameter": "Seismic particles and assumptions",
+      "current_value": "4096, seed entropy[2026,10,19,11,0]; independent draws, scaledSolar BC; fixed EBV if error missing",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Measurements do not supply absent joint covariance or a measured alpha-enhanced BC model.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/candidate_stellar_prior.py",
+        "line": 22,
+        "anchor": "class NewStellarPrior("
+      },
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P095",
+      "group": "Photometry and model support",
+      "parameter": "Flux/colour grids",
+      "current_value": "Pinned MISTUBVRIplus SHA524dc5d0...; GaiaG_EDR3,KeplerKp,TESS; Vega",
+      "assessment": "JUSTIFIED_PASSBAND_ROUTING",
+      "comparison_or_recommendation": "Appropriate filters are necessary; numerical table support is not proof of stellar-model accuracy.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/kepler_flux.py",
+        "line": 25,
+        "anchor": "class MISTFluxGrid:"
+      },
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P096",
+      "group": "Photometry and model support",
+      "parameter": "BC interpolation",
+      "current_value": "LinearTeff/logg/FeH/Av, no clipping/extrapolation",
+      "assessment": "CUSTOM_MODEL_CHOICE",
+      "comparison_or_recommendation": "Reasonable safety boundary; supply a scientifically justified alternative for unsupported objects, never erase them.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/kepler_flux.py",
+        "line": 25,
+        "anchor": "class MISTFluxGrid:"
+      },
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P097",
+      "group": "Photometry and model support",
+      "parameter": "BC rectangular domain",
+      "current_value": "Teff2500..1000000K;logg-4..9.5;FeH-4..+.75;Av0..6",
+      "assessment": "MODEL_DOMAIN_NOT_PHYSICAL_CUT",
+      "comparison_or_recommendation": "Includes source-table padding. WDlogg9.57 and some metal-rich neighbors exceed this chosen table, not nature or TRICERATOPS.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/kepler_flux.py",
+        "line": 25,
+        "anchor": "class MISTFluxGrid:"
+      },
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P098",
+      "group": "Photometry and model support",
+      "parameter": "Luminosity constants",
+      "current_value": "Tsun5772K,Mbolsun4.74; Lband proportionalR^2(T/Tsun)^4*10^(.4BC)",
+      "assessment": "PHYSICAL_CONVENTION",
+      "comparison_or_recommendation": "Common within-band normalization cancels; distinguish colour magnitudes and physical cross-band fluxes.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/kepler_flux.py",
+        "line": 25,
+        "anchor": "class MISTFluxGrid:"
+      },
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P099",
+      "group": "Photometry and model support",
+      "parameter": "Gaia-G to Kepler anchor",
+      "current_value": "Kp=observedG+BC_G-BC_Kp; composite totalG convention for unresolved scenarios",
+      "assessment": "CUSTOM_SCIENTIFIC_MODEL",
+      "comparison_or_recommendation": "Composite SED is not refit to observations; blending/colour/multiplicity conditioning needs known-object controls.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 38,
+        "anchor": "values['anchored_kp']"
+      },
+      "references": [
+        "CODE",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P100",
+      "group": "Photometry and model support",
+      "parameter": "Paired population colours",
+      "current_value": "Every Gaia row uniquely matches all12printed physical fields in separately returned Kepler table; AB-Vega=.122666mag",
+      "assessment": "FRAGILE_WORKFLOW_NOT_UNIVERSAL_REQUIREMENT",
+      "comparison_or_recommendation": "Exact identity check is sound; two independent simulations need not share stars. Prefer a reviewed common physical catalogue with both bands, rather than approximate joining/redrawing.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 30,
+        "anchor": "colors = paired_colors"
+      },
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P101",
+      "group": "Photometry and model support",
+      "parameter": "Limb-darkening lookup",
+      "current_value": "NearestZ,thenTeff,thenlogg; nearest outside grid, no uncertainty",
+      "assessment": "UPSTREAM_STYLE_APPROXIMATION",
+      "comparison_or_recommendation": "Using the Kepler table is right; nearest-edge lookup is not proof of cool-star/gravity support. Inspect actual coverage.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/nearest_ld_v2.py",
+        "line": 44,
+        "anchor": "self.prescription"
+      },
+      "references": [
+        "CODE",
+        "STELLAR"
+      ]
+    },
+    {
+      "id": "P102",
+      "group": "Field response and dilution",
+      "parameter": "Aperture response",
+      "current_value": "Actual source-quarter masks/WCS and published CCD PRF core; full resolved census",
+      "assessment": "JUSTIFIED_KEPLER_ADAPTATION",
+      "comparison_or_recommendation": "Necessary for KBonus background extractions; stock TESS Gaussian is not a better Kepler-specific measurement.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P103",
+      "group": "Field response and dilution",
+      "parameter": "Adopted PRF tail family",
+      "current_value": "EXP_MEDIAN_FIT",
+      "assessment": "CUSTOM_SCIENTIFIC_MODEL",
+      "comparison_or_recommendation": "Distant-wing response extrapolation must be checked against data; not guaranteed by the published core PRF.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P104",
+      "group": "Field response and dilution",
+      "parameter": "Pointing prior",
+      "current_value": "Independent uniform quarter atoms: nominal and+/-0.2pixels on each axis",
+      "assessment": "CUSTOM_SCIENTIFIC_PRIOR",
+      "comparison_or_recommendation": "Five states shared across sources within a quarter; not an inferred pointing-error distribution.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P105",
+      "group": "Field response and dilution",
+      "parameter": "Unresolved spatial prior",
+      "current_value": "Uniform area disk radius2.2arcsec, sqrt(U) radial draw",
+      "assessment": "UPSTREAM_CONVENTION_WITH_LIMITS",
+      "comparison_or_recommendation": "2.2arcsec is an inherited no-imaging convention, not a complete Gaia/Kepler exclusion guarantee.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P106",
+      "group": "Field response and dilution",
+      "parameter": "Unresolved interpolation",
+      "current_value": "13x13grid on[-2.2,2.2]arcsec, bilinear throughput",
+      "assessment": "CUSTOM_NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Require spatial resolution checks, particularly sharp aperture edges.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P107",
+      "group": "Field response and dilution",
+      "parameter": "Throughput support",
+      "current_value": "All source-quarter throughputs finite and0<tau<=1",
+      "assessment": "KEEP_PHYSICAL_INTEGRITY",
+      "comparison_or_recommendation": "Do not turn unsupported response into zero contamination.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v7.py",
+        "line": 19,
+        "anchor": "def __init__("
+      },
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P108",
+      "group": "Field response and dilution",
+      "parameter": "PRF core/tail join",
+      "current_value": "3.5..4.25pixels; positive core; clipped negative polynomial samples recorded",
+      "assessment": "CUSTOM_MODEL_CHOICE",
+      "comparison_or_recommendation": "Physical positivity is necessary, but clipping/tail normalization require empirical comparison.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/prf_wing_sensitivity.py",
+        "line": 19,
+        "anchor": "JOIN_IN, JOIN_OUT"
+      },
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P109",
+      "group": "Field response and dilution",
+      "parameter": "Wing sensitivity families",
+      "current_value": "5families; nominal exponential, envelope exponential, Moffatbeta2.5/1.5 and doubled slow envelope",
+      "assessment": "DIAGNOSTIC_NOT_EMPIRICAL_PRIOR",
+      "comparison_or_recommendation": "Only nominal used in this production; other conventional families are sensitivities, not measured probabilities.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/prf_wing_sensitivity.py",
+        "line": 19,
+        "anchor": "JOIN_IN, JOIN_OUT"
+      },
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P110",
+      "group": "Field response and dilution",
+      "parameter": "PRF normalization",
+      "current_value": "Radius64pixels with32/64/128convergence and analytic tail integral",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Checks integration convergence of the assumed tail, not correctness of that tail.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/prf_wing_sensitivity.py",
+        "line": 19,
+        "anchor": "JOIN_IN, JOIN_OUT"
+      },
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P111",
+      "group": "TRILEGAL population",
+      "parameter": "Population service",
+      "current_value": "TRILEGAL1.6; sky coordinates in Galactic degrees",
+      "assessment": "LITERATURE_MODEL",
+      "comparison_or_recommendation": "Established Galactic star-count model; preserve exact request rather than relabel as empirical truth.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P112",
+      "group": "TRILEGAL population",
+      "parameter": "Area",
+      "current_value": ".1square degrees",
+      "assessment": "LITERATURE_ANALOGUE",
+      "comparison_or_recommendation": "Area in density normalization must match request.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P113",
+      "group": "TRILEGAL population",
+      "parameter": "Band-dependent magnitude limits",
+      "current_value": "Gaia22.5;Kepler26; mag_res.1",
+      "assessment": "DECLARED_SELECTION",
+      "comparison_or_recommendation": "Audit completeness of selectable contaminants and native colour overlap; a finite faint limit is not exact zero contamination.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P114",
+      "group": "TRILEGAL population",
+      "parameter": "Photometric systems",
+      "current_value": "gaiaEDR3 and kepler_2mass, separate calls",
+      "assessment": "CUSTOM_WORKFLOW",
+      "comparison_or_recommendation": "Same physical population across filters is needed for exact rowwise colours; independent jobs do not ensure that.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P115",
+      "group": "TRILEGAL population",
+      "parameter": "Extinction",
+      "current_value": "IRSA SandF integratedEBV*3.1; height110pc, fractionalscatter.1",
+      "assessment": "INHERITED_GALACTIC_MODEL",
+      "comparison_or_recommendation": "Full line-of-sight value is population boundary input, not every source extinction.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P116",
+      "group": "TRILEGAL population",
+      "parameter": "IMF and Galaxy defaults",
+      "current_value": "Exact75-entry request embedded, including Chabrier lognormal and disk/halo/bulge prescriptions",
+      "assessment": "INHERITED_MODEL_NOT_INDIVIDUALLY_VALIDATED",
+      "comparison_or_recommendation": "All exact keys are included below. Internal code replay does not validate each Galactic-model hyperparameter for this field.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P117",
+      "group": "TRILEGAL population",
+      "parameter": "Binary synthesis",
+      "current_value": "binary_kind0; retained binary_frac.3 andq.7..1 inactive underkind0",
+      "assessment": "INHERITED_SELECTION",
+      "comparison_or_recommendation": "Do not double-count synthetic unresolved binaries and explicitly generated scenario companions.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/population_inputs.py",
+        "line": 30,
+        "anchor": "params.update("
+      },
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P118",
+      "group": "Probability scientific priors",
+      "parameter": "Scenario census",
+      "current_value": "15target families plus3per resolved neighbor; C12=105; no dropping",
+      "assessment": "UPSTREAM_STRUCTURE",
+      "comparison_or_recommendation": "Complete alternatives are necessary; removing inconvenient families can spuriously lower FPP.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P119",
+      "group": "Probability scientific priors",
+      "parameter": "Background eligible hosts",
+      "current_value": "Kepler magnitude>=sampled targetKp (fainter/equal)",
+      "assessment": "UPSTREAM_STYLE_SELECTION",
+      "comparison_or_recommendation": "Document bright-source treatment in resolved scene; audit catalogue incompleteness rather than assuming brighter blends impossible.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P120",
+      "group": "Probability scientific priors",
+      "parameter": "Chance alignment prior",
+      "current_value": "min(Neligible/.1deg2 * pi*(2.2arcsec/3600)^2,1)",
+      "assessment": "REVIEWED_GEOMETRIC_NORMALIZATION",
+      "comparison_or_recommendation": "Matches declared circular disk area. Historicalr^2 convention was separately amended before currentfreeze.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P121",
+      "group": "Probability scientific priors",
+      "parameter": "Bound companion frequency",
+      "current_value": "Pinned Moe/DiStefano-based TP/EB prior, sampledparallax and2.2arcsec",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "Not a measured companion exclusion; imaging/MOLUSC support needs explicit binding.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P122",
+      "group": "Probability scientific priors",
+      "parameter": "Planet radius prior",
+      "current_value": "flat_planet_priorsFalse;R=.5..20Re,breaks3/6Re; slopes0,-4,-.5 or0,-7,-.5 ifM<=.45",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "These are original statistical assumptions, not an M/K empirical calibration. Do not flatten simply to make a target pass.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P123",
+      "group": "Probability scientific priors",
+      "parameter": "Inclination",
+      "current_value": "Isotropic cos(i) prior",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "Importance targeting must retain this prior throughp/q weighting.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P124",
+      "group": "Probability scientific priors",
+      "parameter": "Planet eccentricity",
+      "current_value": "Beta(.867,3.030)",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "Established population assumption; differs from circular native conditioning.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P125",
+      "group": "Probability scientific priors",
+      "parameter": "Binary eccentricity",
+      "current_value": "power-law shape.2 forP<=10d,else.6",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "The threshold/distribution is inherited, not a Kepler exposure setting.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P126",
+      "group": "Probability scientific priors",
+      "parameter": "Argument of periapse",
+      "current_value": "Uniform0..360degrees",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "Check period units and transit/collision geometry.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P127",
+      "group": "Probability scientific priors",
+      "parameter": "Binary mass ratios",
+      "current_value": "Pinned mass-dependent q and q_companion distributions; twin splitq=.95; full coefficient source in appendix",
+      "assessment": "UPSTREAM_PRESCRIPTION",
+      "comparison_or_recommendation": "Preserve empirical mass thresholds/twin fraction; not a new posterior tuning knob.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P128",
+      "group": "Probability scientific priors",
+      "parameter": "Flux conditioning",
+      "current_value": "COMPOSITE_OBSERVED_G",
+      "assessment": "CUSTOM_SCIENTIFIC_MODEL",
+      "comparison_or_recommendation": "Observed total source flux allocated between components rather than upstream primary-G anchor; requires matched physical controls.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P129",
+      "group": "Probability scientific priors",
+      "parameter": "Collision and transit support",
+      "current_value": "Zero likelihood for collision/nontransit/invalid branch; include in attempted denominator",
+      "assessment": "KEEP_INTEGRATION_MEASURE",
+      "comparison_or_recommendation": "Correct denominator matters; invalid draws cannot be silently replaced.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 29,
+        "anchor": "def scenario_draws("
+      },
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P130",
+      "group": "Probability scientific priors",
+      "parameter": "Companion M/R/Teff relation",
+      "current_value": "Torres ifM>.63Msun, cool-dwarf spline otherwise; Rfloor.1Rsun,Tefffloor2800K,cappedatprimary",
+      "assessment": "UPSTREAM_MODEL_LIMITATION",
+      "comparison_or_recommendation": "Inherited floors/caps also need cool-star applicability review; upstream provenance does not make every low-mass companion physical.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/funcs.py",
+        "line": 57,
+        "anchor": "def stellar_relations("
+      },
+      "references": [
+        "STELLAR",
+        "GIACALONE",
+        "MANN15",
+        "MANN19"
+      ]
+    },
+    {
+      "id": "P131",
+      "group": "Probability scientific priors",
+      "parameter": "Special cold equal-binary branch",
+      "current_value": "M<=.1Msun,q=1,Teff<2500K: exact identical component copied",
+      "assessment": "REVIEWED_SPECIAL_BRANCH",
+      "comparison_or_recommendation": "Do not remove this supported branch during domain checks. It is not general support for all ultracool stars/WDs.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+        "line": 82,
+        "anchor": "identical_cold ="
+      },
+      "references": [
+        "STELLAR"
+      ]
+    },
+    {
+      "id": "P132",
+      "group": "Probability numerical integration",
+      "parameter": "Planet proposal mixture",
+      "current_value": "10%prior +90%targeted radius/inclination; exactp/q correction",
+      "assessment": "CUSTOM_NUMERICAL_METHOD",
+      "comparison_or_recommendation": "Defensive support is not a changed scientific prior. Validate against independent reference integration.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+        "line": 73,
+        "anchor": "def propose("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P133",
+      "group": "Probability numerical integration",
+      "parameter": "Targeted planet radius width",
+      "current_value": "+/-15% around apparentk/dilution-derived centre",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Not a hard radius exclusion because of full-prior mixture; may still give high-variance weights.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+        "line": 73,
+        "anchor": "def propose("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P134",
+      "group": "Probability numerical integration",
+      "parameter": "Targeted planet duration width",
+      "current_value": "+/- .2hours",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Not a six-hour model cap or a scientific duration prior.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+        "line": 73,
+        "anchor": "def propose("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P135",
+      "group": "Probability numerical integration",
+      "parameter": "Proposal fallback tolerances",
+      "current_value": "radiusCDFinterval<1e-12 ormass within16machineeps of.45 -> fullprior",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "Exact expressions in appendix; preserves support rather than discarding difficult draws.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+        "line": 73,
+        "anchor": "def propose("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P136",
+      "group": "Probability numerical integration",
+      "parameter": "Binary proposal",
+      "current_value": "10%prior +90%targeted inclination; depthwidth+/-50%,durationwidth+/-.3hours",
+      "assessment": "CUSTOM_NUMERICAL_METHOD",
+      "comparison_or_recommendation": "Proposal windows are not physical vetoes when importance weights/support are correct.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binary_proposals_v3.py",
+        "line": 68,
+        "anchor": "def propose_binary_inclination("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P137",
+      "group": "Probability numerical integration",
+      "parameter": "Binary depth interval inversion",
+      "current_value": "40bisection steps; intensityfloor1e-10",
+      "assessment": "NUMERICAL_CHOICE",
+      "comparison_or_recommendation": "This approximation targets proposals only; physical likelihood must use the retained eclipse model.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binary_proposals_v3.py",
+        "line": 68,
+        "anchor": "def propose_binary_inclination("
+      },
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P138",
+      "group": "Probability numerical integration",
+      "parameter": "Draw count",
+      "current_value": "1,000,000attempted draws per scenario/repeat",
+      "assessment": "UPSTREAM_DEFAULT_AND_USER_POLICY",
+      "comparison_or_recommendation": "StockN default1M. MonteCarlo count alone does not imply good effective evidence support.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+        "line": 28,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P139",
+      "group": "Probability numerical integration",
+      "parameter": "Batch/render sizes",
+      "current_value": "256physical draws;64render batch",
+      "assessment": "NUMERICAL_RESOURCE_POLICY",
+      "comparison_or_recommendation": "Performance settings require parity, not astrophysical interpretation.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+        "line": 28,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P140",
+      "group": "Probability numerical integration",
+      "parameter": "Renderer",
+      "current_value": "Piecewise-linear phase grid800nodes over retained native phase support; doubledperiodbranch retained",
+      "assessment": "CUSTOM_APPROXIMATION",
+      "comparison_or_recommendation": "Check against direct native rendering for appropriate ingress and eclipse geometries; same-grid replay cannot test grid error.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+        "line": 28,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P141",
+      "group": "Probability numerical integration",
+      "parameter": "Probability integration",
+      "current_value": "54subsamples, actual270frame span .020433598216918748days",
+      "assessment": "JUSTIFIED_KEPLER_ADAPTATION",
+      "comparison_or_recommendation": "Current C12phase grid spacing204.032seconds. Exposure integration and phase-grid interpolation are separate errors.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+        "line": 28,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P142",
+      "group": "Probability numerical integration",
+      "parameter": "Noise quadrature argument",
+      "current_value": "128, but inactive in fixed-noise likelihood",
+      "assessment": "INACTIVE_ARGUMENT",
+      "comparison_or_recommendation": "Do not claim128-node noise marginalization from a configuration field alone.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/adapter.py",
+        "line": 28,
+        "anchor": "config=dict("
+      },
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P143",
+      "group": "Campaign and outcome policy",
+      "parameter": "Primary repeats and clocks",
+      "current_value": "20independent seeds at adopted finalephemeris; current recovereddiagnostics0; exactly3onlyifjustified",
+      "assessment": "EXPLICIT_USER_POLICY",
+      "comparison_or_recommendation": "User-approved prospective policy; do not reintroduce40. Seeds embedded in fullplan snapshot.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P144",
+      "group": "Campaign and outcome policy",
+      "parameter": "Futility allocation screen",
+      "current_value": "First2stop if bothFPP>=.10 OR bothNFPP>=.01",
+      "assessment": "EXPLICIT_USER_POLICY",
+      "comparison_or_recommendation": "Computational triage only, not reproduced EB denial; otherwise all20required.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P145",
+      "group": "Campaign and outcome policy",
+      "parameter": "Numerical omission budget",
+      "current_value": "48logunits; saved per-draw flags and upper evidence bounds",
+      "assessment": "CUSTOM_NUMERICAL_METHOD",
+      "comparison_or_recommendation": "Deep replay verifies saved estimates and certified omission bounds; does not bound model misspecification or all MonteCarlo error.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P146",
+      "group": "Campaign and outcome policy",
+      "parameter": "Final numerical thresholds",
+      "current_value": "UppermeanFPP<.015,NFPP<.001",
+      "assessment": "LITERATURE_THRESHOLDS_WITH_NUMERICAL_POLICY",
+      "comparison_or_recommendation": "Retain all20, SD/range/crossings/ESS; upper refers omitted-evidence numerical bound, not a full confidence limit.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P147",
+      "group": "Campaign and outcome policy",
+      "parameter": "Physical closeout",
+      "current_value": "RUWE<=1.4,source/dilution/radius/companion/literature checks;1.5arcsec companion review",
+      "assessment": "ADOPTED_PHYSICAL_PROTOCOL",
+      "comparison_or_recommendation": "RUWE is a screen, not a binary exclusion proof; no RV mass is required for statistical validation.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P148",
+      "group": "Campaign and outcome policy",
+      "parameter": "CPU policy",
+      "current_value": "10total renderer threads;first2get5each;BLAS/OpenMP1;durableInteractive launchctl",
+      "assessment": "RESOURCE_POLICY",
+      "comparison_or_recommendation": "Allocated threads do not establish continuous full-core use.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P149",
+      "group": "Campaign and outcome policy",
+      "parameter": "Integrity",
+      "current_value": "Pinned dependencies/software;freeze and reference replay;checkpoint-resume;no overwrites",
+      "assessment": "KEEP_REPRODUCIBILITY",
+      "comparison_or_recommendation": "These protections do not need astrophysical calibration and must not be bypassed to increase yield.",
+      "source": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103348117391603840/probability-v2/plan.json",
+        "line": 3,
+        "anchor": "\"counts\""
+      },
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "I1",
+      "severity": "HIGH",
+      "finding": "Fixed duration/window/OOT scope is not a universal native preparation model.",
+      "status": "CONFIRMED",
+      "actual_effect": "KIC5079515 held before production; long event not astrophysically rejected."
+    },
+    {
+      "id": "I2",
+      "severity": "HIGH",
+      "finding": "Nativek/rho/clock boxes can truncate legitimate planets or timing modes.",
+      "status": "CONFIRMED_BOUNDS_POTENTIAL_BIAS",
+      "actual_effect": "C12has14.29%posterior k>.27 againstk<.3; causal effect onFPP not measured."
+    },
+    {
+      "id": "I3",
+      "severity": "HIGH",
+      "finding": "Native preparer always assigns10%M/6%R and takes first ExoFOP row.",
+      "status": "CONFIRMED_CODE_BEHAVIOR",
+      "actual_effect": "Can overwrite available errors on other hosts; currentC12missingerrorsmakefallbackapplicable."
+    },
+    {
+      "id": "I4",
+      "severity": "HIGH",
+      "finding": "Custom scene catalogue/domain requirements and finite population support block readiness.",
+      "status": "CONFIRMED_IMPLEMENTATION_SCOPE",
+      "actual_effect": "Low-SNR host routes, high-metallicityneighbor andWDmodel-domain holds are not negativeFPPresults."
+    },
+    {
+      "id": "I5",
+      "severity": "HIGH",
+      "finding": "Two separately generated filter populations need not match physical rows.",
+      "status": "CONFIRMED_WORKFLOW_FAILURE",
+      "actual_effect": "KIC3322939all5100Gaiarowsunpaired; noFPP. Exact-check refusal correct; acquisition design fragile."
+    },
+    {
+      "id": "I6",
+      "severity": "HIGH",
+      "finding": "Custom fixed-MAP/noise/covariance/G-anchor/PRF-wing evidence lacks demonstrated matched end-to-end external calibration in inspected records.",
+      "status": "VALIDATION_GAP",
+      "actual_effect": "Internalreplay passes do not establish astrophysical probability calibration; bias could raise or lowerFPP."
+    },
+    {
+      "id": "I7",
+      "severity": "MEDIUM",
+      "finding": "StrictJSONMAP attempt serialization fails on preserved -inf starts.",
+      "status": "CONFIRMED_BOOKKEEPING_FAILURE",
+      "actual_effect": "Do not report all-infinite model when another start is finite."
+    },
+    {
+      "id": "I8",
+      "severity": "HIGH_FOR_MK_ROLLOUT",
+      "finding": "This local preparation entrypoint hardcodes surveyrank1/psf_flat rather than generic run-scoped M/Ksignals.",
+      "status": "CONFIRMED_PORTABILITY_GAP",
+      "actual_effect": "October19handoff records0newM/Knativefits/0probabilityintegrations; handoff validation is not demonstrated production-readiness."
+    }
+  ],
+  "static_appendix": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation-parameter-audit-20261020-v1/source-defaults-and-numeric-literals.json",
+    "sha256": "e7f1070b66600ca69ff94154ce1a655449bbd1a2f189107ed83761172f891b75",
+    "bytes": 523172
+  },
+  "limitations": [
+    "This is a source/method audit, not a numerical reanalysis of prior admissions.",
+    "No changed-model controls or counterfactual FPP integrations were run during the two active production workers.",
+    "No probability yield target can justify tuning priors, dropping sources, reducing scenarios or relaxing integrity.",
+    "The 125-signal/94-host local survey queue differs from the473-host M/K handoff. Currentserver progress is not inferred from an October19localreceipt.",
+    "Reference-paper settings are examples, not universal requirements or a complete calibration for ourcustomlikelihood."
+  ],
+  "exact_input_snapshot": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation-parameter-audit-20261020-v1/exact-input-snapshot.json",
+    "sha256": "c3a933a0d596c59f76177ca19b81fb9599e05158da8694bd1bd8fb3eaf8c2260",
+    "bytes": 380763
+  },
+  "first_draft_preserved": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation-parameter-audit-20261020-v1/inventory-first-draft-preserved.json",
+    "sha256": "4404215c6c1175064bbd221ee1036ebf1bad26fa61ace73dcb0ea87014f8d86e",
+    "bytes": 523865
+  },
+  "derived_read_only_checks": {
+    "C10_radius_ratio_snr_std": 2.8671970454623597,
+    "C10_radius_ratio_snr_half_quantile_width": 2.816618599592157,
+    "C10_passes_neither_definition": true,
+    "C12_radius_ratio_snr_std": 6.044896537526583,
+    "C12_radius_ratio_snr_half_quantile_width": 5.337037368144728,
+    "C12_passes_both_definitions": true,
+    "scope": "Arithmetic from existing saved posterior summaries, not a fit rerun or changed gate."
+  },
+  "official_pinned_interface": {
+    "target": {
+      "required": [
+        "ID",
+        "sectors"
+      ],
+      "defaults": {
+        "search_radius": 10,
+        "mission": "TESS",
+        "lightkurve_cache_dir": null,
+        "trilegal_fname": null,
+        "ra": null,
+        "dec": null,
+        "verify_ssl": true,
+        "estimate_missing_params": true,
+        "background_population_source": "gaia"
+      },
+      "Kepler_recommendation": "Set mission=Kepler and sectors to actual quarters; authenticate target source, coordinates and extraction; background source must match declared scientific model."
+    },
+    "calc_depths": {
+      "required": [
+        "tdepth"
+      ],
+      "defaults": {
+        "all_ap_pixels": null,
+        "dilution_corrected": true
+      },
+      "recommendation": "Fractional depth, actual aperture for each quarter; false for rawSAP, consistent with calc_probs. Do not use synthetic default aperture as if measured."
+    },
+    "calc_probs": {
+      "required": [
+        "time",
+        "flux_0",
+        "flux_err_0",
+        "P_orb"
+      ],
+      "defaults": {
+        "contrast_curve_file": null,
+        "filt": "TESS",
+        "N": 1000000,
+        "parallel": false,
+        "drop_scenario": [],
+        "verbose": 1,
+        "flatpriors": false,
+        "exptime": 0.00139,
+        "nsamples": 20,
+        "molusc_file": null,
+        "dilution_corrected": true
+      },
+      "recommendation": "Days from transit midpoint; normalized flux and consistent uncertainty; adoptedP; actual exposure overridesTESSdefault; measured contrast filter; no unjustified scenario dropping. Stock scalar noise/field treatment is a comparison model, not a truth oracle."
+    },
+    "source_url": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/triceratops.py",
+    "active_custom_adapter_calls_high_level_calc_probs": false
+  },
+  "not_entering_active_C12_adapter": [
+    "No candidate-specific contrast curve",
+    "No MOLUSC companion population",
+    "No RV orbit or mass evidence",
+    "No stellar-activity GP",
+    "No full stellar joint covariance or MAP nuisance-posterior marginalization"
+  ]
+}

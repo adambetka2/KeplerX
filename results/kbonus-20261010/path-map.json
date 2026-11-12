@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "original_json_unmodified": true,
+  "server_root_prefix": "/",
+  "export_root": "/Volumes/discPCIe/kbonus/server",
+  "mapping": "Original absolute server path X is stored at export_root + X when listed in files.jsonl.gz.",
+  "catalogue_alias": "/home/adam/spacelab/discPCIe/data/reference-catalogues maps to /srv/kbonus/data/discPCIe/data/reference-catalogues under export_root.",
+  "flat_code_snapshot": "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009/frozen-baseline-87bd044",
+  "continuation_code_snapshot": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/frozen-code/server-a364744.tar.gz",
+  "omitted_input_roots": [
+    "/srv/kbonus/data/discPCIe/kbonus/lc2",
+    "/srv/kbonus/data/discSSD/kbonus/lc2",
+    "/srv/kbonus/workspace/dump/pixel-cache"
+  ],
+  "local_input_map": {
+    "discPCIe": "Original light-curve disk UUID 2095B450-9948-4BA9-80C7-F1CE0A8285F9 is currently dismounted. Remount it to access its light curves.",
+    "discSSD": "/Volumes/discSSD UUID B4237D51-520F-4313-8E8E-AA465221E84C"
+  },
+  "input_identity_files": [
+    "kbonus-source-ledger-20261005",
+    "kbonus-full-406547-20261005-transit-only-v1/preflight/report.json"
+  ],
+  "omissions": "omitted-files.jsonl.gz declares result-package and cache/prepared-input omissions. Original archive receipts retain prepared-input hashes."
+}

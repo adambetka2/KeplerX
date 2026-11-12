@@ -1,0 +1,252 @@
+{
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "recorded_utc": "2026-10-20T18:13:33.595086+00:00",
+  "status": "PROSPECTIVE_IMPLEMENTATION_CHECKS_PASSED_NO_NEW_PRODUCTION_ADMISSION",
+  "latest_remote_main_at_integration": "84e411ec856bdf26db15c8b52df0ee113cd207b1",
+  "historical_baseline": "1e75a1a04460bf0dad1d2d4d4175a44094a94759",
+  "parameter_decisions": {
+    "count": 149,
+    "removed": 61,
+    "replaced": 22,
+    "candidate_specific": 38,
+    "retained": 28,
+    "record": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/standard-v2-parameter-decisions-20261020.json",
+      "sha256": "3629c08f396680e03a4eda9014e64ec16514ed4d97183d54c2d7ca246fb94b2d"
+    }
+  },
+  "historical_evidence": {
+    "unchanged_receipts": 11,
+    "verification": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/preservation/verification.json",
+      "sha256": "cb43ced218b5ec036020715401780c7f5411ede17af07ac774cecb7196f1c7a1"
+    },
+    "original_source_archive": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/preservation/prospective-v1-source.tar",
+      "sha256": "8bcb5119a8ea2eac9632da66d800d59053ea35e57aeb438c75cd1430664f7de7"
+    },
+    "accepted_studies": "Preserved unchanged; not rerun, revoked or relabelled as V2. This report does not independently revalidate them."
+  },
+  "official_source": {
+    "commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+    "installed_python_and_csv_files_exactly_match_official_commit": [
+      {
+        "file": "marginal_likelihoods.py",
+        "sha256": "45a476ea8a17453580e9f561626c229c70920c839f6837ead4804e59c43659f9"
+      },
+      {
+        "file": "__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "funcs.py",
+        "sha256": "234f18fa7fbd7ae122046dfbd50603e47a4a1eaba773a524bd42b04a0e7bdabf"
+      },
+      {
+        "file": "priors.py",
+        "sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722"
+      },
+      {
+        "file": "_numerics.py",
+        "sha256": "ebb567d0bf2e411605eb6462c7466a3a7e7dedad47616762a4fffc3cbe3cee0e"
+      },
+      {
+        "file": "triceratops.py",
+        "sha256": "4082f9c1ccde1c7e6998744a75060203ffaecbce59d039dca4fec7ce7e33aaeb"
+      },
+      {
+        "file": "likelihoods.py",
+        "sha256": "29935ef86963fa7beefac9d2c528daad0a1cc93019eafe192ae9c0da62a6b2d6"
+      },
+      {
+        "file": "data/ldc_kepler.csv",
+        "sha256": "5b1d21c5677fa2926e0119bfc013df7185ac92fa44c2ed3864d41635a56507bc"
+      },
+      {
+        "file": "data/ldc_tess.csv",
+        "sha256": "353afe9e7163da96ecf93412fea6e74b697f2c170ee10f16dac4ace35cbb9e54"
+      },
+      {
+        "file": "data/mamajek_dwarf_sequence.csv",
+        "sha256": "07355ea6008ed3b0fd12702510036471c5f9455b63c0a4cbbaf23e99d1a83bb1"
+      }
+    ]
+  },
+  "known_object": {
+    "target": "Kepler10b official example",
+    "attempted_draws_per_scenario_control_only": 32768,
+    "scenarios": 15,
+    "maximum_evidence_and_probability_difference": 0.0,
+    "finite_support": "identical",
+    "record": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/gold/kepler10/verification-v2.json",
+      "sha256": "03752842fcb6960dda6a99c4f7487f26bd5afd30839d020bda55bfe445b0dfa1"
+    },
+    "scope": "Direct public API parity with separately acquired unmodified upstream target; not empirical probability calibration. Production remains1million."
+  },
+  "native_domain_controls": [
+    {
+      "output": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/full-controls-final/test_real_native_preparation_a0/native/summary.json",
+        "sha256": "09174a956d5d8af3245e41b30524bc0c6d142c82f8041ebd2b1a71a0e2cd9630"
+      },
+      "median_radius_ratio": 0.020083747777187837,
+      "median_density_kg_m3": 422.9332458400712,
+      "median_duration_hours": 9.27768008985633,
+      "scope": "40-step standard emcee domain control; not convergence/admission"
+    },
+    {
+      "output": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/full-controls-final/test_real_native_preparation_a1/native/summary.json",
+        "sha256": "01acf3465eed865023d7c50f3bb92ab04e14c5bba9bd75f7b595f6c3a59197e4"
+      },
+      "median_radius_ratio": 0.39998758845087434,
+      "median_density_kg_m3": 81767.22974334628,
+      "median_duration_hours": 0.9374785872488196,
+      "scope": "40-step standard emcee domain control; not convergence/admission"
+    }
+  ],
+  "preparation_and_protocol_controls": {
+    "tests": 15,
+    "passed": 15,
+    "duration_seconds": 22.29,
+    "log": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/full-controls-final.log",
+      "sha256": "bc9c1b64cf380687dcecb330eb5511bf7efb26cab4639a89f0b17d6623118059"
+    },
+    "coverage": [
+      "Long transit preserved by duration-scaled detrending and real juliet/batman fitting",
+      "Dense small host and k>.3 supported by real fitter",
+      "Raw SAP/source-corrected convention consistency and measured/Gaussian aperture routes",
+      "Gaia-only source identity and retained capable neighbours",
+      "Frozen-source subprocess verification and rejection of changed input",
+      "Saved lnZ/scenario/summary consistency rejects changed FPP",
+      "Unfavourable repeats retained, exactly-two allocation screen, recovery changes clock only",
+      "Atomic no-overwrite result records preserve nonfinite diagnostics"
+    ]
+  },
+  "code_checks": {
+    "ruff": "PASS E4,E7,E9,F,I,C90 maximum complexity10",
+    "format": "PASS",
+    "git_diff_check": "PASS",
+    "uv_pip_check": "All172installedpackagescompatible"
+  },
+  "preserved_development_failures": {
+    "records": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/gold-control-launch.log",
+        "sha256": "a65a937d211ebeaa89da03bab1cb3f5fc7a720340496afad94e65c5e7982dac6"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/native-controls-attempt1.log",
+        "sha256": "11ae8306293e3d2fe94a991b3ac321e18c89b1ba4be4cbaa5bebd9ed52059c51"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/native-controls-attempt2.log",
+        "sha256": "40db9fd1b7d442091f587e42126cf74223276f64d64a816bb783d17a5a2d2014"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/full-controls-attempt1.log",
+        "sha256": "55c7ac71150bc9339f61f6daa4a434ca248e1db27ff9bd2cbae8cffec40294d9"
+      }
+    ],
+    "explanation": [
+      "Gold acquisition geometry used object-string NPZ; v2 uses Unicode with identical identities/coordinates, original retained",
+      "First standard-MCMC control omitted juliet-required starting_point; explicit candidate field added",
+      "Second standard-MCMC control passed nthreads1, causing upstream zero-process pool; null is documented serial setting",
+      "First frozen-source verification exposed import-order-dependent vendored metadata; environment now enumerates actual venv distributions, not changing sys.path"
+    ]
+  },
+  "limitations": [
+    "Controls test software/domain/equivalence, not full faint Kepler/M/K empirical reliability or false-positive recovery calibration",
+    "Stock Kepler mode retains some TESS magnitude/companion flux approximations; candidate adequacy must be assessed",
+    "Stock field population and companion relations retain stellar-domain/metallicity assumptions; no blanket WD/ultracool support claim",
+    "Quarter-mean aperture dilution can be inadequate for strong seasonal changes; inspect actual source/extraction",
+    "Noise, detrending, stellar prior/error and integration settings remain evidence-based candidate decisions",
+    "Stock does not expose all per-draw weights/ESS/old omission bounds; report scenario lnZ and repeated FPP/NFPP, never claim former deep-weight audit",
+    "Stock has no within-scenario checkpoint; same-seed preserved repeat retry only",
+    "No new candidate launched by this development task; hourly campaign monitor remains paused and old held coordinator not resumed"
+  ],
+  "sources": [
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/README.md",
+      "sha256": "e9ce4bcb7103792183cf3c2895de30a1d816b9066539348ec532aaebc8b2c429"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/__init__.py",
+      "sha256": "dc90e1056b50293f70267a4757a7f4b6f4c460dffedcb5dbd285a8adfd31b81e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/campaign.py",
+      "sha256": "5c170c1b1410cc4326bc970c20fae23363230675ebe276cb97804fdb38063ab1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/candidate-template.json",
+      "sha256": "4094815b09e1435d126319a4cb994832fd981de7cead2bace63bf43c2d5982f1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/background.csv",
+      "sha256": "b4aa4b60e8e53411aad8b2c9bb9769d32da322d9725bc76988c73041001f2cda"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/expected.npz",
+      "sha256": "0aa823aa2843602b80d8d51a200a331378239b6de089338c629e6123dc867d7c"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/geometry.npz",
+      "sha256": "8ab9c8be0a1fb36879bf9e834e8196b4281f6ca82023c14077e6c2580f021c32"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/lightcurve.csv",
+      "sha256": "37e2dbf9af98418e68c09b81fa943ccbd39d5e4a3262c18601f314f192f2d441"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/sources.json",
+      "sha256": "50d6d5e199bf1827e803f0a539d68d0a1fad02203d68e674e072d29b99eaa194"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler10/stars.csv",
+      "sha256": "1ae65342e5aaa60f9168e4163e1f9d292053501082476912c9ef4475597cf1aa"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/native.py",
+      "sha256": "2acedf7a83785ef1ee612e28b04bea93534f33ffd15209d400adcd139960d12f"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/prepare.py",
+      "sha256": "be518b1760e6220a2e9d26eff90061c3efa79abf7a63be710642d53436640cb3"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/protocol.py",
+      "sha256": "e8f0a59c18f37055141448803392e0c7e89104d06b6704a060c647e603a6adce"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/records.py",
+      "sha256": "284fb627a2e73a2bf9d74ca44ce067d3d83bf55f20fe8908e4785c560bd2fcd1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/requirements.txt",
+      "sha256": "bb0bd8c2a357797f34f2fa6a734a17cd2c42328ce2b15f7894ba969e533530b9"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/scene.py",
+      "sha256": "8b01c26d4e7c09858980624715a1d81953577e71d5ad6219ee9f20f7d3e7157d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/test_freeze.py",
+      "sha256": "4db9dab67d74e7155867b98124d1dfcc23dd2d48ea23b8955232086f34378d77"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/test_gold.py",
+      "sha256": "79bb033e5df99e1dd1e5206ab19fbe233d867e7ef7a3c5ec651d2d6be2b068cf"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/test_native_controls.py",
+      "sha256": "6bccd6783abb4c0212aba0bd0c7d431f8331968ba4f0abe50af2fb046132374b"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/post_boi/test_standard.py",
+      "sha256": "dfe174cba4325523cea07ba2425eaf892b3c15cfabd1b2aadf94238fd8eb639a"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "DEVELOPMENT_FEASIBILITY",
+  "protocol": "fsc-kepler-targeted-shallow-pixel-controls-v1",
+  "seed": "forgotten-stars-targeted-shallow-2026-09-24",
+  "selection": "Hash-rank ordinary KBonus LC2 sources after frozen parent, source, and raw-FITS exclusions. Evaluate physical injected truth and input support only; never use detector or vetter outcomes.",
+  "cell_boundary": "Depth bins are [40,100], (100,250], (250,500] ppm; MES bins are [8,12), [12,20), [20,50), [50,infinity); period bins are [0.5,3), [3,10), [10,30] days.",
+  "depth_bins_ppm": [[40.0, 100.0], [100.0, 250.0], [250.0, 500.0]],
+  "mes_bins": [[8.0, 12.0], [12.0, 20.0], [20.0, 50.0], [50.0, null]],
+  "period_bins_days": [[0.5, 3.0], [3.0, 10.0], [10.0, 30.0]],
+  "target_mes": [10.0, 16.0, 35.0, 65.0],
+  "trials_per_cell": 6,
+  "proposed_partition_per_cell": {"development": 3, "evaluation": 3},
+  "candidate_pool_target_per_cell": 18,
+  "signal": {
+    "limb_darkening": [0.3, 0.2],
+    "exposure_days": 0.02043361111111111,
+    "supersample_factor": 7,
+    "duration_hours": [1.2, 9.6],
+    "stellar_density_solar": [0.3, 5.0],
+    "impact_parameter": [0.0, 0.8],
+    "minimum_periodic_events": 3,
+    "minimum_periodic_quarters": 2
+  },
+  "pixel_support": "Before final identity freeze, require the propagated Gaia target center inside the WCS pixel-center footprint for every material observed quarter. Resolve every TPF parent and reject any overlap with previous controls or another selected trial. Pixel files and raw-input hashes must be verified. No flux-only substitution.",
+  "claim_boundary": "Input-only development feasibility plan. The 216 balanced physical-pixel trials and development/evaluation partition are proposed, not yet materialized or frozen. Sealed detector, vetter, and localization outcomes stay unopened."
+}

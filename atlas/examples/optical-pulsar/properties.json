@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "name": "Crab pulsar",
+  "reference_class": "Optical pulsar",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Narrow repeated main pulse and weaker interpulse; requires very fast photometry.",
+  "lookalikes": [
+    "other compact-object pulsation",
+    "periodic instrumental interference"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "1999 optical photon data folded into 5000 bins, with whole-dataset template overlaid; phase-bin width is not detector exposure duration."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "approximate_period": {
+      "value": 0.033,
+      "unit": "s",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "folded_pulses_in_sample": {
+      "value": 100,
+      "unit": "cycles",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "phase_bins": {
+      "value": 5000,
+      "unit": "bins",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "phase_bin_time_resolution": {
+      "value": 6.6,
+      "unit": "microseconds",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/0709.2580",
+    "pdf_url": "https://arxiv.org/pdf/0709.2580",
+    "pdf_page_one_based": 3,
+    "figure": "1, upper panel",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "cb26358e02ea7750ea1a115b4b75bff5b83ca62da4a8fa85b6309e542ed06d87",
+    "page_crop_fraction_xyxy": [
+      0.065,
+      0.117,
+      0.47,
+      0.194
+    ],
+    "image_sha256": "bdb3ab67dab354f4f1a8a2ac0473bf06872e780f0d03d24a888f61f1371c5418"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

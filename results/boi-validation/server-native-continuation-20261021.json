@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-21T14:53:20.435571+00:00",
+  "unit": "ExecMainStatus=0\nActiveState=active\nSubState=running\n",
+  "selected_exact_signals": 40,
+  "maximum_combined_preparation_native_slots": 22,
+  "physical_cpus": 24,
+  "blas_threads": 1,
+  "native_processes": 22,
+  "sum_cpu_percent": 2198.1,
+  "sum_rss_gib": 5.258899688720703,
+  "state_counts": {
+    "NATIVE_STARTED": 22,
+    "PREPARED_NO_NATIVE_STARTED": 7,
+    "QUEUED_OR_AUTHENTICATING": 11
+  },
+  "prepared_no_native": [
+    {
+      "signal_id": "mk-sap-20261019-2126217104555818240-3",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2126217104555818240-6",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2126217104555818240-2",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2125825540978915328-5",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2106383701495087232-5",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2127331661449318016-6",
+      "available_primary_photons": 0
+    },
+    {
+      "signal_id": "mk-sap-20261019-2127331661449318016-5",
+      "available_primary_photons": 0
+    }
+  ],
+  "plan": {
+    "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/continue-unstarted-bb153cd4-v02/prospective-plan.json",
+    "sha256": "fb791635b95dafd64f3cfc9d8813613f8e08b6dfb97e8d3ea5f153cd0065bd20"
+  },
+  "paired_controls": {
+    "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/continue-unstarted-bb153cd4-v02/preparation-controls.json",
+    "sha256": "c20e41e829c86146c4bf03af51784b2550424db394af52c09646ba3bfb867e97"
+  },
+  "coordinator": {
+    "path": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/continue_unstarted_bb153cd4_v02.py",
+    "sha256": "b6fbfe72c5cd195deeeabde441a81717570e27d629b150eebdfed60370cb74ac"
+  },
+  "shared_failures": 0,
+  "server_probability_totals": {
+    "completed_integrations": 112,
+    "exact_signals": 47,
+    "first_two_stops": 46,
+    "full20_numerical_fail": 1,
+    "validated": 0
+  },
+  "scope": "First nativefits only for original selected but unstarted cases;not FPP admission or validation. No duplicate completed/stopped signal campaign. First sharedfailure stops newdispatch,livejobsfinish. No automation."
+}

@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-20T20:03:51.132959+00:00",
+  "scope": "Only active-candidate input acquisition/model checks; no detector/survey/broad audit, server work or changes to accepted/frozen studies.",
+  "trilegal": {
+    "official_form": "https://stev.oapd.inaf.it/cgi-bin/trilegal_1.6",
+    "upstream": "https://github.com/stevengiacalone/triceratops/blob/d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/funcs.py",
+    "problem": "Service eq_alpha expects RA hours; upstream query helper assigns RA directly. Initial local RA-degree submission therefore sampled a different field. This was caught before any production probability integration. Original correct V1 Galactic requests remain unchanged.",
+    "wrong_request": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/request-retry.json",
+      "sha256": "c3173c99c6eb804eb634338aadc8905156607038235236b66ee2fe6e6965af66"
+    },
+    "wrong_response": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/poll-retry-001.response",
+      "sha256": "eecdf1e37350be63812a356899e252f703e448200b3c212ffdd353d24fcd9778"
+    },
+    "ssl_failure": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/failure.json",
+      "sha256": "9de83cce5f813889ed66ec0b9653bef95ac6f9466d694a4d9ca01660aad0e6ad"
+    },
+    "recovery": "macOS system curl with normal TLS verification; Galactic mode1 at the authenticated l/b in degrees. No certificate bypass. Candidate-specific TESS/2MASS limit24 covers the apparent-depth/dilution faint limit; official area0.1deg2 retained.",
+    "correct_request": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/request-correct-field-v2.json",
+      "sha256": "589180d20300c911e33a55a7e545011e90f72b942a7fbbe8030c0a055cf2c7e9"
+    },
+    "correct_population": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/complete-correct-field-v2.json",
+      "sha256": "efab02fa0f276dfecc6f141fa541341ceea557a467cd81aad707e08733133e68"
+    },
+    "production_used": false
+  },
+  "geometry": {
+    "first_preview": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/scene-preview-review-v1.json",
+      "sha256": "40188a7ad4618535b39ac58fc7a2bed4334f375c5e73658650520e6957cbc70a"
+    },
+    "rejected_centroid_translation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/aperture-response-review-v2.json",
+      "sha256": "03e8242c80fe1f79feee3126dc65ef58a534424769916d1ce1425484a8b9e14e"
+    },
+    "unshifted_diagnostic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/aperture-response-review-v3.json",
+      "sha256": "c9c27801cccb3410a16b85290411ed72fcbef75f7634cc1aa99d51cab0634903"
+    },
+    "diagnosis": "Delivered ROW/COLUMN header comments identify mean SAP flux centroids, not source astrometry. Exploratory translation to those centroids was rejected. Original Gaia/celestial WCS and actual source apertures retained. Public Lightkurve core comparison disagrees materially with Gaussian allocation; precise candidate hold, not a universal PRF cutoff.",
+    "terminal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/readiness-hold-v1.json",
+      "sha256": "3b71b58f1d790d7e03f8d014a04f2f7ea955b84f080db5a4c17980feef858077"
+    }
+  },
+  "next": {
+    "source_id": "2099560128037101952",
+    "kic": 3330404,
+    "native_launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-launch.json",
+      "sha256": "db9d0dd67382be9c3e60a5434f1ce02b8fce68f6a07da01eb61f63b556d1dece"
+    },
+    "stellar_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-stellar-review.json",
+      "sha256": "66c922deafee01577e3e7cb8d56334d4311ef01b841f5a49aec95ad2efa235c8"
+    },
+    "scope": "New local native fit; no probability plan yet. Whole TIC route chosen from parallax consistency before fitting, with realistic distance/Teff-based radius uncertainty. No adoption of old incoherent TICmass/Gaia-radius hybrid."
+  }
+}

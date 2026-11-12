@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-19T22:45:19.238924+00:00",
+  "status": "PREPARATION_IN_PROGRESS",
+  "server": "kbonus",
+  "campaign_root": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1",
+  "goal_new_statistical_admissions": 50,
+  "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+  "baseline": {
+    "path": "results/kbonus-20261010/boi-catalogue.json.gz",
+    "sha256": "b0fcd5f0bca7d70dbb2e02d36a30a6e6fbb062533dc8db348fb6e4cc5a4ff329"
+  },
+  "initial_inventory": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/inventory-v3/candidates.json",
+    "sha256": "3e89c2011c1cac95660c4509b78f893920a04bb9edcb5c51929d618ab2d68404"
+  },
+  "membership": {
+    "NEW_BOI_SOURCE": 561,
+    "DIFFERENT_SIGNAL_ON_PREVIOUS_BOI_SOURCE_NEEDS_REVIEW": 39,
+    "POSSIBLE_ALIAS_OF_PREVIOUS_BOI_NEEDS_REVIEW": 40,
+    "PREVIOUS_BOI_SIGNAL": 23
+  },
+  "new_boi_source_proposals": 561,
+  "new_boi_sources": 417,
+  "current_native_diagnostic": {
+    "proposals": 640,
+    "measured_depth_diagnostics": 621,
+    "insufficient_local_coverage": 19,
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/spacecraft-v2/summary.json",
+      "sha256": "3c5b8d49279713be3ec544fe8e2e60b18152fb69b6d67d69b525405924d6da3c"
+    },
+    "quality_bitmask": -1,
+    "sap_flatten_mask": false,
+    "scope": "Sensitivity diagnostics only, not mechanism reproduction"
+  },
+  "controls": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/controls/native-handoff-control-v2.json",
+    "sha256": "a1490cbe71617464dda7f50a5fdf50d9bc7312c6b803e13dee13ba5ee87591a5"
+  },
+  "preserved_first_preparation_failure": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/first-preparation-launch-failure.json",
+    "sha256": "e49dd5b026c530d00317666c6fccec36aa19624e949d98dfb6b7e7c39595bdb7"
+  },
+  "official_issue_sources": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/literature/official-kepler-handbooks.json",
+    "sha256": "ce046cd7f681172e4e04e70af2fd243a484547ec70cb140ea722b7dbec21a8f2"
+  },
+  "fresh_catalogue": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/catalogue-refresh-v1/manifest.json",
+    "sha256": "462da4d235b0fb10f6c1d9ff88fd6f88ed2b9f1800736c234050548143be9192"
+  },
+  "current_gaia_hosts": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/current-inputs/gaia-hosts.receipt.json",
+    "sha256": "c15898b7efbc79262808a6ef7dacd87d90a02ed8bbf21ce302548edc1c1b88c1"
+  },
+  "native_archive_files_authenticated": 8,
+  "probability_campaigns_frozen": 0,
+  "probability_integrations_started": 0,
+  "statistical_validations": 0,
+  "observed_false_positive_fraction": null,
+  "probability_threshold_failure_fraction": null,
+  "limits": [
+    "No catalogue non-match establishes novelty",
+    "No period ratio proves an alias",
+    "Original BOI labels remain unchanged",
+    "Ranking is not a statistical admission",
+    "The deferred 10000-case detector recovery gate remains open",
+    "Candidate-specific native fits, scene, model review, exact-signal literature, frozen adapters and physical closeout remain open."
+  ]
+}

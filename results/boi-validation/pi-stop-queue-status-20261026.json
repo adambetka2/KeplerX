@@ -1,0 +1,85 @@
+{
+ "utc": "2026-10-26T18:58:23.432762+00:00",
+ "user_instruction": "Stop everything except already running fits or20-seed campaigns; let those finish. Report current queue.",
+ "coordinator_stopped": {
+  "pid": 47120,
+  "command": "runtime-v3/bin/python -B tools/scheduler.py queue-4.json"
+ },
+ "new_job_launches_authorized": false,
+ "automatic_fpp_promotion_authorized": false,
+ "intake_and_repair_and_psf_migration": "STOPPED_BY_PI",
+ "existing_native_fits_allowed_to_finish": [
+  "BOI-2127936912539397632-2 / 8.5558day KIC10528996 SAP comparison fit",
+  "mk-sap-20261019-2105840847691288832-1 / KIC8012933 generation2"
+ ],
+ "heartbeat_state": "PAUSED as confirmed from scheduler state",
+ "scope": "Operational stop only. No active fit was signalled, no evidence deleted, no scientific outcome or catalogue membership changed.",
+ "verified_utc": "2026-10-26T18:58:56.687189+00:00",
+ "cases": [
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079714428492352768-1",
+   "source_id": "2079714428492352768",
+   "signal_id": "shallow-v1-2079714428492352768-1",
+   "discovery_period_days": 3.4468242608596364,
+   "likelihood_flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 10, 11, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "native_status": "COMPLETED",
+   "last_progress": "done 2026-10-26T17:57:28Z",
+   "fpp_status": "NOT_STARTED",
+   "native_radius_ratio_snr": 20.0530867203804
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-1",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-1",
+   "discovery_period_days": 13.744702376615713,
+   "likelihood_flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "native_status": "COMPLETED",
+   "last_progress": "done 2026-10-26T18:42:08Z",
+   "fpp_status": "NOT_STARTED",
+   "native_radius_ratio_snr": 25.643142800142996
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-2",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-4",
+   "discovery_period_days": 8.555779566765446,
+   "likelihood_flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "native_status": "RUNNING",
+   "last_progress": "100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589| 15639/15640 [1:01:44<00:00,  3.88it/s, batch: 0 | bound: 38 | nc: 31 | ncall: 448881 | eff(%):  3.480 | loglstar: 51734.013 | logz: 51705.875 | dlogz:  0.100 >  0.100]",
+   "fpp_status": "NOT_STARTED"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105840847691288832-1-g2",
+   "source_id": "2105840847691288832",
+   "signal_id": "mk-sap-20261019-2105840847691288832-1",
+   "discovery_period_days": 14.843876417742326,
+   "likelihood_flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "native_status": "RUNNING",
+   "last_progress": " 76%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b  | 18742/24531 [59:02<20:54,  4.62it/s, batch: 0 | bound: 37 | nc: 31 | ncall: 543240 | eff(%):  3.447 | loglstar: 21732.284 | logz: 21694.593 | dlogz:  6.192 >  0.100]",
+   "fpp_status": "NOT_STARTED"
+  }
+ ],
+ "active_20seed_campaigns": 0,
+ "ready_pending_fit_jobs": 0,
+ "new_psf_flat_fits_or_fpp_started": 0,
+ "readiness_intake": {
+  "total": 104,
+  "three_native_fit_cases": 3,
+  "one_aperture_blocked": 1,
+  "unattempted": 100,
+  "state": "STOPPED_BY_PI"
+ },
+ "psf_flat_redo": {
+  "total_planned": 217,
+  "historical_delivered_rust": 113,
+  "current_all_rust": 147,
+  "shallow": 70,
+  "state": "PLAN_ONLY_STOPPED_BY_PI",
+  "executed": 0
+ },
+ "completed_native_fits_require_review_and_no_automatic_fpp": true
+}

@@ -1,0 +1,669 @@
+{
+  "schema": 3,
+  "outcome_contract": "boi-and-triage-v1",
+  "triage_contract": {
+    "id": "ordered-first-failure-triage-v1",
+    "stage_order": [
+      "shape",
+      "orbital",
+      "instrument",
+      "localization",
+      "contamination"
+    ],
+    "allowed_decisions": {
+      "shape": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "orbital": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "instrument": [
+        "PASS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "localization": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "contamination": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ]
+    },
+    "decision_states": {
+      "PASS": "ACTIVE",
+      "DISMISS": "DISMISSED",
+      "CONTINUE_INCONCLUSIVE": "HELD"
+    },
+    "state_rule": "FIRST_NONPASS_IN_STAGE_ORDER",
+    "execution_modes": [
+      "SKIP_AFTER_FIRST_FAILURE",
+      "RECORD_EVERY_GATE"
+    ],
+    "record_mode": "Later measurements preserve the first failure stage, state and reason"
+  },
+  "event_matching_contract": {
+    "id": "physical-event-membership-v1",
+    "time_scale": "BKJD",
+    "exposure_days": 0.02043361111111111,
+    "timing_tolerance": "half_truth_duration_plus_one_exposure",
+    "required_supplied_event_match_fraction": 1.0,
+    "minimum_recovered_truth_events": 1,
+    "assignment": "unique_quarter_compatible_truth_event_per_supplied_unit",
+    "truth_support": "prepared_cadences_inside_physical_truth_duration",
+    "disposition_timing": "selected_canonical_physical_fit"
+  },
+  "policy_id": "deterministic-boi-v1",
+  "status": "BOI_CATALOGUE",
+  "boi_catalogue_enabled": true,
+  "endpoint": "Bonus Objects of Interest: transit signals passing every current pipeline gate",
+  "detector": {
+    "active": "Rust V6.1 periodic and sparse-event search plus period-first shallow BLS search on each declared discovery view",
+    "protocol": "fsc-kepler-deterministic-v6.1",
+    "shallow_protocol": "rust_v6_shallow_v1; pipeline/shallow/config.json and pipeline/shallow/run.py",
+    "views": [
+      "psf_flat",
+      "psf_qdiag",
+      "sap_qdiag",
+      "psf_nova"
+    ],
+    "combination": "Run both detectors on the same prepared curve for each declared view; preserve their separate proposal identities and diagnostics in one shared vetting queue. Force supplied periodic ephemerides into every available view and retain Rust period-free sparse intervals. Views are correlated and are never combined as independent evidence.",
+    "downstream_boundary": "Vetting may assess supplied Rust TRANSIT_LIKE, survivor-review, and shallow periodic ephemerides, associate supplied Rust sparse intervals into repeat, alias, or TTV hypotheses, and classify supplied signals, but cannot search outside detector-proposed intervals or rescue other rejected events.",
+    "transformer": "Not used by this policy. Transformer v1 is a frozen historical release, not an active detector or fallback."
+  },
+  "labels": {
+    "BOI": "Transit signal passing shape, orbital, instrument, localization and contamination gates. A single event is eligible with unknown period.",
+    "HELD": "The first nonpassing gate lacks sufficient evidence; its stage and reason remain explicit.",
+    "DISMISSED": "The first rejecting gate records its measured rejection and reason; the signal remains in the ledger.",
+    "FALSE_POSITIVE": "A specific astrophysical mechanism is reproduced with attributed evidence.",
+    "UNRESOLVED": "The current pipeline has not completed the required signal gates."
+  },
+  "signal_measurement": {
+    "canonical_photometry": "The detector-selected view is fixed before downstream model scores are known.",
+    "single_event": "One exposure-integrated physical-transit fit on the supplied interval. A missing period or repeat event is not a veto.",
+    "repeated_events": "One joint fit over the detector-supplied event membership and ephemeris; no new period search.",
+    "alternatives": [
+      "linear",
+      "quadratic",
+      "step",
+      "dropout",
+      "single_cadence",
+      "shared_single_cadence",
+      "signed_box",
+      "sinusoid"
+    ],
+    "shape_score": "delta_BIC = best nuisance-model BIC - physical-transit BIC",
+    "threshold_state": "Use the unchanged numerical screening gates; BOI assignment introduces no additional model margin."
+  },
+  "required_evidence": {
+    "instrument": "Quality flags, gaps, engineering context, shared-time behavior, and difference-image spatial shape are assessed for the exact event membership. Raw shared-time count is contextual because it scales with the indexed cohort, not an automatic conflict threshold.",
+    "source_localization": "Difference-image or equivalent pixel attribution is required; unavailable localization cannot automatically pass.",
+    "contamination": "Gaia scene, timing, dilution, and plausible competing sources are assessed; catalogue absence is not proof of no contaminant.",
+    "identity_catalogues": "An exact target identifier and coherent event timing are checked against false-positive and eclipsing-binary catalogues; catalogue absence is not a novelty claim.",
+    "orbital": "Odd-even, secondary-eclipse, phase-modulation, and coverage checks are required for repeated events.",
+    "host": "Apparent size and plausible-host interpretation are reported when parameters exist; missing stellar radius is not by itself a veto.",
+    "false_positive_rule": "Deny only with a reproduced mechanism. Missing or underpowered evidence remains UNRESOLVED."
+  },
+  "assessment_rules": {
+    "instrument": {
+      "id": "instrument-quality-spatial-null-v3",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "material_quality_flags": null,
+      "spatial_null_bic_margin": 10
+    },
+    "source_localization": {
+      "id": "pixel-attribution-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "accepted_statuses": [
+        "TARGET_COMPATIBLE"
+      ],
+      "material_statuses": [
+        "ROBUST_OFFSET_CONFLICT"
+      ]
+    },
+    "contamination": {
+      "id": "catalogue-neighbour-v6",
+      "minimum_scene_prf_compared_quarters": null,
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "minimum_neighbour_depth_sigma": null,
+      "minimum_competing_source_separation_arcsec": null,
+      "minimum_catalogue_match_units": null,
+      "minimum_catalogue_match_fraction": null,
+      "maximum_harmonic_order": null,
+      "maximum_harmonic_period_error_fraction": null,
+      "minimum_harmonic_match_units": null,
+      "minimum_harmonic_expected_match_fraction": null,
+      "accepted_scene_statuses": [
+        "GAIA_SCENE_QUERIED"
+      ],
+      "accepted_neighbour_statuses": [
+        "MEASURED"
+      ]
+    },
+    "identity_catalogues": {
+      "id": "catalogue-signal-identity-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "minimum_catalogue_match_units": null,
+      "minimum_catalogue_match_fraction": null,
+      "maximum_harmonic_order": null,
+      "maximum_harmonic_period_error_fraction": null,
+      "minimum_harmonic_match_units": null,
+      "minimum_harmonic_expected_match_fraction": null,
+      "material_signal_classes": [
+        "ECLIPSING_BINARY",
+        "FALSE_POSITIVE"
+      ],
+      "accepted_catalogue_statuses": [
+        "SCOPED_CATALOGUES_CHECKED"
+      ]
+    },
+    "orbital": {
+      "id": "orbital-eb-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "maximum_odd_even_bic_gain": null,
+      "minimum_secondary_sigma": null,
+      "maximum_secondary_to_primary_depth_ratio": null,
+      "maximum_phase_modulation_period_days": null,
+      "minimum_phase_modulation_signal_to_noise": null,
+      "minimum_phase_modulation_amplitude_fraction": null,
+      "maximum_phase_modulation_to_primary_depth_ratio": null
+    }
+  },
+  "stage_parameters": {
+    "authoritative_files": {
+      "detector": "pipeline/deterministic/config.json",
+      "shallow_detector": "pipeline/shallow/config.json",
+      "vetting": "pipeline/vetting/config.json"
+    },
+    "discovery_domain": {
+      "period_days": [
+        0.2,
+        "min(1000, baseline / 2)"
+      ],
+      "priority_period_days": [
+        0.5,
+        100.0
+      ],
+      "duration_hours": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        15.0,
+        18.0,
+        24.0
+      ],
+      "priority_duration_max_hours": 12.0,
+      "proposal_mes_min": 8.0,
+      "minimum_detected_epochs": 3,
+      "minimum_quarters": 2,
+      "minimum_in_transit_points": 6,
+      "depth_ppm": [
+        40.0,
+        50000.0
+      ],
+      "sparse_event_snr_min": 8.0,
+      "sparse_event_min_points": 3,
+      "maximum_sparse_events_per_target": 10,
+      "search_whitening": "Per-quarter 97-cadence running-median residual divided by quarter robust sigma; candidate measurements use untouched relative flux.",
+      "maximum_signals_per_target": 20,
+      "maximum_extension_signals_per_target": 4,
+      "maximum_residual_signals_per_target": 4,
+      "residual_search": "One pass after a first-pass periodic candidate clears the dip-versus-brightening control; mask one fitted duration on each side of every predicted transit centre. Initial and sparse rows remain immutable.",
+      "interpretation": "These are Rust detector discovery settings, not general scientific requirements for Bonus Object of Interest disposition. A periodic row changed from TRANSIT_LIKE to SYSTEMATIC_LIKE only by a failed duration-consistency or quarter-leave-one-out survivor check enters shared vetting as SURVIVOR_REVIEW without changing its classification. The sparse lane searches single events without assigning periods; adjacent event spacings remain unresolved repeat, alias, or TTV hypotheses."
+    },
+    "shallow_discovery_domain": {
+      "period_days": [
+        0.2,
+        "min(100, baseline / 2)"
+      ],
+      "depth_ppm": [
+        40.0,
+        1000.0
+      ],
+      "input_views": [
+        "psf_flat",
+        "psf_qdiag",
+        "sap_qdiag"
+      ],
+      "interpretation": "Period-first BLS discovery settings are defined in pipeline/shallow/config.json. The shallow detector supplies proposals to the same vetting queue; these settings are not Bonus Object of Interest disposition criteria."
+    },
+    "triage": {
+      "transit_bic_margin": 10,
+      "false_alarm_bic_margin": 10,
+      "role": "Computational screening inside the end-to-end system; not the final calibrated disposition threshold."
+    },
+    "event_fit": {
+      "exposure_days": 0.02043361111111111,
+      "supersample_factor": 51,
+      "context_half_width_days": "max(0.5, 4 * proposed duration)",
+      "optimizer_max_evaluations": 100
+    },
+    "pixels": {
+      "scene_radius_arcsec": 60,
+      "minimum_prf_correlation_diagnostic": 0.3,
+      "offset_sigma_diagnostic": 3.0,
+      "astrometric_systematic_arcsec": null,
+      "minimum_good_quarters": 3,
+      "aggregate_systematic_arcsec": 0.16,
+      "minimum_material_offset_arcsec": 0.2,
+      "large_offset_arcsec": 2.0,
+      "small_offset_sigma": 4.0,
+      "large_offset_sigma": 3.0,
+      "reference": "https://exoplanetarchive.ipac.caltech.edu/docs/KSCI-19115-001.pdf; https://arxiv.org/abs/1303.0052"
+    },
+    "orbital": {
+      "maximum_predicted_windows": 4096,
+      "application": "Repeated events only; period-dependent tests are not required for a single event."
+    }
+  },
+  "lane_gates": {
+    "contract": "detector-lane-gates-v1",
+    "status": "PENDING_DEVELOPMENT_CALIBRATION",
+    "thresholds": {
+      "periodic": null,
+      "shallow": null,
+      "sparse": null
+    },
+    "calibration": null
+  },
+  "null_contract": {
+    "id": "upper-clipped-quarter-nulls-v1",
+    "variants": [
+      "inverted",
+      "quarter_scrambled"
+    ],
+    "inversion_order": "After per-quarter normalization and upper-only clip; no second clip or normalization",
+    "short_coverage": "At most two usable discovery quarters: inversion only",
+    "exclusion": "Unique exact-event membership in a frozen real-source signal or catalogue ephemeris; complete coverage required",
+    "counting_unit": "Vetted nonexcluded detector proposal",
+    "flux_gates": [
+      "shape",
+      "orbital",
+      "instrument"
+    ],
+    "false_candidate": "Every applicable flux gate passes, independent of pixel availability or final BOI label"
+  },
+  "release_plan": {
+    "unit": "Parent TPF for physical classes; vetted nonexcluded detector proposal for the null false-candidate endpoint. Report null per-source rates separately.",
+    "partitions": "Development and final replay share no parent TPF, source, component, or raw FITS identity.",
+    "development": "Opened physical controls and development nulls set the policy and lane thresholds; freeze implementation, evidence rules and values before sealed outcomes.",
+    "morphology_trials": {
+      "sparse_injection": 160,
+      "ttv_injection": 160
+    },
+    "final_audit": {
+      "opened_false_boi_caps": {
+        "null": 0.005,
+        "native_eb": 0.05,
+        "ordinary": 0.01,
+        "background_contaminant": 0.03,
+        "contamination_pair": 0.03,
+        "guide_star_family": 0.03
+      },
+      "confidence": 0.95,
+      "interval": "one-sided exact binomial, reported separately from measured-fraction publication rules",
+      "planet_trials": 300,
+      "reported_trials": {
+        "eclipsing_binary": 450,
+        "background_contaminant": 450
+      },
+      "null_sources": 10000,
+      "minimum_periodic_recovery_fraction": 0.3,
+      "maximum_null_false_candidate_fraction": 0.02,
+      "maximum_single_event_offset_conflicts": 1
+    },
+    "ledger": "Every declared source, null variant, detector proposal and emitted alias must reconcile. Excluded null proposals are reported outside the vetted denominator. Completed scientific abstentions remain in measured physical trial denominators. Missing results or identity mismatches block release.",
+    "truth_sources": {
+      "planet": "Parent-disjoint confirmed Kepler signals or pixel-level physical injections with immutable truth.",
+      "eclipsing_binary": "Parent-disjoint catalogue EBs with immutable ephemerides.",
+      "background_contaminant": "Pixel-level scenes with a known off-target variable or injected contaminant. Flux-only injections cannot certify localization.",
+      "null": "Frozen inverted and quarter-scrambled source variants; all flux gates passing counts as a false candidate without matching pixels."
+    },
+    "scope": "Optional control measurements describe recovery and false-class retention. The BOI catalogue publishes current pipeline results; subsequent physical validation is a separate study."
+  },
+  "current_state": {
+    "automatic_assignment": "BOI_AFTER_FIVE_GATES",
+    "reason": "A signal passing all five existing triage gates receives a BOI designation in its discovery view. Other views do not veto it; numerical thresholds and calculations remain unchanged.",
+    "next_step": "Freeze the current implementation, policy and complete input ledger for each discovery view. Start the survey only after Adam authorizes it. Keep sealed control outcomes closed unless separately authorized."
+  },
+  "pipeline_contract": {
+    "contract_version": 3,
+    "discovery": {
+      "origin": "rust_v6_deterministic",
+      "contract_version": 6,
+      "archive": {
+        "repository": "spacelab-archive (private repository, unlisted)",
+        "commit": "2850e1a9681311fb337e950408ca1e609332a381",
+        "path": "projects/exoplanets/forgotten-stars/experiments/fsc-v1-survey-80k/archive/rust_classifier_v1",
+        "tree": "04a43e93855851174d91aeccdcd92899e645cc15"
+      },
+      "archived_files": {
+        "src/main.rs": "40a634d40c6a72060c07a21e4371e31458436dbf720bec8a64833adff57109fe",
+        "Cargo.toml": "8eb4a4616b80945f845fc15e975fbf8623a3e741479962e7e214d52afb9dc9b3",
+        "Cargo.lock": "40e22b168053d6e606c63928bccd939d0a6aacd07a32677f21fc5aafbbcbb946",
+        "preregistration_v3_balanced.json": "7809ec69d1b41743e0e606725ee99de618a4307aa2c8aa930aa5114b1feaae9c"
+      },
+      "files": {
+        "src/main.rs": "4c3b62a0ca6b3d8db5d1de9e300813dfa1f974ab4490f0e799f3df001422a98d",
+        "Cargo.toml": "8eb4a4616b80945f845fc15e975fbf8623a3e741479962e7e214d52afb9dc9b3",
+        "Cargo.lock": "40e22b168053d6e606c63928bccd939d0a6aacd07a32677f21fc5aafbbcbb946",
+        "config.json": "96563a9aca3419fc5102e97ea2c6635f7d3fa176fb9b0640bf91d2de75c49787"
+      },
+      "shallow_files": {
+        "run.py": "b8f5070326e2805227a647afd176007d0d5e3e686cf727b128a580fab29dde50",
+        "bls.c": "c1ea6f2e186a8894f6fd8b4836f73273afd37e7afd2f5ddd0545658187ee7400",
+        "config.json": "0ad6fd8fcc8da21041f132f7af3d6698b67635865d7edf963e5f5bedd0355996",
+        "requirements.txt": "8b094e837f8aa684d0a8a404e088829815852a55287c4f4de1c3ebb2b747e54a"
+      },
+      "views": [
+        "psf_flat",
+        "psf_qdiag",
+        "sap_qdiag",
+        "psf_nova"
+      ],
+      "discovery_view": "sap_qdiag",
+      "preparation": "Each available view independently: finite time/flux/error, positive error, SAP_QUALITY=0; PSF_FLAT also FLATTEN_MASK=0; per-quarter median; upper-only 12 MAD sigma clipping; time/cadence sort and cadence deduplication; FSC_LC2 f32 flux/error",
+      "protocol_version": "fsc-kepler-deterministic-v6.1",
+      "decision": "Unchanged Rust periodic core, extensions and residual search. Only final TRANSIT_LIKE proposals enter independent-view vetting; all Rust diagnostic rows remain retained.",
+      "release": "TRANSIT_ONLY; final all-gate survivors receive BOI designations",
+      "discovery_profile": "rust-transit-only-v1",
+      "search_config_sha256": "e0c12a368b0537cabd9267eca1fa7393905008692bc25a305bc94f8b98ebeaa3",
+      "admission": "Final Rust TRANSIT_LIKE only; at least three sampled transits",
+      "excluded_lanes": [
+        "SHALLOW",
+        "SPARSE_EVENT",
+        "SURVIVOR_REVIEW"
+      ]
+    },
+    "vetting": {
+      "quality_bitmask": -1,
+      "exposure_days": 0.02043361111111111,
+      "supersample_factor": 51,
+      "local_context_durations": 4,
+      "minimum_context_days": 0.5,
+      "neighbour_radius_arcsec": 60,
+      "optimizer_max_evaluations": 100,
+      "joint_fit_max_units_per_signal": 64,
+      "timing_refinement_max_period_days": 3,
+      "timing_refinement_max_units": 64,
+      "timing_refinement_grid_points": 31,
+      "timing_refinement_minimum_event_train_positive_z": -10,
+      "short_period_shape_max_days": 0.5,
+      "short_period_joint_fit_max_units": 1024,
+      "short_period_joint_fit_max_missing_fraction": 0.05,
+      "diagnostic_max_units_per_signal": 18,
+      "orbital_max_windows": 8192,
+      "pixel_policy": {
+        "minimum_prf_correlation": 0.3,
+        "offset_sigma": 3.0,
+        "reference": "Kepler Centroid Robovetter KSCI-19115-001 and Bryson et al. 2013, arXiv:1303.0052",
+        "quality_calibration": "PRF-correlation threshold fitted on opened pixel-level planet development controls and opened catalogue false-positive diagnostics; untouched evaluation controls remain sealed",
+        "astrometric_systematic_arcsec": null,
+        "minimum_good_quarters": 3,
+        "aggregate_systematic_arcsec": 0.16,
+        "single_event_minimum_quarter_snr": 7.1,
+        "single_quarter_systematic_arcsec": 0.5,
+        "minimum_material_offset_arcsec": 0.2,
+        "large_offset_arcsec": 2.0,
+        "small_offset_sigma": 4.0,
+        "large_offset_sigma": 3.0
+      },
+      "parent_index_sha256": "9d5ca5f4e7dc34ed60312991d9bcb02f96bbeb255e775c0fdece9e9d276b483e",
+      "triage": {
+        "enabled": true,
+        "shape_transit_bic_margin": 10,
+        "shape_false_alarm_bic_margin": 10,
+        "assessment_rules": {
+          "instrument": {
+            "id": "instrument-quality-spatial-null-v3",
+            "status": "RELEASED",
+            "material_quality_flags": [],
+            "spatial_null_bic_margin": 10
+          },
+          "source_localization": {
+            "id": "pixel-attribution-v2",
+            "status": "RELEASED",
+            "accepted_statuses": [
+              "TARGET_COMPATIBLE"
+            ],
+            "material_statuses": [
+              "ROBUST_OFFSET_CONFLICT"
+            ]
+          },
+          "contamination": {
+            "id": "catalogue-neighbour-v6",
+            "minimum_scene_prf_compared_quarters": 3,
+            "status": "RELEASED",
+            "minimum_neighbour_depth_sigma": 7,
+            "minimum_competing_source_separation_arcsec": 1,
+            "minimum_catalogue_match_units": 2,
+            "minimum_catalogue_match_fraction": 0.5,
+            "maximum_harmonic_order": 8,
+            "maximum_harmonic_period_error_fraction": 0.001,
+            "minimum_harmonic_match_units": 10,
+            "minimum_harmonic_expected_match_fraction": 0.25,
+            "accepted_scene_statuses": [
+              "GAIA_SCENE_QUERIED"
+            ],
+            "accepted_neighbour_statuses": [
+              "MEASURED"
+            ]
+          },
+          "identity_catalogues": {
+            "id": "catalogue-signal-identity-v2",
+            "status": "RELEASED",
+            "minimum_catalogue_match_units": 2,
+            "minimum_catalogue_match_fraction": 0.5,
+            "maximum_harmonic_order": 8,
+            "maximum_harmonic_period_error_fraction": 0.001,
+            "minimum_harmonic_match_units": 10,
+            "minimum_harmonic_expected_match_fraction": 0.25,
+            "material_signal_classes": [
+              "ECLIPSING_BINARY",
+              "FALSE_POSITIVE"
+            ],
+            "accepted_catalogue_statuses": [
+              "SCOPED_CATALOGUES_CHECKED"
+            ]
+          },
+          "orbital": {
+            "id": "orbital-eb-v2",
+            "status": "RELEASED",
+            "maximum_odd_even_bic_gain": 10,
+            "minimum_secondary_sigma": 7,
+            "maximum_secondary_to_primary_depth_ratio": 0.5,
+            "maximum_phase_modulation_period_days": 10,
+            "minimum_phase_modulation_signal_to_noise": 50,
+            "minimum_phase_modulation_amplitude_fraction": 0.005,
+            "maximum_phase_modulation_to_primary_depth_ratio": 1
+          }
+        }
+      },
+      "flatten_mask": "EXCLUDE_NONZERO_ONLY_IN_DECLARED_VIEWS",
+      "flatten_mask_views": [
+        "psf_flat",
+        "psf_nova"
+      ]
+    },
+    "alias": {
+      "max_eb_rows_per_signal": 3,
+      "minimum_supplied_event_alignment": 0.8,
+      "minimum_independent_events": 5,
+      "maximum_single_event_information_fraction": 0.5,
+      "minimum_independent_depth_snr": 7,
+      "maximum_source_eb_harmonic_order": 8,
+      "maximum_source_eb_harmonic_period_error_fraction": 0.01,
+      "minimum_source_eb_harmonic_alignment": 0.5,
+      "minimum_source_eb_odd_even_bic_gain": 10
+    }
+  },
+  "implementation": {
+    "pipeline/deterministic/catalogue_control_partition.py": "4601b9fd8aae553703dae4fafc4958642411afc6326d6b85b7a370b7e32475c4",
+    "pipeline/deterministic/catalogue_control_report.py": "d1bfa87f5badc0e8c41154e344956e3ed2c4d34c112e42cd2f5b12db09131af2",
+    "pipeline/deterministic/catalogue_controls.py": "0aea6b478cd9c0701ac0f3e878023890a6aaea9b80d5691c19c774ba85399c62",
+    "pipeline/deterministic/catalogue_eb_controls.py": "e3e2d9d8915ae249505f52e1909446c99627d7ae4aa45cef258f1558e39af1e5",
+    "pipeline/deterministic/cloud.py": "98c4a31286461d8eb0fc01ec54c59f0a160ec4f8ee69e14525cc126c2b2f561c",
+    "pipeline/deterministic/cloud_injected_pixels.py": "29d160a42aa6d1adf8fed62352155e4326c7140e8af4cd652b6bf63b541b74b0",
+    "pipeline/deterministic/cloud_null.py": "da5efb2c11232740a3a89c1ac82dbd702726edfd397202b4d4f378c1294aab6b",
+    "pipeline/deterministic/cloud_opened.py": "20f352ef7fb5efbc652cd9173b9acfa2dbf9a084aa943a1b6a7d7b38545891ef",
+    "pipeline/deterministic/cloud_opened_corpus.py": "97c811ef635f111fb7b256280e8056a88acbfaae5985649eaea4611fdb85c681",
+    "pipeline/deterministic/cloud_opened_pixels.py": "9b3400964357bc5d96b2d85211dbda84c58e1d519436b438759b299666a7312c",
+    "pipeline/deterministic/cloud_public.py": "2bcb30e7c656e254cfb9ff1b386fac38adeb15264d26a896b1ff293239a14467",
+    "pipeline/deterministic/compare_runs.py": "51758522d6461ce561283c9315459c979cb5a4be61fa3f2d3b8d121b07527e8d",
+    "pipeline/deterministic/control_binding_inputs.py": "4eb3bc62b1dd947c8626dd9994ca8adf997bc51be5830f7dbe8f9cdfa0503af6",
+    "pipeline/deterministic/control_bindings.py": "96b7f768dd8a373cb486337775f404945a5b03bd383aa8170582e8231d469e72",
+    "pipeline/deterministic/control_donor_headers.py": "ab46f4d4a29e6ec51dd3953ae8da080a5a3c596411e16c2954d36c87260c739b",
+    "pipeline/deterministic/control_eligibility.py": "30d93bbefe99ea2086f0f46a4957ea9f22dee43898d6aa426852c6ca8ccf8874",
+    "pipeline/deterministic/control_eligibility_archive.py": "a5547ac8bff1dd90965d9d4a1e931800ab78a4804e4d0bd15b31f39eccbf4e72",
+    "pipeline/deterministic/control_execution_inputs.py": "7b85ff8bfc6cadb378e7c20f3d100f43ce2bdf69a9ad54c6fb89bb6728c44eab",
+    "pipeline/deterministic/control_input_inventory.py": "d94445ec9cb4b9059eff7bdce85452051ddd0dbe755aad42c86102ffe6f1734d",
+    "pipeline/deterministic/control_mission_reference.py": "8ddb5ede472a7b1f2e80dafd222005deb45cbedd7f1ea3c0f5aba5fc537c0ce2",
+    "pipeline/deterministic/control_pair_inputs.py": "4d3fae14f3522f84ec0e0354888fe91212ea9ccbb09f32183c0456b5bedf6e5f",
+    "pipeline/deterministic/control_parent_candidates.py": "99753940a685ac225efd7bb27bb50e29198539cde74d586a53f7e8889875d185",
+    "pipeline/deterministic/control_parent_headers.py": "4404b8918db680c9f9baae3c07494a2a276a322567c49a024e466259f28ef8ba",
+    "pipeline/deterministic/control_partitions.py": "6b112b395dd974f0be1ab9977a6b375899430568ba466e02709b8e133cb9542b",
+    "pipeline/deterministic/control_physical_readiness.py": "d62e2d7d36c32de1d19f2cac338918824f1a629bcf224d83f084635185250d1d",
+    "pipeline/deterministic/control_pixel_inputs.py": "3bb59b25da742d735bb8041539e46e6cdcea6072a504af75e798b1e55638944a",
+    "pipeline/deterministic/control_prospective_inputs.py": "ce69ebab888d94fe402661d362ac7765a44c9da0be6dc37e9f39377bc4d3d5d2",
+    "pipeline/deterministic/control_report.py": "6ab4f3ea9d600dca4f5b65f9f408d121a5dea48423ec3bc3dc3e614f3653966b",
+    "pipeline/deterministic/controls.py": "cb2fe825ab6193042a5a4a71a645029fba7b572feafc45d729f5c82c6e89e78b",
+    "pipeline/deterministic/false_class_control_report.py": "1865aa2c29205eadd321323baf643f7419d93ee2c7292402d0b4f73a9d9a6ede",
+    "pipeline/deterministic/false_class_controls.py": "6625f0dbcf6abdb2f42351ad6a22d9b37d18dccd61f6ca29db392acdf46e18b4",
+    "pipeline/deterministic/false_class_injections.py": "aae63433b6a667f09c7d932cc905657e862f599e3f2e67dc75635c0c60f3e6a1",
+    "pipeline/deterministic/false_class_overlay.py": "59f1d673b6f6c5566ac486c4385ca896107cc77667e90202c7eeabe306ca1850",
+    "pipeline/deterministic/frozen_pixel_inputs.py": "855e8c76dcceaf831486ccf8e9a45d2f6b1678a5e1611fecafb952a2c6a8ee11",
+    "pipeline/deterministic/full_survey.py": "f44bad9e09be8a5b2bdf261d53e5b012a6e1a0f1a93ac586876a221678fb608a",
+    "pipeline/deterministic/holdout_controls.py": "5019a003832f63130a4bfcba1f7ce0335ed7059d6d47e774315f523d7a035ac9",
+    "pipeline/deterministic/injections.py": "cf931ff504da934534338083c5bd74f91cc37af542bb99de8a3889d6c6f30420",
+    "pipeline/deterministic/multiview.py": "7958ae114f26795a834348dfae99d729a5d47a925532d3bc822412b7a34a0389",
+    "pipeline/deterministic/native_prospective_controls.py": "aface12b6e30fe19a0c130474d6800ef8bc70079015736598a29ae368a5a2af4",
+    "pipeline/deterministic/null_base_manifest.py": "93cf9df14f5f55d20ff36d31aa5714ca7b6e505ac442906aaff0c11a9830930b",
+    "pipeline/deterministic/null_exclusions.py": "59452a1ddf6bfc5ad81b479bedb3782d41f74d609fb37cfcd232f342687a75e4",
+    "pipeline/deterministic/null_measurement.py": "10e2d7248b18935fecc1205fef51a2ca536f95e89a457cdaa17acf7149c0f058",
+    "pipeline/deterministic/null_membership.py": "5de0894e9b62d9a7c99740328509ad4c7341bdf07488ea84cec58e3e70f1a9ad",
+    "pipeline/deterministic/opened_detector_report.py": "dd604227655d6f066dcebbcfd50958704efe62aba32668056c6aa84c0ad849e4",
+    "pipeline/deterministic/pixel_injections.py": "552775ae6e4534e8be40f58ed0663aa3175f76d4c3a3b02c9d48360e3da7c468",
+    "pipeline/deterministic/pixel_parent_audit.py": "d32f1c73eb8ed2ca4e3ae5ee78140198876835da6a08a86d2a7e861cda0c8785",
+    "pipeline/deterministic/pixel_support.py": "c51eb468562fa2a52861364d804625312b82e2a07a201cd94a10dbc7e3e3886e",
+    "pipeline/deterministic/pixel_transfer_audit.py": "3738155b11670505271fba47224f9934a7d80471731cfd3e1326bcc4d91415b2",
+    "pipeline/deterministic/planet_control_partitions.py": "1a1da7a82ab909c92b5ef23120480c5a07b4c62140ebaed38772df8ca2dc6f2d",
+    "pipeline/deterministic/planet_control_report.py": "d7653fe213a42f625fb7309132d62dc9fca9faa16f70aab826907310fbf2ec8e",
+    "pipeline/deterministic/release_artifacts.py": "69bd3c975695de3e4dab53336676c30e9b78070261d3c9e5b41ba2c52375a830",
+    "pipeline/deterministic/release_report.py": "bfb33a6b3cebcef0dbd402a41b471bc1fa57e3fa4dade8e9487587fd33893382",
+    "pipeline/deterministic/run.py": "afc81ac2122c2ef867c5dd1f8a8c53c22436e223febb9f36c0831cf4237b5813",
+    "pipeline/deterministic/shallow_cell_enrichment.py": "df40c15768255bd0efba60a3d3f675148bc7907b3302306613e5179f04d87cdf",
+    "pipeline/deterministic/shallow_injections.py": "c2debfcb6399f0097c26c102d78f8c0a2bfa1bd3c3243716917fc4bddd5d8bc7",
+    "pipeline/deterministic/shallow_pixel_stage.py": "64311c778f7bbd15a76843450e6465518824ebee2b5721da879a0b1cac0bf867",
+    "pipeline/deterministic/shallow_pixel_support.py": "1a9e1a48cb3c7513932e7ac8d6eefee156c6f74e3fa58c2d859688524a78a942",
+    "pipeline/deterministic/signal_contracts.py": "8eb695774ad11009a182e1bd46bc226534e297e1aec4da4ae3f5c35d4fb9a1a1",
+    "pipeline/deterministic/source_ledger.py": "9851cd6007be65a6b2e03f889fcfceb4f303aa293bb139389a3ea37f06569a7c",
+    "pipeline/deterministic/test_cloud.py": "3b292ede841ea7c316bd5dfb04cbbd1bda545cf9d8b43a636f48740d904d4ff7",
+    "pipeline/deterministic/test_cloud_injected_pixels.py": "63a574179dc54e65948c5ca19145d0980f88d738b3b6b4d7d0aeea0014845f48",
+    "pipeline/deterministic/test_cloud_null.py": "6dc79b98f4dc474a3a8ccc89213df372754bfdc681d029bdb18be688545d1544",
+    "pipeline/deterministic/test_cloud_opened.py": "dde444ee7a78d496607f8e710f19e3ce4f738ac1d3af727a17b4b30aa9867551",
+    "pipeline/deterministic/test_cloud_opened_corpus.py": "bb4a4f49577024b8e71e4999af9cedffefd14aca187786ea3666337f1b4a2672",
+    "pipeline/deterministic/test_cloud_opened_pixels.py": "8867f8dcf3d127d52e629a4622a9f4a514be94903e8eae068a0c9154c585c56b",
+    "pipeline/deterministic/test_cloud_public.py": "c61133e8f42663ad18c653df640ca8f68d7060f37ded087ef62cae64dc6fa361",
+    "pipeline/deterministic/test_compare_runs.py": "f3685d090936f25dab67284c033202ed124d29b359358008b5cf3bc120b2db58",
+    "pipeline/deterministic/test_control_binding_inputs.py": "39cb5b249f587a8058f612e4549acf583b80cece2ae96a9634f63a4906d7557f",
+    "pipeline/deterministic/test_control_bindings.py": "c22f2eade56858453ddd77b9ab5a139f85ef8ea2c788de29330cb0a44b5bb5d8",
+    "pipeline/deterministic/test_control_donor_headers.py": "da02ebf8f760eeefb5085f4864c943b1438b8b5858d4c173745e64c64cc8f8e0",
+    "pipeline/deterministic/test_control_eligibility.py": "bb275396936d9b7d9115c4e21d25a664d5ed77c972fb42129825460650f70c6e",
+    "pipeline/deterministic/test_control_execution_inputs.py": "5c77cbbde65a55dccff598a84050cf2dcc607d4ec3794503c0cc10e414c8af90",
+    "pipeline/deterministic/test_control_input_inventory.py": "a0532b058ab5972c52bfae17737b9b7fcd29fcaf876c531c70c859c48cf62f63",
+    "pipeline/deterministic/test_control_mission_reference.py": "c110bd84a15c06f912c824c610f39e74e2583ae2567480b03644a6ca8f379765",
+    "pipeline/deterministic/test_control_pair_inputs.py": "ae9820d9029a8a2c31da9f56df8a0b9b923eb9f4a572a656529aa7c85bf1630d",
+    "pipeline/deterministic/test_control_parent_candidates.py": "f0f7bbea8151e86639056d0d9d2e05ab52c3fdd5df186254ce91bf7a6ce539ec",
+    "pipeline/deterministic/test_control_parent_headers.py": "1273f11ca479ae5b835c3e68d04abd9432bc134a781c8873ebd2d36c555ed992",
+    "pipeline/deterministic/test_control_partitions.py": "658d4d64286ff56fe8b5c1a3b9099ccb54a9daf3d7eed02f5ee51c6630c5d93c",
+    "pipeline/deterministic/test_control_physical_readiness.py": "c8eb0aac585e1fe101aa5f44d6c92c67fb1750d1952ea73b993a692ed37c3145",
+    "pipeline/deterministic/test_control_pixel_inputs.py": "88ea0a843efc35a09ad4192f5ec3fd04162c3288f82223ef968afc4268ad183d",
+    "pipeline/deterministic/test_control_prospective_inputs.py": "772c6b67ae7aa551b7772fecfb45ce87226605d5239c8cf45d0158f1d37deeb3",
+    "pipeline/deterministic/test_controls.py": "35e2149ed48f54fca4bb765d8c5bb6d5371e9c4ba4299047ecf6b62e5f8133be",
+    "pipeline/deterministic/test_evaluation_scope.py": "2f0d47623f1a0bf23c52cd28deb6529cc2c471f603f483e13042516f19ac7e83",
+    "pipeline/deterministic/test_false_class_control_report.py": "e5911735bc267a02fbb06b2cd2c2be9ee2efc80a4b79be2f8d829d65802e8c76",
+    "pipeline/deterministic/test_frozen_pixel_inputs.py": "c2aba402ae5a6e34b13fc0b1cb0760b18e5189d69abd6965ba0a5efb04d1fa78",
+    "pipeline/deterministic/test_full_survey.py": "d1878455fc97240630b96a877a6071754fcba1772903d78b5a1c17c04aaa3a3b",
+    "pipeline/deterministic/test_holdout_controls.py": "9ee3638d09e67a3dde502f0149c006b84269e292fab10aa89cba0e912b468576",
+    "pipeline/deterministic/test_injections.py": "79ffafe0fdfbc386da50ce27109388e82c1c435a4bbdced472d010e11624e2be",
+    "pipeline/deterministic/test_multiview.py": "5a71f6daac967acadd31e4830fec2631106da5cbc09a2d78f6a0e8d1e7238334",
+    "pipeline/deterministic/test_native_prospective_controls.py": "37537300c74247cb670ee03120e408679404477ca3d72bd7a64a20929d697ce2",
+    "pipeline/deterministic/test_null_base_manifest.py": "8e7cdbcf3293b8c3850d1f2cda7980a285ba7dc2c80697b7f65d3a9c0e6e2cdb",
+    "pipeline/deterministic/test_null_exclusions.py": "1cc3eed6f51f66cb367eb65095b5bd674017ace9c272ede7bdb9efed8de57c2d",
+    "pipeline/deterministic/test_null_inputs.py": "0c4c6ac224d60d7f896e05d6960a58d2ee22a1e51adfb88978d087faffa744c1",
+    "pipeline/deterministic/test_null_measurement.py": "af43689da107cb9bd28c6d92be3b129c5caf293e64865cf77e8900b3b5f1c26b",
+    "pipeline/deterministic/test_null_membership.py": "4a773a762c4708754165333b4a6a5380ea6df0a0455def6cfb2cffa107ce4596",
+    "pipeline/deterministic/test_opened_detector_report.py": "f93531fccfe246b4bbe49e098db9dcb35e38259e014c014163127d3073ffded3",
+    "pipeline/deterministic/test_parent_audit.py": "eb49ce6ee242ca8d241b06a29e49af4818a08d7daed81aa6e5d2615156e65b53",
+    "pipeline/deterministic/test_published_signals.py": "235113006efe43516f7ec70ff723b6fb03d0148cfcf3e97b077663dd258e2cbe",
+    "pipeline/deterministic/test_release_artifacts.py": "ce292c5659640cfd7976f574180f4f0a4b76ef3ec2b25433aebd9b6da2597312",
+    "pipeline/deterministic/test_release_report.py": "54bc2d4b2c2d113a0988078a190c50325bc869579e0b8cfd67d8713ee5fa228d",
+    "pipeline/deterministic/test_run.py": "b979d1f7d117f8079084a05a073d6ab743ecb1cefd2525821e882903286faa64",
+    "pipeline/deterministic/test_signal_contracts.py": "c66d096f2e3dbce718f92f6546f7cece93ef8ea1d19386fb15bd28f1cdf811d8",
+    "pipeline/deterministic/test_source_ledger.py": "4d846c7bb2bab1d4016a5539a41356b84fe955dc16d31cb2a6c455b5b9f8da29",
+    "pipeline/deterministic/test_vet_survey.py": "fc0b567791d0b60bb5e580f392e9078e67d138b19f0eba0923f09b8f35f59bd4",
+    "pipeline/deterministic/vet_survey.py": "5472294e55b0810b5076ec2efead8c41e31b26d7424ea8500d43212a6627c7e2",
+    "pipeline/evaluation_scope.py": "126c8d11ddc8c452daacc87ddbbac3a43bb201b791cdc0aab926dc16707d839f",
+    "pipeline/photometry/export_cohort.py": "8acc6e53f6271bfaa15f61aa476c7de11533a25b323ab4178c228d76c5bc8bfb",
+    "pipeline/photometry/ingest.py": "1dbfd1449f674d7b1c256ad4f53fd7bd7051f801046db6656a2f14a2db91405c",
+    "pipeline/photometry/lc2.py": "33cc1d728b1c6946372341b15913c7047a0a06c89360f34ae5440b7853bbf85b",
+    "pipeline/photometry/select_m_dwarfs.py": "e035d15565b30634a8a6b83d022cbc7c9914262705deedfbd8c026f7ddb8ebc7",
+    "pipeline/run.py": "e02a81ee913180fb7541b279d1b07ccc9ced83197d9ecbd1dfbf3bb1f7e0f94e",
+    "pipeline/runtime.py": "0df1d1bf176eb70152fb0e912fef0762b277203787a60947af924e0caee14e0a",
+    "pipeline/shallow/run.py": "b8f5070326e2805227a647afd176007d0d5e3e686cf727b128a580fab29dde50",
+    "pipeline/shallow/test_run.py": "6e1230bcab3f7671cfd176ac7341fba4859cf3a1930233767dc9c136139fd220",
+    "pipeline/test_runtime.py": "9969ee4f68da79ba7bdbdff1e889fbb814fe70e764ebc37f3b7fd4e252c91ea3",
+    "pipeline/vetting/boi.py": "8499099b992f38cca18e6908106c3bd5246136289414b6713c1ddbf2859e4a36",
+    "pipeline/vetting/calibrate.py": "445ec08bf8560b13916cd17c7924fd1156d48077aaf13bb03b72f50e683338db",
+    "pipeline/vetting/kepler_prf.py": "2da2df2a97356c8e51302fc372a74b522fabefbc19c06f2add1bc2d8cc10b9cc",
+    "pipeline/vetting/parent_index.py": "a11c1c6aa48f7744bdb205cea79ca20e075292f305012050b74972045a033e04",
+    "pipeline/vetting/test_boi.py": "594cf0cddd32c5336b0b2678907c58c2f158c29c18648eeb14d90d8b8363207c",
+    "pipeline/vetting/test_calibrate.py": "73b517cc8eeee551d9615eedfac9e863115e2642b3d4a6e3b351d84dabf85e03",
+    "pipeline/vetting/test_kepler_prf.py": "7ffd419f6a2ee4529b1c8f29043a68f262bf845fd088fc87b6ddb5cb6d9ae368",
+    "pipeline/vetting/test_native_pixel_retrieval.py": "c223c05e2be21ef4f5f76e2b3bc7bb5e767e33803f91866c2c16a9ffedb3c07e",
+    "pipeline/vetting/test_null_pixels.py": "10041c9a7a09a9a16786c7d74fa7871565c24b4b126254b15aa67a0e68c60c8f",
+    "pipeline/vetting/test_vetting_alias.py": "ebb40409e245e79f482df26234b63fb99e6274ec69e2ff5b980974e0cefae4fc",
+    "pipeline/vetting/test_vetting_checkpoint.py": "ed90b803276f22174c4260aa8369047a3db17f6317981780ad9d75c061e86ee5",
+    "pipeline/vetting/test_vetting_dispatch.py": "8823c2bcfb7affbfd74c55a3f7d7d074767c4798da26146925a445d72f3c6f6c",
+    "pipeline/vetting/test_vetting_disposition.py": "70ce97dde7b428c476e8d8b4f9d6e0515f0d11bfb872afbed77247f8881e67ff",
+    "pipeline/vetting/test_vetting_evidence.py": "08ff56857304adabf8634a4f1bd844ca500500685f7f044f5c3d0621937b7239",
+    "pipeline/vetting/test_vetting_host.py": "a278889b54f5924ace569f82e2e283f0171e346365f49f1a0af6d2aa12fc8787",
+    "pipeline/vetting/test_vetting_models.py": "01e903174ccd6de21d6daca8ae3599de4b6c321cfe57f95e0aacaf189f88a573",
+    "pipeline/vetting/test_vetting_periodic.py": "25b6d092649a9947e3b7c9c997b5cb0a2f89d430a1f249f99f8cfb3939c4379c",
+    "pipeline/vetting/test_vetting_pixels.py": "84a537312ae0cffe87a770159bf18a72e737321a8e94aa276db237699f37ce76",
+    "pipeline/vetting/test_vetting_scene_prf.py": "e11bf492cebb2a238047e083a4565766378ea883155b83b2d104e3087380f1d5",
+    "pipeline/vetting/test_vetting_serialization.py": "8f3bec1616d8173049243fe72adbca1eb7c79996af8a90654277f438df8b8f29",
+    "pipeline/vetting/test_vetting_systematics.py": "b814d089483c9e35b7fe1e50a2ede3d88a9c7e18d84c87c1e724bcf9425d2542",
+    "pipeline/vetting/test_vetting_triage.py": "776f9b6d0c7f3ecb58853937a901bb1a6da58106b7552a72b13c712086101c0d",
+    "pipeline/vetting/vetting.py": "d67a3cd4838ae683b17e083ab71021106b14d853b112d8265ad949fe3a95d237",
+    "pipeline/vetting/vetting_alias.py": "671d938b0421a2697256e67d12985924a687cbcc42f221d5b0cc679a62773e06",
+    "pipeline/vetting/vetting_checkpoint.py": "eef33bd93fec22b487d57c6e900640ab381d02414dcf2a3d9a07a933b85a9562",
+    "pipeline/vetting/vetting_disposition.py": "01678cadf0619a894afb6e87c5d5c568d552359071a0ea8daec29a21762c74bc",
+    "pipeline/vetting/vetting_evidence.py": "8dabc7a2d5d7bf7e1e1b4f6557c16eabbbd2de93e3a10ba09639e29f3d820786",
+    "pipeline/vetting/vetting_flux.py": "c8dff0a8cea1686b84521b056ecbd482811f3b30c76b71452e6927946184c0d1",
+    "pipeline/vetting/vetting_host.py": "cc3c5cede7aca61318dc711f8a3a750a967317ea016ccad17c3cb99c8c3c6d76",
+    "pipeline/vetting/vetting_models.py": "2ec1dcdf7427a19ffc5fb924aafc0bf0a5473725c832cdef3fdcf6dafac518f8",
+    "pipeline/vetting/vetting_periodic.py": "cb33d3ac521fdbdc20d8d00135a3886d4d29170f8d57d8597516752c7a6f0d2b",
+    "pipeline/vetting/vetting_pixels.py": "7bc57d2c923159ec6737fca6f08bd653cb6cf37fbe75054233daba18e416a8d2",
+    "pipeline/vetting/vetting_scene_prf.py": "075d00d97d8a479a452b0c142492f1bf9ba50061ac37774ef3174392dc0ed3e1",
+    "pipeline/vetting/vetting_signals.py": "34e93d84a81b756d56c26e60f863349072d2b6cd760b9b2be4010e64c131e781",
+    "pipeline/vetting/vetting_systematics.py": "2cfa56f6136534039f0e8c01096b8752fa5b97736fdb5597fcc17890e07da5a1",
+    "pipeline/vetting/vetting_triage.py": "5227e3295afbb79ab4cf21fcd54368fb975a13bc8a51baac55eaaf75643cc68a",
+    "pipeline/shallow/bls.c": "c1ea6f2e186a8894f6fd8b4836f73273afd37e7afd2f5ddd0545658187ee7400",
+    "pipeline/shallow/requirements.txt": "8b094e837f8aa684d0a8a404e088829815852a55287c4f4de1c3ebb2b747e54a",
+    "pipeline/vetting/requirements.txt": "5dca3fc1697898f2b14e37feb86bf67903139ac352d3fae5dc2f0251a93998e2"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "recorded_utc": "2026-10-20T11:27:45.739296+00:00",
+  "status": "RUNNING_NATIVE_TEN_CPU",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "active_kic": 3322939,
+  "source_id": "2100123494603868416",
+  "tic": 120426201,
+  "launchctl_label": "local.spacelab.job.boi-native-2100123494603868416-capacity-v1",
+  "native_launch": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/native-capacity-launch.json",
+  "native_review_sha256": "d1dcfef876f363f67e89f8c5649680ef209058b0d71264e1d3d8c811e19bbf2e",
+  "native_freeze_sha256": "62e814b59300f45d42965ae2faf334beae1f28158b5261177072de03d873cb3f",
+  "cpu_budget": 10,
+  "actual_source_quarters": [
+    3,
+    4,
+    5,
+    7,
+    9,
+    14
+  ],
+  "scene_source_count": 21,
+  "background_preflight": {
+    "status": "POTENTIALLY_SELECTED_BACKGROUND_HOSTS_SUPPORTED",
+    "eligible_rows": 14171,
+    "unsupported_regular_eligible": 0,
+    "existing_supported_cold_binary_rows": 21
+  },
+  "planned_primary_maximum": 20,
+  "recovered_diagnostics": null,
+  "timing_review_status": "PENDING_ACCEPTED_NATIVE_POSTERIOR",
+  "fpp_production_ready": false,
+  "completed_full_probability_runs": 0,
+  "previous_case": {
+    "kic": 8805426,
+    "source_id": "2106383701495087232",
+    "status": "HELD_BACKGROUND_STELLAR_MODEL_DOMAIN",
+    "completed_families_per_seed": [
+      13,
+      13
+    ],
+    "complete_runs": 0,
+    "record": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/readiness-hold.json"
+  },
+  "selection": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/next-selection-20261020-v3.json",
+  "resource_policy": "One active BOI; reviewed10CPUbudget; quiet hourly monitoring. No other candidate background compute.",
+  "server_compute_started": false
+}

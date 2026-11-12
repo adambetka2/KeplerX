@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-21T13:32:42.516189+00:00",
+  "source_id": "2102612750272489216",
+  "kic": 7595917,
+  "signal_id": "rust-v6-2102612750272489216-1",
+  "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+  "admission": "REMAINS_PC",
+  "primary": {
+    "FPP": {
+      "repeats": [
+        0.20239326101297916,
+        0.13737492976309829
+      ],
+      "mean": 0.16988409538803873,
+      "sample_standard_deviation": 0.04597490292822398,
+      "minimum": 0.13737492976309829,
+      "maximum": 0.20239326101297916,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.02583046099710042,
+        0.01971607511328868
+      ],
+      "mean": 0.02277326805519455,
+      "sample_standard_deviation": 0.004323523721234583,
+      "minimum": 0.01971607511328868,
+      "maximum": 0.02583046099710042,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    }
+  },
+  "primary_repeats_completed": 2,
+  "remaining18_not_started": true,
+  "numerical_primary_pass": false,
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/probability-aperture-v1/campaign/audit-20261021T132150710026Z.json",
+      "sha256": "a8b509c099020f40c13570332f328d3fb47ef03d4a36b74ae0183648fc1426bb"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/probability-aperture-v1/campaign/runs/final/seed-00/result.json",
+      "sha256": "af4833d7a45f7778f3925a3b90d1fb7ac23ce21aa5315cfe15e5c96771b707b6"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/probability-aperture-v1/campaign/runs/final/seed-01/result.json",
+      "sha256": "cd008e196f38f44381321407219568dc89e40cb07c4b6f3937c37584430d8ee3"
+    }
+  ],
+  "scientific_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/probability-aperture-v1/campaign/freeze.json",
+    "sha256": "b7e5fd2b6a62d3443bc763ac1bdffc765ea96d703e9e66b14cc3a4c5a41ed7b9"
+  },
+  "all_saved_evidence_verified": true,
+  "scope": "Both first full primary runs completed with repaired runtime, declared identical-aperture input and calibrated response. Both FPP >= .10 and both NFPP >= .01. Stop by frozen policy. Target-planet families still dominate individual tables; alternatives remain too large for validation. No astrophysical FP mechanism or confirmation established. No remaining 18, recovered-clock runs or prior rescue."
+}

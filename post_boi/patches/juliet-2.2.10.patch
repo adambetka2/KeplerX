@@ -1,0 +1,39 @@
+--- a/juliet/utils.py
++++ b/juliet/utils.py
+@@ -658,7 +658,7 @@
+ 
+ def evaluate_beta(x, hyperparameters):
+     a, b = hyperparameters
+-    if a > 0 and b < 1:
++    if 0 < x < 1:
+         return beta.logpdf(x, a, b)
+     else:
+         return -np.inf
+--- a/juliet/fit.py
++++ b/juliet/fit.py
+@@ -1703,7 +1703,10 @@
+ 
+     # Log-probability for MCMC samplers:
+     def logprob(self, theta):
+-        lp = self.logprior(theta) + self.loglike(theta)
++        prior = self.logprior(theta)
++        if not np.isfinite(prior):
++            return -np.inf
++        lp = prior + self.loglike(theta)
+         if np.isnan(lp):
+             return -np.inf
+         else:
+@@ -2181,7 +2184,7 @@
+ 
+                 # Get weighted posterior:
+                 weights = np.exp(results['logwt'] - results['logz'][-1])
+-                posterior_samples = resample_equal(results.samples, weights)
++                posterior_samples = resample_equal(results.samples, weights, rstate=kwargs.get("rstate"))
+ 
+                 # Get lnZ:
+                 out['lnZ'] = results.logz[-1]
+--- a/juliet/_version.py
++++ b/juliet/_version.py
+@@ -1 +1 @@
+-__version__ = "2.2.10"
++__version__ = "2.2.10+spacelab.1"

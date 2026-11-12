@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-28T07:40:46.295631+00:00",
+  "boi_id": "BOI-2102056779643698560-1",
+  "source_id": "2102056779643698560",
+  "signal_id": "shallow-v1-2102056779643698560-1",
+  "clock": {
+    "period_days": 49.24883594144944,
+    "epoch_bkjd": 168.444438795764,
+    "duration_days": 0.4000000000000001
+  },
+  "original": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102056779643698560-1/acquired/original-kbonus-attempt1.response",
+  "sha256": "5dc00e30d12f299453e12322e24bfc1b47e76e39beb22bf52d75c5085957e283",
+  "psf_flat_depth": {
+    "status": "MEASURED",
+    "depth_fraction": 0.0005794664130765096,
+    "depth_error": 5.810786940767037e-05,
+    "events": 29,
+    "depth_chi2": 38.52799944421246,
+    "degrees_of_freedom": 26,
+    "largest_information_fraction": 0.18297021316487388,
+    "sample_count": 3552
+  },
+  "psf_flat_train": {
+    "status": "MEASURED",
+    "events": 27,
+    "observed_positive_fraction": 0.9259259259259259,
+    "expected_positive_fraction": 0.8578179662215419,
+    "positive_deficit_z": 1.1139031130858992,
+    "scope": "Predicted-event dip signs under a shared measured depth and local errors; the z score is a coherence diagnostic, not a calibrated false-alarm probability"
+  },
+  "odd_even": {
+    "status": "MEASURED",
+    "difference": -0.00038156303747111813,
+    "error": 0.00012136119270345866,
+    "sigma": 3.1440284078573,
+    "two_depth_bic_gain": 1.709648525301649
+  },
+  "secondary_phase_half": {
+    "status": "MEASURED",
+    "depth_fraction": 2.4613915666943434e-06,
+    "depth_error": 5.523565484667926e-05,
+    "events": 30,
+    "depth_chi2": 116.035299778972,
+    "degrees_of_freedom": 28,
+    "largest_information_fraction": 0.14372056146488357,
+    "sample_count": 3911
+  },
+  "helper_loading": "Unchanged array-only lc2 function ASTs loaded without the unused Parquet reader dependency.",
+  "scope": "Diagnostic at the already-declared clock and duration, using unchanged vetting_periodic functions and config. No detection search, fit, acceptance decision, probability allocation or queue change."
+}

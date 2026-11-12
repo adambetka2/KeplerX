@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-20T20:36:09.768964+00:00",
+  "source_id": "2099560128037101952",
+  "kic": 3330404,
+  "status": "HELD_NATIVE_JOINT_POSTERIOR_NONSTATIONARY_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_process_exit_status": 0,
+  "native_clock_accepted": false,
+  "production_fpp_runs": 0,
+  "posterior": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native/posterior.npz",
+    "sha256": "e622d2d4c7d75abb32eaabed4c2d86adbdac5fd8676d3290b003d55c5de5b58d"
+  },
+  "measurements": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-posterior-review-measurements-v1.json",
+    "sha256": "886da8a0f38429ff1d402b2541693e58ce02e3e9355a7158fc6a81b55856c112"
+  },
+  "plots": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-traces-v1.png",
+      "sha256": "ee70f98e6286904cffd604a74084eebef1dca786c20ac3fde6412e55f0d73fbd"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-fold-v1.png",
+      "sha256": "476b169798407247e71d2569ed32d392f22af9b185e7fcb46aed8cf5cfdeff99"
+    }
+  ],
+  "reason": "Retained chain shows systematic grazing-radius/impact-parameter migration, not stationary posterior sampling. Radius-ratio half means0.2014/0.4610 and b half means1.0983/1.3726, shifts1.022/1.008 total posterior SD. Period/epoch look much steadier but do not establish acceptance of this unfinished joint posterior. No fitted clock is adopted for FPP.",
+  "radius_ratio_half_means": [
+    0.2014128504934359,
+    0.46099969638644317
+  ],
+  "impact_parameter_half_means": [
+    1.098291199578831,
+    1.3726460176226347
+  ],
+  "clock_provisional": {
+    "period_days": 11.253429954189512,
+    "epoch_bkjd": 855.7216713176936,
+    "duration_days": 0.09057716019848643
+  },
+  "folded": {
+    "points": 200,
+    "residual_mean": 5.153003541154666e-05,
+    "residual_sigma": 0.0005048217836643709,
+    "mean_formal_bin_error": 0.0003410559274218586,
+    "adjacent_residual_correlation": 0.053226077438020415
+  },
+  "integration": {
+    "maximum_flux_difference": 7.409902777921751e-06,
+    "rms_flux_difference": 2.5689995375830706e-06,
+    "ratio_to_folded_sigma": 0.01467825481724497
+  },
+  "protection": {
+    "maximum_clock_displacement_minutes": 4.664626120618891,
+    "fitted_duration_hours": 2.173851844763674,
+    "original_protected_half_width_hours": 1.4990749520310553,
+    "median_transit_half_duration_plus_max_displacement_hours": 1.1646696910588186
+  },
+  "stellar": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/native-stellar-review.json",
+    "sha256": "66c922deafee01577e3e7cb8d56334d4311ef01b841f5a49aec95ad2efa235c8"
+  },
+  "scope": "No old k-SNR, six-hour or radius-only rejection. No claimed EB mechanism, planetary radius, probability result, stellar/scene clearance or denial. All6000x40x9 upstream chains and200000 retained samples, priors, original photons and logs unchanged. Preserve unresolved low-parallax/TIC-Gaia stellar discrepancy. No prolonged rescue or changed-prior refit tonight.",
+  "next": "User-priority KIC5303927, exact BOI-2073609042284178176-1; local Mac only."
+}

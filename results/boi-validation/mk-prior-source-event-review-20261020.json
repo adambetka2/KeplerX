@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-20T03:25:51.981913+00:00",
+  "prior_source_review": {
+    "utc": "2026-10-20T03:23:52.204919+00:00",
+    "prior_source_proposals": 102,
+    "previous_matches_preserved": 23,
+    "additional_proposals": 79,
+    "additional_membership": {
+      "DIFFERENT_SIGNAL_ON_PREVIOUS_BOI_SOURCE_NEEDS_REVIEW": 39,
+      "POSSIBLE_ALIAS_OF_PREVIOUS_BOI_NEEDS_REVIEW": 40
+    },
+    "additional_with_shared_window_flags": 60,
+    "additional_with_old_at_most_one_event_clock": 10,
+    "additional_with_missing_old_event_evidence": 10,
+    "previous_match_positive_check": {
+      "matched": 23,
+      "total": 23
+    },
+    "toy_shared_event_and_quarter_cycle_negative_check_passed": true,
+    "baseline": {
+      "path": "/home/adam/spacelab/results/kbonus-20261010/boi-catalogue.json.gz",
+      "sha256": "b0fcd5f0bca7d70dbb2e02d36a30a6e6fbb062533dc8db348fb6e4cc5a4ff329"
+    },
+    "inventory": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/inventory-v3/candidates.json",
+      "sha256": "3e89c2011c1cac95660c4509b78f893920a04bb9edcb5c51929d618ab2d68404"
+    },
+    "implementation": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/audit_prior_source_events_v1.py",
+      "sha256": "770dcb9b2078d69fcb923b9f1c4a501805a779457bdcc096ffdf6afe7eeae26d"
+    },
+    "scope": "Review all79potential additional/aliased signals on oldBOI hosts, outside the417new-source queue. No event or clock heuristic resolves physical identity by itself. Original membership and immutable survey evidence remain unchanged. Only the additional signals with genuinely distinct authenticated signals may later enter new-validation priority."
+  },
+  "additional_signal_priority": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/prior-source-signal-review-v1/additional-signals-priority.json",
+    "sha256": "26f47d4750baf7c1582d7087b427d90c61e1c9f9837a9e037e0110b4859dd9d5"
+  },
+  "readiness_rule": "The417new-host queue is a first priority subset. All79potential new/aliased signals on previous BOI hosts remain in scope.60have possible shared-event/predicted-window overlaps; these are ambiguity flags, not physical duplicate or false-positive classifications.10have incomplete older event evidence. No extra signal is admitted as new by this audit.",
+  "known_reference_followup": [
+    {
+      "source_id": "2126556132093765888",
+      "imaging_metadata_rows": 7,
+      "spectroscopy_metadata_rows": 2,
+      "companion_metadata_rows": 0,
+      "archive_file_rows": 22,
+      "imaging_filters": [
+        "692 (40) nm",
+        "880 (50) nm",
+        "Kp: 2.124 (0.351) microns",
+        "Kprime",
+        "Ks",
+        "LP600"
+      ],
+      "contrast_table_files": [
+        {
+          "fname": "961Pd-SH20110907a.dat",
+          "fid": "117609",
+          "fdesc": "WIYN speckle background limit table at 692nm; Extracted KOI961 from ExoFOP-Kepler on 2020-12-09"
+        },
+        {
+          "fname": "961Pd-SH20110907b.dat",
+          "fid": "117610",
+          "fdesc": "WIYN speckle background limit table at 880nm; Extracted KOI961 from ExoFOP-Kepler on 2020-12-09"
+        }
+      ],
+      "source": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-followup-v1/2126556132093765888-exofop.response",
+        "sha256": "c47fa90b0f500dc6c88df52b03c4a64d06c9c41fe6850e76049d404c877d3554"
+      },
+      "scope": "Metadata rows may duplicate an observing visit. Zero companion rows do not establish companion absence. Reported contrast values are band-specific; raw curves and applicable spectral/scene mapping require review before use. These data are not silently treated as Kepler-band limits."
+    },
+    {
+      "source_id": "2100258047339711488",
+      "imaging_metadata_rows": 4,
+      "spectroscopy_metadata_rows": 3,
+      "companion_metadata_rows": 0,
+      "archive_file_rows": 22,
+      "imaging_filters": [
+        "692 (40) nm",
+        "880 (50) nm",
+        "Kprime",
+        "i"
+      ],
+      "contrast_table_files": [
+        {
+          "fname": "4742Pd-SH20150712a.dat",
+          "fid": "180978",
+          "fdesc": "Gemini speckle background limit table at 692nm; Extracted KOI4742 from ExoFOP-Kepler on 2020-12-09"
+        },
+        {
+          "fname": "4742Pd-SH20150712b.dat",
+          "fid": "180979",
+          "fdesc": "Gemini speckle background limit table at 880nm; Extracted KOI4742 from ExoFOP-Kepler on 2020-12-09"
+        }
+      ],
+      "source": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-followup-v1/2100258047339711488-exofop.response",
+        "sha256": "12ad3450d3fc7b42adcdb06e6b01099b9510d165e4894fc0881d53fcb9c4b0cf"
+      },
+      "scope": "Metadata rows may duplicate an observing visit. Zero companion rows do not establish companion absence. Reported contrast values are band-specific; raw curves and applicable spectral/scene mapping require review before use. These data are not silently treated as Kepler-band limits."
+    }
+  ],
+  "empirical_comparison": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-model-empirical-design-v1/design.json",
+    "sha256": "5af5cdccfa5b5c5e03fb3a6887d364df7065b517750e524463a181f92af19f32"
+  },
+  "reference_readiness": "OPEN: compare the intended reference evidence set with the published validation record and review any known companions before freezing empirical runs. The prepared Gaia-only scenes have not used these imaging constraints; reduced-evidence discrimination must be labelled as such if adopted. A reference planet failing a numerical criterion is not a physical reclassification of that planet.",
+  "scope": "Read-only review of frozen old survey evidence and fresh known-reference metadata. Original memberships, BOI labels, active numerical budgets and the50object success criterion remain unchanged."
+}

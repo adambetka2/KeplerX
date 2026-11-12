@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-21T04:10:13.885565+00:00",
+  "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2076383384993192576",
+  "kic": 5115632,
+  "tic": 184247483,
+  "signal_id": "rust-v6-2076383384993192576-1",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-launch.json",
+    "sha256": "631d6262c8255de16aefda63f868cc2d059c757a26c142f473d232f695451c23"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-freeze.json",
+    "sha256": "77c5c0c1788ea53bd58aa6a1334b7909b7e7b9a0c6f800431ccb53ce356ac3e1"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/selection.json",
+    "sha256": "30304f9a75cf154ad6ce15102b901feb8665d6749dc5742aad7321d791513446"
+  },
+  "native_stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-stellar-review.json",
+    "sha256": "4a3e73c3b19f1b1b591995e8d350aed9573a1a87d4041387892f7d2063e68291"
+  },
+  "pre_native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/pre-native-retained-review.json",
+    "sha256": "f3525acb759df8045a98bf7e13cdebf78433ce7666517e5c4cb8bdff6d036cad"
+  },
+  "seed_source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-seed-source-review.json",
+    "sha256": "5a63cf7480b41797bc9a3b628c71011f02bb4b11c6cf25983a0b0074499ed165"
+  },
+  "seed_revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-seed-revalidation.json",
+    "sha256": "2f4f5f21faef9ea3b8b489bf288eadee163ab2dbebbce9897c9ac1e6fe0f989b"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/live-check-20261021T040927Z.json",
+    "sha256": "f61d418a0ed5625432f04ffb9862aeb695e041490c7f613138ab2d51615c1cbe"
+  },
+  "previous_terminal": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/readiness-hold-v1.json",
+    "sha256": "317b29a3342c7fd7e6083b3e4a3c9ac0f3fc69a4ae152c8b05eef71f881a2ae7"
+  },
+  "native_points": 1007,
+  "probability_runs": 0,
+  "clock_adopted": false,
+  "parent_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/parent-authentication-v1.json",
+    "sha256": "24c77893b75b465f501aefb9a8e734d23de0c5e8c490f9f1a88427e501baac9b"
+  },
+  "prf_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/prf-authentication-v1.json",
+    "sha256": "467345356f87811676f507b6fab8b4c5074590b78901502be16a9d4e692587b8"
+  },
+  "next": "Let seeded standard dynamic nested finish without competing numerical work. Review actual weighted/equal posterior, stopping/modes/prior support, joint eccentric contacts/residuals/coverage over full observed event baseline and exposure before adopting clock. Original aliases, spacecraft checks and9of9historical target preference are preserved context, not current physical admission. Complete same-source108star scene/extraction, selected FLAME route, actual source-quarter pixels/dilution/folded-noise and dated catalogue readiness before stock FPP. Source-quarter parent and official PRFs already staged, reuse. Save outcome or precise hold then advance eligible full queue; no old held-case rescue tonight."
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-20T09:41:57.786574+00:00",
+  "source_id": "2106383701495087232",
+  "kic": 8805426,
+  "status": "RUNNING_REVIEWED_NATIVE_TEN_CPU",
+  "launch": {
+    "utc": "2026-10-20T09:41:13.407609+00:00",
+    "status": "SUBMITTED_REVIEWED_TEN_CPU_NATIVE_SAMPLER",
+    "label": "local.spacelab.job.boi-native-2106383701495087232-capacity-v1",
+    "arguments": [
+      "/usr/bin/caffeinate",
+      "-i",
+      "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python",
+      "-B",
+      "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/coordinate_native_capacity.py",
+      "2106383701495087232"
+    ],
+    "plist": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/native-capacity-launch-20261020T094113401987Z.plist",
+    "log": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/native-capacity-launcher-20261020T094113401987Z.log",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "review_sha256": "a6f3181fd37372642fd6390b660365a4fca13892cfcd3906c874b4f4e94f1a36"
+  },
+  "review_sha256": "a6f3181fd37372642fd6390b660365a4fca13892cfcd3906c874b4f4e94f1a36",
+  "native_freeze_sha256": "ed8ddc29831edbffa8b9e6d2dae9bb5d497c6428eab681132a28da04661558e5",
+  "revalidation": "Exact128likelihood values, two80-step chains including deterministic continuation; bitwise identical coordinates/logp and exact savedRNG states.",
+  "cpu_budget": 10,
+  "performance": {
+    "serial_seconds": 19.19024799996987,
+    "parallel_total_with_startup": 8.610894250217825,
+    "serial_sampling_seconds": 18.470091667491943,
+    "parallel_sampling_seconds": 3.935123914387077
+  },
+  "scope": "CPU scheduling only; scientific kernels unchanged. Published TIC mass/radius uncertainties declared separately in candidate-specific native model review. Not an FPP result or admission."
+}

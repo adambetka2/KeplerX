@@ -1,0 +1,134 @@
+{
+ "created_utc": "2026-10-25T20:28:06.445781+00:00",
+ "system": "KIC 6699887 (Gaia DR3 2077554781499350144)",
+ "decision_authority": "PI (Adam), 25 October 2026: validation by multiplicity approved as a separately labelled tier, host undetermined; 'if those cases arrive, validate further by multiplicity (or dismiss if it comes out negative)'; 'yes use tmag' (about 19:00 UTC), which unblocked this signal.",
+ "tier": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+ "framework": "Validation by multiplicity (Lissauer et al. 2012, 2014; Rowe et al. 2014) applied to TRICERATOPS_KEPLER_V3 FPPs as in Hord et al. 2024; same conditions and tool as the KIC 6267058 record (mk-multiplicity-validation-20261025.json).",
+ "boost": {
+  "b": 5.5,
+  "form": "FPP' = FPP / (FPP + b (1 - FPP))"
+ },
+ "signal": {
+  "signal_id": "rust-v6-2077554781499350144-6",
+  "boi_id": "BOI-2077554781499350144-3",
+  "label": "47.69 d",
+  "period_days": 47.69062846950415,
+  "epoch_bkjd": 851.0688308684242,
+  "duration_days": 0.23745536250324803,
+  "native": {
+   "generation": "g2 (duration-aware; the first fit missed the declared zero-unprotected-cadence rule by one cadence with 0.19% transfer)",
+   "radius_ratio": [
+    0.025807574099769102,
+    0.027403763297395134,
+    0.029073013674581313
+   ],
+   "impact": [
+    0.11518777781563361,
+    0.3194484748415375,
+    0.5462107310009049
+   ],
+   "eccentricity": [
+    0.025565147196760386,
+    0.11265363083978269,
+    0.2995296725644885
+   ],
+   "density_kg_m3": [
+    1959.6564953103339,
+    2214.8270473049024,
+    2474.3885926240177
+   ],
+   "representative_radius_earth": 2.24306488999392,
+   "review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/native-v3/native-review-v3.json",
+    "sha256": "56746547e365b72f20ae1580eeedc85b849330184b0cf8ae21b8d5b78ce25972"
+   },
+   "accepted": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/native-v3/native-accepted.json",
+    "sha256": "06ee707159a529e441044f6a6d7760e778b39dd7a6c3bac657934027190ccb12"
+   }
+  },
+  "v3": {
+   "repeats": 20,
+   "FPP_mean": 0.02119499127963016,
+   "FPP_sd": 0.003844725476037203,
+   "FPP_range": [
+    0.01427204883054023,
+    0.028044791844574868
+   ],
+   "unfavourable": 19,
+   "NFPP_mean": 2.545696756368238e-13,
+   "NFPP_max": 3.780961619903047e-13,
+   "audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/probability-v3/campaign/audit-20261025T202354045745Z.json",
+    "sha256": "4e63e2c8057fad02cf248c2d4f9c9907eb93f446498f619020a34ea992831b95"
+   },
+   "dominant_residual": "Planet on an unresolved bound companion (STP about 1.8%); BTP and BEB below 0.2%."
+  },
+  "boosted_FPP": 0.003921641358991941,
+  "boosted_FPP_if_background_area_is_the_aperture": 0.005145351300590313,
+  "closeout": {
+   "matched_filter_snr": 18.44081707432406,
+   "ruwe": 1.087092,
+   "gaia_sources_within_1p5_arcsec": [],
+   "tp_radius_earth": {
+    "median": 2.482437284982784,
+    "minimum": 2.3150260672753316,
+    "maximum": 2.742299052942165
+   },
+   "phase_half_secondary_ppm": [
+    108.09947447834872,
+    51.64889407334831
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/closeout-v1.json",
+    "sha256": "f1ecb24937607bd46e5a51ec1b884274c020782044c2695782dea8d83abf9261"
+   }
+  },
+  "observed_transits": 28
+ },
+ "sibling": {
+  "name": "KIC 6699887 b",
+  "period_days": 15.11,
+  "status": "Validated on target (KEPLER_BOI_FINAL_PRIMARY_V1, accepted 19 October 2026); found by both pipelines (BOI-2077554781499350144-1 and mk-sap-20261019-2077554781499350144-1), counted once; period ratio 3.155, not commensurate; 99% of windows clear."
+ },
+ "evidence": {
+  "multiplicity_record": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/multiplicity-v3.json",
+   "sha256": "6ca44abe2965964b6dc56d56f6571ac27d97c24418618a0698eae4839fab164e"
+  },
+  "multiplicity_first_run_bug": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/multiplicity-v2-first-run-duplicate-sibling-bug.json",
+   "sha256": "ac19a28a83a2160baabd711acc070fcd5fca8afb0555ef7d6e5b2ede79f5afbf"
+  },
+  "tool": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/multiplicity.py",
+   "sha256": "6a57f73a99658f9a272f167c6bafb817868275e9d2bb948efaab47455a312a42"
+  },
+  "tmag_rule": {
+   "path": "/Users/adam/Other/spacelab/results/boi-validation/tmag-rule-20261025.json",
+   "sha256": "77ca067be05f1dd5d049948829282fee1ddb6e21cbbc0875a9c24c3372ee3a22"
+  },
+  "generation": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/generation.json",
+   "sha256": "3c069c2bcdb9781b6d1e5eb47ba7971700bacf6285b3f9e81264e71d75958c5c"
+  },
+  "event_review": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/event-review-20261025.csv",
+   "sha256": "77a4b5532e9d52b36a23b616479f764bffea002400be04d90b2e20f899798c4b"
+  }
+ },
+ "caveats": [
+  "Scene source Gaia DR3 2077554815853755392 (18.3 arcsec, no Gaia photometry) uses its TIC Tmag flux (tmag rule); it is not capable of the observed depth.",
+  "Host undetermined: on an unresolved bound companion the planet would be larger; planet b is validated on the target.",
+  "The first multiplicity run counted planet b twice (both pipelines) and failed the Hill check; the corrected run merges cross-pipeline duplicates (first run preserved).",
+  "Statistical validation, not RV confirmation or a novelty claim."
+ ],
+ "conditions_note": "Rowe et al. 2014 section 5.9, checked on 25 October: S/N of the fitted transit model > 10 (> 15 below 4 days), period above 1.6 days, not V-shaped (b + sigma_b + Rp/R* <= 1); all pass (b + sigma_b + k 0.57-0.79).",
+ "updated_utc": "2026-10-25T22:08:05.434646+00:00",
+ "updates": [
+  {
+   "utc": "2026-10-25T22:08:05.434646+00:00",
+   "change": "multiplicity-v3.json rewritten at 21:30 UTC with the event-review check (every check passes); receipts refreshed."
+  }
+ ]
+}

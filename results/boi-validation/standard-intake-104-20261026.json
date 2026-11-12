@@ -1,0 +1,4436 @@
+{
+ "schema": 1,
+ "utc": "2026-10-26T17:29:11.268628+00:00",
+ "authorization": "PI request: work all 34 restored groups through standard post-BOI checks and queue any that qualify; also schedule all 70 shallow groups without Rust/MK clock matches, most promising first; include PSF_FLAT discoveries. Internal storage authorized.",
+ "root": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026",
+ "active_native_queue": "/Users/adam/Other/spacelab/other/boi-v3-20261025/queue-4.json",
+ "standard_tools": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools",
+ "native_runtime": "/Users/adam/Other/spacelab/other/boi-v3-20261025/runtime-v3/bin/python",
+ "aperture_runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/aperture-runtime-v2/bin/python",
+ "frozen_catalogue": {
+  "path": "/Users/adam/Other/spacelab/results/kbonus-20261010/boi-catalogue.json.gz",
+  "sha256": "b0fcd5f0bca7d70dbb2e02d36a30a6e6fbb062533dc8db348fb6e4cc5a4ff329"
+ },
+ "schedule": "One sequential preparation worker, original-priority order; successful fully prepared cases append atomically to the existing native-fit coordinator. Scientific holds retain REMAINS_PC; software/instrument-method blockers stop the affected intake and require review. Never restart stopped attempts.",
+ "entries": [
+  {
+   "boi_id": "BOI-2079714428492352768-1",
+   "source_id": "2079714428492352768",
+   "signal_id": "shallow-v1-2079714428492352768-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 56.28106438996992,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079714428492352768-1",
+   "source": {
+    "kic": 8573780,
+    "origin_tpf_kic_not_host": 8573783,
+    "ra": 296.6829126290365,
+    "dec": 44.68247922430042,
+    "raw_fits_bytes": 10794240,
+    "raw_fits_sha256": "bdf00645fc729a07e5c124cb2a8eb31af001ec525834b2670c862eca245d7690"
+   },
+   "requires_event_independence_review": null,
+   "state": "READY_ENQUEUED_FOR_STANDARD_NATIVE_FIT",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.4468242608596364,
+    "epoch_bkjd": 123.93870696062223,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 356,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "fc8ab0f9b4a896d2dcb891dbf979303fdc55c883281d530be9e1c9e22423a0e3",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079714428492352768-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.4468242608596364,
+     "epoch_bkjd": 123.93870696062223,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": "native-running",
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-1",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 45.29157632871697,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-1",
+   "source": {
+    "kic": 10528996,
+    "origin_tpf_kic_not_host": 10528990,
+    "ra": 289.3229858618342,
+    "dec": 47.76118472869106,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "b46df738a40726d644c0d637e96561696da2e65e275816c3ed7607558e4e7345"
+   },
+   "requires_event_independence_review": null,
+   "state": "READY_ENQUEUED_FOR_STANDARD_NATIVE_FIT",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 13.744702376615713,
+    "epoch_bkjd": 139.13723116880283,
+    "duration_days": 0.20000000000000004
+   },
+   "recorded_event_units": 95,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "980b288456d4251052a244d293d2cbb67bce7118301b952a74ca7d86a9dd1d11",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127936912539397632-1",
+     "discovery_view": "psf_flat",
+     "period_days": 13.744702376615713,
+     "epoch_bkjd": 139.13723116880283,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "native_queue_state": "queued",
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-2",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 28.028080688378036,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-2",
+   "source": {
+    "kic": 10528996,
+    "origin_tpf_kic_not_host": 10528990,
+    "ra": 289.3229858618342,
+    "dec": 47.76118472869106,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "b46df738a40726d644c0d637e96561696da2e65e275816c3ed7607558e4e7345"
+   },
+   "requires_event_independence_review": null,
+   "state": "READY_ENQUEUED_FOR_STANDARD_NATIVE_FIT",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 8.555779566765446,
+    "epoch_bkjd": 134.71223116880282,
+    "duration_days": 0.20000000000000004
+   },
+   "recorded_event_units": 153,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "f593f4fd1c7aaae134a73a05dddedcec923f091ba5058da8b57d4690c4cb930a",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127936912539397632-4",
+     "discovery_view": "psf_flat",
+     "period_days": 8.555779566765446,
+     "epoch_bkjd": 134.71223116880282,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "native_queue_state": "queued",
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2102266442767690112-1",
+   "source_id": "2102266442767690112",
+   "signal_id": "shallow-v1-2102266442767690112-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 18.35544233849045,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2102266442767690112-1",
+   "source": {
+    "kic": 6113801,
+    "origin_tpf_kic_not_host": 6113806,
+    "ra": 288.6456666882471,
+    "dec": 41.45102189290213,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "e1a3c22136b3260384b51adcedf1a2248f843999b693c9c356e6d8e4cea20555"
+   },
+   "requires_event_independence_review": null,
+   "state": "INTAKE_STOPPED_REQUIRES_REVIEW",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.9337713617117456,
+    "epoch_bkjd": 132.42766433717682,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 1407,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "7a746bd085bb3146efa3f69aa011b55b19081efe04b16504690d55a1fb14a587",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2102266442767690112-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.9337713617117456,
+     "epoch_bkjd": 132.42766433717682,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077624600485371136-1",
+   "source_id": "2077624600485371136",
+   "signal_id": "shallow-v1-2077624600485371136-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.489689853861496,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077624600485371136-1",
+   "source": {
+    "kic": 6368753,
+    "origin_tpf_kic_not_host": 6368757,
+    "ra": 293.3215723664998,
+    "dec": 41.77687344586263,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "4e1714004bd4d073286d883dee5086ed36b132e51243ee2ea8ebb6cc67d1e06c"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 9.548870140277844,
+    "epoch_bkjd": 136.39731729611754,
+    "duration_days": 0.20000000000000004
+   },
+   "recorded_event_units": 141,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "922db950d4653933a7943b842d14401b11d56ff26f71dbe834d65ec1ff777baa",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2077624600485371136-1",
+     "discovery_view": "psf_flat",
+     "period_days": 9.548870140277844,
+     "epoch_bkjd": 136.39731729611754,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2107173460081536128-1",
+   "source_id": "2107173460081536128",
+   "signal_id": "shallow-v1-2107173460081536128-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.528996181479503,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2107173460081536128-1",
+   "source": {
+    "kic": 9328806,
+    "origin_tpf_kic_not_host": 9328795,
+    "ra": 284.9632040260852,
+    "dec": 45.86977771166657,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "9dd56c16642de477dd21d36f402ad55b82b36180b1997b15fcbb53ce96a6623a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 8.193724735414811,
+    "epoch_bkjd": 120.68942378843204,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 50,
+   "event_quarters": 6,
+   "selected_proposal_sha256": "ff49a6713dd13a8ac1b158c7ff2257fcc6e12d271c09c5ceacbfa948c321ab41",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2107173460081536128-1",
+     "discovery_view": "psf_flat",
+     "period_days": 8.193724735414811,
+     "epoch_bkjd": 120.68942378843204,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2128925785810616832-1",
+   "source_id": "2128925785810616832",
+   "signal_id": "shallow-v1-2128925785810616832-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.238168813708048,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 0,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2128925785810616832-1",
+   "source": {
+    "kic": 11086244,
+    "origin_tpf_kic_not_host": 11086240,
+    "ra": 292.9199839563869,
+    "dec": 48.6460182168869,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "8e6a04537a28b030a55274e9275c2ce7d8eebbcaceca3e7a09899b2920d848f5"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.544577861754921,
+    "epoch_bkjd": 355.5921666912362,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 83,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "9aa4bfd9d843d15e294e1d56576aa8d6d734f06cb3a2712990fef131119153c5",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2128925785810616832-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.544577861754921,
+     "epoch_bkjd": 355.5921666912362,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-4",
+   "source_id": "2126217104555818240",
+   "signal_id": "shallow-v1-2126217104555818240-8",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 55.459503112980585,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2126217104555818240-4",
+   "source": {
+    "kic": 8296927,
+    "origin_tpf_kic_not_host": 8296935,
+    "ra": 290.7632043819783,
+    "dec": 44.29674974738609,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "8499c9392f8bc76311320cd972c64a538890fb8230fe645e877f1b26a8bcea49"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.9846202224553557,
+    "epoch_bkjd": 121.06907040366903,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 913,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "c409ee520cb03df9138832121361bed901f66a7647a9026bc23d114e9abd9969",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2126217104555818240-8",
+     "discovery_view": "psf_flat",
+     "period_days": 0.9846202224553557,
+     "epoch_bkjd": 121.06907040366903,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076038211367869312-1",
+   "source_id": "2076038211367869312",
+   "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+   "discovery_view": "sap_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": 48.672845097756166,
+   "significance_statistic": "original_search_mes",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076038211367869312-1",
+   "source": {
+    "kic": 7989202,
+    "origin_tpf_kic_not_host": 7989220,
+    "ra": 300.1707481210593,
+    "dec": 43.74683690189828,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "560f9f4aee8c508e2d82c5d80c9c1d96a334bf64f658e276c3fbff826979d9a0"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.087932409954759,
+    "epoch_bkjd": 120.74887379520642,
+    "duration_days": 0.12324234331518753
+   },
+   "recorded_event_units": 1213,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "e4763265eded69e37227f715afcb79b318a2bfdf126f813feb51b855740974aa",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "period_days": 1.087932409954759,
+     "epoch_bkjd": 120.74887379520642,
+     "duration_days": 0.12324234331518753
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2080330292442539008-1",
+   "source_id": "2080330292442539008",
+   "signal_id": "shallow-v1-2080330292442539008-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 36.83785447444996,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2080330292442539008-1",
+   "source": {
+    "kic": 9722552,
+    "origin_tpf_kic_not_host": 9722550,
+    "ra": 296.5645584160345,
+    "dec": 46.48038376023971,
+    "raw_fits_bytes": 7404480,
+    "raw_fits_sha256": "00762de1f38d4ff2024dcb8bdb88e5cb670d35c66bab050d5ad70f18654b6ecb"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.2815751982986806,
+    "epoch_bkjd": 352.39920565032213,
+    "duration_days": 0.04
+   },
+   "recorded_event_units": 2990,
+   "event_quarters": 11,
+   "selected_proposal_sha256": "98fd5718e4494c63fcfc0cc369c33421fd5fb8c500be51a54cd1f076f20b8390",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2080330292442539008-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.2815751982986806,
+     "epoch_bkjd": 352.39920565032213,
+     "duration_days": 0.04
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079565719538722560-1",
+   "source_id": "2079565719538722560",
+   "signal_id": "shallow-v1-2079565719538722560-21",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 35.12982930851649,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079565719538722560-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 8110190,
+    "ra": 296.0175226380311,
+    "dec": 43.92132725795651,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "1d949b36a7f8fccb23a490e2e1ca2357b22c71ef546763843205488a8f9cfeef"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 46.07648377001033,
+    "epoch_bkjd": 153.81698460999877,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 27,
+   "event_quarters": 16,
+   "selected_proposal_sha256": "d0dbbf53d9f7c8be7f0896862236a99f4099b9214e8d26504bc1546eb5602f5b",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079565719538722560-21",
+     "discovery_view": "psf_flat",
+     "period_days": 46.07648377001033,
+     "epoch_bkjd": 153.81698460999877,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127186564572468352-2",
+   "source_id": "2127186564572468352",
+   "signal_id": "shallow-v1-2127186564572468352-26",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 35.11041631703606,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127186564572468352-2",
+   "source": {
+    "kic": 8745833,
+    "origin_tpf_kic_not_host": 8745840,
+    "ra": 288.654621323915,
+    "dec": 44.92989329450612,
+    "raw_fits_bytes": 9685440,
+    "raw_fits_sha256": "30129ba0cd5cb5ca1e0bb42bc12b82744b88b59ff6a0ce9d221eeda1ac48e1c1"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.7399326581954284,
+    "epoch_bkjd": 445.7245607318543,
+    "duration_days": 0.10000000000000002
+   },
+   "recorded_event_units": 201,
+   "event_quarters": 7,
+   "selected_proposal_sha256": "f43a6e44dc9d194d1dc48ef7a58ac384c19afd613aa353e138bfaab3c4e50e88",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127186564572468352-26",
+     "discovery_view": "psf_flat",
+     "period_days": 2.7399326581954284,
+     "epoch_bkjd": 445.7245607318543,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2129405688275182336-1",
+   "source_id": "2129405688275182336",
+   "signal_id": "shallow-v1-2129405688275182336-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 33.97177352051542,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2129405688275182336-1",
+   "source": {
+    "kic": 10794550,
+    "origin_tpf_kic_not_host": 10794559,
+    "ra": 290.7535896792739,
+    "dec": 48.14743580500235,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "fb6febcf491264f3d4e71900326f10c7eca7ce6384a298b060bb45432f499fbc"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.4761773027177255,
+    "epoch_bkjd": 120.9329505038038,
+    "duration_days": 0.12
+   },
+   "recorded_event_units": 2778,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "4f76a376e542523b669fdf468b63ca023396d79cda8fe1f4ec0f01a9b894508a",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2129405688275182336-4",
+     "discovery_view": "psf_flat",
+     "period_days": 0.4761773027177255,
+     "epoch_bkjd": 120.9329505038038,
+     "duration_days": 0.12
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2107158513594933504-1",
+   "source_id": "2107158513594933504",
+   "signal_id": "shallow-v1-2107158513594933504-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 30.182294826784613,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2107158513594933504-1",
+   "source": {
+    "kic": 9074874,
+    "origin_tpf_kic_not_host": 9074876,
+    "ra": 285.0586908897599,
+    "dec": 45.49801943690693,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "65f06236e8faf9cbe7ba793c27c98355c723976a1f29708d56f24c9c2ace1498"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 46.34633731135351,
+    "epoch_bkjd": 153.28301223553717,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 31,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "bc4c044ba2b01782380efc74f357dedfe086ff0d05ae48c9ae0564db724087e5",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2107158513594933504-2",
+     "discovery_view": "psf_flat",
+     "period_days": 46.34633731135351,
+     "epoch_bkjd": 153.28301223553717,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086497556243295744-1",
+   "source_id": "2086497556243295744",
+   "signal_id": "shallow-v1-2086497556243295744-30",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 29.26656285090991,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086497556243295744-1",
+   "source": {
+    "kic": 10937065,
+    "origin_tpf_kic_not_host": 10937076,
+    "ra": 298.5646790869802,
+    "dec": 48.3183766545183,
+    "raw_fits_bytes": 9135360,
+    "raw_fits_sha256": "a65abf64dab30d2df2c43fc4fcf66a96371fdbe5e18584473500af3bdbe894c4"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.429535197580494,
+    "epoch_bkjd": 137.9917330988869,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 63,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "0ab911e969ca0c8a54d7e60466498f71471851ae178c2e1567dac9925155c9ed",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2086497556243295744-30",
+     "discovery_view": "psf_flat",
+     "period_days": 15.429535197580494,
+     "epoch_bkjd": 137.9917330988869,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076931255328549504-1",
+   "source_id": "2076931255328549504",
+   "signal_id": "shallow-v1-2076931255328549504-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 28.96507046828893,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076931255328549504-1",
+   "source": {
+    "kic": 6628770,
+    "origin_tpf_kic_not_host": 6628765,
+    "ra": 297.5868206999352,
+    "dec": 42.09070777538426,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "8abdee13998190bb5787e443d0e1100ada6436287601e1321f2e60b4b318cad5"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 12.45826533813597,
+    "epoch_bkjd": 272.2653052759916,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 70,
+   "event_quarters": 11,
+   "selected_proposal_sha256": "79a7089689d5b46560ba9068fb215a5c982446f2b30e2c227197f8c11cd43c7b",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076931255328549504-1",
+     "discovery_view": "psf_flat",
+     "period_days": 12.45826533813597,
+     "epoch_bkjd": 272.2653052759916,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2130923460997369728-1",
+   "source_id": "2130923460997369728",
+   "signal_id": "shallow-v1-2130923460997369728-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 28.822784880061185,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2130923460997369728-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 10592770,
+    "ra": 288.8347979744093,
+    "dec": 47.88242678440215,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "a1d4adbedebb63ebde3045c95a23acfddc06674b9f34de53aadbb3f2e4867450"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.274899905640893,
+    "epoch_bkjd": 123.60402592230588,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 88,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "906df17f39d06b2786cbb7d6f1663be4d607880cc95b12e948d3f2a80c4d4193",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2130923460997369728-3",
+     "discovery_view": "psf_flat",
+     "period_days": 15.274899905640893,
+     "epoch_bkjd": 123.60402592230588,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2085331867759290752-1",
+   "source_id": "2085331867759290752",
+   "signal_id": "shallow-v1-2085331867759290752-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 27.35365835604426,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2085331867759290752-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9613114,
+    "ra": 300.1684930598619,
+    "dec": 46.22824297770718,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "dea185a5c9a1520b69cc2f6fec1dd98a409dc400a42935984eb609e9c5b385f4"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 9.200187422081694,
+    "epoch_bkjd": 135.61161336153745,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 148,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "afae902b83fa43c7daee79358f004d1a400fe4cd9f20c540f8a37d423b4acbb6",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2085331867759290752-1",
+     "discovery_view": "psf_flat",
+     "period_days": 9.200187422081694,
+     "epoch_bkjd": 135.61161336153745,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076931255328549504-2",
+   "source_id": "2076931255328549504",
+   "signal_id": "shallow-v1-2076931255328549504-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 25.915959831004297,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076931255328549504-2",
+   "source": {
+    "kic": 6628770,
+    "origin_tpf_kic_not_host": 6628765,
+    "ra": 297.5868206999352,
+    "dec": 42.09070777538426,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "8abdee13998190bb5787e443d0e1100ada6436287601e1321f2e60b4b318cad5"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 13.089704053044336,
+    "epoch_bkjd": 267.09530527599156,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 69,
+   "event_quarters": 11,
+   "selected_proposal_sha256": "4d5a602e82ebc13e90ed68e049364703acd903c34e24bec91deef085f218672e",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076931255328549504-5",
+     "discovery_view": "psf_flat",
+     "period_days": 13.089704053044336,
+     "epoch_bkjd": 267.09530527599156,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076451043623754624-1",
+   "source_id": "2076451043623754624",
+   "signal_id": "shallow-v1-2076451043623754624-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 25.471531336821858,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076451043623754624-1",
+   "source": {
+    "kic": 4666017,
+    "origin_tpf_kic_not_host": 4666008,
+    "ra": 294.7721997629222,
+    "dec": 39.7529698342692,
+    "raw_fits_bytes": 9144000,
+    "raw_fits_sha256": "78460fbce9da9e0ec30cee148a09e8bb74988f823f8d997a0449a4959267c362"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 45.84848200027086,
+    "epoch_bkjd": 154.27728794455527,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 21,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "5e7c0ea47e92e741dbe36d9da692b0d28e9d275fb659555a7bb6980fe4f9439d",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076451043623754624-1",
+     "discovery_view": "psf_flat",
+     "period_days": 45.84848200027086,
+     "epoch_bkjd": 154.27728794455527,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2075343560542057984-1",
+   "source_id": "2075343560542057984",
+   "signal_id": "shallow-v1-2075343560542057984-11",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 24.65090734340749,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2075343560542057984-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 6312268,
+    "ra": 298.8311073907363,
+    "dec": 41.60310051993438,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "9e837d65beefb43589e391b478f7e5fdc4add4484e0aaca40c3407c09411d25a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.286787652005676,
+    "epoch_bkjd": 138.96193226268514,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 82,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "81620d073ef641417aa4959aca15fc0583e2c31311ed343d72698b7f96cd1ee4",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2075343560542057984-11",
+     "discovery_view": "psf_flat",
+     "period_days": 15.286787652005676,
+     "epoch_bkjd": 138.96193226268514,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079166218868440576-1",
+   "source_id": "2079166218868440576",
+   "signal_id": "shallow-v1-2079166218868440576-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 23.322314085445164,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079166218868440576-1",
+   "source": {
+    "kic": 8844016,
+    "origin_tpf_kic_not_host": 8844019,
+    "ra": 299.8572864260615,
+    "dec": 45.09770567807794,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "a0b5124cb45b958e4e12ceb08f57b6f97780e325b6aa5a5aaa6a8ef365019519"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 45.90040228662783,
+    "epoch_bkjd": 154.62666176982225,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 27,
+   "event_quarters": 16,
+   "selected_proposal_sha256": "5d21de1c73535c6f61ec1f689296fca88dd26283cad10304bcae18343592b605",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079166218868440576-3",
+     "discovery_view": "psf_flat",
+     "period_days": 45.90040228662783,
+     "epoch_bkjd": 154.62666176982225,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2102597430124845440-1",
+   "source_id": "2102597430124845440",
+   "signal_id": "shallow-v1-2102597430124845440-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 23.04392815209048,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2102597430124845440-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 7432450,
+    "ra": 287.7007963655901,
+    "dec": 43.02155688303998,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "a4c48d3bfcddd3504e630a27b00647003ae54f6e6df5cbdcce8a801722db03cc"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.28194957254272857,
+    "epoch_bkjd": 131.77251937868073,
+    "duration_days": 0.04
+   },
+   "recorded_event_units": 4568,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "019710adbc0f8801aba16f12b3e3670b848d2545c1c2175c94f87c9b5b35aa78",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2102597430124845440-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.28194957254272857,
+     "epoch_bkjd": 131.77251937868073,
+     "duration_days": 0.04
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2101591033392607104-1",
+   "source_id": "2101591033392607104",
+   "signal_id": "shallow-v1-2101591033392607104-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 22.968604466313398,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2101591033392607104-1",
+   "source": {
+    "kic": 5873198,
+    "origin_tpf_kic_not_host": 5873185,
+    "ra": 290.7521994672614,
+    "dec": 41.19471606855682,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "731931c82e0eea8fa53cb004f2c1e9dc5779afb5abb5e98898a45fb23538ccf9"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.331293196624976,
+    "epoch_bkjd": 138.60752893637866,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 81,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "c45c9adbc414d8b8e0f724a7c0a0f0b1b2ead28b75ceab5105b3e2df66f7df22",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2101591033392607104-4",
+     "discovery_view": "psf_flat",
+     "period_days": 15.331293196624976,
+     "epoch_bkjd": 138.60752893637866,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127413545004364800-1",
+   "source_id": "2127413545004364800",
+   "signal_id": "shallow-v1-2127413545004364800-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 22.9154618640335,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127413545004364800-1",
+   "source": {
+    "kic": 9085283,
+    "origin_tpf_kic_not_host": 9085284,
+    "ra": 290.4788313206132,
+    "dec": 45.4986434352221,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "19f6ab170b1bb0b945004c8c488cb476f5e2bc2979b62079482ddd0f0b96ca1a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 32.07437215420238,
+    "epoch_bkjd": 149.70901572339238,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 39,
+   "event_quarters": 16,
+   "selected_proposal_sha256": "6822f2eb5e7f40305328e56bb89186dfa246400b374841aa1542e9e7a2396fcd",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127413545004364800-4",
+     "discovery_view": "psf_flat",
+     "period_days": 32.07437215420238,
+     "epoch_bkjd": 149.70901572339238,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2106555362748081152-1",
+   "source_id": "2106555362748081152",
+   "signal_id": "shallow-v1-2106555362748081152-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 22.416635830742162,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2106555362748081152-1",
+   "source": {
+    "kic": 9636976,
+    "origin_tpf_kic_not_host": 9636971,
+    "ra": 285.5688308121489,
+    "dec": 46.39545483324728,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "edbd3560c4d3614fc76a8ca0d259ea223f14b9dd40534e8e75e5b4d3f95cb356"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 45.98199146915069,
+    "epoch_bkjd": 154.48259581092745,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 31,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "61041987e1ad49a2df9739ec83906e3906033fc7d9a7a730588c5dbb32374d4c",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2106555362748081152-1",
+     "discovery_view": "psf_flat",
+     "period_days": 45.98199146915069,
+     "epoch_bkjd": 154.48259581092745,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079751876308505984-1",
+   "source_id": "2079751876308505984",
+   "signal_id": "shallow-v1-2079751876308505984-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 22.14073747768925,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079751876308505984-1",
+   "source": {
+    "kic": 8700623,
+    "origin_tpf_kic_not_host": 8636389,
+    "ra": 295.9625565824388,
+    "dec": 44.80149597138919,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "2fc2aebae34fe595d34acf0ba89d923786c75346c3b8fb9569b061ea3922bac2"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 37.26549413296859,
+    "epoch_bkjd": 162.83196489064022,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 36,
+   "event_quarters": 16,
+   "selected_proposal_sha256": "df862781e8b18ea18abde8e8f169e9322e1e616039d449a157f6457cd838908f",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079751876308505984-1",
+     "discovery_view": "psf_flat",
+     "period_days": 37.26549413296859,
+     "epoch_bkjd": 162.83196489064022,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2125883059180190336-1",
+   "source_id": "2125883059180190336",
+   "signal_id": "shallow-v1-2125883059180190336-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 21.65500732243621,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2125883059180190336-1",
+   "source": {
+    "kic": 7685602,
+    "origin_tpf_kic_not_host": 7685607,
+    "ra": 292.8469723205098,
+    "dec": 43.32093835235892,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "35b72393965029fe9dbbc141982e5d842430e2a013afb1c9ebc216001ef7053a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.428903453532556,
+    "epoch_bkjd": 138.01226757839322,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 82,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "b753edccfe4fab88e8565d4f15cc246ddbb320bae4e1a41b185061e13d8cff4e",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2125883059180190336-5",
+     "discovery_view": "psf_flat",
+     "period_days": 15.428903453532556,
+     "epoch_bkjd": 138.01226757839322,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2128598715460826240-1",
+   "source_id": "2128598715460826240",
+   "signal_id": "shallow-v1-2128598715460826240-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 21.444199252999034,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2128598715460826240-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 10279762,
+    "ra": 294.1087094113006,
+    "dec": 47.35311968445214,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "456c056cbc15608601e91c67d0d82e9a24c0f31af5faa776e0eaf53aea4e1d8f"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9312588897318004,
+    "epoch_bkjd": 121.71368095995858,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 463,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "874d189ac10ad900a2607e76d4785929c35f4f7bf11403bbad91697a8f31c51f",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2128598715460826240-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9312588897318004,
+     "epoch_bkjd": 121.71368095995858,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077775577176408832-1",
+   "source_id": "2077775577176408832",
+   "signal_id": "shallow-v1-2077775577176408832-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 21.251241980004803,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077775577176408832-1",
+   "source": {
+    "kic": 7288280,
+    "origin_tpf_kic_not_host": 7288291,
+    "ra": 293.7210160591691,
+    "dec": 42.87546462158734,
+    "raw_fits_bytes": 7263360,
+    "raw_fits_sha256": "e3536e880a6fa35dc2de36fe7bc23cd029500a863acf280b75fa796a8c56b84d"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.412486835113924,
+    "epoch_bkjd": 138.08223205821588,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 53,
+   "event_quarters": 11,
+   "selected_proposal_sha256": "694cb5005d3a793799d0b911f65657aafba4a6d01830405271aa3c2b546516dc",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2077775577176408832-5",
+     "discovery_view": "psf_flat",
+     "period_days": 15.412486835113924,
+     "epoch_bkjd": 138.08223205821588,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2104885200286773632-1",
+   "source_id": "2104885200286773632",
+   "signal_id": "shallow-v1-2104885200286773632-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 21.10383475008163,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2104885200286773632-1",
+   "source": {
+    "kic": 6756113,
+    "origin_tpf_kic_not_host": 6756111,
+    "ra": 283.8502691807836,
+    "dec": 42.28769455432205,
+    "raw_fits_bytes": 8847360,
+    "raw_fits_sha256": "723afa673060bfd3fced78829f87fc44261bbcbd4fd2283471e98c5573f246d9"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.237731617388848,
+    "epoch_bkjd": 139.7428011042252,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 66,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "e95cfa364f1910b693abe54a1e16adae042045ab85a8c2c1b8c65238fe2d8d8e",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2104885200286773632-3",
+     "discovery_view": "psf_flat",
+     "period_days": 15.237731617388848,
+     "epoch_bkjd": 139.7428011042252,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2075429219372562176-1",
+   "source_id": "2075429219372562176",
+   "signal_id": "shallow-v1-2075429219372562176-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 20.437394870241008,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2075429219372562176-1",
+   "source": {
+    "kic": 6720354,
+    "origin_tpf_kic_not_host": 6720363,
+    "ra": 298.7200910713444,
+    "dec": 42.17557206716128,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "ccc9b5f435f91a171c1cad6bfe5f97a5ef0ff8bd2dbb97217319f9bb1197d032"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.313099314449785,
+    "epoch_bkjd": 123.53856702055782,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 84,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "2b5cfa7e6701ea4a746c27f312a674b85e0b88d040a5579f6fb0059ccc05f4af",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2075429219372562176-2",
+     "discovery_view": "psf_flat",
+     "period_days": 15.313099314449785,
+     "epoch_bkjd": 123.53856702055782,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086876269277888384-1",
+   "source_id": "2086876269277888384",
+   "signal_id": "shallow-v1-2086876269277888384-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 20.115560560866548,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086876269277888384-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 11046817,
+    "ra": 298.7432751361355,
+    "dec": 48.5500624879561,
+    "raw_fits_bytes": 9227520,
+    "raw_fits_sha256": "67640f4a425fa1d2b710c9f6c6fd9ecea305cb4d9baac5aa4446154e43ced76a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9729602720237396,
+    "epoch_bkjd": 121.51349433455616,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 353,
+   "event_quarters": 15,
+   "selected_proposal_sha256": "b73e094310b7fec016a8c07bc618de3191efd2138ebd08bde5f51355cf867a98",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2086876269277888384-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9729602720237396,
+     "epoch_bkjd": 121.51349433455616,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086476455063907840-1",
+   "source_id": "2086476455063907840",
+   "signal_id": "shallow-v1-2086476455063907840-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 19.721241797575864,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086476455063907840-1",
+   "source": {
+    "kic": 10751463,
+    "origin_tpf_kic_not_host": 10751467,
+    "ra": 298.5064980771151,
+    "dec": 48.04290550416886,
+    "raw_fits_bytes": 9135360,
+    "raw_fits_sha256": "7af6068dc15a2b63ebf3c2b76d45aeab5467800fac4257662a94bc87ca4794ea"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.972655967400685,
+    "epoch_bkjd": 133.44211165545508,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 341,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "bded65f40f66138d49fec2dd2eee3db3f32dc7fc76204ed5a5ce61f0d8581175",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2086476455063907840-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.972655967400685,
+     "epoch_bkjd": 133.44211165545508,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2075394481676290944-1",
+   "source_id": "2075394481676290944",
+   "signal_id": "shallow-v1-2075394481676290944-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 19.528967423267765,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2075394481676290944-1",
+   "source": {
+    "kic": 6311357,
+    "origin_tpf_kic_not_host": 6311359,
+    "ra": 298.642398154476,
+    "dec": 41.66550942296776,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "9035ea38fae440490b47f86d430c1b648d1790c9a5e317ab6d11a570f896694e"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.276463501415783,
+    "epoch_bkjd": 139.01693226268515,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 87,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "65e989d566bbf962a56323ba00f832ec2b5b28e833332a42edf75921ca5ec90d",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2075394481676290944-1",
+     "discovery_view": "psf_flat",
+     "period_days": 15.276463501415783,
+     "epoch_bkjd": 139.01693226268515,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079085988881291008-1",
+   "source_id": "2079085988881291008",
+   "signal_id": "shallow-v1-2079085988881291008-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 18.545219335947674,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079085988881291008-1",
+   "source": {
+    "kic": 8452421,
+    "origin_tpf_kic_not_host": 8452433,
+    "ra": 298.6040242764689,
+    "dec": 44.4491473694097,
+    "raw_fits_bytes": 9688320,
+    "raw_fits_sha256": "75b6af19fa52e20d6a455cbfc6cd6679cfdc9fbedbcc88afbd2e7113e5c9213c"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9759441324928533,
+    "epoch_bkjd": 354.3070647291094,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 274,
+   "event_quarters": 10,
+   "selected_proposal_sha256": "da3f0ebbb7779b1cd9deb61cc0690e8b7824652ac4cd918eb8af15dcc2bae270",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079085988881291008-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9759441324928533,
+     "epoch_bkjd": 354.3070647291094,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2126238304514968064-1",
+   "source_id": "2126238304514968064",
+   "signal_id": "shallow-v1-2126238304514968064-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 18.47744448754188,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2126238304514968064-1",
+   "source": {
+    "kic": 8494371,
+    "origin_tpf_kic_not_host": 8494380,
+    "ra": 291.4831736117163,
+    "dec": 44.57946415120282,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "02b169f5bc75cc1b1fa11bcd5982a6b0e025663507455ed452b6cfbb61deab50"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 84.26162931103839,
+    "epoch_bkjd": 323.93481052903456,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 4,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "e34af2ae3107a0604eda0a85539d1afb8dae71ce1701b304cb7ce28a2b8bd2a6",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2126238304514968064-3",
+     "discovery_view": "psf_flat",
+     "period_days": 84.26162931103839,
+     "epoch_bkjd": 323.93481052903456,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2105657989458802560-1",
+   "source_id": "2105657989458802560",
+   "signal_id": "shallow-v1-2105657989458802560-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 18.432539803535583,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2105657989458802560-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 7739930,
+    "ra": 286.4554203173361,
+    "dec": 43.41154608607731,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "ca73fac3871550fb8873154e6d6187cc4cf2a215ac0720fc16cad991682a34f0"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 25.991922287744107,
+    "epoch_bkjd": 139.11448635002597,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 53,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "afcd0c0a44ff59aa59ae8b51492e980ee720ea742db329879b3af1308755c882",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2105657989458802560-4",
+     "discovery_view": "psf_flat",
+     "period_days": 25.991922287744107,
+     "epoch_bkjd": 139.11448635002597,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2078854679119178624-1",
+   "source_id": "2078854679119178624",
+   "signal_id": "shallow-v1-2078854679119178624-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 18.150711171085106,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2078854679119178624-1",
+   "source": {
+    "kic": 8046041,
+    "origin_tpf_kic_not_host": 8046028,
+    "ra": 297.2683704685861,
+    "dec": 43.80993122900347,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "d9aa181f2ee75aef11c5af55d00cce937aab89e82e8cf51ee0b35fabbba742bb"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9839361222577847,
+    "epoch_bkjd": 132.22193674188108,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 108,
+   "event_quarters": 5,
+   "selected_proposal_sha256": "eda2181dcd24782a34b5ac92c73cc33bcd2a6dd7df1a4f8590c49bef3a4ef5ac",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2078854679119178624-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9839361222577847,
+     "epoch_bkjd": 132.22193674188108,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076057590261131392-1",
+   "source_id": "2076057590261131392",
+   "signal_id": "shallow-v1-2076057590261131392-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.755819555961885,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076057590261131392-1",
+   "source": {
+    "kic": 8196470,
+    "origin_tpf_kic_not_host": 8196480,
+    "ra": 300.7094848444294,
+    "dec": 44.02331660702187,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "9d72e12b5d1ee550b24c4c0dddcfe46fc2ce97664cbd850b7d5ffd91f003eed2"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.672143327872001,
+    "epoch_bkjd": 132.01168116088957,
+    "duration_days": 0.20000000000000004
+   },
+   "recorded_event_units": 362,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "f53a6f6a2f27dc5d9d5a97590d150baa57ffacfb5dc8a62b0176bdf360fa3cdb",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076057590261131392-3",
+     "discovery_view": "psf_flat",
+     "period_days": 3.672143327872001,
+     "epoch_bkjd": 132.01168116088957,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2100413245985138560-1",
+   "source_id": "2100413245985138560",
+   "signal_id": "shallow-v1-2100413245985138560-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.49888436875425,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2100413245985138560-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 4351698,
+    "ra": 287.5496784221127,
+    "dec": 39.46504232914901,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "2fa3c1e21446a70c48141567338cd503613ed05cf710a2f7d9aad1a07675de88"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 95.13177347604625,
+    "epoch_bkjd": 182.8228183537163,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 14,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "0114df27d3ef689e33651c06cccfccac67ee27d458f6143a66a2c9f7c9fea0a0",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2100413245985138560-4",
+     "discovery_view": "psf_flat",
+     "period_days": 95.13177347604625,
+     "epoch_bkjd": 182.8228183537163,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2078194972142049280-1",
+   "source_id": "2078194972142049280",
+   "signal_id": "shallow-v1-2078194972142049280-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.352271393377325,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2078194972142049280-1",
+   "source": {
+    "kic": 7829657,
+    "origin_tpf_kic_not_host": 7829646,
+    "ra": 294.2451244663484,
+    "dec": 43.59565224064112,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "89dbfc1d936a6985106b9cf42c452b08e01c04f2bbce177437437f71a2c5cd03"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9593577765539547,
+    "epoch_bkjd": 132.40210621511562,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 110,
+   "event_quarters": 5,
+   "selected_proposal_sha256": "266abaf1f5e4119ca42297a56237a17b5fc34add7ee60842fd8d6ebd186c99f1",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2078194972142049280-2",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9593577765539547,
+     "epoch_bkjd": 132.40210621511562,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2073769231689080192-1",
+   "source_id": "2073769231689080192",
+   "signal_id": "shallow-v1-2073769231689080192-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.336968397070105,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2073769231689080192-1",
+   "source": {
+    "kic": 5213990,
+    "origin_tpf_kic_not_host": 5213979,
+    "ra": 298.2351602028228,
+    "dec": 40.36919029675626,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "0a93661f174430c4a9e5917be702edfab28263b96d84bd12ce9e8f8b1789ffab"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 96.91450595999702,
+    "epoch_bkjd": 184.3886512284167,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 15,
+   "event_quarters": 15,
+   "selected_proposal_sha256": "48b2cb4b02073466a2e2c88cc5b742dcef6093e1a282a3c960fe30dff541051c",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2073769231689080192-4",
+     "discovery_view": "psf_flat",
+     "period_days": 96.91450595999702,
+     "epoch_bkjd": 184.3886512284167,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2085317775964234880-1",
+   "source_id": "2085317775964234880",
+   "signal_id": "shallow-v1-2085317775964234880-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.226190813580914,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2085317775964234880-1",
+   "source": {
+    "kic": 9552644,
+    "origin_tpf_kic_not_host": 9552635,
+    "ra": 300.548887434671,
+    "dec": 46.11557512980056,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "b7f7ab80f7aa5bc154d8c811a3586313531b453370c334f2929dce5b46bad87c"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9876649046494075,
+    "epoch_bkjd": 260.4502577217296,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 218,
+   "event_quarters": 8,
+   "selected_proposal_sha256": "20c443ed69c2f40e82e838e69ef73475f22db8477364126cf3811b2da8ed9ebf",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2085317775964234880-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9876649046494075,
+     "epoch_bkjd": 260.4502577217296,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2125731116119557248-1",
+   "source_id": "2125731116119557248",
+   "signal_id": "shallow-v1-2125731116119557248-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.16007987111545,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2125731116119557248-1",
+   "source": {
+    "kic": 6949542,
+    "origin_tpf_kic_not_host": 6949545,
+    "ra": 292.1154973978033,
+    "dec": 42.41082695611781,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "9dbdf3d1aba76a611adb250bf1602813556bcb7d246f5ea3b960fb5b6693713b"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 46.925529529045264,
+    "epoch_bkjd": 163.6023652694747,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 21,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "629d7d6a3491068a1bd8f875641868ab52b38f69d9e8b087acbe3e3183e63b38",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2125731116119557248-1",
+     "discovery_view": "psf_flat",
+     "period_days": 46.925529529045264,
+     "epoch_bkjd": 163.6023652694747,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2085625540434817664-3",
+   "source_id": "2085625540434817664",
+   "signal_id": "shallow-v1-2085625540434817664-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 17.096362773435622,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2085625540434817664-3",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 10098773,
+    "ra": 299.6581437098168,
+    "dec": 47.07980301243742,
+    "raw_fits_bytes": 9135360,
+    "raw_fits_sha256": "b52495bdb5c478aa4615a23d8a6a8ae2b360f0d071d766e3e4fc5adc2aabee99"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 91.09964904332162,
+    "epoch_bkjd": 181.05671142095701,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 11,
+   "event_quarters": 10,
+   "selected_proposal_sha256": "3962469418ed078e34b2b21dcfa6039b4a51315739fac705ea9a24e940118bc3",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2085625540434817664-5",
+     "discovery_view": "psf_flat",
+     "period_days": 91.09964904332162,
+     "epoch_bkjd": 181.05671142095701,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127087883405155456-1",
+   "source_id": "2127087883405155456",
+   "signal_id": "shallow-v1-2127087883405155456-13",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.986865344459122,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127087883405155456-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9084472,
+    "ra": 290.1587992980948,
+    "dec": 45.48678777545187,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "265134fdfb81ef5bb01c388d04a1dd95729548299397fd60508ef3e5e71b89ec"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.451030346671885,
+    "epoch_bkjd": 137.86732855720444,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 86,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "0ac2f3ad573002c20b046a1dfe11578d5090693b14b85aa374728b7f02395899",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127087883405155456-13",
+     "discovery_view": "psf_flat",
+     "period_days": 15.451030346671885,
+     "epoch_bkjd": 137.86732855720444,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-3",
+   "source_id": "2073666564790289664",
+   "signal_id": "shallow-v1-2073666564790289664-15",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.941714489962465,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2073666564790289664-3",
+   "source": {
+    "kic": 4948140,
+    "origin_tpf_kic_not_host": 4948138,
+    "ra": 297.7070070564466,
+    "dec": 40.03182579212718,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "fdc9e56779c660a4f709fd8372d2741818c1d2d978aa2b73e1c7d1a1e7593610"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.5773150987471779,
+    "epoch_bkjd": 131.94210235897452,
+    "duration_days": 0.05000000000000001
+   },
+   "recorded_event_units": 2251,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "0002162e3cfbd88c08c20022523e6afb76c9ac5095f576fd8c79e4817375aab3",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2073666564790289664-15",
+     "discovery_view": "psf_flat",
+     "period_days": 0.5773150987471779,
+     "epoch_bkjd": 131.94210235897452,
+     "duration_days": 0.05000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2131141576613252224-1",
+   "source_id": "2131141576613252224",
+   "signal_id": "shallow-v1-2131141576613252224-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.850945930697936,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2131141576613252224-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 10849524,
+    "ra": 286.1255757113685,
+    "dec": 48.22422963104158,
+    "raw_fits_bytes": 8876160,
+    "raw_fits_sha256": "d01d7892026e062dc68d5d9fbfa92d3f40449b88649a7dbbe05ce740fe4ad630"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.01383544373833,
+    "epoch_bkjd": 132.98243056869134,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 339,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "c5ae601a440d9cfb771f203cfe4bc2a03cb39821c2e60cf0e4bc109878ec01d0",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2131141576613252224-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.01383544373833,
+     "epoch_bkjd": 132.98243056869134,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127087883405155456-2",
+   "source_id": "2127087883405155456",
+   "signal_id": "shallow-v1-2127087883405155456-14",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.756342132084193,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127087883405155456-2",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9084472,
+    "ra": 290.1587992980948,
+    "dec": 45.48678777545187,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "265134fdfb81ef5bb01c388d04a1dd95729548299397fd60508ef3e5e71b89ec"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.409962767247308,
+    "epoch_bkjd": 138.10732855720445,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 83,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "490db3c44f2628ee76076021fb8f358492f10c8bdce7cbbc823764efa696bdd7",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2127087883405155456-14",
+     "discovery_view": "psf_flat",
+     "period_days": 15.409962767247308,
+     "epoch_bkjd": 138.10732855720445,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2131933293706828672-1",
+   "source_id": "2131933293706828672",
+   "signal_id": "shallow-v1-2131933293706828672-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.735344115955648,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2131933293706828672-1",
+   "source": {
+    "kic": 11127087,
+    "origin_tpf_kic_not_host": 11127082,
+    "ra": 286.0853478245575,
+    "dec": 48.75306349502581,
+    "raw_fits_bytes": 8876160,
+    "raw_fits_sha256": "0ea5fde6b9cb7f3fef442430c01c9a90af375a8d14417b1d1e98cf1ced99ef80"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.0142673945877143,
+    "epoch_bkjd": 132.87240048650654,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 340,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "c68f0822ce49ee3a07d03340455a0f3d76dcd2c03d7e3642dffe8ff1ff398493",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2131933293706828672-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.0142673945877143,
+     "epoch_bkjd": 132.87240048650654,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077515199080043264-2",
+   "source_id": "2077515199080043264",
+   "signal_id": "shallow-v1-2077515199080043264-7",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.496005490295456,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077515199080043264-2",
+   "source": {
+    "kic": 6292185,
+    "origin_tpf_kic_not_host": 6292193,
+    "ra": 294.0338347817314,
+    "dec": 41.68077139223952,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "cccbe1b95ede9dcd8cd7efabeccbb75d3ea05b365210e139c470e5c3d7513405"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 48.60086691800657,
+    "epoch_bkjd": 178.6772920870781,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 13,
+   "event_quarters": 7,
+   "selected_proposal_sha256": "ccd524d9afbdbd57a2449bbbd33e0431585ae891624327869679253d374106ef",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2077515199080043264-7",
+     "discovery_view": "psf_flat",
+     "period_days": 48.60086691800657,
+     "epoch_bkjd": 178.6772920870781,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076458087370311808-1",
+   "source_id": "2076458087370311808",
+   "signal_id": "shallow-v1-2076458087370311808-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.470149464095577,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076458087370311808-1",
+   "source": {
+    "kic": 4846708,
+    "origin_tpf_kic_not_host": 4846701,
+    "ra": 294.8064777991113,
+    "dec": 39.96975751164894,
+    "raw_fits_bytes": 3193920,
+    "raw_fits_sha256": "0efee13d0166d562ff69ef4f23113a37e4369acf47f2b9762f75da3e3b745abf"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.699101260020767,
+    "epoch_bkjd": 132.8422879445553,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 220,
+   "event_quarters": 6,
+   "selected_proposal_sha256": "8283b9e3f4122a094cabd9372008f1ceaea59841e93b61a1e149df2dee99cd8a",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076458087370311808-1",
+     "discovery_view": "psf_flat",
+     "period_days": 1.699101260020767,
+     "epoch_bkjd": 132.8422879445553,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076797973904269184-1",
+   "source_id": "2076797973904269184",
+   "signal_id": "shallow-v1-2076797973904269184-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.32962365110026,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076797973904269184-1",
+   "source": {
+    "kic": 5636497,
+    "origin_tpf_kic_not_host": 5636495,
+    "ra": 296.2981267727052,
+    "dec": 40.80068443453144,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "822777a6f538728d72546220fab52ae35ad3374d1d892114df4209a1cf7ef291"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 39.66610003782266,
+    "epoch_bkjd": 135.19212863391266,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 32,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "e206213d9b732e153db5a45cc97cc8b1c9bde555181ac7463e64bfd2093fd136",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2076797973904269184-2",
+     "discovery_view": "psf_flat",
+     "period_days": 39.66610003782266,
+     "epoch_bkjd": 135.19212863391266,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2130546156710144256-1",
+   "source_id": "2130546156710144256",
+   "signal_id": "shallow-v1-2130546156710144256-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.302464972391395,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2130546156710144256-1",
+   "source": {
+    "kic": 9820720,
+    "origin_tpf_kic_not_host": 9820722,
+    "ra": 286.6240500928137,
+    "dec": 46.64042466777921,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "1f90cf64aafa4b3a3bb15f620d707f1372edad606704fdac781fb6efe7c9c53a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 25.995115370763617,
+    "epoch_bkjd": 139.08422851337122,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 53,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "65042af5efcf31bdfa383f93052d3b7608d624b6cd10272d77578a6daf328a2d",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2130546156710144256-1",
+     "discovery_view": "psf_flat",
+     "period_days": 25.995115370763617,
+     "epoch_bkjd": 139.08422851337122,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2129890847781113344-1",
+   "source_id": "2129890847781113344",
+   "signal_id": "shallow-v1-2129890847781113344-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.166697227371145,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2129890847781113344-1",
+   "source": {
+    "kic": 11713544,
+    "origin_tpf_kic_not_host": 11713555,
+    "ra": 292.2807731511841,
+    "dec": 49.87107739478718,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "6290dadabdd27fe01575eda2970342ee42444b650ae05638ae81ff8713e06320"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 15.5334941327192,
+    "epoch_bkjd": 137.67192648382857,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 65,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "15786f4212dc43e069c065b8b2b82c711198dd68bd502aa8f809438f2b92fbca",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2129890847781113344-5",
+     "discovery_view": "psf_flat",
+     "period_days": 15.5334941327192,
+     "epoch_bkjd": 137.67192648382857,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2078222219414706048-1",
+   "source_id": "2078222219414706048",
+   "signal_id": "shallow-v1-2078222219414706048-4",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 16.108157995448334,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2078222219414706048-1",
+   "source": {
+    "kic": 7687159,
+    "origin_tpf_kic_not_host": 7687153,
+    "ra": 293.3499606544091,
+    "dec": 43.34043378238945,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "e61cc51ed1b2095caba628e2d4eb53e6ecff8522b3636896fe4ef79b5741f809"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 25.386605165418217,
+    "epoch_bkjd": 144.8572305690311,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 49,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "3326e0ec3ed65aa2f966340ec9c87ea1974b88a3306cfa69ae676909e427a019",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2078222219414706048-4",
+     "discovery_view": "psf_flat",
+     "period_days": 25.386605165418217,
+     "epoch_bkjd": 144.8572305690311,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2132193603084255744-1",
+   "source_id": "2132193603084255744",
+   "signal_id": "shallow-v1-2132193603084255744-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.87984158899343,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2132193603084255744-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 11442704,
+    "ra": 284.377261979612,
+    "dec": 49.31459338344703,
+    "raw_fits_bytes": 8582400,
+    "raw_fits_sha256": "87f060c556f67944648f9e02eecdf79cd03961973571ff5c3c64af646f289892"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.981432504702711,
+    "epoch_bkjd": 171.8204913212359,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 322,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "8b341c63e03ff355197164c9dc5bf164722e6e122d20ddb42d09f68fe30b1dce",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2132193603084255744-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.981432504702711,
+     "epoch_bkjd": 171.8204913212359,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2104817618979591168-1",
+   "source_id": "2104817618979591168",
+   "signal_id": "shallow-v1-2104817618979591168-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.824356081916921,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2104817618979591168-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 6922945,
+    "ra": 281.689058018999,
+    "dec": 42.49962556496222,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "4741b2bfd560f9d2cdc14c5c458131c7ab0656bff2e434abcb4bbaa1c6d77193"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 28.03612979545473,
+    "epoch_bkjd": 146.08480071237312,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 44,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "42a4d8dc28954ddb57c244d2de80719daeb588084f8d2037d0e02e77cd277702",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2104817618979591168-1",
+     "discovery_view": "psf_flat",
+     "period_days": 28.03612979545473,
+     "epoch_bkjd": 146.08480071237312,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086840397710393728-1",
+   "source_id": "2086840397710393728",
+   "signal_id": "shallow-v1-2086840397710393728-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.676165391121277,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086840397710393728-1",
+   "source": {
+    "kic": 11413746,
+    "origin_tpf_kic_not_host": 11413752,
+    "ra": 296.7328393725594,
+    "dec": 49.26486237536782,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "3a18f498b845a7b191bccd868b2e8df9f60b58361c3777a807d2adef561bf896"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.932039141044871,
+    "epoch_bkjd": 133.2067492438294,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 459,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "9079d55550d9c464541aa2072908a61fc832a29b54d6ce9a1772661f86d8d4fc",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2086840397710393728-3",
+     "discovery_view": "psf_flat",
+     "period_days": 2.932039141044871,
+     "epoch_bkjd": 133.2067492438294,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079630350212046848-1",
+   "source_id": "2079630350212046848",
+   "signal_id": "shallow-v1-2079630350212046848-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.5730187022544,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079630350212046848-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 8243228,
+    "ra": 295.2126276427313,
+    "dec": 44.1956783791732,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "9f0c829a5c7fb9f3f79a490fb24f91a6263358fd6e17b1e10d65c2e1d4921682"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.9104493115648715,
+    "epoch_bkjd": 120.91384038282558,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 406,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "efa1a50976a70df675cfe4378df5dfa9611437b2dda3968c449e93af79e349a6",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2079630350212046848-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.9104493115648715,
+     "epoch_bkjd": 120.91384038282558,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2117126514212876416-1",
+   "source_id": "2117126514212876416",
+   "signal_id": "shallow-v1-2117126514212876416-5",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.49488217621857,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2117126514212876416-1",
+   "source": {
+    "kic": 8004643,
+    "origin_tpf_kic_not_host": 8004637,
+    "ra": 280.0850049893324,
+    "dec": 43.81191050385373,
+    "raw_fits_bytes": 10794240,
+    "raw_fits_sha256": "20fdae30f03e48cb05f40540faca9baa9c24a53d39a5d312afe0e02a75837e12"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 33.12144430546639,
+    "epoch_bkjd": 147.5748332090117,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 39,
+   "event_quarters": 16,
+   "selected_proposal_sha256": "aefd9a3b36cded27a04f8eb4a02b9f9934e7ce2d72741ee2c4569a82b25564cd",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2117126514212876416-5",
+     "discovery_view": "psf_flat",
+     "period_days": 33.12144430546639,
+     "epoch_bkjd": 147.5748332090117,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2117442967403355008-1",
+   "source_id": "2117442967403355008",
+   "signal_id": "shallow-v1-2117442967403355008-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.481599258173437,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2117442967403355008-1",
+   "source": {
+    "kic": 8733333,
+    "origin_tpf_kic_not_host": 8733329,
+    "ra": 281.8964372163816,
+    "dec": 44.99431250193383,
+    "raw_fits_bytes": 5866560,
+    "raw_fits_sha256": "92a3768fc90b62847499da0b3f982ba9fa1b86c65d82dc34356d74a67836c2e4"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.959176053975324,
+    "epoch_bkjd": 132.37282972609626,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 230,
+   "event_quarters": 9,
+   "selected_proposal_sha256": "efb80fc3513324d123381967767e4608f5f84ad4f67cc607680575fa2cb4b2f2",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2117442967403355008-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.959176053975324,
+     "epoch_bkjd": 132.37282972609626,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2117442967403355008-2",
+   "source_id": "2117442967403355008",
+   "signal_id": "shallow-v1-2117442967403355008-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.445682317743527,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2117442967403355008-2",
+   "source": {
+    "kic": 8733333,
+    "origin_tpf_kic_not_host": 8733329,
+    "ra": 281.8964372163816,
+    "dec": 44.99431250193383,
+    "raw_fits_bytes": 5866560,
+    "raw_fits_sha256": "92a3768fc90b62847499da0b3f982ba9fa1b86c65d82dc34356d74a67836c2e4"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.007917925384191,
+    "epoch_bkjd": 132.46782972609626,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 223,
+   "event_quarters": 9,
+   "selected_proposal_sha256": "c45598fe0eb85446415909ac02109455425df3841c60d36e9871e04243b20a65",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2117442967403355008-2",
+     "discovery_view": "psf_flat",
+     "period_days": 3.007917925384191,
+     "epoch_bkjd": 132.46782972609626,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2129966404845098880-1",
+   "source_id": "2129966404845098880",
+   "signal_id": "shallow-v1-2129966404845098880-8",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.437882878745963,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2129966404845098880-1",
+   "source": {
+    "kic": 11558488,
+    "origin_tpf_kic_not_host": 11558484,
+    "ra": 291.5000815171382,
+    "dec": 49.59921608322269,
+    "raw_fits_bytes": 8948160,
+    "raw_fits_sha256": "ef58f3db48756ea547cc6a5835d59cb1a86011373f6788fd3b06cc8d529b0ccf"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 84.41699669811725,
+    "epoch_bkjd": 429.4822332170047,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 12,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "31c0e4b5a90fe4270acc3e8505548b2d32790d15eb5fea2f55466d5a980e9272",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2129966404845098880-8",
+     "discovery_view": "psf_flat",
+     "period_days": 84.41699669811725,
+     "epoch_bkjd": 429.4822332170047,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2074285727289857536-1",
+   "source_id": "2074285727289857536",
+   "signal_id": "shallow-v1-2074285727289857536-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.41407765538733,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2074285727289857536-1",
+   "source": {
+    "kic": 5221651,
+    "origin_tpf_kic_not_host": 5221655,
+    "ra": 299.7022179841116,
+    "dec": 40.38442203068066,
+    "raw_fits_bytes": 3021120,
+    "raw_fits_sha256": "27dd0790df8665dc7e500c90bd520ee22eae4dae70243728843d1d4a6ff07bb6"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.0402352422855734,
+    "epoch_bkjd": 261.8654624762572,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 114,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "8ff603da6c810d22d1477d6cfbc5ecf222795a2b6af8110d8f57cd7c123afa85",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2074285727289857536-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.0402352422855734,
+     "epoch_bkjd": 261.8654624762572,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2128034597276971520-1",
+   "source_id": "2128034597276971520",
+   "signal_id": "shallow-v1-2128034597276971520-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.225710976118323,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2128034597276971520-1",
+   "source": {
+    "kic": 9284644,
+    "origin_tpf_kic_not_host": 9284641,
+    "ra": 293.3872084244275,
+    "dec": 45.74405547322295,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "8cac28b15ca9f1a4158641c0390665ddd5445971b63d87abd68e174b04a92250"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 28.7687488541,
+    "epoch_bkjd": 151.48209245575592,
+    "duration_days": 0.20000000000000004
+   },
+   "recorded_event_units": 46,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "0ecd3f32a570f30e5a2cfc417b26d5e5fe7a13d858550f2b47a0ad7a61beef6f",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2128034597276971520-1",
+     "discovery_view": "psf_flat",
+     "period_days": 28.7687488541,
+     "epoch_bkjd": 151.48209245575592,
+     "duration_days": 0.20000000000000004
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2078082581439033856-1",
+   "source_id": "2078082581439033856",
+   "signal_id": "shallow-v1-2078082581439033856-2",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.153563351983994,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2078082581439033856-1",
+   "source": {
+    "kic": 7691483,
+    "origin_tpf_kic_not_host": 7691494,
+    "ra": 294.7179512250228,
+    "dec": 43.3945546774295,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "c37f96869e0d4a3d3b086cf0e343e6ebdbe961a790d3752595eb2c7841cf9352"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.255428286841493,
+    "epoch_bkjd": 132.32703690236434,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 584,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "10c0051f24423ca30d894fbd27db4f1d0aec13832b7091af176828bb69e291c5",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2078082581439033856-2",
+     "discovery_view": "psf_flat",
+     "period_days": 2.255428286841493,
+     "epoch_bkjd": 132.32703690236434,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077405350997460992-1",
+   "source_id": "2077405350997460992",
+   "signal_id": "shallow-v1-2077405350997460992-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.1422385630201,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077405350997460992-1",
+   "source": {
+    "kic": 6130601,
+    "origin_tpf_kic_not_host": 6130585,
+    "ra": 293.9824293568565,
+    "dec": 41.40602134036091,
+    "raw_fits_bytes": 9685440,
+    "raw_fits_sha256": "22238f5f5ddd38e8bbadcf74543c98f9698255d00311fecbab8cea454255c35c"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.960994086051299,
+    "epoch_bkjd": 445.7291250256263,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 187,
+   "event_quarters": 7,
+   "selected_proposal_sha256": "136b83d042d8833e616cc38cbe8acdc6a9601a0586e6ed59c33baad47244f7d8",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2077405350997460992-3",
+     "discovery_view": "psf_flat",
+     "period_days": 2.960994086051299,
+     "epoch_bkjd": 445.7291250256263,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086390560018194816-1",
+   "source_id": "2086390560018194816",
+   "signal_id": "shallow-v1-2086390560018194816-3",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.087113087844983,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086390560018194816-1",
+   "source": {
+    "kic": 10354608,
+    "origin_tpf_kic_not_host": 10354603,
+    "ra": 297.1819890691336,
+    "dec": 47.4537687624976,
+    "raw_fits_bytes": 9135360,
+    "raw_fits_sha256": "cc894026bd96e1ae82eddebf3384438430d562475da1d8da594c32f65db8ae1e"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 17.947929751472337,
+    "epoch_bkjd": 139.881862186715,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 60,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "769a7f683f94ce8238025095c84f63af65e70f6d2d9180afa9d1a6953566ebdf",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2086390560018194816-3",
+     "discovery_view": "psf_flat",
+     "period_days": 17.947929751472337,
+     "epoch_bkjd": 139.881862186715,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2102056779643698560-1",
+   "source_id": "2102056779643698560",
+   "signal_id": "shallow-v1-2102056779643698560-1",
+   "discovery_view": "psf_flat",
+   "lineage": "shallow",
+   "search_significance": 15.057267225212136,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2102056779643698560-1",
+   "source": {
+    "kic": 5175569,
+    "origin_tpf_kic_not_host": 5175576,
+    "ra": 288.2808170707353,
+    "dec": 40.3345664102449,
+    "raw_fits_bytes": 11511360,
+    "raw_fits_sha256": "5dc00e30d12f299453e12322e24bfc1b47e76e39beb22bf52d75c5085957e283"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 49.24883594144944,
+    "epoch_bkjd": 168.444438795764,
+    "duration_days": 0.4000000000000001
+   },
+   "recorded_event_units": 27,
+   "event_quarters": 15,
+   "selected_proposal_sha256": "78724b0368371b90f5f60024974221bc8d10a5df7977d18c1a9a8b1fc970b9af",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "shallow-v1-2102056779643698560-1",
+     "discovery_view": "psf_flat",
+     "period_days": 49.24883594144944,
+     "epoch_bkjd": 168.444438795764,
+     "duration_days": 0.4000000000000001
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2051317406099391360-1",
+   "source_id": "2051317406099391360",
+   "signal_id": "rust-v6-2051317406099391360-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2051317406099391360-1",
+   "source": {
+    "kic": 2983670,
+    "origin_tpf_kic_not_host": 2983671,
+    "ra": 290.0043872850094,
+    "dec": 38.15322460002008,
+    "raw_fits_bytes": 9910080,
+    "raw_fits_sha256": "be4f168c672e0bf00465d6e051ed3bbd8d025505238df1cd7c5c2f51b32c8397"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.0815623076693663,
+    "epoch_bkjd": 170.5770848377188,
+    "duration_days": 0.12674558293000387
+   },
+   "recorded_event_units": 560,
+   "event_quarters": 7,
+   "selected_proposal_sha256": "f25a270416bd72294a0a94f5bd3f7d9e85b31133ac75c2bf7b8963a7c8f8668e",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2051317406099391360-1",
+     "discovery_view": "psf_flat",
+     "period_days": 1.0815623076693663,
+     "epoch_bkjd": 170.5770848377188,
+     "duration_days": 0.12674558293000387
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2051702720499620224-1",
+   "source_id": "2051702720499620224",
+   "signal_id": "rust-v6-2051702720499620224-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2051702720499620224-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 1296255,
+    "ra": 291.7243829283994,
+    "dec": 36.9729451778795,
+    "raw_fits_bytes": 9685440,
+    "raw_fits_sha256": "50f54a8aa7cb2b742506f50908543490a2501b93de5e89549f893ed520ee1052"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.39186738945557764,
+    "epoch_bkjd": 352.7106785234579,
+    "duration_days": 0.04132976373164295
+   },
+   "recorded_event_units": 2810,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "c7cdcc1458465b4673f97fbf9d91dabfdac307f0baff981a15a5e98f0d66e418",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2051702720499620224-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.39186738945557764,
+     "epoch_bkjd": 352.7106785234579,
+     "duration_days": 0.04132976373164295
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2073774278260250880-1",
+   "source_id": "2073774278260250880",
+   "signal_id": "rust-v6-2073774278260250880-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2073774278260250880-1",
+   "source": {
+    "kic": 5388146,
+    "origin_tpf_kic_not_host": 5388155,
+    "ra": 298.1965292395662,
+    "dec": 40.53388935879347,
+    "raw_fits_bytes": 11514240,
+    "raw_fits_sha256": "1c647e022a003c733bc66af25960ef240593eac6876cf117f78cd806816b086a"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.47085293264999717,
+    "epoch_bkjd": 120.98467402594649,
+    "duration_days": 0.04230319316777318
+   },
+   "recorded_event_units": 2759,
+   "event_quarters": 18,
+   "selected_proposal_sha256": "36ee3f7a1ebcc3a9e22c8a2c133f4d2b90cf717a9ea6a93e5c472573babbd30f",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2073774278260250880-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.47085293264999717,
+     "epoch_bkjd": 120.98467402594649,
+     "duration_days": 0.04230319316777318
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076066111476425728-1",
+   "source_id": "2076066111476425728",
+   "signal_id": "rust-v6-2076066111476425728-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076066111476425728-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 8264067,
+    "ra": 300.8662832315823,
+    "dec": 44.19117127902111,
+    "raw_fits_bytes": 3098880,
+    "raw_fits_sha256": "e2e6f059b01e1540dabc458d7f664f872fa28fa13ee995224e9d5eecf0963bf7"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.8724977707887085,
+    "epoch_bkjd": 541.9782668550744,
+    "duration_days": 0.3330432198015894
+   },
+   "recorded_event_units": 128,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "01fc3ddd964aacdb6e743021c9e85147cd9a75e3ce9c6c1abdd852fb41b5da99",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076066111476425728-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.8724977707887085,
+     "epoch_bkjd": 541.9782668550744,
+     "duration_days": 0.3330432198015894
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076229075413220352-1",
+   "source_id": "2076229075413220352",
+   "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+   "discovery_view": "psf_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076229075413220352-1",
+   "source": {
+    "kic": 4669702,
+    "origin_tpf_kic_not_host": 4669680,
+    "ra": 295.5986626115568,
+    "dec": 39.76461718612492,
+    "raw_fits_bytes": 9146880,
+    "raw_fits_sha256": "60def147b95faa12b89b1c486d1ffc6e3a20e16ce92b48b275d9ccdbaf929223"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.629078096447198,
+    "epoch_bkjd": 131.7603980556814,
+    "duration_days": 0.16545324417041854
+   },
+   "recorded_event_units": 649,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "8018e799ea623660b093aa9fc75a019fd9b9d00aa485e388f225c41563771ab5",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "period_days": 1.629078096447198,
+     "epoch_bkjd": 131.7603980556814,
+     "duration_days": 0.16545324417041854
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076535358120385536-1",
+   "source_id": "2076535358120385536",
+   "signal_id": "rust-v6-2076535358120385536-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076535358120385536-1",
+   "source": {
+    "kic": 5194722,
+    "origin_tpf_kic_not_host": 5194718,
+    "ra": 294.0009288843532,
+    "dec": 40.30538399224693,
+    "raw_fits_bytes": 9144000,
+    "raw_fits_sha256": "ff873b1c89c79d34db1c7f8290e5b0661db527a8cb652d6016b0e3d166b03f4f"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.1353694369249425,
+    "epoch_bkjd": 131.8094695538671,
+    "duration_days": 0.12418103216366559
+   },
+   "recorded_event_units": 926,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "22e79fbae86cfa2bbf949ed94056207e6b85ee54a274c40879f341c1d9031826",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076535358120385536-1",
+     "discovery_view": "psf_flat",
+     "period_days": 1.1353694369249425,
+     "epoch_bkjd": 131.8094695538671,
+     "duration_days": 0.12418103216366559
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076587142546708352-1",
+   "source_id": "2076587142546708352",
+   "signal_id": "rust-v6-2076587142546708352-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076587142546708352-1",
+   "source": {
+    "kic": 5199422,
+    "origin_tpf_kic_not_host": 5199436,
+    "ra": 295.1804380004922,
+    "dec": 40.37615905199637,
+    "raw_fits_bytes": 2687040,
+    "raw_fits_sha256": "695b8033c973c311a8dd9b85f0ca545875b7ad9d8389901433fb491ec347ba26"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.3345798512159655,
+    "epoch_bkjd": 736.990984832474,
+    "duration_days": 0.24622521868293382
+   },
+   "recorded_event_units": 97,
+   "event_quarters": 3,
+   "selected_proposal_sha256": "3f11a57bdc94b8eeebc33088368ae3b5736a82df7319c141f10e10de9375eafb",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076587142546708352-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.3345798512159655,
+     "epoch_bkjd": 736.990984832474,
+     "duration_days": 0.24622521868293382
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2076784878540898560-1",
+   "source_id": "2076784878540898560",
+   "signal_id": "rust-v6-2076784878540898560-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2076784878540898560-1",
+   "source": {
+    "kic": 5896090,
+    "origin_tpf_kic_not_host": 5896111,
+    "ra": 297.100964346067,
+    "dec": 41.1272194729544,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "2f1a05f2c66b4d1e84ee479d1c960ddac768e2f912fd835d055d473762f77ad7"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.2742865968847172,
+    "epoch_bkjd": 132.18726378879973,
+    "duration_days": 0.24875009653426594
+   },
+   "recorded_event_units": 243,
+   "event_quarters": 8,
+   "selected_proposal_sha256": "e19bf0163a13cb820b9afdd17c7a7727f700b9a6b2fa072e830884b912565cd6",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2076784878540898560-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.2742865968847172,
+     "epoch_bkjd": 132.18726378879973,
+     "duration_days": 0.24875009653426594
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2078414771391537280-1",
+   "source_id": "2078414771391537280",
+   "signal_id": "rust-v6-2078414771391537280-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2078414771391537280-1",
+   "source": {
+    "kic": 6631437,
+    "origin_tpf_kic_not_host": 6631423,
+    "ra": 298.1238718967691,
+    "dec": 42.02643791337439,
+    "raw_fits_bytes": 9688320,
+    "raw_fits_sha256": "ba112fce1906791acb31503d82e8a4c86e41d3fdc8dfb3312e70da14844fb326"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.368095861528385,
+    "epoch_bkjd": 352.6234153778881,
+    "duration_days": 0.04169835931376237
+   },
+   "recorded_event_units": 2957,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "341eb3b8b86c1bc3054180b4c108551186fea7a1027df37da2d1e2bb93afcd76",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2078414771391537280-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.368095861528385,
+     "epoch_bkjd": 352.6234153778881,
+     "duration_days": 0.04169835931376237
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079376637907047040-1",
+   "source_id": "2079376637907047040",
+   "signal_id": "rust-v6-2079376637907047040-8",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079376637907047040-1",
+   "source": {
+    "kic": 9108099,
+    "origin_tpf_kic_not_host": 9108085,
+    "ra": 297.7897606477374,
+    "dec": 45.42067051372187,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "bbdf7ec60771c5ae2afe30ff609fa358edf2066b91756b5a459b6ff2cfc324cf"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.0905598979783184,
+    "epoch_bkjd": 352.6092471261108,
+    "duration_days": 0.12353998844285637
+   },
+   "recorded_event_units": 268,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "b972c8f2c0e51d8dca8da1189333b538ae21b0472659bed3223fcabf9e5f5a8c",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2079376637907047040-8",
+     "discovery_view": "psf_flat",
+     "period_days": 1.0905598979783184,
+     "epoch_bkjd": 352.6092471261108,
+     "duration_days": 0.12353998844285637
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2079821420415898368-1",
+   "source_id": "2079821420415898368",
+   "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+   "discovery_view": "sap_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079821420415898368-1",
+   "source": {
+    "kic": 8374921,
+    "origin_tpf_kic_not_host": 8374925,
+    "ra": 295.1333917120604,
+    "dec": 44.37627568950476,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "e4ef8e4dcc6bb87e7f25d3b7b71c26667215de23b9f9592a3d789ffc01db5382"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.44626691930044815,
+    "epoch_bkjd": 131.810162887277,
+    "duration_days": 0.04183752368441701
+   },
+   "recorded_event_units": 2468,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "89ec02e7e9ec89355a8510d7c26a742801067fa65c565f33e6734af67a646ee3",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "period_days": 0.44626691930044815,
+     "epoch_bkjd": 131.810162887277,
+     "duration_days": 0.04183752368441701
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2080033974058174080-1",
+   "source_id": "2080033974058174080",
+   "signal_id": "rust-v6-2080033974058174080-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2080033974058174080-1",
+   "source": {
+    "kic": 9226435,
+    "origin_tpf_kic_not_host": 9226439,
+    "ra": 294.9484725969272,
+    "dec": 45.64312975784115,
+    "raw_fits_bytes": 8616960,
+    "raw_fits_sha256": "5e7ecef70803fdc9929cabfc889b5714cf4cd10acfc7f04b502a097ba4415917"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.4327297330752664,
+    "epoch_bkjd": 170.6488535107888,
+    "duration_days": 0.24707411351545674
+   },
+   "recorded_event_units": 415,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "6d7589121c773a2565b4fabeafaf770299a8b3d5b07544fcddc51bd372f84a49",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2080033974058174080-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.4327297330752664,
+     "epoch_bkjd": 170.6488535107888,
+     "duration_days": 0.24707411351545674
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2080290396483263616-1",
+   "source_id": "2080290396483263616",
+   "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+   "discovery_view": "psf_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2080290396483263616-1",
+   "source": {
+    "kic": 9786341,
+    "origin_tpf_kic_not_host": 9786364,
+    "ra": 297.5999815437494,
+    "dec": 46.56158494428799,
+    "raw_fits_bytes": 8352000,
+    "raw_fits_sha256": "31672dd695dd81f83e3bc4aafcb18719bf49058a087d6e30796d5f9d157ee61e"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.3715110965226389,
+    "epoch_bkjd": 131.5154313912573,
+    "duration_days": 0.04208524140295519
+   },
+   "recorded_event_units": 2562,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "5797a4917d0470d2e482dc54f71ec80cac7eae6027a736fab29f91368d601bee",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "period_days": 0.3715110965226389,
+     "epoch_bkjd": 131.5154313912573,
+     "duration_days": 0.04208524140295519
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2085457035981896448-1",
+   "source_id": "2085457035981896448",
+   "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+   "discovery_view": "sap_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2085457035981896448-1",
+   "source": {
+    "kic": 9486880,
+    "origin_tpf_kic_not_host": 9486896,
+    "ra": 299.115083622418,
+    "dec": 46.02420105954832,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "310ab024c5e063bca9a60e727d1f8659c9eb1111ed3a926a2fde42b9f8ec2c6b"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.4760665172077027,
+    "epoch_bkjd": 131.53024320860757,
+    "duration_days": 0.04091196632253695
+   },
+   "recorded_event_units": 2724,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "3cb6870a50becc025797fd8c5b25e3b42b2bc350d32d9bec59f37f0bbfc0b21b",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "period_days": 0.4760665172077027,
+     "epoch_bkjd": 131.53024320860757,
+     "duration_days": 0.04091196632253695
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2086489481704614016-1",
+   "source_id": "2086489481704614016",
+   "signal_id": "rust-v6-2086489481704614016-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2086489481704614016-1",
+   "source": {
+    "kic": 10816504,
+    "origin_tpf_kic_not_host": 10816490,
+    "ra": 298.3996686202637,
+    "dec": 48.1369591631251,
+    "raw_fits_bytes": 7404480,
+    "raw_fits_sha256": "6b944776f91caa42c3c48f7b6aa51594fab6c5ea2b33325c0bc48996059e9e86"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.8725068642362737,
+    "epoch_bkjd": 452.98245197141387,
+    "duration_days": 0.33304427411435056
+   },
+   "recorded_event_units": 178,
+   "event_quarters": 7,
+   "selected_proposal_sha256": "2ae7aa60c5648ef49cfd38edb7558ba72ea367ad2e0db297f79c79840e4a2945",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2086489481704614016-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.8725068642362737,
+     "epoch_bkjd": 452.98245197141387,
+     "duration_days": 0.33304427411435056
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2100220316049730304-1",
+   "source_id": "2100220316049730304",
+   "signal_id": "rust-v6-2100220316049730304-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2100220316049730304-1",
+   "source": {
+    "kic": 4136245,
+    "origin_tpf_kic_not_host": 4136253,
+    "ra": 284.7893330204206,
+    "dec": 39.24438150578716,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "a2d845f3be3393b145d7141a4fceb194313b604d80cca0491137663fa5bc1804"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.5883364426944233,
+    "epoch_bkjd": 169.93040673315141,
+    "duration_days": 0.16751985919042744
+   },
+   "recorded_event_units": 619,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "e0cd11e130c8096737ac178ea2af4da31773168c1afeabc654aa860456e3d523",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2100220316049730304-1",
+     "discovery_view": "psf_flat",
+     "period_days": 1.5883364426944233,
+     "epoch_bkjd": 169.93040673315141,
+     "duration_days": 0.16751985919042744
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2100223614584673664-1",
+   "source_id": "2100223614584673664",
+   "signal_id": "rust-v6-2100223614584673664-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2100223614584673664-1",
+   "source": {
+    "kic": 4136123,
+    "origin_tpf_kic_not_host": 4136132,
+    "ra": 284.7458651609452,
+    "dec": 39.29875875335038,
+    "raw_fits_bytes": 7030080,
+    "raw_fits_sha256": "20216606d33624238768c9583535ab2f067892491266b4a857ae4dcaa6636548"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 1.5820921418186908,
+    "epoch_bkjd": 131.74479551236607,
+    "duration_days": 0.16686128058244
+   },
+   "recorded_event_units": 306,
+   "event_quarters": 6,
+   "selected_proposal_sha256": "8bfdaaf625839d75d57418986a4605f1e9e352a05611c2844d078926cfb128c7",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2100223614584673664-1",
+     "discovery_view": "psf_flat",
+     "period_days": 1.5820921418186908,
+     "epoch_bkjd": 131.74479551236607,
+     "duration_days": 0.16686128058244
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2103289985012370304-1",
+   "source_id": "2103289985012370304",
+   "signal_id": "rust-v6-2103289985012370304-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2103289985012370304-1",
+   "source": {
+    "kic": 4540746,
+    "origin_tpf_kic_not_host": 4540744,
+    "ra": 284.1038534456017,
+    "dec": 39.62422608596685,
+    "raw_fits_bytes": 8847360,
+    "raw_fits_sha256": "06195d1170a95ea486ebd15a91f0108a82860a2d1fe06e8bf6fc7fd85b02adbb"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.35587468927015964,
+    "epoch_bkjd": 169.79376998092428,
+    "duration_days": 0.041704065148846836
+   },
+   "recorded_event_units": 2599,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "fe5120f82a4d9be5da8ad187c8dce3c3d23962e1d94d7a4b075c07b90e23ce96",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2103289985012370304-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.35587468927015964,
+     "epoch_bkjd": 169.79376998092428,
+     "duration_days": 0.041704065148846836
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2106533368217988864-1",
+   "source_id": "2106533368217988864",
+   "signal_id": "rust-v6-2106533368217988864-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2106533368217988864-1",
+   "source": {
+    "kic": 9515022,
+    "origin_tpf_kic_not_host": 9515026,
+    "ra": 286.0389406670046,
+    "dec": 46.11328550943752,
+    "raw_fits_bytes": 4032000,
+    "raw_fits_sha256": "9b6c37a33024a1fa5a4c118773adb4691813fc9b3d457f2b27332da373caafef"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.017490646410615,
+    "epoch_bkjd": 132.97972184661057,
+    "duration_days": 0.33296448512117127
+   },
+   "recorded_event_units": 156,
+   "event_quarters": 6,
+   "selected_proposal_sha256": "bdcd6073848d9f4a7cc234ccb6db8fac019489f0337fcf1db9ddaefb5ba8a105",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2106533368217988864-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.017490646410615,
+     "epoch_bkjd": 132.97972184661057,
+     "duration_days": 0.33296448512117127
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2107167653281504256-1",
+   "source_id": "2107167653281504256",
+   "signal_id": "rust-v6-2107167653281504256-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2107167653281504256-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9267719,
+    "ra": 285.0562475846239,
+    "dec": 45.73011878814543,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "7f61b09bb8c11892ceb6a1c572a92c7eaea96d040a133b93b920a61201980760"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.7716603400760801,
+    "epoch_bkjd": 131.78388452957572,
+    "duration_days": 0.08440034969582126
+   },
+   "recorded_event_units": 1701,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "8ef3d2c5d6dd5611e469502a7e8d96dcc53abe39ceec4f5b1a1ca9c609f79f5f",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2107167653281504256-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.7716603400760801,
+     "epoch_bkjd": 131.78388452957572,
+     "duration_days": 0.08440034969582126
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2125795682366018176-1",
+   "source_id": "2125795682366018176",
+   "signal_id": "rust-v6-2125795682366018176-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2125795682366018176-1",
+   "source": {
+    "kic": 7199511,
+    "origin_tpf_kic_not_host": 7199526,
+    "ra": 291.5310252199197,
+    "dec": 42.7856089461477,
+    "raw_fits_bytes": 5299200,
+    "raw_fits_sha256": "ec0ecd2343c283a87f0864b7b7c4ebe949274b3d02d68fd0900934562a613b44"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.566778848216587,
+    "epoch_bkjd": 169.82085787482072,
+    "duration_days": 0.06199143652368919
+   },
+   "recorded_event_units": 1060,
+   "event_quarters": 8,
+   "selected_proposal_sha256": "3b02014504a1e44ca7b0ecb3e7872eac0c43371fe6afa163cfb215214bcc3616",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2125795682366018176-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.566778848216587,
+     "epoch_bkjd": 169.82085787482072,
+     "duration_days": 0.06199143652368919
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2126446588949629952-1",
+   "source_id": "2126446588949629952",
+   "signal_id": "rust-v6-2126446588949629952-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2126446588949629952-1",
+   "source": {
+    "kic": 8758214,
+    "origin_tpf_kic_not_host": 8758204,
+    "ra": 293.6427386725182,
+    "dec": 44.97961767750971,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "faf14648c57b9d0865db30402b9f5d7cff6a3e86c7b5b14b326350e8fefab596"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.9982215828410337,
+    "epoch_bkjd": 444.26430727060415,
+    "duration_days": 0.08188536421742855
+   },
+   "recorded_event_units": 299,
+   "event_quarters": 4,
+   "selected_proposal_sha256": "e337c62dcbfa36aad8bf92c874af40a34c45e8589fadb36adb1d27d280263033",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2126446588949629952-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.9982215828410337,
+     "epoch_bkjd": 444.26430727060415,
+     "duration_days": 0.08188536421742855
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2126865915195358720-1",
+   "source_id": "2126865915195358720",
+   "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+   "discovery_view": "psf_qdiag",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2126865915195358720-1",
+   "source": {
+    "kic": 8161259,
+    "origin_tpf_kic_not_host": 8161283,
+    "ra": 290.228365720663,
+    "dec": 44.00569070334025,
+    "raw_fits_bytes": 8521920,
+    "raw_fits_sha256": "624944760cdb29a7c2073cb8a85f591f819b562f224f5f844526df59049e41ec"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.319192110709287,
+    "epoch_bkjd": 122.45062355888743,
+    "duration_days": 0.2536616371088283
+   },
+   "recorded_event_units": 397,
+   "event_quarters": 14,
+   "selected_proposal_sha256": "480f2cd4b9c04864b76066a049028e6f8bb44b3903cb0e9c45a1b9d2a750f484",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "period_days": 2.319192110709287,
+     "epoch_bkjd": 122.45062355888743,
+     "duration_days": 0.2536616371088283
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127355099085636864-1",
+   "source_id": "2127355099085636864",
+   "signal_id": "rust-v6-2127355099085636864-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127355099085636864-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9397989,
+    "ra": 289.0903503017039,
+    "dec": 45.93117579753922,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "a720646d93d014d0a0718cfd79a258004dae003b8cdf0e0ef4e027c4b7dc90fa"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.129806309927018,
+    "epoch_bkjd": 132.12799859163022,
+    "duration_days": 0.2495866769445724
+   },
+   "recorded_event_units": 625,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "f6bcf0154dc6100f6c0da3d6f96536f385247b13f8f315d47f4d28205e7f5ba8",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2127355099085636864-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.129806309927018,
+     "epoch_bkjd": 132.12799859163022,
+     "duration_days": 0.2495866769445724
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2127702609183750528-1",
+   "source_id": "2127702609183750528",
+   "signal_id": "rust-v6-2127702609183750528-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127702609183750528-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 9704685,
+    "ra": 289.4514957408841,
+    "dec": 46.41082421208765,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "9300436a51144f13fe27c7acd0d96ba277f15a0e149d504a6ec91a007ce0d2a3"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.747202655090855,
+    "epoch_bkjd": 131.73080030752965,
+    "duration_days": 0.24974569591735044
+   },
+   "recorded_event_units": 489,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "a758c6f164410219d07ea6c42d9379a9eb1f890b3c3046e157b1791b570b80f6",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2127702609183750528-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.747202655090855,
+     "epoch_bkjd": 131.73080030752965,
+     "duration_days": 0.24974569591735044
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2131801043071611776-1",
+   "source_id": "2131801043071611776",
+   "signal_id": "rust-v6-2131801043071611776-10",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2131801043071611776-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 11231086,
+    "ra": 284.3605432016508,
+    "dec": 48.96716603945578,
+    "raw_fits_bytes": 8876160,
+    "raw_fits_sha256": "ed8a9e72baacd412da69ad668000cdcbbc236bf424fd5661e170e872799e83b8"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.014603662810688,
+    "epoch_bkjd": 132.8534422256698,
+    "duration_days": 0.3326459214135931
+   },
+   "recorded_event_units": 320,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "8cb3585e5d30219b0a0724d5208564862ab0a9090176c834874e4bd16c67e808",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2131801043071611776-10",
+     "discovery_view": "psf_flat",
+     "period_days": 3.014603662810688,
+     "epoch_bkjd": 132.8534422256698,
+     "duration_days": 0.3326459214135931
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2131971879690727168-1",
+   "source_id": "2131971879690727168",
+   "signal_id": "rust-v6-2131971879690727168-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2131971879690727168-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 11179336,
+    "ra": 285.391329736468,
+    "dec": 48.80597726364539,
+    "raw_fits_bytes": 8876160,
+    "raw_fits_sha256": "11a375117c214d07d9ef435a1021b47ab77fe40fac54c5ef87b550973e846d0d"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.6131828225023351,
+    "epoch_bkjd": 131.58907893093757,
+    "duration_days": 0.06227638041039341
+   },
+   "recorded_event_units": 1650,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "3d01eada0c88cf4a97be2826bf9b7599cf06fa38fcdf7699868d5bd7a34ec22b",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2131971879690727168-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.6131828225023351,
+     "epoch_bkjd": 131.58907893093757,
+     "duration_days": 0.06227638041039341
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2133034969998575360-1",
+   "source_id": "2133034969998575360",
+   "signal_id": "rust-v6-2133034969998575360-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2133034969998575360-1",
+   "source": {
+    "kic": 11759329,
+    "origin_tpf_kic_not_host": 11759326,
+    "ra": 289.671775757482,
+    "dec": 49.90314831450409,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "08c34358605cf4eebd0530bf4c32038854f9177baaca22fe67c458d6bd2f8444"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.7833617874810778,
+    "epoch_bkjd": 132.07058934342015,
+    "duration_days": 0.08262018852339492
+   },
+   "recorded_event_units": 1655,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "03ce7f7e4901cc0489c44596195d5255d244e243369c5a6aaa436dd4cb18dedd",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2133034969998575360-1",
+     "discovery_view": "psf_flat",
+     "period_days": 0.7833617874810778,
+     "epoch_bkjd": 132.07058934342015,
+     "duration_days": 0.08262018852339492
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "period_days": 0.7833689166837658,
+     "epoch_bkjd": 132.06447435610033,
+     "duration_days": 0.08262094043149093
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "period_days": 0.7833675776082751,
+     "epoch_bkjd": 132.0675334415475,
+     "duration_days": 0.08262079920087277
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2133051978069556352-1",
+   "source_id": "2133051978069556352",
+   "signal_id": "rust-v6-2133051978069556352-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2133051978069556352-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 12009642,
+    "ra": 289.5181307593257,
+    "dec": 50.42168927068051,
+    "raw_fits_bytes": 11422080,
+    "raw_fits_sha256": "8c6649c0570fe118c837175351900e1fa0d0012a43ca00a1767966b855666369"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 2.2326998918929055,
+    "epoch_bkjd": 131.6996172795802,
+    "duration_days": 0.2529230346284932
+   },
+   "recorded_event_units": 592,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "5e294378c8cdb1fb4d314f99d02e21acaad9bf53e2b14d1c076e7b223e401114",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2133051978069556352-1",
+     "discovery_view": "psf_flat",
+     "period_days": 2.2326998918929055,
+     "epoch_bkjd": 131.6996172795802,
+     "duration_days": 0.2529230346284932
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2133767416541087232-1",
+   "source_id": "2133767416541087232",
+   "signal_id": "rust-v6-2133767416541087232-1",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 1,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2133767416541087232-1",
+   "source": {
+    "kic": null,
+    "origin_tpf_kic_not_host": 12400506,
+    "ra": 287.2664449477551,
+    "dec": 51.21015641238249,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "0d8f8b58c30737eccf006e62eed9ad1f7573ba9fd41238812b5ee1175d3f822c"
+   },
+   "requires_event_independence_review": null,
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 3.207264857398472,
+    "epoch_bkjd": 132.3348118374629,
+    "duration_days": 0.33322232284659453
+   },
+   "recorded_event_units": 421,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "d0c6e8f382a18d7e8a6343953e1b36e88a04bbe3d45930571040dd23b22feb1a",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2133767416541087232-1",
+     "discovery_view": "psf_flat",
+     "period_days": 3.207264857398472,
+     "epoch_bkjd": 132.3348118374629,
+     "duration_days": 0.33322232284659453
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-2",
+   "source_id": "2077554781499350144",
+   "signal_id": "rust-v6-2077554781499350144-5",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 2,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077554781499350144-2",
+   "source": {
+    "kic": 6699887,
+    "origin_tpf_kic_not_host": 6699878,
+    "ra": 294.1456264175997,
+    "dec": 42.18798611439082,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "bed66e6b4566450d19c98f4b1aa1bc5238326d66b23506053f651102966f9369"
+   },
+   "requires_event_independence_review": {
+    "retained_boi": "BOI-2077554781499350144-1",
+    "period_ratio": 2.999935193,
+    "maximum_event_clock_offset_hours": 0.55117,
+    "half_sum_duration_hours": 3.49846,
+    "matched_retained_event_centres": 86
+   },
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 5.038009790103395,
+    "epoch_bkjd": 134.7078292781936,
+    "duration_days": 0.1665457781852362
+   },
+   "recorded_event_units": 263,
+   "event_quarters": 17,
+   "selected_proposal_sha256": "c8a36a41645da017b795e494b2168274d513e0470eac5fbfd744290c23f11f04",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2077554781499350144-5",
+     "discovery_view": "psf_flat",
+     "period_days": 5.038009790103395,
+     "epoch_bkjd": 134.7078292781936,
+     "duration_days": 0.1665457781852362
+    },
+    {
+     "signal_id": "shallow-v1-2077554781499350144-2",
+     "discovery_view": "psf_flat",
+     "period_days": 5.037838276507056,
+     "epoch_bkjd": 134.7472321592644,
+     "duration_days": 0.10000000000000002
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-3",
+   "source_id": "2077967368932890752",
+   "signal_id": "rust-v6-2077967368932890752-20",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 2,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2077967368932890752-3",
+   "source": {
+    "kic": 7373485,
+    "origin_tpf_kic_not_host": 7373483,
+    "ra": 294.9215419412108,
+    "dec": 42.95054772833016,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "619fc93bd0f5bb332272dd6d3b1a1948c3cd7331648994b7d25e22fc137b7cb3"
+   },
+   "requires_event_independence_review": {
+    "retained_boi": "BOI-2077967368932890752-1",
+    "period_ratio": 7.000337877,
+    "maximum_event_clock_offset_hours": 0.86598,
+    "half_sum_duration_hours": 1.75742,
+    "matched_retained_event_centres": 224
+   },
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 0.6226153981433231,
+    "epoch_bkjd": 260.2859079291787,
+    "duration_days": 0.06323437637393126
+   },
+   "recorded_event_units": 1493,
+   "event_quarters": 12,
+   "selected_proposal_sha256": "cbbd4b5ac414e36655a4a116e3fa5bf6701d1ffbd9b4692b42e8b06f96ca06c3",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-20",
+     "discovery_view": "psf_flat",
+     "period_days": 0.6226153981433231,
+     "epoch_bkjd": 260.2859079291787,
+     "duration_days": 0.06323437637393126
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-2",
+   "source_id": "2126354436132009088",
+   "signal_id": "rust-v6-2126354436132009088-4",
+   "discovery_view": "psf_flat",
+   "lineage": "restored_rust",
+   "search_significance": null,
+   "significance_statistic": "original_search_snr",
+   "priority_tier": 2,
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2126354436132009088-2",
+   "source": {
+    "kic": 8234517,
+    "origin_tpf_kic_not_host": 8234513,
+    "ra": 292.2458886357584,
+    "dec": 44.13983936024226,
+    "raw_fits_bytes": 11419200,
+    "raw_fits_sha256": "86d80ecb6ec4213aa75012e72e1691fd26adf476fae069b198570766fb6aa7ce"
+   },
+   "requires_event_independence_review": {
+    "retained_boi": "BOI-2126354436132009088-1",
+    "period_ratio": 2.999791973,
+    "maximum_event_clock_offset_hours": 1.79067,
+    "half_sum_duration_hours": 3.49808,
+    "matched_retained_event_centres": 54
+   },
+   "state": "SCHEDULED_FOR_STANDARD_READINESS",
+   "probability_ready": false,
+   "policy": "Discovery-view inclusive: no SAP-SNR admission veto; native SAP and source-corrected native inputs require explicit conventions, source/aperture authentication and the same standard likelihood path. A missing or weak SAP diagnostic never removes a PSF_FLAT BOI.",
+   "selected_clock": {
+    "period_days": 6.2240084609703095,
+    "epoch_bkjd": 134.01020303186928,
+    "duration_days": 0.1248964908555915
+   },
+   "recorded_event_units": 156,
+   "event_quarters": 13,
+   "selected_proposal_sha256": "d0afdd62753ca691e37a1c34bcd47e193eb5a4301ddf369fb80e43ab747111eb",
+   "discovery_proposal_bindings": [
+    {
+     "signal_id": "rust-v6-2126354436132009088-4",
+     "discovery_view": "psf_flat",
+     "period_days": 6.2240084609703095,
+     "epoch_bkjd": 134.01020303186928,
+     "duration_days": 0.1248964908555915
+    }
+   ],
+   "native_queue_state": null,
+   "postfit_scientific_review_required": true
+  }
+ ],
+ "full_manifest_sha256": "5fe36d1f2dac84d163e2adc22aef509c110d3bf2594c0527477997f2d20cbe2a",
+ "updated_utc": "2026-10-26T17:49:15.809026+00:00",
+ "intake_status": {
+  "utc": "2026-10-26T17:39:18.966500+00:00",
+  "boi_id": "BOI-2102266442767690112-1",
+  "signal_id": "shallow-v1-2102266442767690112-1",
+  "discovery_view": "psf_flat",
+  "state": "INTAKE_STOPPED_REQUIRES_REVIEW",
+  "error": "RuntimeError('Acquisition failed; inspect /Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/logs/BOI-2102266442767690112-1-acquire.log: line 266, in <module>\\n    (plan_only if \"--plan-only\" in sys.argv else main)(sys.argv[1], sys.argv[2], Path(sys.argv[3]))\\n  File \"/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/source/acquire_intake.py\", line 142, in main\\n    geometry(case, scene, rows, parents)\\n  File \"/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/source/acquire_intake.py\", line 185, in geometry\\n    aperture, review = physical_aperture(lc, ap, parent)\\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/Users/adam/Other/spacelab/post_boi/aperture.py\", line 79, in physical_aperture\\n    require(\\n  File \"/Users/adam/Other/spacelab/post_boi/records.py\", line 13, in require\\n    raise ValueError(message)\\nValueError: Saved mask does not contain the declared full aperture\\n')"
+ },
+ "hourly_followup_automation": "monitor-standard-post-boi-intake",
+ "scope": "104 scheduled standard-readiness reviews, preserving original discovery views. This is not a claim that 104 cases are admitted to native fitting or TRICERATOPS."
+}

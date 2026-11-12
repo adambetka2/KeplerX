@@ -1,0 +1,391 @@
+{
+  "utc": "2026-10-20T03:10:53.362312+00:00",
+  "source_id": "2105665750463516800",
+  "status": "NATIVE_TIMING_SCENE_AND_ENGINEERING_PREPARED_NOT_PROBABILITY_OR_PHYSICAL_ADMISSION",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_followups": 0,
+  "false_positive_rate": null,
+  "primary_progress": {
+    "status": "RUNNING",
+    "first_failure": null,
+    "required_full_repeats": 43,
+    "completed_full_repeats": 0,
+    "completed_million_draw_scenario_blocks": 1422,
+    "freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/probability-campaign-v1/freeze.json",
+      "sha256": "df51d31339117a49cecc3573111821272211397e7d8099feaac89f561039988b"
+    }
+  },
+  "native_fit": {
+    "period_days": 66.88982933091638,
+    "epoch_bkjd": 931.1162276934078,
+    "duration_days": 0.18924800698452263,
+    "native_convergence": {
+      "passed": true,
+      "radius_ratio_snr": 7.694598249545143,
+      "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+    },
+    "rank_rhat_maximum": 1.022016640924632,
+    "reference_epoch_bulk_ess": 267.25515278577444,
+    "apparent_radius_ratio_quantiles_16_50_84": [
+      0.05163246410151437,
+      0.05807294502574575,
+      0.0667269350907559
+    ],
+    "original_to_final_timing_shift_at_span_endpoints_days": [
+      0.009755316298821981,
+      -0.015459225800441345
+    ],
+    "time_system": "BKJD TDB; BJD-2454833"
+  },
+  "posterior_exposure_check": {
+    "passed": true,
+    "draws": 80,
+    "maximum_log_density_error": 0.00015129350407505626,
+    "maximum_point_noise_error": 2.2517131491359215e-05,
+    "maximum_live_frame_correction_ppm": 0.0029653426381059944
+  },
+  "timing": {
+    "conditional_quarter_two_delta_log_density": 15.261606820802534,
+    "quarter_dof": 14,
+    "conditional_quarter_wilks_tail": 0.3605086603045391,
+    "period_profile_peaks": [
+      {
+        "period_delta_ppm": -3.9242894334949625,
+        "delta_from_unscanned_median": -0.36380906523413614
+      }
+    ],
+    "scope": "Conditional shape/noise-median profiles, not marginalized timing or independent TTV exclusion. Native posterior medians determine adoption before FPP."
+  },
+  "engineering": {
+    "aggregate": {
+      "events": 18,
+      "depth": 0.004451294896893051,
+      "error": 0.0006539120944595575,
+      "snr": 6.807176277374007,
+      "chi2": 24.84126310532435,
+      "dof": 17,
+      "descriptive_chi2_tail": 0.09831944872638322,
+      "positive_events": 17,
+      "maximum_information_fraction": 0.08998847804402207
+    },
+    "matched_event_comparisons": {
+      "with_parent_pointing_background": {
+        "same_events_baseline": {
+          "events": 18,
+          "depth": 0.004451294896893051,
+          "error": 0.0006539120944595575,
+          "snr": 6.807176277374007,
+          "chi2": 24.84126310532435,
+          "dof": 17,
+          "descriptive_chi2_tail": 0.09831944872638322,
+          "positive_events": 17,
+          "maximum_information_fraction": 0.08998847804402207
+        },
+        "alternative": {
+          "events": 18,
+          "depth": 0.004540995737280686,
+          "error": 0.000709645435962846,
+          "snr": 6.398964196985879,
+          "chi2": 19.05208347011314,
+          "dof": 17,
+          "descriptive_chi2_tail": 0.32555082590294004,
+          "positive_events": 17,
+          "maximum_information_fraction": 0.09544447492562365
+        }
+      },
+      "exclude_parent_rolling_band": {
+        "same_events_baseline": {
+          "events": 18,
+          "depth": 0.004451294896893051,
+          "error": 0.0006539120944595575,
+          "snr": 6.807176277374007,
+          "chi2": 24.84126310532435,
+          "dof": 17,
+          "descriptive_chi2_tail": 0.09831944872638322,
+          "positive_events": 17,
+          "maximum_information_fraction": 0.08998847804402207
+        },
+        "alternative": {
+          "events": 18,
+          "depth": 0.004506970503631725,
+          "error": 0.0006597381802247919,
+          "snr": 6.8314532017778165,
+          "chi2": 26.21019455725992,
+          "dof": 17,
+          "descriptive_chi2_tail": 0.07071520340671801,
+          "positive_events": 17,
+          "maximum_information_fraction": 0.09159914148586695
+        }
+      }
+    },
+    "parity": [
+      {
+        "parity": 0,
+        "events": 9,
+        "depth": 0.003973476717881486,
+        "error": 0.0008927759244019568,
+        "snr": 4.450698780372237,
+        "chi2": 16.766552442308527,
+        "dof": 8,
+        "descriptive_chi2_tail": 0.03263385938660519,
+        "positive_events": 8,
+        "maximum_information_fraction": 0.1572838423277597
+      },
+      {
+        "parity": 1,
+        "events": 9,
+        "depth": 0.005004324393820605,
+        "error": 0.0009604732714620386,
+        "snr": 5.210269293806573,
+        "chi2": 7.456733786668723,
+        "dof": 8,
+        "descriptive_chi2_tail": 0.48824853416589653,
+        "positive_events": 9,
+        "maximum_information_fraction": 0.1941416579102848
+      }
+    ],
+    "mechanism_reproduced": false
+  },
+  "native_clock_localization": [
+    {
+      "source_id": "2105665750463516800",
+      "event_count": 18,
+      "failures": 0,
+      "source_attribution": {
+        "status": "TARGET_COMPATIBLE",
+        "good_quarters": 10,
+        "minimum_good_quarters": 3,
+        "robust_offset_arcsec": [
+          -0.6788371479894298,
+          -0.24839600672016743
+        ],
+        "offset_distance_arcsec": 0.7228557599168375,
+        "offset_uncertainty_arcsec": 2.172075555800248,
+        "offset_significance": 0.3327949426006587,
+        "required_significance": 4.0,
+        "uncertainty_variance_arcsec2": {
+          "formal": 4.692312220104957,
+          "quarter_scatter": 1.601637097461645,
+          "jackknife": 2.636006289493525
+        },
+        "aggregate_systematic_arcsec": 0.16,
+        "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+      },
+      "scene_prf_compared_quarters": 10,
+      "scene_prf_target_preferred_quarters": 3
+    }
+  ],
+  "scene": [
+    {
+      "source_id": "2105665750463516800",
+      "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+      "source_count": 28,
+      "missing_scene_log_prior_mass_upper": {
+        "nonfinite": "-inf"
+      }
+    }
+  ],
+  "packet": {
+    "status": "FINAL_AND_RECOVERED_CLOCK_PACKETS_PREPARED_NOT_PROBABILITY_ADMISSION",
+    "registered_other_signal_excluded_photons": 279,
+    "packets": [
+      {
+        "clock": "final",
+        "native_points": 688,
+        "occupied_bins": 200
+      },
+      {
+        "clock": "recovered",
+        "native_points": 689,
+        "occupied_bins": 195
+      }
+    ],
+    "quarter_noise_extension": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-probability-packets-v1/2105665750463516800/quarter-noise-extension.json",
+      "sha256": "d98fa0b71d80f1a78bbc7620ecd54c59cd4e5e8d20fba445e990024df6ba9279"
+    },
+    "scope": "Registered competingBOI masks retained in all hypotheses. All valid retained photons, including partialQ11 events, have explicit quarter inputs; normalization/error arrays from accepted native primary quarters are unchanged."
+  },
+  "known_planet_engine_controls": [
+    {
+      "source_id": "2126556132093765888",
+      "model": "RETAINED_FIXED_CONTROL",
+      "status": "KNOWN_CONTROL_ENGINE_AND_COVARIANCE_CHECKS_PASSED",
+      "scenario_count": 96,
+      "posterior_l1_difference": 0.0,
+      "packet_covariance_checks": [
+        {
+          "stage": "final",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 5.2313142609347404e-15,
+          "dense_covariance_quadratic_error": 1.7053025658242404e-13,
+          "retained_modes": 193
+        },
+        {
+          "stage": "recovered",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 1.174453871828629e-14,
+          "dense_covariance_quadratic_error": 2.5579538487363607e-13,
+          "retained_modes": 188
+        }
+      ],
+      "receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-engine-controls-v1/2126556132093765888/RETAINED_FIXED_CONTROL/controls.json",
+        "sha256": "033e934223aec18b0347aeea0ce9886e9069fcd4bb448170ada28fca60e10b27"
+      }
+    },
+    {
+      "source_id": "2100258047339711488",
+      "model": "RETAINED_FIXED_CONTROL",
+      "status": "KNOWN_CONTROL_ENGINE_AND_COVARIANCE_CHECKS_PASSED",
+      "scenario_count": 102,
+      "posterior_l1_difference": 0.0,
+      "packet_covariance_checks": [
+        {
+          "stage": "final",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 8.326672684688674e-14,
+          "dense_covariance_quadratic_error": 4.756657290272415e-10,
+          "retained_modes": 195
+        },
+        {
+          "stage": "recovered",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 1.8360313269738526e-14,
+          "dense_covariance_quadratic_error": 2.7853275241795927e-12,
+          "retained_modes": 106
+        }
+      ],
+      "receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-engine-controls-v2/2100258047339711488/RETAINED_FIXED_CONTROL/controls.json",
+        "sha256": "c7dede96027860fb95b9a3b186004fa73f5114c22b8febca9726a2f44a78980f"
+      }
+    },
+    {
+      "source_id": "2100258047339711488",
+      "model": "UNIFORM_PHYSICAL_QUADRATIC",
+      "status": "KNOWN_CONTROL_ENGINE_AND_COVARIANCE_CHECKS_PASSED",
+      "scenario_count": 102,
+      "posterior_l1_difference": 0.0,
+      "packet_covariance_checks": [
+        {
+          "stage": "final",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 8.326672684688674e-14,
+          "dense_covariance_quadratic_error": 4.756657290272415e-10,
+          "retained_modes": 195
+        },
+        {
+          "stage": "recovered",
+          "bound_domain_cases": 73,
+          "maximum_bound_error": 0.0,
+          "dense_covariance_identity_error": 1.8360313269738526e-14,
+          "dense_covariance_quadratic_error": 2.7853275241795927e-12,
+          "retained_modes": 106
+        }
+      ],
+      "receipt": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-engine-controls-v2/2100258047339711488/UNIFORM_PHYSICAL_QUADRATIC/controls.json",
+        "sha256": "78058ce52f8d522f35f0b5d32a64504489631143491a84d803f61357733bf21b"
+      }
+    }
+  ],
+  "empirical_model_comparison": {
+    "status": "DESIGN_REGISTERED_NOT_LAUNCHED",
+    "design": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-model-empirical-design-v1/design.json",
+      "sha256": "5af5cdccfa5b5c5e03fb3a6887d364df7065b517750e524463a181f92af19f32"
+    },
+    "planned_control_repeats": 18,
+    "attempts_per_scenario": 1000000,
+    "scope": "3fixedsharedseeds for each of3externalcontrols and2blindedmodels, separate from every new-candidate20primary budget. Numerical/covariance parity is not empirical probability calibration or population reliability."
+  },
+  "binary_control": {
+    "status": "NATIVE_ENDPOINT_REVIEW",
+    "native_refinement": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/known-binary-native270-refinement-v2-plan.json",
+      "sha256": "50c91bbf1c24289dd3738063dc3d96e4dc9b16a5408801bdd40e9fc2363db717"
+    },
+    "source_and_fixture": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v1/2133476355197071616/fixture-selection.json",
+      "sha256": "673dd06caf0905ba11cd771a1707edbc7d1ff2a804425c558d7cfea8a03b0847"
+    },
+    "published_reference": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v1/2133476355197071616/published-binary-reference.json",
+      "sha256": "d2355669a12043a2b219efa730fcfb7cd0c46eed4bbc807563a9e9bc63d48839"
+    },
+    "preserved_54point_failure": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v1/2133476355197071616/acquisition-integration-check.json",
+      "sha256": "34d4567ae5342c84df3a47161ab765f9750c9f4492a294422e721c3cdd57637a"
+    },
+    "exact_native_live_exposure_check": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-binary-native-v2/2133476355197071616/acquisition-integration-check.json",
+      "sha256": "a373dc3d72500e6a76a5587ed5486494168e98c6ebc4a512988c898c6f21d066"
+    },
+    "scope": "Known eccentric/dynamical binary primary, not Kepler16b planet. One predeclaredQ1 event isolates local eclipse shape. Native270/live810 checks pass with the original0.1log-density criterion;54point probability accuracy and posterior checks remain open. No newBOI changes or probability retries."
+  },
+  "open_readiness": [
+    "Review source ownership/scene probabilities with full photons; a target-compatible free centroid and fixedPRF diagnostics are not independent likelihoods.",
+    "Close target/neighbor stellar priors, dilution-aware radius, companions/imaging and dated exact-signal literature.",
+    "Review scalar noise and partial-quarter extension; parent sensitivity diagnostics do not bound all temporal/background correlations.",
+    "Complete the declared external empirical model comparison and reference evidence review before a separate new production freeze.",
+    "No new probability coordinator while the current43required studies own their campaign. Exactly20final-clock primaries remain required per newcandidate.",
+    "Keep detector10000case calibration separately deferred/open and all originalBOI dispositions unchanged."
+  ],
+  "receipts": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v4/2105665750463516800/native-fit-review.json",
+      "sha256": "97425148eecbad2d06407e2ef11247c20ccbf5efad6b35d8535a73591955578b"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v4/2105665750463516800/posterior-numerical-check.json",
+      "sha256": "2c68402ddc117d09cb2b3cd0a06cd6e8666510ca87a7d4047b282af3ab46326b"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-timing-review-v3/2105665750463516800/review.json",
+      "sha256": "532fafc2334e5f1b98a0a34cdb6656ffc52c5285b157db2e31299a254b40696f"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-engineering-review-v4/2105665750463516800/review.json",
+      "sha256": "39e0588df893d0afa3b73540b311d8000253c6ea5d90a6b72270d89448918eec"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-localization-v1/input-freeze.json",
+      "sha256": "81da3a1840a27b443d35ca62ac90e41b51bdd0bddd34ed1de0dbf6c80a22988d"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-localization-v1/summary.json",
+      "sha256": "b862b3d130816c57bd9bb14d49a5551e6acecbe6d59d9b28c506707e35e5ef83"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-scene-v1/summary.json",
+      "sha256": "4fd192a6a554deafab659af043c2dce9a383cd8977000106648d0469650081b6"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-probability-packets-v1/2105665750463516800/preparation.receipt.json",
+      "sha256": "961b74ec8ed074b357aa4fa3adf917463bbe391fe02c1b2c942b3457ebf1ccf9"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native210566-inputs-v1/native-preparations.json",
+      "sha256": "1ee14ab16d755f083319d100e97e2638e036879bf15259d4ba3d270478c1c3b1"
+    }
+  ],
+  "verification": {
+    "code_checks_from_previous_unchanged_post_boi_commit": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v6/ruff.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    "post_boi_tests": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v6/tests.log",
+      "sha256": "f3590a2500131c319f31260590123aaab8006c49d111aa4bd4fe02dfbb2e7ea7"
+    },
+    "scope": "This repository change records external research; no productionPython code or frozen active input changed. Native/reference controls above are separate scientific checks."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-21T01:03:58.853471+00:00",
+  "source_id": "2106383701495087232",
+  "kic": 8805426,
+  "signal_id": "rust-v6-2106383701495087232-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_fit_started": false,
+  "probability_runs": 0,
+  "reason": "Candidate-specific pre-native aperture comparison finds substantial seasonal Gaussian/calibrated-core disagreement. Q1target.6714vs.8659,Q12.8142vs.9312,Q17.6989vs.8837; other quarters retained. No new native or FPP allocation justified without adequate response support.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/scene-preview-review-v1.json",
+      "sha256": "698cccccb5fe5094039e4fe22c42aabaee56ed0f90af1b4fdb78e4299215fa67"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/aperture-response-review-v1.json",
+      "sha256": "a40d2e55e46d99d58cff8e8f783b25749f855708ed16853006461e2e773fbcbd"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/native-stellar-review.json",
+      "sha256": "30de84f701c571ed227ddaba6e3ada7a66c10ce76ad9e19e120a55f789b307ef"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/native-preparation-review.json",
+      "sha256": "1b531d3d6e2bb9db3648029ae3e14a8b1d9473335c7f5cad4746b84a24f849a7"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/selection.json",
+      "sha256": "e53f92297a9451a178f54b26843726312d752f7ac6732129901a209046097779"
+    }
+  ],
+  "scope": "All18sources retained and estimated with unchanged upstream functions; reported empirical TIC cool-dwarf M/R errors retained, alternate Gaia route explicit. Core comparison is not complete measured far-source flux or a universal numeric veto. No new physical FP denial. Old V1 custom-background-domain failure and26million saved weights/checkpoints are unchanged, no old resume.",
+  "next": "Preserve and advance to next eligible full-queue host; do not reconstruct response or repeat old V1 tonight."
+}

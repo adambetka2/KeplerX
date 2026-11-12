@@ -1,0 +1,13 @@
+{
+ "current_rust_groups": 147,
+ "current_rust_proposals": 156,
+ "current_rust_sources": 116,
+ "restored_groups": 34,
+ "initial_exclusions_audited": 33,
+ "all_current_proposal_clocks_equal_frozen": true,
+ "frozen_catalogues_and_historical_selection_bytes_equal_HEAD": true,
+ "readiness_queue_covers_all_restored": true,
+ "initial_audit_matches_exact_manual_no_set": true,
+ "alias_clock_offsets_recomputed": true,
+ "public_release_table_rows": 156
+}

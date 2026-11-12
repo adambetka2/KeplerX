@@ -1,0 +1,144 @@
+{
+  "schema": 6,
+  "cohort": "Every source and event in the supplied detector proposal queue",
+  "endpoint": "Bonus Objects of Interest and a complete ledger of held and dismissed transit signals",
+  "preserve_all_sources_and_alerts": true,
+  "downstream_execution": "Only ACTIVE signal and event identities continue after each triage gate; held and dismissed records remain in the ledger",
+  "neighbour_radius_arcsec": 60,
+  "exposure_days": 0.02043361111111111,
+  "supersample_factor": 51,
+  "local_context_durations": 4,
+  "minimum_context_days": 0.5,
+  "model": "Exposure-integrated local transit shape with a simultaneous linear baseline and free physical quadratic limb darkening. Fitted transit overlaps the original detector interval; midpoint may lie outside it. Unit dilution defines an apparent radius ratio, not an absolute companion size; computational period is not an inferred orbit.",
+  "promotion": "Designate a BOI after all five existing triage gates pass. Retain first-failure labels and reasons; attributed reviews are annotations. Unknown period is not a veto.",
+  "archive_timeout_seconds": 45,
+  "gaia_tap_endpoint": "https://gaia.ari.uni-heidelberg.de/tap/sync",
+  "quality_bitmask": -1,
+  "quality_selection": "Require SAP_QUALITY == 0 and exclude nonzero primary FLATTEN_MASK cadences, including cadence-matched diagnostic views. Original quality flags are retained.",
+  "run_directory": "dump/vetting",
+  "queue": "dump/discovery/queue.json",
+  "pixel_cache_directory": "dump/pixel-cache",
+  "prf_cache_directory": "dump/prf-cache",
+  "parent_index": "dump/parent-index-20260925/parents.sqlite",
+  "parent_index_sha256": "9d5ca5f4e7dc34ed60312991d9bcb02f96bbeb255e775c0fdece9e9d276b483e",
+  "pixel_policy": {
+    "minimum_prf_correlation": 0.3,
+    "offset_sigma": 3.0,
+    "reference": "Kepler Centroid Robovetter KSCI-19115-001 and Bryson et al. 2013, arXiv:1303.0052",
+    "quality_calibration": "PRF-correlation threshold fitted on opened pixel-level planet development controls and opened catalogue false-positive diagnostics; untouched evaluation controls remain sealed",
+    "astrometric_systematic_arcsec": null,
+    "minimum_good_quarters": 3,
+    "aggregate_systematic_arcsec": 0.16,
+    "single_event_minimum_quarter_snr": 7.1,
+    "single_quarter_systematic_arcsec": 0.5,
+    "minimum_material_offset_arcsec": 0.2,
+    "large_offset_arcsec": 2.0,
+    "small_offset_sigma": 4.0,
+    "large_offset_sigma": 3.0
+  },
+  "workers": null,
+  "network_workers": null,
+  "optimizer_max_evaluations": 100,
+  "joint_fit_max_units_per_signal": 64,
+  "timing_refinement_max_period_days": 3,
+  "timing_refinement_max_units": 64,
+  "timing_refinement_grid_points": 31,
+  "timing_refinement_minimum_event_train_positive_z": -10,
+  "short_period_shape_max_days": 0.5,
+  "short_period_joint_fit_max_units": 1024,
+  "short_period_joint_fit_max_missing_fraction": 0.05,
+  "diagnostic_max_units_per_signal": 18,
+  "alias": {
+    "workers": null,
+    "max_eb_rows_per_signal": 3,
+    "minimum_supplied_event_alignment": 0.8,
+    "minimum_independent_events": 5,
+    "maximum_single_event_information_fraction": 0.5,
+    "minimum_independent_depth_snr": 7,
+    "maximum_source_eb_harmonic_order": 8,
+    "maximum_source_eb_harmonic_period_error_fraction": 0.01,
+    "minimum_source_eb_harmonic_alignment": 0.5,
+    "minimum_source_eb_odd_even_bic_gain": 10
+  },
+  "input_manifest": null,
+  "disposition_policy": "pipeline/vetting/disposition-policy.json",
+  "network": true,
+  "triage_execution": "SKIP_AFTER_FIRST_FAILURE",
+  "triage": {
+    "enabled": true,
+    "shape_transit_bic_margin": 10,
+    "shape_false_alarm_bic_margin": 10,
+    "assessment_rules": {
+      "instrument": {
+        "id": "instrument-quality-spatial-null-v3",
+        "status": "RELEASED",
+        "material_quality_flags": [],
+        "spatial_null_bic_margin": 10
+      },
+      "source_localization": {
+        "id": "pixel-attribution-v2",
+        "status": "RELEASED",
+        "accepted_statuses": [
+          "TARGET_COMPATIBLE"
+        ],
+        "material_statuses": [
+          "ROBUST_OFFSET_CONFLICT"
+        ]
+      },
+      "contamination": {
+        "id": "catalogue-neighbour-v6",
+        "minimum_scene_prf_compared_quarters": 3,
+        "status": "RELEASED",
+        "minimum_neighbour_depth_sigma": 7,
+        "minimum_competing_source_separation_arcsec": 1,
+        "minimum_catalogue_match_units": 2,
+        "minimum_catalogue_match_fraction": 0.5,
+        "maximum_harmonic_order": 8,
+        "maximum_harmonic_period_error_fraction": 0.001,
+        "minimum_harmonic_match_units": 10,
+        "minimum_harmonic_expected_match_fraction": 0.25,
+        "accepted_scene_statuses": [
+          "GAIA_SCENE_QUERIED"
+        ],
+        "accepted_neighbour_statuses": [
+          "MEASURED"
+        ]
+      },
+      "identity_catalogues": {
+        "id": "catalogue-signal-identity-v2",
+        "status": "RELEASED",
+        "minimum_catalogue_match_units": 2,
+        "minimum_catalogue_match_fraction": 0.5,
+        "maximum_harmonic_order": 8,
+        "maximum_harmonic_period_error_fraction": 0.001,
+        "minimum_harmonic_match_units": 10,
+        "minimum_harmonic_expected_match_fraction": 0.25,
+        "material_signal_classes": [
+          "ECLIPSING_BINARY",
+          "FALSE_POSITIVE"
+        ],
+        "accepted_catalogue_statuses": [
+          "SCOPED_CATALOGUES_CHECKED"
+        ]
+      },
+      "orbital": {
+        "id": "orbital-eb-v2",
+        "status": "RELEASED",
+        "maximum_odd_even_bic_gain": 10,
+        "minimum_secondary_sigma": 7,
+        "maximum_secondary_to_primary_depth_ratio": 0.5,
+        "maximum_phase_modulation_period_days": 10,
+        "minimum_phase_modulation_signal_to_noise": 50,
+        "minimum_phase_modulation_amplitude_fraction": 0.005,
+        "maximum_phase_modulation_to_primary_depth_ratio": 1
+      }
+    }
+  },
+  "orbital_max_windows": 8192,
+  "orbital_computation_scope": "Resource bound on predicted-time measurements only; exceeding it reports incomplete evidence and retains the signal. No orbital period eligibility cutoff.",
+  "catalogue_search": {
+    "rule": "complete-catalogue-common-recurrence-v1",
+    "manifest": "dump/catalogue-search-20261012-v3/manifest.json",
+    "manifest_sha256": "97a088b7ffacd744ef5878995f2f244376af8c09d70109998b169e257db6e60a"
+  }
+}

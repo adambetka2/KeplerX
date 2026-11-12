@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "name": "WD 1145+017",
+  "reference_class": "Variable debris transits",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Rapidly changing, asymmetric deep dips on an hours-long repetition timescale.",
+  "lookalikes": [
+    "eclipsing binary",
+    "other dust obscuration"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "FLWO and MEarth ground photometry, with points and binned points; recurrence comes from the paper’s K2 analysis."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "dominant_recurrence": {
+      "value": 4.5,
+      "unit": "h",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "reported_period_range": {
+      "value": [
+        4.5,
+        4.9
+      ],
+      "unit": "h",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "maximum_dip_depth": {
+      "value": 0.4,
+      "unit": "relative flux",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1510.06387",
+    "pdf_url": "https://arxiv.org/pdf/1510.06387",
+    "pdf_page_one_based": 3,
+    "figure": "3",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "ace6536af8f486e773e6eb242ee2760f4abc3c0f1e3f16711d08c9f6786ec9e4",
+    "page_crop_fraction_xyxy": [
+      0.49,
+      0.075,
+      0.94,
+      0.355
+    ],
+    "image_sha256": "fc7ca8496d0b81183ff9302cd3140813862f85dc9bc9bb6fef3f14a09a786289"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

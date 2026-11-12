@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "status": "EXACT_APPROVED_NATIVE_DEVELOPMENT_PROTECTION_CLOSURE",
+  "approval_sha256": "a81326d68768cf4523c6c09e96fabdcb7c48092d9114dfc96f195b6d69a68450",
+  "exposure_overlay_sha256": "9af592bc86e136206e8293c450f6b6cb4ab702389c04cbcef7b615779e53967e",
+  "complete_development_exposure_sha256": "ae8a0060fcb4b4df5681a826f76abe51528808059e12d94af18b46105784a9fb",
+  "derivation_sha256": "ef5368d156b2bdaf3d00afd1901583c5073bce0d16d52ff2fa91a2794b2ae8b0",
+  "historical_protection_guard_sha256": "c9615acbc83a611fba2d2f699f58a96a11033c72172bd78c7f614b4d44a810e8",
+  "protection_guard_sha256": "d136407cc4b40692ee82bea7f31249d558415971546fe45089695a9f81c2fe64",
+  "retired_trial_ids": [
+    "catalogue_fp:evaluation:2051295591966202880",
+    "catalogue_fp:evaluation:2051806555638910720",
+    "catalogue_fp:evaluation:2051940043222024960",
+    "catalogue_fp:evaluation:2053302372489042176"
+  ],
+  "native_source_ids": [
+    "2051296347880462080",
+    "2051806551338889984",
+    "2051939974502554880",
+    "2053301646633910656"
+  ],
+  "remaining_protected_native_source_ids": [
+    "2051104586182509440",
+    "2052465609775897728"
+  ],
+  "original_denominator_per_class": 100,
+  "scope": "Native development only: apply the existing approved whole-component exposure to exactly six old-only exclusion seeds. Preserve original exclusion lists, null guard and frozen null memberships; every surviving current reservation remains protected.",
+  "native_component_application_sha256": "7fc0ae472d09c28f811f2707273c7bba7664cb9092933208bc50bb7c5ed777e9",
+  "historical_source_seeds_covered_by_whole_component_approval": [
+    "2051295591966334720",
+    "2051806757498661376",
+    "2051806761793676544",
+    "2051806761797339136",
+    "2051806761797339648",
+    "2051940038921706368"
+  ]
+}

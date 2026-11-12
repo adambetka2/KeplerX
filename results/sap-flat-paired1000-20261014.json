@@ -1,0 +1,307 @@
+{
+  "status": "SAP_ONLY_RUNNING_SAVED_FLAT_REUSED",
+  "recorded_at": "2026-10-14T20:01:04.285171+00:00",
+  "question": "Does the unchanged adopted server detector recover different signals on SAP and PSF Flat?",
+  "study": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1",
+  "launch": {
+    "started_at": "2026-10-14T19:59:54.713629+00:00",
+    "pid": 24088,
+    "process_group": 24088,
+    "workers": 10,
+    "nice": 0,
+    "cases": 1000,
+    "unique_sap_inputs": 997,
+    "flat_searches_started": 0,
+    "flat_design_reused": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002",
+    "flat_folder": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-v2",
+    "driver_sha256": "78cc7e9c8637f57e1d046a9b7bef43f7f0393dc5d829a7cf42cdafc2c224f01d",
+    "search_launcher_sha256": "b7bdb3125ca55f5189d026cbcffe00cb1138914e85ebc06029526729e8fbac77",
+    "script_sha256": "e70a03cb66c19190032956a0bbe4cf26698cc68f4e4aaf95ce18413d79b47da9",
+    "input_verification_sha256": "153dfe4862b5649fd233a595d2fa020983381e05a66dfbb5852ac20d2dd4da2b",
+    "caffeinate_pid": 24089,
+    "real5000_detection": "DEFERRED",
+    "attempt": 2,
+    "first_failure_receipt": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/launcher-initialization-failure/failure.json",
+    "cache_policy": "Coordinator cache outside pilot; study and engine worker cache inherited before spawn"
+  },
+  "cases_by_kind": {
+    "synthetic_planet": 600,
+    "original": 65,
+    "native_eb": 25,
+    "catalogue_fp": 20,
+    "real_planet": 100,
+    "instrumental_artifact": 60,
+    "inverted": 65,
+    "year_scrambled": 65
+  },
+  "preparation": {
+    "cases": 1000,
+    "jobs": 997,
+    "statuses": {
+      "PREPARED": 1000
+    },
+    "failures": {}
+  },
+  "flat_saved_summary": {
+    "planets": 700,
+    "recovered": 163,
+    "recall": 0.23285714285714285,
+    "controls": 300,
+    "active_controls": 87,
+    "control_proposals": 313,
+    "statuses": {
+      "SEARCHED": 993,
+      "DETECTOR_INELIGIBLE": 5,
+      "UNEXPECTED_ERROR": 2
+    },
+    "by_kind": {
+      "synthetic_planet": {
+        "cases": 600,
+        "recovered": 77,
+        "proposals": 611
+      },
+      "real_planet": {
+        "cases": 100,
+        "recovered": 86,
+        "proposals": 634
+      },
+      "catalogue_fp": {
+        "cases": 20,
+        "recovered": 0,
+        "proposals": 45
+      },
+      "native_eb": {
+        "cases": 25,
+        "recovered": 0,
+        "proposals": 24
+      },
+      "instrumental_artifact": {
+        "cases": 60,
+        "recovered": 0,
+        "proposals": 126
+      },
+      "original": {
+        "cases": 65,
+        "recovered": 0,
+        "proposals": 32
+      },
+      "inverted": {
+        "cases": 65,
+        "recovered": 0,
+        "proposals": 56
+      },
+      "year_scrambled": {
+        "cases": 65,
+        "recovered": 0,
+        "proposals": 30
+      }
+    }
+  },
+  "detector": {
+    "config": {
+      "coarse_phase_oversample": 3,
+      "coarse_search_snr_min": 4.0,
+      "coherence_ranking": {
+        "method": "native_bin_shared_intercept",
+        "minimum_events": 3
+      },
+      "depth_ppm_max": 6000.0,
+      "depth_ppm_min": 10.0,
+      "detrend_window_cadences": 97,
+      "detrending": {
+        "cval": 5.0,
+        "method": "biweight",
+        "window_days": 0.5
+      },
+      "dip_inverse_snr_ratio_min": 1.5,
+      "duration_days": [
+        0.04,
+        0.08,
+        0.12,
+        0.2,
+        0.32
+      ],
+      "duration_envelope": {
+        "exposure_margin_days": 0.02043361111111111,
+        "radius_ratio_max": 0.2,
+        "rho_min_g_cm3": 1.0
+      },
+      "experimental_search": {
+        "coarse_correlation": 0.8,
+        "duration_days": [
+          0.028,
+          0.04,
+          0.056,
+          0.08,
+          0.112,
+          0.16,
+          0.224,
+          0.32
+        ],
+        "long_duration_days": [
+          0.06,
+          0.084,
+          0.12,
+          0.168,
+          0.24,
+          0.336,
+          0.48
+        ],
+        "max_refinements_per_duration": 64,
+        "maximum_period_trials": 2000000,
+        "maximum_refinement_trials": 64,
+        "refinement_correlation": 0.95,
+        "skip_redundant_intervals": true
+      },
+      "global_fundamental_conditioning": {
+        "method": "profiled_fixed_diagonal_global_fundamental",
+        "stage": "after_final_distinct_proposals"
+      },
+      "harmonic_delta_log_likelihood_max": 0.0,
+      "high_rank_inverse_snr_ratio_min": 1.5,
+      "high_rank_start": 6,
+      "input_view": "preferred_full",
+      "long_period_search": {
+        "detrending": {
+          "cval": 5.0,
+          "method": "biweight",
+          "window_days": 1.0
+        },
+        "duration_days": [
+          0.06,
+          0.1,
+          0.16,
+          0.24,
+          0.4
+        ],
+        "period_max_days": 100.0,
+        "period_min_days": 30.0
+      },
+      "max_proposals_per_source": 10,
+      "max_refined_peaks_per_band": 100,
+      "max_search_hypotheses_per_source": 50,
+      "maximum_transit_overlap": 0.2,
+      "min_observed_events": 3,
+      "min_observed_quarters": 1,
+      "min_quarter_cadences": 100,
+      "noise_model": {
+        "gap_days": 0.5,
+        "maximum_scale_fraction": 2.0,
+        "method": "local_point",
+        "minimum_scale_fraction": 0.5,
+        "point_prior_samples": 64,
+        "window_days": 5.0
+      },
+      "odd_even_sigma_max": 3.5,
+      "period_dedup_fraction": 0.001,
+      "period_grid_size": 20000,
+      "period_max_days": 30.0,
+      "period_min_days": 0.5,
+      "period_refine_points": 21,
+      "physical_template": {
+        "density_max_g_cm3": 150.0,
+        "density_min_g_cm3": 1.0,
+        "duration_scales": [
+          0.8,
+          1.0,
+          1.25
+        ],
+        "epoch_offsets": [
+          -0.5,
+          -0.25,
+          0.0,
+          0.25,
+          0.5
+        ],
+        "exposure_days": 0.02043361111111111,
+        "gap_days": 0.5,
+        "integration_samples": 11,
+        "knot_spacing_days": 0.75,
+        "maximum_profile_trials": 256,
+        "maximum_seeds_per_band": 64,
+        "profile_samples": 1025,
+        "profiles": [
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          }
+        ],
+        "radius_ratio": 0.02
+      },
+      "preserve_cross_band_hypotheses": true,
+      "proposal_budget_per_band": true,
+      "refine_local_maxima_only": true,
+      "refine_phase_oversample": 10,
+      "search_snr_min": 7.1,
+      "sort_proposals_by_refined_snr": true,
+      "status": "DEVELOPMENT_PROPOSALS_ONLY"
+    },
+    "engine": "evolve_native_coherence",
+    "name": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002"
+  },
+  "checks": {
+    "tests": {
+      "passed": 62,
+      "log": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/checks-tests.log"
+    },
+    "ruff_changed_files": "PASS",
+    "complexity_maximum": 10,
+    "complexity_experiments": "PASS",
+    "ruff_folder": {
+      "preexisting_findings": 6,
+      "files_unchanged_from_HEAD": {
+        "dwarfs/experiments/compare_photometry.py": true,
+        "dwarfs/experiments/reprocess_summary.py": true,
+        "dwarfs/experiments/reprocess_validation.py": true
+      },
+      "log": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/checks-ruff.log"
+    }
+  },
+  "gold_preflight": "K00492.01 exact frozen clock recovered; native records reproduce complete server preparation byte for byte",
+  "flat_searches_started": 0,
+  "results_when_finished": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/retrieval-report.json",
+  "hourly_completion_monitor": "notify-when-psf-flat-pilot-finishes",
+  "programme_10000_gate_passed": false,
+  "limits": [
+    "Cohort conditions on usable Flat; SAP eligibility failures remain in denominators",
+    "Same detector, parameters, physical injections and scorer clocks; extraction-specific masks and available cadences",
+    "Synthetic injections are conditional on delivered products; upstream attenuation is unmeasured",
+    "Real confirmed signals measure actual retained signal; controls measure proposal burden, not astrophysical false positives",
+    "Exploratory 1000-case comparison does not pass the programme 10000-case gate"
+  ],
+  "bindings": {
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/launch-full-v2.json": "6b71d640de6557b99d32b75292cf3e99386d7637bd9ef96024a9d4a999c2b215",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/paired-input-verification.json": "153dfe4862b5649fd233a595d2fa020983381e05a66dfbb5852ac20d2dd4da2b",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/plan.json": "0ff204a128ef8de7e040e25c040ebd2044e2ef323465614e992f8e4c93da07ac",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/prepared-cases.json": "ee1ed787e553e59dd5173185e4b5c1d24ac4d00679d90b168b4e3fc294e33fdf",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/preparation-identity.json": "85024ecc9250ebbbab81c9faad703844a24eef05500bd57bcc6cc03435b4423b",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/worker-preflight-v1/verification.json": "9f53f63a94c67271a7b10027ba73956b7c6c854d965ceade0e9f975d19339353",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/checks.json": "151489c611365869b98f4d20f86acb3bbf7f43eb613e697b7410cc164ab09cdd",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/resource-verification.json": "1297ee004cb18db41860463ecc3e4c0f60a9924a0a98be776b57f5a10bfb9282",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-sap-v1/launcher-initialization-failure/failure.json": "5d63c12fc4334f04348af05caf88fb173b46256a71ac157fc38640c4202a1462"
+  }
+}

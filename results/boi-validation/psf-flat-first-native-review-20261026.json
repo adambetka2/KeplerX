@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-26T23:07:19Z",
+  "boi_id": "BOI-2127936912539397632-1",
+  "kic": 10528996,
+  "source_id": "2127936912539397632",
+  "signal_id": "shallow-v1-2127936912539397632-1",
+  "stage": "conditional-native-fit-reviewed-in-part",
+  "likelihood_view": "PSF_FLAT",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/native-v3/native-review-v3.json",
+    "sha256": "3fcd30f2cd1768217175c4fb60d3ac7db59dd08131375e041069621a25cef8d8"
+  },
+  "postfit_checks": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/psf-postfit-v1/checks.json",
+    "sha256": "29236874766df51cf955d9451d3a43c212fcaf76de7d43cd021e5bb0f3a39105"
+  },
+  "native_weight_ess": 5354.62598529704,
+  "max_abs_replay_delta_loglike": 2.1827872842550278e-11,
+  "provisional_period_days": 13.744575310548264,
+  "provisional_duration_hours": 4.9676416020465695,
+  "observed_integrated_depth_ppm": 591.6070901609282,
+  "radius_ratio_snr": 33.75463150827806,
+  "apparent_radius_earth_at_assumed_host": 2.839257506511775,
+  "radius_is_not_physical_closeout": true,
+  "preparation_transfer_gains": [
+    1.0004342999587699,
+    1.000017617357177
+  ],
+  "reviewed_folded_noise_ppm": 84.93741513545545,
+  "comparison_to_existing_sap_native": {
+    "summary": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-1/native-v3/native/summary.json",
+      "sha256": "7fd57c0e023f0ba58e1a98bef1a93c95e8e70b4110dc6b91758378856590cad7"
+    },
+    "radius_ratio_snr": 25.643142800142996,
+    "snr_ratio": 1.3163219411658789,
+    "scope": "Same signal and quantile metric in two existing native fits; inputs/preparation differ. This is apparent native precision, not a causal detector improvement, false-alarm significance or a validation."
+  },
+  "noise_followup": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/psf-postfit-v1/phase-outlier.json",
+    "sha256": "ef02b00599073e97fb0d4109134e9b5d89a9a78edb9d2d5a9bd1a3928b00f53a"
+  },
+  "pending": [
+    "Archived PSF target and contaminant extraction-response qualification",
+    "Candidate-specific archived flattening transfer",
+    "Independent timing/alias/source-ownership review",
+    "Physical body-radius and complete stellar/companion closeout",
+    "Noise adequacy: one out-of-transit folded outlier is dominated by a single retained 5914-ppm positive cadence in Q8; no photons were removed."
+  ],
+  "native_gate_accepted": null,
+  "probability_started": false,
+  "validated": false,
+  "plot": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/psf-postfit-v1/native-fold.png",
+    "sha256": "4d61a0fa30393f0e158be4d5cebb05e626e47127916db09af4f2fdfa24531372"
+  }
+}

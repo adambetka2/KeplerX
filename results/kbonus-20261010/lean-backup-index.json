@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-11T05:57:06.226026+00:00",
+  "scope": "Lean ordinary Git catalogue and outcomes only; full evidence retained locally and on server",
+  "original_catalogue_and_disposition_bytes_recoverable": false,
+  "detailed_source_arrays_in_git": false,
+  "release_assets": "FORBIDDEN_BY_ADAM_DELETED",
+  "files": [
+    {
+      "file": "boi-catalogue.json.gz",
+      "bytes": 6722044,
+      "sha256": "b0fcd5f0bca7d70dbb2e02d36a30a6e6fbb062533dc8db348fb6e4cc5a4ff329",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/boi-catalogue.json",
+      "original_bytes": 81257784,
+      "original_sha256": "58292690ec7672ee6a3b706dc27d2f2c7bf95e9422a74a102ee4267f08c751bc",
+      "compression": "gzip",
+      "roundtrip": "EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "file": "transit-boi-catalogue.json.gz",
+      "bytes": 1343201,
+      "sha256": "0beaf8316a0bb4ee36dec99ff36cd60b434322b8a14236fa1e85aac77ab625ea",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/transit-boi-catalogue.json",
+      "original_bytes": 16822779,
+      "original_sha256": "cb64386423d3b01add2ca757b5f2ee3043eaa81c315e8c8e81d4e1f9ce7bc7d2",
+      "compression": "gzip",
+      "roundtrip": "EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "file": "compact-signals.csv.gz",
+      "bytes": 2119916,
+      "sha256": "05e0b7997e31f37a5517382e6973b5d8d266eb851fb6819cd3177950dab011e5",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/compact-signals.csv.gz",
+      "original_sha256": "05e0b7997e31f37a5517382e6973b5d8d266eb851fb6819cd3177950dab011e5",
+      "compression": "original_file_bytes"
+    },
+    {
+      "file": "lane-counts.json",
+      "bytes": 1413,
+      "sha256": "46c0b81560faaaefd8c59cb683bc092ea829bffe77dce5d53467db3ca6adfd69",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/lane-counts.json",
+      "original_sha256": "46c0b81560faaaefd8c59cb683bc092ea829bffe77dce5d53467db3ca6adfd69",
+      "compression": "original_file_bytes"
+    },
+    {
+      "file": "inventory.json",
+      "bytes": 2397,
+      "sha256": "e6ea05b7af2e42b6f0b5415e15613b9a554ddd30e7ab2b8dbcabc11f79dc2214",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/inventory.json",
+      "original_sha256": "e6ea05b7af2e42b6f0b5415e15613b9a554ddd30e7ab2b8dbcabc11f79dc2214",
+      "compression": "original_file_bytes"
+    },
+    {
+      "file": "local-verification.json",
+      "bytes": 341,
+      "sha256": "3222983853a8c6a0678e6c84e560d3d6d2280d8d08ba546686795eed4ba4bcc6",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/local-verification.json",
+      "original_sha256": "3222983853a8c6a0678e6c84e560d3d6d2280d8d08ba546686795eed4ba4bcc6",
+      "compression": "original_file_bytes"
+    },
+    {
+      "file": "path-map.json",
+      "bytes": 1368,
+      "sha256": "6edbae65e647dbcf8a1fc39d1e3706db4333ce2309ee53ec53606ac7554f3f93",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/path-map.json",
+      "original_sha256": "6edbae65e647dbcf8a1fc39d1e3706db4333ce2309ee53ec53606ac7554f3f93",
+      "compression": "original_file_bytes"
+    },
+    {
+      "file": "required-source-index.json.gz",
+      "bytes": 389571,
+      "sha256": "e9c4b85edaf69e529012ddeab897d6b9e51dd38fb4e146d2faa299804a34cbcb",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-final-preservation-20261010/required-source-index.json",
+      "original_bytes": 3192943,
+      "original_sha256": "20b374976e9d026cb98835aa5b36023523d34e3114364a3ba4e4e200b74631cc",
+      "compression": "gzip",
+      "roundtrip": "EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "file": "frozen-preflight.json",
+      "bytes": 21578,
+      "sha256": "e66d3764f5059463d793c8f3ce172a33787c59c4030eb1071980593362edf075",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/preflight/report.json",
+      "original_sha256": "e66d3764f5059463d793c8f3ce172a33787c59c4030eb1071980593362edf075"
+    },
+    {
+      "file": "boi-policy-psf_qdiag.json",
+      "bytes": 41071,
+      "sha256": "0c85edea0acddc3477816f1543be5cf1e52adc99705033dd83bd0a2a7127b69e",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/preflight/boi-policy-psf_qdiag.json",
+      "original_sha256": "0c85edea0acddc3477816f1543be5cf1e52adc99705033dd83bd0a2a7127b69e"
+    },
+    {
+      "file": "boi-policy-sap_qdiag.json",
+      "bytes": 41071,
+      "sha256": "e9f9460044d642748b4d4bb297bc97fa2c009365119c7ae6a14898eb5c50376c",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/preflight/boi-policy-sap_qdiag.json",
+      "original_sha256": "e9f9460044d642748b4d4bb297bc97fa2c009365119c7ae6a14898eb5c50376c"
+    },
+    {
+      "file": "detector-config.json",
+      "bytes": 3014,
+      "sha256": "f96f247e6137f6a2a9701521b298783a63b85338898e1fb6b43a60ef3819b0ce",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/preflight/detector-config.json",
+      "original_sha256": "f96f247e6137f6a2a9701521b298783a63b85338898e1fb6b43a60ef3819b0ce"
+    },
+    {
+      "file": "changeover-state.json",
+      "bytes": 7253,
+      "sha256": "e3fdf3c87334d63203a3f3819c7756dfa124be73bf4459a5043862b6729dab8f"
+    },
+    {
+      "file": "completion-verification.json",
+      "bytes": 14604,
+      "sha256": "ad8e9033cbe3cf2c605200a82b525f1cdd2afb4a590d8a301889f7359713eeee",
+      "original_path": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T225357Z-final-completion/health.json",
+      "original_sha256": "ad8e9033cbe3cf2c605200a82b525f1cdd2afb4a590d8a301889f7359713eeee"
+    },
+    {
+      "file": "bois.csv",
+      "bytes": 982419,
+      "sha256": "c200362e8b06d10414a8d0a8eb1fb25ea1400b19a81d964e59be4c123585175b",
+      "scope": "One row per original BOI proposal, both grouping IDs, original ephemeris and evidence path; event_units counts original recorded units"
+    }
+  ],
+  "total_bytes": 11691261,
+  "local_evidence_root": "/Volumes/discPCIe/kbonus",
+  "local_evidence_bytes": 181491898238,
+  "local_evidence_files": 457159,
+  "exact_original_catalogue_bytes_recoverable": true,
+  "all_signal_outcomes_preserved": true,
+  "full_disposition_evidence_arrays_in_git": false,
+  "git_omissions": [
+    "Full disposition CSVs with bulky evidence_assessment, risk_features and signal_shape arrays; original complete files retained in verified local export",
+    "Full source packages, numerical fit/localization arrays, raw light curves and archive chunks"
+  ],
+  "validation": {
+    "finished_utc": "2026-10-11T05:57:58.211555+00:00",
+    "catalogue_roundtrip": "EXACT_ORIGINAL_BYTES",
+    "catalogues": {
+      "boi-catalogue.json.gz": {
+        "objects_including_all_dispositions": 3427,
+        "bois": 3427,
+        "boi_proposals": 3447,
+        "boi_sources": 2907
+      },
+      "transit-boi-catalogue.json.gz": {
+        "objects_including_all_dispositions": 147,
+        "bois": 147,
+        "boi_proposals": 156,
+        "boi_sources": 116
+      }
+    },
+    "outcome_rows": 99505,
+    "outcomes": {
+      "HELD": 60858,
+      "DISMISSED": 35200,
+      "BOI": 3447
+    },
+    "all_lane_counts_match": true,
+    "all_selected_files_hash_verified": true,
+    "largest_file_bytes": 6722044
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "targets": 62,
+  "signals": 65,
+  "unique_catalogue_sources": 3367,
+  "source_scene_evidence": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-scenes-v3/scenes.json",
+    "sha256": "7e6301e96b3403bb9803333197d3f3333d9b6cba1d672e5da6945d80a95dd156"
+  },
+  "all_targets_found": true,
+  "targets_with_companion_1p5_arcsec": 2,
+  "potential_fainter_targets_within_one_arcsec": [],
+  "close_pairs": [
+    {
+      "target_source_id": "2131801043071611776",
+      "companion_source_id": "2131801043073747584",
+      "separation_arcsec": 1.1568925742910185,
+      "G": 14.667419
+    },
+    {
+      "target_source_id": "2051702720499620224",
+      "companion_source_id": "2051702716213248384",
+      "separation_arcsec": 0.9204029475333804,
+      "G": 19.416536
+    }
+  ],
+  "disposition": "Reference-epoch physical-scene flags, not automatic exclusions or claims that the archived extractor dropped these sources. Verify exact quarter propagation and archive parity; keep every physical alternative in probability inputs."
+}

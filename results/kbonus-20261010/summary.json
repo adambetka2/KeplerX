@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_LOCAL_EVIDENCE_VERIFIED_LEAN_GIT_CATALOGUE",
+  "survey_finished_utc": "2026-10-10T21:50:31.439706+00:00",
+  "original_elapsed_days": 4.99776613957176,
+  "main_transit": {
+    "bois": 147,
+    "proposals": 156,
+    "sources": 116
+  },
+  "all_retained_lanes": {
+    "bois": 3427,
+    "proposals": 3447,
+    "sources": 2907
+  },
+  "signal_outcomes": {
+    "rows": 99505,
+    "HELD": 60858,
+    "DISMISSED": 35200,
+    "BOI": 3447
+  },
+  "flat_baseline": "87bd04403228f3cd3a67e25e17dc9ade650662b7",
+  "psf_sap_implementation": "a3647447180953dcbe2f8262f263fc7c20a63006",
+  "psf_sap_profile": "rust-transit-only-v1",
+  "local_export": {
+    "schema": 1,
+    "status": "LOCAL_EXPORT_VERIFIED",
+    "finished_utc": "2026-10-11T03:42:18.719545+00:00",
+    "files": 457159,
+    "bytes": 181491898238,
+    "gzip_original_hashes_verified": 10113,
+    "volume_uuid": "5617B8CF-DE4E-45F6-AA95-0AA9D902D992",
+    "manifest_sha256": "ece2fed73a34f1974dae83af1efcb7bbb3e00749b9adb6bdb09f49bb9453c209"
+  },
+  "full_evidence_locations": [
+    "/Volumes/discPCIe/kbonus",
+    "/srv/kbonus/workspace/dump"
+  ],
+  "git_scope": "Lean catalogue, all signal outcomes, counts, frozen bindings and recovery metadata; no full evidence arrays or release assets",
+  "lean_catalogue_bytes": 11691261,
+  "lean_catalogue_index": "kbonus-results-20261010/lean-backup-index.json",
+  "partial_release_removed": true
+}

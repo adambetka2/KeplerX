@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "status": "INPUT_ONLY_DEVELOPMENT",
+  "protocol": "fsc-targeted-shallow-pixel-staging-v3",
+  "seed": "forgotten-stars-targeted-shallow-2026-09-24",
+  "base_support_report_sha256": "7417e4b24c0287f44efb0aa7d42b6d83e2fd45ac6bda8158c0b59f53d6c24412",
+  "support_resolver_sha256": "1a9e1a48cb3c7513932e7ac8d6eefee156c6f74e3fa58c2d859688524a78a942",
+  "support_plan_sha256": "f4c5262996656b01d177850d0398d8558e78816594c9a2211c5d388c79e9c874",
+  "combined_options_sha256": "a9b76daf537c068f7ffa74f7d1ff5ffbdf71644814a550c15c0ef31baf2d366c",
+  "gaia_sha256": "61fbb25faada220a281fe56436bd3d95a3458c944e2b631b2d89ae9e8bc73950",
+  "exclusions_sha256": "bd401c3105aa34f9d603ba044a30bf7da1885c663b870cf88261809e9cbec25b",
+  "selection_sha256": "e02b99759d0be30a001e8b7425e6fda20b4b64a3ca7b18bbfcac8b7b54cc6044",
+  "coverage_gap_audit_sha256": "d86e44496e1ffd6dbe5fde3acf2993cc5eee61e2b05991ce07104e5bfc2ce187",
+  "coverage_gap_cell": "d0m3p2",
+  "staged_cells": 35,
+  "trials_per_cell": 6,
+  "staged_target": 210,
+  "choice_rule": "Maximize source-, raw-input-, and provisional-origin-parent-disjoint coverage at six options per populated cell; break equal-cardinality choices by the frozen hash rank. For PIXEL_SUPPORTED options use verified resolved parents instead of the provisional origin parent.",
+  "replacement_rule": "After assessing the selected options, stop while any remains PENDING. Keep every PIXEL_SUPPORTED selection fixed. Replace only selected options with terminal PIXEL_UNSUPPORTED evidence, optimizing among remaining input options. If supported selections conflict on resolved parent, fail explicitly; never silently replace one. Repeat until all selected options are supported or full capacity is impossible.",
+  "claim_boundary": "The 210 choices stage pixel-input assessment across 35 populated cells. The declared 36th-cell gap remains, and this is not the balanced 216-trial cohort or the independent 300-planet release gate. No detector, vetter, localization, or sealed evaluation outcome may inform selection."
+}

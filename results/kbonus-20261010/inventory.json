@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "INVENTORIED",
+  "created_utc": "2026-10-10T23:02:26.999073+00:00",
+  "files": 457159,
+  "bytes": 181491898238,
+  "views": {
+    "psf_flat": {
+      "signals": {
+        "shallow:HELD": 32074,
+        "shallow:DISMISSED": 15810,
+        "sparse_event:HELD": 23644,
+        "sparse_event:DISMISSED": 13226,
+        "main_transit:DISMISSED": 3456,
+        "survivor_review:HELD": 1128,
+        "main_transit:BOI": 131,
+        "main_transit:HELD": 3641,
+        "survivor_review:DISMISSED": 900,
+        "shallow:BOI": 2449,
+        "sparse_event:BOI": 830,
+        "survivor_review:BOI": 12
+      },
+      "total_sources_with_signals": 57439,
+      "full_evidence_sources": 5287
+    },
+    "psf_qdiag": {
+      "signals": {
+        "main_transit:DISMISSED": 520,
+        "main_transit:HELD": 159,
+        "main_transit:BOI": 16
+      },
+      "total_sources_with_signals": 421,
+      "full_evidence_sources": 421
+    },
+    "sap_qdiag": {
+      "signals": {
+        "main_transit:DISMISSED": 1288,
+        "main_transit:HELD": 212,
+        "main_transit:BOI": 9
+      },
+      "total_sources_with_signals": 877,
+      "full_evidence_sources": 877
+    }
+  },
+  "excluded_counts": {
+    "DISPOSABLE_CACHE_OR_PREPARED_INPUT_DIRECTORY": 1236,
+    "SUPERSEDED_REJECTED_NON_TRANSIT_SOURCE_PACKAGE": 20226,
+    "REJECTED_NON_TRANSIT_ASSOCIATED_FULL_PACKAGE": 317263,
+    "REJECTED_NON_TRANSIT_SOURCE_PACKAGE": 52152
+  },
+  "symlinks": 3,
+  "manifest_sha256": "ece2fed73a34f1974dae83af1efcb7bbb3e00749b9adb6bdb09f49bb9453c209",
+  "original_files_unmodified": true,
+  "frozen_batch_hashes_checked": 228196,
+  "roots": [
+    "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005",
+    "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-pixel-repair-v1",
+    "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-pixel-repair-v2",
+    "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-pixel-repair-v3",
+    "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1",
+    "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008",
+    "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009",
+    "/srv/kbonus/workspace/dump/kbonus-source-ledger-20261005",
+    "/srv/kbonus/data/mast/cohort"
+  ],
+  "byte_identical_source_packages": true,
+  "catalogue_query_reference_checks": 18576,
+  "finalized_utc": "2026-10-10T23:10:38.500513+00:00"
+}

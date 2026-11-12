@@ -1,0 +1,849 @@
+{
+  "utc": "20261027T161844Z",
+  "candidates": [
+    {
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-1",
+      "native": {
+        "period_days": 13.744575310548264,
+        "epoch_bkjd": 853.8637066761263,
+        "duration_hours": 4.974451920972699,
+        "radius_ratio": [
+          0.02141885562086169,
+          0.022069895504447802,
+          0.02272652182951429
+        ],
+        "impact_parameter": [
+          0.11573231040209819,
+          0.2982724283355104,
+          0.4670204411172214
+        ],
+        "rho_kg_m3": [
+          767.920731330832,
+          833.4272771275423,
+          893.2117884950868
+        ],
+        "ess": 5354.62598529704,
+        "radius_ratio_quantile_snr": 33.75463150827806
+      },
+      "stellar": {
+        "source_id": "2127936912539397632",
+        "route": "Reported paired Gaia FLAME mass/radius and 16/84 intervals, chosen before fitting/FPP.",
+        "mass": 0.9402772,
+        "radius": 1.1744643,
+        "mass_error": 0.04005452999999998,
+        "radius_error": 0.02846925,
+        "density_kg_m3": [
+          818.2532443886447,
+          68.96146874996037
+        ],
+        "parallax_mas": [
+          0.9974657552711679,
+          0.014254226
+        ],
+        "ruwe": 1.0471895
+      },
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/native-v3/native-review-v3.json",
+          "sha256": "3fcd30f2cd1768217175c4fb60d3ac7db59dd08131375e041069621a25cef8d8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/closeout-psf-v1.json",
+          "sha256": "4788ec23c71c9ea7d4b76b150e5d2f724833d5f65915f14f1ea9426abfbde8c1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/probability-psf-v1/psf-response/neighbours.json",
+          "sha256": "aa837051126f363d447d5be11d8a75b792c5ad90ad546ad2ac73af5557ed7f9c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/closeout-psf-v2.json",
+          "sha256": "d13940d74fb4b36949533d78aca243f256cb5ae6ca05babb4e87f61dcd4786dd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1/probability-psf-v2/psf-response/neighbours.json",
+          "sha256": "51908afb86965da945db72dd1f88e0051e7a24bacbe8649f6e71d5a79a9c6d15"
+        }
+      ],
+      "closeout_v1": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp": {
+          "mean": 0.006586829882570927,
+          "minimum": 0.0011975729710891336,
+          "maximum": 0.012096526417638365,
+          "repeats": [
+            0.012096526417638365,
+            0.009721701654137549,
+            0.007177900893091782,
+            0.0044697017467836275,
+            0.006188308207687565,
+            0.005581062645350077,
+            0.008008144755830005,
+            0.004675801771257149,
+            0.00784281271591647,
+            0.009834893853851279,
+            0.004384761425223926,
+            0.006499673548376217,
+            0.007370629725265365,
+            0.007064143046070281,
+            0.010545943459697171,
+            0.0011975729710891336,
+            0.008003940599388915,
+            0.005444255569386769,
+            0.004345463216469003,
+            0.0012833594289078931
+          ]
+        },
+        "nfpp": {
+          "mean": 1.1981247573500709e-97,
+          "maximum": 6.010767817996005e-97,
+          "repeats": [
+            1.5490255038918234e-98,
+            1.0806538569629135e-97,
+            9.891441354122195e-98,
+            1.6777677970796197e-98,
+            1.1458428791132194e-98,
+            6.10948362092997e-98,
+            1.4073953385261817e-97,
+            2.832126222849306e-97,
+            2.984447411691134e-97,
+            4.0232000450875284e-99,
+            2.11326886227224e-99,
+            4.994646854687209e-97,
+            8.908764754610591e-98,
+            2.2550597936397123e-98,
+            6.010767817996005e-97,
+            6.693177913383888e-99,
+            2.7400976674130674e-100,
+            1.329701468247099e-97,
+            2.482441070598298e-100,
+            3.5498598757405043e-99
+          ]
+        },
+        "matched_filter_snr": 48.375132988845394,
+        "ruwe": 1.0471895,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_radius_earth": {
+          "median": 2.8374519914344134,
+          "minimum": 2.8022867402922524,
+          "maximum": 2.9848957954465387
+        },
+        "rowe_vshape": {
+          "value": 0.48909033662166923,
+          "not_v_shaped": true
+        },
+        "background_area_sensitivity": {
+          "merge_radius_arcsec": 5.0,
+          "fraction_population_fainter_than_gaia": 0.6689488521949255,
+          "area_factor": 3.7863654669937383,
+          "mean_fpp": 0.006586829882570927,
+          "mean_fpp_if_background_area_is_merge_disc": 0.006732371846388037
+        }
+      },
+      "neighbours_v1": [
+        {
+          "source_id": "2127936878179656448",
+          "kic": 10528988,
+          "delta_mag": 3.2748030000000004,
+          "relative_flux": 0.048986769471491554,
+          "separation_px": 5.973127744794397,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0007294540281627189,
+          "required_host_depth": 0.8110272441033923,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127936912539397504",
+          "kic": 10528990,
+          "delta_mag": -0.3899450000000009,
+          "relative_flux": 1.4321153509519366,
+          "separation_px": 1.7835918372960453,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.3040936922691087,
+          "required_host_depth": 0.0019454763620594393,
+          "own_light_curve": "kepler_pdcsap",
+          "photons": 59914,
+          "measured": {
+            "events": 93,
+            "depth": 5.312914802972709e-05,
+            "error": 9.886239018684885e-06,
+            "reduced_chi2": 1.0685258174744354
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539398016",
+          "kic": null,
+          "delta_mag": 3.6708310000000015,
+          "relative_flux": 0.034014774800524256,
+          "separation_px": 3.125177374546389,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.003224958130478943,
+          "required_host_depth": 0.1834464406125694,
+          "own_light_curve": "kbonus_psf_flat",
+          "photons": 59624,
+          "measured": {
+            "events": 93,
+            "depth": -1.291739973533065e-05,
+            "error": 0.00024628646463706295,
+            "reduced_chi2": 1.6514537084093701
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127939833117153664",
+          "kic": 10528974,
+          "delta_mag": -0.1835450000000005,
+          "relative_flux": 1.184180758376983,
+          "separation_px": 8.579548198194663,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005952686097910021,
+          "required_host_depth": 0.993848962351031,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        }
+      ],
+      "closeout_v2": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp": {
+          "mean": 0.006588284568692876,
+          "minimum": 0.001201241777821327,
+          "maximum": 0.012097311227371899,
+          "repeats": [
+            0.012097311227371899,
+            0.00973183942892819,
+            0.007188757269783297,
+            0.004473205295342231,
+            0.00617979965826676,
+            0.005596265285594759,
+            0.007990448845316855,
+            0.004687767331214121,
+            0.007834467625335906,
+            0.00985444081387754,
+            0.00437551691733129,
+            0.0064984906331011505,
+            0.007371890224609268,
+            0.007063319406303226,
+            0.010541126726449468,
+            0.001201241777821327,
+            0.008017426670535954,
+            0.005454870867297901,
+            0.004327652851183972,
+            0.0012798525181924036
+          ]
+        },
+        "nfpp": {
+          "mean": 9.030133055613502e-101,
+          "maximum": 4.4317684875689714e-100,
+          "repeats": [
+            1.1065701135000426e-101,
+            7.001565932196126e-101,
+            1.2278321271945799e-100,
+            1.1321470874756418e-101,
+            9.163321352226579e-102,
+            3.981452119266417e-101,
+            1.1139297864109917e-100,
+            1.820060815671798e-100,
+            2.2460076758773193e-100,
+            2.925731034209259e-102,
+            2.4205261986070547e-102,
+            3.887508585216812e-100,
+            6.82838227129533e-101,
+            1.4054937188493471e-101,
+            4.4317684875689714e-100,
+            5.229647652071183e-102,
+            4.502451517520346e-103,
+            9.616845702406701e-101,
+            2.8081515961698266e-103,
+            2.12100733027385e-102
+          ]
+        },
+        "matched_filter_snr": 48.375132988845394,
+        "ruwe": 1.0471895,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_radius_earth": {
+          "median": 2.8374519914344134,
+          "minimum": 2.8022867402922524,
+          "maximum": 2.9848957954465387
+        },
+        "rowe_vshape": {
+          "value": 0.48909033662166923,
+          "not_v_shaped": true
+        },
+        "background_area_sensitivity": {
+          "merge_radius_arcsec": 5.0,
+          "fraction_population_fainter_than_gaia": 0.6689488521949255,
+          "area_factor": 3.7863654669937383,
+          "mean_fpp": 0.006588284568692876,
+          "mean_fpp_if_background_area_is_merge_disc": 0.006733720939050459
+        },
+        "seasonal_depth": {
+          "seasons": [
+            {
+              "season": 0,
+              "depth": 0.0005534181079865676,
+              "error": 3.4407593041793486e-05,
+              "events": 24
+            },
+            {
+              "season": 1,
+              "depth": 0.0006026282484932748,
+              "error": 3.672700483291834e-05,
+              "events": 24
+            },
+            {
+              "season": 2,
+              "depth": 0.0005833753458159066,
+              "error": 4.16706450692172e-05,
+              "events": 23
+            },
+            {
+              "season": 3,
+              "depth": 0.000568430621681114,
+              "error": 3.70718447035377e-05,
+              "events": 22
+            }
+          ],
+          "weighted_mean": 0.000575794550495406,
+          "chi2": 1.029302083180851,
+          "dof": 3,
+          "p_value": 0.7941622105821305
+        }
+      },
+      "neighbours_v2": [
+        {
+          "source_id": "2127936878179656448",
+          "kic": 10528988,
+          "delta_mag": 3.2748030000000004,
+          "relative_flux": 0.048986769471491554,
+          "separation_px": 5.973127744794397,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0007175967742587,
+          "required_host_depth": 0.8244283020531648,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127936912539397504",
+          "kic": 10528990,
+          "delta_mag": -0.3899450000000009,
+          "relative_flux": 1.4321153509519366,
+          "separation_px": 1.7835918372960453,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.3980850724073188,
+          "required_host_depth": 0.0014861323148424885,
+          "own_light_curve": "kepler_pdcsap",
+          "photons": 59914,
+          "measured": {
+            "events": 93,
+            "depth": 5.312914802972709e-05,
+            "error": 9.886239018684885e-06,
+            "reduced_chi2": 1.0685258174744354
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539398016",
+          "kic": null,
+          "delta_mag": 3.6708310000000015,
+          "relative_flux": 0.034014774800524256,
+          "separation_px": 3.125177374546389,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.0057485742255985114,
+          "required_host_depth": 0.10291370815505704,
+          "own_light_curve": "kbonus_psf_flat",
+          "photons": 59624,
+          "measured": {
+            "events": 93,
+            "depth": -1.291739973533065e-05,
+            "error": 0.00024628646463706295,
+            "reduced_chi2": 1.6514537084093701
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127939833117153664",
+          "kic": 10528974,
+          "delta_mag": -0.1835450000000005,
+          "relative_flux": 1.184180758376983,
+          "separation_px": 8.579548198194663,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005983093707703971,
+          "required_host_depth": 0.9887979681801761,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        }
+      ]
+    },
+    {
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-4",
+      "native": {
+        "period_days": 8.55571815549596,
+        "epoch_bkjd": 861.9409127924624,
+        "duration_hours": 4.209114592686107,
+        "radius_ratio": [
+          0.014336522867403657,
+          0.015448570283751475,
+          0.016819663205261078
+        ],
+        "impact_parameter": [
+          0.24674499488454754,
+          0.4922844153812988,
+          0.7047000646744881
+        ],
+        "rho_kg_m3": [
+          746.5714996292597,
+          812.0531180720085,
+          881.8467313381616
+        ],
+        "ess": 5360.044990072554,
+        "radius_ratio_quantile_snr": 12.442768576729968
+      },
+      "stellar": {
+        "source_id": "2127936912539397632",
+        "route": "Reported paired Gaia FLAME mass/radius and 16/84 intervals, chosen before fitting/FPP.",
+        "mass": 0.9402772,
+        "radius": 1.1744643,
+        "mass_error": 0.04005452999999998,
+        "radius_error": 0.02846925,
+        "density_kg_m3": [
+          818.2532443886447,
+          68.96146874996037
+        ],
+        "parallax_mas": [
+          0.9974657552711679,
+          0.014254226
+        ],
+        "ruwe": 1.0471895
+      },
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/native-v3/native-review-v3.json",
+          "sha256": "b64e77a1796f167565bd3b54c34e72c8f9720f637d43a71ac82d726b029abfb0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/closeout-psf-v1.json",
+          "sha256": "be07d50ebe7cbfe25ecdb6d87a445d1d2d8188f155b84ef9f8338c655bacf639"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/probability-psf-v1/psf-response/neighbours.json",
+          "sha256": "be4acffef79dd0b848aff0e96635493214dd49200dc193ac8b0c8a8f80aef918"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/closeout-psf-v2.json",
+          "sha256": "2d49aab6c6a67863ae103cef262c89b10eb0b482acde41e609bd647dccfd7f0e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2/probability-psf-v2/psf-response/neighbours.json",
+          "sha256": "70d0a837893376231922d6cfd6662e93bdbe9107025101e0a96c48c19dcd7f86"
+        }
+      ],
+      "closeout_v1": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp": {
+          "mean": 0.00574071025052017,
+          "minimum": 0.001143263728292987,
+          "maximum": 0.00951425845838616,
+          "repeats": [
+            0.007376691401356661,
+            0.004848985805706474,
+            0.009406367633988721,
+            0.00606003768267771,
+            0.001143263728292987,
+            0.0031111285346145934,
+            0.0078078621466538545,
+            0.009444263378159179,
+            0.005246707994727151,
+            0.0038257499568261633,
+            0.004243640704753693,
+            0.005582949955711958,
+            0.006041754503856023,
+            0.003567649483881885,
+            0.0059779326185446235,
+            0.006427775596898111,
+            0.00951425845838616,
+            0.003145406075067414,
+            0.005872734281780034,
+            0.006169045068520007
+          ]
+        },
+        "nfpp": {
+          "mean": 1.0176534516198533e-10,
+          "maximum": 2.53690658033025e-10,
+          "repeats": [
+            1.9119044063482825e-10,
+            1.5896054873261072e-11,
+            7.819229127584143e-11,
+            7.280883895738443e-11,
+            1.4488096924837745e-10,
+            7.29417680915513e-11,
+            1.1084421784413098e-10,
+            1.0323497009219262e-10,
+            1.7791001125930103e-10,
+            9.610934782282062e-11,
+            1.0582383710464525e-10,
+            9.53844909230193e-11,
+            9.23281314917825e-11,
+            7.893750736553998e-11,
+            1.1674773642915815e-10,
+            6.884780571168007e-11,
+            2.53690658033025e-10,
+            6.892213752586577e-11,
+            4.655744591664996e-11,
+            4.40582426386511e-11
+          ]
+        },
+        "matched_filter_snr": 24.371131447690065,
+        "ruwe": 1.0471895,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_radius_earth": {
+          "median": 2.05407905318855,
+          "minimum": 2.0328387456031445,
+          "maximum": 2.0757206773055987
+        },
+        "rowe_vshape": {
+          "value": 0.7201486349582396,
+          "not_v_shaped": true
+        },
+        "background_area_sensitivity": {
+          "merge_radius_arcsec": 5.0,
+          "fraction_population_fainter_than_gaia": 0.6583174516743806,
+          "area_factor": 3.7420826086271712,
+          "mean_fpp": 0.00574071025052017,
+          "mean_fpp_if_background_area_is_merge_disc": 0.006471607890851838
+        }
+      },
+      "neighbours_v1": [
+        {
+          "source_id": "2127936878179656448",
+          "kic": 10528988,
+          "delta_mag": 3.2748030000000004,
+          "relative_flux": 0.048986769471491554,
+          "separation_px": 5.973127744794397,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0007294540281627189,
+          "required_host_depth": 0.36521189898937756,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127936912539397504",
+          "kic": 10528990,
+          "delta_mag": -0.3899450000000009,
+          "relative_flux": 1.4321153509519366,
+          "separation_px": 1.7835918372960453,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.3040936922691087,
+          "required_host_depth": 0.0008760631924420229,
+          "own_light_curve": "kepler_pdcsap",
+          "photons": 59914,
+          "measured": {
+            "events": 153,
+            "depth": 2.2370864197745094e-05,
+            "error": 8.487969003682077e-06,
+            "reduced_chi2": 1.1259998551658572
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539398016",
+          "kic": null,
+          "delta_mag": 3.6708310000000015,
+          "relative_flux": 0.034014774800524256,
+          "separation_px": 3.125177374546389,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.003224958130478943,
+          "required_host_depth": 0.082607364211328,
+          "own_light_curve": "kbonus_psf_flat",
+          "photons": 59624,
+          "measured": {
+            "events": 151,
+            "depth": -0.0001570649122799892,
+            "error": 0.00020852921734351436,
+            "reduced_chi2": 1.6154529040976378
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539401088",
+          "kic": 10529012,
+          "delta_mag": 3.5300330000000013,
+          "relative_flux": 0.03872458747439092,
+          "separation_px": 5.981842127161441,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005682589294628012,
+          "required_host_depth": 0.4688096869900513,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127939833117153664",
+          "kic": 10528974,
+          "delta_mag": -0.1835450000000005,
+          "relative_flux": 1.184180758376983,
+          "separation_px": 8.579548198194663,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005952686097910021,
+          "required_host_depth": 0.44753794584312445,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127939833117156352",
+          "kic": 10528975,
+          "delta_mag": 4.4459029999999995,
+          "relative_flux": 0.016658611499583895,
+          "separation_px": 5.4387409937614395,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005682553074708782,
+          "required_host_depth": 0.46881267512738567,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        }
+      ],
+      "closeout_v2": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp": {
+          "mean": 0.005739698219319939,
+          "minimum": 0.0011406875699067065,
+          "maximum": 0.009511504344032806,
+          "repeats": [
+            0.007382196348508119,
+            0.004853482933957043,
+            0.009407183826231624,
+            0.00606429846789347,
+            0.0011406875699067065,
+            0.0031071623423808425,
+            0.007803653701809021,
+            0.009446210591631976,
+            0.005245100739529995,
+            0.0038224989241654184,
+            0.004235591858314236,
+            0.005581393577001936,
+            0.006038831647701692,
+            0.003567066413880493,
+            0.005969385104659497,
+            0.006425325956951888,
+            0.009511504344032806,
+            0.003148272857786072,
+            0.005869201409521185,
+            0.00617491577053475
+          ]
+        },
+        "nfpp": {
+          "mean": 7.422085330591494e-11,
+          "maximum": 1.6654755747592314e-10,
+          "repeats": [
+            1.1365367287542676e-10,
+            1.2680224633937956e-11,
+            6.512062107769846e-11,
+            4.411798700671471e-11,
+            1.3953491772383093e-10,
+            5.233459513369413e-11,
+            8.82436884183063e-11,
+            8.004969341567993e-11,
+            1.0510765291315302e-10,
+            7.139660504056749e-11,
+            5.637594813483191e-11,
+            6.37227403360859e-11,
+            7.680967967740672e-11,
+            4.453030279856062e-11,
+            1.0173557360241163e-10,
+            5.155631885991014e-11,
+            1.6654755747592314e-10,
+            4.510781634541546e-11,
+            7.427443940233927e-11,
+            3.151703124640425e-11
+          ]
+        },
+        "matched_filter_snr": 24.371131447690065,
+        "ruwe": 1.0471895,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_radius_earth": {
+          "median": 2.05407905318855,
+          "minimum": 2.0328387456031445,
+          "maximum": 2.0757206773055987
+        },
+        "rowe_vshape": {
+          "value": 0.7201486349582396,
+          "not_v_shaped": true
+        },
+        "background_area_sensitivity": {
+          "merge_radius_arcsec": 5.0,
+          "fraction_population_fainter_than_gaia": 0.6583174516743806,
+          "area_factor": 3.7420826086271712,
+          "mean_fpp": 0.005739698219319939,
+          "mean_fpp_if_background_area_is_merge_disc": 0.006470807918831508
+        },
+        "seasonal_depth": {
+          "seasons": [
+            {
+              "season": 0,
+              "depth": 0.0003176234342663734,
+              "error": 2.2512023869345462e-05,
+              "events": 40
+            },
+            {
+              "season": 1,
+              "depth": 0.00033097890689898993,
+              "error": 2.682820700005723e-05,
+              "events": 39
+            },
+            {
+              "season": 2,
+              "depth": 0.0003412818563920814,
+              "error": 3.840251861288519e-05,
+              "events": 32
+            },
+            {
+              "season": 3,
+              "depth": 0.00027880879783086807,
+              "error": 3.0082590732722502e-05,
+              "events": 40
+            }
+          ],
+          "weighted_mean": 0.0003160117939134927,
+          "chi2": 2.278783635632559,
+          "dof": 3,
+          "p_value": 0.516597579690522
+        }
+      },
+      "neighbours_v2": [
+        {
+          "source_id": "2127936878179656448",
+          "kic": 10528988,
+          "delta_mag": 3.2748030000000004,
+          "relative_flux": 0.048986769471491554,
+          "separation_px": 5.973127744794397,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0007175967742587,
+          "required_host_depth": 0.3712464999943213,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127936912539397504",
+          "kic": 10528990,
+          "delta_mag": -0.3899450000000009,
+          "relative_flux": 1.4321153509519366,
+          "separation_px": 1.7835918372960453,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.3980850724073188,
+          "required_host_depth": 0.0006692169822890843,
+          "own_light_curve": "kepler_pdcsap",
+          "photons": 59914,
+          "measured": {
+            "events": 153,
+            "depth": 2.2370864197745094e-05,
+            "error": 8.487969003682077e-06,
+            "reduced_chi2": 1.1259998551658572
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539398016",
+          "kic": null,
+          "delta_mag": 3.6708310000000015,
+          "relative_flux": 0.034014774800524256,
+          "separation_px": 3.125177374546389,
+          "fitted_by_kbonus": true,
+          "max_coefficient": 0.0057485742255985114,
+          "required_host_depth": 0.04634284613816929,
+          "own_light_curve": "kbonus_psf_flat",
+          "photons": 59624,
+          "measured": {
+            "events": 151,
+            "depth": -0.0001570649122799892,
+            "error": 0.00020852921734351436,
+            "reduced_chi2": 1.6154529040976378
+          },
+          "cleared": true,
+          "reason": "Required host depth excluded by its own light curve"
+        },
+        {
+          "source_id": "2127936912539401088",
+          "kic": 10529012,
+          "delta_mag": 3.5300330000000013,
+          "relative_flux": 0.03872458747439092,
+          "separation_px": 5.981842127161441,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005591063888809093,
+          "required_host_depth": 0.47648407556920674,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127939833117153664",
+          "kic": 10528974,
+          "delta_mag": -0.1835450000000005,
+          "relative_flux": 1.184180758376983,
+          "separation_px": 8.579548198194663,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005983093707703971,
+          "required_host_depth": 0.44526344373936144,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        },
+        {
+          "source_id": "2127939833117156352",
+          "kic": 10528975,
+          "delta_mag": 4.4459029999999995,
+          "relative_flux": 0.016658611499583895,
+          "separation_px": 5.4387409937614395,
+          "fitted_by_kbonus": false,
+          "max_coefficient": 0.0005557909121277122,
+          "required_host_depth": 0.4793264607924025,
+          "own_light_curve": null,
+          "cleared": false,
+          "reason": "No own KBonus or Kepler light curve; kept as a possible host"
+        }
+      ]
+    }
+  ],
+  "literature": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/literature/literature-check-20261027-v1.json",
+    "sha256": "f10e16c88ebce88bbcb83e4e9c5f2823466ad3d4208bf68fa054b1d61878e47f"
+  },
+  "method_reviews": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/calibration/method-review-v1.json",
+      "sha256": "e5e67e95476e6b30868d8d17d24799b33553c4b33e967ddf5383aebef3bab46b"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/calibration/method-review-v2.json",
+      "sha256": "0a26fab4553f2c74374769fbd591ee296aef64ea4799c6ffd6987f885c4262de"
+    }
+  ],
+  "decision": "PENDING: Adam admits or declines each candidate. NUMERICAL_PASS is not a validation.",
+  "scope": "TRICERATOPS_KEPLER_V3 on KBonus PSF_FLAT with the psf-envelope signed response; 20 seeds x 1,000,000 draws on the exact fast_triceratops engine."
+}

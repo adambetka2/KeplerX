@@ -1,0 +1,143 @@
+{
+  "created_warsaw": "2026-10-27T23:00:25+01:00",
+  "scope": "Historical audit only. Keep V3; no sampler configuration, active fit, scientific input or acceptance rule changed.",
+  "first_preserved_500_5000": {
+    "record": "/Users/adam/Other/spacelab/results/boi-validation/local-kic2834218-nested-readiness-20261020.json",
+    "utc": "2026-10-20T23:48:31.412503+00:00",
+    "source_id": "2099197705814100480",
+    "kic": 2834218,
+    "fit_options": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 10,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    },
+    "evidence": "Explicit pre-production dynamic nested sampling settings. Same-input wrapper/direct-juliet controls tested deterministic numerical agreement; they did not compare sample budgets."
+  },
+  "live_point_origin": {
+    "value": 500,
+    "finding": "Matches the default n_live_points in the pinned juliet constructor and nlive in dynesty. No local budget sweep found establishing exactly 500 as required.",
+    "local_source": "/Users/adam/Other/spacelab/other/boi-v3-20261025/runtime-v3/lib/python3.12/site-packages/juliet/fit.py",
+    "local_line": 1715,
+    "documentation": "https://dynesty.readthedocs.io/en/latest/api.html"
+  },
+  "effective_sample_origin": {
+    "value": 5000,
+    "finding": "Explicit requested effective weighted posterior sample target in the initial production nested setup. Its purpose is numerical posterior precision. No preserved derivation or paired lower/higher-budget convergence study found that selected exactly 5000. It is not the upstream dynesty default (the installed runtime defaults to max(ndim^2,10000) if omitted).",
+    "default_source": "/Users/adam/Other/spacelab/other/boi-v3-20261025/runtime-v3/lib/python3.12/site-packages/dynesty/dynamicsampler.py",
+    "default_line": 1788
+  },
+  "acceptance_gate": {
+    "minimum_native_weight_ess": 1000,
+    "source": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/finish_case.py",
+    "line": 82,
+    "note": "ESS is one of several required checks; meeting a scalar ESS threshold alone does not establish exploration of all modes."
+  },
+  "prior_budget_reduction": {
+    "utc": "2026-10-24T23:28:20.316Z",
+    "description": "The six not-yet-started cases had been set to 300 live points and 2000 effective samples to finish the overnight queue. Priors, photons, seeds and ESS>=1000 gate were retained.",
+    "completed_lower_budget_cases": [
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076248557386606336",
+        "state": "accepted",
+        "ess": 2004.3822271499707,
+        "radius_ratio_snr": 19.315960846937426
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576",
+        "state": "accepted",
+        "ess": 2092.0913837211247,
+        "radius_ratio_snr": 32.65457137283937
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640",
+        "state": "accepted",
+        "ess": 2184.5042487322266,
+        "radius_ratio_snr": 21.099080846764515
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144",
+        "state": "held",
+        "ess": 2370.7185525610403,
+        "radius_ratio_snr": 1.9870064960948435
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216",
+        "state": "held",
+        "ess": 2951.662541030697,
+        "radius_ratio_snr": 1.2071815038476505
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480",
+        "state": "accepted",
+        "ess": 2039.6405292155857,
+        "radius_ratio_snr": 27.456168607026733
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2086643310248820352",
+        "state": "held",
+        "ess": 3085.902928414014,
+        "radius_ratio_snr": 0.8995486118882955
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712",
+        "state": "accepted",
+        "ess": 2031.8899283199753,
+        "radius_ratio_snr": 64.807458028461
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232",
+        "state": "held",
+        "ess": 2046.4426722254132,
+        "radius_ratio_snr": 0.23654406792094204
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904",
+        "state": "accepted",
+        "ess": 3041.0959852925703,
+        "radius_ratio_snr": 18.480755578510596
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2116924474653194112",
+        "state": "accepted",
+        "ess": 3025.6788475078542,
+        "radius_ratio_snr": 8.597327044691774
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968",
+        "state": "accepted",
+        "ess": 2318.359369500672,
+        "radius_ratio_snr": 61.082233381688276
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2128059130130482432",
+        "state": "accepted",
+        "ess": 2997.1600014091086,
+        "radius_ratio_snr": 18.66904067244157
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824",
+        "state": "accepted",
+        "ess": 3196.0619347122242,
+        "radius_ratio_snr": 33.948190198539045
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568",
+        "state": "held",
+        "ess": 6182.262043084268,
+        "radius_ratio_snr": 21.70026663292443
+      }
+    ],
+    "comparison_limit": "Previous use and acceptance of the smaller budget is not a paired equivalence demonstration."
+  },
+  "propagation": {
+    "common_writer": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/acquire.py",
+    "line": 251,
+    "psf_stager": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/tools/stage_native_psf.py",
+    "finding": "The common acquisition writer sets 500/5000. PSF staging deep-copies those settings and changes nthreads to three. No separate PSF-specific justification for 500/5000 was found."
+  }
+}

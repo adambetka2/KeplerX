@@ -1,0 +1,23 @@
+{
+ "source_id": "2103903753019155968",
+ "kic": 6026810,
+ "origin_tpf_kic": 6026805,
+ "ra_deg": 285.9149780453003,
+ "dec_deg": 41.31076503319763,
+ "phot_g_mean_mag": 14.339599609375,
+ "bp_rp": 1.0286006927490234,
+ "teff_gspphot": 5128.71826171875,
+ "logg_gspphot": 4.410200119018555,
+ "quarters": [
+  2,
+  3,
+  4,
+  6
+ ],
+ "cadences": 16586,
+ "columns": "LC2 cadence table: time_bkjd, cadenceno, quarter, psf_flat_kbonus_flux and error, sap_quality, flatten_mask, psf_stitched_flux (raw)",
+ "lc2_shard": "/Volumes/discPCIe/data/kbonus/lc2/shard-0603",
+ "sha256": "40e3e6e57d37d63fcb9888b1b8907a2b065b6d8a35a438b4907d0621b103e51b",
+ "scope": "A quiet K-dwarf PSF Flat lane host (3-hour noise 106 ppm), four quarters with the raw stitched flux, for calibration end-to-end tests; not a sample or population calibration",
+ "license": "CC BY 4.0 (KBonus, doi:10.17909/7jbr-w430)"
+}

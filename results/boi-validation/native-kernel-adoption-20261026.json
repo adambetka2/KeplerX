@@ -1,0 +1,129 @@
+{
+ "utc": "2026-10-26T02:00:37.594773+00:00",
+ "decision": {
+  "by": "Adam",
+  "date": "2026-10-26",
+  "words": "why aren't you using full accelerated programs for the stat validation pipeline?",
+  "reading": "Use the prepared fast tools in every validation stage. The probability campaigns already ran the exact static engine (engine-adoption-20261026.json); this adds the native orbit kernel to the native fits."
+ },
+ "change": "Native fits started by tools/scheduler.py from 2026-10-26T01:58:16Z run batman with the fast_triceratops native orbit kernel in every process. Two fits started earlier under stock batman finish unchanged: cases/2076476504190366336-boi1-g2 and mk/cases/2101518671782975488-3. The candidate generations, priors, seeds, sampler options, photons, acceptance rules and campaigns are unchanged.",
+ "mechanism": "juliet's dynamic-dynesty fit uses a spawned multiprocessing pool, so a kernel enabled in the parent never reaches the workers. tools/run_native.sh puts tools/native-kernel on PYTHONPATH for post_boi.native alone; its sitecustomize.py runs as every process starts, checks the frozen kernel sources by digest, enters fast_triceratops.native.accelerated_native() (batman binary and Clang/LLVM checks) and writes one record per process to <case>/native-v3/native-kernel/. A process that cannot enable the kernel exits with status 70; Python would otherwise report the error as a warning and continue with stock batman.",
+ "kernel": {
+  "source": "fast_triceratops/native.py and native_orbits.c at commit 2a7c8c86, frozen in other/boi-v3-20261025/tools/native-kernel/frozen",
+  "ir_sha256": "ee5071d29f2b0fd2ebe04c5420d143514fc4185251b02a053249cec2c7ac54e8",
+  "clang": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "llvm": [
+   22,
+   1,
+   0
+  ],
+  "command": [
+   "/usr/bin/clang",
+   "-O3",
+   "-S",
+   "-emit-llvm",
+   "-x",
+   "c",
+   "-",
+   "-o",
+   "-",
+   "-target",
+   "arm64-apple-macosx11.0.0",
+   "-mcpu=generic",
+   "-mno-stack-arg-probe"
+  ],
+  "batman": "2.5.3+spacelab.2, _rsky sha256 0fb9b316dc8b72b4556157a96aa761cf93554691e1ca5f10d3453caf89501bf4"
+ },
+ "control": {
+  "design": "Each completed production fit was replayed end to end twice with its own candidate.json, prepared photons, priors, seed and five-process pool, stock and with the kernel, in alternating order, with run_native.sh's environment; one other production fit was paused meanwhile so the replays had five cores. The production review's stock likelihood replay at three posterior samples (|dlnL| < 1e-6) still runs for every kernel fit.",
+  "cases": [
+   {
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576",
+    "order": "stock-kernel",
+    "production_fit": "start 2026-10-25T01:09:14Z",
+    "bitwise_equal": {
+     "stock_replay_vs_production": true,
+     "kernel_replay_vs_production": true,
+     "kernel_vs_stock_replay": true
+    },
+    "compared": "51 arrays (every posterior.npz array, every saved dynesty result field, posterior samples, lnZ) and 5 text outputs",
+    "stock": {
+     "wall_s": 189.8,
+     "process_tree_cpu_s": 489.7
+    },
+    "kernel": {
+     "wall_s": 183.6,
+     "process_tree_cpu_s": 383.5,
+     "processes_with_kernel": 7,
+     "pool_workers_with_kernel": 5
+    },
+    "cpu_ratio_stock_over_kernel": 1.277,
+    "wall_ratio_stock_over_kernel": 1.034
+   },
+   {
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102521666898377600-2",
+    "order": "kernel-stock",
+    "production_fit": "start 2026-10-25T20:31:38Z",
+    "bitwise_equal": {
+     "stock_replay_vs_production": true,
+     "kernel_replay_vs_production": true,
+     "kernel_vs_stock_replay": true
+    },
+    "compared": "51 arrays (every posterior.npz array, every saved dynesty result field, posterior samples, lnZ) and 5 text outputs",
+    "stock": {
+     "wall_s": 437.5,
+     "process_tree_cpu_s": 1398.4
+    },
+    "kernel": {
+     "wall_s": 374.1,
+     "process_tree_cpu_s": 1039.9,
+     "processes_with_kernel": 7,
+     "pool_workers_with_kernel": 5
+    },
+    "cpu_ratio_stock_over_kernel": 1.345,
+    "wall_ratio_stock_over_kernel": 1.17
+   }
+  ]
+ },
+ "speed": "Process-tree CPU fell by 1.28x and 1.34x, elapsed time by 1.03x and 1.17x. Elapsed time fell less because the stock replays kept only 2.6 and 3.2 of their six processes busy on average (CPU/elapsed), so the workers often wait on dynesty's coordinating process; this is inferred from the timings, not profiled. Lower CPU leaves more idle cores for the scheduler's third job. The 50 completed native fits of this queue took a median 23 min (90th percentile 155 min).",
+ "limits": "Bitwise equality is shown on the exercised inputs (two production fits end to end, the fast_triceratops work's 49 kernel controls and three serial juliet controls), not proved for every floating-point input or future toolchain. A requalified Clang, LLVM or batman stops the fit.",
+ "not_adopted": [
+  "Certified probability mode (accelerated_v3(certified=True)): drops draws below e^-50 of a scenario's largest weight, so it is not exact by construction; its notes require a separate adoption. On BOI 2076383384993192576 at 10^6 draws it took 9.1 s against 13.3 s for exact mode (docs/fast-triceratops.md).",
+  "Callback caching in dynesty's own pool: would replace juliet's multiprocessing pool; its end-to-end benefit and checkpoint behaviour are unmeasured (docs/fast-triceratops-native.md)."
+ ],
+ "incident": "The pause made the paused fit's cores look idle, and tools/scheduler.py started mk/cases/2101482490978833920-11 as a third job at 01:40:34 UTC. It was paused at 01:45 and stopped at 01:58; the attempt is preserved in its native-v3/interrupted-20261026T015820Z/ and the case restarts with the same seed under the kernel.",
+ "evidence": [
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/native-kernel-20261026/control.json",
+   "sha256": "c565579e0ff67d363ebfde28e47a7706f86f9c65f5b31567980cf6e1b63c0ae1"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/native_kernel_control.py",
+   "sha256": "3fca60540ba39e0efa48f6329ccb416a05e44955aaf76b66b72c9ea3417cb57c"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/native-kernel/sitecustomize.py",
+   "sha256": "95d5b1ceddb011fb6b0dbd63039146e811e4177972668cbb24b91c6f910a047f"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/native-kernel/frozen/native.py",
+   "sha256": "abc54242da062595983fcb60f1e1e4380e3b1e72388da84ffd4ce0e8b28752ad"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/native-kernel/frozen/native_orbits.c",
+   "sha256": "917b77e5a258d25474f79a9c3ae9cef363fe57f80c0fdcd2c8f8bb568493cba2"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/run_native.sh",
+   "sha256": "ca149d9e0d60fb570f52c2db47e2be729eec30a5c7b8d28ef1fdfde8502b2b6d"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/logs/run_native-stock-20261026.sh",
+   "sha256": "7542d800692d3a7b77c9f5f683f04c823fcd09f6a6a0dd1449ce456c754aa2e2"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/native-kernel-20261026/run-paused.sh",
+   "sha256": "ffecf48a5a1bbf86ce7fece980babb5cd88b88ca51b52f1f3342d4e8df68d693"
+  }
+ ]
+}

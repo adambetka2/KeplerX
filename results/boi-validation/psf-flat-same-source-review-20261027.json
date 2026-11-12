@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-27T01:40:12.805005+00:00",
+  "source_id": "2127936912539397632",
+  "kic": 10528996,
+  "stage": "same-source-event-independence-and-noise-review",
+  "authentication": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-independence-v2/summary.json",
+    "sha256": "8a8464539ea0871014581987aceace6948806c3d7fc8be9811e14c92d0ba76f9"
+  },
+  "records": [
+    {
+      "signal_id": "shallow-v1-2127936912539397632-1",
+      "period_days": 13.744575310548264,
+      "paired_event_masking": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-independence-v2/signal1.json",
+        "sha256": "06dedef859c07fc44409d59e0cc4d6f43757aa9b529c2afb990df56e10072765"
+      },
+      "formal_error_local_depth_snr": {
+        "original": 47.532428815295944,
+        "without_other": 46.15340938807139,
+        "without_shifted_other": 45.34829678831984
+      },
+      "observed_central_events_after_other_mask": 91,
+      "preparation_and_noise_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-primary-scatter-v1/signal1.json",
+        "sha256": "8e21ed92392fee1b731e9971cd6bf1682c1afcddec49f8e5a26b18b37db79489"
+      },
+      "prepared_local_event_snr": 40.03664750467584,
+      "prepared_event_reduced_chi2": 2.013476683108237,
+      "largest_event_fraction_of_scatter": 0.08390865804441976,
+      "interpretation": "Both supplied clocks retain repeated transit-like dips when the other is masked. Local diagnostic S/N is distinct from the native matched-filter and radius-ratio metrics. Event scatter/noise adequacy and physical source ownership remain open.",
+      "native_gate_accepted": null,
+      "independent_vetted_candidate_accepted": null,
+      "probability_started": false
+    },
+    {
+      "signal_id": "shallow-v1-2127936912539397632-4",
+      "period_days": 8.55571815549596,
+      "paired_event_masking": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-independence-v2/signal2.json",
+        "sha256": "45490557cefd5d0d743e9760fe3ab63c1dd9874fab7596752eddb240c3b36300"
+      },
+      "formal_error_local_depth_snr": {
+        "original": 24.895085936507463,
+        "without_other": 23.635019040963925,
+        "without_shifted_other": 24.031321040003682
+      },
+      "observed_central_events_after_other_mask": 147,
+      "preparation_and_noise_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-primary-scatter-v1/signal2.json",
+        "sha256": "a8349173a812a1c6cd3d26a3a40fed1e35c7cacc783bddc9bd1f96a26fbe0f58"
+      },
+      "prepared_local_event_snr": 25.64500562045186,
+      "prepared_event_reduced_chi2": 7.971504916781177,
+      "largest_event_fraction_of_scatter": 0.8533624164734626,
+      "interpretation": "Both supplied clocks retain repeated transit-like dips when the other is masked. Local diagnostic S/N is distinct from the native matched-filter and radius-ratio metrics. Event scatter/noise adequacy and physical source ownership remain open.",
+      "native_gate_accepted": null,
+      "independent_vetted_candidate_accepted": null,
+      "probability_started": false
+    }
+  ],
+  "retained_q2_event": {
+    "center_bkjd": 245.92920559675338,
+    "fraction_of_8p56_day_event_scatter_chi2": 0.8533624164734626,
+    "observed_step": {
+      "quarter": 2,
+      "cadenceno": 6718,
+      "time_bkjd": 246.2073754942976,
+      "previous_cadenceno": 6716,
+      "jump_ppm": -23092.11783456114,
+      "sap_quality": 0,
+      "flatten_mask": 0
+    },
+    "plot": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-primary-scatter-v1/greatest-scatter-event.png",
+      "sha256": "cec1d1823ce4a8b4d35ca97f4a8e04c3febf728b7965a320b1f1e6d9090c5b19"
+    },
+    "plot_basis": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-primary-scatter-v1/greatest-scatter-event-plot.json",
+      "sha256": "d71bfc311875bde95f143e15d5cb0fd4031b85b910604420b362da296bfbf0f7"
+    },
+    "interpretation": "Large ramp and abrupt flux drop are already present in the delivered Flat product and remain after the existing preparation. Underlying pixel/instrument/astrophysical origin is unresolved. No photons were clipped and no noise prior or fit changed."
+  },
+  "preserved_preflight_failure": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/kic10528996-independence-v1/failure.json",
+    "sha256": "1c316f23ce5fa2b57136a13f924807fcfc75f63483a00895848abcd52a6d2307"
+  },
+  "unresolved": [
+    "PSF extraction and candidate-specific archived flattening response",
+    "Event/quarter noise adequacy, including the retained Q2 excursion",
+    "Timing/alias completeness and physical source ownership",
+    "Complete stellar/companion/body closeout"
+  ],
+  "scope_groups": 65,
+  "scientific_dispositions": 8,
+  "groups_under_review": 57,
+  "probability_admissions": 0,
+  "newly_validated_planets": 0,
+  "scipy_repair_authorization_still_pending": true
+}

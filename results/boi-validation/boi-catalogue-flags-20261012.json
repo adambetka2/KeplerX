@@ -1,0 +1,3291 @@
+{
+  "schema": 1,
+  "utc": "2026-10-12T23:52:31.233555+00:00",
+  "status": "PASS_REVIEWED_125_BOI_CATALOGUE_FLAGS_CONTEXT_AXES_AND_PROPOSAL_WINDOW_COUNTS",
+  "title": "Kepler Bonus Field - Exoplanets Survey",
+  "date": "October 2026",
+  "scope": "Known-catalogue associations, possible harmonics, corrected folded-context scales and source-bound proposal-window counts; discovery inputs, masks, numerical calculations, fits and scientific dispositions are unchanged.",
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/docs/BOI_DELIVERY_SELECTION_20261011.json",
+    "bytes": 132618,
+    "sha256": "51a3f065e1d130ff10910bf9a5524a163e72fa517416f644ca2d965ea8de185a"
+  },
+  "pdf": {
+    "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/Kepler Bonus Field - Exoplanets Survey - October 2026.pdf",
+    "bytes": 14734268,
+    "sha256": "1ae49135ea7012a8a84c4eace2386af024cfc3b72c38fd81f579929e9ac621e2"
+  },
+  "server_pdf": {
+    "path": "/srv/kbonus/workspace/dump/boi-catalogue-flags-20261012/pdf/Kepler Bonus Field - Exoplanets Survey - October 2026.pdf",
+    "sha256": "4ca5931f1c6888bd29cbe07591ba04e1884c5b0f442dac7a5e4070855b67929b",
+    "bytes": 14725078,
+    "version": "v5",
+    "mirror_status": "NOT_MIRRORED_MAC_ONLY_V6_EXPORT",
+    "verification_scope": "Previously verified v5. No server access or mirror during this Mac-only v6 export."
+  },
+  "counts": {
+    "boi_entries": 125,
+    "pdf_pages": 128,
+    "unflagged": 67,
+    "harmonics": 41,
+    "known": 17
+  },
+  "known_flag_scope": {
+    "same_gaia_or_position_compatible": 11,
+    "nearby_ephemeris_association_source_unconfirmed": 6
+  },
+  "harmonic_flag_scope": {
+    "flagged_delivery_bois": 49,
+    "known_section_overlap": 8,
+    "same_source_pairs_screened": 47,
+    "flagged_groups": 19
+  },
+  "sections": [
+    {
+      "name": "Unflagged BOIs",
+      "divider_page": 1,
+      "entry_pages": [
+        2,
+        68
+      ],
+      "entries": 67
+    },
+    {
+      "name": "Harmonics and aliases",
+      "divider_page": 69,
+      "entry_pages": [
+        70,
+        110
+      ],
+      "entries": 41
+    },
+    {
+      "name": "Known signals",
+      "divider_page": 111,
+      "entry_pages": [
+        112,
+        128
+      ],
+      "entries": 17
+    }
+  ],
+  "unflagged_definition": "No flag under the declared queried-catalogue and same-source harmonic criteria. This does not establish independence or novelty.",
+  "source_row_counts": {
+    "cumulative-full": 9564,
+    "tce-full": 34032,
+    "ps-full": 40336,
+    "villanova": 2920
+  },
+  "catalogue_position_qualification": "DR25 TCE KIC 100001645 has no NASA target-catalogue position. Its flux-weighted centroid is an explicit positional proxy, not a true-source exclusion. It matches no original or delivered source, supplied-page, TIC, or parent-aperture KIC; no BOI flag is affected.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/catalogue-flags.json",
+      "bytes": 62974,
+      "sha256": "9072fc5ab365dbb7b6db2c9bc6b90b530bc51371b9e62df1e979a2e2911646f8"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/catalogue-flags.csv",
+      "bytes": 30718,
+      "sha256": "4996ff9a3f251bc9c5da2b6656fa4efe3c8e6803dfec5508977b21f75f150258"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/pdf-build-receipt.json",
+      "bytes": 97208,
+      "sha256": "fa378932caf55af0ec9ecf4bdbb11ca8f77e3d9a370dbc8b2816233e3ca85716"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/render-audit.json",
+      "bytes": 28492,
+      "sha256": "6a1496f0320236fec3acf8f5edf7ed5bcfb7c4b0fed00d95631cfdeb8b190f72"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/known/known-rerun-review.v1.json",
+      "bytes": 26671,
+      "sha256": "e499f086075d88a0ec9170f1abc336c5c2e7f5af23c1ff764149ce32fb026021"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/known/pdf-label-amendment.v5.receipt.json",
+      "bytes": 28940,
+      "sha256": "30fada4792e49bd6d19c2cd76fc2f3274e0cc547b2aa9f1b80e499d4087decfb"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/harmonics/verification.v1.json",
+      "bytes": 2367,
+      "sha256": "5ad1987151ff023f30b3b760243029f09f568c40547a6885518298f0c79589ea"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/known-flags-independent-audit.v1.json",
+      "bytes": 1136,
+      "sha256": "4950ea3f412d9e9b910aa4a2e413a8698b7236d6ccd822741ff6c1a7344732eb"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/harmonic-flags-independent-audit.v1.json",
+      "bytes": 748,
+      "sha256": "2c1a73c1a09e783ce6227cfe8cd158476a5bee984a8deaf9378414c76c059e3a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/tce100001645-identity-coverage.v1.json",
+      "bytes": 56715,
+      "sha256": "cd894e691a9575b28ee54c450b77b561c6ae6d2e8bbc95a6d7b8a9983fc9a4a8"
+    }
+  ],
+  "pdf_audits": [
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-audit.v6.json",
+      "bytes": 83587,
+      "sha256": "7dd8112c3f8557847533b92fd81d65c6058edec6480cf5611457e8ba459638c5"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-visual.v6.json",
+      "bytes": 5320,
+      "sha256": "676b193999b2d1192b567ec5975e6f343ef162e113c9861798ae84a5933c6f92"
+    }
+  ],
+  "verification": {
+    "all128_pages_visually_reviewed": true,
+    "all125_proposal_window_counts_match_original_displayed_proposals": true,
+    "all141_original_proposal_bindings_audited": true,
+    "all125_fitted_counts_match_actual_used_joint_fit_windows": true,
+    "all125_original_page_drawing_bytes_exact_to_reviewed_v5": true,
+    "all128_pixels_outside_new_count_captions_identical_to_reviewed_v5": true,
+    "all_scientific_image_font_and_resource_streams_exact_to_reviewed_v5": true,
+    "all128_original_text_and44_links_and129_bookmarks_exact_to_reviewed_v5": true,
+    "all125_original_full_curve_digests_exact": true,
+    "all94_original_source_masks_and141_proposal_bindings_exact": true,
+    "all125_plot_input_arrays_unchanged": true,
+    "all125_bins_uncertainties_and_full_models_visible": true,
+    "statistical_validation_claims_absent": true,
+    "original_page86_exclusion_preserved": true,
+    "strict_decimal15mb_limit_passed": true
+  },
+  "entries": [
+    {
+      "boi_id": "BOI-2050231500928700032-1",
+      "catalogue_entry": 1,
+      "pdf_page": 2,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2050231500928700032-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 7,
+        "joint_fitted_windows": 7
+      }
+    },
+    {
+      "boi_id": "BOI-2052194442729351680-1",
+      "catalogue_entry": 2,
+      "pdf_page": 3,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2052194442729351680-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 225,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2052563599452804096-1",
+      "catalogue_entry": 3,
+      "pdf_page": 4,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2052563599452804096-6",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 14,
+        "joint_fitted_windows": 14
+      }
+    },
+    {
+      "boi_id": "BOI-2053539145443677056-1",
+      "catalogue_entry": 6,
+      "pdf_page": 5,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2053539145443677056-10",
+        "view": "psf_flat",
+        "lane": "SURVIVOR_REVIEW",
+        "proposal_windows": 453,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2073175632853699968-1",
+      "catalogue_entry": 7,
+      "pdf_page": 6,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073175632853699968-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 4,
+        "joint_fitted_windows": 4
+      }
+    },
+    {
+      "boi_id": "BOI-2073237338631093888-1",
+      "catalogue_entry": 12,
+      "pdf_page": 7,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073237338631093888-3",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 21,
+        "joint_fitted_windows": 21
+      }
+    },
+    {
+      "boi_id": "BOI-2073285721453427712-1",
+      "catalogue_entry": 13,
+      "pdf_page": 8,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073285721453427712-2",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 94,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2073296372971801728-1",
+      "catalogue_entry": 14,
+      "pdf_page": 9,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073296372971801728-5",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 35,
+        "joint_fitted_windows": 34
+      }
+    },
+    {
+      "boi_id": "BOI-2073476658526284800-1",
+      "catalogue_entry": 15,
+      "pdf_page": 10,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073476658526284800-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 11,
+        "joint_fitted_windows": 11
+      }
+    },
+    {
+      "boi_id": "BOI-2073482357931911424-1",
+      "catalogue_entry": 16,
+      "pdf_page": 11,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073482357931911424-4",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 13,
+        "joint_fitted_windows": 13
+      }
+    },
+    {
+      "boi_id": "BOI-2073609042284178176-1",
+      "catalogue_entry": 17,
+      "pdf_page": 12,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073609042284178176-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 360,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2075057270893091200-1",
+      "catalogue_entry": 22,
+      "pdf_page": 13,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2075057270893091200-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 96,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2075875758527635968-1",
+      "catalogue_entry": 25,
+      "pdf_page": 14,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2075875758527635968-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 96,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076221417495492736-1",
+      "catalogue_entry": 28,
+      "pdf_page": 15,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076221417495492736-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 44,
+        "joint_fitted_windows": 41
+      }
+    },
+    {
+      "boi_id": "BOI-2076324737227600768-1",
+      "catalogue_entry": 31,
+      "pdf_page": 16,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076324737227600768-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 210,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076383384993192576-1",
+      "catalogue_entry": 32,
+      "pdf_page": 17,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076383384993192576-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 21,
+        "joint_fitted_windows": 21
+      }
+    },
+    {
+      "boi_id": "BOI-2076468876327949568-1",
+      "catalogue_entry": 33,
+      "pdf_page": 18,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076468876327949568-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 87,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076927677610525056-1",
+      "catalogue_entry": 38,
+      "pdf_page": 19,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076927677610525056-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 19,
+        "joint_fitted_windows": 19
+      }
+    },
+    {
+      "boi_id": "BOI-2077020448903232640-1",
+      "catalogue_entry": 39,
+      "pdf_page": 20,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077020448903232640-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 175,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077209775366626944-1",
+      "catalogue_entry": 40,
+      "pdf_page": 21,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077209775366626944-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 214,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077240046296834304-1",
+      "catalogue_entry": 41,
+      "pdf_page": 22,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077240046296834304-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 145,
+        "joint_fitted_windows": 62
+      }
+    },
+    {
+      "boi_id": "BOI-2077532516388848512-1",
+      "catalogue_entry": 42,
+      "pdf_page": 23,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077532516388848512-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 199,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2077554781499350144-1",
+      "catalogue_entry": 43,
+      "pdf_page": 24,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077554781499350144-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 86,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2077554781499350144-3",
+      "catalogue_entry": 44,
+      "pdf_page": 25,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077554781499350144-6",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 27,
+        "joint_fitted_windows": 27
+      }
+    },
+    {
+      "boi_id": "BOI-2077595974520134144-1",
+      "catalogue_entry": 45,
+      "pdf_page": 26,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077595974520134144-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 89,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077621538166116736-1",
+      "catalogue_entry": 46,
+      "pdf_page": 27,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077621538166116736-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 9,
+        "joint_fitted_windows": 9
+      }
+    },
+    {
+      "boi_id": "BOI-2078045782158649216-1",
+      "catalogue_entry": 56,
+      "pdf_page": 28,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2078045782158649216-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 222,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2078783726253023360-1",
+      "catalogue_entry": 58,
+      "pdf_page": 29,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2078783726253023360-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 90,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2078857015581291008-1",
+      "catalogue_entry": 59,
+      "pdf_page": 30,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2078857015581291008-2",
+        "view": "psf_flat",
+        "lane": "SURVIVOR_REVIEW",
+        "proposal_windows": 118,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2079433846869397376-1",
+      "catalogue_entry": 60,
+      "pdf_page": 31,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2079433846869397376-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 42,
+        "joint_fitted_windows": 42
+      }
+    },
+    {
+      "boi_id": "BOI-2079517512834068480-1",
+      "catalogue_entry": 61,
+      "pdf_page": 32,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2079517512834068480-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 216,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2079536067092694016-1",
+      "catalogue_entry": 62,
+      "pdf_page": 33,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2079536067092694016-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 2347,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2079595131475231616-1",
+      "catalogue_entry": 63,
+      "pdf_page": 34,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2079595131475231616-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1169,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2080290503866069888-1",
+      "catalogue_entry": 64,
+      "pdf_page": 35,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2080290503866069888-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 495,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2080481745869519488-1",
+      "catalogue_entry": 65,
+      "pdf_page": 36,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2080481745869519488-6",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 200,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2086643310248820352-1",
+      "catalogue_entry": 66,
+      "pdf_page": 37,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2086643310248820352-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 59,
+        "joint_fitted_windows": 59
+      }
+    },
+    {
+      "boi_id": "BOI-2087252538472180608-1",
+      "catalogue_entry": 67,
+      "pdf_page": 38,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2087252538472180608-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 16,
+        "joint_fitted_windows": 16
+      }
+    },
+    {
+      "boi_id": "BOI-2099129463076304128-1",
+      "catalogue_entry": 68,
+      "pdf_page": 39,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2099129463076304128-1-sap_qdiag",
+        "view": "sap_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 198,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2099197705814100480-1",
+      "catalogue_entry": 69,
+      "pdf_page": 40,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2099197705814100480-3",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 6,
+        "joint_fitted_windows": 6
+      }
+    },
+    {
+      "boi_id": "BOI-2099560128037101952-1",
+      "catalogue_entry": 70,
+      "pdf_page": 41,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2099560128037101952-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 114,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2100123494603868416-1",
+      "catalogue_entry": 71,
+      "pdf_page": 42,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2100123494603868416-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 49,
+        "joint_fitted_windows": 49
+      }
+    },
+    {
+      "boi_id": "BOI-2100203999471640064-1",
+      "catalogue_entry": 72,
+      "pdf_page": 43,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2100203999471640064-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 293,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2100986778733554048-1",
+      "catalogue_entry": 75,
+      "pdf_page": 44,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2100986778733554048-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 69,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2101047904706267264-1",
+      "catalogue_entry": 76,
+      "pdf_page": 45,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2101047904706267264-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 31,
+        "joint_fitted_windows": 31
+      }
+    },
+    {
+      "boi_id": "BOI-2101354466593873152-1",
+      "catalogue_entry": 78,
+      "pdf_page": 46,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2101354466593873152-2",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 5,
+        "joint_fitted_windows": 5
+      }
+    },
+    {
+      "boi_id": "BOI-2101435138957164672-1",
+      "catalogue_entry": 79,
+      "pdf_page": 47,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2101435138957164672-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 15,
+        "joint_fitted_windows": 15
+      }
+    },
+    {
+      "boi_id": "BOI-2101926796748446336-1",
+      "catalogue_entry": 80,
+      "pdf_page": 48,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2101926796748446336-5",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 4,
+        "joint_fitted_windows": 3
+      }
+    },
+    {
+      "boi_id": "BOI-2102918384442366592-1",
+      "catalogue_entry": 85,
+      "pdf_page": 49,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2102918384442366592-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 135,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2103348117391603840-1",
+      "catalogue_entry": 86,
+      "pdf_page": 50,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2103348117391603840-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 27,
+        "joint_fitted_windows": 27
+      }
+    },
+    {
+      "boi_id": "BOI-2103418559153168128-1",
+      "catalogue_entry": 87,
+      "pdf_page": 51,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2103418559153168128-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 6,
+        "joint_fitted_windows": 6
+      }
+    },
+    {
+      "boi_id": "BOI-2104048368859231232-1",
+      "catalogue_entry": 88,
+      "pdf_page": 52,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2104048368859231232-2",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 57,
+        "joint_fitted_windows": 57
+      }
+    },
+    {
+      "boi_id": "BOI-2104484363877066752-1",
+      "catalogue_entry": 91,
+      "pdf_page": 53,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2104484363877066752-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 7,
+        "joint_fitted_windows": 7
+      }
+    },
+    {
+      "boi_id": "BOI-2105418399005125376-1",
+      "catalogue_entry": 92,
+      "pdf_page": 54,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2105418399005125376-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 51,
+        "joint_fitted_windows": 51
+      }
+    },
+    {
+      "boi_id": "BOI-2106383701495087232-1",
+      "catalogue_entry": 93,
+      "pdf_page": 55,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2106383701495087232-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 353,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2116924474653194112-1",
+      "catalogue_entry": 99,
+      "pdf_page": 56,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2116924474653194112-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 53,
+        "joint_fitted_windows": 53
+      }
+    },
+    {
+      "boi_id": "BOI-2126097738825919104-1",
+      "catalogue_entry": 101,
+      "pdf_page": 57,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126097738825919104-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 42,
+        "joint_fitted_windows": 42
+      }
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-1",
+      "catalogue_entry": 105,
+      "pdf_page": 58,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126354436132009088-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 54,
+        "joint_fitted_windows": 53
+      }
+    },
+    {
+      "boi_id": "BOI-2126585921988564224-1",
+      "catalogue_entry": 106,
+      "pdf_page": 59,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126585921988564224-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 18,
+        "joint_fitted_windows": 18
+      }
+    },
+    {
+      "boi_id": "BOI-2126728304441865728-1",
+      "catalogue_entry": 107,
+      "pdf_page": 60,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126728304441865728-2",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 23,
+        "joint_fitted_windows": 23
+      }
+    },
+    {
+      "boi_id": "BOI-2127002808692040320-1",
+      "catalogue_entry": 109,
+      "pdf_page": 61,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127002808692040320-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 3357,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2127169041106093184-1",
+      "catalogue_entry": 110,
+      "pdf_page": 62,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127169041106093184-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 202,
+        "joint_fitted_windows": 62
+      }
+    },
+    {
+      "boi_id": "BOI-2127186564572468352-1",
+      "catalogue_entry": 111,
+      "pdf_page": 63,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127186564572468352-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 123,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2127956355854461952-1",
+      "catalogue_entry": 114,
+      "pdf_page": 64,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127956355854461952-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1746,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2128059130130482432-1",
+      "catalogue_entry": 115,
+      "pdf_page": 65,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2128059130130482432-3",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 623,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2130658616133595264-1",
+      "catalogue_entry": 121,
+      "pdf_page": 66,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2130658616133595264-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 36,
+        "joint_fitted_windows": 36
+      }
+    },
+    {
+      "boi_id": "BOI-2130965547378157568-1",
+      "catalogue_entry": 122,
+      "pdf_page": 67,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2130965547378157568-2",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 229,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2132313759090098688-1",
+      "catalogue_entry": 123,
+      "pdf_page": 68,
+      "section": "unflagged",
+      "known_flag": false,
+      "harmonic_flag": false,
+      "known_labels": [],
+      "harmonic_labels": [],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2132313759090098688-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 124,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2052625863598225536-1",
+      "catalogue_entry": 4,
+      "pdf_page": 70,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H01; comparison anchor only.",
+        "Possible harmonic with BOI-2052625863598225536-2: P_long/P_short=5:3; mismatch 19.7 ppm; timing overlaps (81/237 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2052625863598225536-3",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 237,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2052625863598225536-2",
+      "catalogue_entry": 5,
+      "pdf_page": 71,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2052625863598225536-1: P_long/P_short=5:3; mismatch 19.7 ppm; timing overlaps (81/403 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2052625863598225536-9",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 403,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073226966298407552-1",
+      "catalogue_entry": 8,
+      "pdf_page": 72,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H02; comparison anchor only.",
+        "Possible harmonic with BOI-2073226966298407552-2: P_long/P_short=7:1; mismatch 37.3 ppm; timing overlaps (68/68 predicted centres).",
+        "Possible harmonic with BOI-2073226966298407552-3: P_long/P_short=3:1; mismatch 13.7 ppm; timing overlaps (68/68 predicted centres).",
+        "Near-period relation with BOI-2073226966298407552-4: P_long/P_short=3:1; mismatch 3973.1 ppm; timing overlaps (68/68 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073226966298407552-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 68,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073226966298407552-2",
+      "catalogue_entry": 9,
+      "pdf_page": 73,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2073226966298407552-1: P_long/P_short=7:1; mismatch 37.3 ppm; timing overlaps (68/475 predicted centres).",
+        "Possible harmonic with BOI-2073226966298407552-3: P_long/P_short=7:3; mismatch 23.6 ppm; timing overlaps (68/475 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073226966298407552-12",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 475,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073226966298407552-3",
+      "catalogue_entry": 10,
+      "pdf_page": 74,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2073226966298407552-1: P_long/P_short=3:1; mismatch 13.7 ppm; timing overlaps (68/207 predicted centres).",
+        "Possible harmonic with BOI-2073226966298407552-2: P_long/P_short=7:3; mismatch 23.6 ppm; timing overlaps (68/207 predicted centres).",
+        "Near-period relation with BOI-2073226966298407552-4: P_long/P_short=1:1; mismatch 3959.4 ppm; timing overlaps (207/207 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073226966298407552-5",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 207,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073226966298407552-4",
+      "catalogue_entry": 11,
+      "pdf_page": 75,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Near-period relation with BOI-2073226966298407552-1: P_long/P_short=3:1; mismatch 3973.1 ppm; timing overlaps (69/212 predicted centres).",
+        "Near-period relation with BOI-2073226966298407552-3: P_long/P_short=1:1; mismatch 3959.4 ppm; timing overlaps (212/212 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073226966298407552-1",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 212,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073628180652139904-1",
+      "catalogue_entry": 18,
+      "pdf_page": 76,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H03; comparison anchor only.",
+        "Possible harmonic with BOI-2073628180652139904-2: P_long/P_short=7:1; mismatch 40.2 ppm; timing overlaps (25/25 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073628180652139904-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 25,
+        "joint_fitted_windows": 25
+      }
+    },
+    {
+      "boi_id": "BOI-2073628180652139904-2",
+      "catalogue_entry": 19,
+      "pdf_page": 77,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2073628180652139904-1: P_long/P_short=7:1; mismatch 40.2 ppm; timing overlaps (25/163 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "shallow-v1-2073628180652139904-1",
+        "view": "psf_flat",
+        "lane": "SHALLOW_BLS",
+        "proposal_windows": 163,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073666564790289664-1",
+      "catalogue_entry": 20,
+      "pdf_page": 78,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H04; comparison anchor only.",
+        "Possible harmonic with BOI-2073666564790289664-2: P_long/P_short=3:1; mismatch 32.8 ppm; timing overlaps (172/172 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073666564790289664-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 172,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2073666564790289664-2",
+      "catalogue_entry": 21,
+      "pdf_page": 79,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2073666564790289664-1: P_long/P_short=3:1; mismatch 32.8 ppm; timing overlaps (172/521 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2073666564790289664-4",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 521,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2075066857261081600-1",
+      "catalogue_entry": 23,
+      "pdf_page": 80,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H05; comparison anchor only.",
+        "Possible harmonic with BOI-2075066857261081600-2: P_long/P_short=9:5; mismatch 114.5 ppm; timing overlaps (72/353 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2075066857261081600-11",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 353,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2075066857261081600-2",
+      "catalogue_entry": 24,
+      "pdf_page": 81,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2075066857261081600-1: P_long/P_short=9:5; mismatch 114.5 ppm; timing overlaps (72/634 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2075066857261081600-22",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 634,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076248557386606336-1",
+      "catalogue_entry": 29,
+      "pdf_page": 82,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H06; comparison anchor only.",
+        "Possible harmonic with BOI-2076248557386606336-2: P_long/P_short=5:1; mismatch 27.9 ppm; timing overlaps (95/95 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076248557386606336-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 95,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2076248557386606336-2",
+      "catalogue_entry": 30,
+      "pdf_page": 83,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2076248557386606336-1: P_long/P_short=5:1; mismatch 27.9 ppm; timing overlaps (94/464 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076248557386606336-4",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 464,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076894554826018304-1",
+      "catalogue_entry": 35,
+      "pdf_page": 84,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H07; comparison anchor only.",
+        "Possible harmonic with BOI-2076894554826018304-2: P_long/P_short=13:1; mismatch 5.0 ppm; timing inconsistent/unresolved (0/140 predicted centres).",
+        "Possible harmonic with BOI-2076894554826018304-3: P_long/P_short=3:1; mismatch 53.6 ppm; timing overlaps (140/140 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076894554826018304-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 140,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076894554826018304-2",
+      "catalogue_entry": 36,
+      "pdf_page": 85,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2076894554826018304-1: P_long/P_short=13:1; mismatch 5.0 ppm; timing inconsistent/unresolved (0/12 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076894554826018304-25",
+        "view": "psf_flat",
+        "lane": "SURVIVOR_REVIEW",
+        "proposal_windows": 12,
+        "joint_fitted_windows": 12
+      }
+    },
+    {
+      "boi_id": "BOI-2076894554826018304-3",
+      "catalogue_entry": 37,
+      "pdf_page": 86,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2076894554826018304-1: P_long/P_short=3:1; mismatch 53.6 ppm; timing overlaps (141/418 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076894554826018304-7",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 418,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077663010371347072-1",
+      "catalogue_entry": 47,
+      "pdf_page": 87,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H08; comparison anchor only.",
+        "Possible harmonic with BOI-2077663010371347072-2: P_long/P_short=3:1; mismatch 106.2 ppm; timing overlaps (128/128 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077663010371347072-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 128,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2077663010371347072-2",
+      "catalogue_entry": 48,
+      "pdf_page": 88,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077663010371347072-1: P_long/P_short=3:1; mismatch 106.2 ppm; timing overlaps (130/388 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077663010371347072-7",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 388,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077839967326211328-1",
+      "catalogue_entry": 49,
+      "pdf_page": 89,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H09; comparison anchor only.",
+        "Possible harmonic with BOI-2077839967326211328-2: P_long/P_short=3:1; mismatch 44.7 ppm; timing overlaps (519/519 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077839967326211328-1-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 519,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077839967326211328-2",
+      "catalogue_entry": 50,
+      "pdf_page": 90,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077839967326211328-1: P_long/P_short=3:1; mismatch 44.7 ppm; timing overlaps (518/1558 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077839967326211328-6-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1558,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-1",
+      "catalogue_entry": 51,
+      "pdf_page": 91,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H10; comparison anchor only.",
+        "Possible harmonic with BOI-2077967368932890752-2: P_long/P_short=5:1; mismatch 29.7 ppm; timing overlaps (224/224 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-4: P_long/P_short=9:1; mismatch 18.5 ppm; timing overlaps (224/224 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-5: P_long/P_short=11:1; mismatch 53.9 ppm; timing overlaps (224/224 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-6: P_long/P_short=7:1; mismatch 7.5 ppm; timing overlaps (224/224 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077967368932890752-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 224,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-2",
+      "catalogue_entry": 52,
+      "pdf_page": 92,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077967368932890752-1: P_long/P_short=5:1; mismatch 29.7 ppm; timing overlaps (224/1074 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-4: P_long/P_short=9:5; mismatch 11.2 ppm; timing overlaps (224/1074 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-5: P_long/P_short=11:5; mismatch 83.6 ppm; timing overlaps (375/1074 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-6: P_long/P_short=7:5; mismatch 22.2 ppm; timing overlaps (224/1074 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077967368932890752-13",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1074,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-4",
+      "catalogue_entry": 53,
+      "pdf_page": 93,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077967368932890752-1: P_long/P_short=9:1; mismatch 18.5 ppm; timing overlaps (220/1911 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-2: P_long/P_short=9:5; mismatch 11.2 ppm; timing overlaps (220/1911 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-5: P_long/P_short=11:9; mismatch 72.4 ppm; timing overlaps (396/1911 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-6: P_long/P_short=9:7; mismatch 11.0 ppm; timing overlaps (220/1911 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077967368932890752-22",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1911,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-5",
+      "catalogue_entry": 54,
+      "pdf_page": 94,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077967368932890752-1: P_long/P_short=11:1; mismatch 53.9 ppm; timing overlaps (221/2321 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-2: P_long/P_short=11:5; mismatch 83.6 ppm; timing overlaps (370/2321 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-4: P_long/P_short=11:9; mismatch 72.4 ppm; timing overlaps (398/2321 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-6: P_long/P_short=11:7; mismatch 61.4 ppm; timing overlaps (415/2321 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077967368932890752-27",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 2321,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-6",
+      "catalogue_entry": 55,
+      "pdf_page": 95,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2077967368932890752-1: P_long/P_short=7:1; mismatch 7.5 ppm; timing overlaps (309/2105 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-2: P_long/P_short=7:5; mismatch 22.2 ppm; timing overlaps (309/2105 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-4: P_long/P_short=9:7; mismatch 11.0 ppm; timing overlaps (309/2105 predicted centres).",
+        "Possible harmonic with BOI-2077967368932890752-5: P_long/P_short=11:7; mismatch 61.4 ppm; timing overlaps (580/2105 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2077967368932890752-17-psf_qdiag",
+        "view": "psf_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 2105,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2102612750272489216-1",
+      "catalogue_entry": 81,
+      "pdf_page": 96,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H11; comparison anchor only.",
+        "Possible harmonic with BOI-2102612750272489216-2: P_long/P_short=5:1; mismatch 154.3 ppm; timing overlaps (34/34 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-3: P_long/P_short=7:1; mismatch 44.8 ppm; timing overlaps (34/34 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-4: P_long/P_short=3:1; mismatch 48.2 ppm; timing overlaps (34/34 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2102612750272489216-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 34,
+        "joint_fitted_windows": 34
+      }
+    },
+    {
+      "boi_id": "BOI-2102612750272489216-2",
+      "catalogue_entry": 82,
+      "pdf_page": 97,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2102612750272489216-1: P_long/P_short=5:1; mismatch 154.3 ppm; timing overlaps (34/153 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-3: P_long/P_short=7:5; mismatch 199.1 ppm; timing overlaps (34/153 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-4: P_long/P_short=5:3; mismatch 106.1 ppm; timing overlaps (34/153 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2102612750272489216-13",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 153,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2102612750272489216-3",
+      "catalogue_entry": 83,
+      "pdf_page": 98,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2102612750272489216-1: P_long/P_short=7:1; mismatch 44.8 ppm; timing overlaps (34/216 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-2: P_long/P_short=7:5; mismatch 199.1 ppm; timing overlaps (34/216 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-4: P_long/P_short=7:3; mismatch 92.9 ppm; timing overlaps (34/216 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2102612750272489216-15",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 216,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2102612750272489216-4",
+      "catalogue_entry": 84,
+      "pdf_page": 99,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2102612750272489216-1: P_long/P_short=3:1; mismatch 48.2 ppm; timing overlaps (34/91 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-2: P_long/P_short=5:3; mismatch 106.1 ppm; timing overlaps (34/91 predicted centres).",
+        "Possible harmonic with BOI-2102612750272489216-3: P_long/P_short=7:3; mismatch 92.9 ppm; timing overlaps (34/91 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2102612750272489216-3",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 91,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2104132687658252160-1",
+      "catalogue_entry": 89,
+      "pdf_page": 100,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H12; comparison anchor only.",
+        "Possible harmonic with BOI-2104132687658252160-2: P_long/P_short=3:1; mismatch 9.6 ppm; timing overlaps (49/49 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2104132687658252160-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 49,
+        "joint_fitted_windows": 48
+      }
+    },
+    {
+      "boi_id": "BOI-2104132687658252160-2",
+      "catalogue_entry": 90,
+      "pdf_page": 101,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2104132687658252160-1: P_long/P_short=3:1; mismatch 9.6 ppm; timing overlaps (49/152 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2104132687658252160-2",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 152,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2106817012155835904-1",
+      "catalogue_entry": 94,
+      "pdf_page": 102,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H13; comparison anchor only.",
+        "Possible harmonic with BOI-2106817012155835904-2: P_long/P_short=3:1; mismatch 3.6 ppm; timing overlaps (291/291 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2106817012155835904-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 291,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2106817012155835904-2",
+      "catalogue_entry": 95,
+      "pdf_page": 103,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2106817012155835904-1: P_long/P_short=3:1; mismatch 3.6 ppm; timing overlaps (291/883 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2106817012155835904-5",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 883,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-1",
+      "catalogue_entry": 102,
+      "pdf_page": 104,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H15; comparison anchor only.",
+        "Possible harmonic with BOI-2126217104555818240-2: P_long/P_short=7:1; mismatch 17.4 ppm; timing overlaps (303/303 predicted centres).",
+        "Possible harmonic with BOI-2126217104555818240-3: P_long/P_short=3:1; mismatch 58.8 ppm; timing overlaps (303/303 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126217104555818240-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 303,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-2",
+      "catalogue_entry": 103,
+      "pdf_page": 105,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2126217104555818240-1: P_long/P_short=7:1; mismatch 17.4 ppm; timing overlaps (300/2074 predicted centres).",
+        "Possible harmonic with BOI-2126217104555818240-3: P_long/P_short=7:3; mismatch 41.3 ppm; timing overlaps (300/2074 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126217104555818240-18",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 2074,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-3",
+      "catalogue_entry": 104,
+      "pdf_page": 106,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2126217104555818240-1: P_long/P_short=3:1; mismatch 58.8 ppm; timing overlaps (305/920 predicted centres).",
+        "Possible harmonic with BOI-2126217104555818240-2: P_long/P_short=7:3; mismatch 41.3 ppm; timing overlaps (305/920 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126217104555818240-8",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 920,
+        "joint_fitted_windows": 62
+      }
+    },
+    {
+      "boi_id": "BOI-2127460755284375168-1",
+      "catalogue_entry": 112,
+      "pdf_page": 107,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H16; comparison anchor only.",
+        "Possible harmonic with BOI-2127460755284375168-2: P_long/P_short=3:1; mismatch 90.3 ppm; timing overlaps (35/35 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127460755284375168-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 35,
+        "joint_fitted_windows": 34
+      }
+    },
+    {
+      "boi_id": "BOI-2127460755284375168-2",
+      "catalogue_entry": 113,
+      "pdf_page": 108,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2127460755284375168-1: P_long/P_short=3:1; mismatch 90.3 ppm; timing overlaps (33/106 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2127460755284375168-6",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 106,
+        "joint_fitted_windows": 62
+      }
+    },
+    {
+      "boi_id": "BOI-2130460704041437824-1",
+      "catalogue_entry": 119,
+      "pdf_page": 109,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible-harmonic group H18; comparison anchor only.",
+        "Possible harmonic with BOI-2130460704041437824-2: P_long/P_short=3:1; mismatch 0.6 ppm; timing overlaps (195/195 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2130460704041437824-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 195,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2130460704041437824-2",
+      "catalogue_entry": 120,
+      "pdf_page": 110,
+      "section": "harmonics",
+      "known_flag": false,
+      "harmonic_flag": true,
+      "known_labels": [],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2130460704041437824-1: P_long/P_short=3:1; mismatch 0.6 ppm; timing overlaps (195/585 predicted centres)."
+      ],
+      "evidence_links": [],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2130460704041437824-4",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 585,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2076055902327710720-1",
+      "catalogue_entry": 26,
+      "pdf_page": 112,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K06990.01 (FALSE POSITIVE); catalogue KIC 8196180; supplied page KIC 8128478; P=3.6716611 d; P_BOI/P_catalogue=1/1; separation 323.73 arcsec; aligned centres 354/354; max timing residual 0.078 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 8196180 TCE 1 (TCE); catalogue KIC 8196180; supplied page KIC 8128478; P=3.67166 d; P_BOI/P_catalogue=1/1; separation 323.73 arcsec; aligned centres 354/354; max timing residual 0.076 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 Villanova_Kepler_EB_live: KIC 8196180 (EB_CATALOGUE); catalogue KIC 8196180; supplied page KIC 8128478; P=3.6716611 d; P_BOI/P_catalogue=1/1; separation 323.73 arcsec; aligned centres 354/354; max timing residual 0.096 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K06990.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 8196180 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "Villanova_Kepler_EB_live: KIC 8196180",
+          "url": "https://keplerebs.villanova.edu/overview/?k=8196180"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076055902327710720-1",
+        "view": "psf_flat",
+        "lane": "SURVIVOR_REVIEW",
+        "proposal_windows": 354,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2076062434975364864-1",
+      "catalogue_entry": 27,
+      "pdf_page": 113,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K06990.01 (FALSE POSITIVE); catalogue KIC 8196180; supplied page KIC not provided; P=3.6716611 d; P_BOI/P_catalogue=1/1; separation 356.74 arcsec; aligned centres 71/71; max timing residual 1.153 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 8196180 TCE 1 (TCE); catalogue KIC 8196180; supplied page KIC not provided; P=3.67166 d; P_BOI/P_catalogue=1/1; separation 356.74 arcsec; aligned centres 71/71; max timing residual 1.160 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 Villanova_Kepler_EB_live: KIC 8196180 (EB_CATALOGUE); catalogue KIC 8196180; supplied page KIC not provided; P=3.6716611 d; P_BOI/P_catalogue=1/1; separation 356.74 arcsec; aligned centres 71/71; max timing residual 1.172 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K06990.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 8196180 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "Villanova_Kepler_EB_live: KIC 8196180",
+          "url": "https://keplerebs.villanova.edu/overview/?k=8196180"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076062434975364864-1",
+        "view": "psf_flat",
+        "lane": "SURVIVOR_REVIEW",
+        "proposal_windows": 71,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2076476504190366336-1",
+      "catalogue_entry": 34,
+      "pdf_page": 114,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 4936089 TCE 3 (TCE); catalogue KIC 4936089; supplied page KIC 4847373; P=142.197 d; P_BOI/P_catalogue=1/5; separation 603.61 arcsec; aligned centres 9/9; max timing residual 2.112 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4936089 TCE 3",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2076476504190366336-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 38,
+        "joint_fitted_windows": 38
+      }
+    },
+    {
+      "boi_id": "BOI-2078603367689924608-1",
+      "catalogue_entry": 57,
+      "pdf_page": 115,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K06923.01 (FALSE POSITIVE); catalogue KIC 7846730; supplied page KIC 7777373; P=11.028227 d; P_BOI/P_catalogue=1/1; separation 145.90 arcsec; aligned centres 82/82; max timing residual 0.466 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 7846730 TCE 1 (TCE); catalogue KIC 7846730; supplied page KIC 7777373; P=11.0283 d; P_BOI/P_catalogue=1/1; separation 145.90 arcsec; aligned centres 82/82; max timing residual 0.533 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 7846730 TCE 2 (TCE); catalogue KIC 7846730; supplied page KIC 7777373; P=5.51411 d; P_BOI/P_catalogue=2/1; separation 145.90 arcsec; aligned centres 82/82; max timing residual 3.731 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 Villanova_Kepler_EB_live: KIC 7846730 (EB_CATALOGUE); catalogue KIC 7846730; supplied page KIC 7777373; P=11.028227 d; P_BOI/P_catalogue=1/1; separation 145.90 arcsec; aligned centres 82/82; max timing residual 0.448 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K06923.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 7846730 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 7846730 TCE 2",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "Villanova_Kepler_EB_live: KIC 7846730",
+          "url": "https://keplerebs.villanova.edu/overview/?k=7846730"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2078603367689924608-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 82,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2100325529865507712-1",
+      "catalogue_entry": 73,
+      "pdf_page": 116,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Catalogued signal \u2014 Bienias_Szabo_2025: Gaia DR3 2100325529865507712 (PUBLISHED_CANDIDATE); P=3.2630113 d; P_BOI/P_catalogue=1/1; same Gaia source; aligned centres 342/342; max timing residual 0.098 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "Bienias_Szabo_2025: Gaia DR3 2100325529865507712",
+          "url": "https://doi.org/10.5281/zenodo.14618891"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2100325529865507712-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 342,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2100442657917279616-1",
+      "catalogue_entry": 74,
+      "pdf_page": 117,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K02190.01 (FALSE POSITIVE); catalogue KIC 4245933; supplied page KIC not provided; P=11.258074 d; P_BOI/P_catalogue=1/1; separation 136.53 arcsec; aligned centres 118/118; max timing residual 2.280 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K05050.01 (FALSE POSITIVE); catalogue KIC 4245861; supplied page KIC not provided; P=11.258231 d; P_BOI/P_catalogue=1/1; separation 151.96 arcsec; aligned centres 118/118; max timing residual 1.747 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K06395.01 (FALSE POSITIVE); catalogue KIC 4245897; supplied page KIC not provided; P=11.257062 d; P_BOI/P_catalogue=1/1; separation 116.07 arcsec; aligned centres 118/118; max timing residual 2.802 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 4245861 TCE 1 (TCE); catalogue KIC 4245861; supplied page KIC not provided; P=11.258 d; P_BOI/P_catalogue=1/1; separation 151.96 arcsec; aligned centres 118/118; max timing residual 2.160 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 4245897 TCE 1 (TCE); catalogue KIC 4245897; supplied page KIC not provided; P=11.258 d; P_BOI/P_catalogue=1/1; separation 116.07 arcsec; aligned centres 118/118; max timing residual 1.968 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 4245933 TCE 1 (TCE); catalogue KIC 4245933; supplied page KIC not provided; P=11.258 d; P_BOI/P_catalogue=1/1; separation 136.53 arcsec; aligned centres 118/118; max timing residual 2.184 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 4245945 TCE 1 (TCE); catalogue KIC 4245945; supplied page KIC not provided; P=11.2576 d; P_BOI/P_catalogue=1/1; separation 104.43 arcsec; aligned centres 118/118; max timing residual 3.120 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 Villanova_Kepler_EB_live: KIC 4245897 (EB_CATALOGUE); catalogue KIC 4245897; supplied page KIC not provided; P=11.257822 d; P_BOI/P_catalogue=1/1; separation 116.07 arcsec; aligned centres 118/118; max timing residual 2.156 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K02190.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_cumulative_KOI: K05050.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_cumulative_KOI: K06395.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4245861 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4245897 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4245933 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4245945 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "Villanova_Kepler_EB_live: KIC 4245897",
+          "url": "https://keplerebs.villanova.edu/overview/?k=4245897"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2100442657917279616-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 118,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2101095943921811328-1",
+      "catalogue_entry": 77,
+      "pdf_page": 118,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K01660.01 (CANDIDATE); catalogue KIC 4830605; supplied page KIC not provided; P=35.636402 d; P_BOI/P_catalogue=1/1; separation 0.93 arcsec; aligned centres 34/34; max timing residual 1.259 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 4830605 TCE 1 (TCE); catalogue KIC 4830605; supplied page KIC not provided; P=35.6363 d; P_BOI/P_catalogue=1/1; separation 0.93 arcsec; aligned centres 34/34; max timing residual 1.308 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K01660.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 4830605 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2101095943921811328-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 34,
+        "joint_fitted_windows": 34
+      }
+    },
+    {
+      "boi_id": "BOI-2107574403864920576-1",
+      "catalogue_entry": 96,
+      "pdf_page": 119,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K00472.01 (CONFIRMED); catalogue KIC 10123064; supplied page KIC not provided; P=4.2437481 d; P_BOI/P_catalogue=1/1; separation 0.49 arcsec; aligned centres 315/315; max timing residual 0.170 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1 (TCE); catalogue KIC 10123064; supplied page KIC not provided; P=4.24374 d; P_BOI/P_catalogue=1/1; separation 0.49 arcsec; aligned centres 315/315; max timing residual 0.119 h",
+        "Catalogued signal \u2014 NASA_confirmed_planets_PS: Kepler-565 b (CONFIRMED); P=4.243743 d; P_BOI/P_catalogue=1/1; separation 0.01 arcsec; aligned centres 315/315; max timing residual 0.124 h"
+      ],
+      "harmonic_labels": [
+        "Possible-harmonic group H14; comparison anchor only.",
+        "Possible harmonic with BOI-2107574403864920576-2: P_long/P_short=5:1; mismatch 6.7 ppm; timing overlaps (315/315 predicted centres).",
+        "Possible harmonic with BOI-2107574403864920576-3: P_long/P_short=3:1; mismatch 12.0 ppm; timing overlaps (315/315 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K00472.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_confirmed_planets_PS: Kepler-565 b",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-565%20b"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2107574403864920576-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 315,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2107574403864920576-2",
+      "catalogue_entry": 97,
+      "pdf_page": 120,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K00472.01 (CONFIRMED); catalogue KIC 10123064; supplied page KIC not provided; P=4.2437481 d; P_BOI/P_catalogue=1/5; separation 0.49 arcsec; aligned centres 314/314; max timing residual 0.113 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1 (TCE); catalogue KIC 10123064; supplied page KIC not provided; P=4.24374 d; P_BOI/P_catalogue=1/5; separation 0.49 arcsec; aligned centres 314/314; max timing residual 0.163 h",
+        "Catalogued signal \u2014 NASA_confirmed_planets_PS: Kepler-565 b (CONFIRMED); P=4.2437481 d; P_BOI/P_catalogue=1/5; separation 0.01 arcsec; aligned centres 314/314; max timing residual 0.113 h"
+      ],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2107574403864920576-1: P_long/P_short=5:1; mismatch 6.7 ppm; timing overlaps (314/1552 predicted centres).",
+        "Possible harmonic with BOI-2107574403864920576-3: P_long/P_short=5:3; mismatch 5.2 ppm; timing overlaps (314/1552 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K00472.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_confirmed_planets_PS: Kepler-565 b",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-565%20b"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2107574403864920576-13",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1552,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2107574403864920576-3",
+      "catalogue_entry": 98,
+      "pdf_page": 121,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K00472.01 (CONFIRMED); catalogue KIC 10123064; supplied page KIC not provided; P=4.2437481 d; P_BOI/P_catalogue=1/3; separation 0.49 arcsec; aligned centres 315/315; max timing residual 0.137 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1 (TCE); catalogue KIC 10123064; supplied page KIC not provided; P=4.24374 d; P_BOI/P_catalogue=1/3; separation 0.49 arcsec; aligned centres 315/315; max timing residual 0.188 h",
+        "Catalogued signal \u2014 NASA_confirmed_planets_PS: Kepler-565 b (CONFIRMED); P=4.2437481 d; P_BOI/P_catalogue=1/3; separation 0.01 arcsec; aligned centres 315/315; max timing residual 0.137 h"
+      ],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2107574403864920576-1: P_long/P_short=3:1; mismatch 12.0 ppm; timing overlaps (315/931 predicted centres).",
+        "Possible harmonic with BOI-2107574403864920576-2: P_long/P_short=5:3; mismatch 5.2 ppm; timing overlaps (315/931 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K00472.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 10123064 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_confirmed_planets_PS: Kepler-565 b",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-565%20b"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2107574403864920576-5",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 931,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2125801656663271552-1",
+      "catalogue_entry": 100,
+      "pdf_page": 122,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_cumulative_KOI: K07580.01 (FALSE POSITIVE); catalogue KIC 7116859; supplied page KIC 7281199; P=0.5667638 d; P_BOI/P_catalogue=1/1; separation 744.50 arcsec; aligned centres 1705/1705; max timing residual 0.275 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 7031340 TCE 1 (TCE); catalogue KIC 7031340; supplied page KIC 7281199; P=0.566782 d; P_BOI/P_catalogue=1/1; separation 1502.46 arcsec; aligned centres 1705/1705; max timing residual 0.711 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 7033389 TCE 1 (TCE); catalogue KIC 7033389; supplied page KIC 7281199; P=0.566789 d; P_BOI/P_catalogue=1/1; separation 1041.04 arcsec; aligned centres 1705/1705; max timing residual 1.215 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 6862750 TCE 1 (TCE); catalogue KIC 6862750; supplied page KIC 7281199; P=0.566791 d; P_BOI/P_catalogue=1/1; separation 1653.43 arcsec; aligned centres 1705/1705; max timing residual 0.946 h",
+        "Nearby ephemeris association; source unconfirmed \u2014 NASA_Kepler_DR25_TCE: KIC 7117561 TCE 1 (TCE); catalogue KIC 7117561; supplied page KIC 7281199; P=0.566782 d; P_BOI/P_catalogue=1/1; separation 779.94 arcsec; aligned centres 1705/1705; max timing residual 1.143 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K07580.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 7031340 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 7033389 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 6862750 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 7117561 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2125801656663271552-1-sap_qdiag",
+        "view": "sap_qdiag",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1705,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2126910621514995968-1",
+      "catalogue_entry": 108,
+      "pdf_page": 123,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": false,
+      "known_labels": [
+        "Catalogued signal \u2014 Bienias_Szabo_2025: Gaia DR3 2126910621514995968 (PUBLISHED_CANDIDATE); P=3.6228907 d; P_BOI/P_catalogue=1/1; same Gaia source; aligned centres 136/136; max timing residual 0.143 h"
+      ],
+      "harmonic_labels": [],
+      "evidence_links": [
+        {
+          "label": "Bienias_Szabo_2025: Gaia DR3 2126910621514995968",
+          "url": "https://doi.org/10.5281/zenodo.14618891"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2126910621514995968-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 136,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2128959007378441472-1",
+      "catalogue_entry": 116,
+      "pdf_page": 124,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 Bienias_Szabo_2025: Gaia DR3 2128959007378441472 (PUBLISHED_CANDIDATE); P=2.5089136 d; P_BOI/P_catalogue=1/1; same Gaia source; aligned centres 507/507; max timing residual 0.077 h"
+      ],
+      "harmonic_labels": [
+        "Possible-harmonic group H17; comparison anchor only.",
+        "Possible harmonic with BOI-2128959007378441472-2: P_long/P_short=7:1; mismatch 4.8 ppm; timing overlaps (507/507 predicted centres).",
+        "Possible harmonic with BOI-2128959007378441472-3: P_long/P_short=3:1; mismatch 24.7 ppm; timing overlaps (507/507 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "Bienias_Szabo_2025: Gaia DR3 2128959007378441472",
+          "url": "https://doi.org/10.5281/zenodo.14618891"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2128959007378441472-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 507,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2128959007378441472-2",
+      "catalogue_entry": 117,
+      "pdf_page": 125,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 Bienias_Szabo_2025: Gaia DR3 2128959007378441472 (PUBLISHED_CANDIDATE); P=2.5089136 d; P_BOI/P_catalogue=1/7; same Gaia source; aligned centres 501/501; max timing residual 0.342 h"
+      ],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2128959007378441472-1: P_long/P_short=7:1; mismatch 4.8 ppm; timing overlaps (501/3580 predicted centres).",
+        "Possible harmonic with BOI-2128959007378441472-3: P_long/P_short=7:3; mismatch 29.4 ppm; timing overlaps (501/3580 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "Bienias_Szabo_2025: Gaia DR3 2128959007378441472",
+          "url": "https://doi.org/10.5281/zenodo.14618891"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2128959007378441472-22",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 3580,
+        "joint_fitted_windows": 64
+      }
+    },
+    {
+      "boi_id": "BOI-2128959007378441472-3",
+      "catalogue_entry": 118,
+      "pdf_page": 126,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 Bienias_Szabo_2025: Gaia DR3 2128959007378441472 (PUBLISHED_CANDIDATE); P=2.5089136 d; P_BOI/P_catalogue=1/3; same Gaia source; aligned centres 511/511; max timing residual 0.509 h"
+      ],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2128959007378441472-1: P_long/P_short=3:1; mismatch 24.7 ppm; timing overlaps (511/1550 predicted centres).",
+        "Possible harmonic with BOI-2128959007378441472-2: P_long/P_short=7:3; mismatch 29.4 ppm; timing overlaps (511/1550 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "Bienias_Szabo_2025: Gaia DR3 2128959007378441472",
+          "url": "https://doi.org/10.5281/zenodo.14618891"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2128959007378441472-5",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 1550,
+        "joint_fitted_windows": 63
+      }
+    },
+    {
+      "boi_id": "BOI-2134754193866263936-1",
+      "catalogue_entry": 124,
+      "pdf_page": 127,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K01972.01 (CANDIDATE); catalogue KIC 11253711; supplied page KIC not provided; P=17.791087 d; P_BOI/P_catalogue=1/1; separation 0.70 arcsec; aligned centres 61/61; max timing residual 0.549 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 11253711 TCE 1 (TCE); catalogue KIC 11253711; supplied page KIC not provided; P=17.7911 d; P_BOI/P_catalogue=1/1; separation 0.70 arcsec; aligned centres 61/61; max timing residual 0.539 h"
+      ],
+      "harmonic_labels": [
+        "Possible-harmonic group H19; comparison anchor only.",
+        "Possible harmonic with BOI-2134754193866263936-2: P_long/P_short=3:1; mismatch 84.5 ppm; timing overlaps (61/61 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K01972.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 11253711 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2134754193866263936-1",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 61,
+        "joint_fitted_windows": 61
+      }
+    },
+    {
+      "boi_id": "BOI-2134754193866263936-2",
+      "catalogue_entry": 125,
+      "pdf_page": 128,
+      "section": "known",
+      "known_flag": true,
+      "harmonic_flag": true,
+      "known_labels": [
+        "Catalogued signal \u2014 NASA_cumulative_KOI: K01972.01 (CANDIDATE); catalogue KIC 11253711; supplied page KIC not provided; P=17.791087 d; P_BOI/P_catalogue=1/3; separation 0.70 arcsec; aligned centres 62/62; max timing residual 1.181 h",
+        "Catalogued signal \u2014 NASA_Kepler_DR25_TCE: KIC 11253711 TCE 1 (TCE); catalogue KIC 11253711; supplied page KIC not provided; P=17.7911 d; P_BOI/P_catalogue=1/3; separation 0.70 arcsec; aligned centres 62/62; max timing residual 1.196 h"
+      ],
+      "harmonic_labels": [
+        "Possible harmonic with BOI-2134754193866263936-1: P_long/P_short=3:1; mismatch 84.5 ppm; timing overlaps (62/193 predicted centres)."
+      ],
+      "evidence_links": [
+        {
+          "label": "NASA_cumulative_KOI: K01972.01",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html"
+        },
+        {
+          "label": "NASA_Kepler_DR25_TCE: KIC 11253711 TCE 1",
+          "url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_TCE_docs.html"
+        }
+      ],
+      "proposal_window_counts": {
+        "signal_id": "rust-v6-2134754193866263936-4",
+        "view": "psf_flat",
+        "lane": "PRIMARY_TRANSIT_LIKE",
+        "proposal_windows": 193,
+        "joint_fitted_windows": 64
+      }
+    }
+  ],
+  "prior_reviewed_pdf": {
+    "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/history/Kepler Bonus Field - Exoplanets Survey - October 2026.v3.pdf",
+    "bytes": 15790879,
+    "sha256": "a91c30ea1b989aa6c66a413d31a935b4140790cf320734ae0538e1f9162cc683"
+  },
+  "lossless_optimization": {
+    "audit": {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/pdf-lossless-optimization.v4.json",
+      "bytes": 102920,
+      "sha256": "92fe20fb3b5413ad84954b1c49bfbe6926bac4e416c1a1022bcd8a57e8e75d05"
+    },
+    "input_sha256": "a91c30ea1b989aa6c66a413d31a935b4140790cf320734ae0538e1f9162cc683",
+    "output_sha256": "a6dfe451b753a15df9d7a16bb6b2b1465ca337dd094cb626e4e391650b1fb007",
+    "saved_bytes": 1731626,
+    "method": "qpdf through pikepdf 10.17.0: Flate recompression, PDF object streams; no raster resampling or image re-encoding",
+    "all128_pages_and58_evidence_bands_pixel_identical": true,
+    "existing_v3_audits_remain_bound_to_prior_reviewed_pdf": true
+  },
+  "scientific_follow_up_delta": {
+    "audit": {
+      "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/science-delta.json",
+      "bytes": 116579,
+      "sha256": "3f4a74208c02591c627c296d796af2c0916fed46f4015688c59f820600455a5c"
+    },
+    "existing_statistical_validation_admissions_and_fpp_unchanged": true,
+    "validated_bois_without_new_catalogue_or_harmonic_flags": [
+      "BOI-2077554781499350144-1",
+      "BOI-2127169041106093184-1",
+      "BOI-2127186564572468352-1"
+    ],
+    "known_flag_counts": {
+      "flags": 17,
+      "compatible": 11,
+      "nearby_source_unconfirmed": 6,
+      "previous_relevant_association_present": 16,
+      "new_associated_bois": [
+        "BOI-2076476504190366336-1"
+      ],
+      "compatible_same_clock_entries": 6,
+      "compatible_harmonic_entries": 5,
+      "confirmed_planets": {
+        "unique_planets": 1,
+        "unique_hosts": 1,
+        "boi_entries": 3,
+        "names": [
+          "Kepler-565 b"
+        ]
+      },
+      "koi_candidates": {
+        "unique_signals": 2,
+        "unique_hosts": 2,
+        "boi_entries": 3,
+        "names": [
+          "K01660.01",
+          "K01972.01"
+        ]
+      },
+      "published_candidates": {
+        "unique_signals": 3,
+        "unique_hosts": 3,
+        "boi_entries": 5,
+        "gaia_dr3_sources": [
+          "2100325529865507712",
+          "2126910621514995968",
+          "2128959007378441472"
+        ]
+      },
+      "nearby_eb_sources": [
+        "8196180",
+        "7846730",
+        "4245897"
+      ],
+      "nearby_eb_associated_boi_entries": 4,
+      "eb_denied_supplied_waveforms": [
+        "BOI-2076055902327710720-1",
+        "BOI-2076062434975364864-1"
+      ],
+      "eb_denial_source_kic": "8196180"
+    },
+    "harmonic_scope": "The earlier integer-and-timing counter was 26 pairs. The current 44-pair warning screen also includes 15 noninteger rational relationships, two loose near-period relationships and one integer relation with inconsistent timing. These are possible relationships, not established physical duplicates.",
+    "timing_count_qualification": "Earlier counts used nearest recorded partner centres; current counts use the extrapolated partner periodic clock. All 47 earlier finite-centre pair counts independently replay exactly. The changed screen introduces no new photons or observed transits."
+  },
+  "pipeline_catalogue_update": {
+    "branch": "server",
+    "commit": "cb86e06383d21d01847408c7ce28e358c58e2ec7",
+    "updated_server_checkout": "/srv/kbonus/workspace/dump/catalogue-vetting-20261012/worktree",
+    "running_calibration_checkout_unchanged": {
+      "path": "/home/adam/spacelab",
+      "commit": "f4610afcae88f1794317a2afc9c7077c0318d0d0"
+    },
+    "scope": "Both detector lanes use shared catalogue evidence/admission. Only selected contamination decisions are replayed; original detector outputs, four preceding gates, photons and physical validations remain unchanged.",
+    "display_replay": {
+      "bois": 125,
+      "known_associations": 17,
+      "matched_catalogue_rows": 62
+    },
+    "actual_evidence_replay": {
+      "bois": 125,
+      "proposals": 141,
+      "detector_lanes": {
+        "rust": 125,
+        "shallow": 16
+      },
+      "proposal_labels": {
+        "BOI": 120,
+        "HELD": 21
+      },
+      "one_passing_proposal_boi_counts": {
+        "BOI": 108,
+        "HELD": 17
+      },
+      "source_archives_unchanged": 100
+    },
+    "known_association_route": "HELD with recovery or source-unconfirmed fields; no automatic astrophysical denial.",
+    "regression_tests_passed": 197,
+    "independent_scientific_controls_passed": 25,
+    "independent_hash_identity_history_controls_passed": 13,
+    "catalogue_configuration": {
+      "rule": "complete-catalogue-common-recurrence-v1",
+      "manifest": "dump/catalogue-search-20261012-v3/manifest.json",
+      "manifest_sha256": "97a088b7ffacd744ef5878995f2f244376af8c09d70109998b169e257db6e60a"
+    },
+    "source_sha256": {
+      "pipeline/runtime.py": "629dcad232c65afcb27b9be2e251ff283b745ad5f452497ac279c87a634f6e85",
+      "pipeline/deterministic/vet_survey.py": "46d3a8bd5a891889941d1836e559901e751ead1a99446d0890b34e933e30f13a",
+      "pipeline/vetting/boi.py": "cecc081c64a26b105bcb4dc7e0d640e4d638830d32b3d9a153e355e528dfe906",
+      "pipeline/vetting/config.json": "79a6a93c4c41519bd40b00a99a16372e402e3d0e0ad076ca1aa92f0e56843759",
+      "pipeline/vetting/vetting.py": "4d3b1e1d4d9d81a68369fe155ba8050de6e719809ce3b7b4a2abe54349420eed",
+      "pipeline/vetting/vetting_evidence.py": "88ec28468eadbcf5aae03f6a5b8ce6221c7d55f22c4afbcfe62ed1202c898dfa",
+      "pipeline/vetting/vetting_triage.py": "3dc1b097bd8c45a4bea9f5acd4ab470233f9659d6d48f22df24d2b26dc77ffa5",
+      "pipeline/vetting/catalogue_search.py": "21cb20dad2eaa6dff62a7577facb02f6d170a84b0cebc1d58092d86b6b87f5b7",
+      "pipeline/vetting/catalogue_snapshot.py": "f329b041bf795a11d3ee422495366972b8c30de0a3d9cc232b830f0e9391e4a3",
+      "pipeline/vetting/test_catalogue_search.py": "8bbda0690301403b11481d44eb91a774f8266a0a942159901f27ab20ce48aef6"
+    },
+    "verification_receipts": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/implementation-checks.v1.json",
+        "bytes": 2417,
+        "sha256": "7ee7db8b301607d3373cc702c1017b067aa1a86ebbd70976f1f0fbc9813930c4"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/replay-gold-125.json",
+        "bytes": 31921,
+        "sha256": "4b2c0534628b434eda39af0c5f86a93e5a78e2294731900142d38740173b4804"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/science-controls.v7.json",
+        "bytes": 22785,
+        "sha256": "84ac86f4030d45c6a7345025001c5779b21d04ff4d770a0ed84fd64fafefb945"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/audit/independent-guard-controls.v1.json",
+        "bytes": 1884,
+        "sha256": "da6cab759bc84c8a8d6b35fbe54563d5e553d248e838eafeb4af42827ebad4ed"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/audit/independent-archived-row-replay.v1.json",
+        "bytes": 147369,
+        "sha256": "17f61450436f40d3bca53ae2d480ab0fa16c409419048a1766c686c58e32c79c"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/catalogue-vetting-20261012/audit/independent-production-review.v1.json",
+        "bytes": 44854,
+        "sha256": "9b3fa82ca8fbe4ae232ed8da84542cada09d320ecc1430a898b069fbe9d3d4d0"
+      }
+    ]
+  },
+  "prior_render_verification": {
+    "pdf": {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/history/Kepler Bonus Field - Exoplanets Survey - October 2026.v4.pdf",
+      "bytes": 14059253,
+      "sha256": "a6dfe451b753a15df9d7a16bb6b2b1465ca337dd094cb626e4e391650b1fb007"
+    },
+    "checks": {
+      "all125_original_plot_render_crops_identical": true,
+      "all128_pages_visually_reviewed": true,
+      "all58_flagged_evidence_bands_visually_reviewed": true,
+      "statistical_validation_claims_absent": true,
+      "original_page86_exclusion_preserved": true
+    },
+    "pdf_audits": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/final-pdf-semantic-audit.v3.json",
+        "bytes": 26602,
+        "sha256": "d6d4823470eff6054eed580cbb8a3a612b816976c00a0a1926095ee00bf2d8ac"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/final-pdf-bold-font-audit.v3.json",
+        "bytes": 8292,
+        "sha256": "f4a6af346c288292607208141df821b52df0c0f9ea549135145be5699c07bb75"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/known-evidence-visual.v3.json",
+        "bytes": 11636,
+        "sha256": "0978d0572eeca1299cfc991475a0d07b72073350c8823548a5afc2ac8d4f76e2"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/harmonic-evidence-visual.v3.json",
+        "bytes": 16292,
+        "sha256": "dc871d2e21d06529e9d615dd8ec25d380235b4b903dcf1e08ded4b6ab953bc3e"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/root-final-visual-review.v3.json",
+        "bytes": 500,
+        "sha256": "ca0ed3469eb5e5b9354af70110e1f464802ebc7ecfac404e58e246abbc6b4a54"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/audit/pdf-lossless-optimization.v4.json",
+        "bytes": 102920,
+        "sha256": "92fe20fb3b5413ad84954b1c49bfbe6926bac4e416c1a1022bcd8a57e8e75d05"
+      }
+    ]
+  },
+  "axis_repair": {
+    "input_pdf": {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/history/Kepler Bonus Field - Exoplanets Survey - October 2026.v4.pdf",
+      "bytes": 14059253,
+      "sha256": "a6dfe451b753a15df9d7a16bb6b2b1465ca337dd094cb626e4e391650b1fb007"
+    },
+    "output_sha256": "4ca5931f1c6888bd29cbe07591ba04e1884c5b0f442dac7a5e4070855b67929b",
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/pipeline/visual/plots.py",
+      "bytes": 10689,
+      "sha256": "5c79b0844ff1f856aa24c6ae67a6757877ef722d4800de4d296280151a5bb873"
+    },
+    "code_checks": {
+      "ruff": "PASS",
+      "context_limits_cyclomatic_complexity": 1
+    },
+    "rule": "Every folded bin with its one-sigma interval, the complete saved model and zero, with 12 percent padding (minimum 1 ppm). Raw cadences remain visible as points or boundary markers.",
+    "method": "Replace lightcurve vector components; original pixel/identity/footer drawing bytes and annotations preserved; obsolete lightcurve resources pruned; lossless Flate level-9 recompression and object streams.",
+    "changed_context_panels": 125,
+    "component_sources": {
+      "complete_regeneration_entries": 124,
+      "title_geometry_correction": {
+        "boi_id": "BOI-2116924474653194112-1",
+        "catalogue_entry": 99,
+        "source_pdf": "/srv/kbonus/workspace/dump/boi-axis-repair-20261013/pages/pilot.v6-lightcurves.pdf",
+        "source_sha256": "9c795f30f57cd1dcf333935cfc1a56bb859b370c7dd6ee56abecdc0892551114",
+        "source_page": 1,
+        "scientific_arrays_masks_and_limits_exact_to_complete_regeneration": true,
+        "reason": "Preserve the original three-digit title placement after the earlier catalogue-entry renumbering from 100 to 99."
+      }
+    },
+    "unchanged": "Full-time curves, close-ups, pixel maps, identities, original fit labels, catalogue evidence, page order, 44 URL annotations and 129 bookmarks.",
+    "scientific_arrays_before_and_after_plotting_exact": true,
+    "saved_bins_match_original_rounded_records_exactly": true,
+    "frozen_preview_replay_roundoff_ppm": {
+      "bins": 0,
+      "model_preview_maximum": 0.0010000000038417056,
+      "event_preview_maximum": 0.0010000000002037268
+    },
+    "reported_example": {
+      "boi_id": "BOI-2053539145443677056-1",
+      "catalogue_entry": 6,
+      "depth_ppm": 541.87,
+      "old_ylim_ppm": [
+        -212748.70339429058,
+        161378.8296969394
+      ],
+      "new_ylim_ppm": [
+        -953.4466990033994,
+        678.9454652232192
+      ]
+    },
+    "receipts": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/axis-audit.json",
+        "bytes": 211415,
+        "sha256": "50bab58436fbc6497d3a86585847409b119cc49270283c1e8c24b0b4fa5da103"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/gold-axis-verification.json",
+        "bytes": 34938,
+        "sha256": "fd9502665d3de6878d35760c6d4a194cc928f4afbf6e5a586c2d63ed6b2c03d5"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/regeneration-complete.json",
+        "bytes": 382583,
+        "sha256": "3459a1a74374211486c174843234e17fb2e3081b15938d948edf9c1867c11250"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-repair.v5.json",
+        "bytes": 98241,
+        "sha256": "93502bcae813108befc3b86b14ee452ccfdac60b1b0932ffbe203aff53d9dd19"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-axis-audit.v5.json",
+        "bytes": 62285,
+        "sha256": "77b1649cda84f86d79927e6f94ca39c9ab8c2e58dade6486c8acc26c836ad888"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-visual-review.v5.json",
+        "bytes": 3589,
+        "sha256": "a5afbea2148a37022f666c73d1e9dcbed5ae6b49cc12aaddb5418d6fe0ac5ea1"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/scientific-context-visual.v5.final.json",
+        "bytes": 10844,
+        "sha256": "8ade891b0374b7f1a0dc0629edbdb45976919f5e7644f8e6ee61eff6a30451a2"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/source-mask-curve-verification.json",
+        "bytes": 50668,
+        "sha256": "c480c459b3d87c1d00b281d71c282ecb9b63756fdddb5be172acff2cc87af130"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/regeneration-pilot.v6.json",
+        "bytes": 3379,
+        "sha256": "4df153da4090162532aa780f10a9f20ec081c6bedd0197f952dc1efd08212f58"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-promotion.v5.local.json",
+        "bytes": 1393,
+        "sha256": "522b3e1b2bada4dd808028950c17876f57845d078e72a8591b5eb8aac72053d8"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-promotion.v5.server.json",
+        "bytes": 1378,
+        "sha256": "d5cea8672210ca0b4a4e879378e992f17302894653f7a105e7bfceffa205fe92"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/lint.txt",
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/complexity.txt",
+        "bytes": 406,
+        "sha256": "9e2edeeb8b39d9d71e17d00d9db1fe81c0658702e787639d3393dd7b0b6a63f2"
+      }
+    ]
+  },
+  "reference_case_audit": {
+    "boi_id": "BOI-2127002808692040320-1",
+    "disposition": "REMAINS_PC",
+    "probability_status": "UNESTIMATED",
+    "fpp": null,
+    "nfpp": null,
+    "new_measurements_or_admissions": false,
+    "evidence": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/reference-case.json",
+        "bytes": 118786,
+        "sha256": "9c0a4e668b459a24986ece7a87a992a160735690d04c67287d936b3d187c36d7"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/reference-case.md",
+        "bytes": 4344,
+        "sha256": "8670c4f205a7e9ef5b4a9b55e7d4a27545e66f99496dba5f38a3b80aeed0f93a"
+      }
+    ]
+  },
+  "legacy_v5_verification": {
+    "pdf": {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/history/Kepler Bonus Field - Exoplanets Survey - October 2026.v5.pdf",
+      "bytes": 14725078,
+      "sha256": "4ca5931f1c6888bd29cbe07591ba04e1884c5b0f442dac7a5e4070855b67929b"
+    },
+    "checks": {
+      "all125_original_plot_render_crops_identical": false,
+      "all128_pages_visually_reviewed": true,
+      "all58_flagged_evidence_bands_visually_reviewed": true,
+      "statistical_validation_claims_absent": true,
+      "original_page86_exclusion_preserved": true,
+      "all125_pixels_outside_context_panels_identical_to_reviewed_v4": true,
+      "context_scale_changes_intentional": true,
+      "all125_bins_uncertainties_and_full_models_visible": true,
+      "all125_original_full_curve_digests_exact": true,
+      "all94_original_source_masks_and141_proposal_bindings_exact": true,
+      "all125_plot_input_arrays_unchanged": true
+    },
+    "pdf_audits": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-axis-audit.v5.json",
+        "bytes": 62285,
+        "sha256": "77b1649cda84f86d79927e6f94ca39c9ab8c2e58dade6486c8acc26c836ad888"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/pdf-visual-review.v5.json",
+        "bytes": 3589,
+        "sha256": "a5afbea2148a37022f666c73d1e9dcbed5ae6b49cc12aaddb5418d6fe0ac5ea1"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-axis-repair-20261013/scientific-context-visual.v5.final.json",
+        "bytes": 10844,
+        "sha256": "8ade891b0374b7f1a0dc0629edbdb45976919f5e7644f8e6ee61eff6a30451a2"
+      }
+    ]
+  },
+  "proposal_window_count_audit": {
+    "status": "PASS_125_BOIS_141_ORIGINAL_PROPOSALS_AND_V6_EXPORT",
+    "input_pdf": {
+      "path": "/Users/adam/Other/spacelab/dump/boi-catalogue-flags-20261012/history/Kepler Bonus Field - Exoplanets Survey - October 2026.v5.pdf",
+      "bytes": 14725078,
+      "sha256": "4ca5931f1c6888bd29cbe07591ba04e1884c5b0f442dac7a5e4070855b67929b"
+    },
+    "output_sha256": "1ae49135ea7012a8a84c4eace2386af024cfc3b72c38fd81f579929e9ac621e2",
+    "execution": "Mac only; at most one CPU-heavy PDF process; no server access.",
+    "bois_checked": 125,
+    "proposal_bindings_checked": 141,
+    "displayed_counts_differ_from_fitted_counts": 91,
+    "local_data_gaps": [],
+    "count_scope": "Retained original proposal window units in the displayed detector/view are distinct from windows used by the saved fit. Counts do not establish observed astrophysical transits. Alternative proposals and correlated photometry views remain separate.",
+    "fit_count_rule": "Actual saved fitted_unit_ids and chunks_used; selected quotas and the 64-window cap are not substituted for used-fit counts.",
+    "caption_rule": "N proposal windows; append M fitted when the actual fit uses a different count. Original fitted-event headers remain exact.",
+    "preservation": "Append one regular 8pt footer line per BOI. Every original drawing byte, scientific/image/font resource, corrected axis, flag, link and bookmark remains exact. All pixels outside the new caption region match v5.",
+    "compression": "Lossless Flate level9 and object streams; no raster resampling.",
+    "receipts": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/event-window-audit.json",
+        "bytes": 17590811,
+        "sha256": "845b52857a96855b8b650edd60731b898bc8346651c3a1ae8079cd146823f1c0"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/event-window-audit.csv",
+        "bytes": 13594,
+        "sha256": "4676ff1cef02d2de26306f783dcb9c71d70cfb28cdd1af701f47d507726ef58f"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-build.v6.json",
+        "bytes": 81543,
+        "sha256": "6f5782c82aee067c30d25916dd57a6a728c9e3babbd9fcdbc63d97c267b97f59"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-audit.v6.json",
+        "bytes": 83587,
+        "sha256": "7dd8112c3f8557847533b92fd81d65c6058edec6480cf5611457e8ba459638c5"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-visual.v6.json",
+        "bytes": 5320,
+        "sha256": "676b193999b2d1192b567ec5975e6f343ef162e113c9861798ae84a5933c6f92"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/pdf-window-count-promotion.v6.json",
+        "bytes": 1841,
+        "sha256": "82d17b382c653d921fc92de957ef40b0a835e987bdea7c9d6f0cf021564f9173"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/audit_event_windows.py",
+        "bytes": 10726,
+        "sha256": "c433f6a840bc0fcabe6ec8dc584b890ec05590d5f2925c1fd4f34a6298de6ad4"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/add_window_counts.py",
+        "bytes": 5711,
+        "sha256": "dc63ddc9916935e6170524d465898e034e23ff247cba5ee06b61a9538146c9b5"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/verify_window_pdf.py",
+        "bytes": 9058,
+        "sha256": "41364fea4a2ee94f9b4fc1f1a5b77f8454b8191bec9a48c784f2816a4594bb1c"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/finalize_window_pdf.py",
+        "bytes": 5325,
+        "sha256": "2d274e4d19db2da14d9d041d8950c7e3312d0f25fd3164b516964b2db1e335d2"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/dump/boi-event-window-audit-20261013/update_count_report.py",
+        "bytes": 8130,
+        "sha256": "30297375f900ecb3f6efd2c86ffda32db86fdbb1fbb9260988c802c5e1516bf6"
+      }
+    ]
+  }
+}

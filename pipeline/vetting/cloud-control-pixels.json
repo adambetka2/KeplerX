@@ -1,0 +1,3068 @@
+{
+  "schema": 1,
+  "scope": "OPENED_DEVELOPMENT_ONLY",
+  "public_inputs_sha256": "7e796243c839cfd67c4981c8ffdbf086dc10138951b649ee5892b23638bb454a",
+  "archive": {
+    "bytes": 34444,
+    "sha256": "2a9f1f14a50e853bfea6a3be30c598c9ee1a53062863711bf76544a715774d24"
+  },
+  "files": {
+    "00092f970e4c5e112ffb60e5350e52fff10f2317bbc891eb90e1c466b0e9af8b.json": {
+      "bytes": 7837,
+      "sha256": "00092f970e4c5e112ffb60e5350e52fff10f2317bbc891eb90e1c466b0e9af8b"
+    },
+    "013fbaee19a95a3471b31c94ef79084ab0355d8bdf878e5b4b53482c4fcaf93f.json": {
+      "bytes": 7842,
+      "sha256": "013fbaee19a95a3471b31c94ef79084ab0355d8bdf878e5b4b53482c4fcaf93f"
+    },
+    "0152e42a95593e8c7e045e798274c83e039baa2589c212eb877a0305e0408135.json": {
+      "bytes": 7838,
+      "sha256": "0152e42a95593e8c7e045e798274c83e039baa2589c212eb877a0305e0408135"
+    },
+    "0bbfb97738ffd95c68f0b9ed0ba109b6b5c6615b9707db4a51f0a5d595c0f4e0.json": {
+      "bytes": 7842,
+      "sha256": "0bbfb97738ffd95c68f0b9ed0ba109b6b5c6615b9707db4a51f0a5d595c0f4e0"
+    },
+    "19d3b43238ecc5f0e1f34a287e9a3260c93dc0f87104d7e6bac887156a947875.json": {
+      "bytes": 7841,
+      "sha256": "19d3b43238ecc5f0e1f34a287e9a3260c93dc0f87104d7e6bac887156a947875"
+    },
+    "2055320a2eb629558568af81402868a76d14dde15b92c249b33da8579f42039e.json": {
+      "bytes": 7839,
+      "sha256": "2055320a2eb629558568af81402868a76d14dde15b92c249b33da8579f42039e"
+    },
+    "2a84ae896ee7fc65ac118d6b8b4425a4cc79c65db1040b0bc99afa252e337738.json": {
+      "bytes": 7844,
+      "sha256": "2a84ae896ee7fc65ac118d6b8b4425a4cc79c65db1040b0bc99afa252e337738"
+    },
+    "368d5800ccc561fe120acb3f56507d63e871ab26aac20d023da626734d416cfe.json": {
+      "bytes": 7843,
+      "sha256": "368d5800ccc561fe120acb3f56507d63e871ab26aac20d023da626734d416cfe"
+    },
+    "4079d8d093186e33a53ccff7f76fe996928657c57b833b5424cee57453e1f032.json": {
+      "bytes": 7842,
+      "sha256": "4079d8d093186e33a53ccff7f76fe996928657c57b833b5424cee57453e1f032"
+    },
+    "4371947765b1707d2f4ee6abcef9ccaa96cbb6bd9a6d378d25f01e382e3c99a8.json": {
+      "bytes": 7843,
+      "sha256": "4371947765b1707d2f4ee6abcef9ccaa96cbb6bd9a6d378d25f01e382e3c99a8"
+    },
+    "4d4e6af5f084ea5329d3c3cb61de132e974d7d71c27c69cfcd9d478457e6452a.json": {
+      "bytes": 7839,
+      "sha256": "4d4e6af5f084ea5329d3c3cb61de132e974d7d71c27c69cfcd9d478457e6452a"
+    },
+    "4e274d2fc05d4005d6e2113358a5163e05014fb68432479d3cd06ed2b15c5685.json": {
+      "bytes": 7845,
+      "sha256": "4e274d2fc05d4005d6e2113358a5163e05014fb68432479d3cd06ed2b15c5685"
+    },
+    "4f224f380bbc62c5709609582494a85d9b91f19aeb06d17f8cbc1af88ef8b7e5.json": {
+      "bytes": 7841,
+      "sha256": "4f224f380bbc62c5709609582494a85d9b91f19aeb06d17f8cbc1af88ef8b7e5"
+    },
+    "5a649cab7d6d96945937765ddaab9162e64b7c9a26a3cbf75eaec30992fe7dbf.json": {
+      "bytes": 7844,
+      "sha256": "5a649cab7d6d96945937765ddaab9162e64b7c9a26a3cbf75eaec30992fe7dbf"
+    },
+    "693f0472e8f98ba3f86165acd05948e87e5c2b964d9d6b88b39e9beadf3afdfa.json": {
+      "bytes": 7843,
+      "sha256": "693f0472e8f98ba3f86165acd05948e87e5c2b964d9d6b88b39e9beadf3afdfa"
+    },
+    "73091c762e65781feba2e9fab483ac0ae768cdeb7c261ecb29d22f2fd2ad49d3.json": {
+      "bytes": 7833,
+      "sha256": "73091c762e65781feba2e9fab483ac0ae768cdeb7c261ecb29d22f2fd2ad49d3"
+    },
+    "74726a655c4f1ee2b92e7eb0fc5002ca4bbb9f1245fc3fd4508bcaaa7b62d207.json": {
+      "bytes": 7843,
+      "sha256": "74726a655c4f1ee2b92e7eb0fc5002ca4bbb9f1245fc3fd4508bcaaa7b62d207"
+    },
+    "756bd361e6e8490fe82dba90309c4e026f2f688d355c131e0e99dc9902c7a560.json": {
+      "bytes": 7842,
+      "sha256": "756bd361e6e8490fe82dba90309c4e026f2f688d355c131e0e99dc9902c7a560"
+    },
+    "76639cb4f27e347d58c20dc39d30b66e6a074e74f2293e3f3f88dcaccb747aee.json": {
+      "bytes": 7840,
+      "sha256": "76639cb4f27e347d58c20dc39d30b66e6a074e74f2293e3f3f88dcaccb747aee"
+    },
+    "772524ac73aeb2a8b560315677dd59b3746f0728468430f5a1d3dd9bb92dba5f.json": {
+      "bytes": 7842,
+      "sha256": "772524ac73aeb2a8b560315677dd59b3746f0728468430f5a1d3dd9bb92dba5f"
+    },
+    "778817756b96e51d7b574e6d4a1a16b82ca70ded11ffbfaa885fdd27df0b3e69.json": {
+      "bytes": 7837,
+      "sha256": "778817756b96e51d7b574e6d4a1a16b82ca70ded11ffbfaa885fdd27df0b3e69"
+    },
+    "7bc2bc14b25ce7695d41696cda9cbdd1c801ee41829dc07fa7769fbf2a6fe0cd.json": {
+      "bytes": 7840,
+      "sha256": "7bc2bc14b25ce7695d41696cda9cbdd1c801ee41829dc07fa7769fbf2a6fe0cd"
+    },
+    "835f1ee5617a44ce6351570e9952b294284dbd4f943059cade187272f78b7377.json": {
+      "bytes": 7841,
+      "sha256": "835f1ee5617a44ce6351570e9952b294284dbd4f943059cade187272f78b7377"
+    },
+    "839378375cced253dd85c0ad491319aed53f2953f1e06d0422d50ef64c1e860f.json": {
+      "bytes": 7836,
+      "sha256": "839378375cced253dd85c0ad491319aed53f2953f1e06d0422d50ef64c1e860f"
+    },
+    "8514661b875a1df7a291360c5a23ef2fad8f10324618d0cc5ff1d35582a768bc.json": {
+      "bytes": 7842,
+      "sha256": "8514661b875a1df7a291360c5a23ef2fad8f10324618d0cc5ff1d35582a768bc"
+    },
+    "8644402938e49f1eae4eaa86e5332d78520dce3496148e27b567bdf6fa43108e.json": {
+      "bytes": 7840,
+      "sha256": "8644402938e49f1eae4eaa86e5332d78520dce3496148e27b567bdf6fa43108e"
+    },
+    "8b2dcd98556453eaa90593305680f95ce04eeabe3b0060897a107e4a1d74c8bc.json": {
+      "bytes": 7840,
+      "sha256": "8b2dcd98556453eaa90593305680f95ce04eeabe3b0060897a107e4a1d74c8bc"
+    },
+    "8b784b030605428655469583a45cafa678fefaffb7956b1538a63b45411c25af.json": {
+      "bytes": 7843,
+      "sha256": "8b784b030605428655469583a45cafa678fefaffb7956b1538a63b45411c25af"
+    },
+    "8d709ab2068dc5ad58ce933ae169db0804a2abcb3e0e3b70c399d4d3b6a301ac.json": {
+      "bytes": 7843,
+      "sha256": "8d709ab2068dc5ad58ce933ae169db0804a2abcb3e0e3b70c399d4d3b6a301ac"
+    },
+    "8de66f3d9e5014ad243da584543a67a1264189c7f64b6a06d409d81f670d1bdc.json": {
+      "bytes": 7838,
+      "sha256": "8de66f3d9e5014ad243da584543a67a1264189c7f64b6a06d409d81f670d1bdc"
+    },
+    "95239224df3f40d904bd15badd453a13a8133d257ee2e0bca80fd84de2a3eb0a.json": {
+      "bytes": 7841,
+      "sha256": "95239224df3f40d904bd15badd453a13a8133d257ee2e0bca80fd84de2a3eb0a"
+    },
+    "9b3d08815925f489ba46cf94027ba2493ed6c7874b12fc0610b881833b59a5b2.json": {
+      "bytes": 7840,
+      "sha256": "9b3d08815925f489ba46cf94027ba2493ed6c7874b12fc0610b881833b59a5b2"
+    },
+    "9c87334aac1711bf6a7168e8df91a333d72e7bc14fb8bf65f4cfa380f3add8fb.json": {
+      "bytes": 7843,
+      "sha256": "9c87334aac1711bf6a7168e8df91a333d72e7bc14fb8bf65f4cfa380f3add8fb"
+    },
+    "9f60a43a28e3edd7b813004e181d82e26bb08890532ad82d1d9d8c60bd38efe7.json": {
+      "bytes": 7844,
+      "sha256": "9f60a43a28e3edd7b813004e181d82e26bb08890532ad82d1d9d8c60bd38efe7"
+    },
+    "a294236da591b6b694b97b731b359cd73a2619ab9505c19e1f50fbf739718946.json": {
+      "bytes": 7844,
+      "sha256": "a294236da591b6b694b97b731b359cd73a2619ab9505c19e1f50fbf739718946"
+    },
+    "a2f43faafdd68615d07a6a6de7a55db95dfb61d56bcdf981f9ec718c3f8ed6a0.json": {
+      "bytes": 7839,
+      "sha256": "a2f43faafdd68615d07a6a6de7a55db95dfb61d56bcdf981f9ec718c3f8ed6a0"
+    },
+    "b3440ebc4efff0451892de115b180e8e4b1a2bd978d7e4d1159235a0bd388941.json": {
+      "bytes": 7841,
+      "sha256": "b3440ebc4efff0451892de115b180e8e4b1a2bd978d7e4d1159235a0bd388941"
+    },
+    "bd299fbe077e3ddca40e9385fac6ae658fe9dc2a411e62bcc0ad4fda6e167977.json": {
+      "bytes": 7844,
+      "sha256": "bd299fbe077e3ddca40e9385fac6ae658fe9dc2a411e62bcc0ad4fda6e167977"
+    },
+    "c2c25f099e8fe04539d8b50a99be6267d66ceeac8e9234440c407714e846ba49.json": {
+      "bytes": 7840,
+      "sha256": "c2c25f099e8fe04539d8b50a99be6267d66ceeac8e9234440c407714e846ba49"
+    },
+    "d026795f1ee14b69b5f6303f7c4135ee65edefc1b556a10ae4be0f48c9daf7a7.json": {
+      "bytes": 7843,
+      "sha256": "d026795f1ee14b69b5f6303f7c4135ee65edefc1b556a10ae4be0f48c9daf7a7"
+    },
+    "d6ea6112c43d53bfea0bf33fa1b9727f4d33296e7c8c64783486601fa47c7da6.json": {
+      "bytes": 7843,
+      "sha256": "d6ea6112c43d53bfea0bf33fa1b9727f4d33296e7c8c64783486601fa47c7da6"
+    },
+    "dd55d2de1364978417fc8f9f38c2db38196afe5109a2818c29f2047cc7277d35.json": {
+      "bytes": 7842,
+      "sha256": "dd55d2de1364978417fc8f9f38c2db38196afe5109a2818c29f2047cc7277d35"
+    },
+    "dde79baadae8e41abf8cf9c2bacc14c134647af994dd57463ddfc20a70452ec3.json": {
+      "bytes": 7843,
+      "sha256": "dde79baadae8e41abf8cf9c2bacc14c134647af994dd57463ddfc20a70452ec3"
+    },
+    "e03fce08db6a282b5d72a4661413344c011f23ab5711d7143bfc3a73dbed20d6.json": {
+      "bytes": 7844,
+      "sha256": "e03fce08db6a282b5d72a4661413344c011f23ab5711d7143bfc3a73dbed20d6"
+    },
+    "e4f8e1ce63ff7a8fbfa82fd676de52fae9167c3cda3a5ed6721a480fcd437ac0.json": {
+      "bytes": 7844,
+      "sha256": "e4f8e1ce63ff7a8fbfa82fd676de52fae9167c3cda3a5ed6721a480fcd437ac0"
+    },
+    "e7c415a278c70b016823c1fa7770b00b4bb1c80e966c5d2ec3fda118139d4ea0.json": {
+      "bytes": 7845,
+      "sha256": "e7c415a278c70b016823c1fa7770b00b4bb1c80e966c5d2ec3fda118139d4ea0"
+    },
+    "e7dad96c6589518e58ad0032e45ce0d2ed7bace94ffb696388e527d5dc02dcaa.json": {
+      "bytes": 7844,
+      "sha256": "e7dad96c6589518e58ad0032e45ce0d2ed7bace94ffb696388e527d5dc02dcaa"
+    },
+    "f027aa0c4556b3130794ee6ca26b90a52799cecd886d129e6894de92e9d87366.json": {
+      "bytes": 7841,
+      "sha256": "f027aa0c4556b3130794ee6ca26b90a52799cecd886d129e6894de92e9d87366"
+    },
+    "f235518a74f8bd1bd9a9877d4577e0a47953778a6c07ae2e0cf09aad1788c17f.json": {
+      "bytes": 7840,
+      "sha256": "f235518a74f8bd1bd9a9877d4577e0a47953778a6c07ae2e0cf09aad1788c17f"
+    },
+    "f47d9b9cd257c9f44c72ac97a3e3d55a0ccc6a2f01a70e3dd6a2907d8d597d32.json": {
+      "bytes": 7836,
+      "sha256": "f47d9b9cd257c9f44c72ac97a3e3d55a0ccc6a2f01a70e3dd6a2907d8d597d32"
+    },
+    "fd11e62b1511ca3b0a54e1a339a6b2577707dd4a19e0cbe26346f3eac1bf986c.json": {
+      "bytes": 7842,
+      "sha256": "fd11e62b1511ca3b0a54e1a339a6b2577707dd4a19e0cbe26346f3eac1bf986c"
+    },
+    "unprovisioned-2050231848829944320-q01.json": {
+      "bytes": 543,
+      "sha256": "478efe4fbb3647216c3dbc260a781a9fd26915644ed79b21a5b7dfc9a36f43bd"
+    },
+    "unprovisioned-2050231848829944320-q02.json": {
+      "bytes": 543,
+      "sha256": "8c1816c626ce4098d0d81628425e588df05df33cd225e1a792d0cb518e90c55f"
+    },
+    "unprovisioned-2050231848829944320-q03.json": {
+      "bytes": 543,
+      "sha256": "e2327b4ef17a9d69ad7ef5b4ae585c35273321e9a2ee7de16c1bbf0edf33f54d"
+    },
+    "unprovisioned-2050231848829944320-q04.json": {
+      "bytes": 543,
+      "sha256": "97dd3f0a1fd24dedc69dab205b1967cf2852fb981685a7dd879d864890a091e9"
+    },
+    "unprovisioned-2050231848829944320-q05.json": {
+      "bytes": 543,
+      "sha256": "5ef6d60c07f1a8492f21c89904634a404b8ef1f2c1a53f7f9c9dde8676df18e2"
+    },
+    "unprovisioned-2050231848829944320-q06.json": {
+      "bytes": 543,
+      "sha256": "a42210c5eb5f8a77b634a784f387677b1072addf5c87f33db1665aae7aad6222"
+    },
+    "unprovisioned-2050231848829944320-q07.json": {
+      "bytes": 543,
+      "sha256": "90d55f0bc719fa8a5957d622524c6beab1a350672223357968f6be99024ca9b8"
+    },
+    "unprovisioned-2050231848829944320-q08.json": {
+      "bytes": 543,
+      "sha256": "f3236235b3f3e88d7505fc6af0aae0e6020396edbed37054db403bd6b6e8eb6c"
+    },
+    "unprovisioned-2050231848829944320-q09.json": {
+      "bytes": 543,
+      "sha256": "1c98b4407ae589bc39c1f52930cc060b0aa3e82c2227e2b722ac5c0c32fa8397"
+    },
+    "unprovisioned-2050231848829944320-q10.json": {
+      "bytes": 544,
+      "sha256": "d03401b06c3f03e357b8618167223e11d8035f7c70c2dc7a420802060de2565e"
+    },
+    "unprovisioned-2050231848829944320-q11.json": {
+      "bytes": 544,
+      "sha256": "76de245618b4bcfac932e8fab0ef7e7270ed24f6fd7472bf579ff74decafd122"
+    },
+    "unprovisioned-2050231848829944320-q12.json": {
+      "bytes": 544,
+      "sha256": "63f4f3af5dea0e4b8a37dd52207929ba21a95e5f2a0d8ebfc67c716080cada6c"
+    },
+    "unprovisioned-2050231848829944320-q13.json": {
+      "bytes": 544,
+      "sha256": "09ef74659aef3bbdf06173317124bdd0aec1f23d4c3231657a9663a7dc3cdbba"
+    },
+    "unprovisioned-2050231848829944320-q14.json": {
+      "bytes": 544,
+      "sha256": "35c3b4d371ff63c53c83bfc55e94233179844d3f936f0ce393c303cc58077b4c"
+    },
+    "unprovisioned-2050231848829944320-q15.json": {
+      "bytes": 544,
+      "sha256": "ad6e0c6e3075e9a9b9f34c1689d1773ceec83fcb4f1bda260060937400187a8a"
+    },
+    "unprovisioned-2050231848829944320-q16.json": {
+      "bytes": 544,
+      "sha256": "81128f349d9a2a95954dbc4efb0ed3bed3daad455179dd2ce8e6a9f65a771bf2"
+    },
+    "unprovisioned-2050231848829944320-q17.json": {
+      "bytes": 544,
+      "sha256": "d24e51e5edb2d82c6bb69c02f29cc7e3a9f15f58f4235c1990a26a71221bb589"
+    },
+    "unprovisioned-2050239300586448000-q01.json": {
+      "bytes": 544,
+      "sha256": "fa9ae97ff830b509a469732d311e07f5594d3618398b8939f0d0b53e741d3743"
+    },
+    "unprovisioned-2050239300586448000-q05.json": {
+      "bytes": 544,
+      "sha256": "f11b8cfd33163381ac85720016384167fd6663cf649c1efed4e67b68bfb68b5f"
+    },
+    "unprovisioned-2050249406650364160-q05.json": {
+      "bytes": 544,
+      "sha256": "25764f3a70436636fb3de9fe300b87bffe59274f4057156340d37062b4711fa1"
+    },
+    "unprovisioned-2050249406650364160-q13.json": {
+      "bytes": 545,
+      "sha256": "33e84e05d174396b2b88bc9b02069bf84819227a682b68825e54b81ede26a6a9"
+    },
+    "unprovisioned-2050249406650364160-q17.json": {
+      "bytes": 545,
+      "sha256": "37b1709ea4f84cbca3fe7363cc5060bd7582eb04d6db6fac03cb73892a7a5726"
+    },
+    "unprovisioned-2051748659478657152-q01.json": {
+      "bytes": 544,
+      "sha256": "2c1575649a4b09cb5a94be33c91973cfa5d7784e7fe0e8758da6d94d21a1213c"
+    },
+    "unprovisioned-2052146785773639040-q00.json": {
+      "bytes": 551,
+      "sha256": "2bc29a36d8c2b5bde316b97bf9d6aaa0cb0cea30a9f789ecfc18f291d97186c6"
+    },
+    "unprovisioned-2052146785773639040-q01.json": {
+      "bytes": 551,
+      "sha256": "bafcd19c53bd6e28c2dab658cd64800514c4e75293d7da45004458566db5f9fe"
+    },
+    "unprovisioned-2052146785773639040-q02.json": {
+      "bytes": 551,
+      "sha256": "953696c00df40e42f51631cb27a89af9ae7464ddf198f8bf66ee0e5ebb1126fb"
+    },
+    "unprovisioned-2052146785773639040-q03.json": {
+      "bytes": 551,
+      "sha256": "93535449827c97b2ef5528c53bb765bfa0e4b67a5892f7c76656013978b5ea2f"
+    },
+    "unprovisioned-2052146785773639040-q04.json": {
+      "bytes": 551,
+      "sha256": "5f1b45defa5cc9ad7a792f6e574418dd9936b53748a1c069c575212f8942e0b2"
+    },
+    "unprovisioned-2052146785773639040-q05.json": {
+      "bytes": 551,
+      "sha256": "2586818879a564ea74d259d49c5d2706ceff12d2c65ae31ce51cef452b3e7651"
+    },
+    "unprovisioned-2052146785773639040-q07.json": {
+      "bytes": 551,
+      "sha256": "4dd006713e30c08ccf55ae56f819faebc918fbb863bd486809142a5b58db44e0"
+    },
+    "unprovisioned-2052146785773639040-q08.json": {
+      "bytes": 551,
+      "sha256": "c7ff62c120e0f17b5242e7ed95432d36afe46b84b8d50a36594b37cd0fb7cee8"
+    },
+    "unprovisioned-2052146785773639040-q09.json": {
+      "bytes": 551,
+      "sha256": "95d3a155c66460649e03d0dacfa0503476c48e11f4778bacbb7192eb6331d4f5"
+    },
+    "unprovisioned-2052146785773639040-q11.json": {
+      "bytes": 552,
+      "sha256": "5d9501b0ac3c0f4ba54f3ef359553454fefce2ef18f427738d8de498b59c0e1c"
+    },
+    "unprovisioned-2052146785773639040-q12.json": {
+      "bytes": 552,
+      "sha256": "71b18bc8de14cd455b8b2c1ad1031587fdbae3a42fb99bcd65b3be96e75153e4"
+    },
+    "unprovisioned-2052146785773639040-q13.json": {
+      "bytes": 552,
+      "sha256": "dfc3bb99840a44300438013961eab831dff2353cce466dcd0f73137e17f67fd7"
+    },
+    "unprovisioned-2052146785773639040-q15.json": {
+      "bytes": 552,
+      "sha256": "8048f728e7344cfca2a64b044eb1ebcf5260045beef948df87c5b182aab142a7"
+    },
+    "unprovisioned-2052146785773639040-q16.json": {
+      "bytes": 552,
+      "sha256": "ed52890ec995877724c9dfefd03954213b2dab41a31e2a1ddd06e6aecbe457f0"
+    },
+    "unprovisioned-2052146785773639040-q17.json": {
+      "bytes": 552,
+      "sha256": "395c75fb02c18dbf114dea608030ae618e4ede564b37ee68a68ac3cb7edba7bf"
+    },
+    "unprovisioned-2052214955493700224-q01.json": {
+      "bytes": 546,
+      "sha256": "2221e6f1a6bec30e9b60503ddf2547245b7d415865c27d49a1b7ed777eb7830e"
+    },
+    "unprovisioned-2052214955493700224-q02.json": {
+      "bytes": 546,
+      "sha256": "11cb3c057accad03a06d647354757681f3e8dec3e39d5d41336a02d5d29c7dc5"
+    },
+    "unprovisioned-2052214955493700224-q03.json": {
+      "bytes": 546,
+      "sha256": "cd819cd637de5873a737c1e81bedfaaba5dd23c5a8ee5f132628f6b4aa80634b"
+    },
+    "unprovisioned-2052214955493700224-q04.json": {
+      "bytes": 546,
+      "sha256": "744f8842b0b5b8358be5aae2ea361a425480107dd6d2ffc02fb0f306859845f4"
+    },
+    "unprovisioned-2052214955493700224-q05.json": {
+      "bytes": 546,
+      "sha256": "9e994e004d920da95f22dc7e8e8caa796262d8d4d38886ed28e31d6d75c379c3"
+    },
+    "unprovisioned-2052214955493700224-q07.json": {
+      "bytes": 546,
+      "sha256": "2ab03848a805226f56b829bf4ea0bc01d2ba371e30192d3012daa0e0be13c4b2"
+    },
+    "unprovisioned-2052214955493700224-q08.json": {
+      "bytes": 546,
+      "sha256": "ae87111dde0505a0babda37708863c3038594ed7334f2d37bf30ff6710b88850"
+    },
+    "unprovisioned-2052214955493700224-q09.json": {
+      "bytes": 546,
+      "sha256": "e62728aff5027aacb2de358457d5e0173fc13b90e11e2276177bcb6d80e35770"
+    },
+    "unprovisioned-2052214955493700224-q11.json": {
+      "bytes": 547,
+      "sha256": "9117783ac9b46af960c2e56e7fb382038cab8710b10fd7035ad2833372231194"
+    },
+    "unprovisioned-2052214955493700224-q12.json": {
+      "bytes": 547,
+      "sha256": "505b029f86f3d869caf3a129839f28fadda766f914b34d5064f10cd0e3e1500b"
+    },
+    "unprovisioned-2052214955493700224-q13.json": {
+      "bytes": 547,
+      "sha256": "1cbbd8f729146a3890e39f1e43804ad315c6c7c55dffbe456d2e8757ef175126"
+    },
+    "unprovisioned-2052214955493700224-q15.json": {
+      "bytes": 547,
+      "sha256": "3b4bb250fe114a9c86228b3548829a3897dbe4af606a295743223d5b237dc38f"
+    },
+    "unprovisioned-2052214955493700224-q16.json": {
+      "bytes": 547,
+      "sha256": "4ac3f275f26a7e9ee657879a5103c713e725865b129e7741e8e85942575415ba"
+    },
+    "unprovisioned-2052214955493700224-q17.json": {
+      "bytes": 547,
+      "sha256": "71031f501a1eedd90e3af50582d7f69c6ffc60afad07e52b251cf908c6aba6a5"
+    },
+    "unprovisioned-2052697327552095744-q00.json": {
+      "bytes": 546,
+      "sha256": "2dbc7867656adf3e8fd6f6cd927b5f86a2198486c857138811f706d4cf56af65"
+    },
+    "unprovisioned-2052697327552095744-q01.json": {
+      "bytes": 546,
+      "sha256": "a75fa747d08c21b6af91f87c3542107f05e030f12200b0f67b9a5550b34d9361"
+    },
+    "unprovisioned-2052697327552095744-q02.json": {
+      "bytes": 546,
+      "sha256": "2bf9cf71a4f97675e5bb1dc2ec9112179e8290c6c7f7f0aeaf2c422885e30b03"
+    },
+    "unprovisioned-2052697327552095744-q03.json": {
+      "bytes": 546,
+      "sha256": "98e80c3fb37c89520b7cc6118d830ca4292b5adfb459b00419e6d56d3715009e"
+    },
+    "unprovisioned-2052697327552095744-q05.json": {
+      "bytes": 546,
+      "sha256": "a82ed9890976b545ffbcda1fed5f4a696d99d7f96c4bd96ba5fc502334f9ab73"
+    },
+    "unprovisioned-2052697327552095744-q06.json": {
+      "bytes": 546,
+      "sha256": "e5fda6bfd75a0ef6b63c2982cf6f1b985687adb51aea8be95265c5eef829c469"
+    },
+    "unprovisioned-2052697327552095744-q07.json": {
+      "bytes": 546,
+      "sha256": "fc48910e6f540408b7b904bab074466b571af3b5b771dab554ecefd2589caa6e"
+    },
+    "unprovisioned-2052697327552095744-q08.json": {
+      "bytes": 546,
+      "sha256": "a9c4273a27b21559d7a7601e3b5c718916483521ea218083877155eb0a4c9ee8"
+    },
+    "unprovisioned-2052697327552095744-q09.json": {
+      "bytes": 546,
+      "sha256": "f575db61a76dd2dc57dea8aaf3f63883c9a294bba985792d7ff59fa9b75b8f74"
+    },
+    "unprovisioned-2052697327552095744-q10.json": {
+      "bytes": 547,
+      "sha256": "9142ac53b2bf1ba330dc47c2110ddc8695b73d422a148cd2dded36cce81da1d2"
+    },
+    "unprovisioned-2052697327552095744-q11.json": {
+      "bytes": 547,
+      "sha256": "b3a91643f2ca70f6562b7d3b9fafc3c3de47bf1656d07aa02a9cffc3328dac80"
+    },
+    "unprovisioned-2052697327552095744-q12.json": {
+      "bytes": 547,
+      "sha256": "64b8b00dfd892ddc42ff5f40ea453321814d3bf8b9fa16175adebbd84ea1c890"
+    },
+    "unprovisioned-2052697327552095744-q13.json": {
+      "bytes": 547,
+      "sha256": "1846f7f443d94a8db41f03e632bced1d3f8bf738295c801871909ded9bf3d366"
+    },
+    "unprovisioned-2052697327552095744-q14.json": {
+      "bytes": 547,
+      "sha256": "1d64932240289de0777aa3e8fcead62c52d2f05a196fc4bb864bf49a83f26818"
+    },
+    "unprovisioned-2052697327552095744-q15.json": {
+      "bytes": 547,
+      "sha256": "d6a72e9d85b8678eb5c65b909f39f632c3f027d79651ec7d781f8ec89dd0ab33"
+    },
+    "unprovisioned-2052761344047469312-q01.json": {
+      "bytes": 546,
+      "sha256": "2e4dffde565fb21e8ec1c644b87725a7c68954a8636bcd384ba24d71fd90a546"
+    },
+    "unprovisioned-2052761344047469312-q02.json": {
+      "bytes": 546,
+      "sha256": "d407e75af2910724e5ef96deaab01a6a38cf2f7f5990236e869403cf0e5b6ba9"
+    },
+    "unprovisioned-2052761344047469312-q03.json": {
+      "bytes": 546,
+      "sha256": "8d8a871a4c5be185c2025027732a1f9826769b5a330d22aa90b63e8ebe9dd737"
+    },
+    "unprovisioned-2052761344047469312-q05.json": {
+      "bytes": 546,
+      "sha256": "d8b6473363501db7085bab197ec96e75a0da848cfb3be9a8f20ced32a3e7ac81"
+    },
+    "unprovisioned-2052761344047469312-q06.json": {
+      "bytes": 546,
+      "sha256": "3d0a2e166f3762c07200c9cfee6d100bf74a78ca913940148b417f11c91f52c7"
+    },
+    "unprovisioned-2052761344047469312-q07.json": {
+      "bytes": 546,
+      "sha256": "c510ae3f931bb5a9092773e99d7a91ef358122dd43ae8d4c2fcdc9c246328abb"
+    },
+    "unprovisioned-2052761344047469312-q09.json": {
+      "bytes": 546,
+      "sha256": "d44ce34f62e8d6af6a6c50bc01081ef49bb6fe6dea49e79fa364d2d2b9a6f012"
+    },
+    "unprovisioned-2052761344047469312-q10.json": {
+      "bytes": 547,
+      "sha256": "a16af4b0d3016826dde82869a255fdbb57eda980d01ea395572824ccca228b4b"
+    },
+    "unprovisioned-2052761344047469312-q11.json": {
+      "bytes": 547,
+      "sha256": "59adf5c18e424aec6151b76fcb82dffa7b39453a718105ba1ad4c4a50a695de6"
+    },
+    "unprovisioned-2052761344047469312-q13.json": {
+      "bytes": 547,
+      "sha256": "6ddd0d01d875a3f26a23e820999ecae0e2d30757a515a624dc641d386c7e3745"
+    },
+    "unprovisioned-2052761344047469312-q14.json": {
+      "bytes": 547,
+      "sha256": "779588a6835b6b02ff9e8b5f75d9115305028675ace6f7f4a048419091ffa45b"
+    },
+    "unprovisioned-2052761344047469312-q15.json": {
+      "bytes": 547,
+      "sha256": "de61f3e3757bd472504a76c1fb3858677a05369869f88793faa2ecbac0872969"
+    },
+    "unprovisioned-2052761344047469312-q17.json": {
+      "bytes": 547,
+      "sha256": "e980aca0d6c86baf8903cf429161869a684d16cd2b0d3d815ed8fc0f39f88827"
+    },
+    "unprovisioned-2053084085069214464-q01.json": {
+      "bytes": 546,
+      "sha256": "e8cbf87010a9bb4352d2917d0b1729e4c1110aa56e0ec3508c04c461fba585ae"
+    },
+    "unprovisioned-2053084085069214464-q02.json": {
+      "bytes": 546,
+      "sha256": "d7532348f0489701520b6dc2d9dc6aa53c7a99ac6dca195f524f60f80c589abd"
+    },
+    "unprovisioned-2053084085069214464-q03.json": {
+      "bytes": 546,
+      "sha256": "9fce84e551e2cc72040bd059d8ca0ae21b72cbd38550cf8be644be9646a15b1e"
+    },
+    "unprovisioned-2053084085069214464-q04.json": {
+      "bytes": 546,
+      "sha256": "37ce8862d15574d773b9472e0cba22a23ac6fb877b080f70162b6744b3095f96"
+    },
+    "unprovisioned-2053084085069214464-q05.json": {
+      "bytes": 546,
+      "sha256": "483e2a313827a650a68ac3751c1ae93d31f664445a1d9c5c8c8a8e02d18934ae"
+    },
+    "unprovisioned-2053084085069214464-q06.json": {
+      "bytes": 546,
+      "sha256": "3cb2cc5effad43a37a4232e528b7ca66bd04c0b6124e7f8c52f2429f44a6d161"
+    },
+    "unprovisioned-2053084085069214464-q07.json": {
+      "bytes": 546,
+      "sha256": "c7e256214302dae8f9399e1b694313a3d48543fb1d842e1e445880d9dcbd6d4a"
+    },
+    "unprovisioned-2053084085069214464-q08.json": {
+      "bytes": 546,
+      "sha256": "b03b26e65478a800e02d61210b328b1d1cfe75522b0b129188b8cc45eabe571e"
+    },
+    "unprovisioned-2053084085069214464-q09.json": {
+      "bytes": 546,
+      "sha256": "92e3742f4bb6c408fdea51ab7596f70b8476c1caaaad8a50b0b21d32a0674990"
+    },
+    "unprovisioned-2053084085069214464-q10.json": {
+      "bytes": 547,
+      "sha256": "e94c976f7e7676af1e3557882f29ad18325b48e5469c2bdf7b3a94ae2f4a28cf"
+    },
+    "unprovisioned-2053084085069214464-q11.json": {
+      "bytes": 547,
+      "sha256": "f81237750a161a5dd8c5eaa626d87afd567b8fb7a5a8be19dc790a206532cc0d"
+    },
+    "unprovisioned-2053084085069214464-q12.json": {
+      "bytes": 547,
+      "sha256": "2d15863a9194832df93d09407a05be264023f39e0c3efd2f0fea0d24724c7286"
+    },
+    "unprovisioned-2053084085069214464-q13.json": {
+      "bytes": 547,
+      "sha256": "1e809a28a37a976cf6185d0c607344650a0612de221b1b0cbb50877915235ca9"
+    },
+    "unprovisioned-2053084085069214464-q14.json": {
+      "bytes": 547,
+      "sha256": "164838b6dd0e811c2f35ef0f87e1b84b3dafc1b8cc8d707b1af12f66e0f8f672"
+    },
+    "unprovisioned-2053084085069214464-q15.json": {
+      "bytes": 547,
+      "sha256": "0d5dad8e3c746efac1f69249ed58ecbbc74399e2cef23178b6ab307a46d4fc52"
+    },
+    "unprovisioned-2053084085069214464-q16.json": {
+      "bytes": 547,
+      "sha256": "a9273389364e5a14cabb78430286f0094bc15d78d730c287bf8deda1b2330193"
+    },
+    "unprovisioned-2053084085069214464-q17.json": {
+      "bytes": 547,
+      "sha256": "bb0a1c2b8c09a5c60384ca89ac94e903bdf193b102243756a6e254861dbe3d73"
+    },
+    "unprovisioned-2086750237755948288-q01.json": {
+      "bytes": 552,
+      "sha256": "6b9de7204c8358dbea43cdb8b91a032a8ed824a889798d8469d55410433b924e"
+    },
+    "unprovisioned-2086750237755948288-q02.json": {
+      "bytes": 552,
+      "sha256": "d464d15e497cedbbb6cd505d3fb9c00c99e80fa9912679672860c079d1a426d2"
+    },
+    "unprovisioned-2086750237755948288-q03.json": {
+      "bytes": 552,
+      "sha256": "60f5b43fd42581b47b3541f8d458b71ef6c759ad67ed129dae165cc85d93b56e"
+    },
+    "unprovisioned-2086750237755948288-q04.json": {
+      "bytes": 552,
+      "sha256": "881e4291783b376cd1d1ba12de32964ec71edfcdef48946c0ea82ff998eaa5f6"
+    },
+    "unprovisioned-2086750237755948288-q05.json": {
+      "bytes": 552,
+      "sha256": "bc8f41d20dfcfba39e385bf35449c285445c0405393bd4363f7f5bf0adfbf2d0"
+    },
+    "unprovisioned-2086750237755948288-q06.json": {
+      "bytes": 552,
+      "sha256": "aefc77dbdaaaf60edc53cfd88cf6bed6ee22938cd4f325de41a1b97e7c5da027"
+    },
+    "unprovisioned-2086750237755948288-q08.json": {
+      "bytes": 552,
+      "sha256": "bec9ed1f800f26bf88a2d04b6f942f485a57444ddb93809ff9baf6e9c7325a93"
+    },
+    "unprovisioned-2086750237755948288-q09.json": {
+      "bytes": 552,
+      "sha256": "14d1c3d74c232a7e8c71dad72a8d74d612ecd9aac780c769ad1d7e5506e0853b"
+    },
+    "unprovisioned-2086750237755948288-q10.json": {
+      "bytes": 553,
+      "sha256": "2ea9642dbb0225cdc006d9a2a7a097d0a581af276ee9f15091e74fd7a8b4ad5f"
+    },
+    "unprovisioned-2086750237755948288-q12.json": {
+      "bytes": 553,
+      "sha256": "f0fb6fbf82c566549c3a775ac0803f99f56303188488298c16f5394a22b9adf1"
+    },
+    "unprovisioned-2086750237755948288-q13.json": {
+      "bytes": 553,
+      "sha256": "488b9d9d24072573e939960485cef819f73189d41d50aa711e75888ac5719ab2"
+    },
+    "unprovisioned-2086750237755948288-q14.json": {
+      "bytes": 553,
+      "sha256": "4e71727a9dd556c913b93e08c69791156f8a503a73093009d64f6a2d9c027204"
+    },
+    "unprovisioned-2086750237755948288-q16.json": {
+      "bytes": 553,
+      "sha256": "7a176378dc143d3a8825a3abbe9e6158fc7ca59945159e37f9bf927dd3e5e47f"
+    },
+    "unprovisioned-2086750237755948288-q17.json": {
+      "bytes": 553,
+      "sha256": "6e322c75d648476fb240388c2556df85478712821480008d2f4b1df7dc4d4259"
+    }
+  },
+  "record_paths": {
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007691.json": "8de66f3d9e5014ad243da584543a67a1264189c7f64b6a06d409d81f670d1bdc.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007692.json": "f47d9b9cd257c9f44c72ac97a3e3d55a0ccc6a2f01a70e3dd6a2907d8d597d32.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007693.json": "73091c762e65781feba2e9fab483ac0ae768cdeb7c261ecb29d22f2fd2ad49d3.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007694.json": "a2f43faafdd68615d07a6a6de7a55db95dfb61d56bcdf981f9ec718c3f8ed6a0.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007695.json": "8b2dcd98556453eaa90593305680f95ce04eeabe3b0060897a107e4a1d74c8bc.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007696.json": "f235518a74f8bd1bd9a9877d4577e0a47953778a6c07ae2e0cf09aad1788c17f.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007697.json": "839378375cced253dd85c0ad491319aed53f2953f1e06d0422d50ef64c1e860f.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007698.json": "0152e42a95593e8c7e045e798274c83e039baa2589c212eb877a0305e0408135.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007699.json": "772524ac73aeb2a8b560315677dd59b3746f0728468430f5a1d3dd9bb92dba5f.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007700.json": "4f224f380bbc62c5709609582494a85d9b91f19aeb06d17f8cbc1af88ef8b7e5.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007701.json": "dd55d2de1364978417fc8f9f38c2db38196afe5109a2818c29f2047cc7277d35.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007702.json": "4d4e6af5f084ea5329d3c3cb61de132e974d7d71c27c69cfcd9d478457e6452a.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007703.json": "0bbfb97738ffd95c68f0b9ed0ba109b6b5c6615b9707db4a51f0a5d595c0f4e0.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007704.json": "76639cb4f27e347d58c20dc39d30b66e6a074e74f2293e3f3f88dcaccb747aee.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007705.json": "013fbaee19a95a3471b31c94ef79084ab0355d8bdf878e5b4b53482c4fcaf93f.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007706.json": "d6ea6112c43d53bfea0bf33fa1b9727f4d33296e7c8c64783486601fa47c7da6.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007707.json": "7bc2bc14b25ce7695d41696cda9cbdd1c801ee41829dc07fa7769fbf2a6fe0cd.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007708.json": "778817756b96e51d7b574e6d4a1a16b82ca70ded11ffbfaa885fdd27df0b3e69.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007303.json": "e4f8e1ce63ff7a8fbfa82fd676de52fae9167c3cda3a5ed6721a480fcd437ac0.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007304.json": "d026795f1ee14b69b5f6303f7c4135ee65edefc1b556a10ae4be0f48c9daf7a7.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007305.json": "4079d8d093186e33a53ccff7f76fe996928657c57b833b5424cee57453e1f032.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007306.json": "f027aa0c4556b3130794ee6ca26b90a52799cecd886d129e6894de92e9d87366.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007307.json": "bd299fbe077e3ddca40e9385fac6ae658fe9dc2a411e62bcc0ad4fda6e167977.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007308.json": "b3440ebc4efff0451892de115b180e8e4b1a2bd978d7e4d1159235a0bd388941.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007309.json": "835f1ee5617a44ce6351570e9952b294284dbd4f943059cade187272f78b7377.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007310.json": "74726a655c4f1ee2b92e7eb0fc5002ca4bbb9f1245fc3fd4508bcaaa7b62d207.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007311.json": "c2c25f099e8fe04539d8b50a99be6267d66ceeac8e9234440c407714e846ba49.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007312.json": "19d3b43238ecc5f0e1f34a287e9a3260c93dc0f87104d7e6bac887156a947875.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007313.json": "9f60a43a28e3edd7b813004e181d82e26bb08890532ad82d1d9d8c60bd38efe7.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007314.json": "e7dad96c6589518e58ad0032e45ce0d2ed7bace94ffb696388e527d5dc02dcaa.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007315.json": "4e274d2fc05d4005d6e2113358a5163e05014fb68432479d3cd06ed2b15c5685.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007316.json": "693f0472e8f98ba3f86165acd05948e87e5c2b964d9d6b88b39e9beadf3afdfa.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007317.json": "e7c415a278c70b016823c1fa7770b00b4bb1c80e966c5d2ec3fda118139d4ea0.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007318.json": "e03fce08db6a282b5d72a4661413344c011f23ab5711d7143bfc3a73dbed20d6.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007319.json": "368d5800ccc561fe120acb3f56507d63e871ab26aac20d023da626734d416cfe.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007320.json": "756bd361e6e8490fe82dba90309c4e026f2f688d355c131e0e99dc9902c7a560.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007815.json": "00092f970e4c5e112ffb60e5350e52fff10f2317bbc891eb90e1c466b0e9af8b.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007816.json": "9b3d08815925f489ba46cf94027ba2493ed6c7874b12fc0610b881833b59a5b2.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007817.json": "8b784b030605428655469583a45cafa678fefaffb7956b1538a63b45411c25af.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007818.json": "8644402938e49f1eae4eaa86e5332d78520dce3496148e27b567bdf6fa43108e.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007819.json": "2055320a2eb629558568af81402868a76d14dde15b92c249b33da8579f42039e.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007820.json": "8514661b875a1df7a291360c5a23ef2fad8f10324618d0cc5ff1d35582a768bc.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007821.json": "5a649cab7d6d96945937765ddaab9162e64b7c9a26a3cbf75eaec30992fe7dbf.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007822.json": "8d709ab2068dc5ad58ce933ae169db0804a2abcb3e0e3b70c399d4d3b6a301ac.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007823.json": "dde79baadae8e41abf8cf9c2bacc14c134647af994dd57463ddfc20a70452ec3.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007824.json": "4371947765b1707d2f4ee6abcef9ccaa96cbb6bd9a6d378d25f01e382e3c99a8.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007825.json": "2a84ae896ee7fc65ac118d6b8b4425a4cc79c65db1040b0bc99afa252e337738.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007826.json": "9c87334aac1711bf6a7168e8df91a333d72e7bc14fb8bf65f4cfa380f3add8fb.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007827.json": "fd11e62b1511ca3b0a54e1a339a6b2577707dd4a19e0cbe26346f3eac1bf986c.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007922.json": "95239224df3f40d904bd15badd453a13a8133d257ee2e0bca80fd84de2a3eb0a.json",
+    "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007923.json": "a294236da591b6b694b97b731b359cd73a2619ab9505c19e1f50fbf739718946.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q01.json": "unprovisioned-2050231848829944320-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q02.json": "unprovisioned-2050231848829944320-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q03.json": "unprovisioned-2050231848829944320-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q04.json": "unprovisioned-2050231848829944320-q04.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q05.json": "unprovisioned-2050231848829944320-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q06.json": "unprovisioned-2050231848829944320-q06.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q07.json": "unprovisioned-2050231848829944320-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q08.json": "unprovisioned-2050231848829944320-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q09.json": "unprovisioned-2050231848829944320-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q10.json": "unprovisioned-2050231848829944320-q10.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q11.json": "unprovisioned-2050231848829944320-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q12.json": "unprovisioned-2050231848829944320-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q13.json": "unprovisioned-2050231848829944320-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q14.json": "unprovisioned-2050231848829944320-q14.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q15.json": "unprovisioned-2050231848829944320-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q16.json": "unprovisioned-2050231848829944320-q16.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q17.json": "unprovisioned-2050231848829944320-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050239300586448000-q01.json": "unprovisioned-2050239300586448000-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050239300586448000-q05.json": "unprovisioned-2050239300586448000-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q05.json": "unprovisioned-2050249406650364160-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q13.json": "unprovisioned-2050249406650364160-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q17.json": "unprovisioned-2050249406650364160-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2051748659478657152-q01.json": "unprovisioned-2051748659478657152-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q01.json": "unprovisioned-2052214955493700224-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q02.json": "unprovisioned-2052214955493700224-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q03.json": "unprovisioned-2052214955493700224-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q04.json": "unprovisioned-2052214955493700224-q04.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q05.json": "unprovisioned-2052214955493700224-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q07.json": "unprovisioned-2052214955493700224-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q08.json": "unprovisioned-2052214955493700224-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q09.json": "unprovisioned-2052214955493700224-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q11.json": "unprovisioned-2052214955493700224-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q12.json": "unprovisioned-2052214955493700224-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q13.json": "unprovisioned-2052214955493700224-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q15.json": "unprovisioned-2052214955493700224-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q16.json": "unprovisioned-2052214955493700224-q16.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q17.json": "unprovisioned-2052214955493700224-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q01.json": "unprovisioned-2052761344047469312-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q02.json": "unprovisioned-2052761344047469312-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q03.json": "unprovisioned-2052761344047469312-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q05.json": "unprovisioned-2052761344047469312-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q06.json": "unprovisioned-2052761344047469312-q06.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q07.json": "unprovisioned-2052761344047469312-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q09.json": "unprovisioned-2052761344047469312-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q10.json": "unprovisioned-2052761344047469312-q10.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q11.json": "unprovisioned-2052761344047469312-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q13.json": "unprovisioned-2052761344047469312-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q14.json": "unprovisioned-2052761344047469312-q14.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q15.json": "unprovisioned-2052761344047469312-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q17.json": "unprovisioned-2052761344047469312-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q00.json": "unprovisioned-2052697327552095744-q00.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q01.json": "unprovisioned-2052697327552095744-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q02.json": "unprovisioned-2052697327552095744-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q03.json": "unprovisioned-2052697327552095744-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q05.json": "unprovisioned-2052697327552095744-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q06.json": "unprovisioned-2052697327552095744-q06.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q07.json": "unprovisioned-2052697327552095744-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q08.json": "unprovisioned-2052697327552095744-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q09.json": "unprovisioned-2052697327552095744-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q10.json": "unprovisioned-2052697327552095744-q10.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q11.json": "unprovisioned-2052697327552095744-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q12.json": "unprovisioned-2052697327552095744-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q13.json": "unprovisioned-2052697327552095744-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q14.json": "unprovisioned-2052697327552095744-q14.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q15.json": "unprovisioned-2052697327552095744-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q01.json": "unprovisioned-2053084085069214464-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q02.json": "unprovisioned-2053084085069214464-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q03.json": "unprovisioned-2053084085069214464-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q04.json": "unprovisioned-2053084085069214464-q04.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q05.json": "unprovisioned-2053084085069214464-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q06.json": "unprovisioned-2053084085069214464-q06.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q07.json": "unprovisioned-2053084085069214464-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q08.json": "unprovisioned-2053084085069214464-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q09.json": "unprovisioned-2053084085069214464-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q10.json": "unprovisioned-2053084085069214464-q10.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q11.json": "unprovisioned-2053084085069214464-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q12.json": "unprovisioned-2053084085069214464-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q13.json": "unprovisioned-2053084085069214464-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q14.json": "unprovisioned-2053084085069214464-q14.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q15.json": "unprovisioned-2053084085069214464-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q16.json": "unprovisioned-2053084085069214464-q16.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q17.json": "unprovisioned-2053084085069214464-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q00.json": "unprovisioned-2052146785773639040-q00.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q01.json": "unprovisioned-2052146785773639040-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q02.json": "unprovisioned-2052146785773639040-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q03.json": "unprovisioned-2052146785773639040-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q04.json": "unprovisioned-2052146785773639040-q04.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q05.json": "unprovisioned-2052146785773639040-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q07.json": "unprovisioned-2052146785773639040-q07.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q08.json": "unprovisioned-2052146785773639040-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q09.json": "unprovisioned-2052146785773639040-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q11.json": "unprovisioned-2052146785773639040-q11.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q12.json": "unprovisioned-2052146785773639040-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q13.json": "unprovisioned-2052146785773639040-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q15.json": "unprovisioned-2052146785773639040-q15.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q16.json": "unprovisioned-2052146785773639040-q16.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q17.json": "unprovisioned-2052146785773639040-q17.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q01.json": "unprovisioned-2086750237755948288-q01.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q02.json": "unprovisioned-2086750237755948288-q02.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q03.json": "unprovisioned-2086750237755948288-q03.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q04.json": "unprovisioned-2086750237755948288-q04.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q05.json": "unprovisioned-2086750237755948288-q05.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q06.json": "unprovisioned-2086750237755948288-q06.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q08.json": "unprovisioned-2086750237755948288-q08.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q09.json": "unprovisioned-2086750237755948288-q09.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q10.json": "unprovisioned-2086750237755948288-q10.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q12.json": "unprovisioned-2086750237755948288-q12.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q13.json": "unprovisioned-2086750237755948288-q13.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q14.json": "unprovisioned-2086750237755948288-q14.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q16.json": "unprovisioned-2086750237755948288-q16.json",
+    "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q17.json": "unprovisioned-2086750237755948288-q17.json"
+  },
+  "sources": {
+    "2104994189377019776": {
+      "source_id": "2104994189377019776",
+      "role": "development",
+      "cohort": "native_eb",
+      "origin_parent_kic": 7259722,
+      "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+      "quarters": {
+        "0": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 0,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007691.json",
+          "sha256": "8de66f3d9e5014ad243da584543a67a1264189c7f64b6a06d409d81f670d1bdc",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "0b18b8a6ca7a55a3c1f808ce601d5d0eceaa8c08c541f0547b93890a2c649f03"
+        },
+        "1": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 1,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007692.json",
+          "sha256": "f47d9b9cd257c9f44c72ac97a3e3d55a0ccc6a2f01a70e3dd6a2907d8d597d32",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "e2ebf3bc7d442314d0c27229f2f3cd28e44a8651d82d94055db0b2a2e28f8a9d"
+        },
+        "2": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 2,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007693.json",
+          "sha256": "73091c762e65781feba2e9fab483ac0ae768cdeb7c261ecb29d22f2fd2ad49d3",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "9eb06bd678c624a833da6ce6341c10c1bf752f909a2bad54ef1ae0ea01976d5c"
+        },
+        "3": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 3,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007694.json",
+          "sha256": "a2f43faafdd68615d07a6a6de7a55db95dfb61d56bcdf981f9ec718c3f8ed6a0",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "2cfa9353e16124b3a896cb319c46b6af2f560b7c1afc89de249f52f01581c362"
+        },
+        "4": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 4,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007695.json",
+          "sha256": "8b2dcd98556453eaa90593305680f95ce04eeabe3b0060897a107e4a1d74c8bc",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "cbc2e0859bc82aaa4cf235acb26ce4dad0515c0bd25a7fed2beae739511ed67a"
+        },
+        "5": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 5,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007696.json",
+          "sha256": "f235518a74f8bd1bd9a9877d4577e0a47953778a6c07ae2e0cf09aad1788c17f",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "d7910819182c8d8383c86fcaaeb38b1fea9dd3b455641b490fff7ea1d39800d9"
+        },
+        "6": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 6,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007697.json",
+          "sha256": "839378375cced253dd85c0ad491319aed53f2953f1e06d0422d50ef64c1e860f",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "bfe7d3d648966bf290a63289a3a5ca356d1dfbf55838faabb1e5146d90fa7cb1"
+        },
+        "7": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 7,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007698.json",
+          "sha256": "0152e42a95593e8c7e045e798274c83e039baa2589c212eb877a0305e0408135",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "cf4223e1a5f60834a4353d3716c881231d4c14e8414340fedf31a00c1f099871"
+        },
+        "8": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 8,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007699.json",
+          "sha256": "772524ac73aeb2a8b560315677dd59b3746f0728468430f5a1d3dd9bb92dba5f",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "d2a33298c0c852dc28641dc54242cbc7d0f5b44b977aabb9505cdb7ccadf40bd"
+        },
+        "9": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 9,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007700.json",
+          "sha256": "4f224f380bbc62c5709609582494a85d9b91f19aeb06d17f8cbc1af88ef8b7e5",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "bcd38f2db6f8019ead14121bb99d9b4c4305c0f86940f1744cbce2f85b8663e5"
+        },
+        "10": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 10,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007701.json",
+          "sha256": "dd55d2de1364978417fc8f9f38c2db38196afe5109a2818c29f2047cc7277d35",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "eb79dcc7b3d48a8b84556ec1275637601b7317c2b8b472af2f41993cb9b14e93"
+        },
+        "11": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 11,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007702.json",
+          "sha256": "4d4e6af5f084ea5329d3c3cb61de132e974d7d71c27c69cfcd9d478457e6452a",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "2e7ab12c6da50ffcfb1f4edf97b5b4f69c6741cfd5d20208b3f73a0d391ee857"
+        },
+        "12": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 12,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007703.json",
+          "sha256": "0bbfb97738ffd95c68f0b9ed0ba109b6b5c6615b9707db4a51f0a5d595c0f4e0",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "62b311159bf83c60b2e788fc29a28ee8fe48dca8d3a2210df04fb6a9506809f4"
+        },
+        "13": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 13,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007704.json",
+          "sha256": "76639cb4f27e347d58c20dc39d30b66e6a074e74f2293e3f3f88dcaccb747aee",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "0d5483db901dc5d48922acba5f90315a1955f5501416bb55519cfcca079adc72"
+        },
+        "14": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 14,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007705.json",
+          "sha256": "013fbaee19a95a3471b31c94ef79084ab0355d8bdf878e5b4b53482c4fcaf93f",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "331e1b926749777433afb93ac26309cb10e2e4135adaf2565d3ff4e17521c31b"
+        },
+        "15": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 15,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007706.json",
+          "sha256": "d6ea6112c43d53bfea0bf33fa1b9727f4d33296e7c8c64783486601fa47c7da6",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "dc49bb18152a55e51f9a88cb5f74e0824d1d2f82029a5ba4fcd23014c4d93fa9"
+        },
+        "16": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 16,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007707.json",
+          "sha256": "7bc2bc14b25ce7695d41696cda9cbdd1c801ee41829dc07fa7769fbf2a6fe0cd",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "19fa14959fa7f89cbf7dcf7a7bba7a44fb2bdb72ab2c437530cfff4b4755efcb"
+        },
+        "17": {
+          "source_id": "2104994189377019776",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "1789a3765fe986ce6358c57296f613446a698eaa82f1f16b841aea579aacf39b",
+          "origin_parent_kic": 7259722,
+          "quarter": 17,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007708.json",
+          "sha256": "778817756b96e51d7b574e6d4a1a16b82ca70ded11ffbfaa885fdd27df0b3e69",
+          "actual_parent_kic": 7259722,
+          "content_sha256": "d02fd69e43bbbd95576d035b6ca850d687c230a8c8f72c03fe479dbb53d964dc"
+        }
+      }
+    },
+    "2079916390730745984": {
+      "source_id": "2079916390730745984",
+      "role": "development",
+      "cohort": "native_eb",
+      "origin_parent_kic": 8892722,
+      "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+      "quarters": {
+        "0": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 0,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007303.json",
+          "sha256": "e4f8e1ce63ff7a8fbfa82fd676de52fae9167c3cda3a5ed6721a480fcd437ac0",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "6639b3e7b77ecbfc3070b4ad304511b99cb336ea0738ea242e74490e918cc236"
+        },
+        "1": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 1,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007304.json",
+          "sha256": "d026795f1ee14b69b5f6303f7c4135ee65edefc1b556a10ae4be0f48c9daf7a7",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "999f1df0ecf77f45bd93f2417029a77b2606c794d078e05b635ad03629ab2cc8"
+        },
+        "2": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 2,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007305.json",
+          "sha256": "4079d8d093186e33a53ccff7f76fe996928657c57b833b5424cee57453e1f032",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "9ddae98fca246dd2e4ad8dbfa5b7d431e290e10541a48901340b7ecb3f291719"
+        },
+        "3": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 3,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007306.json",
+          "sha256": "f027aa0c4556b3130794ee6ca26b90a52799cecd886d129e6894de92e9d87366",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "10ee52e0f9fd23f174cff747db62761b7616a908f93dfdb097ac24b4e062f2c6"
+        },
+        "4": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 4,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007307.json",
+          "sha256": "bd299fbe077e3ddca40e9385fac6ae658fe9dc2a411e62bcc0ad4fda6e167977",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "91dc61571e2fcc8c4b981d57b3578552139dd6f1b1837ade335568996195a8d0"
+        },
+        "5": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 5,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007308.json",
+          "sha256": "b3440ebc4efff0451892de115b180e8e4b1a2bd978d7e4d1159235a0bd388941",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "172166f70baae99923223484fcd0aa0efc2177317ada0e7ac77d5dafcce197af"
+        },
+        "6": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 6,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007309.json",
+          "sha256": "835f1ee5617a44ce6351570e9952b294284dbd4f943059cade187272f78b7377",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "69189ae424712fa696b2f77bcfd34ec49b85aa3156d477bb765a3b4637e5463a"
+        },
+        "7": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 7,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007310.json",
+          "sha256": "74726a655c4f1ee2b92e7eb0fc5002ca4bbb9f1245fc3fd4508bcaaa7b62d207",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "b0e3f53e8b38dee4ab2aceb47ad8a4aaa0885a55fd7b23fd8f8fc00f7f5699ac"
+        },
+        "8": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 8,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007311.json",
+          "sha256": "c2c25f099e8fe04539d8b50a99be6267d66ceeac8e9234440c407714e846ba49",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "1aea1681150f1561844fe3c8727a589b2180fb466f9cdc947c537cd6e3d3fd04"
+        },
+        "9": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 9,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007312.json",
+          "sha256": "19d3b43238ecc5f0e1f34a287e9a3260c93dc0f87104d7e6bac887156a947875",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "663e53ebaa03372778b7340b2b5aadc2348080a037aab840c865b8ec54059dad"
+        },
+        "10": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 10,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007313.json",
+          "sha256": "9f60a43a28e3edd7b813004e181d82e26bb08890532ad82d1d9d8c60bd38efe7",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "b73e1f017b22f602057752f6745488fe63049dff55e6bf9de658df9f50665da9"
+        },
+        "11": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 11,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007314.json",
+          "sha256": "e7dad96c6589518e58ad0032e45ce0d2ed7bace94ffb696388e527d5dc02dcaa",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "49490c9b9e25ea8d811918d32b919827654e8dac44a3e287049c1f8c86bf46bf"
+        },
+        "12": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 12,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007315.json",
+          "sha256": "4e274d2fc05d4005d6e2113358a5163e05014fb68432479d3cd06ed2b15c5685",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "b4539da39e4c53fa73e43f4d30863554cb7d3d885e1df62dcc13cb3b3d1fddb4"
+        },
+        "13": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 13,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007316.json",
+          "sha256": "693f0472e8f98ba3f86165acd05948e87e5c2b964d9d6b88b39e9beadf3afdfa",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "f4d2d21d191a06590ea86e9673a9abd359b094293aaef57135b0a09cd585a15e"
+        },
+        "14": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 14,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007317.json",
+          "sha256": "e7c415a278c70b016823c1fa7770b00b4bb1c80e966c5d2ec3fda118139d4ea0",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "e4ecfef1ab36d7ddf63edfd0314038403681e862104c922d837db0f5a99c0667"
+        },
+        "15": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 15,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007318.json",
+          "sha256": "e03fce08db6a282b5d72a4661413344c011f23ab5711d7143bfc3a73dbed20d6",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "327069de9b79a0952a31ac7efbe459d2f691301aa1e86ab9c6e3583caf035582"
+        },
+        "16": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 16,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007319.json",
+          "sha256": "368d5800ccc561fe120acb3f56507d63e871ab26aac20d023da626734d416cfe",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "5584e18b735a437a9a0a4b8a68541f01da477097c056247dcca6b05b71f24235"
+        },
+        "17": {
+          "source_id": "2079916390730745984",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "0726bb7929f65049610efdab2eb7dcdb7a60772e5b8cec1c4448c8742bb00512",
+          "origin_parent_kic": 8892722,
+          "quarter": 17,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007320.json",
+          "sha256": "756bd361e6e8490fe82dba90309c4e026f2f688d355c131e0e99dc9902c7a560",
+          "actual_parent_kic": 8892722,
+          "content_sha256": "be6d089f3d3e6a4d3518ffdbb38967f530cf83a1638f291230140bf7879de9a5"
+        }
+      }
+    },
+    "2117149844471928448": {
+      "source_id": "2117149844471928448",
+      "role": "development",
+      "cohort": "native_eb",
+      "origin_parent_kic": 8004839,
+      "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+      "quarters": {
+        "1": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 1,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007815.json",
+          "sha256": "00092f970e4c5e112ffb60e5350e52fff10f2317bbc891eb90e1c466b0e9af8b",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "2434d8992ab308530aa4820e77361fef751edd1a430fc5eeb6cd24743eb207ee"
+        },
+        "2": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 2,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007816.json",
+          "sha256": "9b3d08815925f489ba46cf94027ba2493ed6c7874b12fc0610b881833b59a5b2",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "f012b5a56e1362b9d30a38c8017093fdfe8209aa905d536474b02dea0668fa04"
+        },
+        "3": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 3,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007817.json",
+          "sha256": "8b784b030605428655469583a45cafa678fefaffb7956b1538a63b45411c25af",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "f34d30eaa2886796f082ee0e4a5c00bcb94db8b425963691d524b3d9e5a820d5"
+        },
+        "8": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 8,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007818.json",
+          "sha256": "8644402938e49f1eae4eaa86e5332d78520dce3496148e27b567bdf6fa43108e",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "0323036555037c831426832837f1f391566fba4205d839b0b9eebf8ad8ddfbd8"
+        },
+        "9": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 9,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007819.json",
+          "sha256": "2055320a2eb629558568af81402868a76d14dde15b92c249b33da8579f42039e",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "a03e42fe4cc11c05276316391e479be610e36e6fc2a003846b4becb4c296146a"
+        },
+        "10": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 10,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007820.json",
+          "sha256": "8514661b875a1df7a291360c5a23ef2fad8f10324618d0cc5ff1d35582a768bc",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "e5661ab9acabeb995600c13b9af1c4971a3b68170f5c14465bbeb36a0e75a953"
+        },
+        "11": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 11,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007821.json",
+          "sha256": "5a649cab7d6d96945937765ddaab9162e64b7c9a26a3cbf75eaec30992fe7dbf",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "9fe43af2136972b4473e55aa60361be285e06549c17b1d14d19484da343e39fb"
+        },
+        "12": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 12,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007822.json",
+          "sha256": "8d709ab2068dc5ad58ce933ae169db0804a2abcb3e0e3b70c399d4d3b6a301ac",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "3724c46bb9675c274f22d409584a452779bd4138062587a6866e56e5dff3a6e8"
+        },
+        "13": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 13,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007823.json",
+          "sha256": "dde79baadae8e41abf8cf9c2bacc14c134647af994dd57463ddfc20a70452ec3",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "3d12a67b9db04a59c334070084a00961b472b5e673d8bc8e893ccf5658f5f3ef"
+        },
+        "14": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 14,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007824.json",
+          "sha256": "4371947765b1707d2f4ee6abcef9ccaa96cbb6bd9a6d378d25f01e382e3c99a8",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "739b949c864c89b1ae09d9187b6cfab15338f9eacffe719aa1acecd7311fd203"
+        },
+        "15": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 15,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007825.json",
+          "sha256": "2a84ae896ee7fc65ac118d6b8b4425a4cc79c65db1040b0bc99afa252e337738",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "89be47cd2cfbbe6b9dd935a272c1ef95abc11220e3cfd2e49cc250c459bc6406"
+        },
+        "16": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 16,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007826.json",
+          "sha256": "9c87334aac1711bf6a7168e8df91a333d72e7bc14fb8bf65f4cfa380f3add8fb",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "e77640b18b0cbaba66453201f34fb5c8be174775febfa7a93ec556c000478b83"
+        },
+        "17": {
+          "source_id": "2117149844471928448",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "ab6defe8acad11551eb2c1ec45103633357562ade9a71fecf9349c582ef6ae30",
+          "origin_parent_kic": 8004839,
+          "quarter": 17,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007827.json",
+          "sha256": "fd11e62b1511ca3b0a54e1a339a6b2577707dd4a19e0cbe26346f3eac1bf986c",
+          "actual_parent_kic": 8004839,
+          "content_sha256": "ec12067acf23665293486210878a104fc364f3ded31f4f41e43de2794aa88fd9"
+        }
+      }
+    },
+    "2126574304096553344": {
+      "source_id": "2126574304096553344",
+      "role": "development",
+      "cohort": "native_eb",
+      "origin_parent_kic": 8624778,
+      "raw_fits_sha256": "4eed809545b25ebdde48bfa49f92bea6c60488eb30bc7dc2805188ffe9365115",
+      "quarters": {
+        "10": {
+          "source_id": "2126574304096553344",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "4eed809545b25ebdde48bfa49f92bea6c60488eb30bc7dc2805188ffe9365115",
+          "origin_parent_kic": 8624778,
+          "quarter": 10,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007922.json",
+          "sha256": "95239224df3f40d904bd15badd453a13a8133d257ee2e0bca80fd84de2a3eb0a",
+          "actual_parent_kic": 8624778,
+          "content_sha256": "5debc27e6c8fe9f349022f63b8811427ffa2f4ada1ae62ec9baf222be43e22d6"
+        },
+        "11": {
+          "source_id": "2126574304096553344",
+          "cohort": "native_eb",
+          "role": "development",
+          "raw_fits_sha256": "4eed809545b25ebdde48bfa49f92bea6c60488eb30bc7dc2805188ffe9365115",
+          "origin_parent_kic": 8624778,
+          "quarter": 11,
+          "kind": "NOMINAL",
+          "path": "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/todo-20260926/real-control-bounded-pixel-inputs-v1/products/product-007923.json",
+          "sha256": "a294236da591b6b694b97b731b359cd73a2619ab9505c19e1f50fbf739718946",
+          "actual_parent_kic": 8624778,
+          "content_sha256": "57b9c2cc89cc432222139fa7fda7f5d2ac8b4e4136331a14a787818540a2b4c6"
+        }
+      }
+    },
+    "2050231848829944320": {
+      "source_id": "2050231848829944320",
+      "role": "development",
+      "cohort": "native_confirmed_extra",
+      "origin_parent_kic": 757450,
+      "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+      "quarters": {
+        "1": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q01.json",
+          "nominal_sha256": "478efe4fbb3647216c3dbc260a781a9fd26915644ed79b21a5b7dfc9a36f43bd",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q02.json",
+          "nominal_sha256": "8c1816c626ce4098d0d81628425e588df05df33cd225e1a792d0cb518e90c55f",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q03.json",
+          "nominal_sha256": "e2327b4ef17a9d69ad7ef5b4ae585c35273321e9a2ee7de16c1bbf0edf33f54d",
+          "spatial_paths": []
+        },
+        "4": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 4,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q04.json",
+          "nominal_sha256": "97dd3f0a1fd24dedc69dab205b1967cf2852fb981685a7dd879d864890a091e9",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q05.json",
+          "nominal_sha256": "5ef6d60c07f1a8492f21c89904634a404b8ef1f2c1a53f7f9c9dde8676df18e2",
+          "spatial_paths": []
+        },
+        "6": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 6,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q06.json",
+          "nominal_sha256": "a42210c5eb5f8a77b634a784f387677b1072addf5c87f33db1665aae7aad6222",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q07.json",
+          "nominal_sha256": "90d55f0bc719fa8a5957d622524c6beab1a350672223357968f6be99024ca9b8",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q08.json",
+          "nominal_sha256": "f3236235b3f3e88d7505fc6af0aae0e6020396edbed37054db403bd6b6e8eb6c",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q09.json",
+          "nominal_sha256": "1c98b4407ae589bc39c1f52930cc060b0aa3e82c2227e2b722ac5c0c32fa8397",
+          "spatial_paths": []
+        },
+        "10": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 10,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q10.json",
+          "nominal_sha256": "d03401b06c3f03e357b8618167223e11d8035f7c70c2dc7a420802060de2565e",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q11.json",
+          "nominal_sha256": "76de245618b4bcfac932e8fab0ef7e7270ed24f6fd7472bf579ff74decafd122",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q12.json",
+          "nominal_sha256": "63f4f3af5dea0e4b8a37dd52207929ba21a95e5f2a0d8ebfc67c716080cada6c",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q13.json",
+          "nominal_sha256": "09ef74659aef3bbdf06173317124bdd0aec1f23d4c3231657a9663a7dc3cdbba",
+          "spatial_paths": []
+        },
+        "14": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 14,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q14.json",
+          "nominal_sha256": "35c3b4d371ff63c53c83bfc55e94233179844d3f936f0ce393c303cc58077b4c",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q15.json",
+          "nominal_sha256": "ad6e0c6e3075e9a9b9f34c1689d1773ceec83fcb4f1bda260060937400187a8a",
+          "spatial_paths": []
+        },
+        "16": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 16,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q16.json",
+          "nominal_sha256": "81128f349d9a2a95954dbc4efb0ed3bed3daad455179dd2ce8e6a9f65a771bf2",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2050231848829944320",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 757450,
+          "raw_fits_sha256": "30343817c1e29170db83030d9bfb6aeacb654499f5046035a63584ecbe3beae4",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050231848829944320-q17.json",
+          "nominal_sha256": "d24e51e5edb2d82c6bb69c02f29cc7e3a9f15f58f4235c1990a26a71221bb589",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2050239300586448000": {
+      "source_id": "2050239300586448000",
+      "role": "development",
+      "cohort": "native_confirmed_extra",
+      "origin_parent_kic": 1026957,
+      "raw_fits_sha256": "5440920f8e295ad96548035cb21cc29959e7caf0620e5e16049e4c85f8f79ed1",
+      "quarters": {
+        "1": {
+          "source_id": "2050239300586448000",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1026957,
+          "raw_fits_sha256": "5440920f8e295ad96548035cb21cc29959e7caf0620e5e16049e4c85f8f79ed1",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050239300586448000-q01.json",
+          "nominal_sha256": "fa9ae97ff830b509a469732d311e07f5594d3618398b8939f0d0b53e741d3743",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2050239300586448000",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1026957,
+          "raw_fits_sha256": "5440920f8e295ad96548035cb21cc29959e7caf0620e5e16049e4c85f8f79ed1",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050239300586448000-q05.json",
+          "nominal_sha256": "f11b8cfd33163381ac85720016384167fd6663cf649c1efed4e67b68bfb68b5f",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2050249406650364160": {
+      "source_id": "2050249406650364160",
+      "role": "development",
+      "cohort": "native_confirmed_extra",
+      "origin_parent_kic": 1161345,
+      "raw_fits_sha256": "45590aa7c4674aea54da1bd93ac0091ac1bcdfe718fc0f07ace4809ca6b309f2",
+      "quarters": {
+        "5": {
+          "source_id": "2050249406650364160",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1161345,
+          "raw_fits_sha256": "45590aa7c4674aea54da1bd93ac0091ac1bcdfe718fc0f07ace4809ca6b309f2",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q05.json",
+          "nominal_sha256": "25764f3a70436636fb3de9fe300b87bffe59274f4057156340d37062b4711fa1",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2050249406650364160",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1161345,
+          "raw_fits_sha256": "45590aa7c4674aea54da1bd93ac0091ac1bcdfe718fc0f07ace4809ca6b309f2",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q13.json",
+          "nominal_sha256": "33e84e05d174396b2b88bc9b02069bf84819227a682b68825e54b81ede26a6a9",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2050249406650364160",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1161345,
+          "raw_fits_sha256": "45590aa7c4674aea54da1bd93ac0091ac1bcdfe718fc0f07ace4809ca6b309f2",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2050249406650364160-q17.json",
+          "nominal_sha256": "37b1709ea4f84cbca3fe7363cc5060bd7582eb04d6db6fac03cb73892a7a5726",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2051748659478657152": {
+      "source_id": "2051748659478657152",
+      "role": "development",
+      "cohort": "native_confirmed_extra",
+      "origin_parent_kic": 1432789,
+      "raw_fits_sha256": "1f222ce7d2b13c356b688577cefb68dcdc5c4eee5abecf5df481e3a0eb9f2a09",
+      "quarters": {
+        "1": {
+          "source_id": "2051748659478657152",
+          "role": "development",
+          "cohort": "native_confirmed_extra",
+          "origin_parent_kic": 1432789,
+          "raw_fits_sha256": "1f222ce7d2b13c356b688577cefb68dcdc5c4eee5abecf5df481e3a0eb9f2a09",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2051748659478657152-q01.json",
+          "nominal_sha256": "2c1575649a4b09cb5a94be33c91973cfa5d7784e7fe0e8758da6d94d21a1213c",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2052214955493700224": {
+      "source_id": "2052214955493700224",
+      "role": "development",
+      "cohort": "periodic_planet",
+      "origin_parent_kic": 4070250,
+      "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+      "quarters": {
+        "1": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q01.json",
+          "nominal_sha256": "2221e6f1a6bec30e9b60503ddf2547245b7d415865c27d49a1b7ed777eb7830e",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q02.json",
+          "nominal_sha256": "11cb3c057accad03a06d647354757681f3e8dec3e39d5d41336a02d5d29c7dc5",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q03.json",
+          "nominal_sha256": "cd819cd637de5873a737c1e81bedfaaba5dd23c5a8ee5f132628f6b4aa80634b",
+          "spatial_paths": []
+        },
+        "4": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 4,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q04.json",
+          "nominal_sha256": "744f8842b0b5b8358be5aae2ea361a425480107dd6d2ffc02fb0f306859845f4",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q05.json",
+          "nominal_sha256": "9e994e004d920da95f22dc7e8e8caa796262d8d4d38886ed28e31d6d75c379c3",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q07.json",
+          "nominal_sha256": "2ab03848a805226f56b829bf4ea0bc01d2ba371e30192d3012daa0e0be13c4b2",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q08.json",
+          "nominal_sha256": "ae87111dde0505a0babda37708863c3038594ed7334f2d37bf30ff6710b88850",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q09.json",
+          "nominal_sha256": "e62728aff5027aacb2de358457d5e0173fc13b90e11e2276177bcb6d80e35770",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q11.json",
+          "nominal_sha256": "9117783ac9b46af960c2e56e7fb382038cab8710b10fd7035ad2833372231194",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q12.json",
+          "nominal_sha256": "505b029f86f3d869caf3a129839f28fadda766f914b34d5064f10cd0e3e1500b",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q13.json",
+          "nominal_sha256": "1cbbd8f729146a3890e39f1e43804ad315c6c7c55dffbe456d2e8757ef175126",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q15.json",
+          "nominal_sha256": "3b4bb250fe114a9c86228b3548829a3897dbe4af606a295743223d5b237dc38f",
+          "spatial_paths": []
+        },
+        "16": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 16,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q16.json",
+          "nominal_sha256": "4ac3f275f26a7e9ee657879a5103c713e725865b129e7741e8e85942575415ba",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2052214955493700224",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 4070250,
+          "raw_fits_sha256": "a87a48f4d2ee9c5e58a1f26467cf05336f39ae4977457f05b567533d5b019f1b",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052214955493700224-q17.json",
+          "nominal_sha256": "71031f501a1eedd90e3af50582d7f69c6ffc60afad07e52b251cf908c6aba6a5",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2052761344047469312": {
+      "source_id": "2052761344047469312",
+      "role": "development",
+      "cohort": "periodic_planet",
+      "origin_parent_kic": 3850233,
+      "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+      "quarters": {
+        "1": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q01.json",
+          "nominal_sha256": "2e4dffde565fb21e8ec1c644b87725a7c68954a8636bcd384ba24d71fd90a546",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q02.json",
+          "nominal_sha256": "d407e75af2910724e5ef96deaab01a6a38cf2f7f5990236e869403cf0e5b6ba9",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q03.json",
+          "nominal_sha256": "8d8a871a4c5be185c2025027732a1f9826769b5a330d22aa90b63e8ebe9dd737",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q05.json",
+          "nominal_sha256": "d8b6473363501db7085bab197ec96e75a0da848cfb3be9a8f20ced32a3e7ac81",
+          "spatial_paths": []
+        },
+        "6": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 6,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q06.json",
+          "nominal_sha256": "3d0a2e166f3762c07200c9cfee6d100bf74a78ca913940148b417f11c91f52c7",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q07.json",
+          "nominal_sha256": "c510ae3f931bb5a9092773e99d7a91ef358122dd43ae8d4c2fcdc9c246328abb",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q09.json",
+          "nominal_sha256": "d44ce34f62e8d6af6a6c50bc01081ef49bb6fe6dea49e79fa364d2d2b9a6f012",
+          "spatial_paths": []
+        },
+        "10": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 10,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q10.json",
+          "nominal_sha256": "a16af4b0d3016826dde82869a255fdbb57eda980d01ea395572824ccca228b4b",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q11.json",
+          "nominal_sha256": "59adf5c18e424aec6151b76fcb82dffa7b39453a718105ba1ad4c4a50a695de6",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q13.json",
+          "nominal_sha256": "6ddd0d01d875a3f26a23e820999ecae0e2d30757a515a624dc641d386c7e3745",
+          "spatial_paths": []
+        },
+        "14": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 14,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q14.json",
+          "nominal_sha256": "779588a6835b6b02ff9e8b5f75d9115305028675ace6f7f4a048419091ffa45b",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q15.json",
+          "nominal_sha256": "de61f3e3757bd472504a76c1fb3858677a05369869f88793faa2ecbac0872969",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2052761344047469312",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3850233,
+          "raw_fits_sha256": "f4eb60e3f0fd0f8251ad66cf4aece9a4dea6c0eec8d8e5a1b08662c6b733c2c0",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052761344047469312-q17.json",
+          "nominal_sha256": "e980aca0d6c86baf8903cf429161869a684d16cd2b0d3d815ed8fc0f39f88827",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2052697327552095744": {
+      "source_id": "2052697327552095744",
+      "role": "development",
+      "cohort": "periodic_planet",
+      "origin_parent_kic": 3445822,
+      "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+      "quarters": {
+        "0": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 0,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q00.json",
+          "nominal_sha256": "2dbc7867656adf3e8fd6f6cd927b5f86a2198486c857138811f706d4cf56af65",
+          "spatial_paths": []
+        },
+        "1": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q01.json",
+          "nominal_sha256": "a75fa747d08c21b6af91f87c3542107f05e030f12200b0f67b9a5550b34d9361",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q02.json",
+          "nominal_sha256": "2bf9cf71a4f97675e5bb1dc2ec9112179e8290c6c7f7f0aeaf2c422885e30b03",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q03.json",
+          "nominal_sha256": "98e80c3fb37c89520b7cc6118d830ca4292b5adfb459b00419e6d56d3715009e",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q05.json",
+          "nominal_sha256": "a82ed9890976b545ffbcda1fed5f4a696d99d7f96c4bd96ba5fc502334f9ab73",
+          "spatial_paths": []
+        },
+        "6": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 6,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q06.json",
+          "nominal_sha256": "e5fda6bfd75a0ef6b63c2982cf6f1b985687adb51aea8be95265c5eef829c469",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q07.json",
+          "nominal_sha256": "fc48910e6f540408b7b904bab074466b571af3b5b771dab554ecefd2589caa6e",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q08.json",
+          "nominal_sha256": "a9c4273a27b21559d7a7601e3b5c718916483521ea218083877155eb0a4c9ee8",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q09.json",
+          "nominal_sha256": "f575db61a76dd2dc57dea8aaf3f63883c9a294bba985792d7ff59fa9b75b8f74",
+          "spatial_paths": []
+        },
+        "10": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 10,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q10.json",
+          "nominal_sha256": "9142ac53b2bf1ba330dc47c2110ddc8695b73d422a148cd2dded36cce81da1d2",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q11.json",
+          "nominal_sha256": "b3a91643f2ca70f6562b7d3b9fafc3c3de47bf1656d07aa02a9cffc3328dac80",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q12.json",
+          "nominal_sha256": "64b8b00dfd892ddc42ff5f40ea453321814d3bf8b9fa16175adebbd84ea1c890",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q13.json",
+          "nominal_sha256": "1846f7f443d94a8db41f03e632bced1d3f8bf738295c801871909ded9bf3d366",
+          "spatial_paths": []
+        },
+        "14": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 14,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q14.json",
+          "nominal_sha256": "1d64932240289de0777aa3e8fcead62c52d2f05a196fc4bb864bf49a83f26818",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2052697327552095744",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3445822,
+          "raw_fits_sha256": "3f5f10be23c9c54d0582d347e83afe75153b45316ad4fbf468b56e1ea6c9ea7d",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052697327552095744-q15.json",
+          "nominal_sha256": "d6a72e9d85b8678eb5c65b909f39f632c3f027d79651ec7d781f8ec89dd0ab33",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2053084085069214464": {
+      "source_id": "2053084085069214464",
+      "role": "development",
+      "cohort": "periodic_planet",
+      "origin_parent_kic": 3750423,
+      "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+      "quarters": {
+        "1": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q01.json",
+          "nominal_sha256": "e8cbf87010a9bb4352d2917d0b1729e4c1110aa56e0ec3508c04c461fba585ae",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q02.json",
+          "nominal_sha256": "d7532348f0489701520b6dc2d9dc6aa53c7a99ac6dca195f524f60f80c589abd",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q03.json",
+          "nominal_sha256": "9fce84e551e2cc72040bd059d8ca0ae21b72cbd38550cf8be644be9646a15b1e",
+          "spatial_paths": []
+        },
+        "4": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 4,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q04.json",
+          "nominal_sha256": "37ce8862d15574d773b9472e0cba22a23ac6fb877b080f70162b6744b3095f96",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q05.json",
+          "nominal_sha256": "483e2a313827a650a68ac3751c1ae93d31f664445a1d9c5c8c8a8e02d18934ae",
+          "spatial_paths": []
+        },
+        "6": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 6,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q06.json",
+          "nominal_sha256": "3cb2cc5effad43a37a4232e528b7ca66bd04c0b6124e7f8c52f2429f44a6d161",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q07.json",
+          "nominal_sha256": "c7e256214302dae8f9399e1b694313a3d48543fb1d842e1e445880d9dcbd6d4a",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q08.json",
+          "nominal_sha256": "b03b26e65478a800e02d61210b328b1d1cfe75522b0b129188b8cc45eabe571e",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q09.json",
+          "nominal_sha256": "92e3742f4bb6c408fdea51ab7596f70b8476c1caaaad8a50b0b21d32a0674990",
+          "spatial_paths": []
+        },
+        "10": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 10,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q10.json",
+          "nominal_sha256": "e94c976f7e7676af1e3557882f29ad18325b48e5469c2bdf7b3a94ae2f4a28cf",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q11.json",
+          "nominal_sha256": "f81237750a161a5dd8c5eaa626d87afd567b8fb7a5a8be19dc790a206532cc0d",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q12.json",
+          "nominal_sha256": "2d15863a9194832df93d09407a05be264023f39e0c3efd2f0fea0d24724c7286",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q13.json",
+          "nominal_sha256": "1e809a28a37a976cf6185d0c607344650a0612de221b1b0cbb50877915235ca9",
+          "spatial_paths": []
+        },
+        "14": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 14,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q14.json",
+          "nominal_sha256": "164838b6dd0e811c2f35ef0f87e1b84b3dafc1b8cc8d707b1af12f66e0f8f672",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q15.json",
+          "nominal_sha256": "0d5dad8e3c746efac1f69249ed58ecbbc74399e2cef23178b6ab307a46d4fc52",
+          "spatial_paths": []
+        },
+        "16": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 16,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q16.json",
+          "nominal_sha256": "a9273389364e5a14cabb78430286f0094bc15d78d730c287bf8deda1b2330193",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2053084085069214464",
+          "role": "development",
+          "cohort": "periodic_planet",
+          "origin_parent_kic": 3750423,
+          "raw_fits_sha256": "79b012d0e4e4ee78a8b72dfb28577ebd96c820a8e2986f8b03e592b1bbd15aca",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2053084085069214464-q17.json",
+          "nominal_sha256": "bb0a1c2b8c09a5c60384ca89ac94e903bdf193b102243756a6e254861dbe3d73",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2052146785773639040": {
+      "source_id": "2052146785773639040",
+      "role": "development",
+      "cohort": "shallow_planet_extra",
+      "origin_parent_kic": 3457557,
+      "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+      "quarters": {
+        "0": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 0,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q00.json",
+          "nominal_sha256": "2bc29a36d8c2b5bde316b97bf9d6aaa0cb0cea30a9f789ecfc18f291d97186c6",
+          "spatial_paths": []
+        },
+        "1": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q01.json",
+          "nominal_sha256": "bafcd19c53bd6e28c2dab658cd64800514c4e75293d7da45004458566db5f9fe",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q02.json",
+          "nominal_sha256": "953696c00df40e42f51631cb27a89af9ae7464ddf198f8bf66ee0e5ebb1126fb",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q03.json",
+          "nominal_sha256": "93535449827c97b2ef5528c53bb765bfa0e4b67a5892f7c76656013978b5ea2f",
+          "spatial_paths": []
+        },
+        "4": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 4,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q04.json",
+          "nominal_sha256": "5f1b45defa5cc9ad7a792f6e574418dd9936b53748a1c069c575212f8942e0b2",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q05.json",
+          "nominal_sha256": "2586818879a564ea74d259d49c5d2706ceff12d2c65ae31ce51cef452b3e7651",
+          "spatial_paths": []
+        },
+        "7": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 7,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q07.json",
+          "nominal_sha256": "4dd006713e30c08ccf55ae56f819faebc918fbb863bd486809142a5b58db44e0",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q08.json",
+          "nominal_sha256": "c7ff62c120e0f17b5242e7ed95432d36afe46b84b8d50a36594b37cd0fb7cee8",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q09.json",
+          "nominal_sha256": "95d3a155c66460649e03d0dacfa0503476c48e11f4778bacbb7192eb6331d4f5",
+          "spatial_paths": []
+        },
+        "11": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 11,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q11.json",
+          "nominal_sha256": "5d9501b0ac3c0f4ba54f3ef359553454fefce2ef18f427738d8de498b59c0e1c",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q12.json",
+          "nominal_sha256": "71b18bc8de14cd455b8b2c1ad1031587fdbae3a42fb99bcd65b3be96e75153e4",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q13.json",
+          "nominal_sha256": "dfc3bb99840a44300438013961eab831dff2353cce466dcd0f73137e17f67fd7",
+          "spatial_paths": []
+        },
+        "15": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 15,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q15.json",
+          "nominal_sha256": "8048f728e7344cfca2a64b044eb1ebcf5260045beef948df87c5b182aab142a7",
+          "spatial_paths": []
+        },
+        "16": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 16,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q16.json",
+          "nominal_sha256": "ed52890ec995877724c9dfefd03954213b2dab41a31e2a1ddd06e6aecbe457f0",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2052146785773639040",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 3457557,
+          "raw_fits_sha256": "343a22be3938dc84c6edca87cfb7584a813a834282b32117d93303d4da4046e0",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2052146785773639040-q17.json",
+          "nominal_sha256": "395c75fb02c18dbf114dea608030ae618e4ede564b37ee68a68ac3cb7edba7bf",
+          "spatial_paths": []
+        }
+      }
+    },
+    "2086750237755948288": {
+      "source_id": "2086750237755948288",
+      "role": "development",
+      "cohort": "shallow_planet_extra",
+      "origin_parent_kic": 11043583,
+      "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+      "quarters": {
+        "1": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 1,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q01.json",
+          "nominal_sha256": "6b9de7204c8358dbea43cdb8b91a032a8ed824a889798d8469d55410433b924e",
+          "spatial_paths": []
+        },
+        "2": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 2,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q02.json",
+          "nominal_sha256": "d464d15e497cedbbb6cd505d3fb9c00c99e80fa9912679672860c079d1a426d2",
+          "spatial_paths": []
+        },
+        "3": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 3,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q03.json",
+          "nominal_sha256": "60f5b43fd42581b47b3541f8d458b71ef6c759ad67ed129dae165cc85d93b56e",
+          "spatial_paths": []
+        },
+        "4": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 4,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q04.json",
+          "nominal_sha256": "881e4291783b376cd1d1ba12de32964ec71edfcdef48946c0ea82ff998eaa5f6",
+          "spatial_paths": []
+        },
+        "5": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 5,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q05.json",
+          "nominal_sha256": "bc8f41d20dfcfba39e385bf35449c285445c0405393bd4363f7f5bf0adfbf2d0",
+          "spatial_paths": []
+        },
+        "6": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 6,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q06.json",
+          "nominal_sha256": "aefc77dbdaaaf60edc53cfd88cf6bed6ee22938cd4f325de41a1b97e7c5da027",
+          "spatial_paths": []
+        },
+        "8": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 8,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q08.json",
+          "nominal_sha256": "bec9ed1f800f26bf88a2d04b6f942f485a57444ddb93809ff9baf6e9c7325a93",
+          "spatial_paths": []
+        },
+        "9": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 9,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q09.json",
+          "nominal_sha256": "14d1c3d74c232a7e8c71dad72a8d74d612ecd9aac780c769ad1d7e5506e0853b",
+          "spatial_paths": []
+        },
+        "10": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 10,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q10.json",
+          "nominal_sha256": "2ea9642dbb0225cdc006d9a2a7a097d0a581af276ee9f15091e74fd7a8b4ad5f",
+          "spatial_paths": []
+        },
+        "12": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 12,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q12.json",
+          "nominal_sha256": "f0fb6fbf82c566549c3a775ac0803f99f56303188488298c16f5394a22b9adf1",
+          "spatial_paths": []
+        },
+        "13": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 13,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q13.json",
+          "nominal_sha256": "488b9d9d24072573e939960485cef819f73189d41d50aa711e75888ac5719ab2",
+          "spatial_paths": []
+        },
+        "14": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 14,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q14.json",
+          "nominal_sha256": "4e71727a9dd556c913b93e08c69791156f8a503a73093009d64f6a2d9c027204",
+          "spatial_paths": []
+        },
+        "16": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 16,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q16.json",
+          "nominal_sha256": "7a176378dc143d3a8825a3abbe9e6158fc7ca59945159e37f9bf927dd3e5e47f",
+          "spatial_paths": []
+        },
+        "17": {
+          "source_id": "2086750237755948288",
+          "role": "development",
+          "cohort": "shallow_planet_extra",
+          "origin_parent_kic": 11043583,
+          "raw_fits_sha256": "2ebe894474362de7ae0fdd62e978e72ec2be2536ec7b8c2b5a475adb9bcf92de",
+          "quarter": 17,
+          "kind": "UNAVAILABLE",
+          "reason": "CLOUD_INJECTED_PIXEL_UNPROVISIONED",
+          "nominal_path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/overnight-20261001/opened-public-control-expansion/provision-receipts/unprovisioned-2086750237755948288-q17.json",
+          "nominal_sha256": "6e322c75d648476fb240388c2556df85478712821480008d2f4b1df7dc4d4259",
+          "spatial_paths": []
+        }
+      }
+    }
+  },
+  "source_quarters": 162,
+  "origin": {
+    "candidate_sha256": "fe948ed0d5520326d4a62bfb49e4f12b48245ad593534d0f217da44b48e0549d",
+    "selected_sources_sha256": "65e7b4c5b752c80c6daef743ac3803cfd7ebcebfc6c04015b2f5af817e607c00",
+    "auxiliary_spatial_receipts": {},
+    "original_pixel_inputs": {
+      "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/todo-20260926/required-pixel-receipts-v1/audit.json": "945a19eed6d20af148694c72ad7f4bf5fe4eed404b1066a3f32c32946101b52b",
+      "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/todo-20260926/required-pixel-receipts-v1/independent-verification.json": "c71dbe7bd360fc4a61c3de503b06c67fedbe0dfd16a3dc14b53053b883e46caf",
+      "/Volumes/discSSD/forgotten-stars-workspace/dump/controls-20260926/local-storage-migration-20260927/todo-20260926/required-pixel-receipts-v1/quarters.jsonl": "987a786ec7e9f58ed689b946aa92d7053602fcb23b82f81ad886327c813a86a6"
+    }
+  }
+}

@@ -1,0 +1,1116 @@
+{
+ "utc": "2026-10-26T00:33:03.010679+00:00",
+ "decision": "Adam, 25 October 2026: isochrone fits for hosts without Gaia FLAME or TIC mass and radius.",
+ "method": "isoclassify grid mode (Huber et al. 2017) with the inputs of Berger et al. (2020): MIST grid, Combined19 3D dust map (Bovy et al. 2016; Zenodo 3566060), Gaia DR3 parallax with the Lindegren et al. (2021) zero point, Gaia G/BP/RP, 2MASS JHKs and Pan-STARRS1 griz transformed to SDSS (Tonry et al. 2012). Rules declared before fitting in isochrones/build_inputs.py and review.py.",
+ "rule": "Review isoclassify grid solutions against the rule declared before fitting; write the solutions apply_isochrone uses.\n\nreview.py INPUT_CSV OUTPUT_CSV SOLUTIONS_JSON. Declared 26 October 2026 before any fit: a solution is used when mass,\nradius and Teff are finite and the half 16-84 intervals of mass and radius are at most 25% of their medians; other hosts\nstay held as unconstrained. Errors are the half 16-84 intervals. GSP-Phot Teff is compared descriptively.\nVersion 2 (26 October 2026, after the second pass returned 0.6-0.9% mass and radius errors for one host): the adopted\nerrors add the model-systematic floors of Tayar et al. (2022) in quadrature, 5% in mass, 4% in radius and 2% in Teff.\nThe acceptance rule still uses the statistical half-intervals, so the set of solved hosts does not change.",
+ "solutions": {
+  "2052563599452804096": {
+   "mass": 1.6449811634766756,
+   "radius": 9.294004310921768,
+   "mass_error": 0.41171195762835455,
+   "radius_error": 0.494480830127051,
+   "teff": 4688.384019184869,
+   "teff_error": 95.6319770321696,
+   "statistical": {
+    "mass_error": 0.4034127272207575,
+    "radius_error": 0.3260454961394892,
+    "teff_error": 18.79087934456993
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0126 mas; C* -0.003 (3 sigma 0.025), BP/RP used; 2MASS quality AAA; PS1 not used (sep 0.01, n 78, flag 108); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2073296372971801728": {
+   "mass": 0.9001645783435658,
+   "radius": 1.3142515657629044,
+   "mass_error": 0.08388255067996878,
+   "radius_error": 0.2138487454172444,
+   "teff": 5594.764085982253,
+   "teff_error": 121.02297246737538,
+   "statistical": {
+    "mass_error": 0.07078517951037777,
+    "radius_error": 0.20728645501226806,
+    "teff_error": 46.10863036049068
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0208 mas; C* 0.330 (3 sigma 0.069), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.07, n 11, flag 37); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2073807989474744320": {
+   "mass": 0.864815905107355,
+   "radius": 0.8031867297915992,
+   "mass_error": 0.05355420073918666,
+   "radius_error": 0.036984063672459745,
+   "teff": 5589.161974772023,
+   "teff_error": 115.22166142607873,
+   "statistical": {
+    "mass_error": 0.03159566493201982,
+    "radius_error": 0.018320662899230455,
+    "teff_error": 27.93812144169533
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0272 mas; C* 0.182 (3 sigma 0.050), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.03, n 19, flag 53); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2078545299734929664": {
+   "mass": 0.5456458713120786,
+   "radius": 0.5472816706120114,
+   "mass_error": 0.04220685239863544,
+   "radius_error": 0.043688596826747826,
+   "teff": 3978.987434750037,
+   "teff_error": 82.8648331865853,
+   "statistical": {
+    "mass_error": 0.03220395701152895,
+    "radius_error": 0.03780827858431962,
+    "teff_error": 23.10073974315833
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0207 mas; C* 0.106 (3 sigma 0.147), BP/RP used; 2MASS quality AAC; PS1 griz (sep 0.05, n 53, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2078783726253023360": {
+   "mass": 0.5208161661090493,
+   "radius": 0.5222253810791282,
+   "mass_error": 0.037739739343359925,
+   "radius_error": 0.036052192506729946,
+   "teff": 3921.1078177203854,
+   "teff_error": 80.57302677708402,
+   "statistical": {
+    "mass_error": 0.027316006818410093,
+    "radius_error": 0.02938383274375775,
+    "teff_error": 18.492648180980723
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0313 mas; C* 0.110 (3 sigma 0.152), BP/RP used; 2MASS quality none; PS1 griz (sep 0.00, n 28, flag 52); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2101518671782975488": {
+   "mass": 0.9968845915082362,
+   "radius": 0.9553566279678758,
+   "mass_error": 0.07069189333003091,
+   "radius_error": 0.06547570778895785,
+   "teff": 5609.656320659643,
+   "teff_error": 118.17805697898734,
+   "statistical": {
+    "mass_error": 0.050128799712521654,
+    "radius_error": 0.05316707864742576,
+    "teff_error": 37.13159755467177
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0249 mas; C* 0.171 (3 sigma 0.067), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.10, n 34, flag 53); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2104484363877066752": {
+   "mass": 1.3787924791755137,
+   "radius": 2.721701042697854,
+   "mass_error": 0.09556231701618302,
+   "radius_error": 0.18502670427547677,
+   "teff": 4997.880251394935,
+   "teff_error": 101.28156347746837,
+   "statistical": {
+    "mass_error": 0.06617767510213746,
+    "radius_error": 0.1496082577591511,
+    "teff_error": 16.322753981085953
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0267 mas; C* -0.003 (3 sigma 0.045), BP/RP used; 2MASS quality AAA; PS1 griz (sep 0.00, n 91, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2105443065000738176": {
+   "mass": 0.511299883092626,
+   "radius": 0.5158932519348274,
+   "mass_error": 0.03373860260155677,
+   "radius_error": 0.030858478494495713,
+   "teff": 3839.2167325202317,
+   "teff_error": 77.46062798857183,
+   "statistical": {
+    "mass_error": 0.022016457012413254,
+    "radius_error": 0.02294367754236945,
+    "teff_error": 10.213463696444478
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0178 mas; C* 0.001 (3 sigma 0.159), BP/RP used; 2MASS quality BDC; PS1 griz (sep 0.01, n 63, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2106248633364018944": {
+   "mass": 0.3433390643672688,
+   "radius": 0.36498417730488447,
+   "mass_error": 0.021490930020542517,
+   "radius_error": 0.018679822226405976,
+   "teff": 3445.77219094103,
+   "teff_error": 69.25456952216099,
+   "statistical": {
+    "mass_error": 0.012928874287670089,
+    "radius_error": 0.011653078516746268,
+    "teff_error": 6.845217524287364
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0343 mas; C* 0.031 (3 sigma 0.160), BP/RP used; 2MASS quality ACU; PS1 griz (sep 0.05, n 71, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2106767843368491776": {
+   "mass": 0.5136120903280252,
+   "radius": 0.5245051752518776,
+   "mass_error": 0.032104819821508486,
+   "radius_error": 0.0295957191275455,
+   "teff": 3678.5982013888147,
+   "teff_error": 74.07654284699987,
+   "statistical": {
+    "mass_error": 0.01926722625194699,
+    "radius_error": 0.02087432644400672,
+    "teff_error": 8.63135616569025
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0242 mas; C* 0.042 (3 sigma 0.137), BP/RP used; 2MASS quality AAU; PS1 griz (sep 0.01, n 103, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2132675768994836352": {
+   "mass": 0.4394754736534105,
+   "radius": 0.445574280413192,
+   "mass_error": 0.029055537457336054,
+   "radius_error": 0.02556103542495234,
+   "teff": 3755.751345029456,
+   "teff_error": 75.92534838117787,
+   "statistical": {
+    "mass_error": 0.01900993232700829,
+    "radius_error": 0.01832234234508498,
+    "teff_error": 11.06305837130958
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0303 mas; C* 0.007 (3 sigma 0.149), BP/RP used; 2MASS quality CCU; PS1 griz (sep 0.02, n 81, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+     "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+     "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2078108999778606336": {
+   "mass": 0.4961064687913885,
+   "radius": 0.5018928125033307,
+   "mass_error": 0.035810053778990554,
+   "radius_error": 0.03412559566974328,
+   "teff": 3758.7521176392424,
+   "teff_error": 76.37046341278756,
+   "statistical": {
+    "mass_error": 0.025827424972546975,
+    "radius_error": 0.02759568892828726,
+    "teff_error": 13.459594687096796
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0175 mas; C* -0.025 (3 sigma 0.161), BP/RP used; 2MASS quality ABC; PS1 griz (sep 0.06, n 71, flag 60); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-pass2-20261026.csv",
+     "sha256": "2e6d8657485de6c6f6f2491d37b41ba01d1758cabad12fd0678b481a9083cc5c"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-pass2-20261026/output.csv",
+     "sha256": "1a09ce2d0597a6d2b28eaf4d0e8afa52b05119297052ecf60e38c024250783a6"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2078904741251736832": {
+   "mass": 0.6475110059255498,
+   "radius": 0.6814287611867748,
+   "mass_error": 0.03259804076112773,
+   "radius_error": 0.02782509998013866,
+   "teff": 4061.2437055401606,
+   "teff_error": 81.87412488354443,
+   "statistical": {
+    "mass_error": 0.0038021052691044055,
+    "radius_error": 0.005593204661787754,
+    "teff_error": 10.290391203953277
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0319 mas; C* 0.158 (3 sigma 0.134), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.09, n 36, flag 53); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-pass2-20261026.csv",
+     "sha256": "2e6d8657485de6c6f6f2491d37b41ba01d1758cabad12fd0678b481a9083cc5c"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-pass2-20261026/output.csv",
+     "sha256": "1a09ce2d0597a6d2b28eaf4d0e8afa52b05119297052ecf60e38c024250783a6"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2100486883197259904": {
+   "mass": 0.5649268911558739,
+   "radius": 0.5692860208688334,
+   "mass_error": 0.03199508660185228,
+   "radius_error": 0.03112380997337126,
+   "teff": 4004.91457185646,
+   "teff_error": 99.42617684031099,
+   "statistical": {
+    "mass_error": 0.015027627416941969,
+    "radius_error": 0.0212168100705043,
+    "teff_error": 58.90524891665859
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0314 mas; C* 0.328 (3 sigma 0.037), BP/RP dropped; 2MASS quality EAE; PS1 gr (sep 0.47, n 51, flag 61); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-pass2-20261026.csv",
+     "sha256": "2e6d8657485de6c6f6f2491d37b41ba01d1758cabad12fd0678b481a9083cc5c"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-pass2-20261026/output.csv",
+     "sha256": "1a09ce2d0597a6d2b28eaf4d0e8afa52b05119297052ecf60e38c024250783a6"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  },
+  "2125972115324192768": {
+   "mass": 0.2162181891205189,
+   "radius": 0.25005502970677634,
+   "mass_error": 0.018385101294672947,
+   "radius_error": 0.017260606911153716,
+   "teff": 3310.1157113715094,
+   "teff_error": 68.3664590889026,
+   "statistical": {
+    "mass_error": 0.014870648484480886,
+    "radius_error": 0.01406714336070819,
+    "teff_error": 17.065354355746194
+   },
+   "systematic_floors": {
+    "mass": 0.05,
+    "radius": 0.04,
+    "teff": 0.02
+   },
+   "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0363 mas; C* 0.102 (3 sigma 0.141), BP/RP used; 2MASS quality UAB; PS1 not used (sep 0.34, n 49, flag 188); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+   "evidence": [
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-pass2-20261026.csv",
+     "sha256": "2e6d8657485de6c6f6f2491d37b41ba01d1758cabad12fd0678b481a9083cc5c"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-pass2-20261026/output.csv",
+     "sha256": "1a09ce2d0597a6d2b28eaf4d0e8afa52b05119297052ecf60e38c024250783a6"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+     "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+    },
+    {
+     "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+     "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+    }
+   ]
+  }
+ },
+ "reviews": [
+  {
+   "source_id": "2052206125040788992",
+   "mass": 0.0,
+   "mass_error": 0.0,
+   "radius": 0.0,
+   "radius_error": 0.0,
+   "teff": 0.0,
+   "teff_error": 0.0,
+   "logg": 0.0,
+   "feh": 0.0,
+   "av": 0.0,
+   "distance_pc": 0.0,
+   "inputs": "zero point -0.0255 mas; C* 0.043 (3 sigma 0.061), BP/RP used; 2MASS quality AAA; PS1 griz (sep 0.06, n 92, flag 61)",
+   "used": false,
+   "teff_gspphot": 4994.377
+  },
+  {
+   "source_id": "2052563599452804096",
+   "mass": 1.6449811635,
+   "mass_error": 0.4034127272,
+   "radius": 9.2940043109,
+   "radius_error": 0.3260454961,
+   "teff": 4688.3840191849,
+   "teff_error": 18.7908793446,
+   "logg": 2.7212262154,
+   "feh": 0.1040140285,
+   "av": 0.1183568582,
+   "distance_pc": 2235.6898743384,
+   "inputs": "zero point -0.0126 mas; C* -0.003 (3 sigma 0.025), BP/RP used; 2MASS quality AAA; PS1 not used (sep 0.01, n 78, flag 108)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2073296372971801728",
+   "mass": 0.9001645783,
+   "mass_error": 0.0707851795,
+   "radius": 1.3142515658,
+   "radius_error": 0.207286455,
+   "teff": 5594.7640859823,
+   "teff_error": 46.1086303605,
+   "logg": 4.1284506974,
+   "feh": -0.1419344766,
+   "av": 0.3846459938,
+   "distance_pc": 2518.8791470564,
+   "inputs": "zero point -0.0208 mas; C* 0.330 (3 sigma 0.069), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.07, n 11, flag 37)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2073807989474744320",
+   "mass": 0.8648159051,
+   "mass_error": 0.0315956649,
+   "radius": 0.8031867298,
+   "radius_error": 0.0183206629,
+   "teff": 5589.161974772,
+   "teff_error": 27.9381214417,
+   "logg": 4.5648699155,
+   "feh": -0.2438663292,
+   "av": 0.6866354598,
+   "distance_pc": 857.2960727711,
+   "inputs": "zero point -0.0272 mas; C* 0.182 (3 sigma 0.050), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.03, n 19, flag 53)",
+   "used": true,
+   "teff_gspphot": 4904.984
+  },
+  {
+   "source_id": "2078545299734929664",
+   "mass": 0.5456458713,
+   "mass_error": 0.032203957,
+   "radius": 0.5472816706,
+   "radius_error": 0.0378082786,
+   "teff": 3978.98743475,
+   "teff_error": 23.1007397432,
+   "logg": 4.6909678421,
+   "feh": -0.0435427883,
+   "av": 0.7021281926,
+   "distance_pc": 924.1459458179,
+   "inputs": "zero point -0.0207 mas; C* 0.106 (3 sigma 0.147), BP/RP used; 2MASS quality AAC; PS1 griz (sep 0.05, n 53, flag 60)",
+   "used": true,
+   "teff_gspphot": 3515.9287
+  },
+  {
+   "source_id": "2078783726253023360",
+   "mass": 0.5208161661,
+   "mass_error": 0.0273160068,
+   "radius": 0.5222253811,
+   "radius_error": 0.0293838327,
+   "teff": 3921.1078177204,
+   "teff_error": 18.492648181,
+   "logg": 4.7135933259,
+   "feh": -0.0723749685,
+   "av": 0.4498180726,
+   "distance_pc": 964.3924088468,
+   "inputs": "zero point -0.0313 mas; C* 0.110 (3 sigma 0.152), BP/RP used; 2MASS quality none; PS1 griz (sep 0.00, n 28, flag 52)",
+   "used": true,
+   "teff_gspphot": 3609.4497
+  },
+  {
+   "source_id": "2101518671782975488",
+   "mass": 0.9968845915,
+   "mass_error": 0.0501287997,
+   "radius": 0.955356628,
+   "radius_error": 0.0531670786,
+   "teff": 5609.6563206596,
+   "teff_error": 37.1315975547,
+   "logg": 4.4734663329,
+   "feh": 0.1556974021,
+   "av": 0.3057551988,
+   "distance_pc": 1820.9557465038,
+   "inputs": "zero point -0.0249 mas; C* 0.171 (3 sigma 0.067), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.10, n 34, flag 53)",
+   "used": true,
+   "teff_gspphot": 5131.09
+  },
+  {
+   "source_id": "2104484363877066752",
+   "mass": 1.3787924792,
+   "mass_error": 0.0661776751,
+   "radius": 2.7217010427,
+   "radius_error": 0.1496082578,
+   "teff": 4997.8802513949,
+   "teff_error": 16.3227539811,
+   "logg": 3.7015186359,
+   "feh": 0.2929877921,
+   "av": 0.3363307369,
+   "distance_pc": 2302.5937056553,
+   "inputs": "zero point -0.0267 mas; C* -0.003 (3 sigma 0.045), BP/RP used; 2MASS quality AAA; PS1 griz (sep 0.00, n 91, flag 60)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2105443065000738176",
+   "mass": 0.5112998831,
+   "mass_error": 0.022016457,
+   "radius": 0.5158932519,
+   "radius_error": 0.0229436775,
+   "teff": 3839.2167325202,
+   "teff_error": 10.2134636964,
+   "logg": 4.7175066712,
+   "feh": 0.0409494555,
+   "av": 0.0609186681,
+   "distance_pc": 920.0755793521,
+   "inputs": "zero point -0.0178 mas; C* 0.001 (3 sigma 0.159), BP/RP used; 2MASS quality BDC; PS1 griz (sep 0.01, n 63, flag 60)",
+   "used": true,
+   "teff_gspphot": 3581.4746
+  },
+  {
+   "source_id": "2106248633364018944",
+   "mass": 0.3433390644,
+   "mass_error": 0.0129288743,
+   "radius": 0.3649841773,
+   "radius_error": 0.0116530785,
+   "teff": 3445.772190941,
+   "teff_error": 6.8452175243,
+   "logg": 4.8465522515,
+   "feh": 0.1778960267,
+   "av": 0.061151042,
+   "distance_pc": 549.6271531239,
+   "inputs": "zero point -0.0343 mas; C* 0.031 (3 sigma 0.160), BP/RP used; 2MASS quality ACU; PS1 griz (sep 0.05, n 71, flag 60)",
+   "used": true,
+   "teff_gspphot": 3360.515
+  },
+  {
+   "source_id": "2106767843368491776",
+   "mass": 0.5136120903,
+   "mass_error": 0.0192672263,
+   "radius": 0.5245051753,
+   "radius_error": 0.0208743264,
+   "teff": 3678.5982013888,
+   "teff_error": 8.6313561657,
+   "logg": 4.7048411981,
+   "feh": 0.3307006677,
+   "av": 0.1834531261,
+   "distance_pc": 785.6649514881,
+   "inputs": "zero point -0.0242 mas; C* 0.042 (3 sigma 0.137), BP/RP used; 2MASS quality AAU; PS1 griz (sep 0.01, n 103, flag 60)",
+   "used": true,
+   "teff_gspphot": 3588.0674
+  },
+  {
+   "source_id": "2129222855810338048",
+   "mass": 0.0,
+   "mass_error": 0.0,
+   "radius": 0.0,
+   "radius_error": 0.0,
+   "teff": 0.0,
+   "teff_error": 0.0,
+   "logg": 0.0,
+   "feh": 0.0,
+   "av": 0.0,
+   "distance_pc": 0.0,
+   "inputs": "zero point -0.0655 mas; C* 0.235 (3 sigma 0.104), BP/RP dropped; 2MASS quality AAU; PS1 griz (sep 0.14, n 54, flag 60)",
+   "used": false,
+   "teff_gspphot": 3510.461
+  },
+  {
+   "source_id": "2132675768994836352",
+   "mass": 0.4394754737,
+   "mass_error": 0.0190099323,
+   "radius": 0.4455742804,
+   "radius_error": 0.0183223423,
+   "teff": 3755.7513450295,
+   "teff_error": 11.0630583713,
+   "logg": 4.7795272567,
+   "feh": -0.048106216,
+   "av": 0.061151042,
+   "distance_pc": 817.5436751005,
+   "inputs": "zero point -0.0303 mas; C* 0.007 (3 sigma 0.149), BP/RP used; 2MASS quality CCU; PS1 griz (sep 0.02, n 81, flag 60)",
+   "used": true,
+   "teff_gspphot": 3597.278
+  },
+  {
+   "source_id": "2078108999778606336",
+   "mass": 0.4961064688,
+   "mass_error": 0.025827425,
+   "radius": 0.5018928125,
+   "radius_error": 0.0275956889,
+   "teff": 3758.7521176392,
+   "teff_error": 13.4595946871,
+   "logg": 4.7266200496,
+   "feh": 0.1275891697,
+   "av": 0.3664506074,
+   "distance_pc": 851.0014700503,
+   "inputs": "zero point -0.0175 mas; C* -0.025 (3 sigma 0.161), BP/RP used; 2MASS quality ABC; PS1 griz (sep 0.06, n 71, flag 60)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2078904741251736832",
+   "mass": 0.6475110059,
+   "mass_error": 0.0038021053,
+   "radius": 0.6814287612,
+   "radius_error": 0.0055932047,
+   "teff": 4061.2437055402,
+   "teff_error": 10.290391204,
+   "logg": 4.5813862059,
+   "feh": 0.4335129873,
+   "av": 0.917262569,
+   "distance_pc": 986.5458235883,
+   "inputs": "zero point -0.0319 mas; C* 0.158 (3 sigma 0.134), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.09, n 36, flag 53)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2086391900040496128",
+   "mass": 0.0,
+   "mass_error": 0.0,
+   "radius": 0.0,
+   "radius_error": 0.0,
+   "teff": 0.0,
+   "teff_error": 0.0,
+   "logg": 0.0,
+   "feh": 0.0,
+   "av": 0.0,
+   "distance_pc": 0.0,
+   "inputs": "zero point -0.0297 mas; C* 0.117 (3 sigma 0.137), BP/RP used; 2MASS quality none; PS1 griz (sep 0.11, n 23, flag 52)",
+   "used": false,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2100486883197259904",
+   "mass": 0.5649268912,
+   "mass_error": 0.0150276274,
+   "radius": 0.5692860209,
+   "radius_error": 0.0212168101,
+   "teff": 4004.9145718565,
+   "teff_error": 58.9052489167,
+   "logg": 4.6752341212,
+   "feh": -0.0261912822,
+   "av": 0.0,
+   "distance_pc": 190.6521946761,
+   "inputs": "zero point -0.0314 mas; C* 0.328 (3 sigma 0.037), BP/RP dropped; 2MASS quality EAE; PS1 gr (sep 0.47, n 51, flag 61)",
+   "used": true,
+   "teff_gspphot": null
+  },
+  {
+   "source_id": "2125972115324192768",
+   "mass": 0.2162181891,
+   "mass_error": 0.0148706485,
+   "radius": 0.2500550297,
+   "radius_error": 0.0140671434,
+   "teff": 3310.1157113715,
+   "teff_error": 17.0653543557,
+   "logg": 4.9727593927,
+   "feh": 0.089429793,
+   "av": 0.0,
+   "distance_pc": 272.1469825835,
+   "inputs": "zero point -0.0363 mas; C* 0.102 (3 sigma 0.141), BP/RP used; 2MASS quality UAB; PS1 not used (sep 0.34, n 49, flag 188)",
+   "used": true,
+   "teff_gspphot": null
+  }
+ ],
+ "not_fitted": [
+  {
+   "source_id": "2052625863598225536",
+   "reason": "parallax S/N 2.56, RUWE 0.97: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2053539145443677056",
+   "reason": "parallax S/N 0.36, RUWE 1.44: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2073609042284178176",
+   "reason": "parallax S/N 0.36, RUWE 0.98: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2075057270893091200",
+   "reason": "parallax S/N -0.26, RUWE 3.97: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2075066857261081600",
+   "reason": "parallax S/N 5.39, RUWE 2.63: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2075875758527635968",
+   "reason": "no clean colour: Gaia BP/RP blended (C* above 3 sigma), no 2MASS A-C detection and no usable PS1 griz"
+  },
+  {
+   "source_id": "2077663010371347072",
+   "reason": "parallax S/N 1.58, RUWE 1.00: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2078857015581291008",
+   "reason": "parallax S/N -0.74, RUWE 1.30: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2079595131475231616",
+   "reason": "parallax S/N 0.55, RUWE 1.00: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2100986778733554048",
+   "reason": "parallax S/N 0.37, RUWE 0.97: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2101095943921811328",
+   "reason": "no clean colour: Gaia BP/RP blended (C* above 3 sigma), no 2MASS A-C detection and no usable PS1 griz"
+  },
+  {
+   "source_id": "2104048368859231232",
+   "reason": "parallax S/N 1.87, RUWE 1.05: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2104911214904180608",
+   "reason": "no clean colour: Gaia BP/RP blended (C* above 3 sigma), no 2MASS A-C detection and no usable PS1 griz"
+  },
+  {
+   "source_id": "2127460755284375168",
+   "reason": "parallax S/N 4.47, RUWE 0.99: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2127956355854461952",
+   "reason": "parallax S/N 2.07, RUWE 4.05: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2128959007378441472",
+   "reason": "parallax S/N 1.50, RUWE 2.08: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2134754193866263936",
+   "reason": "no clean colour: Gaia BP/RP blended (C* above 3 sigma), no 2MASS A-C detection and no usable PS1 griz"
+  },
+  {
+   "source_id": "2052237358038158976",
+   "reason": "parallax S/N 1.42, RUWE 1.31: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2077040171395871616",
+   "reason": "parallax S/N 2.76, RUWE 0.97: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2079371174708240128",
+   "reason": "parallax S/N 10.80, RUWE 2.66: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2086498101695635840",
+   "reason": "parallax S/N 0.88, RUWE 0.96: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2128069674274607488",
+   "reason": "parallax S/N 3.56, RUWE 1.05: below the declared S/N 5 or above RUWE 1.4"
+  },
+  {
+   "source_id": "2132718860406822272",
+   "reason": "parallax S/N 4.60, RUWE 0.96: below the declared S/N 5 or above RUWE 1.4"
+  }
+ ],
+ "first_failures": {
+  "multiproc": "isoclassify multiproc fails on numeric star names (runs/grid-20261026-multiproc-failed); single-star mode used",
+  "no_dust_map": "dust='none' fits extinction over a 130-value grid and was killed for memory; the declared allsky map was used"
+ },
+ "data": {
+  "grid": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/data/mesa.h5",
+   "sha256": "ed64eff4240a795386c4673e2b84bb944c51a01e703b558b31fb6b4037712ae7",
+   "source": "isoclassify EDR3 Google Drive folder 1GC81YxBvMF2wu4TdL0vItvdYv-zsaLI1, file 15iSFta1YHs8WiTX6MCS4pLyIPX-b3fpA",
+   "bytes": 1570597696
+  },
+  "dust": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/dust/combined19/combine19.h5",
+   "md5": "9dc6cdbf946a79e32bdaf19813c86494",
+   "source": "https://zenodo.org/records/3566060 (Bovy & Rybizki)",
+   "bytes": 3932184404
+  }
+ },
+ "inputs": [
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+   "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/gaia-dr3-hosts-20261025.json",
+   "sha256": "9c4757fb816b4de6d8b361abf221a21037e02f65be8b41140beae76f671a7562"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/hosts-20261025.csv",
+   "sha256": "8d36363fc085961798c5f4c57147990e5a20d0e4861e6ba606af105bd99ee05f"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+   "sha256": "9d28f7b4cfb3fd09a99c4ddb3dfcb1974d551ae547ec6031b2af55d8116a1298"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+   "sha256": "d8f8c18009b07e981ae2d1bfbd4a7aa4f0ae31a143df27c1037cc5ac6ed9ab56"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/run_fits.py",
+   "sha256": "a3fadd61766cb07e304ee025894c3f38108865a1576e15e7408e4c6125376b5a"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+   "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/hosts-pass2-20261026.csv",
+   "sha256": "f4b2342afd6c2711845d9689f45d7d2d6d384c3a9361e75ae43e99b0e0fe26e4"
+  },
+  {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+   "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+  }
+ ],
+ "scope": "Host stellar properties for V3 cases held for missing mass and radius. A solution replaces only that missing input; native fits, campaigns and closeouts run unchanged.",
+ "version": 2,
+ "version_note": "Version 2 adds the Tayar et al. (2022) model-systematic floors (5% mass, 4% radius, 2% Teff) in quadrature to the statistical half-intervals, after the second pass returned 0.6-0.9% errors for one host. The acceptance rule and the set of solved hosts are unchanged. Six queued pass-1 cases that had not started their native fits were re-planned with version 2 (previous plans in plan-superseded-*); the one pass-1 case already fitted (Gaia DR3 2078783726253023360) kept version 1, whose errors already exceeded the floors.",
+ "passes": {
+  "first": {
+   "hosts": 30,
+   "inputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-20261025.csv",
+    "sha256": "4ba482308d10214922659c5f7b349ecbd9e2c019292f2753bb8796fec467d81a"
+   },
+   "outputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-20261026/output.csv",
+    "sha256": "c6d5f6a8aa8a3a01630f5dcfdbba5405f913534abf088113de3bf47184e30643"
+   },
+   "version1": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isochrone-solutions-20261026.json",
+    "sha256": "895a3cde3dcdf5b1617c2b42ac02adcefdba939c630d8a9293840f2cf018981b"
+   }
+  },
+  "second": {
+   "hosts": 11,
+   "inputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-pass2-20261026.csv",
+    "sha256": "2e6d8657485de6c6f6f2491d37b41ba01d1758cabad12fd0678b481a9083cc5c"
+   },
+   "outputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-pass2-20261026/output.csv",
+    "sha256": "1a09ce2d0597a6d2b28eaf4d0e8afa52b05119297052ecf60e38c024250783a6"
+   },
+   "gaia": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/gaia-dr3-hosts-pass2-20261026.json",
+    "sha256": "04b5f3673eaa49597bac7ebb0995e6848d9997b63edac88ba84e17be0b8e3fb6"
+   }
+  }
+ },
+ "neighbours": {
+  "note": "Adam, 26 October 2026: incorporate strong single-star signals. The same rules fit capable scene neighbours that lack stellar properties for strong (search S/N >= 15) held signals; only Gaia DR3 2080571326002191488 (KIC 10286954's neighbour, 8.8 arcsec, parallax S/N 6.9) qualified. The other strong cases' neighbours are G 17-21 within 1-10 arcsec without BP/RP and with parallax S/N below 5.",
+  "solutions": {
+   "2080571326002191488": {
+    "mass": 1.0537445623224129,
+    "radius": 1.4136016925199093,
+    "mass_error": 0.1052145609653244,
+    "radius_error": 0.1941649006588156,
+    "teff": 6084.981061048909,
+    "teff_error": 133.40308875094397,
+    "statistical": {
+     "mass_error": 0.09107227806838825,
+     "radius_error": 0.18574923164227486,
+     "teff_error": 54.64051869229161
+    },
+    "systematic_floors": {
+     "mass": 0.05,
+     "radius": 0.04,
+     "teff": 0.02
+    },
+    "route": "isoclassify grid mode (Huber et al. 2017; Berger et al. 2020 inputs): MIST, Combined19 dust, Gaia DR3 parallax with the Lindegren et al. 2021 zero point, zero point -0.0179 mas; C* nan (3 sigma nan), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.09, n 23, flag 52); half 16-84 intervals with the Tayar et al. (2022) floors in quadrature. Adam, 25 October 2026: isochrone fits for hosts without FLAME or TIC mass and radius. Chosen before fitting or FPP.",
+    "evidence": [
+     {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-neighbour-20261026.csv",
+      "sha256": "b23f4fd8943846be553fb7a64d92bcb7a9f341ed25515150086586a1170cb7d0"
+     },
+     {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-neighbour-20261026/output.csv",
+      "sha256": "fd252c042d77bb7e467313baf32c8e6bccab4e2677c338f95ff24aa52a244e20"
+     },
+     {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/build_inputs.py",
+      "sha256": "102d00ed4cb38d02cfa1a710dfd480763a2bdbb5faaec96381e9187b65d0d3e2"
+     },
+     {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/review.py",
+      "sha256": "971d60e4e40b1af7fea21915821ea13ff44d78d14b4b77ff136a86e1f73e908c"
+     }
+    ]
+   }
+  },
+  "reviews": [
+   {
+    "source_id": "2080571326002191488",
+    "mass": 1.0537445623,
+    "mass_error": 0.0910722781,
+    "radius": 1.4136016925,
+    "radius_error": 0.1857492316,
+    "teff": 6084.9810610489,
+    "teff_error": 54.6405186923,
+    "logg": 4.1407491609,
+    "feh": -0.2311092257,
+    "av": 0.2446041681,
+    "distance_pc": 3216.7866225428,
+    "inputs": "zero point -0.0179 mas; C* nan (3 sigma nan), BP/RP dropped; 2MASS quality none; PS1 griz (sep 0.09, n 23, flag 52)",
+    "used": true,
+    "teff_gspphot": null
+   }
+  ],
+  "inputs": [
+   {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/isoclassify-input-neighbour-20261026.csv",
+    "sha256": "b23f4fd8943846be553fb7a64d92bcb7a9f341ed25515150086586a1170cb7d0"
+   },
+   {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/runs/grid-neighbour-20261026/output.csv",
+    "sha256": "fd252c042d77bb7e467313baf32c8e6bccab4e2677c338f95ff24aa52a244e20"
+   },
+   {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/isochrones/gaia-dr3-neighbour-20261026.json",
+    "sha256": "6e899f735b797a76ae1dd29dc9214363c673edf2db0025af387420ddc928931e"
+   }
+  ],
+  "applied": {
+   "case": "mk/cases/2080571429081419520-2",
+   "result": "staged and queued (10 quarters, 5 capable sources)"
+  }
+ }
+}

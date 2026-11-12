@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-21T00:49:55.616134+00:00",
+  "source_id": "2099197705814100480",
+  "kic": 2834218,
+  "signal_id": "rust-v6-2099197705814100480-3",
+  "status": "HELD_NATIVE_DETRENDING_PROTECTION_INADEQUATE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Nested fit completed with finite physical support and native weight ESS5748.7, but a representative valid joint model has24.8746h exact T14 rather than12.4885h supplied duration.45actual valid model-transit cadences were not protected in detrending across13quarters, with up to4448ppm model deficit. Clock shift compounds coverage. No clock or FPP adopted from this preparation.",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-nested-review-v1.json",
+    "sha256": "48f571d8d857287b436bebad3de5a934f2d11bd0fccaea5598c1d207aa55a25d"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-freeze.json",
+    "sha256": "639422904fce6066ec82f0f507a85e64b5fc3c6307377d16105de44d7ba0b6e2"
+  },
+  "original_undecided_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native/review.json",
+    "sha256": "d18db53091a42ac4342a6359279c871cc10b4919cef51e164af6861123b6600b"
+  },
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve this generation. A future separate reviewed duration/clock-aware detrending preparation is required; no silent crop, clock substitution or changed original proposal. Move forward tonight instead of prolonged rescue."
+}

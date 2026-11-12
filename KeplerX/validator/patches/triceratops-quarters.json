@@ -1,0 +1,13 @@
+{
+  "upstream_commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+  "files": {
+    "triceratops/marginal_likelihoods.py": {
+      "original_sha256": "45a476ea8a17453580e9f561626c229c70920c839f6837ead4804e59c43659f9",
+      "patched_sha256": "41f5335298e6e852b186c95bc19e0488193cca7c4b36e3ed51ffcb8ee9ab220a"
+    },
+    "triceratops/triceratops.py": {
+      "original_sha256": "4082f9c1ccde1c7e6998744a75060203ffaecbce59d039dca4fec7ce7e33aaeb",
+      "patched_sha256": "1e3a3d65d5580a904bdb73c28acf5f7f689a9490879f88a86806f775c9078811"
+    }
+  }
+}

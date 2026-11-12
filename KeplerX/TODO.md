@@ -1,0 +1,11 @@
+# KeplerX todo
+
+Workflow: run detection, vetting and localization first. Statistical validation with TRICERATOPS is a separate stage, started only after Adam decides to run it.
+
+1. [ ] Finish calibrating the SAP lane: add SAP-only planet hosts and SAP-aperture blends to its twin, fit SAP's star-share scale, refit the two scores if they move and build the development-all twin, holdout-all only at acceptance (docs/keplerX-2026-11-03-sap-dilution-and-calibration.md).
+2. [ ] Build the SAP lane into the survey software as the lanes record designs it, with one LC2 read per source, SAP only where PSF Flat covers under 90% or is absent, a one-way merge by ephemeris before one localization per signal and PSF Flat's whitening reused by SAP's Vetter, then repeat the rich-systems test on the merged output (docs/keplerX-2026-11-03-sap-and-psf-lanes.md).
+3. [ ] Extend the calibration samples and their scoring to the 500-day search in both lanes, recalibrate the 200–500-day regime on development data with the holdout sealed, find what keeps efficiency after vetting just under 90% at S/N 12, and check the alias rule on TTV planets such as Kepler-87 c.
+4. [ ] Independently audit the KBonus statistical-validation inputs and the adopted Kepler V3 likelihood along the production path from photons to probabilities, verified on frozen known planets, binaries and accepted cases and keeping the established adjustments unless independent evidence argues otherwise, before the final study is scaled.
+5. [ ] Protect batches from the macOS memory-reclaim kill by pinning the reclaim ring's first page in every KeplerX process (MallocLargeCache=0 if the guard line returns) and by rerunning a dead worker's in-flight cases once in a fresh pool (docs/keplerX-2026-11-03-worker-killed-by-memory-reclaim.md).
+6. [ ] Bring the whole study to at most 4 days on the M1 Pro without losing a real planet; it stands at about 9.0 days (docs/keplerX-2026-11-03-study-time.md).
+7. [ ] Try to bring the share of false positives the Vetter catches towards 98% without losing a real planet: of the binaries and KOI false positives the vetting score keeps, the binary gate now removes 36.5% and 38.2% in PSF Flat (46% and 44% in SAP; docs/keplerX-2026-11-03-binary-gate-strengthened.md).

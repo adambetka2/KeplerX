@@ -1,0 +1,44 @@
+{
+  "recorded_utc": "2026-10-20T18:41:54.966937+00:00",
+  "scope": "User-directed priority for the rest of the night, after KIC7300018 finishes. One candidate at a time, local Mac only. No interruption or competing numerical work.",
+  "basis": "Adam reports that his TESS collaborator selected these signals for validation; page references are user supplied. Priority is not an inferred FPP, validation result or permission to alter scientific settings.",
+  "current": {
+    "kic": 7300018,
+    "source_id": "2077209775366626944",
+    "instruction": "Finish current study first; preserve numerical outcome or precise hold before advancing."
+  },
+  "next": [
+    {
+      "order": 1,
+      "boi_id": "BOI-2099560128037101952-1",
+      "source_id": "2099560128037101952",
+      "kic": 3330404,
+      "page": 41,
+      "previous_evidence": "Existing discrepant stellar radius/host-distance evidence remains explicit; review only what this candidate needs under V2. No automatic physical rejection from old wrapper holds."
+    },
+    {
+      "order": 2,
+      "boi_id": "BOI-2073609042284178176-1",
+      "source_id": "2073609042284178176",
+      "kic": 5303927,
+      "page": 12
+    }
+  ],
+  "completed_studies_to_preserve": [
+    {
+      "boi_id": "BOI-2127186564572468352-1",
+      "source_id": "2127186564572468352",
+      "kic": 8745833,
+      "page": 63,
+      "instruction": "Preserve accepted historical study; no rerun."
+    },
+    {
+      "boi_id": "BOI-2077554781499350144-1",
+      "source_id": "2077554781499350144",
+      "kic": 6699887,
+      "page": 24,
+      "instruction": "Preserve accepted historical study; no rerun."
+    }
+  ],
+  "policy": "This shortlist overrides automatic readiness/cost ranking after7300018. Use the reviewed V2 method, unchanged20-primary/1million counts, first-two futility rule and required physical closeout. A precise hold on one should be preserved and the other pursued without prolonged rescue. Preserve all existing evidence, unfavorable repeats and failures. Do not allocate unrelated BOIs ahead of this shortlist tonight. No broader lab audits or new detector/survey runs."
+}

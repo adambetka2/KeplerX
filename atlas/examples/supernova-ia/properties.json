@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "name": "SN 2011fe",
+  "reference_class": "Type Ia supernova light curve",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "A single rise and long decline; band-dependent secondary structure.",
+  "lookalikes": [
+    "other supernova types",
+    "other explosive transients"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "BVRI photometry; displayed bands are offset: B+1, R−1, I−2 magnitudes. Type Ia label uses the published classification, not this plot alone."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "delta_m15_B": {
+      "value": 1.21,
+      "unit": "mag",
+      "uncertainty": 0.03,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "reported_coverage_since_explosion": {
+      "value": [
+        2.9,
+        182
+      ],
+      "unit": "d",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1203.4013",
+    "pdf_url": "https://arxiv.org/pdf/1203.4013",
+    "pdf_page_one_based": 16,
+    "figure": "3",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "49c32d643789dfb65c9622deffef69408643c629fcf838a9e48c92eeed9bb71f",
+    "page_crop_fraction_xyxy": [
+      0.12,
+      0.26,
+      0.89,
+      0.7
+    ],
+    "image_sha256": "5defa5e5ecfa2aff94024a734d4df89c6627f3cb9c6a018919890f72044a498a"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

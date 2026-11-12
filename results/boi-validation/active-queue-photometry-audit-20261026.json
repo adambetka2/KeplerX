@@ -1,0 +1,1050 @@
+{
+ "utc": "2026-10-26T18:53:06.661983+00:00",
+ "scheduler_utc": "2026-10-26T18:52:44.526673+00:00",
+ "rows": [
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073226966298407552",
+   "source_id": "2073226966298407552",
+   "signal_id": "rust-v6-2073226966298407552-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction, rank substitution or masked rejected aliases. V3: quarters [1, 2, 3, 5, 7, 9, 11, 13, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085578158365014528-1",
+   "source_id": "2085578158365014528",
+   "signal_id": "mk-sap-20261019-2085578158365014528-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2",
+   "source_id": "2104058096963805696",
+   "signal_id": "mk-sap-20261019-2104058096963805696-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086313628562378624-1",
+   "source_id": "2086313628562378624",
+   "signal_id": "mk-sap-20261019-2086313628562378624-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4",
+   "source_id": "2104058096963805696",
+   "signal_id": "mk-sap-20261019-2104058096963805696-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127331661449318016-1",
+   "source_id": "2127331661449318016",
+   "signal_id": "mk-sap-20261019-2127331661449318016-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101046397179609344-1",
+   "source_id": "2101046397179609344",
+   "signal_id": "mk-sap-20261019-2101046397179609344-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 8, 12, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104112419710183296-4",
+   "source_id": "2104112419710183296",
+   "signal_id": "mk-sap-20261019-2104112419710183296-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052781685012928512-1",
+   "source_id": "2052781685012928512",
+   "signal_id": "mk-sap-20261019-2052781685012928512-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [7, 11, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100041954644727040-1",
+   "source_id": "2100041954644727040",
+   "signal_id": "mk-sap-20261019-2100041954644727040-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 1, 9, 10, 13, 14, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-3",
+   "source_id": "2104058096963805696",
+   "signal_id": "mk-sap-20261019-2104058096963805696-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1",
+   "source_id": "2086861666381019648",
+   "signal_id": "mk-sap-20261019-2086861666381019648-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2",
+   "source_id": "2086861666381019648",
+   "signal_id": "mk-sap-20261019-2086861666381019648-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073177071654296448-3",
+   "source_id": "2073177071654296448",
+   "signal_id": "mk-sap-20261019-2073177071654296448-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 3, 5, 7, 8, 9, 11, 12, 13, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073177071654296448-4",
+   "source_id": "2073177071654296448",
+   "signal_id": "mk-sap-20261019-2073177071654296448-4",
+   "state": "failed",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 3, 5, 7, 8, 9, 11, 12, 13, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1-g2",
+   "source_id": "2086861666381019648",
+   "signal_id": "mk-sap-20261019-2086861666381019648-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101496303593238144-2",
+   "source_id": "2101496303593238144",
+   "signal_id": "mk-sap-20261019-2101496303593238144-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101290007722749696-1",
+   "source_id": "2101290007722749696",
+   "signal_id": "mk-sap-20261019-2101290007722749696-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 5, 6, 9, 10, 13, 14, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144",
+   "source_id": "2077554781499350144",
+   "signal_id": "rust-v6-2077554781499350144-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077209775366626944",
+   "source_id": "2077209775366626944",
+   "signal_id": "rust-v6-2077209775366626944-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [3, 7, 11, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073896294004902272-4",
+   "source_id": "2073896294004902272",
+   "signal_id": "mk-sap-20261019-2073896294004902272-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2",
+   "source_id": "2077554781499350144",
+   "signal_id": "rust-v6-2077554781499350144-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079648041177607424-4",
+   "source_id": "2079648041177607424",
+   "signal_id": "mk-sap-20261019-2079648041177607424-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102521666898377600-2",
+   "source_id": "2102521666898377600",
+   "signal_id": "mk-sap-20261019-2102521666898377600-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4",
+   "source_id": "2076573394349070464",
+   "signal_id": "mk-sap-20261019-2076573394349070464-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 4, 8, 9, 12, 13, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078219878651924864-2",
+   "source_id": "2078219878651924864",
+   "signal_id": "mk-sap-20261019-2078219878651924864-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 5, 8, 12, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125786199078358400-1",
+   "source_id": "2125786199078358400",
+   "signal_id": "mk-sap-20261019-2125786199078358400-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 13, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1",
+   "source_id": "2099197705814100480",
+   "signal_id": "rust-v6-2099197705814100480-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 5, 6, 9, 10, 13, 14, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076476504190366336-boi1",
+   "source_id": "2076476504190366336",
+   "signal_id": "rust-v6-2076476504190366336-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073285721453427712-boi1",
+   "source_id": "2073285721453427712",
+   "signal_id": "shallow-v1-2073285721453427712-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078783726253023360-boi1",
+   "source_id": "2078783726253023360",
+   "signal_id": "rust-v6-2078783726253023360-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 11, 13, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076476504190366336-boi1-g2",
+   "source_id": "2076476504190366336",
+   "signal_id": "rust-v6-2076476504190366336-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2",
+   "source_id": "2080571429081419520",
+   "signal_id": "mk-sap-20261019-2080571429081419520-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 8, 9, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101518671782975488-3-g2",
+   "source_id": "2101518671782975488",
+   "signal_id": "mk-sap-20261019-2101518671782975488-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126063585245659136-1",
+   "source_id": "2126063585245659136",
+   "signal_id": "mk-sap-20261019-2126063585245659136-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 10, 12, 13] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126063585245659136-1-g2",
+   "source_id": "2126063585245659136",
+   "signal_id": "mk-sap-20261019-2126063585245659136-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 10, 12, 13] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2",
+   "source_id": "2106616626158535296",
+   "signal_id": "mk-sap-20261019-2106616626158535296-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8",
+   "source_id": "2128554563197278080",
+   "signal_id": "mk-sap-20261019-2128554563197278080-8",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125763418571547392-2",
+   "source_id": "2125763418571547392",
+   "signal_id": "mk-sap-20261019-2125763418571547392-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [3, 7, 11, 12, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078180571109230848-1",
+   "source_id": "2078180571109230848",
+   "signal_id": "mk-sap-20261019-2078180571109230848-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101518671782975488-3",
+   "source_id": "2101518671782975488",
+   "signal_id": "mk-sap-20261019-2101518671782975488-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6",
+   "source_id": "2101482490978833920",
+   "signal_id": "mk-sap-20261019-2101482490978833920-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078180571109230848-1-g2",
+   "source_id": "2078180571109230848",
+   "signal_id": "mk-sap-20261019-2078180571109230848-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11",
+   "source_id": "2101482490978833920",
+   "signal_id": "mk-sap-20261019-2101482490978833920-11",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1",
+   "source_id": "2104484363877066752",
+   "signal_id": "rust-v6-2104484363877066752-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 3, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2",
+   "source_id": "2101482490978833920",
+   "signal_id": "mk-sap-20261019-2101482490978833920-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1",
+   "source_id": "2073296372971801728",
+   "signal_id": "shallow-v1-2073296372971801728-5",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 1, 2, 3, 4, 5, 7, 8, 11, 12, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2052563599452804096-boi1",
+   "source_id": "2052563599452804096",
+   "signal_id": "shallow-v1-2052563599452804096-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 5, 8, 9, 12, 13, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2",
+   "source_id": "2101482490978833920",
+   "signal_id": "mk-sap-20261019-2101482490978833920-11",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2052563599452804096-boi1-g2",
+   "source_id": "2052563599452804096",
+   "signal_id": "shallow-v1-2052563599452804096-6",
+   "state": "failed",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 5, 8, 9, 12, 13, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2",
+   "source_id": "2099197705814100480",
+   "signal_id": "rust-v6-2099197705814100480-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 5, 6, 9, 10, 13, 14, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1",
+   "source_id": "2102918384442366592",
+   "signal_id": "rust-v6-2102918384442366592-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1",
+   "source_id": "2103418559153168128",
+   "signal_id": "rust-v6-2103418559153168128-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 6, 8, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1",
+   "source_id": "2105418399005125376",
+   "signal_id": "rust-v6-2105418399005125376-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [3, 7, 8, 11, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1",
+   "source_id": "2073666564790289664",
+   "signal_id": "rust-v6-2073666564790289664-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 6, 9, 10, 13, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130658616133595264-boi1",
+   "source_id": "2130658616133595264",
+   "signal_id": "rust-v6-2130658616133595264-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 1, 3, 4, 5, 7, 8, 9, 11, 12, 13, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078091858563529472-1",
+   "source_id": "2078091858563529472",
+   "signal_id": "mk-sap-20261019-2078091858563529472-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 7, 8, 10, 11, 12, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1",
+   "source_id": "2085171201622187904",
+   "signal_id": "mk-sap-20261019-2085171201622187904-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7",
+   "source_id": "2052956541719360000",
+   "signal_id": "mk-sap-20261019-2052956541719360000-7",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1",
+   "source_id": "2103792461826460288",
+   "signal_id": "mk-sap-20261019-2103792461826460288-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1",
+   "source_id": "2077526743952548224",
+   "signal_id": "mk-sap-20261019-2077526743952548224-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052740174146478464-1",
+   "source_id": "2052740174146478464",
+   "signal_id": "mk-sap-20261019-2052740174146478464-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2",
+   "source_id": "2077526743952548224",
+   "signal_id": "mk-sap-20261019-2077526743952548224-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1",
+   "source_id": "2131579354042736768",
+   "signal_id": "mk-sap-20261019-2131579354042736768-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 5, 9, 13, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1",
+   "source_id": "2101495509016649600",
+   "signal_id": "mk-sap-20261019-2101495509016649600-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1",
+   "source_id": "2127624204560927616",
+   "signal_id": "mk-sap-20261019-2127624204560927616-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1",
+   "source_id": "2100154070473374976",
+   "signal_id": "mk-sap-20261019-2100154070473374976-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1",
+   "source_id": "2131705076324568448",
+   "signal_id": "mk-sap-20261019-2131705076324568448-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1",
+   "source_id": "2080026346196588800",
+   "signal_id": "mk-sap-20261019-2080026346196588800-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052149122233322368-1",
+   "source_id": "2052149122233322368",
+   "signal_id": "mk-sap-20261019-2052149122233322368-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1",
+   "source_id": "2102952297504813184",
+   "signal_id": "mk-sap-20261019-2102952297504813184-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3",
+   "source_id": "2130921124535127424",
+   "signal_id": "mk-sap-20261019-2130921124535127424-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10",
+   "source_id": "2079529504382583936",
+   "signal_id": "mk-sap-20261019-2079529504382583936-10",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2126055064030395392-1",
+   "source_id": "2126055064030395392",
+   "signal_id": "mk-sap-20261019-2126055064030395392-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2",
+   "source_id": "2079529504382583936",
+   "signal_id": "mk-sap-20261019-2079529504382583936-10",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052149122233322368-1-g2",
+   "source_id": "2052149122233322368",
+   "signal_id": "mk-sap-20261019-2052149122233322368-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1",
+   "source_id": "2125749846474905600",
+   "signal_id": "mk-sap-20261019-2125749846474905600-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1",
+   "source_id": "2079968312597885824",
+   "signal_id": "mk-sap-20261019-2079968312597885824-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1",
+   "source_id": "2127033079618738944",
+   "signal_id": "mk-sap-20261019-2127033079618738944-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 7, 10, 11, 12, 14, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2",
+   "source_id": "2079968312597885824",
+   "signal_id": "mk-sap-20261019-2079968312597885824-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1",
+   "source_id": "2085686838216472448",
+   "signal_id": "mk-sap-20261019-2085686838216472448-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 4, 5, 8, 9, 13, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2117305700249611008-4",
+   "source_id": "2117305700249611008",
+   "signal_id": "mk-sap-20261019-2117305700249611008-4",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [12] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2133283390907486976-1",
+   "source_id": "2133283390907486976",
+   "signal_id": "mk-sap-20261019-2133283390907486976-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105697743679424000-2",
+   "source_id": "2105697743679424000",
+   "signal_id": "mk-sap-20261019-2105697743679424000-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1",
+   "source_id": "2128278272239907200",
+   "signal_id": "mk-sap-20261019-2128278272239907200-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 4, 8, 12, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104257486526344576-1",
+   "source_id": "2104257486526344576",
+   "signal_id": "mk-sap-20261019-2104257486526344576-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 4, 6, 8, 10, 12, 14, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2-g2",
+   "source_id": "2086861666381019648",
+   "signal_id": "mk-sap-20261019-2086861666381019648-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1",
+   "source_id": "2128318374356038400",
+   "signal_id": "mk-sap-20261019-2128318374356038400-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 8, 12, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1",
+   "source_id": "2050231500928700032",
+   "signal_id": "rust-v6-2050231500928700032-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1",
+   "source_id": "2073175632853699968",
+   "signal_id": "rust-v6-2073175632853699968-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 4, 7, 8, 12, 13, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073628180652139904-boi1",
+   "source_id": "2073628180652139904",
+   "signal_id": "rust-v6-2073628180652139904-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076894554826018304-boi1",
+   "source_id": "2076894554826018304",
+   "signal_id": "rust-v6-2076894554826018304-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 3, 4, 7, 10, 11, 12, 14, 15, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079536067092694016-boi1",
+   "source_id": "2079536067092694016",
+   "signal_id": "rust-v6-2079536067092694016-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [0, 1, 3, 5, 9, 12, 13] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100123494603868416-boi1",
+   "source_id": "2100123494603868416",
+   "signal_id": "rust-v6-2100123494603868416-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [3, 4, 7, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1",
+   "source_id": "2100203999471640064",
+   "signal_id": "rust-v6-2100203999471640064-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 5, 6, 10, 12, 14, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1",
+   "source_id": "2101435138957164672",
+   "signal_id": "rust-v6-2101435138957164672-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 3, 6, 7, 8, 10, 11, 14, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102612750272489216-boi1",
+   "source_id": "2102612750272489216",
+   "signal_id": "rust-v6-2102612750272489216-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [6, 8, 10, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1",
+   "source_id": "2126354436132009088",
+   "signal_id": "rust-v6-2126354436132009088-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [3, 7, 8, 11, 12, 13, 15] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2",
+   "source_id": "2079580081915382400",
+   "signal_id": "mk-sap-20261019-2079580081915382400-2",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102612750272489216-boi1-g2",
+   "source_id": "2102612750272489216",
+   "signal_id": "rust-v6-2102612750272489216-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [6, 8, 10, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078321583479039232-1",
+   "source_id": "2078321583479039232",
+   "signal_id": "mk-sap-20261019-2078321583479039232-1",
+   "state": "failed",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 5, 6, 7, 12, 13, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101498738831844864-1",
+   "source_id": "2101498738831844864",
+   "signal_id": "mk-sap-20261019-2101498738831844864-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [6, 7, 9, 10, 11, 14, 15, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086589365462040064-1",
+   "source_id": "2086589365462040064",
+   "signal_id": "mk-sap-20261019-2086589365462040064-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 5, 8, 9, 12, 13, 16, 17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052091054275764736-3",
+   "source_id": "2052091054275764736",
+   "signal_id": "mk-sap-20261019-2052091054275764736-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 12, 13] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125825540978915328-1",
+   "source_id": "2125825540978915328",
+   "signal_id": "mk-sap-20261019-2125825540978915328-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [17] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079427760894281088-1",
+   "source_id": "2079427760894281088",
+   "signal_id": "mk-sap-20261019-2079427760894281088-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [4, 6, 7, 8, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101746884862893952-6",
+   "source_id": "2101746884862893952",
+   "signal_id": "mk-sap-20261019-2101746884862893952-6",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128518107514419712-1",
+   "source_id": "2128518107514419712",
+   "signal_id": "mk-sap-20261019-2128518107514419712-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 4, 6, 8, 10, 12, 14, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-1",
+   "source_id": "2106616626158535296",
+   "signal_id": "mk-sap-20261019-2106616626158535296-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128518107514419712-1-g2",
+   "source_id": "2128518107514419712",
+   "signal_id": "mk-sap-20261019-2128518107514419712-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 4, 6, 8, 10, 12, 14, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105840847691288832-1",
+   "source_id": "2105840847691288832",
+   "signal_id": "mk-sap-20261019-2105840847691288832-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-3",
+   "source_id": "2101482490978833920",
+   "signal_id": "mk-sap-20261019-2101482490978833920-3",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079714428492352768-1",
+   "source_id": "2079714428492352768",
+   "signal_id": "shallow-v1-2079714428492352768-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [1, 2, 3, 5, 6, 7, 9, 10, 11, 14, 15, 16] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-1",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-1",
+   "state": "finished",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-2",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-4",
+   "state": "native-running",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact intake-supplied signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  },
+  {
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105840847691288832-1-g2",
+   "source_id": "2105840847691288832",
+   "signal_id": "mk-sap-20261019-2105840847691288832-1",
+   "state": "native-running",
+   "flux_convention": "raw_aperture",
+   "input_basis": "Original own-source raw SAP and exact delivered signal, original quality-zero/finite mask; no CROWDSAP correction or rank substitution. V3: quarters [2, 6, 10, 14] excluded by the prospective flux-closure gate (|predicted/observed SAP flux - 1| <= 0.2) before any fit or FPP; their photons remain in the original file.",
+   "photometry": "native-photons.npz"
+  }
+ ]
+}

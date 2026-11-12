@@ -1,0 +1,1398 @@
+{
+  "created_utc": "2026-10-28T08:35:28.418090+00:00",
+  "scope": "Read-only comparison of six named exact main-Rust PSF_FLAT signals and their completed held SAP V3 native fits. No new fitting, FPP or rejection for these six.",
+  "radius_caveat": "Rough sizes use the earlier local PSF event-depth diagnostic and the declared current host radius: 109.076*R_star*sqrt(depth). They are not fitted radii. Grazing geometry, delivered PSF response, local-baseline choices, blends and stellar uncertainties remain to be assessed.",
+  "ranking_scope": "Qualitative scientific triage, not calibrated planet probabilities.",
+  "records": [
+    {
+      "kic": 6184073,
+      "source_id": "2104484363877066752",
+      "boi_id": "BOI-2104484363877066752-1",
+      "signal_id": "rust-v6-2104484363877066752-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 105.36614774355272,
+      "supplied_duration_hours": 7.408557263218551,
+      "local_psf_depth_percent": 4.777624563266512,
+      "local_psf_depth_snr": 251.83498993765795,
+      "rough_psf_radius_earth": 64.8896799873858,
+      "host_mass_solar": 1.3787924791755137,
+      "host_radius_solar": 2.721701042697854,
+      "host_teff": 4892,
+      "ruwe": 0.9059115,
+      "gmag": 15.250304,
+      "measured_events": 7,
+      "odd_even_nominal_sigma": 1.7488254277458695,
+      "secondary_nominal_snr": 1.2378228380606493,
+      "depth_reduced_chi2": 38.70640259145352,
+      "close_bright_neighbors": [],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              105.29826473036739,
+              105.43403075673804
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              750.3699015571352,
+              750.98728132907
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              96.41152174870597,
+              20.7671576820239,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.0013368620347283156
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              12112.232203792095
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            105.3703267707903,
+            105.37042439634672,
+            105.37053964585944
+          ],
+          "t0_p1": [
+            750.6626896269933,
+            750.6667830741203,
+            750.6682476988373
+          ],
+          "p_p1": [
+            0.35671212465395347,
+            0.46240467606883107,
+            0.9019295647019836
+          ],
+          "b_p1": [
+            0.9974569254887562,
+            1.1280114278510833,
+            1.6136585873280405
+          ],
+          "rho": [
+            102.85805832502152,
+            119.99913026990615,
+            148.29078265946347
+          ],
+          "q1_Kepler": [
+            0.16953737693737558,
+            0.25463205139770345,
+            0.35287138962148407
+          ],
+          "q2_Kepler": [
+            0.1704227761462591,
+            0.37665289906927546,
+            0.5478428346016867
+          ],
+          "ecc_p1": [
+            0.3630342407712151,
+            0.3923745761434561,
+            0.4962088763012749
+          ],
+          "omega_p1": [
+            95.96062641430287,
+            118.55108876646214,
+            132.9338874143058
+          ],
+          "mflux_Kepler": [
+            -0.0003094602996717233,
+            -0.00024737157270848445,
+            -0.00017623825232851458
+          ],
+          "sigma_w_Kepler": [
+            1401.5483513408356,
+            1452.4397246910114,
+            1508.2614020172737
+          ]
+        },
+        "adopted_period_days": 105.37042439634672,
+        "adopted_duration_hours": 12.342143664034829,
+        "representative_radius_earth_not_adopted": 144.04865164988237,
+        "radius_ratio_snr": 1.6962211481279699,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 5396.844746602839,
+        "failed_gates": [
+          "radius_ratio_snr"
+        ],
+        "unprotected_model_cadences": 0,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": null,
+        "tic_radius_rsun": 2.686,
+        "stellar_radius_catalogue_ratio": null,
+        "apparent_rp_rearth_gaia": null,
+        "apparent_rp_rearth_tic": 81.34549695141277
+      },
+      "largest_event_information_fraction_20261012": 0.4514201251242338,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1/native-v3/candidate.json",
+          "sha256": "7c4cccf420e45314b7173c0936bb32ef90ac0353bd6210654a158fd1fe2102ee"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1/native-v3/native-priors.json",
+          "sha256": "dfa40d59f5b005a35d9e63fb939984a2803fa398b44b3311c4effa67a55dc3f4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1/native-v3/native-review-v3.json",
+          "sha256": "9be076180529c83b0e2d83223f786d2f32f7d32dd7cb52e2052ba094401de33c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1/native-v3/native-hold.json",
+          "sha256": "0cc78cbd2efdcd640458559c6559eaf4cbfe0e1e4d254a229a6c8e54d5ed9c82"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2104484363877066752-1.json",
+          "sha256": "1dd12378c27e09ba3c822f508483183923498ccfb1b28767f3952bfbc15b577c"
+        }
+      ]
+    },
+    {
+      "kic": 3935011,
+      "source_id": "2100203999471640064",
+      "boi_id": "BOI-2100203999471640064-1",
+      "signal_id": "rust-v6-2100203999471640064-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 3.1412645576658482,
+      "supplied_duration_hours": 0.9985476739600047,
+      "local_psf_depth_percent": 1.4847368511758074,
+      "local_psf_depth_snr": 105.52101610173867,
+      "rough_psf_radius_earth": 11.165368004288638,
+      "host_mass_solar": 0.75,
+      "host_radius_solar": 0.840077,
+      "host_teff": 4541.8296,
+      "ruwe": 0.99375325,
+      "gmag": 17.07634,
+      "measured_events": 294,
+      "odd_even_nominal_sigma": 2.074149069849675,
+      "secondary_nominal_snr": -1.5229023464624594,
+      "depth_reduced_chi2": 1.674804765251874,
+      "close_bright_neighbors": [
+        {
+          "source_id": "2100203999469163392",
+          "sep_arcsec": 4.865919347094682,
+          "delta_g": 3.8294050000000013
+        },
+        {
+          "source_id": "2100203995176133120",
+          "sep_arcsec": 7.207049157290019,
+          "delta_g": 3.634895
+        }
+      ],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              3.140995910341027,
+              3.1415332049906692
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              856.9266699990432,
+              857.0098823052066
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              1783.4267263946892,
+              509.05983528724875,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.0032095785221742386
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              67506.50241791156
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            3.141252801637279,
+            3.14125489829264,
+            3.141256639447599
+          ],
+          "t0_p1": [
+            856.97071403203,
+            856.9717774119608,
+            856.973454311143
+          ],
+          "p_p1": [
+            0.13321180517419706,
+            0.44077157404820266,
+            0.8159381409459986
+          ],
+          "b_p1": [
+            0.9424253598451647,
+            1.313358817612769,
+            1.6784434557649885
+          ],
+          "rho": [
+            1441.4479563094221,
+            1784.6436411597,
+            2133.9406547030935
+          ],
+          "q1_Kepler": [
+            0.2750834666141207,
+            0.589338442424009,
+            0.8943064214994318
+          ],
+          "q2_Kepler": [
+            0.22207371088970806,
+            0.608455648831893,
+            0.8766581043491649
+          ],
+          "ecc_p1": [
+            0.047676042361884066,
+            0.12216259317758127,
+            0.3061974894172099
+          ],
+          "omega_p1": [
+            34.01645578049355,
+            146.64528941424481,
+            287.932572216305
+          ],
+          "mflux_Kepler": [
+            -0.00015125581407928894,
+            -0.00010890085184278586,
+            -7.242083138613644e-05
+          ],
+          "sigma_w_Kepler": [
+            1365.1553665627362,
+            1412.8204370290737,
+            1447.2579828248438
+          ]
+        },
+        "adopted_period_days": 3.14125489829264,
+        "adopted_duration_hours": 1.5148476260634829,
+        "representative_radius_earth_not_adopted": 37.09506095858873,
+        "radius_ratio_snr": 1.29121011144216,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 5720.853554448289,
+        "failed_gates": [
+          "radius_ratio_snr"
+        ],
+        "unprotected_model_cadences": 0,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": 0.82558197,
+        "tic_radius_rsun": 0.84,
+        "stellar_radius_catalogue_ratio": 1.0174640805200723,
+        "apparent_rp_rearth_gaia": 9.528404899390942,
+        "apparent_rp_rearth_tic": 9.694809729781758
+      },
+      "largest_event_information_fraction_20261012": 0.010350651768688617,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1/native-v3/candidate.json",
+          "sha256": "93f7ea5ad6ae6e3206ea4a218a16363be7335ae7680a9714f7313a12e6ec6f98"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1/native-v3/native-priors.json",
+          "sha256": "02e13aa30a1c8fdc05bd8c6825f0baa273c96b6d377a5a880ff091637e7d15d4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1/native-v3/native-review-v3.json",
+          "sha256": "a621b9df4c53863be7b3bb1a6908392c39587222a7d2103ff6ef75ddc7367187"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1/native-v3/native-hold.json",
+          "sha256": "e15cd416bd2b434b99ea72ae81aa52e5557ccfbf67319a1f89cfb5f5229fe37e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100203999471640064-1.json",
+          "sha256": "b415543cf4dafac5e4d1ccd0e92042c24becd0cf0f07196da5f2238d6bea15be"
+        }
+      ]
+    },
+    {
+      "kic": 5698054,
+      "source_id": "2101435138957164672",
+      "boi_id": "BOI-2101435138957164672-1",
+      "signal_id": "rust-v6-2101435138957164672-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 80.72162778644471,
+      "supplied_duration_hours": 2.837869726867197,
+      "local_psf_depth_percent": 3.5052990704158864,
+      "local_psf_depth_snr": 49.14666098831134,
+      "rough_psf_radius_earth": 12.258182458729213,
+      "host_mass_solar": 0.97,
+      "host_radius_solar": 0.600253,
+      "host_teff": 5049.155,
+      "ruwe": 0.9719575,
+      "gmag": 18.657999,
+      "measured_events": 15,
+      "odd_even_nominal_sigma": 0.6849144685796423,
+      "secondary_nominal_snr": -1.1882659677161749,
+      "depth_reduced_chi2": 3.6722241330460164,
+      "close_bright_neighbors": [
+        {
+          "source_id": "2101435143258461440",
+          "sep_arcsec": 7.531484055474097,
+          "delta_g": 0.28810299999999955
+        },
+        {
+          "source_id": "2101435143258455552",
+          "sep_arcsec": 9.593131324236229,
+          "delta_g": -3.269693
+        }
+      ],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              80.70200812263386,
+              80.74124745025557
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              868.0777522014081,
+              868.3142413453137
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              6322.953782766636,
+              85478.27856317307,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.0053935210814780934
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              46647.32276528549
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            80.7240434076425,
+            80.72429661399634,
+            80.72452866304661
+          ],
+          "t0_p1": [
+            868.1820649332998,
+            868.1837695425064,
+            868.1852290961865
+          ],
+          "p_p1": [
+            0.213103549360105,
+            0.35044199285328625,
+            0.6679338877349713
+          ],
+          "b_p1": [
+            0.7508623943518637,
+            0.9971239816488565,
+            1.3785531802021733
+          ],
+          "rho": [
+            6231.680955031273,
+            9479.825797738544,
+            15594.209743716845
+          ],
+          "q1_Kepler": [
+            0.1511342010705653,
+            0.48894733057545364,
+            0.7981735701116148
+          ],
+          "q2_Kepler": [
+            0.16997617428678435,
+            0.5072136414193207,
+            0.8249871189209456
+          ],
+          "ecc_p1": [
+            0.055110353595060176,
+            0.1661946663988481,
+            0.342059411949398
+          ],
+          "omega_p1": [
+            97.06830867972761,
+            233.12696630166553,
+            311.6715152104315
+          ],
+          "mflux_Kepler": [
+            -0.000562380831036322,
+            -3.4641166813761313e-05,
+            0.0004410582326604821
+          ],
+          "sigma_w_Kepler": [
+            2494.2128841560566,
+            3059.425952615225,
+            3683.685693231788
+          ]
+        },
+        "adopted_period_days": 80.72429661399634,
+        "adopted_duration_hours": 4.037981667223984,
+        "representative_radius_earth_not_adopted": 23.629439630618048,
+        "radius_ratio_snr": 1.5409789685773148,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 5150.555947827624,
+        "failed_gates": [
+          "radius_ratio_snr",
+          "protection"
+        ],
+        "unprotected_model_cadences": 1,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": null,
+        "tic_radius_rsun": 0.6,
+        "stellar_radius_catalogue_ratio": null,
+        "apparent_rp_rearth_gaia": null,
+        "apparent_rp_rearth_tic": 11.885359689342163
+      },
+      "largest_event_information_fraction_20261012": 0.14560468929309497,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1/native-v3/candidate.json",
+          "sha256": "76826b4ec631b3b557a1680dc9f24f6bbe30f243f002fc8f3311067ff4dc02ef"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1/native-v3/native-priors.json",
+          "sha256": "40a8cd8581657e5097f70901df2acf758bde891225f144b62687838f9e0ac08f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1/native-v3/native-review-v3.json",
+          "sha256": "2b1e3f46e8303d3caa2610c5501ed419b368862cf09cbeadbe978a0f1eee6d39"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1/native-v3/native-hold.json",
+          "sha256": "f64c5f2a8db30db0fd7510f786cfc1528353956f602dc6f1fb275537796df7b5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2101435138957164672-1.json",
+          "sha256": "2b446a0798edab04dba96cf161e6b892cfc4d9c3f05e8d063a912c7cd494c541"
+        }
+      ]
+    },
+    {
+      "kic": 893184,
+      "source_id": "2050231500928700032",
+      "boi_id": "BOI-2050231500928700032-1",
+      "signal_id": "rust-v6-2050231500928700032-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 39.81077302538616,
+      "supplied_duration_hours": 7.93105243865115,
+      "local_psf_depth_percent": 3.1093482372854897,
+      "local_psf_depth_snr": 47.15574122640403,
+      "rough_psf_radius_earth": 23.617501876432637,
+      "host_mass_solar": 1.05,
+      "host_radius_solar": 1.22792,
+      "host_teff": 5564.995,
+      "ruwe": 0.91646874,
+      "gmag": 17.357988,
+      "measured_events": 7,
+      "odd_even_nominal_sigma": 3.4307584939801847,
+      "secondary_nominal_snr": -2.1878056039948985,
+      "depth_reduced_chi2": 12.72795931658436,
+      "close_bright_neighbors": [
+        {
+          "source_id": "2050231505226608768",
+          "sep_arcsec": 9.97572469715494,
+          "delta_g": 3.3347359999999995
+        }
+      ],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              39.783932711941766,
+              39.83761333883056
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              848.4369144910572,
+              849.0978355276116
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              799.5219122224051,
+              637.3675685098467,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.002516418597115098
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              66363.61532161805
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            39.80880011655456,
+            39.80930349139015,
+            39.809822074131816
+          ],
+          "t0_p1": [
+            848.7680880724674,
+            848.7782665409356,
+            848.7870326799514
+          ],
+          "p_p1": [
+            0.14760050392537039,
+            0.36317640690304637,
+            0.8830081589119132
+          ],
+          "b_p1": [
+            0.9613045254798661,
+            1.217781475429613,
+            1.7745361742237917
+          ],
+          "rho": [
+            25.53548363291054,
+            33.224870808846276,
+            50.515020169336935
+          ],
+          "q1_Kepler": [
+            0.5685051587569819,
+            0.7680845630938121,
+            0.927404589376551
+          ],
+          "q2_Kepler": [
+            0.42644566511744775,
+            0.6944758154527977,
+            0.9036753341222754
+          ],
+          "ecc_p1": [
+            0.01346967926062998,
+            0.05154518608958294,
+            0.1437864313040483
+          ],
+          "omega_p1": [
+            34.491255163645384,
+            118.98675074950992,
+            223.98256761538624
+          ],
+          "mflux_Kepler": [
+            -0.0005944470555662648,
+            -0.00047670824460954025,
+            -0.00034131211560910993
+          ],
+          "sigma_w_Kepler": [
+            1861.4212339797725,
+            1948.9652947815864,
+            2042.1631272458499
+          ]
+        },
+        "adopted_period_days": 39.80930349139015,
+        "adopted_duration_hours": 13.403462139772781,
+        "representative_radius_earth_not_adopted": 40.34232309457588,
+        "radius_ratio_snr": 0.987687317205563,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 5119.770658700904,
+        "failed_gates": [
+          "radius_ratio_snr"
+        ],
+        "unprotected_model_cadences": 0,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": 0.58445793,
+        "tic_radius_rsun": 1.228,
+        "stellar_radius_catalogue_ratio": 2.1010922035055626,
+        "apparent_rp_rearth_gaia": 9.426510984722892,
+        "apparent_rp_rearth_tic": 19.805968736260812
+      },
+      "largest_event_information_fraction_20261012": 0.7439333921165833,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1/native-v3/candidate.json",
+          "sha256": "3d41f297b24646f545e9578f9ab6bb17dd6f0807d4dd4b432fe98c157789be40"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1/native-v3/native-priors.json",
+          "sha256": "3df5f55418db72add44b6a015f5e43c154fc24c43a376a3903d8e74ce378c4ff"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1/native-v3/native-review-v3.json",
+          "sha256": "8b1fd8b04872d9ba505656cd8c12ae3912787095be6514f77e0ccf7fea230be5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1/native-v3/native-hold.json",
+          "sha256": "2ca61753a5ee81b219ca154a0bd56db946ee819a4ed6f55891e6e2e84b391593"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2050231500928700032-1.json",
+          "sha256": "8eff3ebbb1fb0b68f9cb44cede648e1eb9a6d8d369d080df84d8395d10605b04"
+        }
+      ]
+    },
+    {
+      "kic": 6209806,
+      "source_id": "2077595974520134144",
+      "boi_id": "BOI-2077595974520134144-1",
+      "signal_id": "rust-v6-2077595974520134144-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 14.226578632436448,
+      "supplied_duration_hours": 1.4997271764793914,
+      "local_psf_depth_percent": 2.309352076280176,
+      "local_psf_depth_snr": 45.70258108768433,
+      "rough_psf_radius_earth": 10.761948724028693,
+      "host_mass_solar": 0.97,
+      "host_radius_solar": 0.649257,
+      "host_teff": 4963.5693,
+      "ruwe": 0.9998712,
+      "gmag": 18.352295,
+      "measured_events": 89,
+      "odd_even_nominal_sigma": 0.168652873506832,
+      "secondary_nominal_snr": -0.31498174600094336,
+      "depth_reduced_chi2": 9.26080018637194,
+      "close_bright_neighbors": [
+        {
+          "source_id": "2077595978821594112",
+          "sep_arcsec": 6.687922204030713,
+          "delta_g": 2.177923
+        },
+        {
+          "source_id": "2077596047542666624",
+          "sep_arcsec": 8.928217716061113,
+          "delta_g": -5.319891000000002
+        }
+      ],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 300,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 2000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              14.224764918300947,
+              14.22839234657195
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              859.6024339518359,
+              859.7274112165425
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              4996.58296706097,
+              6681.828307219605,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.001599276419822132
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              14908.5636271008
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            14.226609704683982,
+            14.22664128241837,
+            14.226679558623085
+          ],
+          "t0_p1": [
+            859.669980562165,
+            859.6728116451466,
+            859.6748325951357
+          ],
+          "p_p1": [
+            0.23408139367962705,
+            0.5477934341024023,
+            0.7854569781872835
+          ],
+          "b_p1": [
+            1.1242776999200155,
+            1.46425250818274,
+            1.7069996144635353
+          ],
+          "rho": [
+            595.3658973935618,
+            938.0503437235593,
+            1651.4587694156394
+          ],
+          "q1_Kepler": [
+            0.24332551059953444,
+            0.5279652839412096,
+            0.8833046020993182
+          ],
+          "q2_Kepler": [
+            0.1568307869316796,
+            0.4524916526381328,
+            0.7735994783794443
+          ],
+          "ecc_p1": [
+            0.07941281229277367,
+            0.2630710971458169,
+            0.3971556204452699
+          ],
+          "omega_p1": [
+            7.557883146216423,
+            23.984367221456544,
+            77.34075744260846
+          ],
+          "mflux_Kepler": [
+            -9.169161282683373e-05,
+            -3.7561761228287505e-05,
+            3.4446615214688054e-05
+          ],
+          "sigma_w_Kepler": [
+            961.007396501072,
+            1023.6960874498475,
+            1113.9218893038512
+          ]
+        },
+        "adopted_period_days": 14.22664128241837,
+        "adopted_duration_hours": 2.2299357239101814,
+        "representative_radius_earth_not_adopted": 35.22978153736128,
+        "radius_ratio_snr": 1.9870064960948435,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 2370.7185525610403,
+        "failed_gates": [
+          "radius_ratio_snr"
+        ],
+        "unprotected_model_cadences": 0,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": null,
+        "tic_radius_rsun": 0.649,
+        "stellar_radius_catalogue_ratio": null,
+        "apparent_rp_rearth_gaia": null,
+        "apparent_rp_rearth_tic": 9.387092227537538
+      },
+      "largest_event_information_fraction_20261012": 0.025640277619279225,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/candidate.json",
+          "sha256": "d240e020713586e57840ec1db8dc6d55745c76e3fbfeeb101eaeec2b8d0a901a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-priors.json",
+          "sha256": "6cd9c290534b0a33cd93562eec555bd58c96cfb824f70bc7362c7b23839fc052"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-review-v3.json",
+          "sha256": "26f6f1c19dbe47deb2f12f0441fe354135fa09c5517fd580532ced8cbdcd0f5c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-hold.json",
+          "sha256": "29d88c239022690765a52eace9618004f4c761f6ad79d520a8cb080dee82aec9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077595974520134144-1.json",
+          "sha256": "053d0ade323e5c291ac09a408cc6db79de019b02fcd222901a69ec9238982c06"
+        }
+      ]
+    },
+    {
+      "kic": 8234517,
+      "source_id": "2126354436132009088",
+      "boi_id": "BOI-2126354436132009088-1",
+      "signal_id": "rust-v6-2126354436132009088-1",
+      "discovery_view": "psf_flat",
+      "detector_family": "Main Rust catalogue; stored rust-v6 signal identifier; survey-method.md names the V6.1 development protocol and Forgotten Stars V1 ancestry.",
+      "supplied_period_days": 18.670730620555183,
+      "supplied_duration_hours": 3.998639463632566,
+      "local_psf_depth_percent": 1.3515411683415848,
+      "local_psf_depth_snr": 24.999347967996492,
+      "rough_psf_radius_earth": 10.482198471800846,
+      "host_mass_solar": 0.94,
+      "host_radius_solar": 0.826625,
+      "host_teff": 4979.2485,
+      "ruwe": 0.9794834,
+      "gmag": 18.913776,
+      "measured_events": 54,
+      "odd_even_nominal_sigma": 1.274847667565101,
+      "secondary_nominal_snr": -1.2922305182405749,
+      "depth_reduced_chi2": 1.6028867326011786,
+      "close_bright_neighbors": [
+        {
+          "source_id": "2126354440431042176",
+          "sep_arcsec": 8.55813014938205,
+          "delta_g": -3.283161999999999
+        }
+      ],
+      "sap_fit": {
+        "settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 5,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "priors": {
+          "P_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              18.66433647187834,
+              18.677124769232027
+            ]
+          },
+          "t0_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              849.5804506448993,
+              849.913670600202
+            ]
+          },
+          "p_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "b_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              2.0
+            ]
+          },
+          "rho": {
+            "distribution": "truncatednormal",
+            "hyperparameters": [
+              2346.137911871388,
+              24533.693931739886,
+              0.0,
+              1.7976931348623157e+308
+            ]
+          },
+          "q1_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "q2_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              1.0
+            ]
+          },
+          "ecc_p1": {
+            "distribution": "beta",
+            "hyperparameters": [
+              0.867,
+              3.03
+            ]
+          },
+          "omega_p1": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              360.0
+            ]
+          },
+          "mdilution_Kepler": {
+            "distribution": "fixed",
+            "hyperparameters": 1.0
+          },
+          "mflux_Kepler": {
+            "distribution": "normal",
+            "hyperparameters": [
+              0.0,
+              0.009756259208068132
+            ]
+          },
+          "sigma_w_Kepler": {
+            "distribution": "uniform",
+            "hyperparameters": [
+              0.0,
+              311806.00428024196
+            ]
+          }
+        },
+        "quantiles_16_50_84": {
+          "P_p1": [
+            18.671213901089352,
+            18.671377710302952,
+            18.67155063972794
+          ],
+          "t0_p1": [
+            849.7451646000903,
+            849.7504333096825,
+            849.7554815977312
+          ],
+          "p_p1": [
+            0.18753761649846243,
+            0.5926227204895964,
+            0.8354229631058933
+          ],
+          "b_p1": [
+            1.0337025904527462,
+            1.455096380378803,
+            1.7060493275425528
+          ],
+          "rho": [
+            173.91604479641546,
+            283.04243143975896,
+            970.3710378184115
+          ],
+          "q1_Kepler": [
+            0.41523673830749025,
+            0.6791231393541466,
+            0.9056533843598579
+          ],
+          "q2_Kepler": [
+            0.375081217310738,
+            0.668245887128856,
+            0.8857034003646673
+          ],
+          "ecc_p1": [
+            0.06347873000360134,
+            0.20188064825406124,
+            0.4714947733445763
+          ],
+          "omega_p1": [
+            184.29048291228207,
+            244.74305658924794,
+            289.0915555430309
+          ],
+          "mflux_Kepler": [
+            -0.0004134600167933351,
+            -0.000266268794613522,
+            -0.00011501641768778797
+          ],
+          "sigma_w_Kepler": [
+            2783.1746997464825,
+            2983.670072168656,
+            3171.718438339448
+          ]
+        },
+        "adopted_period_days": 18.671377710302952,
+        "adopted_duration_hours": 6.1309486671042075,
+        "representative_radius_earth_not_adopted": 59.685326396115414,
+        "radius_ratio_snr": 1.8294061552488874,
+        "required_radius_ratio_snr": 3,
+        "effective_samples": 5205.398227446987,
+        "failed_gates": [
+          "radius_ratio_snr"
+        ],
+        "unprotected_model_cadences": 0,
+        "fpp": null,
+        "nfpp": null,
+        "probability_status": "NOT_RUN: native acceptance gate failed before probability staging",
+        "source_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1"
+      },
+      "earlier_20261012_probability_status": "UNESTIMATED",
+      "earlier_20261012_fpp": null,
+      "earlier_20261012_nfpp": null,
+      "older_stellar_size_caveats": {
+        "gaia_radius_rsun": null,
+        "tic_radius_rsun": 0.827,
+        "stellar_radius_catalogue_ratio": null,
+        "apparent_rp_rearth_gaia": null,
+        "apparent_rp_rearth_tic": 9.685313632769802
+      },
+      "largest_event_information_fraction_20261012": 0.03660657370053169,
+      "evidence_files": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1/native-v3/candidate.json",
+          "sha256": "e04313444d238f565b2a97810d4eb5088edf217e6af05981db0f3729161273e1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1/native-v3/native-priors.json",
+          "sha256": "13cc1983d25e71b7f5ab6cfe3e46bc62e441722888b1aaacf318a5d05de6511b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1/native-v3/native-review-v3.json",
+          "sha256": "b6c3bb8809221e3b85d02664fa1b68e6ffad1f0f4a26e11f63d8999467934ec0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1/native-v3/native-hold.json",
+          "sha256": "eb3c7fc418f1781fc473f63bb08777f9c4d77f3b0c3052dad3e79b201647929d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126354436132009088-1.json",
+          "sha256": "29b9108403ceb76694a4597712663e1e9de23f10d1c44bfaa9d9f545b2b8e1f8"
+        }
+      ]
+    }
+  ]
+}

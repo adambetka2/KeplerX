@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-21T00:53:01.039049+00:00",
+  "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2103418559153168128",
+  "kic": 5079515,
+  "tic": 120255498,
+  "signal_id": "rust-v6-2103418559153168128-1",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-launch.json",
+    "sha256": "d20ddf1fc58f00837936194eac9cc968d10757be0cee02e02098f16c8179cca5"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-freeze.json",
+    "sha256": "f1b240e3a70a3d45b32e6140527922617eb7324ccb103dab2a8906799ec4d072"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/selection.json",
+    "sha256": "6f66eb1724d68c5a2ece918b017eab2aac1de2fd1a3d47ac9f01e371fb8e3d62"
+  },
+  "native_stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-stellar-review.json",
+    "sha256": "dd7379f07f784feb3a82522fc9a8144e4e4805ed5c5768ca2ac97918913122c0"
+  },
+  "pre_native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/pre-native-retained-review.json",
+    "sha256": "68fbab50071b7bb52e0cb12ba97f005efa027ad6534bd73d146360c5bf53b626"
+  },
+  "seed_source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-seed-source-review.json",
+    "sha256": "784ca9b1b02ef0da351767121e225c00f1defdb2c8702c213ed240ba97af8ab7"
+  },
+  "seed_revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-seed-revalidation.json",
+    "sha256": "59d4f938ad1f1b15ccd650871d084d95f14a38f8fabde4c2dd719837879cce44"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/live-check-20261021T005301Z.json",
+    "sha256": "eff9014e87a1586b8bd2b8783bae01758b25d3a159ce573722c0505c629d53fe"
+  },
+  "previous_terminal": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/readiness-hold-v1.json",
+    "sha256": "f66b8921b8225285cd8dc6f359583043729fef90670baa7858243345645e151c"
+  },
+  "native_points": 579,
+  "probability_runs": 0,
+  "clock_adopted": false,
+  "next": "Let seeded standard dynamic nested fit finish, review actual weighted/equal samples/stopping/ESS/modes, finite support, joint geometry/contacts/residuals/coverage and actual exposure. In particular verify fitted transit plus clock shift remains fully protected during detrending; preserve precise hold if not. Then SAME BOI actual extraction/27source scene, spacecraft/pixels, dilution/noise, aliases and dated exact-signal catalogue readiness before stock FPP. No old V1 resume or competing numerical work; preserve terminal outcome and advance full queue."
+}

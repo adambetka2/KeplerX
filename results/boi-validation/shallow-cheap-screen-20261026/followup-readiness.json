@@ -1,0 +1,171 @@
+{
+ "utc": "2026-10-26T16:53:43.889338+00:00",
+ "scope": "Seven candidates for standard native-fit preparation identified by the cheap shallow screen. These are not active V3 probability jobs or scientifically admitted integrations.",
+ "entries": [
+  {
+   "boi_id": "BOI-2079714428492352768-1",
+   "source_id": "2079714428492352768",
+   "signal_id": "shallow-v1-2079714428492352768-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 3.4468242608596364,
+    "epoch_bkjd": 123.93870696062223,
+    "duration_hours": 2.4000000000000004
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2079714428492352768",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-1",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 13.744702376615713,
+    "epoch_bkjd": 139.13723116880283,
+    "duration_hours": 4.800000000000001
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2127936912539397632",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-2",
+   "source_id": "2127936912539397632",
+   "signal_id": "shallow-v1-2127936912539397632-4",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 8.555779566765446,
+    "epoch_bkjd": 134.71223116880282,
+    "duration_hours": 4.800000000000001
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2127936912539397632",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2102266442767690112-1",
+   "source_id": "2102266442767690112",
+   "signal_id": "shallow-v1-2102266442767690112-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 0.9337713617117456,
+    "epoch_bkjd": 132.42766433717682,
+    "duration_hours": 2.4000000000000004
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2102266442767690112",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2077624600485371136-1",
+   "source_id": "2077624600485371136",
+   "signal_id": "shallow-v1-2077624600485371136-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 9.548870140277844,
+    "epoch_bkjd": 136.39731729611754,
+    "duration_hours": 4.800000000000001
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2077624600485371136",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2107173460081536128-1",
+   "source_id": "2107173460081536128",
+   "signal_id": "shallow-v1-2107173460081536128-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 8.193724735414811,
+    "epoch_bkjd": 120.68942378843204,
+    "duration_hours": 2.4000000000000004
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2107173460081536128",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  },
+  {
+   "boi_id": "BOI-2128925785810616832-1",
+   "source_id": "2128925785810616832",
+   "signal_id": "shallow-v1-2128925785810616832-1",
+   "photometry": "native SAP required; PSF_FLAT discovery retained as separate provenance",
+   "discovery_clock": {
+    "period_days": 3.544577861754921,
+    "epoch_bkjd": 355.5921666912362,
+    "duration_hours": 2.4000000000000004
+   },
+   "state": "NATIVE_INPUT_IDENTITY_VERIFIED_FULL_PREPARATION_PENDING",
+   "probability_ready": false,
+   "remaining": [
+    "Refresh exact-signal literature and catalogue ownership.",
+    "Authenticate source-quarter native photons and actual apertures.",
+    "Review full native event membership, masks, timing/alias alternatives and any siblings.",
+    "Prepare and jointly fit period and epoch under adopted V3 with justified stellar/noise priors and measured preparation transfer.",
+    "Close complete physical stellar scene and response, then use the existing fixed-budget probability allocation."
+   ],
+   "input_preflight_path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight/2128925785810616832",
+   "input_identity_authentication_complete": true,
+   "gaia_scene_coordinate_query_complete": true
+  }
+ ],
+ "updated_utc": "2026-10-26T17:14:08.270574+00:00",
+ "storage_authorization": "results/boi-validation/internal-evidence-storage-20261026.json",
+ "input_preflight_root": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026",
+ "input_preflight_record": "results/boi-validation/shallow-native-input-preflight-20261026.json"
+}

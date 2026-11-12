@@ -1,0 +1,501 @@
+{
+  "generated_utc": "2026-10-28T12:16:05.109697+00:00",
+  "all_three_terminal_at_warsaw": "2026-10-28T13:09:22+01:00",
+  "scope": "Exactly the three final user-authorized signals. All other removed queue entries remain unscheduled; their data and results are retained.",
+  "counts": {
+    "studies": 3,
+    "native_fit_held": 1,
+    "probability_screens_completed": 2,
+    "new_statistical_validations": 0,
+    "denied_false_positives": 0,
+    "jobs_running": 0,
+    "jobs_remaining": 0
+  },
+  "compute_verification": {
+    "queue_coordinator_and_case_workers_running": []
+  },
+  "monitor_removed": {
+    "id": "finish-three-kic-checks",
+    "deleted": true
+  },
+  "records": [
+    {
+      "kic": 6113801,
+      "boi_id": "BOI-2102266442767690112-1",
+      "source_id": "2102266442767690112",
+      "signal_number": 1,
+      "queue_terminal_state": {
+        "stage": "HELD",
+        "note": "native rule failed: protection"
+      },
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf",
+      "scientific_disposition": "REMAINS_PC",
+      "validated": false,
+      "denied_false_positive": false,
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3/candidate.json",
+          "sha256": "54484493dd66d37056a6342d3b0953d59b55f220c85ca2fd60f9c517f5741c06"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3/native-review-v3.json",
+          "sha256": "f070ada9cd549f314a69287fdc55b92e68ba0af51704c1cf4e67257cb4477253"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3/native-hold.json",
+          "sha256": "e88e938c79a240d8579a1ea4a97374f8c0e328b2018e40cf93abcdb6a69a5de7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2102266442767690112-1/psf/native-v3/native/posterior.npz",
+          "sha256": "af716252438310a0653fbf0a09cf010a8a3dab275f1c5e96dc876dc0a5a49bff"
+        }
+      ],
+      "route": "CUSTOM_NATIVE_FIT_THEN_V3_IF_ACCEPTED",
+      "signal_id": "shallow-v1-2102266442767690112-1",
+      "native_fit": {
+        "performed": true,
+        "accepted": false,
+        "checks": {
+          "weight_ess": true,
+          "replay": true,
+          "clock_shift": true,
+          "radius_ratio_snr": true,
+          "integration": true,
+          "protection": false
+        },
+        "failed_checks": [
+          "protection"
+        ],
+        "sampler_settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 3,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "reviewed_weight_ess": 4291.115269338191,
+        "likelihood_calls": 631706,
+        "supplied_period_days": 0.9337713617117456,
+        "supplied_duration_hours": 2.4000000000000004,
+        "fitted_period_days": 0.933755934341784,
+        "fitted_duration_hours": 5.039092605635676,
+        "representative_exact_duration_hours": 4.743285905839002,
+        "radius_ratio_snr": 19.585921152284627,
+        "unprotected_model_cadences": 855
+      },
+      "size": {
+        "native_representative_radius_earth": 1.9548664794803499,
+        "adopted_radius": false,
+        "scope": "Representative planet-model fit; provisional diagnostic, not an adopted planetary radius."
+      },
+      "probability": {
+        "performed": false,
+        "repeats": 0,
+        "fpp": null,
+        "nfpp": null,
+        "reason": "Native protection gate failed before probability allocation."
+      },
+      "interpretation": "Fit completed but was not accepted: the fitted transit reaches 855 original cadences outside the detrending protection. The supplied duration was 2.40 h and fitted duration approximately 5.04 h. Its data-preparation adequacy remains unresolved; it is not an astrophysical false-positive result."
+    },
+    {
+      "kic": 4948140,
+      "boi_id": "BOI-2073666564790289664-3",
+      "source_id": "2073666564790289664",
+      "signal_number": 3,
+      "queue_terminal_state": {
+        "stage": "DONE",
+        "note": "NUMERICAL_FAIL seeds_20,mean_fpp_below_1p5pct,mean_nfpp_below_0p1pct"
+      },
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf",
+      "scientific_disposition": "REMAINS_PC",
+      "validated": false,
+      "denied_false_positive": false,
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/native-v3/candidate.json",
+          "sha256": "073e325faaf5ecdd4d2aaa069d859d033bdbe323d13304d939046a9735138a21"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/native-v3/native-review-v3.json",
+          "sha256": "082776b98d40a2a397e564e212a8bc8a62bb224e1b70a9cd205519f4bc5e3aae"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/native-v3/native-accepted.json",
+          "sha256": "780a9535c31334add516471905c58810ede0b61c1e44389a42d683413fb45a65"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/native-v3/native/posterior.npz",
+          "sha256": "17bdaf3e70b1c0e24e31b1d2052a049de01fc0b438abbd5933655b4151bafb50"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/closeout-psf-v2.json",
+          "sha256": "3f658bc388f29abf736e41bc24789e73f97f4c7dc47abe47cfbedfcb004eb466"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/probability-psf-v2/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "0f5b73f32d87c724a7b4d8636aef4886c02569f469095f7444fe5eaf10c725fa"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/probability-psf-v2/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "7109835d1903d3fd5e8b488f51dc11ca5167f224b670c898c1004da78a8c2a93"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/probability-psf-v2/campaign-engine/summary.json",
+          "sha256": "f88381e91d6a77c3b3f950bf2f3b6fbecb141bdfd749df0c3059838208dd65b8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2073666564790289664-3/psf/probability-psf-v2/campaign/plan.json",
+          "sha256": "15b07eccbd62c0f7c0165c1b28928a480c53bf678b6a60fa2bb83bbe7f621064"
+        }
+      ],
+      "route": "CUSTOM_NATIVE_FIT_THEN_V3_IF_ACCEPTED",
+      "signal_id": "shallow-v1-2073666564790289664-15",
+      "native_fit": {
+        "performed": true,
+        "accepted": true,
+        "checks": {
+          "weight_ess": true,
+          "replay": true,
+          "clock_shift": true,
+          "radius_ratio_snr": true,
+          "integration": true,
+          "protection": true
+        },
+        "failed_checks": [],
+        "sampler_settings": {
+          "sampler": "dynamic_dynesty",
+          "n_live_points": 500,
+          "nthreads": 3,
+          "dlogz_init": 0.1,
+          "n_effective": 5000,
+          "dynesty_save_states": true,
+          "checkpoint_every": 300,
+          "print_progress": true
+        },
+        "reviewed_weight_ess": 5163.054930365912,
+        "likelihood_calls": 467645,
+        "supplied_period_days": 0.5773150987471779,
+        "supplied_duration_hours": 1.2000000000000002,
+        "fitted_period_days": 0.5773190449317407,
+        "fitted_duration_hours": 1.5543697129268965,
+        "representative_exact_duration_hours": 1.5389950991320802,
+        "radius_ratio_snr": 17.824208189876316,
+        "unprotected_model_cadences": 0
+      },
+      "size": {
+        "native_representative_radius_earth": 2.0809437340075063,
+        "adopted_radius": false,
+        "scope": "Representative planet-model fit; provisional diagnostic, not an adopted planetary radius.",
+        "triceratops_intended_host_best_draws_earth_radii": {
+          "median": 1.894889608475244,
+          "minimum": 1.874701084133804,
+          "maximum": 1.9150781328166837
+        }
+      },
+      "probability": {
+        "performed": true,
+        "repeats": 2,
+        "planned_maximum_repeats": 20,
+        "stopped_early": true,
+        "draws_per_scenario_per_repeat": 1000000,
+        "fpp": {
+          "mean": 0.625401717065923,
+          "minimum": 0.6219568291211477,
+          "maximum": 0.6288466050106982,
+          "repeats": [
+            0.6288466050106982,
+            0.6219568291211477
+          ]
+        },
+        "nfpp": {
+          "mean": 0.6178654736863771,
+          "maximum": 0.6212711962167349,
+          "repeats": [
+            0.6212711962167349,
+            0.6144597511560194
+          ]
+        },
+        "thresholds": {
+          "FPP": 0.015,
+          "NFPP": 0.001
+        },
+        "probability_thresholds_met": false,
+        "complete_20_repeat_campaign": false,
+        "completed_repeats": [
+          {
+            "index": 0,
+            "FPP": 0.6288466050106982,
+            "NFPP": 0.6212711962167349,
+            "calculate_seconds": 589.3316348325461
+          },
+          {
+            "index": 1,
+            "FPP": 0.6219568291211477,
+            "NFPP": 0.6144597511560194,
+            "calculate_seconds": 589.0650349995121
+          }
+        ],
+        "mean_seconds_per_repeat": 589.1983349160291,
+        "leading_scenarios_by_repeat": [
+          {
+            "seed_index": 0,
+            "scenarios": [
+              {
+                "source_id": "2073666564790289664",
+                "scenario": "TP",
+                "probability": 0.23911816941182215
+              },
+              {
+                "source_id": "2073666594841208832",
+                "scenario": "NEB",
+                "probability": 0.18773539602360415
+              },
+              {
+                "source_id": "2073666560481447552",
+                "scenario": "NEB",
+                "probability": 0.14940089497669795
+              },
+              {
+                "source_id": "2073666633499075968",
+                "scenario": "NEB",
+                "probability": 0.11071203270835395
+              },
+              {
+                "source_id": "2073666564790289664",
+                "scenario": "PTP",
+                "probability": 0.07413636795958325
+              }
+            ]
+          },
+          {
+            "seed_index": 1,
+            "scenarios": [
+              {
+                "source_id": "2073666564790289664",
+                "scenario": "TP",
+                "probability": 0.24867786965397173
+              },
+              {
+                "source_id": "2073666594841208832",
+                "scenario": "NEB",
+                "probability": 0.18482546169349065
+              },
+              {
+                "source_id": "2073666560481447552",
+                "scenario": "NEB",
+                "probability": 0.14145179535121255
+              },
+              {
+                "source_id": "2073666633499075968",
+                "scenario": "NEB",
+                "probability": 0.11070973334405577
+              },
+              {
+                "source_id": "2073666633499075968",
+                "scenario": "NTP",
+                "probability": 0.07608652709592532
+              }
+            ]
+          }
+        ]
+      },
+      "physical_closeout_checks": {
+        "seeds_20": false,
+        "mean_fpp_below_1p5pct": false,
+        "mean_nfpp_below_0p1pct": false,
+        "snr_at_least_15": true,
+        "ruwe_at_most_1p4": true,
+        "no_gaia_source_within_1p5_arcsec": true,
+        "radius_below_8_earth": true,
+        "seasonal_depth_consistent": true
+      },
+      "interpretation": "Passed all native-fit checks, but V3 FPP/NFPP did not meet validation thresholds. Nearby-source alternatives dominate. Not statistically validated and no reproduced EB mechanism is established."
+    },
+    {
+      "kic": 3935011,
+      "boi_id": "BOI-2100203999471640064-1",
+      "source_id": "2100203999471640064",
+      "signal_number": 1,
+      "queue_terminal_state": {
+        "stage": "DIRECT_DONE",
+        "note": "STATISTICAL_FALSE_POSITIVE_PREFERENCE_REMAINS_PC; FPP 0.973018, NFPP 0.973018"
+      },
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf",
+      "scientific_disposition": "REMAINS_PC",
+      "validated": false,
+      "denied_false_positive": false,
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-closeout-psf-v2.json",
+          "sha256": "669467a80562539fc0df7199cab5c0b211a107af5144d8869724abb5fbcfe8fb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/supplied-clock-review.json",
+          "sha256": "f96750394bc93d8ebbf9645d437735c5abbcf0fa3c10a187eac5e81c9085d555"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/direct-input-route.json",
+          "sha256": "6a2331ba5880ebfaa35a4b0eea2cccdce061cf18074258f385debc7a0d0fab90"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/candidate.json",
+          "sha256": "f0cd71472d059d18334c6b61efc50f9101cb3f0d44ddd1dc85efafd1f4713a77"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "ffe87cff30bd38cb27f824f584dbf726990f211259bf743d97aa989f42ce3993"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "2c9966b57d2b7455296f193d4027a514aa783828a7f0cb1c0064ec44081c8410"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/campaign-engine/summary.json",
+          "sha256": "a8922099b290aec37f34990561b995a50b0da2010e25023b6081f8a91290e825"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2100203999471640064-1/psf/direct-probability-psf-v2/campaign/plan.json",
+          "sha256": "ecff474db4f2d06ed57c6ebc76b54b0c363b381e06c069146b5fb754ca8979df"
+        }
+      ],
+      "route": "DIRECT_FAST_TRICERATOPS_ON_PSF_FLAT",
+      "signal_id": "rust-v6-2100203999471640064-1",
+      "native_fit": {
+        "performed": false,
+        "reason": "Explicit user request to skip additional custom fitting"
+      },
+      "probability": {
+        "performed": true,
+        "repeats": 2,
+        "planned_maximum_repeats": 20,
+        "stopped_early": true,
+        "draws_per_scenario_per_repeat": 1000000,
+        "fpp": {
+          "mean": 0.9730183856490862,
+          "repeats": [
+            0.9460406296218453,
+            0.999996141676327
+          ]
+        },
+        "nfpp": {
+          "mean": 0.973018365050766,
+          "repeats": [
+            0.9460406295929591,
+            0.9999961005085728
+          ]
+        },
+        "thresholds": {
+          "FPP": 0.015,
+          "NFPP": 0.001
+        },
+        "probability_thresholds_met": false,
+        "complete_20_repeat_campaign": false,
+        "completed_repeats": [
+          {
+            "index": 0,
+            "FPP": 0.9460406296218453,
+            "NFPP": 0.9460406295929591,
+            "calculate_seconds": 426.27248612511903
+          },
+          {
+            "index": 1,
+            "FPP": 0.999996141676327,
+            "NFPP": 0.9999961005085728,
+            "calculate_seconds": 426.8734246250242
+          }
+        ],
+        "mean_seconds_per_repeat": 426.5729553750716,
+        "leading_scenarios_by_repeat": [
+          {
+            "seed_index": 0,
+            "scenarios": [
+              {
+                "source_id": "2100203995173423872",
+                "scenario": "NEB",
+                "probability": 0.9460406295929589
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "PTP",
+                "probability": 0.05374806467053907
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "TP",
+                "probability": 0.00020239474084832786
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "DTP",
+                "probability": 8.910966767338426e-06
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "SEBx2P",
+                "probability": 2.6923056336026516e-11
+              }
+            ]
+          },
+          {
+            "seed_index": 1,
+            "scenarios": [
+              {
+                "source_id": "2100203995173423872",
+                "scenario": "NEB",
+                "probability": 0.9999961003508
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "TP",
+                "probability": 2.8621925614900275e-06
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "DTP",
+                "probability": 6.475260432855087e-07
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "PTP",
+                "probability": 3.486050682764506e-07
+              },
+              {
+                "source_id": "2100203999471640064",
+                "scenario": "STP",
+                "probability": 2.119865363302234e-08
+              }
+            ]
+          }
+        ]
+      },
+      "size": {
+        "triceratops_intended_host_best_draws_earth_radii": {
+          "median": 19.033722529571143,
+          "minimum": 18.74152922474999,
+          "maximum": 19.3259158343923,
+          "scope": "Best intended-host TP draw in each repeat; not a radius posterior or credible interval."
+        },
+        "adopted_radius": false
+      },
+      "interpretation": "Direct supplied-clock V3 evaluation prefers nearby false-positive scenarios; the early screen stopped. This is not a reproduced EB mechanism or a physical false-positive denial.",
+      "stellar_distance_assumptions": {
+        "original_scene_parallax_mas": 0.7183860852631815,
+        "gaia_parallax_mas": 0.7183860852631815,
+        "gaia_parallax_error_mas": 0.051543765,
+        "replacement": null
+      }
+    }
+  ],
+  "queue": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/queue.json",
+    "sha256": "8f08e7a2511523d697fd5b0b5250131efdf04599156190975d9f22300f0537dc"
+  },
+  "terminal_status": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/status.json",
+    "sha256": "53b8d68a983bc50c6cb078f7a864a0abf5ee65fd33fabd697f14733e97225e5b"
+  },
+  "probability_scope": "Both probability studies stopped at the predeclared first-two-repeat futility screen. Their mean FPP/NFPP are conditional estimates from two repeats, not completed 20-repeat validation campaigns. Statistical model preference does not reproduce an astrophysical false-positive mechanism."
+}

@@ -1,0 +1,168 @@
+[
+  {
+    "config": {
+      "coarse_phase_oversample": 3,
+      "coarse_search_snr_min": 4.0,
+      "coherence_ranking": {
+        "method": "native_bin_shared_intercept",
+        "minimum_events": 3
+      },
+      "depth_ppm_max": 6000.0,
+      "depth_ppm_min": 10.0,
+      "detrend_window_cadences": 97,
+      "detrending": {
+        "cval": 5.0,
+        "method": "biweight",
+        "window_days": 0.5
+      },
+      "dip_inverse_snr_ratio_min": 1.5,
+      "duration_days": [
+        0.04,
+        0.08,
+        0.12,
+        0.2,
+        0.32
+      ],
+      "duration_envelope": {
+        "exposure_margin_days": 0.02043361111111111,
+        "radius_ratio_max": 0.2,
+        "rho_min_g_cm3": 1.0
+      },
+      "experimental_search": {
+        "coarse_correlation": 0.8,
+        "duration_days": [
+          0.028,
+          0.04,
+          0.056,
+          0.08,
+          0.112,
+          0.16,
+          0.224,
+          0.32
+        ],
+        "long_duration_days": [
+          0.06,
+          0.084,
+          0.12,
+          0.168,
+          0.24,
+          0.336,
+          0.48
+        ],
+        "max_refinements_per_duration": 64,
+        "maximum_period_trials": 2000000,
+        "maximum_refinement_trials": 64,
+        "refinement_correlation": 0.95,
+        "skip_redundant_intervals": true
+      },
+      "global_fundamental_conditioning": {
+        "method": "profiled_fixed_diagonal_global_fundamental",
+        "stage": "after_final_distinct_proposals"
+      },
+      "harmonic_delta_log_likelihood_max": 0.0,
+      "high_rank_inverse_snr_ratio_min": 1.5,
+      "high_rank_start": 6,
+      "input_view": "preferred_full",
+      "long_period_search": {
+        "detrending": {
+          "cval": 5.0,
+          "method": "biweight",
+          "window_days": 1.0
+        },
+        "duration_days": [
+          0.06,
+          0.1,
+          0.16,
+          0.24,
+          0.4
+        ],
+        "period_max_days": 100.0,
+        "period_min_days": 30.0
+      },
+      "max_proposals_per_source": 10,
+      "max_refined_peaks_per_band": 100,
+      "max_search_hypotheses_per_source": 50,
+      "maximum_transit_overlap": 0.2,
+      "min_observed_events": 3,
+      "min_observed_quarters": 1,
+      "min_quarter_cadences": 100,
+      "noise_model": {
+        "gap_days": 0.5,
+        "maximum_scale_fraction": 2.0,
+        "method": "local_point",
+        "minimum_scale_fraction": 0.5,
+        "point_prior_samples": 64,
+        "window_days": 5.0
+      },
+      "odd_even_sigma_max": 3.5,
+      "period_dedup_fraction": 0.001,
+      "period_grid_size": 20000,
+      "period_max_days": 30.0,
+      "period_min_days": 0.5,
+      "period_refine_points": 21,
+      "physical_template": {
+        "density_max_g_cm3": 150.0,
+        "density_min_g_cm3": 1.0,
+        "duration_scales": [
+          0.8,
+          1.0,
+          1.25
+        ],
+        "epoch_offsets": [
+          -0.5,
+          -0.25,
+          0.0,
+          0.25,
+          0.5
+        ],
+        "exposure_days": 0.02043361111111111,
+        "gap_days": 0.5,
+        "integration_samples": 11,
+        "knot_spacing_days": 0.75,
+        "maximum_profile_trials": 256,
+        "maximum_seeds_per_band": 64,
+        "profile_samples": 1025,
+        "profiles": [
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          }
+        ],
+        "radius_ratio": 0.02
+      },
+      "preserve_cross_band_hypotheses": true,
+      "proposal_budget_per_band": true,
+      "refine_local_maxima_only": true,
+      "refine_phase_oversample": 10,
+      "search_snr_min": 7.1,
+      "sort_proposals_by_refined_snr": true,
+      "status": "DEVELOPMENT_PROPOSALS_ONLY"
+    },
+    "engine": "evolve_native_coherence",
+    "name": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002"
+  }
+]

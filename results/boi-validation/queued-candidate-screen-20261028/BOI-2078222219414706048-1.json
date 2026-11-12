@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-28T07:40:46.148341+00:00",
+  "boi_id": "BOI-2078222219414706048-1",
+  "source_id": "2078222219414706048",
+  "signal_id": "shallow-v1-2078222219414706048-4",
+  "clock": {
+    "period_days": 25.386605165418217,
+    "epoch_bkjd": 144.8572305690311,
+    "duration_days": 0.4000000000000001
+  },
+  "original": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2078222219414706048-1/acquired/original-kbonus-attempt1.response",
+  "sha256": "e61cc51ed1b2095caba628e2d4eb53e6ecff8522b3636896fe4ef79b5741f809",
+  "psf_flat_depth": {
+    "status": "MEASURED",
+    "depth_fraction": 0.00030016660798927794,
+    "depth_error": 3.4502642176957684e-05,
+    "events": 57,
+    "depth_chi2": 188.4870224321774,
+    "degrees_of_freedom": 48,
+    "largest_information_fraction": 0.07839302449340294,
+    "sample_count": 6673
+  },
+  "psf_flat_train": {
+    "status": "MEASURED",
+    "events": 49,
+    "observed_positive_fraction": 0.7959183673469388,
+    "expected_positive_fraction": 0.823855666582486,
+    "positive_deficit_z": -0.5450262007138394,
+    "scope": "Predicted-event dip signs under a shared measured depth and local errors; the z score is a coherence diagnostic, not a calibrated false-alarm probability"
+  },
+  "odd_even": {
+    "status": "MEASURED",
+    "difference": 0.0001686646200373484,
+    "error": 7.278566404175305e-05,
+    "sigma": 2.3172780280000604,
+    "two_depth_bic_gain": -3.436047353851758
+  },
+  "secondary_phase_half": {
+    "status": "MEASURED",
+    "depth_fraction": 2.732687467692098e-05,
+    "depth_error": 3.98079529616673e-05,
+    "events": 58,
+    "depth_chi2": 135.82571785315127,
+    "degrees_of_freedom": 50,
+    "largest_information_fraction": 0.08010416259954156,
+    "sample_count": 6852
+  },
+  "helper_loading": "Unchanged array-only lc2 function ASTs loaded without the unused Parquet reader dependency.",
+  "scope": "Diagnostic at the already-declared clock and duration, using unchanged vetting_periodic functions and config. No detection search, fit, acceptance decision, probability allocation or queue change."
+}

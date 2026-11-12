@@ -1,0 +1,23 @@
+{
+  "source_id": "2104058096963805696",
+  "seed": 202610206267058,
+  "attempted_draws_per_source_scenario": 256,
+  "retained_draws_per_fixture_scenario": 8,
+  "scenario_names": [
+    "TP",
+    "EB",
+    "EBx2P",
+    "PTP",
+    "STP",
+    "DTP",
+    "BTP",
+    "NTP:2104057989586407424"
+  ],
+  "original_reference": {
+    "path": "/srv/kbonus/dump/boi-further-validation-20261019/reviewed-runtime/pipeline/vetting/validation_models.py",
+    "sha256": "bee01d880fab4405b15b4054c21e687bc0b0e93f31614c72a158a32d4181fdb2"
+  },
+  "fixture_sha256": "45be92fea3aa21745ca3e1e1d8a5ecab151e9bd4049dbd78f60fc1f7d5291b35",
+  "fixture_bytes": 145343,
+  "scope": "Immutable derived gold from frozen real candidate inputs. Expected outputs come from the original aperture function, not the optimized implementation. No probability integration or candidate decision."
+}

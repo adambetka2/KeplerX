@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "protocol": "kbonus-dwarf-shallow-detector-calibration-v1",
+  "seed": "forgotten-stars-dwarf-shallow-20261010",
+  "view": "preferred_full",
+  "view_order": ["psf_qdiag", "sap_qdiag"],
+  "stages": {"development": [500, 1000, 5000], "confirmation": [10000]},
+  "success": {"partition": "confirmation", "count": 10000, "unconditional_exact_recovery_min": 0.85},
+  "depth_bins_ppm": [[40, 100], [100, 250], [250, 500], [500, 1000], [1000, 2000], [2000, 4000]],
+  "period_days": [0.5, 100.0],
+  "impact_parameter": [0.0, 0.9],
+  "limb_darkening_u1": [0.3, 0.6],
+  "limb_darkening_u2": [0.1, 0.3],
+  "exposure_days": 0.02043361111111111,
+  "supersample_factor": 255,
+  "matching": {"timing_tolerance": "half_physical_duration_plus_one_exposure", "period_tolerance": "maximum_accumulated_drift_within_timing_tolerance", "exact_fundamental_only": true},
+  "selection": "Use the frozen population's parent-hash development/confirmation split; hash-ranked distinct source IDs, alternating M/K, no photometric or detector selection. Balanced depth strata assigned before reading light curves.",
+  "geometry": "Circular physical transit models with host-specific fiducial density inferred from frozen Mamajek dwarf-sequence mass/radius at Gaia temperature; these are not measured properties of individual hosts. Quadratic limb-darkening coefficients are drawn from the declared physical sensitivity prior.",
+  "injection": "Add a deterministic per-quarter source-baseline decrement before unchanged LC2 preparation and shallow-detector detrending; preserve observed noise, errors, quality flags, missing cadences and archive masks.",
+  "claim_boundary": "Detector-only flux-level recovery conditional on archived KBonus extraction in the recorded photometry view. PSF_FLAT trials additionally condition on upstream flattening. Full PSF is preferred; SAP is used only where full PSF is unavailable, with the input-only choice recorded. No vetting, localization, validation, occurrence rate or upstream extraction completeness is measured."
+}

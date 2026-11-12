@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-21T06:55:13.895815+00:00",
+  "source_id": "2073666564790289664",
+  "kic": 4948140,
+  "signal_id": "rust-v6-2073666564790289664-1",
+  "status": "HELD_NATIVE_DETRENDING_PROTECTION_EDGE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Dynamic nested finished exit0, native weightESS7186.01 and stopping.696<1; independent finite priors/posteriors and direct batman replays passed. Representative exact2.0474h model has zero unprotected real cadences. Across full baseline only41.44percent equal samples satisfy approximate all-event protection. Exact worst/10th/25th-percentile margin checks give respectively6/0/1unprotected real cadences, maximum14.63/0/.278ppm. This is a SMALL preparation-edge effect, not demonstrated major bias or an astrophysical false-positive mechanism. Original full-posterior transit coverage remains unestablished; no silent wider-mask adoption or tail selection under frozen protocol.",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/native-nested-review-v1.json",
+    "sha256": "0be02b6b51eb8e046b5ce1ded1799d56b54628e4f4a277c87b1d126a65831a5a"
+  },
+  "measurements": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/native-posterior-review-measurements-v1.json",
+    "sha256": "c3465cf2ba857b33788f7e972fa4d1172baf0365fc97aebfabe44d5acb66aaa3"
+  },
+  "exact_tail_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/native-exact-protection-tail-review-v1.json",
+    "sha256": "e83a62785011bedb07b7915ace7cff3ef4c0de10f35312d55483e3cf1fc9e1eb"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/native-freeze.json",
+    "sha256": "1d030ed17951f74cc3f1f25cd7a8e4d179a6df0af649c6184a65def773dbde4a"
+  },
+  "terminal": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/native-terminal-process-check-v1.json",
+    "sha256": "ea3a92aa6233b632fd2fab83ff4cbfc46df523f95dbc03d512c8f4fe8038ba6d"
+  },
+  "clock_adopted": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve outputs/freeze and undecided review. Future duration/clock-aware preparation requires a separate reviewed generation; no rescue tonight. Advance next eligible host.",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664",
+  "hold": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/readiness-hold-v1.json",
+    "sha256": "1059104b7d31a61e2012b5f510dfb8d87c02e28fe2083ba900a9685a7d55ca8f"
+  }
+}

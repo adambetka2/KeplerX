@@ -1,0 +1,65 @@
+{
+  "recorded_utc": "2026-10-20T10:11:09.063147+00:00",
+  "status": "RUNNING_FIRST_TWO_PRIMARY",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "active_kic": 8805426,
+  "source_id": "2106383701495087232",
+  "tic": 279912976,
+  "campaign": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/probability-v2",
+  "freeze_sha256": "80efd0e5e796fa04027379fd049b40bbaa7d8de4a5cefa2c2a37b4a45813a3e9",
+  "dependencies": 1030,
+  "launchctl_label": "local.spacelab.job.boi-local-2106383701495087232-v2",
+  "planned_primary": 20,
+  "recovered_diagnostics": 3,
+  "scenario_families": 66,
+  "draws_per_scenario": 1000000,
+  "cpu_budget": 10,
+  "initial_threads_per_run": 5,
+  "native_convergence": {
+    "rank_rhat_maximum": 1.0207759972175914,
+    "reference_epoch_bulk_ess": 334.238239430358,
+    "radius_ratio_median_over_std": 11.476721993993312,
+    "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+    "passed": true
+  },
+  "adopted_final": {
+    "proposed_final_period_days": 1.6904633718249646,
+    "proposed_final_reference_epoch_bkjd_tdb": 866.0367071175551,
+    "time_system": "BKJD TDB (BJD_TDB - 2454833)"
+  },
+  "futility_rule": "Stop if BOTH firstFPP>=0.10 or BOTH firstNFPP>=0.01; otherwise finish all20plus3diagnostics.",
+  "previous": {
+    "kic": 10196617,
+    "status": "STOPPED_EARLY_FUTILITY_NO_ADMISSION",
+    "record": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5/audit/early-futility-closeout.json"
+  },
+  "evidence": {
+    "native": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/native-fit-review.json",
+      "sha256": "6047fda73fce1b29a2f85e68f7d191d26b1fed0417dbe4fa63c939202e1f35bd"
+    },
+    "timing": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/native-clock-adoption.json",
+      "sha256": "92591a74c66563215c9e74bdebc4c39314f8cee148300d23ea5cfc2abe5f2947"
+    },
+    "spacecraft": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/spacecraft-review-closeout-v1.json",
+      "sha256": "0ad301786a8f9df02fb16fdd53a11de766fab058dc2ba68d8ce8dab7d537c634"
+    },
+    "catalogue": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/catalogue-adjudication.json",
+      "sha256": "571b4672d57223ed9ee3819feaa3c5a22fb3d618ba6998ca986c9aaa0e57e31c"
+    },
+    "revalidation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/probability-v2/audit/revalidation/report.json",
+      "sha256": "17a2fbefece358c2a43266f22a84448825ce32eeb93e83fb8e0763e79963a1e1"
+    },
+    "lineage": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/probability-generation-lineage.json",
+      "sha256": "0b3b2510a6634faed288a405c6b60ebb05da40561147b76a73d6dee2c944fc82"
+    }
+  },
+  "scientific_disposition": "REMAINS_PC",
+  "resource_policy": "One active BOI; shared10CPUbudget, quiet hourly monitoring. No competing work.",
+  "server_compute_started": false
+}

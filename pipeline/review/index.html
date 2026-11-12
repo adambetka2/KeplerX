@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SpaceLab · BOI review</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/review.js" defer></script>
+  </head>
+  <body>
+    <header class="control-deck">
+      <div class="control-row">
+        <div class="dataset-control">
+          <label for="dataset">DATASET</label>
+          <div class="dataset-line">
+            <select id="dataset" aria-label="Current review dataset"></select>
+            <button
+              id="new-dataset"
+              title="Create a new dataset"
+              aria-label="New dataset"
+            >
+              +
+            </button>
+          </div>
+          <form id="create-form" hidden>
+            <input
+              id="dataset-name"
+              placeholder="Dataset name"
+              maxlength="80"
+              aria-label="New dataset name"
+              required
+            />
+            <button>Create</button>
+            <button type="button" id="cancel-create">Cancel</button>
+          </form>
+        </div>
+        <nav id="categories" aria-label="Detector queues"></nav>
+        <div class="tally">
+          <div><strong id="kept">0</strong><span>YES</span></div>
+          <div><strong id="denied">0</strong><span>NO</span></div>
+          <div><strong id="pending">0</strong><span>TO REVIEW</span></div>
+          <div class="progress-track"><div id="progress"></div></div>
+        </div>
+        <div class="export-controls">
+          <a id="export-json">JSON ↗</a><a id="export-csv">CSV ↗</a>
+        </div>
+      </div>
+      <div class="queue-bar">
+        <div class="queue-tools">
+          <select id="filter" aria-label="Review status">
+            <option value="UNREVIEWED">Unreviewed</option>
+            <option value="ALL">All</option>
+            <option value="YES">Yes</option>
+            <option value="NO">No</option>
+          </select>
+          <input
+            id="search"
+            placeholder="Find BOI / Gaia…"
+            aria-label="Find a signal"
+          />
+          <span id="queue-count"></span>
+        </div>
+        <div id="queue" role="list" aria-label="Signals"></div>
+      </div>
+    </header>
+    <main>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <section id="review-area">
+        <div class="signal-strip">
+          <div class="signal-identity">
+            <div class="section-label" id="signal-lane"></div>
+            <h1 id="boi-name">LOADING ARCHIVE</h1>
+            <div class="source-line" id="source-line"></div>
+          </div>
+          <div class="metrics" id="metrics"></div>
+          <div class="object-position">
+            <span id="review-position"></span
+            ><strong id="current-decision">UNREVIEWED</strong>
+          </div>
+        </div>
+        <div class="monitor-bank">
+          <section class="monitor signal-monitor">
+            <div class="screen">
+              <div class="screen-toolbar">
+                <div class="view-buttons" id="views">
+                  <button data-view="psf_flat">PSF FLAT</button
+                  ><button data-view="psf_qdiag">PSF</button
+                  ><button data-view="sap_qdiag">SAP</button>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas
+                  id="curve"
+                  aria-label="Measured event-window light curve"
+                ></canvas>
+                <div id="plot-message">Loading real event windows…</div>
+              </div>
+              <div class="plot-caption">
+                <span id="plot-caption"></span>
+              </div>
+            </div>
+            <div class="monitor-controls">
+              <div class="plot-controls">
+                <select id="proposal" aria-label="Detection proposal"></select
+                ><select id="mode" aria-label="Plot mode">
+                  <option value="stack">Stacked windows</option>
+                  <option value="odd-even">Odd / even</option>
+                  <option value="event">Individual event</option></select
+                ><button id="scale" title="Toggle full vertical range">
+                  FULL RANGE
+                </button>
+              </div>
+              <div class="timeline-head">
+                <select id="event" aria-label="Individual event window"></select
+                ><canvas
+                  id="timeline"
+                  aria-label="Original event-window centres in BKJD"
+                ></canvas>
+              </div>
+            </div>
+          </section>
+          <section class="monitor full-monitor">
+            <div class="screen full-screen">
+              <div class="screen-toolbar">
+                <div class="view-buttons" id="full-views">
+                  <button data-view="psf_flat">PSF FLAT</button
+                  ><button data-view="psf_qdiag">PSF</button
+                  ><button data-view="sap_qdiag">SAP</button>
+                </div>
+                <div class="plot-controls">
+                  <select id="full-mode" aria-label="Full curve time scale">
+                    <option value="time">Time</option>
+                    <option value="phase">Orbital phase</option>
+                  </select>
+                </div>
+              </div>
+              <div class="full-wrap">
+                <canvas
+                  id="full-curve"
+                  aria-label="Complete original light curve with detected event markers"
+                  title="Drag to zoom; click an event to inspect it"
+                ></canvas>
+                <div id="full-message">Loading full light curve…</div>
+              </div>
+              <div class="plot-caption">
+                <span id="full-caption"></span>
+              </div>
+            </div>
+            <div class="monitor-controls full-controls">
+              <select id="quarter" aria-label="Full curve quarter">
+                <option value="all">All quarters</option>
+              </select>
+              <select id="flux-mode" aria-label="Full curve flux scale">
+                <option value="normalized">Quarter-normalized ppm</option>
+                <option value="native">Native flux</option>
+              </select>
+              <button id="reset-range">RESET</button>
+              <div class="host-controls" id="host"></div>
+            </div>
+          </section>
+        </div>
+        <details class="inspection-details">
+          <summary>EVIDENCE</summary>
+          <div class="evidence-grid">
+            <section>
+              <div class="section-label">ORBITAL CHECKS</div>
+              <div id="orbital-checks"></div>
+            </section>
+            <section>
+              <div class="section-label">FROZEN PIPELINE</div>
+              <div id="gates"></div>
+              <a id="original">SOURCE EVIDENCE ↗</a>
+            </section>
+          </div>
+        </details>
+        <div class="related" id="related"></div>
+        <footer class="decision-bar">
+          <div class="navigation">
+            <button id="previous" title="Previous signal">←</button
+            ><button id="undo" disabled>UNDO <kbd>Z</kbd></button>
+            <span id="save-status" role="status" aria-live="polite"></span>
+          </div>
+          <div class="review-note">
+            <select id="reason" aria-label="Optional exclusion reason">
+              <option value="">Reason</option>
+              <option value="EB">Eclipsing binary</option>
+              <option value="VARIABLE">Stellar variability</option>
+              <option value="ARTIFACT">Instrument / contamination</option>
+              <option value="UNCLEAR">Unclear</option>
+              <option value="OTHER">Other</option></select
+            ><input
+              id="note"
+              maxlength="4000"
+              placeholder="Note"
+              aria-label="Review note"
+            />
+          </div>
+          <div class="decision-actions">
+            <button id="no" class="no" disabled>NO <kbd>N</kbd></button
+            ><button id="yes" class="yes" disabled>YES <kbd>Y</kbd></button>
+          </div>
+          <button id="skip">NEXT <kbd>→</kbd></button>
+        </footer>
+      </section>
+      <section id="empty" hidden>
+        <div class="empty-symbol">⊕</div>
+        <h2>Queue complete</h2>
+        <p>Switch queues or show all signals to revisit decisions.</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-21T03:02:15.785778+00:00",
+  "source_id": "2102612750272489216",
+  "kic": 7595917,
+  "status": "SAME_CANDIDATE_PARENT_PRF_INPUTS_STAGED_NATIVE_STILL_RUNNING",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "parent_kic": 7595928,
+  "observed_source_quarters": 17,
+  "unobserved_parent_context": 0,
+  "all_source_cadence_matches": true,
+  "prf_files": 4,
+  "original_prf_hashes_verified": 2,
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/parent-authentication-v1.json",
+      "sha256": "8b95732a13f7aa0c4f7225e65fe7116a73463d746e1d4042ac71195d831f398d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/prf-authentication-v1.json",
+      "sha256": "fcab7365786b2b34ca06057bcbfb38baf17ef85d6594f470e3ea83f0f35e23be"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/stellar-route-wording-clarification-v1.json",
+      "sha256": "a9be814a4088521e9ff2515c2c1859be8d1d4cc817a4f27ba014d0bc5d3117e7"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/alias-readiness-review-v1.json",
+      "sha256": "ee8b241e17fe7360814c5924d414f8a35180f05c349a458be60949eb9d841f54"
+    }
+  ],
+  "stellar_wording_clarification": "The inherited significantly discrepant wording is too strong: Gaia GSPphot distance implies a1.886sigma parallax offset, so it is not statistically excluded by this measurement. The complete paired TIC M/R route at3407pc is consistent with measured parallax and supplies the mass absent from Gaia. Alternative Gaia smaller radius is also retained within broad native radius uncertainty; no unique stellar solution is claimed.",
+  "probability_runs": 0,
+  "scope": "Same candidate lightweight input acquisition only, no competing candidate/benchmark or live native scientific changes. Source apertures/response/final-clock spacecraft and complete scene/noise/physical closeout remain pending; no FPP readiness or validation inferred."
+}

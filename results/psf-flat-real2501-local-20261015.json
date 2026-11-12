@@ -1,0 +1,218 @@
+{
+  "status": "AUTHORIZED_AVAILABLE_LOCAL_PSF_FLAT_SUBSET",
+  "authorization": "Adam: Rescan disks; if the wrong PCIe is connected, scan the available subset and then run its proposals through our vetting pipeline. Available count is 2501, missing is 2499; available subset stated before launch.",
+  "authorized_at": "2026-10-15T07:16:34.156408+00:00",
+  "parent_policy": "/Users/adam/Other/spacelab/results/psf-flat-real5000-local-20261015.json",
+  "selection": "/Users/adam/Other/spacelab/results/psf-flat-real2501-20261015.csv",
+  "sources": 2501,
+  "population_counts": {
+    "K": 2369,
+    "M": 132
+  },
+  "prepared_directory": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/run/prepared",
+  "preparation_identity": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/run/preparation-identity.json",
+  "out": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/available2501-v1",
+  "python": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/runtime/bin/python",
+  "workers": 10,
+  "design": {
+    "config": {
+      "coarse_phase_oversample": 3,
+      "coarse_search_snr_min": 4.0,
+      "coherence_ranking": {
+        "method": "native_bin_shared_intercept",
+        "minimum_events": 3
+      },
+      "depth_ppm_max": 6000.0,
+      "depth_ppm_min": 10.0,
+      "detrend_window_cadences": 97,
+      "detrending": {
+        "cval": 5.0,
+        "method": "biweight",
+        "window_days": 0.5
+      },
+      "dip_inverse_snr_ratio_min": 1.5,
+      "duration_days": [
+        0.04,
+        0.08,
+        0.12,
+        0.2,
+        0.32
+      ],
+      "duration_envelope": {
+        "exposure_margin_days": 0.02043361111111111,
+        "radius_ratio_max": 0.2,
+        "rho_min_g_cm3": 1.0
+      },
+      "experimental_search": {
+        "coarse_correlation": 0.8,
+        "duration_days": [
+          0.028,
+          0.04,
+          0.056,
+          0.08,
+          0.112,
+          0.16,
+          0.224,
+          0.32
+        ],
+        "long_duration_days": [
+          0.06,
+          0.084,
+          0.12,
+          0.168,
+          0.24,
+          0.336,
+          0.48
+        ],
+        "max_refinements_per_duration": 64,
+        "maximum_period_trials": 2000000,
+        "maximum_refinement_trials": 64,
+        "refinement_correlation": 0.95,
+        "skip_redundant_intervals": true
+      },
+      "global_fundamental_conditioning": {
+        "method": "profiled_fixed_diagonal_global_fundamental",
+        "stage": "after_final_distinct_proposals"
+      },
+      "harmonic_delta_log_likelihood_max": 0.0,
+      "high_rank_inverse_snr_ratio_min": 1.5,
+      "high_rank_start": 6,
+      "input_view": "preferred_full",
+      "long_period_search": {
+        "detrending": {
+          "cval": 5.0,
+          "method": "biweight",
+          "window_days": 1.0
+        },
+        "duration_days": [
+          0.06,
+          0.1,
+          0.16,
+          0.24,
+          0.4
+        ],
+        "period_max_days": 100.0,
+        "period_min_days": 30.0
+      },
+      "max_proposals_per_source": 10,
+      "max_refined_peaks_per_band": 100,
+      "max_search_hypotheses_per_source": 50,
+      "maximum_transit_overlap": 0.2,
+      "min_observed_events": 3,
+      "min_observed_quarters": 1,
+      "min_quarter_cadences": 100,
+      "noise_model": {
+        "gap_days": 0.5,
+        "maximum_scale_fraction": 2.0,
+        "method": "local_point",
+        "minimum_scale_fraction": 0.5,
+        "point_prior_samples": 64,
+        "window_days": 5.0
+      },
+      "odd_even_sigma_max": 3.5,
+      "period_dedup_fraction": 0.001,
+      "period_grid_size": 20000,
+      "period_max_days": 30.0,
+      "period_min_days": 0.5,
+      "period_refine_points": 21,
+      "physical_template": {
+        "density_max_g_cm3": 150.0,
+        "density_min_g_cm3": 1.0,
+        "duration_scales": [
+          0.8,
+          1.0,
+          1.25
+        ],
+        "epoch_offsets": [
+          -0.5,
+          -0.25,
+          0.0,
+          0.25,
+          0.5
+        ],
+        "exposure_days": 0.02043361111111111,
+        "gap_days": 0.5,
+        "integration_samples": 11,
+        "knot_spacing_days": 0.75,
+        "maximum_profile_trials": 256,
+        "maximum_seeds_per_band": 64,
+        "profile_samples": 1025,
+        "profiles": [
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.5,
+              0.2
+            ]
+          },
+          {
+            "impact": 0.0,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          },
+          {
+            "impact": 0.75,
+            "limb_darkening": [
+              0.7,
+              0.1
+            ]
+          }
+        ],
+        "radius_ratio": 0.02
+      },
+      "preserve_cross_band_hypotheses": true,
+      "proposal_budget_per_band": true,
+      "refine_local_maxima_only": true,
+      "refine_phase_oversample": 10,
+      "search_snr_min": 7.1,
+      "sort_proposals_by_refined_snr": true,
+      "status": "DEVELOPMENT_PROPOSALS_ONLY"
+    },
+    "engine": "evolve_native_coherence",
+    "name": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002"
+  },
+  "bindings": {
+    "/Users/adam/Other/spacelab/dwarfs/shallow/batch_bls.c": "24c724a84a7415cc76c249f30c3a483edf7fbb5eb45b6468debd17a112097069",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/coherence.c": "5aab83979b12b74930c0e4c5336b29772ed8f57a782576b74378fe6dce013942",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/current-designs.json": "284c32951bbf4e249dcde3303f4afc7db101efd4dcc356545d9a63812efea8f1",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolution.py": "d87e8958c54686cc92d0177fc58c5a10cfa556782f978922f2c31b266858b072",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_detector.py": "77b49cefd9651352c125c55395618316b65b1f5cc611d26846aa2183b795c109",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_global_fundamental.py": "18f5ceae1d678a4182ae83efe4f2465f835af5ac719a718c8b4f822ed4852108",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_native_coherence.py": "d900206db0f3f29b946d9971e039104d63c9b6b9e72cc969dff32b5ef0520174",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_noise.py": "14dc9b45b958e303d5c50a596a9228cd204dd421a1cdd6e2140e02950d9e06ae",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_psf_flat.py": "9197b11bcf9310e82576a0616670132acf3cc5e34fb4aed5ac947275c7549598",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/evolve_template.py": "6916f3de5ab8598843e1bef65d9111bf2890744bed98a477b5f589d35633aef2",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/masks.py": "d89cd8a9082f6dd220ea5f3b291070b3006ebb9a7a14a8b56853f9753b8bd680",
+    "/Users/adam/Other/spacelab/dwarfs/shallow/null_calibration.py": "a735dad81c7c26bfdf30a74130fa93be35d1db5d01820ba24eb3ad7d55ff7730",
+    "/Users/adam/Other/spacelab/pipeline/shallow/bls.c": "5ea189828c7d7625ea2b923416065ff74df6dd98370736cc8b5d7464c0a4c97c",
+    "/Users/adam/Other/spacelab/pipeline/shallow/run.py": "ffd2544418506526e04166d24be88df79a54a7d49126787e29b9dbd11543856c",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/sap_retrieval.py": "78cc7e9c8637f57e1d046a9b7bef43f7f0393dc5d829a7cf42cdafc2c224f01d",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/flat_retrieval.py": "b7bdb3125ca55f5189d026cbcffe00cb1138914e85ebc06029526729e8fbac77",
+    "/Users/adam/Other/spacelab/dwarfs/cohort/calibrate.py": "1f49e08bdb18ac68fd564864a340e6d753b532f453bbde4ec9767d293ec5535a",
+    "/Users/adam/Other/spacelab/dwarfs/cohort/evolve_controls.py": "d4a60c4829d16866201818cdc8631d66c89acefdf7c4a13e808620914ed26087",
+    "/Users/adam/Other/spacelab/dwarfs/harness/survey.py": "8ee0bbca0ada873dba45bf1fcdc329044b0d6d950b97c8ad14612428450bbd87",
+    "/Users/adam/Other/spacelab/pipeline/deterministic/injections.py": "cf931ff504da934534338083c5bd74f91cc37af542bb99de8a3889d6c6f30420",
+    "/Users/adam/Other/spacelab/pipeline/deterministic/run.py": "afc81ac2122c2ef867c5dd1f8a8c53c22436e223febb9f36c0831cf4237b5813",
+    "/Users/adam/Other/spacelab/pipeline/deterministic/cloud_public.py": "2bcb30e7c656e254cfb9ff1b386fac38adeb15264d26a896b1ff293239a14467",
+    "/Users/adam/Other/spacelab/pipeline/photometry/lc2.py": "33cc1d728b1c6946372341b15913c7047a0a06c89360f34ae5440b7853bbf85b",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/flat_real.py": "6851719415e04398650cb89776ccd5a92df5af878186548ac4f0ec3b49c5bcf2",
+    "/Users/adam/Other/spacelab/results/psf-flat-real5000-20261014.csv": "4ac3acfa69148af568444d530809d95ef3f09b0fc7dc6f50248e3a3a14c11b80",
+    "/Users/adam/Other/spacelab/results/psf-flat-real5000-trigger-20261014.json": "8deb83b73415bcbeb5c5b2c51716986db390eb4801f38c624a5b7b3cae848a2f",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/flat_local.py": "8795740adf573273cb1d6478a43e7049394990b75a7ec1d2d05536e825906f77",
+    "/Users/adam/Other/spacelab/dwarfs/requirements.txt": "e115b5700464f0ca910085309d01e0fd7b1e674e2b269bbc7cd119599b49f247",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/requirements.txt": "ef5a58207f4de71cb4049053401ac865e783adc328565a9540359f631505b874",
+    "/Users/adam/Other/spacelab/results/psf-flat-real5000-local-20261015.json": "66e060e34e875a681494a8a8a92f143829b365dd50ae298b9417160f81d1fc1b",
+    "/Users/adam/Other/spacelab/results/psf-flat-real2501-20261015.csv": "d7c3c899702a64a0dd7b6691522efa5c0b8f1501c2c24b8c1c8874acbe68c776",
+    "/Users/adam/Other/spacelab/dwarfs/experiments/flat_subset.py": "ae9edaa036512c49d7b142dbb504154414c3153379ef31110295d30a2470dc3a"
+  },
+  "followup": "Run every resulting proposal through the unchanged shared vetting stages in a new local run; keep all held, dismissed and missing-evidence records."
+}

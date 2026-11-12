@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-20T12:01:38.828263+00:00",
+  "source_id": "2100123494603868416",
+  "kic": 3322939,
+  "status": "HELD_NATIVE_POPULATION_CROSSBAND_PAIRING_NO_RESUME",
+  "disposition": "REMAINS_PC",
+  "completed_full_probability_runs": 0,
+  "native_fit": "COMPLETE_PASSED_12000_STEPS",
+  "native_rhat": 1.0179498227348134,
+  "epoch_ess": 322.02008828198916,
+  "radius_ratio_snr": 6.590449385987189,
+  "final_period_days": 7.108791061740837,
+  "final_epoch_bkjd_tdb": 655.7487362121662,
+  "recovered_diagnostics": 0,
+  "source_rows": 5100,
+  "uniquely_paired_rows": 0,
+  "ambiguous_rows": 0,
+  "failure": "Native Gaia/Kepler physical tuples are not uniquely paired",
+  "cause": "Two authenticated official outputs contain no matching physical tuples. The remote RNG state is not recorded; its cause is not established. Both returned submission pages report the same UTC second, so local request times do not establish an RNG explanation.",
+  "action": "Park this case and advance. No redrawn population, seed change, approximate matching, passband substitution, model clipping or discarded source is authorized by this record.",
+  "review_required": "Any crossband population or radiometry change requires explicit review, a separate derived generation and reference revalidation. Do not rerun native fitting or resume this unready probability generation.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/probability-v1/audit/population-pairing-failure-20261020T120138825644Z/plan-build.log",
+      "sha256": "e9225cbe2dd765e10d145a3179c82b00f2e001733eb5a7239d14aea8d8e2e36d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/probability-v1/audit/population-pairing-failure-20261020T120138825644Z/revalidation.log",
+      "sha256": "2070d13c893a7f1305b2cb7642ebada730bb3452e18746d6855dc6ca6d59d475"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene/verified-native-population-pairs.json",
+      "sha256": "faedf5b025e9043459bdccf8d0e118fe5550f6bda46253011749b72eb1d13545"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene/verified-native-population-pairs.npz",
+      "sha256": "00d1de0c5a35d67986b65fecbff5ed72d7ebd9e6b164af5f4783deaa4d8ee3f4"
+    }
+  ],
+  "populations": {
+    "gaia": {
+      "response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene-inputs/trilegal-gaia-attempt-001/poll-20261020T112124168501Z.response",
+        "sha256": "6298bcb69fcee2adfd353cacedabba351d6a0251aaac6f23fb860168cb5f9b99"
+      },
+      "request": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene-inputs/trilegal-gaia-attempt-001/request.json",
+        "sha256": "68e2707aa511affa6fe40e3bb4110f57874b4f7ec1a69909f81cee7b8c40d256"
+      }
+    },
+    "kepler": {
+      "response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene-inputs/trilegal-kepler-attempt-001/poll-20261020T112124902012Z.response",
+        "sha256": "fe27286d4b2935f81ec9d438b770efafc3e71cd29a5addae7726912c593c822a"
+      },
+      "request": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100123494603868416/scene-inputs/trilegal-kepler-attempt-001/request.json",
+        "sha256": "b83d02f9b7772efff2624ff9d9e91a016ad002f2af61070928c9beccc117d047"
+      }
+    }
+  },
+  "physical_scope": "Grazing/body-size degeneracy and sparse bright-neighbor priors remain unresolved. Neither a planet nor an astrophysical false positive is inferred.",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "cpu_budget": 10
+}

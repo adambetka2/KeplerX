@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "name": "KOI-3278",
+  "reference_class": "White-dwarf self-lensing",
+  "class_label_origin": "Published follow-up classification; not inferred solely from this image",
+  "observable_signature": "Recurring brightening pulses and separate occultation dips.",
+  "lookalikes": [
+    "other compact-object lens / eclipse",
+    "blended stellar system",
+    "instrumental transient"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "Published observed figure, with fitted model overlays",
+    "processing": "Detrended, folded Kepler data; observed black points, red 45-minute means, gray fitted model; residuals below."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "orbital_period_d": {
+      "value": 88.18,
+      "approximate": true
+    },
+    "pulse_duration_h": {
+      "value": 5.0,
+      "approximate": true
+    },
+    "pulse_fractional_amplitude": {
+      "value": 0.001,
+      "approximate": true
+    },
+    "display_bin_duration_min": {
+      "value": 45
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Figure reference; no raw measurements downloaded or image digitization. Numeric fields are source-reported photometric quantities.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1404.4379",
+    "classification_paper_url": "https://arxiv.org/abs/1904.11063",
+    "pdf_url": "https://arxiv.org/pdf/1404.4379",
+    "pdf_page_one_based": 3,
+    "figure": "2",
+    "credit": "Authors of linked papers and observing projects",
+    "retrieved": "2026-09-06"
+  },
+  "provenance": {
+    "source_pdf_sha256": "177937f83f5ce410d3e00d91d6aed36634bd4aa5ea730d7f450e55ddbcb3f882",
+    "page_crop_fraction_xyxy": [
+      0.12,
+      0.12,
+      0.9,
+      0.455
+    ],
+    "image_sha256": "2dde49a452747c661be489a7007042926c6b76bc8d5c7b1e24ce23ede80e9f28"
+  },
+  "classification_limit": "Light-curve morphology alone does not establish a compact-object mass or identity; the reference classification uses the full published evidence. No intrinsic stellar parameters are inferred here."
+}

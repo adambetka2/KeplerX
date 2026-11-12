@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-19T21:15:07.411183+00:00",
+  "status": "MK_DETECTOR_VETTING_HANDOFF_VERIFIED",
+  "run": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1",
+  "catalogue": {
+    "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/catalogue.json",
+    "sha256": "a0d9de4a2bda4d30b0f3ddd754d54ec8948becab15bfb8aa958b1b42bf6b44e8"
+  },
+  "exports": {
+    "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/exports.json",
+    "sha256": "ff24761819dc4568f2376d886028e37bed9811cf5c75e5a95e1610762150fc78"
+  },
+  "sources": 9182,
+  "detector_proposals": 17940,
+  "completed_batches": 144,
+  "distinct_boi_source_signal_proposals": 663,
+  "distinct_boi_sources": 473,
+  "boi_proposals_by_population": {
+    "K": 349,
+    "M": 314
+  },
+  "all_batch_result_hashes_verified": true,
+  "controls": [
+    {
+      "population": "K",
+      "source_id": "2079968312597885824",
+      "signal_id": "mk-sap-20261019-2079968312597885824-1",
+      "source_kic": 8964194,
+      "parent_tpf_kic": 8964192,
+      "period_days": 8.977002159830356,
+      "epoch_bkjd": 173.54579398221972,
+      "duration_days": 0.07,
+      "native_view": "sap_qdiag",
+      "prepared_rows": 26918,
+      "selected_signal_events": 67,
+      "exact_preparation_reproduced": true,
+      "native_views_verified": true,
+      "all_supplied_clocks_and_events_reproduced": true,
+      "detector_result": {
+        "path": "/srv/kbonus/dwarfs/surveys/mk-sap-20261014-v1/results/2079968312597885824.json",
+        "sha256": "5d4a9c233e67c4e616f2c48378129f9f04360abc6013c03f330ef291fd4edae4"
+      },
+      "detector_arrays": {
+        "path": "/srv/kbonus/dwarfs/surveys/mk-sap-20261014-v1/results/2079968312597885824.npz",
+        "sha256": "3b5dd71e8c9c68ec53dc8c77c822de31fd2e88e06990da3c99e81ef04467db5b"
+      },
+      "queue": {
+        "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/work/queue/2079968312597885824.json",
+        "sha256": "24467bf203ac0be4222c8f0d10152a1b1c3e409229bba8bafca504493416c441"
+      },
+      "source_evidence": {
+        "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/work/batches/0001/vetting/sources/2079968312597885824.json",
+        "sha256": "129be76eb48c7c3cbbefd29eae7a68af8be5b0f8cc75f345ae836375a5b754e0"
+      },
+      "original_proposals_preserved": true
+    },
+    {
+      "population": "M",
+      "source_id": "2102521666898377600",
+      "signal_id": "mk-sap-20261019-2102521666898377600-2",
+      "source_kic": 0,
+      "parent_tpf_kic": 6938264,
+      "period_days": 11.062871127126199,
+      "epoch_bkjd": 138.83737014833392,
+      "duration_days": 0.112,
+      "native_view": "sap_qdiag",
+      "prepared_rows": 59312,
+      "selected_signal_events": 123,
+      "exact_preparation_reproduced": true,
+      "native_views_verified": true,
+      "all_supplied_clocks_and_events_reproduced": true,
+      "detector_result": {
+        "path": "/srv/kbonus/dwarfs/surveys/mk-sap-20261014-v1/results/2102521666898377600.json",
+        "sha256": "316a7febacbb0ee0389d1965a7f01258002af8dd720c668102ed661958bdafe0"
+      },
+      "detector_arrays": {
+        "path": "/srv/kbonus/dwarfs/surveys/mk-sap-20261014-v1/results/2102521666898377600.npz",
+        "sha256": "8605f6f7aebf2b158e9321ed20f674893d7c79f0e3d1b184fe483790959367f9"
+      },
+      "queue": {
+        "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/work/queue/2102521666898377600.json",
+        "sha256": "56ca72a052dad5e26e4498ef1c03de8477dfe76108422f96939ba8e9ff8acb49"
+      },
+      "source_evidence": {
+        "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/work/batches/0007/vetting/sources/2102521666898377600.json",
+        "sha256": "f26fa3efd8ac28eaa2a17f429f014ac73ca28f606724638b70bff83ba30af48b"
+      },
+      "original_proposals_preserved": true
+    }
+  ],
+  "new_probability_integrations": 0,
+  "native_transit_fits_run": 0,
+  "scientific_code_changed": false,
+  "limits": [
+    "BOI source/signal proposals are not independent planets; alias and readiness review remains candidate-specific.",
+    "No new M/K native fit, probability packet, stellar/scene adapter or production freeze was prepared.",
+    "This replay checks provenance and interface compatibility, not M/K FPP calibration or physical validation.",
+    "The deferred detector recovery gate is not closed by this handoff replay."
+  ],
+  "detailed_report": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/mk-handoff-verification.json",
+    "sha256": "767c2a155c2d47904c43b56e98469770a97bd4c74b92a6c97e862ea9c65bb8f4"
+  },
+  "server_detailed_report": "/srv/kbonus/dump/post-boi-protocol-sync-20261019/mk-handoff-verification.json",
+  "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+  "prospective_policy": {
+    "primary_repeats": 20,
+    "recovery_diagnostics": "Zero normally; exactly three paired seeds only after justified timing review",
+    "unchanged_scientific_inputs": true
+  },
+  "checks": {
+    "local_protocol_tests": {
+      "passed": 7,
+      "log": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/local-tests-v2.log",
+        "sha256": "6bd25cceddb2187b3bd3ac7649097dcd2067f28d18783f416b02a5014b9db0e3"
+      }
+    },
+    "ruff": {
+      "select": "E4,E7,E9,F,I",
+      "status": "PASS",
+      "log": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/ruff-v2.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    "complexity": {
+      "maximum": 10,
+      "status": "PASS",
+      "log": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/complexity-v2.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    "format": {
+      "status": "PASS",
+      "log": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/format-v2.log",
+        "sha256": "f114d83b30c5c657ee43a847a45bafccaea255d82673feb87c26d252c61e29c1"
+      }
+    }
+  },
+  "preserved_diagnostics": [
+    {
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/handoff-first-failure.json",
+        "sha256": "427a51db32d47733521d771753afc9b0bb4a6948f1f723a196b00efd81039112"
+      },
+      "cause": "One-off verifier compared unqualified detector IDs with the view-qualified vetting IDs. Corrected the verifier to apply the existing :sap_qdiag mapping; detector and vetting data unchanged."
+    },
+    {
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/local-tests.log",
+        "sha256": "976507036db3b61bd6016ff1ea03ddc413e56bb31e225b37b3308faf27c1319e"
+      },
+      "cause": "Test fixture used /var temporary path while the receipt canonicalized to /private/var on macOS. Resolve the fixture base path; production integrity checks unchanged."
+    },
+    {
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-sync-20261019/ruff.log",
+        "sha256": "a84af295c06017e679a2d1ace9a54fce9ff6619726dd4709a81cb50450cf5d2d"
+      },
+      "cause": "Ambient Ruff configuration reports 29 existing C408 dict-construction style findings. Explicit core syntax/import/undefined-name checks and complexity pass; no unsafe style rewrites applied."
+    }
+  ],
+  "changed_runtime_scientific_code": false,
+  "changed_test_fixture": "post_boi/test_protocol.py resolves the temporary path before binding it.",
+  "queue_annotation": {
+    "path": "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/final/summary.json",
+    "scope": "Existing completed annotation, not a new catalogue search or physical closeout."
+  },
+  "deployment": "Project rules, canonical protocol, test fixture and this record are to be committed and deployed together; the final byte-equality receipt is stored alongside the detailed report after deployment."
+}

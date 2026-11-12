@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-21T03:59:36.167696+00:00",
+  "source_id": "2126910621514995968",
+  "kic": 8293530,
+  "tic": 159098425,
+  "signal_id": "rust-v6-2126910621514995968-1",
+  "status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "All43sources retained. Most quarters have only target Gaussian-capable and target Gaussian fraction>.985, but Q11/Q15 include bright Gaia2126910651573898112 with relativeTESSflux259: Gaussian target.9752/.9737 versus calibrated core.5167/.5101. Q17 Gaussian.6188 vs core.2826. Complete far-source response and seasonal pooling adequacy unresolved. Core data do not provide full measured scene or physical denial. No native launched and zeroFPP.",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/aperture-response-review-v1.json",
+    "sha256": "74d5c6f49039d0e96b67f583c63a4890526db6eb116d9857aeb92ef06278854d"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/scene-preview-review-v1.json",
+    "sha256": "696ef8cf9c83d6e27162f5a046759fb24b138cd44aaa5e0b844aac4e2bd1a734"
+  },
+  "parents": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/parent-authentication-v1.json",
+    "sha256": "b40066fcafa1702f36447eefea83484932b4c52a626a363c2928119552cab15a"
+  },
+  "prfs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/prf-authentication-v1.json",
+    "sha256": "4c1cebab50b96a7555525a4eff951a139a0474bf84d4a3b01b17c5d7eb6f4a51"
+  },
+  "stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/native-stellar-review.json",
+    "sha256": "b26f42e72d212a6dd4958bb991ed17d23289cbedbcdaf7345317222a831d268b"
+  },
+  "retained_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/pre-native-retained-review.json",
+    "sha256": "7752eb628a2e0c03cb8e4f4e9becbc9b27a4d69b8197d63a4c5d59767cbe343f"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/selection.json",
+    "sha256": "334ea623cac7c9744c859a87c10fe366266304603f67caa8cd3a53f827fae978"
+  },
+  "literature": {
+    "exact_gaia_match": true,
+    "reference": "Bienias and Szabo2025 A&A694A209",
+    "doi": "10.1051/0004-6361/202451693",
+    "paper": "https://arxiv.org/abs/2501.09152",
+    "reported_parent_kic": 8293539,
+    "own_source_kic": 8293530,
+    "scope": "Published candidate, not a new-discovery claim. Paper reports seasonal centroid concerns; all current raw source evidence retained. No catalogue/literature physical admission implied."
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve raw/scientific evidence and literature. No prolonged response reconstruction tonight. Advance eligible host."
+}

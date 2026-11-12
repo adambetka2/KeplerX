@@ -1,0 +1,285 @@
+{
+  "utc": "2026-10-20T13:01:57.274938+00:00",
+  "status": "ONE_TARGET_NATIVE_RUNNING_FULL_HARDWARE_SATURATION_NOT_ESTABLISHED",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_fixed_five_screens": 1,
+  "fixed_five_high_fpp_stops": 1,
+  "first_fixed_five_mean_fpp": 0.37333166165283765,
+  "first_fixed_five_mean_nfpp": 0.3324726842228516,
+  "physical_false_positive_rate": null,
+  "preparation_holds": 9,
+  "previous_207924": {
+    "kic": 9046816,
+    "status": "HOLD_NATIVE_NONCONVERGENCE",
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/physical-hold-v1.json",
+      "sha256": "d32ffbc34514f967803e040f81b4e209886e1ac1764fd43dbcd7084198931b56"
+    }
+  },
+  "previous_207964": {
+    "kic": 8441616,
+    "status": "HOLD_NATIVE_TIMING_MODEL_REVIEW",
+    "alias_group": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/alias-grouping-v1.json",
+      "sha256": "0fe6e864359c24f7fe664dd3b30ee5476d319d7a0e5d1cae829abf00007ed40f"
+    },
+    "native_fit": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/native-acceptance-v1/2079648041177607424/native-fit-review.json",
+      "sha256": "a9af03bd8b4876275750fb23f6b17a3b011e10be7e9111fb3b7d112b482ede68"
+    },
+    "source_attribution": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/joint-quarter-pixels-v1/review.json",
+      "sha256": "4a7ee78b71982bb662e6b8c0224dc356253c7be7169f73f3ce5f2cb2164cb0d0"
+    },
+    "source_hypotheses": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/joint-source-hypotheses-v1/review.json",
+      "sha256": "111d789faad2a17df838a34e4e4216db5e6faa5c03d55595a4ebd6ebbd00b85d"
+    },
+    "background_timing": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/background-timing-v1/review.json",
+      "sha256": "01f377a9393016fa09ad2ecb9a7822b240bf42fb316218de5e30ce913639ac44"
+    },
+    "hold": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/physical-hold-v1.json",
+      "sha256": "95d3b78d1ea617059713053c72acaff8d9d1d1baba9b5bcd9bf237563c5d8e9d"
+    },
+    "interpretation": "Numerically converged 30.60-day transit and target-compatible joint centroid. Shorter 1/7 and 1/5 BOIs are photon-supported fold aliases; no extra physical planets counted. Two Q11 events remain approximately one hour early after free-depth and direct-aperture diagnostics. No probability run or extra timing diagnostic bypasses the unresolved timing model."
+  },
+  "selected_205212": {
+    "source_id": "2052124108331844608",
+    "kic": 3354627,
+    "tic": 378013956,
+    "selection": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/selection-v1.json",
+      "sha256": "dae0fa90e02635284407025de068d8dcdbb5aa08428c2b02f86cbf780b486101"
+    },
+    "native_input": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/native-inputs-v1/2052124108331844608/preparation.json",
+      "sha256": "d2e0e107156e684ca8416c1e8a788cfc57cd7a99f72be9b80dd36a82c2689edb"
+    },
+    "host_support": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/preliminary-host-support-v1.json",
+      "sha256": "1f42e72748822579425628891540921e5ed6337d695409f5321db47f5c1d2351"
+    },
+    "literature": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/pre-native-known-signal-review-v1.json",
+      "sha256": "502962f4c4bb85659ae1a0329f0cb653e330083cb7d413608b0145cf9898d9bc"
+    },
+    "execution_preflight": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/execution-preflight-plan.json",
+      "sha256": "02cb3adcb7e8fa64242777d840e317e5ce2ee16955be2d673e83ea8e571a561e"
+    },
+    "unit": "mk-boi-single-205212-native-v1.service",
+    "complete_probability_repeats": 0,
+    "scope": "Only selected scientific candidate. Own photons and stellar prior, four fixed ensemble seeds and unchanged native endpoint budget. Close companion, source, timing and full scene still require review."
+  },
+  "hardware": {
+    "audit": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/hardware-audit-v1/review.json",
+      "sha256": "077f97ada9b55946fee7ac046082409c06e92366ccce0274b63c6b04fc6af2f1"
+    },
+    "previous_whole_native_and_followup": {
+      "journal_messages": [
+        {
+          "utc": "2026-10-20T12:13:35.411443+00:00",
+          "message": "Started mk-boi-single-207964-native-v1.service - Only selected30.60day fundamental fresh native fit and automatic source diagnostics.",
+          "cpu_usage_nsec": null
+        },
+        {
+          "utc": "2026-10-20T12:18:53.062675+00:00",
+          "message": "mk-boi-single-207964-native-v1.service: Consumed 55min 58.096s CPU time, 4.2M memory peak, 0B memory swap peak.",
+          "cpu_usage_nsec": "3358096221000"
+        }
+      ],
+      "wall_seconds": 317.651233,
+      "cpu_seconds": 3358.096221,
+      "average_logical_cpu_equivalents": 10.5716454782343,
+      "mean_fraction_of_32_logical_cpu_capacity": 0.3303639211948219
+    },
+    "previous_short_executor_comparison": {
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207964-v1/native-execution-controls-v2/review.json",
+        "sha256": "76073b3000ed3c44e17cc02d7528d1a15b3814b01932c22cba76468a4d7d677a"
+      },
+      "timings": [
+        {
+          "executor": "serial",
+          "likelihood_workers_per_ensemble": 0,
+          "total_evaluation_workers": 4,
+          "group_wall_seconds": 6.897100124042481
+        },
+        {
+          "executor": "process",
+          "likelihood_workers_per_ensemble": 6,
+          "total_evaluation_workers": 24,
+          "group_wall_seconds": 3.987023650901392
+        },
+        {
+          "executor": "thread",
+          "likelihood_workers_per_ensemble": 6,
+          "total_evaluation_workers": 24,
+          "group_wall_seconds": 7.477164522977546
+        },
+        {
+          "executor": "process",
+          "likelihood_workers_per_ensemble": 8,
+          "total_evaluation_workers": 32,
+          "group_wall_seconds": 4.187558567151427
+        },
+        {
+          "executor": "thread",
+          "likelihood_workers_per_ensemble": 8,
+          "total_evaluation_workers": 32,
+          "group_wall_seconds": 7.797940514050424
+        }
+      ],
+      "comparisons_all_bitwise_equal": true,
+      "selected_executor": "process",
+      "selected_workers_per_ensemble": 6
+    },
+    "current_five_second_sample": {
+      "first": {
+        "utc": "2026-10-20T12:57:45.151350+00:00",
+        "monotonic": 1383064.578158833,
+        "properties": {
+          "MainPID": "3768905",
+          "MemoryCurrent": "586432512",
+          "CPUUsageNSec": "106949443000",
+          "TasksCurrent": "13",
+          "CPUQuotaPerSecUSec": "infinity",
+          "LoadState": "loaded",
+          "ActiveState": "active"
+        },
+        "proc_stat": "cpu  1430338495 1155083289 23532972 1814993305 290356 0 862695 0 0 0",
+        "stage": "NATIVE_PREFLIGHT_PASSED_PARALLEL_EXECUTION_REVIEW_PENDING"
+      },
+      "second": {
+        "utc": "2026-10-20T12:57:50.156562+00:00",
+        "monotonic": 1383069.583372256,
+        "properties": {
+          "MainPID": "3768905",
+          "MemoryCurrent": "589594624",
+          "CPUUsageNSec": "126973015000",
+          "TasksCurrent": "13",
+          "CPUQuotaPerSecUSec": "infinity",
+          "LoadState": "loaded",
+          "ActiveState": "active"
+        },
+        "proc_stat": "cpu  1430340494 1155083289 23532976 1815007317 290356 0 862697 0 0 0",
+        "stage": "NATIVE_PREFLIGHT_PASSED_PARALLEL_EXECUTION_REVIEW_PENDING"
+      },
+      "elapsed_seconds": 5.005213422933593,
+      "unit_cpu_seconds": 20.023572,
+      "average_logical_cpu_equivalents": 4.0005430953759475,
+      "unit_fraction_of_logical_cpu_capacity": 0.12501697173049836,
+      "system_busy_fraction": 0.12517949678466633
+    },
+    "known_serial_probability_loop": {
+      "evidence": {
+        "path": "/home/adam/spacelab/post_boi/campaign.py",
+        "sha256": "a1577cfb7b0143e11b6a84a283407235ae2fccb272ee2e7996f760538c5eaf50"
+      },
+      "function": "integrate_run",
+      "scope": "Within a repeat, scenario families share one checkpointed RNG stream and are traversed sequentially. Independent repeats and renderer threads provide parallel work. This does not prove maximum total throughput; any changed RNG layout needs prospective numerical controls."
+    },
+    "conclusion": "Full end-to-end saturation and globally maximum speed are not demonstrated. The previous complete native/control/source-diagnostic unit averaged 10.57 of 32 logical CPUs (33%). The current selected native sampler uses 32 process evaluators, the fastest tested executor for this target: 11.796 s versus 25.567 s for four serial ensembles in the seeded 128-step control, with every chain/log-density/acceptance result bitwise equal. Its five-second production sample averaged 18.61 logical CPUs (58%), despite no CPU quota. Serial scheduling, worker communication, phase limits and readiness-review gaps still constrain end-to-end throughput; these telemetry data do not isolate the dominant native bottleneck or benchmark the full probability census.",
+    "selected_target_executor": {
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/native-execution-controls-v2/review.json",
+        "sha256": "b13548414cb1592ec5705b264b070b8eee64c77c13386d7eafdbdc30f7f21653"
+      },
+      "timings": [
+        {
+          "executor": "serial",
+          "likelihood_workers_per_ensemble": 0,
+          "total_evaluation_workers": 4,
+          "group_wall_seconds": 25.566808464936912
+        },
+        {
+          "executor": "process",
+          "likelihood_workers_per_ensemble": 6,
+          "total_evaluation_workers": 24,
+          "group_wall_seconds": 12.346482971915975
+        },
+        {
+          "executor": "thread",
+          "likelihood_workers_per_ensemble": 6,
+          "total_evaluation_workers": 24,
+          "group_wall_seconds": 26.6971222050488
+        },
+        {
+          "executor": "process",
+          "likelihood_workers_per_ensemble": 8,
+          "total_evaluation_workers": 32,
+          "group_wall_seconds": 11.795960589079186
+        },
+        {
+          "executor": "thread",
+          "likelihood_workers_per_ensemble": 8,
+          "total_evaluation_workers": 32,
+          "group_wall_seconds": 28.088031548075378
+        }
+      ],
+      "chain_comparisons": 16,
+      "all_bitwise_equal": true,
+      "selected_evaluation_workers": 32,
+      "selected_executor": "process",
+      "scope": "Short native128step throughput including process startup and HDF writes. No full candidate or convergence-time guarantee. No physical model, walker count, seed, convergence criterion or TRICERATOPS probability budget changed."
+    },
+    "selected_target_active_sampler_telemetry": {
+      "evidence": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205212-v1/hardware-audit-v2/review.json",
+        "sha256": "83511f409ae885f672c3d7acd6b5afbc4779e215b2683d604acb5744aa17b3e9"
+      },
+      "first": {
+        "utc": "2026-10-20T13:01:08.366492+00:00",
+        "monotonic": 1383267.793306655,
+        "properties": {
+          "MainPID": "3768905",
+          "MemoryCurrent": "1116266496",
+          "CPUUsageNSec": "2634994425000",
+          "TasksCurrent": "62",
+          "CPUQuotaPerSecUSec": "infinity",
+          "LoadState": "loaded",
+          "ActiveState": "active"
+        },
+        "proc_stat": "cpu  1430589701 1155083289 23534618 1815389824 290358 0 862710 0 0 0",
+        "stage": "NATIVE_PARALLEL_ENSEMBLES_RUNNING"
+      },
+      "second": {
+        "utc": "2026-10-20T13:01:13.373338+00:00",
+        "monotonic": 1383272.800152784,
+        "properties": {
+          "MainPID": "3768905",
+          "MemoryCurrent": "1120137216",
+          "CPUUsageNSec": "2728149060000",
+          "TasksCurrent": "62",
+          "CPUQuotaPerSecUSec": "infinity",
+          "LoadState": "loaded",
+          "ActiveState": "active"
+        },
+        "proc_stat": "cpu  1430598962 1155083289 23534665 1815396507 290358 0 862710 0 0 0",
+        "stage": "NATIVE_PARALLEL_ENSEMBLES_RUNNING"
+      },
+      "elapsed_seconds": 5.006846128962934,
+      "unit_cpu_seconds": 93.154635,
+      "average_logical_cpu_equivalents": 18.605451935327416,
+      "unit_fraction_of_logical_cpu_capacity": 0.5814203729789817,
+      "system_busy_fraction": 0.5820774185479332
+    }
+  },
+  "first_preparation_runtime_failure": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/205212-native-preparation-runtime-first-failure.json",
+    "sha256": "e3d289f51471bfb038ebab9dca58415ff16d9ad7983e19cbf0bb7f97813c0e5f"
+  },
+  "ledger": {
+    "path": "/home/adam/spacelab/results/boi-validation/mk-sequential-candidate-ledger-20261020.csv",
+    "sha256": "0ff5320247d4a7bec550db564e924babad7e69d91966f9ed3a1ef94d65c853b0"
+  },
+  "next_actions": [
+    "Complete this one source native fit and automatic timing/source review. Preserve the first failure and move to the next candidate on a readiness hold.",
+    "Benchmark the actual admitted one-target complete scenario census before choosing production concurrency. Do not infer full capacity from worker counts or short timings.",
+    "Retain fixed first-five primary indices for the >=3% mean FPP stop. Finish exactly twenty full primary repeats for survivors; numerical upper probability bounds and physical closeout determine admission."
+  ]
+}

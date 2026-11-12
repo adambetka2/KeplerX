@@ -1,0 +1,129 @@
+{
+  "status": "COMPLETE",
+  "signals": 125,
+  "hosts": 94,
+  "baseline_outcomes": {
+    "ALIAS_ONLY": 44,
+    "NOT_RECOVERED": 43,
+    "RECOVERED": 37,
+    "DETECTOR_INELIGIBLE": 1
+  },
+  "extended_outcomes": {
+    "ALIAS_ONLY": 33,
+    "NOT_RECOVERED": 33,
+    "RECOVERED": 58,
+    "DETECTOR_INELIGIBLE": 1
+  },
+  "reference_depth_groups": [
+    {
+      "reference_depth_bin": "113-1000 ppm",
+      "entries": 22,
+      "baseline": 5,
+      "extended": 5
+    },
+    {
+      "reference_depth_bin": "1000-6000 ppm",
+      "entries": 53,
+      "baseline": 21,
+      "extended": 18
+    },
+    {
+      "reference_depth_bin": "6000-60000 ppm",
+      "entries": 50,
+      "baseline": 11,
+      "extended": 35
+    }
+  ],
+  "near_period_diagnostic": {
+    "relative_tolerance": 0.001,
+    "scope": "accepted proposals within 0.1 percent of reference period, without timing admission; does not count as recovery",
+    "baseline": 49,
+    "extended": 66
+  },
+  "reference_period_outside_baseline": 12,
+  "reference_period_outside_extended": 7,
+  "gains": [
+    "BOI-2073175632853699968-1",
+    "BOI-2073226966298407552-1",
+    "BOI-2073609042284178176-1",
+    "BOI-2076062434975364864-1",
+    "BOI-2076324737227600768-1",
+    "BOI-2076468876327949568-1",
+    "BOI-2076894554826018304-1",
+    "BOI-2076927677610525056-1",
+    "BOI-2077532516388848512-1",
+    "BOI-2077839967326211328-1",
+    "BOI-2077967368932890752-1",
+    "BOI-2078783726253023360-1",
+    "BOI-2079517512834068480-1",
+    "BOI-2087252538472180608-1",
+    "BOI-2099129463076304128-1",
+    "BOI-2100123494603868416-1",
+    "BOI-2100325529865507712-1",
+    "BOI-2100986778733554048-1",
+    "BOI-2101435138957164672-1",
+    "BOI-2102612750272489216-1",
+    "BOI-2102918384442366592-1",
+    "BOI-2103348117391603840-1",
+    "BOI-2103418559153168128-1",
+    "BOI-2104484363877066752-1",
+    "BOI-2126097738825919104-1",
+    "BOI-2126910621514995968-1",
+    "BOI-2128959007378441472-1",
+    "BOI-2130965547378157568-1"
+  ],
+  "losses": [
+    "BOI-2052625863598225536-1",
+    "BOI-2052625863598225536-2",
+    "BOI-2073226966298407552-3",
+    "BOI-2077967368932890752-2",
+    "BOI-2077967368932890752-6",
+    "BOI-2102612750272489216-4",
+    "BOI-2128959007378441472-3"
+  ],
+  "scoring": {
+    "strict": "unchanged evolution.matches for every preserved proposal ephemeris of a BOI, over the full prepared baseline; harmonic aliases are diagnostic only",
+    "tolerance": "half reference duration + 1765.464/86400 d exposure; cumulative period drift and every predicted centre must fit tolerance",
+    "blind": "workers receive only source identity and prepared arrays, never selection ephemerides or depths",
+    "minimum_period_unchanged_days": 0.5,
+    "limitations": "selected historic detections, not completeness, planet validation or independent planet count; original PSF depths need not equal SAP source-flux depths"
+  },
+  "comparison": "paired unchanged source and settings; only depth_ppm_max 6000 to 60000 and long_period_search.period_max_days 100 to 300",
+  "input_receipts_sha256": "a11eedf7a46815193bed702ee116b2b0b91fe460d46b20162c7b35f08e1eac74",
+  "script_sha256": "88483623e73e45ecaf45e9f166038c4d46a3388d5d7e43bc215c1c7b59286c3f",
+  "prior_ledger_sha256": "c89bcc3f76f5ff4ba4fa098ee63bba9eb7ee729e31677a1e23e3f2080f3c4a5d",
+  "run_directory": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/boi-recovery-20261014",
+  "source_commit": "f7e78fd5a6fc4508a744f189a55f1b5021122e04",
+  "sample": {
+    "hosts": 94,
+    "g_mag_min": 12.742655754089355,
+    "g_mag_median": 17.601852642272952,
+    "g_mag_max": 18.962570190429688,
+    "mk_survey_members": 19,
+    "mk_populations": {
+      "K": 14,
+      "M": 5
+    },
+    "outside_mk_survey": 75
+  },
+  "verification": {
+    "status": "PASS",
+    "entries": 125,
+    "hosts": 94,
+    "result_files": 188,
+    "input_arrays_unchanged": true,
+    "all_delivery_SAP_arrays_equal": true,
+    "only_requested_upper_limits_changed": true,
+    "source_and_runtime_bindings_unchanged": true,
+    "strict_recoveries_independently_replayed": {
+      "baseline": 37,
+      "extended": 58
+    },
+    "scorer_frozen_before_search_complete": true,
+    "verify_script_sha256": "29ab2f385ce96057760a4ec6b4bcbad7d90c3edefcd7c1262d4b4e74c19d3531"
+  },
+  "catalogue_csv_sha256": "9071f222d18d2b82f754e5f7617ca2254278795b8361ca0afef50a553b8ebca1",
+  "full_catalogue_json_sha256": "ac3333fb8295e32e4bb5c91622b52e06288b453790f1abd763a41a805d90ff5f",
+  "identity_sha256": "9bfb622a3a9ae0973f3b571de454e44e4ca0191bcfc7364ee30ca2e92683f060",
+  "full_summary_sha256": "3eef7279989921c175a986466d97782cdf0fbb649f43375e05b8e207dc99a52b"
+}

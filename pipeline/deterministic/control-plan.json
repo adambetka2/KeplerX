@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "protocol": "fsc-kepler-release-controls-v2",
+  "selection_seed": "forgotten-stars-release-controls-v2-2026-09",
+  "source_index": "discSSD/data/index.sqlite",
+  "excluded_source_manifests": [
+    {
+      "path": "dump/detector-benchmark-20260921/confirmed-signals.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/detector-benchmark-20260921/false-positive-sources.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/detector-benchmark-20260921/ordinary-sources-3000.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v4-survey-50000-20260921/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v6-1-survey-10000-c/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/release-controls-v1/source-pools.csv",
+      "column": "source_id"
+    }
+  ],
+  "source_cohorts": {
+    "ordinary": {
+      "target": 5000,
+      "pool": 15000
+    },
+    "periodic_injection": {
+      "target": 5000,
+      "pool": 25000
+    },
+    "sparse_injection": {
+      "target": 1000,
+      "pool": 4000
+    },
+    "ttv_injection": {
+      "target": 1000,
+      "pool": 5000
+    }
+  },
+  "koi_catalogue": "discPCIe/data/reference-catalogues/q1_q17_dr25_koi-rows.json",
+  "opened_confirmed_manifest": "dump/detector-benchmark-20260921/confirmed-signals.csv",
+  "opened_false_positive_manifest": "dump/detector-benchmark-20260921/false-positive-sources.csv",
+  "excluded_catalogue_kics": [
+    7906882,
+    6878408,
+    3663850,
+    6949898,
+    5809372,
+    2985587,
+    6278670,
+    4060229,
+    7954278,
+    7582691
+  ],
+  "catalogue_cohorts": {
+    "catalogue_candidate": {
+      "disposition": "CANDIDATE",
+      "target": 500,
+      "pool": 1000
+    },
+    "catalogue_false_positive": {
+      "disposition": "FALSE POSITIVE",
+      "target": 500,
+      "pool": 1000
+    }
+  }
+}

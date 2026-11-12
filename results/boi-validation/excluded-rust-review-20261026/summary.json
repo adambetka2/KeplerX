@@ -1,0 +1,93 @@
+{
+ "utc": "2026-10-26T16:41:27.576712+00:00",
+ "manual_exclusions_audited": 33,
+ "all_restored_main_rust_groups": 34,
+ "main_rust_catalogue": {
+  "groups": 147,
+  "proposals": 156,
+  "sources": 116
+ },
+ "current_selection": "results/boi-validation/boi-current-selection-20261026.json",
+ "historical_manual_records_unchanged": true,
+ "review_categories": {
+  "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW": 27,
+  "COMPATIBLE_SAME_SOURCE_SUBHARMONIC_REQUIRES_INDEPENDENCE_TEST": 3,
+  "TARGETED_NATIVE_AND_SOURCE_OWNERSHIP_REVIEW": 3
+ },
+ "new_physical_false_positive_denials": 0,
+ "new_planet_validations": 0,
+ "new_probability_ready_restored_cases": 0,
+ "readiness_queue": "results/boi-validation/restored-rust-readiness-queue-20261026.json",
+ "readiness_queue_entries": 34,
+ "readiness_queue_is_active_probability_queue": false,
+ "parked_mk": {
+  "count": 238,
+  "original_search_snr_min": 7.103555750524288,
+  "original_search_snr_max": 9.907983637696836,
+  "all_original_search_snr_below10": true
+ },
+ "six_prior_prospects": {
+  "scheduler_utc": "2026-10-26T16:40:25.196547+00:00",
+  "cases": [
+   {
+    "host": "KIC3558561",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052149122233322368-1-g2",
+    "state": "native-running",
+    "meaning": "Current scheduler state; running or pending does not imply validation"
+   },
+   {
+    "host": "KIC8308249",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2078321583479039232-1",
+    "state": "failed",
+    "meaning": "Unsupported fitted geometry; unresolved, not an astrophysical denial"
+   },
+   {
+    "host": "KIC5359831",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101498738831844864-1",
+    "state": "finished",
+    "meaning": "Native radius-ratio significance check held this case; unresolved, no new probability run"
+   },
+   {
+    "host": "KIC10613423",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086589365462040064-1",
+    "state": "finished",
+    "meaning": "Native radius-ratio significance check held this case; unresolved, no new probability run"
+   },
+   {
+    "host": "KIC3453204",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052091054275764736-3",
+    "state": "native-running",
+    "meaning": "Current scheduler state; running or pending does not imply validation"
+   },
+   {
+    "host": "KIC8012933",
+    "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2105840847691288832-1",
+    "state": "queued",
+    "meaning": "Current scheduler state; running or pending does not imply validation"
+   }
+  ]
+ },
+ "storage_constraint": "discPCIe measured 179 MiB free, below the project's 2 GiB reserve; new large evidence acquisitions await space or another permitted evidence volume.",
+ "source_limits": [
+  "Original full frozen source evidence is not presently accessible at the historical server/export locations.",
+  "Original detector significance is unavailable for 32 of the 33 initial NO groups in accessible lean records; absence is not low S/N.",
+  "The new quarter-consistency diagnostic is not an admission or exclusion gate.",
+  "Three compatible subharmonics still need event-level independence tests; broad shapes alone do not establish physical false positives."
+ ],
+ "new_gaia_target_query": {
+  "exact_targets": 34,
+  "ruwe_at_most1p4": 32,
+  "ruwe_above1p4": [
+   {
+    "source_id": "2133034969998575360",
+    "ruwe": 3.4059744
+   },
+   {
+    "source_id": "2073774278260250880",
+    "ruwe": 2.5684638
+   }
+  ],
+  "paired_flame_mass_radius": 10,
+  "full_scene_status": "Union-of-cones public query timed out with HTTP 408; failure response retained. Exact-target query succeeded; it does not close complete-scene evidence."
+ }
+}

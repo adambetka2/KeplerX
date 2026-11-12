@@ -1,0 +1,463 @@
+{
+  "created_warsaw": "2026-10-27T22:24:12.999221+01:00",
+  "deadline_warsaw": "2026-10-28T08:00:00+01:00",
+  "hours_to_deadline": 9.596389105277778,
+  "assumptions": "Current queue order and settings unchanged, three native slots. Fit-completion forecasts do not predict scientific acceptance or validation; downstream progress can be stopped by native checks or missing scene properties. Current long-running fits use a higher total-call allowance than the typical completed fits because their initial sampling is still in progress.",
+  "scenarios": [
+    {
+      "scenario": "fast",
+      "assumptions": {
+        "waiting_fit_calls": 350000,
+        "active_total_calls": 550000,
+        "wall_ns_per_point_call": 65,
+        "slots": 3,
+        "free_slot_poll_delay_hours": 0.2
+      },
+      "native_completions_by_8": 16,
+      "native_completed_early_enough_for_followup_by_8": 13,
+      "first_completions": [
+        {
+          "boi_id": "BOI-2128034597276971520-1",
+          "hours": 0.7416291666666666
+        },
+        {
+          "boi_id": "BOI-2051317406099391360-1",
+          "hours": 1.119733338
+        },
+        {
+          "boi_id": "BOI-2076931255328549504-1",
+          "hours": 2.4077402777777777
+        },
+        {
+          "boi_id": "BOI-2076535358120385536-1",
+          "hours": 3.162587673888889
+        },
+        {
+          "boi_id": "BOI-2127413545004364800-1",
+          "hours": 3.213775
+        },
+        {
+          "boi_id": "BOI-2085331867759290752-1",
+          "hours": 3.4713777824444447
+        },
+        {
+          "boi_id": "BOI-2079751876308505984-1",
+          "hours": 3.914401562777778
+        },
+        {
+          "boi_id": "BOI-2077515199080043264-2",
+          "hours": 4.525671007222222
+        },
+        {
+          "boi_id": "BOI-2076797973904269184-1",
+          "hours": 5.2151751738888885
+        },
+        {
+          "boi_id": "BOI-2078222219414706048-1",
+          "hours": 6.153159896111111
+        },
+        {
+          "boi_id": "BOI-2104817618979591168-1",
+          "hours": 6.999765451666667
+        },
+        {
+          "boi_id": "BOI-2117126514212876416-1",
+          "hours": 7.778247396111111
+        },
+        {
+          "boi_id": "BOI-2073666564790289664-3",
+          "hours": 7.923984726888889
+        },
+        {
+          "boi_id": "BOI-2102056779643698560-1",
+          "hours": 8.510987504666668
+        },
+        {
+          "boi_id": "BOI-2102266442767690112-1",
+          "hours": 8.682043055555557
+        },
+        {
+          "boi_id": "BOI-2086390560018194816-1",
+          "hours": 8.834911285
+        },
+        {
+          "boi_id": "BOI-2076587142546708352-1",
+          "hours": 10.250014062777778
+        },
+        {
+          "boi_id": "BOI-2076229075413220352-1",
+          "hours": 12.87087638888889
+        }
+      ]
+    },
+    {
+      "scenario": "central",
+      "assumptions": {
+        "waiting_fit_calls": 450000,
+        "active_total_calls": 700000,
+        "wall_ns_per_point_call": 80,
+        "slots": 3,
+        "free_slot_poll_delay_hours": 0.2
+      },
+      "native_completions_by_8": 10,
+      "native_completed_early_enough_for_followup_by_8": 9,
+      "first_completions": [
+        {
+          "boi_id": "BOI-2128034597276971520-1",
+          "hours": 0.9405999999999999
+        },
+        {
+          "boi_id": "BOI-2051317406099391360-1",
+          "hours": 2.6538564160000004
+        },
+        {
+          "boi_id": "BOI-2076931255328549504-1",
+          "hours": 3.4606
+        },
+        {
+          "boi_id": "BOI-2127413545004364800-1",
+          "hours": 4.6196
+        },
+        {
+          "boi_id": "BOI-2079751876308505984-1",
+          "hours": 5.6928
+        },
+        {
+          "boi_id": "BOI-2076535358120385536-1",
+          "hours": 5.9206720088888884
+        },
+        {
+          "boi_id": "BOI-2085331867759290752-1",
+          "hours": 6.258656416000001
+        },
+        {
+          "boi_id": "BOI-2077515199080043264-2",
+          "hours": 7.1094564160000004
+        },
+        {
+          "boi_id": "BOI-2076797973904269184-1",
+          "hours": 8.084056416000001
+        },
+        {
+          "boi_id": "BOI-2078222219414706048-1",
+          "hours": 9.451856416000002
+        },
+        {
+          "boi_id": "BOI-2104817618979591168-1",
+          "hours": 10.675056416000002
+        },
+        {
+          "boi_id": "BOI-2117126514212876416-1",
+          "hours": 11.790456416000001
+        },
+        {
+          "boi_id": "BOI-2073666564790289664-3",
+          "hours": 12.850072008888889
+        },
+        {
+          "boi_id": "BOI-2086390560018194816-1",
+          "hours": 13.346056416000001
+        },
+        {
+          "boi_id": "BOI-2102056779643698560-1",
+          "hours": 13.662472008888889
+        },
+        {
+          "boi_id": "BOI-2102266442767690112-1",
+          "hours": 14.229399999999998
+        },
+        {
+          "boi_id": "BOI-2076587142546708352-1",
+          "hours": 16.3522
+        },
+        {
+          "boi_id": "BOI-2076229075413220352-1",
+          "hours": 20.17447200888889
+        }
+      ]
+    },
+    {
+      "scenario": "slow",
+      "assumptions": {
+        "waiting_fit_calls": 600000,
+        "active_total_calls": 950000,
+        "wall_ns_per_point_call": 110,
+        "slots": 3,
+        "free_slot_poll_delay_hours": 0.2
+      },
+      "native_completions_by_8": 4,
+      "native_completed_early_enough_for_followup_by_8": 3,
+      "first_completions": [
+        {
+          "boi_id": "BOI-2128034597276971520-1",
+          "hours": 1.3911
+        },
+        {
+          "boi_id": "BOI-2076931255328549504-1",
+          "hours": 5.844433333333333
+        },
+        {
+          "boi_id": "BOI-2051317406099391360-1",
+          "hours": 6.587969238666666
+        },
+        {
+          "boi_id": "BOI-2127413545004364800-1",
+          "hours": 8.546135905333333
+        },
+        {
+          "boi_id": "BOI-2079751876308505984-1",
+          "hours": 10.347002572
+        },
+        {
+          "boi_id": "BOI-2085331867759290752-1",
+          "hours": 12.286566666666666
+        },
+        {
+          "boi_id": "BOI-2076535358120385536-1",
+          "hours": 12.804396234444443
+        },
+        {
+          "boi_id": "BOI-2077515199080043264-2",
+          "hours": 14.197529567777776
+        },
+        {
+          "boi_id": "BOI-2076797973904269184-1",
+          "hours": 15.817629567777775
+        },
+        {
+          "boi_id": "BOI-2078222219414706048-1",
+          "hours": 18.158596234444442
+        },
+        {
+          "boi_id": "BOI-2104817618979591168-1",
+          "hours": 20.234462901111108
+        },
+        {
+          "boi_id": "BOI-2117126514212876416-1",
+          "hours": 22.112696234444442
+        },
+        {
+          "boi_id": "BOI-2086390560018194816-1",
+          "hours": 24.79796290111111
+        },
+        {
+          "boi_id": "BOI-2073666564790289664-3",
+          "hours": 24.8238
+        },
+        {
+          "boi_id": "BOI-2102266442767690112-1",
+          "hours": 25.830769238666665
+        },
+        {
+          "boi_id": "BOI-2102056779643698560-1",
+          "hours": 26.12069623444444
+        },
+        {
+          "boi_id": "BOI-2076587142546708352-1",
+          "hours": 29.845829567777773
+        },
+        {
+          "boi_id": "BOI-2076229075413220352-1",
+          "hours": 37.60276923866667
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "boi_id": "BOI-2076535358120385536-1",
+      "state": "NATIVE_RUNNING",
+      "native_points": 30770,
+      "ncall": 274374,
+      "sampler_finished": false
+    },
+    {
+      "boi_id": "BOI-2051317406099391360-1",
+      "state": "NATIVE_RUNNING",
+      "native_points": 19482,
+      "ncall": 405052,
+      "sampler_finished": false
+    },
+    {
+      "boi_id": "BOI-2128034597276971520-1",
+      "state": "NATIVE",
+      "native_points": 2703
+    },
+    {
+      "boi_id": "BOI-2076931255328549504-1",
+      "state": "NATIVE",
+      "native_points": 11600
+    },
+    {
+      "boi_id": "BOI-2085331867759290752-1",
+      "state": "NATIVE",
+      "native_points": 17024
+    },
+    {
+      "boi_id": "BOI-2127413545004364800-1",
+      "state": "NATIVE",
+      "native_points": 4795
+    },
+    {
+      "boi_id": "BOI-2079751876308505984-1",
+      "state": "NATIVE",
+      "native_points": 4366
+    },
+    {
+      "boi_id": "BOI-2102266442767690112-1",
+      "state": "NATIVE",
+      "native_points": 41683
+    },
+    {
+      "boi_id": "BOI-2073666564790289664-3",
+      "state": "NATIVE",
+      "native_points": 33647
+    },
+    {
+      "boi_id": "BOI-2077515199080043264-2",
+      "state": "NATIVE",
+      "native_points": 3254
+    },
+    {
+      "boi_id": "BOI-2076797973904269184-1",
+      "state": "NATIVE",
+      "native_points": 3873
+    },
+    {
+      "boi_id": "BOI-2078222219414706048-1",
+      "state": "NATIVE",
+      "native_points": 5839
+    },
+    {
+      "boi_id": "BOI-2104817618979591168-1",
+      "state": "NATIVE",
+      "native_points": 5116
+    },
+    {
+      "boi_id": "BOI-2117126514212876416-1",
+      "state": "NATIVE",
+      "native_points": 4577
+    },
+    {
+      "boi_id": "BOI-2086390560018194816-1",
+      "state": "NATIVE",
+      "native_points": 6778
+    },
+    {
+      "boi_id": "BOI-2102056779643698560-1",
+      "state": "NATIVE",
+      "native_points": 3062
+    },
+    {
+      "boi_id": "BOI-2076038211367869312-1",
+      "state": "NATIVE",
+      "native_points": 44388
+    },
+    {
+      "boi_id": "BOI-2076229075413220352-1",
+      "state": "NATIVE",
+      "native_points": 31560
+    },
+    {
+      "boi_id": "BOI-2076587142546708352-1",
+      "state": "NATIVE",
+      "native_points": 9614
+    },
+    {
+      "boi_id": "BOI-2076784878540898560-1",
+      "state": "NATIVE",
+      "native_points": 42581
+    },
+    {
+      "boi_id": "BOI-2079376637907047040-1",
+      "state": "NATIVE",
+      "native_points": 44017
+    },
+    {
+      "boi_id": "BOI-2079821420415898368-1",
+      "state": "NATIVE",
+      "native_points": 36435
+    },
+    {
+      "boi_id": "BOI-2080033974058174080-1",
+      "state": "NATIVE",
+      "native_points": 29885
+    },
+    {
+      "boi_id": "BOI-2100220316049730304-1",
+      "state": "NATIVE",
+      "native_points": 40960
+    },
+    {
+      "boi_id": "BOI-2100223614584673664-1",
+      "state": "NATIVE",
+      "native_points": 25245
+    },
+    {
+      "boi_id": "BOI-2103289985012370304-1",
+      "state": "NATIVE",
+      "native_points": 35283
+    },
+    {
+      "boi_id": "BOI-2125795682366018176-1",
+      "state": "NATIVE",
+      "native_points": 19787
+    },
+    {
+      "boi_id": "BOI-2126446588949629952-1",
+      "state": "NATIVE",
+      "native_points": 31886
+    },
+    {
+      "boi_id": "BOI-2126865915195358720-1",
+      "state": "NATIVE",
+      "native_points": 31616
+    },
+    {
+      "boi_id": "BOI-2133767416541087232-1",
+      "state": "NATIVE",
+      "native_points": 40754
+    },
+    {
+      "boi_id": "BOI-2104484363877066752-1",
+      "state": "NATIVE",
+      "native_points": 973
+    },
+    {
+      "boi_id": "BOI-2079536067092694016-1",
+      "state": "NATIVE",
+      "native_points": 24492
+    },
+    {
+      "boi_id": "BOI-2100123494603868416-1",
+      "state": "NATIVE",
+      "native_points": 893
+    },
+    {
+      "boi_id": "BOI-2100203999471640064-1",
+      "state": "NATIVE",
+      "native_points": 5176
+    },
+    {
+      "boi_id": "BOI-2101435138957164672-1",
+      "state": "NATIVE",
+      "native_points": 581
+    },
+    {
+      "boi_id": "BOI-2050231500928700032-1",
+      "state": "NATIVE",
+      "native_points": 3186
+    },
+    {
+      "boi_id": "BOI-2077595974520134144-1",
+      "state": "NATIVE",
+      "native_points": 1641
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-1",
+      "state": "NATIVE",
+      "native_points": 3558
+    }
+  ],
+  "free_native_slots_at_snapshot": 1
+}

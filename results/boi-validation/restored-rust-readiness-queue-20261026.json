@@ -1,0 +1,1506 @@
+{
+ "schema": 1,
+ "utc": "2026-10-26T16:36:38.379214+00:00",
+ "authorization": "PI request on 2026-10-26: restored manual exclusions are eligible for standard statistical follow-up when significance and other scientific checks pass.",
+ "scope": "Readiness queue for all 34 restored first-Rust BOI groups; this is not the active native-fit/probability queue and none is claimed to have passed all preparation gates.",
+ "active_coordinator": "other/boi-v3-20261025/tools/scheduler.py",
+ "active_queue": "other/boi-v3-20261025/queue-4.json",
+ "storage_blocker": {
+  "discPCIe_available_mib": 179,
+  "required_free_gib": 2,
+  "measured_utc": "2026-10-26T16:36:38.379214+00:00",
+  "basis": "Project external-disc reserve; no large new acquisitions on an almost-full volume",
+  "resolved_by": {
+   "utc": "2026-10-26T17:09:52.868008+00:00",
+   "authorization": "Use internal disc",
+   "evidence_root": "/Users/adam/Other/spacelab/other/boi-v3-20261025",
+   "remaining_internal_free_gib": 130.8307342529297
+  }
+ },
+ "entries": [
+  {
+   "boi_id": "BOI-2076038211367869312-1",
+   "source_id": "2076038211367869312",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.087932409954759,
+     "epoch_bkjd": 120.74887379520642,
+     "duration_days": 0.12324234331518753
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 1,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.1628125,
+    "mass_flame": 0.8088044,
+    "mass_flame_lower": 0.7688044,
+    "mass_flame_upper": 0.8490178,
+    "radius_flame": 0.9231468,
+    "radius_flame_lower": 0.8755528,
+    "radius_flame_upper": 0.98226607,
+    "teff_gspphot": 5115.0728,
+    "parallax": 0.7418985930722418,
+    "parallax_error": 0.050757214
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2079376637907047040-1",
+   "source_id": "2079376637907047040",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079376637907047040-8",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.0905598979783184,
+     "epoch_bkjd": 352.6092471261108,
+     "duration_days": 0.12353998844285637
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 2,
+   "review": "TARGETED_NATIVE_AND_SOURCE_OWNERSHIP_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.99954176,
+    "mass_flame": 1.7395514,
+    "mass_flame_lower": 1.6953025,
+    "mass_flame_upper": 2.0014927,
+    "radius_flame": 6.4796176,
+    "radius_flame_lower": 5.2890735,
+    "radius_flame_upper": 8.035906,
+    "teff_gspphot": 5018.5,
+    "parallax": 0.13532665639102118,
+    "parallax_error": 0.037856314
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2126446588949629952-1",
+   "source_id": "2126446588949629952",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126446588949629952-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.9982215828410337,
+     "epoch_bkjd": 444.26430727060415,
+     "duration_days": 0.08188536421742855
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 2,
+   "review": "TARGETED_NATIVE_AND_SOURCE_OWNERSHIP_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.057029,
+    "mass_flame": 0.64233905,
+    "mass_flame_lower": 0.5954971,
+    "mass_flame_upper": 0.6849453,
+    "radius_flame": 0.89699787,
+    "radius_flame_lower": 0.8266278,
+    "radius_flame_upper": 0.97474176,
+    "teff_gspphot": 3543.993,
+    "parallax": 1.0604675166945048,
+    "parallax_error": 0.09522563
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2131801043071611776-1",
+   "source_id": "2131801043071611776",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2131801043071611776-10",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.014603662810688,
+     "epoch_bkjd": 132.8534422256698,
+     "duration_days": 0.3326459214135931
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 2,
+   "review": "TARGETED_NATIVE_AND_SOURCE_OWNERSHIP_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.1540257,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 3.156396713109582,
+    "parallax_error": 0.0691547
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2051317406099391360-1",
+   "source_id": "2051317406099391360",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2051317406099391360-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.0815623076693663,
+     "epoch_bkjd": 170.5770848377188,
+     "duration_days": 0.12674558293000387
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.95284957,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4782.5195,
+    "parallax": 0.13735985276225002,
+    "parallax_error": 0.11595594
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2051702720499620224-1",
+   "source_id": "2051702720499620224",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2051702720499620224-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.39186738945557764,
+     "epoch_bkjd": 352.7106785234579,
+     "duration_days": 0.04132976373164295
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.057595,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 0.36133708732876507,
+    "parallax_error": 0.09059832
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2073774278260250880-1",
+   "source_id": "2073774278260250880",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2073774278260250880-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.47085293264999717,
+     "epoch_bkjd": 120.98467402594649,
+     "duration_days": 0.04230319316777318
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 2.5684638,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.48310533,
+    "radius_flame_lower": 0.4699552,
+    "radius_flame_upper": 0.4964028,
+    "teff_gspphot": 5148.3804,
+    "parallax": 0.41937757135745435,
+    "parallax_error": 0.15240462
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2076066111476425728-1",
+   "source_id": "2076066111476425728",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076066111476425728-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8724977707887085,
+     "epoch_bkjd": 541.9782668550744,
+     "duration_days": 0.3330432198015894
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0909078,
+    "mass_flame": 0.95793015,
+    "mass_flame_lower": 0.9135096,
+    "mass_flame_upper": 1.000107,
+    "radius_flame": 1.4108965,
+    "radius_flame_lower": 1.3064303,
+    "radius_flame_upper": 1.4919341,
+    "teff_gspphot": 5614.064,
+    "parallax": 0.46237129117181014,
+    "parallax_error": 0.03756351
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2076229075413220352-1",
+   "source_id": "2076229075413220352",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.629078096447198,
+     "epoch_bkjd": 131.7603980556814,
+     "duration_days": 0.16545324417041854
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0342382,
+    "mass_flame": 0.6362559,
+    "mass_flame_lower": 0.5962559,
+    "mass_flame_upper": 0.67625594,
+    "radius_flame": 0.70418906,
+    "radius_flame_lower": 0.6712864,
+    "radius_flame_upper": 0.73848516,
+    "teff_gspphot": 3996.7412,
+    "parallax": 1.093746492022412,
+    "parallax_error": 0.07651094
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2076535358120385536-1",
+   "source_id": "2076535358120385536",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076535358120385536-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.1353694369249425,
+     "epoch_bkjd": 131.8094695538671,
+     "duration_days": 0.12418103216366559
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9767336,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.3076557,
+    "radius_flame_lower": 0.29765508,
+    "radius_flame_upper": 0.38889602,
+    "teff_gspphot": 3247.1245,
+    "parallax": 5.152188870711093,
+    "parallax_error": 0.07705679
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2076587142546708352-1",
+   "source_id": "2076587142546708352",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076587142546708352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.3345798512159655,
+     "epoch_bkjd": 736.990984832474,
+     "duration_days": 0.24622521868293382
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0251805,
+    "mass_flame": 1.4935865,
+    "mass_flame_lower": 1.4494371,
+    "mass_flame_upper": 1.5375732,
+    "radius_flame": 1.838078,
+    "radius_flame_lower": 1.7760707,
+    "radius_flame_upper": 1.9064486,
+    "teff_gspphot": 6801.7046,
+    "parallax": 0.48646888412387973,
+    "parallax_error": 0.015390822
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2076784878540898560-1",
+   "source_id": "2076784878540898560",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2076784878540898560-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.2742865968847172,
+     "epoch_bkjd": 132.18726378879973,
+     "duration_days": 0.24875009653426594
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0329301,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 3494.7358,
+    "parallax": 1.5346526336362631,
+    "parallax_error": 0.12098269
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2078414771391537280-1",
+   "source_id": "2078414771391537280",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2078414771391537280-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.368095861528385,
+     "epoch_bkjd": 352.6234153778881,
+     "duration_days": 0.04169835931376237
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0961442,
+    "mass_flame": 0.9695791,
+    "mass_flame_lower": 0.9277429,
+    "mass_flame_upper": 1.0266082,
+    "radius_flame": 2.171413,
+    "radius_flame_lower": 1.8108389,
+    "radius_flame_upper": 2.7821565,
+    "teff_gspphot": 5318.6274,
+    "parallax": 0.19053014386980888,
+    "parallax_error": 0.056352895
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2079821420415898368-1",
+   "source_id": "2079821420415898368",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.44626691930044815,
+     "epoch_bkjd": 131.810162887277,
+     "duration_days": 0.04183752368441701
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0258572,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4244.2173,
+    "parallax": 0.6130601850257587,
+    "parallax_error": 0.11847126
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2080033974058174080-1",
+   "source_id": "2080033974058174080",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080033974058174080-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.4327297330752664,
+     "epoch_bkjd": 170.6488535107888,
+     "duration_days": 0.24707411351545674
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0095539,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 3376.4329,
+    "parallax": 1.1106215422923857,
+    "parallax_error": 0.13688533
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2080290396483263616-1",
+   "source_id": "2080290396483263616",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.3715110965226389,
+     "epoch_bkjd": 131.5154313912573,
+     "duration_days": 0.04208524140295519
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.93759376,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4102.6616,
+    "parallax": 0.37224393419248825,
+    "parallax_error": 0.11849303
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2085457035981896448-1",
+   "source_id": "2085457035981896448",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.4760665172077027,
+     "epoch_bkjd": 131.53024320860757,
+     "duration_days": 0.04091196632253695
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.95698845,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 3702.6318,
+    "parallax": 0.354913792250231,
+    "parallax_error": 0.13675958
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2086489481704614016-1",
+   "source_id": "2086489481704614016",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2086489481704614016-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.8725068642362737,
+     "epoch_bkjd": 452.98245197141387,
+     "duration_days": 0.33304427411435056
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.96857333,
+    "mass_flame": 1.0566201,
+    "mass_flame_lower": 1.0128598,
+    "mass_flame_upper": 1.099729,
+    "radius_flame": 1.5352515,
+    "radius_flame_lower": 1.4676077,
+    "radius_flame_upper": 1.6468114,
+    "teff_gspphot": 5786.7817,
+    "parallax": 0.39277087943675826,
+    "parallax_error": 0.027443353
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2100220316049730304-1",
+   "source_id": "2100220316049730304",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100220316049730304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.5883364426944233,
+     "epoch_bkjd": 169.93040673315141,
+     "duration_days": 0.16751985919042744
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9577908,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4652.705,
+    "parallax": 0.015089039786930162,
+    "parallax_error": 0.106606975
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2100223614584673664-1",
+   "source_id": "2100223614584673664",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2100223614584673664-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 1.5820921418186908,
+     "epoch_bkjd": 131.74479551236607,
+     "duration_days": 0.16686128058244
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0167494,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.45770285,
+    "radius_flame_lower": 0.4374348,
+    "radius_flame_upper": 0.478551,
+    "teff_gspphot": 4895.2354,
+    "parallax": 0.22245988540045455,
+    "parallax_error": 0.07707788
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2103289985012370304-1",
+   "source_id": "2103289985012370304",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2103289985012370304-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.35587468927015964,
+     "epoch_bkjd": 169.79376998092428,
+     "duration_days": 0.041704065148846836
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "LATER_DELIVERY_REMOVAL_REQUIRES_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9767778,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.8378771,
+    "radius_flame_lower": 0.80925155,
+    "radius_flame_upper": 0.8760398,
+    "teff_gspphot": 3841.5164,
+    "parallax": 1.3358576655797605,
+    "parallax_error": 0.06261389
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2106533368217988864-1",
+   "source_id": "2106533368217988864",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2106533368217988864-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.017490646410615,
+     "epoch_bkjd": 132.97972184661057,
+     "duration_days": 0.33296448512117127
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9932975,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4619.1265,
+    "parallax": 0.3128960390895599,
+    "parallax_error": 0.19520628
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2107167653281504256-1",
+   "source_id": "2107167653281504256",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2107167653281504256-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7716603400760801,
+     "epoch_bkjd": 131.78388452957572,
+     "duration_days": 0.08440034969582126
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0756146,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 0.7387660956535516,
+    "parallax_error": 0.081978075
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2125795682366018176-1",
+   "source_id": "2125795682366018176",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2125795682366018176-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.566778848216587,
+     "epoch_bkjd": 169.82085787482072,
+     "duration_days": 0.06199143652368919
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0490807,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.57109964,
+    "radius_flame_lower": 0.5499707,
+    "radius_flame_upper": 0.5897125,
+    "teff_gspphot": 5273.2437,
+    "parallax": 0.1937390085770072,
+    "parallax_error": 0.10302366
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2126865915195358720-1",
+   "source_id": "2126865915195358720",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.319192110709287,
+     "epoch_bkjd": 122.45062355888743,
+     "duration_days": 0.2536616371088283
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0038649,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 3564.0107,
+    "parallax": 0.7736889864382096,
+    "parallax_error": 0.10483402
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2127355099085636864-1",
+   "source_id": "2127355099085636864",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127355099085636864-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.129806309927018,
+     "epoch_bkjd": 132.12799859163022,
+     "duration_days": 0.2495866769445724
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.98834425,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4028.6035,
+    "parallax": 0.2096430754821956,
+    "parallax_error": 0.1687874
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2127702609183750528-1",
+   "source_id": "2127702609183750528",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2127702609183750528-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.747202655090855,
+     "epoch_bkjd": 131.73080030752965,
+     "duration_days": 0.24974569591735044
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.96805716,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 1.4662018499814566,
+    "parallax_error": 0.13778968
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2131971879690727168-1",
+   "source_id": "2131971879690727168",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2131971879690727168-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6131828225023351,
+     "epoch_bkjd": 131.58907893093757,
+     "duration_days": 0.06227638041039341
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.0635612,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 5001.0713,
+    "parallax": 0.15778204712365076,
+    "parallax_error": 0.17634176
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2133034969998575360-1",
+   "source_id": "2133034969998575360",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133034969998575360-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833617874810778,
+     "epoch_bkjd": 132.07058934342015,
+     "duration_days": 0.08262018852339492
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-psf_qdiag",
+     "discovery_view": "psf_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833689166837658,
+     "epoch_bkjd": 132.06447435610033,
+     "duration_days": 0.08262094043149093
+    },
+    {
+     "signal_id": "rust-v6-2133034969998575360-1-sap_qdiag",
+     "discovery_view": "sap_qdiag",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.7833675776082751,
+     "epoch_bkjd": 132.0675334415475,
+     "duration_days": 0.08262079920087277
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 3.4059744,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 15.259658264690245,
+    "parallax_error": 0.06721074
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2133051978069556352-1",
+   "source_id": "2133051978069556352",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133051978069556352-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 2.2326998918929055,
+     "epoch_bkjd": 131.6996172795802,
+     "duration_days": 0.2529230346284932
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.326341,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": null,
+    "parallax": 2.1665130670455333,
+    "parallax_error": 0.06450208
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2133767416541087232-1",
+   "source_id": "2133767416541087232",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2133767416541087232-1",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 3.207264857398472,
+     "epoch_bkjd": 132.3348118374629,
+     "duration_days": 0.33322232284659453
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 3,
+   "review": "BROAD_OR_ASYMMETRIC_MODULATION_REQUIRES_MODEL_REVIEW",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.94924957,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": 0.47519162,
+    "radius_flame_lower": 0.45707986,
+    "radius_flame_upper": 0.49736923,
+    "teff_gspphot": 4851.296,
+    "parallax": 0.1863823823628681,
+    "parallax_error": 0.06617988
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-2",
+   "source_id": "2077554781499350144",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077554781499350144-5",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 5.038009790103395,
+     "epoch_bkjd": 134.7078292781936,
+     "duration_days": 0.1665457781852362
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 4,
+   "review": "COMPATIBLE_SAME_SOURCE_SUBHARMONIC_REQUIRES_INDEPENDENCE_TEST",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 1.087092,
+    "mass_flame": 0.71696657,
+    "mass_flame_lower": 0.67696655,
+    "mass_flame_upper": 0.7569666,
+    "radius_flame": 0.76677614,
+    "radius_flame_lower": 0.7373997,
+    "radius_flame_upper": 0.78924036,
+    "teff_gspphot": 4542.1763,
+    "parallax": 1.1640299827715,
+    "parallax_error": 0.03240145
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-3",
+   "source_id": "2077967368932890752",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2077967368932890752-20",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 0.6226153981433231,
+     "epoch_bkjd": 260.2859079291787,
+     "duration_days": 0.06323437637393126
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 4,
+   "review": "COMPATIBLE_SAME_SOURCE_SUBHARMONIC_REQUIRES_INDEPENDENCE_TEST",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9988963,
+    "mass_flame": 0.7355897,
+    "mass_flame_lower": 0.6784142,
+    "mass_flame_upper": 0.7755897,
+    "radius_flame": 0.90265775,
+    "radius_flame_lower": 0.78250104,
+    "radius_flame_upper": 1.055759,
+    "teff_gspphot": 4531.745,
+    "parallax": 0.4993071541895397,
+    "parallax_error": 0.07270676
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-2",
+   "source_id": "2126354436132009088",
+   "proposals": [
+    {
+     "signal_id": "rust-v6-2126354436132009088-4",
+     "discovery_view": "psf_flat",
+     "detector_classifications": [
+      "TRANSIT_LIKE"
+     ],
+     "period_days": 6.2240084609703095,
+     "epoch_bkjd": 134.01020303186928,
+     "duration_days": 0.1248964908555915
+    }
+   ],
+   "catalogue_included": true,
+   "stage": "FOLLOWUP_READINESS_REVIEW",
+   "state": "SCIENTIFIC_READINESS_PENDING_INTERNAL_STORAGE_AUTHORIZED",
+   "automatic_probability_launch": false,
+   "priority": 4,
+   "review": "COMPATIBLE_SAME_SOURCE_SUBHARMONIC_REQUIRES_INDEPENDENCE_TEST",
+   "remaining": [
+    "Recover or authenticate the original exact-proposal detector significance; do not substitute quarter-consistency S/N.",
+    "Complete dated exact-signal literature, harmonic and native-event independence checks.",
+    "Authenticate the native source, actual quarter apertures and complete stellar scene.",
+    "Fit period and epoch jointly with transit-protected preparation, reviewed priors, correlated-noise adequacy and transfer measurements.",
+    "Use existing V3 readiness and fixed-budget probability rules; require qualified preparation before adding a native job to the active coordinator."
+   ],
+   "gaia_target_properties": {
+    "ruwe": 0.9794834,
+    "mass_flame": null,
+    "mass_flame_lower": null,
+    "mass_flame_upper": null,
+    "radius_flame": null,
+    "radius_flame_lower": null,
+    "radius_flame_upper": null,
+    "teff_gspphot": 4979.2485,
+    "parallax": 0.04244940118953869,
+    "parallax_error": 0.1479296
+   },
+   "gaia_properties_query": "results/boi-validation/excluded-rust-review-20261026/gaia-targets.request.json",
+   "complete_scene_query_status": "UNRESOLVED_QUERY_TIMEOUT_NO_EMPTY_SCENE_INFERENCE"
+  }
+ ],
+ "proposal_evidence": "Lean proposal clocks/views/classifications. Full original event arrays, masks and evidence paths remain in the unchanged frozen catalogue referenced by current-catalogue.json; this file does not replace that evidence.",
+ "updated_utc": "2026-10-26T17:09:52.868008+00:00"
+}

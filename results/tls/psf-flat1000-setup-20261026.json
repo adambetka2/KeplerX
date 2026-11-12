@@ -1,0 +1,88 @@
+{
+  "status": "SETUP_CHECKED_ORIGINAL_COHORT_UNAVAILABLE",
+  "utc": "2026-10-26T12:37:33.791001+00:00",
+  "full_1000_case_run_started": false,
+  "expected_cases": {
+    "synthetic_planet": 600,
+    "real_planet": 100,
+    "catalogue_fp": 20,
+    "native_eb": 25,
+    "instrumental_artifact": 60,
+    "original": 65,
+    "inverted": 65,
+    "year_scrambled": 65
+  },
+  "sample": "psf-flat-retrieval-20261014-v1/usable1000-v2",
+  "recorded_volume_uuid": "5617B8CF-DE4E-45F6-AA95-0AA9D902D992",
+  "availability": "No original pilot arrays, prepared-cases.json or clocks found on either mounted corpus volume or local other/ tree; ssh kbonus cannot resolve. Existing 2501-star real-source run was not substituted.",
+  "tls_version": "2.0.1",
+  "backend": "fused-pl (stock default, approximate)",
+  "runtime": {
+    "python": "3.11.15 (main, Mar 10 2026, 18:01:34) [Clang 21.1.4 ]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "executable": "/Users/adam/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/bin/python3.11",
+    "executable_sha256": "493ad32b1020ad9d3bb76e230451f694464d6723cc6c31ed26eb3d2634895a5c",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "astropy": "7.2.2",
+      "wotan": "1.10",
+      "numba": "0.68.0",
+      "llvmlite": "0.50.0",
+      "batman-package": "2.5.3",
+      "transitleastsquares": "2.0.1",
+      "tqdm": "4.70.1"
+    }
+  },
+  "checks": {
+    "ruff": "PASS",
+    "complexity_maximum": 10,
+    "complexity": "PASS for new experiment code; frozen copied lineage verified by hashes",
+    "copied_source_and_scorer_parity": "PASS",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "wall_s": 30.743,
+    "controls": [
+      "K2-3 stock/capture parity for period, T0, duration, depth, SDE and complete periods/power/chi2 arrays",
+      "Complete copied physical-transit pipeline recovery with BLS and TLS; prepared records unchanged"
+    ],
+    "xml_sha256": "f1d5af576da7fde2bce8a3e97bf97812edf9ccf86a0fad7a025cdf7ae23d43ab"
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads_per_worker": 1,
+    "nice_increment": 15
+  },
+  "source_bindings": {
+    "TLS/detector.py": "400113d8fc3433a5e4b6dc945a4ade7b9c2a80f2d5e9b3a55e731f81bb56061c",
+    "TLS/requirements.txt": "8d250189350203cdcf79312b5b7bee667318bc0123a7259e6b008a1bd375511b",
+    "TLS/scoring.py": "b036e1acd2da1f8600f102a2b48d7de872f4d385856504138a401099ab25f960",
+    "TLS/test_controls.py": "850d38bec8df2804925a1e8631ec8eb8df44da9da5a56a3ef3b9a3f673ab4036",
+    "TLS/__init__.py": "b16d4ab2d73777bd414d2575d958cb5d291ecb3be668542a94c1f7aadfa81d31",
+    "TLS/run.sh": "36142562619906ef78832c1145885717fbc47b69dba9a03f94a219c233f900f6",
+    "TLS/README.md": "8555866496f241b2dc9528c02a105eeb658d04470f04b389cefa01c3c2368ddd",
+    "TLS/ruff.toml": "bff1d79c7f8fca9c1402261fef3d2fe0b30e9eb18a3a28f4e37f1071a5fe176f",
+    "TLS/source-origins.json": "57b5e074599f62a30afd04a4c0d02acf4c1e23bc78a301180ae80c1c683c6b5e",
+    "TLS/calibration.py": "577fc478080a2175513bc7a2606081ab86df8e3b58df7fbb8d7215b0e739ab15",
+    "TLS/testdata/provenance.json": "586efb1ed32ec047a2edce19852494a8e868e3d96dd27a08a726cfa83c7b7882",
+    "TLS/testdata/EPIC201367065_detrended.csv": "8e62714d61d0cf22d5a1d4e8842bffef74f4307fa3a2e51310c2001c15107889",
+    "TLS/pipeline/shallow/run.py": "ffd2544418506526e04166d24be88df79a54a7d49126787e29b9dbd11543856c",
+    "TLS/pipeline/shallow/config.json": "0ad6fd8fcc8da21041f132f7af3d6698b67635865d7edf963e5f5bedd0355996",
+    "TLS/pipeline/shallow/README.md": "fe4e996f91b0a69399b08879827e9bd881c5a58b23271c6cd434f4848fe21061",
+    "TLS/pipeline/shallow/bls.c": "5ea189828c7d7625ea2b923416065ff74df6dd98370736cc8b5d7464c0a4c97c",
+    "TLS/dwarfs/shallow/evolve_template.py": "6916f3de5ab8598843e1bef65d9111bf2890744bed98a477b5f589d35633aef2",
+    "TLS/dwarfs/shallow/evolve_noise.py": "14dc9b45b958e303d5c50a596a9228cd204dd421a1cdd6e2140e02950d9e06ae",
+    "TLS/dwarfs/shallow/evolve_global_fundamental.py": "18f5ceae1d678a4182ae83efe4f2465f835af5ac719a718c8b4f822ed4852108",
+    "TLS/dwarfs/shallow/batch_bls.c": "24c724a84a7415cc76c249f30c3a483edf7fbb5eb45b6468debd17a112097069",
+    "TLS/dwarfs/shallow/coherence.c": "5aab83979b12b74930c0e4c5336b29772ed8f57a782576b74378fe6dce013942",
+    "TLS/dwarfs/shallow/README.md": "24599da17619ca77506a571eb93c4260cf8f1b2d6b2e512c7b689147ad38cb89",
+    "TLS/dwarfs/shallow/evolve_native_coherence.py": "d900206db0f3f29b946d9971e039104d63c9b6b9e72cc969dff32b5ef0520174",
+    "TLS/dwarfs/shallow/masks.py": "d89cd8a9082f6dd220ea5f3b291070b3006ebb9a7a14a8b56853f9753b8bd680",
+    "TLS/dwarfs/shallow/evolve_detector.py": "77b49cefd9651352c125c55395618316b65b1f5cc611d26846aa2183b795c109",
+    "TLS/dwarfs/shallow/current-designs.json": "284c32951bbf4e249dcde3303f4afc7db101efd4dcc356545d9a63812efea8f1",
+    "TLS/dwarfs/shallow/null_calibration.py": "a735dad81c7c26bfdf30a74130fa93be35d1db5d01820ba24eb3ad7d55ff7730"
+  },
+  "programme_10000_gate_passed": false,
+  "statistical_validation_modified": false
+}

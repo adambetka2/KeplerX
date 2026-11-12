@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "utc": "2026-10-17T23:12:46.585912+00:00",
+  "status": "READY_STOPPED_REQUESTED_TIME_NOT_DEMONSTRATED",
+  "branch": "boi-hardware-runtime",
+  "worktree": "/Users/adam/worktrees/boi-hardware-runtime/spacelab",
+  "output_root": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1",
+  "wrapper": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware.sh",
+  "launcher_label": "local.spacelab.job.boi-validation-hardware-v1",
+  "freeze_sha256": "d95a52893ff10424153f55cf25c7e8cebc767adcf9f8f8d763dd8a1723a6ed1f",
+  "verified_frozen_files": 470,
+  "parent_freeze_sha256": "2405eb389ae551b4bd768ca2f35440d824239fd28548e155306992d19e99f5b1",
+  "scientific_input_changes": [],
+  "required_production_runs": 40,
+  "complete_production_runs": 0,
+  "retained_scenario_families": 110,
+  "retained_attempted_draws": 110000000,
+  "total_attempted_draws": 6480000000,
+  "remaining_attempted_draws": 6370000000,
+  "requested_hours": [
+    7,
+    8
+  ],
+  "time_target_demonstrated": false,
+  "throughput_planning": {
+    "unadjusted_reference_family_scaling_hours_remaining": 22.366208955936095,
+    "same_model_excluding_first_family_timing_hours": 20.857628198566797,
+    "scope": "Small-reference timing extrapolations, not a completion guarantee or confidence interval. File I/O, initial compilation, scenario work and mixed-target scheduling do not scale identically. None supports a 7-8 hour promise.",
+    "full_concurrent_replay_wall_seconds": 133.348490125034
+  },
+  "hardware": {
+    "model": "Apple M1 Pro",
+    "CPU_cores": 10,
+    "performance_cores": 8,
+    "efficiency_cores": 2,
+    "RAM_GiB": 16,
+    "CPU_idle_percent_during_ten_worker_test": 0.0,
+    "global_memory_pressure": "Substantial VM and application renderer memory remains compressed even with production stopped.",
+    "scheduling_change": "Application resource policy plus Interactive launch agent; each numerical worker verifies QOS_CLASS_USER_INITIATED."
+  },
+  "gold_replays": [
+    {
+      "source_id": "2077554781499350144",
+      "reference_families": 210,
+      "successful_concurrent_replays": 5,
+      "maximum_posterior_L1_difference": 6.713603703701251e-12,
+      "existing_posterior_L1_tolerance": 1e-08,
+      "maximum_absolute_log_weight_difference": 7.450580596923828e-09,
+      "median_reference_seconds": 119.89067383296788,
+      "median_reference_family_body_seconds": 102.788623040542,
+      "maximum_worker_peak_RSS_bytes": 461602816
+    },
+    {
+      "source_id": "2127186564572468352",
+      "reference_families": 114,
+      "successful_concurrent_replays": 5,
+      "maximum_posterior_L1_difference": 3.5041353878790307e-10,
+      "existing_posterior_L1_tolerance": 1e-08,
+      "maximum_absolute_log_weight_difference": 1.8358230590820312e-05,
+      "median_reference_seconds": 84.2536544171162,
+      "median_reference_family_body_seconds": 70.23019266268238,
+      "maximum_worker_peak_RSS_bytes": 403570688
+    }
+  ],
+  "bound_domain_parity": {
+    "cases_per_target": 73,
+    "both_targets_passed": true,
+    "maximum_log_bound_difference": [
+      4.440892098500626e-16,
+      2.2737367544323206e-13
+    ]
+  },
+  "folder_tests": {
+    "passed": 332,
+    "preexisting_failures": 3,
+    "failure_names": [
+      "test_source_two_eclipse_model_dismisses_an_aligned_alias",
+      "test_source_two_eclipse_attribution_respects_context",
+      "test_singular_position_covariance_remains_unconstrained"
+    ],
+    "new_runtime_regressions_passed": 6,
+    "log": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign/audit/hardware-20261018/vetting-tests-v4.log",
+    "test_only_environment": "Separate cache overlay supplies PyArrow 18.1.0, FITS/PRF and fitting imports. Test cache paths avoid broken migrated pixel links. Production runtime and data remain untouched."
+  },
+  "lint": {
+    "changed_files": "PASS",
+    "folder_diagnostics": 12,
+    "new_folder_diagnostics": 0,
+    "complexity_diagnostics": 3,
+    "new_complexity_diagnostics": 0
+  },
+  "retained_preparation_failures": [
+    "Initial taskpolicy path assumption failed before benchmark execution; corrected to /usr/sbin/taskpolicy.",
+    "First fused exact-weight checks failed on floating-point differences; first-failure arrays retained. Existing posterior L1<=1e-8 revalidation tolerance used without changing scientific admission thresholds.",
+    "First non-profiled diagnostic attempted empty cProfile export; corrected before freezing.",
+    "Full-folder tests initially failed on survey-only import dependencies and broken migrated cache links; logs v1-v3 retained, test-only overlay/routing used."
+  ],
+  "production_state": "Stopped by Adam; hourly monitor paused. Runtime-priority question is pending; do not restart automatically.",
+  "remaining_physical_closeout": "Unchanged: native convergence, radius, RUWE, localization and dated catalogue/companion/literature evidence; no RV confirmation."
+}

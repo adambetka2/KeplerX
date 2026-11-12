@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "campaign": "third-campaign",
+  "runtime_root": "runtime",
+  "sample": null,
+  "population": ["M dwarf", "K dwarf", "G dwarf"],
+  "photometry": {"view": "psf_flat", "quality_equals": 0, "flatten_mask_equals": 0,
+    "retained_quality_bits": [16, 128, 8192, 131072, 262144],
+    "retained_outlier_sigma": 5.0,
+    "field_artifact_epochs": "photometry/field-artifact-epochs.json", "additional_detrending": false},
+  "detection": {
+    "period_min_days": 0.5,
+    "period_max_days": 500.0,
+    "min_observed_transits": 3,
+    "mes_threshold": 7.1,
+    "max_passes": 10
+  },
+  "vetting": {"policy": "linear-score-binary-gate", "local_morphology": true, "refinement_weight": "sigma", "morphology_groups": 50, "dismissed_metrics": "policy"},
+  "localization": {"gaia_field": "data/gaia-dr3-kepler-field", "fetch_connections": 8},
+  "calibration": {
+    "sample_construction": {"minimum_event_coverage": 0.5}
+  },
+  "execution": {"workers": 1, "numerical_threads": 1, "minimum_free_gib": 2.0, "stop_on_error": true, "isolation": "worker", "dispatch": "longest_first"}
+}

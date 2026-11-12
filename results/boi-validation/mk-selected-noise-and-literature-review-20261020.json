@@ -1,0 +1,428 @@
+{
+  "utc": "2026-10-20T08:12:46.667336+00:00",
+  "classification": "PROGRESS_SELECTED_NOISE_CONTROLS_EXACT_ALIAS_REFRESH_AND_POINTING_CONCERN",
+  "selected_source_id": "2128845796339643392",
+  "selected_kic": 10865762,
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_adjudications": 0,
+  "false_positive_rate": null,
+  "boi_label": "BOI",
+  "followup_outcome": "REMAINS_PC_PENDING_NUMERICAL_AND_PHYSICAL_REVIEW",
+  "membership": {
+    "result": {
+      "status": "NEW_BOI_SOURCE",
+      "matched_boi_ids": [],
+      "period_related_boi_ids": [],
+      "previous_boi_source": false
+    },
+    "source": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/inventory-v3/candidates.json",
+      "sha256": "3e89c2011c1cac95660c4509b78f893920a04bb9edcb5c51929d618ab2d68404"
+    }
+  },
+  "complete_full_repeats": 0,
+  "selected_progress": {
+    "final": [
+      {
+        "index": 0,
+        "completed_scenarios": 123,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 1,
+        "completed_scenarios": 123,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 2,
+        "completed_scenarios": 127,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 3,
+        "completed_scenarios": 123,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 4,
+        "completed_scenarios": 123,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 5,
+        "completed_scenarios": 124,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 6,
+        "completed_scenarios": 129,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 7,
+        "completed_scenarios": 126,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 8,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 9,
+        "completed_scenarios": 120,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 10,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 11,
+        "completed_scenarios": 115,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 12,
+        "completed_scenarios": 122,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 13,
+        "completed_scenarios": 121,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 14,
+        "completed_scenarios": 121,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 15,
+        "completed_scenarios": 113,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 16,
+        "completed_scenarios": 114,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 17,
+        "completed_scenarios": 113,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 18,
+        "completed_scenarios": 121,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 19,
+        "completed_scenarios": 114,
+        "total_scenarios": 132,
+        "result_present": false
+      }
+    ],
+    "recovered": [
+      {
+        "index": 0,
+        "completed_scenarios": 110,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 1,
+        "completed_scenarios": 112,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 2,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      }
+    ]
+  },
+  "live_user_services": {
+    "mk-boi-probability-primary-20261020-v1": {
+      "MainPID": "3689138",
+      "CPUQuotaPerSecUSec": "infinity",
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "mk-boi-selected-budget-20261020-v2": {
+      "MainPID": "3732972",
+      "CPUQuotaPerSecUSec": "infinity",
+      "ActiveState": "active",
+      "SubState": "running"
+    }
+  },
+  "corrected_service_observation": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/selected-user-service-verification-v1.json",
+    "sha256": "ac0a96bd9c627dad3717c9a1fc215ec3a9dc4235c9b92e4303157c292385f961"
+  },
+  "native_fit": {
+    "rank_rhat_maximum": 1.0234351235696706,
+    "reference_epoch_bulk_ess": 237.5101801184609,
+    "convergence": {
+      "passed": true,
+      "radius_ratio_snr": 8.244638647382143,
+      "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+    },
+    "scope": "Accepted native numerical gates only. Source ownership, dilution, stellar model, scene, activity, aliases, likelihood and physical closeout remain required. No probability result or physical radius is asserted.",
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v2/2128845796339643392/native-fit-review.json",
+      "sha256": "73010103f6df38d209684752217fb8f3def5d3c3e53e1473ca3766a8a5c45f1f"
+    }
+  },
+  "host": {
+    "ruwe": 1.0688868,
+    "inventory": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/scene-campaign-v2/2128845796339643392/stellar-inventory.json",
+      "sha256": "64cb58d133bf53f9531042294d3cb40b12a7883930feb965c4eec2fe90622871"
+    }
+  },
+  "noise_phase_controls": {
+    "count": 60,
+    "event_count_range": [
+      25,
+      31
+    ],
+    "original_diagnostic_reproduced": true,
+    "summaries": {
+      "baseline": {
+        "control_count": 60,
+        "target": {
+          "events": 28,
+          "depth": 0.0003733199577236573,
+          "error": 7.091969058309562e-05,
+          "snr": 5.263981760978546,
+          "chi2": 20.65954430886429,
+          "dof": 27,
+          "descriptive_chi2_tail": 0.8019706319772184,
+          "positive_events": 23,
+          "maximum_information_fraction": 0.06891279278586121
+        },
+        "control_signed_snr_quantiles_5_16_50_84_95": [
+          -1.4232021940819397,
+          -1.108150080871354,
+          -0.10768244535453146,
+          1.2383661991030366,
+          1.7604053775861945
+        ],
+        "control_signed_snr_minimum": -1.9808629099617072,
+        "control_signed_snr_maximum": 2.217777412887482,
+        "control_signed_snr_ge_target": 0,
+        "control_absolute_snr_ge_target": 0
+      },
+      "with_parent_pointing_background": {
+        "control_count": 60,
+        "target": {
+          "events": 28,
+          "depth": 0.00022289495230835257,
+          "error": 7.581848540348405e-05,
+          "snr": 2.939849709766294,
+          "chi2": 12.424234172755584,
+          "dof": 27,
+          "descriptive_chi2_tail": 0.9924568690680138,
+          "positive_events": 21,
+          "maximum_information_fraction": 0.06673734621028889
+        },
+        "control_signed_snr_quantiles_5_16_50_84_95": [
+          -1.4034670645623013,
+          -0.8830927262001301,
+          -0.17641268654326114,
+          0.8360259032278261,
+          1.5270020779275706
+        ],
+        "control_signed_snr_minimum": -2.0003552602745382,
+        "control_signed_snr_maximum": 2.099078859641992,
+        "control_signed_snr_ge_target": 0,
+        "control_absolute_snr_ge_target": 0
+      }
+    },
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-noise-phase-controls-v1/review.json",
+      "sha256": "1aa1a03cdbb6aad7a4c5ed3071cfb26f9d3825c9d6ec5b5dfd62947d84428e8d"
+    },
+    "scope": "Preserve every offset, event and failure. Compare descriptive signed SNR/depth distributions and paired regression changes. No independent trials, calibrated false-alarm probability, new ephemeris, new probability run or physical admission is inferred."
+  },
+  "engineering_diagnosis": {
+    "variant_summaries": {
+      "BASELINE": {
+        "events": 28,
+        "depth": 0.0003733199577235926,
+        "error": 7.091969058309588e-05,
+        "snr": 5.2639817609776145,
+        "chi2": 20.659544308852162,
+        "dof": 27,
+        "descriptive_chi2_tail": 0.8019706319777673,
+        "positive_events": 23,
+        "maximum_information_fraction": 0.06891279278586167
+      },
+      "POINTING_ONLY": {
+        "events": 28,
+        "depth": 0.00024069173346938803,
+        "error": 7.402912740281056e-05,
+        "snr": 3.251311232668265,
+        "chi2": 13.500753611317869,
+        "dof": 27,
+        "descriptive_chi2_tail": 0.9856684735979524,
+        "positive_events": 21,
+        "maximum_information_fraction": 0.06374535642742425
+      },
+      "BACKGROUND_ONLY": {
+        "events": 28,
+        "depth": 0.00037037985461494695,
+        "error": 7.246171363353265e-05,
+        "snr": 5.111386910998315,
+        "chi2": 21.29948772909589,
+        "dof": 27,
+        "descriptive_chi2_tail": 0.7720645317023994,
+        "positive_events": 22,
+        "maximum_information_fraction": 0.07050046055261419
+      },
+      "POINTING_AND_BACKGROUND": {
+        "events": 28,
+        "depth": 0.00022289495230826915,
+        "error": 7.581848540348405e-05,
+        "snr": 2.9398497097651934,
+        "chi2": 12.424234172764873,
+        "dof": 27,
+        "descriptive_chi2_tail": 0.992456869067969,
+        "positive_events": 21,
+        "maximum_information_fraction": 0.06673734621028887
+      }
+    },
+    "maximum_retained_vs_svd_depth_difference_ppm": 2.0560809999015106e-09,
+    "maximum_injected_template_fraction_error": 8.466560785791444e-13,
+    "maximum_weighted_design_condition_number": 65.69556605998076,
+    "template_variance_inflation_quantiles": [
+      1.0038452252358636,
+      1.1258123249559957,
+      1.523296061756981
+    ],
+    "paired_depth_reduction_ppm": {
+      "target": 150.42500541532345,
+      "controls_count": 60,
+      "controls_quantiles_5_16_50_84_95": [
+        -85.9674448480352,
+        -34.29812384321697,
+        4.138012909167696,
+        46.98635934408112,
+        80.65419100575076
+      ],
+      "controls_minimum": -132.24978412592756,
+      "controls_maximum": 106.14542383167482,
+      "controls_ge_target": 0,
+      "controls_absolute_ge_target": 0
+    },
+    "scope": "Paired selected-star conditioning and identifiable-template diagnostic, not a new native fit, posterior, probability integration or instrumental mechanism adjudication. Fixed-template injection recovery tests only that exact template; shape errors, temporal correlations and the physical interpretation of the regressors remain outside this check. Do not turn correlated control counts into a false-alarm probability."
+  },
+  "engineering_review": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-engineering-conditioning-v1/review.json",
+    "sha256": "816a24035d350bc61cdc7d6efb5fe448ea719f77477b160436872298efee9fb2"
+  },
+  "dated_exact_alias_review": {
+    "status": "NO_MATCH_IN_QUERIED_SOURCES_ONLY",
+    "aliases": [
+      "Gaia DR3 2128845796339643392",
+      "Gaia DR2 2128845796339643392",
+      "KIC 10865762",
+      "TIC 26961725",
+      "2MASS J19350292+4814025",
+      "UCAC4 692-066097",
+      "WISE J193502.92+481402.4"
+    ],
+    "query_summaries": [
+      {
+        "key": "simbad-selected-aliases-cone",
+        "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&MAXREC=1000&QUERY=SELECT+b.main_id%2Cb.oid%2Cb.otype%2Cb.nbref%2Ci.id+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27Gaia+DR3+2128845796339643392%27%2C%27Gaia+DR2+2128845796339643392%27%2C%27KIC+10865762%27%2C%27TIC+26961725%27%2C%272MASS+J19350292%2B4814025%27%2C%27UCAC4+692-066097%27%2C%27WISE+J193502.92%2B481402.4%27%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CCIRCLE%28%27ICRS%27%2C293.7621631164574%2C48.23398241656904%2C0.0004166666666666667%29%29",
+        "status": "FAILED_NO_SUBSTITUTION",
+        "error": "TimeoutError('The read operation timed out')"
+      },
+      {
+        "key": "arxiv-selected-aliases",
+        "url": "https://export.arxiv.org/api/query?search_query=all%3A%22Gaia+DR3+2128845796339643392%22+OR+all%3A%22Gaia+DR2+2128845796339643392%22+OR+all%3A%22KIC+10865762%22+OR+all%3A%22TIC+26961725%22+OR+all%3A%222MASS+J19350292%2B4814025%22+OR+all%3A%22UCAC4+692-066097%22+OR+all%3A%22WISE+J193502.92%2B481402.4%22&start=0&max_results=100",
+        "status": "RETAINED_BOUNDED_QUERY_REQUIRES_EXACT_SIGNAL_REVIEW",
+        "total_results": 0
+      },
+      {
+        "key": "exofop-selected",
+        "url": "https://exofop.ipac.caltech.edu/tess/target.php?id=26961725&json",
+        "status": "RETAINED_BOUNDED_QUERY_REQUIRES_EXACT_SIGNAL_REVIEW",
+        "counts": {
+          "tois": 0,
+          "ctois": 0,
+          "planet_parameters": 0,
+          "stellar_companions": 0,
+          "imaging": 0,
+          "spectroscopy": 0,
+          "time_series": 0,
+          "files": 0
+        }
+      },
+      {
+        "key": "nasa-koi-selected-parent",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&MAXREC=1000&QUERY=select+kepid%2Ckepoi_name%2Ckepler_name%2Ckoi_disposition%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Cra%2Cdec+from+cumulative+where+kepid+in+%2810865762%2C10865753%29",
+        "status": "RETAINED_BOUNDED_QUERY_REQUIRES_EXACT_SIGNAL_REVIEW",
+        "rows": []
+      },
+      {
+        "key": "nasa-tce-selected-parent",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&MAXREC=1000&QUERY=select+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_fwm_sra%2Ctce_fwm_sdec+from+q1_q17_dr25_tce+where+kepid+in+%2810865762%2C10865753%29",
+        "status": "RETAINED_BOUNDED_QUERY_REQUIRES_EXACT_SIGNAL_REVIEW",
+        "rows": []
+      },
+      {
+        "key": "nasa-ps-selected",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&MAXREC=1000&QUERY=select+pl_name%2Chostname%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandur%2Cpl_tsystemref%2Cra%2Cdec%2Cgaia_dr2_id%2Cgaia_dr3_id%2Ctic_id%2Cdisc_refname%2Cpl_refname+from+ps+where+gaia_dr3_id+%3D+%27Gaia+DR3+2128845796339643392%27+or+gaia_dr2_id+%3D+%27Gaia+DR2+2128845796339643392%27+or+tic_id+%3D+%27TIC+26961725%27+or+%28ra+between+293.74966+and+293.77467+and+dec+between+48.22564+and+48.24232%29",
+        "status": "RETAINED_BOUNDED_QUERY_REQUIRES_EXACT_SIGNAL_REVIEW",
+        "rows": []
+      }
+    ],
+    "simbad_recovery_status": "EQUIVALENT_OFFICIAL_QUERY_UNION_COMPLETE",
+    "simbad_union_rows": [],
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-exact-literature-v2/review.json",
+      "sha256": "7b201aa3a94f7fd6e7c0e5e4e8853e293002df4589940d320807a91e13d684ff"
+    },
+    "simbad_recovery": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-exact-literature-v2/simbad-equivalent-union-review-v1.json",
+      "sha256": "85842bc4fb0a120c2efb0c75e85822b352ea68686ec80fa194c90055c62697f5"
+    },
+    "scope": "Only selected star and its parent extraction identity. Explicit aliases plus1.5arcsec SIMBAD cone and approximately30arcsec NASA PS box. arXiv search covers indexed metadata, not universal full text. Empty catalogues or searches do not certify novelty, discovery, validation, absence of literature or absence of follow-up."
+  },
+  "interpretation": "The selected transit is stronger than all sixty descriptive off-transit controls in both retained comparisons. Its150ppm attenuation by engineering terms also exceeds every control change. The change is mainly associated with pointing: pointing-only gives241ppm/SNR3.25; background-only370ppm/SNR5.11. Stable SVD reproduces the retained solver and a fixed300ppm template is recovered to numerical precision. Numerical instability and automatic removal of that exact registered template therefore do not explain the measured change. This is data-specific pointing sensitivity requiring physical interpretation; it is neither a reproduced instrumental mechanism nor an astrophysical false-positive denial.",
+  "protocol_requirement_clarification": "The protocol requires an accepted free-period/free-epoch native fit, reported radius inference, and consistent treatment of scene/dilution in photons, forward model and covariance. It does not universally require a second joint-dilution native MCMC fit. Earlier wording using native joint-dilution acceptance must not create a new automatic gate. The current apparent native radius and TP-only physical-radius summary retain their original conditional labels; neither alone closes the scene/radius review. Absent imaging is recorded and handled by the declared unresolved-scene model; it is not an automatic new-observation requirement.",
+  "remaining_required_review": [
+    "Finish the fixed first-five screen; enforce mean point FPP>=0.03 cutoff, otherwise finish twenty primaries and assigned three diagnostics with complete weight replay and numerical upper-threshold/timing review.",
+    "Interpret the measured pointing sensitivity against authenticated motion and aperture/PRF physics; no denial without a reproduced mechanism.",
+    "Qualify off-grid companion limb darkening and the adopted scene/dilution and physical-radius inference. A changed scientific model requires a separate generation and paired reference controls before production."
+  ],
+  "next_selected_physical_action": "If the probability screen retains this candidate, test whether a constant-star aperture/PRF model driven by measured spacecraft motion reproduces the observed component. Use the selected scene only; preserve limitations of a finite pointing grid.",
+  "scope": "Only the current star was measured. No new primary probability attempts, competing candidate runs, changed frozen physics, admission or astrophysical denial. Previous failures, stopped studies, conditional labels and deferred M/K detector recovery calibration remain preserved."
+}

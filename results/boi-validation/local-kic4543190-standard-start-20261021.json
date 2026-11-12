@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-21T05:59:17.626039+00:00",
+  "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2100325529865507712",
+  "kic": 4543190,
+  "tic": 399820148,
+  "signal_id": "rust-v6-2100325529865507712-1",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launch.json",
+    "sha256": "8d1e6f639cf14091ecd0084b17f7603e66c4831ab7f23a713d4d6accbbd168f6"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-freeze.json",
+    "sha256": "a21debe56701a1c3de3da19fe3eeabd69cd17ec5c20a795b979f06fea91d0fa5"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/selection.json",
+    "sha256": "5c7a55672ca58dcc98eb0edbf5c5e67287b281a2a339488e38244ec0c1d317f3"
+  },
+  "native_stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-stellar-review.json",
+    "sha256": "11dc61368e534328af3c933afc7315170f4b713a29f7eb9b02e2cf0873b4c1d5"
+  },
+  "pre_native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/pre-native-retained-review.json",
+    "sha256": "f7977fb11aa7ab37248bb17c23a5e0632a415c1c81b3a85548267622b4b2b33e"
+  },
+  "seed_source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-seed-source-review.json",
+    "sha256": "8e2758f024272375014da238c1c55e122daf7470640d04dd87428e50e0d7e797"
+  },
+  "seed_revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-seed-revalidation.json",
+    "sha256": "cb0d1a78694d125178caea4c68d2523cad0e4c8f6cdfcc2499cb05632749a552"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/live-check-20261021T055917Z.json",
+    "sha256": "144066ed29cb0e49dc479f51ed508f1625dc11d319aa2a4a4e33a4dbdfc24e0e"
+  },
+  "previous_terminal": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/readiness-hold-v1.json",
+    "sha256": "ce0f94651ac9a910fb4058b368cb8dea97540cd7e216d4a50837145530d3c37e"
+  },
+  "native_points": 13107,
+  "probability_runs": 0,
+  "clock_adopted": false,
+  "parent_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/parent-authentication-v1.json",
+    "sha256": "e15348f3907472f5ac441f4c7c8cf0c462d8805cfb0a92d33d828c2abce60b4d"
+  },
+  "prf_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/prf-authentication-v1.json",
+    "sha256": "79b4e288833f30eee89d23907c0fddb154236af61eb8ba3721b022f2a82b5e1f"
+  },
+  "next": "Let seeded dynamic nested finish. Review actual weighted/equal posterior support and stopping, finite priors/posteriors, valid joint eccentric contacts/residuals/exposure and original protection across full observed baseline before clock adoption. Same-Gaia3.263day published-candidate match retained, not novelty or physical admission. All alternative proposals remain unmasked. Reuse staged parents/PRFs; finish same-source26star scene/extraction, selected FLAME route, final-clock spacecraft/pixels/aliases, seasonal dilution/folded noise and dated catalogue/companion readiness before stockFPP. Preserve outcome/hold then advance full eligible queue; no prior held-case rescue."
+}

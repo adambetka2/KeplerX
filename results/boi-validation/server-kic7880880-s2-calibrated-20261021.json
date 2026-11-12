@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-21T14:22:37.101259+00:00",
+  "source_id": "2103022868108864896",
+  "signal_id": "mk-sap-20261019-2103022868108864896-2",
+  "kic": 7880880,
+  "native_case": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2103022868108864896/generation-signal-2-02-calibrated-group",
+  "audit": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2103022868108864896/generation-signal-2-03-probability-calibrated/campaign/audit-20261021T141505746785Z.json",
+  "freeze_sha256": "ef7935d450ad8c01b8c91959ab8c7d87abdb878c12a7498e5226ec1f8d4c2dcc",
+  "primary": {
+    "FPP": {
+      "repeats": [
+        0.07596290048506837,
+        0.07373747621855475
+      ],
+      "mean": 0.07485018835181156,
+      "sample_standard_deviation": 0.0015736125898688795,
+      "minimum": 0.07373747621855475,
+      "maximum": 0.07596290048506837,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.063971353365898,
+        0.06515671933177683
+      ],
+      "mean": 0.06456403634883742,
+      "sample_standard_deviation": 0.0008381803126606618,
+      "minimum": 0.063971353365898,
+      "maximum": 0.06515671933177683,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    }
+  },
+  "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+  "remaining18_not_started": true,
+  "disposition": "REMAINS_PC",
+  "physical_validation": false,
+  "statistical_checkpoint": {
+    "completed_integrations": 110,
+    "candidates": 46,
+    "stopped_after_first_two": 45,
+    "completed_all_twenty_but_numerical_fail": 1,
+    "validated": 0
+  },
+  "next_selected_readiness": {
+    "unit": "mk-ten-next-selected-readiness-bb153cd4",
+    "selection": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/next-selected-readiness-bb153cd4/selection.json",
+    "scope": "Two alreadyselected repaired nativecases:response/canonicalpixels/exactsignal vetting/one official field each only;no automatic FPP orbodyadmission."
+  },
+  "preservation": "Distinct48.625d signal2 fromclosed53.81d signal1;no sharedsuppliedprimaryevents,oldsignal1masked,all oldcampaignsunchanged. Full originalquarters retained;Q2/6/10/14 group selectedby identicalchannel/aperture windowcount beforeFPP. Allmodelledsource alternatives andeveryjointbodytail retained."
+}

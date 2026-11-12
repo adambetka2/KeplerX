@@ -1,0 +1,57 @@
+{
+  "host": {
+    "source_id": "2129256395211984000",
+    "ra_deg": 292.24719,
+    "dec_deg": 47.9695429,
+    "astrometry": null,
+    "signals": [
+      {
+        "signal_id": "HAT-P-7-b",
+        "clock": {
+          "period_days": 2.204735417,
+          "epoch_bjd_tdb": 2454954.3585417,
+          "duration_days": 0.16202666666666668,
+          "covariance_t0_period_days2": null
+        }
+      }
+    ]
+  },
+  "settings": {
+    "cutout_size_pixels": 11,
+    "aperture_radius_pixels": 1.5,
+    "background_inner_pixels": 3.0,
+    "background_outer_pixels": 5.0,
+    "quality_bitmask": 17087,
+    "window_durations": 3.0
+  },
+  "fits_sha256": "1cad99fb2beb7c21398d2e549db000970cc791f3f28f1fd6a76a4cd62e97ebc2",
+  "download": {
+    "parameters": {
+      "ra": 292.24719,
+      "dec": 47.9695429,
+      "sector": 14,
+      "x": 11,
+      "y": 11,
+      "units": "px"
+    },
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=292.24719&dec=47.9695429&sector=14&x=11&y=11&units=px",
+    "files": [
+      {
+        "name": "tess-s0014-2-4_292.247190_47.969543_11x11_astrocut.fits",
+        "sha256": "1cad99fb2beb7c21398d2e549db000970cc791f3f28f1fd6a76a4cd62e97ebc2"
+      }
+    ],
+    "retrieved_utc": "2026-10-20T20:01:22.035262+00:00"
+  },
+  "photometry_sha256": "d56c6a6794e4b8e8d2d637daa487ac571af336423b749ec34479687004cc2353",
+  "ephemeris_origin": "NASA Exoplanet Archive cumulative KOI K00002.01, snapshot 2026-10-11",
+  "catalogue_url": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-7",
+  "catalogue_sha256": "135573ac0bc583100f15b97dd9424b25910b4171cf0fd2e7f5c3e841a84381a1",
+  "published_kepler_depth_ppm": 6674.7,
+  "expected_tess_box_depth_fraction_interval": [
+    0.005,
+    0.0075
+  ],
+  "time_convention": "BJD_TDB at target; FFI TIMECORR replaced by lkspacecraft 1.3.2",
+  "timing_kernel_manifest_sha256": "dbc886a16f90a238a06ac661465712e9aa9ab693076504d9717efd58e827ca8b"
+}

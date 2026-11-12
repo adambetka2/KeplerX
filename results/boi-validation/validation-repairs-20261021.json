@@ -1,0 +1,1142 @@
+{
+  "utc": "2026-10-21T15:26:21.058304+00:00",
+  "status": "REPAIRS_TESTED_THREE_FUTILITY_OUTCOMES_SCHEDULES_DELETED",
+  "execution": "LOCAL_MACBOOK_ONLY",
+  "runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/runtime-v2/bin/python",
+  "environment": {
+    "python": "3.12.13",
+    "packages": [
+      [
+        "aiobotocore",
+        "3.9.2"
+      ],
+      [
+        "aiohappyeyeballs",
+        "2.7.1"
+      ],
+      [
+        "aiohttp",
+        "3.14.5"
+      ],
+      [
+        "aioitertools",
+        "0.13.0"
+      ],
+      [
+        "aiosignal",
+        "1.4.0"
+      ],
+      [
+        "alabaster",
+        "1.0.0"
+      ],
+      [
+        "annotated-types",
+        "0.8.0"
+      ],
+      [
+        "anyio",
+        "4.15.1"
+      ],
+      [
+        "appnope",
+        "1.0.0"
+      ],
+      [
+        "arviz",
+        "0.23.4"
+      ],
+      [
+        "astropy",
+        "7.2.3"
+      ],
+      [
+        "astropy-iers-data",
+        "0.2026.10.19.0.52.1"
+      ],
+      [
+        "astroquery",
+        "0.4.11"
+      ],
+      [
+        "asttokens",
+        "3.0.2"
+      ],
+      [
+        "attrs",
+        "26.1.0"
+      ],
+      [
+        "babel",
+        "2.18.0"
+      ],
+      [
+        "batman-package",
+        "2.5.3+spacelab.2"
+      ],
+      [
+        "beautifulsoup4",
+        "4.15.0"
+      ],
+      [
+        "bleach",
+        "6.4.0"
+      ],
+      [
+        "blosc2",
+        "4.14.1"
+      ],
+      [
+        "bokeh",
+        "3.10.1"
+      ],
+      [
+        "botocore",
+        "1.43.106"
+      ],
+      [
+        "celerite",
+        "0.4.3"
+      ],
+      [
+        "certifi",
+        "2026.10.19"
+      ],
+      [
+        "charset-normalizer",
+        "3.5.2"
+      ],
+      [
+        "cloudpickle",
+        "3.1.2"
+      ],
+      [
+        "comm",
+        "0.2.3"
+      ],
+      [
+        "contourpy",
+        "1.3.3"
+      ],
+      [
+        "corner",
+        "2.3.0"
+      ],
+      [
+        "cycler",
+        "0.12.1"
+      ],
+      [
+        "cython",
+        "3.3.0"
+      ],
+      [
+        "debugpy",
+        "1.8.22"
+      ],
+      [
+        "defusedxml",
+        "0.7.1"
+      ],
+      [
+        "dill",
+        "0.4.1"
+      ],
+      [
+        "docutils",
+        "0.22.4"
+      ],
+      [
+        "dynesty",
+        "3.1.0"
+      ],
+      [
+        "emcee",
+        "3.1.6"
+      ],
+      [
+        "executing",
+        "2.3.0"
+      ],
+      [
+        "fastjsonschema",
+        "2.22.2"
+      ],
+      [
+        "fbpca",
+        "1.0"
+      ],
+      [
+        "fonttools",
+        "4.67.0"
+      ],
+      [
+        "frozenlist",
+        "1.8.0"
+      ],
+      [
+        "fsspec",
+        "2026.9.0"
+      ],
+      [
+        "george",
+        "0.4.4"
+      ],
+      [
+        "h11",
+        "0.16.0"
+      ],
+      [
+        "h2",
+        "4.4.1"
+      ],
+      [
+        "h5netcdf",
+        "1.8.1"
+      ],
+      [
+        "h5py",
+        "3.16.0"
+      ],
+      [
+        "hpack",
+        "4.2.0"
+      ],
+      [
+        "html5lib",
+        "1.1"
+      ],
+      [
+        "httpcore",
+        "1.0.9"
+      ],
+      [
+        "httpx",
+        "0.28.1"
+      ],
+      [
+        "hyperframe",
+        "6.1.0"
+      ],
+      [
+        "idna",
+        "3.20"
+      ],
+      [
+        "imagesize",
+        "2.0.1"
+      ],
+      [
+        "iniconfig",
+        "2.3.1"
+      ],
+      [
+        "ipykernel",
+        "7.4.0"
+      ],
+      [
+        "ipython",
+        "9.17.1"
+      ],
+      [
+        "ipython_pygments_lexers",
+        "1.1.1"
+      ],
+      [
+        "jaraco.classes",
+        "3.4.0"
+      ],
+      [
+        "jaraco.context",
+        "6.1.2"
+      ],
+      [
+        "jaraco.functools",
+        "4.6.0"
+      ],
+      [
+        "jedi",
+        "0.20.1"
+      ],
+      [
+        "jinja2",
+        "3.1.6"
+      ],
+      [
+        "jmespath",
+        "1.1.0"
+      ],
+      [
+        "joblib",
+        "1.6.0"
+      ],
+      [
+        "jsonschema",
+        "4.26.0"
+      ],
+      [
+        "jsonschema-specifications",
+        "2025.9.1"
+      ],
+      [
+        "juliet",
+        "2.2.10+spacelab.1"
+      ],
+      [
+        "jupyter_client",
+        "8.10.0"
+      ],
+      [
+        "jupyter_core",
+        "5.9.1"
+      ],
+      [
+        "jupyterlab_pygments",
+        "0.3.0"
+      ],
+      [
+        "keyring",
+        "25.7.0"
+      ],
+      [
+        "kiwisolver",
+        "1.5.1"
+      ],
+      [
+        "lightkurve",
+        "2.6.0"
+      ],
+      [
+        "llvmlite",
+        "0.50.0"
+      ],
+      [
+        "lxml",
+        "6.1.3"
+      ],
+      [
+        "markdown-it-py",
+        "4.2.0"
+      ],
+      [
+        "markupsafe",
+        "3.0.4"
+      ],
+      [
+        "matplotlib",
+        "3.11.2"
+      ],
+      [
+        "matplotlib-inline",
+        "0.2.2"
+      ],
+      [
+        "mdurl",
+        "0.1.2"
+      ],
+      [
+        "mechanicalsoup",
+        "1.4.0"
+      ],
+      [
+        "memoization",
+        "0.4.0"
+      ],
+      [
+        "mistune",
+        "3.4.0"
+      ],
+      [
+        "more-itertools",
+        "11.2.1"
+      ],
+      [
+        "msgpack",
+        "1.2.3"
+      ],
+      [
+        "multidict",
+        "6.9.1"
+      ],
+      [
+        "multipledispatch",
+        "1.0.0"
+      ],
+      [
+        "multiprocess",
+        "0.70.19"
+      ],
+      [
+        "narwhals",
+        "2.27.1"
+      ],
+      [
+        "nbclient",
+        "0.11.0"
+      ],
+      [
+        "nbconvert",
+        "7.17.2"
+      ],
+      [
+        "nbformat",
+        "5.11.1"
+      ],
+      [
+        "nbsphinx",
+        "0.9.3"
+      ],
+      [
+        "ndindex",
+        "1.10.1"
+      ],
+      [
+        "nest-asyncio2",
+        "1.7.4"
+      ],
+      [
+        "numba",
+        "0.68.0"
+      ],
+      [
+        "numexpr",
+        "2.14.2"
+      ],
+      [
+        "numpy",
+        "1.26.4"
+      ],
+      [
+        "packaging",
+        "26.3"
+      ],
+      [
+        "pandas",
+        "2.3.3"
+      ],
+      [
+        "pandocfilters",
+        "1.5.1"
+      ],
+      [
+        "parso",
+        "0.8.7"
+      ],
+      [
+        "patsy",
+        "1.0.3"
+      ],
+      [
+        "pexpect",
+        "4.9.0"
+      ],
+      [
+        "pillow",
+        "13.0.0"
+      ],
+      [
+        "platformdirs",
+        "4.13.5"
+      ],
+      [
+        "pluggy",
+        "1.7.0"
+      ],
+      [
+        "prompt_toolkit",
+        "3.0.53"
+      ],
+      [
+        "propcache",
+        "0.5.4"
+      ],
+      [
+        "psutil",
+        "7.2.2"
+      ],
+      [
+        "ptyprocess",
+        "0.7.0"
+      ],
+      [
+        "pure_eval",
+        "0.2.4"
+      ],
+      [
+        "py-cpuinfo",
+        "9.0.0"
+      ],
+      [
+        "pydantic",
+        "2.14.1"
+      ],
+      [
+        "pydantic_core",
+        "2.50.1"
+      ],
+      [
+        "pyerfa",
+        "2.0.1.5"
+      ],
+      [
+        "pygments",
+        "2.21.0"
+      ],
+      [
+        "pyparsing",
+        "3.3.3"
+      ],
+      [
+        "pyrr",
+        "0.10.3"
+      ],
+      [
+        "pytest",
+        "9.1.1"
+      ],
+      [
+        "python-dateutil",
+        "2.9.0.post0"
+      ],
+      [
+        "pytransit",
+        "2.2.0"
+      ],
+      [
+        "pytz",
+        "2026.5"
+      ],
+      [
+        "pyvo",
+        "1.9.1"
+      ],
+      [
+        "pyyaml",
+        "6.0.3"
+      ],
+      [
+        "pyzmq",
+        "27.2.0"
+      ],
+      [
+        "radvel",
+        "1.6.7"
+      ],
+      [
+        "referencing",
+        "0.37.0"
+      ],
+      [
+        "requests",
+        "2.34.2"
+      ],
+      [
+        "rich",
+        "15.0.0"
+      ],
+      [
+        "roman-numerals",
+        "4.1.0"
+      ],
+      [
+        "rpds-py",
+        "2026.9.1"
+      ],
+      [
+        "ruff",
+        "0.17.1"
+      ],
+      [
+        "s3fs",
+        "2026.9.0"
+      ],
+      [
+        "scikit-learn",
+        "1.9.1"
+      ],
+      [
+        "scipy",
+        "1.13.1"
+      ],
+      [
+        "seaborn",
+        "0.13.2"
+      ],
+      [
+        "semantic-version",
+        "2.10.0"
+      ],
+      [
+        "setuptools",
+        "80.10.2"
+      ],
+      [
+        "six",
+        "1.17.0"
+      ],
+      [
+        "snowballstemmer",
+        "3.1.1"
+      ],
+      [
+        "soupsieve",
+        "3.0.3"
+      ],
+      [
+        "sphinx",
+        "9.1.1"
+      ],
+      [
+        "sphinxcontrib-applehelp",
+        "2.0.0"
+      ],
+      [
+        "sphinxcontrib-devhelp",
+        "2.0.0"
+      ],
+      [
+        "sphinxcontrib-htmlhelp",
+        "2.1.0"
+      ],
+      [
+        "sphinxcontrib-jsmath",
+        "1.0.1"
+      ],
+      [
+        "sphinxcontrib-qthelp",
+        "2.0.0"
+      ],
+      [
+        "sphinxcontrib-serializinghtml",
+        "2.0.0"
+      ],
+      [
+        "stack-data",
+        "0.6.3"
+      ],
+      [
+        "tables",
+        "3.11.1"
+      ],
+      [
+        "threadpoolctl",
+        "3.7.0"
+      ],
+      [
+        "tinycss2",
+        "1.5.1"
+      ],
+      [
+        "tornado",
+        "6.5.10"
+      ],
+      [
+        "tqdm",
+        "4.70.1"
+      ],
+      [
+        "traitlets",
+        "5.16.1"
+      ],
+      [
+        "triceratops",
+        "1.1.0"
+      ],
+      [
+        "typing-inspection",
+        "0.4.4"
+      ],
+      [
+        "typing_extensions",
+        "4.16.0"
+      ],
+      [
+        "tzdata",
+        "2026.5"
+      ],
+      [
+        "ultranest",
+        "4.6.3"
+      ],
+      [
+        "uncertainties",
+        "3.2.3"
+      ],
+      [
+        "urllib3",
+        "2.8.0"
+      ],
+      [
+        "wcwidth",
+        "0.9.3"
+      ],
+      [
+        "webencodings",
+        "0.6.1"
+      ],
+      [
+        "wheel",
+        "0.48.0"
+      ],
+      [
+        "wrapt",
+        "2.5.1"
+      ],
+      [
+        "xarray",
+        "2026.9.0"
+      ],
+      [
+        "xarray-einstats",
+        "0.9.1"
+      ],
+      [
+        "xyzservices",
+        "2026.9.1"
+      ],
+      [
+        "yarl",
+        "1.25.1"
+      ]
+    ]
+  },
+  "dependency_repairs": {
+    "juliet_version": "2.2.10+spacelab.1",
+    "batman_package_version": "2.5.3+spacelab.2",
+    "changes": [
+      "Beta sampled-value support guard",
+      "Rejected MCMC prior short-circuits likelihood",
+      "Declared dynesty Generator forwarded to equal-weight resampling",
+      "Safeguarded same-equation elliptic Kepler solver with rounded-step termination"
+    ],
+    "upstream_triceratops_unchanged_commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+    "source_preparation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/release-sources-v2/sources.json",
+      "sha256": "f313fc1adf8d10c9a96466f5542d008ecda24445bc5b97390a786926970c5d3e"
+    },
+    "patches": [
+      {
+        "path": "/Users/adam/Other/spacelab/post_boi/patches/juliet-2.2.10.patch",
+        "sha256": "d69a38507da19d638d117be2c9b39917f33eb0dbd884f0e2377bdcba7e6fd130"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/post_boi/patches/batman-2.5.3.patch",
+        "sha256": "49455c51079933158ea77bb9aeadbd625ef106a2b1ebaf4dd3fbea200efb6d32"
+      }
+    ],
+    "wheels": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/wheels/juliet-2.2.10+spacelab.1-py3-none-any.whl",
+        "sha256": "ffcd6aaa5a4bb7c32f71c9a9d552b5413aa90a32971722a53a160e603dade88a"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/wheels-v2-final/batman_package-2.5.3+spacelab.2-cp312-cp312-macosx_11_0_arm64.whl",
+        "sha256": "964065d1aaef6cf2297835300ec6d4a8e0bf0a312c41fac600b1912e6379378e"
+      }
+    ]
+  },
+  "verification": {
+    "folder_tests_passed": 34,
+    "tests": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/folder-tests.log",
+      "sha256": "97d1493c0699e4bc430cc20a3f85efc1ed94de0483187ef68f01e5e74f5a759e"
+    },
+    "includes": [
+      "Independent SciPy beta density/support grids and MCMC rejected-prior control",
+      "Independent bracketed orbital anomaly grids and periodicity",
+      "Actual juliet long-duration/dense-host/eccentric beta MCMC domain controls",
+      "Frozen official Kepler10 stock scenario/log-evidence/probability parity",
+      "Actual2173-photon40walker80step SciPy-beta exact chains/posterior replay,all40walkers moved",
+      "Actual2173-photon nested/direct exact weighted and equal posterior arrays"
+    ],
+    "mcmc_actual_photons": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v5/revalidation.json",
+      "sha256": "26736e2f659b0502c80ae8fa39afbf29e2e409559229276723bdc83c9010cec7"
+    },
+    "nested_actual_photons": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/revalidation.json",
+      "sha256": "b17d6097d08468bc329358bfafd5e012184d67c1d747e70d644876a05c6de811"
+    },
+    "package_check": "173 packages compatible",
+    "lint_and_complexity": "Ruff E4,E7,E9,F,I,C90 max10 passed; format passed",
+    "linux_dependency_controls": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/server-handoff/linux-controls/linux-verification.json",
+      "sha256": "3911f245f181fbbae841ebca9cef622eaae734331057662506ecf93bb36b6b50"
+    },
+    "linux_dependency_tests_passed": 27
+  },
+  "recovery_queue": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/recovery-queue.json",
+    "sha256": "914dcfee3cc3bd4e9e3b27724fa56a7a9430347f7c29f02273ff0c41c51be739"
+  },
+  "reopened_small_edge_cases": [
+    {
+      "kic": 7595917,
+      "source_id": "2102612750272489216",
+      "review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/readiness-reassessment-20261021.json",
+        "sha256": "b0b34024f8406a91973189348656754bbf407d3f79cdfe3964694bb62f1dce3b"
+      }
+    },
+    {
+      "kic": 4948140,
+      "source_id": "2073666564790289664",
+      "review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/readiness-reassessment-20261021.json",
+        "sha256": "94e883aef40cefbe4d69eed5dba7ca91b17c23e77de4a77fe6ef5163cf203b1c"
+      }
+    }
+  ],
+  "active_retry": {
+    "kic": 7271045,
+    "source_id": "2102918384442366592",
+    "generation": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/launch.json",
+      "sha256": "580401718310ba9cb1bb3e6c11fb121ba4b6f3aa701d5cb8bc33b52a7bd6d61e"
+    },
+    "freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/native-freeze.json",
+      "sha256": "4985a2c83dd83036981714523f62f63a57bd7940e7dd4d13330f9f24629e00b8"
+    },
+    "bootstrap_verified_files": 157,
+    "live": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/live-start-check.json",
+      "sha256": "87cfc83f7a5a85869bdf92d9c509cbf0add19d8535084557e8f5497dd2bb7442"
+    },
+    "sample_cpu_percent": 647.9687025824342,
+    "hardware_scope": "Ten pool workers; short measured sample does not prove full or continuous saturation.",
+    "science": "Historical fullnative remains unchanged and undecided. Separate identicalaperture native accepted conditionally and reached firsttwo stockFPP;bothFPP~1,remaining18notrun. No physicalFPmechanism claimed.",
+    "status": "TERMINAL_REPAIRED_STOCK_FUTILITY_REMAINS_PC",
+    "native_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/native-nested-review-v1.json",
+      "sha256": "f857396291fb5ffa63014b87bf8df4d2ad960b7c5f59fe9ce0ec0de3232760ca"
+    },
+    "identity_clarification": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102918384442366592/native-repair-v7/native-review-identity-clarification-v1.json",
+      "sha256": "b31f064a4cbc8def963c372d8bb42b725d9fca908b8a69ebb7a8af178d79ba2b"
+    },
+    "native_weight_ess": 5350.762063078971,
+    "finite_independent_priors_and_posteriors": true,
+    "representative_exact_duration_hours": 2.5839736064563112,
+    "representative_unprotected_real_cadences": 0,
+    "clock_adopted": "SEPARATE_IDENTICAL_APERTURE_GENERATION_ONLY",
+    "probability_runs": 2,
+    "terminal": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7271045-repaired-futility-20261021.json",
+      "sha256": "a4017a4cf06603c447c04a350ee3b8f76fb5b0ad2d62de4ba40fcb486d1e2740"
+    }
+  },
+  "aperture": {
+    "status": "TESTED_CALIBRATED_RESPONSE_CANDIDATE_SPECIFIC_CHECKS_REQUIRED",
+    "test_results": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/kbonus-response-2077209775366626944-v1.json",
+        "sha256": "04949ea6fff1ecc3faa09114a84d5808bb4cac07e00f302d4b7c6bfe1696155d"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/kbonus-response-2077967368932890752-v1.json",
+        "sha256": "ca23493656d0a81549942354416312bc1be3280018716259a5cea3a1012816bc"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/kbonus-response-kepler10-v1.json",
+        "sha256": "27f86fe1a6a8b119cb0b4034a6fec9c6d0086373b1801170a392aba39f155542"
+      }
+    ],
+    "published_archive": "https://zenodo.org/records/5504503",
+    "archive_md5_verified": "a17f8a136adbcbf54f0eac495e1d1866",
+    "kic7300018_target_fraction_range": [
+      0.7148178105600063,
+      0.8066387376492477
+    ],
+    "kic7373485_target_fraction_range": [
+      0.7511755651037286,
+      0.9607473469717493
+    ],
+    "kepler10_target_fraction": 0.99999762479014,
+    "missing_quarters": [
+      1,
+      17
+    ],
+    "limitations": [
+      "Finite spline support is unmodeled beyond its bounds,not measured zero contamination",
+      "Diagnostic Tmag relative flux held fixed to isolate response; no reconstructed exact archive pipeline asserted",
+      "No production measured/calibrated fractions or FPP adopted"
+    ],
+    "full_pixel_replay": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/canonical-aperture-replay.json",
+      "sha256": "7204a4ea597311cf64d21e10a249ad6553e17c2c6a000d6855e60369e5e9a9c0"
+    },
+    "source_quarters_replayed": 34,
+    "origin_metadata_conflicts": {
+      "kic": 4948140,
+      "quarters": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "original_source_origin": [
+        526,
+        379
+      ],
+      "replay_authenticated_origin": [
+        530,
+        378
+      ]
+    },
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/post_boi/aperture.py",
+      "sha256": "81ce4dedec81e79adca1e53ac7506cc1d1370d9acef69fe78080bba9aba98ff5"
+    },
+    "gold_fixture": {
+      "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler-aperture-replay-sources.json",
+      "sha256": "6678b770b402b8c79099d26e7e8478252e08849acbca0140dac509c2ad2d715c"
+    },
+    "engineering_negative_values": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/kepler-calibration-negative-review.json",
+      "sha256": "8f82cd3a156cf52556671d5b04773c788360705b233017b1555932a2344fa3ad"
+    },
+    "lkprf_tests": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/scene-repair-v1/lkprf-route-review-v1.json",
+        "sha256": "9e206cdf8a55bde844410adb69e9572daec89fa392d406a445731b88c38ecbaf"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073666564790289664/scene-repair-v2/lkprf-route-review-v1.json",
+        "sha256": "5c2d3743539f3d70825f3a03014b7d41390b3809aba4d35f17f9b4ce5aea051d"
+      }
+    ],
+    "negative_aperture_fraction_mass_ppm_maximum": {
+      "kic7595917": 11.918,
+      "kic4948140": 707.48,
+      "scope": "Signed modeled contamination fractions, not transit-mask signal loss or a measured physical-wing bound."
+    },
+    "bounded_response_report": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/nonnegative-kepler-response-20261021.json",
+      "sha256": "36bd1b0a34ed82da20f337360b2c7d7c4adfe4d1a5cc06ee6f50dd6752542764"
+    },
+    "decision": "Adam approved and tests completed. No pending permission question. Modeled fractions use calibrated_kepler; check target and capable alternatives and quarterly response before FPP."
+  },
+  "server_coordination": {
+    "thread_id": "01a15aa1-8f2e-7231-8e58-0fdcc9ca9c35",
+    "thread_title": "Assess TESS pipeline coverage",
+    "notified": true,
+    "hold_confirmed_utc": "2026-10-21T09:48:30Z",
+    "owner_report": "Dispatch stopped;all16live native worker PIDs gone;noactiveFPP; units/journals/state/ledger/plans/artifact inventory preserved; no runtime/frozen results altered or automatic restart.",
+    "server_evidence": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/dependency-hold-20261021T094830Z",
+    "linux_build_and_controls_still_required": false,
+    "linux_controls": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/server-handoff/linux-controls/linux-verification.json",
+      "sha256": "3911f245f181fbbae841ebca9cef622eaae734331057662506ecf93bb36b6b50"
+    },
+    "production_status": "OWNER_RESUMED_SELECTED_NATIVES_UNDER_NEW_ADAM_AUTHORIZATION_RESPONSE_HANDOFF_READY",
+    "response_controls_owner_report": "Server owner reports all34Linuxcontrols,package/Ruff/complexity and independent bilinear/phase response checks passed;separatebb153cd4release,oldruntimeunchanged."
+  },
+  "preservation": {
+    "historical_sources": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/historical-source-lineage.json",
+      "sha256": "26ad5d84870dadcd969aaca3fdd54ac365e0d8e8acc76b204518496c8f931f62"
+    },
+    "accepted_studies_unchanged": [
+      6699887,
+      8745833,
+      4829494
+    ],
+    "old_failures_and_completed_unfavorable_results_unchanged": true,
+    "explicit_abandonment_8540098_unchanged": true,
+    "technical_attempts_preserved": [
+      "First conservative solver build and interrupted diagnostic",
+      "Nested diagnostic main-guard failure and corrected attempt",
+      "Launch receipt preflight failure before dispatch",
+      "Initial prototype import and unsigned-FITS verification failures;raw FITS checksums passed on original bytes"
+    ]
+  },
+  "next": "Schedules deleted at Adam request. No new candidate fit or FPP launched. Retain this handoff; no automatic queue advancement.",
+  "current_repaired_outcome": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+    "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+  },
+  "current_case": {
+    "utc": "2026-10-21T15:26:21.058304+00:00",
+    "status": "NO_ACTIVE_LOCAL_VALIDATION_SCHEDULES_DELETED",
+    "execution_host": "LOCAL_MACBOOK_ONLY",
+    "protocol": "TRICERATOPS_KEPLER_V2",
+    "source_id": "2073226966298407552",
+    "kic": 3975580,
+    "signal_id": "rust-v6-2073226966298407552-1",
+    "case": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1",
+    "native_case": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1",
+    "original_case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073226966298407552",
+    "runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/runtime-v2/bin/python",
+    "aperture_runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/aperture-runtime-v2/bin/python",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/launch.json",
+      "sha256": "773e7096563d38358135c178837d654a6df749e0403a169d38c2a7b6c8d797b7"
+    },
+    "native_input_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-freeze.json",
+      "sha256": "e4c812953f8b9b8abfc31bae320a1716f388a0df1f2f235daa135a45c4915402"
+    },
+    "bootstrap": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/bootstrap-verification.json",
+      "sha256": "b18626f7d328a935cae9d197bce44f94fc4d113c50f05a70c35d431bb487dbec"
+    },
+    "live_check": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/live-start-check.json",
+      "sha256": "e8d2849c5243821f7da4b9eda0d8ca63d8b0724d486c576832c3a6a7102182e7"
+    },
+    "revalidation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/revalidation.json",
+      "sha256": "e3f1fca35caa274a8e5c5f40e23e56143761146de7d3233fa032e8a9845479c0"
+    },
+    "recovery": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/recovery-review.json",
+      "sha256": "afe869d6a7e9f839d732ef455f128c60fc57d880a55b988668fd06e6e1ca6b1f"
+    },
+    "original_selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073226966298407552/selection.json",
+      "sha256": "bdb8207ac2c8b45cccef80b9350d29736380f01528e19b8e0bbb12eed017420a"
+    },
+    "actual_native_photons": 5317,
+    "native_accepted": null,
+    "clock_adopted": false,
+    "probability_runs": 0,
+    "previous_terminals": [
+      {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+        "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic4948140-repaired-futility-20261021.json",
+        "sha256": "836d2851ca6fee5c79ce78fac6b3d546975852ee7def4b2bb7af70993fe4a56c"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7271045-repaired-futility-20261021.json",
+        "sha256": "a4017a4cf06603c447c04a350ee3b8f76fb5b0ad2d62de4ba40fcb486d1e2740"
+      }
+    ],
+    "calibration_report": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/nonnegative-kepler-response-20261021.json",
+      "sha256": "36bd1b0a34ed82da20f337360b2c7d7c4adfe4d1a5cc06ee6f50dd6752542764"
+    },
+    "pending_method_question": false,
+    "next": "Schedules deleted at Adam request. No new candidate fit or FPP launched. Retain this handoff; no automatic queue advancement.",
+    "native_status": "REPAIRED_NATIVE_COMPLETE_REVIEW_UNDECIDED_NO_FPP",
+    "active_local_numerical_jobs": 0,
+    "scheduled_tasks": {
+      "deleted": [
+        "monitor-local-boi-validation",
+        "overnight-boi-hardware-check"
+      ],
+      "method": "Recurring-job scheduler delete for both jobs; both returned deleteStatus=deleted at once",
+      "post_delete_directories_absent": true,
+      "automatic_local_continuation": false
+    },
+    "current_completed_review": {
+      "kic": 3975580,
+      "source_id": "2073226966298407552",
+      "signal_id": "rust-v6-2073226966298407552-1",
+      "status": "REPAIRED_NATIVE_COMPLETE_REVIEW_UNDECIDED_NO_FPP",
+      "native_exit_code": 0,
+      "native_accepted": null,
+      "clock_adopted": false,
+      "probability_runs": 0,
+      "native_photons": 5317,
+      "native_weight_ess": 5619.444118879918,
+      "equal_samples": 19223,
+      "finite_independent_priors_posteriors": true,
+      "conditional_clock": {
+        "period_days": 4.405315959932728,
+        "epoch_bkjd": 833.6918876144251,
+        "duration_days": 0.0976190533574773
+      },
+      "representative_exact_duration_hours": 2.3090731553993464,
+      "representative_unprotected_observed_cadences": 0,
+      "approximate_full_baseline_protection_fraction": 1.0,
+      "integration20_vs40_max_ppm": 52.89827446441908,
+      "folded_oot_residual_rms_ppm": 560.6959729855657,
+      "formal_mean_bin_error_ppm": 570.642167565099,
+      "scene_sources_retained": 98,
+      "source_quarters_reviewed": 14,
+      "proposed_identical_aperture_group": {
+        "quarters": [
+          3,
+          7,
+          11,
+          15
+        ],
+        "channel": 35,
+        "physical_aperture_pixels": [
+          [
+            269,
+            37
+          ],
+          [
+            269,
+            38
+          ]
+        ],
+        "native_window_photons": 1874
+      },
+      "new_group_fit_launched": false,
+      "pending": [
+        "Separate native refit of the pre-FPP largest identical-aperture group if work resumes; full-quarter mean response distorts capable-neighbor shapes.",
+        "Final timing/alias, spacecraft/pixel-source, exposure/noise, stellar/body/companion and dated catalogue closeout.",
+        "Field population acquisition and complete frozen probability generation."
+      ],
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-nested-review-v1.json",
+          "sha256": "5b09af040c992a1a08a2cc87c6399128287909034a7851e60008070dbe0b9a59"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-posterior-review-measurements-v1.json",
+          "sha256": "ea3b1a088a691f6209a2aba1bacbb57f24f532e44471bf3bad85431a15c7cc03"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/scene-preview-review-v1.json",
+          "sha256": "18b8d16c06f65da63b82319e85917027dae74e5b6f8430cd6aadd374e97a8f4d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/calibrated-scene-review-v1.json",
+          "sha256": "e5e41b494d045531236dfde1a32bfbf0d5975a06cfec2795eb2423c9d79a9407"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/identical-aperture-groups.json",
+          "sha256": "287711fc03b64da2a5b2918708b7368aa89e46a95adf0939d665119edb165b44"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-phase-effective-review.json",
+          "sha256": "327d415dbb808b1d32ad17768c547c0a3750d20bef80014ef0185e531b7f5cb3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-identical-aperture-phase-review.json",
+          "sha256": "ddb8d7bdf243afcc49e7468c99a23e89f1f71604a9553356b182897189d69067"
+        }
+      ]
+    },
+    "handoff_report": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-24h-state-20261021.json",
+      "sha256": "990e5622744142f276f034baae57ce74a32f819f21b705b01a62facb1fe202c0"
+    }
+  },
+  "current_repaired_outcomes": [
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+      "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic4948140-repaired-futility-20261021.json",
+      "sha256": "836d2851ca6fee5c79ce78fac6b3d546975852ee7def4b2bb7af70993fe4a56c"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7271045-repaired-futility-20261021.json",
+      "sha256": "a4017a4cf06603c447c04a350ee3b8f76fb5b0ad2d62de4ba40fcb486d1e2740"
+    }
+  ],
+  "handoff_report": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/local-24h-state-20261021.json",
+    "sha256": "990e5622744142f276f034baae57ce74a32f819f21b705b01a62facb1fe202c0"
+  }
+}

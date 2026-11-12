@@ -1,0 +1,75 @@
+{
+ "utc": "2026-10-26T17:49:15.809026+00:00",
+ "scheduled_groups": 104,
+ "restored_rust_groups": 34,
+ "additional_shallow_groups": 70,
+ "unique_sources": 100,
+ "discovery_views": {
+  "psf_flat": 98,
+  "sap_qdiag": 3,
+  "psf_qdiag": 3
+ },
+ "ready_and_appended_to_existing_native_queue": [
+  {
+   "boi_id": "BOI-2079714428492352768-1",
+   "signal_id": "shallow-v1-2079714428492352768-1",
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2079714428492352768-1",
+   "current_scheduler_state": "native-running"
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-1",
+   "signal_id": "shallow-v1-2127936912539397632-1",
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-1",
+   "current_scheduler_state": "queued"
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-2",
+   "signal_id": "shallow-v1-2127936912539397632-4",
+   "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/intake-104-20261026/cases/BOI-2127936912539397632-2",
+   "current_scheduler_state": "queued"
+  }
+ ],
+ "intake_stopped_at": "BOI-2102266442767690112-1",
+ "blocker": "Seven quarters declare NPIXSAP=7 while saved mask contains6 pixels. All original files retained; aperture guard not bypassed.",
+ "pending_PI_question": "Permission requested for a separate preserved aperture-repair generation, per project rule 7.",
+ "unattempted_groups": 100,
+ "post_native_scientific_review_gates_installed": 3,
+ "new_fpp_jobs": 0,
+ "native_fits_and_existing_jobs_continue": true,
+ "internal_free_gib": 129.97602462768555,
+ "intake_worker_launch": {
+  "utc": "2026-10-26T17:37:20.094436+00:00",
+  "pid": 19208,
+  "manifest_sha256": "5fe36d1f2dac84d163e2adc22aef509c110d3bf2594c0527477997f2d20cbe2a",
+  "worker_sha256": "ba79f19e71a37ea1d8aab567465b1b205654e556826748c1f2a2cbf6a75a184b",
+  "adapter_sha256": "c4c2429482d2ab0d62aa0aec323bb1f3413a8af4e19e13ef12eae1c7a1afd620",
+  "scope": "One sequential post-BOI preparation worker. Qualifying cases append to existing queue-4.json; no additional native/FPP coordinator or oversubscribed sampler is launched. Technical or instrument-method errors stop this intake for review."
+ },
+ "source_capsule": "results/boi-validation/standard-intake-source-20261026.json",
+ "gold_control": {
+  "real_frozen_kic8573780_proposal_and57_source_scene_roundtrip": true,
+  "wrong_signal_rejected": true,
+  "changed_clock_rejected": true,
+  "unchanged_scientific_functions": [
+   "scene_table",
+   "geometry",
+   "ones_complement",
+   "number",
+   "curl"
+  ],
+  "intake_manifest_groups": 104,
+  "acquisition_original_sha256": "1e0e3c8ecfe57aad0f59ac8e637f64b7a0c8e6450c2b7dc75079a46b590ca228",
+  "adapter_sha256": "c4c2429482d2ab0d62aa0aec323bb1f3413a8af4e19e13ef12eae1c7a1afd620"
+ },
+ "postfit_guard_control": {
+  "original_main_body_byte_equivalent_after_gate": true,
+  "pending_review_prevents_probability_launch": true,
+  "no_native_or_probability_scientific_criteria_changes": true
+ },
+ "stop_guard_control": {
+  "stopped_dispatch_rejected": true,
+  "no_new_attempt_or_event_created": true
+ },
+ "automation": "monitor-standard-post-boi-intake",
+ "science_criteria": "No new SAP S/N veto, period/view substitution, source/mask change, likelihood change, validation-threshold change, multiplicity admission, planet claim or physical denial."
+}

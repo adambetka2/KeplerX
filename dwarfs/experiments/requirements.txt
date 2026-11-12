@@ -1,0 +1,9 @@
+-r ../requirements.txt
+fitsio==1.4.2
+lkprf==1.1.1
+matplotlib==3.11.2
+patsy==1.0.2
+pytest==9.1.1
+requests==2.34.2
+ruff==0.17.0
+setuptools==84.0.0

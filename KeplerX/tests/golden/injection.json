@@ -1,0 +1,42 @@
+{
+  "arrays": {
+    "error": "f9242c3cd3c538c690000d84fb01b668a132700272afd8b8fa32ae8a4f22e7e0",
+    "flux": "7937444ac20f6cc174da77cc102330c643d3192603ea4f7b20b686c9d8428c82",
+    "mask": "bfe39a1a96afe418b82294411bc8e836b7dd9579a6072c4a3477f76413f0e168",
+    "native_flux": "371b0fea669e3499f022840dbc98f09a3c5ec88dff98cb692166a871edbedc3e"
+  },
+  "normalization_by_quarter": {
+    "2": 23182.04581398927,
+    "3": 23182.335868978014,
+    "4": 23182.236363878408,
+    "6": 23182.11291181735
+  },
+  "signals": [
+    {
+      "observed_events": 71,
+      "model_depth_ppm": 256.7924685362639,
+      "flat_depth_ppm": 238.31906795332918,
+      "flattening_transfer": 0.9280609720050027,
+      "local_transfer": 0.997364571445227,
+      "information_snr": 15.322232213495743,
+      "white_snr": 18.42649116329938,
+      "star_flux_fraction": 1.0,
+      "detectable": true,
+      "grazing": false,
+      "duration_days": 0.12735670549467185
+    },
+    {
+      "observed_events": 11,
+      "model_depth_ppm": 103.67876804832227,
+      "flat_depth_ppm": 101.58179545819573,
+      "flattening_transfer": 0.9797743295990055,
+      "local_transfer": 0.9997055604641613,
+      "information_snr": 1.6575840529794614,
+      "white_snr": 1.7837646955498834,
+      "star_flux_fraction": 1.0,
+      "detectable": false,
+      "grazing": true,
+      "duration_days": 0.05207684035717229
+    }
+  ]
+}

@@ -1,0 +1,1657 @@
+{
+  "schema": 1,
+  "date_local": "2026-10-14",
+  "status": "COMPLETE_NO_PRODUCTION_PROMOTION",
+  "survey_code_revision": "23f38f7",
+  "questions": [
+    "Does the selected detector still use the 0.5-day filter?",
+    "How much signal is lost through pixel extraction, preparation and detection?",
+    "Do the data establish a photon or physical detection limit?"
+  ],
+  "code_audit": {
+    "selected_short_long_windows_days": [
+      0.5,
+      1.0
+    ],
+    "selected_physical_knots_days": 3.0,
+    "research_window2x_short_long_windows_days": [
+      1.0,
+      2.0
+    ],
+    "research_window2x_physical_knots_days": 1.5,
+    "physical_refinement_input": "Original prepared flux before biweight filtering; joint nuisance fit already exists",
+    "window_only_requires_repreparing_lc2": false,
+    "window_only_requires_repreparing_saved_records": false
+  },
+  "scope": {
+    "selection": "Deterministic metadata hash order, cached native TPF and PRF, unique parent scenes; no detector result selection",
+    "selected_sources": 6,
+    "valid_source_clusters": 5,
+    "preflight_ineligible_source": "2076393697224338048",
+    "preflight_reason": "Only one quality-zero cadence with finite pointing, below the frozen minimum100",
+    "population": "Five selected K-dwarf sources; not a representative M/K population",
+    "baseline_days_max": 45,
+    "period_band_days": [
+      9.75,
+      10.25
+    ],
+    "depth_convention": "Nominal radius-ratio squared; limb-darkened exposure-integrated peak losses saved separately",
+    "extraction_products": 10,
+    "pixel_injection_parities": {
+      "passed": 360,
+      "total": 360
+    },
+    "delivered_flux_error_matched_sources": 2,
+    "aperture_replays_not_equivalent_to_delivered_sap": 3,
+    "maximum_delivered_vs_native_time_difference_seconds_approx": 7
+  },
+  "preparation": {
+    "counts": [
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 5,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 5
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 21,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 21
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 3,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 3
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 21,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 21
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 7,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 7
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 20,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 20
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 5,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 5
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 23,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 23
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 8,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 8
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 22,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 22
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 40,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 100,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 300,
+        "trials": 30,
+        "recovered": 0,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 0
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 1000,
+        "trials": 30,
+        "recovered": 5,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 5
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 3000,
+        "trials": 30,
+        "recovered": 18,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 18
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "depth_ppm": 10000,
+        "trials": 30,
+        "recovered": 22,
+        "baseline_coincident_recoveries": 0,
+        "incremental_recovered": 22
+      }
+    ],
+    "retention": [
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "duration_hours": 2,
+        "median": 0.8293656978102576,
+        "minimum": 0.6676231766381957,
+        "maximum": 0.9284903788628274
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "duration_hours": 4,
+        "median": 0.6619988831322114,
+        "minimum": 0.5456271114479037,
+        "maximum": 0.8313126949565004
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "aperture",
+        "duration_hours": 6,
+        "median": 0.514097928931402,
+        "minimum": 0.39251257113730453,
+        "maximum": 0.6790706361468516
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "duration_hours": 2,
+        "median": 0.8306332254168103,
+        "minimum": 0.7289821258583373,
+        "maximum": 0.9827220230773719
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "duration_hours": 4,
+        "median": 0.693687633025805,
+        "minimum": 0.5417473210422379,
+        "maximum": 0.7986776060435419
+      },
+      {
+        "method": "biweight_0.5d",
+        "operator": "prf_background",
+        "duration_hours": 6,
+        "median": 0.514843966957291,
+        "minimum": 0.40877286580866723,
+        "maximum": 0.6718400825372921
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "duration_hours": 2,
+        "median": 0.9179899097989027,
+        "minimum": 0.8524580455050925,
+        "maximum": 0.9760261571129845
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "duration_hours": 4,
+        "median": 0.8428718955629745,
+        "minimum": 0.7620682166457383,
+        "maximum": 0.9217510853954369
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "aperture",
+        "duration_hours": 6,
+        "median": 0.7558600330969296,
+        "minimum": 0.6957410375137982,
+        "maximum": 0.8277034259502822
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "duration_hours": 2,
+        "median": 0.9221572248282565,
+        "minimum": 0.8276567309854421,
+        "maximum": 0.965831872485623
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "duration_hours": 4,
+        "median": 0.8502750503445613,
+        "minimum": 0.7701570341097876,
+        "maximum": 0.9420090892337813
+      },
+      {
+        "method": "biweight_1.0d",
+        "operator": "prf_background",
+        "duration_hours": 6,
+        "median": 0.7569937975041887,
+        "minimum": 0.6827853067490395,
+        "maximum": 0.8330504410794232
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "duration_hours": 2,
+        "median": 1.000000000000024,
+        "minimum": 0.9999968791728122,
+        "maximum": 1.0000747055168275
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "duration_hours": 4,
+        "median": 0.999999999999986,
+        "minimum": 0.9999999999993094,
+        "maximum": 1.0000671745828398
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "aperture",
+        "duration_hours": 6,
+        "median": 0.999999999999991,
+        "minimum": 0.9999858898225527,
+        "maximum": 1.0000726059629774
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "duration_hours": 2,
+        "median": 1.000000000000027,
+        "minimum": 0.9999999999996757,
+        "maximum": 1.0000372381944898
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "duration_hours": 4,
+        "median": 0.9999999999999978,
+        "minimum": 0.998880998260649,
+        "maximum": 1.0000539575528633
+      },
+      {
+        "method": "joint_spline_1.5d",
+        "operator": "prf_background",
+        "duration_hours": 6,
+        "median": 1.0000000000000127,
+        "minimum": 0.9999999999993889,
+        "maximum": 1.0014857263846562
+      }
+    ],
+    "paired_comparisons": [
+      {
+        "operator": "aperture",
+        "candidate": "biweight_1.0d",
+        "reference": "biweight_0.5d",
+        "wins": 3,
+        "losses": 1,
+        "median_formal_score_ratio": 1.2523222834855579
+      },
+      {
+        "operator": "aperture",
+        "candidate": "joint_spline_1.5d",
+        "reference": "biweight_0.5d",
+        "wins": 4,
+        "losses": 1,
+        "median_formal_score_ratio": 1.4195450843297714
+      },
+      {
+        "operator": "prf_background",
+        "candidate": "biweight_1.0d",
+        "reference": "biweight_0.5d",
+        "wins": 2,
+        "losses": 0,
+        "median_formal_score_ratio": 1.2124273832116719
+      },
+      {
+        "operator": "prf_background",
+        "candidate": "joint_spline_1.5d",
+        "reference": "biweight_0.5d",
+        "wins": 3,
+        "losses": 1,
+        "median_formal_score_ratio": 1.3567894778375758
+      }
+    ],
+    "baseline_coincident_recoveries": 0,
+    "nulls": [
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 10,
+        "held_count": 128,
+        "interval": [
+          0.0380993894403664,
+          0.1389824591773996
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 10,
+        "held_count": 128,
+        "interval": [
+          0.0380993894403664,
+          0.1389824591773996
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2133106575693656832",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 1,
+        "held_count": 128,
+        "interval": [
+          0.00019777581466176456,
+          0.042759031914220404
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 5,
+        "held_count": 128,
+        "interval": [
+          0.012803176945744026,
+          0.08880442645593108
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 1,
+        "held_count": 128,
+        "interval": [
+          0.00019777581466176456,
+          0.042759031914220404
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 1,
+        "held_count": 128,
+        "interval": [
+          0.00019777581466176456,
+          0.042759031914220404
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 10,
+        "held_count": 128,
+        "interval": [
+          0.0380993894403664,
+          0.1389824591773996
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2105449558988715264",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 2,
+        "held_count": 128,
+        "interval": [
+          0.0018978931217393056,
+          0.05530259002244882
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 5,
+        "held_count": 128,
+        "interval": [
+          0.012803176945744026,
+          0.08880442645593108
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 5,
+        "held_count": 128,
+        "interval": [
+          0.012803176945744026,
+          0.08880442645593108
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 5,
+        "held_count": 128,
+        "interval": [
+          0.012803176945744026,
+          0.08880442645593108
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 1,
+        "held_count": 128,
+        "interval": [
+          0.00019777581466176456,
+          0.042759031914220404
+        ]
+      },
+      {
+        "source_id": "2101239670706093696",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 2,
+        "held_count": 128,
+        "interval": [
+          0.0018978931217393056,
+          0.05530259002244882
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 10,
+        "held_count": 128,
+        "interval": [
+          0.0380993894403664,
+          0.1389824591773996
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 7,
+        "held_count": 128,
+        "interval": [
+          0.022267145809923408,
+          0.10943205156825679
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 7,
+        "held_count": 128,
+        "interval": [
+          0.022267145809923408,
+          0.10943205156825679
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 11,
+        "held_count": 128,
+        "interval": [
+          0.04368230687734876,
+          0.14856349213459707
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 19,
+        "held_count": 128,
+        "interval": [
+          0.09179817376238812,
+          0.22205986083849896
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 2,
+        "held_count": 128,
+        "interval": [
+          0.0018978931217393056,
+          0.05530259002244882
+        ]
+      },
+      {
+        "source_id": "2077139784581832064",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 8,
+        "held_count": 128,
+        "interval": [
+          0.027366684886370833,
+          0.11943678339385401
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 7,
+        "held_count": 128,
+        "interval": [
+          0.022267145809923408,
+          0.10943205156825679
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 7,
+        "held_count": 128,
+        "interval": [
+          0.022267145809923408,
+          0.10943205156825679
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 3,
+        "held_count": 128,
+        "interval": [
+          0.004859703535723925,
+          0.06696630204545569
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "aperture",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 6,
+        "held_count": 128,
+        "interval": [
+          0.01739405614027249,
+          0.0992351236938912
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 1,
+        "held_count": 128,
+        "interval": [
+          0.00019777581466176456,
+          0.042759031914220404
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 4,
+        "held_count": 128,
+        "interval": [
+          0.008578935537261197,
+          0.0780795254384704
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 1.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_0.5d",
+        "held_false_alarms": 5,
+        "held_count": 128,
+        "interval": [
+          0.012803176945744026,
+          0.08880442645593108
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "biweight_1.0d",
+        "held_false_alarms": 9,
+        "held_count": 128,
+        "interval": [
+          0.03265362731921918,
+          0.1292793879545287
+        ]
+      },
+      {
+        "source_id": "2126093581293485184",
+        "operator": "prf_background",
+        "block_days": 2.0,
+        "method": "joint_spline_1.5d",
+        "held_false_alarms": 7,
+        "held_count": 128,
+        "interval": [
+          0.022267145809923408,
+          0.10943205156825679
+        ]
+      }
+    ],
+    "null_protocol": "128 calibration and128 held independent sign-block realizations per source/operator/method, separately for1-day and2-day blocks; nominal5% plus-one rank threshold",
+    "failed_held_cell": {
+      "source_id": "2077139784581832064",
+      "operator": "prf_background",
+      "method": "biweight_1.0d",
+      "block_days": 1,
+      "false_alarms": 19,
+      "held_trials": 128,
+      "rate": 0.1484375,
+      "conditional_95_interval_approx": [
+        0.092,
+        0.222
+      ],
+      "contributed_science_recoveries": 0
+    },
+    "interpretation": "Amplitude retention improves, but blind recovery gains are modest and held false-alarm control is not uniform. Joint known-clock amplitude near1 is an algebraic property, not proof of increased information."
+  },
+  "native_detector": {
+    "configs": [
+      {
+        "design": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental",
+        "searches": 15,
+        "searched": 15,
+        "original_controls": 5,
+        "original_active_controls": 0,
+        "depths": [
+          {
+            "nominal_area_ratio_ppm": 1000,
+            "cases": 5,
+            "recovered": 0,
+            "source_ids": []
+          },
+          {
+            "nominal_area_ratio_ppm": 3000,
+            "cases": 5,
+            "recovered": 3,
+            "source_ids": [
+              "2133106575693656832",
+              "2105449558988715264",
+              "2101239670706093696"
+            ]
+          }
+        ]
+      },
+      {
+        "design": "window_only_at_incumbent_knots",
+        "searches": 15,
+        "searched": 15,
+        "original_controls": 5,
+        "original_active_controls": 0,
+        "depths": [
+          {
+            "nominal_area_ratio_ppm": 1000,
+            "cases": 5,
+            "recovered": 0,
+            "source_ids": []
+          },
+          {
+            "nominal_area_ratio_ppm": 3000,
+            "cases": 5,
+            "recovered": 3,
+            "source_ids": [
+              "2133106575693656832",
+              "2105449558988715264",
+              "2101239670706093696"
+            ]
+          }
+        ]
+      },
+      {
+        "design": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot15",
+        "searches": 15,
+        "searched": 15,
+        "original_controls": 5,
+        "original_active_controls": 0,
+        "depths": [
+          {
+            "nominal_area_ratio_ppm": 1000,
+            "cases": 5,
+            "recovered": 0,
+            "source_ids": []
+          },
+          {
+            "nominal_area_ratio_ppm": 3000,
+            "cases": 5,
+            "recovered": 3,
+            "source_ids": [
+              "2133106575693656832",
+              "2105449558988715264",
+              "2101239670706093696"
+            ]
+          }
+        ]
+      },
+      {
+        "design": "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot15_window2x",
+        "searches": 15,
+        "searched": 15,
+        "original_controls": 5,
+        "original_active_controls": 0,
+        "depths": [
+          {
+            "nominal_area_ratio_ppm": 1000,
+            "cases": 5,
+            "recovered": 0,
+            "source_ids": []
+          },
+          {
+            "nominal_area_ratio_ppm": 3000,
+            "cases": 5,
+            "recovered": 3,
+            "source_ids": [
+              "2133106575693656832",
+              "2105449558988715264",
+              "2101239670706093696"
+            ]
+          }
+        ]
+      }
+    ],
+    "minimum_supported_injected_events": 3,
+    "paired_recovery_gains": 0,
+    "paired_recovery_losses": 0,
+    "limits": "Five scenes, one period-duration-phase per scene, two nominal depths; original controls only, no calibrated native-detector FPR"
+  },
+  "pixel_budget": {
+    "rows": [
+      {
+        "source_id": "2077139784581832064",
+        "quarter": 1,
+        "variance_share_percent": {
+          "target": 11.110377851561582,
+          "neighbors": 8.850621296571886,
+          "background": 7.970919647956974,
+          "read": 51.198372064701864,
+          "observed_total_poisson_proxy": 29.669699138359334,
+          "unexplained_signed": 20.879893064484815
+        },
+        "source_assignment_independent_unexplained_percent": 19.117296627624448,
+        "scene_residual_l1_fraction": 0.04462330326575101,
+        "aperture_target_relative_error_ppm": 3239.3552358688976,
+        "prf_target_relative_error_ppm": 3643.1929719639156
+      },
+      {
+        "source_id": "2101239670706093696",
+        "quarter": 5,
+        "variance_share_percent": {
+          "target": 30.345709351187608,
+          "neighbors": 3.7076295542221835,
+          "background": 7.194362286893712,
+          "read": 42.83216418642212,
+          "observed_total_poisson_proxy": 39.096772830741926,
+          "unexplained_signed": 15.91989266758897
+        },
+        "source_assignment_independent_unexplained_percent": 18.06868029922672,
+        "scene_residual_l1_fraction": 0.08841233057996566,
+        "aperture_target_relative_error_ppm": 795.6555303153787,
+        "prf_target_relative_error_ppm": 869.9922724269677
+      },
+      {
+        "source_id": "2105449558988715264",
+        "quarter": 6,
+        "variance_share_percent": {
+          "target": 23.889564304377405,
+          "neighbors": 0.9232484322013143,
+          "background": 5.731339861587918,
+          "read": 51.338626546819974,
+          "observed_total_poisson_proxy": 28.072900088290957,
+          "unexplained_signed": 18.112056477318667
+        },
+        "source_assignment_independent_unexplained_percent": 20.592922414400782,
+        "scene_residual_l1_fraction": 0.1266201470946655,
+        "aperture_target_relative_error_ppm": 1475.1071059734575,
+        "prf_target_relative_error_ppm": 1418.95643132122
+      },
+      {
+        "source_id": "2126093581293485184",
+        "quarter": 2,
+        "variance_share_percent": {
+          "target": 10.94959586037124,
+          "neighbors": 30.16715772430708,
+          "background": 5.75315164576779,
+          "read": 41.891765495005686,
+          "observed_total_poisson_proxy": 41.85614416468579,
+          "unexplained_signed": 11.241354229804921
+        },
+        "source_assignment_independent_unexplained_percent": 16.25194776489687,
+        "scene_residual_l1_fraction": 0.07777880884037795,
+        "aperture_target_relative_error_ppm": 2211.261945327836,
+        "prf_target_relative_error_ppm": 15238.111210948511
+      },
+      {
+        "source_id": "2133106575693656832",
+        "quarter": 12,
+        "variance_share_percent": {
+          "target": 14.9131789670416,
+          "neighbors": 5.04443862390122,
+          "background": 6.081107307355268,
+          "read": 50.7327079113439,
+          "observed_total_poisson_proxy": 27.24996367283655,
+          "unexplained_signed": 23.22868526027932
+        },
+        "source_assignment_independent_unexplained_percent": 21.990021374995877,
+        "scene_residual_l1_fraction": 0.11182232198258132,
+        "aperture_target_relative_error_ppm": 1406.7123058219208,
+        "prf_target_relative_error_ppm": 1276.9401006768671
+      }
+    ],
+    "read_variance_share_percent_range": [
+      41.89,
+      51.34
+    ],
+    "read_variance_share_percent_median": 50.73,
+    "source_independent_unexplained_percent_range": [
+      16.25,
+      21.99
+    ],
+    "model": "Live integration=INT_TIME*NUM_FRM; Poisson variance=rate/live; read variance=NUM_FRM*READNOIS^2/live^2. Propagate fixed extraction weights squared. Signed unexplained variance retained.",
+    "limits": [
+      "Read component follows mission header model; not a measurement of its fraction of observed variability",
+      "Target and neighbor assignments are conditional on imperfect scene/PRF/astrometry",
+      "Scene fractional absolute residuals4.46\u201312.66%; budget does not close",
+      "No optimal extraction, photon-limit or irreducible information-bound claim"
+    ]
+  },
+  "conclusions": [
+    "46/200 is a conditional detectability screen, not a physical maximum.",
+    "The selected0.5-day coarse filter still loses long-transit amplitude; original prepared flux remains available to the physical fit.",
+    "A one-day window and joint initial scoring improve transfer but do not create missing photons or eliminate random read noise.",
+    "The experimental fixed PRF operator is not an improvement to adopt: two modest formal-noise gains, two modest losses, one severe amplification.",
+    "All four full-detector configurations have identical recovery on this pilot.",
+    "Zero40\u2013300ppm recovery over45days cannot establish impossibility over full-mission baselines."
+  ],
+  "next_method": {
+    "proposal": "Joint sparse spline nuisance and transit scoring from the initial search, or duration-aware detrending with empirically measured transfer",
+    "tools": [
+      "Existing C/BLS search kernels",
+      "SciPy sparse spline/projection operations",
+      "batman exposure-integrated injection models",
+      "Astropy FITS/native TPF records",
+      "Empirical full-search null maxima and injection recovery"
+    ],
+    "gates": [
+      "Recalibrate tails on independent controls and fresh source clusters",
+      "Use full available mission baselines and physically host-consistent probes",
+      "Require paired recovery gain at acceptable control burden before promotion",
+      "Require calibrated scene and pointing response before claiming extraction improvement"
+    ]
+  },
+  "verification": {
+    "unit_and_injected_gold_tests_passed": 14,
+    "native_strong_synthetic_gold_recovery": [
+      8,
+      8
+    ],
+    "native_gold_active_originals": [
+      0,
+      4
+    ],
+    "pixel_transfer_checks_passed": [
+      360,
+      360
+    ],
+    "native_input_hashes": 15,
+    "native_result_receipts": 60,
+    "native_array_hashes": 60,
+    "independent_numerical_audit": "Pixel budget reconstructed from native TPFs; native clocks, input arrays, masks and result bindings independently recomputed",
+    "scientific_failure_preserved": "19/128 held false alarms in one cell",
+    "post_execution_source_cleanup": "Dictionary literals, redundant int(len) removals and formatting after scoring; executed source snapshots preserved unchanged"
+  },
+  "evidence_root": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014",
+  "artifacts": {
+    "inventory/inventory.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/inventory/inventory.json",
+      "sha256": "95f9a77f8a43934af4cbe3e2ebcf5cc7683ae8d6f8ffd147e96ab94e529eaa4a"
+    },
+    "inventory/delivery-v2.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/inventory/delivery-v2.json",
+      "sha256": "95e00d195675d00926c1f20e4d2627ef54e0b81bd1028bd19d217eff607f7987"
+    },
+    "inventory/readiness.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/inventory/readiness.json",
+      "sha256": "030137b6e3ad69617023e19de8dc1559aee6df6ef55b5f21d8dd73a7c2a880d8"
+    },
+    "inventory/geometry-audit.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/inventory/geometry-audit.json",
+      "sha256": "df1143930ba862ef4e287a572fada73667ad170f540c7ae9a6c892f31f1c0fec"
+    },
+    "pixels-v1/plan.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/pixels-v1/plan.json",
+      "sha256": "32f423c231747e803601355906cee7d775d7684020d478702b394f97eb031720"
+    },
+    "pixels-v1/completion.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/pixels-v1/completion.json",
+      "sha256": "75bb0ba494da7f9f49bfaf7e67ce78140b4eb60fe3a8bc9a2bba8a57e5e39f59"
+    },
+    "pixels-v1/preparation-inputs.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/pixels-v1/preparation-inputs.json",
+      "sha256": "fee7bf9d289e5e945655baa6a290ea90b5e44f1eb48662f37306d47fb0de6bbf"
+    },
+    "pixel-summary-v1/summary.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/pixel-summary-v1/summary.json",
+      "sha256": "7e19b0fb440cfa4d2e66798fdb40130504a51357ec439e66b583a0cacd9b2655"
+    },
+    "pixel-summary-v1/validation.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/pixel-summary-v1/validation.json",
+      "sha256": "e6303f562892e3e22d71aa24d648994427598d8d37e1fdf5b3ff80e7269cf093"
+    },
+    "independent-pixel-budget-audit.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/independent-pixel-budget-audit.json",
+      "sha256": "1115f25008ff8dae5b6c48f38f9d6434d93d545d6748cfd3cf5b3c670b8ecefb"
+    },
+    "preparation-first-v1/design.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-first-v1/design.json",
+      "sha256": "5637ab1a5a969a783dde5b5046391a660eb8cc1ac6581ae7f267a0b98f744fc1"
+    },
+    "preparation-first-v1/results.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-first-v1/results.json",
+      "sha256": "b0d78e146ffa2bcb857c3c55a29fac17894ec49cc2b77eb7abc962710736ef9d"
+    },
+    "preparation-rest-v1/design.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-rest-v1/design.json",
+      "sha256": "30403279ef7133359d17e028df69d84c1cf3a91afcd2c0459971859573537ed7"
+    },
+    "preparation-rest-v1/results.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-rest-v1/results.json",
+      "sha256": "741826f8bf132429857a42174b3ada5cd356d8d6423b17f4e32902e2a81b8464"
+    },
+    "preparation-summary-v1.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-summary-v1.json",
+      "sha256": "bdd8ab4ac6268a548a75d79beb94cb898040e2461b07d1496dded7e00b878d07"
+    },
+    "preparation-annotated-v1.csv": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/preparation-annotated-v1.csv",
+      "sha256": "0d7339610b98b3b45041b980e7cec15988e57a297d7ae0eeb0d9f387b7bb1f83"
+    },
+    "analysis-v3/summary.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/analysis-v3/summary.json",
+      "sha256": "29e2300a14e61bdbb882f4b531f60595f5d9b3b7ab0435acbe9af481bcebcb14"
+    },
+    "analysis-v3/preparation-comparison.png": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/analysis-v3/preparation-comparison.png",
+      "sha256": "2cad8468266611a04cb7d783e01f5b14fec59e0a9dbfa77f974761f69be26d16"
+    },
+    "analysis-v3/preparation-comparison.svg": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/analysis-v3/preparation-comparison.svg",
+      "sha256": "af85057511dfceba482fb46f068f297664401c7038a571f4c6ed5493e600f7c3"
+    },
+    "native-gold-v3/identity.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/native-gold-v3/identity.json",
+      "sha256": "1d5acd4872357fdf68ba65f3f3554fc334aaabbcc34555d7cb47f73c1f81e29c"
+    },
+    "native-gold-v3/scores.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/native-gold-v3/scores.json",
+      "sha256": "2057f260a772c32b02861c2523d4b082598f98c6d95b5216a4cd75a959a576a5"
+    },
+    "native-pilot-v1/identity.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/native-pilot-v1/identity.json",
+      "sha256": "361d6e0a2ef899b8bc3d9a55605143cb21a4eb921403fbccd9ce1e3d5ed09e94"
+    },
+    "native-pilot-v1/scores.json": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/native-pilot-v1/scores.json",
+      "sha256": "6890a0c7dbb6f93ec137967c7d606cf540159873ab35033211e9ad50b84234cf"
+    },
+    "requirements-frozen.txt": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/requirements-frozen.txt",
+      "sha256": "f7afa67d3e0ec8f19fcd29a031b255c59b255010df2b67e4b84e29dba6f55438"
+    },
+    "final-tests.log": {
+      "path": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/photometry-information-20261014/final-tests.log",
+      "sha256": "424d2d8f68f997d4b9839171bc576f0907afb55cbefa5237e4bd70026e50cf9c"
+    }
+  },
+  "source_references": [
+    "https://archive.stsci.edu/kepler/manuals/KSCI-19081-003-KDPH.pdf",
+    "https://arxiv.org/abs/1303.0255",
+    "https://arxiv.org/abs/1208.0595",
+    "https://arxiv.org/abs/1502.04715"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "utc": "2026-10-20T12:12:10.205594+00:00",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2100203999471640064",
+  "kic": 3935011,
+  "hardware_logical_and_physical_cores": 10,
+  "allocated_numerical_workers": 10,
+  "live_numerical_workers": 10,
+  "workers": [
+    {
+      "pid": 20683,
+      "ppid": 20669,
+      "cpu": 53.2,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=18) --multiprocessing-fork"
+    },
+    {
+      "pid": 20684,
+      "ppid": 20669,
+      "cpu": 51.4,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=20) --multiprocessing-fork"
+    },
+    {
+      "pid": 20685,
+      "ppid": 20669,
+      "cpu": 44.9,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=22) --multiprocessing-fork"
+    },
+    {
+      "pid": 20686,
+      "ppid": 20669,
+      "cpu": 49.2,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=24) --multiprocessing-fork"
+    },
+    {
+      "pid": 20687,
+      "ppid": 20669,
+      "cpu": 53.7,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=26) --multiprocessing-fork"
+    },
+    {
+      "pid": 20688,
+      "ppid": 20669,
+      "cpu": 48.9,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=28) --multiprocessing-fork"
+    },
+    {
+      "pid": 20689,
+      "ppid": 20669,
+      "cpu": 45.4,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=30) --multiprocessing-fork"
+    },
+    {
+      "pid": 20690,
+      "ppid": 20669,
+      "cpu": 44.7,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=32) --multiprocessing-fork"
+    },
+    {
+      "pid": 20691,
+      "ppid": 20669,
+      "cpu": 54.3,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=34) --multiprocessing-fork"
+    },
+    {
+      "pid": 20692,
+      "ppid": 20669,
+      "cpu": 49.9,
+      "args": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=36) --multiprocessing-fork"
+    }
+  ],
+  "worker_cpu_sum": 495.5999999999999,
+  "cpu_summary": [
+    "CPU usage: 53.30% user, 16.46% sys, 30.22% idle ",
+    "CPU usage: 55.33% user, 9.74% sys, 34.91% idle "
+  ],
+  "memory_summary": [
+    "PhysMem: 15G used (3183M wired, 2053M compressor), 277M unused.",
+    "VM: 320T vsize, 6144M framework vsize, 546772950(0) swapins, 652889849(0) swapouts.",
+    "PhysMem: 15G used (3183M wired, 2053M compressor), 278M unused.",
+    "VM: 320T vsize, 6144M framework vsize, 546772950(0) swapins, 652889849(0) swapouts."
+  ],
+  "probability_resource_policy": "Ten total Numba renderer threads split across live repeats; two receive five each, ten receive one each, tails redistribute; BLAS/OpenMP1.",
+  "native_policy": "One active BOI, four original independent ensembles and 24walkers each; ordered ten-worker likelihood pool. Original seeds, moves and endpoints unchanged.",
+  "exact_replay": {
+    "serial_seconds": 17.64639037521556,
+    "parallel_seconds_with_startup": 8.22233070898801,
+    "likelihood_and_chain_rng_bitwise_equal": true
+  },
+  "limitation": "Ten-worker allocation does not guarantee sustained100percent utilization. Current sampler runs one ensemble at a time, with synchronization and dispatch barriers between proposal batches. The snapshot measures actual utilization, not a claim of maximum theoretical hardware throughput. No competing benchmark or speculative live-runtime rewrite is launched.",
+  "evidence": [
+    "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/hardware-audit/20261020T121210202891Z-ps.txt",
+    "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/hardware-audit/20261020T121210202891Z-top.txt",
+    "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2100203999471640064/native-capacity-review.json"
+  ]
+}

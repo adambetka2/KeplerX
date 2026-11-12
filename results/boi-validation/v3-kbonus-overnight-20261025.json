@@ -1,0 +1,5880 @@
+{
+  "protocol": "TRICERATOPS_KEPLER_V3",
+  "date": "2026-10-25",
+  "runtime": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/runtime-v3",
+    "tests": {
+      "log": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/post_boi-tests-v3.log",
+        "sha256": "937b7cf8bf4b649c2762f8ee7601789c583fcb37cd6680c89293ec9aed413983"
+      },
+      "summary": [
+        "40 passed, 7 warnings in 88.37s (0:01:28)",
+        "exit=0"
+      ]
+    }
+  },
+  "decisions": {
+    "used": [
+      "Joint quarter-response likelihood (V3)",
+      "Calibrated Kepler PRF (lkprf 1.1.1+spacelab.1) responses with Gaia G relative fluxes as the Kepler-band proxy",
+      "Prospective per-quarter flux-closure gate |predicted/observed SAP flux - 1| <= 0.2",
+      "Per-quarter reviewed noise: robust out-of-transit scale and red-noise beta (Pont et al. 2006; Winn et al. 2008)",
+      "TRILEGAL faint limit Tmag - 2.5 log10(depth)",
+      "Probability exposure integration 20/40/80 chosen per case before FPP",
+      "Stock TRICERATOPS priors; no contrast curve or MOLUSC",
+      "Field-wide ephemeris rule: a low-order (1:1, 2:1, 1:2) DR25 TCE/KOI match on another star leaves the candidate unresolved (post_boi/ephemeris.py; Coughlin et al. 2014)"
+    ],
+    "not_restored": [
+      "PRF wings beyond the calibrated footprint",
+      "Stellar particle banks",
+      "Custom companion priors or composite-flux conditioning",
+      "Custom importance sampling",
+      "MOLUSC/RUWE companion limits (uncalibrated for G 16-19; Wood et al. 2021; Penoyre et al. 2022)"
+    ],
+    "limitations": [
+      "TRICERATOPS thresholds come from TESS data; Giacalone et al. 2021 report unreliable FPP below SNR 15 (IV.1)",
+      "The known-object calibration ran on KOIs that skipped the survey detector and vetting",
+      "The upstream 2.2-arcsec unresolved radius assumes Gaia completeness that faint hosts lack",
+      "TRICERATOPS cannot model optical-ghost, crosstalk or other ephemeris-match contamination",
+      "Brown dwarfs are not modeled, so for Jupiter-sized bodies the planet scenario includes brown-dwarf companions of the same radius"
+    ]
+  },
+  "response_calibration": {
+    "kbonus_keywords": {
+      "quarters": 226,
+      "median": 0.9254538825756412,
+      "p16": 0.44782380333123545,
+      "p84": 2.3272224602021194,
+      "fraction_within_0p2": 0.2920353982300885
+    },
+    "lkprf_gaia_g": {
+      "quarters": 226,
+      "median": 1.0120919238149448,
+      "p16": 0.777823593344401,
+      "p84": 1.343329900494816,
+      "fraction_within_0p2": 0.5398230088495575
+    },
+    "lkprf_tmag": {
+      "quarters": 226,
+      "median": 1.0012680526371454,
+      "p16": 0.7560838896144598,
+      "p84": 1.2652258753667904,
+      "fraction_within_0p2": 0.5796460176991151
+    }
+  },
+  "controls": [
+    {
+      "control": "8878385-target-v1",
+      "injected_host": "2127169041106093184",
+      "injected_on": "target",
+      "injection_fractions": "calibrated model",
+      "rp_over_rs": 0.03436401577006475,
+      "max_observed_depth": 0.001105156346161864,
+      "folded_bin_noise": 8.813820264921344e-05,
+      "period_days": 8.3712,
+      "repeats": [
+        {
+          "seed_index": 0,
+          "FPP": 0.00017782393992205048,
+          "NFPP": 1.3688461345358936e-130,
+          "probability_on_injected_host": 0.9999999999989801,
+          "target_planet_TP_PTP_DTP": 0.999822176060078,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-v1/campaign/runs/final/seed-00/result.json",
+            "sha256": "e1fc23198a3ca258f22f00cd70fd294fb1399b0e4406600916136714cc32a5a2"
+          }
+        },
+        {
+          "seed_index": 1,
+          "FPP": 0.0033159189182543347,
+          "NFPP": 2.170352563738719e-130,
+          "probability_on_injected_host": 0.9999999999986782,
+          "target_planet_TP_PTP_DTP": 0.9966840810817456,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-v1/campaign/runs/final/seed-01/result.json",
+            "sha256": "95babe4ba550cc026fc67656db30829467169abb8e5fa8cdfc5e45df167c65c5"
+          }
+        }
+      ],
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-v1/campaign/freeze.json",
+        "sha256": "04a490ae39cf34e3a86255946c02f3d7580058867fab6bf6babf589bb7c5abdf"
+      }
+    },
+    {
+      "control": "8878385-neighbor-v1",
+      "injected_host": "2127169041106093440",
+      "injected_on": "neighbor",
+      "injection_fractions": "calibrated model",
+      "rp_over_rs": 0.04248460869914335,
+      "max_observed_depth": 0.0014258629257342585,
+      "folded_bin_noise": 9.669765281650603e-05,
+      "period_days": 8.3712,
+      "repeats": [
+        {
+          "seed_index": 0,
+          "FPP": 1.0,
+          "NFPP": 1.0,
+          "probability_on_injected_host": 1.0,
+          "target_planet_TP_PTP_DTP": 4.0120208718115803e-153,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-neighbor-v1/campaign/runs/final/seed-00/result.json",
+            "sha256": "8959ddbabe8f7df66f2c11db2760b9245ccb3cbdf30f81a728cf294f991269b1"
+          }
+        },
+        {
+          "seed_index": 1,
+          "FPP": 1.0,
+          "NFPP": 1.0,
+          "probability_on_injected_host": 1.0,
+          "target_planet_TP_PTP_DTP": 2.7723425177646215e-153,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-neighbor-v1/campaign/runs/final/seed-01/result.json",
+            "sha256": "56a1eed3f9abf02c444c36362ec51fcd73a35f95066c7aea5c2315bb2dedca7b"
+          }
+        }
+      ],
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-neighbor-v1/campaign/freeze.json",
+        "sha256": "3cb6eeca17fb00e2129c691ad9f72c82665ee0911545f92c923c59f87ad3ca27"
+      }
+    },
+    {
+      "control": "8878385-target-empirical-v1",
+      "injected_host": "2127169041106093184",
+      "injected_on": "target",
+      "injection_fractions": "measured PSF x throughput / SAP",
+      "rp_over_rs": 0.03646061293846246,
+      "max_observed_depth": 0.0011461544686920831,
+      "folded_bin_noise": 8.846053966816503e-05,
+      "period_days": 8.3712,
+      "repeats": [
+        {
+          "seed_index": 0,
+          "FPP": 0.00010203941020958673,
+          "NFPP": 9.110359537252215e-117,
+          "probability_on_injected_host": 0.9999999999997089,
+          "target_planet_TP_PTP_DTP": 0.9998979605897903,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-empirical-v1/campaign/runs/final/seed-00/result.json",
+            "sha256": "69f230fa2e129aff2926116510caed914115273a2c9cd79025b03c36d5b07a3b"
+          }
+        },
+        {
+          "seed_index": 1,
+          "FPP": 0.0064981658692546684,
+          "NFPP": 3.7056535801406944e-116,
+          "probability_on_injected_host": 0.9999999999982088,
+          "target_planet_TP_PTP_DTP": 0.9935018341307453,
+          "result": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-empirical-v1/campaign/runs/final/seed-01/result.json",
+            "sha256": "829c0d881a9becf4207e83d3d5ebb49455217c34855c1e17a2797eee6004e371"
+          }
+        }
+      ],
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/8878385-target-empirical-v1/campaign/freeze.json",
+        "sha256": "ff91e1b4bca7c053557704c6ff8c10edacdc9602c162d46e0f9fbc372400681f"
+      }
+    }
+  ],
+  "bois": [
+    {
+      "source_id": "2127169041106093184",
+      "signal_id": "rust-v6-2127169041106093184-1",
+      "quarters": "all",
+      "native": {
+        "adopted_period_days": 5.905437859340942,
+        "adopted_epoch_bkjd": 850.9867287190198,
+        "adopted_duration_days": 0.16573138662895665,
+        "observed_integrated_depth": 0.0003582095514869099,
+        "radius_ratio_quantile_snr": 34.30581340045829,
+        "representative_radius_earth": 2.7490214710143763,
+        "representative_impact": 0.5091569909930432
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/native-v3/native-accepted.json",
+            "sha256": "173f2d85f895c9ea329cde6fd6e4f2faa925896f62139170c8ee598a39ab6660"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_PRIMARY_SET_PHYSICAL_REVIEW_REQUIRED",
+        "numerical_primary_pass": true,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/probability-v3/campaign/audit-20261025T011526037969Z.json",
+          "sha256": "1ab614f7487d3977b14142fe5dfcce1716a072974c6eca92b2317e23ec1dacc3"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/probability-v3/campaign/freeze.json",
+          "sha256": "038002df806f34ee5f12726cd66114fd900e7d9fd2d16cdeab1bf2979528aeb8"
+        },
+        "FPP": {
+          "mean": 0.002762231547741406,
+          "sample_standard_deviation": 0.0010410145343302257,
+          "minimum": 0.0012726425505513728,
+          "maximum": 0.005173204777588425,
+          "unfavorable_indices": [],
+          "repeats": [
+            0.001964574571988509,
+            0.0022487344821436883,
+            0.003017677320737877,
+            0.003740082763670771,
+            0.0025909429916464166,
+            0.005173204777588425,
+            0.004521566333274607,
+            0.003799400022031829,
+            0.0036385440419980375,
+            0.0021955124928489944,
+            0.0012726425505513728,
+            0.0037558846632780307,
+            0.002520346279270669,
+            0.002130897437924939,
+            0.0014478317871738922,
+            0.002343035263416504,
+            0.0015337974441702595,
+            0.0027858552084997212,
+            0.002160626457512027,
+            0.002403474065101552
+          ]
+        },
+        "NFPP": {
+          "mean": 4.981943884061084e-25,
+          "sample_standard_deviation": 5.247873446239128e-25,
+          "minimum": 2.4919157158671076e-26,
+          "maximum": 1.7256341239297327e-24,
+          "unfavorable_indices": []
+        }
+      },
+      "stock_check": {
+        "final": {
+          "repeats": 20,
+          "aperture_response": "calibrated_kepler",
+          "FPP": [
+            0.03267762098700744,
+            0.027905438759224577,
+            0.03097235392503428,
+            0.028247029812900837,
+            0.03207378723080678,
+            0.03170899501857549,
+            0.02886642595142863,
+            0.037827214495227524,
+            0.030835707067766283,
+            0.034532466657962724,
+            0.03628067713836303,
+            0.03136114387854827,
+            0.03202380330322985,
+            0.030574203811412626,
+            0.02927715954358112,
+            0.031347344973859936,
+            0.03261484105580881,
+            0.033945996053751926,
+            0.03669162938355519,
+            0.03034455325443941
+          ],
+          "NFPP": [
+            0.030284174943497687,
+            0.022679509550446914,
+            0.02843989286717139,
+            0.024666932396150174,
+            0.025615854463884247,
+            0.02763073227967801,
+            0.025990315006039256,
+            0.032831815436798736,
+            0.0278644194418158,
+            0.03182899830696034,
+            0.03392421704787738,
+            0.029291928873606567,
+            0.02884178731569139,
+            0.029449250872278822,
+            0.02760463179213363,
+            0.029104548781114202,
+            0.0286491419445911,
+            0.029973300163974752,
+            0.03320112075167052,
+            0.028375627647540428
+          ],
+          "mean_FPP": 0.032005419615124236,
+          "mean_NFPP": 0.028812409994146065,
+          "passes": false
+        },
+        "gaussian": {
+          "repeats": 20,
+          "aperture_response": "upstream_gaussian",
+          "FPP": [
+            0.06868399611963116,
+            0.0818348290935711,
+            0.05807364497939249,
+            0.0604031242893025,
+            0.059604200433958976,
+            0.07827520399443244,
+            0.05851555442344547,
+            0.06124127627575349,
+            0.05081652904726752,
+            0.06854375886525776,
+            0.06568892230349455,
+            0.07093656487468791,
+            0.08222539362469128,
+            0.06543718624983597,
+            0.07337039131910161,
+            0.07754301102011696,
+            0.051351760374163447,
+            0.06051011281950147,
+            0.07081084879889565,
+            0.05214671390045311
+          ],
+          "NFPP": [
+            0.06673699885335779,
+            0.07937594282104653,
+            0.05335908715172008,
+            0.054995835668308034,
+            0.05702588775052424,
+            0.07433544649007029,
+            0.05669422766290263,
+            0.058843183100811505,
+            0.04862716707112215,
+            0.06430587444269535,
+            0.06335216664876293,
+            0.06740391203576523,
+            0.07877479239733266,
+            0.061215185643847425,
+            0.06973599333650438,
+            0.07475439445769932,
+            0.048356809047692954,
+            0.058710483096353,
+            0.0659577225188796,
+            0.04936181338305381
+          ],
+          "mean_FPP": 0.06580065114034775,
+          "mean_NFPP": 0.0625961461789225,
+          "passes": false
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 31.173103255522975,
+        "ruwe": 1.0335879,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 3.454387906338307,
+          "minimum": 3.4352443965661212,
+          "maximum": 3.4993786719606073
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 7,
+          "fraction_population_fainter_than_gaia": 0.7480784881092323,
+          "area_factor": 5.762154400638349,
+          "mean_fpp": 0.002762231547741406,
+          "mean_fpp_if_background_area_is_the_aperture": 0.004205715254439048
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2127169041106093184/closeout-v1.json",
+          "sha256": "cefba68206912790095b4ef5bc2d2fd030cbee3edd460930c1bdb49b322b2ec8"
+        }
+      }
+    },
+    {
+      "source_id": "2126217104555818240",
+      "signal_id": "rust-v6-2126217104555818240-1",
+      "quarters": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 2.953629558002585,
+        "adopted_epoch_bkjd": 849.7016566049759,
+        "adopted_duration_days": 0.0911594764565283,
+        "observed_integrated_depth": 0.0050717885220983305,
+        "radius_ratio_quantile_snr": 2.447019184265043,
+        "representative_radius_earth": 17.606355515604015,
+        "representative_impact": 1.0456793676880132
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": false,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126217104555818240/native-v3/native-hold.json",
+            "sha256": "c8d49a33493cf2cb92e2f712a78e45d7444f54f74ad68f4d3d7f5b81827e83cd"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2077967368932890752",
+      "signal_id": "rust-v6-2077967368932890752-1",
+      "quarters": "all",
+      "native": {
+        "adopted_period_days": 4.3584934960560355,
+        "adopted_epoch_bkjd": 857.9973110342295,
+        "adopted_duration_days": 0.10849568512886382,
+        "observed_integrated_depth": 0.020132700740284948,
+        "radius_ratio_quantile_snr": 31.195770679479537,
+        "representative_radius_earth": 12.909748409463267,
+        "representative_impact": 0.3784870214221177
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/native-v3/native-accepted.json",
+            "sha256": "321e902cca203c463809aa56c18ba584c327aadb3261b9669b1dfe1671aa2456"
+          }
+        },
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": false,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/native-v3/native-hold.json",
+            "sha256": "187d1f5531590adff8c291fa04971e93f862ee5e47484495acbea19fe2560f68"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_PRIMARY_SET_PHYSICAL_REVIEW_REQUIRED",
+        "numerical_primary_pass": true,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/probability-v3/campaign/audit-20261025T005205217027Z.json",
+          "sha256": "62fcdb52640b29e36a3aedabf37f72296d74dcabebd87b33b8a2dfdf16731747"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/probability-v3/campaign/freeze.json",
+          "sha256": "2230dc7169d430f4679ab06308ac68ecb9c9879db606e34e97be10ea620960a5"
+        },
+        "FPP": {
+          "mean": 0.005881508823394976,
+          "sample_standard_deviation": 0.01852275891716512,
+          "minimum": 5.946132475287413e-12,
+          "maximum": 0.07414483303398878,
+          "unfavorable_indices": [
+            8,
+            9
+          ],
+          "repeats": [
+            1.922275671972784e-09,
+            0.0006019712979957736,
+            2.8617057612478902e-09,
+            2.757604149028481e-06,
+            5.946132475287413e-12,
+            8.298031212161661e-07,
+            0.0002865658670238025,
+            5.233408151283925e-10,
+            0.07414483303398878,
+            0.0413737029989657,
+            1.2033953833423539e-08,
+            0.00024791830937909154,
+            8.041948972636881e-06,
+            6.84003496065344e-08,
+            1.9717697597121386e-05,
+            1.5170284446419657e-06,
+            7.97589927437059e-09,
+            2.0453162441480544e-07,
+            0.000925211230660139,
+            1.681139250608865e-05
+          ]
+        },
+        "NFPP": {
+          "mean": 0.0,
+          "sample_standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "unfavorable_indices": []
+        }
+      },
+      "stock_check": {
+        "final": {
+          "repeats": 20,
+          "aperture_response": "calibrated_kepler",
+          "FPP": [
+            0.0023153020343682496,
+            0.0025305517333716887,
+            1.5492959298812892e-06,
+            0.00016305512998948668,
+            4.2923931421468e-06,
+            0.000597793133492841,
+            0.0008198817835866068,
+            3.0320602205646807e-06,
+            0.00032504849527259516,
+            9.554627448116193e-07,
+            8.527831774074457e-10,
+            0.0008394943201743832,
+            2.844915505295642e-05,
+            1.997920529028807e-05,
+            4.629047555959609e-05,
+            1.1928788015369562e-05,
+            3.4713598042745986e-06,
+            6.722176149054349e-10,
+            1.4202675181040902e-05,
+            0.00013171539925149744
+          ],
+          "NFPP": [
+            5.900485888976904e-140,
+            1.0200142452572021e-138,
+            1.1336125043632587e-140,
+            1.712323204962064e-139,
+            4.914908528949828e-142,
+            4.3130499109912584e-142,
+            1.4250423646774579e-142,
+            1.328320837894131e-141,
+            1.2437150770233436e-141,
+            5.286144569861942e-144,
+            1.1925322452003048e-143,
+            1.3332597715746655e-140,
+            4.549352243880692e-143,
+            7.59033074077167e-143,
+            9.907121852046515e-141,
+            3.155208206091433e-142,
+            2.5796518921496853e-143,
+            1.741212238217282e-141,
+            1.4923022239546205e-141,
+            1.1179661998947338e-140
+          ],
+          "mean_FPP": 0.00039284972127245357,
+          "mean_NFPP": 6.516788536737504e-140,
+          "passes": true
+        },
+        "gaussian": {
+          "repeats": 20,
+          "aperture_response": "upstream_gaussian",
+          "FPP": [
+            1.717656212818497e-07,
+            7.271275233033947e-07,
+            5.3894176651470005e-06,
+            0.00012080546207460241,
+            1.533274618381597e-10,
+            0.00021619787161542003,
+            3.910984724964095e-07,
+            9.465925277618581e-06,
+            1.0559789709319034e-09,
+            2.1466407251757857e-06,
+            1.527591386718541e-10,
+            2.490579964486983e-10,
+            0.0004340866667398302,
+            2.4418045281748846e-05,
+            5.599288921409595e-09,
+            1.4884808750004197e-06,
+            0.00012371862489812813,
+            2.217729535347601e-06,
+            1.1634471164256865e-11,
+            0.0014739492897724027
+          ],
+          "NFPP": [
+            4.1520758473377526e-110,
+            2.2306026185053082e-104,
+            3.237305486136822e-107,
+            3.3520189992612006e-112,
+            3.29825293621219e-106,
+            3.61659771776475e-105,
+            3.2998390592781793e-106,
+            3.291371566854066e-106,
+            8.769789413428387e-106,
+            1.8714781187333546e-107,
+            8.22440598870254e-110,
+            2.7867672053694437e-109,
+            1.2990008660844648e-108,
+            1.9217596558404223e-105,
+            2.6257239956278416e-115,
+            3.0569112022917487e-112,
+            2.2730551092069538e-110,
+            5.901971031575076e-108,
+            9.522596653970277e-109,
+            6.985861496865927e-107
+          ],
+          "mean_FPP": 0.00012075906840622319,
+          "mean_NFPP": 1.4919917176030768e-105,
+          "passes": true
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 195.84146713711584,
+        "ruwe": 0.9988963,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 12.803483162788432,
+          "minimum": 12.690886547421412,
+          "maximum": 13.4906395343514
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 3,
+          "fraction_population_fainter_than_gaia": 0.5567378979502835,
+          "area_factor": 2.2007679889663208,
+          "mean_fpp": 0.005881508823394976,
+          "mean_fpp_if_background_area_is_the_aperture": 0.008367466025189198
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077967368932890752/closeout-v1.json",
+          "sha256": "78e6970da7b6bd11823d000be30798898b10e43142a8842233164e66712327d0"
+        }
+      }
+    },
+    {
+      "source_id": "2130460704041437824",
+      "signal_id": "rust-v6-2130460704041437824-1",
+      "quarters": [
+        2,
+        5,
+        7,
+        9,
+        10,
+        11,
+        14
+      ],
+      "native": {
+        "adopted_period_days": 3.148252539854221,
+        "adopted_epoch_bkjd": 853.2712181639915,
+        "adopted_duration_days": 0.09402058325284132,
+        "observed_integrated_depth": 0.002441443649367492,
+        "radius_ratio_quantile_snr": 33.948190198539045,
+        "representative_radius_earth": 4.486351932946369,
+        "representative_impact": 0.4799587635160735
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/native-v3/native-accepted.json",
+            "sha256": "cef82673dab5a744c59b4493014c4fcf5e6e8ff7d2527b8b5a8f9d79c073073f"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/probability-v3/campaign/audit-20261025T005925882855Z.json",
+          "sha256": "79f4367551daaaf188bdeb8c050503069e0aaa65f7fcbbf31f6812d37507fd41"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/probability-v3/campaign/freeze.json",
+          "sha256": "3f3825a6b9c96e86747f321c8873b99737922f140f5c5823b96090f61048902e"
+        },
+        "FPP": {
+          "mean": 0.019032203747453152,
+          "sample_standard_deviation": 0.009368625502396807,
+          "minimum": 0.008458387291520486,
+          "maximum": 0.04560105508433232,
+          "unfavorable_indices": [
+            0,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            18,
+            19
+          ],
+          "repeats": [
+            0.015189547593607688,
+            0.012216890594220153,
+            0.01319234938527436,
+            0.013510804314124547,
+            0.013971197973235538,
+            0.0197742820191813,
+            0.009765355951212973,
+            0.012337538459786801,
+            0.018403861693567225,
+            0.01947629307399734,
+            0.022332104053564117,
+            0.015840955618870778,
+            0.036814712847578535,
+            0.024409122619212797,
+            0.02858648518097706,
+            0.010629342929008745,
+            0.04560105508433232,
+            0.008458387291520486,
+            0.01579766112747316,
+            0.02433612713831712
+          ]
+        },
+        "NFPP": {
+          "mean": 1.9223166355766597e-25,
+          "sample_standard_deviation": 6.013908224140318e-26,
+          "minimum": 9.025857757673644e-26,
+          "maximum": 3.0847688816059543e-25,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 51.990933089576075,
+        "ruwe": 1.0500214,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 5.359109476901331,
+          "minimum": 5.288360919367893,
+          "maximum": 5.540090149429107
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 5,
+          "fraction_population_fainter_than_gaia": 0.7392347105636106,
+          "area_factor": 4.150115976752263,
+          "mean_fpp": 0.019032203747453152,
+          "mean_fpp_if_background_area_is_the_aperture": 0.022182490253676582
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/closeout-v1.json",
+          "sha256": "e919494a1f46cdc4c3a21066887308c13a6ca1cefca2ee1ad06f893c997d66b5"
+        }
+      }
+    },
+    {
+      "source_id": "2106817012155835904",
+      "signal_id": "rust-v6-2106817012155835904-1",
+      "quarters": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        14
+      ],
+      "native": {
+        "adopted_period_days": 4.516815102976094,
+        "adopted_epoch_bkjd": 855.4132572050975,
+        "adopted_duration_days": 0.10380840410633917,
+        "observed_integrated_depth": 0.004336963928695092,
+        "radius_ratio_quantile_snr": 18.480755578510596,
+        "representative_radius_earth": 4.557800156027715,
+        "representative_impact": 0.33737627325398056
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/native-v3/native-accepted.json",
+            "sha256": "49098a062c9023ae212008b881daa9c14245e853633d0966fff16a7fc1ea68db"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/probability-v3/campaign/audit-20261025T010222423994Z.json",
+          "sha256": "b20dca419a01225b2d0684477a0452725f1386da6fd0e101b2c384eab09833be"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/probability-v3/campaign/freeze.json",
+          "sha256": "4c9b1d132d28122f8518196abdc3dc17944dbc72cc77883977a31ffb26d6906e"
+        },
+        "FPP": {
+          "mean": 0.03529778016704752,
+          "sample_standard_deviation": 0.03513970334986005,
+          "minimum": 0.0016396686400597105,
+          "maximum": 0.1521422930600258,
+          "unfavorable_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            16,
+            19
+          ],
+          "repeats": [
+            0.015785145406515766,
+            0.02017805606170886,
+            0.03351017546324497,
+            0.024423216733484576,
+            0.02733226101942332,
+            0.06327237580966438,
+            0.0660001996242261,
+            0.05088133253498994,
+            0.021335906258112547,
+            0.05773286243858966,
+            0.008143099638116214,
+            0.06271441692370372,
+            0.025241365170161734,
+            0.013016295027291735,
+            0.0034450396662346616,
+            0.0022423662993957816,
+            0.1521422930600258,
+            0.006922959559726438,
+            0.0016396686400597105,
+            0.0499965680062745
+          ]
+        },
+        "NFPP": {
+          "mean": 0.0,
+          "sample_standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 75.91455809951849,
+        "ruwe": 1.0198717,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 6.551185253070044,
+          "minimum": 6.473691610799302,
+          "maximum": 6.903958861893105
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 4,
+          "fraction_population_fainter_than_gaia": 0.7395306625178271,
+          "area_factor": 3.3731955657859456,
+          "mean_fpp": 0.03529778016704752,
+          "mean_fpp_if_background_area_is_the_aperture": 0.04360637463862952
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/closeout-v1.json",
+          "sha256": "a7a49e74d9f378d4f16bf84f0c3849f395bbb1bb92c65a6e47f75b15a23bbac9"
+        }
+      }
+    },
+    {
+      "source_id": "2076248557386606336",
+      "signal_id": "rust-v6-2076248557386606336-1",
+      "quarters": [
+        9,
+        16
+      ],
+      "native": {
+        "adopted_period_days": 2.998681630791008,
+        "adopted_epoch_bkjd": 837.0960490944142,
+        "adopted_duration_days": 0.07042099163101768,
+        "observed_integrated_depth": 0.003447723918530654,
+        "radius_ratio_quantile_snr": 19.315960846937426,
+        "representative_radius_earth": 4.556868067625314,
+        "representative_impact": 0.6841443013945977
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076248557386606336/native-v3/native-accepted.json",
+            "sha256": "3af0e87d15fbed261c468656c0af04ddd54f59f7d052911fe7794bb0d57379fd"
+          }
+        }
+      },
+      "campaign": {
+        "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076248557386606336/probability-v3/campaign/audit-20261025T011515587412Z.json",
+          "sha256": "dfa73a23074c3dd311b6feb3d03fb7f58537bce52bf7d0bbfbd241646cbfea13"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076248557386606336/probability-v3/campaign/freeze.json",
+          "sha256": "95f989cc7a266d57ccb1806b55d599106b04b6a66403786897421eb071775f34"
+        },
+        "FPP": {
+          "mean": 0.3558869986260773,
+          "sample_standard_deviation": 0.05985524220047429,
+          "minimum": 0.31356295097655873,
+          "maximum": 0.3982110462755959,
+          "unfavorable_indices": [
+            0,
+            1
+          ],
+          "repeats": [
+            0.31356295097655873,
+            0.3982110462755959
+          ]
+        },
+        "NFPP": {
+          "mean": 5.569026212973066e-95,
+          "sample_standard_deviation": 7.493381649207327e-96,
+          "minimum": 5.039164115155732e-95,
+          "maximum": 6.098888310790399e-95,
+          "unfavorable_indices": []
+        }
+      }
+    },
+    {
+      "source_id": "2086643310248820352",
+      "signal_id": "rust-v6-2086643310248820352-1",
+      "quarters": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        13
+      ],
+      "native": {
+        "adopted_period_days": 18.593657761934153,
+        "adopted_epoch_bkjd": 809.3920881294307,
+        "adopted_duration_days": 0.09304157077545011,
+        "observed_integrated_depth": 0.001335675855406615,
+        "radius_ratio_quantile_snr": 0.8995486118882955,
+        "representative_radius_earth": 7.978137474423169,
+        "representative_impact": 1.011936191122588
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": false,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2086643310248820352/native-v3/native-hold.json",
+            "sha256": "e137ed49bdc3fc95c965cd64da3bcc21c7fe7617458906ba60a825f7c5ad44e4"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2077020448903232640",
+      "signal_id": "rust-v6-2077020448903232640-1",
+      "quarters": [
+        1,
+        2,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "native": {
+        "adopted_period_days": 6.652099393877959,
+        "adopted_epoch_bkjd": 952.0838882432239,
+        "adopted_duration_days": 0.09897271379918078,
+        "observed_integrated_depth": 0.006019703368221108,
+        "radius_ratio_quantile_snr": 21.099080846764515,
+        "representative_radius_earth": 7.534066216052904,
+        "representative_impact": 0.7329595199384747
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/native-v3/native-accepted.json",
+            "sha256": "89f17b3fc8e0f120dde416a34131ee1b1fb99511ba39823f6eadbf66565b1c92"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/probability-v3/campaign/audit-20261025T014956413046Z.json",
+          "sha256": "13b8d7061d4b8fac951dfa7267f71a063254d8b29da02c21634e43858370f1f2"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/probability-v3/campaign/freeze.json",
+          "sha256": "de55db9a10acf4f1ddc728f3e9c15098ef5ff194f20d0710750dea98d00204f9"
+        },
+        "FPP": {
+          "mean": 0.03420619103570123,
+          "sample_standard_deviation": 0.03646599433418729,
+          "minimum": 0.004284513768355369,
+          "maximum": 0.1463160670369109,
+          "unfavorable_indices": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            15,
+            16,
+            17,
+            18
+          ],
+          "repeats": [
+            0.022706599235571168,
+            0.012443586124593176,
+            0.04501739417810158,
+            0.038535679078861684,
+            0.047436115764496356,
+            0.1463160670369109,
+            0.011401563866376696,
+            0.02031010343254913,
+            0.005126290996413263,
+            0.02463303121850191,
+            0.03859120614681799,
+            0.021658373391550745,
+            0.004284513768355369,
+            0.013985203645561994,
+            0.014965302898446109,
+            0.016170330725465254,
+            0.06673411125005435,
+            0.11043989427998124,
+            0.01758076949113574,
+            0.005787684184279995
+          ]
+        },
+        "NFPP": {
+          "mean": 1.0452246682574306e-112,
+          "sample_standard_deviation": 2.315042426021447e-112,
+          "minimum": 1.5035818488065833e-115,
+          "maximum": 9.481893039705534e-112,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 66.7414655587026,
+        "ruwe": 0.9183633,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 11.3736644509062,
+          "minimum": 11.08190750979365,
+          "maximum": 12.247496489693278
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 5,
+          "fraction_population_fainter_than_gaia": 0.7811105519208187,
+          "area_factor": 4.328562355168002,
+          "mean_fpp": 0.03420619103570123,
+          "mean_fpp_if_background_area_is_the_aperture": 0.03685224713025693
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/closeout-v1.json",
+          "sha256": "51aa222e4f7f3b3a71734aee7c56acb27cdd468b4eb284a4492c0623aefc0589"
+        }
+      }
+    },
+    {
+      "source_id": "2076383384993192576",
+      "signal_id": "rust-v6-2076383384993192576-1",
+      "quarters": [
+        4,
+        5,
+        8,
+        12,
+        16,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 51.528195064709784,
+        "adopted_epoch_bkjd": 808.3437626590996,
+        "adopted_duration_days": 0.23392794000687572,
+        "observed_integrated_depth": 0.017590853615157775,
+        "radius_ratio_quantile_snr": 32.65457137283937,
+        "representative_radius_earth": 8.579739103755898,
+        "representative_impact": 0.24666942906566108
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/native-v3/native-accepted.json",
+            "sha256": "957b6e4963aced096b78af49e59a777e83a985ec8bcaec04e7733b87483e12a2"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/audit-20261025T012022411844Z.json",
+          "sha256": "2a9a89c373cdd2e837b86a079cad408126d0162af6816b2a3ba1a8e0c80a40b9"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/freeze.json",
+          "sha256": "54575a1e2d3ce22313f9e2972c376e3dee0cd2180e64ea808d7c0b6092532768"
+        },
+        "FPP": {
+          "mean": 0.18305409334633632,
+          "sample_standard_deviation": 0.24433363828636406,
+          "minimum": 1.830064488839156e-08,
+          "maximum": 0.7899184525317187,
+          "unfavorable_indices": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "repeats": [
+            2.4719707944376168e-05,
+            0.14540150103535687,
+            0.07373515493748173,
+            0.002086818268039692,
+            0.7899184525317187,
+            0.3754824489207439,
+            0.3443435300030122,
+            0.05488485089662454,
+            0.2080847073223019,
+            0.003545264107259194,
+            0.5050219984492533,
+            0.1684966999682711,
+            0.08870812796199434,
+            0.7331187094583532,
+            0.13702643832983208,
+            0.01954294847515181,
+            0.0013032276735381876,
+            0.009296384120092815,
+            1.830064488839156e-08,
+            0.0010598664591111584
+          ]
+        },
+        "NFPP": {
+          "mean": 0.0,
+          "sample_standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 96.38628223575466,
+        "ruwe": 1.0137017,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 11.990253196430062,
+          "minimum": 11.472412328789474,
+          "maximum": 12.839646280400649
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 6,
+          "fraction_population_fainter_than_gaia": 0.5533070678127985,
+          "area_factor": 3.9400438699758724,
+          "mean_fpp": 0.18305409334633632,
+          "mean_fpp_if_background_area_is_the_aperture": 0.21917102542999337
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/closeout-v1.json",
+          "sha256": "5ab23049e7f703d4136b3ef55ca885bd8d3325b250c4870960afdcd77531638e"
+        }
+      }
+    },
+    {
+      "source_id": "2116924474653194112",
+      "signal_id": "rust-v6-2116924474653194112-1",
+      "quarters": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16
+      ],
+      "native": {
+        "adopted_period_days": 6.468668346034947,
+        "adopted_epoch_bkjd": 865.9612044619985,
+        "adopted_duration_days": 0.10355783526510742,
+        "observed_integrated_depth": 0.008933369499164123,
+        "radius_ratio_quantile_snr": 8.597327044691774,
+        "representative_radius_earth": 6.327554265903308,
+        "representative_impact": 0.5667756022729264
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2116924474653194112/native-v3/native-accepted.json",
+            "sha256": "fa0572a0c4c6f69c2bb95cd5fc9cd989ffb8127e422e15f1ec01cd0030cfdce3"
+          }
+        }
+      },
+      "campaign": {
+        "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2116924474653194112/probability-v3/campaign/audit-20261025T021834671188Z.json",
+          "sha256": "9aa8332729b68aa953d260459d06555d2f1ab38420afbd9075c10bb747b70bc5"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2116924474653194112/probability-v3/campaign/freeze.json",
+          "sha256": "083b87b9fa0cc4fc4441b6f94444649ea7b349df575144313e4a63681e254ee3"
+        },
+        "FPP": {
+          "mean": 0.5838033111698282,
+          "sample_standard_deviation": 0.07793940145082648,
+          "minimum": 0.5286918318823282,
+          "maximum": 0.6389147904573282,
+          "unfavorable_indices": [
+            0,
+            1
+          ],
+          "repeats": [
+            0.5286918318823282,
+            0.6389147904573282
+          ]
+        },
+        "NFPP": {
+          "mean": 3.225300913868895e-116,
+          "sample_standard_deviation": 9.246206229299945e-117,
+          "minimum": 2.571495401370166e-116,
+          "maximum": 3.8791064263676236e-116,
+          "unfavorable_indices": []
+        }
+      }
+    },
+    {
+      "source_id": "2077595974520134144",
+      "signal_id": "rust-v6-2077595974520134144-1",
+      "quarters": [
+        3,
+        4,
+        7,
+        8,
+        11,
+        15,
+        16
+      ],
+      "native": {
+        "adopted_period_days": 14.22664128241837,
+        "adopted_epoch_bkjd": 859.6728116451466,
+        "adopted_duration_days": 0.09291398849625755,
+        "observed_integrated_depth": 0.005306895529415767,
+        "radius_ratio_quantile_snr": 1.9870064960948435,
+        "representative_radius_earth": 35.22978153736128,
+        "representative_impact": 1.4049811988457404
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": false,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-hold.json",
+            "sha256": "29d88c239022690765a52eace9618004f4c761f6ad79d520a8cb080dee82aec9"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2130965547378157568",
+      "signal_id": "rust-v6-2130965547378157568-2",
+      "quarters": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 1.4408323197480255,
+        "adopted_epoch_bkjd": 858.751507012996,
+        "adopted_duration_days": 0.2029288152132756,
+        "observed_integrated_depth": 0.007858947720581377,
+        "radius_ratio_quantile_snr": 21.70026663292443,
+        "representative_radius_earth": 5.61034451447827,
+        "representative_impact": 0.49932904737252914
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": false
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568/native-v3/native-hold.json",
+            "sha256": "48db7ce41d42a3e8d4cb12a4fab45362c4aeaa95fa21feb8a014353bf7df768a"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2106383701495087232",
+      "signal_id": "rust-v6-2106383701495087232-1",
+      "quarters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 1.6904635388146494,
+        "adopted_epoch_bkjd": 866.0364345424305,
+        "adopted_duration_days": 0.051388522821896584,
+        "observed_integrated_depth": 0.0028695357661934207,
+        "radius_ratio_quantile_snr": 0.23654406792094204,
+        "representative_radius_earth": 3.0278784069778744,
+        "representative_impact": 0.6187166247146165
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": false,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232/native-v3/native-hold.json",
+            "sha256": "09d8156b4a8efdbe332170b90416c076328f3fda0ab9300e4e385bdf5a0922bd"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2128059130130482432",
+      "signal_id": "rust-v6-2128059130130482432-3",
+      "quarters": [
+        2,
+        3,
+        6,
+        10,
+        11,
+        14
+      ],
+      "native": {
+        "adopted_period_days": 2.0939866801087246,
+        "adopted_epoch_bkjd": 866.2893173290441,
+        "adopted_duration_days": 0.18912658825320686,
+        "observed_integrated_depth": 0.0029921254829448074,
+        "radius_ratio_quantile_snr": 18.66904067244157,
+        "representative_radius_earth": 2.653201973666947,
+        "representative_impact": 0.5185724922331658
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2128059130130482432/native-v3/native-accepted.json",
+            "sha256": "8bfcc74067df035e10e18e078504b8efa7700179df29d9cb9f7973233772e59d"
+          }
+        }
+      },
+      "campaign": {
+        "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2128059130130482432/probability-v3/campaign/audit-20261025T054259202940Z.json",
+          "sha256": "cc782a833c5cd5424d9f476a0a860fe47eb52b7f70061b74eacf8e95bded3a44"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2128059130130482432/probability-v3/campaign/freeze.json",
+          "sha256": "89ef9733fc34400b316ba1102d2b246671763708c474500b1dbcbb22ca9a2e9d"
+        },
+        "FPP": {
+          "mean": 0.1978904662057802,
+          "sample_standard_deviation": 0.042463933776901476,
+          "minimum": 0.1678639306762767,
+          "maximum": 0.22791700173528373,
+          "unfavorable_indices": [
+            0,
+            1
+          ],
+          "repeats": [
+            0.1678639306762767,
+            0.22791700173528373
+          ]
+        },
+        "NFPP": {
+          "mean": 1.4463743533355236e-36,
+          "sample_standard_deviation": 1.4067698333460803e-36,
+          "minimum": 4.516378646078409e-37,
+          "maximum": 2.4411108420632063e-36,
+          "unfavorable_indices": []
+        }
+      }
+    },
+    {
+      "source_id": "2126910621514995968",
+      "signal_id": "rust-v6-2126910621514995968-1",
+      "quarters": [
+        0,
+        4,
+        5,
+        7,
+        8,
+        12,
+        16
+      ],
+      "native": {
+        "adopted_period_days": 3.622888433626116,
+        "adopted_epoch_bkjd": 853.7361328410763,
+        "adopted_duration_days": 0.1292527391423836,
+        "observed_integrated_depth": 0.017961232215675138,
+        "radius_ratio_quantile_snr": 61.082233381688276,
+        "representative_radius_earth": 15.475034744316416,
+        "representative_impact": 0.4018019288328562
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968/native-v3/native-accepted.json",
+            "sha256": "aa9709a6e7b4109488b67948375536554b0189e81530a1214acafd2572b22ed1"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_PRIMARY_SET_PHYSICAL_REVIEW_REQUIRED",
+        "numerical_primary_pass": true,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968/probability-v3/campaign/audit-20261025T060640227250Z.json",
+          "sha256": "b30b9d630b900de942adc2b0149faf12d8c95f7946a03bab9e57f9953a09602d"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968/probability-v3/campaign/freeze.json",
+          "sha256": "8e06e36b7eee9a1fa51486a35264e82b541a86c949a74b7bf3e52e8c324a39e4"
+        },
+        "FPP": {
+          "mean": 0.0015789086509245098,
+          "sample_standard_deviation": 0.007015681219849924,
+          "minimum": -6.856737400084967e-13,
+          "maximum": 0.03138496916482958,
+          "unfavorable_indices": [
+            0
+          ],
+          "repeats": [
+            0.03138496916482958,
+            -2.1671553440683056e-13,
+            1.044738739774953e-05,
+            1.952027428586689e-11,
+            3.352873534367973e-14,
+            -3.6615155352137663e-13,
+            1.7090200365998953e-09,
+            -6.199485369506874e-13,
+            -6.856737400084967e-13,
+            1.5993872892750005e-12,
+            8.572031973130834e-13,
+            -4.733990977001667e-13,
+            1.716404796070492e-13,
+            1.1659110787931581e-08,
+            1.368904989362818e-13,
+            7.531208989774996e-11,
+            0.00012162893094103122,
+            8.917311333789257e-13,
+            3.0464519795714295e-13,
+            6.111407072550978e-05
+          ]
+        },
+        "NFPP": {
+          "mean": 0.0,
+          "sample_standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "unfavorable_indices": []
+        }
+      },
+      "stock_check": {
+        "final": {
+          "repeats": 20,
+          "aperture_response": "calibrated_kepler",
+          "FPP": [
+            1.4432899320127035e-15,
+            -1.1324274851176597e-14,
+            -4.884981308350689e-15,
+            9.992007221626409e-15,
+            -1.354472090042691e-14,
+            0.0,
+            -1.0880185641326534e-14,
+            -7.549516567451064e-15,
+            -8.881784197001252e-15,
+            1.199040866595169e-14,
+            7.327471962526033e-15,
+            4.218847493575595e-15,
+            2.1094237467877974e-15,
+            9.769962616701378e-15,
+            1.0103029524088925e-14,
+            1.7763568394002505e-15,
+            -1.0880185641326534e-14,
+            1.2323475573339238e-14,
+            -6.217248937900877e-15,
+            -7.327471962526033e-15
+          ],
+          "NFPP": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_FPP": -5.218048215738236e-16,
+          "mean_NFPP": 0.0,
+          "passes": true
+        },
+        "gaussian": {
+          "repeats": 20,
+          "aperture_response": "upstream_gaussian",
+          "FPP": [
+            2.58792987040124e-13,
+            0.000258762810209312,
+            -7.993605777301127e-15,
+            2.5786728308219153e-10,
+            3.841077717559038e-06,
+            2.4612645954658063e-07,
+            1.2212453270876722e-15,
+            3.552713678800501e-15,
+            -1.3322676295501878e-14,
+            5.440092820663267e-15,
+            -4.218847493575595e-15,
+            -3.774758283725532e-15,
+            -5.329070518200751e-15,
+            9.2148511043888e-15,
+            1.5352163984516665e-12,
+            -9.325873406851315e-15,
+            6.483858865913295e-05,
+            2.4424906541753444e-15,
+            1.8759327424788808e-11,
+            8.294034936628947e-08
+          ],
+          "NFPP": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_FPP": 1.6388591089672166e-05,
+          "mean_NFPP": 0.0,
+          "passes": true
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 272.79384107701907,
+        "ruwe": 1.0676575,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 16.22211850705247,
+          "minimum": 15.972018272793182,
+          "maximum": 16.733596538001706
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 7,
+          "fraction_population_fainter_than_gaia": 0.5260063319764813,
+          "area_factor": 4.348476675110159,
+          "mean_fpp": 0.0015789086509245098,
+          "mean_fpp_if_background_area_is_the_aperture": 0.0015789086509245098
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126910621514995968/closeout-v1.json",
+          "sha256": "2eff5678a9f78c6bf8393ab247134383375ad11e9974b32cb07a40a014ed0624"
+        }
+      }
+    },
+    {
+      "source_id": "2078045782158649216",
+      "signal_id": "rust-v6-2078045782158649216-1",
+      "quarters": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16
+      ],
+      "native": {
+        "adopted_period_days": 4.327324749824035,
+        "adopted_epoch_bkjd": 1005.2682811503555,
+        "adopted_duration_days": 0.048722390023747036,
+        "observed_integrated_depth": 0.0019426489936410496,
+        "radius_ratio_quantile_snr": 1.2071815038476505,
+        "representative_radius_earth": 29.278168918994837,
+        "representative_impact": 1.3412188884749487
+      },
+      "native_decisions": {
+        "native-hold.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": false,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216/native-v3/native-hold.json",
+            "sha256": "4c5cd51d595d928326821e24d3b0011bab39e9f59d0e9c537cf64e4607439abb"
+          }
+        }
+      },
+      "campaign": null
+    },
+    {
+      "source_id": "2079517512834068480",
+      "signal_id": "rust-v6-2079517512834068480-1",
+      "quarters": [
+        0,
+        3,
+        4,
+        8,
+        16,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 2.864063649157755,
+        "adopted_epoch_bkjd": 809.7852188160574,
+        "adopted_duration_days": 0.08868620970385603,
+        "observed_integrated_depth": 0.00788267318005853,
+        "radius_ratio_quantile_snr": 27.456168607026733,
+        "representative_radius_earth": 7.693560085548492,
+        "representative_impact": 0.6433723496563623
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/native-v3/native-accepted.json",
+            "sha256": "a2197b7371088907c94f7077cb23e2e61f8eac01559548cfc72193514b9b4b4f"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/probability-v3/campaign/audit-20261025T064126366002Z.json",
+          "sha256": "bcc1274995d2ba9ea7f0f0444dd625447f6fcb5d3f14f0bf9b4f2e52259adfd2"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/probability-v3/campaign/freeze.json",
+          "sha256": "b4bb3cc39245362e7b0a6bf8593fe6520d772681cb929be297ffa6c1b0fea852"
+        },
+        "FPP": {
+          "mean": 0.08014242162164267,
+          "sample_standard_deviation": 0.019403968483119875,
+          "minimum": 0.04083736189359077,
+          "maximum": 0.11171916857793285,
+          "unfavorable_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "repeats": [
+            0.05756065976446911,
+            0.08152036040196387,
+            0.1088663597792513,
+            0.04083736189359077,
+            0.10155721735179657,
+            0.07968127000221925,
+            0.0832046944747884,
+            0.08641880272114388,
+            0.07024081303997942,
+            0.09263236422993437,
+            0.05845967700074883,
+            0.09343012357170877,
+            0.08355751560707869,
+            0.11171916857793285,
+            0.08740687819973281,
+            0.08223178563298572,
+            0.0595171550127922,
+            0.05056582362513751,
+            0.07238397822009746,
+            0.1010564233255018
+          ]
+        },
+        "NFPP": {
+          "mean": 2.0992841699594793e-97,
+          "sample_standard_deviation": 6.197906973539412e-97,
+          "minimum": 1.4829569176029525e-107,
+          "maximum": 2.755693799673781e-96,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 48.35985273981581,
+        "ruwe": 1.0372287,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 11.318208127853392,
+          "minimum": 11.131131873038466,
+          "maximum": 11.50853788439953
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 6,
+          "fraction_population_fainter_than_gaia": 0.5482553493740566,
+          "area_factor": 3.9132011370836692,
+          "mean_fpp": 0.08014242162164267,
+          "mean_fpp_if_background_area_is_the_aperture": 0.08136746316818591
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/closeout-v1.json",
+          "sha256": "8295001d86f5dda35f87f3a51171ffb5b3d4ab069bd8cea058bd46c0a64734b3"
+        }
+      }
+    },
+    {
+      "source_id": "2100325529865507712",
+      "signal_id": "rust-v6-2100325529865507712-1",
+      "quarters": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "native": {
+        "adopted_period_days": 3.263015801958549,
+        "adopted_epoch_bkjd": 856.5301003323351,
+        "adopted_duration_days": 0.13569452480582234,
+        "observed_integrated_depth": 0.006537442457121734,
+        "radius_ratio_quantile_snr": 64.807458028461,
+        "representative_radius_earth": 14.955768825932067,
+        "representative_impact": 0.7876391707588947
+      },
+      "native_decisions": {
+        "native-accepted.json": {
+          "checks": {
+            "weight_ess": true,
+            "replay": true,
+            "clock_shift": true,
+            "radius_ratio_snr": true,
+            "integration": true,
+            "protection": true
+          },
+          "record": {
+            "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/native-v3/native-accepted.json",
+            "sha256": "9214f784927d7156b53d04f662f08211a99116c433883605d9ba0fb2788444b6"
+          }
+        }
+      },
+      "campaign": {
+        "status": "COMPLETE_NUMERICAL_THRESHOLDS_NOT_MET_REMAINS_PC",
+        "numerical_primary_pass": false,
+        "audit": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/probability-v3/campaign/audit-20261025T092729704485Z.json",
+          "sha256": "b0f7ada2b0ec78aaf0884e6144a484a0862a128a4b5c92e2ae5eeab781814002"
+        },
+        "freeze": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/probability-v3/campaign/freeze.json",
+          "sha256": "45d7858ff36ea53e8c9804f32afa0f5be372c44f241be108c07a8f11b51aa94b"
+        },
+        "FPP": {
+          "mean": 0.30370653949267457,
+          "sample_standard_deviation": 0.467537878190189,
+          "minimum": -3.028022277362652e-12,
+          "maximum": 0.9999999999980479,
+          "unfavorable_indices": [
+            3,
+            4,
+            7,
+            8,
+            9,
+            10,
+            16
+          ],
+          "repeats": [
+            1.2924572301287185e-06,
+            -2.220446049250313e-16,
+            6.073614926216386e-06,
+            0.9999999999980479,
+            0.9999999867473189,
+            2.1371793224034263e-12,
+            -2.517541730640005e-12,
+            0.9990233435799666,
+            0.999983535630438,
+            0.07818686021427268,
+            0.9999865195488735,
+            1.014299755297543e-12,
+            -2.4424906541753444e-15,
+            -5.064837438339964e-13,
+            -1.0720313525780512e-12,
+            1.4316325902541394e-11,
+            0.9969423330625081,
+            9.185314731041672e-10,
+            -3.028022277362652e-12,
+            8.440710357326964e-07
+          ]
+        },
+        "NFPP": {
+          "mean": 0.0,
+          "sample_standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "unfavorable_indices": []
+        }
+      },
+      "closeout": {
+        "matched_filter_snr": 574.2147784240713,
+        "ruwe": 0.97951114,
+        "gaia_sources_within_1p5_arcsec": [],
+        "tp_best_fit_radius_earth": {
+          "median": 15.941679926268371,
+          "minimum": 15.34816874893138,
+          "maximum": 16.297436241956923
+        },
+        "background_area_sensitivity": {
+          "aperture_pixels": 11,
+          "fraction_population_fainter_than_gaia": 0.3008637236084453,
+          "area_factor": 4.181605280705579,
+          "mean_fpp": 0.30370653949267457,
+          "mean_fpp_if_background_area_is_the_aperture": 0.3037065394926806
+        },
+        "record": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/closeout-v1.json",
+          "sha256": "072d7ace5c50b3f0160512f4e4a910f3fef21e7ebb3c57a53cd091b970a6f11c"
+        }
+      }
+    },
+    {
+      "source_id": "2080481745869519488",
+      "signal_id": "rust-v6-2080481745869519488-6",
+      "quarters": [
+        6,
+        10,
+        14
+      ],
+      "native_decisions": {},
+      "campaign": null
+    }
+  ],
+  "holds": [
+    {
+      "kic": 3861529,
+      "source_id": "2052194442729351680",
+      "signal_id": "rust-v6-2052194442729351680-1",
+      "status": "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE",
+      "reason": "Capable neighbour Gaia DR3 2052197397661056128 (G 19.77) has no BP/RP, Teff, mass or radius; upstream estimation cannot support it. Only quarters 4/8/12/16 (one channel) pass flux closure.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2052194442729351680/response-v1/response-review.json",
+          "sha256": "bc40a0a4d7867b2d18bfacaed258c6bbbdbdab78b59619c485633f7438c004bb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2052194442729351680/stellar-inventory-retained.json",
+          "sha256": "fcd83469203e267a13c58dfda52b889640a49342265a4e8c4b52c077e65cdab9"
+        }
+      ]
+    },
+    {
+      "kic": 4480320,
+      "source_id": "2076221417495492736",
+      "signal_id": "rust-v6-2076221417495492736-1",
+      "status": "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE",
+      "reason": "Capable Gaia DR3 2076221314406623232 (G 21.02) has only G photometry and no parallax; same hold as V2. 11/15 quarters pass flux closure.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076221417495492736/response-v1/response-review.json",
+          "sha256": "9b072874c69fe4a370fd4cdc6029cdf6358d74611d1e43386797c5569deb978d"
+        }
+      ]
+    },
+    {
+      "kic": 6503608,
+      "source_id": "2104132687658252160",
+      "signal_id": "rust-v6-2104132687658252160-1",
+      "status": "HELD_RESPONSE_CLOSURE_ONE_QUARTER",
+      "reason": "Only Q0 (437 valid photons) passes the flux-closure gate; other quarters predict 0.48-1.89 of the observed SAP flux or lack PSF flux.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104132687658252160/response-v1/response-review.json",
+          "sha256": "37b3936b06c60b39607dae7fddf6448a3616872ce05ace8c5ff2c76deb0c5e4f"
+        }
+      ]
+    },
+    {
+      "kic": 9786351,
+      "source_id": "2080290503866069888",
+      "signal_id": "rust-v6-2080290503866069888-1",
+      "status": "HELD_RESPONSE_CLOSURE_ONE_QUARTER",
+      "reason": "Only Q3 passes the flux-closure gate (others 0.59-0.78: unmodelled light in the aperture).",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2080290503866069888/response-v1/response-review.json",
+          "sha256": "0cb4bbf9ee185b9e56d5e26ff7b8d67acb010c8c779a4017a96e5c92e994a3c4"
+        }
+      ]
+    },
+    {
+      "kic": 10123064,
+      "source_id": "2107574403864920576",
+      "signal_id": "rust-v6-2107574403864920576-1",
+      "status": "KNOWN_OBJECT_CONTROL_BLOCKED_BY_RESPONSE_CLOSURE",
+      "reason": "Kepler-565 b (validated, Morton et al. 2016) fails flux closure in all 17 quarters (predicted/observed 1.48-1.61); V3 cannot assess it. Gate incompleteness, not a false-positive statement.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/controls/kepler565-case/response-v1/response-review.json",
+          "sha256": "738fae641242832cdbc1d76ba497f3209036d591438cf46493d4b1bf9e356871"
+        }
+      ]
+    },
+    {
+      "kic": 8296927,
+      "source_id": "2126217104555818240",
+      "signal_id": "rust-v6-2126217104555818240-1",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Grazing native solution (b 1.05 [0.98,1.15]), radius ratio 0.18 [0.13,0.27], quantile SNR 2.45 < 3; e 0.47.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126217104555818240/native-v3/native-hold.json",
+          "sha256": "c8d49a33493cf2cb92e2f712a78e45d7444f54f74ad68f4d3d7f5b81827e83cd"
+        }
+      ]
+    },
+    {
+      "kic": 10987243,
+      "source_id": "2086643310248820352",
+      "signal_id": "rust-v6-2086643310248820352-1",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Grazing native solution (b 1.02), radius ratio unconstrained (0.04-0.24, SNR 0.90) in the six closure-passing quarters.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2086643310248820352/native-v3/native-hold.json",
+          "sha256": "e137ed49bdc3fc95c965cd64da3bcc21c7fe7617458906ba60a825f7c5ad44e4"
+        }
+      ]
+    },
+    {
+      "kic": 4904094,
+      "source_id": "2103348117391603840",
+      "signal_id": "rust-v6-2103348117391603840-1",
+      "status": "HELD_RESPONSE_CLOSURE_NO_QUARTER",
+      "reason": "No quarter passes the flux-closure gate.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103348117391603840/response-v1/response-review.json",
+          "sha256": "2fe24d2f03424322b382b8f265a9b01454f31613a7396d9d3e2f1e36145f5685"
+        }
+      ]
+    },
+    {
+      "kic": 9175555,
+      "source_id": "2079433846869397376",
+      "signal_id": "rust-v6-2079433846869397376-1",
+      "status": "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE",
+      "reason": "Capable Gaia DR3 2079433846861797760 has no supported mass/radius/Teff; 11/17 quarters pass closure.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079433846869397376/response-v1/response-review.json",
+          "sha256": "5fd751b961167b1ff94e5ffc0279920625fae57a43939d57e6c19f2e252d0f32"
+        }
+      ]
+    },
+    {
+      "kic": 4586063,
+      "source_id": "2073628180652139904",
+      "signal_id": "rust-v6-2073628180652139904-1",
+      "status": "NOT_ATTEMPTED",
+      "reason": "Delivered signal is the 55.52 d, ~21 Earth-radius proposal; the 7.93 d entry in the priority list is not a delivered signal ID for this host.",
+      "evidence": []
+    },
+    {
+      "kic": 6209806,
+      "source_id": "2077595974520134144",
+      "signal_id": "rust-v6-2077595974520134144-1",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Grazing native solution (representative b 1.40, radius 35 Earth radii), radius-ratio quantile SNR 1.99 < 3; weight ESS 2371, clock shift 0.19 h.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-hold.json",
+          "sha256": "29d88c239022690765a52eace9618004f4c761f6ad79d520a8cb080dee82aec9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-review-v3.json",
+          "sha256": "26f6f1c19dbe47deb2f12f0441fe354135fa09c5517fd580532ced8cbdcd0f5c"
+        }
+      ]
+    },
+    {
+      "kic": 7300018,
+      "source_id": "2077209775366626944",
+      "signal_id": "rust-v6-2077209775366626944-1",
+      "status": "HELD_SCENE_SOURCE_WITHOUT_GAIA_G_BEFORE_RESPONSE",
+      "reason": "Scene source Gaia DR3 2077209569202573312 (44.5 arcsec, RP 19.84, TIC Tmag 20.58) has no Gaia G, so tools/response.py cannot model it. Physically it lies outside the aperture; a derived-scene exclusion (as in the known-object calibration) needs a rule declared before use.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077209775366626944/stellar-inventory-retained.json",
+          "sha256": "40816bc5e6c0f5378b478f969cd86b2fa52cdded62d176e294b03dfe3f912308"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077209775366626944/scene-preview-v1.csv",
+          "sha256": "98d435cbe2e806938a826eb49a11db5cf7b83081d6e2a03b5e2bf5be48ff66a5"
+        }
+      ]
+    },
+    {
+      "kic": 8690308,
+      "source_id": "2126585921988564224",
+      "signal_id": "rust-v6-2126585921988564224-1",
+      "status": "HELD_TARGET_WITHOUT_TIC_MATCH_BEFORE_NATIVE",
+      "reason": "The TIC cone has no non-duplicate exact match for the target's Gaia DR3 ID, so tools/acquire.py cannot build the stellar plan; no published stellar override exists.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/acquire-2126585921988564224.log",
+          "sha256": "bf58625ed6e8fd60614b6c9a3b190b8e4b7725f5532c040327b6137ef25a8827"
+        }
+      ]
+    },
+    {
+      "kic": 8805426,
+      "source_id": "2106383701495087232",
+      "signal_id": "rust-v6-2106383701495087232-1",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Native radius ratio unconstrained (quantile SNR 0.24 < 3) in all 17 closure-passing quarters: P 1.6905 d, 1.23 h, representative b 0.62; weight ESS 2046, clock shift -0.22 h.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232/native-v3/native-hold.json",
+          "sha256": "09d8156b4a8efdbe332170b90416c076328f3fda0ab9300e4e385bdf5a0922bd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232/native-v3/native-review-v3.json",
+          "sha256": "ea04399341b7e8f93202129f212953a5f807b457cf66af88748c58b4a332fb23"
+        }
+      ]
+    },
+    {
+      "kic": 7765078,
+      "source_id": "2078045782158649216",
+      "signal_id": "rust-v6-2078045782158649216-1",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Grazing native solution (representative b 1.34, radius 29 Earth radii), radius-ratio quantile SNR 1.21 < 3 in 8 closure-passing quarters; the V2 grazing k/b degeneracy remains.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216/native-v3/native-hold.json",
+          "sha256": "4c5cd51d595d928326821e24d3b0011bab39e9f59d0e9c537cf64e4607439abb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216/native-v3/native-review-v3.json",
+          "sha256": "c4c59fb11c195d8bfa6b640ba4f411c7b729844130d2d23cd2e9a92ee6f8c456"
+        }
+      ]
+    },
+    {
+      "kic": 6531469,
+      "source_id": "2077532516388848512",
+      "signal_id": "rust-v6-2077532516388848512-1-psf_qdiag",
+      "status": "HELD_SOURCE_RECORD_MISSING_OR_AMBIGUOUS_BEFORE_ACQUISITION",
+      "reason": "The frozen source-scene census marks this source's KBonus record MISSING_OR_AMBIGUOUS_NO_SUBSTITUTION (no record, no scene), so V3 has no authenticated product or Gaia scene; the priority table's zero neighbours reflects the missing scene.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/source-scene-census-v2.json",
+          "sha256": "a16d33d4ed6efdae7451c29c5bbf57758c633eee764b562d0c5fe5bc3f970f84"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/acquire-2077532516388848512-failed-census.log",
+          "sha256": "20d12913f27650077446df6ce57886dac16177265a7f15cd2d0a686301ca40f1"
+        }
+      ]
+    },
+    {
+      "kic": 11650571,
+      "source_id": "2132313759090098688",
+      "signal_id": "rust-v6-2132313759090098688-1-psf_qdiag",
+      "status": "HELD_SOURCE_RECORD_MISSING_OR_AMBIGUOUS_BEFORE_ACQUISITION",
+      "reason": "The frozen source-scene census marks this source's KBonus record MISSING_OR_AMBIGUOUS_NO_SUBSTITUTION (no record, no scene), so V3 has no authenticated product or Gaia scene; the priority table's zero neighbours reflects the missing scene.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/source-scene-census-v2.json",
+          "sha256": "a16d33d4ed6efdae7451c29c5bbf57758c633eee764b562d0c5fe5bc3f970f84"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/acquire-2132313759090098688-failed-census.log",
+          "sha256": "20d12913f27650077446df6ce57886dac16177265a7f15cd2d0a686301ca40f1"
+        }
+      ]
+    },
+    {
+      "kic": 2425188,
+      "source_id": "2099129463076304128",
+      "signal_id": "rust-v6-2099129463076304128-1-sap_qdiag",
+      "status": "HELD_SOURCE_RECORD_MISSING_OR_AMBIGUOUS_BEFORE_ACQUISITION",
+      "reason": "The frozen source-scene census marks this source's KBonus record MISSING_OR_AMBIGUOUS_NO_SUBSTITUTION (no record, no scene), so V3 has no authenticated product or Gaia scene; the priority table's zero neighbours reflects the missing scene.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/source-scene-census-v2.json",
+          "sha256": "a16d33d4ed6efdae7451c29c5bbf57758c633eee764b562d0c5fe5bc3f970f84"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/acquire-2099129463076304128-failed-census.log",
+          "sha256": "20d12913f27650077446df6ce57886dac16177265a7f15cd2d0a686301ca40f1"
+        }
+      ]
+    },
+    {
+      "kic": 10854132,
+      "source_id": "2130965547378157568",
+      "signal_id": "rust-v6-2130965547378157568-2",
+      "status": "HELD_NATIVE_UNPHYSICAL_ECCENTRIC_POSTERIOR",
+      "reason": "First V3 native fit: eccentricity 0.98 [0.95, 0.99] with the transit near apoastron and periastron inside the star in 88% of samples; the stellar density prior is essentially unconstrained (4274 +/- 37709 kg/m3). Its 4.87-h duration and \u00b14.4-h model wings left 728 cadences outside the \u00b13.22-h protection. The circular-equivalent density (~100 kg/m3) points to an evolved host. A duration-aware second generation was started and stopped (cases/2130965547378157568-g2/stopped.json). Under the EXOFASTv2 collision boundary (native-rule-amendments-20261025.json), 88% of samples are excluded and the retained weight ESS is 575 < 1000; the physical subset is a grazing (b 0.94), 6.3-h transit.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568/native-v3/native-hold.json",
+          "sha256": "48db7ce41d42a3e8d4cb12a4fab45362c4aeaa95fa21feb8a014353bf7df768a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568/native-v3/native-review-v3.json",
+          "sha256": "d5faae2e9105d8afe8c0b798d477feb57b5ba7863ee497a1e7b56aefa46143a6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568-g2/generation.json",
+          "sha256": "faaac5e03d46e6306423d9564b8c082837f3f71ddad6b1b2e44a11c085d2cb26"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130965547378157568-g2/stopped.json",
+          "sha256": "2850e3ed7e907b48fffe7c53d177b27c0e8bf4475a1b13d81154c52f48212aeb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/native-rule-amendments-20261025.json",
+          "sha256": "8c3ea6daa7544ca17ffa02ea5d97cd30a5fc90139fd098372152320d6c8d357e"
+        }
+      ]
+    },
+    {
+      "kic": 9899369,
+      "source_id": "2080481745869519488",
+      "signal_id": "rust-v6-2080481745869519488-6",
+      "status": "HELD_NATIVE_UNSUPPORTED_GEOMETRY",
+      "reason": "post_boi.native stopped at its geometry check: 311 of 12,736 posterior samples (2.4%) have no defined transit duration, all at a/R* 1.00-1.06. The fit needs stellar density 19 kg/m3 [14, 27] against the catalogue prior 1683 +/- 2192 kg/m3, so the transit is far too long for a dwarf host: a giant host or a blend. Radius ratio 0.066 [0.061, 0.074], b 0.47, in 3 closure-passing quarters.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2080481745869519488/native-v3/native/failure.json",
+          "sha256": "a1c7c0fa27b602f8db99122b30ccffde52236b8434b7d23617560a5e4fdfea26"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2080481745869519488/native-v3/native/posterior.npz",
+          "sha256": "aac7558ca08dcee4d6137373d358dcadc81c47fa678a8d411a3248d7ee6369cb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2080481745869519488/native-v3/native.log",
+          "sha256": "1e6f4cb80fcbd8659cf2baff4f6735679613d22e4253d5aad13b6f9b6cd716a2"
+        }
+      ]
+    },
+    {
+      "kic": null,
+      "source_id": "2086861666381019648",
+      "signal_id": "mk-sap-20261019-2086861666381019648-1",
+      "status": "HELD_NATIVE_PROTECTION_SEPARATE_GENERATION_QUEUED",
+      "reason": "First V3 fit: 14.7 h duration (supplied 3.84 h), 193 model cadences outside protection; post_boi.protection transfer 29-38% of transit amplitude (6.4-9.3 formal sigma) for three physical samples. 99.75% of posterior samples cross the EXOFASTv2 collision boundary (median e 0.988); the 62 physical samples have e 0.83-0.91. A separate duration/clock-aware generation (-g2: supplied duration 0.600 d, trend window 6.0 d, measured protection mask) is queued; the first fit is preserved.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1/native-v3/native-hold.json",
+          "sha256": "c4730be4185e366be504ea64365ad7dd684e44a9f01effa0a53a326a0f759190"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1/native-v3/native-review-v3.json",
+          "sha256": "0322fefc9d08fcf76b70b4d729bbf45037de470a3aaab5e631fc0bef95107750"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1/native-v3/protection-review-v1/review.json",
+          "sha256": "06cad7b2be5b9b57fed9d6cd3803cbaf822f6423a80737515b6b91d24a31c885"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-1-g2/generation.json",
+          "sha256": "14ce9bea7027458e5a3c6f7712368d71dd525aa3320a95442fdeeb7934f4649f"
+        }
+      ]
+    },
+    {
+      "kic": null,
+      "source_id": "2086861666381019648",
+      "signal_id": "mk-sap-20261019-2086861666381019648-2",
+      "status": "HELD_NATIVE_PROTECTION_SEPARATE_GENERATION_QUEUED",
+      "reason": "First V3 fit: 8.9 h duration (supplied 3.36 h), e 0.69-0.89, 98.9% of samples beyond the EXOFASTv2 collision boundary, 161 model cadences outside protection; post_boi.protection transfer 30-47% of amplitude (4.8-9.2 formal sigma). Like the 8.83-day sibling, the fit prefers a much lower host density than the K-dwarf prior: possibly another host or wrong stellar parameters. Separate -g2 generation queued; first fit preserved.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2/native-v3/native-hold.json",
+          "sha256": "539937a4b264ba6e773e7c197e270966f4ab47067b52790db06e5a5d83571b2c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2/native-v3/native-review-v3.json",
+          "sha256": "14053a2f1975bb774beeb093cf696cc788318e617073899f4e41b358dbe7ff77"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2/native-v3/protection-review-v1/review.json",
+          "sha256": "7da403f8a22ba86e2d97b3a5dd05d0437c61d4e0828e069d396f0043b9407bfd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086861666381019648-2-g2/generation.json",
+          "sha256": "f7c6fd3a19ee7aa9bed4ec0b4942b302928e4dcfe5f24e8aabdd4501745f512e"
+        }
+      ]
+    },
+    {
+      "kic": 3973010,
+      "source_id": "2073177071654296448",
+      "signal_id": "mk-sap-20261019-2073177071654296448-3",
+      "status": "HELD_NATIVE_RADIUS_RATIO_SNR",
+      "reason": "Bimodal radius ratio k 0.053/0.066/0.674 (16/50/84%), b up to 1.58: small planet versus grazing body; quantile SNR 0.21 < 3. Only quarters 2, 4 and 16 pass flux closure.",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073177071654296448-3/native-v3/native-hold.json",
+          "sha256": "5cf129dbb44ea0bcb3b13d7847b034eef686048914e23ef5990736fc1930b7f5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073177071654296448-3/native-v3/native-review-v3.json",
+          "sha256": "a613f31d8cf5483ccbb2b3710585253089eee19b738ca0f9e32a7f28745e00e6"
+        }
+      ]
+    }
+  ],
+  "literature": {
+    "dated": {
+      "utc": "2026-10-25T01:06:17.977456+00:00",
+      "checks": [
+        {
+          "source": "NASA Exoplanet Archive TAP (cumulative KOI, toi, ps)",
+          "result": "No entries within a 30-arcsec box of Gaia DR3 2127169041106093184 or 2077967368932890752",
+          "record": "nasa-exoplanet-archive-20261025.json"
+        },
+        {
+          "source": "Moquin et al. 2026 NExScI workshop poster (KBonus transit search)",
+          "url": "https://vmnexsci.ipac.caltech.edu/workshop/2026/posters/Poster_JulieMoquin_41.pdf",
+          "result": "Reported BOI-1.01 is a 3.37 d signal on a G 17.8 M dwarf; not either candidate. Full candidate list not published."
+        },
+        {
+          "source": "Bienias & Szabo 2025, arXiv:2501.09152",
+          "url": "https://arxiv.org/abs/2501.09152",
+          "result": "Text names neither Gaia ID; 5.905 d lies outside their 2.509-4.792 d range. Zenodo appendix (full table) not checked."
+        }
+      ],
+      "scope": "Dated exact-signal catalogue and literature checks; absence in queried sources is not novelty."
+    },
+    "field_ephemeris_match_v1": {
+      "record": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/field-ephemeris-match-20261025.json",
+        "sha256": "3e9adc10a7f6f56ebff4010e7c9fd534e0758c11461aeca4376c72c6f9fefe48"
+      },
+      "status": "SUPERSEDED: its epoch test was inverted when the catalogue period was the shorter one and P/p2 was even, including 2:1"
+    },
+    "field_ephemeris_match": {
+      "2073226966298407552": {
+        "clock": {
+          "period_days": 4.405314567271366,
+          "epoch_bkjd": 833.6916061429928,
+          "duration_days": 0.09604586744747691,
+          "signal_id": "rust-v6-2073226966298407552-1",
+          "ra": 296.4897992929355,
+          "dec": 39.08599367718783
+        },
+        "matches": 1,
+        "expected_chance": 1.051308793366719,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.14329931109180377
+      },
+      "2076248557386606336": {
+        "clock": {
+          "period_days": 2.998681630791008,
+          "epoch_bkjd": 837.0960490944142,
+          "duration_days": 0.07042099163101768,
+          "signal_id": "rust-v6-2076248557386606336-1",
+          "ra": 294.7364726304006,
+          "dec": 39.334909240503734
+        },
+        "matches": 0,
+        "expected_chance": 0.9153692398958536,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.10479712723096682
+      },
+      "2076383384993192576": {
+        "clock": {
+          "period_days": 51.528195064709784,
+          "epoch_bkjd": 808.3437626590996,
+          "duration_days": 0.23392794000687572,
+          "signal_id": "rust-v6-2076383384993192576-1",
+          "ra": 295.9392278626669,
+          "dec": 40.288560757641655
+        },
+        "matches": 2,
+        "expected_chance": 0.46389121454441834,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.06262407851743705
+      },
+      "2077020448903232640": {
+        "clock": {
+          "period_days": 6.652099393877959,
+          "epoch_bkjd": 952.0838882432239,
+          "duration_days": 0.09897271379918078,
+          "signal_id": "rust-v6-2077020448903232640-1",
+          "ra": 296.1470747975526,
+          "dec": 41.49926867750818
+        },
+        "matches": 1,
+        "expected_chance": 0.758090038336,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.06902453051233881
+      },
+      "2077595974520134144": {
+        "clock": {
+          "period_days": 14.22664128241837,
+          "epoch_bkjd": 859.6728116451466,
+          "duration_days": 0.09291398849625755,
+          "signal_id": "rust-v6-2077595974520134144-1",
+          "ra": 293.3415798133447,
+          "dec": 41.589681958884945
+        },
+        "matches": 3,
+        "expected_chance": 0.293748976869555,
+        "low_order_other_star": [
+          {
+            "catalogue": "dr25_tce",
+            "kepid": 12314973,
+            "ratio": "1/2",
+            "separation_deg": 9.538492802571069
+          },
+          {
+            "catalogue": "koi",
+            "kepid": 12314973,
+            "ratio": "1/2",
+            "separation_deg": 9.538492696294096
+          }
+        ],
+        "expected_chance_low_order": 0.03614964268696886
+      },
+      "2077967368932890752": {
+        "clock": {
+          "period_days": 4.3584934960560355,
+          "epoch_bkjd": 857.9973110342295,
+          "duration_days": 0.10849568512886382,
+          "signal_id": "rust-v6-2077967368932890752-1",
+          "ra": 294.9215365363803,
+          "dec": 42.95054146347062
+        },
+        "matches": 2,
+        "expected_chance": 1.4269093751480009,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.2199223865900024
+      },
+      "2078045782158649216": {
+        "clock": {
+          "period_days": 4.327324749824035,
+          "epoch_bkjd": 1005.2682811503555,
+          "duration_days": 0.048722390023747036,
+          "signal_id": "rust-v6-2078045782158649216-1",
+          "ra": 295.6881352635312,
+          "dec": 43.43583615415488
+        },
+        "matches": 1,
+        "expected_chance": 0.2789366469451337,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.045373657454552
+      },
+      "2079517512834068480": {
+        "clock": {
+          "period_days": 2.864063649157755,
+          "epoch_bkjd": 809.7852188160574,
+          "duration_days": 0.08868620970385603,
+          "signal_id": "rust-v6-2079517512834068480-1",
+          "ra": 298.27874101954944,
+          "dec": 46.229018878669805
+        },
+        "matches": 1,
+        "expected_chance": 1.655146702018758,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.1543841774543972
+      },
+      "2086643310248820352": {
+        "clock": {
+          "period_days": 18.593657761934153,
+          "epoch_bkjd": 809.3920881294307,
+          "duration_days": 0.09304157077545011,
+          "signal_id": "rust-v6-2086643310248820352-1",
+          "ra": 296.76484295914804,
+          "dec": 48.40545357125564
+        },
+        "matches": 2,
+        "expected_chance": 0.23224723501939137,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.02276975702273929
+      },
+      "2099560128037101952": {
+        "clock": {
+          "period_days": 11.25347083319025,
+          "epoch_bkjd": 855.7199426238725,
+          "duration_days": 0.07322105182351578,
+          "signal_id": "rust-v6-2099560128037101952-1",
+          "ra": 288.03016775431723,
+          "dec": 38.49037584506542
+        },
+        "matches": 0,
+        "expected_chance": 0.23541106347417323,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.025904995054557955
+      },
+      "2100325529865507712": {
+        "clock": {
+          "period_days": 3.263015801958549,
+          "epoch_bkjd": 856.5301003323351,
+          "duration_days": 0.13569452480582234,
+          "signal_id": "rust-v6-2100325529865507712-1",
+          "ra": 285.24349033391326,
+          "dec": 39.66401999673177
+        },
+        "matches": 4,
+        "expected_chance": 2.9959009641345564,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.29562814783958824
+      },
+      "2106383701495087232": {
+        "clock": {
+          "period_days": 1.6904635388146494,
+          "epoch_bkjd": 866.0364345424305,
+          "duration_days": 0.051388522821896584,
+          "signal_id": "rust-v6-2106383701495087232-1",
+          "ra": 285.6988363690666,
+          "dec": 45.08886119476898
+        },
+        "matches": 1,
+        "expected_chance": 0.8769507835110578,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.10620845177453565
+      },
+      "2106817012155835904": {
+        "clock": {
+          "period_days": 4.516815102976094,
+          "epoch_bkjd": 855.4132572050975,
+          "duration_days": 0.10380840410633917,
+          "signal_id": "rust-v6-2106817012155835904-1",
+          "ra": 284.32200128537687,
+          "dec": 45.409789874815054
+        },
+        "matches": 3,
+        "expected_chance": 1.1897817881273192,
+        "low_order_other_star": [
+          {
+            "catalogue": "dr25_tce",
+            "kepid": 11705004,
+            "ratio": "1/2",
+            "separation_deg": 4.895934250263591
+          },
+          {
+            "catalogue": "koi",
+            "kepid": 11705004,
+            "ratio": "1/2",
+            "separation_deg": 4.895936636148499
+          }
+        ],
+        "expected_chance_low_order": 0.14958437310766248
+      },
+      "2116924474653194112": {
+        "clock": {
+          "period_days": 6.468668346034947,
+          "epoch_bkjd": 865.9612044619985,
+          "duration_days": 0.10355783526510742,
+          "signal_id": "rust-v6-2116924474653194112-1",
+          "ra": 280.409632248321,
+          "dec": 43.44232864708468
+        },
+        "matches": 0,
+        "expected_chance": 0.8066815437295891,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.08472074134176319
+      },
+      "2126217104555818240": {
+        "clock": {
+          "period_days": 2.953629558002585,
+          "epoch_bkjd": 849.7016566049759,
+          "duration_days": 0.0911594764565283,
+          "signal_id": "rust-v6-2126217104555818240-1",
+          "ra": 290.76318644575707,
+          "dec": 44.29675999075551
+        },
+        "matches": 2,
+        "expected_chance": 1.6190883095695816,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.18967485806350076
+      },
+      "2126728304441865728": {
+        "clock": {
+          "period_days": 56.25803952295243,
+          "epoch_bkjd": 861.2368934228217,
+          "duration_days": 0.2746257195565227,
+          "signal_id": "rust-v6-2126728304441865728-2",
+          "ra": 292.7961248841174,
+          "dec": 45.61408296195463
+        },
+        "matches": 0,
+        "expected_chance": 0.5714656964464445,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.05383031685036126
+      },
+      "2126910621514995968": {
+        "clock": {
+          "period_days": 3.622888433626116,
+          "epoch_bkjd": 853.7361328410763,
+          "duration_days": 0.1292527391423836,
+          "signal_id": "rust-v6-2126910621514995968-1",
+          "ra": 289.59770916913936,
+          "dec": 44.278461287298555
+        },
+        "matches": 2,
+        "expected_chance": 2.4774022219304506,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.2780518296869472
+      },
+      "2127169041106093184": {
+        "clock": {
+          "period_days": 5.905437859340942,
+          "epoch_bkjd": 850.9867287190198,
+          "duration_days": 0.16573138662895665,
+          "signal_id": "rust-v6-2127169041106093184-1",
+          "ra": 289.0992132029879,
+          "dec": 45.12810072294894
+        },
+        "matches": 1,
+        "expected_chance": 2.230493745119391,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.314168032828258
+      },
+      "2128059130130482432": {
+        "clock": {
+          "period_days": 2.0939866801087246,
+          "epoch_bkjd": 866.2893173290441,
+          "duration_days": 0.18912658825320686,
+          "signal_id": "rust-v6-2128059130130482432-3",
+          "ra": 293.7227403030383,
+          "dec": 45.945781235345
+        },
+        "matches": 10,
+        "expected_chance": 8.228681297127258,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 1.0913553265240352
+      },
+      "2130460704041437824": {
+        "clock": {
+          "period_days": 3.148252539854221,
+          "epoch_bkjd": 853.2712181639915,
+          "duration_days": 0.09402058325284132,
+          "signal_id": "rust-v6-2130460704041437824-1",
+          "ra": 287.9699924715063,
+          "dec": 46.97009244680072
+        },
+        "matches": 2,
+        "expected_chance": 1.5331893542882973,
+        "low_order_other_star": [],
+        "expected_chance_low_order": 0.18473895437225374
+      },
+      "2130965547378157568": {
+        "clock": {
+          "period_days": 1.4408323197480255,
+          "epoch_bkjd": 858.751507012996,
+          "duration_days": 0.2029288152132756,
+          "signal_id": "rust-v6-2130965547378157568-2",
+          "ra": 288.54613879653687,
+          "dec": 48.20569230376249
+        },
+        "matches": 9,
+        "expected_chance": 10.633581586133682,
+        "low_order_other_star": [
+          {
+            "catalogue": "dr25_tce",
+            "kepid": 7035099,
+            "ratio": "1/2",
+            "separation_deg": 6.191717578493525
+          },
+          {
+            "catalogue": "dr25_tce",
+            "kepid": 11151677,
+            "ratio": "2/1",
+            "separation_deg": 6.102388806499764
+          },
+          {
+            "catalogue": "dr25_tce",
+            "kepid": 11151677,
+            "ratio": "2/1",
+            "separation_deg": 6.102388806499764
+          }
+        ],
+        "expected_chance_low_order": 1.8223996394355577
+      },
+      "record": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/ephemeris-v2/field-ephemeris-match-v2-20261025.json",
+        "sha256": "c98837fb0a05de258f24b61cdd37de929643e8f9f3686b3e71c4054fd48cd30d"
+      }
+    }
+  },
+  "ephemeris_screen_calibration": {
+    "confirmed": {
+      "objects": 37,
+      "flagged": 1,
+      "flagged_objects": [
+        "confirmed-9813499"
+      ]
+    },
+    "fp-co": {
+      "objects": 27,
+      "flagged": 16,
+      "flagged_objects": [
+        "fp-co-11912916",
+        "fp-co-4075015",
+        "fp-co-4568298",
+        "fp-co-5193400",
+        "fp-co-5598595",
+        "fp-co-5802246",
+        "fp-co-6675056",
+        "fp-co-7812167",
+        "fp-co-8256049",
+        "fp-co-8264070",
+        "fp-co-8868657",
+        "fp-co-9692345",
+        "fp-co-9842937",
+        "fp-co-9899217",
+        "fp-co-9899315",
+        "fp-co-9899352"
+      ]
+    },
+    "fp-ss": {
+      "objects": 23,
+      "flagged": 6,
+      "flagged_objects": [
+        "fp-ss-11044779",
+        "fp-ss-11200405",
+        "fp-ss-11548140",
+        "fp-ss-4474637",
+        "fp-ss-5181804",
+        "fp-ss-9593759"
+      ]
+    }
+  },
+  "kbonus_paired_checks": {
+    "check_kbonus_noise.py": {
+      "returncode": 0,
+      "result": "70 reviews; max |applied scale difference| 0.0",
+      "helper": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/check_kbonus_noise.py",
+        "sha256": "a9ad2a920a6f3403f7cf7016200c371282e9b111a6a694a3dc8a391972ac1b5d"
+      }
+    },
+    "check_kbonus_closure.py": {
+      "returncode": 0,
+      "result": "1243 quarters; max |closure difference| 0.0 ; identical gates 98",
+      "helper": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/check_kbonus_closure.py",
+        "sha256": "06d64eb1b1df54dcebf2006f031bba65c2a472ddc4a6bc0f2c22eadecc112a99"
+      }
+    }
+  },
+  "occultation": {
+    "record": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/literature/occultation-20261025.json",
+      "sha256": "cd5b70f1ba7041ce9abc17629847946e031112e108f35193dde991bb596ddbf8"
+    },
+    "bois": {
+      "2073226966298407552": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -96.26287588594272,
+          "error_ppm": 248.24826482019122,
+          "snr": -0.387768574961307,
+          "events": 53,
+          "reduced_chi2": 1.0051860212188237
+        },
+        "scan_maximum": {
+          "phase": 0.7813210071381411,
+          "depth_ppm": 620.1194055941726,
+          "error_ppm": 249.34886519013443,
+          "snr": 2.4869549942459805,
+          "events": 53,
+          "reduced_chi2": 1.32783783318281
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.09315590062079973,
+          "a_over_rstar": 14.49552613235183,
+          "measured": -2.330805642875089,
+          "three_sigma_upper": 18.032448682369363
+        }
+      },
+      "2076248557386606336": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 43.79320966809151,
+          "error_ppm": 58.86997776106824,
+          "snr": 0.7438971668348877,
+          "events": 53,
+          "reduced_chi2": 1.4290917761739388
+        },
+        "scan_maximum": {
+          "phase": 0.16458095617646967,
+          "depth_ppm": 193.3157996597136,
+          "error_ppm": 57.039960260572116,
+          "snr": 3.3891292836916613,
+          "events": 56,
+          "reduced_chi2": 1.1411542198978435
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.0577866043615024,
+          "a_over_rstar": 10.770318366329516,
+          "measured": 1.5212812335873311,
+          "three_sigma_upper": 7.656327721504613
+        }
+      },
+      "2076383384993192576": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 107.5762468026231,
+          "error_ppm": 166.08076314655258,
+          "snr": 0.6477345405000092,
+          "events": 8,
+          "reduced_chi2": 0.5862871448451517
+        },
+        "scan_maximum": {
+          "phase": 0.8479328175134844,
+          "depth_ppm": 830.2802791002022,
+          "error_ppm": 161.03346534165615,
+          "snr": 5.155948655384399,
+          "events": 8,
+          "reduced_chi2": 2.6740561775642813
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.11448406904192146,
+          "a_over_rstar": 76.01625899565106,
+          "measured": 47.42848583781525,
+          "three_sigma_upper": 267.0947976012895
+        }
+      },
+      "2077020448903232640": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 161.2482211609119,
+          "error_ppm": 79.07200034908547,
+          "snr": 2.0392581501547515,
+          "events": 74,
+          "reduced_chi2": 1.1778998234353784
+        },
+        "scan_maximum": {
+          "phase": 0.8773973282429388,
+          "depth_ppm": 269.228506759685,
+          "error_ppm": 80.50834983356674,
+          "snr": 3.3441066338616503,
+          "events": 73,
+          "reduced_chi2": 10.571366279587375
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.07842487089594491,
+          "a_over_rstar": 17.316474356125813,
+          "measured": 7.861515149070924,
+          "three_sigma_upper": 19.42677256654062
+        }
+      },
+      "2077595974520134144": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -177.6318808480315,
+          "error_ppm": 100.51023079658798,
+          "snr": -1.7673014919995744,
+          "events": 39,
+          "reduced_chi2": 0.9580216584989463
+        },
+        "scan_maximum": {
+          "phase": 0.2893985806559555,
+          "depth_ppm": 345.2912239725531,
+          "error_ppm": 98.97336255853389,
+          "snr": 3.4887288361890723,
+          "events": 40,
+          "reduced_chi2": 1.0352791609058956
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.5477934341024023,
+          "a_over_rstar": 21.57046752688568,
+          "measured": -0.2754269202463587,
+          "three_sigma_upper": 0.4675380881414856
+        }
+      },
+      "2077967368932890752": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -14.44387762523986,
+          "error_ppm": 97.220023982164,
+          "snr": -0.14856895764487504,
+          "events": 285,
+          "reduced_chi2": 1.2994957536549259
+        },
+        "scan_maximum": {
+          "phase": 0.16223233166863768,
+          "depth_ppm": 300.11592116194225,
+          "error_ppm": 94.88118349648578,
+          "snr": 3.1630710126318986,
+          "events": 296,
+          "reduced_chi2": 1.398067837461939
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.13058582767650392,
+          "a_over_rstar": 12.864248157731772,
+          "measured": -0.1401717600847588,
+          "three_sigma_upper": 2.8304383830936986
+        }
+      },
+      "2078045782158649216": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -62.029615739242566,
+          "error_ppm": 79.94563139058262,
+          "snr": -0.7758975025938626,
+          "events": 99,
+          "reduced_chi2": 1.2358648892964383
+        },
+        "scan_maximum": {
+          "phase": 0.46029569558496986,
+          "depth_ppm": 317.54793134782545,
+          "error_ppm": 80.04798410560257,
+          "snr": 3.966969748156347,
+          "events": 101,
+          "reduced_chi2": 2.8277690521135894
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.47358301402994474,
+          "a_over_rstar": 15.379307833194163,
+          "measured": -0.0654154655019836,
+          "three_sigma_upper": 0.2529282487053891
+        }
+      },
+      "2079517512834068480": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -96.626090886607,
+          "error_ppm": 138.1152446875076,
+          "snr": -0.6996048199112863,
+          "events": 121,
+          "reduced_chi2": 0.2737163910066176
+        },
+        "scan_maximum": {
+          "phase": 0.19289550153321802,
+          "depth_ppm": 294.4438506372442,
+          "error_ppm": 142.31527089581516,
+          "snr": 2.068954714303273,
+          "events": 116,
+          "reduced_chi2": 0.18618511348809066
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.08502150865829279,
+          "a_over_rstar": 9.30435659508271,
+          "measured": -1.1572028359476367,
+          "three_sigma_upper": 4.962242124465536
+        }
+      },
+      "2086643310248820352": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -24.77614710994172,
+          "error_ppm": 66.86495524258154,
+          "snr": -0.3705400986219991,
+          "events": 25,
+          "reduced_chi2": 0.8525871458460715
+        },
+        "scan_maximum": {
+          "phase": 0.2826438550598918,
+          "depth_ppm": 653.3328085744608,
+          "error_ppm": 67.26086469566336,
+          "snr": 9.71341673245816,
+          "events": 23,
+          "reduced_chi2": 1.6634781536363703
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.0881166858775783,
+          "a_over_rstar": 26.946952173384773,
+          "measured": -2.317057251152872,
+          "three_sigma_upper": 18.7595668574314
+        }
+      },
+      "2099560128037101952": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -85.62491409275206,
+          "error_ppm": 100.36013703218312,
+          "snr": -0.8531765362705132,
+          "events": 29,
+          "reduced_chi2": 1.1799559596941978
+        },
+        "scan_maximum": {
+          "phase": 0.6449219339631048,
+          "depth_ppm": 302.3016828837566,
+          "error_ppm": 98.1712051434767,
+          "snr": 3.0793314846440385,
+          "events": 28,
+          "reduced_chi2": 1.0315572611721253
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.045567280384747715,
+          "a_over_rstar": 28.770454883723758,
+          "measured": -34.13401598018729,
+          "three_sigma_upper": 120.02445401064531
+        }
+      },
+      "2100325529865507712": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 44.12851582552577,
+          "error_ppm": 10.874057871704718,
+          "snr": 4.058146125960223,
+          "events": 326,
+          "reduced_chi2": 1.2046088435815625
+        },
+        "scan_maximum": {
+          "phase": 0.5054597639590513,
+          "depth_ppm": 48.85197476224498,
+          "error_ppm": 10.869314535311299,
+          "snr": 4.494485333324274,
+          "events": 327,
+          "reduced_chi2": 1.1586646211194709
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.08120691310762207,
+          "a_over_rstar": 5.744940153929688,
+          "measured": 0.22085352467530928,
+          "three_sigma_upper": 0.38412033505147714
+        }
+      },
+      "2106383701495087232": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 32.17355218407561,
+          "error_ppm": 111.5967819922287,
+          "snr": 0.28830179159033537,
+          "events": 576,
+          "reduced_chi2": 1.1288871070645385
+        },
+        "scan_maximum": {
+          "phase": 0.7687795838971265,
+          "depth_ppm": 251.71246771029288,
+          "error_ppm": 110.3314604129,
+          "snr": 2.281420609935682,
+          "events": 587,
+          "reduced_chi2": 1.1679607152073967
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.05316328511560216,
+          "a_over_rstar": 8.337503410703102,
+          "measured": 0.7913114374777649,
+          "three_sigma_upper": 9.025510397318275
+        }
+      },
+      "2106817012155835904": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 47.289180801811455,
+          "error_ppm": 50.99313848204753,
+          "snr": 0.9273636063498999,
+          "events": 123,
+          "reduced_chi2": 1.1802423175598316
+        },
+        "scan_maximum": {
+          "phase": 0.14021964659708924,
+          "depth_ppm": 191.02509484244567,
+          "error_ppm": 53.970816128476024,
+          "snr": 3.539414604880455,
+          "events": 116,
+          "reduced_chi2": 26.3967867977508
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.057731627867482024,
+          "a_over_rstar": 13.919241702406882,
+          "measured": 2.7489404772520345,
+          "three_sigma_upper": 11.641699881748794
+        }
+      },
+      "2116924474653194112": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -26.634482415553144,
+          "error_ppm": 249.25513002977812,
+          "snr": -0.10685630587571525,
+          "events": 113,
+          "reduced_chi2": 1.2937513234199278
+        },
+        "scan_maximum": {
+          "phase": 0.20405942818753423,
+          "depth_ppm": 1861.7338062134525,
+          "error_ppm": 237.5173293252201,
+          "snr": 7.8383072574223736,
+          "events": 114,
+          "reduced_chi2": 10.424233959983514
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.08625623333559654,
+          "a_over_rstar": 20.332758583001343,
+          "measured": -1.4799801527228806,
+          "three_sigma_upper": 41.55057038311566
+        }
+      },
+      "2126217104555818240": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -60.93523917556234,
+          "error_ppm": 32.51889370987352,
+          "snr": -1.8738410881751777,
+          "events": 300,
+          "reduced_chi2": 1.4419050611370077
+        },
+        "scan_maximum": {
+          "phase": 0.5475213911095698,
+          "depth_ppm": 111.24478977872462,
+          "error_ppm": 32.66306223395628,
+          "snr": 3.405828546690131,
+          "events": 297,
+          "reduced_chi2": 1.1180318170001489
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.1826792262844933,
+          "a_over_rstar": 9.143260128616841,
+          "measured": -0.15264843092894442,
+          "three_sigma_upper": 0.2443885426980358
+        }
+      },
+      "2126728304441865728": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 403.754992571385,
+          "error_ppm": 243.56258916580614,
+          "snr": 1.6577052902674114,
+          "events": 12,
+          "reduced_chi2": 1.489391879711541
+        },
+        "scan_maximum": {
+          "phase": 0.4002145452622018,
+          "depth_ppm": 1373.8263864181486,
+          "error_ppm": 235.12563534177283,
+          "snr": 5.842945982564549,
+          "events": 12,
+          "reduced_chi2": 1.9966062083233174
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.04170438198273395,
+          "a_over_rstar": 60.080041395193895,
+          "measured": 837.943955419048,
+          "three_sigma_upper": 2354.396777893679
+        }
+      },
+      "2126910621514995968": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 88.57142625573519,
+          "error_ppm": 57.81550753863969,
+          "snr": 1.5319665955806143,
+          "events": 130,
+          "reduced_chi2": 1.234710999057178
+        },
+        "scan_maximum": {
+          "phase": 0.36757532320630104,
+          "depth_ppm": 109.16708488566717,
+          "error_ppm": 58.99936675764545,
+          "snr": 1.8503094335588053,
+          "events": 128,
+          "reduced_chi2": 1.6521349890385484
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.12223905936142647,
+          "a_over_rstar": 8.651076941697369,
+          "measured": 0.443622932869794,
+          "three_sigma_upper": 1.3123551901191657
+        }
+      },
+      "2127169041106093184": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 3.730467136510806,
+          "error_ppm": 11.832795638483985,
+          "snr": 0.31526506926039943,
+          "events": 196,
+          "reduced_chi2": 0.9997741062309551
+        },
+        "scan_maximum": {
+          "phase": 0.7595086898797947,
+          "depth_ppm": 35.69357153603225,
+          "error_ppm": 12.119932919865969,
+          "snr": 2.9450304528935445,
+          "events": 191,
+          "reduced_chi2": 1.597533391439549
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.018161671933776224,
+          "a_over_rstar": 9.911650517410727,
+          "measured": 1.111075385710906,
+          "three_sigma_upper": 11.683848845683324
+        }
+      },
+      "2128059130130482432": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -628.4453546083312,
+          "error_ppm": 66.89688620983051,
+          "snr": -9.39423925707294,
+          "events": 240,
+          "reduced_chi2": 4.048904405189515
+        },
+        "scan_maximum": {
+          "phase": 0.7773918026190131,
+          "depth_ppm": 1027.980252562718,
+          "error_ppm": 80.63814873926472,
+          "snr": 12.748063647723214,
+          "events": 226,
+          "reduced_chi2": 1.634439335948659
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.050062701813969324,
+          "a_over_rstar": 9.85171005486559,
+          "measured": -24.336728396492845,
+          "three_sigma_upper": 7.7718038886979635
+        }
+      },
+      "2130460704041437824": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": 18.552719339957523,
+          "error_ppm": 46.48205369060254,
+          "snr": 0.3991372554975642,
+          "events": 192,
+          "reduced_chi2": 1.1901618638048566
+        },
+        "scan_maximum": {
+          "phase": 0.15226265002873346,
+          "depth_ppm": 128.02623313878857,
+          "error_ppm": 45.668960999418104,
+          "snr": 2.8033533134335995,
+          "events": 194,
+          "reduced_chi2": 5.689693338583639
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.04672744609577212,
+          "a_over_rstar": 10.33073386899355,
+          "measured": 0.9068299015636754,
+          "three_sigma_upper": 7.722755168423733
+        }
+      },
+      "2130965547378157568": {
+        "phase_half": {
+          "phase": 0.5,
+          "depth_ppm": -2572.996995273906,
+          "error_ppm": 198.64715944768008,
+          "snr": -12.952598982174647,
+          "events": 450,
+          "reduced_chi2": 0.9361164383540918
+        },
+        "scan_maximum": {
+          "phase": 0.3464724185846532,
+          "depth_ppm": 4198.874507406844,
+          "error_ppm": 234.4289821046413,
+          "snr": 17.911072554726214,
+          "events": 445,
+          "reduced_chi2": 1.1084212103371032
+        },
+        "geometric_albedo": {
+          "radius_ratio": 0.07406227965770103,
+          "a_over_rstar": 14.080922532788868,
+          "measured": -93.00522466494218,
+          "three_sigma_upper": 21.54128869262513
+        }
+      }
+    },
+    "calibration_snr3": {
+      "confirmed": {
+        "objects": 37,
+        "flagged": 0,
+        "flagged_objects": []
+      },
+      "fp-co": {
+        "objects": 27,
+        "flagged": 10,
+        "flagged_objects": [
+          "fp-co-4568298",
+          "fp-co-4936990",
+          "fp-co-5695904",
+          "fp-co-5802246",
+          "fp-co-6545358",
+          "fp-co-8264070",
+          "fp-co-8868657",
+          "fp-co-9692345",
+          "fp-co-9899217",
+          "fp-co-9899352"
+        ]
+      },
+      "fp-ss": {
+        "objects": 23,
+        "flagged": 9,
+        "flagged_objects": [
+          "fp-ss-10068383",
+          "fp-ss-10083623",
+          "fp-ss-11044779",
+          "fp-ss-11200405",
+          "fp-ss-3427776",
+          "fp-ss-4474637",
+          "fp-ss-6153672",
+          "fp-ss-7767559",
+          "fp-ss-7830321"
+        ]
+      }
+    },
+    "scope": "Descriptive: the SNR >= 3 threshold was chosen after the first three samples; the fourth sample tests it prospectively."
+  },
+  "known_object_calibration": {
+    "totals": {
+      "confirmed": {
+        "completed": 34,
+        "passing": 11
+      },
+      "fp-ss": {
+        "completed": 20,
+        "passing": 2
+      },
+      "fp-co": {
+        "completed": 20,
+        "passing": 2
+      }
+    },
+    "samples": {
+      "calibration-summary": {
+        "summary": {
+          "confirmed": {
+            "completed": 10,
+            "passing": 1,
+            "median_mean_FPP": 0.028073562595373608
+          },
+          "fp-ss": {
+            "completed": 2,
+            "passing": 0,
+            "median_mean_FPP": 0.5519275470338754
+          },
+          "fp-co": {
+            "completed": 4,
+            "passing": 1,
+            "median_mean_FPP": 0.9825967214021759
+          }
+        },
+        "plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/plan.json",
+          "sha256": "55fc3cf5de11b7dffba5dde142a63439ef54f3def6ea49ad139cf8dfe5c35d23"
+        },
+        "objects": [
+          {
+            "label": "confirmed",
+            "kic": 6356207,
+            "koi": "K02021.01",
+            "kepler_name": "Kepler-1059 b",
+            "kepmag": 15.484,
+            "prad": 1.7,
+            "snr": 27.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.5110274491472084,
+              0.516009348937513
+            ],
+            "NFPP": [
+              0.46808143359199195,
+              0.4731711531351816
+            ],
+            "mean_FPP": 0.5135183990423607,
+            "mean_NFPP": 0.47062629336358675,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 10080248,
+            "koi": "K01722.01",
+            "kepler_name": "Kepler-939 b",
+            "kepmag": 15.534,
+            "prad": 1.63,
+            "snr": 22.9,
+            "status": "COMPLETE",
+            "FPP": [
+              0.0009856377005217354,
+              0.0007554615726836911
+            ],
+            "NFPP": [
+              8.78501936241406e-34,
+              2.4187043461063212e-34
+            ],
+            "mean_FPP": 0.0008705496366027132,
+            "mean_NFPP": 5.6018618542601905e-34,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 8174625,
+            "koi": "K01017.01",
+            "kepler_name": "Kepler-751 b",
+            "kepmag": 15.007,
+            "prad": 3.24,
+            "snr": 46.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.034932400579986145,
+              0.018140373352971917
+            ],
+            "NFPP": [
+              2.2995675279918993e-23,
+              5.539933273068766e-24
+            ],
+            "mean_FPP": 0.02653638696647903,
+            "mean_NFPP": 1.426780427649388e-23,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9479273,
+            "koi": "K00940.01",
+            "kepler_name": "Kepler-734 b",
+            "kepmag": 15.017,
+            "prad": 3.18,
+            "snr": 293.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.059221473147393344,
+              3.301143025602471e-09
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.029610738224268185,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 6226908,
+            "koi": "K04068.01",
+            "kepler_name": "Kepler-1546 b",
+            "kepmag": 15.412,
+            "prad": 3.78,
+            "snr": 23.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.02593465211862478,
+              0.014993929976154896
+            ],
+            "NFPP": [
+              4.173485262819737e-73,
+              3.977726743523991e-73
+            ],
+            "mean_FPP": 0.020464291047389838,
+            "mean_NFPP": 4.075606003171864e-73,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 11037511,
+            "koi": "K02580.01",
+            "kepler_name": "Kepler-1281 b",
+            "kepmag": 15.79,
+            "prad": 1.59,
+            "snr": 18.8,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "AssertionError: Every scene source needs Gaia G"
+          },
+          {
+            "label": "confirmed",
+            "kic": 3967326,
+            "koi": "K02084.01",
+            "kepler_name": "Kepler-1792 b",
+            "kepmag": 15.168,
+            "prad": 3.02,
+            "snr": 23.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.039021299287025246,
+              0.03931048219819244
+            ],
+            "NFPP": [
+              0.010004581101946632,
+              0.010498656297815307
+            ],
+            "mean_FPP": 0.039165890742608844,
+            "mean_NFPP": 0.01025161869988097,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 12644822,
+            "koi": "K00791.01",
+            "kepler_name": "Kepler-682 b",
+            "kepmag": 15.14,
+            "prad": 7.4,
+            "snr": 277.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.049106314512919025,
+              1.6570078642530461e-12
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.024553157257288016,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 2832589,
+            "koi": "K01942.01",
+            "kepler_name": "Kepler-1978 b",
+            "kepmag": 15.409,
+            "prad": 2.67,
+            "snr": 43.5,
+            "status": "COMPLETE",
+            "FPP": [
+              0.03139865498573369,
+              0.03758715629799436
+            ],
+            "NFPP": [
+              1.5894301211876077e-53,
+              4.3855027541706617e-54
+            ],
+            "mean_FPP": 0.034492905641864025,
+            "mean_NFPP": 1.013990198302337e-53,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 10027323,
+            "koi": "K01596.01",
+            "kepler_name": "Kepler-309 b",
+            "kepmag": 15.157,
+            "prad": 0.99,
+            "snr": 26.4,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "confirmed",
+            "kic": 7455287,
+            "koi": "K00886.01",
+            "kepler_name": "Kepler-54 b",
+            "kepmag": 15.847,
+            "prad": 1.72,
+            "snr": 48.5,
+            "status": "COMPLETE",
+            "FPP": [
+              0.5203173957353551,
+              0.6487751467764362
+            ],
+            "NFPP": [
+              6.0290505846467875e-12,
+              8.302729432338765e-12
+            ],
+            "mean_FPP": 0.5845462712558956,
+            "mean_NFPP": 7.165890008492777e-12,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 10843431,
+            "koi": "K07378.01",
+            "kepler_name": "Kepler-1999 b",
+            "kepmag": 16.324,
+            "prad": 3.29,
+            "snr": 15.6,
+            "status": "COMPLETE",
+            "FPP": [
+              0.01957779848127217,
+              0.018305970468105337
+            ],
+            "NFPP": [
+              2.0451529948468197e-14,
+              2.0891658872635173e-14
+            ],
+            "mean_FPP": 0.018941884474688753,
+            "mean_NFPP": 2.0671594410551685e-14,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 9761199,
+            "koi": "K01459.01",
+            "kepler_name": null,
+            "kepmag": 15.692,
+            "prad": 19.31,
+            "snr": 163.4,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing parent quarter"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 6047498,
+            "koi": "K01013.01",
+            "kepler_name": null,
+            "kepmag": 15.348,
+            "prad": 19.07,
+            "snr": 93.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.09557898493491757,
+              0.11213120320058412
+            ],
+            "NFPP": [
+              2.933795732007878e-129,
+              7.602926311986729e-129
+            ],
+            "mean_FPP": 0.10385509406775084,
+            "mean_NFPP": 5.268361021997303e-129,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 2569494,
+            "koi": "K03704.01",
+            "kepler_name": null,
+            "kepmag": 17.38,
+            "prad": 38.95,
+            "snr": 174.4,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: No quarter aperture authenticated"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 9593528,
+            "koi": "K03939.01",
+            "kepler_name": null,
+            "kepmag": 15.21,
+            "prad": 43.81,
+            "snr": 15.8,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 9593759,
+            "koi": "K03800.01",
+            "kepler_name": null,
+            "kepmag": 17.474,
+            "prad": 26042.9,
+            "snr": 92.4,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 8435247,
+            "koi": "K01131.01",
+            "kepler_name": null,
+            "kepmag": 15.464,
+            "prad": 28.44,
+            "snr": 177.2,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-co",
+            "kic": 4075015,
+            "koi": "K02850.01",
+            "kepler_name": null,
+            "kepmag": 15.411,
+            "prad": 1.07,
+            "snr": 15.5,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9643634921025481,
+              0.9660233935061556
+            ],
+            "NFPP": [
+              0.9640347946940713,
+              0.9656774183386937
+            ],
+            "mean_FPP": 0.9651934428043518,
+            "mean_NFPP": 0.9648561065163825,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 9899315,
+            "koi": "K04181.01",
+            "kepler_name": null,
+            "kepmag": 15.377,
+            "prad": 0.97,
+            "snr": 18.4,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.9999999999863162,
+              1.0000000000071667
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.9999999999967415,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 11912916,
+            "koi": "K04475.01",
+            "kepler_name": null,
+            "kepmag": 15.817,
+            "prad": 1.32,
+            "snr": 16.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-co",
+            "kic": 2574201,
+            "koi": "K01025.01",
+            "kepler_name": null,
+            "kepmag": 15.501,
+            "prad": 10.05,
+            "snr": 18.3,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0000000000002183,
+              0.9999999999996925
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.9999999999999554,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 8868657,
+            "koi": "K07102.01",
+            "kepler_name": null,
+            "kepmag": 15.989,
+            "prad": 1.52,
+            "snr": 25.9,
+            "status": "COMPLETE",
+            "FPP": [
+              -5.540012892879531e-13,
+              5.020872606564808e-12
+            ],
+            "NFPP": [
+              1.955455158533809e-52,
+              1.5175542685522293e-52
+            ],
+            "mean_FPP": 2.2334356586384274e-12,
+            "mean_NFPP": 1.7365047135430193e-52,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 8240123,
+            "koi": "K03826.01",
+            "kepler_name": null,
+            "kepmag": 15.818,
+            "prad": 28.64,
+            "snr": 132.5,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Too few out-of-transit cadences in quarter 0"
+          }
+        ]
+      },
+      "plan-extension-calibration-summary": {
+        "summary": {
+          "confirmed": {
+            "completed": 12,
+            "passing": 4,
+            "median_mean_FPP": 0.029061019018479323
+          },
+          "fp-ss": {
+            "completed": 4,
+            "passing": 0,
+            "median_mean_FPP": 0.9754852897618951
+          },
+          "fp-co": {
+            "completed": 6,
+            "passing": 1,
+            "median_mean_FPP": 0.9999999999980044
+          }
+        },
+        "plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/plan-extension.json",
+          "sha256": "83ebbf5790c51186addd4763c30a5ae8aefd77c613a4fcc963b4f3f5f2a0220a"
+        },
+        "objects": [
+          {
+            "label": "confirmed",
+            "kic": 6428700,
+            "koi": "K00853.02",
+            "kepler_name": "Kepler-242 c",
+            "kepmag": 15.376,
+            "prad": 3.01,
+            "snr": 25.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.07553778520863008,
+              0.08623792310768463
+            ],
+            "NFPP": [
+              1.5660302890191985e-23,
+              1.5606490644566602e-23
+            ],
+            "mean_FPP": 0.08088785415815736,
+            "mean_NFPP": 1.5633396767379293e-23,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 5956656,
+            "koi": "K01053.01",
+            "kepler_name": "Kepler-756 b",
+            "kepmag": 15.376,
+            "prad": 1.54,
+            "snr": 21.1,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "confirmed",
+            "kic": 5644412,
+            "koi": "K04194.01",
+            "kepler_name": "Kepler-1565 b",
+            "kepmag": 15.329,
+            "prad": 1.29,
+            "snr": 15.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.7791865241450965,
+              0.780713326225465
+            ],
+            "NFPP": [
+              0.7639250219490895,
+              0.765731227513378
+            ],
+            "mean_FPP": 0.7799499251852807,
+            "mean_NFPP": 0.7648281247312337,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7287995,
+            "koi": "K00877.01",
+            "kepler_name": "Kepler-81 b",
+            "kepmag": 15.019,
+            "prad": 2.33,
+            "snr": 87.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.05222193129588848,
+              0.09545179111395541
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.07383686120492194,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9112931,
+            "koi": "K02256.01",
+            "kepler_name": "Kepler-1161 b",
+            "kepmag": 15.813,
+            "prad": 2.02,
+            "snr": 31.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.01693404830710865,
+              0.017704003872451968
+            ],
+            "NFPP": [
+              3.197156618392945e-95,
+              5.464341495737425e-95
+            ],
+            "mean_FPP": 0.01731902608978031,
+            "mean_NFPP": 4.330749057065185e-95,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9244756,
+            "koi": "K01969.01",
+            "kepler_name": "Kepler-1779 b",
+            "kepmag": 15.017,
+            "prad": 3.26,
+            "snr": 34.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.026906165540700244,
+              0.022101832191782522
+            ],
+            "NFPP": [
+              1.1560409859263306e-97,
+              1.0738962649442664e-97
+            ],
+            "mean_FPP": 0.024503998866241383,
+            "mean_NFPP": 1.1149686254352984e-97,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7212184,
+            "koi": "K02487.01",
+            "kepler_name": "Kepler-1255 b",
+            "kepmag": 15.251,
+            "prad": 3.1,
+            "snr": 21.4,
+            "status": "COMPLETE",
+            "FPP": [
+              0.001219061471935845,
+              0.0016966069739424716
+            ],
+            "NFPP": [
+              4.660700521683343e-09,
+              1.1040283304125203e-06
+            ],
+            "mean_FPP": 0.0014578342229391583,
+            "mean_NFPP": 5.543445154671018e-07,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 5252423,
+            "koi": "K00825.01",
+            "kepler_name": "Kepler-237 c",
+            "kepmag": 15.289,
+            "prad": 2.11,
+            "snr": 39.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "confirmed",
+            "kic": 11187837,
+            "koi": "K00252.01",
+            "kepler_name": "Kepler-1663 b",
+            "kepmag": 15.613,
+            "prad": 2.64,
+            "snr": 80.1,
+            "status": "COMPLETE",
+            "FPP": [
+              0.005991450833728096,
+              0.012388925172320264
+            ],
+            "NFPP": [
+              7.640364734559235e-122,
+              3.8022310895263216e-122
+            ],
+            "mean_FPP": 0.00919018800302418,
+            "mean_NFPP": 5.721297912042778e-122,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7045496,
+            "koi": "K01939.01",
+            "kepler_name": "Kepler-1021 b",
+            "kepmag": 15.164,
+            "prad": 1.96,
+            "snr": 25.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.03244204354552238,
+              0.037506356724061884
+            ],
+            "NFPP": [
+              2.956291868097409e-07,
+              5.372308685651083e-07
+            ],
+            "mean_FPP": 0.03497420013479213,
+            "mean_NFPP": 4.164300276874246e-07,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 8892303,
+            "koi": "K02688.01",
+            "kepler_name": "Kepler-1314 b",
+            "kepmag": 16.406,
+            "prad": 5.15,
+            "snr": 78.0,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "confirmed",
+            "kic": 5470739,
+            "koi": "K01585.01",
+            "kepler_name": "Kepler-899 b",
+            "kepmag": 15.401,
+            "prad": 2.4,
+            "snr": 34.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.0045548143366956895,
+              0.008230959395423065
+            ],
+            "NFPP": [
+              1.4878739648265546e-34,
+              1.0715975688753154e-34
+            ],
+            "mean_FPP": 0.006392886866059377,
+            "mean_NFPP": 1.279735766850935e-34,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9636135,
+            "koi": "K01498.01",
+            "kepler_name": "Kepler-864 b",
+            "kepmag": 15.776,
+            "prad": 2.98,
+            "snr": 36.6,
+            "status": "COMPLETE",
+            "FPP": [
+              0.006094568469856121,
+              0.004090136695805158
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.005092352582830639,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 5219234,
+            "koi": "K01563.02",
+            "kepler_name": "Kepler-305 c",
+            "kepmag": 15.812,
+            "prad": 3.21,
+            "snr": 34.7,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "confirmed",
+            "kic": 9466668,
+            "koi": "K00939.03",
+            "kepler_name": "Kepler-256 b",
+            "kepmag": 15.065,
+            "prad": 1.57,
+            "snr": 22.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.032456188869147584,
+              0.03477988947228694
+            ],
+            "NFPP": [
+              4.68039441220803e-08,
+              4.281745310042949e-08
+            ],
+            "mean_FPP": 0.03361803917071726,
+            "mean_NFPP": 4.4810698611254894e-08,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 12066569,
+            "koi": "K03282.01",
+            "kepler_name": "Kepler-1455 b",
+            "kepmag": 15.855,
+            "prad": 1.75,
+            "snr": 17.8,
+            "status": "COMPLETE",
+            "FPP": [
+              0.07303177269268701,
+              0.07806440782848123
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.07554809026058412,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 5181804,
+            "koi": "K03638.01",
+            "kepler_name": null,
+            "kepmag": 15.929,
+            "prad": 533.08,
+            "snr": 247.2,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 3427776,
+            "koi": "K06332.01",
+            "kepler_name": null,
+            "kepmag": 15.371,
+            "prad": 22.11,
+            "snr": 87.9,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 11200405,
+            "koi": "K03724.01",
+            "kepler_name": null,
+            "kepmag": 16.803,
+            "prad": 19.96,
+            "snr": 131.0,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 4474637,
+            "koi": "K03829.01",
+            "kepler_name": null,
+            "kepmag": 16.81,
+            "prad": 61.58,
+            "snr": 280.6,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Declare target parallax for companion prior"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 5816165,
+            "koi": "K01043.01",
+            "kepler_name": null,
+            "kepmag": 15.643,
+            "prad": 27.21,
+            "snr": 56.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 10527135,
+            "koi": "K02622.01",
+            "kepler_name": null,
+            "kepmag": 15.316,
+            "prad": 1.11,
+            "snr": 26.8,
+            "status": "COMPLETE",
+            "FPP": [
+              0.21301436031395127,
+              0.21732931913115483
+            ],
+            "NFPP": [
+              2.6566627123724395e-47,
+              2.6510450312136033e-47
+            ],
+            "mean_FPP": 0.21517183972255305,
+            "mean_NFPP": 2.653853871793021e-47,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 6707908,
+            "koi": "K02014.01",
+            "kepler_name": null,
+            "kepmag": 15.601,
+            "prad": 24.3,
+            "snr": 42.6,
+            "status": "COMPLETE",
+            "FPP": [
+              0.944871606245733,
+              0.9570695528018474
+            ],
+            "NFPP": [
+              7.545146068421224e-23,
+              2.8107682911184207e-23
+            ],
+            "mean_FPP": 0.9509705795237902,
+            "mean_NFPP": 5.1779571797698223e-23,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 4828341,
+            "koi": "K01496.01",
+            "kepler_name": null,
+            "kepmag": 15.6,
+            "prad": 53.72,
+            "snr": 66.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-co",
+            "kic": 5695904,
+            "koi": "K02983.01",
+            "kepler_name": null,
+            "kepmag": 15.586,
+            "prad": 0.58,
+            "snr": 33.3,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0,
+              1.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6461850,
+            "koi": "K03054.01",
+            "kepler_name": null,
+            "kepmag": 15.966,
+            "prad": 1.03,
+            "snr": 18.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "CalledProcessError: Command '['/usr/bin/curl', '--fail-with-body', '--location', '--connect-timeout', '20', '--max-time', '180', '--output', '/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/fp-co-6461850/gaia-cone-attempt1.resp"
+          },
+          {
+            "label": "fp-co",
+            "kic": 9911882,
+            "koi": "K02429.01",
+            "kepler_name": null,
+            "kepmag": 15.112,
+            "prad": 17.94,
+            "snr": 18.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.7437842260975689,
+              0.7435086930894967
+            ],
+            "NFPP": [
+              3.011415334872218e-07,
+              2.8440240303695214e-07
+            ],
+            "mean_FPP": 0.7436464595935328,
+            "mean_NFPP": 2.9277196826208696e-07,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 5193400,
+            "koi": "K01580.01",
+            "kepler_name": null,
+            "kepmag": 15.686,
+            "prad": 3.18,
+            "snr": 35.4,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-co",
+            "kic": 9899217,
+            "koi": "K03979.01",
+            "kepler_name": null,
+            "kepmag": 15.271,
+            "prad": 1.36,
+            "snr": 35.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.0010377831620688172,
+              0.0005402438016437472
+            ],
+            "NFPP": [
+              2.8848854763218686e-05,
+              4.089632041447832e-06
+            ],
+            "mean_FPP": 0.0007890134818562822,
+            "mean_NFPP": 1.646924340233326e-05,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 4568298,
+            "koi": "K02986.01",
+            "kepler_name": null,
+            "kepmag": 15.945,
+            "prad": 1.21,
+            "snr": 21.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9999999999920174,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.9999999999960087,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 5360974,
+            "koi": "K03289.01",
+            "kepler_name": null,
+            "kepmag": 15.945,
+            "prad": 24.73,
+            "snr": 17.9,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0000000000000715,
+              1.0000000000000526
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.0000000000000622,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 9842937,
+            "koi": "K02567.01",
+            "kepler_name": null,
+            "kepmag": 15.331,
+            "prad": 1.33,
+            "snr": 23.3,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.9999999999965035,
+              1.0000000000063445
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.000000000001424,
+            "passes": false,
+            "reason": null
+          }
+        ]
+      },
+      "plan-fourth-calibration-summary": {
+        "summary": {
+          "confirmed": {
+            "completed": 4,
+            "passing": 1,
+            "median_mean_FPP": 0.0853973513836857
+          },
+          "fp-ss": {
+            "completed": 7,
+            "passing": 1,
+            "median_mean_FPP": 1.0
+          },
+          "fp-co": {
+            "completed": 3,
+            "passing": 0,
+            "median_mean_FPP": 1.0
+          }
+        },
+        "plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/plan-fourth.json",
+          "sha256": "4332c67a4024bc951a356b5e9f65f2fdb658e2bad16907bbad152d61c0136398"
+        },
+        "objects": [
+          {
+            "label": "fp-ss",
+            "kic": 10068383,
+            "koi": "K00725.01",
+            "kepler_name": null,
+            "kepmag": 15.765,
+            "prad": 10.86,
+            "snr": 69.6,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.6906698446489126e-45,
+              7.17330577897623e-47
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 8.812014512193375e-46,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7678434,
+            "koi": "K00892.01",
+            "kepler_name": "Kepler-716 b",
+            "kepmag": 15.193,
+            "prad": 3.2,
+            "snr": 64.5,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 4381282,
+            "koi": "K02922.01",
+            "kepler_name": null,
+            "kepmag": 15.481,
+            "prad": 0.76,
+            "snr": 17.1,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 10813841,
+            "koi": "K01640.01",
+            "kepler_name": null,
+            "kepmag": 15.406,
+            "prad": 2.17,
+            "snr": 19.0,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 7377033,
+            "koi": "K00882.01",
+            "kepler_name": null,
+            "kepmag": 15.533,
+            "prad": 21.58,
+            "snr": 125.4,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6611330,
+            "koi": "K01691.01",
+            "kepler_name": null,
+            "kepmag": 15.838,
+            "prad": 32.5,
+            "snr": 86.8,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 5738346,
+            "koi": "K01006.01",
+            "kepler_name": null,
+            "kepmag": 15.97,
+            "prad": 19.68,
+            "snr": 37.5,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9965340678540703,
+              0.9984218357100388
+            ],
+            "NFPP": [
+              0.9550725492246275,
+              0.9594626617594653
+            ],
+            "mean_FPP": 0.9974779517820546,
+            "mean_NFPP": 0.9572676054920464,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 10556578,
+            "koi": "K07343.01",
+            "kepler_name": null,
+            "kepmag": 15.594,
+            "prad": 34.05,
+            "snr": 174.0,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 11044779,
+            "koi": "K03327.01",
+            "kepler_name": null,
+            "kepmag": 15.466,
+            "prad": 39.42,
+            "snr": 186.0,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 11754553,
+            "koi": "K00775.01",
+            "kepler_name": "Kepler-52 c",
+            "kepmag": 15.095,
+            "prad": 2,
+            "snr": 28.9,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 8561231,
+            "koi": "K02346.01",
+            "kepler_name": "Kepler-1202 b",
+            "kepmag": 15.658,
+            "prad": 2.69,
+            "snr": 23.8,
+            "status": "COMPLETE",
+            "FPP": [
+              0.031234082790566164,
+              0.03356293540092681
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.032398509095746486,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6891637,
+            "koi": "K01697.01",
+            "kepler_name": null,
+            "kepmag": 15.828,
+            "prad": 1.06,
+            "snr": 32.5,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 6543893,
+            "koi": "K01627.01",
+            "kepler_name": "Kepler-913 b",
+            "kepmag": 15.767,
+            "prad": 5.75,
+            "snr": 31.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.13441023839671706,
+              0.14238214894653278
+            ],
+            "NFPP": [
+              0.11052786769608414,
+              0.12313530218082011
+            ],
+            "mean_FPP": 0.13839619367162492,
+            "mean_NFPP": 0.11683158493845212,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 4058881,
+            "koi": "K03912.01",
+            "kepler_name": null,
+            "kepmag": 15.327,
+            "prad": 1.69,
+            "snr": 18.9,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6675056,
+            "koi": "K00859.01",
+            "kepler_name": null,
+            "kepmag": 15.546,
+            "prad": 2.66,
+            "snr": 51.7,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0000000000008158,
+              0.9999999999999585
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.0000000000003872,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 8150320,
+            "koi": "K00904.04",
+            "kepler_name": "Kepler-55 e",
+            "kepmag": 15.791,
+            "prad": 1.62,
+            "snr": 28.1,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9766437,
+            "koi": "K00949.01",
+            "kepler_name": "Kepler-739 b",
+            "kepmag": 15.485,
+            "prad": 3.24,
+            "snr": 66.7,
+            "status": "COMPLETE",
+            "FPP": [
+              0.006917900829555679,
+              0.013843687964053553
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.010380794396804616,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 6603756,
+            "koi": "K01729.01",
+            "kepler_name": null,
+            "kepmag": 15.424,
+            "prad": 16,
+            "snr": 153.0,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 8264070,
+            "koi": "K01068.01",
+            "kepler_name": null,
+            "kepmag": 15.036,
+            "prad": 14.35,
+            "snr": 73.9,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.9999999999986071,
+              0.9999999999983367
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.9999999999984719,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 6227560,
+            "koi": "K03650.01",
+            "kepler_name": null,
+            "kepmag": 15.927,
+            "prad": 268.75,
+            "snr": 83.1,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 7552344,
+            "koi": "K00888.01",
+            "kepler_name": null,
+            "kepmag": 15.419,
+            "prad": 4.14,
+            "snr": 147.4,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9999679446948303,
+              0.9999999304066028
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.9999839375507166,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 9892856,
+            "koi": "K03906.01",
+            "kepler_name": null,
+            "kepmag": 15.42,
+            "prad": 26.22,
+            "snr": 63.9,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7350067,
+            "koi": "K06863.01",
+            "kepler_name": "Kepler-1646 b",
+            "kepmag": 15.737,
+            "prad": 0.95,
+            "snr": 15.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.23282434700643984,
+              0.23807223044536163
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.23544828872590073,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6312534,
+            "koi": "K01689.01",
+            "kepler_name": null,
+            "kepmag": 15.583,
+            "prad": 31.77,
+            "snr": 153.1,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 5802246,
+            "koi": "K01044.01",
+            "kepler_name": null,
+            "kepmag": 15.058,
+            "prad": 23.61,
+            "snr": 116.1,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0,
+              1.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 9719636,
+            "koi": "K03686.01",
+            "kepler_name": null,
+            "kepmag": 17.279,
+            "prad": 24.15,
+            "snr": 192.4,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 7212066,
+            "koi": "K03610.01",
+            "kepler_name": null,
+            "kepmag": 15.26,
+            "prad": 39.38,
+            "snr": 259.4,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-co",
+            "kic": 11093538,
+            "koi": "K03326.01",
+            "kepler_name": null,
+            "kepmag": 15.696,
+            "prad": 44.48,
+            "snr": 123.1,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 11548140,
+            "koi": "K00256.01",
+            "kepler_name": null,
+            "kepmag": 15.373,
+            "prad": 6.51,
+            "snr": 172.2,
+            "status": "COMPLETE",
+            "FPP": [
+              1.6861142785984384e-05,
+              0.00035507412860624754
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.00018596763569611596,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 8581232,
+            "koi": "K06059.01",
+            "kepler_name": null,
+            "kepmag": 15.381,
+            "prad": 9.96,
+            "snr": 166.0,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 5286786,
+            "koi": "K06554.01",
+            "kepler_name": null,
+            "kepmag": 15.456,
+            "prad": 29.19,
+            "snr": 103.1,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 6183511,
+            "koi": "K02542.01",
+            "kepler_name": "Kepler-1855 b",
+            "kepmag": 15.527,
+            "prad": 0.67,
+            "snr": 20.4,
+            "status": "PENDING",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": null
+          }
+        ]
+      },
+      "plan-third-calibration-summary": {
+        "summary": {
+          "confirmed": {
+            "completed": 8,
+            "passing": 5,
+            "median_mean_FPP": 0.007876371924647074
+          },
+          "fp-ss": {
+            "completed": 7,
+            "passing": 1,
+            "median_mean_FPP": 0.9985525644151678
+          },
+          "fp-co": {
+            "completed": 7,
+            "passing": 0,
+            "median_mean_FPP": 1.0
+          }
+        },
+        "plan": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/plan-third.json",
+          "sha256": "adf562b0dc8b7a7f9c4075f251106855c7d6876d32e3ee1b096247d10a923293"
+        },
+        "objects": [
+          {
+            "label": "fp-co",
+            "kic": 4551328,
+            "koi": "K01324.01",
+            "kepler_name": null,
+            "kepmag": 15.636,
+            "prad": 27.16,
+            "snr": 169.0,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 8256049,
+            "koi": "K00909.01",
+            "kepler_name": null,
+            "kepmag": 15.654,
+            "prad": 540.37,
+            "snr": 54.5,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.999999999999548,
+              1.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.999999999999774,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 6545358,
+            "koi": "K01233.01",
+            "kepler_name": null,
+            "kepmag": 15.634,
+            "prad": 7.12,
+            "snr": 67.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9999563589809624,
+              0.9996475139403592
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.9998019364606607,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 9692345,
+            "koi": "K01485.01",
+            "kepler_name": null,
+            "kepmag": 15.657,
+            "prad": 1.35,
+            "snr": 60.9,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              1.0000000000033358,
+              1.0000000000014764
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 1.000000000002406,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 12069414,
+            "koi": "K04512.01",
+            "kepler_name": null,
+            "kepmag": 15.314,
+            "prad": 0.98,
+            "snr": 17.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.7884263748658374,
+              0.7858788289335583
+            ],
+            "NFPP": [
+              0.43163801850993566,
+              0.42534711143857673
+            ],
+            "mean_FPP": 0.7871526018996979,
+            "mean_NFPP": 0.4284925649742562,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 7812167,
+            "koi": "K01482.01",
+            "kepler_name": null,
+            "kepmag": 15.378,
+            "prad": 312.48,
+            "snr": 27.7,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.9999999999999442,
+              1.0000000000000229
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.9999999999999836,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 9899352,
+            "koi": "K03135.01",
+            "kepler_name": null,
+            "kepmag": 15.846,
+            "prad": 24.29,
+            "snr": 37.3,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-co",
+            "kic": 3120276,
+            "koi": "K01111.01",
+            "kepler_name": null,
+            "kepmag": 15.212,
+            "prad": 1.81,
+            "snr": 20.1,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Nonpositive measured depth"
+          },
+          {
+            "label": "fp-co",
+            "kic": 6470917,
+            "koi": "K01690.01",
+            "kepler_name": null,
+            "kepmag": 15.005,
+            "prad": 1.08,
+            "snr": 18.8,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-co",
+            "kic": 3246984,
+            "koi": "K00799.01",
+            "kepler_name": null,
+            "kepmag": 15.279,
+            "prad": 32.43,
+            "snr": 103.6,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-co",
+            "kic": 3836375,
+            "koi": "K00807.01",
+            "kepler_name": null,
+            "kepmag": 15.974,
+            "prad": 25.69,
+            "snr": 38.8,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-co",
+            "kic": 5598595,
+            "koi": "K03949.01",
+            "kepler_name": null,
+            "kepmag": 15.399,
+            "prad": 1.08,
+            "snr": 26.1,
+            "status": "COMPLETE",
+            "FPP": [
+              0.04162032081708811,
+              0.057803073177665754
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.04971169699737693,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-co",
+            "kic": 4936990,
+            "koi": "K03290.01",
+            "kepler_name": null,
+            "kepmag": 15.295,
+            "prad": 29.6,
+            "snr": 71.6,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "fp-co",
+            "kic": 10858785,
+            "koi": "K04171.01",
+            "kepler_name": null,
+            "kepmag": 15.868,
+            "prad": 21.96,
+            "snr": 42.6,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Nonpositive measured depth"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 7767559,
+            "koi": "K00895.01",
+            "kepler_name": null,
+            "kepmag": 15.403,
+            "prad": 10.95,
+            "snr": 85.8,
+            "status": "COMPLETE",
+            "FPP": [
+              2.1820323325982827e-12,
+              5.767608612927688e-13
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.3793965969455257e-12,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 10874226,
+            "koi": "K01290.01",
+            "kepler_name": null,
+            "kepmag": 15.175,
+            "prad": 38.2,
+            "snr": 172.9,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9999999999996634,
+              0.9999999999920899
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.9999999999958766,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 7830321,
+            "koi": "K06044.01",
+            "kepler_name": null,
+            "kepmag": 15.476,
+            "prad": 31.12,
+            "snr": 126.1,
+            "status": "COMPLETE",
+            "FPP": [
+              0.999533490118329,
+              0.9975716387120067
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.9985525644151678,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 9838060,
+            "koi": "K03314.01",
+            "kepler_name": null,
+            "kepmag": 16.029,
+            "prad": 8.4,
+            "snr": 71.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.8803461632880403,
+              0.9749124955493171
+            ],
+            "NFPP": [
+              5.440120575318768e-236,
+              8.263208902452434e-237
+            ],
+            "mean_FPP": 0.9276293294186787,
+            "mean_NFPP": 3.133220732782006e-236,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 5255552,
+            "koi": "K06545.01",
+            "kepler_name": null,
+            "kepmag": 15.208,
+            "prad": 23.48,
+            "snr": 180.9,
+            "status": "COMPLETE",
+            "FPP": [
+              1.0,
+              1.0
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 1.0,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 2989706,
+            "koi": "K02692.01",
+            "kepler_name": null,
+            "kepmag": 15.522,
+            "prad": 2.45,
+            "snr": 45.6,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 2441161,
+            "koi": "K03642.01",
+            "kepler_name": null,
+            "kepmag": 16.654,
+            "prad": 37.56,
+            "snr": 298.7,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Fewer than two quarters pass flux closure"
+          },
+          {
+            "label": "fp-ss",
+            "kic": 10083623,
+            "koi": "K03921.01",
+            "kepler_name": null,
+            "kepmag": 15.643,
+            "prad": 5.19,
+            "snr": 93.8,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9969067582536381,
+              0.9862204856772505
+            ],
+            "NFPP": [
+              6.054594133135016e-78,
+              1.0990081564369472e-77
+            ],
+            "mean_FPP": 0.9915636219654442,
+            "mean_NFPP": 8.522337848752244e-78,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 6153672,
+            "koi": "K01794.01",
+            "kepler_name": null,
+            "kepmag": 15.337,
+            "prad": 56.83,
+            "snr": 32.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.9999989227522627,
+              0.9999999999918636
+            ],
+            "NFPP": [
+              7.285482778948732e-191,
+              3.9571889441118477e-219
+            ],
+            "mean_FPP": 0.9999994613720631,
+            "mean_NFPP": 3.642741389474366e-191,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "fp-ss",
+            "kic": 8256453,
+            "koi": "K02573.01",
+            "kepler_name": null,
+            "kepmag": 15.894,
+            "prad": 23.45,
+            "snr": 88.7,
+            "status": "FAILED",
+            "FPP": null,
+            "NFPP": null,
+            "mean_FPP": null,
+            "mean_NFPP": null,
+            "passes": null,
+            "reason": "ValueError: Missing mass for a potentially signal-producing source"
+          },
+          {
+            "label": "confirmed",
+            "kic": 10874215,
+            "koi": "K02305.01",
+            "kepler_name": "Kepler-1820 b",
+            "kepmag": 15.728,
+            "prad": 2.64,
+            "snr": 17.6,
+            "status": "COMPLETE",
+            "FPP": [
+              0.06499122909464983,
+              0.07938006408438425
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.07218564658951704,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 9813499,
+            "koi": "K01505.01",
+            "kepler_name": "Kepler-868 b",
+            "kepmag": 15.695,
+            "prad": 2.53,
+            "snr": 26.3,
+            "status": "COMPLETE",
+            "FPP": [
+              0.011123344422359294,
+              0.007901927912299711
+            ],
+            "NFPP": [
+              1.1607053319019491e-54,
+              9.983756327870829e-55
+            ],
+            "mean_FPP": 0.009512636167329502,
+            "mean_NFPP": 1.079540482344516e-54,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7102316,
+            "koi": "K02028.02",
+            "kepler_name": "Kepler-351 b",
+            "kepmag": 15.99,
+            "prad": 3.19,
+            "snr": 23.2,
+            "status": "COMPLETE",
+            "FPP": [
+              0.027059053730622007,
+              0.015741902082895276
+            ],
+            "NFPP": [
+              2.7296511907596056e-14,
+              7.355005218343926e-14
+            ],
+            "mean_FPP": 0.02140047790675864,
+            "mean_NFPP": 5.0423282045517656e-14,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7135852,
+            "koi": "K00875.01",
+            "kepler_name": "Kepler-1729 b",
+            "kepmag": 15.692,
+            "prad": 2.62,
+            "snr": 157.8,
+            "status": "COMPLETE",
+            "FPP": [
+              0.0012774433511316685,
+              0.0011084699015383448
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.0011929566263350067,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 8609450,
+            "koi": "K01278.02",
+            "kepler_name": "Kepler-282 e",
+            "kepmag": 15.204,
+            "prad": 2.45,
+            "snr": 40.5,
+            "status": "COMPLETE",
+            "FPP": [
+              0.005758553702555846,
+              0.005379473169621729
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.005569013436088788,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 6604328,
+            "koi": "K01736.01",
+            "kepler_name": "Kepler-945 b",
+            "kepmag": 15.898,
+            "prad": 2.72,
+            "snr": 22.1,
+            "status": "COMPLETE",
+            "FPP": [
+              0.01797293217877116,
+              0.0175690679150049
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.01777100004688803,
+            "mean_NFPP": 0.0,
+            "passes": false,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 7898352,
+            "koi": "K01486.02",
+            "kepler_name": "Kepler-302 b",
+            "kepmag": 15.505,
+            "prad": 3.65,
+            "snr": 37.9,
+            "status": "COMPLETE",
+            "FPP": [
+              0.006980025705267789,
+              0.005500189658661503
+            ],
+            "NFPP": [
+              4.834410025894993e-22,
+              4.328811415407124e-22
+            ],
+            "mean_FPP": 0.006240107681964646,
+            "mean_NFPP": 4.581610720651058e-22,
+            "passes": true,
+            "reason": null
+          },
+          {
+            "label": "confirmed",
+            "kic": 5164255,
+            "koi": "K00824.01",
+            "kepler_name": "Kepler-693 b",
+            "kepmag": 16.422,
+            "prad": 11.01,
+            "snr": 166.0,
+            "status": "COMPLETE",
+            "FPP": [
+              0.010602431895202269,
+              5.393249315588378e-06
+            ],
+            "NFPP": [
+              0.0,
+              0.0
+            ],
+            "mean_FPP": 0.005303912572258929,
+            "mean_NFPP": 0.0,
+            "passes": true,
+            "reason": null
+          }
+        ]
+      }
+    }
+  },
+  "workspace": "/Users/adam/Other/spacelab/other/boi-v3-20261025",
+  "admissions_added": 1,
+  "scope": "Numerical V3 outcomes, stock-TRICERATOPS reruns of the passes and known-object calibration on the Mac, 24-25 Oct 2026. Statistical validation needs no imaging or RV mass. Adam adopted V3 for statistical validation on 25 Oct 2026 and accepted KIC 8878385 b (v3-adoption-20261025.json); M/K validations, including the multiplicity tier, have their own records. Every input, failure and log remains in the workspace."
+}

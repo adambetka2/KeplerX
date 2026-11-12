@@ -1,0 +1,8 @@
+{
+  "returncode": 0,
+  "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 51  698k   51  356k    0     0   352k      0  0:00:01  0:00:01 --:--:--  352k\n100  698k  100  698k    0     0   654k      0  0:00:01  0:00:01 --:--:--  654k\n",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/calibration/confirmed-12644822/parent-pixels/kplr012644822-2009166043257_lpd-targ.fits.gz",
+    "sha256": "22c40d524ca745c2e521541cb968f8960631bd7a3a04b91028e3d0bf70ce5cb3"
+  }
+}

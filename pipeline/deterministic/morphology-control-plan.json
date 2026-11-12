@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "protocol": "fsc-kepler-pixel-morphology-controls-v2",
+  "injections": "dump/release-injections-v1",
+  "categories": [
+    "sparse_injection",
+    "ttv_injection"
+  ],
+  "minimum_expected_white_mes": 8.0,
+  "pixel_support": {
+    "ledgers": [
+      {
+        "category": "sparse_injection",
+        "preflight": "dump/release-planet-morphology-support-candidates-v1/sparse/preflight.json",
+        "support": "dump/release-planet-morphology-support-candidates-v1/sparse/support.jsonl"
+      },
+      {
+        "category": "ttv_injection",
+        "preflight": "dump/release-planet-morphology-support-candidates-v1/ttv/preflight.json",
+        "support": "dump/release-planet-morphology-support-candidates-v1/ttv/support.jsonl"
+      }
+    ]
+  },
+  "sample_size_rationale": {
+    "development_sources_per_category": 40,
+    "evaluation_sources_per_category": 160,
+    "expected_recovery": 0.8,
+    "confidence_level": 0.95,
+    "evaluation_wilson_half_width": 0.0617,
+    "note": "The evaluation size estimates morphology-specific recovery near 80% to about plus or minus 6.2 percentage points at 95% confidence while retaining unused eligible sparse controls as reserves."
+  },
+  "partitions": {
+    "development": {
+      "status": "OPENED_DEVELOPMENT",
+      "categories": {
+        "sparse_injection": {
+          "strata": {
+            "sparse": 40
+          }
+        },
+        "ttv_injection": {
+          "strata": {
+            "ttv": 40
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "status": "PIXEL_AND_DETECTOR_OUTCOMES_UNOPENED",
+      "categories": {
+        "sparse_injection": {
+          "strata": {
+            "sparse": 160
+          }
+        },
+        "ttv_injection": {
+          "strata": {
+            "ttv": 160
+          }
+        }
+      }
+    }
+  },
+  "opened_source_manifests": [
+    {
+      "path": "dump/detector-benchmark-20260921/ordinary-sources-3000.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v4-survey-50000-20260921/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/v6-1-survey-10000-c/cohort.csv",
+      "column": "source_id"
+    },
+    {
+      "path": "dump/release-controls-v1/source-pools.csv",
+      "column": "source_id"
+    }
+  ],
+  "excluded_parent_csv": [
+    {
+      "path": "dump/detector-benchmark-20260921/confirmed-signals.csv",
+      "column": "kic_id"
+    },
+    {
+      "path": "dump/detector-benchmark-20260921/false-positive-sources.csv",
+      "column": "kic_id"
+    },
+    {
+      "path": "dump/release-control-partitions-v2/parent-map.csv",
+      "column": "parent_tpf"
+    },
+    {
+      "path": "dump/release-planet-control-partitions-v1/parent-map.csv",
+      "column": "parent_tpf"
+    }
+  ],
+  "excluded_raw_csv": [
+    {
+      "path": "dump/release-planet-control-partitions-v1/parent-map.csv",
+      "column": "raw_fits_sha256"
+    }
+  ],
+  "excluded_parent_jsonl": [
+    {
+      "path": "dump/release-catalogue-controls-v2/truth.jsonl",
+      "field": "kic_id"
+    },
+    {
+      "path": "dump/release-catalogue-evaluation-v2/truth.jsonl",
+      "field": "kic_id"
+    }
+  ],
+  "excluded_parent_audits": [
+    {
+      "path": "dump/release-planet-pixels-development-v9/parent-audit.json"
+    }
+  ],
+  "claim_boundary": "Frozen public-pixel-supported, resolved-parent-, raw-input-, and morphology-disjoint on-target sparse-event and strong-TTV injection identities for development and final evaluation. Selection uses immutable injection truth, expected white-noise MES, and outcome-blind structural pixel-support ledgers only; no detector, vetter, localization, or disposition outcome is inspected."
+}

@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-21T15:26:21.058304+00:00",
+  "status": "NO_ACTIVE_LOCAL_VALIDATION_SCHEDULES_DELETED",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "source_id": "2073226966298407552",
+  "kic": 3975580,
+  "signal_id": "rust-v6-2073226966298407552-1",
+  "case": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1",
+  "native_case": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1",
+  "original_case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073226966298407552",
+  "runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/runtime-v2/bin/python",
+  "aperture_runtime": "/Users/adam/Other/spacelab/other/boi-repair-20261021/aperture-runtime-v2/bin/python",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/launch.json",
+    "sha256": "773e7096563d38358135c178837d654a6df749e0403a169d38c2a7b6c8d797b7"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-freeze.json",
+    "sha256": "e4c812953f8b9b8abfc31bae320a1716f388a0df1f2f235daa135a45c4915402"
+  },
+  "bootstrap": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/bootstrap-verification.json",
+    "sha256": "b18626f7d328a935cae9d197bce44f94fc4d113c50f05a70c35d431bb487dbec"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/live-start-check.json",
+    "sha256": "e8d2849c5243821f7da4b9eda0d8ca63d8b0724d486c576832c3a6a7102182e7"
+  },
+  "revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/revalidation.json",
+    "sha256": "e3f1fca35caa274a8e5c5f40e23e56143761146de7d3233fa032e8a9845479c0"
+  },
+  "recovery": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/recovery-review.json",
+    "sha256": "afe869d6a7e9f839d732ef455f128c60fc57d880a55b988668fd06e6e1ca6b1f"
+  },
+  "original_selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073226966298407552/selection.json",
+    "sha256": "bdb8207ac2c8b45cccef80b9350d29736380f01528e19b8e0bbb12eed017420a"
+  },
+  "actual_native_photons": 5317,
+  "native_accepted": null,
+  "clock_adopted": false,
+  "probability_runs": 0,
+  "previous_terminals": [
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+      "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic4948140-repaired-futility-20261021.json",
+      "sha256": "836d2851ca6fee5c79ce78fac6b3d546975852ee7def4b2bb7af70993fe4a56c"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7271045-repaired-futility-20261021.json",
+      "sha256": "a4017a4cf06603c447c04a350ee3b8f76fb5b0ad2d62de4ba40fcb486d1e2740"
+    }
+  ],
+  "calibration_report": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/nonnegative-kepler-response-20261021.json",
+    "sha256": "36bd1b0a34ed82da20f337360b2c7d7c4adfe4d1a5cc06ee6f50dd6752542764"
+  },
+  "pending_method_question": false,
+  "next": "Schedules deleted at Adam request. No new candidate fit or FPP launched. Retain this handoff; no automatic queue advancement.",
+  "native_status": "REPAIRED_NATIVE_COMPLETE_REVIEW_UNDECIDED_NO_FPP",
+  "active_local_numerical_jobs": 0,
+  "scheduled_tasks": {
+    "deleted": [
+      "monitor-local-boi-validation",
+      "overnight-boi-hardware-check"
+    ],
+    "method": "Recurring-job scheduler delete for both jobs; both returned deleteStatus=deleted at once",
+    "post_delete_directories_absent": true,
+    "automatic_local_continuation": false
+  },
+  "current_completed_review": {
+    "kic": 3975580,
+    "source_id": "2073226966298407552",
+    "signal_id": "rust-v6-2073226966298407552-1",
+    "status": "REPAIRED_NATIVE_COMPLETE_REVIEW_UNDECIDED_NO_FPP",
+    "native_exit_code": 0,
+    "native_accepted": null,
+    "clock_adopted": false,
+    "probability_runs": 0,
+    "native_photons": 5317,
+    "native_weight_ess": 5619.444118879918,
+    "equal_samples": 19223,
+    "finite_independent_priors_posteriors": true,
+    "conditional_clock": {
+      "period_days": 4.405315959932728,
+      "epoch_bkjd": 833.6918876144251,
+      "duration_days": 0.0976190533574773
+    },
+    "representative_exact_duration_hours": 2.3090731553993464,
+    "representative_unprotected_observed_cadences": 0,
+    "approximate_full_baseline_protection_fraction": 1.0,
+    "integration20_vs40_max_ppm": 52.89827446441908,
+    "folded_oot_residual_rms_ppm": 560.6959729855657,
+    "formal_mean_bin_error_ppm": 570.642167565099,
+    "scene_sources_retained": 98,
+    "source_quarters_reviewed": 14,
+    "proposed_identical_aperture_group": {
+      "quarters": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "channel": 35,
+      "physical_aperture_pixels": [
+        [
+          269,
+          37
+        ],
+        [
+          269,
+          38
+        ]
+      ],
+      "native_window_photons": 1874
+    },
+    "new_group_fit_launched": false,
+    "pending": [
+      "Separate native refit of the pre-FPP largest identical-aperture group if work resumes; full-quarter mean response distorts capable-neighbor shapes.",
+      "Final timing/alias, spacecraft/pixel-source, exposure/noise, stellar/body/companion and dated catalogue closeout.",
+      "Field population acquisition and complete frozen probability generation."
+    ],
+    "evidence": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-nested-review-v1.json",
+        "sha256": "5b09af040c992a1a08a2cc87c6399128287909034a7851e60008070dbe0b9a59"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-posterior-review-measurements-v1.json",
+        "sha256": "ea3b1a088a691f6209a2aba1bacbb57f24f532e44471bf3bad85431a15c7cc03"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/scene-preview-review-v1.json",
+        "sha256": "18b8d16c06f65da63b82319e85917027dae74e5b6f8430cd6aadd374e97a8f4d"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/calibrated-scene-review-v1.json",
+        "sha256": "e5e41b494d045531236dfde1a32bfbf0d5975a06cfec2795eb2423c9d79a9407"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/identical-aperture-groups.json",
+        "sha256": "287711fc03b64da2a5b2918708b7368aa89e46a95adf0939d665119edb165b44"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-phase-effective-review.json",
+        "sha256": "327d415dbb808b1d32ad17768c547c0a3750d20bef80014ef0185e531b7f5cb3"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-identical-aperture-phase-review.json",
+        "sha256": "ddb8d7bdf243afcc49e7468c99a23e89f1f71604a9553356b182897189d69067"
+      }
+    ]
+  },
+  "handoff_report": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/local-24h-state-20261021.json",
+    "sha256": "990e5622744142f276f034baae57ce74a32f819f21b705b01a62facb1fe202c0"
+  }
+}

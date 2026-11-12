@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "scope": "Exact survey source-parent-shard identities; sibling photometry, scene coverage and pixels remain separately required",
+  "sources": 406547,
+  "parents": 145485,
+  "shards": 814,
+  "archive": {
+    "bytes": 8606269,
+    "sha256": "4f5347ac5f057465a187592872f61e6c82ae7cf49bc160afb489ac1008004012"
+  },
+  "database": {
+    "bytes": 32038912,
+    "sha256": "9d5ca5f4e7dc34ed60312991d9bcb02f96bbeb255e775c0fdece9e9d276b483e"
+  }
+}

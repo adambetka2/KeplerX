@@ -1,0 +1,256 @@
+{
+  "utc": "2026-10-20T14:26:50.165946+00:00",
+  "status": "INTERIM_CONDITIONAL_TP_RADIUS_AUDITED_FIRST_FIVE_FULL_CENSUS_STILL_RUNNING",
+  "source_id": "2104058096963805696",
+  "kic": 6267058,
+  "signal_id": "mk-sap-20261019-2104058096963805696-3",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_full_probability_repeats": 7,
+  "completed_full_probability_repeats_for_this_source": 0,
+  "radius_results": [
+    {
+      "primary_index": 0,
+      "seed": 13238919696165378273,
+      "scenario": "TP",
+      "attempts": 1000000,
+      "finite_weight_draws": 851883,
+      "radius_earth_quantiles16_50_84": [
+        2.8216511066535626,
+        3.045704682151499,
+        3.3197338173270916
+      ],
+      "radius_earth_mean": 3.0662393527592156,
+      "radius_earth_sd": 0.2579869521635706,
+      "weight_ess": 1876.6218276639722,
+      "maximum_normalized_weight": 0.010083307041593464,
+      "weight_file": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/production/runs/2104058096963805696/final/seed-00/weights-000.npz",
+        "sha256": "6acb834efb31f5397312c266014b8c71082b8ccc556112972b5e50eb93ff51fa"
+      },
+      "checkpoint_snapshot": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/seed-00-checkpoint-snapshot.json",
+        "sha256": "6c8c52eabcd40c2ab02cdf129d439251be781b0fc3f868e62c5dda51611bb165"
+      },
+      "weight_evidence_ess_best_radius_replayed": true
+    },
+    {
+      "primary_index": 1,
+      "seed": 15483051618175043015,
+      "scenario": "TP",
+      "attempts": 1000000,
+      "finite_weight_draws": 851638,
+      "radius_earth_quantiles16_50_84": [
+        2.813315476437779,
+        3.0494880440796757,
+        3.321634879442209
+      ],
+      "radius_earth_mean": 3.064716992236281,
+      "radius_earth_sd": 0.2664894909201713,
+      "weight_ess": 1506.457702100792,
+      "maximum_normalized_weight": 0.013058254965181718,
+      "weight_file": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/production/runs/2104058096963805696/final/seed-01/weights-000.npz",
+        "sha256": "466f0c1b43fe4d1f719653331c21cc9222d8b3e5cd414fbe3cc0e4979192ab6a"
+      },
+      "checkpoint_snapshot": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/seed-01-checkpoint-snapshot.json",
+        "sha256": "4fce1c52e067d7d37561435680635dfed23f3875da63aa1cdabe362b027ee52a"
+      },
+      "weight_evidence_ess_best_radius_replayed": true
+    },
+    {
+      "primary_index": 2,
+      "seed": 16173211122767180655,
+      "scenario": "TP",
+      "attempts": 1000000,
+      "finite_weight_draws": 851123,
+      "radius_earth_quantiles16_50_84": [
+        2.8263327932515425,
+        3.0482733818120655,
+        3.338599996985688
+      ],
+      "radius_earth_mean": 3.077231482496732,
+      "radius_earth_sd": 0.2671585486474125,
+      "weight_ess": 1093.1598626168766,
+      "maximum_normalized_weight": 0.013094530337160284,
+      "weight_file": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/production/runs/2104058096963805696/final/seed-02/weights-000.npz",
+        "sha256": "e9e7430521debc5b03493ed2e1b0bd7eb9700b8af00130019b1ac661cddaef9f"
+      },
+      "checkpoint_snapshot": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/seed-02-checkpoint-snapshot.json",
+        "sha256": "2dc1dc4a7b197d81c0099585b30b42ecffd7117090511691566035989564b2e0"
+      },
+      "weight_evidence_ess_best_radius_replayed": true
+    },
+    {
+      "primary_index": 3,
+      "seed": 2975808520206213022,
+      "scenario": "TP",
+      "attempts": 1000000,
+      "finite_weight_draws": 851402,
+      "radius_earth_quantiles16_50_84": [
+        2.8235088432862714,
+        3.0625994562398073,
+        3.322920644014865
+      ],
+      "radius_earth_mean": 3.0723939397427475,
+      "radius_earth_sd": 0.25697928936506703,
+      "weight_ess": 1920.933410978838,
+      "maximum_normalized_weight": 0.007741903605232717,
+      "weight_file": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/production/runs/2104058096963805696/final/seed-03/weights-000.npz",
+        "sha256": "6572541319fb773a26dd63028d64f898b2d7ea6d3f65bb895da3ddb56051c804"
+      },
+      "checkpoint_snapshot": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/seed-03-checkpoint-snapshot.json",
+        "sha256": "5231bf65a2fdac9a9bbc9943d817f29ab538910b6295670d61559f11449ce89b"
+      },
+      "weight_evidence_ess_best_radius_replayed": true
+    },
+    {
+      "primary_index": 4,
+      "seed": 13609552636371173210,
+      "scenario": "TP",
+      "attempts": 1000000,
+      "finite_weight_draws": 851334,
+      "radius_earth_quantiles16_50_84": [
+        2.825963191671805,
+        3.060925802116321,
+        3.3550283217634673
+      ],
+      "radius_earth_mean": 3.0825829192635745,
+      "radius_earth_sd": 0.2686045084172598,
+      "weight_ess": 952.0837312569934,
+      "maximum_normalized_weight": 0.01336429688489983,
+      "weight_file": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/probability-campaign-v1/production/runs/2104058096963805696/final/seed-04/weights-000.npz",
+        "sha256": "eba92518735d4fa3b29583ae7d04ecdbb88ccd30d76f2d27a043090f19b291fa"
+      },
+      "checkpoint_snapshot": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/seed-04-checkpoint-snapshot.json",
+        "sha256": "cbd7f37fc9f80b41f61a2ea6d55a4e562247cdb7584be593939c9c54031fbcb9"
+      },
+      "weight_evidence_ess_best_radius_replayed": true
+    }
+  ],
+  "radius_rule": "Conditional on the TP scenario, the adopted ephemeris and retained full-dilution Kepler likelihood. These are physical radii carried by the existing1Mdraw integrations, not unit-dilution k*catalogueR approximations or a new transit fit. No pooling of clocks, exclusion of unfavorable results, primary selection, or validation claim. Rebuild the complete20repeat radius record at final closeout.",
+  "target_resolved_scene_photon_fraction_quarter_median_range": [
+    0.93948159787488,
+    0.9818988688101877
+  ],
+  "resolved_scene_fraction_interpretation": "Prior predictive TP resolved-scene photons across13quarters, not a dilution posterior, contrast limit or unresolved-companion exclusion.",
+  "source_review": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/review.json",
+    "sha256": "74a2aaae11827d1600f2d576f021ee169d012793c30b7c5317152ee396eba20f"
+  },
+  "audit_plan": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210405-v1/physical-closeout-progress-v1/plan.json",
+    "sha256": "7ef899b58969c42e02122aa3ea8f2bc9917dd7f85c87d788b044de9a2b1f335a"
+  },
+  "implementation": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/audit_single_210405_radius_and_dilution_v1.py",
+    "sha256": "4289371c7f2e7a657acd0fe0ad3658abb33c9e9cd5f03154d3cd59cfaa018f45"
+  },
+  "hardware": {
+    "utc": "2026-10-20T14:17:45.026614+00:00",
+    "source_id": "2104058096963805696",
+    "unit": "mk-210405-probability-triage-v2.service",
+    "first": {
+      "utc": "2026-10-20T14:17:40.021800+00:00",
+      "monotonic": 1387859.448613769,
+      "properties": {
+        "MainPID": "3778717",
+        "MemoryCurrent": "1690632192",
+        "CPUUsageNSec": "1926983532000",
+        "TasksCurrent": "44",
+        "CPUQuotaPerSecUSec": "infinity",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "cpu": [
+        1431896611,
+        1155083289,
+        23557216,
+        1828744337,
+        290432,
+        0,
+        862813,
+        0,
+        0,
+        0
+      ]
+    },
+    "second": {
+      "utc": "2026-10-20T14:17:45.026482+00:00",
+      "monotonic": 1387864.453291687,
+      "properties": {
+        "MainPID": "3778717",
+        "MemoryCurrent": "1690632192",
+        "CPUUsageNSec": "1970837619000",
+        "TasksCurrent": "44",
+        "CPUQuotaPerSecUSec": "infinity",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "cpu": [
+        1431900976,
+        1155083289,
+        23557247,
+        1828755926,
+        290432,
+        0,
+        862816,
+        0,
+        0,
+        0
+      ]
+    },
+    "elapsed_seconds": 5.004677918041125,
+    "unit_cpu_seconds": 43.854087,
+    "average_logical_cpu_equivalents": 8.762619237076674,
+    "fraction_of32logical_cpu_capacity": 0.27383185115864606,
+    "system_busy_fraction": 0.27514385789342005,
+    "scope": "Five-second live probability workload sample; phase-specific telemetry, not maximum-throughput proof. Five primary integrations on one target, six renderer threads each. Physical draws, scene sampling and scenario families still have serial phases."
+  },
+  "live_progress": [
+    {
+      "index": 0,
+      "completed_scenarios": 7,
+      "total_scenarios": 93,
+      "last_completed": "STP",
+      "full_result_exists": false
+    },
+    {
+      "index": 1,
+      "completed_scenarios": 7,
+      "total_scenarios": 93,
+      "last_completed": "STP",
+      "full_result_exists": false
+    },
+    {
+      "index": 2,
+      "completed_scenarios": 7,
+      "total_scenarios": 93,
+      "last_completed": "STP",
+      "full_result_exists": false
+    },
+    {
+      "index": 3,
+      "completed_scenarios": 7,
+      "total_scenarios": 93,
+      "last_completed": "STP",
+      "full_result_exists": false
+    },
+    {
+      "index": 4,
+      "completed_scenarios": 7,
+      "total_scenarios": 93,
+      "last_completed": "STP",
+      "full_result_exists": false
+    }
+  ],
+  "unit": "MainPID=3778717\nLoadState=loaded\nActiveState=active\n",
+  "scope": "No new probability integration, likelihood evaluation, seed or adoption. Already saved TP parameter/weight arrays replayed. Firstfive complete-census meanFPP cutoff and exactly20survivor rule unchanged. No statistical validation or physical false-positive adjudication."
+}

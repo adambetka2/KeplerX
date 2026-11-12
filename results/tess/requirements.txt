@@ -1,0 +1,5 @@
+numpy==1.26.4
+astropy==7.2.3
+lkspacecraft==1.3.2
+spiceypy==6.0.3
+tqdm==4.70.1

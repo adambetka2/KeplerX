@@ -1,0 +1,179 @@
+{
+  "utc": "2026-10-20T05:00:59.266947+00:00",
+  "source_id": "2104058096963805696",
+  "signal_id": "mk-sap-20261019-2104058096963805696-3",
+  "status": "ADDITIONAL_SIGNAL_READINESS_EVIDENCE_NOT_NEW_PLANET_ADMISSION",
+  "native_fit": {
+    "period_days": 11.792761307979013,
+    "epoch_bkjd": 716.9472305364367,
+    "duration_days": 0.11663349201022648,
+    "rank_rhat_maximum": 1.020054100641396,
+    "reference_epoch_bulk_ess": 341.05242617180835,
+    "native_convergence": {
+      "passed": true,
+      "radius_ratio_snr": 13.679728746129891,
+      "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+    },
+    "apparent_radius_ratio_quantiles_16_50_84": [
+      0.030979437250238783,
+      0.0335484293648597,
+      0.0358842756410359
+    ]
+  },
+  "timing_review": {
+    "descriptive_wilks_tail": 0.25070388739824107,
+    "conditional_profile_peaks": [
+      {
+        "period_delta_ppm": -4.9464971898933925,
+        "delta_from_unscanned_median": 0.04298591989868328
+      }
+    ],
+    "scope": "Conditional native timing-profile diagnostics at the shape/noise posterior medians; not a marginalized alias census or TTV model. Native medians determine adoption; no FPP-based clock selection. Low-SNR or boundary-touching quarter intervals remain explicit."
+  },
+  "donor_hypothesis": {
+    "name": "Kepler380b",
+    "source_id": "2143746515354698496",
+    "kic": "11121752",
+    "nominal_clock_relation": "3:1",
+    "question": "Does a simple copied full3.93084day donor clock explain the retained11.79day signal?",
+    "paired_native_measurements": [
+      {
+        "mask": "ORIGINAL_VALID",
+        "current": {
+          "status": "MEASURED",
+          "measured_events": 78,
+          "depth_fraction": 0.0010559954035467146,
+          "depth_error": 5.806584055297852e-05,
+          "depth_snr": 18.186172687593114,
+          "positive_depth_fraction": 1.0,
+          "event_depth_chi2": 58.06463831284851,
+          "largest_information_fraction": 0.025092783421198406
+        },
+        "known_donor_aligned": {
+          "status": "MEASURED",
+          "measured_events": 78,
+          "depth_fraction": 0.000962908119322601,
+          "depth_error": 5.8925055652412064e-05,
+          "depth_snr": 16.34123393964389,
+          "positive_depth_fraction": 1.0,
+          "event_depth_chi2": 72.58126273357655,
+          "largest_information_fraction": 0.025850325072358012
+        },
+        "known_donor_intervening": {
+          "status": "MEASURED",
+          "measured_events": 168,
+          "depth_fraction": 2.957093752866827e-05,
+          "depth_error": 3.7128643502922614e-05,
+          "depth_snr": 0.7964454054547015,
+          "positive_depth_fraction": 0.5238095238095238,
+          "event_depth_chi2": 207.1601500923635,
+          "largest_information_fraction": 0.010239488731224431
+        },
+        "quarter_cycle_negative": {
+          "status": "MEASURED",
+          "measured_events": 84,
+          "depth_fraction": 1.626823109157038e-05,
+          "depth_error": 5.529488187334912e-05,
+          "depth_snr": 0.2942086236630754,
+          "positive_depth_fraction": 0.5357142857142857,
+          "event_depth_chi2": 97.66343642010862,
+          "largest_information_fraction": 0.022252695639363915
+        },
+        "current_minus_intervening_depth_sigma": 14.892652402153313
+      },
+      {
+        "mask": "AFTER_OTHER_SIGNAL_MASK",
+        "current": {
+          "status": "MEASURED",
+          "measured_events": 27,
+          "depth_fraction": 0.001082041109161771,
+          "depth_error": 9.542940554776487e-05,
+          "depth_snr": 11.338655029347128,
+          "positive_depth_fraction": 1.0,
+          "event_depth_chi2": 24.908401571258878,
+          "largest_information_fraction": 0.06078338972646231
+        },
+        "known_donor_aligned": {
+          "status": "MEASURED",
+          "measured_events": 27,
+          "depth_fraction": 0.0009381244310091117,
+          "depth_error": 9.856134820990291e-05,
+          "depth_snr": 9.518177744598404,
+          "positive_depth_fraction": 1.0,
+          "event_depth_chi2": 27.066487575390912,
+          "largest_information_fraction": 0.06482162716472431
+        },
+        "known_donor_intervening": {
+          "status": "MEASURED",
+          "measured_events": 53,
+          "depth_fraction": 5.3506596294376995e-06,
+          "depth_error": 6.584480418903707e-05,
+          "depth_snr": 0.08126168336800317,
+          "positive_depth_fraction": 0.5094339622641509,
+          "event_depth_chi2": 58.84844814118018,
+          "largest_information_fraction": 0.031906937718115556
+        },
+        "quarter_cycle_negative": {
+          "status": "MEASURED",
+          "measured_events": 26,
+          "depth_fraction": 0.00018193151976127685,
+          "depth_error": 9.977012290640745e-05,
+          "depth_snr": 1.8235070225576802,
+          "positive_depth_fraction": 0.6153846153846154,
+          "event_depth_chi2": 39.13827782255182,
+          "largest_information_fraction": 0.06545990430939072
+        },
+        "current_minus_intervening_depth_sigma": 9.286539548375902
+      }
+    ],
+    "interpretation": "The simple full-clock/equal-depth copy is disfavored: with unchanged competing-signal masks the27current events have1082+/-95ppm mean depth, while53intervening donor cycles have5+/-66ppm. The9.29sigma difference assumes the declared local residual-inflated independent event error model. No target false-positive disposition or global contamination probability follows.",
+    "negative_scope": "A selective/modulated transfer or another instrumental/astrophysical mechanism is not disproved by an absent simple full-clock copy. Such alternatives still require actual coupling and photon evidence."
+  },
+  "detector_metadata": {
+    "shared_quarters": 13,
+    "same_channel_quarters": 0,
+    "same_module_quarters": 0,
+    "same_output_number_quarters": 0,
+    "scope": "Official partial primary-header metadata only; different channels/modules are geometry evidence, not a universal exclusion of electronic/optical transfer. Prefixes are not complete donor science products."
+  },
+  "mask_measurement_scope": "This per-cadence masked measurement allows a usable remainder of a local event window. The earlier24event whole-window nonoverlap diagnostic deliberately excluded every overlapping event in full; the27versus24counts are different registered diagnostics, not rewritten evidence.",
+  "remaining": [
+    "Exact additional-signal identity relative to the immutable oldBOI evidence",
+    "Final-clock source ownership, dilution and neighboring-source scene",
+    "Host/scene population, model support and scalar/correlated-noise review",
+    "Frozen probability inputs, exactly20primary integrations, deep replay and physical closeout"
+  ],
+  "evidence": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-donor-clock-v1/review.json",
+      "sha256": "7025959676efc8c8f5ea07669790c8d905e95614666f9fd5105e3f080bfc8518"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-donor-clock-v1/plan.json",
+      "sha256": "967441c78cb5f9c655fd15c10d8fea4d0e55b32c04a29cbab3f7e0986b62ed87"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-donor-detector-v1/review.json",
+      "sha256": "002c850e9c9e630e0fb6fffd8c32130f87e6f09c79c7f2fbf48c6944321c44a7"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v9/2104058096963805696/native-fit-review.json",
+      "sha256": "47dd4aedef573370e47d670f1bfeb19e8a912bfdcf42e396dcafd75f495ff1c1"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v9/2104058096963805696/posterior-numerical-check.json",
+      "sha256": "3a0cc349138c3e336c07dd99bac625eb1bec5b838102cf47f827525a46fa37af"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-timing-review-v8/2104058096963805696/review.json",
+      "sha256": "a5883f0a8e4840c6b605d8f97349aec62f34572be7d12f1cf5300eacf1f28a88"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-native-v2/2104058096963805696/old-clock-mask-plan.json",
+      "sha256": "375c217b89f864d0484b7ba6f69072a48e77226d4a4da4adc6c3767b2e15b26a"
+    }
+  ],
+  "validated_new": 0,
+  "false_positive_rate": null,
+  "scope": "BOI labels and all old survey outcomes preserved. One falsified simple donor hypothesis is neither planet validation nor a reproduced false-positive mechanism. New host-specific geometry/populations are being prepared; no additional probability campaign is launched."
+}

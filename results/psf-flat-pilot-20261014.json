@@ -1,0 +1,61 @@
+{
+  "status": "LOCAL_PSF_FLAT_PILOT_LAUNCHED_UNSCORED",
+  "study": "dump/psf-flat-retrieval-20261014-v1/usable1000-v1",
+  "source_cohort": "final10000-v7",
+  "cases": 1000,
+  "all_inputs_prepared": true,
+  "kind_counts": {
+    "synthetic_planet": 600,
+    "original": 65,
+    "native_eb": 25,
+    "catalogue_fp": 20,
+    "real_planet": 100,
+    "instrumental_artifact": 60,
+    "inverted": 65,
+    "year_scrambled": 65
+  },
+  "synthetic_populations": {
+    "M": 300,
+    "K": 300
+  },
+  "replaced_parent_cases": 396,
+  "replacement_attempts": 430,
+  "input_bindings": {
+    "plan.json": "a385ba712e61e88a5634753b99d1d623116c457015f8c84659c4831b40751c84",
+    "prepared-cases.json": "8424b45dd5ec7eaec7422d5e04e671b22d804d4f09cebba468b41f6b4bcc73e5",
+    "selected-cases.csv": "9de6d161f16624a976064c44343c001c467b902246208a9961df704b8922689f",
+    "representativeness.json": "c29a1d0fcc0c1b915340179b865ee47e2ede2b0627292559771430cf21d909eb",
+    "designs.json": "19f3be9bb6c163ebf2f91f546e6bfac8d795817ef613dfb7352a38127366b95f",
+    "replacement-ledger.json": "814a6d86ad1ff028c3eb965de8b2584366ea73a2402a05d917ae73b887692e8f",
+    "real5000.csv": "f8e97da72b0941961ddd3778f785a732e21c0fe25c973e63b7ff236092cc4e68"
+  },
+  "validation": {
+    "tests_passed": 58,
+    "new_source_lint_and_complexity": "PASSED",
+    "unchanged_folder_lint_findings": 10,
+    "frozen_flat_control_replays": 20,
+    "replays_byte_identical": true,
+    "known_planet_endpoint": {
+      "signal_id": "K00492.01",
+      "catalogue_depth_ppm": 942.0,
+      "candidate_exact_clock_recovered": true
+    }
+  },
+  "local_execution": {
+    "pid": 64587,
+    "started_utc": "2026-10-14T07:47:43.263634+00:00",
+    "cases": 1000,
+    "unique_inputs_per_design": 997,
+    "workers": 2,
+    "nice": 10,
+    "stages": [
+      "run",
+      "report"
+    ],
+    "real5000": "DEFERRED_UNTIL_ADAM_RETURNS_HOME",
+    "script": "/Volumes/discPCIe/forgotten-stars-workspace/dump/controls-20260926/spacelab-dump/psf-flat-retrieval-20261014-v1/usable1000-v1/run-pilot.sh"
+  },
+  "server_run": "mk-sap-20261014-v1; left running without changes",
+  "real5000": "DEFERRED_UNTIL_ADAM_RETURNS_HOME",
+  "limits": "Recovery is conditional on usable delivered Flat and valid null construction; the 10000-case programme gate is unrun; detector outcomes remain unscored."
+}

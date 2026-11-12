@@ -1,0 +1,128 @@
+{
+  "utc": "2026-10-27T08:18:27.817307+00:00",
+  "scope": "Kepler565 Q5 instrument controls; no new candidate/native fit or FPP allocation.",
+  "source_ids": [
+    "2107574403864920576",
+    "2107574403864920448"
+  ],
+  "cadences": 4487,
+  "physical_native_pixels": 48,
+  "physical_background_pixels": 4,
+  "truth": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-series-v1/plan.json",
+    "sha256": "35475e3f72ec31cf6862099fb730248a7c58ef8ca9141c81f7f6877720609afd"
+  },
+  "controller": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v3/controller-v1/result.json",
+    "sha256": "d405e81c02f754902bee061a734eb430bbf3603c2a0bc37e38d611343fa44f84"
+  },
+  "paired": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v3/paired-review-v1/result.json",
+    "sha256": "d3d0c4a40eefc8a5cfe53acf521a68f88824cbb73ee8f3d8cfc3b8910fd78136"
+  },
+  "post_boi_preparation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v3/standard-preparation-v1/result.json",
+    "sha256": "6882c93b1e7d461e7a0bca3634f5b3036680afd9e761ea7d1cfb0e554d8dd64c"
+  },
+  "plot": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v3/standard-preparation-v1/paired-preparation.png",
+    "sha256": "b3b24f88180cf76117bf5bdfd0ce2285285396deda08e4034f3b2baefb272367"
+  },
+  "raw_physical_depths_ppm": {
+    "target": 989.7373678853677,
+    "companion": 949.5025681797864
+  },
+  "archived_flat_physical_depths_ppm": {
+    "target": 933.5855335061973,
+    "companion": 892.5298082827128
+  },
+  "standard_prepared_depths_ppm": {
+    "target": 979.8085997891345,
+    "companion": 939.3904198485783
+  },
+  "prepared_flat_over_raw": {
+    "target": 0.9896601477244324,
+    "companion": 0.9890566939706179
+  },
+  "companion_to_target_prepared_flat_depth_ratio": 0.958748902643583,
+  "source_times_match_original": {
+    "min": 0.0,
+    "max": 0.0
+  },
+  "fixed_operator": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/series-response-v1/result.json",
+    "sha256": "706e69fc37e3021c998efff2e24192b8c720f2ec851e9547eee5977e3fd0871a"
+  },
+  "fixed_operator_full_refit_rms_difference_ppm": [
+    {
+      "label": "target",
+      "rms_difference_ppm": 0.018541250742177207,
+      "max_abs_difference_ppm": 0.13503099616229974
+    },
+    {
+      "label": "companion",
+      "rms_difference_ppm": 0.019074035772028677,
+      "max_abs_difference_ppm": 0.14557389604874515
+    }
+  ],
+  "phase_amplitude_grid": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-transfer-grid-v1/preparation-v1/result.json",
+    "sha256": "9c27e27930acc82c11c875bb2adb59d7bd7e1a6edf6af78e71650125c586c59e"
+  },
+  "grid_trials": 18,
+  "grid_prepared_flat_over_raw_gain_range": [
+    0.974989900504597,
+    0.9949229473508681
+  ],
+  "grid_full_refit_checks": [
+    {
+      "label": "target",
+      "prepared_flat_depth_difference_ppm": 0.01636229085454488
+    },
+    {
+      "label": "companion",
+      "prepared_flat_depth_difference_ppm": -3.495988426038821e-05
+    }
+  ],
+  "likelihood_prototype": {
+    "source": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/psf_likelihood_v1.py",
+      "sha256": "f6ff8d38d668737871a97cfcf1b5848f4924fda82d48a6f6e0ff8e5a216d225e"
+    },
+    "tests": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/test_psf_likelihood_v1.py",
+      "sha256": "0f62a8ac81b018b642b6be203cd2f41ba26e34828361938f207366ae8e67731b"
+    },
+    "junit": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/psf-likelihood-v1-tests-formatted.xml",
+      "sha256": "e5900e55307ec8c7f173623e755b75e4cdaf7251e14d432bbcef421ee0a1dfe5"
+    },
+    "passed": 4,
+    "scope": "Signed nonnormalized per-photon response kernel using the existing SourceLikelihood callback. Known-example shape/direct Gaussian, negative-response brightening, aperture-limit equivalence and photon/dilution binding controls. No production freeze/scene integration or physical method acceptance yet.",
+    "ruff_and_complexity_passed": true
+  },
+  "allocation_history": {
+    "first_cpu_admission": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v1/controller-v1/result.json",
+      "sha256": "42d68d5e8f66d8eebde9400a4ff40b2efbb5afd8e27df66cf3736494bdf8f90c"
+    },
+    "cancelled_pre_experiment_wait": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v2/capacity-wait-metric-review.json",
+      "sha256": "428ae56d9725cf2fb41890c228442bb5c2f4bc138c8501adeaea7dc692b247f3"
+    },
+    "successful_resource_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-pixel-injections-v3/resource-review.json",
+      "sha256": "0f6f317b9ff11dc5bfadfbd47443bc2f837c97bd4a2d38ad87b0a5cc65a2f970"
+    }
+  },
+  "probability_qualified": false,
+  "probability_admissions": 0,
+  "newly_validated_planets": 0,
+  "limitations": [
+    "One quarter, source geometry, period and duration",
+    "Only1000ppm-equivalent/phase0.5 locations have complete authored extraction refits; remaining grid uses the fixed operator validated there",
+    "Observed native reader/masks and common pixel uncertainties retained",
+    "Calibration/finite-PRF, source-baseline normalization, shape/phase response and candidate-specific uncertainty still require support",
+    "Source ownership, scene properties, noise and physical closeout remain open; gains are not universal corrections"
+  ]
+}

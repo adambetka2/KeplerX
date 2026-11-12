@@ -1,0 +1,79 @@
+{
+  "kepler-840-b": {
+    "policy": "linear-score-binary-gate",
+    "state": "DISMISSED",
+    "failed": [
+      {
+        "feature": "binary_occultation_albedo",
+        "value": 1.9970862397164741,
+        "cut": "> 1.0",
+        "reason": "A unique secondary eclipse deeper than a planet's occultation"
+      },
+      {
+        "feature": "binary_ellipsoidal_mass_ratio",
+        "value": 0.28671677301754983,
+        "cut": "> 0.05",
+        "reason": "Ellipsoidal variation of a stellar companion"
+      }
+    ]
+  },
+  "kepler-158-c": {
+    "policy": "linear-score-binary-gate",
+    "state": "KEPT",
+    "failed": []
+  },
+  "weak-synthetic-planet": {
+    "policy": "linear-score-binary-gate",
+    "state": "KEPT",
+    "failed": []
+  },
+  "blended-binary": {
+    "policy": "linear-score-binary-gate",
+    "state": "DISMISSED",
+    "failed": [
+      {
+        "feature": "binary_odd_even_sigma",
+        "value": null,
+        "cut": ">= 5.0",
+        "reason": "Odd and even transits differ in depth"
+      },
+      {
+        "feature": "depth_ppt",
+        "value": 55.783370318264126,
+        "cut": ">= 30.0, or >= 10.0 at b >= 0.8",
+        "reason": "A primary eclipse deeper or more grazing than a planet's usually is"
+      }
+    ]
+  },
+  "alias-giant-planet": {
+    "policy": "linear-score-binary-gate",
+    "state": "KEPT",
+    "failed": [],
+    "binary_evidence": [
+      {
+        "feature": "depth_ppt",
+        "value": 50.08575519149779,
+        "cut": ">= 30.0, or >= 10.0 at b >= 0.8",
+        "reason": "A primary eclipse deeper or more grazing than a planet's usually is"
+      }
+    ]
+  },
+  "deep-blended-binary": {
+    "policy": "linear-score-binary-gate",
+    "state": "DISMISSED",
+    "failed": [
+      {
+        "feature": "binary_occultation_albedo",
+        "value": 490.7480646336056,
+        "cut": "> 1.0",
+        "reason": "A unique secondary eclipse deeper than a planet's occultation"
+      },
+      {
+        "feature": "depth_ppt",
+        "value": 75.5146424507998,
+        "cut": ">= 30.0, or >= 10.0 at b >= 0.8",
+        "reason": "A primary eclipse deeper or more grazing than a planet's usually is"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+utc,step,description,case,draws,threads,calls,rows,stock_cpu_s,stock_wall_s,fused_cpu_s,fused_wall_s,cpu_speedup,wall_speedup,bitwise
+2026-10-25T12:01:49Z,v1,straight fusion: pytransit loop + dilution + numpy pairwise chi2 in one numba kernel,kepler10,32768,4,15,95347,21.598,6.673,21.356,6.159,1.01,1.08,True
+2026-10-25T12:02:18Z,v2,"EB: secondary first, primary only for rows passing the 1.5 sigma veto; twin skips unused secondary",kepler10,32768,4,15,95347,21.598,6.673,12.783,4.625,1.69,1.44,True
+2026-10-25T17:50:56Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [exact]",2100325529865507712,20000,1,calc_probs,,12.426,18.05,2.218,3.077,5.6,5.87,True
+2026-10-25T17:50:56Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [certified]",2100325529865507712,20000,1,calc_probs,,12.426,18.05,1.664,2.448,7.47,7.37,True
+2026-10-25T17:51:18Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [exact]",2104058096963805696-4,20000,1,calc_probs,,1.421,1.693,1.122,1.315,1.27,1.29,True
+2026-10-25T17:51:18Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [certified]",2104058096963805696-4,20000,1,calc_probs,,1.421,1.693,1.061,1.247,1.34,1.36,True
+2026-10-25T17:51:43Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [exact]",2127169041106093184,20000,1,calc_probs,,2.228,2.784,1.756,2.374,1.27,1.17,True
+2026-10-25T17:51:43Z,v3a,"probe rounds 2/6/24, finite proof, lazy evidence, partial ranking, LDC lookup; 1 thread nice 19 beside validation [certified]",2127169041106093184,20000,1,calc_probs,,2.228,2.784,1.229,1.481,1.81,1.88,True
+2026-10-25T18:35:42Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [exact]",2100325529865507712,50000,1,calc_probs,,30.656,40.764,4.254,5.463,7.21,7.46,True
+2026-10-25T18:35:42Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [certified]",2100325529865507712,50000,1,calc_probs,,30.656,40.764,2.087,2.342,14.69,17.41,True
+2026-10-25T18:36:29Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [exact]",2104058096963805696-4,200000,1,calc_probs,,10.793,15.35,6.098,7.964,1.77,1.93,True
+2026-10-25T18:36:29Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [certified]",2104058096963805696-4,200000,1,calc_probs,,10.793,15.35,4.578,5.604,2.36,2.74,True
+2026-10-25T18:37:25Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [exact]",2127169041106093184,200000,1,calc_probs,,17.883,20.583,10.76,11.783,1.66,1.75,True
+2026-10-25T18:37:25Z,v3b,"exact: rounds 2/6/24, finite proof (vectorized); certified: cheap occultation bound, guess-ordered batches; 1 thread nice 19 beside validation [certified]",2127169041106093184,200000,1,calc_probs,,17.883,20.583,4.714,5.074,3.79,4.06,True
+2026-10-25T18:46:42Z,v3c,"full draws, 1 thread nice 19 beside validation [exact]",2076383384993192576,1000000,1,calc_probs,,26.533,27.14,14.224,14.757,1.87,1.84,True
+2026-10-25T18:46:42Z,v3c,"full draws, 1 thread nice 19 beside validation [certified]",2076383384993192576,1000000,1,calc_probs,,26.533,27.14,10.106,10.51,2.63,2.58,True
+2026-10-25T18:54:10Z,v3d,"full draws; 1-D LDC factorization, vectorized background LDC; 1 thread nice 19 [exact]",2076383384993192576,1000000,1,calc_probs,,28.088,32.939,13.338,16.365,2.11,2.01,True
+2026-10-25T18:54:10Z,v3d,"full draws; 1-D LDC factorization, vectorized background LDC; 1 thread nice 19 [certified]",2076383384993192576,1000000,1,calc_probs,,28.088,32.939,9.09,12.232,3.09,2.69,True
+2026-10-25T18:55:49Z,v3d-2t,"2 numba threads, nice 19 [exact]",2100325529865507712,20000,2,calc_probs,,12.408,9.626,1.921,2.888,6.46,3.33,True
+2026-10-25T18:55:49Z,v3d-2t,"2 numba threads, nice 19 [certified]",2100325529865507712,20000,2,calc_probs,,12.408,9.626,0.962,0.977,12.9,9.85,True
+2026-10-25T18:56:09Z,v3d-2t,"2 numba threads, nice 19 [exact]",2104058096963805696-4,20000,2,calc_probs,,1.394,1.154,0.72,0.639,1.94,1.81,True
+2026-10-25T18:56:09Z,v3d-2t,"2 numba threads, nice 19 [certified]",2104058096963805696-4,20000,2,calc_probs,,1.394,1.154,0.528,0.514,2.64,2.24,True
+2026-10-25T19:21:23Z,e0,engine: unmodified copy (imports only) [exact],2100325529865507712,20000,1,calc_probs,,11.558,12.036,1.632,1.763,7.08,6.83,True
+2026-10-25T19:21:23Z,e0,engine: unmodified copy (imports only) [engine],2100325529865507712,20000,1,calc_probs,,11.558,12.036,11.591,12.134,1.0,0.99,True
+2026-10-25T19:21:23Z,e0,engine: unmodified copy (imports only) [certified],2100325529865507712,20000,1,calc_probs,,11.558,12.036,0.795,0.869,14.54,13.84,True
+2026-10-25T19:21:41Z,e0,engine: unmodified copy (imports only) [exact],2104058096963805696-4,20000,1,calc_probs,,1.344,1.41,0.618,0.673,2.17,2.1,True
+2026-10-25T19:21:41Z,e0,engine: unmodified copy (imports only) [engine],2104058096963805696-4,20000,1,calc_probs,,1.344,1.41,1.316,1.384,1.02,1.02,True
+2026-10-25T19:21:41Z,e0,engine: unmodified copy (imports only) [certified],2104058096963805696-4,20000,1,calc_probs,,1.344,1.41,0.464,0.548,2.89,2.57,True
+2026-10-25T19:22:02Z,e0,engine: unmodified copy (imports only) [exact],2127169041106093184,20000,1,calc_probs,,2.139,2.235,1.12,1.269,1.91,1.76,True
+2026-10-25T19:22:02Z,e0,engine: unmodified copy (imports only) [engine],2127169041106093184,20000,1,calc_probs,,2.139,2.235,2.129,2.277,1.0,0.98,True
+2026-10-25T19:22:02Z,e0,engine: unmodified copy (imports only) [certified],2127169041106093184,20000,1,calc_probs,,2.139,2.235,0.522,0.572,4.1,3.91,True

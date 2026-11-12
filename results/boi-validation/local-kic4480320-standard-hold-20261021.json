@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-21T04:05:50.455386+00:00",
+  "source_id": "2076221417495492736",
+  "kic": 4480320,
+  "tic": 184088483,
+  "signal_id": "rust-v6-2076221417495492736-1",
+  "status": "HELD_CAPABLE_SCENE_SOURCE_MISSING_STELLAR_SUPPORT_BEFORE_NATIVE",
+  "disposition": "REMAINS_PC",
+  "reason": "All91sources retained. Gaia2076221314406623232,G21.018,Tmag20.588estimated by unchanged upstream Gaia relation, is Gaussian-capable at measured.003170depth, but has no BP/RP/JHK/Teff/M/R/parallax or exact TIC record. Upstream estimation cannot infer supported stellar parameters; stock warns it would assume Solar values. No measured Solar properties invented or capable alternative removed. Other three missing-property sources also retained. Gaussian target.844..997 vs dominant calibrated core.944..1 is additional response context, not a newly imposed universal cutoff. Conditional short nested source controls passed, but no production native/FPP launched.",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/aperture-response-review-v1.json",
+    "sha256": "0050acb5eb6c074a3c02cfe1568524b3f12e49e5a9b742805c4dd2f7bab14103"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/scene-preview-review-v1.json",
+    "sha256": "728ee6978de5310ff814a02bada79af523276814b1dccf3aa65d35b06f4d105d"
+  },
+  "parents": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/parent-authentication-v1.json",
+    "sha256": "e58ece9c29ae271cf6248c2d8e78efae83a8bca94e1206fcfa62ecac6ffed42b"
+  },
+  "prfs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/prf-authentication-v1.json",
+    "sha256": "2b176eb201326ef0f4b99c32cf8da4a5ecd575ca078e20927ecb72934f9e82c5"
+  },
+  "stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/native-stellar-review.json",
+    "sha256": "245f5408567cf61ca0c9df26431748d1d21d9d8829032089b5c807b0672cadc7"
+  },
+  "seed_controls": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/native-seed-revalidation.json",
+    "sha256": "0d1b23b58ee9ef5e3877333eabfbd2c203889fb25ce8eba9e45206f8cbf87ada"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/selection.json",
+    "sha256": "830d7d83741ed33c774029cbd15c768d95b86a4fcd4d8b6f239e3a032478bce2"
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve supported and missing inputs and controls. Bounded missing-neighbor characterization deferred tonight, not a denial. Advance eligible full queue."
+}

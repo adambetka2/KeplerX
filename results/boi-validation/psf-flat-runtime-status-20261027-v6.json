@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-27T09:03:47.879732+00:00",
+  "state": "PSF_ADAPTER_INTEGRATED_CANDIDATE_RESPONSE_INPUTS_STAGING",
+  "native_jobs_complete": 4,
+  "native_boi_jobs_complete": 3,
+  "active_native_jobs": 0,
+  "active_fpp_jobs": 0,
+  "active_reconstruction_jobs": 0,
+  "probability_admissions": 0,
+  "newly_validated_planets": 0,
+  "scientific_dispositions": 8,
+  "remaining_groups": 57,
+  "scope_groups": 65,
+  "latest_qualification": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-method-qualification-20261027-v5.json",
+    "sha256": "fd8916ab37cf33414a8b689e4cfcdef0b6b6a30aa292ebeab3446b48ed1d1908"
+  },
+  "no_boi_disposition_for_shared_software_blocker": true,
+  "gold_control": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/verification/kepler10-gold-20261027-result.json",
+    "sha256": "f822ff054edbb75c7f9ba4ae0449d477f66dd8807159064532979bd3794c4acd"
+  },
+  "next_authorized_independent_work": "Finish and review the first candidate-specific Q5 batch inputs, then complete reader parity and calibrated physical response/processing controls. No candidate is admitted by software tests alone.",
+  "same_source_review": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-same-source-review-20261027.json",
+    "sha256": "8798eee5c8e7e5570c71ac6c72e91389063c75f36fafd9624d5fe2826b2f4d7c"
+  },
+  "bug_fix_permission_reaffirmed": true,
+  "prior_repair_question_resolved": true,
+  "authorization": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/authorization.json",
+    "sha256": "260a31cda568e4ef9a2eebe27f1fab8582099f7b3a22267f10a54c1fc8d69218"
+  },
+  "repair": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/repair-review.json",
+    "sha256": "f5b3f81c03df45b8e39b891a81a3906e68894f9cc2127cb7e2ec503ca1b5a2c5"
+  },
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v4-launch/launch.json",
+    "sha256": "1fadc91694f233b60bf2226bd8b168bdac2c0360cf2073141305e552ae1e72a6"
+  },
+  "allocation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v4/allocation.json",
+    "sha256": "77b5b9d070db8dd6bdc48c90f027de9d7d1fe21577ec5a1307422640350cf496"
+  },
+  "preservation": "Stopped attempts remain untouched. The repair is an isolated package/source copy; production runtime and all candidate native fits remain unchanged.",
+  "previous_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-runtime-status-20261027-v5.json",
+    "sha256": "efc322ff5cf66d648f6906fc147357e40efd91e308a3ea4f0ff925bee0147bdd"
+  },
+  "physical_response_control": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-physical-response-control-20261027.json",
+    "sha256": "d20634b0f68cbeadbe0727808f8e12c778b2411e03133d1540e4b6325bb4328b"
+  },
+  "physical_input_review": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-physical-injection-review-20261027.json",
+    "sha256": "2b65d79c8582dee6a508108c19ab65ad42e09a29fb914ee9db82d4d886a3f7ab"
+  },
+  "probability_adapter": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-probability-adapter-20261027.json",
+    "sha256": "db42b8b2b598ba8e431e67916f135dbad2a862ceb855c63ffec9fbe712264ef7"
+  },
+  "active_input_staging_jobs": 1,
+  "candidate_response_staging": {
+    "source_id": "2079714428492352768",
+    "signal_id": "shallow-v1-2079714428492352768-1",
+    "source_kic": 8573780,
+    "parent_kic": 8573783,
+    "quarter": 5,
+    "channel": 67,
+    "batch": 6,
+    "expected_tpfs": 197,
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1-launch/launch.json",
+      "sha256": "c536635f743f1bb07c979f80c764f7cf3877f5652f308b14db0e58ce99ec66cc"
+    },
+    "plan": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/candidate-response-8573780-q05-v1/plan.json",
+      "sha256": "5f211bc023e9b347ab656056a91b666f32dce66f5d3f6b1d062047898b425bb1"
+    },
+    "note": "Two transfer/authentication workers; no reconstruction, new native fit or BOI FPP allocation."
+  }
+}

@@ -1,0 +1,1944 @@
+{
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "baseline_commit": "1e75a1a04460bf0dad1d2d4d4175a44094a94759",
+  "audited_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/preparation-parameter-audit-20261020.json",
+    "sha256": "c072b0147ba2897a270b1ff14ea449ff8fc154e8efe0d0eb0aea5b005784274e"
+  },
+  "scope": "All149 old parameter/control groups individually decided for prospective code. Delete means absent from active new path; frozen generations and historical evidence remain unchanged. These changes do not revalidate or revoke old admissions.",
+  "action_counts": {
+    "retain": 28,
+    "delete": 61,
+    "candidate": 38,
+    "replace": 22
+  },
+  "parameters": [
+    {
+      "id": "P001",
+      "group": "Authenticated inputs",
+      "parameter": "Identity",
+      "old_value": "Gaia DR3 source; KIC/TIC cross-identities; exact extraction owner distinguished",
+      "action": "retain",
+      "prospective_v2": "Authenticate exact source, extraction and all cross-identities; no parent-host substitution.",
+      "scientific_basis": "Required source authentication; a parent TPF KIC is not the source identity.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P002",
+      "group": "Authenticated inputs",
+      "parameter": "Signal selection",
+      "old_value": "rust_rows: rank 1 and psf_flat; BOI suffix -1",
+      "action": "delete",
+      "prospective_v2": "No rank-1 or PSF_FLAT selection. Consume supplied run-scoped signal ID for survey and M/K.",
+      "scientific_basis": "This local selector is survey-specific, not a generic M/K or multi-signal implementation. Consume the actual run-scoped signal instead.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P003",
+      "group": "Authenticated inputs",
+      "parameter": "Native view",
+      "old_value": "SAP_QDIAG; PSF_FLAT export retained separately",
+      "action": "retain",
+      "prospective_v2": "One native SAP/source-corrected path; explicit flux convention and dilution once.",
+      "scientific_basis": "Raw SAP and crowding-corrected flux require different dilution conventions; never double-correct.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P004",
+      "group": "Authenticated inputs",
+      "parameter": "Bootstrap period, epoch, duration and resolution",
+      "old_value": "Detector values; all exact current values in embedded run_input",
+      "action": "candidate",
+      "prospective_v2": "Use authenticated supplied P/epoch/duration only to bootstrap the fit; preserve original clock.",
+      "scientific_basis": "Authenticate clock/time system and fitted signal; no universal numerical value.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P005",
+      "group": "Authenticated inputs",
+      "parameter": "Other-signal exclusions",
+      "old_value": "[] in this single-signal local wrapper",
+      "action": "candidate",
+      "prospective_v2": "List actual other signals explicitly; never mask unexplained residuals automatically.",
+      "scientific_basis": "Must bind other real signals for multi-signal candidates; never automatically mask unexplained structure.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P006",
+      "group": "Authenticated inputs",
+      "parameter": "Initial radius ratio",
+      "old_value": ".08",
+      "action": "delete",
+      "prospective_v2": "No universal k=.08 initialization; standard sampler/priors supplied per candidate.",
+      "scientific_basis": "Starting point, not a measured radius; ensure it does not determine the only explored mode.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P007",
+      "group": "Authenticated inputs",
+      "parameter": "Initial density",
+      "old_value": "catalogue M/R^3 in solar units",
+      "action": "candidate",
+      "prospective_v2": "Measured stellar density prior or joint stellar posterior; no catalogue starting-point shortcut.",
+      "scientific_basis": "Starting point separate from the density prior.",
+      "references": [
+        "CODE",
+        "KEPLER"
+      ]
+    },
+    {
+      "id": "P008",
+      "group": "Native data preparation",
+      "parameter": "Validity",
+      "old_value": "VET_OK, finite time/flux/errors, error>0; SAP VET_OK uses QUALITY==0",
+      "action": "candidate",
+      "prospective_v2": "Authenticated delivered validity mask, finite photons/errors. No extra QUALITY=0 mandate in wrapper.",
+      "scientific_basis": "Strict quality-zero is our mask, not a TRICERATOPS prerequisite. Retain masks and quantify lost events.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P009",
+      "group": "Native data preparation",
+      "parameter": "Quarter normalization",
+      "old_value": "Median of valid native quarter flux",
+      "action": "replace",
+      "prospective_v2": "Protected Lightkurve trend normalization, retaining photons, trend, errors and original indices.",
+      "scientific_basis": "Normalized input is required; this normalization is one implementation, needing activity/systematics checks.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P010",
+      "group": "Native data preparation",
+      "parameter": "Event-window half width",
+      "old_value": ".3 days = 7.2 hours",
+      "action": "replace",
+      "prospective_v2": "Native fit window +/-3 supplied durations; inspect coverage/uncertainty, not fixed .3 days.",
+      "scientific_basis": "Use duration-aware windows with real pre/post baseline; no universal fixed-hour recommendation in API.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P011",
+      "group": "Native data preparation",
+      "parameter": "Baseline/noise outer-point start",
+      "old_value": "|phase|>=.12 days = 2.88 hours",
+      "action": "replace",
+      "prospective_v2": "Protect +/-1 supplied duration plus half exposure in trend fit; no fixed .12-day noise boundary.",
+      "scientific_basis": "Must protect the entire transit plus integration/clock uncertainty. A 9.288h event contaminates this nominal OOT region.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P012",
+      "group": "Native data preparation",
+      "parameter": "Minimum event points",
+      "old_value": "8 native cadences",
+      "action": "delete",
+      "prospective_v2": "Remove universal eight-cadence event gate; review actual coverage/information.",
+      "scientific_basis": "Coverage criterion is not an API requirement; inspect actual information rather than treating this as physical rejection.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P013",
+      "group": "Native data preparation",
+      "parameter": "Minimum pre/post baseline",
+      "old_value": "4 cadences each side beyond +/-.12 days",
+      "action": "delete",
+      "prospective_v2": "Remove four-cadence fixed outer-region gate; fit needs genuine baseline, reviewed per candidate.",
+      "scientific_basis": "Sensible need for baseline, arbitrary fixed placement; short periods and gaps can fail the implementation.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P014",
+      "group": "Native data preparation",
+      "parameter": "Primary overlap",
+      "old_value": "At least one point within supplied T14/2 + exposure/2",
+      "action": "replace",
+      "prospective_v2": "Retain primary coverage in native fit review; supplied duration is not immutable truth.",
+      "scientific_basis": "Retain coverage evidence. A detector duration need not equal the final transit duration.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P015",
+      "group": "Native data preparation",
+      "parameter": "Baseline coordinate",
+      "old_value": "phase/.3 days; local multiplicative line",
+      "action": "delete",
+      "prospective_v2": "Remove scaled .3-day local baseline operator; use standard detrending/native nuisance parameters.",
+      "scientific_basis": "Linear baseline is not universally adequate for active/correlated Kepler SAP.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P016",
+      "group": "Native data preparation",
+      "parameter": "Additive quarter jitter",
+      "old_value": "sqrt(max(0, (1.4826*MAD_OOT)^2 - median(formal_error^2)))",
+      "action": "delete",
+      "prospective_v2": "Remove fixed MAD quarter-jitter construction; noise adequacy and juliet jitter are candidate decisions.",
+      "scientific_basis": "Robust scatter has a basis; fixed white jitter does not model time-correlated stellar/instrument noise.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P017",
+      "group": "Native transit and priors",
+      "parameter": "Period support",
+      "old_value": "+/-2 detector resolution elements; +/-170.70066426940878ppm for C12",
+      "action": "candidate",
+      "prospective_v2": "Standard free P_p1 prior covering measured timing/aliases; no detector-resolution box.",
+      "scientific_basis": "A local bound is defensible only after timing/alias review and boundary checks; detector grid spacing is not a posterior uncertainty.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P018",
+      "group": "Native transit and priors",
+      "parameter": "Central epoch support",
+      "old_value": "+/-2 hours",
+      "action": "candidate",
+      "prospective_v2": "Standard free t0_p1 prior near data centre; no universal +/-2-hour box.",
+      "scientific_basis": "Must cover plausible clock uncertainty; no fixed two-hour API requirement.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P019",
+      "group": "Native transit and priors",
+      "parameter": "Radius-ratio support and measure",
+      "old_value": ".005 < k < .3; uniform log(k)",
+      "action": "candidate",
+      "prospective_v2": "Standard p_p1 prior justified per candidate; no .005-.3 or compulsory log(k) wrapper box.",
+      "scientific_basis": "Not the stock physical planet-radius prior. k ceiling can exclude large planets around small M stars or truncate grazing fits.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P020",
+      "group": "Native transit and priors",
+      "parameter": "Impact coordinate",
+      "old_value": ".001 < b/(1+k) < .999; uniform",
+      "action": "candidate",
+      "prospective_v2": "Standard b_p1 prior and physical transit geometry; no padded fractional-impact coordinate.",
+      "scientific_basis": "Allows grazing events, excludes exact endpoints. Not itself a V-shape veto.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P021",
+      "group": "Native transit and priors",
+      "parameter": "Density support and measure",
+      "old_value": ".1 < rho/rho_sun < 50; log-density coordinate times stellar density prior",
+      "action": "candidate",
+      "prospective_v2": "Standard SI rho prior from stellar evidence; no .1-50 solar-density wrapper box.",
+      "scientific_basis": "Broad for many dwarfs but excludes evolved stars and sufficiently dense small M dwarfs; bounds need candidate/model justification.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P022",
+      "group": "Native transit and priors",
+      "parameter": "Limb-darkening priors",
+      "old_value": ".001 < q1,q2 < .999; uniform triangular quadratic coordinates",
+      "action": "candidate",
+      "prospective_v2": "Standard Kepler LD parameters/prior, supported for host; no .001 endpoint padding requirement.",
+      "scientific_basis": "Triangular physical LD sampling is established; endpoint padding is ours.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P023",
+      "group": "Native transit and priors",
+      "parameter": "Shared noise scale",
+      "old_value": "-1 < ln(s) < 1, multiplicative s=.368..2.718",
+      "action": "delete",
+      "prospective_v2": "Remove bounded shared multiplicative noise scale; use reviewed standard nuisance/noise model.",
+      "scientific_basis": "A bounded shared scale is not a universal TRICERATOPS requirement; check clipping and quarter dependence.",
+      "references": [
+        "API",
+        "PRIORS",
+        "LD"
+      ]
+    },
+    {
+      "id": "P024",
+      "group": "Native transit and priors",
+      "parameter": "Duration support",
+      "old_value": ".0104 < T14 < .25 days = .2496..6 hours",
+      "action": "delete",
+      "prospective_v2": "Remove .0104-.25-day duration veto. Duration derives from fitted physical geometry.",
+      "scientific_basis": "Inherited code box, no documented universal scientific justification. Review a duration-aware model rather than crop events or silently widen a frozen run.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P025",
+      "group": "Native transit and priors",
+      "parameter": "Orbit and dilution",
+      "old_value": "e=0, omega=90deg; dark single transit; apparent unit dilution",
+      "action": "candidate",
+      "prospective_v2": "Eccentricity, omega and native dilution explicitly declared; circularity is not universal truth.",
+      "scientific_basis": "Circular native fitting has a paper analogue, but does not prove adequacy for every eccentric/blended object. Probability model subsequently has eccentric/dilution alternatives.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P026",
+      "group": "Native transit and priors",
+      "parameter": "Baseline Gaussian widths",
+      "old_value": "intercept .1; slope .5 in scaled x; mean [1,0]; analytically marginalized",
+      "action": "delete",
+      "prospective_v2": "Remove analytic baseline Gaussian widths .1/.5 and their custom marginalizer.",
+      "scientific_basis": "Proper nuisance integration is preferable to an undefined prior, but these widths/model need external sensitivity controls.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P027",
+      "group": "Native stellar density",
+      "parameter": "Native catalogue row choice",
+      "old_value": "First ExoFOP row with mass and radius",
+      "action": "candidate",
+      "prospective_v2": "Choose authenticated supported stellar measurements by evidence, not first ExoFOP row.",
+      "scientific_basis": "Ordering is not evidence ranking; authenticate the adopted catalogue/source and handle disagreements.",
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P028",
+      "group": "Native stellar density",
+      "parameter": "Mass uncertainty",
+      "old_value": "Always 10% of mass in this preparer",
+      "action": "candidate",
+      "prospective_v2": "Use reported mass error; missing errors need explicit justified uncertainty model, no silent 10%.",
+      "scientific_basis": "Use reported uncertainty when present. The reference fallback does not justify overwriting measurements.",
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P029",
+      "group": "Native stellar density",
+      "parameter": "Radius uncertainty",
+      "old_value": "Always 6% of radius in this preparer",
+      "action": "candidate",
+      "prospective_v2": "Use reported radius error; missing errors need explicit justified uncertainty model, no silent 6%.",
+      "scientific_basis": "Use reported uncertainty when present; the scene builder already does so. C12 has missing M/R errors, so fallback is applicable there.",
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P030",
+      "group": "Native stellar density",
+      "parameter": "M/R dependence",
+      "old_value": "Independent positive Gaussian M and R",
+      "action": "candidate",
+      "prospective_v2": "Use covariance/asymmetric or joint posterior when available; helper is explicitly first-order independent-error approximation.",
+      "scientific_basis": "Joint stellar covariance/systematics are not represented; physically coherent posterior samples are preferable where available.",
+      "references": [
+        "COLLIER",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P031",
+      "group": "Native numerical inference",
+      "parameter": "Density quadrature",
+      "old_value": "2049 log-rho grid points; 1024 vs 2048 Legendre nodes; radius centre +/-9 sigma, lower .001Rsun",
+      "action": "delete",
+      "prospective_v2": "Remove custom density quadrature/grid; supply ordinary juliet density prior or posterior-derived distribution.",
+      "scientific_basis": "Resolution comparison checks this integral, not the astrophysical validity of independent M/R or the density box.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P032",
+      "group": "Native numerical inference",
+      "parameter": "MAP start geometries",
+      "old_value": "impact fractions .5,.8,.94; theta [0,0,ln(.08),fraction,ln(M/R^3),.4,.5,0]",
+      "action": "delete",
+      "prospective_v2": "Remove hardcoded three MAP starts and impact guesses.",
+      "scientific_basis": "Multiple starts help, but do not prove discovery of all transit/alias modes.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P033",
+      "group": "Native numerical inference",
+      "parameter": "MAP optimizer",
+      "old_value": "Nelder-Mead; maxiter2500, then4000 if best unsuccessful; xatol1e-5,fatol1e-4",
+      "action": "delete",
+      "prospective_v2": "Remove custom Nelder-Mead optimizer/retry controls; delegate native inference to juliet.",
+      "scientific_basis": "No paper requires these settings; diagnose finite support and optimization separately.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P034",
+      "group": "Native numerical inference",
+      "parameter": "MAP simplex scales",
+      "old_value": "[2,.06,.06,.04,.12,.08,.08,.03]",
+      "action": "delete",
+      "prospective_v2": "Remove custom MAP simplex scales.",
+      "scientific_basis": "Optimization controls, not physical restrictions.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P035",
+      "group": "Native numerical inference",
+      "parameter": "MAP serialization",
+      "old_value": "strict JSON allow_nan=False; rejected attempts may contain -inf",
+      "action": "replace",
+      "prospective_v2": "Preserve upstream failures; JSON records encode nonfinite diagnostic values explicitly without changing model.",
+      "scientific_basis": "Represent rejected support explicitly in a reviewed serializer; do not label a finite model all-infinite because the writer failed.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P036",
+      "group": "Native numerical inference",
+      "parameter": "Ensembles and walkers",
+      "old_value": "4 independent ensembles, 24 walkers each",
+      "action": "candidate",
+      "prospective_v2": "Standard sampler ensemble/nested configuration and convergence evidence; no mandatory four-by-24 geometry.",
+      "scientific_basis": "Different sampler from the reference is acceptable if posterior exploration and diagnostics are adequate.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P037",
+      "group": "Native numerical inference",
+      "parameter": "Moves",
+      "old_value": "50% StretchMove + 50% DEMove",
+      "action": "candidate",
+      "prospective_v2": "Standard sampler moves/options, documented per fit.",
+      "scientific_basis": "Sampler controls; not a TRICERATOPS prerequisite.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P038",
+      "group": "Native numerical inference",
+      "parameter": "Initialization seeds",
+      "old_value": "[934871,934988,935105,935222]",
+      "action": "candidate",
+      "prospective_v2": "Explicit preserved native seed; no candidate-specific copied hardcoded initializer seeds.",
+      "scientific_basis": "Preserve all seeds and continuation RNG states.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P039",
+      "group": "Native numerical inference",
+      "parameter": "Sampler seeds",
+      "old_value": "[238017,238226,238435,238644]",
+      "action": "candidate",
+      "prospective_v2": "Preserve sampler seed/output; do not change seeds to get a favourable fit.",
+      "scientific_basis": "No replacing unsuccessful chains with favourable seeds.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P040",
+      "group": "Native numerical inference",
+      "parameter": "Initialization spread",
+      "old_value": "Native [2,.12,.12,.12,.25,.15,.15,.015]; fresh duration-coordinate starts [2,.12,.08,.12,.2,.15,.15,.02] before exact transformation",
+      "action": "delete",
+      "prospective_v2": "Remove hardcoded initialization spread; use supplied standard sampler controls.",
+      "scientific_basis": "Exact defaults and expressions preserved in static appendix.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P041",
+      "group": "Native numerical inference",
+      "parameter": "Endpoints",
+      "old_value": "3000,6000,12000,24000 steps; deterministic continuation only",
+      "action": "candidate",
+      "prospective_v2": "Convergence budget appropriate to sampler/candidate, not universal 3k/6k/12k/24k endpoints.",
+      "scientific_basis": "Finite compute budget may hold a real planet; it is not a physical false-positive test.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P042",
+      "group": "Native numerical inference",
+      "parameter": "Burn-in",
+      "old_value": "min(1000, floor(steps/3))",
+      "action": "candidate",
+      "prospective_v2": "Burn-in/discard based on convergence evidence; not fixed half-chain policy.",
+      "scientific_basis": "Check stationarity and effective independent draws; step count alone is insufficient.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P043",
+      "group": "Native numerical inference",
+      "parameter": "Rhat/epoch ESS diagnostics",
+      "old_value": "One predeclared walker from each ensemble; all rank Rhat<=1.03, epoch bulk ESS>=100",
+      "action": "candidate",
+      "prospective_v2": "Inspect independent-chain mixing/ESS where appropriate; no mandatory old rank-Rhat/epoch-ESS gate or misuse of ensemble walkers.",
+      "scientific_basis": "Paper-style numerical thresholds; correlated walkers are not independent chains. Diagnostic construction differs from NUTS.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P044",
+      "group": "Native numerical inference",
+      "parameter": "Radius precision admission gate",
+      "old_value": "median(k)/std(k)>3, all retained posterior samples",
+      "action": "replace",
+      "prospective_v2": "Report quantile-width radius SNR and inspect radius posterior; no custom fixed-max SNR gate substituting for scientific review.",
+      "scientific_basis": "Not required by calc_probs. The reference applies median(k)/half(16th-84th percentile width)>3 in its final fit; our median/std differs. This may hold a real grazing planet; C10 fails both definitions.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P045",
+      "group": "Native numerical inference",
+      "parameter": "Additional reported convergence",
+      "old_value": "Rhat<1.01 and chain length>50*tau is reported separately, not the adopted framework gate",
+      "action": "candidate",
+      "prospective_v2": "Preserve relevant standard sampler diagnostics, residuals, boundary and timing checks.",
+      "scientific_basis": "Do not report the weaker adopted gate as proof the stronger one passed.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P046",
+      "group": "Timing and acquisition",
+      "parameter": "Local timing profile",
+      "old_value": "65 period x65 epoch grid, epoch +/-1.999h; shape/noise fixed at mode",
+      "action": "candidate",
+      "prospective_v2": "Review aliases/timing from data; no fixed local grid/offset scan as a universal acceptance gate.",
+      "scientific_basis": "This is a local conditional profile, not a global alias search or marginalized timing evidence.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P047",
+      "group": "Timing and acquisition",
+      "parameter": "Quarter offset profile",
+      "old_value": "+/-1.5h, 121 points (1.5min spacing)",
+      "action": "candidate",
+      "prospective_v2": "Quarter timing/coverage and TTV review when warranted; no universal +/-90-minute seven-point profile.",
+      "scientific_basis": "Quarter timing coverage and uncertainty matter; no universal fixed-hour grid.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P048",
+      "group": "Timing and acquisition",
+      "parameter": "Acquisition metadata",
+      "old_value": "TDB/BKJD, BJDREF2454833, mid-exposure;270 frames;6.538751429414s spacing,6.01980290327s live",
+      "action": "retain",
+      "prospective_v2": "Real cadence/exposure/time system and acquisition metadata remain measured inputs.",
+      "scientific_basis": "Use the actual delivered cadence/exposure; do not inherit TESS exposure defaults for Kepler long cadence.",
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P049",
+      "group": "Timing and acquisition",
+      "parameter": "Native integration",
+      "old_value": "5 frames/group,54 group centres;270-centre and finite-live-frame checks",
+      "action": "candidate",
+      "prospective_v2": "Actual exposure, standard batman/juliet supersampling checked per ingress/cadence; no universal54 requirement.",
+      "scientific_basis": "Resolution must be checked at the accepted posterior and ingress shapes, not justified solely by a large number.",
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P050",
+      "group": "Timing and acquisition",
+      "parameter": "Clock adoption",
+      "old_value": "Accepted joint posterior median P and central reference epoch, no FPP selection",
+      "action": "retain",
+      "prospective_v2": "Adopt accepted joint-posterior median P/central epoch before FPP; never choose timing by FPP.",
+      "scientific_basis": "A defensible adopted ephemeris; no choosing the clock that minimises FPP.",
+      "references": [
+        "KEPLER",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P051",
+      "group": "Probability light-curve packet",
+      "parameter": "Full-phase construction",
+      "old_value": "Retain native primary groups; append other original-valid photons in .6d quarter cells",
+      "action": "delete",
+      "prospective_v2": "Remove full-phase sparse-cell/custom affine packet. Direct duration-scaled folded native data.",
+      "scientific_basis": "Additional bookkeeping enables common transforms; it is not an upstream requirement.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P052",
+      "group": "Probability light-curve packet",
+      "parameter": "Sparse added cells",
+      "old_value": "Merge cells with fewer than3 points into nearest adjacent same-quarter cell",
+      "action": "delete",
+      "prospective_v2": "Remove sparse added cells and invented missing quarter noise.",
+      "scientific_basis": "A numerical/model choice; preserve actual timing and group membership.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P053",
+      "group": "Probability light-curve packet",
+      "parameter": "Quarter noise reuse",
+      "old_value": "Native normalization and fixed OOT jitter on all usable photons",
+      "action": "delete",
+      "prospective_v2": "Remove fixed native-quarter noise reuse requirement; normalize measured errors and review noise.",
+      "scientific_basis": "Requires adequacy away from the primary as well as in native windows.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P054",
+      "group": "Probability light-curve packet",
+      "parameter": "MAP template",
+      "old_value": "Native physical MAP circular template; quadratic LD",
+      "action": "delete",
+      "prospective_v2": "Remove fixed native MAP template from probability likelihood.",
+      "scientific_basis": "Template uncertainty is not marginalized by internal transform parity.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P055",
+      "group": "Probability light-curve packet",
+      "parameter": "Noise export",
+      "old_value": "Native effective errors times exp(MAP log-noise)",
+      "action": "delete",
+      "prospective_v2": "Remove custom jitter/noise export. Declare supported folded-noise sigma/basis in native review; formal bin errors are not automatically total noise.",
+      "scientific_basis": "Probability evidence fixes this scale; no full noise posterior marginalization.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P056",
+      "group": "Probability light-curve packet",
+      "parameter": "Baseline transform",
+      "old_value": "Affine ridge-MAP baseline, prior precision diag[100,4]; same nonlinear y/H(y) for data/models",
+      "action": "delete",
+      "prospective_v2": "Remove custom affine MAP baseline transformation from probability likelihood.",
+      "scientific_basis": "Applying the same operator is necessary, but does not prove an unbiased astrophysical evidence calculation.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P057",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance",
+      "old_value": "First-order Jacobian J at observed MAP; B J diag(sigma^2) J^T B^T",
+      "action": "delete",
+      "prospective_v2": "Remove custom covariance likelihood/projector; use stock normalized-light-curve likelihood with noise adequacy review.",
+      "scientific_basis": "Propagates detrending correlations, not a time-correlated stellar-noise GP or full nuisance posterior.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P058",
+      "group": "Probability light-curve packet",
+      "parameter": "Folded range",
+      "old_value": "+/-2 fitted T14",
+      "action": "retain",
+      "prospective_v2": "Probability window +/-2 fitted durations, with fit coverage checked beforehand.",
+      "scientific_basis": "A duration-scaled probability window has a direct reference analogue; inspect lost longer alternatives.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P059",
+      "group": "Probability light-curve packet",
+      "parameter": "Binning",
+      "old_value": "200 total equal phase bins over4T14; omit empty bins",
+      "action": "retain",
+      "prospective_v2": "At most200 total folded bins; preserve fewer actual points; no fabricated empty cells.",
+      "scientific_basis": "Current C12 occupies178 bins. Check numerical effect for long-cadence, short ingress and grazing shapes.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P060",
+      "group": "Probability light-curve packet",
+      "parameter": "Bin weights",
+      "old_value": "Inverse corrected conditional variance; keep full pooled covariance",
+      "action": "retain",
+      "prospective_v2": "Inverse-variance binning of measured conditional errors; preserve contributing photon indices.",
+      "scientific_basis": "Stock API accepts scalar scatter; this is a more complex likelihood, requiring matched-data controls.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P061",
+      "group": "Probability light-curve packet",
+      "parameter": "Flux clipping",
+      "old_value": "No added sigma clipping in this packet; original masks remain",
+      "action": "delete",
+      "prospective_v2": "No arbitrary flux clipping gate or custom bound-driven clipping in preparation.",
+      "scientific_basis": "No obligation to copy TESS clipping. Inspect outliers without hypothesis-dependent removal.",
+      "references": [
+        "COLLIER",
+        "API"
+      ]
+    },
+    {
+      "id": "P062",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance mode retention",
+      "old_value": "lambda>1e-6*largest eigenvalue",
+      "action": "delete",
+      "prospective_v2": "Remove eigenmode retention/cutoff machinery.",
+      "scientific_basis": "Drops low-variance modes, not just exact null modes. Test evidence sensitivity; normalization cancellation alone does not recover discarded information.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P063",
+      "group": "Probability light-curve packet",
+      "parameter": "Covariance integrity tolerances",
+      "old_value": "reconstruction rtol1e-10,atol1e-20; negative mode tolerance1e-10*lambda_max",
+      "action": "delete",
+      "prospective_v2": "Remove covariance-specific tolerances with removed covariance model.",
+      "scientific_basis": "Retain checks; these are not physical cuts.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P064",
+      "group": "Probability light-curve packet",
+      "parameter": "Observed-bin reproduction tolerance",
+      "old_value": "max absolute flux error<=1e-10",
+      "action": "replace",
+      "prospective_v2": "Direct upstream known-object parity replaces same-custom-operator reproduction test.",
+      "scientific_basis": "Necessary operator check, not empirical calibration.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P065",
+      "group": "Probability light-curve packet",
+      "parameter": "Noise family",
+      "old_value": "FIXED_EXPORTED_MAP_SCALE",
+      "action": "replace",
+      "prospective_v2": "Stock scalar likelihood with candidate-specific measured/justified total folded noise; assess red noise/activity before acceptance, no automatic white-noise adequacy claim.",
+      "scientific_basis": "Config noise_quadrature_nodes128 does not make this active likelihood noise-marginalized.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P066",
+      "group": "Probability light-curve packet",
+      "parameter": "Complete-group / null-quarter reduction",
+      "old_value": "Drop only entire independent groups with exactly zero bin projection; Q1 null at both declared clocks",
+      "action": "delete",
+      "prospective_v2": "Remove custom complete-group/null-quarter covariance reduction; direct fold selects actual contributing photons.",
+      "scientific_basis": "C12 full-reference observed/model/covariance differences were exactly zero. This recovery is not a new physical validation.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P067",
+      "group": "Stellar catalogue scene",
+      "parameter": "Resolved source census",
+      "old_value": "All original Gaia scene IDs + target; C12:31 sources",
+      "action": "candidate",
+      "prospective_v2": "Complete actual scene with potential contaminants and true apertures; no universal 120-arcsec census claim.",
+      "scientific_basis": "Audit flux outside the retained60arcsec field and catalogue completeness; no missing source may silently vanish.",
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P068",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC search",
+      "old_value": "1arcmin cone; pagesize10000",
+      "action": "delete",
+      "prospective_v2": "TIC lookup not mandatory for Gaia-authenticated background source; optional catalogue measurements preserved.",
+      "scientific_basis": "Compare with actual extraction and contamination radius, not an arbitrary universal angular radius.",
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P069",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia DR2 association",
+      "old_value": "Exact DR3 identity, DR2 neighbourhood<500mas",
+      "action": "retain",
+      "prospective_v2": "Exact source/crossmatch identity; do not substitute parent or ambiguous cross-identities.",
+      "scientific_basis": "Astrometric/crossmatch ambiguities require review; a proximity alone is not sufficient.",
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P070",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue observables",
+      "old_value": "Gaia G,BP,RP,parallax/error,RUWE,pm/coords,APs; TIC mass/radius/Teff/metallicity/EBV and errors",
+      "action": "candidate",
+      "prospective_v2": "Actual measured stellar/photometric fields with provenance and supported model domain.",
+      "scientific_basis": "Exact field values and missingness embedded in audit; catalogue estimates are not all independent measurements.",
+      "references": [
+        "CODE",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P071",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC duplicate handling",
+      "old_value": "Only unique official DUPLICATE->canonical pointer with exactly agreeing source fields",
+      "action": "retain",
+      "prospective_v2": "Resolve official duplicate identities explicitly without dropping conflicting/ambiguous sources.",
+      "scientific_basis": "Legitimate identity safeguard, not a planet-selection cut. Preserve raw aliases.",
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P072",
+      "group": "Stellar catalogue scene",
+      "parameter": "Stellar bank size",
+      "old_value": "4096 particles/catalogue/source",
+      "action": "delete",
+      "prospective_v2": "Remove mandatory4096-particle scene banks.",
+      "scientific_basis": "Finite bank error is not removed by1M evidence draws. Check effective support/convergence separately.",
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P073",
+      "group": "Stellar catalogue scene",
+      "parameter": "Bank random seed",
+      "old_value": "20261011, sequential scene construction",
+      "action": "delete",
+      "prospective_v2": "Remove scene-bank RNG seeds because banks are absent.",
+      "scientific_basis": "Fixed numerical approximation; preserve it, do not pick a favourable bank.",
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P074",
+      "group": "Stellar catalogue scene",
+      "parameter": "Target family",
+      "old_value": "TIC for active C12; alternatives GAIA_FLAME/POPULATION exist",
+      "action": "candidate",
+      "prospective_v2": "Adopt evidence-based host measurements; no required TIC/Gaia/empirical particle-route contest.",
+      "scientific_basis": "Choose from authenticated stellar evidence before seeing FPP; no universally correct family.",
+      "references": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "P075",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue distance eligibility",
+      "old_value": "parallax/error>=5; error>0",
+      "action": "delete",
+      "prospective_v2": "Remove parallaxSNR>=5 route gate; supported physical target parallax remains needed by bound-companion prior.",
+      "scientific_basis": "Not a general TRICERATOPS validation requirement. Low-SNR distance needs a proper posterior/prior rather than a failed inverse-parallax route.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P076",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue extinction eligibility",
+      "old_value": "TIC EBV required, even for Gaia-family route",
+      "action": "delete",
+      "prospective_v2": "Remove mandatory measured TIC EBV for every scene source.",
+      "scientific_basis": "Driven by our BC model. Missing TIC EBV is not evidence a planet cannot be validated; do not equate Gaia A0 to Av.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P077",
+      "group": "Stellar catalogue scene",
+      "parameter": "TIC M/R/Teff eligibility",
+      "old_value": "All three needed",
+      "action": "replace",
+      "prospective_v2": "Positive finite M/R/Teff for potentially capable sources; no custom TIC route restriction.",
+      "scientific_basis": "Physical host properties are needed; stock offers estimation routes. Coherent alternative estimation requires review, not fabricated values.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P078",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia-family eligibility",
+      "old_value": "FLAME M,R and GSP-Phot Teff with lower/upper bounds",
+      "action": "delete",
+      "prospective_v2": "Remove Gaia GSP-Phot route restrictions/mandatory logg-mass construction.",
+      "scientific_basis": "More restrictive than a universal API contract; quality/systematic errors of Gaia APs still need consideration.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P079",
+      "group": "Stellar catalogue scene",
+      "parameter": "Scene TIC M/R errors",
+      "old_value": "Reported errors; only missing errors use10%M/6%R",
+      "action": "candidate",
+      "prospective_v2": "Preserve measured stellar uncertainties in native fit/scene provenance; stock probability takes its documented point inputs.",
+      "scientific_basis": "This differs from native preparer which always assigns10/6. Fallbacks are assumptions, not measured precision.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P080",
+      "group": "Stellar catalogue scene",
+      "parameter": "Metallicity",
+      "old_value": "TIC MH/error else Gaia GSP-Phot MH with bounds; no defaultSolar fill",
+      "action": "delete",
+      "prospective_v2": "Remove mandatory measured metallicity gate/MIST bank conditioning; document stock metallicity assumptions.",
+      "scientific_basis": "Our BC/LD model needs a declared metallicity prior; stock target code setsZ=0. Missing MH need not imply no defensible prior.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P081",
+      "group": "Stellar catalogue scene",
+      "parameter": "Missing Teff/MH/EBV errors",
+      "old_value": "Fixed conditional value when centre exists without error",
+      "action": "delete",
+      "prospective_v2": "Remove invented fixed Teff/MH/EBV error assignments from particle banks.",
+      "scientific_basis": "Not zero measured uncertainty. Propagate justified systematics/uncertainty in a reviewed model.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P082",
+      "group": "Stellar catalogue scene",
+      "parameter": "Gaia uncertainty approximation",
+      "old_value": "50:50 split half-Gaussians with median-to16/84percentile widths",
+      "action": "delete",
+      "prospective_v2": "Remove q16/q84 symmetric-Gaussian Gaia bank approximation.",
+      "scientific_basis": "Approximates marginal quantiles; does not reconstruct joint catalogue posterior or include systematic calibration.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P083",
+      "group": "Stellar catalogue scene",
+      "parameter": "Parameter independence",
+      "old_value": "Independent M,R,Teff,MH,EBV,parallax draws",
+      "action": "delete",
+      "prospective_v2": "Remove independent multiparameter scene-bank construction; use documented stock input/model assumptions.",
+      "scientific_basis": "Can create inconsistent stellar combinations and discard catalogue correlations; require sensitivity/physical checks.",
+      "references": [
+        "CODE",
+        "GAIA",
+        "COLLIER"
+      ]
+    },
+    {
+      "id": "P084",
+      "group": "Stellar catalogue scene",
+      "parameter": "Distance draw",
+      "old_value": "Positive truncated Gaussian parallax then1000/plx pc; no Galactic distance prior",
+      "action": "replace",
+      "prospective_v2": "No positive-Gaussian distance redraw; use stock parallax input and its documented approximation.",
+      "scientific_basis": "Limited high-SNR route, not a low-SNR distance solution.",
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P085",
+      "group": "Stellar catalogue scene",
+      "parameter": "Reddening law",
+      "old_value": "Av=3.1*EBV",
+      "action": "replace",
+      "prospective_v2": "No custom per-particle reddening law; choose actual upstream-compatible population and document extinction assumptions.",
+      "scientific_basis": "ConventionalRv3.1, not a measured source-specific extinction law.",
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P086",
+      "group": "Stellar catalogue scene",
+      "parameter": "Derived gravity",
+      "old_value": "GM/R^2 cgs",
+      "action": "replace",
+      "prospective_v2": "Remove custom derived-gravity bank; upstream model handles its own stellar relations/LD lookup.",
+      "scientific_basis": "Correct units; still inherits sampled M/R consistency.",
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P087",
+      "group": "Stellar catalogue scene",
+      "parameter": "Catalogue bank weights",
+      "old_value": "Uniform1/4096; physical-G residual diagnostic only",
+      "action": "delete",
+      "prospective_v2": "Remove equal-weight4096-particle catalogue banks.",
+      "scientific_basis": "Physical luminosity inconsistency is not automatically repaired by observed-G anchoring.",
+      "references": [
+        "GAIA",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P088",
+      "group": "Empirical scene route",
+      "parameter": "Population G smoothing",
+      "old_value": ".1mag (diagnostic summaries also .05,.2)",
+      "action": "delete",
+      "prospective_v2": "Remove empirical population G smoothing bandwidth.",
+      "scientific_basis": "This is a model bandwidth, not measured Gaia photometric uncertainty. Needs adequacy/sensitivity tests.",
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P089",
+      "group": "Empirical scene route",
+      "parameter": "Population BP-RP smoothing",
+      "old_value": ".15mag",
+      "action": "delete",
+      "prospective_v2": "Remove empirical BP-RP smoothing bandwidth.",
+      "scientific_basis": "Declared empirical approximation, not TRICERATOPS default.",
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P090",
+      "group": "Empirical scene route",
+      "parameter": "Population parallax conditioning",
+      "old_value": "Measured Gaussian parallax likelihood, including negative values",
+      "action": "delete",
+      "prospective_v2": "Remove empirical population parallax reweighting.",
+      "scientific_basis": "Avoids inverse-parallax failure but finite catalogue/selection prior remains a scientific choice.",
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P091",
+      "group": "Empirical scene route",
+      "parameter": "Effective particles",
+      "old_value": "ESS and maximum weight reported; sparse ESS~1-2 retained",
+      "action": "delete",
+      "prospective_v2": "Remove effective-particle route gate; inspect actual upstream population adequacy instead.",
+      "scientific_basis": "Repeating integration cannot add stars to a sparse prior bank; no unreviewed automatic pruning/ESS veto.",
+      "references": [
+        "GAIA",
+        "API"
+      ]
+    },
+    {
+      "id": "P092",
+      "group": "Measured neighbor override",
+      "parameter": "C12 seismic source",
+      "old_value": "Exact APOKASC3 Gold KIC4904086/Gaia2103348121689134592 only",
+      "action": "retain",
+      "prospective_v2": "Preserve exact measured seismic neighbour identification and evidence; no automatic copied C12 override.",
+      "scientific_basis": "Measured evidence is preferable to fabricating a giant from a main-sequence relation. Other30sources unchanged.",
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P093",
+      "group": "Measured neighbor override",
+      "parameter": "Seismic parameters",
+      "old_value": "M1.1699+/-.0481,R10.7408+/-.1994,Teff4773.5347+/-44.8615,FeH-.0708+/-.058",
+      "action": "candidate",
+      "prospective_v2": "Use source-specific measured M/R/Teff with provenance when appropriate; no forced override for new scenes.",
+      "scientific_basis": "Source identifiers, original values/errors and catalogue receipt retained.",
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P094",
+      "group": "Measured neighbor override",
+      "parameter": "Seismic particles and assumptions",
+      "old_value": "4096, seed entropy[2026,10,19,11,0]; independent draws, scaledSolar BC; fixed EBV if error missing",
+      "action": "delete",
+      "prospective_v2": "Remove seismic particle constructor and invented particle errors from new framework.",
+      "scientific_basis": "Measurements do not supply absent joint covariance or a measured alpha-enhanced BC model.",
+      "references": [
+        "MIST",
+        "GAIA"
+      ]
+    },
+    {
+      "id": "P095",
+      "group": "Photometry and model support",
+      "parameter": "Flux/colour grids",
+      "old_value": "Pinned MISTUBVRIplus SHA524dc5d0...; GaiaG_EDR3,KeplerKp,TESS; Vega",
+      "action": "replace",
+      "prospective_v2": "Remove MIST/Gaia colour-grid engine; unchanged upstream flux relations with disclosed TESS-based limitations.",
+      "scientific_basis": "Appropriate filters are necessary; numerical table support is not proof of stellar-model accuracy.",
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P096",
+      "group": "Photometry and model support",
+      "parameter": "BC interpolation",
+      "old_value": "LinearTeff/logg/FeH/Av, no clipping/extrapolation",
+      "action": "delete",
+      "prospective_v2": "Remove custom bolometric-correction interpolation.",
+      "scientific_basis": "Reasonable safety boundary; supply a scientifically justified alternative for unsupported objects, never erase them.",
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P097",
+      "group": "Photometry and model support",
+      "parameter": "BC rectangular domain",
+      "old_value": "Teff2500..1000000K;logg-4..9.5;FeH-4..+.75;Av0..6",
+      "action": "delete",
+      "prospective_v2": "Remove mandatory MIST rectangular-domain gate; upstream model support still needs scientific review.",
+      "scientific_basis": "Includes source-table padding. WDlogg9.57 and some metal-rich neighbors exceed this chosen table, not nature or TRICERATOPS.",
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P098",
+      "group": "Photometry and model support",
+      "parameter": "Luminosity constants",
+      "old_value": "Tsun5772K,Mbolsun4.74; Lband proportionalR^2(T/Tsun)^4*10^(.4BC)",
+      "action": "replace",
+      "prospective_v2": "Use upstream physical relations/constants, no separate bolometric luminosity engine.",
+      "scientific_basis": "Common within-band normalization cancels; distinguish colour magnitudes and physical cross-band fluxes.",
+      "references": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "P099",
+      "group": "Photometry and model support",
+      "parameter": "Gaia-G to Kepler anchor",
+      "old_value": "Kp=observedG+BC_G-BC_Kp; composite totalG convention for unresolved scenarios",
+      "action": "delete",
+      "prospective_v2": "Remove composite Gaia-G to Kepler anchoring likelihood.",
+      "scientific_basis": "Composite SED is not refit to observations; blending/colour/multiplicity conditioning needs known-object controls.",
+      "references": [
+        "CODE",
+        "MIST"
+      ]
+    },
+    {
+      "id": "P100",
+      "group": "Photometry and model support",
+      "parameter": "Paired population colours",
+      "old_value": "Every Gaia row uniquely matches all12printed physical fields in separately returned Kepler table; AB-Vega=.122666mag",
+      "action": "delete",
+      "prospective_v2": "One actual upstream population; remove paired-filter simulation/row-matching acquisition design.",
+      "scientific_basis": "Exact identity check is sound; two independent simulations need not share stars. Prefer a reviewed common physical catalogue with both bands, rather than approximate joining/redrawing.",
+      "references": [
+        "API"
+      ]
+    },
+    {
+      "id": "P101",
+      "group": "Photometry and model support",
+      "parameter": "Limb-darkening lookup",
+      "old_value": "NearestZ,thenTeff,thenlogg; nearest outside grid, no uncertainty",
+      "action": "retain",
+      "prospective_v2": "Use mission=Kepler upstream LD; verify cool-star/gravity/passband support per candidate.",
+      "scientific_basis": "Using the Kepler table is right; nearest-edge lookup is not proof of cool-star/gravity support. Inspect actual coverage.",
+      "references": [
+        "CODE",
+        "STELLAR"
+      ]
+    },
+    {
+      "id": "P102",
+      "group": "Field response and dilution",
+      "parameter": "Aperture response",
+      "old_value": "Actual source-quarter masks/WCS and published CCD PRF core; full resolved census",
+      "action": "candidate",
+      "prospective_v2": "Actual apertures/coordinates and reviewed upstream Gaussian OR measured Kepler fractions; no silent response fallback.",
+      "scientific_basis": "Necessary for KBonus background extractions; stock TESS Gaussian is not a better Kepler-specific measurement.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P103",
+      "group": "Field response and dilution",
+      "parameter": "Adopted PRF tail family",
+      "old_value": "EXP_MEDIAN_FIT",
+      "action": "delete",
+      "prospective_v2": "Remove invented PRF tail-family priors.",
+      "scientific_basis": "Distant-wing response extrapolation must be checked against data; not guaranteed by the published core PRF.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P104",
+      "group": "Field response and dilution",
+      "parameter": "Pointing prior",
+      "old_value": "Independent uniform quarter atoms: nominal and+/-0.2pixels on each axis",
+      "action": "delete",
+      "prospective_v2": "Remove invented pointing-mixture prior.",
+      "scientific_basis": "Five states shared across sources within a quarter; not an inferred pointing-error distribution.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P105",
+      "group": "Field response and dilution",
+      "parameter": "Unresolved spatial prior",
+      "old_value": "Uniform area disk radius2.2arcsec, sqrt(U) radial draw",
+      "action": "replace",
+      "prospective_v2": "Use stock unresolved alignment/companion model; no custom spatial integration prior.",
+      "scientific_basis": "2.2arcsec is an inherited no-imaging convention, not a complete Gaia/Kepler exclusion guarantee.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P106",
+      "group": "Field response and dilution",
+      "parameter": "Unresolved interpolation",
+      "old_value": "13x13grid on[-2.2,2.2]arcsec, bilinear throughput",
+      "action": "delete",
+      "prospective_v2": "Remove custom unresolved response interpolation grid.",
+      "scientific_basis": "Require spatial resolution checks, particularly sharp aperture edges.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P107",
+      "group": "Field response and dilution",
+      "parameter": "Throughput support",
+      "old_value": "All source-quarter throughputs finite and0<tau<=1",
+      "action": "replace",
+      "prospective_v2": "Finite normalized measured aperture fractions or supported stock Gaussian; inspect true extraction, no hardcoded PRF-throughput veto.",
+      "scientific_basis": "Do not turn unsupported response into zero contamination.",
+      "references": [
+        "GIACALONE",
+        "PRF"
+      ]
+    },
+    {
+      "id": "P108",
+      "group": "Field response and dilution",
+      "parameter": "PRF core/tail join",
+      "old_value": "3.5..4.25pixels; positive core; clipped negative polynomial samples recorded",
+      "action": "delete",
+      "prospective_v2": "Remove custom PRF core/tail join.",
+      "scientific_basis": "Physical positivity is necessary, but clipping/tail normalization require empirical comparison.",
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P109",
+      "group": "Field response and dilution",
+      "parameter": "Wing sensitivity families",
+      "old_value": "5families; nominal exponential, envelope exponential, Moffatbeta2.5/1.5 and doubled slow envelope",
+      "action": "delete",
+      "prospective_v2": "Remove custom wing sensitivity scenarios.",
+      "scientific_basis": "Only nominal used in this production; other conventional families are sensitivities, not measured probabilities.",
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P110",
+      "group": "Field response and dilution",
+      "parameter": "PRF normalization",
+      "old_value": "Radius64pixels with32/64/128convergence and analytic tail integral",
+      "action": "retain",
+      "prospective_v2": "Normalize complete measured source fractions; document quarter averaging limits. No invented PRF integral normalization.",
+      "scientific_basis": "Checks integration convergence of the assumed tail, not correctness of that tail.",
+      "references": [
+        "PRF"
+      ]
+    },
+    {
+      "id": "P111",
+      "group": "TRILEGAL population",
+      "parameter": "Population service",
+      "old_value": "TRILEGAL1.6; sky coordinates in Galactic degrees",
+      "action": "candidate",
+      "prospective_v2": "One official Gaia/TRILEGAL population route with preserved request/raw response; no silent missing-population scenarios.",
+      "scientific_basis": "Established Galactic star-count model; preserve exact request rather than relabel as empirical truth.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P112",
+      "group": "TRILEGAL population",
+      "parameter": "Area",
+      "old_value": ".1square degrees",
+      "action": "candidate",
+      "prospective_v2": "Population area/density basis from chosen official route, preserved explicitly; no duplicated two-filter requests.",
+      "scientific_basis": "Area in density normalization must match request.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P113",
+      "group": "TRILEGAL population",
+      "parameter": "Band-dependent magnitude limits",
+      "old_value": "Gaia22.5;Kepler26; mag_res.1",
+      "action": "candidate",
+      "prospective_v2": "Population selection/magnitude completeness justified for field; do not import survey-specific hard limits blindly.",
+      "scientific_basis": "Audit completeness of selectable contaminants and native colour overlap; a finite faint limit is not exact zero contamination.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P114",
+      "group": "TRILEGAL population",
+      "parameter": "Photometric systems",
+      "old_value": "gaiaEDR3 and kepler_2mass, separate calls",
+      "action": "candidate",
+      "prospective_v2": "One upstream-compatible photometric system/file; preserve upstream TESS flux approximation in Kepler mode.",
+      "scientific_basis": "Same physical population across filters is needed for exact rowwise colours; independent jobs do not ensure that.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P115",
+      "group": "TRILEGAL population",
+      "parameter": "Extinction",
+      "old_value": "IRSA SandF integratedEBV*3.1; height110pc, fractionalscatter.1",
+      "action": "candidate",
+      "prospective_v2": "Adopt documented field extinction/model assumptions; not mandatory per-source measured EBV.",
+      "scientific_basis": "Full line-of-sight value is population boundary input, not every source extinction.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P116",
+      "group": "TRILEGAL population",
+      "parameter": "IMF and Galaxy defaults",
+      "old_value": "Exact75-entry request embedded, including Chabrier lognormal and disk/halo/bulge prescriptions",
+      "action": "retain",
+      "prospective_v2": "Chosen official population model's IMF/Galaxy assumptions documented, not represented as measured truth.",
+      "scientific_basis": "All exact keys are included below. Internal code replay does not validate each Galactic-model hyperparameter for this field.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P117",
+      "group": "TRILEGAL population",
+      "parameter": "Binary synthesis",
+      "old_value": "binary_kind0; retained binary_frac.3 andq.7..1 inactive underkind0",
+      "action": "retain",
+      "prospective_v2": "Document population binary assumptions to avoid hidden double counting with upstream binary scenarios.",
+      "scientific_basis": "Do not double-count synthetic unresolved binaries and explicitly generated scenario companions.",
+      "references": [
+        "GIACALONE"
+      ]
+    },
+    {
+      "id": "P118",
+      "group": "Probability scientific priors",
+      "parameter": "Scenario census",
+      "old_value": "15target families plus3per resolved neighbor; C12=105; no dropping",
+      "action": "retain",
+      "prospective_v2": "Full upstream 15 target plus3 per capable neighbour scenario structure, no removed astrophysical alternative.",
+      "scientific_basis": "Complete alternatives are necessary; removing inconvenient families can spuriously lower FPP.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P119",
+      "group": "Probability scientific priors",
+      "parameter": "Background eligible hosts",
+      "old_value": "Kepler magnitude>=sampled targetKp (fainter/equal)",
+      "action": "replace",
+      "prospective_v2": "Use official upstream population filtering; assess rare unsupported host types without clipping/removing stars to pass.",
+      "scientific_basis": "Document bright-source treatment in resolved scene; audit catalogue incompleteness rather than assuming brighter blends impossible.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P120",
+      "group": "Probability scientific priors",
+      "parameter": "Chance alignment prior",
+      "old_value": "min(Neligible/.1deg2 * pi*(2.2arcsec/3600)^2,1)",
+      "action": "replace",
+      "prospective_v2": "Use unchanged upstream chance-alignment prior; no custom spatial/area likelihood.",
+      "scientific_basis": "Matches declared circular disk area. Historicalr^2 convention was separately amended before currentfreeze.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P121",
+      "group": "Probability scientific priors",
+      "parameter": "Bound companion frequency",
+      "old_value": "Pinned Moe/DiStefano-based TP/EB prior, sampledparallax and2.2arcsec",
+      "action": "replace",
+      "prospective_v2": "Use unchanged upstream companion prior; real contrast curve/MOLUSC inputs when available.",
+      "scientific_basis": "Not a measured companion exclusion; imaging/MOLUSC support needs explicit binding.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P122",
+      "group": "Probability scientific priors",
+      "parameter": "Planet radius prior",
+      "old_value": "flat_planet_priorsFalse;R=.5..20Re,breaks3/6Re; slopes0,-4,-.5 or0,-7,-.5 ifM<=.45",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock physical planet-radius prior, flatpriors=False; native k ceiling is absent.",
+      "scientific_basis": "These are original statistical assumptions, not an M/K empirical calibration. Do not flatten simply to make a target pass.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P123",
+      "group": "Probability scientific priors",
+      "parameter": "Inclination",
+      "old_value": "Isotropic cos(i) prior",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock isotropic inclination prior.",
+      "scientific_basis": "Importance targeting must retain this prior throughp/q weighting.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P124",
+      "group": "Probability scientific priors",
+      "parameter": "Planet eccentricity",
+      "old_value": "Beta(.867,3.030)",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock planet-eccentricity prior.",
+      "scientific_basis": "Established population assumption; differs from circular native conditioning.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P125",
+      "group": "Probability scientific priors",
+      "parameter": "Binary eccentricity",
+      "old_value": "power-law shape.2 forP<=10d,else.6",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock binary-eccentricity prior.",
+      "scientific_basis": "The threshold/distribution is inherited, not a Kepler exposure setting.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P126",
+      "group": "Probability scientific priors",
+      "parameter": "Argument of periapse",
+      "old_value": "Uniform0..360degrees",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock argument-of-periapse prior.",
+      "scientific_basis": "Check period units and transit/collision geometry.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P127",
+      "group": "Probability scientific priors",
+      "parameter": "Binary mass ratios",
+      "old_value": "Pinned mass-dependent q and q_companion distributions; twin splitq=.95; full coefficient source in appendix",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock binary mass-ratio/twin prescription.",
+      "scientific_basis": "Preserve empirical mass thresholds/twin fraction; not a new posterior tuning knob.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P128",
+      "group": "Probability scientific priors",
+      "parameter": "Flux conditioning",
+      "old_value": "COMPOSITE_OBSERVED_G",
+      "action": "delete",
+      "prospective_v2": "Remove custom COMPOSITE_OBSERVED_G component-flux likelihood; use stock model with disclosed limitations.",
+      "scientific_basis": "Observed total source flux allocated between components rather than upstream primary-G anchor; requires matched physical controls.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P129",
+      "group": "Probability scientific priors",
+      "parameter": "Collision and transit support",
+      "old_value": "Zero likelihood for collision/nontransit/invalid branch; include in attempted denominator",
+      "action": "retain",
+      "prospective_v2": "Stock attempted-draw denominator includes invalid/nontransiting zero weights; no replacement draws.",
+      "scientific_basis": "Correct denominator matters; invalid draws cannot be silently replaced.",
+      "references": [
+        "PRIORS",
+        "STELLAR",
+        "CODE"
+      ]
+    },
+    {
+      "id": "P130",
+      "group": "Probability scientific priors",
+      "parameter": "Companion M/R/Teff relation",
+      "old_value": "Torres ifM>.63Msun, cool-dwarf spline otherwise; Rfloor.1Rsun,Tefffloor2800K,cappedatprimary",
+      "action": "retain",
+      "prospective_v2": "Unmodified stock companion relation/floors; applicability to ultracool/WD hosts remains explicit, no blanket support claim.",
+      "scientific_basis": "Inherited floors/caps also need cool-star applicability review; upstream provenance does not make every low-mass companion physical.",
+      "references": [
+        "STELLAR",
+        "GIACALONE",
+        "MANN15",
+        "MANN19"
+      ]
+    },
+    {
+      "id": "P131",
+      "group": "Probability scientific priors",
+      "parameter": "Special cold equal-binary branch",
+      "old_value": "M<=.1Msun,q=1,Teff<2500K: exact identical component copied",
+      "action": "delete",
+      "prospective_v2": "Remove custom cold equal-binary extension with custom engine; do not claim upstream general ultracool/WD support.",
+      "scientific_basis": "Do not remove this supported branch during domain checks. It is not general support for all ultracool stars/WDs.",
+      "references": [
+        "STELLAR"
+      ]
+    },
+    {
+      "id": "P132",
+      "group": "Probability numerical integration",
+      "parameter": "Planet proposal mixture",
+      "old_value": "10%prior +90%targeted radius/inclination; exactp/q correction",
+      "action": "delete",
+      "prospective_v2": "Remove custom importance-proposal mixture.",
+      "scientific_basis": "Defensive support is not a changed scientific prior. Validate against independent reference integration.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P133",
+      "group": "Probability numerical integration",
+      "parameter": "Targeted planet radius width",
+      "old_value": "+/-15% around apparentk/dilution-derived centre",
+      "action": "delete",
+      "prospective_v2": "Remove targeted radius proposal width.",
+      "scientific_basis": "Not a hard radius exclusion because of full-prior mixture; may still give high-variance weights.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P134",
+      "group": "Probability numerical integration",
+      "parameter": "Targeted planet duration width",
+      "old_value": "+/- .2hours",
+      "action": "delete",
+      "prospective_v2": "Remove targeted duration proposal width.",
+      "scientific_basis": "Not a six-hour model cap or a scientific duration prior.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P135",
+      "group": "Probability numerical integration",
+      "parameter": "Proposal fallback tolerances",
+      "old_value": "radiusCDFinterval<1e-12 ormass within16machineeps of.45 -> fullprior",
+      "action": "delete",
+      "prospective_v2": "Remove radius-CDF fallback tolerances with removed custom proposal.",
+      "scientific_basis": "Exact expressions in appendix; preserves support rather than discarding difficult draws.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P136",
+      "group": "Probability numerical integration",
+      "parameter": "Binary proposal",
+      "old_value": "10%prior +90%targeted inclination; depthwidth+/-50%,durationwidth+/-.3hours",
+      "action": "delete",
+      "prospective_v2": "Remove targeted binary proposal mixture/windows.",
+      "scientific_basis": "Proposal windows are not physical vetoes when importance weights/support are correct.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P137",
+      "group": "Probability numerical integration",
+      "parameter": "Binary depth interval inversion",
+      "old_value": "40bisection steps; intensityfloor1e-10",
+      "action": "delete",
+      "prospective_v2": "Remove custom binary-depth bisection targeting.",
+      "scientific_basis": "This approximation targets proposals only; physical likelihood must use the retained eclipse model.",
+      "references": [
+        "PRIORS",
+        "API"
+      ]
+    },
+    {
+      "id": "P138",
+      "group": "Probability numerical integration",
+      "parameter": "Draw count",
+      "old_value": "1,000,000attempted draws per scenario/repeat",
+      "action": "retain",
+      "prospective_v2": "1million attempted draws per scenario per repeat, stock default and unchanged user policy.",
+      "scientific_basis": "StockN default1M. MonteCarlo count alone does not imply good effective evidence support.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P139",
+      "group": "Probability numerical integration",
+      "parameter": "Batch/render sizes",
+      "old_value": "256physical draws;64render batch",
+      "action": "replace",
+      "prospective_v2": "Stock vectorized integration; remove batch256/render64 kernel parameters.",
+      "scientific_basis": "Performance settings require parity, not astrophysical interpretation.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P140",
+      "group": "Probability numerical integration",
+      "parameter": "Renderer",
+      "old_value": "Piecewise-linear phase grid800nodes over retained native phase support; doubledperiodbranch retained",
+      "action": "delete",
+      "prospective_v2": "Remove phase800 piecewise-linear renderer; stock direct PyTransit evaluation.",
+      "scientific_basis": "Check against direct native rendering for appropriate ingress and eclipse geometries; same-grid replay cannot test grid error.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P141",
+      "group": "Probability numerical integration",
+      "parameter": "Probability integration",
+      "old_value": "54subsamples, actual270frame span .020433598216918748days",
+      "action": "candidate",
+      "prospective_v2": "Measured Kepler exposure with explicitly checked standard nsamples, not universal54 subsamples.",
+      "scientific_basis": "Current C12phase grid spacing204.032seconds. Exposure integration and phase-grid interpolation are separate errors.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P142",
+      "group": "Probability numerical integration",
+      "parameter": "Noise quadrature argument",
+      "old_value": "128, but inactive in fixed-noise likelihood",
+      "action": "delete",
+      "prospective_v2": "Remove inactive128-node noise-quadrature argument.",
+      "scientific_basis": "Do not claim128-node noise marginalization from a configuration field alone.",
+      "references": [
+        "API",
+        "INTEGRATION"
+      ]
+    },
+    {
+      "id": "P143",
+      "group": "Campaign and outcome policy",
+      "parameter": "Primary repeats and clocks",
+      "old_value": "20independent seeds at adopted finalephemeris; current recovereddiagnostics0; exactly3onlyifjustified",
+      "action": "retain",
+      "prospective_v2": "20 final-clock seeds; zero recovered diagnostics normally, exactly3 paired first seeds if justified; never pool clocks.",
+      "scientific_basis": "User-approved prospective policy; do not reintroduce40. Seeds embedded in fullplan snapshot.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P144",
+      "group": "Campaign and outcome policy",
+      "parameter": "Futility allocation screen",
+      "old_value": "First2stop if bothFPP>=.10 OR bothNFPP>=.01",
+      "action": "retain",
+      "prospective_v2": "First2 futility screen remains allocation-only REMAINS_PC; no favourable selection/admission before20.",
+      "scientific_basis": "Computational triage only, not reproduced EB denial; otherwise all20required.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P145",
+      "group": "Campaign and outcome policy",
+      "parameter": "Numerical omission budget",
+      "old_value": "48logunits; saved per-draw flags and upper evidence bounds",
+      "action": "delete",
+      "prospective_v2": "Remove custom48-log-unit omission-bound engine; stock exports no full saved weights/ESS/bounds, do not claim them.",
+      "scientific_basis": "Deep replay verifies saved estimates and certified omission bounds; does not bound model misspecification or all MonteCarlo error.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P146",
+      "group": "Campaign and outcome policy",
+      "parameter": "Final numerical thresholds",
+      "old_value": "UppermeanFPP<.015,NFPP<.001",
+      "action": "replace",
+      "prospective_v2": "All20 meanFPP<.015 and meanNFPP<.001; no inherited custom upper-bound audit. Retain all repeats/SD/range/crossings.",
+      "scientific_basis": "Retain all20, SD/range/crossings/ESS; upper refers omitted-evidence numerical bound, not a full confidence limit.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P147",
+      "group": "Campaign and outcome policy",
+      "parameter": "Physical closeout",
+      "old_value": "RUWE<=1.4,source/dilution/radius/companion/literature checks;1.5arcsec companion review",
+      "action": "retain",
+      "prospective_v2": "Native/radius/body, RUWE, localization/dilution, companions/imaging and exact-signal literature physical review; RV confirmation separate.",
+      "scientific_basis": "RUWE is a screen, not a binary exclusion proof; no RV mass is required for statistical validation.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P148",
+      "group": "Campaign and outcome policy",
+      "parameter": "CPU policy",
+      "old_value": "10total renderer threads;first2get5each;BLAS/OpenMP1;durableInteractive launchctl",
+      "action": "replace",
+      "prospective_v2": "One stock vectorized repeat uses declared10-core Numba budget; BLAS/OpenMP1. Measure utilization, no custom renderer scheduler.",
+      "scientific_basis": "Allocated threads do not establish continuous full-core use.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    },
+    {
+      "id": "P149",
+      "group": "Campaign and outcome policy",
+      "parameter": "Integrity",
+      "old_value": "Pinned dependencies/software;freeze and reference replay;checkpoint-resume;no overwrites",
+      "action": "retain",
+      "prospective_v2": "Separate frozen generation, input/source/env hashes, unique attempts/logs, complete-repeat resume; never bypass checks or overwrite evidence.",
+      "scientific_basis": "These protections do not need astrophysical calibration and must not be bypassed to increase yield.",
+      "references": [
+        "COLLIER",
+        "GIACALONE",
+        "API"
+      ]
+    }
+  ]
+}

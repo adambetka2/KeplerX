@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-10T22:59:19.360068+00:00",
+  "views": {
+    "psf_flat": {
+      "signals": {
+        "shallow:HELD": 32074,
+        "shallow:DISMISSED": 15810,
+        "sparse_event:HELD": 23644,
+        "sparse_event:DISMISSED": 13226,
+        "main_transit:DISMISSED": 3456,
+        "survivor_review:HELD": 1128,
+        "main_transit:BOI": 131,
+        "main_transit:HELD": 3641,
+        "survivor_review:DISMISSED": 900,
+        "shallow:BOI": 2449,
+        "sparse_event:BOI": 830,
+        "survivor_review:BOI": 12
+      },
+      "total_sources_with_signals": 57439,
+      "full_evidence_sources": 5287
+    },
+    "psf_qdiag": {
+      "signals": {
+        "main_transit:DISMISSED": 520,
+        "main_transit:HELD": 159,
+        "main_transit:BOI": 16
+      },
+      "total_sources_with_signals": 421,
+      "full_evidence_sources": 421
+    },
+    "sap_qdiag": {
+      "signals": {
+        "main_transit:DISMISSED": 1288,
+        "main_transit:HELD": 212,
+        "main_transit:BOI": 9
+      },
+      "total_sources_with_signals": 877,
+      "full_evidence_sources": 877
+    }
+  },
+  "lane_definitions": {
+    "main_transit": "Original detector classification TRANSIT_LIKE",
+    "shallow": "Original shallow-v1 signal ID",
+    "sparse_event": "Original associated signal-* event-window hypothesis ID",
+    "survivor_review": "Original Rust SYSTEMATIC_LIKE periodic survivor-review signal"
+  }
+}

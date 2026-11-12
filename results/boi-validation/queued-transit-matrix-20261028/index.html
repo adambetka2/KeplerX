@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queued transit matrix · SpaceLab</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f6;color:#182d43;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}header{background:#152a40;color:#f2f6fa;padding:28px 4vw 24px}.eyebrow{font-size:12px;letter-spacing:.13em;color:#b5cbde;text-transform:uppercase}h1{font-size:29px;letter-spacing:-.025em;font-weight:600;margin:5px 0}header p{margin:6px 0 0;color:#c7d7e5;max-width:1000px}.stamp{font-size:12px;opacity:.8}.controls{position:sticky;top:0;z-index:2;padding:15px 4vw;background:#eef2f6f5;border-bottom:1px solid #d5dfe9;display:flex;flex-wrap:wrap;gap:10px;align-items:center}.controls input{width:280px;max-width:100%;padding:9px 12px;border:1px solid #bbc9d7;border-radius:7px;font:inherit}.controls select,.controls button,.download{padding:9px 12px;border:1px solid #bbc9d7;border-radius:7px;background:white;color:#20394e;font:inherit}.controls button{cursor:pointer}.controls .active{background:#203e60;color:white;border-color:#203e60}#count{margin-left:auto;font-size:13px;color:#50647a}.guide{padding:14px 4vw 2px;color:#50647a;font-size:13px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:18px 4vw 30px}.card{min-width:0;background:white;border:1px solid #d4dfe9;border-radius:10px;overflow:hidden;box-shadow:0 2px 5px #17345208}.card.highlight{border:2px solid #9272c5}.card button{background:none;border:0;padding:15px 14px 10px;width:100%;text-align:left;color:inherit;cursor:pointer;font:inherit}.card button:hover{background:#f9fbfd}.cardtop{display:flex;align-items:center;justify-content:space-between}.index{font-size:12px;color:#708196}.badge{padding:3px 8px;border-radius:5px;font-size:11px;background:#edf2f8;color:#48657e}.badge.fitting{background:#dceefa;color:#185b84}.card h2{font-size:16px;font-weight:600;margin:7px 0 2px;overflow-wrap:anywhere}.clock{font-size:12px;color:#536b81;margin:0}.clock span{padding:0 5px}.card img{width:100%;display:block;margin-top:7px}.cardfoot{display:flex;justify-content:space-between;gap:8px;color:#6b7f91;font-size:11px}.cardfoot span:last-child{color:#2368ae}.downloads{padding:5px 4vw 35px;font-size:13px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.downloads a{color:#2368ae}dialog{width:calc(100vw - 32px);max-width:1800px;max-height:95vh;border:1px solid #b3c3d3;border-radius:10px;padding:0;box-shadow:0 15px 80px #061b3c55}dialog::backdrop{background:#10243dc9}.modalhead{position:sticky;top:0;background:#f8fafc;padding:13px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #d3dfeb}.modalhead h2{font-size:17px;margin:0;margin-right:auto}.modalhead button{font:inherit;background:white;border:1px solid #b9c9d8;border-radius:5px;padding:5px 12px;cursor:pointer}.modalbody{padding:12px 18px 20px}.modalbody img{width:100%;display:block}.modalbody p{font-size:13px;color:#526b80;margin:8px 0}.modalbody a{color:#2368ae}.empty{display:none;padding:30px 4vw;color:#536b81}footer{font-size:12px;color:#60778b;padding:0 4vw 30px;max-width:1300px}button:focus-visible,a:focus-visible{outline:3px solid #9174c5;outline-offset:3px}@media(max-width:700px){.grid{padding:14px}.controls{padding:12px 14px}.controls input{width:100%}header{padding:22px 18px}h1{font-size:25px}#count{margin-left:0}.guide{padding:12px 18px 0}.modalhead{flex-wrap:wrap}.modalhead h2{width:100%}}
+.detailfigs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.detailfigs h3{font-size:14px;margin:6px 0}.detailfigs img{width:100%}@media(max-width:1000px){.detailfigs{grid-template-columns:1fr}}@media(max-width:540px){.grid{grid-template-columns:1fr}}</style></head><body>
+<header><div class="eyebrow">SpaceLab · visual inspection</div><h1>Queued transit matrix</h1>
+<p>29 waiting signals + 3 active fits. Inspect each supplied-clock fold, then enlarge it for the full orbit and odd/even comparison.</p>
+<p class="stamp">Snapshot: 2026-10-28 09:12:02 Warsaw · KIC 8758214 is outlined in purple, waiting #19.</p></header>
+<div class="controls"><input id="search" type="search" placeholder="Find KIC, TIC, Gaia or BOI…" aria-label="Find a signal">
+<select id="state" aria-label="Queue state"><option value="all">All pending signals</option><option value="waiting">Waiting only</option><option value="fitting">Fitting now</option></select>
+<button id="transit" class="active" aria-pressed="true">Transit close-ups</button><button id="orbit" aria-pressed="false">Full orbital phase</button><span id="count"></span></div>
+<p class="guide">Grey: individual accepted cadences. Blue: inverse-variance bins with formal error bars. Pale band: supplied transit duration. <strong>Each panel has its own y scale.</strong> Click any card to inspect it.</p>
+<main class="grid"><article class="card" data-state="fitting" data-search="KIC 5194722 BOI-2076535358120385536-1 2076535358120385536">
+          <button class="open" data-id="BOI-2076535358120385536-1" aria-label="Inspect KIC 5194722">
+            <div class="cardtop"><span class="index">01</span><span class="badge fitting">Fitting</span></div>
+            <h2>KIC 5194722</h2><p class="clock">P 1.135369 d <span>·</span> duration 2.98 h</p>
+            <img loading="lazy" src="plots/BOI-2076535358120385536-1-transit.png" alt="Folded PSF light curve for KIC 5194722" data-boi="BOI-2076535358120385536-1">
+            <div class="cardfoot"><span>46,880 cadences · 14 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="fitting" data-search="KIC 6113801 BOI-2102266442767690112-1 2102266442767690112">
+          <button class="open" data-id="BOI-2102266442767690112-1" aria-label="Inspect KIC 6113801">
+            <div class="cardtop"><span class="index">02</span><span class="badge fitting">Fitting</span></div>
+            <h2>KIC 6113801</h2><p class="clock">P 0.933771 d <span>·</span> duration 2.40 h</p>
+            <img loading="lazy" src="plots/BOI-2102266442767690112-1-transit.png" alt="Folded PSF light curve for KIC 6113801" data-boi="BOI-2102266442767690112-1">
+            <div class="cardfoot"><span>60,313 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="fitting" data-search="KIC 4948140 · signal 3 BOI-2073666564790289664-3 2073666564790289664">
+          <button class="open" data-id="BOI-2073666564790289664-3" aria-label="Inspect KIC 4948140 · signal 3">
+            <div class="cardtop"><span class="index">03</span><span class="badge fitting">Fitting</span></div>
+            <h2>KIC 4948140 · signal 3</h2><p class="clock">P 0.577315 d <span>·</span> duration 1.20 h</p>
+            <img loading="lazy" src="plots/BOI-2073666564790289664-3-transit.png" alt="Folded PSF light curve for KIC 4948140 · signal 3" data-boi="BOI-2073666564790289664-3">
+            <div class="cardfoot"><span>59,916 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 6292185 BOI-2077515199080043264-2 2077515199080043264">
+          <button class="open" data-id="BOI-2077515199080043264-2" aria-label="Inspect KIC 6292185">
+            <div class="cardtop"><span class="index">04</span><span class="badge waiting">Waiting #1</span></div>
+            <h2>KIC 6292185</h2><p class="clock">P 48.600867 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2077515199080043264-2-transit.png" alt="Folded PSF light curve for KIC 6292185" data-boi="BOI-2077515199080043264-2">
+            <div class="cardfoot"><span>28,107 cadences · 9 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 5636497 BOI-2076797973904269184-1 2076797973904269184">
+          <button class="open" data-id="BOI-2076797973904269184-1" aria-label="Inspect KIC 5636497">
+            <div class="cardtop"><span class="index">05</span><span class="badge waiting">Waiting #2</span></div>
+            <h2>KIC 5636497</h2><p class="clock">P 39.666100 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2076797973904269184-1-transit.png" alt="Folded PSF light curve for KIC 5636497" data-boi="BOI-2076797973904269184-1">
+            <div class="cardfoot"><span>59,364 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 7687159 BOI-2078222219414706048-1 2078222219414706048">
+          <button class="open" data-id="BOI-2078222219414706048-1" aria-label="Inspect KIC 7687159">
+            <div class="cardtop"><span class="index">06</span><span class="badge waiting">Waiting #3</span></div>
+            <h2>KIC 7687159</h2><p class="clock">P 25.386605 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2078222219414706048-1-transit.png" alt="Folded PSF light curve for KIC 7687159" data-boi="BOI-2078222219414706048-1">
+            <div class="cardfoot"><span>57,255 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="TIC 1716526053 BOI-2104817618979591168-1 2104817618979591168">
+          <button class="open" data-id="BOI-2104817618979591168-1" aria-label="Inspect TIC 1716526053">
+            <div class="cardtop"><span class="index">07</span><span class="badge waiting">Waiting #4</span></div>
+            <h2>TIC 1716526053</h2><p class="clock">P 28.036130 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2104817618979591168-1-transit.png" alt="Folded PSF light curve for TIC 1716526053" data-boi="BOI-2104817618979591168-1">
+            <div class="cardfoot"><span>48,567 cadences · 18 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 8004643 BOI-2117126514212876416-1 2117126514212876416">
+          <button class="open" data-id="BOI-2117126514212876416-1" aria-label="Inspect KIC 8004643">
+            <div class="cardtop"><span class="index">08</span><span class="badge waiting">Waiting #5</span></div>
+            <h2>KIC 8004643</h2><p class="clock">P 33.121444 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2117126514212876416-1-transit.png" alt="Folded PSF light curve for KIC 8004643" data-boi="BOI-2117126514212876416-1">
+            <div class="cardfoot"><span>54,309 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 10354608 BOI-2086390560018194816-1 2086390560018194816">
+          <button class="open" data-id="BOI-2086390560018194816-1" aria-label="Inspect KIC 10354608">
+            <div class="cardtop"><span class="index">09</span><span class="badge waiting">Waiting #6</span></div>
+            <h2>KIC 10354608</h2><p class="clock">P 17.947930 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2086390560018194816-1-transit.png" alt="Folded PSF light curve for KIC 10354608" data-boi="BOI-2086390560018194816-1">
+            <div class="cardfoot"><span>47,605 cadences · 14 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 5175569 BOI-2102056779643698560-1 2102056779643698560">
+          <button class="open" data-id="BOI-2102056779643698560-1" aria-label="Inspect KIC 5175569">
+            <div class="cardtop"><span class="index">10</span><span class="badge waiting">Waiting #7</span></div>
+            <h2>KIC 5175569</h2><p class="clock">P 49.248836 d <span>·</span> duration 9.60 h</p>
+            <img loading="lazy" src="plots/BOI-2102056779643698560-1-transit.png" alt="Folded PSF light curve for KIC 5175569" data-boi="BOI-2102056779643698560-1">
+            <div class="cardfoot"><span>58,703 cadences · 18 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 7989202 BOI-2076038211367869312-1 2076038211367869312">
+          <button class="open" data-id="BOI-2076038211367869312-1" aria-label="Inspect KIC 7989202">
+            <div class="cardtop"><span class="index">11</span><span class="badge waiting">Waiting #8</span></div>
+            <h2>KIC 7989202</h2><p class="clock">P 1.087932 d <span>·</span> duration 2.96 h</p>
+            <img loading="lazy" src="plots/BOI-2076038211367869312-1-transit.png" alt="Folded PSF light curve for KIC 7989202" data-boi="BOI-2076038211367869312-1">
+            <div class="cardfoot"><span>34,435 cadences · 11 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 4669702 BOI-2076229075413220352-1 2076229075413220352">
+          <button class="open" data-id="BOI-2076229075413220352-1" aria-label="Inspect KIC 4669702">
+            <div class="cardtop"><span class="index">12</span><span class="badge waiting">Waiting #9</span></div>
+            <h2>KIC 4669702</h2><p class="clock">P 1.629078 d <span>·</span> duration 3.97 h</p>
+            <img loading="lazy" src="plots/BOI-2076229075413220352-1-transit.png" alt="Folded PSF light curve for KIC 4669702" data-boi="BOI-2076229075413220352-1">
+            <div class="cardfoot"><span>14,012 cadences · 5 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 5199422 BOI-2076587142546708352-1 2076587142546708352">
+          <button class="open" data-id="BOI-2076587142546708352-1" aria-label="Inspect KIC 5199422">
+            <div class="cardtop"><span class="index">13</span><span class="badge waiting">Waiting #10</span></div>
+            <h2>KIC 5199422</h2><p class="clock">P 2.334580 d <span>·</span> duration 5.91 h</p>
+            <img loading="lazy" src="plots/BOI-2076587142546708352-1-transit.png" alt="Folded PSF light curve for KIC 5199422" data-boi="BOI-2076587142546708352-1">
+            <div class="cardfoot"><span>10,214 cadences · 3 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 5896090 BOI-2076784878540898560-1 2076784878540898560">
+          <button class="open" data-id="BOI-2076784878540898560-1" aria-label="Inspect KIC 5896090">
+            <div class="cardtop"><span class="index">14</span><span class="badge waiting">Waiting #11</span></div>
+            <h2>KIC 5896090</h2><p class="clock">P 2.274287 d <span>·</span> duration 5.97 h</p>
+            <img loading="lazy" src="plots/BOI-2076784878540898560-1-transit.png" alt="Folded PSF light curve for KIC 5896090" data-boi="BOI-2076784878540898560-1">
+            <div class="cardfoot"><span>24,641 cadences · 8 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 9108099 BOI-2079376637907047040-1 2079376637907047040">
+          <button class="open" data-id="BOI-2079376637907047040-1" aria-label="Inspect KIC 9108099">
+            <div class="cardtop"><span class="index">15</span><span class="badge waiting">Waiting #12</span></div>
+            <h2>KIC 9108099</h2><p class="clock">P 1.090560 d <span>·</span> duration 2.96 h</p>
+            <img loading="lazy" src="plots/BOI-2079376637907047040-1-transit.png" alt="Folded PSF light curve for KIC 9108099" data-boi="BOI-2079376637907047040-1">
+            <div class="cardfoot"><span>12,467 cadences · 4 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 8374921 BOI-2079821420415898368-1 2079821420415898368">
+          <button class="open" data-id="BOI-2079821420415898368-1" aria-label="Inspect KIC 8374921">
+            <div class="cardtop"><span class="index">16</span><span class="badge waiting">Waiting #13</span></div>
+            <h2>KIC 8374921</h2><p class="clock">P 0.446267 d <span>·</span> duration 1.00 h</p>
+            <img loading="lazy" src="plots/BOI-2079821420415898368-1-transit.png" alt="Folded PSF light curve for KIC 8374921" data-boi="BOI-2079821420415898368-1">
+            <div class="cardfoot"><span>49,297 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 9226435 BOI-2080033974058174080-1 2080033974058174080">
+          <button class="open" data-id="BOI-2080033974058174080-1" aria-label="Inspect KIC 9226435">
+            <div class="cardtop"><span class="index">17</span><span class="badge waiting">Waiting #14</span></div>
+            <h2>KIC 9226435</h2><p class="clock">P 2.432730 d <span>·</span> duration 5.93 h</p>
+            <img loading="lazy" src="plots/BOI-2080033974058174080-1-transit.png" alt="Folded PSF light curve for KIC 9226435" data-boi="BOI-2080033974058174080-1">
+            <div class="cardfoot"><span>45,313 cadences · 12 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 4136245 BOI-2100220316049730304-1 2100220316049730304">
+          <button class="open" data-id="BOI-2100220316049730304-1" aria-label="Inspect KIC 4136245">
+            <div class="cardtop"><span class="index">18</span><span class="badge waiting">Waiting #15</span></div>
+            <h2>KIC 4136245</h2><p class="clock">P 1.588336 d <span>·</span> duration 4.02 h</p>
+            <img loading="lazy" src="plots/BOI-2100220316049730304-1-transit.png" alt="Folded PSF light curve for KIC 4136245" data-boi="BOI-2100220316049730304-1">
+            <div class="cardfoot"><span>43,887 cadences · 12 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 4136123 BOI-2100223614584673664-1 2100223614584673664">
+          <button class="open" data-id="BOI-2100223614584673664-1" aria-label="Inspect KIC 4136123">
+            <div class="cardtop"><span class="index">19</span><span class="badge waiting">Waiting #16</span></div>
+            <h2>KIC 4136123</h2><p class="clock">P 1.582092 d <span>·</span> duration 4.00 h</p>
+            <img loading="lazy" src="plots/BOI-2100223614584673664-1-transit.png" alt="Folded PSF light curve for KIC 4136123" data-boi="BOI-2100223614584673664-1">
+            <div class="cardfoot"><span>21,767 cadences · 6 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 4540746 BOI-2103289985012370304-1 2103289985012370304">
+          <button class="open" data-id="BOI-2103289985012370304-1" aria-label="Inspect KIC 4540746">
+            <div class="cardtop"><span class="index">20</span><span class="badge waiting">Waiting #17</span></div>
+            <h2>KIC 4540746</h2><p class="clock">P 0.355875 d <span>·</span> duration 1.00 h</p>
+            <img loading="lazy" src="plots/BOI-2103289985012370304-1-transit.png" alt="Folded PSF light curve for KIC 4540746" data-boi="BOI-2103289985012370304-1">
+            <div class="cardfoot"><span>42,284 cadences · 12 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 7199511 BOI-2125795682366018176-1 2125795682366018176">
+          <button class="open" data-id="BOI-2125795682366018176-1" aria-label="Inspect KIC 7199511">
+            <div class="cardtop"><span class="index">21</span><span class="badge waiting">Waiting #18</span></div>
+            <h2>KIC 7199511</h2><p class="clock">P 0.566779 d <span>·</span> duration 1.49 h</p>
+            <img loading="lazy" src="plots/BOI-2125795682366018176-1-transit.png" alt="Folded PSF light curve for KIC 7199511" data-boi="BOI-2125795682366018176-1">
+            <div class="cardfoot"><span>27,512 cadences · 8 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card highlight" data-state="waiting" data-search="KIC 8758214 BOI-2126446588949629952-1 2126446588949629952">
+          <button class="open" data-id="BOI-2126446588949629952-1" aria-label="Inspect KIC 8758214">
+            <div class="cardtop"><span class="index">22</span><span class="badge waiting">Waiting #19</span></div>
+            <h2>KIC 8758214</h2><p class="clock">P 0.998222 d <span>·</span> duration 1.97 h</p>
+            <img loading="lazy" src="plots/BOI-2126446588949629952-1-transit.png" alt="Folded PSF light curve for KIC 8758214" data-boi="BOI-2126446588949629952-1">
+            <div class="cardfoot"><span>13,491 cadences · 4 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 8161259 BOI-2126865915195358720-1 2126865915195358720">
+          <button class="open" data-id="BOI-2126865915195358720-1" aria-label="Inspect KIC 8161259">
+            <div class="cardtop"><span class="index">23</span><span class="badge waiting">Waiting #20</span></div>
+            <h2>KIC 8161259</h2><p class="clock">P 2.319192 d <span>·</span> duration 6.09 h</p>
+            <img loading="lazy" src="plots/BOI-2126865915195358720-1-transit.png" alt="Folded PSF light curve for KIC 8161259" data-boi="BOI-2126865915195358720-1">
+            <div class="cardfoot"><span>432 cadences · 1 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="Gaia DR3 2133767416541087232 BOI-2133767416541087232-1 2133767416541087232">
+          <button class="open" data-id="BOI-2133767416541087232-1" aria-label="Inspect Gaia DR3 2133767416541087232">
+            <div class="cardtop"><span class="index">24</span><span class="badge waiting">Waiting #21</span></div>
+            <h2>Gaia DR3 2133767416541087232</h2><p class="clock">P 3.207265 d <span>·</span> duration 8.00 h</p>
+            <img loading="lazy" src="plots/BOI-2133767416541087232-1-transit.png" alt="Folded PSF light curve for Gaia DR3 2133767416541087232" data-boi="BOI-2133767416541087232-1">
+            <div class="cardfoot"><span>58,881 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 6184073 BOI-2104484363877066752-1 2104484363877066752">
+          <button class="open" data-id="BOI-2104484363877066752-1" aria-label="Inspect KIC 6184073">
+            <div class="cardtop"><span class="index">25</span><span class="badge waiting">Waiting #22</span></div>
+            <h2>KIC 6184073</h2><p class="clock">P 105.366148 d <span>·</span> duration 7.41 h</p>
+            <img loading="lazy" src="plots/BOI-2104484363877066752-1-transit.png" alt="Folded PSF light curve for KIC 6184073" data-boi="BOI-2104484363877066752-1">
+            <div class="cardfoot"><span>30,346 cadences · 10 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 9727287 BOI-2079536067092694016-1 2079536067092694016">
+          <button class="open" data-id="BOI-2079536067092694016-1" aria-label="Inspect KIC 9727287">
+            <div class="cardtop"><span class="index">26</span><span class="badge waiting">Waiting #23</span></div>
+            <h2>KIC 9727287</h2><p class="clock">P 0.272008 d <span>·</span> duration 0.51 h</p>
+            <img loading="lazy" src="plots/BOI-2079536067092694016-1-transit.png" alt="Folded PSF light curve for KIC 9727287" data-boi="BOI-2079536067092694016-1">
+            <div class="cardfoot"><span>31,121 cadences · 10 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 3322939 BOI-2100123494603868416-1 2100123494603868416">
+          <button class="open" data-id="BOI-2100123494603868416-1" aria-label="Inspect KIC 3322939">
+            <div class="cardtop"><span class="index">27</span><span class="badge waiting">Waiting #24</span></div>
+            <h2>KIC 3322939</h2><p class="clock">P 7.108701 d <span>·</span> duration 1.00 h</p>
+            <img loading="lazy" src="plots/BOI-2100123494603868416-1-transit.png" alt="Folded PSF light curve for KIC 3322939" data-boi="BOI-2100123494603868416-1">
+            <div class="cardfoot"><span>15,279 cadences · 4 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 3935011 BOI-2100203999471640064-1 2100203999471640064">
+          <button class="open" data-id="BOI-2100203999471640064-1" aria-label="Inspect KIC 3935011">
+            <div class="cardtop"><span class="index">28</span><span class="badge waiting">Waiting #25</span></div>
+            <h2>KIC 3935011</h2><p class="clock">P 3.141265 d <span>·</span> duration 1.00 h</p>
+            <img loading="lazy" src="plots/BOI-2100203999471640064-1-transit.png" alt="Folded PSF light curve for KIC 3935011" data-boi="BOI-2100203999471640064-1">
+            <div class="cardfoot"><span>40,173 cadences · 12 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 5698054 BOI-2101435138957164672-1 2101435138957164672">
+          <button class="open" data-id="BOI-2101435138957164672-1" aria-label="Inspect KIC 5698054">
+            <div class="cardtop"><span class="index">29</span><span class="badge waiting">Waiting #26</span></div>
+            <h2>KIC 5698054</h2><p class="clock">P 80.721628 d <span>·</span> duration 2.84 h</p>
+            <img loading="lazy" src="plots/BOI-2101435138957164672-1-transit.png" alt="Folded PSF light curve for KIC 5698054" data-boi="BOI-2101435138957164672-1">
+            <div class="cardfoot"><span>51,773 cadences · 17 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 893184 BOI-2050231500928700032-1 2050231500928700032">
+          <button class="open" data-id="BOI-2050231500928700032-1" aria-label="Inspect KIC 893184">
+            <div class="cardtop"><span class="index">30</span><span class="badge waiting">Waiting #27</span></div>
+            <h2>KIC 893184</h2><p class="clock">P 39.810773 d <span>·</span> duration 7.93 h</p>
+            <img loading="lazy" src="plots/BOI-2050231500928700032-1-transit.png" alt="Folded PSF light curve for KIC 893184" data-boi="BOI-2050231500928700032-1">
+            <div class="cardfoot"><span>12,418 cadences · 5 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 6209806 BOI-2077595974520134144-1 2077595974520134144">
+          <button class="open" data-id="BOI-2077595974520134144-1" aria-label="Inspect KIC 6209806">
+            <div class="cardtop"><span class="index">31</span><span class="badge waiting">Waiting #28</span></div>
+            <h2>KIC 6209806</h2><p class="clock">P 14.226579 d <span>·</span> duration 1.50 h</p>
+            <img loading="lazy" src="plots/BOI-2077595974520134144-1-transit.png" alt="Folded PSF light curve for KIC 6209806" data-boi="BOI-2077595974520134144-1">
+            <div class="cardfoot"><span>59,298 cadences · 18 quarters</span><span>Enlarge ↗</span></div>
+          </button></article>
+<article class="card" data-state="waiting" data-search="KIC 8234517 BOI-2126354436132009088-1 2126354436132009088">
+          <button class="open" data-id="BOI-2126354436132009088-1" aria-label="Inspect KIC 8234517">
+            <div class="cardtop"><span class="index">32</span><span class="badge waiting">Waiting #29</span></div>
+            <h2>KIC 8234517</h2><p class="clock">P 18.670731 d <span>·</span> duration 4.00 h</p>
+            <img loading="lazy" src="plots/BOI-2126354436132009088-1-transit.png" alt="Folded PSF light curve for KIC 8234517" data-boi="BOI-2126354436132009088-1">
+            <div class="cardfoot"><span>44,240 cadences · 13 quarters</span><span>Enlarge ↗</span></div>
+          </button></article></main><p class="empty" id="empty">No signals match this search.</p>
+<div class="downloads"><strong>Save the matrices:</strong><a href="matrix-page-1.png" target="_blank">Page 1 (PNG)</a> <a href="matrix-page-2.png" target="_blank">Page 2 (PNG)</a> <a href="matrix-page-3.png" target="_blank">Page 3 (PNG)</a><a href="manifest.json">Data and methods (JSON)</a></div>
+<footer>Delivered PSF_FLAT flux, divided by each quarter’s median. No additional detrending, refitting, clipping or scientific classification. Every accepted cadence contributes to the bins; points beyond the displayed y-range are counted in the plots. Formal bin errors assume independent delivered errors. Odd/even numbering is relative to the supplied epoch. Other detected signals are not masked. These figures show the data used for visual inspection, not the eventual fitted model. Queue status is a dated snapshot.</footer>
+<dialog id="detail"><div class="modalhead"><h2 id="detail-title"></h2><button id="prev" aria-label="Previous signal">← Previous</button><button id="next" aria-label="Next signal">Next →</button><button id="close" aria-label="Close inspection">Close ×</button></div><div class="modalbody"><div class="detailfigs"><section><h3>Transit close-up</h3><img id="detail-img" alt="Transit close-up"></section><section><h3>Full orbital phase</h3><img id="detail-orbit" alt="Full orbital phase"></section><section><h3>Odd / even comparison</h3><img id="detail-parity" alt="Odd and even events"></section></div><p id="detail-meta"></p><p><a id="detail-file" target="_blank">Open full-resolution figure ↗</a></p></div></dialog>
+<script>
+const signals=[{"boi_id": "BOI-2076535358120385536-1", "label": "KIC 5194722", "state": "fitting", "stage_label": "Fitting", "period_days": 1.1353694369249425, "duration_days": 0.12418103216366559, "valid_cadences": 46880, "quarters": 14, "source_id": "2076535358120385536"}, {"boi_id": "BOI-2102266442767690112-1", "label": "KIC 6113801", "state": "fitting", "stage_label": "Fitting", "period_days": 0.9337713617117456, "duration_days": 0.10000000000000002, "valid_cadences": 60313, "quarters": 17, "source_id": "2102266442767690112"}, {"boi_id": "BOI-2073666564790289664-3", "label": "KIC 4948140 \u00b7 signal 3", "state": "fitting", "stage_label": "Fitting", "period_days": 0.5773150987471779, "duration_days": 0.05000000000000001, "valid_cadences": 59916, "quarters": 17, "source_id": "2073666564790289664"}, {"boi_id": "BOI-2077515199080043264-2", "label": "KIC 6292185", "state": "waiting", "stage_label": "Waiting #1", "period_days": 48.60086691800657, "duration_days": 0.4000000000000001, "valid_cadences": 28107, "quarters": 9, "source_id": "2077515199080043264"}, {"boi_id": "BOI-2076797973904269184-1", "label": "KIC 5636497", "state": "waiting", "stage_label": "Waiting #2", "period_days": 39.66610003782266, "duration_days": 0.4000000000000001, "valid_cadences": 59364, "quarters": 17, "source_id": "2076797973904269184"}, {"boi_id": "BOI-2078222219414706048-1", "label": "KIC 7687159", "state": "waiting", "stage_label": "Waiting #3", "period_days": 25.386605165418217, "duration_days": 0.4000000000000001, "valid_cadences": 57255, "quarters": 17, "source_id": "2078222219414706048"}, {"boi_id": "BOI-2104817618979591168-1", "label": "TIC 1716526053", "state": "waiting", "stage_label": "Waiting #4", "period_days": 28.03612979545473, "duration_days": 0.4000000000000001, "valid_cadences": 48567, "quarters": 18, "source_id": "2104817618979591168"}, {"boi_id": "BOI-2117126514212876416-1", "label": "KIC 8004643", "state": "waiting", "stage_label": "Waiting #5", "period_days": 33.12144430546639, "duration_days": 0.4000000000000001, "valid_cadences": 54309, "quarters": 17, "source_id": "2117126514212876416"}, {"boi_id": "BOI-2086390560018194816-1", "label": "KIC 10354608", "state": "waiting", "stage_label": "Waiting #6", "period_days": 17.947929751472337, "duration_days": 0.4000000000000001, "valid_cadences": 47605, "quarters": 14, "source_id": "2086390560018194816"}, {"boi_id": "BOI-2102056779643698560-1", "label": "KIC 5175569", "state": "waiting", "stage_label": "Waiting #7", "period_days": 49.24883594144944, "duration_days": 0.4000000000000001, "valid_cadences": 58703, "quarters": 18, "source_id": "2102056779643698560"}, {"boi_id": "BOI-2076038211367869312-1", "label": "KIC 7989202", "state": "waiting", "stage_label": "Waiting #8", "period_days": 1.087932409954759, "duration_days": 0.12324234331518753, "valid_cadences": 34435, "quarters": 11, "source_id": "2076038211367869312"}, {"boi_id": "BOI-2076229075413220352-1", "label": "KIC 4669702", "state": "waiting", "stage_label": "Waiting #9", "period_days": 1.629078096447198, "duration_days": 0.16545324417041854, "valid_cadences": 14012, "quarters": 5, "source_id": "2076229075413220352"}, {"boi_id": "BOI-2076587142546708352-1", "label": "KIC 5199422", "state": "waiting", "stage_label": "Waiting #10", "period_days": 2.3345798512159655, "duration_days": 0.24622521868293382, "valid_cadences": 10214, "quarters": 3, "source_id": "2076587142546708352"}, {"boi_id": "BOI-2076784878540898560-1", "label": "KIC 5896090", "state": "waiting", "stage_label": "Waiting #11", "period_days": 2.2742865968847172, "duration_days": 0.24875009653426594, "valid_cadences": 24641, "quarters": 8, "source_id": "2076784878540898560"}, {"boi_id": "BOI-2079376637907047040-1", "label": "KIC 9108099", "state": "waiting", "stage_label": "Waiting #12", "period_days": 1.0905598979783184, "duration_days": 0.12353998844285637, "valid_cadences": 12467, "quarters": 4, "source_id": "2079376637907047040"}, {"boi_id": "BOI-2079821420415898368-1", "label": "KIC 8374921", "state": "waiting", "stage_label": "Waiting #13", "period_days": 0.44626691930044815, "duration_days": 0.04183752368441701, "valid_cadences": 49297, "quarters": 17, "source_id": "2079821420415898368"}, {"boi_id": "BOI-2080033974058174080-1", "label": "KIC 9226435", "state": "waiting", "stage_label": "Waiting #14", "period_days": 2.4327297330752664, "duration_days": 0.24707411351545674, "valid_cadences": 45313, "quarters": 12, "source_id": "2080033974058174080"}, {"boi_id": "BOI-2100220316049730304-1", "label": "KIC 4136245", "state": "waiting", "stage_label": "Waiting #15", "period_days": 1.5883364426944233, "duration_days": 0.16751985919042744, "valid_cadences": 43887, "quarters": 12, "source_id": "2100220316049730304"}, {"boi_id": "BOI-2100223614584673664-1", "label": "KIC 4136123", "state": "waiting", "stage_label": "Waiting #16", "period_days": 1.5820921418186908, "duration_days": 0.16686128058244, "valid_cadences": 21767, "quarters": 6, "source_id": "2100223614584673664"}, {"boi_id": "BOI-2103289985012370304-1", "label": "KIC 4540746", "state": "waiting", "stage_label": "Waiting #17", "period_days": 0.35587468927015964, "duration_days": 0.041704065148846836, "valid_cadences": 42284, "quarters": 12, "source_id": "2103289985012370304"}, {"boi_id": "BOI-2125795682366018176-1", "label": "KIC 7199511", "state": "waiting", "stage_label": "Waiting #18", "period_days": 0.566778848216587, "duration_days": 0.06199143652368919, "valid_cadences": 27512, "quarters": 8, "source_id": "2125795682366018176"}, {"boi_id": "BOI-2126446588949629952-1", "label": "KIC 8758214", "state": "waiting", "stage_label": "Waiting #19", "period_days": 0.9982215828410337, "duration_days": 0.08188536421742855, "valid_cadences": 13491, "quarters": 4, "source_id": "2126446588949629952"}, {"boi_id": "BOI-2126865915195358720-1", "label": "KIC 8161259", "state": "waiting", "stage_label": "Waiting #20", "period_days": 2.319192110709287, "duration_days": 0.2536616371088283, "valid_cadences": 432, "quarters": 1, "source_id": "2126865915195358720"}, {"boi_id": "BOI-2133767416541087232-1", "label": "Gaia DR3 2133767416541087232", "state": "waiting", "stage_label": "Waiting #21", "period_days": 3.207264857398472, "duration_days": 0.33322232284659453, "valid_cadences": 58881, "quarters": 17, "source_id": "2133767416541087232"}, {"boi_id": "BOI-2104484363877066752-1", "label": "KIC 6184073", "state": "waiting", "stage_label": "Waiting #22", "period_days": 105.36614774355272, "duration_days": 0.3086898859674396, "valid_cadences": 30346, "quarters": 10, "source_id": "2104484363877066752"}, {"boi_id": "BOI-2079536067092694016-1", "label": "KIC 9727287", "state": "waiting", "stage_label": "Waiting #23", "period_days": 0.2720077189074989, "duration_days": 0.021250603039648357, "valid_cadences": 31121, "quarters": 10, "source_id": "2079536067092694016"}, {"boi_id": "BOI-2100123494603868416-1", "label": "KIC 3322939", "state": "waiting", "stage_label": "Waiting #24", "period_days": 7.108701132874583, "duration_days": 0.04163221746925085, "valid_cadences": 15279, "quarters": 4, "source_id": "2100123494603868416"}, {"boi_id": "BOI-2100203999471640064-1", "label": "KIC 3935011", "state": "waiting", "stage_label": "Waiting #25", "period_days": 3.1412645576658482, "duration_days": 0.04160615308166686, "valid_cadences": 40173, "quarters": 12, "source_id": "2100203999471640064"}, {"boi_id": "BOI-2101435138957164672-1", "label": "KIC 5698054", "state": "waiting", "stage_label": "Waiting #26", "period_days": 80.72162778644471, "duration_days": 0.11824457195279987, "valid_cadences": 51773, "quarters": 17, "source_id": "2101435138957164672"}, {"boi_id": "BOI-2050231500928700032-1", "label": "KIC 893184", "state": "waiting", "stage_label": "Waiting #27", "period_days": 39.81077302538616, "duration_days": 0.33046051827713124, "valid_cadences": 12418, "quarters": 5, "source_id": "2050231500928700032"}, {"boi_id": "BOI-2077595974520134144-1", "label": "KIC 6209806", "state": "waiting", "stage_label": "Waiting #28", "period_days": 14.226578632436448, "duration_days": 0.062488632353307975, "valid_cadences": 59298, "quarters": 18, "source_id": "2077595974520134144"}, {"boi_id": "BOI-2126354436132009088-1", "label": "KIC 8234517", "state": "waiting", "stage_label": "Waiting #29", "period_days": 18.670730620555183, "duration_days": 0.1666099776513569, "valid_cadences": 44240, "quarters": 13, "source_id": "2126354436132009088"}];const cards=[...document.querySelectorAll('.card')];const search=document.querySelector('#search');const state=document.querySelector('#state');const dialog=document.querySelector('#detail');let selected=0;
+function filter(){let n=0;const query=search.value.trim().toLowerCase();cards.forEach(c=>{const show=c.dataset.search.toLowerCase().includes(query)&&(state.value==='all'||c.dataset.state===state.value);c.hidden=!show;if(show)n++});document.querySelector('#count').textContent=n+' of '+signals.length+' signals';document.querySelector('#empty').style.display=n?'none':'block'}
+search.addEventListener('input',filter);state.addEventListener('change',filter);
+function mode(which){document.querySelectorAll('.card img').forEach(img=>{img.src='plots/'+img.dataset.boi+'-'+which+'.png'});['transit','orbit'].forEach(x=>{document.getElementById(x).classList.toggle('active',x===which);document.getElementById(x).setAttribute('aria-pressed',x===which?'true':'false')})}
+document.querySelector('#transit').onclick=()=>mode('transit');document.querySelector('#orbit').onclick=()=>mode('orbit');
+function inspect(i){selected=(i+signals.length)%signals.length;const s=signals[selected];document.querySelector('#detail-title').textContent=(selected+1)+' / '+signals.length+' · '+s.label+' · '+s.stage_label;const src='plots/'+s.boi_id+'-detail.png';document.querySelector('#detail-img').src='plots/'+s.boi_id+'-transit.png';document.querySelector('#detail-orbit').src='plots/'+s.boi_id+'-orbit.png';document.querySelector('#detail-parity').src='plots/'+s.boi_id+'-parity.png';document.querySelector('#detail-file').href=src;document.querySelector('#detail-meta').textContent=s.boi_id+' · Gaia DR3 '+s.source_id+' · '+s.valid_cadences.toLocaleString()+' accepted cadences in '+s.quarters+' quarters';if(!dialog.open)dialog.showModal()}
+document.querySelectorAll('.open').forEach(b=>b.onclick=()=>inspect(signals.findIndex(s=>s.boi_id===b.dataset.id)));document.querySelector('#close').onclick=()=>dialog.close();document.querySelector('#prev').onclick=()=>inspect(selected-1);document.querySelector('#next').onclick=()=>inspect(selected+1);document.addEventListener('keydown',e=>{if(dialog.open&&e.key==='ArrowRight')inspect(selected+1);if(dialog.open&&e.key==='ArrowLeft')inspect(selected-1)});dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});filter();
+</script></body></html>

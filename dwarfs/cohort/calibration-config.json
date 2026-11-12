@@ -1,0 +1,66 @@
+{
+  "status": "DEVELOPMENT_PROPOSALS_ONLY",
+  "input_view": "preferred_full",
+  "period_min_days": 0.5,
+  "period_max_days": 30.0,
+  "period_grid_size": 20000,
+  "duration_days": [
+    0.02,
+    0.04,
+    0.08,
+    0.12,
+    0.2,
+    0.32
+  ],
+  "detrend_window_cadences": 97,
+  "min_quarter_cadences": 100,
+  "depth_ppm_min": 10.0,
+  "depth_ppm_max": 6000.0,
+  "search_snr_min": 7.1,
+  "min_observed_events": 3,
+  "min_observed_quarters": 1,
+  "max_search_hypotheses_per_source": 50,
+  "period_refine_points": 21,
+  "high_rank_start": 6,
+  "high_rank_inverse_snr_ratio_min": 1.5,
+  "max_proposals_per_source": 10,
+  "maximum_transit_overlap": 0.2,
+  "period_dedup_fraction": 0.001,
+  "dip_inverse_snr_ratio_min": 1.5,
+  "odd_even_sigma_max": 3.5,
+  "harmonic_delta_log_likelihood_max": 0.0,
+  "long_period_search": {
+    "period_min_days": 30.0,
+    "period_max_days": 100.0,
+    "duration_days": [
+      0.06,
+      0.1,
+      0.16,
+      0.24,
+      0.4
+    ],
+    "detrending": {
+      "method": "biweight",
+      "window_days": 1.0,
+      "cval": 5.0
+    }
+  },
+  "coarse_search_snr_min": 4.0,
+  "coarse_phase_oversample": 3,
+  "refine_phase_oversample": 10,
+  "refine_local_maxima_only": true,
+  "max_refined_peaks_per_band": 100,
+  "proposal_budget_per_band": true,
+  "detrending": {
+    "method": "biweight",
+    "window_days": 0.5,
+    "cval": 5.0
+  },
+  "duration_envelope": {
+    "rho_min_g_cm3": 1.0,
+    "radius_ratio_max": 0.2,
+    "exposure_margin_days": 0.02043361111111111
+  },
+  "sort_proposals_by_refined_snr": true,
+  "preserve_cross_band_hypotheses": true
+}

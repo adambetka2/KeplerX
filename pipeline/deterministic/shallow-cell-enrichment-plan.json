@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "INPUT_ONLY_DEVELOPMENT",
+  "protocol": "fsc-kepler-shallow-cell-enrichment-v1",
+  "purpose": "Add alternative physical injection cells for frozen eligible sources before parent-disjoint trial selection",
+  "source_population": "Every eligible source in the frozen 64-shard input-only screen; ineligible sources already failed all 36 cells",
+  "screen_selection_sha256": "e02b99759d0be30a001e8b7425e6fda20b4b64a3ca7b18bbfcac8b7b54cc6044",
+  "screen_audit_sha256": "790a7906350b4de1e7ebb00f886311835418a7d4cb47d1c886769ea5b2935716",
+  "base_generator_sha256": "719c6c1ec5f0cded432a8f0adae142bc51fd7936196a0904c4908b2fcae09a9d",
+  "base_plan_sha256": "092226811edb60a39aa85ed3c45271f54b74c78c8e0d471c243eedb9d72581c5",
+  "exclusions_sha256": "bd401c3105aa34f9d603ba044a30bf7da1885c663b870cf88261809e9cbec25b",
+  "candidate_pool_target_per_cell": 18,
+  "target_cells": [
+    "d0m0p2", "d0m1p2", "d0m2p2", "d0m3p0", "d0m3p1", "d0m3p2",
+    "d1m0p2", "d1m1p2", "d1m2p1", "d1m2p2", "d1m3p0", "d1m3p1", "d1m3p2",
+    "d2m0p2", "d2m1p2", "d2m2p1", "d2m2p2", "d2m3p0", "d2m3p1", "d2m3p2"
+  ],
+  "claim_boundary": "Physical input options only. Select at most one option per source and require resolved-parent disjointness before injection. No detector, vetter, localization, or sealed outcomes inform this plan."
+}

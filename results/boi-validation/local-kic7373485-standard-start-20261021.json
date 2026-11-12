@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-21T04:54:55.174839+00:00",
+  "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2077967368932890752",
+  "kic": 7373485,
+  "tic": 271347162,
+  "signal_id": "rust-v6-2077967368932890752-1",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launch.json",
+    "sha256": "bc5b0e934894afb851ab9c67775b7f7319180d6d72e3a192d938806ef32cc9e6"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-freeze.json",
+    "sha256": "8e41a5c64a32a62ce9c81b4b48a615ccb477aa16b633b76f7feba3fa915e89cd"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/selection.json",
+    "sha256": "41ed5b481ad840dee140ca35a2e5b093e0d62db83ff5d6ba0013364910c76ace"
+  },
+  "native_stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-stellar-review.json",
+    "sha256": "ab37b4dd7357a644e7cefbcaa760b585c73892f246efa8124de1ad71fabbb1d3"
+  },
+  "pre_native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/pre-native-retained-review.json",
+    "sha256": "c3c7a8169ae38013c26e48e2d9ae73d0c80997bb36d7732e57f2cc91579e63e7"
+  },
+  "alias_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/alias-readiness-review-v1.json",
+    "sha256": "2459ef1f81ff0217e0becf59220184b14a90d12b796c02475572be37781abbcd"
+  },
+  "seed_source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-seed-source-review.json",
+    "sha256": "b7a9c7ca7654657a7a8e1eedc83f959fc04978962b8229c994620534e52bedd1"
+  },
+  "seed_revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-seed-revalidation.json",
+    "sha256": "3157cf5e39e625d223362d14f3f023f24a65646d2e4434a74a3851adc04c6e35"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/live-check-20261021T045455Z.json",
+    "sha256": "36c80f14458d12c79b899538c84aa1e009c07c6d19d14e206b5e6f45df59eacc"
+  },
+  "previous_terminal": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/readiness-hold-v1.json",
+    "sha256": "40f359670c9098421d71d9c90d2066c14548297b5644117fa7ffd96083d638e7"
+  },
+  "native_points": 7086,
+  "probability_runs": 0,
+  "clock_adopted": false,
+  "parent_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/parent-authentication-v1.json",
+    "sha256": "8ba73e70a82627b9ade11a0dd22e799476e1644c8a7891e93058cab2fade4092"
+  },
+  "prf_staging": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prf-authentication-v1.json",
+    "sha256": "8b0b4d963bd687715f8a9a2e35cbeaca1ee69b9c46a66b8246ad8d2214e95a1e"
+  },
+  "next": "Let seeded dynamic nested complete without competing numerics, then review full weighted/equal support and actual convergence/stopping, finite priors/posteriors, valid joint eccentric geometry and exact full-baseline protection/residuals/exposure before clock adoption. RawSAP extra-event check supports4.3585day primary independently, not a global alias/TTV exclusion. Preferred-view source is hash-authenticated explicitly among two run/view source records. Reuse staged parents/PRFs, finish same-source57star scene, source-quarter spacecraft/pixels, dilution/folded noise and dated catalogue checks before stockFPP. Save precise outcome/hold then continue full eligible queue; no old held-case rescue."
+}

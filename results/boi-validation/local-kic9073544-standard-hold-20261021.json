@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-21T03:53:57.183040+00:00",
+  "source_id": "2106817012155835904",
+  "kic": 9073544,
+  "tic": 164678062,
+  "signal_id": "rust-v6-2106817012155835904-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "All18sources retained. Actual source-quarter aperture Gaussian target fraction.146..431 differs materially from official calibrated dominant-core fraction.256..738: Q2.1521/.3769,Q5.3743/.7105,Q14.1461/.3708. This would change allocation between target and bright9.26arcsec neighbor. Core comparison is diagnostic, not full measured far-source fractions; no supported complete response selected. Native not launched and zeroFPP. Alias extra-event diagnostic supports4.5168day clock independently but does not fix extraction model.",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/aperture-response-review-v1.json",
+    "sha256": "e9e128127db6cc90fd7b43db4eb7bc5e06ea3f089baaaf612a7eeef87c404ef2"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/scene-preview-review-v1.json",
+    "sha256": "e16e67aa50bcff470489adcc5f264ecbd8cf01c350f61977ade70885d62ffb21"
+  },
+  "parents": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/parent-authentication-v1.json",
+    "sha256": "58e9172cc107f80da7ff75259b62791c3dfe0638e5108ebe479b002c6d4a9558"
+  },
+  "prfs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/prf-authentication-v1.json",
+    "sha256": "d721b4236c14a317b8a4c282b4e74ee04b1dd48c0b0b686ad3b4c954555dade7"
+  },
+  "alias_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/alias-readiness-review-v1.json",
+    "sha256": "62e365b06f3a697323e4c6445c6bada3551a8bfa9a2985be8e39f1fbd595c1dc"
+  },
+  "stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/native-stellar-review.json",
+    "sha256": "02c8b35d1bb015d35a4b07f8b0e07cf73b21d7fd6a8f740c598c547988fda9d5"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/selection.json",
+    "sha256": "68bb07b5acc1ee1c4d17e210f74a931b12dc34372f9d529f9aaa51c724320d61"
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve all original/calibrated/scientific outputs. No response reconstruction or rescue tonight. Advance eligible full queue by preparation readiness/cost."
+}

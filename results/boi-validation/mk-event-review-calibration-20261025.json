@@ -1,0 +1,41 @@
+{
+ "utc": "2026-10-25T22:40:00Z",
+ "subject": "Null calibration of the parity and ownership rules added to tools/event_review.py on 25 October 2026",
+ "method": "Event depths of every M/K BOI re-measured with the same baseline at phase offsets 0.15, 0.25, 0.35, 0.65, 0.75 and 0.85 (no transit, away from phase 0.5); the declared statistics computed on those null trials.",
+ "inputs": {
+  "null_events": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/logs/null-events-20261025.parquet",
+  "first_null_test": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/logs/ownership-null-calibration-20261025.csv"
+ },
+ "event_level": {
+  "null_z_robust_std_median": 1.29,
+  "null_z_std_median": 1.48,
+  "null_z_std_90th_percentile": 2.27
+ },
+ "quarter_level": {
+  "null_z_std": 2.52,
+  "fraction_below_minus_3_sigma": 0.0518,
+  "gaussian_expectation": 0.00135
+ },
+ "parity_rule": {
+  "null_trials": 3739,
+  "fraction_difference_at_least_3_sigma": 0.081,
+  "real_phase_fraction": 0.082,
+  "gaussian_expectation": 0.0027,
+  "null_quantiles_sigma": {
+   "50": 1.08,
+   "90": 2.8,
+   "99": 5.46,
+   "99.9": 10.36
+  }
+ },
+ "ownership_rule": {
+  "null_trials": 1316,
+  "fraction_meeting_quarter_condition": 0.191,
+  "after_per_signal_event_scaling": 0.03,
+  "after_per_signal_quarter_scaling": 0.016
+ },
+ "detector_odd_even": "The detector flags 45 of 663 M/K BOIs (6.8%) at odd/even >= 3 sigma, close to the 8.1% null rate of the local within-quarter statistic; the flag is kept as a conservative selection requirement and is not evidence of an eclipsing binary.",
+ "verdict": "Both rules FAILED calibration. Parity and ownership columns stay as descriptive measurements; no disposition, false-positive claim or batch change uses them. Batch 6 keeps the 28 odd/even-flagged signals.",
+ "conservative_flags": "INSTRUMENTAL_DATE_DRIVEN, SINGLE_EVENT_DRIVEN and NOT_REPRODUCED_IN_LOCAL_SAP compare shares of S/N squared or require low S/N; underestimated errors overstate S/N, so these flags err towards keeping a signal.",
+ "tool": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/event_review.py"
+}

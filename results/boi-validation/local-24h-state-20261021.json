@@ -1,0 +1,596 @@
+{
+  "utc": "2026-10-21T15:26:21.058304+00:00",
+  "window_start_utc": "2026-10-20T15:26:21.058304+00:00",
+  "window_end_utc": "2026-10-21T15:26:21.058304+00:00",
+  "scope": "Local Mac work and coordination in this file; server results are explicitly attributed owner reports, not local execution.",
+  "scheduled_tasks": {
+    "deleted": [
+      "monitor-local-boi-validation",
+      "overnight-boi-hardware-check"
+    ],
+    "method": "Recurring-job scheduler delete for both jobs; both returned deleteStatus=deleted at once",
+    "post_delete_directories_absent": true,
+    "automatic_local_continuation": false
+  },
+  "live_local_numerical_jobs": 0,
+  "historical_intentionally_stopped_coordinator": {
+    "pid": 24251,
+    "state": "T",
+    "cpu_percent": 0,
+    "modified": false
+  },
+  "new_local_statistical_validations": 0,
+  "repaired_local_complete_fpp_integrations": 6,
+  "repaired_local_exact_signals_screened": 3,
+  "local_probability_outcomes": [
+    {
+      "kic": 7595917,
+      "source_id": "2102612750272489216",
+      "signal_id": "rust-v6-2102612750272489216-1",
+      "utc": "2026-10-21T13:32:42.516189+00:00",
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "FPP": {
+        "repeats": [
+          0.20239326101297916,
+          0.13737492976309829
+        ],
+        "mean": 0.16988409538803873,
+        "sample_standard_deviation": 0.04597490292822398,
+        "minimum": 0.13737492976309829,
+        "maximum": 0.20239326101297916,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "NFPP": {
+        "repeats": [
+          0.02583046099710042,
+          0.01971607511328868
+        ],
+        "mean": 0.02277326805519455,
+        "sample_standard_deviation": 0.004323523721234583,
+        "minimum": 0.01971607511328868,
+        "maximum": 0.02583046099710042,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "repeats_completed": 2,
+      "remaining18_not_started": true,
+      "report": {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+        "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+      }
+    },
+    {
+      "kic": 4948140,
+      "source_id": "2073666564790289664",
+      "signal_id": "rust-v6-2073666564790289664-1",
+      "utc": "2026-10-21T14:01:10.761701+00:00",
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "FPP": {
+        "repeats": [
+          0.1685628140571961,
+          0.30434399052586025
+        ],
+        "mean": 0.23645340229152817,
+        "sample_standard_deviation": 0.09601179063847971,
+        "minimum": 0.1685628140571961,
+        "maximum": 0.30434399052586025,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "NFPP": {
+        "repeats": [
+          0.12154706327092864,
+          0.11611330864870488
+        ],
+        "mean": 0.11883018595981676,
+        "sample_standard_deviation": 0.003842244740678166,
+        "minimum": 0.11611330864870488,
+        "maximum": 0.12154706327092864,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "repeats_completed": 2,
+      "remaining18_not_started": true,
+      "report": {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic4948140-repaired-futility-20261021.json",
+        "sha256": "836d2851ca6fee5c79ce78fac6b3d546975852ee7def4b2bb7af70993fe4a56c"
+      }
+    },
+    {
+      "kic": 7271045,
+      "source_id": "2102918384442366592",
+      "signal_id": "rust-v6-2102918384442366592-1",
+      "utc": "2026-10-21T14:24:48.547311+00:00",
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "FPP": {
+        "repeats": [
+          0.9999999999922111,
+          1.0
+        ],
+        "mean": 0.9999999999961056,
+        "sample_standard_deviation": 5.507570326570946e-12,
+        "minimum": 0.9999999999922111,
+        "maximum": 1.0,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "NFPP": {
+        "repeats": [
+          0.007741067980723618,
+          0.12402798760695545
+        ],
+        "mean": 0.06588452779383953,
+        "sample_standard_deviation": 0.08222726943100354,
+        "minimum": 0.007741067980723618,
+        "maximum": 0.12402798760695545,
+        "unfavorable_indices": [
+          0,
+          1
+        ],
+        "mean_passes": false
+      },
+      "repeats_completed": 2,
+      "remaining18_not_started": true,
+      "report": {
+        "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7271045-repaired-futility-20261021.json",
+        "sha256": "a4017a4cf06603c447c04a350ee3b8f76fb5b0ad2d62de4ba40fcb486d1e2740"
+      }
+    }
+  ],
+  "overnight": {
+    "original_holds": 26,
+    "all_original_hold_receipts_freshly_verified": true,
+    "all_hold_times_within_window": true,
+    "holds": [
+      {
+        "kic": 3975580,
+        "source_id": "2073226966298407552",
+        "utc": "2026-10-21T07:01:00.927304+00:00",
+        "original_status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073226966298407552/readiness-hold-v1.json",
+          "sha256": "706b72b8e26d72663f92741477d0a3412393ed05a4d43384d7e004d84a4664c2"
+        }
+      },
+      {
+        "kic": 4285454,
+        "source_id": "2073237338631093888",
+        "utc": "2026-10-21T04:07:01.485717+00:00",
+        "original_status": "PARKED_EVOLVED_HOST_MASS_UNCERTAINTY_NOT_STARTED",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/readiness-hold-v1.json",
+          "sha256": "317b29a3342c7fd7e6083b3e4a3c9ac0f3fc69a4ae152c8b05eef71f881a2ae7"
+        }
+      },
+      {
+        "kic": 5303927,
+        "source_id": "2073609042284178176",
+        "utc": "2026-10-20T20:40:06.256255+00:00",
+        "original_status": "HELD_UNRESOLVED_HOST_STELLAR_AND_BLEND_MODEL_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073609042284178176/readiness-hold-v1.json",
+          "sha256": "55eb244c06db5f7eae625d550df042e54890b9062fc203c040236da498a84d1d"
+        }
+      },
+      {
+        "kic": 4948140,
+        "source_id": "2073666564790289664",
+        "utc": "2026-10-21T06:55:13.895815+00:00",
+        "original_status": "HELD_NATIVE_DETRENDING_PROTECTION_EDGE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/readiness-hold-v1.json",
+          "sha256": "1059104b7d31a61e2012b5f510dfb8d87c02e28fe2083ba900a9685a7d55ca8f"
+        }
+      },
+      {
+        "kic": 4480320,
+        "source_id": "2076221417495492736",
+        "utc": "2026-10-21T04:05:50.455386+00:00",
+        "original_status": "HELD_CAPABLE_SCENE_SOURCE_MISSING_STELLAR_SUPPORT_BEFORE_NATIVE",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076221417495492736/readiness-hold-v1.json",
+          "sha256": "1d2198672314c7e0e0145bcdd82a94a9400eb968948ce5d7b465481c128fe5af"
+        }
+      },
+      {
+        "kic": 5115632,
+        "source_id": "2076383384993192576",
+        "utc": "2026-10-21T04:51:20.481471+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/readiness-hold-v1.json",
+          "sha256": "40f359670c9098421d71d9c90d2066c14548297b5644117fa7ffd96083d638e7"
+        }
+      },
+      {
+        "kic": 6139064,
+        "source_id": "2077020448903232640",
+        "utc": "2026-10-21T02:53:16.554018+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/readiness-hold-v1.json",
+          "sha256": "83b19cb9399ac62373f0a5e34b53c921e2c1018a0c10bffd14f968a3cc91a153"
+        }
+      },
+      {
+        "kic": 7300018,
+        "source_id": "2077209775366626944",
+        "utc": "2026-10-20T19:51:45.803980+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/readiness-hold-v1.json",
+          "sha256": "3b71b58f1d790d7e03f8d014a04f2f7ea955b84f080db5a4c17980feef858077"
+        }
+      },
+      {
+        "kic": 7373485,
+        "source_id": "2077967368932890752",
+        "utc": "2026-10-21T05:53:12.998065+00:00",
+        "original_status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/readiness-hold-v1.json",
+          "sha256": "ce0f94651ac9a910fb4058b368cb8dea97540cd7e216d4a50837145530d3c37e"
+        }
+      },
+      {
+        "kic": 7765078,
+        "source_id": "2078045782158649216",
+        "utc": "2026-10-21T07:50:55.194491+00:00",
+        "original_status": "HELD_NATIVE_DETRENDING_PROTECTION_INCOMPLETE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2078045782158649216/readiness-hold-v1.json",
+          "sha256": "33e23f915cd8b7f353af4512d31f0a327bc2496c4a3a25ec5e82ac25804e7fbe"
+        }
+      },
+      {
+        "kic": 9606750,
+        "source_id": "2079517512834068480",
+        "utc": "2026-10-20T23:43:34.729219+00:00",
+        "original_status": "HELD_NATIVE_JOINT_POSTERIOR_NONSTATIONARY_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2079517512834068480/readiness-hold-v1.json",
+          "sha256": "186b42b58a884f2730de204d8610e78a6e51df51068b5ace3cbbf01aac880fbd"
+        }
+      },
+      {
+        "kic": 2834218,
+        "source_id": "2099197705814100480",
+        "utc": "2026-10-21T00:49:55.616134+00:00",
+        "original_status": "HELD_NATIVE_DETRENDING_PROTECTION_INADEQUATE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/readiness-hold-v1.json",
+          "sha256": "f66b8921b8225285cd8dc6f359583043729fef90670baa7858243345645e151c"
+        }
+      },
+      {
+        "kic": 3330404,
+        "source_id": "2099560128037101952",
+        "utc": "2026-10-20T20:36:09.768964+00:00",
+        "original_status": "HELD_NATIVE_JOINT_POSTERIOR_NONSTATIONARY_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/readiness-hold-v1.json",
+          "sha256": "23aec580addf4ad4b5df4984171623d83c8d5604e34f032375454321e452df01"
+        }
+      },
+      {
+        "kic": 3322939,
+        "source_id": "2100123494603868416",
+        "utc": "2026-10-20T20:42:22.205500+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100123494603868416/readiness-hold-v1.json",
+          "sha256": "4beb7bd476695a585fbd6f8fd41e2c6907ab6f5e749bea11e0a8890aaa6511ba"
+        }
+      },
+      {
+        "kic": 3935011,
+        "source_id": "2100203999471640064",
+        "utc": "2026-10-20T20:47:56.254739+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100203999471640064/readiness-hold-v1.json",
+          "sha256": "0b035fb89cfcdf71e1e40b0f37e947025614c9b6df17180617403fbcd8aee23a"
+        }
+      },
+      {
+        "kic": 4543190,
+        "source_id": "2100325529865507712",
+        "utc": "2026-10-21T06:09:35.554404+00:00",
+        "original_status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/readiness-hold-v1.json",
+          "sha256": "02169a088755da8ed88cb9e42279a158638eac26fcde02e18cb4d635032766b7"
+        }
+      },
+      {
+        "kic": 5268401,
+        "source_id": "2101354466593873152",
+        "utc": "2026-10-21T01:49:30.376921+00:00",
+        "original_status": "HELD_NATIVE_DETRENDING_PROTECTION_INADEQUATE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2101354466593873152/readiness-hold-v1.json",
+          "sha256": "185fe48133c4825682dd47d228bb889be0a31a2ada1b06ae15ead82374828cf2"
+        }
+      },
+      {
+        "kic": 7595917,
+        "source_id": "2102612750272489216",
+        "utc": "2026-10-21T03:50:25.122755+00:00",
+        "original_status": "HELD_NATIVE_DETRENDING_PROTECTION_EDGE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/readiness-hold-v1.json",
+          "sha256": "1f3cb2bf5d3d8f6a9c8a4ed7a06d483a2c1377cde37526318143c11bd543be70"
+        }
+      },
+      {
+        "kic": 7271045,
+        "source_id": "2102918384442366592",
+        "utc": "2026-10-20T22:43:00.473657+00:00",
+        "original_status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/readiness-hold-v1.json",
+          "sha256": "2b70cdb532bbf5d19762321285f14e5dedc170784b71ef8b2d325efb58c0f216"
+        }
+      },
+      {
+        "kic": 5079515,
+        "source_id": "2103418559153168128",
+        "utc": "2026-10-21T00:59:44.469391+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/readiness-hold-v1.json",
+          "sha256": "2c55d2078eb77c0172098b1416d24252c07f324fc192ef42caf3bafebadfea5e"
+        }
+      },
+      {
+        "kic": 6184073,
+        "source_id": "2104484363877066752",
+        "utc": "2026-10-20T20:44:52.541880+00:00",
+        "original_status": "PARKED_NATIVE_STELLAR_MASS_UNCERTAINTY_MODEL_NOT_STARTED",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2104484363877066752/readiness-hold-v1.json",
+          "sha256": "2ac1bcefa3df83309378799558b35d6f429cb7acae3a29b34d14253a4c3b5ab2"
+        }
+      },
+      {
+        "kic": 8805426,
+        "source_id": "2106383701495087232",
+        "utc": "2026-10-21T01:03:58.853471+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106383701495087232/readiness-hold-v1.json",
+          "sha256": "a4a02b2fd66994e92f6e3e9dac3bd35ad4ee7360f07b0d106e45fb2a18581bae"
+        }
+      },
+      {
+        "kic": 9073544,
+        "source_id": "2106817012155835904",
+        "utc": "2026-10-21T03:53:57.183040+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2106817012155835904/readiness-hold-v1.json",
+          "sha256": "5900c2ee0414f4e39fa497179005ebcb2bd12d21d81fc7adbb6f771331358d9e"
+        }
+      },
+      {
+        "kic": 8296927,
+        "source_id": "2126217104555818240",
+        "utc": "2026-10-21T03:56:46.032347+00:00",
+        "original_status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/readiness-hold-v1.json",
+          "sha256": "7e4962ca11dba7437a6357cd81fb5c69f5fe92693edb298703d995968c493910"
+        }
+      },
+      {
+        "kic": 8293530,
+        "source_id": "2126910621514995968",
+        "utc": "2026-10-21T03:59:36.167696+00:00",
+        "original_status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126910621514995968/readiness-hold-v1.json",
+          "sha256": "415435667faeef676da9e929bd79a891e9ad00d018e37cd75782eb96c759e09e"
+        }
+      },
+      {
+        "kic": 8878385,
+        "source_id": "2127169041106093184",
+        "utc": "2026-10-21T04:01:52.216910+00:00",
+        "original_status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+        "evidence": {
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/readiness-hold-v1.json",
+          "sha256": "c5525e50714da66cfbd41fc1ac5646beb81358efd13afd22535b01a0db07662c"
+        }
+      }
+    ],
+    "additional_native_review_deferred": {
+      "kic": 4847373,
+      "source_id": "2076476504190366336",
+      "reason": "Repair work interrupted the completed native review; semiregular variability and exact signal still need review."
+    },
+    "interpretation": "Historical holds include technical obstruction and overly strict preparation objections, not 26 astrophysical rejections. Three superseded by repaired FPP futility and one by completed repaired native."
+  },
+  "repairs": {
+    "commits": [
+      "63e6b4b1",
+      "bf529433",
+      "bb153cd4"
+    ],
+    "juliet": [
+      "Sampled-value beta support",
+      "Reject unsupported MCMC proposals before likelihood",
+      "Declared Generator passed to equal-weight resampling"
+    ],
+    "batman": "Safeguarded Newton/bisection for the same elliptic equation; no eccentricity clipping or prior change",
+    "triceratops": "Unmodified d20875c27d6761349cf032728bb4a59ec732a84d",
+    "aperture_geometry": "Resolve conflicting source/parent origins through actual SAP/pixel replay with full aperture mask count, preserving native photons; 34 reopened source-quarters passed.",
+    "calibrated_response": "Authorized negative calibration sample projection, plane normalization and linear interpolation in isolated lkprf1.1.1+spacelab.1. Finite support, spatial weights and threshold retained; no final-fraction clipping or new wings.",
+    "preparation": "Tiny contact-edge effects judged by measured detrending transfer rather than an all-posterior-contact veto; 7595917 and 4948140 objections withdrawn.",
+    "known_object_and_end_to_end_controls": [
+      "34 Mac tests passed; Ruff, complexity and environment checks passed",
+      "Frozen Kepler-10 exact upstream probability/scenario/logZ parity",
+      "Actual-photon beta/SciPy chains and direct nested weighted/equal array replay",
+      "Independent orbital roots, bilinear/phase and real-pixel aperture checks"
+    ],
+    "linux_controls_owner_reported_passed": 34
+  },
+  "process_mistakes": [
+    "Held negligible 7-15ppm effects disproportionately before measuring transfer.",
+    "Continued parking candidates for a shared aperture obstruction instead of escalating it early.",
+    "Initial detector-rank guesses were caught before wrong photons/fits; delivered proposal binding now explicit.",
+    "TRILEGAL unquoted-link parser caused duplicate submissions; first accepted job was bound before output inspection and later submissions preserved unused."
+  ],
+  "current_local_case": {
+    "kic": 3975580,
+    "source_id": "2073226966298407552",
+    "signal_id": "rust-v6-2073226966298407552-1",
+    "status": "REPAIRED_NATIVE_COMPLETE_REVIEW_UNDECIDED_NO_FPP",
+    "native_exit_code": 0,
+    "native_accepted": null,
+    "clock_adopted": false,
+    "probability_runs": 0,
+    "native_photons": 5317,
+    "native_weight_ess": 5619.444118879918,
+    "equal_samples": 19223,
+    "finite_independent_priors_posteriors": true,
+    "conditional_clock": {
+      "period_days": 4.405315959932728,
+      "epoch_bkjd": 833.6918876144251,
+      "duration_days": 0.0976190533574773
+    },
+    "representative_exact_duration_hours": 2.3090731553993464,
+    "representative_unprotected_observed_cadences": 0,
+    "approximate_full_baseline_protection_fraction": 1.0,
+    "integration20_vs40_max_ppm": 52.89827446441908,
+    "folded_oot_residual_rms_ppm": 560.6959729855657,
+    "formal_mean_bin_error_ppm": 570.642167565099,
+    "scene_sources_retained": 98,
+    "source_quarters_reviewed": 14,
+    "proposed_identical_aperture_group": {
+      "quarters": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "channel": 35,
+      "physical_aperture_pixels": [
+        [
+          269,
+          37
+        ],
+        [
+          269,
+          38
+        ]
+      ],
+      "native_window_photons": 1874
+    },
+    "new_group_fit_launched": false,
+    "pending": [
+      "Separate native refit of the pre-FPP largest identical-aperture group if work resumes; full-quarter mean response distorts capable-neighbor shapes.",
+      "Final timing/alias, spacecraft/pixel-source, exposure/noise, stellar/body/companion and dated catalogue closeout.",
+      "Field population acquisition and complete frozen probability generation."
+    ],
+    "evidence": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-nested-review-v1.json",
+        "sha256": "5b09af040c992a1a08a2cc87c6399128287909034a7851e60008070dbe0b9a59"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/native-repair-v1/native-posterior-review-measurements-v1.json",
+        "sha256": "ea3b1a088a691f6209a2aba1bacbb57f24f532e44471bf3bad85431a15c7cc03"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/scene-preview-review-v1.json",
+        "sha256": "18b8d16c06f65da63b82319e85917027dae74e5b6f8430cd6aadd374e97a8f4d"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/calibrated-scene-review-v1.json",
+        "sha256": "e5e41b494d045531236dfde1a32bfbf0d5975a06cfec2795eb2423c9d79a9407"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/identical-aperture-groups.json",
+        "sha256": "287711fc03b64da2a5b2918708b7368aa89e46a95adf0939d665119edb165b44"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-phase-effective-review.json",
+        "sha256": "327d415dbb808b1d32ad17768c547c0a3750d20bef80014ef0185e531b7f5cb3"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2073226966298407552/scene-repair-v1/2073226966298407552-identical-aperture-phase-review.json",
+        "sha256": "ddb8d7bdf243afcc49e7468c99a23e89f1f71604a9553356b182897189d69067"
+      }
+    ]
+  },
+  "server_coordination": {
+    "owner_chat": "01a15aa1-8f2e-7231-8e58-0fdcc9ca9c35",
+    "title": "Assess TESS pipeline coverage",
+    "hold_confirmed_utc": "2026-10-21T09:48:30+00:00",
+    "repaired_native_completed": 16,
+    "repaired_native_failures": 0,
+    "production_resumed_under_adams_direct_authorization": true,
+    "latest_saved_progress_utc": "2026-10-21T14:53:20.435571+00:00",
+    "latest_saved_batch_state_counts": {
+      "NATIVE_STARTED": 22,
+      "PREPARED_NO_NATIVE_STARTED": 7,
+      "QUEUED_OR_AUTHENTICATING": 11
+    },
+    "latest_saved_batch_selected_signals": 40,
+    "cumulative_probability_totals": {
+      "completed_integrations": 112,
+      "candidates": 47,
+      "stopped_after_first_two": 46,
+      "completed_all_twenty_but_numerical_fail": 1,
+      "validated": 0
+    },
+    "totals_are_not_claimed_as_24h_counts": true,
+    "source": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/server-native-continuation-20261021.json",
+      "sha256": "48d75070196ad331eb1cf0dccda364dc05d5748db44d73fb243f84b1ae4b0e86"
+    },
+    "probability_source": {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/server-continuation-20261021-v02.json",
+      "sha256": "9009e4714078ddee4d1cba5b6d6d89316a5110c96adec7550afe399f4e97a649"
+    },
+    "server_jobs_changed_in_this_local_stop_turn": false
+  },
+  "preservation": {
+    "accepted_studies_unchanged": [
+      6699887,
+      8745833,
+      4829494
+    ],
+    "explicit_abandonment_unchanged": 8540098,
+    "old_unfavorable_campaigns_unchanged": [
+      10196617,
+      4904094
+    ],
+    "historical_inputs_outputs_failures_seeds_retained": true,
+    "physical_fp_denials_added": 0
+  },
+  "remaining_limits": [
+    "Finite-support calibrated response is modeled, not measured full Kepler stellar flux or exclusion of physical far wings.",
+    "Stock Tmag/companion/field approximations and candidate-specific physical scene support remain.",
+    "Software controls establish behavior, not empirical validation of every crowded faint-source inference.",
+    "No fresh robustness revalidation of the three historical accepted studies was performed."
+  ],
+  "state_backups": "/Users/adam/Other/spacelab/other/boi-repair-20261021/state-snapshots/20261021T152621Z",
+  "next": "Schedules deleted at Adam request. No new candidate fit or FPP launched. Retain this handoff; no automatic queue advancement."
+}

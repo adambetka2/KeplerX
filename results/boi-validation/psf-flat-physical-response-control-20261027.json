@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-27T07:01:18.241674+00:00",
+  "control_source_id": "2107574403864920576",
+  "physical_companion_source_id": "2107574403864920448",
+  "quarter": 5,
+  "geometry": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-prf-control-v1/geometry-review.json",
+    "sha256": "f53960714ecb7c9516b5a36e13b334c8a4bc676e64ddafe63a7454731f1a89c5"
+  },
+  "measurement": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-prf-control-v1/calibrated-response-v1/result.json",
+    "sha256": "7ee38a55431ad693e381b41047c771743c8fee945328588c65904af6ce6d9177"
+  },
+  "reconstructed_operator": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/fixed-response-v2/result.json",
+    "sha256": "ec564d0d235574f9eeb71d77c756bc114a41fa8cc054ebf5e83af1e7a898df6b"
+  },
+  "physical_prf_model": "Existing reviewed lkprf 1.1.1+spacelab.1 calibrated Kepler PRF; actual saved detector footprint, propagated physical positions and measured pointing corrections. No SAP aperture fraction.",
+  "companion_to_target_response_per_equal_intrinsic_flux_change": [
+    0.957165657065593,
+    0.9588639306184139,
+    0.9624186001744743
+  ],
+  "ratio_range": [
+    0.957165657065593,
+    0.9624186001744743
+  ],
+  "interpretation": "In this fixed-operator sensitivity control, equal intrinsic photon-flux changes on the real omitted companion couple into the extracted target almost as strongly as changes on the target. This is not the companion flux fraction or observed transit depth, and does not establish the actual host. Perfect deblending is unsupported.",
+  "limitations": [
+    "Three observed cadences in one quarter/control",
+    "Conditioned on the reconstructed fixed background/PRF/time model and prior selection",
+    "Independent calibrated PRF and finite-support assumptions/uncertainty require broader controls",
+    "No full extraction/flattening injection or probability qualification yet"
+  ],
+  "probability_qualified": false,
+  "fpp_started": false,
+  "production_and_candidate_photometry_changed": false,
+  "next_required_work": "Paired physical target/contaminant pixel injections through extraction and archived flattening, followed by the separate signed PSF response input/likelihood and upstream/end-to-end controls before candidate admission."
+}

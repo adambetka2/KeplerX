@@ -1,0 +1,110 @@
+{
+  "source_id": "2102918384442366592",
+  "kic": 7271045,
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "status": "REVIEWED_NATIVE_DEPENDENCY_REPAIR_RUNNING_NO_PROBABILITY_RESULT",
+  "failure": {
+    "coordinate_changes": 0,
+    "chain_shape": [
+      12000,
+      40,
+      11
+    ],
+    "all_exported_loglikes_finite": true,
+    "cause": "juliet2.2.10 evaluate_beta tests a>0 and b<1 instead of x support; Beta(.867,3.03) returns -inf at every interior x. Exported loglike omits logprior, so finite likelihood and exit0 did not establish valid sampling.",
+    "original_preserved": true
+  },
+  "repair": {
+    "package": "juliet2.2.10 isolated source copy",
+    "original_guard": "a > 0 and b < 1",
+    "corrected_guard": "x > 0 and x < 1",
+    "changed_files": [
+      "utils.py"
+    ],
+    "source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/source-review.json",
+      "sha256": "f13ebbdb2d9548277afaf23a1d5696e5bc254569f2fbc99898b8bb1e86016351"
+    },
+    "base_environment_unchanged": true,
+    "triceratops_unchanged": true
+  },
+  "controls": {
+    "beta_density_grids": [
+      {
+        "shapes": [
+          0.867,
+          3.03
+        ],
+        "points": 1005,
+        "exact": true
+      },
+      {
+        "shapes": [
+          2,
+          2
+        ],
+        "points": 1005,
+        "exact": true
+      },
+      {
+        "shapes": [
+          0.5,
+          0.5
+        ],
+        "points": 1005,
+        "exact": true
+      },
+      {
+        "shapes": [
+          3,
+          0.2
+        ],
+        "points": 1005,
+        "exact": true
+      }
+    ],
+    "chain_coordinates_exact": true,
+    "saved_loglikes_exact": true,
+    "final_rng_exact": true,
+    "moved_walkers_each": [
+      40,
+      40
+    ],
+    "direct_batman_replays_each": 40,
+    "maximum_loglike_difference": 1.5825207810848951e-09,
+    "loglike_tolerance": 1e-07,
+    "short_chain_steps": 80,
+    "not_convergence_certification": true,
+    "diagnostic_harness_failure_preserved": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/revalidation-attempt1-failure.json",
+      "sha256": "d5ffcfcbac0a4d68dcdfaec722ff8be23145e526236c7473e83c8db1faed078e"
+    },
+    "revalidation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/revalidation.json",
+      "sha256": "37270eda2686cdf39513791bf5cffc5c3f871846c4e35c763d5d4f820cd3d921"
+    }
+  },
+  "production": {
+    "candidate_inputs_unchanged": true,
+    "seed": 2026102071,
+    "walkers": 40,
+    "retained_steps": 10000,
+    "burnin": 2000,
+    "pool_workers": 10,
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/launch.json",
+      "sha256": "fd592a1b05563ebe5a89afb341f71b4f8a5ae8e54102e323790a2a898834a258"
+    },
+    "freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/freeze.json",
+      "sha256": "669c1181b3f920bb4ea189711ae0f35805db387daa88d4aadaa07ccab42e483e"
+    }
+  },
+  "inference": {
+    "native_clock_adopted": false,
+    "probability_runs": 0,
+    "astrophysical_false_positive_denied": false,
+    "previous_circular_fits": "This beta-evaluator bug is not used by circular fits without beta priors; do not attribute their holds to it."
+  },
+  "next": "Review this complete native posterior before FPP. Preserve terminal outcome or precise hold and continue next eligible local candidates under the same protocol. Hourly monitor ACTIVE; one-time hardware check remains PAUSED."
+}

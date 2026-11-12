@@ -1,0 +1,626 @@
+{
+  "utc": "2026-10-20T08:58:01.435388+00:00",
+  "classification": "PROGRESS_FIRST_FIXED_SCREEN_FAILED_NEXT_TARGET_NATIVE_AND_SCENE_PREPARED",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_probability_budget_screens": 1,
+  "screen_rejections": 1,
+  "screen_rejection_fraction": {
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1.0,
+    "scope": "One selected candidate only; this is not a population or astrophysical false-positive rate."
+  },
+  "reproduced_astrophysical_false_positives": 0,
+  "astrophysical_false_positive_rate": null,
+  "completed_physical_adjudications": 0,
+  "completed_candidate_adjudications": 1,
+  "adjudication_scope": "Probability budget-screen decision only; no astrophysical denial.",
+  "rejected_screen": {
+    "source_id": "2128845796339643392",
+    "kic": 10865762,
+    "outcome": "STOP_HIGH_FPP_FIXED_FIVE_COMPLETE_BOI_PRESERVED_NO_AUTO_RESUME",
+    "boi_disposition": "BOI",
+    "physical_outcome": "REMAINS_PC_NO_REPRODUCED_FALSE_POSITIVE_MECHANISM",
+    "first_five_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "first_five_results": [
+      {
+        "index": 0,
+        "seed": 6021847668233176554,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -1.0418888456279234,
+            "probability": 0.35278769074811345,
+            "probability_lower": 0.35278769074810845,
+            "probability_upper": 0.35278769074810845
+          },
+          "NFPP": {
+            "log_probability": -1.1600225117142742,
+            "probability": 0.3134791238507056,
+            "probability_lower": 0.3134791238507056,
+            "probability_upper": 0.3134791238507056
+          },
+          "EB": {
+            "log_probability": -2.229684005501383,
+            "probability": 0.10756241389722082,
+            "probability_lower": 0.1075624138972193,
+            "probability_upper": 0.1075624138972193
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "minimum_nonzero_weight_ess": 1.2150013632404928,
+        "maximum_normalized_scenario_weight": 0.9029303286440602,
+        "deep_weight_replay_passed": true
+      },
+      {
+        "index": 1,
+        "seed": 1901606604453779140,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -0.9744974589232385,
+            "probability": 0.3773819558521417,
+            "probability_lower": 0.3773819558521417,
+            "probability_upper": 0.3773819558521417
+          },
+          "NFPP": {
+            "log_probability": -1.0807269179302068,
+            "probability": 0.33934875726937447,
+            "probability_lower": 0.33934875726937447,
+            "probability_upper": 0.33934875726937447
+          },
+          "EB": {
+            "log_probability": -2.216745445534329,
+            "probability": 0.10896315891022801,
+            "probability_lower": 0.10896315891022801,
+            "probability_upper": 0.10896315891022801
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "minimum_nonzero_weight_ess": 1.9951729604959407,
+        "maximum_normalized_scenario_weight": 0.6793696611597541,
+        "deep_weight_replay_passed": true
+      },
+      {
+        "index": 2,
+        "seed": 14877594406385854531,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -0.9952805707769556,
+            "probability": 0.3696197255009112,
+            "probability_lower": 0.3696197255009112,
+            "probability_upper": 0.3696197255009112
+          },
+          "NFPP": {
+            "log_probability": -1.114923457547178,
+            "probability": 0.32794037929996417,
+            "probability_lower": 0.32794037929996417,
+            "probability_upper": 0.32794037929996417
+          },
+          "EB": {
+            "log_probability": -2.2695393551989724,
+            "probability": 0.10335978126451495,
+            "probability_lower": 0.10335978126451495,
+            "probability_upper": 0.10335978126451495
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "minimum_nonzero_weight_ess": 1.6439033732922927,
+        "maximum_normalized_scenario_weight": 0.7771650182039872,
+        "deep_weight_replay_passed": true
+      },
+      {
+        "index": 3,
+        "seed": 18370180582993634039,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -0.9665583787844838,
+            "probability": 0.38038994598071624,
+            "probability_lower": 0.38038994598071624,
+            "probability_upper": 0.38038994598071624
+          },
+          "NFPP": {
+            "log_probability": -1.0925111436363153,
+            "probability": 0.33537326497547426,
+            "probability_lower": 0.3353732649754695,
+            "probability_upper": 0.3353732649754695
+          },
+          "EB": {
+            "log_probability": -2.180569440679193,
+            "probability": 0.11297717851856187,
+            "probability_lower": 0.11297717851856187,
+            "probability_upper": 0.11297717851856187
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "minimum_nonzero_weight_ess": 1.0375871663887772,
+        "maximum_normalized_scenario_weight": 0.981718637682304,
+        "deep_weight_replay_passed": true
+      },
+      {
+        "index": 4,
+        "seed": 15465280993510983573,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -0.950677771598265,
+            "probability": 0.3864789901823056,
+            "probability_lower": 0.3864789901823056,
+            "probability_upper": 0.3864789901823056
+          },
+          "NFPP": {
+            "log_probability": -1.060675392374165,
+            "probability": 0.3462218957187395,
+            "probability_lower": 0.3462218957187395,
+            "probability_upper": 0.3462218957187395
+          },
+          "EB": {
+            "log_probability": -2.220270523707498,
+            "probability": 0.1085797314599866,
+            "probability_lower": 0.10857973145998814,
+            "probability_upper": 0.10857973145998814
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "minimum_nonzero_weight_ess": 1.2891107679465,
+        "maximum_normalized_scenario_weight": 0.8778699148773986,
+        "deep_weight_replay_passed": true
+      }
+    ],
+    "FPP": {
+      "mean": 0.37333166165283765,
+      "sample_sd": 0.012989512295944628,
+      "minimum": 0.35278769074811345,
+      "maximum": 0.3864789901823056
+    },
+    "NFPP": {
+      "mean": 0.3324726842228516,
+      "sample_sd": 0.01251031264124367,
+      "minimum": 0.3134791238507056,
+      "maximum": 0.3462218957187395
+    },
+    "cutoff_mean_fpp_ge": 0.03,
+    "completed_full_repeats": 7,
+    "additional_previously_completed_runs": [
+      {
+        "index": 6,
+        "stage": "final",
+        "seed": 16093228041406604374,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -0.9406188217790685,
+            "probability": 0.3903861811246539,
+            "probability_lower": 0.3903861811246539,
+            "probability_upper": 0.3903861811246539
+          },
+          "NFPP": {
+            "log_probability": -1.0590801485467267,
+            "probability": 0.34677464482839165,
+            "probability_lower": 0.34677464482839165,
+            "probability_upper": 0.34677464482839165
+          },
+          "EB": {
+            "log_probability": -2.2859626645097393,
+            "probability": 0.10167613497173311,
+            "probability_lower": 0.10167613497173311,
+            "probability_upper": 0.10167613497173311
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "deep_weight_replay_passed": true,
+        "elapsed_seconds": 4.944300387986004
+      },
+      {
+        "index": 7,
+        "stage": "final",
+        "seed": 13285760076447974367,
+        "status": "COMPLETE_INDEPENDENT_RUN",
+        "scenario_count": 132,
+        "draws_per_scenario": 1000000,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -1.0149904676362382,
+            "probability": 0.3624058844007447,
+            "probability_lower": 0.3624058844007447,
+            "probability_upper": 0.3624058844007447
+          },
+          "NFPP": {
+            "log_probability": -1.1258578203903937,
+            "probability": 0.32437409326661437,
+            "probability_lower": 0.32437409326661437,
+            "probability_upper": 0.32437409326661437
+          },
+          "EB": {
+            "log_probability": -2.3183585105652753,
+            "probability": 0.09843503312779406,
+            "probability_lower": 0.09843503312779406,
+            "probability_upper": 0.09843503312779406
+          },
+          "bounded_posterior_mass_upper": 0.0
+        },
+        "deep_weight_replay_passed": true,
+        "elapsed_seconds": 4.854488451033831
+      }
+    ],
+    "twenty_primary_admission_mean": null,
+    "interrupted_nonprefix_primaries": 13,
+    "interrupted_recovery_diagnostics": 3,
+    "deep_prefix_review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-final-triage-v1/review.json",
+      "sha256": "f7fee6f7e4c0673d56b7b7435219b7597acfadb4c068797229a22cb34b853d33"
+    },
+    "nonprefix_pruning_proof": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-prefix-lower-bound-v1/review.json",
+      "sha256": "667fb166ae4833ce5db39460301207116b14557c549c4714c8e8524eb9c6ac60"
+    },
+    "nonprefix_stop_actions": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-prefix-lower-bound-v1/nonprefix-stop/actions.json",
+      "sha256": "477ad8cf1e5b85375123f0f5045f36b24ef5a91f4b417178b0be5eb5f2e3b19b"
+    },
+    "motion_diagnostic": {
+      "summary": [
+        {
+          "family": "EXP_MEDIAN_FIT",
+          "primary_measured_depth_ppm": 373.3199577236573,
+          "primary_depth_envelope_ppm": [
+            -166.40721019597004,
+            208.66533007220002
+          ],
+          "primary_depth_inside_envelope": false,
+          "primary_distance_in_measured_error_units": 2.3217053867223765,
+          "off_transit_controls": 60,
+          "off_transit_measured_depths_inside_envelope": 59
+        },
+        {
+          "family": "EXP_POSITIVE_MAX_ENVELOPE",
+          "primary_measured_depth_ppm": 373.3199577236573,
+          "primary_depth_envelope_ppm": [
+            -162.4466997523758,
+            205.34331191408475
+          ],
+          "primary_depth_inside_envelope": false,
+          "primary_distance_in_measured_error_units": 2.368547358688158,
+          "off_transit_controls": 60,
+          "off_transit_measured_depths_inside_envelope": 59
+        },
+        {
+          "family": "MOFFAT_BETA2p5_MAX_ENVELOPE",
+          "primary_measured_depth_ppm": 373.3199577236573,
+          "primary_depth_envelope_ppm": [
+            -133.68205670938576,
+            202.7613830255735
+          ],
+          "primary_depth_inside_envelope": false,
+          "primary_distance_in_measured_error_units": 2.404953734227629,
+          "off_transit_controls": 60,
+          "off_transit_measured_depths_inside_envelope": 57
+        },
+        {
+          "family": "MOFFAT_BETA1p5_MAX_ENVELOPE",
+          "primary_measured_depth_ppm": 373.3199577236573,
+          "primary_depth_envelope_ppm": [
+            -126.63431194062302,
+            202.66877910473715
+          ],
+          "primary_depth_inside_envelope": false,
+          "primary_distance_in_measured_error_units": 2.406259491769363,
+          "off_transit_controls": 60,
+          "off_transit_measured_depths_inside_envelope": 57
+        },
+        {
+          "family": "MOFFAT_BETA1p5_MAX_ENVELOPE_x2",
+          "primary_measured_depth_ppm": 373.3199577236573,
+          "primary_depth_envelope_ppm": [
+            -108.72059523076622,
+            202.17581219748755
+          ],
+          "primary_depth_inside_envelope": false,
+          "primary_distance_in_measured_error_units": 2.4132105501171432,
+          "off_transit_controls": 60,
+          "off_transit_measured_depths_inside_envelope": 56
+        }
+      ],
+      "review": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-motion-aperture-v2/review.json",
+        "sha256": "6a4c72a82fb55653a76c9f110abd59725acac108ee602c5d9294ede77ea6e12c"
+      },
+      "scope": "This is a first-order finite-grid geometric envelope, not a converged time-dependent PRF model. Actual offsets can exceed the grid neighborhood; absolute reference position, higher-order/flatfield response, uncatalogued sources and backgrounds remain outside it. A depth inside the envelope does not establish a mechanism; a depth outside it excludes only this declared linear model. The hypothesis follows the observed pointing sensitivity. No independent likelihood, FPP factor or BOI disposition is supplied."
+    }
+  },
+  "next_selected_target": {
+    "source_id": "2131705076324568448",
+    "kic": 10844387,
+    "signal_id": "mk-sap-20261019-2131705076324568448-1",
+    "selection": {
+      "source_id": "2131705076324568448",
+      "signal_id": "mk-sap-20261019-2131705076324568448-1",
+      "provisional_tier": 0,
+      "checks": {
+        "positive_measured_depth": true,
+        "several_events": true,
+        "original_shape_fit": true,
+        "target_localization": true,
+        "multi_quarter_localization": true,
+        "majority_target_prf": true,
+        "host_mass_radius": true,
+        "ruwe": true,
+        "parallax": true,
+        "single_event_information": true,
+        "no_boi_period_flag": true,
+        "no_global_clock_flag": true
+      },
+      "native_depth_snr": 10.960941377453887,
+      "native_depth_ppm": 1087.0485574873296,
+      "measured_events": 46,
+      "event_depth_chi2_per_dof": 1.0848346344689286,
+      "largest_event_information_fraction": 0.03789140642919182,
+      "target_prf_preferred_fraction": 0.6666666666666666,
+      "localization_uncertainty_arcsec": 1.2956175924651039,
+      "neighbors": 19,
+      "coordinates": {
+        "ra_deg": 283.0018042193215,
+        "dec_deg": 48.22244549818672,
+        "kic": 10844387,
+        "origin_tpf_kic": 10844388
+      },
+      "period_days": 12.025351363412183,
+      "duration_days": 0.14,
+      "ruwe": 0.97063494,
+      "source_evidence": {
+        "path": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/work/batches/0044/vetting/sources/2131705076324568448.json",
+        "sha256": "28cdcdf2ef745222939a1dec00ab98c1a8bdb18259adfa71b4f07cf339d0efd1"
+      },
+      "measurement_path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/spacecraft-v2/mk-sap-20261019-2131705076324568448-1.json",
+      "global_clock_flags": {
+        "signal_id": "mk-sap-20261019-2131705076324568448-1",
+        "source_id": "2131705076324568448",
+        "all_review_flags": 1,
+        "narrow_review_flags": 0
+      },
+      "readiness_hold_reason": null,
+      "execution_status": "NOT_PREPARED",
+      "current_host_catalogue": {
+        "tic_id": "48217348",
+        "parameters": {
+          "mass": 0.65,
+          "e_mass": null,
+          "rad": 0.721626,
+          "e_rad": null,
+          "Teff": 4135,
+          "e_Teff": 123,
+          "MH": null,
+          "e_MH": null,
+          "ebv": 0.0450439,
+          "e_ebv": 0.00561022
+        },
+        "source": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/tic-recovery-v1/2131705076324568448-exact-tic.json",
+          "sha256": "8486daed51b52c92e2f50ee3ac36d61ea244fcdc50b30a7ebc415c08d32b877c"
+        },
+        "scope": "Exact reciprocal target catalogue values only; not a completed stellar/scene or physical gate."
+      },
+      "apparent_unit_dilution_radius_earth_proxy": 2.5951702120034525,
+      "higher_local_catalogue_clock_review": {
+        "all_flags": 0,
+        "phase_and_drift_flags": 0,
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/nearby-known-harmonics-v1/mk-sap-20261019-2131705076324568448-1.json",
+          "sha256": "a35c864e1be7c857c1290d0a19b712759a39da3fd378786d417b48c943a9f533"
+        },
+        "scope": "Review preference only, not source attribution or an alias proof."
+      }
+    },
+    "membership": {
+      "status": "NEW_BOI_SOURCE",
+      "matched_boi_ids": [],
+      "period_related_boi_ids": [],
+      "previous_boi_source": false
+    },
+    "native_fit": {
+      "period_days": 12.025184467094101,
+      "epoch_bkjd": 691.7923676510723,
+      "duration_days": 0.13171779697694364,
+      "native_convergence": {
+        "rank_rhat_maximum": 1.0159431955638587,
+        "reference_epoch_bulk_ess": 332.0586931831539,
+        "radius_ratio_snr": 12.45584175964248,
+        "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+        "passed": true
+      },
+      "rank_rhat_maximum": 1.0159431955638587,
+      "reference_epoch_bulk_ess": 332.0586931831539,
+      "apparent_radius_ratio_quantiles_16_50_84": [
+        0.030772054914813753,
+        0.03346364087332161,
+        0.03614521901228092
+      ],
+      "original_to_final_timing_shift_at_span_endpoints_days": [
+        0.011157747214326719,
+        -0.0056987809118709265
+      ]
+    },
+    "native_review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/native-acceptance-v1/2131705076324568448/native-fit-review.json",
+      "sha256": "22969ab8b14a34e50ce7d687b74f7cb46db9fedba7c6475091ea645aa01560ca"
+    },
+    "posterior_numerical_audit": {
+      "passed": true,
+      "draws": 80,
+      "maximum_log_density_error": 0.0007373173543783196,
+      "maximum_point_noise_error": 7.758673876317895e-05,
+      "maximum_live_frame_correction_ppm": 0.0031786245857645667
+    },
+    "native_execution": {
+      "controls_status": "ALL_SEEDED_NATIVE_CHAIN_AND_LOG_DENSITY_PARITY_CHECKS_PASSED",
+      "bitwise_chain_and_log_density_comparisons": [
+        {
+          "index": 0,
+          "workers": 6,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 1,
+          "workers": 6,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 2,
+          "workers": 6,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 3,
+          "workers": 6,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 0,
+          "workers": 8,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 1,
+          "workers": 8,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 2,
+          "workers": 8,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        },
+        {
+          "index": 3,
+          "workers": 8,
+          "chain_bitwise_equal": true,
+          "log_probability_bitwise_equal": true,
+          "acceptance_counts_bitwise_equal": true
+        }
+      ],
+      "short_group_timings": [
+        {
+          "likelihood_workers_per_ensemble": 0,
+          "total_evaluation_workers": 0,
+          "group_wall_seconds": 5.585617903154343
+        },
+        {
+          "likelihood_workers_per_ensemble": 6,
+          "total_evaluation_workers": 24,
+          "group_wall_seconds": 3.6695209061726928
+        },
+        {
+          "likelihood_workers_per_ensemble": 8,
+          "total_evaluation_workers": 32,
+          "group_wall_seconds": 3.321013643871993
+        }
+      ],
+      "selected_workers_per_ensemble": 8,
+      "independent_ensembles": 4,
+      "walkers_per_ensemble": 24,
+      "execution_review": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/native-execution-controls-v2/review.json",
+        "sha256": "70b9ad22b3b21de9c7cc7e5eaf2bb98d33d62675edff13c32b018b9c6bb38b32"
+      },
+      "execution_freeze": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/execution-freeze.json",
+        "sha256": "02e5a841cbd2963de7bc90fffd781c0417e458b198311c77a5c86e5d73924d25"
+      },
+      "scope": "Short native128step throughput including process startup and HDF writes. No full candidate or convergence-time guarantee. No physical model, walker count, seed, convergence criterion or TRICERATOPS probability budget changed."
+    },
+    "timing": {
+      "descriptive_quarter_two_delta_log_density": 9.564594310344226,
+      "quarter_dof": 8,
+      "descriptive_wilks_tail": 0.29692418820751626,
+      "period_profile_peaks": [
+        {
+          "period_delta_ppm": -208.92331132791978,
+          "delta_from_unscanned_median": 62.30431657619329
+        },
+        {
+          "period_delta_ppm": -7.20425211475586,
+          "delta_from_unscanned_median": -0.11356182124768566
+        },
+        {
+          "period_delta_ppm": 201.7190592131639,
+          "delta_from_unscanned_median": 68.92832333301885
+        }
+      ],
+      "review": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/timing-review-v1/2131705076324568448/review.json",
+        "sha256": "52507c79c86ae3521ee4d55d1112e162afb0de449aed99a103a024d308d68ef6"
+      },
+      "recovery_diagnostic_assignment": "NOT_YET_FROZEN"
+    },
+    "geometry": {
+      "quarters": 8,
+      "scene_sources": 20,
+      "all_first_quarter_arrays_bitwise_equal": true,
+      "reviewed_complete_family_metadata": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/geometry-v1/2131705076324568448/receipt-reviewed.json",
+        "sha256": "32a3c2b6ea93fa51b7fcfcfa9f45a2cbc7916625ba5178f16b63dfc4fa901eeb"
+      }
+    },
+    "scene": {
+      "status": "MIST_SUPPORTED_SCENE_PREPARED_REQUIRES_REVIEW",
+      "source_count": 20,
+      "missing_scene_log_prior_mass_upper": -141.24467047573782,
+      "review": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/scene-v1/2131705076324568448/preparation.json",
+        "sha256": "9d82a72a9bcd52f5bf70ae7dcb626317753d4f33b59bce122abdbd1f9e7bfb12"
+      }
+    },
+    "probability_runs": 0,
+    "remaining_preparation": [
+      "Final-clock pixel/source-ownership and spacecraft/noise review",
+      "Native-to-probability affine/covariance packet and scene/model-support readiness",
+      "Dated exact-signal catalogue/literature final review and frozen zero-or-three timing assignment",
+      "New one-target freeze, seeds, six-thread first-five scheduler and policy before probability work"
+    ]
+  },
+  "observer_repair": {
+    "change": "Read worker liveness before reading results; terminal status is then based on a result snapshot taken after observed process exit. Preserve all original frozen observer files and its earlier status; a separate deep-audited closeout records the actual completed prefix.",
+    "reproduced_before_fix": [
+      "test_exit_after_final_prefix_publish_keeps_complete_screen",
+      "test_exit_after_last_result_publish_keeps_full_closeout"
+    ],
+    "tests": "45 passed",
+    "ruff_and_complexity": "PASS",
+    "checks_directory": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v10"
+  },
+  "scope": "Server-only, one selected candidate at a time. The failed first source's BOI, every completed or interrupted run, and first failures remain. The next native fit/scene preparation is not a primary probability run, statistical validation, RV confirmation or novelty claim. Deferred M/K detector recovery calibration remains separate."
+}

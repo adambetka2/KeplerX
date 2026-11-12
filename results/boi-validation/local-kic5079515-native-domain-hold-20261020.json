@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-20T12:57:19.301774+00:00",
+  "source_id": "2103418559153168128",
+  "kic": 5079515,
+  "tic": 120255498,
+  "status": "HELD_NATIVE_LONG_DURATION_MODEL_SCOPE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "original_duration_hours": 9.288,
+  "native_maximum_duration_hours": 6.0,
+  "native_window_half_width_hours": 7.2,
+  "noise_region_starts_absolute_phase_hours": 2.88,
+  "original_primary_half_duration_hours": 4.644,
+  "initial_map_states": [
+    {
+      "impact_fraction": 0.5,
+      "duration_days": 0.5460209985643234,
+      "log_density": -0.8416074953780284,
+      "prior": 0.6601384463798973,
+      "model_present": false,
+      "logp": {
+        "nonfinite": "-inf"
+      }
+    },
+    {
+      "impact_fraction": 0.8,
+      "duration_days": 0.37829935882389504,
+      "log_density": -0.8416074953780284,
+      "prior": 0.6601384463798973,
+      "model_present": false,
+      "logp": {
+        "nonfinite": "-inf"
+      }
+    },
+    {
+      "impact_fraction": 0.94,
+      "duration_days": 0.2151118666652187,
+      "log_density": -0.8416074953780284,
+      "prior": 0.6601384463798973,
+      "model_present": true,
+      "logp": -127.98366235486083
+    }
+  ],
+  "first_failure": "The strict MAP writer rejected nonfinite entries in its preserved-attempt list. Two initial geometries have logp=-inf; the0.94impact-fraction start is finite. This is not an all-infinite likelihood or a reproduced false positive.",
+  "scientific_scope_failure": "The frozen duration maximum excludes the original9.288hour signal, and the fixed outside-primary noise region starts inside that original primary window. A finite shorter/grazing start does not establish adequate long-duration support.",
+  "action": "Preserve all data and failures; no MCMC or FPP launched. Do not bypass strict JSON, crop the event, alter windows, priors, or duration bounds to pass. A general long-duration native model needs reviewed derived code and appropriate reference/end-to-end checks before this case is resumed.",
+  "completed_full_probability_runs": 0,
+  "fpp_production_ready": false,
+  "model_review_required": true,
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/native-freeze.json",
+      "sha256": "f12250c96de35ac33c402b62d447037d5aa2d5b1fb90c00e80aa3fd6a9c7f3ba"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/native-map-initial-state-diagnosis-v2.json",
+      "sha256": "935bea00393054d10146676f499eed26aeec1c733954dddc5592ecf6ad06a67e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/native-prelaunch-failure-20261020T125246155260Z.json",
+      "sha256": "b8407c5a744ba26a0d04ac5caef4269516a52ca21c94a55f6ffd07d798166129"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/background-model-domain-preflight.json",
+      "sha256": "de88661072363fb852b91eb2dbd51294285068376f913eb78c3a3f8736c705ec"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/scene/verified-native-population-pairs.json",
+      "sha256": "a890485d94e9823da579185c6b2ff17a3787adabeb7c3fb6e9f36d651936742c"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/tic-duplicate-identity-review.json",
+      "sha256": "203107152cb01d4e132955bb7b8468d2e95399640e04f598d21d64b76d556a71"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2103418559153168128/stellar-route-adoption-review.json",
+      "sha256": "56cec1c8e75dbb78a8978db7c62bdb20644ece0862f038ab7b88f104a436b818"
+    }
+  ]
+}

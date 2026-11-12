@@ -1,0 +1,124 @@
+{
+  "utc": "2026-10-27T06:34:40.541838+00:00",
+  "status": "isolated-SciPy-repair-applied-full-batch-replay-v4-running",
+  "authorized_scope": "Separate PSF_FLAT post-BOI version; existing exact fast engine and V3 probability protocol; original studies preserved.",
+  "photometry_reader": {
+    "file": {
+      "path": "/Users/adam/Other/spacelab/post_boi/psf_flat.py",
+      "sha256": "abba7d6d93402fd59738c13cdbaa074d1f0455922580787273c6171eec0652d6"
+    },
+    "state": "authenticated original PSF_FLAT arrays routed through standard native interface"
+  },
+  "flattening": {
+    "control_source_id": "2107574403864920576",
+    "quarter": 5,
+    "baseline_receipt": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/flat-baseline-v3/baseline-comparison.json",
+      "sha256": "c49b63662b592a217975eb17960aa347f05920cdca902e343c64fc8e038f2819"
+    },
+    "matched_cadences": 4487,
+    "mask_mismatches": 0,
+    "flux_residual_rms_ppm_after_diagnostic_quarter_scale": 7.941129954978986e-09,
+    "quarter_scale_is_diagnostic_only": true,
+    "dependency_unit_repair": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/flat-baseline-v3/repair-review.json",
+      "sha256": "4e1c80a5f57786d5863b1224f147a10cb46fe363bce93600cdb8162233dc5be9"
+    },
+    "repair_controls": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/flat-baseline-v3/unit-repair-controls.json",
+      "sha256": "af8f211892ac09fcbabff772aab0343b2c3adf3851416e8d4deb847823b7662f"
+    },
+    "observed_cadence_transfer_receipt": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/flat-transfer-v1/summary.json",
+      "sha256": "a9092a20149373fdbb3ac9f0e2ca0ee223f4d502c3414a87736f67ae19d3a8dd"
+    },
+    "paired_box_tests": 9,
+    "period_days": 4.243721331403645,
+    "duration_days": 0.12481533327657779,
+    "injected_depth_range_ppm": [
+      300,
+      3000
+    ],
+    "gain_range": [
+      0.9137466208324092,
+      0.9934514937643029
+    ],
+    "scope": "Flattening alone, for this quarter and these box perturbations. This is not pixel-to-extracted-flux response or candidate-wide qualification."
+  },
+  "extraction": {
+    "state": "archive-parity-control-running",
+    "release_audit": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/extraction-release-audit-v1.json",
+      "sha256": "0a5fe77db5759826e905d2d8806bb291b2aac52d666d5c36771efeb24d761eee"
+    },
+    "unknowns": [
+      "Archived joint time-dependent extraction operator and complete fitted scene/batch, including prior changes.",
+      "Target and contaminant pixel-to-PSF response through the delivered extraction.",
+      "Candidate-specific flattening transfer, uncertainty and noise adequacy."
+    ],
+    "sap_aperture_reused": false,
+    "perfect_deblending_assumed": false,
+    "full_batch_inputs": {
+      "authenticated_files": 252,
+      "authentication": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-control-v1/authentication-v1/result.json",
+        "sha256": "ea781455c0fe9e0db51fcc1eb42c9db41305053e242af949f6c658494e7904fa"
+      },
+      "mapped_reader_control": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-control-v1/mapped-inputs-v1/reader-control.json",
+        "sha256": "269d93fa8efc3654498b3c1395d44de3a8152dfb61928f09b6226178473c2ff1"
+      },
+      "official_cbv": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/cbv-input-v1/authentication.json",
+        "sha256": "8bc5118043504746697292fc747154cfee36b9746b44c59ef9bbad73d16984f8"
+      },
+      "replay_preflight": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-control-v1/replay-preflight-v1.json",
+        "sha256": "280d37d0eae0589538030bb7856ea9c9304b729abd49b8b9f554a63fe8b1d843"
+      },
+      "numerical_replay_started": true,
+      "allocation": "Replay v4 uses measured six-thread allocation with no native/FPP jobs, after explicit bug-fix authorization; old terminal attempts remain unchanged."
+    },
+    "failed_full_batch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v3/result.json",
+      "sha256": "cb29b34da65d676f90e17558c44c94209a27935d5019017f3e5a660a35d6a2ae"
+    },
+    "earlier_wrapper_failure": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v2/result.json",
+      "sha256": "430a6a5cf74e61a12a5ffc9e0d4946ee83f0bafe61a082310c32ffc13c4aa423"
+    },
+    "proposed_repair": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-proposal-v1/proposal.patch",
+      "sha256": "ab3331bc37e65ccc2843e4d77c2959543f434d50d9f0e92a7c5729b8f4a47bb8"
+    },
+    "repair_controls": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-proposal-v1/controls.json",
+      "sha256": "9fc935c731a86d33355f9c01f0a45f3c08079ea82a3fbdd7804229a12fdfe517"
+    },
+    "authorization": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/authorization.json",
+      "sha256": "260a31cda568e4ef9a2eebe27f1fab8582099f7b3a22267f10a54c1fc8d69218"
+    },
+    "repair_applied": true,
+    "archive_parity_established": false,
+    "repair_application": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/repair-review.json",
+      "sha256": "f5b3f81c03df45b8e39b891a81a3906e68894f9cc2127cb7e2ec503ca1b5a2c5"
+    },
+    "current_replay": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v4-launch/launch.json",
+      "sha256": "1fadc91694f233b60bf2226bd8b168bdac2c0360cf2073141305e552ae1e72a6"
+    }
+  },
+  "probability_qualified": false,
+  "fpp_jobs_started": 0,
+  "native_interpretation": "All three BOI native fits and the known-object clock/shape control completed. Candidate probability/native acceptance remains null; conditional apparent radii/SNR do not close the PSF response or physical gates.",
+  "previous_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-method-qualification-20261027.json",
+    "sha256": "890fb34a41a6055f469a641bd46dddf5f9320fc38dcf088a46457e7abb79594c"
+  },
+  "stock_gold": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/verification/kepler10-gold-20261027-result.json",
+    "sha256": "f822ff054edbb75c7f9ba4ae0449d477f66dd8807159064532979bd3794c4acd"
+  }
+}

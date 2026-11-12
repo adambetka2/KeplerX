@@ -1,0 +1,338 @@
+{
+  "schema": 3,
+  "outcome_contract": "boi-and-triage-v1",
+  "triage_contract": {
+    "id": "ordered-first-failure-triage-v1",
+    "stage_order": [
+      "shape",
+      "orbital",
+      "instrument",
+      "localization",
+      "contamination"
+    ],
+    "allowed_decisions": {
+      "shape": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "orbital": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "instrument": [
+        "PASS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "localization": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ],
+      "contamination": [
+        "PASS",
+        "DISMISS",
+        "CONTINUE_INCONCLUSIVE"
+      ]
+    },
+    "decision_states": {
+      "PASS": "ACTIVE",
+      "DISMISS": "DISMISSED",
+      "CONTINUE_INCONCLUSIVE": "HELD"
+    },
+    "state_rule": "FIRST_NONPASS_IN_STAGE_ORDER",
+    "execution_modes": [
+      "SKIP_AFTER_FIRST_FAILURE",
+      "RECORD_EVERY_GATE"
+    ],
+    "record_mode": "Later measurements preserve the first failure stage, state and reason"
+  },
+  "event_matching_contract": {
+    "id": "physical-event-membership-v1",
+    "time_scale": "BKJD",
+    "exposure_days": 0.02043361111111111,
+    "timing_tolerance": "half_truth_duration_plus_one_exposure",
+    "required_supplied_event_match_fraction": 1.0,
+    "minimum_recovered_truth_events": 1,
+    "assignment": "unique_quarter_compatible_truth_event_per_supplied_unit",
+    "truth_support": "prepared_cadences_inside_physical_truth_duration",
+    "disposition_timing": "selected_canonical_physical_fit"
+  },
+  "policy_id": "deterministic-boi-v1",
+  "status": "BOI_CATALOGUE",
+  "boi_catalogue_enabled": true,
+  "endpoint": "Bonus Objects of Interest: transit signals passing every current pipeline gate",
+  "detector": {
+    "active": "Rust V6.1 periodic and sparse-event search plus period-first shallow BLS search on each declared discovery view",
+    "protocol": "fsc-kepler-deterministic-v6.1",
+    "shallow_protocol": "rust_v6_shallow_v1; pipeline/shallow/config.json and pipeline/shallow/run.py",
+    "views": [
+      "psf_flat",
+      "psf_qdiag",
+      "sap_qdiag",
+      "psf_nova"
+    ],
+    "combination": "Run both detectors on the same prepared curve for each declared view; preserve their separate proposal identities and diagnostics in one shared vetting queue. Force supplied periodic ephemerides into every available view and retain Rust period-free sparse intervals. Views are correlated and are never combined as independent evidence.",
+    "downstream_boundary": "Vetting may assess supplied Rust TRANSIT_LIKE, survivor-review, and shallow periodic ephemerides, associate supplied Rust sparse intervals into repeat, alias, or TTV hypotheses, and classify supplied signals, but cannot search outside detector-proposed intervals or rescue other rejected events.",
+    "transformer": "Not used by this policy. Transformer v1 is a frozen historical release, not an active detector or fallback."
+  },
+  "labels": {
+    "BOI": "Transit signal passing shape, orbital, instrument, localization and contamination gates. A single event is eligible with unknown period.",
+    "HELD": "The first nonpassing gate lacks sufficient evidence; its stage and reason remain explicit.",
+    "DISMISSED": "The first rejecting gate records its measured rejection and reason; the signal remains in the ledger.",
+    "FALSE_POSITIVE": "A specific astrophysical mechanism is reproduced with attributed evidence.",
+    "UNRESOLVED": "The current pipeline has not completed the required signal gates."
+  },
+  "signal_measurement": {
+    "canonical_photometry": "The detector-selected view is fixed before downstream model scores are known.",
+    "single_event": "One exposure-integrated physical-transit fit on the supplied interval. A missing period or repeat event is not a veto.",
+    "repeated_events": "One joint fit over the detector-supplied event membership and ephemeris; no new period search.",
+    "alternatives": [
+      "linear",
+      "quadratic",
+      "step",
+      "dropout",
+      "single_cadence",
+      "shared_single_cadence",
+      "signed_box",
+      "sinusoid"
+    ],
+    "shape_score": "delta_BIC = best nuisance-model BIC - physical-transit BIC",
+    "threshold_state": "Use the unchanged numerical screening gates; BOI assignment introduces no additional model margin."
+  },
+  "required_evidence": {
+    "instrument": "Quality flags, gaps, engineering context, shared-time behavior, and difference-image spatial shape are assessed for the exact event membership. Raw shared-time count is contextual because it scales with the indexed cohort, not an automatic conflict threshold.",
+    "source_localization": "Difference-image or equivalent pixel attribution is required; unavailable localization cannot automatically pass.",
+    "contamination": "Gaia scene, timing, dilution, and plausible competing sources are assessed; catalogue absence is not proof of no contaminant.",
+    "identity_catalogues": "An exact target identifier and coherent event timing are checked against false-positive and eclipsing-binary catalogues; catalogue absence is not a novelty claim.",
+    "orbital": "Odd-even, secondary-eclipse, phase-modulation, and coverage checks are required for repeated events.",
+    "host": "Apparent size and plausible-host interpretation are reported when parameters exist; missing stellar radius is not by itself a veto.",
+    "false_positive_rule": "Deny only with a reproduced mechanism. Missing or underpowered evidence remains UNRESOLVED."
+  },
+  "assessment_rules": {
+    "instrument": {
+      "id": "instrument-quality-spatial-null-v3",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "material_quality_flags": null,
+      "spatial_null_bic_margin": 10
+    },
+    "source_localization": {
+      "id": "pixel-attribution-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "accepted_statuses": [
+        "TARGET_COMPATIBLE"
+      ],
+      "material_statuses": [
+        "ROBUST_OFFSET_CONFLICT"
+      ]
+    },
+    "contamination": {
+      "id": "catalogue-neighbour-v6",
+      "minimum_scene_prf_compared_quarters": null,
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "minimum_neighbour_depth_sigma": null,
+      "minimum_competing_source_separation_arcsec": null,
+      "minimum_catalogue_match_units": null,
+      "minimum_catalogue_match_fraction": null,
+      "maximum_harmonic_order": null,
+      "maximum_harmonic_period_error_fraction": null,
+      "minimum_harmonic_match_units": null,
+      "minimum_harmonic_expected_match_fraction": null,
+      "accepted_scene_statuses": [
+        "GAIA_SCENE_QUERIED"
+      ],
+      "accepted_neighbour_statuses": [
+        "MEASURED"
+      ]
+    },
+    "identity_catalogues": {
+      "id": "catalogue-signal-identity-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "minimum_catalogue_match_units": null,
+      "minimum_catalogue_match_fraction": null,
+      "maximum_harmonic_order": null,
+      "maximum_harmonic_period_error_fraction": null,
+      "minimum_harmonic_match_units": null,
+      "minimum_harmonic_expected_match_fraction": null,
+      "material_signal_classes": [
+        "ECLIPSING_BINARY",
+        "FALSE_POSITIVE"
+      ],
+      "accepted_catalogue_statuses": [
+        "SCOPED_CATALOGUES_CHECKED"
+      ]
+    },
+    "orbital": {
+      "id": "orbital-eb-v2",
+      "status": "PENDING_DEVELOPMENT_CALIBRATION",
+      "maximum_odd_even_bic_gain": null,
+      "minimum_secondary_sigma": null,
+      "maximum_secondary_to_primary_depth_ratio": null,
+      "maximum_phase_modulation_period_days": null,
+      "minimum_phase_modulation_signal_to_noise": null,
+      "minimum_phase_modulation_amplitude_fraction": null,
+      "maximum_phase_modulation_to_primary_depth_ratio": null
+    }
+  },
+  "stage_parameters": {
+    "authoritative_files": {
+      "detector": "pipeline/deterministic/config.json",
+      "shallow_detector": "pipeline/shallow/config.json",
+      "vetting": "pipeline/vetting/config.json"
+    },
+    "discovery_domain": {
+      "period_days": [
+        0.2,
+        "min(1000, baseline / 2)"
+      ],
+      "priority_period_days": [
+        0.5,
+        100.0
+      ],
+      "duration_hours": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        15.0,
+        18.0,
+        24.0
+      ],
+      "priority_duration_max_hours": 12.0,
+      "proposal_mes_min": 8.0,
+      "minimum_detected_epochs": 3,
+      "minimum_quarters": 2,
+      "minimum_in_transit_points": 6,
+      "depth_ppm": [
+        40.0,
+        50000.0
+      ],
+      "sparse_event_snr_min": 8.0,
+      "sparse_event_min_points": 3,
+      "maximum_sparse_events_per_target": 10,
+      "search_whitening": "Per-quarter 97-cadence running-median residual divided by quarter robust sigma; candidate measurements use untouched relative flux.",
+      "maximum_signals_per_target": 20,
+      "maximum_extension_signals_per_target": 4,
+      "maximum_residual_signals_per_target": 4,
+      "residual_search": "One pass after a first-pass periodic candidate clears the dip-versus-brightening control; mask one fitted duration on each side of every predicted transit centre. Initial and sparse rows remain immutable.",
+      "interpretation": "These are Rust detector discovery settings, not general scientific requirements for Bonus Object of Interest disposition. A periodic row changed from TRANSIT_LIKE to SYSTEMATIC_LIKE only by a failed duration-consistency or quarter-leave-one-out survivor check enters shared vetting as SURVIVOR_REVIEW without changing its classification. The sparse lane searches single events without assigning periods; adjacent event spacings remain unresolved repeat, alias, or TTV hypotheses."
+    },
+    "shallow_discovery_domain": {
+      "period_days": [
+        0.2,
+        "min(100, baseline / 2)"
+      ],
+      "depth_ppm": [
+        40.0,
+        1000.0
+      ],
+      "input_views": ["psf_flat", "psf_qdiag", "sap_qdiag"],
+      "interpretation": "Period-first BLS discovery settings are defined in pipeline/shallow/config.json. The shallow detector supplies proposals to the same vetting queue; these settings are not Bonus Object of Interest disposition criteria."
+    },
+    "triage": {
+      "transit_bic_margin": 10,
+      "false_alarm_bic_margin": 10,
+      "role": "Computational screening inside the end-to-end system; not the final calibrated disposition threshold."
+    },
+    "event_fit": {
+      "exposure_days": 0.02043361111111111,
+      "supersample_factor": 51,
+      "context_half_width_days": "max(0.5, 4 * proposed duration)",
+      "optimizer_max_evaluations": 100
+    },
+    "pixels": {
+      "scene_radius_arcsec": 60,
+      "minimum_prf_correlation_diagnostic": 0.3,
+      "offset_sigma_diagnostic": 3.0,
+      "astrometric_systematic_arcsec": null,
+      "minimum_good_quarters": 3,
+      "aggregate_systematic_arcsec": 0.16,
+      "minimum_material_offset_arcsec": 0.2,
+      "large_offset_arcsec": 2.0,
+      "small_offset_sigma": 4.0,
+      "large_offset_sigma": 3.0,
+      "reference": "https://exoplanetarchive.ipac.caltech.edu/docs/KSCI-19115-001.pdf; https://arxiv.org/abs/1303.0052"
+    },
+    "orbital": {
+      "maximum_predicted_windows": 4096,
+      "application": "Repeated events only; period-dependent tests are not required for a single event."
+    }
+  },
+  "lane_gates": {
+    "contract": "detector-lane-gates-v1",
+    "status": "PENDING_DEVELOPMENT_CALIBRATION",
+    "thresholds": {
+      "periodic": null,
+      "shallow": null,
+      "sparse": null
+    },
+    "calibration": null
+  },
+  "null_contract": {
+    "id": "upper-clipped-quarter-nulls-v1",
+    "variants": [
+      "inverted",
+      "quarter_scrambled"
+    ],
+    "inversion_order": "After per-quarter normalization and upper-only clip; no second clip or normalization",
+    "short_coverage": "At most two usable discovery quarters: inversion only",
+    "exclusion": "Unique exact-event membership in a frozen real-source signal or catalogue ephemeris; complete coverage required",
+    "counting_unit": "Vetted nonexcluded detector proposal",
+    "flux_gates": [
+      "shape",
+      "orbital",
+      "instrument"
+    ],
+    "false_candidate": "Every applicable flux gate passes, independent of pixel availability or final BOI label"
+  },
+  "release_plan": {
+    "unit": "Parent TPF for physical classes; vetted nonexcluded detector proposal for the null false-candidate endpoint. Report null per-source rates separately.",
+    "partitions": "Development and final replay share no parent TPF, source, component, or raw FITS identity.",
+    "development": "Opened physical controls and development nulls set the policy and lane thresholds; freeze implementation, evidence rules and values before sealed outcomes.",
+    "morphology_trials": {
+      "sparse_injection": 160,
+      "ttv_injection": 160
+    },
+    "final_audit": {
+      "opened_false_boi_caps": {
+        "null": 0.005,
+        "native_eb": 0.05,
+        "ordinary": 0.01,
+        "background_contaminant": 0.03,
+        "contamination_pair": 0.03,
+        "guide_star_family": 0.03
+      },
+      "confidence": 0.95,
+      "interval": "one-sided exact binomial, reported separately from measured-fraction publication rules",
+      "planet_trials": 300,
+      "reported_trials": {
+        "eclipsing_binary": 450,
+        "background_contaminant": 450
+      },
+      "null_sources": 10000,
+      "minimum_periodic_recovery_fraction": 0.3,
+      "maximum_null_false_candidate_fraction": 0.02,
+      "maximum_single_event_offset_conflicts": 1
+    },
+    "ledger": "Every declared source, null variant, detector proposal and emitted alias must reconcile. Excluded null proposals are reported outside the vetted denominator. Completed scientific abstentions remain in measured physical trial denominators. Missing results or identity mismatches block release.",
+    "truth_sources": {
+      "planet": "Parent-disjoint confirmed Kepler signals or pixel-level physical injections with immutable truth.",
+      "eclipsing_binary": "Parent-disjoint catalogue EBs with immutable ephemerides.",
+      "background_contaminant": "Pixel-level scenes with a known off-target variable or injected contaminant. Flux-only injections cannot certify localization.",
+      "null": "Frozen inverted and quarter-scrambled source variants; all flux gates passing counts as a false candidate without matching pixels."
+    },
+    "scope": "Optional control measurements describe recovery and false-class retention. The BOI catalogue publishes current pipeline results; subsequent physical validation is a separate study."
+  },
+  "current_state": {
+    "automatic_assignment": "BOI_AFTER_FIVE_GATES",
+    "reason": "A signal passing all five existing triage gates receives a BOI designation in its discovery view. Other views do not veto it; numerical thresholds and calculations remain unchanged.",
+    "next_step": "Freeze the current implementation, policy and complete input ledger for each discovery view. Start the survey only after Adam authorizes it. Keep sealed control outcomes closed unless separately authorized."
+  }
+}

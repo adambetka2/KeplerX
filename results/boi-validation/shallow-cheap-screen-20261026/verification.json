@@ -1,0 +1,14 @@
+{
+ "utc": "2026-10-26T16:55:13.778061+00:00",
+ "exact_frozen_historical_unreviewed_shallow_membership": 2164,
+ "sources": 1900,
+ "all_clock_view_source_event_counts_equal_frozen": true,
+ "detailed_export_hashes_verified": 136,
+ "source_input_hashes_verified": 11,
+ "priority_catalogue_rows": 77,
+ "shortlist_rows": 7,
+ "shortlist_hosts": 6,
+ "csv_membership_and_counts_pass": true,
+ "frozen_catalogues_and_historical_manual_and_current_membership_byte_unchanged": true,
+ "probability_jobs_started": 0
+}

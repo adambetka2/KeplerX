@@ -1,0 +1,430 @@
+{
+  "input_queries": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/summary.json",
+    "sha256": "7289cdf1a4e5d0873d01c82d53f66a0ecd861beeb765b109d2d2cd03924f9cf8"
+  },
+  "schema_audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/field-schema-audit.json",
+    "sha256": "38d82613029636992b62e96e293215b78ad65a4360a83c78fe1177ef4dc8b272"
+  },
+  "targets": 30,
+  "with_one_reported_mass_radius_error_match": 3,
+  "rows": [
+    {
+      "source_id": "2100220316049730304",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2100220316049730304/response.json",
+        "sha256": "f9fed5ef1b4bd9ac98e5042426d70e9c9f81b1fda3d49cf9b23aeec372fb85c3"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2133767416541087232",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2133767416541087232/response.json",
+        "sha256": "3874399b2f5ce5bae7f90b683f2f4d5a3ec87a96baa2a38c4a69920926c87c4c"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2085457035981896448",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2085457035981896448/response.json",
+        "sha256": "8403e9f8cd2c928726ca5100443629dd3e2cfd55827b79d2520f73335cc822ce"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2131971879690727168",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2131971879690727168/response.json",
+        "sha256": "98e1bd36f2a98f79f66668e1fecbc582d96d9f80943fd880880557828de654e2"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2051317406099391360",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2051317406099391360/response.json",
+        "sha256": "63e4a4bbfd9c16eb73f4fc28829634a66fd8fe46a8fc21b87f41dcd09dc238f5"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2131801043071611776",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2131801043071611776/response.json",
+        "sha256": "a42cf5a795a8ba35d7ab8f6eb9a8c9e1db18c043bbe7bfa8c30eea7223df339d"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2079536067092694016",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2079536067092694016/response.json",
+        "sha256": "f0a40efd010afc54038abb402172cd7af790c0b504b31635b971b796ae29b477"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2127702609183750528",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2127702609183750528/response.json",
+        "sha256": "5de60c73221213ddc75c193c480274375d940165693059c6367c3f946846645e"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2079821420415898368",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2079821420415898368/response.json",
+        "sha256": "0e80dae0c7975b095278e05fbabec2cf25765b7c7b1be222b1b1045dc31a256f"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2126354436132009088",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2126354436132009088/response.json",
+        "sha256": "ba82d48ee7893b9c98f96958f5ac5e9ee561a6b0449de4caacbf6fc93c7db544"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2100203999471640064",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2100203999471640064/response.json",
+        "sha256": "6ecb11fac8092545c0b2f3799ee9df26f41c943baad24c608c678ff43378f49e"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2076535358120385536",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2076535358120385536/response.json",
+        "sha256": "1e8729f682577cc9f76b15685e55783fd3e5e15e88277bc0b1e599abafa64dc3"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [
+        {
+          "ID": 138434412,
+          "mass": 0.234341,
+          "e_mass": 0.0217363,
+          "rad": 0.262347,
+          "e_rad": 0.0108302,
+          "Teff": 3249,
+          "e_Teff": 158,
+          "logg": 4.97016,
+          "e_logg": 0.00452166,
+          "SPFlag": "cdwrf",
+          "objType": "STAR",
+          "disposition": null,
+          "lumclass": "DWARF",
+          "gaiaqflag": 1,
+          "starchareFlag": null
+        }
+      ],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2077595974520134144",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2077595974520134144/response.json",
+        "sha256": "d37e067dcd5ec729a4365c2a6dabe509ac00b55e90981bb0d4687b09a0d976b9"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2104484363877066752",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2104484363877066752/response.json",
+        "sha256": "9596e6c36e8a9a0df259cdca467c42f233d09c43acee1ddbae6ec8f500cd797e"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2050231500928700032",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2050231500928700032/response.json",
+        "sha256": "10837ada1a4101326d10c702067ea5f6658528f62a587b389ecc9e00daa8dd59"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2100223614584673664",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2100223614584673664/response.json",
+        "sha256": "31b5bb2f757699cad3a9b28b6f4593ce8dca05a079a5bda10700fe2d0b6fdd42"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2073628180652139904",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2073628180652139904/response.json",
+        "sha256": "96ddf8e8ec925cafd160802835f5eab565ffbf7e1a3aabdfd686b2fe85850077"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2076784878540898560",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2076784878540898560/response.json",
+        "sha256": "e5fbd5cb9e10b1326d7ac0ff8ce16209cd8c3b97914c5a127c71495726985f38"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [
+        {
+          "ID": 169083479,
+          "mass": 0.503202,
+          "e_mass": 0.0548094,
+          "rad": 0.505231,
+          "e_rad": 0.0541228,
+          "Teff": 3554,
+          "e_Teff": 161,
+          "logg": 4.73283,
+          "e_logg": 0.0459136,
+          "SPFlag": "cdwrf",
+          "objType": "STAR",
+          "disposition": null,
+          "lumclass": "DWARF",
+          "gaiaqflag": 1,
+          "starchareFlag": null
+        }
+      ],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2127355099085636864",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2127355099085636864/response.json",
+        "sha256": "eadcac40b7e39ae79c9c7f2608a03979032e1451b83029da16ab00c8f607184e"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2125795682366018176",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2125795682366018176/response.json",
+        "sha256": "afc998941fe88792137743c9858feffe64ffa351d57af67c8288b60b83da22ef"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2078783726253023360",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2078783726253023360/response.json",
+        "sha256": "80879900d332c30033262a45df8eba910feabb4d6011db81346dc661e4271a45"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2133051978069556352",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2133051978069556352/response.json",
+        "sha256": "dd16e47e8e4befbc7813ff47c8568aaf3c23cb0c2408c1c696a6415d90d649fb"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2099560128037101952",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2099560128037101952/response.json",
+        "sha256": "ecf0d1b17b00e0fddd9dc74b7bc8c2a6b5711d13a4d16a3237cb1c8ee79a1e7c"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2100123494603868416",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2100123494603868416/response.json",
+        "sha256": "9857053c9075d8810ce7166f9808670d6f97d2f270c0a124a946912dc5af9a39"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2101435138957164672",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2101435138957164672/response.json",
+        "sha256": "67147d43e310c82ab2a6b3e253c5435f64c7441a06a00bea250dc2474375c880"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2107167653281504256",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2107167653281504256/response.json",
+        "sha256": "8855aec2b3758e9b44da7aa9293603c5821f40e7c678854490b19e971b63296e"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2051702720499620224",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2051702720499620224/response.json",
+        "sha256": "c63031e4a5d3b084fb48107f9c11816d6cb4b5162a6753eeea360781fb1c8f47"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2080033974058174080",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2080033974058174080/response.json",
+        "sha256": "cb0f2cfb5c7ce42c03ff87b5e650af6c0659045f6f6c3a52cab003741bf6db35"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [
+        {
+          "ID": 271353108,
+          "mass": 0.577247,
+          "e_mass": 0.0630045,
+          "rad": 0.586876,
+          "e_rad": 0.073403,
+          "Teff": 3425,
+          "e_Teff": 161,
+          "logg": 4.66234,
+          "e_logg": 0.0616186,
+          "SPFlag": "cdwrf",
+          "objType": "STAR",
+          "disposition": null,
+          "lumclass": "DWARF",
+          "gaiaqflag": 1,
+          "starchareFlag": null
+        }
+      ],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2106533368217988864",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2106533368217988864/response.json",
+        "sha256": "fea4ed33debea4a6027c7f64105496eb7040477a7f9f2b62397ac1bc9372939c"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    },
+    {
+      "source_id": "2126865915195358720",
+      "raw_response": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/tic-stellar-v1/2126865915195358720/response.json",
+        "sha256": "73b8c97cd9e60fa1493202d748e862a622d776bf7484496148d03eb75709ac05"
+      },
+      "exact_matches": 1,
+      "nonduplicate_nonsplit_matches": 1,
+      "reported_mass_radius_error_matches": [],
+      "prior_adopted": false,
+      "scope": "Reported input availability only. Identity, blending, stellar model support and priors require candidate-specific review."
+    }
+  ],
+  "correction": "Use actual TIC mass/e_mass field names; all network responses are preserved and no query was repeated.",
+  "automatic_admissions": 0
+}

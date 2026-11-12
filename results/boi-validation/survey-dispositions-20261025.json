@@ -1,0 +1,388 @@
+{
+ "bois": 125,
+ "hosts": 94,
+ "categories": {
+  "NOT_INDEPENDENT_ALIAS_OF_DELIVERED_BOI": 27,
+  "HELD_NATIVE_RADIUS_RATIO_SNR": 15,
+  "HELD_HOST_WITHOUT_TIC_MASS_RADIUS": 15,
+  "POSSIBLE_PLANET": 12,
+  "HELD_SCENE_CENSUS_NOT_AUTHENTICATED": 8,
+  "STOPPED_EARLY_REMAINS_PC": 5,
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE": 4,
+  "HELD_ACQUISITION_OR_APERTURE_AUTHENTICATION": 4,
+  "TRICERATOPS_FP_CATEGORY": 4,
+  "HELD_RESPONSE_CLOSURE_FEWER_THAN_TWO_QUARTERS": 3,
+  "VALIDATED_ON_TARGET_KEPLER_BOI_FINAL_PRIMARY_V1": 3,
+  "HELD_NATIVE_RADIUS_RATIO_SNR_PROTECTION": 3,
+  "HELD_NATIVE_UNSUPPORTED_GEOMETRY": 2,
+  "HELD_NATIVE_NO_PHYSICAL_ORBIT": 2,
+  "HELD_APERTURE_AUTHENTICATION_FAILED_DURING_ACQUISITION": 2,
+  "DENIED_FP": 2,
+  "HELD_RESPONSE_CLOSURE_ONE_QUARTER": 2,
+  "REPRODUCED_KNOWN_PLANET_ALIAS": 2,
+  "NOT_REPRODUCED_WITH_SIBLING_MASKED": 1,
+  "HELD_TARGET_WITHOUT_STELLAR_MASS_RADIUS_BEFORE_PLAN": 1,
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_PROBABILITY": 1,
+  "VALIDATED_BY_MULTIPLICITY": 1,
+  "NOT_APPLICABLE_V3": 1,
+  "HELD_RESPONSE_CLOSURE_NO_QUARTER": 1,
+  "KNOWN_VALIDATED_PLANET_RECOVERED": 1,
+  "HELD_TARGET_WITHOUT_TIC_MATCH_BEFORE_NATIVE": 1,
+  "VALIDATED_ON_TARGET_TRICERATOPS_KEPLER_V3": 1,
+  "HELD_NATIVE_UNPHYSICAL_ECCENTRIC_POSTERIOR": 1
+ },
+ "validated": [
+  {
+   "boi_id": "BOI-2077554781499350144-1",
+   "source_id": "2077554781499350144",
+   "period_days": 15.1137028723,
+   "category": "VALIDATED_ON_TARGET_KEPLER_BOI_FINAL_PRIMARY_V1"
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-3",
+   "source_id": "2077554781499350144",
+   "period_days": 47.6871700304,
+   "category": "VALIDATED_BY_MULTIPLICITY"
+  },
+  {
+   "boi_id": "BOI-2101047904706267264-1",
+   "source_id": "2101047904706267264",
+   "period_days": 16.1054691749,
+   "category": "VALIDATED_ON_TARGET_KEPLER_BOI_FINAL_PRIMARY_V1"
+  },
+  {
+   "boi_id": "BOI-2127169041106093184-1",
+   "source_id": "2127169041106093184",
+   "period_days": 5.9053396597,
+   "category": "VALIDATED_ON_TARGET_TRICERATOPS_KEPLER_V3"
+  },
+  {
+   "boi_id": "BOI-2127186564572468352-1",
+   "source_id": "2127186564572468352",
+   "period_days": 4.5665362465,
+   "category": "VALIDATED_ON_TARGET_KEPLER_BOI_FINAL_PRIMARY_V1"
+  }
+ ],
+ "possible_planets": [
+  {
+   "boi_id": "BOI-2073226966298407552-1",
+   "source_id": "2073226966298407552",
+   "period_days": 4.4053358074,
+   "FPP": 0.1032377973,
+   "FPP_sd": 0.0185664048,
+   "FPP_min": 0.0673604796,
+   "FPP_max": 0.1491377455,
+   "NFPP": 0.0,
+   "radius_earth": 7.9982162035,
+   "dominant_alternative": "STP on target (0.062)"
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-1",
+   "source_id": "2073666564790289664",
+   "period_days": 7.5053490514,
+   "FPP": 0.1422671011,
+   "FPP_sd": 0.066232404,
+   "FPP_min": 0.0340772649,
+   "FPP_max": 0.2661842763,
+   "NFPP": 7.3020936e-317,
+   "radius_earth": 6.6141714279,
+   "dominant_alternative": "STP on target (0.110)"
+  },
+  {
+   "boi_id": "BOI-2076383384993192576-1",
+   "source_id": "2076383384993192576",
+   "period_days": 51.5278567826,
+   "FPP": 0.1830540933,
+   "FPP_sd": 0.2443336383,
+   "FPP_min": 1.83e-08,
+   "FPP_max": 0.7899184525,
+   "NFPP": 0.0,
+   "radius_earth": 11.9902531964,
+   "dominant_alternative": "PEB on target (0.079)"
+  },
+  {
+   "boi_id": "BOI-2077020448903232640-1",
+   "source_id": "2077020448903232640",
+   "period_days": 6.6520829361,
+   "FPP": 0.034206191,
+   "FPP_sd": 0.0364659943,
+   "FPP_min": 0.0042845138,
+   "FPP_max": 0.146316067,
+   "NFPP": 1.045224668e-112,
+   "radius_earth": 11.3736644509,
+   "dominant_alternative": "PEB on target (0.015)"
+  },
+  {
+   "boi_id": "BOI-2077209775366626944-1",
+   "source_id": "2077209775366626944",
+   "period_days": 5.8656733807,
+   "FPP": 0.1105234212,
+   "FPP_sd": 0.0464683363,
+   "FPP_min": 0.0455524445,
+   "FPP_max": 0.2092616648,
+   "NFPP": 1.228286544e-36,
+   "radius_earth": 5.8617340686,
+   "dominant_alternative": "STP on target (0.092)"
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-1",
+   "source_id": "2077967368932890752",
+   "period_days": 4.3585181547,
+   "FPP": 0.0058815088,
+   "FPP_sd": 0.0185227589,
+   "FPP_min": 0.0,
+   "FPP_max": 0.074144833,
+   "NFPP": 0.0,
+   "radius_earth": 12.8034831628,
+   "dominant_alternative": "STP on target (0.004)"
+  },
+  {
+   "boi_id": "BOI-2079517512834068480-1",
+   "source_id": "2079517512834068480",
+   "period_days": 2.8640878107,
+   "FPP": 0.0801424216,
+   "FPP_sd": 0.0194039685,
+   "FPP_min": 0.0408373619,
+   "FPP_max": 0.1117191686,
+   "NFPP": 2.09928417e-97,
+   "radius_earth": 11.3182081279,
+   "dominant_alternative": "SEB on target (0.036)"
+  },
+  {
+   "boi_id": "BOI-2100325529865507712-1",
+   "source_id": "2100325529865507712",
+   "period_days": 3.2630240802,
+   "FPP": 0.3037065395,
+   "FPP_sd": 0.4675378782,
+   "FPP_min": -0.0,
+   "FPP_max": 1.0,
+   "NFPP": 0.0,
+   "radius_earth": 15.9416799263,
+   "dominant_alternative": "STP on target (0.304)"
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-1",
+   "source_id": "2102612750272489216",
+   "period_days": 22.1313626325,
+   "FPP": 0.1488749652,
+   "FPP_sd": 0.0587459778,
+   "FPP_min": 0.0574257651,
+   "FPP_max": 0.2518601174,
+   "NFPP": 1.369163783e-98,
+   "radius_earth": 9.215012078,
+   "dominant_alternative": "STP on target (0.094)"
+  },
+  {
+   "boi_id": "BOI-2106817012155835904-1",
+   "source_id": "2106817012155835904",
+   "period_days": 4.5167978897,
+   "FPP": 0.0352977802,
+   "FPP_sd": 0.0351397033,
+   "FPP_min": 0.0016396686,
+   "FPP_max": 0.1521422931,
+   "NFPP": 0.0,
+   "radius_earth": 6.5511852531,
+   "dominant_alternative": "STP on target (0.021)"
+  },
+  {
+   "boi_id": "BOI-2126910621514995968-1",
+   "source_id": "2126910621514995968",
+   "period_days": 3.622872552,
+   "FPP": 0.0015789087,
+   "FPP_sd": 0.0070156812,
+   "FPP_min": -0.0,
+   "FPP_max": 0.0313849692,
+   "NFPP": 0.0,
+   "radius_earth": 16.2221185071,
+   "dominant_alternative": "STP on target (0.002)"
+  },
+  {
+   "boi_id": "BOI-2130460704041437824-1",
+   "source_id": "2130460704041437824",
+   "period_days": 3.1482620553,
+   "FPP": 0.0190322037,
+   "FPP_sd": 0.0093686255,
+   "FPP_min": 0.0084583873,
+   "FPP_max": 0.0456010551,
+   "NFPP": 1.922316636e-25,
+   "radius_earth": 5.3591094769,
+   "dominant_alternative": "STP on target (0.018)"
+  }
+ ],
+ "stopped_early_remains_pc": [
+  {
+   "boi_id": "BOI-2073175632853699968-1",
+   "source_id": "2073175632853699968",
+   "period_days": 147.2482782555,
+   "FPP": 0.5558415506,
+   "NFPP": 1e-10,
+   "radius_earth": 17.5544233741,
+   "dominant_alternative": "EB on target (0.452)"
+  },
+  {
+   "boi_id": "BOI-2076248557386606336-1",
+   "source_id": "2076248557386606336",
+   "period_days": 2.9987267024,
+   "FPP": 0.3558869986,
+   "NFPP": 5.569026213e-95,
+   "radius_earth": 4.5568680676,
+   "dominant_alternative": "EBx2P on target (0.181)"
+  },
+  {
+   "boi_id": "BOI-2105418399005125376-1",
+   "source_id": "2105418399005125376",
+   "period_days": 6.9508155096,
+   "FPP": 0.348907595,
+   "NFPP": 8.524021842e-170,
+   "radius_earth": 9.5403936419,
+   "dominant_alternative": "STP on target (0.245)"
+  },
+  {
+   "boi_id": "BOI-2116924474653194112-1",
+   "source_id": "2116924474653194112",
+   "period_days": 6.4688727153,
+   "FPP": 0.5838033112,
+   "NFPP": 3.225300914e-116,
+   "radius_earth": 6.3275542659,
+   "dominant_alternative": "SEB on target (0.237)"
+  },
+  {
+   "boi_id": "BOI-2128059130130482432-1",
+   "source_id": "2128059130130482432",
+   "period_days": 2.0939414796,
+   "FPP": 0.1978904662,
+   "NFPP": 1.446374353e-36,
+   "radius_earth": 2.6532019737,
+   "dominant_alternative": "STP on target (0.085)"
+  }
+ ],
+ "held": {
+  "HELD_ACQUISITION_OR_APERTURE_AUTHENTICATION": [
+   "BOI-2073237338631093888-1",
+   "BOI-2077240046296834304-1",
+   "BOI-2077621538166116736-1",
+   "BOI-2087252538472180608-1"
+  ],
+  "HELD_APERTURE_AUTHENTICATION_FAILED_DURING_ACQUISITION": [
+   "BOI-2073482357931911424-1",
+   "BOI-2101926796748446336-1"
+  ],
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_NATIVE": [
+   "BOI-2052194442729351680-1",
+   "BOI-2076221417495492736-1",
+   "BOI-2079433846869397376-1",
+   "BOI-2101354466593873152-1"
+  ],
+  "HELD_CAPABLE_SOURCE_WITHOUT_STELLAR_PROPERTIES_BEFORE_PROBABILITY": [
+   "BOI-2076324737227600768-1"
+  ],
+  "HELD_HOST_WITHOUT_TIC_MASS_RADIUS": [
+   "BOI-2052625863598225536-1",
+   "BOI-2053539145443677056-1",
+   "BOI-2075057270893091200-1",
+   "BOI-2075066857261081600-1",
+   "BOI-2075875758527635968-1",
+   "BOI-2077663010371347072-1",
+   "BOI-2078857015581291008-1",
+   "BOI-2079595131475231616-1",
+   "BOI-2100986778733554048-1",
+   "BOI-2101095943921811328-1",
+   "BOI-2104048368859231232-1",
+   "BOI-2127460755284375168-1",
+   "BOI-2127956355854461952-1",
+   "BOI-2128959007378441472-1",
+   "BOI-2134754193866263936-1"
+  ],
+  "HELD_NATIVE_NO_PHYSICAL_ORBIT": [
+   "BOI-2073285721453427712-1",
+   "BOI-2076476504190366336-1"
+  ],
+  "HELD_NATIVE_RADIUS_RATIO_SNR": [
+   "BOI-2050231500928700032-1",
+   "BOI-2073628180652139904-1",
+   "BOI-2076894554826018304-1",
+   "BOI-2077595974520134144-1",
+   "BOI-2078045782158649216-1",
+   "BOI-2078783726253023360-1",
+   "BOI-2086643310248820352-1",
+   "BOI-2099560128037101952-1",
+   "BOI-2100203999471640064-1",
+   "BOI-2104484363877066752-1",
+   "BOI-2106383701495087232-1",
+   "BOI-2126217104555818240-1",
+   "BOI-2126354436132009088-1",
+   "BOI-2126728304441865728-1",
+   "BOI-2130658616133595264-1"
+  ],
+  "HELD_NATIVE_RADIUS_RATIO_SNR_PROTECTION": [
+   "BOI-2079536067092694016-1",
+   "BOI-2100123494603868416-1",
+   "BOI-2101435138957164672-1"
+  ],
+  "HELD_NATIVE_UNPHYSICAL_ECCENTRIC_POSTERIOR": [
+   "BOI-2130965547378157568-1"
+  ],
+  "HELD_NATIVE_UNSUPPORTED_GEOMETRY": [
+   "BOI-2052563599452804096-1",
+   "BOI-2080481745869519488-1"
+  ],
+  "HELD_RESPONSE_CLOSURE_FEWER_THAN_TWO_QUARTERS": [
+   "BOI-2073476658526284800-1",
+   "BOI-2076927677610525056-1",
+   "BOI-2078603367689924608-1"
+  ],
+  "HELD_RESPONSE_CLOSURE_NO_QUARTER": [
+   "BOI-2103348117391603840-1"
+  ],
+  "HELD_RESPONSE_CLOSURE_ONE_QUARTER": [
+   "BOI-2080290503866069888-1",
+   "BOI-2104132687658252160-1"
+  ],
+  "HELD_SCENE_CENSUS_NOT_AUTHENTICATED": [
+   "BOI-2076468876327949568-1",
+   "BOI-2077532516388848512-1",
+   "BOI-2077839967326211328-1",
+   "BOI-2099129463076304128-1",
+   "BOI-2125801656663271552-1",
+   "BOI-2126097738825919104-1",
+   "BOI-2127002808692040320-1",
+   "BOI-2132313759090098688-1"
+  ],
+  "HELD_TARGET_WITHOUT_STELLAR_MASS_RADIUS_BEFORE_PLAN": [
+   "BOI-2073609042284178176-1"
+  ],
+  "HELD_TARGET_WITHOUT_TIC_MATCH_BEFORE_NATIVE": [
+   "BOI-2126585921988564224-1"
+  ],
+  "NOT_REPRODUCED_WITH_SIBLING_MASKED": [
+   "BOI-2073226966298407552-4"
+  ]
+ },
+ "queued_or_running": [],
+ "not_applicable": {
+  "BOI-2100442657917279616-1": "October 12: reproduced off-target eclipses of an 11.258-day binary (KOI FPs K06395.01, K05050.01 and two others at 116-152 arcsec match it 1:1 with 118/118 aligned centres); the contaminant lies outside the 60-arcsec V3 scene, so TRICERATOPS cannot model it."
+ },
+ "evidence": {
+  "delivery": {
+   "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-delivery-selection-20261011.json",
+   "sha256": "51a3f065e1d130ff10910bf9a5524a163e72fa517416f644ca2d965ea8de185a"
+  },
+  "ledger": {
+   "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-validation-20261012.json",
+   "sha256": "0bdff71a2de56661e6b2e8432bdcd13fac7501018251cc1d7a506a798e8f272d"
+  },
+  "adoption": {
+   "path": "/Users/adam/Other/spacelab/results/boi-validation/v3-adoption-20261025.json",
+   "sha256": "8012ab5e70d1eeaeef3c58938c2437a8ed2408861280722411ea945f9603c7d5"
+  },
+  "overnight": {
+   "path": "/Users/adam/Other/spacelab/results/boi-validation/v3-kbonus-overnight-20261025.json",
+   "sha256": "444c69683d10ac291cdda7d41c074bd23cf226b6b82374812e6d3be7426040e9"
+  }
+ },
+ "helper": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/survey_dispositions.py",
+  "sha256": "9cec8ebc5fe81a37d17a132b7068b3067397299bdfdc5fd54c6981326456df93"
+ },
+ "scope": "Current pipeline dispositions of the 125 delivered survey BOIs on 25 October 2026. Validation categories follow the adopted records; HELD and NOT_ATTEMPTED states are method or data limits; QUEUED_OR_RUNNING cases are pending."
+}

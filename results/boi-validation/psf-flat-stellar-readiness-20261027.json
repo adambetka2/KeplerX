@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-27T00:29:59.305939+00:00",
+  "source_scene_properties": {
+    "sources": 3367,
+    "all_queries_complete": true,
+    "reported_teff_radius_logg": 1251,
+    "reported_flame_mass": 418,
+    "reported_flame_radius": 850,
+    "evidence": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-scene-stellar-v1/summary.json",
+      "sha256": "353a52428df205ea6951818213eb7c88351e5c429dd4ba090d0944fed5fc0d93"
+    }
+  },
+  "host_followup": {
+    "hosts_needing_reviewed_stellar_inputs": 27,
+    "existing_isochrone_solutions_for_review": 2,
+    "new_gaia_queries_complete": 25,
+    "eligible_for_existing_isochrone_route": 9,
+    "ps1_queries_complete": 9,
+    "all_ps1_queries_complete": true,
+    "results": [
+      {
+        "source_id": "2079821420415898368",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2079821420415898368.json",
+          "sha256": "3d37900032ef0ef49c5ada8a23ddf0127a5275c90f19ecea12d0857d321ebac5"
+        },
+        "rows": 1
+      },
+      {
+        "source_id": "2131801043071611776",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2131801043071611776.json",
+          "sha256": "e92196911758df174c7970718dc54c096b1a6d5239de772fda8d8d753252c526"
+        },
+        "rows": 2
+      },
+      {
+        "source_id": "2100203999471640064",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2100203999471640064.json",
+          "sha256": "227dec6fad885c9b0797ee217d33f28e28afecdb06e5ecd4133d8c4ccd15ec92"
+        },
+        "rows": 3
+      },
+      {
+        "source_id": "2079536067092694016",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2079536067092694016.json",
+          "sha256": "99cb1d53e8afa7a22f3b398018cf24390d26f0d78e2e6a4388516d9227b6a6c5"
+        },
+        "rows": 3
+      },
+      {
+        "source_id": "2127702609183750528",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2127702609183750528.json",
+          "sha256": "0a05290fe2b75e3e25c7ba905f845f798e765a6dd2452f6fb287719437a10cc2"
+        },
+        "rows": 2
+      },
+      {
+        "source_id": "2126865915195358720",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2126865915195358720.json",
+          "sha256": "772f7a60f53dd688ef8454a06c43441ce23b24d7dd227f9d2394e576d3b47166"
+        },
+        "rows": 2
+      },
+      {
+        "source_id": "2107167653281504256",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2107167653281504256.json",
+          "sha256": "55b0396d8f64844605ec1386db38f5f281afa587742c3ac4defb6605d1b0128d"
+        },
+        "rows": 3
+      },
+      {
+        "source_id": "2133051978069556352",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2133051978069556352.json",
+          "sha256": "977be62f2fde3fc0b772e7da7d122af7098483c4ba3ddab6fabeeea3ab91a1c2"
+        },
+        "rows": 2
+      },
+      {
+        "source_id": "2100123494603868416",
+        "complete": true,
+        "response": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/ps1/2100123494603868416.json",
+          "sha256": "dc04a20b3f3cbea2d92e2b2fe17f271e2deac29513ca446a3578f3a3f313df04"
+        },
+        "rows": 6
+      }
+    ],
+    "fits_started": 0,
+    "priors_adopted": 0
+  },
+  "prepared_isochrone_inputs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/input-build-v1/result.json",
+    "sha256": "52dc66c69bbb899b5aa1de8bee68bc1a9a270bf41afe4c6c1ce30731be1ef524"
+  },
+  "calibration_support": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/host-photometry-v1/input-build-v1/calibration-support-review.json",
+    "sha256": "57a9473ed3b67af68e41b8f773c2f26feab65c3e558cc239a13120ba1e037093"
+  },
+  "automatic_native_admissions": 0,
+  "automatic_probability_admissions": 0,
+  "scope": "Additional measured/model-input readiness only. Missing properties, source ownership, physical blending and PSF response remain explicit; neither catalogue completeness nor prepared photometry is a validation."
+}

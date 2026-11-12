@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-20T21:44:06Z",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2102918384442366592",
+  "kic": 7271045,
+  "status": "ONE_TIME_CHECK_COMPLETE_NATIVE_SERIAL_EXPORT_UNCHANGED",
+  "native_main_pid": 83298,
+  "native_cpu_snapshot_percent": 91.9,
+  "numerical_pool_live": false,
+  "export_present": false,
+  "native_failure_present": false,
+  "frozen_input_receipts_verified": 18,
+  "hardware": {
+    "logical_cpus": 10,
+    "physical_memory_bytes": 17179869184,
+    "global_cpu_last_top_sample_percent": {
+      "user": 25.35,
+      "system": 13.61,
+      "idle": 61.3
+    },
+    "power": "AC attached, battery80%, not charging",
+    "thermal": "pmset reports no recorded thermal or performance warning; no CPU power status reported",
+    "memory": "Kernel VM pressure level1; memory_pressure free49%; current swap9458MiB of10240MiB; last top interval12swapins/0swapouts. Snapshot and cumulative counters are not a new memory failure."
+  },
+  "phase_assessment": "No numerical pool remains live; main CPU remains active without failure/export output. This is consistent with pinned juliet's serial400000-sample likelihood export after pool closure. It is not100% whole-machine utilization. Do not restart or change the frozen runtime to fill cores.",
+  "decision": "Keep the active fit unchanged and allow serial export to finish. Preserve the reviewed ten-core budget for later supported parallel stages, BLAS/OpenMP1. No competing candidate numerical work, benchmark, additional guard or server work launched. No unrelated job/application touched. Pause only this one-time automation after recording; keep hourly monitor active.",
+  "evidence": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/overnight-hardware-check-20261020T214406.json",
+    "sha256": "7d5533bbeb7ab4a7ab95a9e7a7d2d770c110a137d1900c16b338706c07e5a711"
+  },
+  "monitor_policy": "Pause completed one-time overnight check only; hourly validation monitor remains active. No science/runtime/input/job changes made."
+}

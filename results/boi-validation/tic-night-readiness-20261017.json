@@ -1,0 +1,81 @@
+{
+  "status": "READY_AWAITING_ADAM_START",
+  "prepared_utc": "2026-10-17T15:32:36.331510+00:00",
+  "workspace": "/Users/adam/Other/spacelab/other/boi-validation-20261017",
+  "worktree": "/Users/adam/worktrees/boi-tic-night/spacelab",
+  "launch_command": "bash /Users/adam/Other/spacelab/other/boi-validation-20261017/campaign.sh start",
+  "workers": 10,
+  "production_runs_started": 0,
+  "required_runs": 40,
+  "runs_per_boi": 20,
+  "draws_per_scenario": 1000000,
+  "catalogue": "TIC",
+  "ephemeris": "DISCOVERY",
+  "targets": [
+    {
+      "source_id": "2077554781499350144",
+      "scenario_families": 210
+    },
+    {
+      "source_id": "2127186564572468352",
+      "scenario_families": 114
+    }
+  ],
+  "storage": "Internal disk explicitly authorized by Adam, no campaign size cap. Existing dump symlink unchanged.",
+  "reference_replay": "All attempted log weights and bound indicators exactly reproduced for both 4096-draw frozen complete scenario censuses.",
+  "ten_worker_peak_RSS_GiB": 3.7570343017578125,
+  "verification": {
+    "statistical_tests_passed": 10,
+    "vetting_tests_passed": 326,
+    "vetting_preexisting_failures": 3,
+    "preexisting_failures_reproduced_on_unmodified_branch": true,
+    "changed_file_lint_and_complexity": "PASS",
+    "new_folder_lint_and_complexity_diagnostics": 0
+  },
+  "receipts": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/restoration.json",
+      "sha256": "cb0cad2d1f81f323aa316a436b6d0d6d3fa2d0e76f492c342444c8594690e14a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/reference-0.json",
+      "sha256": "a614e5e46f67a1d15292f70a35004b4c2b68ac1f5f0d7bbe94d089b9219c25e3"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/reference-1.json",
+      "sha256": "998648483f8947683bcec41d59d0cefddabfbb44db4d0c829dc79ce9f1d4ae96"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/ten-workers.json",
+      "sha256": "e2b8f1ec9debc744fb3aa24cdf9a3857ad4e2f7b7a2d27ac29ae2fa914dfe839"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign/audit/physical-evidence.json",
+      "sha256": "639be7f773527ac68dfd69b04ad2c71ba215cdc0807cbd4950ed2a6ab4069bf5"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign/freeze.json",
+      "sha256": "2405eb389ae551b4bd768ca2f35440d824239fd28548e155306992d19e99f5b1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign.sh",
+      "sha256": "bb96966382e6b2dfd227e0b908bd0d3a61c522de8e4b860088def442984e465b"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/path-relocation-20261017/relocation.json",
+      "sha256": "cbcfa35f5a5f02b8457cd44df6d89a262f2757047cafb662d295a09ce90a4583"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/path-relocation-20261017/runtime-check.json",
+      "sha256": "ebb961b6030c0a2a3d6c8629b19c393161be83335a8e7faa1a71aabecd42a3aa"
+    }
+  ],
+  "closeout": "Automatic deep weight audit after 40 completions. Final scientific adjudication uses the prepared physical-evidence packet and declared FPP/NFPP thresholds; no partial admission.",
+  "relocation": {
+    "original_workspace": "/Users/adam/Other/boi-validation-20261017",
+    "current_workspace": "/Users/adam/Other/spacelab/other/boi-validation-20261017",
+    "verified_original_frozen_files": 466,
+    "retained_original_receipt": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/path-relocation-20261017/freeze.json",
+    "runtime_check": "/Users/adam/Other/spacelab/other/boi-validation-20261017/preparation/path-relocation-20261017/runtime-check.json"
+  }
+}

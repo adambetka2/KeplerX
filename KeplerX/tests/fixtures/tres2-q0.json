@@ -1,0 +1,17 @@
+{
+  "source_id": "2131314401800665344",
+  "target": "TrES-2 b / KIC11446443",
+  "raw_path": "/Volumes/discPCIe/data/kepler-planets/kbonus-fits/hlsp_kbonus-bkg_kepler_kepler_kic-011446443_kepler_v1.0_lc.fits",
+  "raw_sha256": "d8fd35ebf263b6bffd131384df33e63b3af89a7976547cdd57d3d20e0563f839",
+  "view": "PSF_FLAT_FLUX",
+  "quarter": 0,
+  "exposure_days": 0.02043361111111111,
+  "time_system": "BKJD_TDB",
+  "fixture_sha256": "b27b0593998dbc27fe5982299bfac3b4a2242fcd2842cd4457f15850ad6263cc",
+  "license": "CC BY 4.0",
+  "doi": "10.17909/7jbr-w430",
+  "reference": "https://exoplanetarchive.ipac.caltech.edu/overview/TrES-2",
+  "expected_period_days": 2.470613377,
+  "expected_epoch_bkjd": 122.763305,
+  "scope": "One known-object software control, not a campaign sample or population calibration"
+}

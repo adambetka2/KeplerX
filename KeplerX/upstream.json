@@ -1,0 +1,82 @@
+{
+  "detector": {
+    "repository": "https://github.com/robertfwilson/trashdump",
+    "commit": "5ce20ac8c82cb381db37783de647d62f3575986e",
+    "files": {
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "data/meta/limb_coeffs.h5": "6e16be2986ca8d7fb078c4540cc452dd06fdbd975485d4ebb61eb6e367ff4ae0",
+      "dump.py": "38f95d7f12f59ff8f4c0044b5f04ce943b82e99866e1d8b7ea452bf65e112632",
+      "ffa.py": "2a3244f73b85ad0cf3b2400807c903c7c1ba02226aa18254ba06869ae15ce9ff",
+      "lightcurves.py": "fb3c743697c9c9b9b0ba048b0a06d18544b165dff6a3056e87622ab83aec3be6",
+      "ses.py": "a00b2acb5566d8beb3999043ee6cb1bf2e77e29cf2ea8611ecf72b54f29cb93b",
+      "utils.py": "f6056d4ed6936828ca6fd019ccdcfd878215a2931830ffffd82c143a4ece09a4"
+    },
+    "recorded_edits": {
+      "combine.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original compost.py sha256 e355aed33eef710e40e5c6e2db03f44b34f558aff19a081c4b98361ca016b536",
+      "search_script.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original trashdump_script.py sha256 8b3f82d7f604965a189b767672b8a65987e84eb0225a8b89ad8e05d62a8a3d13",
+      "setup.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original setup.py sha256 584a2ad247200aee69fe19c0cfb5a7841318235dd260cad609c9f85f0880bd17",
+      "test_bit8.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original test_bit8.py sha256 18d917c9e0b8c3c4904b8a91b166c80ee2c9fae2fcba7b5b5b232b6d5ce3931c",
+      "vetting.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original recyclebin.py sha256 f5fb18cd1b5389a5b74ae245a31e348df7340795486a337a8119d2919b0ca764",
+      "removed": "Unused by KeplerX, deleted 30 Oct 2026; original sha256 by file: {\"combine.py\": \"afe15e38aa4cb89d3738f0d6b846af3805c8add5a8c6519f020aadc1e8104c6e\", \"search_script.py\": \"8c10d5ed58724cab4676828be7e7825f9d0a6220bdebb484477566a2a6156ab0\", \"setup.py\": \"03c423dafa24fb4e4f57880a842407080481e11c8863ee65c518314b856cebdc\", \"test_bit8.py\": \"5d4e29afc863549622b274c567111f3315ef7480c79283480386c6fb941ed470\", \"transitfit.py\": \"315f112a32da71b64238cf2d96d93b82b038ea4d3be48038289b643baa3ec2eb\", \"vetting.py\": \"39dfb9e05eee62a46774e2136555e3d321a1e81dbb9c3ea1a2453e73f82f9067\", \"fitfuncs.py\": \"e0ed2ad51f930b5e256197d9bd08dd125e5544a5fb15df20bfefb932a858910e\"}"
+    }
+  },
+  "localizator": {
+    "repository": "https://github.com/juliemoqs/incinerator",
+    "recorded_edits": {
+      "__init__.py": "__version__ fixed at 1.1.2; the incinerator distribution is no longer installed (original sha256 9287c9bd858a5fe92d8d2b3d1e6cc9195088aebfd8d1b5105a10ff92696d4a7a)",
+      "localize.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original localize.py sha256 39afbaff188060cde6137d4876b81d64bc5ec1cdddfee896bd73d6b65012a33c",
+      "utils.py": "Vizier cache opened under runtime/cache instead of the importing process's working directory; original sha256 54f5f51283afd3aad7610bf6ecd9cbfa146abbc8d253178daec970d57400a1aa"
+    },
+    "commit": "6cbc23967e54986dabffc0e7935d3bfb91fae2da",
+    "files": {
+      "LICENSE": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989",
+      "__init__.py": "565dcb43f8f434e65b7fea3042b76e36fde9e945dd88828512e2eba3ef670342",
+      "localize.py": "1356a40ed6eaca6e4f7120df42672fff5612e131f97d51c490d771d603cdabe5",
+      "utils.py": "8824fc864e2423218578c9f318f75d40408267f416147545676a2ad20ba0f051"
+    }
+  },
+  "vetter": {
+    "repository": "https://github.com/robertfwilson/trashdump",
+    "commit": "5ce20ac8c82cb381db37783de647d62f3575986e",
+    "files": {
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "data/meta/limb_coeffs.h5": "6e16be2986ca8d7fb078c4540cc452dd06fdbd975485d4ebb61eb6e367ff4ae0",
+      "dump.py": "38f95d7f12f59ff8f4c0044b5f04ce943b82e99866e1d8b7ea452bf65e112632",
+      "ffa.py": "2a3244f73b85ad0cf3b2400807c903c7c1ba02226aa18254ba06869ae15ce9ff",
+      "fitfuncs.py": "e0ed2ad51f930b5e256197d9bd08dd125e5544a5fb15df20bfefb932a858910e",
+      "lightcurves.py": "fb3c743697c9c9b9b0ba048b0a06d18544b165dff6a3056e87622ab83aec3be6",
+      "vetting.py": "39dfb9e05eee62a46774e2136555e3d321a1e81dbb9c3ea1a2453e73f82f9067",
+      "ses.py": "a00b2acb5566d8beb3999043ee6cb1bf2e77e29cf2ea8611ecf72b54f29cb93b",
+      "utils.py": "f6056d4ed6936828ca6fd019ccdcfd878215a2931830ffffd82c143a4ece09a4"
+    },
+    "recorded_edits": {
+      "combine.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original compost.py sha256 e355aed33eef710e40e5c6e2db03f44b34f558aff19a081c4b98361ca016b536",
+      "search_script.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original trashdump_script.py sha256 8b3f82d7f604965a189b767672b8a65987e84eb0225a8b89ad8e05d62a8a3d13",
+      "setup.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original setup.py sha256 584a2ad247200aee69fe19c0cfb5a7841318235dd260cad609c9f85f0880bd17",
+      "test_bit8.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original test_bit8.py sha256 18d917c9e0b8c3c4904b8a91b166c80ee2c9fae2fcba7b5b5b232b6d5ce3931c",
+      "vetting.py": "KeplerX renames only (file and class names, report titles, imports); numerics unchanged; original recyclebin.py sha256 f5fb18cd1b5389a5b74ae245a31e348df7340795486a337a8119d2919b0ca764",
+      "removed": "Unused by KeplerX, deleted 30 Oct 2026; original sha256 by file: {\"combine.py\": \"afe15e38aa4cb89d3738f0d6b846af3805c8add5a8c6519f020aadc1e8104c6e\", \"search_script.py\": \"8c10d5ed58724cab4676828be7e7825f9d0a6220bdebb484477566a2a6156ab0\", \"setup.py\": \"314ea9192ee1e9e3b14d4cbb6436cab6c6b7c9df16513e2ce1bb1865fc41aef8\", \"test_bit8.py\": \"5d4e29afc863549622b274c567111f3315ef7480c79283480386c6fb941ed470\", \"transitfit.py\": \"315f112a32da71b64238cf2d96d93b82b038ea4d3be48038289b643baa3ec2eb\"}"
+    }
+  },
+  "validator": {
+    "repository": "https://github.com/joshspeagle/dynesty (release 3.1.0, as installed in the frozen V3 runtime)",
+    "commit": "dynesty 3.1.0",
+    "recorded_edits": {
+      "dynesty/__init__.py": "__version__ falls back to 3.1.0 when the dynesty distribution is not installed; original sha256 897acc035b447ba2f8b9f9f9445032a0229907cf314583f01158765414845086"
+    },
+    "files": {
+      "dynesty/AUTHORS.md": "d90d8ac43362989a4fab9d70174e25e53ef25c93da0e1b480444f19f267c2d43",
+      "dynesty/LICENSE": "1e1e4160f2d5cb9cd9cdf5f6ea8812770bbc2768e97a77d04123177beb7b667c",
+      "dynesty/__init__.py": "92aedcc0d1e792aff33da66e6f3998beb109128d9acae08de824e6e5b6ed8021",
+      "dynesty/bounding.py": "478f4f44bade6c89a7eacfb25dea8749ce64136208fe30f45ee677303191dfd6",
+      "dynesty/dynamicsampler.py": "0af403ba1260dd9242730719d7ec9ba8138f6a06439b8d699712f0ab956a3493",
+      "dynesty/dynesty.py": "0cc20df2a8613b214cb086ec77a53f45eee7234f487c96e1b8008c80ac22a622",
+      "dynesty/internal_samplers.py": "9486df129cdca73f099f517f496c09ceff34882bbf6c9b83e2847aef1475ca75",
+      "dynesty/plotting.py": "3486a63bb1eaf0d20e6da0bd0acf66760fb47c769881b7dc553a053a70949425",
+      "dynesty/pool.py": "4b7cd5caaf31ac03b0fbe282c7ba575d92d17ebc6af7d6f162cafb1188d493d0",
+      "dynesty/results.py": "733014cca276b760f9782fca73de54c0e97fb939d9042100644a54250c0ac94b",
+      "dynesty/sampler.py": "e13d316a8e5fb5d625eb8be4d257ca0d4d8807a7d2b051e71450d3bff3a380aa",
+      "dynesty/utils.py": "a015642facc44299350a1ff58fb28158af3d9eec84339e3aa1390f7c72b4bfef"
+    }
+  }
+}

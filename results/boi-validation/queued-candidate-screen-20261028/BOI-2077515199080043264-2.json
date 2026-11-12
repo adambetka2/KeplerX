@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-28T07:40:46.070540+00:00",
+  "boi_id": "BOI-2077515199080043264-2",
+  "source_id": "2077515199080043264",
+  "signal_id": "shallow-v1-2077515199080043264-7",
+  "clock": {
+    "period_days": 48.60086691800657,
+    "epoch_bkjd": 178.6772920870781,
+    "duration_days": 0.4000000000000001
+  },
+  "original": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2077515199080043264-2/acquired/original-kbonus-attempt1.response",
+  "sha256": "cccbe1b95ede9dcd8cd7efabeccbb75d3ea05b365210e139c470e5c3d7513405",
+  "psf_flat_depth": {
+    "status": "MEASURED",
+    "depth_fraction": 0.0006780745934891439,
+    "depth_error": 9.358671451530838e-05,
+    "events": 30,
+    "depth_chi2": 112.78987417436903,
+    "degrees_of_freedom": 12,
+    "largest_information_fraction": 0.19987198161481134,
+    "sample_count": 1898
+  },
+  "psf_flat_train": {
+    "status": "MEASURED",
+    "events": 13,
+    "observed_positive_fraction": 0.7692307692307693,
+    "expected_positive_fraction": 0.9499414429033876,
+    "positive_deficit_z": -3.050755669246409,
+    "scope": "Predicted-event dip signs under a shared measured depth and local errors; the z score is a coherence diagnostic, not a calibrated false-alarm probability"
+  },
+  "odd_even": {
+    "status": "MEASURED",
+    "difference": -8.181361205961385e-05,
+    "error": 0.00018741326918822278,
+    "sigma": 0.43654119270203245,
+    "two_depth_bic_gain": -7.35798776624416
+  },
+  "secondary_phase_half": {
+    "status": "MEASURED",
+    "depth_fraction": -2.668382249398306e-05,
+    "depth_error": 8.885805302890347e-05,
+    "events": 30,
+    "depth_chi2": 32.115728200270944,
+    "degrees_of_freedom": 11,
+    "largest_information_fraction": 0.3354037196818878,
+    "sample_count": 1678
+  },
+  "helper_loading": "Unchanged array-only lc2 function ASTs loaded without the unused Parquet reader dependency.",
+  "scope": "Diagnostic at the already-declared clock and duration, using unchanged vetting_periodic functions and config. No detection search, fit, acceptance decision, probability allocation or queue change."
+}

@@ -1,0 +1,150 @@
+{
+  "utc": "20261027T161844Z",
+  "lane": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027",
+  "method": "v2",
+  "excluded": [
+    {
+      "boi_id": "BOI-2078414771391537280-1",
+      "reason": "0.368 d orbit around a 2.17 R_sun / 0.97 M_sun FLAME host has a/R* = 0.99: the orbit would lie inside the star, so no planet scenario is physical. Not queued (27 Oct)."
+    }
+  ],
+  "rows": [
+    {
+      "boi_id": "BOI-2127936912539397632-1",
+      "group": "shallow (fitted separately)",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1",
+      "v1": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp_mean": 0.006586829882570927,
+        "nfpp_mean": 1.1981247573500709e-97,
+        "snr": 48.375132988845394,
+        "ruwe": 1.0471895,
+        "radius_earth": 2.8374519914344134,
+        "period_days": 13.744575310548264
+      },
+      "v2": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp_mean": 0.006588284568692876,
+        "nfpp_mean": 9.030133055613502e-101,
+        "snr": 48.375132988845394,
+        "ruwe": 1.0471895,
+        "radius_earth": 2.8374519914344134,
+        "period_days": 13.744575310548264
+      }
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-2",
+      "group": "shallow (fitted separately)",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2",
+      "v1": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp_mean": 0.00574071025052017,
+        "nfpp_mean": 1.0176534516198533e-10,
+        "snr": 24.371131447690065,
+        "ruwe": 1.0471895,
+        "radius_earth": 2.05407905318855,
+        "period_days": 8.55571815549596
+      },
+      "v2": {
+        "verdict": "NUMERICAL_PASS",
+        "failed": [],
+        "seeds": 20,
+        "fpp_mean": 0.005739698219319939,
+        "nfpp_mean": 7.422085330591494e-11,
+        "snr": 24.371131447690065,
+        "ruwe": 1.0471895,
+        "radius_earth": 2.05407905318855,
+        "period_days": 8.55571815549596
+      }
+    },
+    {
+      "boi_id": "BOI-2079714428492352768-1",
+      "group": "shallow (fitted separately)",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079714428492352768-1",
+      "v1": {
+        "verdict": "NUMERICAL_FAIL",
+        "failed": [
+          "seeds_20",
+          "mean_fpp_below_1p5pct",
+          "mean_nfpp_below_0p1pct"
+        ],
+        "seeds": 2,
+        "fpp_mean": 0.10536816310302988,
+        "nfpp_mean": 0.06829926815564155,
+        "snr": 69.81042035883613,
+        "ruwe": 0.9602448,
+        "radius_earth": 2.21858848655806,
+        "period_days": 3.446776953446837
+      }
+    },
+    {
+      "boi_id": "BOI-2078045782158649216-1",
+      "group": "main Rust SAP failure",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2078045782158649216-1",
+      "native_hold": [
+        "radius_ratio_snr"
+      ]
+    },
+    {
+      "boi_id": "BOI-2130658616133595264-1",
+      "group": "main Rust SAP failure",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2130658616133595264-1",
+      "native_hold": [
+        "radius_ratio_snr",
+        "protection"
+      ]
+    },
+    {
+      "boi_id": "BOI-2076057590261131392-1",
+      "group": "shallow",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2076057590261131392-1/psf"
+    },
+    {
+      "boi_id": "BOI-2077624600485371136-1",
+      "group": "shallow",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2077624600485371136-1/psf"
+    },
+    {
+      "boi_id": "BOI-2107173460081536128-1",
+      "group": "shallow",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2107173460081536128-1/psf"
+    },
+    {
+      "boi_id": "BOI-2128925785810616832-1",
+      "group": "shallow",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2128925785810616832-1/psf"
+    },
+    {
+      "boi_id": "BOI-2099560128037101952-1",
+      "group": "main Rust SAP failure",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2099560128037101952-1/psf"
+    },
+    {
+      "boi_id": "BOI-2076535358120385536-1",
+      "group": "restored (manual exclusion)",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2076535358120385536-1/psf"
+    },
+    {
+      "boi_id": "BOI-2051317406099391360-1",
+      "group": "restored (manual exclusion)",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2051317406099391360-1/psf"
+    },
+    {
+      "boi_id": "BOI-2078783726253023360-1",
+      "group": "main Rust SAP failure",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2078783726253023360-1/psf"
+    },
+    {
+      "boi_id": "BOI-2128034597276971520-1",
+      "group": "shallow",
+      "psf_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2128034597276971520-1/psf"
+    }
+  ],
+  "scope": "Numerical PSF_FLAT V3 outcomes and closeout measurements. NUMERICAL_PASS is not a validation until Adam admits it."
+}

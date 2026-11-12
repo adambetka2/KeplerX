@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-21T01:49:30.376921+00:00",
+  "source_id": "2101354466593873152",
+  "kic": 5268401,
+  "signal_id": "rust-v6-2101354466593873152-2",
+  "status": "HELD_NATIVE_DETRENDING_PROTECTION_INADEQUATE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Standard dynamic nested fit completed with finite independent prior/posterior, native weight ESS5159.76 and stopping0.969<1. Representative valid joint model has exact11.5117h duration rather than supplied6.2575h; joint clock displacement leaves24actual valid model-transit cadences unprotected across8quarters, max2083ppm. Only.073percent of equal posterior samples satisfy approximate all-event protection. This preparation cannot support adopted native clock/FPP.",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2101354466593873152/native-nested-review-v1.json",
+    "sha256": "cd680c42f496b2b851a42a5222986c8289c71e5a76482187c19fd32210d395ab"
+  },
+  "coverage": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2101354466593873152/native-posterior-review-measurements-v1.json",
+    "sha256": "df15f1a5ea1bf5017c21a763e1589ae52f9ed43bd2a99d220085198405e47ff5"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2101354466593873152/native-freeze.json",
+    "sha256": "71cba98e7e38d5a130ace2e231ecbb0ff99b26eb47c9f26a618d1587c0597b06"
+  },
+  "original_undecided_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2101354466593873152/native/review.json",
+    "sha256": "461959c7c6ad60c4c323bc22367136fbbbbefcf339396cf312dd1d8f499aef26"
+  },
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve all outputs; future wider duration/clock-aware detrending needs separately reviewed generation. No silent crop, favorable clock, changed priors or prolonged rescue tonight. Advance full unresolved queue."
+}

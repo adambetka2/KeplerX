@@ -1,0 +1,89 @@
+{
+  "utc": "2026-10-20T11:48:30.047989+00:00",
+  "validated_new": 0,
+  "goal": 50,
+  "previous_native_hold": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205247-v1/physical-hold-v1.json",
+    "sha256": "dc57f958afff711a5ff69a9d69fbd0ebfafb1d8c20eeb8165eeb71336169bc4b"
+  },
+  "current_source_id": "2079240642062921984",
+  "kic": 9046816,
+  "tic": 268391058,
+  "selection": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/selection-v1.json",
+    "sha256": "e05a17d05902a3c45c4142f688d4d6e61d17778358c381ad43f8b457ed7622b5"
+  },
+  "live_unit_snapshot": "MainPID=3762735\nMemoryCurrent=945971200\nCPUUsageNSec=657204672000\nActiveState=active\nSubState=running\n",
+  "native_snapshots": {
+    "preflight-status.json": {
+      "utc": "2026-10-20T11:47:17.936939+00:00",
+      "source_id": "2079240642062921984",
+      "stage": "NATIVE_PREFLIGHT_PASSED_PARALLEL_EXECUTION_REVIEW_PENDING",
+      "records": [
+        {
+          "action": "prepare",
+          "exit_code": 0,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/prepare.log"
+        },
+        {
+          "action": "map",
+          "exit_code": 0,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/map.log"
+        },
+        {
+          "action": "checks",
+          "exit_code": 0,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/checks.log"
+        }
+      ],
+      "statistical_validations": 0
+    },
+    "sampling-status.json": {
+      "utc": "2026-10-20T11:48:21.665866+00:00",
+      "source_id": "2079240642062921984",
+      "stage": "NATIVE_PARALLEL_ENSEMBLES_RUNNING",
+      "statistical_validations": 0,
+      "endpoint": 6000,
+      "likelihood_workers_per_ensemble": 6,
+      "evaluation_workers": 24,
+      "executor": "process",
+      "children": [
+        {
+          "pid": 3763059,
+          "ensemble": 0,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native/sample-6000-ensemble-0.log"
+        },
+        {
+          "pid": 3763060,
+          "ensemble": 1,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native/sample-6000-ensemble-1.log"
+        },
+        {
+          "pid": 3763061,
+          "ensemble": 2,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native/sample-6000-ensemble-2.log"
+        },
+        {
+          "pid": 3763062,
+          "ensemble": 3,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native/sample-6000-ensemble-3.log"
+        }
+      ]
+    }
+  },
+  "own_preparation": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native-inputs-v1/summary.json",
+    "sha256": "c502f9c239ff610855b433c24dde6b8c472d71b65bcf6b229d2a5d6f813c0aad"
+  },
+  "preliminary_host_support": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/preliminary-host-support-v1.json",
+    "sha256": "1634d5ada846123764b132170914b4dcb688e1e253a3f7acf999f9db884e9b50"
+  },
+  "execution_controls": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-207924-v1/native-execution-controls-v2/review.json",
+    "sha256": "1677c6d9aebfc8596c00d8ed331adbf91ca9ea6425851315950c69f8c9bbc397"
+  },
+  "current_probability_results": 0,
+  "astrophysical_false_positive_rate": null,
+  "scope": "Current one-source execution snapshot after two new readiness holds. Same source old preparation had no chains; fresh identity, identical density priors, current corpus columns and every parent pixel hash were checked before reuse. No old native/probability coordinator resumed."
+}

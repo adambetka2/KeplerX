@@ -1,0 +1,152 @@
+{
+  "utc": "2026-10-20T10:47:40.438240+00:00",
+  "classification": "PHYSICAL_HOLDS_AND_NATIVE_RECORDING_REPAIR_NEXT_CASE_RUNNING",
+  "validated_new": 0,
+  "goal": 50,
+  "probability_budget_screens": 1,
+  "screen_rejections": 1,
+  "astrophysical_false_positive_rate": null,
+  "preparation_hold_sources": [
+    "2131705076324568448",
+    "2053566049119753216",
+    "2130921124535127424",
+    "2103792461826460288"
+  ],
+  "previous_source_hold": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/physical-source-stop-v1/review.json",
+    "sha256": "b3cc74803e8ced95b15d046a4e848300736daa9a45e2c741f50e34bbb6ca6f21"
+  },
+  "cool_host_hold": {
+    "utc": "2026-10-20T10:34:58.698268+00:00",
+    "source_id": "2103792461826460288",
+    "kic": 5689121,
+    "signal_id": "mk-sap-20261019-2103792461826460288-1",
+    "status": "PREPARATION_HOLD_COOL_HOST_KEPLER_LIMB_DOMAIN",
+    "boi_disposition": "BOI",
+    "astrophysical_false_positive_status": "UNDETERMINED_NO_REPRODUCED_MECHANISM",
+    "statistically_validated": false,
+    "native_sampling_started": false,
+    "probability_runs": 0,
+    "host_model_support": {
+      "utc": "2026-10-20T10:25:34.907213+00:00",
+      "source_id": "2103792461826460288",
+      "status": "OWN_SCENE_PREPARED_COOL_HOST_SUPPORT_MEASURED_REVIEW_REQUIRED",
+      "host_particles": 4096,
+      "host_inside_retained_ld_table": 3316,
+      "host_all_inside_retained_ld_table": false,
+      "unsupported_host_weighted_prior_mass": 0.19042968750000017,
+      "host_temperature_range": [
+        3091.3643287499513,
+        4157.993363029056
+      ],
+      "bank": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210379-v1/scene-v1/2103792461826460288/banks/2103792461826460288.npz",
+        "sha256": "8a37bef6ccad212c5119119a37a79c5213285107ed5be5243f465abeea27a145"
+      },
+      "scene": {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210379-v1/scene-v1/2103792461826460288/preparation.json",
+        "sha256": "11da9d5658b964b3d5a72c6924f75200230c4b4bfd5397b89a0d6066ed6f570c"
+      },
+      "scope": "Support measurement only, no automatic discard, clipping, Solar substitution, extrapolation acceptance or probability admission."
+    },
+    "evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210379-v1/host-model-support-v1.json",
+      "sha256": "d6f0533e16f3a6494f0039b73fd701cee75eaf5a3f88f7ed1cc929b0120b5b1f"
+    },
+    "decision": "Preserve full weighted host prior.19.04297%outside retained atmosphere table requires explicit physical model adequacy review or a separately controlled prospective supported model. No particle discard, clipping, Solar substitution, silent extrapolation or probability computation to conceal this gap.",
+    "next_selected_source": "2052740174146478464",
+    "scope": "Model-readiness hold, not a planetary rejection or a change to BOI status. M/K programme and50-object goal remain intact; the cool-host model issue remains open."
+  },
+  "current_source": {
+    "source_id": "2052740174146478464",
+    "kic": 3544862,
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/plan.json",
+      "sha256": "8758a2cb84167c055e1b0aa35bb5859a1e68346a05b742fd04063805088d1772"
+    },
+    "exact_identity": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/inputs-v1/summary.json",
+      "sha256": "934874bbb9deb8e9ee3f527f13b3eaa7477963bc9dd01e7e9771577730641c20"
+    },
+    "own_target_specs": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/stellar-v1/2052740174146478464/target-specifications.json",
+      "sha256": "8a04608765be5d2e6b24f4504422c3e7ef0f5f1e51c54e33bd3df646bf1698d0"
+    },
+    "authenticated_native_input": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/native-inputs-v1/2052740174146478464/preparation.json",
+      "sha256": "c9c84482aa698e48e4490152689e8f4da8444e32f820eadfa29c37647b5d1b08"
+    },
+    "native_generation": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2",
+    "native_stage": {
+      "utc": "2026-10-20T10:47:17.001409+00:00",
+      "source_id": "2052740174146478464",
+      "stage": "NATIVE_PARALLEL_ENSEMBLES_RUNNING",
+      "statistical_validations": 0,
+      "endpoint": 12000,
+      "likelihood_workers_per_ensemble": 8,
+      "evaluation_workers": 32,
+      "children": [
+        {
+          "pid": 3756243,
+          "ensemble": 0,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/sample-12000-ensemble-0.log"
+        },
+        {
+          "pid": 3756244,
+          "ensemble": 1,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/sample-12000-ensemble-1.log"
+        },
+        {
+          "pid": 3756245,
+          "ensemble": 2,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/sample-12000-ensemble-2.log"
+        },
+        {
+          "pid": 3756246,
+          "ensemble": 3,
+          "log": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/native/sample-12000-ensemble-3.log"
+        }
+      ]
+    },
+    "service_snapshot": "MainPID=3755876\nResult=success\nActiveState=active\nSubState=running\n",
+    "probability_runs": 0
+  },
+  "native_recording_repair": {
+    "module": {
+      "path": "/home/adam/spacelab/post_boi/native_maps.py",
+      "sha256": "67b438730b11528b88bf9e756e525e7d9877298c25a0939249c5f6b36b7e667b"
+    },
+    "old_operational_failure": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-v1/map.log",
+      "sha256": "07339b09d512cbbd5d4f8efd61a826efa55cfd453c9c2f21858dde830d39b8ab"
+    },
+    "new_generation_plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/execution-preflight-plan.json",
+      "sha256": "cb4cdb31c27c044b45467360b7c9a49d23059b2962d8ef8c71580e0768eabd6b"
+    },
+    "winning_native_log_posterior": -5386.297541292011,
+    "optimizer_attempts": 3,
+    "negative_infinity_starts_preserved": 1,
+    "finite_map_gold_bytes_identical": true,
+    "finite_map_gold": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-205274-native-v2/finite-map-json-gold.json",
+      "sha256": "210f947d7344b263f146193df8238fd9554f8cee6d6d2bfc1689a3f681b2c146"
+    },
+    "seeded_parallel_parity": "ALL_SEEDED_NATIVE_CHAIN_AND_LOG_DENSITY_PARITY_CHECKS_PASSED",
+    "selected_likelihood_workers_per_ensemble": 8,
+    "scope": "Only map-output recording changes. Same source photons, likelihood, priors, bounds, optimizer starts/budget, seeds,24walkers and declared endpoint rules. Nonfinite winners still fail. No physical fit failure was silently promoted to accepted."
+  },
+  "verification": {
+    "package_tests": "52passed",
+    "ruff_and_complexity10": "PASS",
+    "pytest": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v11/pytest.log",
+      "sha256": "04439fb3e65e40eccaa424feaf660536a968998bed1d4b22706663aec7e9338a"
+    },
+    "ruff": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v11/ruff-complexity.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    }
+  },
+  "scope": "One current source on ssh kbonus. Previous explicit probability stop is terminal and all15completed million-draw scenario blocks deep-replayed. No complete FPP exists for that held case. Cool-host model inadequacy remains open; no prior truncation or false-positive adjudication."
+}

@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-20T07:08:45.275670+00:00",
+  "validated_new": 0,
+  "goal": 50,
+  "false_positive_rate": null,
+  "completed_candidate_adjudications": 0,
+  "classification": "PROGRESS_USER_AUTHORIZED_ONE_TARGET_ENFORCED",
+  "selected_source_id": "2128845796339643392",
+  "selected_kic": 10865762,
+  "selected_workers": 23,
+  "primary_repeats": 20,
+  "justified_timing_diagnostics": 3,
+  "primary_scenario_range": [
+    96,
+    100
+  ],
+  "diagnostic_scenario_range": [
+    95,
+    96
+  ],
+  "scenario_census_per_repeat": 132,
+  "complete_full_repeats": 0,
+  "other_target_workers_stopped": 9,
+  "other_target_source_id": "2127732197218050304",
+  "other_target_status": "USER_STOPPED_SOURCE_OWNERSHIP_HOLD_NO_AUTO_RESUME_BOI_PRESERVED",
+  "native_and_geometry_jobs": "USER_STOPPED_NO_AUTO_RESUME",
+  "former_parallel_triage_supervisor": "USER_STOPPED_NO_AUTO_RESUME",
+  "first_five_rule": {
+    "final_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "mean_point_fpp_stop_ge": 0.03,
+    "signal_to_incomplete_selected_workers": "SIGINT after preserving checkpoint snapshots",
+    "early_rejection_is_not_reproduced_false_positive": true
+  },
+  "selected_observer": {
+    "status": "WAITING_FOR_COMPLETE_FIRST_FIVE",
+    "service": "mk-boi-selected-budget-20261020-v2",
+    "state": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-target-budget-v2/status.json",
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/selected-observer-recovery-v2.json",
+      "sha256": "8d5d09e6dc99664b1d84ff7f32b7951f8e3db41b4d229743a7783ff041425033"
+    },
+    "integration_model_and_original_freeze_unchanged": true,
+    "uses_original_path_authenticated_runner": true,
+    "no_worker_launches": true
+  },
+  "selected_target_profile": {
+    "source_id": "2128845796339643392",
+    "freeze_sha256": "df51d31339117a49cecc3573111821272211397e7d8099feaac89f561039988b",
+    "profiles": [
+      {
+        "scenario": "TP",
+        "profiled_attempts": 4096,
+        "warmup_attempts": 256,
+        "wall_seconds": 1.002364706946537,
+        "attempts_per_second": 4086.3370104854143
+      },
+      {
+        "scenario": "NTP:2128845757679157248",
+        "profiled_attempts": 4096,
+        "warmup_attempts": 256,
+        "wall_seconds": 1.284774366999045,
+        "attempts_per_second": 3188.1084377230923
+      },
+      {
+        "scenario": "NTP:2128859020537121792",
+        "profiled_attempts": 4096,
+        "warmup_attempts": 256,
+        "wall_seconds": 0.9358114851638675,
+        "attempts_per_second": 4376.949914525531
+      }
+    ],
+    "scope": "Operational component profile on selected target only. Warmup and4096draw timing per scenario use a separate RNG and are not primary repeats, candidate evidence, or a model/physics change."
+  },
+  "performance_finding": {
+    "bottleneck": "Eclipse likelihood rendering; in the far-neighbor planet profile,0.669of0.931seconds are spent in quadratic transit evaluation, while physical sampling takes0.101seconds.",
+    "implication": "Competing work was removed, but serial132scenario sweeps also dominate latency. No two-hour completion guarantee is justified. Profile or accelerate only this target with paired numerical controls before adopting any renderer/parallel-execution change."
+  },
+  "preserved_inputs_and_partial_work": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/single-target-operation-v1.json",
+      "sha256": "defa22d5e1baf440915654fb44ad5715b1703b09e8ac0d09b8d9416711ee9c50"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/single-target-unit-stop-v1.json",
+      "sha256": "102ac6eeadc6eb1b9a26f51c56316deb3e38a1c9e8e7778fe061918cbf03c093"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/single-target-enforcement-v1.json",
+      "sha256": "772729df244a71e0401df7bf037188d676db1fe8e5d9df2003c73e1f77b45a7e"
+    }
+  ],
+  "software": "New campaign scheduler refuses plans with multiple targets. Observer watches result-file events and checks first-five results while selected repeats continue. Final deep audit replays only selected target, not the explicitly stopped second target.",
+  "verification": {
+    "ruff_complexity10": "PASS post_boi",
+    "tests": "29 passed",
+    "directory": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v8"
+  },
+  "acceptance": "Twenty complete primaries, unchanged upperFPP/NFPP thresholds, timing review and full physical closeout are still required. No numerical pass or operational cutoff automatically changes the physical BOI disposition.",
+  "next_target_policy": "Advance sequentially after this target decision; no other candidate fitting, geometry, controls or probability integrations may run concurrently."
+}

@@ -1,0 +1,379 @@
+{
+  "created_warsaw": "2026-10-28T01:35:41+01:00",
+  "unfinished_runnable_cases": 36,
+  "active_fits": 3,
+  "waiting_fits": 33,
+  "stopped_cases": 8,
+  "scope": "Existing runnable queue until final outcomes. Eight stopped cases excluded; not an estimate that every case validates. V3 and 500 live/5000 effective sampler settings unchanged.",
+  "reason_for_update": "All remaining cadence windows are now measured. Active restored signals already require substantially more evaluations than the early completed sample; central and slow scenarios give restored cases larger call budgets. Three-slot list scheduling in current priority order; probability and reviews overlap native work, with two-hour tail allowance. Scenario range is not a statistical confidence interval.",
+  "assumptions": [
+    "Mac stays awake and coordinator continues.",
+    "Three concurrent native fits retain current CPU allocation.",
+    "No repairs or added cases; scientific holds and failed cases remain stopped."
+  ],
+  "scenarios": [
+    {
+      "scenario": "fast",
+      "remaining_wall_hours": 37.90734964666667,
+      "completion_warsaw": "2026-10-29T15:30+01:00",
+      "native_hours": 35.90734964666667,
+      "assumed_calls_nonrestored": 350000,
+      "assumed_calls_restored": 450000,
+      "wall_ns_per_model_point_per_call": 65,
+      "active_total_call_allowances": [
+        750000,
+        850000,
+        450000
+      ]
+    },
+    {
+      "scenario": "central",
+      "remaining_wall_hours": 67.19324147727778,
+      "completion_warsaw": "2026-10-30T20:47+01:00",
+      "native_hours": 65.19324147727778,
+      "assumed_calls_nonrestored": 450000,
+      "assumed_calls_restored": 650000,
+      "wall_ns_per_model_point_per_call": 85,
+      "active_total_call_allowances": [
+        1000000,
+        1000000,
+        550000
+      ]
+    },
+    {
+      "scenario": "slow",
+      "remaining_wall_hours": 125.43884109477776,
+      "completion_warsaw": "2026-11-02T07:02+01:00",
+      "native_hours": 123.43884109477776,
+      "assumed_calls_nonrestored": 650000,
+      "assumed_calls_restored": 950000,
+      "wall_ns_per_model_point_per_call": 110,
+      "active_total_call_allowances": [
+        1400000,
+        1300000,
+        800000
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "boi_id": "BOI-2127936912539397632-1",
+      "stage": "VALIDATED",
+      "calls": 519220
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-2",
+      "stage": "VALIDATED",
+      "calls": 472236
+    },
+    {
+      "boi_id": "BOI-2079714428492352768-1",
+      "stage": "DONE",
+      "calls": 535424
+    },
+    {
+      "boi_id": "BOI-2078045782158649216-1",
+      "stage": "HELD",
+      "calls": 237024
+    },
+    {
+      "boi_id": "BOI-2130658616133595264-1",
+      "stage": "HELD",
+      "calls": 419809
+    },
+    {
+      "boi_id": "BOI-2076057590261131392-1",
+      "stage": "FAILED",
+      "calls": 569255
+    },
+    {
+      "boi_id": "BOI-2077624600485371136-1",
+      "stage": "DONE",
+      "calls": 464810
+    },
+    {
+      "boi_id": "BOI-2107173460081536128-1",
+      "stage": "DONE",
+      "calls": 397618
+    },
+    {
+      "boi_id": "BOI-2128925785810616832-1",
+      "stage": "DONE",
+      "calls": 456297
+    },
+    {
+      "boi_id": "BOI-2099560128037101952-1",
+      "stage": "HELD",
+      "calls": 423094
+    },
+    {
+      "boi_id": "BOI-2076535358120385536-1",
+      "stage": "NATIVE_RUNNING",
+      "points": 30770,
+      "supersample": 20,
+      "calls": 496272,
+      "recent_wall_ns_per_point_call": 84.20569379534135,
+      "sampler_finished": false
+    },
+    {
+      "boi_id": "BOI-2051317406099391360-1",
+      "stage": "NATIVE_RUNNING",
+      "points": 19482,
+      "supersample": 20,
+      "calls": 736597,
+      "recent_wall_ns_per_point_call": 90.06347619809351,
+      "sampler_finished": false
+    },
+    {
+      "boi_id": "BOI-2078783726253023360-1",
+      "stage": "DONE",
+      "calls": 480092
+    },
+    {
+      "boi_id": "BOI-2128034597276971520-1",
+      "stage": "HELD",
+      "calls": 372837
+    },
+    {
+      "boi_id": "BOI-2076931255328549504-1",
+      "stage": "FAILED",
+      "calls": 411049
+    },
+    {
+      "boi_id": "BOI-2085331867759290752-1",
+      "stage": "NATIVE_RUNNING",
+      "points": 15805,
+      "supersample": 20,
+      "calls": 257194,
+      "recent_wall_ns_per_point_call": 74.28016734993906,
+      "sampler_finished": false
+    },
+    {
+      "boi_id": "BOI-2127413545004364800-1",
+      "stage": "NATIVE",
+      "points": 4795,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2079751876308505984-1",
+      "stage": "NATIVE",
+      "points": 4366,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2102266442767690112-1",
+      "stage": "NATIVE",
+      "points": 41683,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2073666564790289664-3",
+      "stage": "NATIVE",
+      "points": 33647,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2077515199080043264-2",
+      "stage": "NATIVE",
+      "points": 3254,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2076797973904269184-1",
+      "stage": "NATIVE",
+      "points": 3873,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2078222219414706048-1",
+      "stage": "NATIVE",
+      "points": 5839,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2104817618979591168-1",
+      "stage": "NATIVE",
+      "points": 5116,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2117126514212876416-1",
+      "stage": "NATIVE",
+      "points": 4577,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2086390560018194816-1",
+      "stage": "NATIVE",
+      "points": 6778,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2102056779643698560-1",
+      "stage": "NATIVE",
+      "points": 3062,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2076038211367869312-1",
+      "stage": "NATIVE",
+      "points": 44388,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2051702720499620224-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2076229075413220352-1",
+      "stage": "NATIVE",
+      "points": 31560,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2076587142546708352-1",
+      "stage": "NATIVE",
+      "points": 9614,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2076784878540898560-1",
+      "stage": "NATIVE",
+      "points": 42581,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2079376637907047040-1",
+      "stage": "NATIVE",
+      "points": 44017,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2079821420415898368-1",
+      "stage": "NATIVE",
+      "points": 36435,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2080033974058174080-1",
+      "stage": "NATIVE",
+      "points": 29885,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2100220316049730304-1",
+      "stage": "NATIVE",
+      "points": 40960,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2100223614584673664-1",
+      "stage": "NATIVE",
+      "points": 25245,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2103289985012370304-1",
+      "stage": "NATIVE",
+      "points": 35283,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2107167653281504256-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2125795682366018176-1",
+      "stage": "NATIVE",
+      "points": 19787,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2126446588949629952-1",
+      "stage": "NATIVE",
+      "points": 31886,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2126865915195358720-1",
+      "stage": "NATIVE",
+      "points": 31616,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2127355099085636864-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2127702609183750528-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2131971879690727168-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2133051978069556352-1",
+      "stage": "FAILED"
+    },
+    {
+      "boi_id": "BOI-2133767416541087232-1",
+      "stage": "NATIVE",
+      "points": 40754,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2104484363877066752-1",
+      "stage": "NATIVE",
+      "points": 973,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2079536067092694016-1",
+      "stage": "NATIVE",
+      "points": 24492,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2100123494603868416-1",
+      "stage": "NATIVE",
+      "points": 893,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2100203999471640064-1",
+      "stage": "NATIVE",
+      "points": 5176,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2101435138957164672-1",
+      "stage": "NATIVE",
+      "points": 581,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2050231500928700032-1",
+      "stage": "NATIVE",
+      "points": 3186,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2077595974520134144-1",
+      "stage": "NATIVE",
+      "points": 1641,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-1",
+      "stage": "NATIVE",
+      "points": 3558,
+      "supersample": 20
+    },
+    {
+      "boi_id": "BOI-2086643310248820352-1",
+      "stage": "HELD",
+      "calls": 218810
+    }
+  ]
+}

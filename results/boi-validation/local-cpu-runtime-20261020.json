@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-20T08:11:45.100837+00:00",
+  "status": "RUNNING_REVIEWED_CPU_ALLOCATION_V5",
+  "source_id": "2130658616133595264",
+  "kic": 10196617,
+  "campaign": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5",
+  "freeze_sha256": "a96ed754e18e23d98eae63b03316917affaa37f0ec88b77639fbfc1ac39e68a3",
+  "cpu_budget": 10,
+  "initial_workers": 2,
+  "initial_threads_each": 5,
+  "all_thread_counts_tested": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "families_bitwise_verified": 96,
+  "posterior_L1": 0.0,
+  "checkpoint_families_preserved": 122,
+  "scientific_kernels_changed": false,
+  "RNG_seeds_counts_thresholds_changed": false,
+  "heavy_transit_evaluation_speedup_approx": 3,
+  "limitations": "Serial sampling and bound-only stages cause instantaneous CPU use to vary.",
+  "tests": "11passed; Ruff clean excluding unchanged C408 baseline; complexity nonregression passed.",
+  "evidence": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2130658616133595264/probability-v5/audit/cpu-runtime-review.json"
+}

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-20T19:51:45.803980+00:00",
+  "source_id": "2077209775366626944",
+  "kic": 7300018,
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_clock_accepted": true,
+  "production_fpp_runs": 0,
+  "native": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/native/review.json",
+    "sha256": "90deb4bb8b6319d2d05225c33b94471685b8413a27f946c5421eef32cf4ef883"
+  },
+  "model_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/aperture-response-review-v3.json",
+    "sha256": "c9c27801cccb3410a16b85290411ed72fcbef75f7634cc1aa99d51cab0634903"
+  },
+  "gaussian_target_fraction_range": [
+    0.45065887901402885,
+    0.6446187203996516
+  ],
+  "calibrated_kepler_dominant_core_fraction_range": [
+    0.7251326225016215,
+    0.8564259634453614
+  ],
+  "reason": "Stock0.75pixel Gaussian assigns target45.1..64.5% of aperture flux; official Lightkurve Kepler PRF comparison of the same three capable sources gives72.5..85.6%. This changes allocation to two bright possible contaminants materially. It is a source-response modelling issue, not a native failure, metallicity requirement, radius veto or reproduced false positive. Do not certify readiness from these discrepant fractions or silently choose the favorable response.",
+  "scope": "Core comparison does not measure complete far-source fractions. Do not create custom wings or omit other85 sources to resolve it. Preserve the accepted native clock, all86scene rows, all old evidence, previews and the correct unused TESS population. No unready FPP plan or freeze created.",
+  "rejected_diagnostic_hypothesis": "ROW/COLUMN are explicitly SAP centroid means, not source astrometric coordinates. The exploratory global translation in v2 is ineligible. Original Gaia/WCS proper-motion geometry retained in v3; v2 and its results remain preserved.",
+  "crowdsap_scope": "PSFMachine source code computes CROWDSAP as the pixel-average ratio of its mean_model profiles. It is not an independent measured, source-flux-weighted complete-scene fraction. Do not substitute the delivered header for an authenticated complete flux decomposition. Current upstream implementation and KBonus partial-TPF caveat noted, not a broad lab audit.",
+  "next": "Preserve hold without prolonged response/model rescue tonight; proceed to user-priority KIC3330404, then5303927. A future candidate-specific measured scene may resolve this; no physical denial or requirement for a new universal model cutoff.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/scene-preview-review-v1.json",
+      "sha256": "40188a7ad4618535b39ac58fc7a2bed4334f375c5e73658650520e6957cbc70a"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/aperture-response-review-v2.json",
+      "sha256": "03e8242c80fe1f79feee3126dc65ef58a534424769916d1ce1425484a8b9e14e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/aperture-response-review-v3.json",
+      "sha256": "c9c27801cccb3410a16b85290411ed72fcbef75f7634cc1aa99d51cab0634903"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/tess-population-v1/complete-correct-field-v2.json",
+      "sha256": "efab02fa0f276dfecc6f141fa541341ceea557a467cd81aad707e08733133e68"
+    }
+  ]
+}

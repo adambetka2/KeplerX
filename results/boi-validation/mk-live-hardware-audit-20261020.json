@@ -1,0 +1,213 @@
+{
+  "utc": "2026-10-20T09:45:41.474642+00:00",
+  "classification": "LIVE_HARDWARE_AUDIT_NATIVE_WORKERS_RESERVED_BUT_PARTIAL_CPU_OCCUPANCY",
+  "hardware": {
+    "utc": "2026-10-20T09:42:21.049875+00:00",
+    "host": "kbonus",
+    "physical_cores": 24,
+    "logical_cpus": 32,
+    "affinity_cpus": 32,
+    "sample_seconds": 2.0003550068940967,
+    "busy_percent": 0.046875,
+    "iowait_percent": 0.0,
+    "load_average": [
+      0.0,
+      0.0,
+      0.1865234375
+    ],
+    "memory_total_bytes": 67189190656,
+    "memory_available_bytes": 65296687104,
+    "running_science_services": [],
+    "cpu0_governor": "performance",
+    "cpu_quota_user_slice": "CPUQuotaPerSecUSec=infinity",
+    "process_snapshot": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/hardware-live-audit-v1/processes.txt",
+      "sha256": "b8ede7bb3e9a8cb3e5500c783e3e7c21ad5fa01a37c7ba91cb8d55ed7c6f249b"
+    },
+    "status": "IDLE_NO_PROBABILITY_WORKERS_NOT_MAXIMUM_CAPACITY",
+    "scope": "Live utilization, not an end-to-end performance benchmark."
+  },
+  "hardware_receipt": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/hardware-live-audit-v1/review.json",
+    "sha256": "e97a0e1af983557f29b5bd93a89ebee835e6e6ac5837aef22a2f420be7175fad"
+  },
+  "probability_execution": {
+    "one_target_only": true,
+    "logical_cpu_slots": 32,
+    "first_five_repeats": 5,
+    "renderer_threads_per_first_repeat": 6,
+    "first_screen_reserved_slots": 30,
+    "remaining_renderer_threads": 2,
+    "other_math_library_threads": 1,
+    "running_now": false,
+    "first_five_mean_point_fpp_stop_ge": 0.03
+  },
+  "measured_controls": {
+    "renderer": [
+      {
+        "scenario": "TP",
+        "fixed_physical_attempts": 512,
+        "speedup_vs_one_thread": {
+          "1": 1.0,
+          "2": 1.7874370194553775,
+          "4": 2.9801312761069925,
+          "6": 3.790841517806793
+        },
+        "median_seconds": {
+          "1": 0.20454636972863227,
+          "2": 0.11443556752055883,
+          "4": 0.06863669777521864,
+          "6": 0.053958037751726806
+        }
+      },
+      {
+        "scenario": "EB",
+        "fixed_physical_attempts": 512,
+        "speedup_vs_one_thread": {
+          "1": 1.0,
+          "2": 1.1120690814001195,
+          "4": 1.4913196701525329,
+          "6": 1.763225382048421
+        },
+        "median_seconds": {
+          "1": 0.053706438513472676,
+          "2": 0.048294156731572,
+          "4": 0.036012693715747446,
+          "6": 0.030459202243946493
+        }
+      },
+      {
+        "scenario": "NTP:2128845757679157248",
+        "fixed_physical_attempts": 512,
+        "speedup_vs_one_thread": {
+          "1": 1.0,
+          "2": 1.8113491297245616,
+          "4": 3.0632684450419467,
+          "6": 3.9386117055736904
+        },
+        "median_seconds": {
+          "1": 0.25086912023834884,
+          "2": 0.13849849050166085,
+          "4": 0.08189589803805575,
+          "6": 0.06369480898138136
+        }
+      },
+      {
+        "scenario": "NTP:2128859020537121792",
+        "fixed_physical_attempts": 512,
+        "speedup_vs_one_thread": {
+          "1": 1.0,
+          "2": 1.7916858655021684,
+          "4": 2.9828125890547788,
+          "6": 3.723980994538084
+        },
+        "median_seconds": {
+          "1": 0.17403970524901524,
+          "2": 0.09713739925064147,
+          "4": 0.05834751599468291,
+          "6": 0.04673485324019566
+        }
+      }
+    ],
+    "renderer_scope": "Four fixed512attempt physical samples; counterbalanced thread orders and repeated renders under concurrent selected-target load. Renderer timing excludes physical sampling and full-campaign overhead; no two-hour whole-candidate guarantee follows.",
+    "native_group_timings": [
+      {
+        "likelihood_workers_per_ensemble": 0,
+        "total_evaluation_workers": 0,
+        "group_wall_seconds": 5.585617903154343
+      },
+      {
+        "likelihood_workers_per_ensemble": 6,
+        "total_evaluation_workers": 24,
+        "group_wall_seconds": 3.6695209061726928
+      },
+      {
+        "likelihood_workers_per_ensemble": 8,
+        "total_evaluation_workers": 32,
+        "group_wall_seconds": 3.321013643871993
+      }
+    ],
+    "native_short_control_speedup": 1.6819015222840314,
+    "native_scope": "Short native128step throughput including process startup and HDF writes. No full candidate or convergence-time guarantee. No physical model, walker count, seed, convergence criterion or TRICERATOPS probability budget changed.",
+    "native_receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213170-v1/native-execution-controls-v2/review.json",
+      "sha256": "70b9ad22b3b21de9c7cc7e5eaf2bb98d33d62675edff13c32b018b9c6bb38b32"
+    }
+  },
+  "end_to_end_optimality_established": false,
+  "full_candidate_completion_time_established": false,
+  "validated_new": 0,
+  "goal": 50,
+  "bottleneck": "Selected native fit completed at6000steps. Its32worker sampling phase measured45%logicalCPUoccupancy. Candidate posterior/timing/ownership/photon/scene review remains before probability admission; no production probability workers currently active.",
+  "scope": "Read-only measurements over ssh kbonus. A reserved thread budget and renderer speedup do not establish sustained full-hardware utilization or optimal end-to-end throughput.",
+  "selected_native": {
+    "source_id": "2130921124535127424",
+    "kic": 10527790,
+    "signal_id": "mk-sap-20261019-2130921124535127424-3",
+    "one_target_only": true,
+    "service": "mk-boi-single-213092-native-v1",
+    "service_snapshot": "Result=success\nActiveState=inactive\nSubState=dead",
+    "native_stage": {
+      "utc": "2026-10-20T09:45:30.398176+00:00",
+      "source_id": "2130921124535127424",
+      "stage": "NATIVE_NUMERICAL_GATE_PASSED_SCIENTIFIC_REVIEW_REQUIRED",
+      "statistical_validations": 0,
+      "endpoint": 6000,
+      "gate": {
+        "rank_rhat_maximum": 1.0241751548126963,
+        "reference_epoch_bulk_ess": 310.51220506089305,
+        "radius_ratio_snr": 13.244046397530264,
+        "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+        "passed": true
+      }
+    },
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/plan.json",
+      "sha256": "d2d8643f633c3a15576a236e2030969c35a07314809ac8ff7543eb00680d0b44"
+    },
+    "execution_freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/execution-freeze.json",
+      "sha256": "5a0df6c15560265071a9b663298b684139fabb2c15e1ad52a0a84768072593be"
+    },
+    "native_parallel_controls": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/native-execution-controls-v2/review.json",
+      "sha256": "33c80f9f99e3835d59083ba8564296e4fbbc61ba987f3e01dcce3286fa200e98"
+    },
+    "seeded_chain_and_log_probability_parity": true,
+    "short_group_timings": [
+      {
+        "likelihood_workers_per_ensemble": 0,
+        "total_evaluation_workers": 0,
+        "group_wall_seconds": 5.2040754000190645
+      },
+      {
+        "likelihood_workers_per_ensemble": 6,
+        "total_evaluation_workers": 24,
+        "group_wall_seconds": 3.191828278824687
+      },
+      {
+        "likelihood_workers_per_ensemble": 8,
+        "total_evaluation_workers": 32,
+        "group_wall_seconds": 3.1619713031686842
+      }
+    ],
+    "likelihood_worker_count": 32,
+    "mean_server_busy_percent": 45.141476176500305,
+    "mean_busy_logical_cpu_equivalents": 14.445272376480098,
+    "live_evidence": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/live-hardware-v1/review.json",
+      "sha256": "897364b7d9baa22c7c542d6c60432e4adf31abead952a14be9ceb8f2b6b5b8be"
+    },
+    "current_service_active": false,
+    "current_stage": "NATIVE_NUMERICAL_GATE_PASSED_SCIENTIFIC_REVIEW_REQUIRED",
+    "native_endpoint": 6000,
+    "native_gate": {
+      "rank_rhat_maximum": 1.0241751548126963,
+      "reference_epoch_bulk_ess": 310.51220506089305,
+      "radius_ratio_snr": 13.244046397530264,
+      "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+      "passed": true
+    },
+    "statistically_validated": false
+  }
+}

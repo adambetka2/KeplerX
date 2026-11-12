@@ -1,0 +1,71 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: DR3Name
+#   datatype: string
+#   description: Unique source designation (unique across all Data Releases) (designation)
+#   meta: !!omap
+#   - {ucd: ID_ALTERNATIVE}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: 28*}
+# - name: Gmag
+#   unit: mag
+#   datatype: float64
+#   format: '{:9.6f}'
+#   description: '? G-band mean magnitude (phot_g_mean_mag)'
+#   meta: !!omap
+#   - {ucd: PHOT_MAG_OPTICAL}
+#   - {width: 9}
+#   - {precision: '6'}
+#   - values: {'null': .nan}
+# - name: pmRA
+#   unit: mas / yr
+#   datatype: float64
+#   format: '{:9.3f}'
+#   description: '? Proper motion in right ascension direction, pmRA*cosDE (pmra)'
+#   meta: !!omap
+#   - {ucd: POS_EQ_PMRA}
+#   - {width: 9}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: pmDE
+#   unit: mas / yr
+#   datatype: float64
+#   format: '{:9.3f}'
+#   description: '? Proper motion in declination direction (pmdec)'
+#   meta: !!omap
+#   - {ucd: POS_EQ_PMDEC}
+#   - {width: 9}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: RA_ICRS
+#   unit: deg
+#   datatype: float64
+#   format: '{:15.11f}'
+#   description: Right ascension (ICRS) at Ep=2016.0 (ra)
+#   meta: !!omap
+#   - {ucd: POS_EQ_RA_MAIN}
+#   - {width: 15}
+#   - {precision: '11'}
+# - name: DE_ICRS
+#   unit: deg
+#   datatype: float64
+#   format: '{:15.11f}'
+#   description: Declination (ICRS) at Ep=2016.0 (dec)
+#   meta: !!omap
+#   - {ucd: POS_EQ_DEC_MAIN}
+#   - {width: 15}
+#   - {precision: '11'}
+# meta: !!omap
+# - {ID: I_355_gaiadr3}
+# - {name: I/355/gaiadr3}
+# - {description: Gaia DR3 source catalog (1811709771 sources)}
+# schema: astropy-2.0
+DR3Name Gmag pmRA pmDE RA_ICRS DE_ICRS
+"Gaia DR3 2133475977239949952" 14.56264 -1.972 -5.025 289.10559309634 51.73400060054
+"Gaia DR3 2133475977239950208" 17.352835 0.815 -16.276 289.10491797196 51.73532915874
+"Gaia DR3 2133475977239950720" 18.785793 -1.777 -4.055 289.11046529741 51.73303280994
+"Gaia DR3 2133476080318210432" 21.163616 "" "" 289.11622543873 51.73465164798
+"Gaia DR3 2133476080319167104" 15.10401 -4.732 -8.174 289.11221928568 51.7373577589
+"Gaia DR3 2133476080319168000" 16.219315 -2.312 -4.341 289.1139779771 51.74059751337
+"Gaia DR3 2133476183398381568" 18.172838 0.181 0.549 289.10489427865 51.73948026756

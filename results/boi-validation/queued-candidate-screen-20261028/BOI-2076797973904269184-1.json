@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-28T07:40:46.108452+00:00",
+  "boi_id": "BOI-2076797973904269184-1",
+  "source_id": "2076797973904269184",
+  "signal_id": "shallow-v1-2076797973904269184-2",
+  "clock": {
+    "period_days": 39.66610003782266,
+    "epoch_bkjd": 135.19212863391266,
+    "duration_days": 0.4000000000000001
+  },
+  "original": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-campaign-20261027/cases/BOI-2076797973904269184-1/acquired/original-kbonus-attempt1.response",
+  "sha256": "822777a6f538728d72546220fab52ae35ad3374d1d892114df4209a1cf7ef291",
+  "psf_flat_depth": {
+    "status": "MEASURED",
+    "depth_fraction": 0.00040358109543419237,
+    "depth_error": 9.618325208999086e-05,
+    "events": 37,
+    "depth_chi2": 359.8152887556623,
+    "degrees_of_freedom": 31,
+    "largest_information_fraction": 0.21689639260985552,
+    "sample_count": 4408
+  },
+  "psf_flat_train": {
+    "status": "MEASURED",
+    "events": 32,
+    "observed_positive_fraction": 0.65625,
+    "expected_positive_fraction": 0.7216202379365748,
+    "positive_deficit_z": -0.8517133665617539,
+    "scope": "Predicted-event dip signs under a shared measured depth and local errors; the z score is a coherence diagnostic, not a calibrated false-alarm probability"
+  },
+  "odd_even": {
+    "status": "MEASURED",
+    "difference": 0.0002581145010186115,
+    "error": 0.00019910730429025485,
+    "sigma": 1.2963587746752732,
+    "two_depth_bic_gain": -6.710630278155175
+  },
+  "secondary_phase_half": {
+    "status": "MEASURED",
+    "depth_fraction": -0.0001147968221970931,
+    "depth_error": 7.775091864142883e-05,
+    "events": 37,
+    "depth_chi2": 94.62038327974895,
+    "degrees_of_freedom": 33,
+    "largest_information_fraction": 0.18165515046687186,
+    "sample_count": 4906
+  },
+  "helper_loading": "Unchanged array-only lc2 function ASTs loaded without the unused Parquet reader dependency.",
+  "scope": "Diagnostic at the already-declared clock and duration, using unchanged vetting_periodic functions and config. No detection search, fit, acceptance decision, probability allocation or queue change."
+}

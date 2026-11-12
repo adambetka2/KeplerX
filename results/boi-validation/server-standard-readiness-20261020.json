@@ -1,0 +1,184 @@
+{
+  "recorded_utc": "2026-10-20T18:55:12.278507+00:00",
+  "status": "SERVER_V2_SOFTWARE_READY_CANDIDATE_READINESS_REQUIRED",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "release": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020",
+  "runtime": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/.venv/bin/python",
+  "server_owner": "Server production is run separately; this update launched no BOI campaign.",
+  "source_binding": "The deployment.json beside the server checks records the final Git revision. Source hashes below bind the exact tested files.",
+  "python": "3.12.13",
+  "architecture": "x86_64",
+  "packages": {
+    "triceratops": "1.1.0",
+    "juliet": "2.2.10",
+    "batman-package": "2.5.3",
+    "PyTransit": "2.2.0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "numba": "0.68.0",
+    "setuptools": "80.10.2",
+    "keyring": "25.7.0",
+    "SecretStorage": "3.5.0",
+    "jeepney": "0.9.0",
+    "cryptography": "50.0.2",
+    "cffi": "2.1.1",
+    "pycparser": "3.11"
+  },
+  "triceratops_source": {
+    "url": "https://github.com/stevengiacalone/triceratops.git",
+    "vcs_info": {
+      "vcs": "git",
+      "commit_id": "d20875c27d6761349cf032728bb4a59ec732a84d",
+      "requested_revision": "d20875c27d6761349cf032728bb4a59ec732a84d"
+    }
+  },
+  "currency_check": {
+    "official_remote_HEAD": "d20875c27d6761349cf032728bb4a59ec732a84d",
+    "juliet_latest_checked": "2.2.10",
+    "batman_latest_checked": "2.5.3",
+    "triceratops_latest_checked": "1.1.0",
+    "pytransit_latest_available": "2.10.1",
+    "pytransit_required_by_upstream": "==2.2",
+    "basis": "Official upstream Git HEAD/setup.py and PyPI JSON queried on October20; compatible pinned scientific environment, not an indiscriminate upgrade of every dependency."
+  },
+  "checks": {
+    "pytest": "15 passed in17.01seconds",
+    "ruff_complexity": "passed E4,E7,E9,F,I,C90 max10",
+    "dependency_check": "177 packages compatible",
+    "known_object": "Real official Kepler10 fixture; direct upstream same-platform lnZ bitwise equality and posterior strict1e-12 comparison passed. Archived finite support and original lnZ regression bounds retained.",
+    "native_controls": "Real long-duration and dense-star/large-radius-ratio controls passed.",
+    "preserved_first_failures": [
+      {
+        "check": "Initial Linux pip check",
+        "failure": "Required keyring Linux backends SecretStorage and jeepney absent from a Mac-resolved lock.",
+        "change": "Added five Linux-only required dependency pins; no scientific package change."
+      },
+      {
+        "check": "Initial server gold test",
+        "outcome": "14passed1failed",
+        "failure": "Archived ARM probability comparison differed by max8.45223891e-12; same finite support and original lnZ bounds passed.",
+        "change": "Added direct unchanged upstream equality on each platform. Archived probability L1 bound is derived mathematically from the unchanged existing lnZ error budget, not adjusted to observed differences. Fixture/expected arrays and production/admission settings unchanged."
+      }
+    ],
+    "evidence_files": [
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/linux-backend-install.log",
+        "sha256": "7c79e617f60cc5e10adbeb97757fbb5e9b8a6e147373fbf0767c1a86dde8bc03",
+        "bytes": 346
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/linux-sync.log",
+        "sha256": "89ba1e2069d44e63c1e80fb100bacc4e11d1b051ac2bb5ebeb2e3cd4e6251850",
+        "bytes": 58
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/pip-before-linux-backend.log",
+        "sha256": "55930f7b920035b330d64952cdc891bdc97f348f866d25d4e18eaae8060af126",
+        "bytes": 356
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/pytest-attempt1.log",
+        "sha256": "66305c58dbb31447e3fb9815d2a19d575e775567d6ce9cd3bba43f1d97b7ddc0",
+        "bytes": 7017
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/pytest-attempt2.log",
+        "sha256": "c3bd3422b748f66c02f04a772f2342f8cb2e07f3689e3275a563fb834b3794df",
+        "bytes": 2744
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/ruff.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+        "bytes": 19
+      },
+      {
+        "path": "/srv/kbonus/dwarfs/followup/checks-v2-20261020/environment.txt",
+        "sha256": "d4afbb315788ec4cb0dff5415ec1c4c3125df048fefd08c7a4a05a08afbf46a8",
+        "bytes": 3262
+      }
+    ]
+  },
+  "tested_source_files": [
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/__init__.py",
+      "sha256": "dc90e1056b50293f70267a4757a7f4b6f4c460dffedcb5dbd285a8adfd31b81e",
+      "bytes": 79
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/campaign.py",
+      "sha256": "5c170c1b1410cc4326bc970c20fae23363230675ebe276cb97804fdb38063ab1",
+      "bytes": 8205
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/native.py",
+      "sha256": "2acedf7a83785ef1ee612e28b04bea93534f33ffd15209d400adcd139960d12f",
+      "bytes": 6377
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/prepare.py",
+      "sha256": "be518b1760e6220a2e9d26eff90061c3efa79abf7a63be710642d53436640cb3",
+      "bytes": 5920
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/protocol.py",
+      "sha256": "e8f0a59c18f37055141448803392e0c7e89104d06b6704a060c647e603a6adce",
+      "bytes": 8078
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/records.py",
+      "sha256": "284fb627a2e73a2bf9d74ca44ce067d3d83bf55f20fe8908e4785c560bd2fcd1",
+      "bytes": 2138
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/scene.py",
+      "sha256": "8b01c26d4e7c09858980624715a1d81953577e71d5ad6219ee9f20f7d3e7157d",
+      "bytes": 4976
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/test_freeze.py",
+      "sha256": "4db9dab67d74e7155867b98124d1dfcc23dd2d48ea23b8955232086f34378d77",
+      "bytes": 3297
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/test_gold.py",
+      "sha256": "1f73d6ab9fbdd66dbc3321c508568994bdd0645c374e820ae539b0a52447f411",
+      "bytes": 4064
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/test_native_controls.py",
+      "sha256": "6bccd6783abb4c0212aba0bd0c7d431f8331968ba4f0abe50af2fb046132374b",
+      "bytes": 4112
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/test_standard.py",
+      "sha256": "dfe174cba4325523cea07ba2425eaf892b3c15cfabd1b2aadf94238fd8eb639a",
+      "bytes": 6344
+    },
+    {
+      "path": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-20261020/post_boi/requirements.txt",
+      "sha256": "c4028cdac6e614cbda875d843e4e8c3d0def4b17d2f00472c653f6aa2b595f7a",
+      "bytes": 3392
+    }
+  ],
+  "server_resources": {
+    "physical_cores": 24,
+    "logical_threads": 32,
+    "available_affinity": 32,
+    "storage_free_bytes_at_check": 323898773504,
+    "policy": "Choose candidate CPU budget from actual stage performance; BLAS/OpenMP1. Do not assume allocation proves saturation. Preserve server power policy and unrelated jobs."
+  },
+  "preservation": {
+    "old_checkout": {
+      "commit": "95130e658250caaa7427b9ba81cec0c421868b56",
+      "dirty": ""
+    },
+    "historical_environments_changed": false,
+    "accepted_studies_rerun": false,
+    "mac_live_frozen_sources_changed": false
+  },
+  "mk_handoff": "Same protocol and stock TRICERATOPS. Exact Gaia/run-scoped signal, authenticated native SAP, actual source aperture and once-only dilution. Fill candidate-specific priors/errors/noise/scene/model support from evidence; no reuse of Mac host inputs. Review cool-star support and exact-signal literature before integration.",
+  "verification_receipt": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/server-standard-v2-20261020/verification.json",
+    "sha256": "5bdefd0bdd8f484db0b6f68349058ec06b1d018ded42f608c91419c3f54b16da"
+  }
+}

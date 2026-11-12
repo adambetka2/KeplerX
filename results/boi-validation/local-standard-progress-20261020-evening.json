@@ -1,0 +1,116 @@
+{
+  "utc": "2026-10-20T20:55:11.279659+00:00",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "current": {
+    "utc": "2026-10-20T20:55:11.279659+00:00",
+    "status": "NATIVE_FIT_RUNNING",
+    "execution_host": "LOCAL_MACBOOK_ONLY",
+    "source_id": "2102918384442366592",
+    "kic": 7271045,
+    "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592",
+    "protocol": "TRICERATOPS_KEPLER_V2",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-launch.json",
+      "sha256": "ffccab18dc4f58ee9c74fa6e480c33f43697e0f1ba8b55effb5c02a40332da5e"
+    },
+    "native_input_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-launch-inputs-v2.json",
+      "sha256": "1cc89ba388ed06ab8c44ff7c3587b5462332e9d3d698abd09981d754b5d3bbf8"
+    },
+    "native_stellar_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-stellar-review.json",
+      "sha256": "4d89c202955cb83ec9354a2491751f58252aeba08275efd9d90d9982000506c0"
+    },
+    "live_check": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/live-check-20261020T205511.json",
+      "sha256": "c9a30611b1673c82d48ffaa847804b2086983b498db8397616881be93c848f33"
+    },
+    "night_priority_record": "/Users/adam/Other/spacelab/results/boi-validation/night-validation-priorities-20261020.json",
+    "priority_outcomes": {
+      "KIC3330404": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/readiness-hold-v1.json",
+        "sha256": "23aec580addf4ad4b5df4984171623d83c8d5604e34f032375454321e452df01"
+      },
+      "KIC5303927": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073609042284178176/readiness-hold-v1.json",
+        "sha256": "55eb244c06db5f7eae625d550df042e54890b9062fc203c040236da498a84d1d"
+      }
+    },
+    "next": "Let this native fit finish without duplicate or frozen edits. Review actual11-dimensional eccentric/grazing posterior, clock/shape/noise/exposure, duration protection and physical periastron/contact support. No native clock or FPP adopted yet. Complete same source scene/source-quarter spacecraft/alias/catalogue/dilution readiness; use authentic cached provenance source and current complete30-source Gaia/TIC catalogues. No broad audits/server work/competing numerical jobs. No more rescue of precise holds tonight."
+  },
+  "terminal_or_deferred_this_evening": [
+    {
+      "source_id": "2077209775366626944",
+      "kic": 7300018,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077209775366626944/readiness-hold-v1.json",
+        "sha256": "3b71b58f1d790d7e03f8d014a04f2f7ea955b84f080db5a4c17980feef858077"
+      }
+    },
+    {
+      "source_id": "2099560128037101952",
+      "kic": 3330404,
+      "status": "HELD_NATIVE_JOINT_POSTERIOR_NONSTATIONARY_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/readiness-hold-v1.json",
+        "sha256": "23aec580addf4ad4b5df4984171623d83c8d5604e34f032375454321e452df01"
+      }
+    },
+    {
+      "source_id": "2073609042284178176",
+      "kic": 5303927,
+      "status": "HELD_UNRESOLVED_HOST_STELLAR_AND_BLEND_MODEL_NO_PRODUCTION",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073609042284178176/readiness-hold-v1.json",
+        "sha256": "55eb244c06db5f7eae625d550df042e54890b9062fc203c040236da498a84d1d"
+      }
+    },
+    {
+      "source_id": "2100123494603868416",
+      "kic": 3322939,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100123494603868416/readiness-hold-v1.json",
+        "sha256": "4beb7bd476695a585fbd6f8fd41e2c6907ab6f5e749bea11e0a8890aaa6511ba"
+      }
+    },
+    {
+      "source_id": "2104484363877066752",
+      "kic": 6184073,
+      "status": "PARKED_NATIVE_STELLAR_MASS_UNCERTAINTY_MODEL_NOT_STARTED",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2104484363877066752/readiness-hold-v1.json",
+        "sha256": "2ac1bcefa3df83309378799558b35d6f429cb7acae3a29b34d14253a4c3b5ab2"
+      }
+    },
+    {
+      "source_id": "2100203999471640064",
+      "kic": 3935011,
+      "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+      "disposition": "REMAINS_PC",
+      "production_fpp_runs": 0,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100203999471640064/readiness-hold-v1.json",
+        "sha256": "0b035fb89cfcdf71e1e40b0f37e947025614c9b6df17180617403fbcd8aee23a"
+      }
+    }
+  ],
+  "new_completed_probability_runs_this_check": 0,
+  "interpretation": "Readiness/convergence/scene holds remain candidates, not astrophysical false-positive denials. No new planet admission. All accepted historical studies unchanged. Original priorities both assessed and preserved; no selected scientific inputs/counts/seeds/thresholds changed to obtain a desired outcome.",
+  "native_actual_cpu_snapshot_percent": 626.2881482270063,
+  "core_code_changed": false,
+  "checks": "Strict JSON and evidence checks for lean reports; no competing numerical test/benchmark while native fit runs.",
+  "acquisition_followup": "Current NEA HTTP526 retries retained:5303927 attempt2 and3330404 attempt3. ExoFOP and Gaia/TIC successful, original raw hashes/HDU checks passed. Failed NEA queries are not no-match results."
+}

@@ -1,0 +1,360 @@
+{
+  "source_id": "2099197705814100480",
+  "kic": 2834218,
+  "signal_id": "rust-v6-2099197705814100480-3",
+  "status": "NATIVE_DYNAMIC_NESTED_LIVE_NO_PROBABILITY_ADMISSION",
+  "binding": {
+    "boi_ordinal": "BOI-2099197705814100480-1",
+    "exact_delivered_proposal": "rust-v6-2099197705814100480-3",
+    "initial_wrong_default_preserved": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/preparation-attempt1-failure.json",
+      "sha256": "ac84b50e2cc7435243ded7551ffc8cbc656ba2f1a35112ff9e68fe05ff7cd217"
+    },
+    "corrected_selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/selection-v2.json",
+      "sha256": "386daa8c9ac2e23c981376ba5da183eaa2f2aeed33b467d0421dc9eed9201b5f"
+    }
+  },
+  "preparation": {
+    "source_id": "2099197705814100480",
+    "raw": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/original-kbonus-attempt1.response",
+      "sha256": "6550bbfc4fc7f9cdc7c2ff1f620c4c95645d7ae3ff8203c1f846267dccb1de7e"
+    },
+    "all_hdu_checksums_passed": true,
+    "exposure_days": 0.02043361111111111,
+    "actual_exposure_basis": "Original primary XPOSURE1765.464seconds. Parent metadata remains to verify before FPP.",
+    "original_recovered": {
+      "period_days": 96.88040319509776,
+      "epoch_bkjd": 168.3411655729358,
+      "duration_days": 0.5203537280986696
+    },
+    "measured_aperture_depth": 0.010163292115257905,
+    "native_points": 1874,
+    "primary_windows_by_quarter": [
+      {
+        "quarter": 0,
+        "raw_primary_cadences": 0,
+        "valid_primary_cadences": 0
+      },
+      {
+        "quarter": 1,
+        "raw_primary_cadences": 0,
+        "valid_primary_cadences": 0
+      },
+      {
+        "quarter": 2,
+        "raw_primary_cadences": 0,
+        "valid_primary_cadences": 0
+      },
+      {
+        "quarter": 3,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 26
+      },
+      {
+        "quarter": 4,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 24
+      },
+      {
+        "quarter": 5,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 18
+      },
+      {
+        "quarter": 6,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 18
+      },
+      {
+        "quarter": 7,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 25
+      },
+      {
+        "quarter": 8,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 25
+      },
+      {
+        "quarter": 9,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 23
+      },
+      {
+        "quarter": 10,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 25
+      },
+      {
+        "quarter": 11,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 24
+      },
+      {
+        "quarter": 12,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 24
+      },
+      {
+        "quarter": 13,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 25
+      },
+      {
+        "quarter": 14,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 22
+      },
+      {
+        "quarter": 15,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 21
+      },
+      {
+        "quarter": 16,
+        "raw_primary_cadences": 25,
+        "valid_primary_cadences": 19
+      },
+      {
+        "quarter": 17,
+        "raw_primary_cadences": 0,
+        "valid_primary_cadences": 0
+      }
+    ],
+    "flux_convention": "raw_aperture",
+    "all_original_quality_and_rejected_proposals_preserved": true,
+    "protected_trend_days": 5.203537280986696,
+    "window_basis": "10T14 trend window, protected +/-T14+half exposure, native +/-3T14. About200actual unprotected long cadences per trend window; no duration cap or cropped tail.",
+    "stellar": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-stellar-review.json",
+      "sha256": "19639c6c8f84d9c55ec440fdb21af7b2c1d8a843024227482d404af8b06d320d"
+    },
+    "retained": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/pre-native-retained-review.json",
+      "sha256": "9aec78df93f3b50e98f3ccd3f4b0705cd2afe110f37c4a01b4e5c00bc288cdd9"
+    }
+  },
+  "stellar": {
+    "source_id": "2099197705814100480",
+    "route": "Reported paired Gaia FLAME mass/radius and16/84 intervals, chosen before fitting/FPP.",
+    "mass": 1.1497743,
+    "radius": 2.640491,
+    "mass_errors": [
+      0.041173899999999986,
+      0.04272739999999997
+    ],
+    "radius_errors": [
+      0.12801699999999983,
+      0.19944620000000013
+    ],
+    "density_kg_m3": [
+      88.04603707899163,
+      16.690744502912136
+    ],
+    "uncertainty_basis": "First-order independent approximation using half the reported interval width; asymmetry retained above, covariance not supplied. Positive truncated Gaussian without astronomical upper cutoff. No missing-error10%/6% substitution.",
+    "measured_parallax_mas": [
+      0.3836153516271591,
+      0.024013802
+    ],
+    "tic_mass": null,
+    "tic_radius": 2.67048,
+    "tic_distance_pc": 2449.86,
+    "gaia": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/catalogues-20261020/gaia-attempt1.response",
+      "sha256": "e101f1389b9b3140eb153528b4c09552f974a88adf7d2ae15e8f8a79fdb91a70"
+    },
+    "tic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/catalogues-20261020/tic-attempt1.response",
+      "sha256": "920ae067bad4a11870a89843d83bad8722ec92a5f9a6692eee9e1759c588b58c"
+    },
+    "scope": "Catalogue model estimates are not an independent stellar/body admission. TIC and FLAME route differences remain explicit."
+  },
+  "sampler": {
+    "priors": "native-priors.json",
+    "prior_basis": "Reported paired FLAME M/R with actual intervals and documented density approximation. Trend window10supplied durations provides about200 unprotected long cadences around the protected transit and remains short relative to96.88day orbit. Actual OOT residual structure must be reviewed. Free eccentricity Beta(.867,3.03) and omega0..360, matching the stock planet prior; no measured circular orbit is imposed. Standard dynamic nested sampling explores the declared prior, with deterministic Generator bound to the recorded seed. Direct k0..1,b0..2, physical LD, local OOT noise, joint P/epoch priors; no6h/k.3/rho50 box. Native is conditional shape/clock inference; all stock probability alternatives remain.",
+    "seed": 2026102091,
+    "starting_point": null,
+    "supersample": 20,
+    "fit_options": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 10,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    }
+  },
+  "source_review": {
+    "utc": "2026-10-20T23:48:31.412503+00:00",
+    "accepted": true,
+    "scope": "New candidate only, before production. Ordinary upstream dynamic_dynesty with500live points, posterior-effective-sample target5000 and10processes. No model/likelihood/prior/kernel alteration or old-case rescue.",
+    "changed": [
+      {
+        "file": "post_boi/native.py",
+        "change": "For this ordinary dynamic sampler, convert the recorded integer seed to a NumPy Generator and pass as the documented rstate option."
+      },
+      {
+        "file": "juliet/fit.py",
+        "change": "Pass the same Generator to unchanged dynesty.utils.resample_equal, which otherwise initializes an unseeded entropy source during equal-weight posterior export."
+      }
+    ],
+    "reason": "Pinned dynesty3.1 uses its own Generator; np.random.seed alone does not seed it or equal-weight export. DynamicNestedSampler has the standard__init__ signature that juliet correctly forwards, whereas this version of static NestedSampler places rstate in__new__, which juliet introspection misses. No upstream introspection patch is installed.",
+    "science_unchanged": "All declared original own-SAP photons, masks, exposure, corrected exact delivered signal3, stellar intervals and11Dpriors remain fixed. Only explicit RNG plumbing is added; nested samples, evidence weights and posteriors must reproduce before launch.",
+    "original_juliet": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/lib/python3.12/site-packages/juliet/fit.py",
+      "sha256": "65c7800fdeefbb96f3f38eee748243458b174d2d5d811a44f3cff3ae7afb299e"
+    },
+    "derived_juliet": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/fit.py",
+      "sha256": "6a24c3e012374b0bc525df70e355e4b66c49676e701279c9752efcc62adf4e3c"
+    },
+    "original_native": {
+      "path": "/Users/adam/Other/spacelab/post_boi/native.py",
+      "sha256": "2acedf7a83785ef1ee612e28b04bea93534f33ffd15209d400adcd139960d12f"
+    },
+    "derived_native": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/native.py",
+      "sha256": "343df2148d860e1bf77b0737468ef81d32d46d986ca26fc19f947ac9d60fbbcb"
+    },
+    "diff": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-seed-binding.diff",
+      "sha256": "6dfe725563fb7e017ce0caf86e2d95ca1fe6ab69e92f5b6a321d5392b9f0b5f6"
+    },
+    "source_manifest": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/KeplerOrbit.py",
+        "sha256": "843aab708f6081ec328ed3831ca73bfd88679ad58db4a419664b6274515b9b95"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/__init__.py",
+        "sha256": "b2a9baccb074e692834b39cefb708afeb6c1688ffa17b4276960ee2224a0c5f7"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/__main__.py",
+        "sha256": "d5b66ddbae7230277d7ebf664e41c60fe01f46a456702a2048ef1150fbcb36dc"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/_version.py",
+        "sha256": "72150d6f43be0c819bc39c0d150e1f741de2c4ab0e19581b3d89925ac856efb4"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/fit.py",
+        "sha256": "6a24c3e012374b0bc525df70e355e4b66c49676e701279c9752efcc62adf4e3c"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/plots.py",
+        "sha256": "2e018702c68aff539896d08da828fa6a326769da5a341a69badbaa33821c0465"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/test_utils.py",
+        "sha256": "3343c510ccc097600d7b54c54619836c360e3d75d2749cc319685bf6437c6d0f"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/juliet/utils.py",
+        "sha256": "a88f1acb264aa375f0e799a30c6125b76ea4d332644387a9241da27575dfff26"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/__init__.py",
+        "sha256": "dc90e1056b50293f70267a4757a7f4b6f4c460dffedcb5dbd285a8adfd31b81e"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/campaign.py",
+        "sha256": "5c170c1b1410cc4326bc970c20fae23363230675ebe276cb97804fdb38063ab1"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/native.py",
+        "sha256": "343df2148d860e1bf77b0737468ef81d32d46d986ca26fc19f947ac9d60fbbcb"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/prepare.py",
+        "sha256": "be518b1760e6220a2e9d26eff90061c3efa79abf7a63be710642d53436640cb3"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/protocol.py",
+        "sha256": "e8f0a59c18f37055141448803392e0c7e89104d06b6704a060c647e603a6adce"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/records.py",
+        "sha256": "284fb627a2e73a2bf9d74ca44ce067d3d83bf55f20fe8908e4785c560bd2fcd1"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/source/post_boi/scene.py",
+        "sha256": "8b01c26d4e7c09858980624715a1d81953577e71d5ad6219ee9f20f7d3e7157d"
+      }
+    ],
+    "validation_required": "Two short same-input actual-wrapper/direct-juliet nested controls with identical nested samples/loglikes/logweights/logevidence and equal-weight posteriors, plus independent batman likelihood checks. Controls are not convergence/admission."
+  },
+  "revalidation": {
+    "accepted": true,
+    "native_points": 1874,
+    "diagnostic_only": {
+      "nlive": 32,
+      "maxiter": 40,
+      "maxbatch": 0,
+      "not_convergence": true
+    },
+    "production_sampling": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 10,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    },
+    "seed": 2026102091,
+    "weighted_nested_arrays_exact": {
+      "samples": true,
+      "logl": true,
+      "logwt": true,
+      "logz": true,
+      "logzerr": true
+    },
+    "equal_weight_posterior_exact": true,
+    "independent_batman_replay": [
+      {
+        "index": 0,
+        "difference": -9.094947017729282e-13
+      },
+      {
+        "index": 36,
+        "difference": -9.094947017729282e-13
+      },
+      {
+        "index": 72,
+        "difference": -9.094947017729282e-13
+      }
+    ],
+    "scope": "Actual wrapper vs direct juliet with the same documented Generator. Diagnostic truncation is not an admission or production stopping rule. No kernel/prior/scientific input changes.",
+    "source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-seed-source-review.json",
+      "sha256": "4af299883d4cedb14aeb898d0c87594996be528d457f2777d5cfe22a16b86cef"
+    },
+    "control": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/control-wrapper/juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "4e11c345d93e63656af8cb949e6b0b87178937f7842929259ecb0e4d89ab6c5d"
+    },
+    "reference": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/control-direct-juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "4e11c345d93e63656af8cb949e6b0b87178937f7842929259ecb0e4d89ab6c5d"
+    },
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/validate_nested_seed.py",
+      "sha256": "19d203dfd89f01ee0dc8474b9a5df0d02b17d66637e2cf0cc96cfb069a99d1a4"
+    }
+  },
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-launch.json",
+    "sha256": "baa39e04bf16859d365404e50d97efa71c1ad7feb7b18d66c0ede27be9f5a5cc"
+  },
+  "freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099197705814100480/native-freeze.json",
+    "sha256": "639422904fce6066ec82f0f507a85e64b5fc3c6307377d16105de44d7ba0b6e2"
+  },
+  "scope": "Seed binding and standard sampler compatibility controls only, not native convergence, FPP or planet admission. Prior cases and stock TRICERATOPS remain unchanged."
+}

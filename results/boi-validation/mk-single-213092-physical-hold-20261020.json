@@ -1,0 +1,111 @@
+{
+  "utc": "2026-10-20T10:26:26.151199+00:00",
+  "source_id": "2130921124535127424",
+  "kic": 10527790,
+  "signal_id": "mk-sap-20261019-2130921124535127424-3",
+  "status": "PHYSICAL_SOURCE_AND_INSTRUMENTAL_PREPARATION_HOLD_EXPLICITLY_STOPPED_NO_AUTO_RESUME",
+  "unit_terminal_snapshot": "MainPID=0\nResult=exit-code\nActiveState=failed\nSubState=failed\n",
+  "old_workers_confirmed_absent": true,
+  "freeze_integrity_passed": true,
+  "completed_full_probability_repeats": 0,
+  "first_five_FPP": null,
+  "reason": "Gold-checked joint-quarter follow-up exposes a proposed-host position conflict; this conflicts with weaker per-event target compatibility and requires physical review. The fixed-source donor aperture does not show the candidate dimming, so do not infer a uniform parent-eclipse transfer mechanism.",
+  "joint_measurement": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/joint-source-hypotheses-v1/review.json",
+    "sha256": "094ec56079b1222309017b848a7b75eb05e2e501b2108bc0773bcba6eac7099e"
+  },
+  "parent_disjoint_aperture": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/parent-photon-review-v1/review.json",
+    "sha256": "7b971f29744171013491e99300cb0c9b5728c68f10e82469c506a8d9676b0dca"
+  },
+  "parent_at_boi_epochs": {
+    "events": 31,
+    "depth": -3.6958305113612253e-06,
+    "error": 5.679599049392461e-06,
+    "snr": -0.6507203200825529,
+    "chi2": 28.756015329003628,
+    "dof": 30,
+    "descriptive_chi2_tail": 0.5304391487870233,
+    "positive_events": 15,
+    "maximum_information_fraction": 0.049836417538388515
+  },
+  "parent_at_intervening_phases": {
+    "events": 27,
+    "depth": -1.1867074168370423e-05,
+    "error": 6.131592463601554e-06,
+    "snr": -1.9353983877460736,
+    "chi2": 22.870901877541687,
+    "dof": 26,
+    "descriptive_chi2_tail": 0.6402400163123768,
+    "positive_events": 8,
+    "maximum_information_fraction": 0.054256725202299516
+  },
+  "centroid_scope": "Post-BOI grouped/multistart measurement, single-event gold passes; not a revalidated shared vetting threshold, calibrated source probability or source reassignment. PRF residual mismatch and lack of donor dimming remain open.",
+  "completed_million_draw_scenario_blocks": 15,
+  "all_completed_scenario_weights_deep_replayed": true,
+  "stop_intent": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/physical-source-stop-v1/intent.json",
+    "sha256": "a1b08fa4d467cdb4ceb6747ce49d4fc4856ceabd6afcecfe43ec1b047aef042e"
+  },
+  "stop_actions": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/physical-source-stop-v1/actions.json",
+    "sha256": "58aab8ab3190d9bb9c32cc39e404fa98cd6fdbbbf4623c8f080c27ffe0879d5c"
+  },
+  "boi_disposition": "BOI",
+  "astrophysical_false_positive_status": "UNDETERMINED_NO_REPRODUCED_EB_MECHANISM",
+  "statistically_validated": false,
+  "scope": "No complete FPP or budget-screen result exists for this target. Keep every saved weight, native fit, frozen input, proposal and failure; no automatic restart of this stopped generation.",
+  "full_audit": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/physical-source-stop-v1/review.json",
+    "sha256": "b3cc74803e8ced95b15d046a4e848300736daa9a45e2c741f50e34bbb6ca6f21"
+  },
+  "target_offset": {
+    "status": "ROBUST_OFFSET_CONFLICT",
+    "good_quarters": 10,
+    "minimum_good_quarters": 3,
+    "robust_offset_arcsec": [
+      -15.773214454012956,
+      -5.580156789458017
+    ],
+    "offset_distance_arcsec": 16.73118178752528,
+    "offset_uncertainty_arcsec": 1.8078866137141665,
+    "offset_significance": 9.254552614421062,
+    "required_significance": 3.0,
+    "uncertainty_variance_arcsec2": {
+      "formal": 1.1354018438970643,
+      "quarter_scatter": 3.242854008046876,
+      "jackknife": 1.1212124905412701
+    },
+    "aggregate_systematic_arcsec": 0.16,
+    "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+  },
+  "parent_offset": {
+    "status": "TARGET_COMPATIBLE",
+    "good_quarters": 10,
+    "minimum_good_quarters": 3,
+    "robust_offset_arcsec": [
+      -0.7197709064129689,
+      -0.19468811784521084
+    ],
+    "offset_distance_arcsec": 0.7456363865508829,
+    "offset_uncertainty_arcsec": 1.8033587429119582,
+    "offset_significance": 0.4134709133618489,
+    "required_significance": 4.0,
+    "uncertainty_variance_arcsec2": {
+      "formal": 1.091792802605058,
+      "quarter_scatter": 3.2265027556369983,
+      "jackknife": 1.0037827470685803
+    },
+    "aggregate_systematic_arcsec": 0.16,
+    "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+  },
+  "next_selected_source": {
+    "source_id": "2103792461826460288",
+    "kic": 5689121,
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-210379-v1/plan.json",
+      "sha256": "21269045418d6451d37febeac0580cbc6481a62e98479e4bd82f2eaff8a619b9"
+    },
+    "stage": "OWN_SCENE_AND_COOL_HOST_MODEL_SUPPORT_PREPARATION"
+  }
+}

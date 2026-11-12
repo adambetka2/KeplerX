@@ -1,0 +1,2470 @@
+{
+  "utc": "2026-10-27T00:43:36.702290+00:00",
+  "rows": [
+    {
+      "boi_id": "BOI-2079714428492352768-1",
+      "source_id": "2079714428492352768",
+      "signal_id": "shallow-v1-2079714428492352768-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9602448,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 55306,
+      "psf_event_depth_snr": 66.92283980541477,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2079714428492352768-1.json",
+          "sha256": "97125f08beed718e9aa7688827185e74645563dab7a0d237bbb02b75d6d5ca2c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-4",
+      "source_id": "2126217104555818240",
+      "signal_id": "shallow-v1-2126217104555818240-8",
+      "wave": 1,
+      "state": "UNRESOLVED_NONINDEPENDENT_SAME_SOURCE_CLOCK",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 1.032333,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 39101,
+      "psf_event_depth_snr": 56.66272494284242,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2126217104555818240-8.json",
+          "sha256": "81b1f7b855648512a0851e765934e86adc07968aae6c60650d3fd91c87c4973b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ],
+      "independence_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126217104555818240-4/post-boi-disposition-v1.json",
+        "sha256": "741bb375fe70f917d52ac45cf18c7cc03b3392a0bd0dea94b0b8f1d80f577836"
+      }
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-1",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0471895,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 59624,
+      "psf_event_depth_snr": 40.418675016719284,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127936912539397632-1.json",
+          "sha256": "054d6bc29df24581d05c084854ca8c56af1020799a8ff25bb3bc26df469eb68b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2127186564572468352-2",
+      "source_id": "2127186564572468352",
+      "signal_id": "shallow-v1-2127186564572468352-26",
+      "wave": 1,
+      "state": "UNRESOLVED_NONINDEPENDENT_SAME_SOURCE_CLOCK",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 0.9963545,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 25284,
+      "psf_event_depth_snr": 39.36666538741745,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127186564572468352-26.json",
+          "sha256": "cb358002f1187ead0434560fd580a4df39741726fa96d9c4ac034cde24f1ae96"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ],
+      "independence_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127186564572468352-2/post-boi-disposition-v1.json",
+        "sha256": "006edbf60d7982cf08352164ee18ee9b5af60ee3b8dcb3e9440c319345593b87"
+      }
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-2",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-4",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0471895,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 59624,
+      "psf_event_depth_snr": 26.77663632042048,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127936912539397632-4.json",
+          "sha256": "eb5779128e086e4cb2eccd0b7204baf9cfb972ad7c6d63cec1bdd4b309298eff"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2102266442767690112-1",
+      "source_id": "2102266442767690112",
+      "signal_id": "shallow-v1-2102266442767690112-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.061974,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 60313,
+      "psf_event_depth_snr": 18.2933783415909,
+      "full_field_low_order_other_star_matches": 84,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 6114140,
+          "separation_arcsec": 365.23873899665693,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 6114140,
+          "separation_arcsec": 365.2598518083485,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2102266442767690112-1.json",
+          "sha256": "6bc7252690cca8e2eb88580b44005686854e4809c8e9a4fa01f5125c0bafa5cb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076057590261131392-1",
+      "source_id": "2076057590261131392",
+      "signal_id": "shallow-v1-2076057590261131392-3",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.98155284,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 59431,
+      "psf_event_depth_snr": 20.21195806924395,
+      "full_field_low_order_other_star_matches": 4,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 8196180,
+          "separation_arcsec": 219.39025177477487,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 8196180,
+          "separation_arcsec": 219.36419393595645,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2076057590261131392-3.json",
+          "sha256": "6b2043278d1b1412369ce1a5df5d2776fb7e20c0850c0fa397c615150b45bc43"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2100413245985138560-1",
+      "source_id": "2100413245985138560",
+      "signal_id": "shallow-v1-2100413245985138560-4",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.96407646,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 50905,
+      "psf_event_depth_snr": 4.165861222695736,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2100413245985138560-4.json",
+          "sha256": "7478b7acd8ce391aebb9cce72e737ec2e16db4704d5f54a18aef57c78d8e1a5e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2077515199080043264-2",
+      "source_id": "2077515199080043264",
+      "signal_id": "shallow-v1-2077515199080043264-7",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.1024923,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 28107,
+      "psf_event_depth_snr": 7.24541508910678,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2077515199080043264-7.json",
+          "sha256": "fcceb47a8f9ad9fad8171eed008fa1c56ed7d149fab7e81eff1bce4a9260acdd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2077624600485371136-1",
+      "source_id": "2077624600485371136",
+      "signal_id": "shallow-v1-2077624600485371136-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.94685775,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 58174,
+      "psf_event_depth_snr": 16.76936710636621,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2077624600485371136-1.json",
+          "sha256": "01be53bd7bac6b7738315a4d806e1ec14d238bd2d574ab647656e8d7172bfa12"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2130546156710144256-1",
+      "source_id": "2130546156710144256",
+      "signal_id": "shallow-v1-2130546156710144256-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.97800994,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 59123,
+      "psf_event_depth_snr": 6.221150119395533,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2130546156710144256-1.json",
+          "sha256": "21796715cd44e0383a28cb5b66bd8bfaabc30fbf94efa3a0711a6d6dbb8e81dd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2107173460081536128-1",
+      "source_id": "2107173460081536128",
+      "signal_id": "shallow-v1-2107173460081536128-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0219129,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 17056,
+      "psf_event_depth_snr": 13.241024550848136,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2107173460081536128-1.json",
+          "sha256": "9cc20dab2cc3610ec59ccd3349042dc1d945daddd336610fddd9c5d05613176c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2128925785810616832-1",
+      "source_id": "2128925785810616832",
+      "signal_id": "shallow-v1-2128925785810616832-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.1372461,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 13018,
+      "psf_event_depth_snr": 13.746864353522733,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2128925785810616832-1.json",
+          "sha256": "ebbccc21393748dc3bc4cef94b3cb2371d8383717502797dd1463471bfd65f86"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2078082581439033856-1",
+      "source_id": "2078082581439033856",
+      "signal_id": "shallow-v1-2078082581439033856-2",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0203439,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 48881,
+      "psf_event_depth_snr": 9.529381257936095,
+      "full_field_low_order_other_star_matches": 5,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2078082581439033856-2.json",
+          "sha256": "c045d4f3417aae28af36c55989c22a466b1b6754376b3e1885d99547a72740b6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2086390560018194816-1",
+      "source_id": "2086390560018194816",
+      "signal_id": "shallow-v1-2086390560018194816-3",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0047985,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 47605,
+      "psf_event_depth_snr": 8.591794823179974,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2086390560018194816-3.json",
+          "sha256": "6552a20522001832d66fb0da9af4cda0d3eff377b6d5108676787c562629707d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076038211367869312-1",
+      "source_id": "2076038211367869312",
+      "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.1628125,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 34435,
+      "psf_event_depth_snr": 27.632760068400327,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076038211367869312-1-sap_qdiag.json",
+          "sha256": "cb4f48cc90aa6429efa4da8d47377bcce4bb70cb4e6562543ce5c4f8eb2cb30b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2051317406099391360-1",
+      "source_id": "2051317406099391360",
+      "signal_id": "rust-v6-2051317406099391360-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.95284957,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 27741,
+      "psf_event_depth_snr": 11.927837348660233,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2051317406099391360-1.json",
+          "sha256": "a158a770d606b53917ecfd741f75f2ccdd07fe0b2c19a4a9503854f1a6a438b4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2051702720499620224-1",
+      "source_id": "2051702720499620224",
+      "signal_id": "rust-v6-2051702720499620224-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.057595,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 51614,
+      "psf_event_depth_snr": 70.53637194460234,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2051702720499620224-1.json",
+          "sha256": "ce8291b63280f824c18f5eece8c32b1a4db81efb1fd1045586e1d591ff3c53ea"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2073774278260250880-1",
+      "source_id": "2073774278260250880",
+      "signal_id": "rust-v6-2073774278260250880-1",
+      "wave": 1,
+      "state": "UNRESOLVED_HOST_RUWE_ABOVE_PROTOCOL_CRITERION",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 2.5684638,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 58427,
+      "psf_event_depth_snr": 51.183394245749646,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2073774278260250880-1.json",
+          "sha256": "e7051f6926654634df85c8efe8cdc384b4caa62459cb008a5f675bfba4f845c6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076066111476425728-1",
+      "source_id": "2076066111476425728",
+      "signal_id": "rust-v6-2076066111476425728-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0909078,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 15310,
+      "psf_event_depth_snr": 14.40317515613144,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076066111476425728-1.json",
+          "sha256": "4308bbb4755db33a97c8cff24a77c5f8789461eadc26662157f6496f9fcdcf0c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076229075413220352-1",
+      "source_id": "2076229075413220352",
+      "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0342382,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 14012,
+      "psf_event_depth_snr": 31.130540014869936,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076229075413220352-1-psf_qdiag.json",
+          "sha256": "2b7dc33b1567ae52a850605d69b28d85edfd5ef449795d408be1892270946ca5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076535358120385536-1",
+      "source_id": "2076535358120385536",
+      "signal_id": "rust-v6-2076535358120385536-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9767336,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 46880,
+      "psf_event_depth_snr": 42.65083024558444,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076535358120385536-1.json",
+          "sha256": "0913a4ad52ac1de31cd3fe974c2e87eea37014131d27963b748f75d7d59aded6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076587142546708352-1",
+      "source_id": "2076587142546708352",
+      "signal_id": "rust-v6-2076587142546708352-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0251805,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 10214,
+      "psf_event_depth_snr": 26.40066617223008,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 5199436,
+          "separation_arcsec": 8.631878051956345,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076587142546708352-1.json",
+          "sha256": "a2fb996da7ea3defadad1eb21b382de352e5b9dadb9ca9f93de6dcdc792c1778"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076784878540898560-1",
+      "source_id": "2076784878540898560",
+      "signal_id": "rust-v6-2076784878540898560-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0329301,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 24641,
+      "psf_event_depth_snr": 30.003703905946477,
+      "full_field_low_order_other_star_matches": 3,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076784878540898560-1.json",
+          "sha256": "0be1be8b4611d8eb049e980d3df24db8ce21e587de1dcd0b7cd6d450975783fa"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2077554781499350144-2",
+      "source_id": "2077554781499350144",
+      "signal_id": "rust-v6-2077554781499350144-5",
+      "wave": 1,
+      "state": "UNRESOLVED_NONINDEPENDENT_SAME_SOURCE_CLOCK",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 1.087092,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 59907,
+      "psf_event_depth_snr": 16.271155097500014,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077554781499350144-5.json",
+          "sha256": "a415bd9a753794c18976e64dfc429b8d7e4f844215af7ba1bfdfdb3416ac61c1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ],
+      "independence_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077554781499350144-2/post-boi-disposition-v1.json",
+        "sha256": "372d6c8146ce02f98bb68ba6b77c773f008ee7121c9b004a2b1616133f934ecc"
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-3",
+      "source_id": "2077967368932890752",
+      "signal_id": "rust-v6-2077967368932890752-20",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9988963,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 42937,
+      "psf_event_depth_snr": 53.05838468791722,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077967368932890752-20.json",
+          "sha256": "04eb0c014173d1e9738415ba2076b11b32128b4f82dd1a22d31973a2486f4a61"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2078414771391537280-1",
+      "source_id": "2078414771391537280",
+      "signal_id": "rust-v6-2078414771391537280-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0961442,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 48552,
+      "psf_event_depth_snr": 16.995107699095364,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078414771391537280-1.json",
+          "sha256": "d38d33522562aec843166b7a9ae06786deaec872864b8f7c47d81d0581e1cc91"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2079376637907047040-1",
+      "source_id": "2079376637907047040",
+      "signal_id": "rust-v6-2079376637907047040-8",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.99954176,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 12467,
+      "psf_event_depth_snr": 20.92499650869002,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079376637907047040-8.json",
+          "sha256": "368e4d416aeeb561e3ab972d13b51f915c4056e12c49c39aca21ab2a66ee37d6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2079821420415898368-1",
+      "source_id": "2079821420415898368",
+      "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0258572,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 49297,
+      "psf_event_depth_snr": 48.46686382909618,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079821420415898368-1-sap_qdiag.json",
+          "sha256": "96989ddb745ce4950e56df6097258407a2578390c349ce315bdf6da83fd9bb8e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2080033974058174080-1",
+      "source_id": "2080033974058174080",
+      "signal_id": "rust-v6-2080033974058174080-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0095539,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 45313,
+      "psf_event_depth_snr": 25.596577318734056,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 9226439,
+          "separation_arcsec": 4.636960307393451,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2080033974058174080-1.json",
+          "sha256": "0d5b7f5934c4c6901f52bb704b2cfebe244674350e4c5e15432b3954e3a87374"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2080290396483263616-1",
+      "source_id": "2080290396483263616",
+      "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+      "wave": 1,
+      "state": "UNRESOLVED_NO_VALID_PSF_FLAT_PHOTONS",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 0.93759376,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 0,
+      "psf_event_depth_snr": null,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2080290396483263616-1-psf_qdiag.json",
+          "sha256": "7063f8696e3312d722e6d617bfa28789789a8f56041aba37378ef008b525f051"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/no-flat-9786341-v1/disposition.json",
+          "sha256": "8ce64ddb4348f3bcf72c17f97ff5f1d18565b2023ceee7b2122fa68a9209439f"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2085457035981896448-1",
+      "source_id": "2085457035981896448",
+      "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.95698845,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 59187,
+      "psf_event_depth_snr": 47.17432456350646,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2085457035981896448-1-sap_qdiag.json",
+          "sha256": "4f144e800d4f5c0e0db7d6c42e6193285e1e586fa4fd6b0a159dbbbbe97e8732"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2086489481704614016-1",
+      "source_id": "2086489481704614016",
+      "signal_id": "rust-v6-2086489481704614016-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.96857333,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 20072,
+      "psf_event_depth_snr": 8.749644854022169,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2086489481704614016-1.json",
+          "sha256": "b4aef68009bf4e3ca70bdb1a8601b693eea93d253c5c79851388be5df36839ae"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2100220316049730304-1",
+      "source_id": "2100220316049730304",
+      "signal_id": "rust-v6-2100220316049730304-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9577908,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 43887,
+      "psf_event_depth_snr": 9.655995558911398,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100220316049730304-1.json",
+          "sha256": "b909c2c8ef059d25ba4d9a85d0b509cab8a5d65d73a8e7f1590281a727429899"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2100223614584673664-1",
+      "source_id": "2100223614584673664",
+      "signal_id": "rust-v6-2100223614584673664-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0167494,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 21767,
+      "psf_event_depth_snr": 10.687807231445786,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100223614584673664-1.json",
+          "sha256": "d78ceca60e9f017fdc1c277057dbecc7cf5c516b4b7097c9aafcfa3d3db1210e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2106533368217988864-1",
+      "source_id": "2106533368217988864",
+      "signal_id": "rust-v6-2106533368217988864-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9932975,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 20887,
+      "psf_event_depth_snr": 9.332402121072684,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2106533368217988864-1.json",
+          "sha256": "31cf3c0fea5ed256cdd8731b236b44c166507f9d69757c5aae801c2713f6d12c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2107167653281504256-1",
+      "source_id": "2107167653281504256",
+      "signal_id": "rust-v6-2107167653281504256-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0756146,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 59460,
+      "psf_event_depth_snr": 107.03876166286743,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2107167653281504256-1.json",
+          "sha256": "baf3db56e873e99f2a301b4897286c513784d6501169add6a6fec1419a73be7b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2125795682366018176-1",
+      "source_id": "2125795682366018176",
+      "signal_id": "rust-v6-2125795682366018176-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0490807,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 27512,
+      "psf_event_depth_snr": 39.893462430444124,
+      "full_field_low_order_other_star_matches": 175,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7362301,
+          "separation_arcsec": 541.4655209976437,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7200013,
+          "separation_arcsec": 421.5634670060269,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281301,
+          "separation_arcsec": 98.73459432861912,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281311,
+          "separation_arcsec": 124.50523036128813,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7200050,
+          "separation_arcsec": 444.98934178587626,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7117489,
+          "separation_arcsec": 566.5622594552113,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7200156,
+          "separation_arcsec": 553.8015479237661,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7200269,
+          "separation_arcsec": 599.9983751452868,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281484,
+          "separation_arcsec": 227.22727628351518,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281615,
+          "separation_arcsec": 354.95186166751046,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281616,
+          "separation_arcsec": 410.1355653748063,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7117020,
+          "separation_arcsec": 507.13197451729593,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281644,
+          "separation_arcsec": 416.94053049847946,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281668,
+          "separation_arcsec": 382.63768620295355,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281699,
+          "separation_arcsec": 536.4235647863218,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7117147,
+          "separation_arcsec": 445.4771257615557,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7117178,
+          "separation_arcsec": 542.2848525369662,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199644,
+          "separation_arcsec": 201.5266759251167,
+          "ratio": "1/2"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199724,
+          "separation_arcsec": 290.3923371704445,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7117284,
+          "separation_arcsec": 570.5554867018676,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199883,
+          "separation_arcsec": 376.80185916653267,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199917,
+          "separation_arcsec": 375.54986860081436,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199935,
+          "separation_arcsec": 390.49023386696445,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281864,
+          "separation_arcsec": 554.43974167574,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7281902,
+          "separation_arcsec": 578.293392190257,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7199989,
+          "separation_arcsec": 373.6556675231458,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 7200001,
+          "separation_arcsec": 397.94310784093113,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7281484,
+          "separation_arcsec": 227.25257066474757,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7281668,
+          "separation_arcsec": 382.66234756755597,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7199644,
+          "separation_arcsec": 201.51299005795065,
+          "ratio": "1/2"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7199724,
+          "separation_arcsec": 290.3802453442287,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7199756,
+          "separation_arcsec": 355.27209881752583,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7199883,
+          "separation_arcsec": 376.79968147543156,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7199935,
+          "separation_arcsec": 390.51473687320663,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7200225,
+          "separation_arcsec": 564.0397321075084,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7281616,
+          "separation_arcsec": 410.13795184147807,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 7281699,
+          "separation_arcsec": 536.4457110852121,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2125795682366018176-1.json",
+          "sha256": "32579c586ec719164e0d512e31066576942ff806695cfd357526c9db00a0806a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-2",
+      "source_id": "2126354436132009088",
+      "signal_id": "rust-v6-2126354436132009088-4",
+      "wave": 1,
+      "state": "UNRESOLVED_NONINDEPENDENT_SAME_SOURCE_CLOCK",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 0.9794834,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 44240,
+      "psf_event_depth_snr": 13.520539639969206,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126354436132009088-4.json",
+          "sha256": "fac355d7a59f4e7002c798f90fb805924b4deec1f79c616080e952e988ebb334"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ],
+      "independence_review": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126354436132009088-2/post-boi-disposition-v1.json",
+        "sha256": "1604bcfd43943703b65af5c56f3c3908f5df61939314c6be2e2670f0c6e4ef94"
+      }
+    },
+    {
+      "boi_id": "BOI-2126446588949629952-1",
+      "source_id": "2126446588949629952",
+      "signal_id": "rust-v6-2126446588949629952-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.057029,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 13491,
+      "psf_event_depth_snr": 14.215158394509723,
+      "full_field_low_order_other_star_matches": 3,
+      "nearby_low_order_matches": [
+        {
+          "catalogue": "dr25_tce",
+          "kepid": 8758161,
+          "separation_arcsec": 71.91529721176316,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 8758136,
+          "separation_arcsec": 76.29975399405573,
+          "ratio": "1/1"
+        },
+        {
+          "catalogue": "koi",
+          "kepid": 8758161,
+          "separation_arcsec": 71.89304468585816,
+          "ratio": "1/1"
+        }
+      ],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126446588949629952-1.json",
+          "sha256": "2d882b6dde3049053efbc7bc2e28aa7d52b14770b5f8344160d33328dbf11346"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2126865915195358720-1",
+      "source_id": "2126865915195358720",
+      "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0038649,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 432,
+      "psf_event_depth_snr": 5.368771512986364,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126865915195358720-1-psf_qdiag.json",
+          "sha256": "c71156e51434cd00a7446179f7349d27296ebdcb89ef0ddf5079b240e083500c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2127355099085636864-1",
+      "source_id": "2127355099085636864",
+      "signal_id": "rust-v6-2127355099085636864-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.98834425,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 56978,
+      "psf_event_depth_snr": 26.617197930940215,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2127355099085636864-1.json",
+          "sha256": "e75e4f342e6bf7558a36aad024dd7a3ca8ac7d769d08c84fc07f86449292a7a8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2127702609183750528-1",
+      "source_id": "2127702609183750528",
+      "signal_id": "rust-v6-2127702609183750528-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.96805716,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 59256,
+      "psf_event_depth_snr": 15.237877312621897,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2127702609183750528-1.json",
+          "sha256": "8b39409e91569654d78a4563823400fe67ffedb621590d26aa513a98e6bb77e1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2131801043071611776-1",
+      "source_id": "2131801043071611776",
+      "signal_id": "rust-v6-2131801043071611776-10",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.1540257,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 42372,
+      "psf_event_depth_snr": 7.766596964614505,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2131801043071611776-10.json",
+          "sha256": "f910844b1e4ef0b5464169aadb320dc2024ae3907063451ddc95d0321d8b4bf5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2131971879690727168-1",
+      "source_id": "2131971879690727168",
+      "signal_id": "rust-v6-2131971879690727168-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0635612,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 46433,
+      "psf_event_depth_snr": 30.930906861675098,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2131971879690727168-1.json",
+          "sha256": "d465064e929ba60cc19f8730022d122ce0e49009573887449b4218d81569c28c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2133034969998575360-1",
+      "source_id": "2133034969998575360",
+      "signal_id": "rust-v6-2133034969998575360-1",
+      "wave": 1,
+      "state": "UNRESOLVED_HOST_RUWE_ABOVE_PROTOCOL_CRITERION",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 3.4059744,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 57920,
+      "psf_event_depth_snr": 139.0474116973327,
+      "full_field_low_order_other_star_matches": 1,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133034969998575360-1.json",
+          "sha256": "4f99e8c3226e662f5550f68afa6f1b130c6db86cce7c67e9dbef1a49ec2b3f79"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2133051978069556352-1",
+      "source_id": "2133051978069556352",
+      "signal_id": "rust-v6-2133051978069556352-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.326341,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 58664,
+      "psf_event_depth_snr": 52.123220154083384,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133051978069556352-1.json",
+          "sha256": "da41675ea2d09bcf932a244ee544c0bc4e752c5b52c74d8dc8b0a206ad6fdc53"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2133767416541087232-1",
+      "source_id": "2133767416541087232",
+      "signal_id": "rust-v6-2133767416541087232-1",
+      "wave": 1,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.94924957,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 58881,
+      "psf_event_depth_snr": 13.954695801473568,
+      "full_field_low_order_other_star_matches": 2,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "Recheck the adopted independent posterior clock; a different-star match requires source/pixel review and is not by itself an astrophysical denial",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133767416541087232-1.json",
+          "sha256": "559c3615b6056ffe4266ebef3dbe80cc85523d8074c23b12148627e99a9a9f64"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2104484363877066752-1",
+      "source_id": "2104484363877066752",
+      "signal_id": "rust-v6-2104484363877066752-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9059115,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 30346,
+      "psf_event_depth_snr": 251.83498993765795,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2104484363877066752-1.json",
+          "sha256": "1dd12378c27e09ba3c822f508483183923498ccfb1b28767f3952bfbc15b577c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2078783726253023360-1",
+      "source_id": "2078783726253023360",
+      "signal_id": "rust-v6-2078783726253023360-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.93532723,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 59847,
+      "psf_event_depth_snr": 195.86115711516518,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078783726253023360-1.json",
+          "sha256": "363f51d08eef5149f7c19ba429b17fbbf595471524adcaf07c09b1a8854fdf4b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2079536067092694016-1",
+      "source_id": "2079536067092694016",
+      "signal_id": "rust-v6-2079536067092694016-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0625757,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 31121,
+      "psf_event_depth_snr": 178.75335569829716,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079536067092694016-1.json",
+          "sha256": "615b4f6740850590a4e79339d5c297c80332b5a85d6f8ca594bc0270e1563a29"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-1",
+      "source_id": "2126217104555818240",
+      "signal_id": "rust-v6-2126217104555818240-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.032333,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 39101,
+      "psf_event_depth_snr": 137.2149654899867,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126217104555818240-1.json",
+          "sha256": "bac85a917dd7069a7ea8a67fd8d4a23f768f6075c1863de474cefd4a6d883a32"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2076894554826018304-1",
+      "source_id": "2076894554826018304",
+      "signal_id": "rust-v6-2076894554826018304-1",
+      "wave": 2,
+      "state": "UNRESOLVED_HOST_RUWE_ABOVE_PROTOCOL_CRITERION",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": true,
+      "ruwe": 1.400718,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 46322,
+      "psf_event_depth_snr": 113.01690827373852,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076894554826018304-1.json",
+          "sha256": "4c1db9c755b496aa8bab8fb34b56f33f1aa390b54590540aff2d481d6dd945c0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2100123494603868416-1",
+      "source_id": "2100123494603868416",
+      "signal_id": "rust-v6-2100123494603868416-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0303721,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 15279,
+      "psf_event_depth_snr": 109.7424679972754,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100123494603868416-1.json",
+          "sha256": "54f5d108730a9207de449de0efcbc69b6432c0d2a9f5ba7571f517135c95ac21"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2100203999471640064-1",
+      "source_id": "2100203999471640064",
+      "signal_id": "rust-v6-2100203999471640064-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.99375325,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 40173,
+      "psf_event_depth_snr": 105.52101610173867,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100203999471640064-1.json",
+          "sha256": "b415543cf4dafac5e4d1ccd0e92042c24becd0cf0f07196da5f2238d6bea15be"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2130658616133595264-1",
+      "source_id": "2130658616133595264",
+      "signal_id": "rust-v6-2130658616133595264-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.957929,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 54130,
+      "psf_event_depth_snr": 51.918138934852195,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2130658616133595264-1.json",
+          "sha256": "04e46fbce7e2a507fca2ead379a3f6653d7bf7a97a757b645970d9efc7884f9d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2073628180652139904-1",
+      "source_id": "2073628180652139904",
+      "signal_id": "rust-v6-2073628180652139904-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0493882,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 57852,
+      "psf_event_depth_snr": 49.30873977049998,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2073628180652139904-1.json",
+          "sha256": "0706c1aeeef23cc3850d57a1ccac47e3e427993a0801499397194621cdea23ba"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2101435138957164672-1",
+      "source_id": "2101435138957164672",
+      "signal_id": "rust-v6-2101435138957164672-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9719575,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 51773,
+      "psf_event_depth_snr": 49.14666098831134,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2101435138957164672-1.json",
+          "sha256": "2b446a0798edab04dba96cf161e6b892cfc4d9c3f05e8d063a912c7cd494c541"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2050231500928700032-1",
+      "source_id": "2050231500928700032",
+      "signal_id": "rust-v6-2050231500928700032-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.91646874,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 12418,
+      "psf_event_depth_snr": 47.15574122640403,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2050231500928700032-1.json",
+          "sha256": "8eff3ebbb1fb0b68f9cb44cede648e1eb9a6d8d369d080df84d8395d10605b04"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2077595974520134144-1",
+      "source_id": "2077595974520134144",
+      "signal_id": "rust-v6-2077595974520134144-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9998712,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 59298,
+      "psf_event_depth_snr": 45.70258108768433,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077595974520134144-1.json",
+          "sha256": "053d0ade323e5c291ac09a408cc6db79de019b02fcd222901a69ec9238982c06"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2099560128037101952-1",
+      "source_id": "2099560128037101952",
+      "signal_id": "rust-v6-2099560128037101952-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0478454,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 57721,
+      "psf_event_depth_snr": 29.94783868011733,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2099560128037101952-1.json",
+          "sha256": "c641b0b2279416de57159b0dd2234c319fe8249a63d5fc618c970711841a443a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2078045782158649216-1",
+      "source_id": "2078045782158649216",
+      "signal_id": "rust-v6-2078045782158649216-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0793076,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 44436,
+      "psf_event_depth_snr": 28.261865584300814,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078045782158649216-1.json",
+          "sha256": "01ad2570b06f059696a1248201ec62685738e78aeca9b1401ccf48ddface9374"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-1",
+      "source_id": "2126354436132009088",
+      "signal_id": "rust-v6-2126354436132009088-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 0.9794834,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": false,
+      "stellar_followup": "Review other authenticated catalogues or justify an explicit uncertainty model; no automatic replacement/error percentage",
+      "usable_psf_flat_photons": 44240,
+      "psf_event_depth_snr": 24.999347967996492,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126354436132009088-1.json",
+          "sha256": "29b9108403ceb76694a4597712663e1e9de23f10d1c44bfaa9d9f545b2b8e1f8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2086643310248820352-1",
+      "source_id": "2086643310248820352",
+      "signal_id": "rust-v6-2086643310248820352-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0184605,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 48268,
+      "psf_event_depth_snr": 20.174753233919827,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2086643310248820352-1.json",
+          "sha256": "fe4330120c6a24ef94239666e5140fbf955942b2c93d7196ab87a283a877fe30"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    },
+    {
+      "boi_id": "BOI-2106383701495087232-1",
+      "source_id": "2106383701495087232",
+      "signal_id": "rust-v6-2106383701495087232-1",
+      "wave": 2,
+      "state": "STANDARD_READINESS_CONTINUES",
+      "disposition": "REMAINS_PC",
+      "probability_ready": false,
+      "terminal_scientific_disposition_for_current_psf_only_study": false,
+      "ruwe": 1.0827157,
+      "ruwe_criterion": "<=1.4, unrounded DR3 value",
+      "paired_reported_FLAME_mass_radius_intervals_available": true,
+      "stellar_followup": "Reported FLAME intervals available; candidate-specific stellar/noise/prior review remains",
+      "usable_psf_flat_photons": 25564,
+      "psf_event_depth_snr": 16.425950060708484,
+      "full_field_low_order_other_star_matches": 0,
+      "nearby_low_order_matches": [],
+      "catalogue_followup": "No low-order other-star match in these scoped snapshots; dated literature/companion review remains",
+      "evidence": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/gaia-targets-v1/response.json",
+          "sha256": "08cdd6699f6d1e4085cfbe8ee1bab1afe85796b7fc253ffae3dd9b16a6d760d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2106383701495087232-1.json",
+          "sha256": "8b907db53ab2fc40ac2183507481d07ca100a7cb8db6d4da9cd6d30464529359"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/catalogue-v1/screen.json",
+          "sha256": "916ce08fb90675008b2b52c6d15c8861d32d98c0f4788832465121d73fbab74c"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "STANDARD_READINESS_CONTINUES": 57,
+    "UNRESOLVED_NONINDEPENDENT_SAME_SOURCE_CLOCK": 4,
+    "UNRESOLVED_HOST_RUWE_ABOVE_PROTOCOL_CRITERION": 3,
+    "UNRESOLVED_NO_VALID_PSF_FLAT_PHOTONS": 1
+  },
+  "previous_source_readiness": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-source-readiness-20261026.json",
+    "sha256": "26e2c4be1637c490005f50be751dfbc008787fa74f62c892bc10ea25f0df17df"
+  },
+  "alias_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness/alias-closeout-v1.json",
+    "sha256": "b830afd8b2804b3fbd1557ecc0336ef5a09521dfe9846d171fad695dcad48cbe"
+  },
+  "selected_groups": 65,
+  "supported_scientific_dispositions": 8,
+  "native_or_probability_admissions_from_this_review": 0,
+  "scope": "Source facts plus four supported non-independent-clock dispositions. No catalogue removal, accepted-study rerun, astrophysical denial or blanket method-blocker disposition."
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "PERFORMANCE_PROTOTYPE_PRESERVED_FAILURE",
+  "local_date": "2026-10-25",
+  "stage": "In-memory MCJIT finalization before orbit evaluation",
+  "exit_code": 134,
+  "error": "LLVM ERROR: Unsupported stack probing method",
+  "cause": "Apple Clang retains probe-stack=__chkstk_darwin despite -mno-stack-arg-probe",
+  "repair": "Remove that known unsupported attribute from generated IR for the fixed-size numerical kernel; reject any other stack-probe ABI",
+  "scientific_fit_or_campaign_modified": false
+}

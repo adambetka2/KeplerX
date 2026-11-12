@@ -1,0 +1,448 @@
+{
+  "utc": "2026-10-20T06:49:25.678178+00:00",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_followups": 0,
+  "false_positive_rate": null,
+  "reproduced_false_positive_count": 0,
+  "false_positive_rate_denominator": "No completed candidate adjudications. High FPP triage is not reproduced false-positive classification.",
+  "probability": {
+    "original_required_repeats": 43,
+    "current_started_repeats": 32,
+    "completed_full_repeats": 0,
+    "completed_scenario_blocks": 2895,
+    "full_original_scenario_blocks": 5136,
+    "groups": [
+      {
+        "source_id": "2127732197218050304",
+        "stage": "final",
+        "started_repeats": 9,
+        "completed_scenario_blocks": 759,
+        "scenario_count_per_repeat": 105,
+        "minimum_completed_per_repeat": 84,
+        "maximum_completed_per_repeat": 85,
+        "per_seed": [
+          {
+            "seed_index": 0,
+            "completed_scenarios": 85,
+            "full_census": 105
+          },
+          {
+            "seed_index": 1,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 2,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 3,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 4,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 5,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 6,
+            "completed_scenarios": 85,
+            "full_census": 105
+          },
+          {
+            "seed_index": 7,
+            "completed_scenarios": 84,
+            "full_census": 105
+          },
+          {
+            "seed_index": 8,
+            "completed_scenarios": 85,
+            "full_census": 105
+          }
+        ]
+      },
+      {
+        "source_id": "2128845796339643392",
+        "stage": "final",
+        "started_repeats": 20,
+        "completed_scenario_blocks": 1864,
+        "scenario_count_per_repeat": 132,
+        "minimum_completed_per_repeat": 93,
+        "maximum_completed_per_repeat": 94,
+        "per_seed": [
+          {
+            "seed_index": 0,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 1,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 2,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 3,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 4,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 5,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 6,
+            "completed_scenarios": 94,
+            "full_census": 132
+          },
+          {
+            "seed_index": 7,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 8,
+            "completed_scenarios": 94,
+            "full_census": 132
+          },
+          {
+            "seed_index": 9,
+            "completed_scenarios": 94,
+            "full_census": 132
+          },
+          {
+            "seed_index": 10,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 11,
+            "completed_scenarios": 94,
+            "full_census": 132
+          },
+          {
+            "seed_index": 12,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 13,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 14,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 15,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 16,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 17,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 18,
+            "completed_scenarios": 93,
+            "full_census": 132
+          },
+          {
+            "seed_index": 19,
+            "completed_scenarios": 93,
+            "full_census": 132
+          }
+        ]
+      },
+      {
+        "source_id": "2128845796339643392",
+        "stage": "recovered",
+        "started_repeats": 3,
+        "completed_scenario_blocks": 272,
+        "scenario_count_per_repeat": 132,
+        "minimum_completed_per_repeat": 90,
+        "maximum_completed_per_repeat": 91,
+        "per_seed": [
+          {
+            "seed_index": 0,
+            "completed_scenarios": 91,
+            "full_census": 132
+          },
+          {
+            "seed_index": 1,
+            "completed_scenarios": 90,
+            "full_census": 132
+          },
+          {
+            "seed_index": 2,
+            "completed_scenarios": 91,
+            "full_census": 132
+          }
+        ]
+      }
+    ],
+    "full_fpp_results": null,
+    "count_field": "completed_scenarios; complete_scenario_names is only the full census",
+    "progress_fraction_scope": "Scenario blocks differ in cost; not a wall-time estimate.",
+    "original_coordinator": "DRAINING_AFTER_COORDINATOR_ONLY_SIGINT; all 32 existing workers finish without further queue submissions.",
+    "new_coordinator_status": "WAITING_FOR_PREVIOUS_COORDINATOR_LOCK",
+    "eleven_unstarted_second_target_repeats": "HELD_SOURCE_OWNERSHIP; no launch even if first-five FPP is low"
+  },
+  "triage": {
+    "authorization": "Adam eight-hour progress instruction on2026-10-20",
+    "fixed_first_final_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stop_mean_point_fpp_ge": 0.03,
+    "retained_admission_budget": 20,
+    "admission_mean_upper_fpp_lt": 0.015,
+    "admission_mean_upper_nfpp_lt": 0.001,
+    "keep_all_surviving_running_workers_and_results": true,
+    "boi_labels_preserved": true,
+    "no_seed_selection_or_retry": true,
+    "policy": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/five-run-triage-v1/policy.json",
+      "sha256": "f6c5566e2e7d83b35bb8d64ae24b5d54c6ffe81c5ceb9848f0b534a30e34e488"
+    },
+    "execution_freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/five-run-triage-v1/execution-freeze.json",
+      "sha256": "804ca52f6721d024adc8ce0c8f1a5f4e01c4aea06bb758f134fd528c68749908"
+    },
+    "drain_receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/five-run-triage-coordinator-drain-20261020.json",
+      "sha256": "7b301dd3136b8427f82496535b9104c04612e37b7c48f0ec2c078b824fd178e1"
+    },
+    "physical_ownership_hold": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/2127732197218050304-source-ownership-hold-v1.json",
+      "sha256": "28d1a40055bfdce7bcea380da107acb943fa8e2ab24164f3fc4dad4efdac8fdf"
+    },
+    "supervision": "mk-boi-five-primary-triage-20261020-v1 waits on the original coordinator lock; no second active launcher or polling shell."
+  },
+  "native_reference_coordinate_experiment": {
+    "status": "THREE_REFERENCE_NATIVE_CONVERGENCE_GATES_PASS; production adoption remains false",
+    "targeted_question": "Does an exact depth/limb-darkening coordinate transform improve native sampling at the same registered maximum budget?",
+    "likelihood_and_physical_priors_unchanged": true,
+    "jacobian_new_to_old": 0.5,
+    "same_photon_logdensity_roundtrip_and_boundary_controls": "PASS",
+    "references": [
+      {
+        "source_id": "2100258047339711488",
+        "endpoint": 6000,
+        "maximum_rank_rhat": 1.0284244440266945,
+        "epoch_bulk_ess": 375.1128302243289,
+        "radius_ratio_quantile_snr": 15.983015629251385,
+        "radius_ratio_median_over_std": 15.915409097674022,
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-coordinate-comparison-v1/2100258047339711488/endpoint-6000.json",
+          "sha256": "189cfd34253c1ee2aa3ee13562c73dfff50a63eb368b1153362e38e47d439c88"
+        }
+      },
+      {
+        "source_id": "2126556132093765888",
+        "endpoint": 12000,
+        "maximum_rank_rhat": 1.0200608957710706,
+        "epoch_bulk_ess": 499.4118109381791,
+        "radius_ratio_quantile_snr": 12.988483882706298,
+        "radius_ratio_median_over_std": 11.497982508558902,
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-coordinate-comparison-v1/2126556132093765888/endpoint-12000.json",
+          "sha256": "fdeb3fda52051eb545e7234aa72073f471f8bd0f2b3409c55c347f6fbad199d6"
+        }
+      },
+      {
+        "source_id": "2133476355197071616",
+        "endpoint": 6000,
+        "maximum_rank_rhat": 1.026768058380083,
+        "epoch_bulk_ess": 408.60205904722204,
+        "radius_ratio_quantile_snr": 146.73282456889297,
+        "radius_ratio_median_over_std": 91.41047421576344,
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-coordinate-comparison-v1/2133476355197071616/endpoint-6000.json",
+          "sha256": "a5d3cf5bfc81304379dedcd5d3c453c51cf9d90ab58fef823731dcf4298f3784"
+        }
+      }
+    ],
+    "original_binary_failure_retained": "known-binary-native-v3 at 24000 steps, rank Rhat1.129; no extension of that generation",
+    "operational_recovery": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-coordinate-comparison-v1/operational-recovery-v2.json",
+      "sha256": "76d1408fcd8fefd999ea2c9a2dcaed4a3093170be0f9bb4b425edd1e93a012a8"
+    },
+    "recovery_scope": "Serialization-only int casts in source-v2. Completed 3000-step K442 ensembles copied with hashes; only missing steps/ensemble continued. No repeated completed sampling or science changes.",
+    "open": [
+      "Independent published-parameter recovery and posterior/exposure checks for the new coordinates",
+      "Probability-renderer54 accuracy for the binary",
+      "Blinded eighteen-repeat probability-model experiment not launched"
+    ]
+  },
+  "new_official_field_preparation": {
+    "transport_gold": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/irsa-get-preparation-v1/transport-gold-check.json",
+      "sha256": "f150126c3a3341b386ae5db3bd8c58b09df5a5b8c59151a06790462d578f9030"
+    },
+    "gold_exactly_reproduces_two_old_service_values": true,
+    "canonical_fields": [
+      {
+        "source_id": "2131705076324568448",
+        "status": "IRSA_SCHLAFLY_FINKBEINER_ACQUIRED",
+        "ebv": 0.0652,
+        "av_infty": 0.20212
+      },
+      {
+        "source_id": "2130921124535127424",
+        "status": "IRSA_SCHLAFLY_FINKBEINER_ACQUIRED",
+        "ebv": 0.0586,
+        "av_infty": 0.18166000000000002
+      },
+      {
+        "source_id": "2103792461826460288",
+        "status": "IRSA_SCHLAFLY_FINKBEINER_ACQUIRED",
+        "ebv": 0.0856,
+        "av_infty": 0.26536
+      },
+      {
+        "source_id": "2135189836694773504",
+        "status": "IRSA_SCHLAFLY_FINKBEINER_ACQUIRED",
+        "ebv": 0.0742,
+        "av_infty": 0.23002
+      },
+      {
+        "source_id": "2104058096963805696",
+        "status": "IRSA_SCHLAFLY_FINKBEINER_ACQUIRED",
+        "ebv": 0.0851,
+        "av_infty": 0.26381
+      }
+    ],
+    "official_populations": [
+      {
+        "source_id": "2104058096963805696",
+        "band": "gaia",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "08d223d74f2bc64c0c53e480fa2626eec9d527ce4ace5a009bb4a9f8cffccb87"
+      },
+      {
+        "source_id": "2104058096963805696",
+        "band": "kepler",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "23325624c4b585a5bf0c372e3eea036a7c16c7e3b9be1747cb9ee139fe3cd176"
+      },
+      {
+        "source_id": "2131705076324568448",
+        "band": "gaia",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "17f2cafe58a8004dc051648b06e1fa6878c34e5b0ae00f8be90d147188186b14"
+      },
+      {
+        "source_id": "2131705076324568448",
+        "band": "kepler",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "392ee2e0e651a4c3d2f43f0255671abc47d64e0d467ab0e1c7d1d7aa3fb325f7"
+      },
+      {
+        "source_id": "2130921124535127424",
+        "band": "gaia",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "b973f8e26b16c8e7f23d43651b9967a221dd90eb606aadaf2f6ed8ef94062de3"
+      },
+      {
+        "source_id": "2130921124535127424",
+        "band": "kepler",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "5de52e9741ec5d123dc6f05472b5978facdb7081a7fcf12f63d289bab2377b2a"
+      },
+      {
+        "source_id": "2103792461826460288",
+        "band": "gaia",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "6fa363b8d5032f34e6118570502d5e37ea7c0d21b7de6e246bd5883cac7786ad"
+      },
+      {
+        "source_id": "2103792461826460288",
+        "band": "kepler",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "fca66fa18c2637d0f66e378a97b73af1cfb707ec898493a8e59824998639621b"
+      },
+      {
+        "source_id": "2135189836694773504",
+        "band": "gaia",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "1b35956cdcc2e08228f28fa23344997dc188a2f7d597ced82584647aa072b3a3"
+      },
+      {
+        "source_id": "2135189836694773504",
+        "band": "kepler",
+        "status": "OFFICIAL_POPULATION_COMPLETE_REQUIRES_SCIENTIFIC_REVIEW",
+        "sha256": "f5ed91690957b1d3879ba41079a209d9fca6be4b7530eb69dc1b339e9e56de00"
+      }
+    ],
+    "scope": "Five authenticated official source-coordinate field extinctions and ten official population files acquired. Scene and physical admission remain separate.",
+    "unadopted_methods": [
+      "dust-map-equivalence-v1: original north SFD map bilinear query failed retained service-value controls",
+      "dust-service-definition-v2: bilinear/nearest query failed held-out controls",
+      "irsa-image-pixels-v1: 11 old-field/22 scalar gold checks pass; only 3/5 new coordinates covered; superseded by direct official GET for all5"
+    ],
+    "failures_preserved": "Earlier timeouts, invalid XML, pure-client API error, and map-receipt JSON serialization failure preserved. No zero or neighboring scalar substituted."
+  },
+  "native_v8": {
+    "utc": "2026-10-20T06:34:39.604346+00:00",
+    "stage": "NATIVE_SAMPLING",
+    "endpoint": 24000,
+    "ready": [
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2127108975982923008/run-input.json"
+    ],
+    "accepted": [
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2100447124681568896/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2053566049119753216/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2126055064030395392/run-input.json"
+    ]
+  },
+  "native_v11": {
+    "utc": "2026-10-20T04:52:10.868857+00:00",
+    "stage": "WAITING_FOR_NATIVE_V8_LOCK_RELEASE",
+    "plan": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native-coordinator-v11-plan.json"
+  },
+  "additional_photon_packet": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native212606-probability-packets-v1/summary.json",
+    "sha256": "6ccc5f8dfd798c57333eb28d75d787eb59edd9a3033b493c3b60e34d523f1191"
+  },
+  "scene_geometry_additional_signal": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-geometry-v1/summary.json",
+    "sha256": "983bcab6090cf49271df3de339b267f1df66efa650b9c5a3cf9af3721aacffab"
+  },
+  "verification": {
+    "ruff_and_complexity10": "PASS post_boi",
+    "post_boi_tests": "25 passed",
+    "checks_directory": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v7",
+    "frozen_original_integration_code_changed": false
+  },
+  "scope": "Server-only work. None of the newly reported preparation/control results is a completed candidate probability/physical validation. Detector recovery calibration remains deferred/open."
+}

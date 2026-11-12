@@ -1,0 +1,427 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_VERIFIED",
+  "checked_utc": "2026-10-10T22:53:57.912584+00:00",
+  "finished_utc": "2026-10-10T21:50:31.439706+00:00",
+  "full_survey_elapsed_seconds": 431806.994459,
+  "views": {
+    "psf_flat": {
+      "status": "COMPLETE",
+      "attempted_sources": 406547,
+      "vetted_sources": 57439,
+      "boi_proposals": 3422,
+      "boi_groups": 3411,
+      "signal_labels": {
+        "HELD": 60487,
+        "DISMISSED": 33392,
+        "BOI": 3422
+      },
+      "periodic_admitted_proposals": 7228,
+      "catalogue_sha256": "8903a3b4d021787359bbfc81515b697c51849d41cb2ed18d1d30b807873e06b5"
+    },
+    "psf_qdiag": {
+      "status": "COMPLETE",
+      "attempted_sources": 406547,
+      "vetted_sources": 421,
+      "boi_proposals": 16,
+      "boi_groups": 16,
+      "signal_labels": {
+        "DISMISSED": 520,
+        "HELD": 159,
+        "BOI": 16
+      },
+      "periodic_admitted_proposals": 695,
+      "catalogue_sha256": "55b3aa4c366ec325875810188b7912f0d1140b4abe91a75128ba549b43e57311",
+      "batches": [
+        {
+          "batch": 1,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 106485861
+        },
+        {
+          "batch": 2,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 225614732
+        },
+        {
+          "batch": 3,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 319951897
+        },
+        {
+          "batch": 4,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 258823503
+        },
+        {
+          "batch": 5,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 7,
+          "pixel_download_bytes": 982963996
+        },
+        {
+          "batch": 6,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 7,
+          "pixel_download_bytes": 262256377
+        },
+        {
+          "batch": 7,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 277114829
+        },
+        {
+          "batch": 8,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": true,
+            "status": "RECONCILED",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 7,
+          "pixel_download_bytes": 524303827
+        },
+        {
+          "batch": 9,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "079cd6b1aed99915c34ed4eea72de6eb9d9853474b7d11ddf83d09552728fd73",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 21
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 110330808
+        }
+      ]
+    },
+    "sap_qdiag": {
+      "status": "COMPLETE",
+      "attempted_sources": 406547,
+      "vetted_sources": 877,
+      "boi_proposals": 9,
+      "boi_groups": 9,
+      "signal_labels": {
+        "DISMISSED": 1288,
+        "HELD": 212,
+        "BOI": 9
+      },
+      "periodic_admitted_proposals": 1509,
+      "catalogue_sha256": "5b369f1d32a0599d2ecbd65e3839eb3e6ee968bf295046ddda3394db01e7c525",
+      "batches": [
+        {
+          "batch": 1,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 222689735
+        },
+        {
+          "batch": 2,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 346824562
+        },
+        {
+          "batch": 3,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 73151842
+        },
+        {
+          "batch": 4,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 189857201
+        },
+        {
+          "batch": 5,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 4,
+          "pixel_download_bytes": 3820599
+        },
+        {
+          "batch": 6,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 210258030
+        },
+        {
+          "batch": 7,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 162788009
+        },
+        {
+          "batch": 8,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 115621424
+        },
+        {
+          "batch": 9,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": true,
+            "status": "RECONCILED",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 116947406
+        },
+        {
+          "batch": 10,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 167794331
+        },
+        {
+          "batch": 11,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 1202599752
+        },
+        {
+          "batch": 12,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 132438379
+        },
+        {
+          "batch": 13,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 713310950
+        },
+        {
+          "batch": 14,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 116943038
+        },
+        {
+          "batch": 15,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 136519954
+        },
+        {
+          "batch": 16,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 7,
+          "pixel_download_bytes": 911898778
+        },
+        {
+          "batch": 17,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 50
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 106804539
+        },
+        {
+          "batch": 18,
+          "status": "COMPLETE",
+          "archive_full_verification": "PASS",
+          "native_replay": {
+            "plan_sha256": "610887ec6acd5649f27ad3e82a5f82e69323d173acc269693899ff75332fb5f6",
+            "selected": false,
+            "status": "FROZEN_ROWS",
+            "verified_input_sources": 27
+          },
+          "catalogue_network_calls": 6,
+          "pixel_download_bytes": 55669241
+        }
+      ]
+    }
+  },
+  "combined": {
+    "bois": 3427,
+    "boi_proposals": 3447,
+    "boi_sources": 2907,
+    "sha256": "58292690ec7672ee6a3b706dc27d2f2c7bf95e9422a74a102ee4267f08c751bc"
+  },
+  "main_transit": {
+    "bois": 147,
+    "boi_proposals": 156,
+    "boi_sources": 116,
+    "sha256": "cb64386423d3b01add2ca757b5f2ee3043eaa81c315e8c8e81d4e1f9ce7bc7d2"
+  },
+  "reconciliation": "Exact catalogue grouping replay against all per-view BOI proposals and main-transit admission identities",
+  "flat_integrity": "Sealed final receipt/catalogue hashes verified; original flat batch/source checks retained from seal, no full-corpus rehash",
+  "service": "MainPID=0\nExecMainStatus=0\nControlGroup=\nActiveState=inactive\nSubState=dead\n",
+  "supervisor": "failed\ninactive\n",
+  "unexpected_workers": [],
+  "disk_free_bytes": 1753120120832,
+  "issues": [],
+  "pipeline_changes": false,
+  "corpus_rehash_performed": false
+}

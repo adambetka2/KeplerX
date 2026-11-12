@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-21T14:10:07.054725+00:00",
+  "code_commit": "bb153cd4721e262d4d8336ac986c1bc4b3e3f747",
+  "release": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-response-20261021-bb153cd4",
+  "linux_tests_passed": 34,
+  "installed_response_control": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/deployment-response-bb153cd4/response-package-control.json",
+  "repaired_native_completed": 16,
+  "repaired_native_failures": 0,
+  "completed_calibrated_campaign": {
+    "signal_id": "mk-sap-20261019-2127059467901330560-1",
+    "audit": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2127059467901330560/generation-05-probability-calibrated/campaign/audit-20261021T135939451941Z.json",
+    "FPP": {
+      "repeats": [
+        0.3798687770550695,
+        0.3446926824527179
+      ],
+      "mean": 0.3622807297538937,
+      "sample_standard_deviation": 0.02487325502898233,
+      "minimum": 0.3446926824527179,
+      "maximum": 0.3798687770550695,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "NFPP": {
+      "repeats": [
+        0.022161257456043165,
+        0.021438058016043354
+      ],
+      "mean": 0.02179965773604326,
+      "sample_standard_deviation": 0.0005113792281741805,
+      "minimum": 0.021438058016043354,
+      "maximum": 0.022161257456043165,
+      "unfavorable_indices": [
+        0,
+        1
+      ],
+      "mean_passes": false
+    },
+    "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+    "complete_repeats": 2,
+    "freeze_sha256": "c3fdbcf85630db60cf8a5c7d587268a9807b655f6903d041cb9866a31a2832d1"
+  },
+  "active_native": {
+    "source_id": "2103022868108864896",
+    "signal_id": "mk-sap-20261019-2103022868108864896-2",
+    "case": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/candidates/2103022868108864896/generation-signal-2-02-calibrated-group",
+    "unit": "mk-ten-native7880880-s2-calibrated-group-v01",
+    "workers": 8,
+    "scope": "Distinct suppliedeventfamily from closed53.81d signal1;48.625d signal2 masks signal1,no overlapping suppliedevents. GroupQ2/6/10/14 selected geometrically beforeFPP."
+  },
+  "statistical_checkpoint": {
+    "completed_integrations": 108,
+    "candidates": 45,
+    "stopped_after_first_two": 44,
+    "completed_all_twenty_but_numerical_fail": 1,
+    "validated": 0
+  },
+  "external_reservations": [
+    {
+      "source_id": "2102612750272489216",
+      "signal_id": "rust-v6-2102612750272489216-1",
+      "status": "LOCAL_STOPPED_FIRST_TWO_NEVER_DUPLICATE",
+      "report": "results/boi-validation/local-kic7595917-repaired-futility-20261021.json"
+    },
+    {
+      "source_id": "2073666564790289664",
+      "signal_id": "rust-v6-2073666564790289664-1",
+      "status": "LOCAL_STOPPED_FIRST_TWO_NEVER_DUPLICATE",
+      "report": "results/boi-validation/local-kic4948140-repaired-futility-20261021.json"
+    },
+    {
+      "source_id": "2102918384442366592",
+      "signal_id": "rust-v6-2102918384442366592-1",
+      "status": "LOCAL_OWNED_NEXT_NO_SERVER_DUPLICATE"
+    }
+  ],
+  "limitations": "Calibrated fractions remain modeled finite-support/Tmag approximations. Candidate-specific scene/clock/noise/body/source/companions/literature reviews remain separate. No physicaldenial or validation from high/low FPP alone.",
+  "automation": "DELETED_BY_USER"
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-20T11:14:55.240916+00:00",
+  "status": "HELD_BACKGROUND_STELLAR_MODEL_DOMAIN",
+  "source_id": "2106383701495087232",
+  "kic": 8805426,
+  "scientific_disposition": "REMAINS_PC",
+  "completed_full_primary_runs": 0,
+  "preserved_completed_families_per_seed": [
+    13,
+    13
+  ],
+  "next_family": "BEB",
+  "unsupported_background_star": {
+    "Mact": 1.337,
+    "radius": 0.003141228414515195,
+    "teff": 17338.039977541375,
+    "logg": 9.57,
+    "[M/H]": -0.07,
+    "Av": 0.141,
+    "Kepler_Vega": 25.522334,
+    "row_index": 853
+  },
+  "grid_logg_maximum": 9.5,
+  "failed_logg": 9.57,
+  "reproduced_batches": [
+    17,
+    38
+  ],
+  "evidence": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-20261020-v1/2106383701495087232/background-model-domain-failure.json",
+    "sha256": "a7ab58d3b41d5cd61a364b89f571f8a55bae852d946176ea34ae52e6e528dfa1"
+  },
+  "action": "Park case and advance. Do not resume, clip, extrapolate, redraw a population or remove this star/scenario. A model amendment requires explicit review, separate generation and revalidation. Preserve all26completed family weights and original RNG states.",
+  "scope": "Science/model-support hold, not a failed FPP threshold, false-positive proof or reversal of the accepted native fit. No full66-family posterior exists."
+}

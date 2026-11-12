@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-21T14:25:23.257424+00:00",
+  "cases": [
+    {
+      "source_id": "2052781685012928512",
+      "signal_id": "mk-sap-20261019-2052781685012928512-1",
+      "kic": "3851142",
+      "response_pixel_review": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-3851142-s1-v01/review.json",
+      "exact_signal_vetting": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-3851142-s1-v01/existing-vetting-review-packet.json",
+      "official_population": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-3851142-s1-v01/population-provenance.json",
+      "field_rows": 32894,
+      "population_requests": 1,
+      "missing_properties_full_pool": [
+        "2052781680711991808",
+        "2052781680712002432",
+        "2052781685007890944",
+        "2052781685007891840",
+        "2052781685007905024",
+        "2052781685013278720"
+      ],
+      "missing_properties_largest_group": [
+        "2052781680711991808",
+        "2052781680712002432",
+        "2052781685007890944",
+        "2052781685007891840",
+        "2052781685007905024",
+        "2052781685013278720"
+      ],
+      "status": "CONTAMINANT_STELLAR_INPUTS_REQUIRED_REMAINS_PC",
+      "scope": "Data collection completed;fitted-depth-capable neighbors lack physical properties in present scene. Not an exhaustive literature absence claim. No sourceomission,placeholder,FPP allocation orphysicaldenial."
+    },
+    {
+      "source_id": "2053152460941582208",
+      "signal_id": "mk-sap-20261019-2053152460941582208-2",
+      "kic": "4160073",
+      "response_pixel_review": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-4160073-s2-v01/review.json",
+      "exact_signal_vetting": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-4160073-s2-v01/existing-vetting-review-packet.json",
+      "official_population": "/srv/kbonus/dump/mk-triceratops-v2-20261020/goal-ten-20261020/response-readiness-4160073-s2-v01/population-provenance.json",
+      "field_rows": 34336,
+      "population_requests": 1,
+      "missing_properties_full_pool": [
+        "2053152460941585408",
+        "2053152460950012672"
+      ],
+      "missing_properties_largest_group": [
+        "2053152460941585408",
+        "2053152460950012672"
+      ],
+      "status": "CONTAMINANT_STELLAR_INPUTS_REQUIRED_REMAINS_PC",
+      "scope": "Data collection completed;fitted-depth-capable neighbors lack physical properties in present scene. Not an exhaustive literature absence claim. No sourceomission,placeholder,FPP allocation orphysicaldenial."
+    }
+  ],
+  "software_release": "/srv/kbonus/dwarfs/followup/triceratops-kepler-v2-response-20261021-bb153cd4",
+  "server_progress": {
+    "completed_integrations": 110,
+    "candidates": 46,
+    "stopped_after_first_two": 45,
+    "completed_all_twenty_but_numerical_fail": 1,
+    "validated": 0
+  },
+  "no_active_inference": true,
+  "unknown": "Missing contaminant properties in current TIC/Gaia-based scenes;no exhaustive published-data/stellar-characterization claim.",
+  "automation": "Deleted at userrequest;notrecreated"
+}

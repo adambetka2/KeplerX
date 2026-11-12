@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-27T11:29:36.252704+00:00",
+  "state": "FIRST_FALSE_POSITIVE_CONTROLS_COMPLETE_POSITIVE_CONTROL_IN_PROGRESS",
+  "automation": "monitor-standard-post-boi-intake deleted at Adam explicit request; do not recreate.",
+  "scope": "Calibration only; no production native/method/candidate acceptance has been fabricated.",
+  "engine": "fast_triceratops.engine() exact performance-engineered copy of pinned V3TRICERATOPS; priors/physical curves unchanged by acceleration.",
+  "draws_per_scenario": 1000000,
+  "repeats_per_control": 2,
+  "original75": {
+    "plan": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/psf-calibration75-v2/plan.json",
+      "sha256": "e1ee42bf7bfba90804b98df90de39473888d0f586166079b023faddd52d9baa2"
+    },
+    "prepared": 75,
+    "probabilities_complete": 0
+  },
+  "initial_q05": {
+    "selected_controls": 15,
+    "completed_probability_controls": 8,
+    "completed_false_positive_controls": 8,
+    "two_seed_mean_numerical_passes": 0,
+    "summary": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-q05-v2/probability-calibration-v2/summary.json",
+      "sha256": "496578189b1d9d7edf824a10e0bf5280c32007afbca8f2b41ffd9390ffbb543e"
+    },
+    "dispositions": [
+      {
+        "case_id": "physical-control-01",
+        "label": "FALSE POSITIVE",
+        "state": "CALIBRATION_INPUT_UNSUPPORTED",
+        "failure": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-q05-v2/probability-calibration-v1/controls/physical-control-01/input-failure.json",
+          "sha256": "bdeaca7fbf98bacc260a63db00ae0a97d3a66d6fa2f9eabc394d1f11e4f552d4"
+        }
+      },
+      {
+        "case_id": "physical-control-02",
+        "label": "FALSE POSITIVE",
+        "state": "NO_Q5_CATALOGUE_TRANSIT_COVERAGE"
+      },
+      {
+        "case_id": "physical-control-04",
+        "label": "FALSE POSITIVE",
+        "state": "CALIBRATION_INPUT_UNSUPPORTED",
+        "failure": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-q05-v2/probability-calibration-v1/controls/physical-control-04/input-failure.json",
+          "sha256": "bbd85e3fda0a4436cbab4569f9e317bd7cf1bebfd54aab1105c5cabcdb25a8e8"
+        }
+      },
+      {
+        "case_id": "physical-control-05",
+        "label": "FALSE POSITIVE",
+        "state": "NO_POSITIVE_Q5_ARCHIVED_FLAT_PRIMARY"
+      },
+      {
+        "case_id": "physical-control-06",
+        "label": "FALSE POSITIVE",
+        "state": "NO_Q5_CATALOGUE_TRANSIT_COVERAGE"
+      },
+      {
+        "case_id": "physical-control-09",
+        "label": "CONFIRMED",
+        "state": "CALIBRATION_INPUT_UNSUPPORTED",
+        "failure": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-q05-v2/probability-calibration-v1/controls/physical-control-09/input-failure.json",
+          "sha256": "bdeaca7fbf98bacc260a63db00ae0a97d3a66d6fa2f9eabc394d1f11e4f552d4"
+        }
+      },
+      {
+        "case_id": "physical-control-10",
+        "label": "CONFIRMED",
+        "state": "CALIBRATION_INPUT_UNSUPPORTED",
+        "failure": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-q05-v2/probability-calibration-v1/controls/physical-control-10/input-failure.json",
+          "sha256": "bdeaca7fbf98bacc260a63db00ae0a97d3a66d6fa2f9eabc394d1f11e4f552d4"
+        }
+      }
+    ],
+    "limitations": [
+      "One quarter and a small, correlated set of catalogue controls do not establish global reliability.",
+      "Both selected confirmed controls have capable physical neighbors without supported stellar parameters; their probability calculations were not allocated.",
+      "A single favorable seed is not a pass; all fixed repeats remain in the mean.",
+      "Archived flattening and response-uncertainty qualification remain open."
+    ]
+  },
+  "positive_pair": {
+    "plan": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/physical-calibration-original75-ch14-q05-v1/plan.json",
+      "sha256": "2bdec6ffcc5a768f16233ff46ca5fe637b7aac89388e8ec5d3a06efa720f11b3"
+    },
+    "reconstruction": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/calibration-ch14-b3-q05-v1/replay-v1/result.json",
+      "sha256": "e446a76823ed7611691424fa368c59346edd5418e4e2ff7b7db2d7c4bb73271c"
+    },
+    "confirmed_control": "K01505.01 / KIC9813499",
+    "false_positive_control": "K01485.01 / KIC9692345",
+    "selection": "Original75cohort ranked by metadata readiness before any new probability outcomes. Original labels, clocks, priors and seed identities retained."
+  },
+  "new_validated_planets": 0,
+  "production_method_accepted": null,
+  "production_candidate_acceptance": null
+}

@@ -1,0 +1,229 @@
+{
+  "source_case": "daa1be0931b19e489d3780e0",
+  "source_packet": {
+    "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/calibration/ppm10000-v1/inputs/daa1be0931b19e489d3780e0/packet.json",
+    "bytes": 6182,
+    "sha256": "ef97f433455527ad898f45841393afa464844a8425b1b79e93dc6d1ceb77b6ad"
+  },
+  "fixture": {
+    "path": "/Users/adam/Other/spacelab/3rd-campaign/tests/fixtures/vetting-failure.npz",
+    "bytes": 19759,
+    "sha256": "4b2d8f30616cb1ce5acce2678368ba82904b15fd2578e7cb365092a49d1e390a"
+  },
+  "packet": {
+    "schema": 1,
+    "source_id": "2099079950693044224",
+    "time_system": "BKJD_TDB",
+    "view": "psf_flat",
+    "exposure_days": 0.02043361111111111,
+    "flux_convention": "delivered_psf_flat",
+    "stellar": {
+      "teff": 5946.67041015625,
+      "logg": 4.646399974822998,
+      "density_solar": 0.7756214025761948,
+      "mass_solar": 1.0655568033854168,
+      "radius_solar": 1.111669287109375,
+      "luminosity_solar": 1.392810424056838,
+      "basis": "Gaia Teff/logg; Mamajek fiducial mass/radius for synthetic geometry only, not measured host parameters"
+    },
+    "normalization_by_quarter": {
+      "0": 1631.9290999198342
+    },
+    "provenance": {
+      "native": {
+        "source": {
+          "path": "/Volumes/discPCIe/data/kbonus/lc2/shard-0513/source.parquet",
+          "bytes": 11585557,
+          "mtime_ns": 1788492220730769577,
+          "recorded_sha256": "276de7fa655964ebb3fbb0bdd8b593e396fe82db19f4658bfe09e88ef1dc6719"
+        },
+        "quarter": {
+          "path": "/Volumes/discPCIe/data/kbonus/lc2/shard-0513/quarter.parquet",
+          "bytes": 3126255,
+          "mtime_ns": 1788492220745294034,
+          "recorded_sha256": "a9e0f1ade3b26e2320655064b7127cf6dd8baebfcdd81972dccb0c86f7ff667e"
+        },
+        "cadence": {
+          "path": "/Volumes/discPCIe/data/kbonus/lc2/shard-0513/cadence.parquet",
+          "bytes": 452869784,
+          "mtime_ns": 1788492220688183622,
+          "recorded_sha256": "053508795fa86df77016708b9a851d821f48e92e90d073d12f4029f37d1b8524"
+        }
+      },
+      "raw_fits_sha256": "ee897ed400e67515f22b9162021ee29c9af08a9267fac398da0c5900348657d7",
+      "primary_header_cards": "SIMPLE  =                    T / conforms to FITS standard                      \nBITPIX  =                    8 / array data type                                \nNAXIS   =                    0 / number of array dimensions                     \nEXTEND  =                    T                                                  \nNEXTEND =                    2 / number of standard extensions                  \nEXTNAME = 'PRIMARY '           / name of extension                              \nEXTVER  =                    1 / extension version number (not format version)  \nDOI     = '10.17909/7jbr-w430' / Digital Object Identifier for the HLSP data col\nHLSPID  = 'KBONUS-BKG'                                                          \nHLSPLEAD= 'Jorge martinez-Palomera'                                             \nHLSPVER = 'V1.0    '                                                            \nLICENSE = 'CC BY 4.0'                                                           \nLICENURL= 'https://creativecommons.org/licenses/by/4.0/'                        \nORIGIN  = 'PSFMACHINE'         / Program used for photometry                    \nDATE    = '2022-07-27'         / file creation date.                            \nCREATOR = 'lightkurve.LightCurve.to_fits()' / pipeline job and program used t   \nTELESCOP= 'Kepler  '           / Telescope name                                 \nINSTRUME= 'Kepler Photometer'  / Telescope instrument                           \nFILTER  = 'KEPLER  '                                                            \nTIMESYS = 'TDB     '           / Time scale                                     \nOBJECT  = 'KIC 2141730'        / String version of Target id                    \nKEPLERID=              2141730 / Kepler identifier                              \nRADESYS = 'ICRS    '           / reference frame of celestial coordinates       \nRA_OBJ  =    286.3533089376007 / Right ascension [deg]                          \nDEC_OBJ =    37.57720965379871 / Declination [deg]                              \nEQUINOX =               2016.0 / Coordinate equinox                             \nPROCVER = '2.0.9   '                                                            \nVERSION = '1.1.2   '           / Version of ORIGIN                              \nAPERTURE= 'PSF + SAP'          / Type of photometry in file                     \nMISSION = 'Kepler  '           / Mission                                        \nOBSMODE = 'long cadence'       / Observation mode                               \nXPOSURE =             1765.464 / Exposure time [s]                              \nMJD-BEG =    54953.03907252848 / Begining of observation                        \nMJD-END =    56423.50139254052 / End of observation                             \nLABEL   = 'KIC 2141730'        / Object label                                   \nTARGETID= '2141730 '           / Target identifier                              \nKEPMAG  =     17.6889991760254 / Kepler magnitude [mag]                         \nTPFORG  =              2141692 / TPF id of object origin                        \nGAIAID  = 'Gaia DR3 2099079950693044224' / Gaia designation                     \nPMRA    = -0.00269539295238155 / Gaia RA proper motion [mas/yr]                 \nPMDEC   = -0.00369697179098994 / Gaia Dec proper motion [mas/yr]                \nPARALLAX=  0.01129300612917026 / Gaia parallax [mas]                            \nGMAG    =            17.838503 / Gaia G magnitude [mag]                         \nRPMAG   =            17.419256 / Gaia RP magnitude [mag]                        \nBPMAG   =            18.135347 / Gaia BP magnitude [mag]                        \nQDETECT = '100000000000000000' / Detection flag per quarter                     \nCHECKSUM= 'ZEGfaBFeVBFeZBFe'   / HDU checksum updated 2023-03-30T14:54:05       \nDATASUM = '0       '           / data unit checksum updated 2023-03-30T14:54:05 \nEND                                                                             "
+    },
+    "stored_cadences": 469,
+    "usable_cadences": 402,
+    "baseline_days": 9.706415853463113,
+    "first_valid_bkjd": 120.53968036780134,
+    "last_valid_bkjd": 130.24609622126445,
+    "median_formal_error_ppm": 1623.0756703711218,
+    "additional_detrending": false,
+    "arrays": {
+      "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/calibration/ppm10000-v1/inputs/daa1be0931b19e489d3780e0/photometry.npz",
+      "bytes": 19759,
+      "sha256": "4b2d8f30616cb1ce5acce2678368ba82904b15fd2578e7cb365092a49d1e390a"
+    },
+    "case_id": "daa1be0931b19e489d3780e0",
+    "calibration_case": true
+  },
+  "detections": {
+    "schema": 1,
+    "source_id": "2099079950693044224",
+    "baseline": false,
+    "prepared": {
+      "path": "/Users/adam/Other/spacelab-runs/3rd-campaign/calibration/ppm10000-v1/inputs/daa1be0931b19e489d3780e0/packet.json",
+      "bytes": 6182,
+      "sha256": "ef97f433455527ad898f45841393afa464844a8425b1b79e93dc6d1ceb77b6ad"
+    },
+    "duration_days": [
+      0.010416666666666666,
+      0.011458333333333334,
+      0.012604166666666668,
+      0.013864583333333336,
+      0.01525104166666667,
+      0.01677614583333334,
+      0.018453760416666673,
+      0.020299136458333346,
+      0.022329050104166682,
+      0.024561955114583353,
+      0.02701815062604169,
+      0.029719965688645857,
+      0.03269196225751045,
+      0.03596115848326149,
+      0.03955727433158765,
+      0.043513001764746415,
+      0.04786430194122106,
+      0.05265073213534317,
+      0.0579158053488775,
+      0.06370738588376525,
+      0.07007812447214178,
+      0.07708593691935596,
+      0.08479453061129157,
+      0.09327398367242073,
+      0.1026013820396628,
+      0.11286152024362911,
+      0.12414767226799202,
+      0.13656243949479124,
+      0.15021868344427036,
+      0.1652405517886974,
+      0.18176460696756716,
+      0.1999410676643239,
+      0.2199351744307563,
+      0.24192869187383195,
+      0.2661215610612152,
+      0.29273371716733676,
+      0.3220070888840704,
+      0.35420779777247746,
+      0.3896285775497253,
+      0.42859143530469784,
+      0.4714505788351677,
+      0.5185956367186845,
+      0.570455200390553,
+      0.6275007204296084,
+      0.6902507924725693,
+      0.7592758717198262,
+      0.8352034588918089,
+      0.9187238047809898,
+      1.0
+    ],
+    "period_trial_count": 10071,
+    "excluded_short_segment_cadences": 0,
+    "candidates": [
+      {
+        "period": 2.584388822434234,
+        "t0": 121.46558344985455,
+        "tdur": 0.012604166666666668,
+        "mes": 9.954960801985004,
+        "observed_events": 4,
+        "pass": 1,
+        "signal_id": "2099079950693044224:01",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 1.2204272562662613,
+        "t0": 120.54985059493688,
+        "tdur": 0.013864583333333336,
+        "mes": 7.705120823643906,
+        "observed_events": 7,
+        "pass": 2,
+        "signal_id": "2099079950693044224:02",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 0.5787539531363151,
+        "t0": 120.85092459528514,
+        "tdur": 0.013864583333333336,
+        "mes": 152.9036171545303,
+        "observed_events": 13,
+        "pass": 3,
+        "signal_id": "2099079950693044224:03",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 0.5031668791503819,
+        "t0": 120.83274880656045,
+        "tdur": 0.022329050104166682,
+        "mes": 9.340314463085647,
+        "observed_events": 14,
+        "pass": 4,
+        "signal_id": "2099079950693044224:04",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 0.6266109721099274,
+        "t0": 120.79323140321839,
+        "tdur": 0.010416666666666666,
+        "mes": 7.462493732248935,
+        "observed_events": 12,
+        "pass": 5,
+        "signal_id": "2099079950693044224:05",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 2.661669013309447,
+        "t0": 121.99288939211414,
+        "tdur": 0.01677614583333334,
+        "mes": 56.14158631821438,
+        "observed_events": 3,
+        "pass": 6,
+        "signal_id": "2099079950693044224:06",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 1.784396683828712,
+        "t0": 121.0371020357092,
+        "tdur": 0.01525104166666667,
+        "mes": 50.441898250083874,
+        "observed_events": 3,
+        "pass": 7,
+        "signal_id": "2099079950693044224:07",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 2.481778891747676,
+        "t0": 121.56734263917193,
+        "tdur": 0.013864583333333336,
+        "mes": 11.121609290291687,
+        "observed_events": 3,
+        "pass": 8,
+        "signal_id": "2099079950693044224:08",
+        "source_id": "2099079950693044224"
+      },
+      {
+        "period": 1.378874387234708,
+        "t0": 121.62515816096608,
+        "tdur": 0.013864583333333336,
+        "mes": 8.344447879357007,
+        "observed_events": 3,
+        "pass": 9,
+        "signal_id": "2099079950693044224:09",
+        "source_id": "2099079950693044224"
+      }
+    ],
+    "proposal_count": 16119,
+    "reached_pass_limit": false
+  },
+  "scope": "Frozen development-curve control reproducing the global cosine/transit fit numerical failure; not a planet or pure-noise control"
+}

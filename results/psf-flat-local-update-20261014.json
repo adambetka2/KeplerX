@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-14T12:11:57.520285+00:00",
+  "pilot_status": "RUNNING_UNSCORED",
+  "launch": {
+    "workers": 10,
+    "nice": 0,
+    "cpu_cores": 10,
+    "performance_cores": 8,
+    "efficiency_cores": 2,
+    "retained_completed_searches": 530,
+    "launch_receipt": "dump/psf-flat-retrieval-20261014-v1/usable1000-v1/launch-full.json",
+    "launch_receipt_sha256": "0255cf294d79da9693bbbade6c99a47081f74f288032b58c6feb7bb5de91d0cd",
+    "driver_sha256": "b1aff87436abad6a2ade82eba2c238ccd346602aa8ccc1fae7fb591089fd46c1",
+    "completed_searches": {
+      "physical_local_floor05_coherence_duration_dedup_sap_source_flux_global_fundamental_knot075_drop002": {
+        "SEARCHED": 601,
+        "DETECTOR_INELIGIBLE": 2,
+        "UNEXPECTED_ERROR": 2
+      },
+      "delivered_psf_flat_segment_intercepts_v1": {}
+    },
+    "resource_check": "dump/psf-flat-retrieval-20261014-v1/usable1000-v1/execution-full-v1/resource-check.json",
+    "measured_cpu_percent_sum": 907.7
+  },
+  "real_sources": {
+    "selection": "results/psf-flat-real5000-20261014.csv",
+    "selection_sha256": "4ac3acfa69148af568444d530809d95ef3f09b0fc7dc6f50248e3a3a14c11b80",
+    "selected": 5000,
+    "population": {
+      "K": 4753,
+      "M": 247
+    },
+    "last_server_queue_rank": 8235,
+    "excluded_prefix": 3235,
+    "excluded_statuses": {
+      "METADATA_UPPER_BOUND_BELOW_100": 3230,
+      "INPUT_INELIGIBLE": 5
+    },
+    "prepared_cadences": 132193500,
+    "minimum_prepared_cadences": 179,
+    "magnitude_g_range": [
+      12.173,
+      16.399
+    ],
+    "all_selected_actual_preparation_passed": true,
+    "independent_local_flat_replays": 20,
+    "selection_receipt": "dump/psf-flat-retrieval-20261014-v1/real5000-usable-v1/selection.json",
+    "selection_receipt_sha256": "e04f7a1290d818d0e66a6f942e2b26c89e2fc8f525598984934abea64b660cb4",
+    "verification_receipt": "dump/psf-flat-retrieval-20261014-v1/real5000-usable-v1/verification.json",
+    "verification_receipt_sha256": "1af802a50cc9cddb4bc201fe8767707a1af9cb2a465e7226bf4f5bb861a097d9",
+    "detection": "DEFERRED_UNTIL_HOME",
+    "canonical_export_receipt": "dump/psf-flat-retrieval-20261014-v1/real5000-usable-v1/canonical-export-v2.json",
+    "canonical_export_receipt_sha256": "85297e67fca2fea0d75e47a7dc17bfcbbbcc56f9275a560a401b609225f26c87"
+  },
+  "server_study": {
+    "running_workers": 32,
+    "operations": "READ_ONLY_CORPUS_AND_PROCESS_CHECKS"
+  },
+  "checks": {
+    "tests": {
+      "passed": 58,
+      "command": "uv run --no-project --python <study runtime> python -m pytest dwarfs/experiments dwarfs/shallow -q",
+      "initial_collection_failure": "The pytest console entry point omitted the repository root from sys.path; using python -m pytest passed."
+    },
+    "changed_file_ruff": "PASS",
+    "experiments_complexity_max_10": "PASS",
+    "existing_unchanged_experiments_lint": [
+      {
+        "path": "dwarfs/experiments/compare_photometry.py",
+        "code": "I001",
+        "line": 3
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 111
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 114
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 116
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_summary.py",
+        "code": "ISC004",
+        "line": 118
+      },
+      {
+        "path": "dwarfs/experiments/reprocess_validation.py",
+        "code": "RUF046",
+        "line": 407
+      }
+    ]
+  }
+}

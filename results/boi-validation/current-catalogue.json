@@ -1,0 +1,14 @@
+{
+ "schema": 1,
+ "updated_utc": "2026-10-26T16:32:42.344335+00:00",
+ "main_rust_catalogue": "results/kbonus-20261010/transit-boi-catalogue.json.gz",
+ "current_selection": "results/boi-validation/boi-current-selection-20261026.json",
+ "membership_rule": "Retain every frozen main Rust BOI regardless of historical manual YES/NO or delivery removal.",
+ "completeness_denominator": {
+  "bois": 147,
+  "proposals": 156,
+  "sources": 116
+ },
+ "manual_decisions_role": "Historical review and follow-up prioritization only; never a catalogue-membership or completeness filter.",
+ "authorization": "2026-10-26: PI restores original first Rust catalogue membership before manual exclusions for completeness and fair reporting; assess restored signals for standard statistical follow-up."
+}

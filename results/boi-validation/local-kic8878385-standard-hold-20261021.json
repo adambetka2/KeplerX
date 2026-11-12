@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-21T04:01:52.216910+00:00",
+  "source_id": "2127169041106093184",
+  "kic": 8878385,
+  "tic": 158934005,
+  "signal_id": "rust-v6-2127169041106093184-1",
+  "status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "All29sources retained. Same dominant source group accounts for>.9996Gaussian light: target Q2.5570 vs calibrated core.7360,Q6.5544/.7499,Q3.3428/.5394,Q7.3388/.5312, while Q1/5/9agree more closely and are retained. Seasonal dilution changes and response allocation are materially different. Core diagnostic is not complete far-source flux measurement. Missing estimate for one faint source remains explicit; no source deleted. No native or FPP launched.",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/aperture-response-review-v1.json",
+    "sha256": "36f556f295daa10b81bac3a65105196f59e8c375e5a152a30922e8999425d4bf"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/scene-preview-review-v1.json",
+    "sha256": "2fa3c466e834053974cbb5102a5d761178f277760cde7098c0b6ec5fe0f594d5"
+  },
+  "parents": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/parent-authentication-v1.json",
+    "sha256": "8fac7a39ee0eae892e52551818747e2cd2fd304415ae2d27b8cb0734868847f9"
+  },
+  "prfs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/prf-authentication-v1.json",
+    "sha256": "097db26cb4026af65dbdcf99a4e35305d2ca1fb5a146cb47df1a7fbc05a6384c"
+  },
+  "stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/native-stellar-review.json",
+    "sha256": "3a6e7fb66ef5b634c318524f20657f36a0ca55002c655d1da051d66a50001261"
+  },
+  "retained_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/pre-native-retained-review.json",
+    "sha256": "0c0983ccde7a1035610fbff48d2040c99e985898dd9fad3c6beb4d1bbb6220a1"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2127169041106093184/selection.json",
+    "sha256": "f9bdfdfcf9953bc6a633beca650d0350c2b6eed28c6e6a64bc37802132d4ceb1"
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve all evidence; no favorable season selection or response reconstruction tonight. Advance eligible full queue."
+}

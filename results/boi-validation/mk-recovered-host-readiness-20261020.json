@@ -1,0 +1,328 @@
+{
+  "utc": "2026-10-20T04:53:26.827807+00:00",
+  "goal": {
+    "validated_new": 0,
+    "target": 50,
+    "completed_candidate_followups": 0,
+    "astrophysical_false_positive_rate": null,
+    "instrumental_false_positive_rate": null,
+    "scope": "BOI labels preserved. A numerical gate, clock match or catalogue non-match does not establish a new planet or reproduced false-positive mechanism."
+  },
+  "reciprocal_identity_recovery": {
+    "queried_sources": 201,
+    "statuses": {
+      "EXACT_RECIPROCAL_GAIA_TIC_MATCH_REQUIRES_PRIOR_REVIEW": 199,
+      "RECIPROCAL_TARGET_IDENTITY_REVIEW_REQUIRED": 2
+    },
+    "restored_host_prior_proposals": 194,
+    "restored_host_prior_sources": 160,
+    "evidence": [
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/tic-recovery-v1/summary.json",
+        "sha256": "802ee8fd99bf7ee143b41cbb9eaf694d9e776e3a4a1d92bb54c8ce72c397fef5"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/priority-v6/queue.json",
+        "sha256": "fe1e85a36ca3f9d5b013d222ad1a1103cdfb59726b275579b7d2e6a0164ecc03"
+      }
+    ]
+  },
+  "preparation": {
+    "fresh_reciprocal_targets": 6,
+    "native_preparations": 4,
+    "prepared_source_ids": [
+      "2131705076324568448",
+      "2130921124535127424",
+      "2103792461826460288",
+      "2135189836694773504"
+    ],
+    "queue_deferred": [
+      {
+        "source_id": "2080026346196588800",
+        "reason": "11.92arcsec localization uncertainty and50resolved neighbors; improve source ownership before prioritizing expensive probability work."
+      },
+      {
+        "source_id": "2052124108331844608",
+        "reason": "1.06arcsec Gaia neighbor and97-source scene; characterize the close companion/dilution and stellar radius before probability preparation."
+      }
+    ],
+    "registered_fresh_native_queue": 9,
+    "queue_configs": [
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v11/2131705076324568448/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v11/2130921124535127424/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v11/2103792461826460288/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v11/2135189836694773504/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/2079240642062921984/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/2052257699003730176/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/2078045679079431168/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/2081879847927750016/run-input.json",
+      "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v10/2134855001041019904/run-input.json"
+    ],
+    "queue_plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native-coordinator-v11-plan.json",
+      "sha256": "7437e3ef0c78133c8e58dd4de105c750adc066c45c5a4e6141fe0cbd8ecc2b8e"
+    },
+    "scope": "One blocking native-coordinator lock wait afterv8. Fixed registered endpoints and input hashes; no duplicate sampling or probability budget change."
+  },
+  "native_numerical_results": [
+    {
+      "source_id": "2126063585245659136",
+      "endpoint_steps": 12000,
+      "native_quantile_snr_gate": {
+        "passed": true,
+        "radius_ratio_snr": 6.5212068623610095,
+        "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+      },
+      "framework_diagnostics": {
+        "rank_rhat_maximum": 1.0091330190060466,
+        "reference_epoch_bulk_ess": 569.0843958148489,
+        "radius_ratio_median_over_std": 5.570236867958474,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": true
+      },
+      "fitted_clock": {
+        "period_days": 13.383357402518817,
+        "epoch_bkjd": 877.0194706668877,
+        "duration_days": 0.12113051304666525
+      },
+      "posterior_acquisition_audit": {
+        "passed": true,
+        "draws": 80,
+        "maximum_log_density_error": 0.00019781895798587357,
+        "maximum_point_noise_error": 4.3976517860915155e-05,
+        "maximum_live_frame_correction_ppm": 0.003766400524796154
+      },
+      "evidence": [
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v3/2126063585245659136/endpoint-12000.json",
+          "sha256": "ab04e11432162adea0f6ee5683b54d81197241e680dc2e482da95d9356a677f6"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v7/2126063585245659136/native-fit-review.json",
+          "sha256": "0f89f78f6ce903f2aefdea267a31917cc92e1c35756579244aa942745cb6b847"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v7/2126063585245659136/posterior-numerical-check.json",
+          "sha256": "eba115ebadaeabdf944c6873fa2811be4c3a31c0867345148747b3e728077fea"
+        }
+      ],
+      "physical_admission": false,
+      "conditional_timing": {
+        "descriptive_quarter_two_delta_log_density": 8.662134322780105,
+        "quarter_dof": 10,
+        "descriptive_wilks_tail": 0.5644400273807387,
+        "profile_peaks": [
+          {
+            "period_delta_ppm": -251.45893167966418,
+            "delta_from_unscanned_median": 7.560785084925101
+          },
+          {
+            "period_delta_ppm": -53.884056788499464,
+            "delta_from_unscanned_median": 1.5627704865116812
+          },
+          {
+            "period_delta_ppm": 8.980676131416601,
+            "delta_from_unscanned_median": -0.44809000833402024
+          },
+          {
+            "period_delta_ppm": 179.61352262833157,
+            "delta_from_unscanned_median": 7.559353908977982
+          }
+        ],
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-timing-review-v7/2126063585245659136/review.json",
+          "sha256": "93808ff767c84e252c1eba0affabdff0b3b51683bffde362c418fa0808b2adf0"
+        }
+      }
+    },
+    {
+      "source_id": "2131263686828359808",
+      "endpoint_steps": 12000,
+      "native_quantile_snr_gate": {
+        "passed": true,
+        "radius_ratio_snr": 5.2965657831965745,
+        "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+      },
+      "framework_diagnostics": {
+        "rank_rhat_maximum": 1.0152914217304476,
+        "reference_epoch_bulk_ess": 421.99323141634824,
+        "radius_ratio_median_over_std": 2.4763285452956705,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": false
+      },
+      "fitted_clock": {
+        "period_days": 86.8631308988231,
+        "epoch_bkjd": 657.4849589373682,
+        "duration_days": 0.1551112022750975
+      },
+      "posterior_acquisition_audit": {
+        "passed": true,
+        "draws": 80,
+        "maximum_log_density_error": 0.00016157710399511416,
+        "maximum_point_noise_error": 3.895933891221647e-05,
+        "maximum_live_frame_correction_ppm": 0.001824218331947236
+      },
+      "evidence": [
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v4/2131263686828359808/endpoint-12000.json",
+          "sha256": "76eaa7b9270047202e1e6c037da148f5b7d47b05466599a4305ce4bcadcdb65a"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v8/2131263686828359808/native-fit-review.json",
+          "sha256": "c508c62273f81a331b4e941e59869ca2040d5ba6925f61e9996ba6755dedaa2a"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v8/2131263686828359808/posterior-numerical-check.json",
+          "sha256": "eee84b1fdf347be6e5e19a3e484fc1c3b331a6ffc5af95c22b1d9fb5acb0d336"
+        }
+      ],
+      "physical_admission": false,
+      "conditional_timing": {
+        "descriptive_quarter_two_delta_log_density": 10.980559582581979,
+        "quarter_dof": 12,
+        "descriptive_wilks_tail": 0.5305854689290679,
+        "profile_peaks": [
+          {
+            "period_delta_ppm": -17.268540926461327,
+            "delta_from_unscanned_median": -0.010711660877575468
+          },
+          {
+            "period_delta_ppm": 11.512360617640894,
+            "delta_from_unscanned_median": -0.23840318905354252
+          }
+        ],
+        "evidence": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-timing-review-v6/2131263686828359808/review.json",
+          "sha256": "7137cf1e3865c44a072d4bf5c024e50cf6089b43c61465c95867364af8424cd4"
+        }
+      }
+    },
+    {
+      "source_id": "2104058096963805696",
+      "endpoint_steps": 6000,
+      "native_quantile_snr_gate": {
+        "passed": true,
+        "radius_ratio_snr": 13.679728746129891,
+        "snr_definition": "Posterior median divided by half the 16th-to-84th percentile width"
+      },
+      "framework_diagnostics": {
+        "rank_rhat_maximum": 1.020054100641396,
+        "reference_epoch_bulk_ess": 341.05242617180835,
+        "radius_ratio_median_over_std": 12.94503044216149,
+        "criterion": "Rank Rhat<=1.03 for all parameters, reference epoch bulk ESS>=100 and Rp/Rstar median/std>3.",
+        "passed": true
+      },
+      "fitted_clock": {
+        "period_days": 11.792761307979013,
+        "epoch_bkjd": 716.9472305364367,
+        "duration_days": 0.11663349201022648
+      },
+      "posterior_acquisition_audit": {
+        "passed": true,
+        "draws": 80,
+        "maximum_log_density_error": 0.000540676075729607,
+        "maximum_point_noise_error": 7.224233237326597e-05,
+        "maximum_live_frame_correction_ppm": 0.0020503957420814345
+      },
+      "evidence": [
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/oldhost210405-native-v2/2104058096963805696/endpoint-6000.json",
+          "sha256": "ee0780884ced06c41b5af63f0e091c4ebf2debfe56b0db1edc5dbcda274aac69"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v9/2104058096963805696/native-fit-review.json",
+          "sha256": "47dd4aedef573370e47d670f1bfeb19e8a912bfdcf42e396dcafd75f495ff1c1"
+        },
+        {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-acceptance-v9/2104058096963805696/posterior-numerical-check.json",
+          "sha256": "3a0cc349138c3e336c07dd99bac625eb1bec5b838102cf47f827525a46fa37af"
+        }
+      ],
+      "physical_admission": false,
+      "conditional_timing": "IN_PROGRESS_NO_RESULT_ASSERTED"
+    }
+  ],
+  "physical_holds": [
+    {
+      "source_id": "2127732197218050304",
+      "reason": "Unresolved native source ownership; preserve conditional probability repeats and target-compatible alternatives without declaring anEB mechanism."
+    },
+    {
+      "source_id": "2080571429081419520",
+      "reason": "Circular transit density disagrees with the current stellar prior; extinction/stellar/orbital model review remains open."
+    },
+    {
+      "source_id": "2126063585245659136",
+      "reason": "Specific native prior alignment resolved, but the conditional period profile retains secondary structure. Alias/timing, scene/noise and physical review remain open before a new production freeze."
+    },
+    {
+      "source_id": "2131263686828359808",
+      "reason": "Declared quantile radius-ratio SNR passes, while median/stdSNR=2.4763285453does not. Preserve the broad tail and conditional timing structure; review physical radius and model support before probability admission."
+    },
+    {
+      "source_id": "2104058096963805696",
+      "reason": "Possible additional old-host signal, not yet admitted asdistinct. DistantKepler380b has a nominal3:1clock coincidence; source-transfer and intervening-cycle tests are separate from native fit convergence."
+    }
+  ],
+  "catalogue_harmonics": {
+    "whole_cohort_nearby_signals": 663,
+    "nearby_flags": 38,
+    "own_or_two_arcsec_flags": 0,
+    "selected_mission_wide_sources": 20,
+    "selected_mission_wide_signals": 34,
+    "scope": "Every coprime1..16period ratio retained. The broad global screen produces many chance/partial clock coincidences and is not an attribution statistic. Detector coupling and photons are required before an instrumental mechanism. No flag changes a disposition.",
+    "evidence": [
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/nearby-known-harmonics-v1/summary.json",
+        "sha256": "f7f805167351d015a7aa0bd8f0f0cc59bd91d67582b6757e5a7d8aca20183251"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-global-harmonics-v1/summary.json",
+        "sha256": "454648de1c6eb9c95e057d610d24cad868b092550d10958a67cd1e6821352f86"
+      },
+      {
+        "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-global-harmonics-gold-v1/review.json",
+        "sha256": "eb0ad20555541db0943621adc9a1060dc82dec2c75a2b0d97aa530b89b3b79d1"
+      }
+    ]
+  },
+  "reference_model_controls": {
+    "design": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-model-empirical-design-v2/design.json",
+      "sha256": "eac430a27269d99f12e52df1d89732564ada7b7e12982c9046374191f8e0aef6"
+    },
+    "followup_evidence_comparison": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-evidence-review-v1/review.json",
+      "sha256": "62d7c05ecd0ddc4413604d4fb539c132f7e79ed9cd108225edad6ee3d816a810"
+    },
+    "scope": "Unchanged18paired blinded known-object control repeats are not launched. Published imaging/spectroscopic evidence is not silently translated between filters or installed as aKepler contrast; reduced-evidence discrimination does not reproduce published validation. Binary native convergence and the separate54point probability accuracy gate remain open."
+  },
+  "primary_probability": {
+    "status": "RUNNING",
+    "completed_full_repeats": 0,
+    "required_full_repeats": 43,
+    "completed_scenario_blocks": 2095,
+    "completed_scenario_blocks_by_source": {
+      "2127732197218050304": 539,
+      "2128845796339643392": 1556
+    },
+    "first_failure": null,
+    "progress_counter": "Count checkpoint.completed_scenarios only. checkpoint.complete_scenario_names is the enumerated census, not completed work. An earlier3981progress statement counted the assigned census and is corrected here.",
+    "no_coordinator_or_frozen_input_changed": true
+  },
+  "failure_preservation": [
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native212606-audit-v1-failure-review.json",
+      "sha256": "4a0419f42c65b68cfca7fd3076caad0fca70ac10edd55673192bdbca4b74c611"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native212606-timing-v2-serialization-failure.json",
+      "sha256": "60a7c87b163b2ebaac0c595b50b7533e110056d4db910987b14cb1d0e0872abf"
+    },
+    {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/oldhost210405-preparation-v1-failure-review.json",
+      "sha256": "0f11af6085269e9f63eeda40e0e6a185378b8530fa5c00bd7510f598e81cd2c9"
+    }
+  ],
+  "scope": "Server-only prospective readiness and diagnostics. Frozen406k outcomes, all earlier failures and BOIs, accepted historical studies, current primary budgets and the separately open detector-recovery calibration gate remain unchanged."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "scope": "complete existing public catalogue snapshots, no selected-source filtering",
+  "snapshot_date": "2026-09-05",
+  "archive": {
+    "bytes": 6655032,
+    "sha256": "6fd6a6d21f6c8b71a0422d04c9464460162d93dfddb1d0497e5c2a652d3bdc67"
+  },
+  "files": {
+    "cumulative-rows.json": {
+      "bytes": 3737012,
+      "sha256": "a418887d6fc306bb476f3d45e43ab52236fe7f405573614beec9af20a5a93a4e",
+      "rows": 9564
+    },
+    "q1_q17_dr25_koi-rows.json": {
+      "bytes": 3160712,
+      "sha256": "d99441b4c3b14361e3812e87f6c0f2a601c2acfbb97950bd4929b6ce04087d3a",
+      "rows": 8054
+    },
+    "ps-rows.json": {
+      "bytes": 27458607,
+      "sha256": "b3e82a73e54ab52dfce7f5b6e76895801f2c002e751ecb7da22a18d2e9da6bf6",
+      "rows": 40144
+    },
+    "toi-rows.json": {
+      "bytes": 2215018,
+      "sha256": "2f9a58e42963045f9a078515723198fc62fb59217b5d5a53cf1beebc7474df27",
+      "rows": 8148
+    },
+    "kepler-eb-2016-0694ada5b64a.csv": {
+      "bytes": 360177,
+      "sha256": "5b2668f18d824890596b84f47596b7ffd819e184d76aac267518bfba35d8eff5"
+    },
+    "exofop-ctoi-84a829ccae3d.txt": {
+      "bytes": 2334218,
+      "sha256": "108e740f9abcca374181cf0125ec0d700ebb2f910f16647f6c30bea5ca589525"
+    }
+  }
+}

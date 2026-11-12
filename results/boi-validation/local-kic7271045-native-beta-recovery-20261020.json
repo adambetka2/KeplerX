@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-20T22:08:17.085823+00:00",
+  "status": "NATIVE_FIT_RUNNING_REVIEWED_BETA_GUARD_RECOVERY",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "source_id": "2102918384442366592",
+  "kic": 7271045,
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592",
+  "native_generation": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3",
+  "protocol": "TRICERATOPS_KEPLER_V2",
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/launch.json",
+    "sha256": "fd592a1b05563ebe5a89afb341f71b4f8a5ae8e54102e323790a2a898834a258"
+  },
+  "native_input_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/freeze.json",
+    "sha256": "669c1181b3f920bb4ea189711ae0f35805db387daa88d4aadaa07ccab42e483e"
+  },
+  "native_failure": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-sampler-failure-v1.json",
+    "sha256": "f0ed72a22a0684143ab2159959bd441c2c6aafbe15bdeaf20d1d7f207fa289c5"
+  },
+  "source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/source-review.json",
+    "sha256": "f13ebbdb2d9548277afaf23a1d5696e5bc254569f2fbc99898b8bb1e86016351"
+  },
+  "revalidation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/revalidation.json",
+    "sha256": "37270eda2686cdf39513791bf5cffc5c3f871846c4e35c763d5d4f820cd3d921"
+  },
+  "live_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/live-check-20261020T220817Z.json",
+    "sha256": "2f003091678e39ac31d28e2c9821f3eb6141b180bad1ba43fdea63e717dff13e"
+  },
+  "native_stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-stellar-review.json",
+    "sha256": "4d89c202955cb83ec9354a2491751f58252aeba08275efd9d90d9982000506c0"
+  },
+  "scientific_inputs_unchanged": true,
+  "probability_runs": 0,
+  "clock_adopted": false,
+  "continuation_authorization": "Adam explicitly requested continuing to next candidates after this candidate reaches validation, futility or a precise unresolved hold. Sequential local work and hourly monitoring remain active.",
+  "night_priority_record": "/Users/adam/Other/spacelab/results/boi-validation/night-validation-priorities-20261020.json",
+  "priority_outcomes": {
+    "KIC3330404": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2099560128037101952/readiness-hold-v1.json",
+      "sha256": "23aec580addf4ad4b5df4984171623d83c8d5604e34f032375454321e452df01"
+    },
+    "KIC5303927": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073609042284178176/readiness-hold-v1.json",
+      "sha256": "55eb244c06db5f7eae625d550df042e54890b9062fc203c040236da498a84d1d"
+    }
+  },
+  "next": "Let the isolated beta-v3 native fit finish. Review actual walker movement, joint11D mixing/stationarity, residuals, eccentric/periastron/contact geometry, clock/protection and exposure. Then complete same-source aperture/scene/spacecraft/alias/catalogue readiness before any FPP. If terminal, preserve result or precise hold and continue eligible full125signal/94host queue by readiness/cost, no repeated rescue of earlier nightly holds. No server work or competing numerical jobs."
+}

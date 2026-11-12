@@ -1,0 +1,217 @@
+{
+  "utc": "2026-10-21T01:52:12.858183+00:00",
+  "source_id": "2077020448903232640",
+  "kic": 6139064,
+  "status": "CONDITIONAL_NATIVE_LIVE_NO_FPP",
+  "stellar": {
+    "source_id": "2077020448903232640",
+    "route": "Reported paired Gaia FLAME mass/radius and16/84 intervals, chosen before fitting/FPP.",
+    "mass": 0.71582067,
+    "radius": 0.87516224,
+    "mass_errors": [
+      0.04055727000000009,
+      0.0412140299999999
+    ],
+    "radius_errors": [
+      0.12479874000000002,
+      0.19025886000000003
+    ],
+    "density_kg_m3": [
+      1505.5313809779022,
+      817.520006630979
+    ],
+    "uncertainty_basis": "First-order independent approximation using half the reported interval width; asymmetry retained above, covariance not supplied. Positive truncated Gaussian without astronomical upper cutoff. No missing-error10%/6% substitution.",
+    "measured_parallax_mas": [
+      0.5067024244658502,
+      0.085187905
+    ],
+    "tic_mass": 0.78,
+    "tic_radius": 1.19956,
+    "tic_distance_pc": 2867.06,
+    "gaia": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/catalogues-20261021/gaia-attempt1.response",
+      "sha256": "e4110dd9974c4768f6d0ec24cf8dd2d2a53dad954d68d9fa5b706a1c40aaa115"
+    },
+    "tic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/catalogues-20261021/tic-attempt1.response",
+      "sha256": "6b3f13e1ba8d4d3f83e4151b423b0505aeb2b9e5fb5a1cef57f1eba6379e7209"
+    },
+    "catalogue_coherence": "Paired Gaia FLAME radius.875 and measured parallax imply1974pc; GSPphot smaller radius.6219 at1405pc scales to.874at measured distance, consistent with FLAME. TIC R1.19956/d2867pc/Teff4810 is an alternate model route, kept explicit. Reported FLAME errors include the broad parallax-driven radius interval; no missing-error model is needed.",
+    "scope": "Catalogue estimates are not independent stellar/body/companion admission. Selected FLAME M/R and Teff4470 route must remain explicit in later scene; TIC alternate and covariance absence retained."
+  },
+  "preparation": {
+    "source_id": "2077020448903232640",
+    "raw": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/original-kbonus-attempt1.response",
+      "sha256": "4affc3eb6711155f056ca1bc7b5546c493bf76d5b5cee6ea3a50fd13ff643ece"
+    },
+    "all_hdu_checksums_passed": true,
+    "exposure_days": 0.02043361111111111,
+    "actual_exposure_basis": "Original primary XPOSURE1765.464seconds. Parent metadata remains to verify before FPP.",
+    "original_recovered": {
+      "period_days": 6.652082936084828,
+      "epoch_bkjd": 133.87523017960459,
+      "duration_days": 0.08328116351905888
+    },
+    "measured_aperture_depth": 0.004180875397717165,
+    "native_points": 3898,
+    "primary_windows_by_quarter": [
+      {
+        "quarter": 1,
+        "raw_primary_cadences": 20,
+        "valid_primary_cadences": 20
+      },
+      {
+        "quarter": 2,
+        "raw_primary_cadences": 53,
+        "valid_primary_cadences": 42
+      },
+      {
+        "quarter": 3,
+        "raw_primary_cadences": 57,
+        "valid_primary_cadences": 50
+      },
+      {
+        "quarter": 6,
+        "raw_primary_cadences": 58,
+        "valid_primary_cadences": 53
+      },
+      {
+        "quarter": 7,
+        "raw_primary_cadences": 57,
+        "valid_primary_cadences": 49
+      },
+      {
+        "quarter": 8,
+        "raw_primary_cadences": 40,
+        "valid_primary_cadences": 38
+      },
+      {
+        "quarter": 9,
+        "raw_primary_cadences": 61,
+        "valid_primary_cadences": 60
+      },
+      {
+        "quarter": 10,
+        "raw_primary_cadences": 58,
+        "valid_primary_cadences": 51
+      },
+      {
+        "quarter": 11,
+        "raw_primary_cadences": 52,
+        "valid_primary_cadences": 44
+      },
+      {
+        "quarter": 12,
+        "raw_primary_cadences": 49,
+        "valid_primary_cadences": 39
+      },
+      {
+        "quarter": 13,
+        "raw_primary_cadences": 55,
+        "valid_primary_cadences": 51
+      },
+      {
+        "quarter": 14,
+        "raw_primary_cadences": 55,
+        "valid_primary_cadences": 48
+      },
+      {
+        "quarter": 15,
+        "raw_primary_cadences": 52,
+        "valid_primary_cadences": 49
+      },
+      {
+        "quarter": 16,
+        "raw_primary_cadences": 45,
+        "valid_primary_cadences": 45
+      },
+      {
+        "quarter": 17,
+        "raw_primary_cadences": 16,
+        "valid_primary_cadences": 16
+      }
+    ],
+    "flux_convention": "raw_aperture",
+    "all_original_quality_and_rejected_proposals_preserved": true,
+    "protected_trend_days": 0.8328116351905889,
+    "window_basis": "10T14 trend window, protected +/-T14+half exposure, native +/-3T14. About32actual unprotected long cadences per trend window; no duration cap or cropped tail.",
+    "stellar": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-stellar-review.json",
+      "sha256": "49235bf8045a29afc1fec68e3654453ba689ef882447fa6f2342b1c978be277e"
+    },
+    "retained": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/pre-native-retained-review.json",
+      "sha256": "9f810f168413e7ae696d6009c786741f15ce2062dcbbe571f11bb471e7406bd1"
+    }
+  },
+  "source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-seed-source-review.json",
+    "sha256": "0a4a306d3f38ee8a0be0361acbf59c1e6147443bec6f9d81980b5293449a1169"
+  },
+  "controls": {
+    "accepted": true,
+    "native_points": 3898,
+    "diagnostic_only": {
+      "nlive": 32,
+      "maxiter": 40,
+      "maxbatch": 0,
+      "not_convergence": true
+    },
+    "production_sampling": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 10,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    },
+    "seed": 2026102131,
+    "weighted_nested_arrays_exact": {
+      "samples": true,
+      "logl": true,
+      "logwt": true,
+      "logz": true,
+      "logzerr": true
+    },
+    "equal_weight_posterior_exact": true,
+    "independent_batman_replay": [
+      {
+        "index": 0,
+        "difference": 9.094947017729282e-12
+      },
+      {
+        "index": 36,
+        "difference": 9.094947017729282e-12
+      },
+      {
+        "index": 72,
+        "difference": 9.094947017729282e-12
+      }
+    ],
+    "scope": "Actual wrapper vs direct juliet with the same documented Generator. Diagnostic truncation is not an admission or production stopping rule. No kernel/prior/scientific input changes.",
+    "source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-seed-source-review.json",
+      "sha256": "0a4a306d3f38ee8a0be0361acbf59c1e6147443bec6f9d81980b5293449a1169"
+    },
+    "control": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/control-wrapper/juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "30715f2b86420c853c66414fe91bdef9daad3d8c79647b76fa8dd4a45f59dce1"
+    },
+    "reference": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/control-direct-juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "30715f2b86420c853c66414fe91bdef9daad3d8c79647b76fa8dd4a45f59dce1"
+    },
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/validate_nested_seed.py",
+      "sha256": "19d203dfd89f01ee0dc8474b9a5df0d02b17d66637e2cf0cc96cfb069a99d1a4"
+    }
+  },
+  "freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077020448903232640/native-freeze.json",
+    "sha256": "c9f1011380cb6555d5e71c7bf0a557b22da3495318344bf227258eef8345d1b3"
+  },
+  "scope": "Own-SAP/stellar inputs and deterministic source controls support native run, not converged clock/physical body/scene or FPP. Selected paired Gaia FLAME route must remain in later scene; alternate TIC retained."
+}

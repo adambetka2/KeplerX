@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "status": "CHECKED",
+  "module": "tess",
+  "input": {
+    "path": "/srv/kbonus/dump/tess-module-20261020/mk-bois.json",
+    "sha256": "967d39c8ee6ebac701c95d6184618cf5a8ac753e50a1092469946ec5c9e2e0e7",
+    "signals": 663,
+    "hosts": 473,
+    "vetting_run": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1"
+  },
+  "coverage": {
+    "status": "COMPLETE",
+    "queried_hosts": 473,
+    "covered_hosts": 473,
+    "minimum_sectors": 7,
+    "median_sectors": 10.0,
+    "maximum_sectors": 17,
+    "host_sectors": 4729,
+    "failures": 0,
+    "path": "/srv/kbonus/dump/tess-module-20261020/coverage",
+    "summary_sha256": "f3c8d17119e91cf6ec5eeafecff84182ba46b55d6ca6e14a1c8b31ae80ec6bee",
+    "scope": "MAST footprint queries at input source positions; not photometric sensitivity"
+  },
+  "checks": {
+    "local_tests_passed": 10,
+    "server_tests_passed": 10,
+    "ruff": "PASS",
+    "maximum_complexity": 10,
+    "complexity": "PASS",
+    "known_planet": {
+      "name": "HAT-P-7 b",
+      "sector": 14,
+      "primary": {
+        "status": "MEASURED",
+        "events": 12,
+        "windows": 12,
+        "depth_fraction": 0.00600143560147904,
+        "formal_error": 3.4634557544193215e-05,
+        "residual_scaled_error": 0.00011745807171504349,
+        "event_scatter_error": 0.0001442591069427754,
+        "formal_snr": 173.27882978788716,
+        "depth_chi2": 187.21316527492615,
+        "depth_chi2_dof": 11
+      },
+      "result": "/srv/kbonus/dump/tess-module-20261020/control-corrected"
+    },
+    "paired_native_noise_increment_ppm": [
+      40,
+      100,
+      1000
+    ],
+    "mk_example": {
+      "source_id": "2085171201622187904",
+      "signals": 3,
+      "sectors": [
+        14,
+        74
+      ],
+      "result": "/srv/kbonus/dump/tess-module-20261020/mk-corrected"
+    },
+    "setup_and_initial_attempts": "dump/tess-module-20261020"
+  },
+  "server": {
+    "release": "/srv/kbonus/dwarfs/followup/tess-20261020",
+    "runtime": "/srv/kbonus/dwarfs/followup/tess-20261020-runtime",
+    "kernel_cache": "/srv/kbonus/dwarfs/followup/tess-20261020-kernels",
+    "kernel_manifest_sha256": "dbc886a16f90a238a06ac661465712e9aa9ab693076504d9717efd58e827ca8b",
+    "production_run": "NOT_STARTED"
+  },
+  "code_sha256": {
+    "__init__.py": "d2b8fae4d8d7c50feb0b05659abc9e1831c62a2077aa97aa4adda87bb894d0e2",
+    "__main__.py": "726d912ae6650053969d97ff4a83f586d8f4136242313c3f39c958ff59038e8f",
+    "archive.py": "1cf5a6860600965a4ae7535a729e880031687507833447f26cd381dd40548bed",
+    "measure.py": "1949f6474b155838122932d486350a62c3543d1c3ed3471561b218f3503cd9b0",
+    "timing.py": "87d46a49cad20930a03bc77444a31bcc09c379aa7024276b293ae00302f0d362"
+  },
+  "limits": [
+    "Supplied clocks and every explicit alternative retained; missing clock covariance remains unknown.",
+    "Aperture measurements and signed difference moments do not establish Gaia host identity or deblending.",
+    "Formal SNR is not a calibrated false-alarm probability; no disposition is changed.",
+    "Paired shallow increments test numerical response, not population recovery completeness."
+  ]
+}

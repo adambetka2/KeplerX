@@ -1,0 +1,490 @@
+{
+  "created_utc": "2026-10-19T20:31:25.109795+00:00",
+  "protocol": "KEPLER_BOI_FINAL_PRIMARY_V1",
+  "decision_authority": "Adam explicit October19,2026 message: twenty total primary runs at adopted final ephemeris for future BOIs; minimal justified recovery-clock budget; existing three studies accepted at adopted inputs.",
+  "policy": {
+    "primary_repeats": 20,
+    "default_recovery_diagnostics": 0,
+    "conditional_recovery_diagnostics": 3,
+    "maximum_extra_compute_fraction": 0.15,
+    "predeclared_paired_seeds": true,
+    "no_automatic_expansion": true,
+    "diagnostics_do_not_replace_or_pool_primary_results": true
+  },
+  "counts": {
+    "repeats": 20,
+    "draws_per_scenario": 1000000,
+    "batch": 256,
+    "render_batch": 64,
+    "likelihood_bound_log_budget": 48
+  },
+  "thresholds": {
+    "FPP_lt": 0.015,
+    "NFPP_lt": 0.001,
+    "RUWE_le": 1.4,
+    "rank_rhat_le": 1.03,
+    "epoch_ess_ge": 100,
+    "radius_ratio_snr_gt": 3
+  },
+  "legacy_accepted": [
+    {
+      "kic": 6699887,
+      "source_id": "2077554781499350144",
+      "status": "EXISTING_STATISTICAL_STUDY_ACCEPTED_BY_ADAM",
+      "adopted_historical_clock": "DISCOVERY_RECOVERED",
+      "additional_primary_runs_required_by_new_policy": 0,
+      "means": {
+        "FPP": 0.006962156696230551,
+        "NFPP": 0.0003633415465190239
+      },
+      "historical_final_repeats_retained": 1,
+      "results": [
+        {
+          "index": 0,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-00/result.json",
+          "sha256": "8c25cd291e2775680ca069a28da1bc65c5cea7e2b2bf00b782611ea63a85f761",
+          "seed": 282494035839796327
+        },
+        {
+          "index": 1,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-01/result.json",
+          "sha256": "bf81e0c70e7be05382f2800724ec0f57071f56c261d4529b0b4be35b31455390",
+          "seed": 15119173906196362522
+        },
+        {
+          "index": 2,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-02/result.json",
+          "sha256": "2ea07d3cff4d2915a23a58fbde76514e4b5b20f63656270464de50792f452027",
+          "seed": 13279622597357765523
+        },
+        {
+          "index": 3,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-03/result.json",
+          "sha256": "0183cc2110b8ca711bccc49fa3443cec0779fdff8be7a4df0c88f644e214a31a",
+          "seed": 269917907849155890
+        },
+        {
+          "index": 4,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-04/result.json",
+          "sha256": "fce55509de16794635cf39e233983e682173902ed8f8e79478fa39b951b5c68a",
+          "seed": 6664110952021197962
+        },
+        {
+          "index": 5,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-05/result.json",
+          "sha256": "11d0d5f482d3f2777b3b9cd1c8a4ea3f85e99155913f74310869c23019b2d6a8",
+          "seed": 16658412084254654639
+        },
+        {
+          "index": 6,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-06/result.json",
+          "sha256": "11b1552d11ba4a895e34ba974cf0f673af26829af2b714c3b0ed76c077289f61",
+          "seed": 16187424898534506838
+        },
+        {
+          "index": 7,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-07/result.json",
+          "sha256": "8f6d06865de4e9965003777b070feb5ecb38f84fd8df5cb68c74bdad85903a26",
+          "seed": 3446175883746981553
+        },
+        {
+          "index": 8,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-08/result.json",
+          "sha256": "8b5183966a838ec96e03bc75ba9b2840143384406da551159de4d87a12900ec7",
+          "seed": 497145088946308034
+        },
+        {
+          "index": 9,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-09/result.json",
+          "sha256": "152b7d7b7c78bcbcfb5f420ce411f5ffadd0952566715b8bccc060b6cbbdff4e",
+          "seed": 1268277943751010949
+        },
+        {
+          "index": 10,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-10/result.json",
+          "sha256": "ca503ab06be21c27f4d1d3d6b67bb0064d3c97cceb92204ad543d500e5431dca",
+          "seed": 399203427542465519
+        },
+        {
+          "index": 11,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-11/result.json",
+          "sha256": "df8bdbf7c0e464a69dbe82f19c0af751868781462b3024c467cc59a4d54bb4ff",
+          "seed": 8589670630006926334
+        },
+        {
+          "index": 12,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-12/result.json",
+          "sha256": "53c024bde2781f09675d7452fe5f7b549db736d649133cba81e207a7e007f995",
+          "seed": 9435841132404770497
+        },
+        {
+          "index": 13,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-13/result.json",
+          "sha256": "3dad5422da3ada1ec35e68731596d1ece6207ed56d51f2d4b35cf52bf25154a3",
+          "seed": 10643163496634330397
+        },
+        {
+          "index": 14,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-14/result.json",
+          "sha256": "0f323b08f46097dfd85eda93eb3e659e24a5fa058cc2dcfc33cc0ba43dc5d33d",
+          "seed": 10186517698483868487
+        },
+        {
+          "index": 15,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-15/result.json",
+          "sha256": "0066749008a09c85d20cf0e7f6d7d23022df5194007458eb1a2f67466f4720c5",
+          "seed": 15041117868567875357
+        },
+        {
+          "index": 16,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-16/result.json",
+          "sha256": "ecd13175f53420c26255e9c7ac05368463926a233337c52e24407040a0c34606",
+          "seed": 3740647632412232739
+        },
+        {
+          "index": 17,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-17/result.json",
+          "sha256": "2de0fd24a8ffe511891f92f5037eb72b18ba22ebad7c5244559aacef2dcc1df2",
+          "seed": 1661001609184877806
+        },
+        {
+          "index": 18,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-18/result.json",
+          "sha256": "9b8a63a5389efa612339d735e2cde95137670266480009942298e642a0848d67",
+          "seed": 12344737563842308027
+        },
+        {
+          "index": 19,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2077554781499350144/seed-19/result.json",
+          "sha256": "6e40b51c931cc6a048ec04c54bbe5b1d83ffa48b2f49e09c74577b620d925d62",
+          "seed": 2738161211445092120
+        }
+      ]
+    },
+    {
+      "kic": 8745833,
+      "source_id": "2127186564572468352",
+      "status": "EXISTING_STATISTICAL_STUDY_ACCEPTED_BY_ADAM",
+      "adopted_historical_clock": "DISCOVERY_RECOVERED",
+      "additional_primary_runs_required_by_new_policy": 0,
+      "means": {
+        "FPP": 0.004548081292166264,
+        "NFPP": 2.6660648647897303e-52
+      },
+      "historical_final_repeats_retained": 2,
+      "results": [
+        {
+          "index": 0,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-00/result.json",
+          "sha256": "a561866a69c1574492838831192e9f61b09cff2c5114d466ec9fbdb9e3abd5c6",
+          "seed": 8477738443542536573
+        },
+        {
+          "index": 1,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-01/result.json",
+          "sha256": "2f788ed4ba80cd0f652f40a523cb426cc58f95c2245e4c40ed43d170daed859f",
+          "seed": 16429570163746893927
+        },
+        {
+          "index": 2,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-02/result.json",
+          "sha256": "a861dea350f8fdecba73d841159d5d9889a7dfed998ffc01d59932e2e718ecb5",
+          "seed": 17364820779426642694
+        },
+        {
+          "index": 3,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-03/result.json",
+          "sha256": "cb47ebaf69595f677e7990c4fcc6a6b79d51b3045f6149f36058161c61208ea9",
+          "seed": 3604256359118810231
+        },
+        {
+          "index": 4,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-04/result.json",
+          "sha256": "a1ade55e68a7131fae0e0cb0f570377eb6220dabbca71e5a4c8535b79ad1d32e",
+          "seed": 12387658386869891462
+        },
+        {
+          "index": 5,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-05/result.json",
+          "sha256": "ec36eb6ae34ad36e984798b33a70b7b1e3f1cb3f38913c8f2c42ebed5cd1c765",
+          "seed": 3954032110579027740
+        },
+        {
+          "index": 6,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-06/result.json",
+          "sha256": "6b677b4920dea778e7413e0ea6f30ea365f03c9edb62ae6c8f940a0563869bdb",
+          "seed": 12543905132916280064
+        },
+        {
+          "index": 7,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-07/result.json",
+          "sha256": "feb221e83424b406fe892184592e0d882a0d95e1a14e0cd70b08fc080a243605",
+          "seed": 14900210667772637525
+        },
+        {
+          "index": 8,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-08/result.json",
+          "sha256": "8862af5c5973b09a10db493e0d9ab3273f73d053194c63f68a5caf76277ed880",
+          "seed": 17155033484104595980
+        },
+        {
+          "index": 9,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-09/result.json",
+          "sha256": "567916653dff32e024eac79c9973b4fca12cf07380affcb2d33710db91f621d2",
+          "seed": 6748963107763155548
+        },
+        {
+          "index": 10,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-10/result.json",
+          "sha256": "39e9a913ab76bcc129f16d6219281294c56d83fc6d84bf9f9c9b57cd37e7dfa5",
+          "seed": 10775411931812980601
+        },
+        {
+          "index": 11,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-11/result.json",
+          "sha256": "d0f5ff46dda603a2a923d4330160bf367d21bf2f565912d3e98f1c7b4d6dcaa2",
+          "seed": 18348650874785979953
+        },
+        {
+          "index": 12,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-12/result.json",
+          "sha256": "a177f6d5ff606e6f1bc875ff1df8d39260b0d6c7c33c7ca8d185074757931410",
+          "seed": 5107009469897661225
+        },
+        {
+          "index": 13,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-13/result.json",
+          "sha256": "c717a9688f0e05720fc5c0eb9b86bed23ce2ee682d7a586689885d5f3cea264c",
+          "seed": 9382645862902425369
+        },
+        {
+          "index": 14,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-14/result.json",
+          "sha256": "25c30c4089370156f669648d34d7ad6fba68c6119a920ef0a1e6e498f43ecfe6",
+          "seed": 7586551601257263710
+        },
+        {
+          "index": 15,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-15/result.json",
+          "sha256": "b08036e7cf117abf8d9535c6c3e35db0d0bfd52ccd4943c6e0d791ad4cb019de",
+          "seed": 16849116817350820477
+        },
+        {
+          "index": 16,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-16/result.json",
+          "sha256": "c3ab1614d1b75096707789cab1ddacbaf7ed63f9b47e7963defa7fd0090c1c4f",
+          "seed": 12076431819272026300
+        },
+        {
+          "index": 17,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-17/result.json",
+          "sha256": "b929be69799418cd320380a8d917a88fce2392e4922095f7bc1f432711f4cdba",
+          "seed": 3934467382741599444
+        },
+        {
+          "index": 18,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-18/result.json",
+          "sha256": "0fc60caca8809d0fea82b9c0103fc39bf0f6dedeeb3258b102b3f87533a42414",
+          "seed": 1234652875013136027
+        },
+        {
+          "index": 19,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/runs/2127186564572468352/seed-19/result.json",
+          "sha256": "658cd3e7455a383fac60c90422cfac11c711df7657ab129a9e6df68165c8f183",
+          "seed": 2972738415298542309
+        }
+      ]
+    },
+    {
+      "kic": 4829494,
+      "source_id": "2101047904706267264",
+      "status": "EXISTING_STATISTICAL_STUDY_ACCEPTED_BY_ADAM",
+      "adopted_historical_clock": "DISCOVERY_RECOVERED",
+      "additional_primary_runs_required_by_new_policy": 0,
+      "means": {
+        "FPP": 0.013325335770597335,
+        "NFPP": 0.0009308340408758588
+      },
+      "historical_final_repeats_retained": 0,
+      "results": [
+        {
+          "index": 0,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-00/result.json",
+          "sha256": "7a6d4dd5e566b6909604d181dd2255e3c9e511450ed3ddefa8be821888705d1d",
+          "seed": 13662261308238736994
+        },
+        {
+          "index": 1,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-01/result.json",
+          "sha256": "fb7db28506b09a328bbb41108ec2a4f06707a395cf137700a4483dccc6705d61",
+          "seed": 4316466312462204759
+        },
+        {
+          "index": 2,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-02/result.json",
+          "sha256": "7894935d7bfc5c5c2a169fd9dae5a1c2999c1702c58a95e2c8e62894e869758f",
+          "seed": 198553022740986752
+        },
+        {
+          "index": 3,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-03/result.json",
+          "sha256": "2f5c7834987a05adbfa5f11b6858d1cb1c1d73c5871875f64f491f6f6456ebe8",
+          "seed": 12291797588878755338
+        },
+        {
+          "index": 4,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-04/result.json",
+          "sha256": "ea29c41cfc44f7585ee9e01a3af6d87adf84733e00b507e9f645400547a35ca8",
+          "seed": 13044721653689574184
+        },
+        {
+          "index": 5,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-05/result.json",
+          "sha256": "2f083e3b359795cc5b710e4c6715e7d4d5140cd7db20658f94ac4ef6c2396c79",
+          "seed": 8352821462250065899
+        },
+        {
+          "index": 6,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-06/result.json",
+          "sha256": "a1c4e6da77520167ba19110441091b6fb15622518cd566a49432505c531deebf",
+          "seed": 5958965977877800969
+        },
+        {
+          "index": 7,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-07/result.json",
+          "sha256": "f07cc0b37157c546211ce5190a456d20e0676b33dc340fe5580788e1d7da0c08",
+          "seed": 13072362862109032082
+        },
+        {
+          "index": 8,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-08/result.json",
+          "sha256": "f0ac84806293b8a2977945d6c2833c6f2a49848fa073a8495d161ccd3897e989",
+          "seed": 13039453746947967453
+        },
+        {
+          "index": 9,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-09/result.json",
+          "sha256": "5d838abec2fd8e240358f62697462ceba3288b78b0df7c7762c23b4122ca51bc",
+          "seed": 1561701494193323596
+        },
+        {
+          "index": 10,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-10/result.json",
+          "sha256": "be384db5311507350b73c952c5049b9eb05d0fea1e11ab7dcb1692626452577a",
+          "seed": 11849743583002305289
+        },
+        {
+          "index": 11,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-11/result.json",
+          "sha256": "5d874fe419bf063809fe8e4715c8b4f7afb9a2135994f6ad71a4d55374c056ec",
+          "seed": 6560523418774383506
+        },
+        {
+          "index": 12,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-12/result.json",
+          "sha256": "40d8fe4a327ce0c6f43f399bc38384b1d23d46af3c2ea8e18010575066e6581a",
+          "seed": 6631618165768069956
+        },
+        {
+          "index": 13,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-13/result.json",
+          "sha256": "60fe81c2f9eb6484e3df53e8f5bb31ddf10eecc5307dd9c6d285fd6b4197ab25",
+          "seed": 8917143564906835554
+        },
+        {
+          "index": 14,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-14/result.json",
+          "sha256": "f0ca450dffd72f9a0422de7e86d70cd24b397498b709fce156f38a5a16c64a00",
+          "seed": 11859376006401572322
+        },
+        {
+          "index": 15,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-15/result.json",
+          "sha256": "14ee68676fb93d0348768baf17d503e50bac4ddb0c50383ff78a36d93346a6d9",
+          "seed": 15395766517884656165
+        },
+        {
+          "index": 16,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-16/result.json",
+          "sha256": "19b2fcba7612c37b7eb5adf387cc16eab85f8e00eb8c57a3310468182838eec8",
+          "seed": 8497089808849492715
+        },
+        {
+          "index": 17,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-17/result.json",
+          "sha256": "f9467999d017c773e1caa7ed8c337266783ffb44201ad37d4c064bbf93240c69",
+          "seed": 8571235400557506478
+        },
+        {
+          "index": 18,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-18/result.json",
+          "sha256": "d44d36dc5c0b6a3c76ffb2a3824b69a0ea6f107ce7422560034f8d18a7706179",
+          "seed": 6918077124441062044
+        },
+        {
+          "index": 19,
+          "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production/runs/2101047904706267264/seed-19/result.json",
+          "sha256": "145bdef69ceacf9310937b16934104be9e9e29930f28ad902a72606cb0cd346d",
+          "seed": 4172508081160933281
+        }
+      ]
+    }
+  ],
+  "unchanged_freeze_receipts": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign/freeze.json",
+      "sha256": "2405eb389ae551b4bd768ca2f35440d824239fd28548e155306992d19e99f5b1"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/freeze.json",
+      "sha256": "d95a52893ff10424153f55cf25c7e8cebc767adcf9f8f8d763dd8a1723a6ed1f"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production-freeze.json",
+      "sha256": "138f462af25e9091e621a0579801d9ee025bd3bb64ac288303248b362f5077d5"
+    }
+  ],
+  "new_production_started": false,
+  "unlaunched_two_clock_plan": "Superseded. All preparation and its evidence retained; no restart required.",
+  "review": {
+    "scientific_kernels_changed": false,
+    "numerical_revalidation": "Existing full-family final-packet reference checks retained; revised orchestration deep-replays3complete historical final-clock results(438scenario weight files),including evidence,bounds,ESS and maximum weight; incomplete20-primary audit correctly rejected.",
+    "retained_controls": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-adoption-20261019/retained-controls-v2.json",
+      "sha256": "5a7f435287535f7d4ab827ccb309eb5ad04c630c850fcf908a320a060a652d3e"
+    },
+    "local_contract_tests": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-adoption-20261019/tests-release.log",
+      "sha256": "95dd60761f3e9c0b2f1882e8b83f3ec035aff34c412f1b302ba8dae7f9955068"
+    },
+    "ruff_complexity": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/protocol-adoption-20261019/ruff-complexity-release.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    "inspection": "Reviewed final-only and conditional-three queue enumeration,primary-only admission,paired seed comparison,frozen evidence and missing-weights failure paths. No code in the completed survey or frozen runtimes changed.",
+    "worker_overlap_protection": "Coordinator and per-repeat nonblocking file locks; live-process preflight; immutable completed-result guard."
+  },
+  "runtime_source": [
+    {
+      "path": "post_boi/__init__.py",
+      "sha256": "be01b6e3626c0403a9586e1a9418f5f2cf4318eeb8a1394665a5bf0bbeaa0ace"
+    },
+    {
+      "path": "post_boi/campaign.py",
+      "sha256": "2685fed3ab278fa3c291431dc8acfd101b12c7ab5f8b1c8b8236c6de03a71d72"
+    },
+    {
+      "path": "post_boi/protocol.py",
+      "sha256": "951b87b5fbe92f61ce095ceca304e68ac1e4d67417a5ec8202a77c7dc74cf2e0"
+    },
+    {
+      "path": "post_boi/test_protocol.py",
+      "sha256": "6a2d1bedf37e0076e6f896afb89125fde89e3d34c8d3b4867017c642bd7f8a13"
+    }
+  ],
+  "known_preparation_failures": [
+    "Initial lint found an overlong diagnostic scope string; corrected,log retained.",
+    "One unapplied patch used duplicate operations on the same test file; corrected with separate file edit. No production file or receipt affected."
+  ],
+  "reference_review": "/Users/adam/Other/spacelab/results/boi-validation/boi-repeat-count-literature-20261019.json"
+}

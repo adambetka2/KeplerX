@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "name": "Kepler-16",
+  "reference_class": "Circumbinary planet transits",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Binary eclipses plus shallower transits with changing times and durations.",
+  "lookalikes": [
+    "hierarchical eclipsing system",
+    "multiple signals / blends"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "Kepler; observed light curve and event zooms, with best-fitting model curves."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "planet_recurrence": {
+      "value": 229,
+      "unit": "d",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "binary_period": {
+      "value": 41,
+      "unit": "d",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/1109.3432",
+    "pdf_url": "https://arxiv.org/pdf/1109.3432",
+    "pdf_page_one_based": 9,
+    "figure": "1",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "b39111e092b9319e7d53efbff69728aec5442722cc23bb48e0c2f3907b03bea3",
+    "page_crop_fraction_xyxy": [
+      0.1,
+      0.075,
+      0.94,
+      0.39
+    ],
+    "image_sha256": "34abc8f32b6bf41d84aeef12f43f86a1cbcd76901c986d18ca5b56b48f4b7dfa"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

@@ -1,0 +1,396 @@
+{
+  "utc": "2026-10-21T04:57:02.035504+00:00",
+  "execution_host": "LOCAL_MACBOOK_ONLY",
+  "previous_outcome": {
+    "utc": "2026-10-21T04:51:20.481471+00:00",
+    "source_id": "2076383384993192576",
+    "kic": 5115632,
+    "tic": 184247483,
+    "signal_id": "rust-v6-2076383384993192576-1",
+    "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+    "disposition": "REMAINS_PC",
+    "reason": "Native completed exit0 with accepted conditional clock, weightESS6286.65 and adequate original transit protection. However all108source scene Gaussian targetQ4.2120 vs calibrated dominant core.6557,Q8.2377/.6998,Q12.1773/.6411,Q16.1896/.6697 changes target/alternative allocation substantially. These quarters have real primary coverage. Core diagnostic is not full far-source measured fractions; no supported complete response selected. Other quarters and six missing-property rows remain preserved. No FPP plan/run, omission, custom wing model or favorable response choice.",
+    "native_clock": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-accepted-clock-review-v1.json",
+      "sha256": "fe49d1dc296e31c59e3dd6842bea95848ddfe365d06530a88dc23ae1fbd0c49b"
+    },
+    "response": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/aperture-response-review-v1.json",
+      "sha256": "bef3e670fff9c4a16f41bbb44ec0869be5c293c2f0afdd721a3c5264f4d3caf9"
+    },
+    "scene": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/scene-preview-review-v1.json",
+      "sha256": "ab875b37b595c3e5d656142bed3f4bc02d0a592047fd4449616ffa95144d73f0"
+    },
+    "native_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-freeze.json",
+      "sha256": "77c5c0c1788ea53bd58aa6a1334b7909b7e7b9a0c6f800431ccb53ce356ac3e1"
+    },
+    "native_launched": true,
+    "probability_runs": 0,
+    "physical_false_positive_denied": false,
+    "next": "Preserve accepted conditional native clock/noise, every source/output and unfavorable response. No response reconstruction/rescue tonight. Advance next eligible host."
+  },
+  "accepted_conditional_native": {
+    "source_id": "2076383384993192576",
+    "signal_id": "rust-v6-2076383384993192576-1",
+    "accepted": true,
+    "evidence": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-nested-review-v1.json",
+        "sha256": "2ee17a1da982655537d01d85f16697dc2c6a3f8332011d21cb25bc470940c308"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native-posterior-review-measurements-v1.json",
+        "sha256": "6cddc31234b9ca2fbd1c2d0d6818f812968a3aa505ba73a08dcb1a6f930239a3"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/native/summary.json",
+        "sha256": "065f398e887e0f45b1398bf3dfa7bceae9b11d273ad631b5d18de14228263bc1"
+      }
+    ],
+    "period_days": 51.5282987973929,
+    "epoch_bkjd": 808.3424099142321,
+    "duration_days": 0.23787675272965583,
+    "observed_depth_fraction": 0.015355548662170704,
+    "probability_noise_sigma": 0.000781222634115991,
+    "probability_noise_basis": "Actual200-bin OOT residual RMS781.22ppm, robust718.43ppm, exceeds405.76ppm formal mean bin error. Adjacent2/4/8bin residualRMS489.39/293.54/229.27ppm is compatible with averaging noise; native-window jitter mean1330.57ppm retained separately. No arbitrary multiplier or FPP-based noise choice.",
+    "note": "Fill after inspecting native fit. Duration uses the usual eccentric-duration approximation; inspect long/grazing geometry. Depth is the observed-convention fitted depth, not intrinsic depth after a second dilution correction.",
+    "utc": "2026-10-21T04:51:20.479504+00:00",
+    "scope": "Accepted conditional native clock and empirical folded noise only; no scene/body/FPP admission.",
+    "clock": {
+      "period_days": 51.5282987973929,
+      "epoch_bkjd": 808.3424099142321,
+      "duration_days": 0.23787675272965583
+    },
+    "basis": "Dynamic nested final stopping.795<1, native weightESS6286.65>5000, all equal-weight priors/posteriors finite, exact direct batman likelihood replay. Representative exact5.6257h transit has zero unprotected real cadences; all18356equal draws satisfy approximate continuous-event coverage across complete baseline,minmargin.63955h, periastron/contact all pass. Weighted/equal posterior quantiles consistent; no emcee diagnostics or independent-chain Rhat used."
+  },
+  "active": {
+    "utc": "2026-10-21T04:54:55.174839+00:00",
+    "status": "NATIVE_DYNAMIC_NESTED_FIT_RUNNING",
+    "execution_host": "LOCAL_MACBOOK_ONLY",
+    "source_id": "2077967368932890752",
+    "kic": 7373485,
+    "tic": 271347162,
+    "signal_id": "rust-v6-2077967368932890752-1",
+    "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752",
+    "protocol": "TRICERATOPS_KEPLER_V2",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launch.json",
+      "sha256": "bc5b0e934894afb851ab9c67775b7f7319180d6d72e3a192d938806ef32cc9e6"
+    },
+    "native_input_freeze": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-freeze.json",
+      "sha256": "8e41a5c64a32a62ce9c81b4b48a615ccb477aa16b633b76f7feba3fa915e89cd"
+    },
+    "selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/selection.json",
+      "sha256": "41ed5b481ad840dee140ca35a2e5b093e0d62db83ff5d6ba0013364910c76ace"
+    },
+    "native_stellar_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-stellar-review.json",
+      "sha256": "ab37b4dd7357a644e7cefbcaa760b585c73892f246efa8124de1ad71fabbb1d3"
+    },
+    "pre_native_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/pre-native-retained-review.json",
+      "sha256": "c3c7a8169ae38013c26e48e2d9ae73d0c80997bb36d7732e57f2cc91579e63e7"
+    },
+    "alias_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/alias-readiness-review-v1.json",
+      "sha256": "2459ef1f81ff0217e0becf59220184b14a90d12b796c02475572be37781abbcd"
+    },
+    "seed_source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-seed-source-review.json",
+      "sha256": "b7a9c7ca7654657a7a8e1eedc83f959fc04978962b8229c994620534e52bedd1"
+    },
+    "seed_revalidation": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-seed-revalidation.json",
+      "sha256": "3157cf5e39e625d223362d14f3f023f24a65646d2e4434a74a3851adc04c6e35"
+    },
+    "live_check": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/live-check-20261021T045455Z.json",
+      "sha256": "36c80f14458d12c79b899538c84aa1e009c07c6d19d14e206b5e6f45df59eacc"
+    },
+    "previous_terminal": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2076383384993192576/readiness-hold-v1.json",
+      "sha256": "40f359670c9098421d71d9c90d2066c14548297b5644117fa7ffd96083d638e7"
+    },
+    "native_points": 7086,
+    "probability_runs": 0,
+    "clock_adopted": false,
+    "parent_staging": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/parent-authentication-v1.json",
+      "sha256": "8ba73e70a82627b9ade11a0dd22e799476e1644c8a7891e93058cab2fade4092"
+    },
+    "prf_staging": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prf-authentication-v1.json",
+      "sha256": "8b0b4d963bd687715f8a9a2e35cbeaca1ee69b9c46a66b8246ad8d2214e95a1e"
+    },
+    "next": "Let seeded dynamic nested complete without competing numerics, then review full weighted/equal support and actual convergence/stopping, finite priors/posteriors, valid joint eccentric geometry and exact full-baseline protection/residuals/exposure before clock adoption. RawSAP extra-event check supports4.3585day primary independently, not a global alias/TTV exclusion. Preferred-view source is hash-authenticated explicitly among two run/view source records. Reuse staged parents/PRFs, finish same-source57star scene, source-quarter spacecraft/pixels, dilution/folded noise and dated catalogue checks before stockFPP. Save precise outcome/hold then continue full eligible queue; no old held-case rescue."
+  },
+  "hardware": {
+    "utc": "2026-10-21T04:54:55.174839+00:00",
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launch.json",
+      "sha256": "bc5b0e934894afb851ab9c67775b7f7319180d6d72e3a192d938806ef32cc9e6"
+    },
+    "label": "local.spacelab.job.boi-standard-native-2077967368932890752-v2",
+    "root_pid": 10307,
+    "launchctl": "{\n\t\"StandardOutPath\" = \"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launcher.log\";\n\t\"LimitLoadToSessionType\" = \"Aqua\";\n\t\"StandardErrorPath\" = \"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-launcher.log\";\n\t\"Label\" = \"local.spacelab.job.boi-standard-native-2077967368932890752-v2\";\n\t\"OnDemand\" = true;\n\t\"LastExitStatus\" = 0;\n\t\"PID\" = 10307;\n\t\"Program\" = \"/usr/bin/caffeinate\";\n\t\"ProgramArguments\" = (\n\t\t\"/usr/bin/caffeinate\";\n\t\t\"-i\";\n\t\t\"/opt/homebrew/bin/uv\";\n\t\t\"run\";\n\t\t\"--python\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python\";\n\t\t\"python\";\n\t\t\"-B\";\n\t\t\"-m\";\n\t\t\"post_boi.native\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared\";\n\t\t\"/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native\";\n\t);\n};\n",
+    "processes": [
+      {
+        "pid": 10307,
+        "ppid": 1,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 23592960,
+        "args": [
+          "/opt/homebrew/bin/uv",
+          "run",
+          "--python",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native"
+        ]
+      },
+      {
+        "pid": 10308,
+        "ppid": 10307,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 1490944,
+        "args": [
+          "/usr/bin/caffeinate",
+          "-i",
+          "/opt/homebrew/bin/uv",
+          "run",
+          "--python",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native"
+        ]
+      },
+      {
+        "pid": 10309,
+        "ppid": 10307,
+        "status": "running",
+        "cpu_percent": 10.1,
+        "rss_bytes": 291618816,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-m",
+          "post_boi.native",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared",
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native"
+        ]
+      },
+      {
+        "pid": 10315,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 0.0,
+        "rss_bytes": 17809408,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(6)"
+        ]
+      },
+      {
+        "pid": 10316,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 27.7,
+        "rss_bytes": 578633728,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10317,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 22.5,
+        "rss_bytes": 581419008,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=20)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10318,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 35.8,
+        "rss_bytes": 570163200,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10319,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 44.9,
+        "rss_bytes": 572833792,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=24)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10320,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 22.1,
+        "rss_bytes": 588529664,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10321,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 34.3,
+        "rss_bytes": 578453504,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=28)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10322,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 59.8,
+        "rss_bytes": 589447168,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=30)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10323,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 22.0,
+        "rss_bytes": 571736064,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=32)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10324,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 45.0,
+        "rss_bytes": 569589760,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=34)",
+          "--multiprocessing-fork"
+        ]
+      },
+      {
+        "pid": 10325,
+        "ppid": 10309,
+        "status": "running",
+        "cpu_percent": 60.1,
+        "rss_bytes": 589430784,
+        "args": [
+          "/Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python",
+          "-B",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=36)",
+          "--multiprocessing-fork"
+        ]
+      }
+    ],
+    "cpu_sample_seconds": 1.0100989579223096,
+    "cpu_percent_sum": 384.3,
+    "memory": {
+      "total": 17179869184,
+      "available": 5179473920,
+      "percent": 69.9,
+      "used": 8507637760,
+      "free": 64602112,
+      "active": 5124259840,
+      "inactive": 5103894528,
+      "wired": 3383377920
+    },
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=24051811)\t80%; AC attached; not charging present: true\n",
+    "thermal": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+    "frozen_files_verified": 99,
+    "full_relevant_ps": [
+      "10307     1 S      0.0  0.1       00:33 /opt/homebrew/bin/uv run --python /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native",
+      "10308 10307 S      0.0  0.0       00:33 /usr/bin/caffeinate -i /opt/homebrew/bin/uv run --python /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native",
+      "10309 10307 S      9.6  1.7       00:33 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -m post_boi.native /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/candidate.json /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/prepared /Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native",
+      "10316 10309 S     15.5  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=18) --multiprocessing-fork",
+      "10317 10309 R     16.5  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=20) --multiprocessing-fork",
+      "10318 10309 S     16.8  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=22) --multiprocessing-fork",
+      "10319 10309 S     16.6  2.8       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=24) --multiprocessing-fork",
+      "10320 10309 S      9.1  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=26) --multiprocessing-fork",
+      "10321 10309 S     17.7  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=28) --multiprocessing-fork",
+      "10322 10309 S     21.6  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=30) --multiprocessing-fork",
+      "10323 10309 R     14.2  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=32) --multiprocessing-fork",
+      "10324 10309 R     30.0  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=34) --multiprocessing-fork",
+      "10325 10309 R     76.9  2.9       00:17 /Users/adam/Other/spacelab/other/boi-validation-20261017/standard-triceratops-v2-20261020/runtime/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=7, pipe_handle=36) --multiprocessing-fork"
+    ],
+    "latest_log_records": [
+      "  5%|\u258c         | 696/13158 [00:16<04:29, 46.26it/s, batch: 0 | bound: 0 | nc: 1 | ncall: 1558 | eff(%): 33.819 | loglstar: 15051.114 | logz: 15042.775 | dlogz: 10878.121 >  0.100]",
+      "  4%|\u258e         | 706/19059 [00:16<07:09, 42.72it/s, batch: 0 | bound: 0 | nc: 2 | ncall: 1595 | eff(%): 33.699 | loglstar: 15119.340 | logz: 15110.981 | dlogz: 11128.001 >  0.100]",
+      "  4%|\u258d         | 715/16120 [00:16<07:24, 34.67it/s, batch: 0 | bound: 0 | nc: 2 | ncall: 1650 | eff(%): 33.256 | loglstar: 15198.058 | logz: 15189.681 | dlogz: 11052.140 >  0.100]"
+    ],
+    "scope": "Single short production sample, not continuous/full utilization proof. No restart to fill cores, no model/priors/counts/seed changes, server work or competing candidate numerics."
+  },
+  "new_statistical_admissions": 0,
+  "new_probability_runs": 0,
+  "all_prior_records_preserved": true,
+  "server_actions": false,
+  "global_runtime_or_science_changed": false,
+  "scope": "KIC5115632 passed native numerical/protection checks but full inference remains blocked by source-quarter dilution response. Not an astrophysical FP denial. KIC7373485 exact preferred-view source authenticated among two run/view records; all aliases retained and raw extras checked before native, then same-photon seeded upstream controls passed. Production is sequential local-only; no competing candidate jobs, broad audit or optimization."
+}

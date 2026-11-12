@@ -1,0 +1,151 @@
+{
+  "utc": "2026-10-21T14:05:10.563357+00:00",
+  "status": "BOUNDED_COMPARISON_PASSED_CANDIDATE_CHECKED_USE_ONLY",
+  "authorization": "Adam approved this minimal comparison on Kepler-10 and both reopened BOIs.",
+  "library": {
+    "original": "lkprf 1.1.1",
+    "modified": "lkprf 1.1.1+spacelab.1",
+    "patch": {
+      "path": "/Users/adam/Other/spacelab/post_boi/patches/lkprf-1.1.1.patch",
+      "sha256": "3539b5bcc808bb81e2d7883774b97c3ae3a900fa95608980f28e8316bdd377c9"
+    },
+    "wheel": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/wheels/lkprf-1.1.1+spacelab.1-py3-none-any.whl",
+      "sha256": "1bdc02522d5bd40782b29d310a2eab2851aa15c01609f6ef55e4df3aa9b16b94"
+    },
+    "build": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/lkprf-build-source.json",
+      "sha256": "4c27483628b8556f3efc655d139a7b0d80371b0260029996516f134a42edb314"
+    }
+  },
+  "treatment": "Zero negative calibration samples; renormalize each plane; linear interpolation. No final-fraction clipping, new wings, pointing prior, source omission or changes to spatial weights, finite footprint or pixel threshold.",
+  "comparisons": [
+    {
+      "kic": 7595917,
+      "source_id": "2102612750272489216",
+      "sources": 35,
+      "quarters": 17,
+      "maximum_relative_target_dilution_change": 0.00018799016286430437,
+      "maximum_fraction_change": 0.0001801534539344063,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2102612750272489216-comparison.json",
+        "sha256": "6a20f77d5019217e5c5734ce86522b88b0923211baa57cab97f8ae24f3fe347b"
+      }
+    },
+    {
+      "kic": 4948140,
+      "source_id": "2073666564790289664",
+      "sources": 101,
+      "quarters": 17,
+      "maximum_relative_target_dilution_change": 0.0008720583874219923,
+      "maximum_fraction_change": 0.000645181372592063,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2073666564790289664-comparison.json",
+        "sha256": "3c566d979d272025b9757b651dc7e360d7f111bbc5d31328117fb9a40f64fc91"
+      }
+    },
+    {
+      "kic": "Kepler-10",
+      "source_id": "kepler10",
+      "sources": 6,
+      "quarters": 1,
+      "maximum_relative_target_dilution_change": 1.0299546171488316e-07,
+      "maximum_fraction_change": 1.0299518926615292e-07,
+      "evidence": {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/kepler10-comparison.json",
+        "sha256": "07f233e6595dbb8c8344eae3171fa38a3ef111c20f593ede91d58a738cec09f9"
+      }
+    }
+  ],
+  "verification": {
+    "source_quarters": 35,
+    "source_rows_preserved": true,
+    "finite_nonnegative_normalized": true,
+    "independent_bilinear_and16phase_normalization_passed": true,
+    "packaged_vs_prototype_maximum_throughput_difference": 0.0,
+    "packaged_patch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/packaged-patch-verification.json",
+      "sha256": "c0416b0a1f5b62d04e5f40a7770421532b5bffaaaecfeb38c4c9d67341ad4c3c"
+    },
+    "kepler10_direct_upstream_probability_and_lnZ_exact": true,
+    "kepler10": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/kepler10-probability-control.json",
+      "sha256": "b4173f7137ce1bd229e03d57966dceac4ce2e37d4e9d2d96d420dcd01fe1775d"
+    },
+    "folder_tests_passed": 34,
+    "folder_tests": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/folder-tests.log",
+      "sha256": "97d1493c0699e4bc430cc20a3f85efc1ed94de0483187ef68f01e5e74f5a759e"
+    }
+  },
+  "quarter_response": {
+    "full_pool_inadequate_for_some_capable_alternatives": true,
+    "full_pool": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2102612750272489216-phase-effective-review.json",
+        "sha256": "b67d6ec17f6fa797e5b8c368dceca00b15d81d8bca5aeb7dcfd0d6930bcd1346"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2073666564790289664-phase-effective-review.json",
+        "sha256": "e198be5d788960e5f4b9f4859cd5bf642a8d2bc55301a098e14ab3db53f259bb"
+      }
+    ],
+    "selection": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/identical-aperture-groups.json",
+      "sha256": "3c116378d0404a0f6f2e5f4ba225ae04eb03cd35024a4592b497a1228a0c4714"
+    },
+    "selected_quarters": [
+      3,
+      7,
+      11,
+      15
+    ],
+    "criterion": "Largest observed window-photon count among identical detector channel and physical aperture groups. Chosen before FPP, without target-fraction or desired-probability ranking. Other quarters remain independent timing/depth/source evidence.",
+    "selected_group": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2102612750272489216-identical-aperture-phase-review.json",
+        "sha256": "936e5cf01934c64b62ef2055a236e49e7cbc26356cb52aec36a76eae1bad61b8"
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/nonnegative-prf-v1/2073666564790289664-identical-aperture-phase-review.json",
+        "sha256": "97e851a6818a961cb814ad041242cf30ebbd0c952e9be7da4324390ecb899aa1"
+      }
+    ]
+  },
+  "first_reopened_outcome": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/terminal-result-20261021.json",
+    "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+  },
+  "population_parser_recovery": {
+    "record": {
+      "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/2102612750272489216/identical-aperture-native-v1/tess-population-v1/parser-recovery-v1/selection.json",
+      "sha256": "139143fef2983fe32f3f0e3e1cc815cc201594d0d3cb06eda1f01016bc2b4aa9"
+    },
+    "first_original_submission_used": true,
+    "first_population_rows": 8666,
+    "later_two_simulations_retained_unused": true,
+    "scope": "Initial regex missed unquoted href and mistakenly submitted twice more. First submission bound before any output was inspected. No population chosen by FPP."
+  },
+  "limitations": [
+    "Modified engineering response is an explicit approximation, not new official calibration or measured full Kepler source flux.",
+    "Finite footprint and threshold zeros do not establish absence of physical far wings.",
+    "Tmag, companion-flux and field assumptions remain stock approximations.",
+    "Isolated Kepler-10 and numerical controls do not establish empirical crowded-field false-positive reliability.",
+    "Readiness and numerical FPP remain separate from physical validation and RV confirmation."
+  ],
+  "references": [
+    "https://pypi.org/project/lkprf/1.1.1/",
+    "https://archive.stsci.edu/kepler/fpc.html",
+    "https://arxiv.org/abs/1001.0331"
+  ],
+  "reopened_outcomes": [
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic7595917-repaired-futility-20261021.json",
+      "sha256": "0b6e9f837fef34240c36a8dc1640c1b9dfea9ca2a654c1cffbd324d429ebf987"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/local-kic4948140-repaired-futility-20261021.json",
+      "sha256": "836d2851ca6fee5c79ce78fac6b3d546975852ee7def4b2bb7af70993fe4a56c"
+    }
+  ]
+}

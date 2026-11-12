@@ -1,0 +1,35 @@
+{
+  "source_id": "2073666564790289664",
+  "quarters": [
+    1,
+    4,
+    12
+  ],
+  "fixture": {
+    "path": "/Users/adam/Other/spacelab/post_boi/fixtures/kepler-aperture-replay.npz",
+    "sha256": "b77c1055b93436961cced6521f79e339cc990bea0c89aa450f4c95af1df24714"
+  },
+  "full_observed_replay": {
+    "path": "/Users/adam/Other/spacelab/other/boi-repair-20261021/canonical-aperture-replay.json",
+    "sha256": "7204a4ea597311cf64d21e10a249ad6553e17c2c6a000d6855e60369e5e9a9c0"
+  },
+  "scope": "Eight original quality-zero cadence records per quarter for software gold regression. Q4/Q12 retain conflicting source metadata. No planet-class or astrophysical admission asserted. Full original data and failures unchanged.",
+  "original_source": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/original-kbonus-attempt1.response",
+    "sha256": "fdc9e56779c660a4f709fd8372d2741818c1d2d978aa2b73e1c7d1a1e7593610"
+  },
+  "parent_inputs": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/parent-pixels/kplr004948138-2009166043257_lpd-targ.fits.gz",
+      "sha256": "1a2ed4a8c87eb76024a5f503250f51a05adf4e5170c5c2fd4dcda527bdcbaaa6"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/parent-pixels/kplr004948138-2010078095331_lpd-targ.fits.gz",
+      "sha256": "d5a522e15657f0df36256b33c60958a135ff768374fd3fd89c6b1d340e52d61d"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073666564790289664/parent-pixels/kplr004948138-2012088054726_lpd-targ.fits.gz",
+      "sha256": "1f4df8357f6e5be85efa243424914d5023d88a17abc2bba82710f091e53b32a8"
+    }
+  ]
+}

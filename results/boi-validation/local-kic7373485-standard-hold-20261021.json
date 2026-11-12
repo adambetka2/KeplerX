@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-21T05:53:12.998065+00:00",
+  "source_id": "2077967368932890752",
+  "kic": 7373485,
+  "tic": 271347162,
+  "signal_id": "rust-v6-2077967368932890752-1",
+  "status": "HELD_CANDIDATE_SEASONAL_APERTURE_RESPONSE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Native nested completed exit0,ESS5893.48,stopping.848,21708equal samples,finite independent priors/posteriors and exact batman likelihood replays. Representative exact2.59084h transit has zero unprotected real cadences; all approximate full-baseline coverage passes,minmargin.47727h. But all57source scene Gaussian targetQ2.6114 vs calibrated dominant core.8183,Q6.6078/.8429,Q10.6034/.8398,Q14.6049/.8409,with other quarters also retained. Material seasonal allocation difference; core diagnostic is not complete far-source measured fractions. All binary source apertures verified. Full probability-readiness, including native20vs40integration sensitivity77.76ppm, unresolved; original native/review stays undecided. No FPP, source omission, custom response or FP denial.",
+  "native_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-nested-review-v1.json",
+    "sha256": "32897afe77ae1ef126d1dda07d81ef02d9a089bf525e556ebb990d467c069adc"
+  },
+  "coverage_noise": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-posterior-review-measurements-v1.json",
+    "sha256": "c202367f723835514110efa54f757d6fe27738828131ceeaa2772a07f67947b8"
+  },
+  "aperture_masks": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/aperture-mask-encoding-review-v1.json",
+    "sha256": "401d655215c725d7c4a62ed05c3917b10ace6b92ae3a7e9d57969681462a4352"
+  },
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/aperture-response-review-v1.json",
+    "sha256": "35e8d06875a669633d511be4368cf0f15d816fc1afde1e265ba4cff99ac63490"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/scene-preview-review-v1.json",
+    "sha256": "c0a8846dbc21a08fc42a7ea975fb33eb99a5e2b97fb559eef84049fa0e1b2c1c"
+  },
+  "native_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2077967368932890752/native-freeze.json",
+    "sha256": "8e41a5c64a32a62ce9c81b4b48a615ccb477aa16b633b76f7feba3fa915e89cd"
+  },
+  "probability_runs": 0,
+  "clock_adopted_for_probability": false,
+  "physical_false_positive_denied": false,
+  "next": "Preserve complete native output and all favorable/unfavorable scene diagnostics. No response reconstruction/rescue tonight; advance eligible queue by readiness/cost."
+}

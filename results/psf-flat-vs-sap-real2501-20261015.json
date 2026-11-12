@@ -1,0 +1,194 @@
+{
+  "status": "PAIRED_EXISTING_RUN_PROPOSAL_COMPARISON",
+  "captured_at": "2026-10-15T12:41:19.643624+00:00",
+  "selection": "/Users/adam/Other/spacelab/results/psf-flat-real2501-20261015.csv",
+  "selection_sha256": "d7c3c899702a64a0dd7b6691522efa5c0b8f1501c2c24b8c1c8874acbe68c776",
+  "same_source_ids": 2501,
+  "same_server_queue_ranks": true,
+  "replacements": 0,
+  "pending_sap_results": 0,
+  "same_detector_design_and_config": true,
+  "shared_bound_source_files_identical": {
+    "dwarfs/shallow/evolve_native_coherence.py": true,
+    "dwarfs/shallow/evolution.py": true,
+    "dwarfs/shallow/null_calibration.py": true,
+    "pipeline/deterministic/run.py": true,
+    "dwarfs/shallow/evolve_template.py": true,
+    "dwarfs/shallow/coherence.c": true,
+    "dwarfs/shallow/current-designs.json": true,
+    "dwarfs/shallow/masks.py": true,
+    "pipeline/shallow/bls.c": true,
+    "dwarfs/shallow/batch_bls.c": true,
+    "pipeline/photometry/lc2.py": true,
+    "dwarfs/shallow/evolve_global_fundamental.py": true,
+    "pipeline/shallow/run.py": true,
+    "dwarfs/harness/survey.py": false,
+    "dwarfs/shallow/evolve_noise.py": true,
+    "dwarfs/shallow/evolve_detector.py": true
+  },
+  "server_snapshot": {
+    "path": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/comparison-sap-flat2501-20261015-v1/sap-server-snapshot.json",
+    "sha256": "475db3065c1415ddf676437fcbdd285aa23528dda52aacfa7e6dd5cb75adb302"
+  },
+  "flat_source_results": {
+    "path": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/available2501-v1/sources.json",
+    "sha256": "78ddfc316cd0180ce21cb3de66eeb329a97e4bf1927477cef2f252be743b0631"
+  },
+  "flat": {
+    "sources": 2501,
+    "sources_with_proposals": 697,
+    "proposals": 2102,
+    "statuses": {
+      "SEARCHED": 2446,
+      "DETECTOR_INELIGIBLE": 40,
+      "UNEXPECTED_ERROR": 15
+    },
+    "by_population": {
+      "K": {
+        "sources": 2369,
+        "sources_with_proposals": 657,
+        "proposals": 1956,
+        "statuses": {
+          "SEARCHED": 2315,
+          "DETECTOR_INELIGIBLE": 39,
+          "UNEXPECTED_ERROR": 15
+        }
+      },
+      "M": {
+        "sources": 132,
+        "sources_with_proposals": 40,
+        "proposals": 146,
+        "statuses": {
+          "SEARCHED": 131,
+          "DETECTOR_INELIGIBLE": 1
+        }
+      }
+    }
+  },
+  "sap": {
+    "sources": 2501,
+    "sources_with_proposals": 646,
+    "proposals": 1339,
+    "statuses": {
+      "SEARCHED": 2441,
+      "UNEXPECTED_ERROR": 15,
+      "DETECTOR_INELIGIBLE": 45
+    },
+    "by_population": {
+      "K": {
+        "sources": 2369,
+        "sources_with_proposals": 603,
+        "proposals": 1232,
+        "statuses": {
+          "SEARCHED": 2312,
+          "DETECTOR_INELIGIBLE": 44,
+          "UNEXPECTED_ERROR": 13
+        }
+      },
+      "M": {
+        "sources": 132,
+        "sources_with_proposals": 43,
+        "proposals": 107,
+        "statuses": {
+          "UNEXPECTED_ERROR": 2,
+          "SEARCHED": 129,
+          "DETECTOR_INELIGIBLE": 1
+        }
+      }
+    }
+  },
+  "flat_relative_proposal_increase_percent": 56.982823002240465,
+  "flat_relative_proposal_source_increase_percent": 7.8947368421052655,
+  "source_proposal_presence_overlap": {
+    "both": 295,
+    "flat_only": 402,
+    "sap_only": 351,
+    "neither": 1453
+  },
+  "both_successfully_searched": {
+    "sources": 2437,
+    "flat": {
+      "sources": 2437,
+      "sources_with_proposals": 696,
+      "proposals": 2101,
+      "statuses": {
+        "SEARCHED": 2437
+      },
+      "by_population": {
+        "K": {
+          "sources": 2308,
+          "sources_with_proposals": 656,
+          "proposals": 1955,
+          "statuses": {
+            "SEARCHED": 2308
+          }
+        },
+        "M": {
+          "sources": 129,
+          "sources_with_proposals": 40,
+          "proposals": 146,
+          "statuses": {
+            "SEARCHED": 129
+          }
+        }
+      }
+    },
+    "sap": {
+      "sources": 2437,
+      "sources_with_proposals": 645,
+      "proposals": 1338,
+      "statuses": {
+        "SEARCHED": 2437
+      },
+      "by_population": {
+        "K": {
+          "sources": 2308,
+          "sources_with_proposals": 602,
+          "proposals": 1231,
+          "statuses": {
+            "SEARCHED": 2308
+          }
+        },
+        "M": {
+          "sources": 129,
+          "sources_with_proposals": 43,
+          "proposals": 107,
+          "statuses": {
+            "SEARCHED": 129
+          }
+        }
+      }
+    }
+  },
+  "status_pairs": {
+    "SEARCHED / SEARCHED": 2437,
+    "SEARCHED / UNEXPECTED_ERROR": 4,
+    "DETECTOR_INELIGIBLE / DETECTOR_INELIGIBLE": 32,
+    "DETECTOR_INELIGIBLE / UNEXPECTED_ERROR": 7,
+    "UNEXPECTED_ERROR / DETECTOR_INELIGIBLE": 8,
+    "UNEXPECTED_ERROR / SEARCHED": 3,
+    "SEARCHED / DETECTOR_INELIGIBLE": 5,
+    "UNEXPECTED_ERROR / UNEXPECTED_ERROR": 4,
+    "DETECTOR_INELIGIBLE / SEARCHED": 1
+  },
+  "limits": [
+    "Raw detector proposals, not vetted BOIs, confirmed planets, unique astrophysical signals or measured recall.",
+    "All original ineligible inputs and execution errors remain in the full 2501 denominator.",
+    "The SEARCHED-on-both subset is separate; no original targets are replaced.",
+    "Existing SAP and Flat preparations differ by delivered photometry and their recorded preparation contracts.",
+    "Source-presence overlap does not match individual signal ephemerides.",
+    "Existing runs use Mac ARM64 and Linux x86_64 runtimes.",
+    "The survey wrapper differs only in the PREPARATION_FILES provenance list; all preparation and scan logic is unchanged."
+  ],
+  "preparation_wrapper_difference": {
+    "file": "dwarfs/harness/survey.py",
+    "change": "Mac adds shallow/evolution.py to PREPARATION_FILES provenance bindings; source_curve, prepare_source and scan logic are identical.",
+    "diff": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/comparison-sap-flat2501-20261015-v1/survey-wrapper.diff",
+    "diff_sha256": "d64f98eb6f366edadb5c29a6e8b2fe65ef58171aca1829cf1d701b519198843b"
+  },
+  "no_missing_delivered_sap_curves": true,
+  "per_source_table": {
+    "path": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/comparison-sap-flat2501-20261015-v1/sources.csv",
+    "sha256": "fbb42ae2e3df9ccb7c890eb4fce3488aa489ddd1896e5ac46b614e187f2654bb"
+  }
+}

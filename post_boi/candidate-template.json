@@ -1,0 +1,47 @@
+{
+  "protocol": "TRICERATOPS_KEPLER_V3",
+  "source_id": null,
+  "signal_id": null,
+  "input_basis": null,
+  "photometry": null,
+  "flux_convention": null,
+  "exposure_days": null,
+  "recovered": {
+    "period_days": null,
+    "epoch_bkjd": null,
+    "duration_days": null
+  },
+  "other_signals": [],
+  "protection_mask": null,
+  "detrending": {
+    "window_days": null,
+    "polyorder": 2
+  },
+  "prepared": null,
+  "native": {
+    "priors": null,
+    "prior_basis": null,
+    "seed": null,
+    "starting_point": null,
+    "supersample": null,
+    "fit_options": null
+  },
+  "native_review": null,
+  "readiness": null,
+  "scene": null,
+  "geometry": null,
+  "aperture_response": null,
+  "psf_response": null,
+  "background": null,
+  "probability": {
+    "noise": null,
+    "noise_basis": null,
+    "supersample": null,
+    "contrast_curve": null,
+    "contrast_filter": null,
+    "molusc": null
+  },
+  "timing_review": null,
+  "recovery_diagnostics": 0,
+  "cpu_budget": 10
+}

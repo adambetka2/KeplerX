@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "name": "WD 1856+534",
+  "reference_class": "Deep planet-candidate transit",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Deep, short, repeating transit; optical and infrared depths agree.",
+  "lookalikes": [
+    "eclipsing binary",
+    "compact-object eclipse"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "GTC 0.48 micrometre and Spitzer 4.5 micrometre; points are observations, curves are fitted models."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "period_d": {
+      "value": 1.4079405,
+      "unit": "d",
+      "uncertainty": 1.1e-06,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "optical_depth": {
+      "value": 0.5665,
+      "unit": "relative flux",
+      "uncertainty": 0.0018,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "infrared_depth": {
+      "value": 0.563,
+      "unit": "relative flux",
+      "uncertainty": 0.016,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "duration": {
+      "value": 8,
+      "unit": "min",
+      "uncertainty": null,
+      "approximate": true,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/2009.07282",
+    "pdf_url": "https://arxiv.org/pdf/2009.07282",
+    "pdf_page_one_based": 4,
+    "figure": "1",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "3d39b011f5d5426ef582dc4a56b0b59175ac758a5c9db1e232009aa5ecbfba03",
+    "page_crop_fraction_xyxy": [
+      0.1,
+      0.075,
+      0.91,
+      0.355
+    ],
+    "image_sha256": "6f034897a778d4daf6c2845a1c183abc7f3e271ce196bd661fa48f0e8d2bcfa8"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

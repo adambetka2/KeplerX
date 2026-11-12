@@ -1,0 +1,261 @@
+{
+  "utc": "2026-10-20T10:09:29.650695+00:00",
+  "classification": "ONE_SELECTED_FULL_PROBABILITY_SCREEN_RUNNING",
+  "source_id": "2130921124535127424",
+  "kic": 10527790,
+  "signal_id": "mk-sap-20261019-2130921124535127424-3",
+  "membership": "NEW_BOI_SOURCE",
+  "validated_new": 0,
+  "goal": 50,
+  "completed_probability_budget_screens": 1,
+  "screen_rejections": 1,
+  "preparation_holds": 2,
+  "astrophysical_false_positive_rate": null,
+  "native_fit": {
+    "period_days": 46.55452963324058,
+    "epoch_bkjd": 844.5305883056378,
+    "duration_days": 0.1543899304960078,
+    "rank_rhat_maximum": 1.0241751548126963,
+    "reference_epoch_bulk_ess": 310.51220506089305,
+    "native_convergence": {
+      "rank_rhat_maximum": 1.0241751548126963,
+      "reference_epoch_bulk_ess": 310.51220506089305,
+      "radius_ratio_snr": 13.244046397530264,
+      "snr_definition": "Posterior median divided by half the16th-to84th percentile width",
+      "passed": true
+    }
+  },
+  "native_review": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/native-acceptance-v1/2130921124535127424/native-fit-review.json",
+    "sha256": "8afa7d0e911d38137f02062cc0c879f06cdf846e64b4294d90a61667cde68f2f"
+  },
+  "timing_review": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/timing-review-v1/2130921124535127424/review.json",
+    "sha256": "df59520466a4d875f8b0937ea625d656faef3e0b03e8a34d9ab7d25224f0a45a"
+  },
+  "scene_sources": 37,
+  "scenario_families": 123,
+  "scene_missing_log_prior_mass_upper": -104.92080492936329,
+  "background_operator": {
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/background-operator-review-v2/review.json",
+      "sha256": "97e9e5e1b346eba6211364126a69e330e51a985a762e7fa6657011110987361a"
+    },
+    "authenticated_native_points": 58404,
+    "depths": {
+      "delivered_sap": {
+        "events": 31,
+        "depth": 0.0017251617070644402,
+        "error": 0.00017024853385297158,
+        "snr": 10.133195675883517,
+        "chi2": 32.20435397143122,
+        "dof": 30,
+        "descriptive_chi2_tail": 0.3580845500143133,
+        "positive_events": 26,
+        "maximum_information_fraction": 0.08275543590730416
+      },
+      "direct_archive_aperture": {
+        "events": 31,
+        "depth": 0.0017189175262110308,
+        "error": 0.0001700401632359692,
+        "snr": 10.108891296614694,
+        "chi2": 26.294277374772612,
+        "dof": 30,
+        "descriptive_chi2_tail": 0.6600297626189557,
+        "positive_events": 29,
+        "maximum_information_fraction": 0.082552987776538
+      },
+      "sap_minus_archive_correction": {
+        "events": 31,
+        "depth": 9.247271303451145e-06,
+        "error": 0.00016347529971532483,
+        "snr": 0.056566779932835744,
+        "chi2": 2.3263330226629804,
+        "dof": 30,
+        "descriptive_chi2_tail": 0.9999999999975134,
+        "positive_events": 15,
+        "maximum_information_fraction": 0.08171835128930796
+      }
+    }
+  },
+  "engineering": {
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/engineering-review-v1/2130921124535127424/review.json",
+      "sha256": "9e157967bb9cf73ce3d74a865e47c0f71764b2d68f32ebacb774e0a5d76171e2"
+    },
+    "baseline": {
+      "events": 31,
+      "depth": 0.0017251617070644402,
+      "error": 0.00017024853385297158,
+      "snr": 10.133195675883517,
+      "chi2": 32.20435397143122,
+      "dof": 30,
+      "descriptive_chi2_tail": 0.3580845500143133,
+      "positive_events": 26,
+      "maximum_information_fraction": 0.08275543590730416
+    },
+    "comparisons": {
+      "with_parent_pointing_background": {
+        "same_events_baseline": {
+          "events": 31,
+          "depth": 0.0017251617070644402,
+          "error": 0.00017024853385297158,
+          "snr": 10.133195675883517,
+          "chi2": 32.20435397143122,
+          "dof": 30,
+          "descriptive_chi2_tail": 0.3580845500143133,
+          "positive_events": 26,
+          "maximum_information_fraction": 0.08275543590730416
+        },
+        "alternative": {
+          "events": 31,
+          "depth": 0.0017478907560753499,
+          "error": 0.00018982863102715592,
+          "snr": 9.207729869923076,
+          "chi2": 29.871768812571332,
+          "dof": 30,
+          "descriptive_chi2_tail": 0.47223522037368715,
+          "positive_events": 28,
+          "maximum_information_fraction": 0.09974401883502565
+        }
+      },
+      "exclude_parent_rolling_band": {
+        "same_events_baseline": {
+          "events": 29,
+          "depth": 0.0017586254204181584,
+          "error": 0.00017279570276987604,
+          "snr": 10.177483538234982,
+          "chi2": 30.22172718196775,
+          "dof": 28,
+          "descriptive_chi2_tail": 0.35269771805253536,
+          "positive_events": 25,
+          "maximum_information_fraction": 0.08525024686690576
+        },
+        "alternative": {
+          "events": 29,
+          "depth": 0.001783738123525002,
+          "error": 0.00017590331522391686,
+          "snr": 10.140446308555271,
+          "chi2": 28.4390433150872,
+          "dof": 28,
+          "descriptive_chi2_tail": 0.4413742645746314,
+          "positive_events": 25,
+          "maximum_information_fraction": 0.08834415452267243
+        }
+      }
+    },
+    "odd_even_sigma": 2.4688293792081906
+  },
+  "source_localization": {
+    "status": "TARGET_COMPATIBLE",
+    "good_quarters": 3,
+    "minimum_good_quarters": 3,
+    "robust_offset_arcsec": [
+      -0.3632627832492025,
+      -2.8703605472805136
+    ],
+    "offset_distance_arcsec": 2.893255868581009,
+    "offset_uncertainty_arcsec": 6.146181299739616,
+    "offset_significance": 0.4707404040788029,
+    "required_significance": 3.0,
+    "uncertainty_variance_arcsec2": {
+      "formal": 37.749944569268955,
+      "quarter_scatter": 9.839956398079456,
+      "jackknife": 9.839956398079456
+    },
+    "aggregate_systematic_arcsec": 0.16,
+    "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+  },
+  "source_localization_scope": "Target-compatible but broad6.146arcsec uncertainty. No unique ownership or exclusion of every neighbor is asserted. Complete nearby-source probability census and physical closeout remain required.",
+  "numerical_controls": {
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/probability-controls-v2/2130921124535127424/controls.json",
+      "sha256": "b3d705c455fc765b48f15c7af5e1780f40a6a111d076ea3d41877ecc68e84ee9"
+    },
+    "complete_scenarios": 123,
+    "same_draw_posterior_l1_difference": 0.0,
+    "packet_covariance_checks": [
+      {
+        "stage": "final",
+        "bound_domain_cases": 73,
+        "maximum_bound_error": 0.0,
+        "dense_covariance_identity_error": 6.861178292183467e-14,
+        "dense_covariance_quadratic_error": 5.115907697472721e-12,
+        "dense_covariance_quadratic_relative_error": 6.099337573995128e-15,
+        "retained_whitening_error": 1.6653345369377348e-14,
+        "full_bins": 200,
+        "retained_modes": 200
+      },
+      {
+        "stage": "recovered",
+        "bound_domain_cases": 73,
+        "maximum_bound_error": 0.0,
+        "dense_covariance_identity_error": 7.06632564160667e-14,
+        "dense_covariance_quadratic_error": 1.1425527191022411e-11,
+        "dense_covariance_quadratic_relative_error": 3.019725291497975e-14,
+        "retained_whitening_error": 6.061817714453355e-14,
+        "full_bins": 175,
+        "retained_modes": 170
+      }
+    ]
+  },
+  "execution_benchmark": {
+    "receipt": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/execution-throughput-v2/review.json",
+      "sha256": "fc9f08f3f11b5b2bc9838991f700d2fd47a478dd9fe3d07f52040b11bba3e4e2"
+    },
+    "first_five_renderer_threads": 6,
+    "reserved_slots": 30,
+    "median_slowest_worker_seconds": {
+      "1": 2.8311842455295846,
+      "2": 2.372395775979385,
+      "4": 2.323038108064793,
+      "6": 2.1887302430113778
+    },
+    "six_thread_speedup": 1.2935281789839403,
+    "scope": "Five independent workers on one selected target, same fixed seeds and complete physical sampling/rendering/weight persistence, no likelihood clipping. JIT warmup excluded from worker timing; process startup/context outside reported work but group dispatch retains warmup. No FPP or candidate ranking uses partial control evidence. No model, count, output or frozen result changed."
+  },
+  "campaign": {
+    "plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/probability-campaign-v1/plan.json",
+      "sha256": "a5a1607cc5b91cbe383ea679030643a1a7c60de5205c219b1549e966d86cf7be"
+    },
+    "freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/probability-campaign-v1/freeze.json",
+      "sha256": "9703b187ee653b1bf0d3e3ad04953bf3b8b78e7922202ee7951f88453f8addbb"
+    },
+    "policy": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/probability-campaign-v1/policy.json",
+      "sha256": "e4888df28f63f40d703a58d5bc11b42e69541a9576317af621d3605644793815"
+    },
+    "primary_repeats": 20,
+    "recovered_repeats": 0,
+    "attempts_per_scenario": 1000000,
+    "first_five_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "mean_point_fpp_stop_ge": 0.03,
+    "stage": "FIRST_FIVE_RUNNING_NO_COMPLETE_FPP_RESULT_YET",
+    "unit": "mk-boi-single-213092-primary-v1",
+    "live_verification": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/launch-verification-v1/review.json",
+      "sha256": "5fc4181a6048dc882141bc56516b06ba2e9e84e8f084f3694c7f9895f0e76121"
+    }
+  },
+  "physical_admission_open": [
+    "The final-clock centroid is compatible with the target but broad:2.893arcsec offset with6.146arcsec uncertainty. It does not exclude all nearby source hypotheses. Keep localization and dilution physical review open; complete neighboring-source census remains mandatory.",
+    "No imaging, spectroscopy, RV or companions are listed in the current bounded ExoFOP response. This is not a universal absence assertion or a contrast curve.",
+    "Retained nearest-row limb-darkening approximations for cool/off-grid companion components remain conditional.101families contain such components in the domain audit. No alternate atmosphere was substituted and no physical model adequacy is inferred from numerical parity.",
+    "Native odd/even fixed-shape depths differ by about2.47sigma. Preserve all values; include EB and doubled-period binary families. This is not a reproduced binary or a resolved alias.",
+    "Residual correlated noise, host/scene uncertainties, companions and dilution-aware radius still require physical closeout. No conditional probability pass increments the50-object goal."
+  ],
+  "failures": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/single-target-213092-v1/preserved-failures-v1/review.json",
+    "sha256": "8866eb293d9e374a41c5e0a31fdef266123dfe8ae1cacff1231bacd2fe765b9c"
+  },
+  "scope": "All science over ssh kbonus on one selected target. Full integration results remain pending; input authentication, numerical controls, catalogue nonmatches and performance controls do not establish validation, confirmation or novelty."
+}

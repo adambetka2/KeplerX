@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-20T20:47:56.254739+00:00",
+  "source_id": "2100203999471640064",
+  "kic": 3935011,
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE",
+  "disposition": "REMAINS_PC",
+  "native_fit_started": false,
+  "production_fpp_runs": 0,
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100203999471640064/scene-preview-review-v1.json",
+    "sha256": "2025042186606a8b6a8807e7ce79e339754877fdafa8c9c9248aa81071880da9"
+  },
+  "model_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100203999471640064/aperture-response-review-v3.json",
+    "sha256": "5300c3ccf36872ec85df957c7540550f639ed15aa2a3b62edbf348fdfbe3d3da"
+  },
+  "reason": "Independent same-source calibrated-core comparison changes source allocation materially: e.g.Q1 Gaussian target89.99% vs75.93%,Q2 69.72% vs60.46%,Q9 85.38% vs72.93%. The largest neighbor contribution and strong quarter response variation are not measured well by the fixed0.75pixel approximation. Full27-source scene preserved. No full far-scene measured fractions, response/pointing prior or wings invented.",
+  "scope": "Pre-native check avoids repeating a long fit before unresolved scene. Original V1 precision outcome unchanged; no new k-SNR/radius veto. No false-positive denial or probability result.",
+  "next": "Continue a physically characterized field without a close retained neighbor; preserve all source-response holds without repeated model rescue."
+}

@@ -1,0 +1,34 @@
+{
+ "utc": "2026-10-26T17:09:52.868008+00:00",
+ "user_instruction": "Use internal disc",
+ "evidence_root": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026",
+ "internal_free_gib": 130.8307342529297,
+ "manifest": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight-manifest.json",
+  "sha256": "b15baf045dd7530f3f4ce64a4d5b92518e271703b6183fa67b7d60208d7df8f5"
+ },
+ "restored_rust_readiness_storage_blocker_cleared": true,
+ "remaining_scientific_readiness_checks_unchanged": true,
+ "external_data_read_only": true,
+ "coordinator": "other/boi-v3-20261025/tools/scheduler.py",
+ "active_queue": "other/boi-v3-20261025/queue-4.json",
+ "input_preflight": {
+  "utc": "2026-10-26T17:12:03.854214+00:00",
+  "pid": 15585,
+  "worker": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight.py",
+  "worker_sha256": "0d896eba89eaa04d186cfa7a0eafb22be1ad2cd55e88956bbc395e291cd3a882",
+  "manifest_sha256": "b15baf045dd7530f3f4ce64a4d5b92518e271703b6183fa67b7d60208d7df8f5",
+  "scope": "Input authentication only; no native-fit or FPP allocations.",
+  "initial_shell_background_launch": {
+   "pid": 15497,
+   "worker_started": false,
+   "explanation": "No surviving process or worker-created source directory; detached session used for actual launch."
+  },
+  "state": "COMPLETE",
+  "completed_hosts": 6,
+  "record": "results/boi-validation/shallow-native-input-preflight-20261026.json"
+ },
+ "input_preflight_log": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight.log",
+ "input_preflight_status": "/Users/adam/Other/spacelab/other/boi-v3-20261025/shallow-20261026/preflight-status.json",
+ "full_validation_admission_requirements_unchanged": true
+}

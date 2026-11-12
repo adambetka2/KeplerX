@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-27T01:28:02.741881+00:00",
+  "state": "AWAITING_ADAM_SCIPY_MODE_REPAIR_AUTHORIZATION",
+  "native_jobs_complete": 4,
+  "native_boi_jobs_complete": 3,
+  "active_native_jobs": 0,
+  "active_fpp_jobs": 0,
+  "active_reconstruction_jobs": 0,
+  "probability_admissions": 0,
+  "newly_validated_planets": 0,
+  "scientific_dispositions": 8,
+  "remaining_groups": 57,
+  "scope_groups": 65,
+  "latest_qualification": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-method-qualification-20261027.json",
+    "sha256": "890fb34a41a6055f469a641bd46dddf5f9320fc38dcf088a46457e7abb79594c"
+  },
+  "pending_authorization": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-proposal-v1/approval-required.json",
+    "sha256": "1bfdeeef290e11e882cbaa6253b0a0b089f9c414c8c110e13c97490514d37e1e"
+  },
+  "question_already_sent": true,
+  "no_duplicate_repair_question": true,
+  "do_not_restart_stopped_reconstruction": true,
+  "no_boi_disposition_for_shared_software_blocker": true,
+  "gold_control": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/verification/kepler10-gold-20261027-result.json",
+    "sha256": "f822ff054edbb75c7f9ba4ae0449d477f66dd8807159064532979bd3794c4acd"
+  },
+  "next_authorized_independent_work": "Finish supported native reviews/documentation and preserve tested reader code; wait for Adam before the proposed new extraction generation."
+}

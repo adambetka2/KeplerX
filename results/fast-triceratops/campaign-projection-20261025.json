@@ -1,0 +1,253 @@
+{
+  "scope": "PROJECTION_FROM_TWO_SEEDS_NOT_A_MEASURED_TWENTY_SEED_SPEEDUP",
+  "source_id": "2076383384993192576",
+  "basis_report": {
+    "path": "/Users/adam/Other/spacelab/results/fast-triceratops/closeout-20261025.json",
+    "sha256": "e100547bb2a5688ce503bcb65b0b107acb1e11045e56656a7f8c68733bfda066"
+  },
+  "original_cpu_budget": 5,
+  "original_twenty_repeat_interval_s": 323.291385,
+  "original_interval_definition": "First preserved attempt timestamp through final audit timestamp; excludes earlier coordinator startup; historical machine load differs from new replay.",
+  "original_audit": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/audit-20261025T012022411844Z.json",
+    "sha256": "2a9a89c373cdd2e837b86a079cad408126d0162af6816b2a3ba1a8e0c80a40b9"
+  },
+  "original_results": [
+    {
+      "index": 0,
+      "seed": 391193619,
+      "attempt_start_utc": "2026-10-25T01:14:59.120459+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-00/result.json",
+        "sha256": "9a9906a0f6da701c90f11c7697ecd0a5071a815922b901f0e88e568a3d00e225"
+      }
+    },
+    {
+      "index": 1,
+      "seed": 910759103,
+      "attempt_start_utc": "2026-10-25T01:15:32.480382+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-01/result.json",
+        "sha256": "375704eacf09681f86b7b4ed9298ca22a459c1c6e09a546db09317ba9b946ffb"
+      }
+    },
+    {
+      "index": 2,
+      "seed": 782104951,
+      "attempt_start_utc": "2026-10-25T01:15:48.108581+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-02/result.json",
+        "sha256": "98dd462d20fcfaf02fea162c1501588b453447bc33f1e4a7ffd3896bde839da1"
+      }
+    },
+    {
+      "index": 3,
+      "seed": 3912980696,
+      "attempt_start_utc": "2026-10-25T01:16:03.556360+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-03/result.json",
+        "sha256": "2a3aa5548d549aef3d5fca5694a532b0fda9ae884ef0ec689cfae3620618ebc5"
+      }
+    },
+    {
+      "index": 4,
+      "seed": 3816791375,
+      "attempt_start_utc": "2026-10-25T01:16:18.264735+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-04/result.json",
+        "sha256": "3157d5964ad3cae0ab65d0cdc7f7d1d437680f5cac982bfd92d84ef90fdf4b82"
+      }
+    },
+    {
+      "index": 5,
+      "seed": 486401123,
+      "attempt_start_utc": "2026-10-25T01:16:33.431854+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-05/result.json",
+        "sha256": "7a027546f3e8781c560900d980e6313e48be5013f848c72a1d0b1d8ac1dd15bb"
+      }
+    },
+    {
+      "index": 6,
+      "seed": 2497275537,
+      "attempt_start_utc": "2026-10-25T01:16:49.586777+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-06/result.json",
+        "sha256": "10beae0c6740d5e9c0169d7b673c67b4ede03691c6523a63baba1d90e65252b4"
+      }
+    },
+    {
+      "index": 7,
+      "seed": 2577031080,
+      "attempt_start_utc": "2026-10-25T01:17:05.058396+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-07/result.json",
+        "sha256": "3bb436f4ffafba9be50b06e96edf21f800d77fc315ea27831a0eec920fcbcd99"
+      }
+    },
+    {
+      "index": 8,
+      "seed": 456493892,
+      "attempt_start_utc": "2026-10-25T01:17:20.023756+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-08/result.json",
+        "sha256": "b550f2419f04ea253b004edc395cf665eda2dc5ac2bae8c06d473130666b048b"
+      }
+    },
+    {
+      "index": 9,
+      "seed": 4008237061,
+      "attempt_start_utc": "2026-10-25T01:17:35.764359+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-09/result.json",
+        "sha256": "52b5919c9dbae0ae2d7ce223e983c46f910a9d97efdf81769f2cd4045ef36ee7"
+      }
+    },
+    {
+      "index": 10,
+      "seed": 417295612,
+      "attempt_start_utc": "2026-10-25T01:17:51.786202+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-10/result.json",
+        "sha256": "7cb083d8e417ee6483a85f62ca18b2f2ee6f7fe69e998583723317305618f338"
+      }
+    },
+    {
+      "index": 11,
+      "seed": 608880144,
+      "attempt_start_utc": "2026-10-25T01:18:06.741974+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-11/result.json",
+        "sha256": "1527823ecd06bbaf76fab501a837092f9bd4f488786f231c31447cf572a994e6"
+      }
+    },
+    {
+      "index": 12,
+      "seed": 3411813672,
+      "attempt_start_utc": "2026-10-25T01:18:21.964825+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-12/result.json",
+        "sha256": "5ece8c2752cf4402d98756c27874e83513227008be7d4d7378df054acacc8a34"
+      }
+    },
+    {
+      "index": 13,
+      "seed": 3865944028,
+      "attempt_start_utc": "2026-10-25T01:18:36.656178+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-13/result.json",
+        "sha256": "146db8f4ed4a44f7a112d88939ca69ef6fe6068281cda3ff6df9215459131017"
+      }
+    },
+    {
+      "index": 14,
+      "seed": 3369757954,
+      "attempt_start_utc": "2026-10-25T01:18:53.046916+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-14/result.json",
+        "sha256": "d5a540d86087dd80986ebe20b63a5238e48b705815ec84b059b15dde914f57c1"
+      }
+    },
+    {
+      "index": 15,
+      "seed": 2772243960,
+      "attempt_start_utc": "2026-10-25T01:19:10.240786+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-15/result.json",
+        "sha256": "24422e93cd62b728df003c7147378c484a091133687bab0dfc87a30c2ae21b3a"
+      }
+    },
+    {
+      "index": 16,
+      "seed": 1864608062,
+      "attempt_start_utc": "2026-10-25T01:19:26.042044+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-16/result.json",
+        "sha256": "b9046d0d5d66cff18264c102b458833da652db9de4afb12883275bdeaaef1b52"
+      }
+    },
+    {
+      "index": 17,
+      "seed": 608952778,
+      "attempt_start_utc": "2026-10-25T01:19:40.521946+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-17/result.json",
+        "sha256": "9223ef1d68e266cdb887422f1e9e1205c30e43b20b3f161009b97135dc406889"
+      }
+    },
+    {
+      "index": 18,
+      "seed": 4040440392,
+      "attempt_start_utc": "2026-10-25T01:19:54.813358+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-18/result.json",
+        "sha256": "345a48ee9c49c70970a7f51c64918e91b050134fe08937075fe6d7e6d65cea56"
+      }
+    },
+    {
+      "index": 19,
+      "seed": 3535753791,
+      "attempt_start_utc": "2026-10-25T01:20:08.659841+00:00",
+      "result": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/probability-v3/campaign/runs/final/seed-19/result.json",
+        "sha256": "73e239ca34a131984d3d13a5cb1591b896e69051298182eac62cfe7a06889791"
+      }
+    }
+  ],
+  "serial_cpu_projection": {
+    "stock": {
+      "first_repeat_cpu_s": 44.54236,
+      "later_repeat_cpu_s": 31.865835999999987,
+      "worker_initialization_cpu_s": 0.70584,
+      "twenty_repeat_cpu_s": 650.6990839999997
+    },
+    "engine": {
+      "first_repeat_cpu_s": 24.628577999999997,
+      "later_repeat_cpu_s": 14.69608599999999,
+      "worker_initialization_cpu_s": 7.204886,
+      "twenty_repeat_cpu_s": 311.05909799999984
+    }
+  },
+  "serial_twenty_repeat_cpu_speedup": 2.0918825013759927,
+  "pool_projection": [
+    {
+      "workers": 1,
+      "first_two_gate_s": 46.529549999999986,
+      "idealized_twenty_repeat_elapsed_s": 311.0590979999997,
+      "repeats_per_worker": [
+        20
+      ]
+    },
+    {
+      "workers": 2,
+      "first_two_gate_s": 31.833464,
+      "idealized_twenty_repeat_elapsed_s": 164.0982379999999,
+      "repeats_per_worker": [
+        10,
+        10
+      ]
+    },
+    {
+      "workers": 5,
+      "first_two_gate_s": 31.833464,
+      "idealized_twenty_repeat_elapsed_s": 105.31389399999996,
+      "repeats_per_worker": [
+        6,
+        5,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "pool_assumptions": [
+    "One numerical thread per process; first-two scientific screen unchanged.",
+    "Per-seed cost approximated by one cold and one warm observed seed.",
+    "Each new worker pays measured cold CPU and initialization costs once.",
+    "CPU seconds convert to elapsed seconds only with an otherwise available dedicated core.",
+    "No contention, memory-bandwidth limits, all-core frequency reduction or coordinator startup in the ideal model.",
+    "Comparison with the historical five-thread campaign is illustrative, not a same-conditions measured speedup."
+  ],
+  "working_target": "About 2-3x shorter full twenty-repeat probability stage on the existing five-core budget for this case; unverified until an equal-budget twenty-seed comparison.",
+  "whole_workflow_note": "Preparation, native fitting, acquisition and scientific review are outside this twenty-repeat timing. The separate 1.42x likelihood replay is not a measured complete-fit speedup."
+}

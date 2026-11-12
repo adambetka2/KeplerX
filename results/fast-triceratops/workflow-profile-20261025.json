@@ -1,0 +1,133 @@
+{
+  "scope": "PERFORMANCE_EXPERIMENT_ONLY_NOT_CANDIDATE_ADMISSION",
+  "local_date": "2026-10-25",
+  "threads": 1,
+  "nice": 19,
+  "draws_per_scenario": 20000,
+  "numba_disk_cache_enabled": false,
+  "benchmark_array_files_written": false,
+  "scientific_fast_source_sha256": {
+    "fast_triceratops/__init__.py": "ff61f89e7deb0334a4926f078a07442d6f63480718dbd35600d74fb6f529f07c",
+    "fast_triceratops/kernels.py": "72fc295a18b86a08da8d8603a8a53821e058bccb934f529775b8a106e0ef4a71",
+    "fast_triceratops/joint.py": "c5f32135bae881a9cc15d3cd7a053464f4eae81178cf6af74278074c07e1ff97",
+    "fast_triceratops/scenarios.py": "5d60193525360b64402d4dbdd89703dd9c20e85c7cd19d85fdca6e82d24a4d25",
+    "fast_triceratops/engine/__init__.py": "ecd5f61915cc97d9983994e1d46eef4b55f02711d169ef0c8d7de7f008c91845",
+    "fast_triceratops/engine/triceratops.py": "d59ead3d6b5a668d9755def59a141608aa9b101b5ff5e3b641230ede105b141d",
+    "fast_triceratops/engine/marginal_likelihoods.py": "35a9fa05c77065f0634dc517a3cd01c5d39fe2a71c1919af1ac78e5dd777e06d"
+  },
+  "stock_comparison": {
+    "source_id": "2100325529865507712",
+    "campaign": "other/boi-v3-20261025/cases/2100325529865507712/probability-v3/campaign",
+    "freeze_sha256": "45d7858ff36ea53e8c9804f32afa0f5be372c44f241be108c07a8f11b51aa94b",
+    "seed_index": 0,
+    "seed": 3306657617,
+    "stock": {
+      "cpu_s": 12.246112999999998,
+      "wall_s": 12.73417912516743
+    },
+    "unmodified_copy": {
+      "cpu_s": 12.606849,
+      "wall_s": 13.649110917001963
+    },
+    "existing_exact": {
+      "cpu_s": 1.8948109999999971,
+      "wall_s": 2.1223799576982856
+    },
+    "existing_exact_cpu_speedup": 6.46297335195965,
+    "all_compared_outputs_bitwise": true,
+    "compared": [
+      "lnZ",
+      "complete_scenario_table_including_best_models",
+      "star_table",
+      "FPP",
+      "NFPP"
+    ],
+    "input_manifest_verified_before_and_after": true,
+    "source_unchanged_during_measurement": true,
+    "profile_observation": "42 source-inspection calls during exact-mode entry; about 0.33 CPU seconds in inspect.getblock under cProfile. Unprofiled timing excludes this mode-entry cost."
+  },
+  "worker_lifetime_comparison": {
+    "source_id": "2104058096963805696",
+    "signal_suffix": "4",
+    "campaign": "other/boi-v3-20261025/mk/cases/2104058096963805696-4/probability-v3/campaign",
+    "freeze_sha256": "adabfdd881a68250f346d280c5f1f750105955c329ab3a6c23e45ca08fe25e8a",
+    "seed_indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      1657848506,
+      3238903067
+    ],
+    "trials": [
+      {
+        "cycle": 0,
+        "mode": "per_repeat",
+        "cpu_s": 1.3074530000000006,
+        "wall_s": 1.3223050832748413
+      },
+      {
+        "cycle": 0,
+        "mode": "worker_lifetime",
+        "cpu_s": 1.2341300000000004,
+        "wall_s": 1.2351454580202699
+      },
+      {
+        "cycle": 1,
+        "mode": "worker_lifetime",
+        "cpu_s": 1.2323889999999995,
+        "wall_s": 1.2335180826485157
+      },
+      {
+        "cycle": 1,
+        "mode": "per_repeat",
+        "cpu_s": 1.3050059999999988,
+        "wall_s": 1.3138970825821161
+      },
+      {
+        "cycle": 2,
+        "mode": "per_repeat",
+        "cpu_s": 1.2905210000000018,
+        "wall_s": 1.2899660840630531
+      },
+      {
+        "cycle": 2,
+        "mode": "worker_lifetime",
+        "cpu_s": 1.224344000000002,
+        "wall_s": 1.2221161257475615
+      }
+    ],
+    "all_compared_outputs_bitwise": true,
+    "median_pair_cpu_s": {
+      "per_repeat": 1.3050059999999988,
+      "worker_lifetime": 1.2323889999999995
+    },
+    "cpu_speedup": 1.0589237651423369,
+    "input_manifest_verified_after": true
+  },
+  "verification_overhead": [
+    {
+      "source_id": "2076383384993192576",
+      "files": 127,
+      "MiB": 10.274787902832031,
+      "hash_wall_s": 0.030764875002205372
+    },
+    {
+      "source_id": "2100325529865507712",
+      "files": 127,
+      "MiB": 13.384982109069824,
+      "hash_wall_s": 0.023885791189968586
+    }
+  ],
+  "limits": [
+    "Reduced-draw read-only observations; no physical admission or production throughput claim.",
+    "JIT compiled in memory with disk caching disabled. Normal cached worker execution remains a separate required control.",
+    "File-writing tests, complete frozen-process replay and same-CPU-budget throughput scaling are not yet verified.",
+    "Numerical array artifacts were not saved because discPCIe was below its required free-space reserve."
+  ],
+  "supporting_tests": {
+    "allocation_controls_passed": 4,
+    "ruff_passed": true,
+    "complexity_limit": 10
+  }
+}

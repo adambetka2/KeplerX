@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-13T23:25:55.828037+00:00",
+  "census": {
+    "path": "/Users/adam/Other/spacelab/dump/mk-cohort-census-20261013/census/cohort-census.parquet",
+    "sha256": "b62e722550f0734806cb282cfa141c52a1e7606ce7a0b8bafa15054fdeda11e8"
+  },
+  "noise": {
+    "path": "/Users/adam/Other/spacelab/dump/mk-cohort-census-20261013/noise/transit-noise.parquet",
+    "sha256": "39725408afd2e19d3cb46a544950ff58993af46139ea826de08072e93abcdbab",
+    "view": "sap_stitched"
+  },
+  "criterion": {
+    "depth_ppm": 1000.0,
+    "snr_min": 7.1,
+    "events_per_quarter": {
+      "binned_3h": 30,
+      "binned_1h": 180
+    },
+    "g_edges": [
+      0,
+      16,
+      16.5,
+      17,
+      17.5,
+      18,
+      18.5,
+      19
+    ],
+    "g_clip": 18.99
+  },
+  "noise_median_ppm_by_g_bin": {
+    "(0.0, 16.0]": {
+      "binned_3h": 343,
+      "binned_1h": 531
+    },
+    "(16.0, 16.5]": {
+      "binned_3h": 621,
+      "binned_1h": 896
+    },
+    "(16.5, 17.0]": {
+      "binned_3h": 622,
+      "binned_1h": 1017
+    },
+    "(17.0, 17.5]": {
+      "binned_3h": 807,
+      "binned_1h": 1342
+    },
+    "(17.5, 18.0]": {
+      "binned_3h": 1120,
+      "binned_1h": 1881
+    },
+    "(18.0, 18.5]": {
+      "binned_3h": 1632,
+      "binned_1h": 2767
+    },
+    "(18.5, 19.0]": {
+      "binned_3h": 1573,
+      "binned_1h": 2734
+    }
+  },
+  "rows": 57889,
+  "hopeless": 6239,
+  "queued": 51650,
+  "by_population": {
+    "K": {
+      "rows": 30435,
+      "hopeless": 70
+    },
+    "M": {
+      "rows": 27454,
+      "hopeless": 6169
+    }
+  },
+  "by_g_bin": {
+    "(0.0, 16.0]": {
+      "rows": 2662,
+      "hopeless": 0
+    },
+    "(16.0, 16.5]": {
+      "rows": 7447,
+      "hopeless": 0
+    },
+    "(16.5, 17.0]": {
+      "rows": 11172,
+      "hopeless": 0
+    },
+    "(17.0, 17.5]": {
+      "rows": 8770,
+      "hopeless": 0
+    },
+    "(17.5, 18.0]": {
+      "rows": 5954,
+      "hopeless": 0
+    },
+    "(18.0, 18.5]": {
+      "rows": 7709,
+      "hopeless": 2079
+    },
+    "(18.5, 19.0]": {
+      "rows": 14175,
+      "hopeless": 4160
+    }
+  },
+  "targets": {
+    "path": "/Users/adam/Other/spacelab/results/mk-survey-targets-20261014.csv",
+    "sha256": "edc603bbfb197053a31934d204fab387808cdb27e697398ea6d68c9baf213cbf"
+  }
+}

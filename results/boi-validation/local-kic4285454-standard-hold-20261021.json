@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-21T04:07:01.485717+00:00",
+  "source_id": "2073237338631093888",
+  "kic": 4285454,
+  "tic": 360028727,
+  "signal_id": "shallow-v1-2073237338631093888-3",
+  "status": "PARKED_EVOLVED_HOST_MASS_UNCERTAINTY_NOT_STARTED",
+  "disposition": "REMAINS_PC",
+  "reason": "Exact Gaia TIC360028727 aliases KIC4285453 while own-source delivery is KIC4285454; Gaia identity/position is retained. TIC supplies R10.1303/Teff4932.85/d2441.81pc coherent with measured parallax.40996+/-.01028mas, but no mass, mass uncertainty or gravity; Gaia FLAME/GSPphot M/R/Teff are absent. Exact APOKASC3 queries of both KIC labels returned no rows. No justified evolved native mass uncertainty chosen. Upstream nominal1Msun is an available modeling assumption, not a measured estimate; stellar-characterization work deferred tonight. No radius/duration cutoff or physical FP claim.",
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/selection.json",
+    "sha256": "e577a38cfb2150b663d32ae0da659e1716f7da63b77873c48eb179ab3b8e6c27"
+  },
+  "catalogue": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/catalogues-20261021/gaia-attempt1.response",
+      "sha256": "406dce2d1504d4acc35b908f658c2998fb788bca6417b2cea86fe147313c4478"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/catalogues-20261021/tic-attempt1.response",
+      "sha256": "505b2463b5bf53e77ee39b536473d83bcf0089e54d4e00f941b2ee46f15ebaa6"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/catalogues-20261021/APOKASC3-4285454-attempt1.response",
+      "sha256": "c259434c8fbe13d26c39a99e37ae691f8457f82d3f0724be472bf710ff712dd3"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/catalogues-20261021/APOKASC3-4285453-attempt1.response",
+      "sha256": "6227d3c2332629b732f8d62dacf7d5abb7f8216c9798fad3340438895e6029d2"
+    }
+  ],
+  "raw": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2073237338631093888/original-kbonus-attempt1.response",
+    "sha256": "f8ee5ef919fe63240f7d268697ccff49495cc87cb5c5214c40f1f08df9b73e57"
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve data and initial rejected wrong-signal lookup, which ran no fit. Advance a host with reported paired M/R and uncertainties; no prolonged characterization tonight."
+}

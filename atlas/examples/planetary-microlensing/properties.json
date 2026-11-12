@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "name": "OGLE-2005-BLG-390",
+  "reference_class": "Planetary microlensing event",
+  "class_label_origin": "published source; not inferred solely from this image",
+  "observable_signature": "Broad smooth magnification with a brief positive planetary anomaly.",
+  "lookalikes": [
+    "single-lens microlensing",
+    "binary-source lensing",
+    "outburst"
+  ],
+  "photometry": {
+    "image": "light-curve.png",
+    "data_representation": "crop of published observed figure; not synthetic",
+    "processing": "OGLE, PLANET and MOA; measured points plus fitted lensing curves. Crossing timescale is a light-curve fit parameter, not an independent mass estimate."
+  },
+  "measured_features": null,
+  "source_reported_light_curve_features": {
+    "einstein_crossing_timescale": {
+      "value": 11.03,
+      "unit": "d",
+      "uncertainty": 0.11,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    },
+    "observations_in_source_figure": {
+      "value": 650,
+      "unit": "measurements",
+      "uncertainty": null,
+      "approximate": false,
+      "origin": "reported in cited paper; not remeasured from pixels"
+    }
+  },
+  "samples": null,
+  "missing_data_reason": "Machine-readable measurements were not downloaded for this example. No values were estimated by digitizing this image; listed numbers are paper-reported.",
+  "source": {
+    "paper_url": "https://arxiv.org/abs/astro-ph/0601563",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0601563",
+    "pdf_page_one_based": 9,
+    "figure": "1",
+    "retrieved": "2026-09-06",
+    "credit": "Authors of the linked paper and the stated observing projects; source figure reproduced for this educational atlas."
+  },
+  "provenance": {
+    "source_pdf_sha256": "21fdbea6863ad3f0e3dbc9850a8e0b64425ab2cf09da029895615ade5014f8dd",
+    "page_crop_fraction_xyxy": [
+      0.12,
+      0.1,
+      0.87,
+      0.425
+    ],
+    "image_sha256": "0d5cb75e071a0d31f20f64d60b24164af278d97e3340d6d88a1d5059f830527e"
+  },
+  "classification_limit": "Morphology suggests a candidate class, not a definitive identification. Compare sampling, bandpass and alternatives. Physical stellar parameters are excluded; published physical class may require independent evidence."
+}

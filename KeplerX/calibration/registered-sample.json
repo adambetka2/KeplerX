@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "name": "calibration-sample",
+  "state": "BUILT",
+  "root": "data/calibration-sample",
+  "design": "docs/keplerX-calibration-sample.md",
+  "records": {
+    "plan.json": {
+      "path": "data/calibration-sample/plan.json",
+      "bytes": 5121,
+      "sha256": "deb3aa802959850ac6c02c9d6e6e19ac13529763ab842959105fda9374db55a5"
+    },
+    "summary.json": {
+      "path": "data/calibration-sample/summary.json",
+      "bytes": 2346,
+      "sha256": "68ff1b33b9410cdc9723e315d618c4b94bf66c0e767d662df64f32bb2d763720"
+    },
+    "quality.json": {
+      "path": "data/calibration-sample/quality.json",
+      "bytes": 23453,
+      "sha256": "149d700a3ccb7ccc308f04ee6f23877f5fe1fd72733c1ce495ab1c4ac220dcb7"
+    },
+    "audit.json": {
+      "path": "data/calibration-sample/audit.json",
+      "bytes": 607,
+      "sha256": "a056720f6a0c939217ddf6c053198586163d14750cd2857539f084dc7133d037"
+    },
+    "cases.parquet": {
+      "path": "data/calibration-sample/cases.parquet",
+      "bytes": 5634373,
+      "sha256": "a7876e46d856dd8cd4359f1943f274c1b694bf48bdc94fdf999a431090af1c88"
+    },
+    "signals.parquet": {
+      "path": "data/calibration-sample/signals.parquet",
+      "bytes": 3605015,
+      "sha256": "e9405f1a3c17944e5d0d3f1c8248df74e9e5d6529ed823440a8699feaab83ddc"
+    },
+    "host-features.parquet": {
+      "path": "data/calibration-sample/host-features.parquet",
+      "bytes": 1239516,
+      "sha256": "71015f374e1e7f4a77519fbd6ff64a8212098c6c5ebb59baf16f741c934c99d7"
+    },
+    "failures.json": {
+      "path": "data/calibration-sample/failures.json",
+      "bytes": 126,
+      "sha256": "55546f68b0a805970c2319c4f5caf8176d1d9e803f6c03153c7a459d46f3f0c7"
+    },
+    "artifact-validation.json": {
+      "path": "data/calibration-sample/artifact-validation.json",
+      "bytes": 3252,
+      "sha256": "9cfd185abea135d7286f0e63ac977de3fc2fdc0a060ad966a59b45417c473d93"
+    },
+    "validated-planets.json": {
+      "path": "data/calibration-sample/validated-planets.json",
+      "bytes": 3972,
+      "sha256": "d9be0288325a1900820a76c454d8e40c6fc2a34409c2a76847cb8d1c29a901cc"
+    }
+  },
+  "manifests": {
+    "development-all": {
+      "path": "data/calibration-sample/manifests/development-all.jsonl",
+      "bytes": 1365039,
+      "sha256": "77d5c02d1c2b726613e75fe71e8eef4fbff003c0676d881a2291c345ec628355"
+    },
+    "development-quick": {
+      "path": "data/calibration-sample/manifests/development-quick.jsonl",
+      "bytes": 221364,
+      "sha256": "9edaa2ba8008dc30a66daf1bee52e35b40c73fb09b96161334662d0ec519de8a"
+    },
+    "holdout-all": {
+      "path": "data/calibration-sample/manifests/holdout-all.jsonl",
+      "bytes": 1340820,
+      "sha256": "487723151018c42e62b02cf443bc4e7a03fffd764783e4f58bdf21ddd4bf61eb"
+    },
+    "holdout-quick": {
+      "path": "data/calibration-sample/manifests/holdout-quick.jsonl",
+      "bytes": 202059,
+      "sha256": "7fbd04972f06d6205957c010f429955ad5bc5a4b68d862c9c99630dc40d4a24c"
+    }
+  }
+}

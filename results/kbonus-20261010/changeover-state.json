@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_VERIFIED",
+  "updated_utc": "2026-10-10T22:53:57.912584+00:00",
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "active_step": null,
+  "authorization": {
+    "source": "Adam's direct instruction in this conversation, 9 October 2026",
+    "scope": "After PSF_FLAT finishes, preserve all existing results and run PSF and SAP using only the main Rust TRANSIT_LIKE detector, excluding shallow and sparse single-event detection from discovery and validation.",
+    "requires_further_approval": false
+  },
+  "plan_sha256": "291dda2a0cc446e5c54890de98af9d9bea2e2a2b6767673ff8ad026163171328",
+  "guard_sha256": "5f97d5d3fab8099cc7ce39ff3213f5c22f45a7565e639df53b9f9c992ef293ba",
+  "pipeline_changes_applied": true,
+  "next_action": "Monitor the new active generation normally. Verify initial production discovery and validation as those stages become available; PSF then SAP only.",
+  "latest_remaining_forecast": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261009T212140Z-corrected-transit-only-forecast/remaining-forecast.json",
+    "sha256": "5f96f48922ecddd15294be738ccbaa310842064d8f0679388f0b064be75aa3f1",
+    "working_remaining_hours": [
+      36,
+      48
+    ],
+    "reason": "Corrected to exclude shallow discovery and shallow/sparse validation; no pipeline changes performed."
+  },
+  "last_health_receipt": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T161414Z-transit-only-health/health.json",
+    "sha256": "c41d3dae0fa54c997652c9a2ba79cd6516d42de69078dfd1a2e0de6f48244835"
+  },
+  "scope_clarification": {
+    "future_psf_sap": "Rust TRANSIT_LIKE only, at least 3 detected transits, all existing validation gates",
+    "frozen_n_transits_min": 3,
+    "photometric_view_rule": "One passing photometry view does not mean one transit event; cross-view matching is not required."
+  },
+  "flat_vetting_complete": true,
+  "flat_finalization": {
+    "status": "COMPLETE",
+    "finished_utc": "2026-10-09T23:07:57.481174+00:00",
+    "completed_sources": 57439
+  },
+  "flat_final_receipt": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-pixel-repair-v3/psf_flat/vetting/full-survey.json",
+  "stop_receipt": "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009/stop-complete.json",
+  "flat_seal": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009/flat-seal.json",
+    "sha256": "3a3f7d3bcbad1b9bf42588a9347ded5e4e6842ec855c962d767335b6d9681e2c"
+  },
+  "profile_settings": {
+    "name": "rust-transit-only-v1",
+    "sparse_event_snr_min": null,
+    "sparse_event_min_points": 0,
+    "max_sparse_events_per_target": 0,
+    "reason": "Existing Rust validation requires both sparse-only counts to be zero when the optional emitter threshold is null. These fields are not used in periodic seeding or search; native paired audit verifies exact periodic output."
+  },
+  "reproduced_binding_bug": {
+    "failed_baseline": "paired-audit/baseline",
+    "error": "Disposition policy and pipeline settings differ",
+    "cause": "Legacy full_survey freezer omitted the existing non-flat flatten_mask_views binding. Production PSF/SAP already restrict flatten masks to psf_flat/psf_nova.",
+    "resolution": "New transit-only policy freezer and verifier bind actual unchanged mask scope; frozen legacy audit code is untouched and baseline-v2 uses a fresh accurately bound policy.",
+    "science_changed": false
+  },
+  "regressions": {
+    "passed": 412,
+    "path": "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009/regression-tests-final-binding.log",
+    "sha256": "54cda36698c6bfb11d5a78938feeaaae7d831926692af41298865923dcbbd3ca"
+  },
+  "blocker": null,
+  "scientific_audit": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-transit-only-transition-20261009/paired-audit/scope-audit-final.json",
+    "sha256": "892416674dd8129efd5d2107b66b1bfbba38a5d84e710f452839c07a46da8e87"
+  },
+  "commit": "a3647447180953dcbe2f8262f263fc7c20a63006",
+  "remote_commit": "a3647447180953dcbe2f8262f263fc7c20a63006",
+  "new_generation": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1",
+  "preflight": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-full-406547-20261005-transit-only-v1/preflight/report.json",
+    "sha256": "e66d3764f5059463d793c8f3ce172a33787c59c4030eb1071980593362edf075"
+  },
+  "service": "kbonus-survey-repaired.service",
+  "launched_utc": "2026-10-10T00:00:58.289804+00:00",
+  "transition_guard_retired": true,
+  "old_controller_must_never_restart": true,
+  "initial_production_discovery_verification": {
+    "status": "VERIFIED_PSF_COMPLETE",
+    "checked_utc": "2026-10-10T08:10:24.926557+00:00",
+    "receipt": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T081024Z-transit-only-health/health.json",
+    "attempted_sources": 406547,
+    "admitted_proposals_checked": 695
+  },
+  "initial_production_vetting_verification": {
+    "status": "VERIFIED_PSF_FIRST_TWO_COMPLETED_BATCHES",
+    "checked_utc": "2026-10-10T08:10:24.926557+00:00",
+    "receipt": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T081024Z-transit-only-health/health.json",
+    "sources_audited": 100,
+    "required_gates_pixels_archives_verified": true,
+    "selected_native_replay": "PENDING_BATCH_8",
+    "sap_production_audit": "PENDING_SAP"
+  },
+  "monitoring_prompt_updated_utc": "2026-10-10T00:07:14.218358+00:00",
+  "psf_production_completion_verification": {
+    "status": "VERIFIED_COMPLETE",
+    "checked_utc": "2026-10-10T08:34:01.217181+00:00",
+    "receipt": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T083401Z-completion-forecast/forecast.json",
+    "native_replay_batches": [
+      8
+    ],
+    "archives_verified": 9,
+    "boi_proposals": 16
+  },
+  "last_completion_forecast": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T083401Z-completion-forecast/forecast.json",
+    "sha256": "26059d3f11de279e1dbdfc6cf6c1dbe0cbdd1886bd50bac8bb14878f11bfe9d9"
+  },
+  "sap_production_discovery_verification": {
+    "status": "COMPLETE_VERIFIED",
+    "attempted_sources": 406547,
+    "admitted_proposals_checked": 1509,
+    "strict_transit_only_admission": true
+  },
+  "latest_health_receipt": {
+    "path": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T225357Z-final-completion/health.json",
+    "sha256": "ad8e9033cbe3cf2c605200a82b525f1cdd2afb4a590d8a301889f7359713eeee"
+  },
+  "sap_production_vetting_verification": {
+    "status": "COMPLETE_VERIFIED",
+    "sources": 877,
+    "batches": 18,
+    "archive_and_native_replay_checks": "PASS",
+    "health_receipt": "/srv/kbonus/workspace/dump/kbonus-pixel-repair-20261008/monitoring/20261010T225357Z-final-completion/health.json"
+  },
+  "final_reconciliation": {
+    "bois": 3427,
+    "boi_proposals": 3447,
+    "boi_sources": 2907,
+    "sha256": "58292690ec7672ee6a3b706dc27d2f2c7bf95e9422a74a102ee4267f08c751bc"
+  },
+  "main_transit_reconciliation": {
+    "bois": 147,
+    "boi_proposals": 156,
+    "boi_sources": 116,
+    "sha256": "cb64386423d3b01add2ca757b5f2ee3043eaa81c315e8c8e81d4e1f9ce7bc7d2"
+  }
+}

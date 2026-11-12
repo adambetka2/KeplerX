@@ -1,0 +1,301 @@
+{
+  "created_utc": "2026-10-19T19:39:25.348296+00:00",
+  "scope": "Targeted primary-methods review spanning journal years2022-2026; selected prominent systems and major validation collaborations, not a systematic citation-ranked census. FPP integrations are distinguished from MCMC chains/steps and ephemeris fits.",
+  "papers": [
+    {
+      "arxiv": "2201.12661",
+      "journal_year": 2022,
+      "title": "Validation of 13 Hot and Potentially Terrestrial TESS Planets",
+      "journal": "AJ 163,99",
+      "fpp_repetitions_explicit": 20,
+      "methods_section": "III",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "Transit MCMC includes period and epoch. No separate recovered/final repetition sets stated in inspected methods.",
+      "notes": "TRICERATOPS author-led validation study; count is per TOI, not20 transit fits.",
+      "primary_url": "https://arxiv.org/html/2201.12661",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2201.12661.html",
+        "sha256": "d090d8424622294daba617b81609c156fbe956eda6d4dee34ad050941035fac2"
+      }
+    },
+    {
+      "arxiv": "2208.06396",
+      "journal_year": 2022,
+      "title": "HD56414b: A Warm Neptune Transiting an A-type Star",
+      "journal": "ApJL 935,L10",
+      "fpp_repetitions_explicit": 50,
+      "methods_section": "4.3",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "No separate recovered/final repetition sets stated in inspected methods.",
+      "notes": "Speckle constraints incorporated. Multiple repetitions address nondeterministic calculation.",
+      "primary_url": "https://arxiv.org/html/2208.06396",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2208.06396.html",
+        "sha256": "1f07c12f07ecab9c4309eb3598eba760ae0a083bec40d7b6bbcffb7fbb6221c4"
+      }
+    },
+    {
+      "arxiv": "2212.03266",
+      "journal_year": 2023,
+      "title": "THYME IX: HD109833 two-planet system",
+      "journal": "AJ 165,85",
+      "fpp_repetitions_explicit": 20,
+      "methods_section": "VII.3",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "No separate recovered/final repetition sets stated in inspected methods.",
+      "notes": "MOLUSC companion constraints used. Multiplicity treatment and true-positive definition differ; copy neither automatically.",
+      "primary_url": "https://arxiv.org/html/2212.03266",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2212.03266.html",
+        "sha256": "8411e599ced49844235f9b815bbe69b8f17fa00dd3b26cd5be7ba3bd52a886ac"
+      }
+    },
+    {
+      "arxiv": "2301.03617",
+      "journal_year": 2023,
+      "title": "A Second Earth-Sized Planet in the Habitable Zone of the M Dwarf TOI700",
+      "journal": "ApJL 944,L35",
+      "fpp_repetitions_explicit": null,
+      "methods_section": "III.3",
+      "summary_statistic": "A reported VESPA FPP; independent repeat count not stated",
+      "ephemeris_evidence": "Explicitly folds at posterior median period and mid-transit time.",
+      "notes": "Different framework: no reported count must not be interpreted as exactly one run.",
+      "primary_url": "https://arxiv.org/html/2301.03617",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2301.03617.html",
+        "sha256": "6fc2a02a4a12040ed00e6892922d4dc2fd84246ef95777bcb8147e4783f278c3"
+      }
+    },
+    {
+      "arxiv": "2405.14786",
+      "journal_year": 2024,
+      "title": "The TESS-Keck Survey XX:15New TESS Planets and a Uniform RV Analysis",
+      "journal": "ApJS 272,32",
+      "fpp_repetitions_explicit": 20,
+      "methods_section": "V.3",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "No separate recovered/final repetition sets stated in inspected validation section.",
+      "notes": "Requires3sigma clearance of FPP/NFPP thresholds. This is a different decision rule from our retained mean criterion.",
+      "primary_url": "https://arxiv.org/html/2405.14786",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2405.14786.html",
+        "sha256": "1c1dabe380de0c5a1c70293ede3d5e786e302a96ebfdf9b5f50e106b98fd0264"
+      }
+    },
+    {
+      "arxiv": "2305.06206",
+      "journal_year": 2024,
+      "title": "A1.55Earth-radius habitable-zone planet hosted by TOI715",
+      "journal": "MNRAS 527,35",
+      "fpp_repetitions_explicit": null,
+      "methods_section": "4.3",
+      "summary_statistic": "Reported FPP; independent repeat count not stated",
+      "ephemeris_evidence": "Compares TESS-only with ground-based photometry, not a stated recovered/final seed split.",
+      "notes": "Important high-profile example; absence of a count is not proof of a single run. Journal2024,preprint2023.",
+      "primary_url": "https://arxiv.org/html/2305.06206",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2305.06206.html",
+        "sha256": "3d9697a390f2394764a35b9b3e9e65315b3ba98c8964e9b4e9273cbeb5608f78"
+      }
+    },
+    {
+      "arxiv": "2412.08863",
+      "journal_year": 2025,
+      "title": "Two Earth-size Planets and an Earth-size Candidate Transiting HD101581",
+      "journal": "AJ 169,47",
+      "fpp_repetitions_explicit": 10,
+      "methods_section": "V.4",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "A fitted P/T0 model is presented inIV; V.4 reports10repetitions without a recovered/final split. Exact FPP clock handoff not separately specified.",
+      "notes": "MOLUSC inputs used; two planets validated. Journal2025,preprint2024.",
+      "primary_url": "https://arxiv.org/html/2412.08863",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2412.08863.html",
+        "sha256": "435cea7b18f41ce828a20daff216597d2f31831f4b36b24268a154da27ef1c35"
+      }
+    },
+    {
+      "arxiv": "2508.02782",
+      "journal_year": 2025,
+      "title": "Validation of TESS Planet Candidates with Multicolor Transit Photometry and TRICERATOPS+",
+      "journal": "AJ 170,148",
+      "fpp_repetitions_explicit": 10,
+      "methods_section": "IV",
+      "summary_statistic": "Average and68percent confidence interval",
+      "ephemeris_evidence": "Most TESS curves initially folded at ExoFOP ephemerides; one target refitted in time. Separate FPP batches compare data configurations, not two clock sets.",
+      "notes": "Explicitly chooses10instead of recommended20because expanded data increase per-run cost; this is a valid published lower-count precedent, not a universal precision guarantee.",
+      "primary_url": "https://arxiv.org/html/2508.02782",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2508.02782.html",
+        "sha256": "cdb232d1ff241be4593ce0d376c36b420335db9cf7ced1bec346d3c7f53fcabd"
+      }
+    },
+    {
+      "arxiv": "2512.06817",
+      "journal_year": 2026,
+      "title": "Multicolour Validation of Two Temperate Mini-Neptunes Around M-dwarf Habitable Zones",
+      "journal": "MNRAS 547,stag367",
+      "fpp_repetitions_explicit": 20,
+      "methods_section": "2.1",
+      "summary_statistic": "Mean and standard deviation",
+      "ephemeris_evidence": "TRICERATOPS screening followed by a separate joint multicolour Bayesian comparison; no stated two-clock repetition split.",
+      "notes": "TargetsTOI2094andTOI7166. Journal2026,preprint2025.",
+      "primary_url": "https://arxiv.org/html/2512.06817",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2512.06817.html",
+        "sha256": "0cb22d957df61a7c74b863e1074155117189f53d9b2f2d952fb29462f5a3e408"
+      }
+    },
+    {
+      "arxiv": "2608.21560v3",
+      "journal_year": 2026,
+      "title": "Assessing the Impact of High-Resolution Imaging on Statistical Validation of TESS Planet Candidates",
+      "journal": "Accepted AAS journal study; arXivv3",
+      "fpp_repetitions_explicit": 20,
+      "methods_section": "IV.6.1 andIV.6.2",
+      "summary_statistic": "Mean, standard deviation, minimum and maximum",
+      "ephemeris_evidence": "20independent runs explicitly at recovery-stage inputs; recomputation at final native-MCMC period/epoch with other inputs fixed; final-stage seed count not independently stated.",
+      "notes": "Requires thresholds at both clocks;8targets fail final-clock consistency. Contrast/no-contrast20-seed sets are another experiment, not a recovered/final10+10split.",
+      "primary_url": "https://arxiv.org/html/2608.21560v3",
+      "retained_primary_html": {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2608.21560v3.html",
+        "sha256": "96260b6886d32dda87706040a13c09ee869aafcd50d2b067d58539e2b4a711f4"
+      }
+    }
+  ],
+  "additional_pipeline_example": {
+    "arxiv": "2606.13789",
+    "journal_year": 2026,
+    "title": "COUNTESS I: A Uniformly Vetted Catalog",
+    "journal": "arXivpreprint",
+    "fpp_repetitions_explicit": 20,
+    "methods_section": "III.6",
+    "summary_statistic": "Median",
+    "ephemeris_evidence": "Uses search/fit-derived inputs; no stated separate two-clock seed sets.",
+    "notes": "Kept as additional pipeline example, not the principal strict-validation precedent; main methods also discuss likely-planet thresholds.",
+    "primary_url": "https://arxiv.org/html/2606.13789",
+    "retained_primary_html": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/literature-repeat-counts-20261019/2606.13789.html",
+      "sha256": "1e8a80f933f74bf50466c7ff6e1a1fb736e50d2528955469c1330a4f55d724ff"
+    }
+  },
+  "current_campaign": [
+    {
+      "kic": 6699887,
+      "source_id": "2077554781499350144",
+      "discovery": {
+        "FPP": {
+          "repeats": 20,
+          "mean": 0.006962156696230551,
+          "sample_standard_deviation": 0.006282354589455395,
+          "standard_error_of_mean_iid_approximation": 0.0014047771920780046,
+          "threshold": 0.015
+        },
+        "NFPP": {
+          "repeats": 20,
+          "mean": 0.0003633415465190239,
+          "sample_standard_deviation": 0.0006470856833071967,
+          "standard_error_of_mean_iid_approximation": 0.00014469275751417926,
+          "threshold": 0.001
+        }
+      },
+      "complete_final_repeats": 1
+    },
+    {
+      "kic": 8745833,
+      "source_id": "2127186564572468352",
+      "discovery": {
+        "FPP": {
+          "repeats": 20,
+          "mean": 0.004548081292166264,
+          "sample_standard_deviation": 0.004262447846825233,
+          "standard_error_of_mean_iid_approximation": 0.0009531123136048832,
+          "threshold": 0.015
+        },
+        "NFPP": {
+          "repeats": 20,
+          "mean": 2.6660648647897303e-52,
+          "sample_standard_deviation": 1.192296577851027e-51,
+          "standard_error_of_mean_iid_approximation": 2.6660561974152664e-52,
+          "threshold": 0.001
+        }
+      },
+      "complete_final_repeats": 2
+    },
+    {
+      "kic": 4829494,
+      "source_id": "2101047904706267264",
+      "discovery": {
+        "FPP": {
+          "repeats": 20,
+          "mean": 0.013325335770597335,
+          "sample_standard_deviation": 0.012696967030484072,
+          "standard_error_of_mean_iid_approximation": 0.0028391281388236026,
+          "threshold": 0.015
+        },
+        "NFPP": {
+          "repeats": 20,
+          "mean": 0.0009308340408758588,
+          "sample_standard_deviation": 0.000372866564136139,
+          "standard_error_of_mean_iid_approximation": 8.33754983945192e-05,
+          "threshold": 0.001
+        }
+      },
+      "complete_final_repeats": 0
+    }
+  ],
+  "analysis": {
+    "primary_run": "Use the independently justified best-fitting ephemeris for the principal scientific FPP, not the clock yielding the smallest FPP. This is an inference/recommendation, not a universal rule quoted from every paper.",
+    "recovered_run": "Sensitivity/robustness check to ephemeris choice, not independent photons or another planet detection.",
+    "repetitions": "Estimate numerical scatter conditional on the model/data. For independent finite-variance estimates,SEM scales1/sqrt(N);10has sqrt(2) times the SEM of20. Sparse/heavy-tailed weights weaken this approximation.",
+    "ephemeris_uncertainty": "Two fixed clocks do not by themselves marginalize the full period/epoch posterior.",
+    "precision": "Counts alone cannot be compared as equal precision across samplers,observations,scenario censuses and per-run draws.",
+    "threshold_integrity": "No threshold,mean rule,seed,draw count,input or receipt changed. Do not stop upon the first favorable repeat or pool different-clock estimates."
+  },
+  "options_for_user": [
+    {
+      "final_repeats_per_target": [
+        10,
+        10,
+        10
+      ],
+      "new_integrations": 27,
+      "description": "Economical fixed-size final-clock comparison; retains20discovery each and3completed final repeats. Published10-repeat precedent; precision must be reported."
+    },
+    {
+      "final_repeats_per_target": [
+        10,
+        10,
+        20
+      ],
+      "new_integrations": 37,
+      "description": "Recommended cost/precision compromise for these existing three; extra numerical precision for marginalKIC4829494."
+    },
+    {
+      "final_repeats_per_target": [
+        20,
+        20,
+        20
+      ],
+      "new_integrations": 57,
+      "description": "Symmetric20+20closeout; clearest direct comparison, largest cost. Not established as a universal literature requirement."
+    }
+  ],
+  "operational_state": {
+    "production_started": false,
+    "decision_pending": true,
+    "frozen_receipts_changed": false
+  },
+  "verification": {
+    "primary_htmls_retained": 11,
+    "reported_repetition_counts_checked_against_full_methods": true,
+    "unreported_counts_left_null": true,
+    "original_discovery_results_read_only": true,
+    "review_corrections": [
+      "Corrected HD109833 section locator from7.2 toVII.3 after checking primary section heading. First draft retained."
+    ],
+    "diagnostics": [
+      "An optional heading inspection under system Python lacked bs4; repeated successfully with the pinned uv runtime."
+    ]
+  }
+}

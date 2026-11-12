@@ -1,0 +1,35 @@
+{
+  "status": "BOUNDED_POST_FAILURE_DIAGNOSIS_NO_RESCUE",
+  "printed_rounded_proposal": {
+    "P_p1": 9.68872014,
+    "t0_p1": 859.822355,
+    "p_p1": 0.000495724323,
+    "b_p1": 0.712640921,
+    "rho": -28.9535805,
+    "q1_Kepler": 0.48645661,
+    "q2_Kepler": 1.63609349,
+    "ecc_p1": 0.999221768,
+    "omega_p1": 157.998299,
+    "mflux_Kepler": -2.41805906e-05,
+    "sigma_w_Kepler": 539.455239
+  },
+  "unambiguous_prior_violations": {
+    "rho": -28.9535805,
+    "q2_Kepler": 1.63609349
+  },
+  "precision": "emcee prints rounded coordinates; no exact failed proposal or sampler RNG checkpoint was exported.",
+  "cause_scope": "juliet.fit.logprob unconditionally evaluates logprior(theta)+loglike(theta), so it calls batman even for a proposal already outside declared density/limb-darkening support. The logged proposal has negative density and q2>1; batman then raised its eccentric-anomaly iteration exception. This does not establish a numerical failure at a supported physical orbit or a high-eccentricity posterior.",
+  "source": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/source/juliet/fit.py",
+    "sha256": "65c7800fdeefbb96f3f38eee748243458b174d2d5d811a44f3cff3ae7afb299e"
+  },
+  "log": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/native-beta-v3/native-launcher.log",
+    "sha256": "843318c4a5d6af1b089137fadb1867f2c7034611ed367375dfddc7ffbdede5ee"
+  },
+  "hold": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102918384442366592/readiness-hold-v1.json",
+    "sha256": "2b70cdb532bbf5d19762321285f14e5dedc170784b71ef8b2d325efb58c0f216"
+  },
+  "next": "Original failed generation stays unchanged and held. No repeated rescue tonight, no native prior clipping or changed-seed retry. A future support-short-circuit repair would need its own reviewed source generation and actual-input reference controls."
+}

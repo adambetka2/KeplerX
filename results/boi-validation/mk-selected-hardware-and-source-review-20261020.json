@@ -1,0 +1,339 @@
+{
+  "utc": "2026-10-20T07:52:35.908649+00:00",
+  "classification": "PROGRESS_SELECTED_HARDWARE_MEASUREMENT_AND_RESOLVED_SOURCE_REVIEW",
+  "selected_source_id": "2128845796339643392",
+  "selected_kic": 10865762,
+  "validated_new": 0,
+  "goal": 50,
+  "completed_candidate_adjudications": 0,
+  "false_positive_rate": null,
+  "hardware": {
+    "utc": "2026-10-20T07:52:35.908649+00:00",
+    "source_id": "2128845796339643392",
+    "status": "HIGH_PHYSICAL_UTILIZATION_OPTIMALITY_NOT_ESTABLISHED",
+    "physical_cores": 24,
+    "logical_cpus": 32,
+    "worker_occupied_physical_cores": 23,
+    "probability_workers": 23,
+    "all_workers_selected_source": true,
+    "measurement_seconds": 2.1189706050790846,
+    "busy_cpu_core_equivalents": 23.0,
+    "logical_busy_percent": 71.875,
+    "memory_bytes": {
+      "MemTotal": 67189190656,
+      "MemAvailable": 57394364416,
+      "SwapTotal": 8579444736,
+      "SwapFree": 8497393664
+    },
+    "pressure": {
+      "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=27131882141\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+      "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=670985837\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=649160086",
+      "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=309660869\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=298774419"
+    },
+    "cpu_quota": "CPUQuotaPerSecUSec=infinity",
+    "complete_full_repeats": 0,
+    "scope": "Two-second OS measurement; SMT siblings are not full physical cores. High occupancy is not proof of optimal full-campaign throughput. Current workers retain their frozen one-thread configuration. Paired renderer controls support prospective threaded execution; renderer timings are not candidate completion guarantees."
+  },
+  "hardware_receipt": {
+    "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/selected-hardware-utilization-v1.json",
+    "sha256": "db0af21974fc023092b3a099ab07ecd403b1a0ce2095c10eaad5884618318e2e"
+  },
+  "selected_progress": {
+    "final": [
+      {
+        "index": 0,
+        "completed_scenarios": 113,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 1,
+        "completed_scenarios": 113,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 2,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 3,
+        "completed_scenarios": 114,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 4,
+        "completed_scenarios": 113,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 5,
+        "completed_scenarios": 114,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 6,
+        "completed_scenarios": 118,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 7,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 8,
+        "completed_scenarios": 111,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 9,
+        "completed_scenarios": 116,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 10,
+        "completed_scenarios": 112,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 11,
+        "completed_scenarios": 110,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 12,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 13,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 14,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 15,
+        "completed_scenarios": 108,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 16,
+        "completed_scenarios": 109,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 17,
+        "completed_scenarios": 108,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 18,
+        "completed_scenarios": 117,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 19,
+        "completed_scenarios": 108,
+        "total_scenarios": 132,
+        "result_present": false
+      }
+    ],
+    "recovered": [
+      {
+        "index": 0,
+        "completed_scenarios": 105,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 1,
+        "completed_scenarios": 108,
+        "total_scenarios": 132,
+        "result_present": false
+      },
+      {
+        "index": 2,
+        "completed_scenarios": 111,
+        "total_scenarios": 132,
+        "result_present": false
+      }
+    ]
+  },
+  "resolved_source_review": {
+    "original_target_diagnostic_reproduced": true,
+    "maximum_target_wcs_reconstruction_error_arcsec": 1.7763568394002505e-15,
+    "events": 27,
+    "quality_qualified_events": 17,
+    "target": {
+      "status": "TARGET_COMPATIBLE",
+      "good_quarters": 6,
+      "minimum_good_quarters": 3,
+      "robust_offset_arcsec": [
+        -1.9915073039709836,
+        -1.1500288499646483
+      ],
+      "offset_distance_arcsec": 2.2997103507878522,
+      "offset_uncertainty_arcsec": 1.3368776988027598,
+      "offset_significance": 1.7202099734682963,
+      "required_significance": 3.0,
+      "uncertainty_variance_arcsec2": {
+        "formal": 0.6608448511758362,
+        "quarter_scatter": 1.7616419815561624,
+        "jackknife": 0.6764525745549629
+      },
+      "aggregate_systematic_arcsec": 0.16,
+      "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+    },
+    "alternatives": 39,
+    "alternative_offset_conflicts": 39,
+    "catalogue_epoch_only_alternatives": 5,
+    "nearest_alternatives": [
+      {
+        "source_id": "2128845796339642624",
+        "catalogue_separation_arcsec": 6.706805694180062,
+        "delta_g_mag": -1.5823480000000014,
+        "astrometry": [
+          "PROPAGATED_GAIA_POSITION"
+        ],
+        "offset_diagnostic": {
+          "status": "ROBUST_OFFSET_CONFLICT",
+          "good_quarters": 6,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            2.273580928277326,
+            4.022827262268263
+          ],
+          "offset_distance_arcsec": 4.620855918493365,
+          "offset_uncertainty_arcsec": 1.4065558879801232,
+          "offset_significance": 3.2852273827022396,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.5148892349655473,
+            "quarter_scatter": 1.9527994660115526,
+            "jackknife": 1.4769341635061086
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        }
+      },
+      {
+        "source_id": "2128847269507657216",
+        "catalogue_separation_arcsec": 12.852431660204486,
+        "delta_g_mag": 2.049326999999998,
+        "astrometry": [
+          "PROPAGATED_GAIA_POSITION"
+        ],
+        "offset_diagnostic": {
+          "status": "ROBUST_OFFSET_CONFLICT",
+          "good_quarters": 6,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            -1.9070931607306911,
+            -13.96852368636633
+          ],
+          "offset_distance_arcsec": 14.098108323469607,
+          "offset_uncertainty_arcsec": 1.3626951349483012,
+          "offset_significance": 10.345753765389695,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.3473029705022762,
+            "quarter_scatter": 1.6107955570817907,
+            "jackknife": 1.8313380308117688
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        }
+      },
+      {
+        "source_id": "2128845792038901760",
+        "catalogue_separation_arcsec": 18.8731630830907,
+        "delta_g_mag": 3.4042759999999994,
+        "astrometry": [
+          "PROPAGATED_GAIA_POSITION"
+        ],
+        "offset_diagnostic": {
+          "status": "ROBUST_OFFSET_CONFLICT",
+          "good_quarters": 6,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            -10.910471861732068,
+            15.505996030134927
+          ],
+          "offset_distance_arcsec": 18.959807729304835,
+          "offset_uncertainty_arcsec": 1.1530669486613907,
+          "offset_significance": 16.442937464572637,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.22253217154682883,
+            "quarter_scatter": 0.5903372940983266,
+            "jackknife": 1.30396338809529
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        }
+      },
+      {
+        "source_id": "2128845796336523520",
+        "catalogue_separation_arcsec": 22.008243688966708,
+        "delta_g_mag": 4.498797999999997,
+        "astrometry": [
+          "CATALOGUE_EPOCH_ONLY"
+        ],
+        "offset_diagnostic": {
+          "status": "ROBUST_OFFSET_CONFLICT",
+          "good_quarters": 6,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            -16.557267780199783,
+            15.376237200807594
+          ],
+          "offset_distance_arcsec": 22.595835607490628,
+          "offset_uncertainty_arcsec": 1.000741549211204,
+          "offset_significance": 22.5790920995545,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.2711058569552359,
+            "quarter_scatter": 0.4677950576561455,
+            "jackknife": 0.9758836483176405
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        }
+      }
+    ],
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-source-ownership-v1/review.json",
+      "sha256": "3bad4f95012d8ad20c4b703d625eb3c01e77fbd3fd171f785bec2b2e0ebd3712"
+    },
+    "scope": "Same saved centroids, pixel covariances, target-based event-quality selection, quarter combination, robust estimator and thresholds. Positions use each original TPF WCS and the retained Gaia epoch propagation. Formal, scatter and jackknife directional variances are recomputed for every hypothesis. No pixel refit, new probability integration, source probability, independent likelihood, BOI disposition or physical validation is supplied. Gaia proper-motion uncertainties and unlisted or unresolved companions remain outside this offset diagnostic.",
+    "first_operational_failure": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/selected-source-ownership-v1-first-operational-failure/failure.json",
+      "sha256": "2896d025bfd97aed2ff15d16029d69e396282ba9a04540433a12785c89a6f571"
+    }
+  },
+  "physical_closeout": "OPEN: offset diagnostics do not supply source posteriors or imaging constraints. Companion limb-darkening support, correlated-noise sensitivity, unresolved companions/contrast evidence, native joint-dilution acceptance and dated exact-signal literature remain explicit requirements.",
+  "scope": "No new probability attempts, competing candidate/reference runs, frozen scientific changes, astrophysical false-positive adjudication or statistical admission."
+}

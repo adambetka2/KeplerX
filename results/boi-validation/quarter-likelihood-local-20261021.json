@@ -1,0 +1,74 @@
+{
+  "scope": "Local quarter-response implementation; no scientific production adoption or server deployment.",
+  "protocol": "TRICERATOPS_KEPLER_V3",
+  "upstream_commit": "d20875c27d6761349cf032728bb4a59ec732a84d",
+  "source_checks": {
+    "triceratops/marginal_likelihoods.py": {
+      "exact_patch_hash": true,
+      "unchanged_science_ast_after_callback_removal": true,
+      "stock_normalization_exact": true,
+      "scenario_functions": 14,
+      "likelihood_dispatches": 42
+    },
+    "triceratops/triceratops.py": {
+      "exact_patch_hash": true,
+      "unchanged_science_ast_after_callback_removal": true,
+      "source_scenario_dispatches": 12
+    }
+  },
+  "focused_controls": {
+    "passed": 6,
+    "direct_photon_likelihood": true,
+    "both_resolved_hosts": true,
+    "raw_corrected_bayes_factor_invariance": true,
+    "zero_response_retained": true,
+    "same_photons_and_phase_grid": true,
+    "kepler10_shape_host_control": "Synthetic quarter responses applied to the frozen real example; not empirical known-object validation."
+  },
+  "first_control_failure": {
+    "test": "Kepler10 shape length",
+    "observed_rows": 478,
+    "initial_assumption": 200,
+    "resolution": "Bin the test shape to 200 points. No production input or scientific threshold changed."
+  },
+  "not_run": [
+    "Full post_boi scientific test suite in a separate quarter-patched runtime. Existing local V2 dependencies are available; the earlier absence claim was incorrect.",
+    "Matched empirical target and off-target known-object campaigns.",
+    "Server checks, deployment or new BOI validation runs."
+  ],
+  "existing_local_runtime": {
+    "python": "/Users/adam/Other/spacelab/other/boi-repair-20261021/runtime-v2/bin/python",
+    "verified_imports": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "astropy": "7.2.3",
+      "batman-package": "2.5.3+spacelab.2",
+      "juliet": "2.2.10+spacelab.1",
+      "triceratops": "1.1.0",
+      "pytest": "9.1.1"
+    },
+    "triceratops_source": "Both files match the pinned original hashes; quarter patch is not installed.",
+    "aperture_python": "/Users/adam/Other/spacelab/other/boi-repair-20261021/aperture-runtime-v2/bin/python",
+    "aperture_lkprf": "1.1.1+spacelab.1",
+    "existing_environments_modified": false
+  },
+  "retained_assumptions": [
+    "Diagonal reviewed native noise, without an empirical covariance model.",
+    "Within-phase-bin model and existing exposure integration.",
+    "Stock scalar 1.5-sigma secondary screen with mean response.",
+    "Upstream fixed stellar inputs and unresolved component flux models."
+  ],
+  "preserved_policy": {
+    "repeats": 20,
+    "draws_per_scenario": 1000000,
+    "first_two_stopping": "both FPP >= .10 or both NFPP >= .01",
+    "historical_campaigns": "unchanged",
+    "seed_namespace": "TRICERATOPS_KEPLER_V2"
+  },
+  "local_checks": {
+    "ruff": "PASS established E4,E7,E9,F,I,C90 rules; maximum complexity 10",
+    "format": "PASS all 19 post_boi Python files",
+    "diff_check": "PASS",
+    "unscoped_ruff": "Additional global style checks report existing dict()/test warnings; unrelated source was not reformatted."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-21T03:56:46.032347+00:00",
+  "source_id": "2126217104555818240",
+  "kic": 8296927,
+  "tic": 159451013,
+  "signal_id": "rust-v6-2126217104555818240-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_BEFORE_NATIVE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "All38sources retained. Quarter-dependent response is materially different for same dominant capable sources: Q0 Gaussian target.6497 vs calibrated core.7980, Q5.5567/.7219,Q9.5291/.6998,Q13.5274/.6995. Other seasons agree more closely and are retained. Gaussian capable-source fractions sum.995..1, so discrepancy is not simply normalization to a reduced source subset. Strong season-dependent dilution remains. Core diagnostic is not complete far-source flux measurement. No supported response selected, native not launched, zeroFPP.",
+  "response": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/aperture-response-review-v1.json",
+    "sha256": "a52ae74b8cb6aac210fae29498e783f9cc81ccadd0fc75bbbcb0aa04802da902"
+  },
+  "scene": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/scene-preview-review-v1.json",
+    "sha256": "3ff6f2c7b0a0d85c8ab0ffc52b11d94f72ca996c109d638c56df47eb0829dfcc"
+  },
+  "parents": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/parent-authentication-v1.json",
+    "sha256": "733f7454a7649012623c8649ca3b420c5a34242a94ddf96385b8f806c81b0858"
+  },
+  "prfs": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/prf-authentication-v1.json",
+    "sha256": "c5443cbfc51f2c3b2c4aa18e5aa5b614a3a12f8b005fdc416740b8ea6e7c7acf"
+  },
+  "alias_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/alias-readiness-review-v1.json",
+    "sha256": "39d6a07bc85ba3c3d6d502ae21a73355cfe6cf2dbf126591ab54547a689e5f51"
+  },
+  "stellar_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/native-stellar-review.json",
+    "sha256": "2666d9591a0ebbb50896fbd2410cc8d0526533ad7514bc5b66d7e142ff8e2b5e"
+  },
+  "selection": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2126217104555818240/selection.json",
+    "sha256": "27229836f72a0c46ef0d46e496c7fdb4da40d44c2df8dcf997d8af186aca76c3"
+  },
+  "native_launched": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve all data and unfavorable comparisons. No response construction/rescue tonight. Advance a prepared field with less close-neighbor flux, without assuming a favorable planet probability."
+}

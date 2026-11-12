@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "status": "VERIFIED_BOI_ENDPOINT",
+  "generated_utc": "2026-10-05T20:56:52.171776+00:00",
+  "server_code_commit": "cc8ee2dff543bcb02f884a942b436b693858451e",
+  "main_original_commit": "40e3375429fc1c0d95348f386c3e81fc80358788",
+  "main_validated_tree": "d58ff68bb3ed7287ec1ea62c5463f2341eb8f99a",
+  "triage_gates": [
+    "shape",
+    "orbital",
+    "instrument",
+    "localization",
+    "contamination"
+  ],
+  "gate_order_unchanged": true,
+  "independent_views": true,
+  "full_survey_authorized": false,
+  "baseline_archive_sha256": "6853cac6279fb017dd4d6a5299b9e98166ec11cbdac12da0f0aa1c27e0016e58",
+  "cohorts": [
+    {
+      "sources": 1000,
+      "source_view_records": 691,
+      "signals": 1281,
+      "boi_proposals": 39,
+      "boi_groups": 39,
+      "boi_sources": 33
+    },
+    {
+      "sources": 4000,
+      "source_view_records": 2033,
+      "signals": 3736,
+      "boi_proposals": 88,
+      "boi_groups": 84,
+      "boi_sources": 65
+    }
+  ],
+  "historical_projection": {
+    "source_view_records": 2724,
+    "signals": 5017,
+    "exact_scientific_measurement_comparisons": 15051,
+    "original_evidence_rewritten": 0
+  },
+  "fresh_replay": {
+    "status": "EXACT_SCIENTIFIC_PARITY",
+    "source_view_records": 7,
+    "signals": 40,
+    "boi_proposals": 3,
+    "boi_groups": 1,
+    "boi_sources": 1,
+    "label_counts": {
+      "BOI": 3,
+      "HELD": 12,
+      "DISMISSED": 25
+    },
+    "timing_scope": "Three full independent view replays assembled from two controller invocations; input page cache retained. Includes discovery, all native batch replays, all 16 vetting stages and archival; excludes plotting. This is a scientific regression, not a new full-pipeline performance benchmark."
+  },
+  "validation": {
+    "server_python_tests_passed": 2312,
+    "rust_tests_passed": 18,
+    "main_initial_tests_passed": 2243,
+    "main_environment_recheck_tests_passed": 251,
+    "main_initial_environment_failures_resolved": 4,
+    "main_remaining_preexisting_linux_bitwise_failure": 1,
+    "main_before_after_bls": "EXACT_BINARY64_PARITY",
+    "main_linux_astropy_difference": {
+      "maximum_absolute_by_field": {
+        "power": 9.325873406851315e-15,
+        "depth": 4.0657581468206416e-19,
+        "duration": 0.0,
+        "transit_time": 0.0013403549372368317
+      },
+      "scope": "Unchanged Mac portable BLS code tested on Linux; differences are identical before and after BOI integration. Strict bitwise test remains intact. Native Mac execution was not verified because external volumes are unmounted."
+    },
+    "lint_findings": 35,
+    "new_lint_findings": 0
+  },
+  "evidence_root": "/srv/kbonus/workspace/dump/boi-release-20261005",
+  "evidence": {
+    "projection-request.json": "d8e0dc086e9b6009bc9daf63d100ad4078327f949c28c601d7ab334ca58b50c4",
+    "projection-summary.json": "956f7eaf6957b8bb5e0f3e10882fd9771e2b16b429a8b35b640b1ca79b0e0fed",
+    "projection-1000/receipt.json": "d7f6ba712ecf24d79a9c507c4092bfaaaace48bc1958b6ae7ff31c6dc31f4f13",
+    "projection-4000/receipt.json": "9dc9a2a9d966e07217137f20f2c0a59f712c5f411f37dc9f9b6f9f2bb8778784",
+    "protected-code-proof.json": "ce82f0ba09724d82e31420d9acb58468c77f24a3abd85d32e4331fc448f22b9c",
+    "pytest-final.log": "4a30cfce079d4aa0ad1b151c6c83b0ae3069466d93d0ad2e0bdd51093ce71f29",
+    "rust-tests-v2.log": "54216829c08e39b6e4cfa24437ef0d996c9ab182669fa5d7d424d98e1a17eec6",
+    "ruff-final.json": "3c5cb8b2153e290653e325bb70ce7dded224c48203ce5ccd61004a0f325ada16",
+    "complexity.json": "bfdf574e2ae8d94b5fbc68b1eb555d4cdc4e8f1c1921af8adc3488d050b9eb4a",
+    "frozen-opened-archive-verification-v2.json": "3e795bd71baaef1c9528cc5a8b548980db16429fce9e2745d376bd3f1980daf3",
+    "opened-paired-scientific-audit-v2.json": "db18f7052e78ab494182dbc5ac4b8542df02d0f5dcb7fd4e2465044e5001e705",
+    "opened-paired-signal-ledger-v2.json": "8c857ff3a7191b4ead9626c1a1fb6b6dfa490c9e51b107d52cb98eb29e7afcbe",
+    "opened-paired-boi-catalogue-v2.json": "82a8144efe758450144a8f4b728fe820b9a3b09594b90c1810d9a7238886c4bf",
+    "compare_boi_replay.py": "d153dc68d42c33036e6c451222bb259edb17185fab8e5e61eb8fc4feb5620e28",
+    "main-pytest.log": "e53e589028a85fa0c0622bede8fcd01897a5e0fa2f91dbb1116c7c4c9dbcecf9",
+    "main-environment-recheck.log": "e9872479af12be31b71f654f2b3895138983e6df4989a3fc5a71e78f251b6733",
+    "main-bls-baseline-pair.json": "69a7dccff991ad4785320ad09dae8c508e4593c5d52a2485c35981cbd78e1e41",
+    "main-ruff.json": "ae6bc50e266aacdd303694b3ab4c0d3313efa6ff3bbc9ce1b1b7d2aef5e3e48c",
+    "main-complexity.json": "866d60c94150e2d922596f13b3d2701b5b395e4c73561f5cdb24f1333cdbb2d8",
+    "main-frozen-psf_flat-policy.json": "eb2a197f4a54711075e6bd349ef29056f05b6e1f8ad1662e8ecbc7f8c67e2f4c"
+  },
+  "limitations": [
+    "BOI is a pipeline designation, not statistical validation, confirmation or novelty.",
+    "Catalogue groups are conservative ephemeris links, not counts of distinct physical planets.",
+    "Fresh tiny opened replay is a scientific regression with retained page cache, not a new full-pipeline performance benchmark.",
+    "Historical live policy references were explicitly resolved to the byte-identical frozen baseline policy; original receipts were preserved.",
+    "The complete 406547-source survey remains deferred."
+  ]
+}

@@ -1,0 +1,18 @@
+/dump
+/discSSD
+/discPCIe
+/vizier_cache/
+/pipeline/deterministic/target/
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Scratch areas and half-written temp files
+fast_triceratops/scratch/
+*.partial-*

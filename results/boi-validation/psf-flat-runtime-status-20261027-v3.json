@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-27T06:34:56.256593+00:00",
+  "state": "PSF_RECONSTRUCTION_REPLAY_V4_RUNNING",
+  "native_jobs_complete": 4,
+  "native_boi_jobs_complete": 3,
+  "active_native_jobs": 0,
+  "active_fpp_jobs": 0,
+  "active_reconstruction_jobs": 1,
+  "probability_admissions": 0,
+  "newly_validated_planets": 0,
+  "scientific_dispositions": 8,
+  "remaining_groups": 57,
+  "scope_groups": 65,
+  "latest_qualification": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-method-qualification-20261027-v2.json",
+    "sha256": "87d923540b6faa20a4362f7e4d2aa1321116f535d220f59fa12fb37e9e193113"
+  },
+  "no_boi_disposition_for_shared_software_blocker": true,
+  "gold_control": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/verification/kepler10-gold-20261027-result.json",
+    "sha256": "f822ff054edbb75c7f9ba4ae0449d477f66dd8807159064532979bd3794c4acd"
+  },
+  "next_authorized_independent_work": "Inspect the new preserved replay result for archive parity, then qualify physical target/contaminant response before PSF FPP allocation. Routine compatibility bugs are authorized to fix with preserved attempts and controls; do not ask again.",
+  "same_source_review": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-same-source-review-20261027.json",
+    "sha256": "8798eee5c8e7e5570c71ac6c72e91389063c75f36fafd9624d5fe2826b2f4d7c"
+  },
+  "bug_fix_permission_reaffirmed": true,
+  "prior_repair_question_resolved": true,
+  "authorization": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/authorization.json",
+    "sha256": "260a31cda568e4ef9a2eebe27f1fab8582099f7b3a22267f10a54c1fc8d69218"
+  },
+  "repair": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/scipy-mode-repair-applied-v1/repair-review.json",
+    "sha256": "f5b3f81c03df45b8e39b891a81a3906e68894f9cc2127cb7e2ec503ca1b5a2c5"
+  },
+  "launch": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v4-launch/launch.json",
+    "sha256": "1fadc91694f233b60bf2226bd8b168bdac2c0360cf2073141305e552ae1e72a6"
+  },
+  "allocation": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/research/full-batch-replay-v4/allocation.json",
+    "sha256": "77b5b9d070db8dd6bdc48c90f027de9d7d1fe21577ec5a1307422640350cf496"
+  },
+  "preservation": "Stopped attempts remain untouched. The repair is an isolated package/source copy; production runtime and all candidate native fits remain unchanged.",
+  "previous_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/psf-flat-runtime-status-20261027-v2.json",
+    "sha256": "19a8ace87e63a3393ca3ed4dc8b72aff72c58b9adb036f643eeb36f15acab1e0"
+  }
+}

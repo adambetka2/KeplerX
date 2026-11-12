@@ -1,0 +1,50 @@
+{
+ "utc": "2026-10-25T23:27:26Z",
+ "decision": "Adam, 25 October 2026 (late evening): reschedule the validation queue into the faster runtime, fast_triceratops.engine() through fast_triceratops.workflow (main 2a7c8c86, 1b6c44c1; docs/fast-triceratops.md).",
+ "mode": "engine (exact: fused likelihoods, exact evidence pruning, shared spline/flux work, original draw and RNG order); not the certified mode",
+ "verification": {
+  "case": "mk-sap-20261019-2076573394349070464-4 (KIC 5458397, completed tonight on the serial coordinator)",
+  "command": "python -m fast_triceratops.workflow run campaign/plan.json engine-check-20261026 --mode engine --workers 1 --repeats 2 (nice 19)",
+  "result": "COMPLETE_TWO_SEED_BENCHMARK",
+  "comparisons": [
+   {
+    "lnZ": true,
+    "scenarios": true,
+    "stars": true,
+    "FPP": true,
+    "NFPP": true
+   },
+   {
+    "lnZ": true,
+    "scenarios": true,
+    "stars": true,
+    "FPP": true,
+    "NFPP": true
+   }
+  ],
+  "FPP": [
+   0.042408211275307695,
+   0.04296702566987587
+  ],
+  "summary": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/summary.json",
+   "sha256": "e2a66ba135e079e65b0dfe7fa8109b16adfcb2070255ccd5c5b2f26f12dc59b6"
+  },
+  "note": "Both replayed seeds match the saved serial-coordinator repeats bit for bit: every scenario's lnZ, the scenario and star tables, FPP and NFPP. CPU times were taken at nice 19 beside two production jobs and are not a speed measurement."
+ },
+ "integration": {
+  "script": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/run_campaign.sh",
+   "sha256": "38d4c7d8d1be86a53fdccdafa96c7c5a03e7f209457a7adf04f64c8ed5e01651"
+  },
+  "serial_script_kept": "mk/logs/run_campaign-serial-20261026.sh",
+  "audit": {
+   "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/engine_audit.py",
+   "sha256": "09d3e716a28516ae3c10c3d745111291b8a79260194f539b16fcbc344ca3e74b"
+  },
+  "layout": "probability-v3/campaign/ keeps the frozen plan and source; probability-v3/campaign-engine/ holds the workflow experiment (frozen fast_triceratops copy, seeds, repeats, summary) and the audit written by post_boi.campaign.finish. Campaigns already started on the serial coordinator finish on it.",
+  "budget": "--workers equals the candidate's cpu_budget (5): five single-thread workers per campaign in place of five numerical threads, two campaigns at most (slots.json)."
+ },
+ "unchanged": "Frozen plan, seeds, 1,000,000 attempted draws per scenario, the first-two futility screen, thresholds, statistics and pass rule (post_boi.campaign.finish), physical closeout and multiplicity rules.",
+ "scope_note": "fast_triceratops.workflow labels its experiment directories PERFORMANCE_EXPERIMENT_ONLY_NOT_CANDIDATE_ADMISSION; that label predates Adam's decision and is kept unchanged in the frozen copy."
+}

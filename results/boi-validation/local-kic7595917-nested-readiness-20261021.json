@@ -1,0 +1,250 @@
+{
+  "utc": "2026-10-21T02:58:17.614595+00:00",
+  "source_id": "2102612750272489216",
+  "kic": 7595917,
+  "status": "CONDITIONAL_NATIVE_LIVE_NO_FPP",
+  "stellar": {
+    "source_id": "2102612750272489216",
+    "route": "Paired TIC mass/radius chosen before fit; Gaia small-radius/distance route conflicts with measured parallax.",
+    "mass": 0.94,
+    "radius": 0.963934,
+    "mass_errors": [
+      0.094,
+      0.094
+    ],
+    "radius_errors": [
+      0.2726209806605979,
+      0.2726209806605979
+    ],
+    "density_kg_m3": [
+      1479.5758958350568,
+      1264.0554138700982
+    ],
+    "uncertainty_basis": "TIC errors missing. Mass10percent is an explicit missing-only Collier-style assumption for this star, not a measurement. Radius error propagates actual Gaia fractional parallax error and twice reported TIC Teff fractional error in quadrature using R proportional to distance and Teff^-2. Independent first-order approximation; no covariance, bolometric/extinction/model systematics fully measured. No automatic6percent radius fill.",
+    "measured_parallax_mas": [
+      0.2761366211089307,
+      0.076931655
+    ],
+    "tic_distance_pc": 3407.49,
+    "gaia_gspphot_distance_pc": 2373.8276,
+    "gspphot_distance_parallax_discrepancy_sigma": 1.8864011495832222,
+    "alternate_flame": {
+      "mass": null,
+      "radius": 0.68627095,
+      "mass16_84": [
+        null,
+        null
+      ],
+      "radius16_84": [
+        0.66471267,
+        0.7068955
+      ]
+    },
+    "catalogue_coherence": "TIC paired M/R and distance3407pc agree with measured Gaia parallax. Gaia GSPphot2374pc implies significantly discrepant parallax; alternate smaller radius stays explicit. No FPP used in route choice.",
+    "gaia": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/catalogues-20261021/gaia-attempt1.response",
+      "sha256": "d1582b897da0d1feb28b06f5e72f4e228bea1ea061736ff758d1a8cf0a1a2f4b"
+    },
+    "tic": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/catalogues-20261021/tic-attempt1.response",
+      "sha256": "87e7688e111cee2824aaae1a2474512b3d8b6e8aeb9c76daec269f28d178bba3"
+    },
+    "scope": "A conditional coherent catalogue route and explicit uncertainty approximation, not host/body or companion admission. Future scene must preserve this selected route and all alternative values."
+  },
+  "preparation": {
+    "source_id": "2102612750272489216",
+    "raw": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/original-kbonus-attempt1.response",
+      "sha256": "6b952d6ca795989d89638107be0d80950fa6273cbccc7ef62a661c882bb2f50b"
+    },
+    "all_hdu_checksums_passed": true,
+    "exposure_days": 0.02043361111111111,
+    "actual_exposure_basis": "Original primary XPOSURE1765.464seconds. Parent metadata remains to verify before FPP.",
+    "original_recovered": {
+      "period_days": 22.131362632516982,
+      "epoch_bkjd": 138.22325135768918,
+      "duration_days": 0.1296759529249042
+    },
+    "measured_aperture_depth": 0.007819646508862466,
+    "native_points": 2218,
+    "primary_windows_by_quarter": [
+      {
+        "quarter": 1,
+        "raw_primary_cadences": 12,
+        "valid_primary_cadences": 11
+      },
+      {
+        "quarter": 2,
+        "raw_primary_cadences": 17,
+        "valid_primary_cadences": 15
+      },
+      {
+        "quarter": 3,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 23
+      },
+      {
+        "quarter": 4,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 21
+      },
+      {
+        "quarter": 5,
+        "raw_primary_cadences": 32,
+        "valid_primary_cadences": 30
+      },
+      {
+        "quarter": 6,
+        "raw_primary_cadences": 26,
+        "valid_primary_cadences": 21
+      },
+      {
+        "quarter": 7,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 22
+      },
+      {
+        "quarter": 8,
+        "raw_primary_cadences": 28,
+        "valid_primary_cadences": 28
+      },
+      {
+        "quarter": 9,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 23
+      },
+      {
+        "quarter": 10,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 24
+      },
+      {
+        "quarter": 11,
+        "raw_primary_cadences": 33,
+        "valid_primary_cadences": 29
+      },
+      {
+        "quarter": 12,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 18
+      },
+      {
+        "quarter": 13,
+        "raw_primary_cadences": 24,
+        "valid_primary_cadences": 22
+      },
+      {
+        "quarter": 14,
+        "raw_primary_cadences": 28,
+        "valid_primary_cadences": 25
+      },
+      {
+        "quarter": 15,
+        "raw_primary_cadences": 30,
+        "valid_primary_cadences": 30
+      },
+      {
+        "quarter": 16,
+        "raw_primary_cadences": 21,
+        "valid_primary_cadences": 20
+      },
+      {
+        "quarter": 17,
+        "raw_primary_cadences": 7,
+        "valid_primary_cadences": 7
+      }
+    ],
+    "flux_convention": "raw_aperture",
+    "all_original_quality_and_rejected_proposals_preserved": true,
+    "protected_trend_days": 1.296759529249042,
+    "window_basis": "10T14 trend window, protected +/-T14+half exposure, native +/-3T14. About50actual unprotected long cadences per trend window; no duration cap or cropped tail.",
+    "stellar": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-stellar-review.json",
+      "sha256": "bbc7b1b75e398233451f88538838882d849db6fd2a1e51d3bc49f490e48d6f0c"
+    },
+    "retained": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/pre-native-retained-review.json",
+      "sha256": "acb2115d502fc2264b5be30f8c03866b1f8db8721ef240b547493d05df1fb6f1"
+    }
+  },
+  "alias": {
+    "source_id": "2102612750272489216",
+    "signal_id": "rust-v6-2102612750272489216-1",
+    "accepted_for_conditional_native": true,
+    "evidence": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/raw-sap-alias-extra-events-v1.json",
+      "sha256": "3e455a85002a47ce3c2d93cbe1e80868951d01b2ac3e6ff4d114c62f2313db13"
+    },
+    "basis": "The selected22.131day ephemeris has61measured primary events,7291+/-218ppm residual-scaled formal stack. Extra non-overlapping events predicted by4.42696/3.16148/7.37748day hypotheses give185/121/257ppm stacks rather than comparable7291ppm dips; event-scatter errors also retained. This supports native fitting at22.13days independently of FPP. All rejected and other delivered clocks remain unmasked.",
+    "scope": "Bounded fixed-hypothesis local raw-SAP check; no new calibrated detector/veto, global alias/TTV exclusion, physical admission or novelty claim. Final fitted-clock timing and coverage still require review."
+  },
+  "source_review": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-seed-source-review.json",
+    "sha256": "37ba5600ac47d3eafc066b2b02e2a9007ecdf7ca0969bb3e1656de9bc9cb3eb6"
+  },
+  "controls": {
+    "accepted": true,
+    "native_points": 2218,
+    "diagnostic_only": {
+      "nlive": 32,
+      "maxiter": 40,
+      "maxbatch": 0,
+      "not_convergence": true
+    },
+    "production_sampling": {
+      "sampler": "dynamic_dynesty",
+      "n_live_points": 500,
+      "nthreads": 10,
+      "dlogz_init": 0.1,
+      "n_effective": 5000,
+      "dynesty_save_states": true,
+      "checkpoint_every": 300,
+      "print_progress": true
+    },
+    "seed": 2026102141,
+    "weighted_nested_arrays_exact": {
+      "samples": true,
+      "logl": true,
+      "logwt": true,
+      "logz": true,
+      "logzerr": true
+    },
+    "equal_weight_posterior_exact": true,
+    "independent_batman_replay": [
+      {
+        "index": 0,
+        "difference": 5.4569682106375694e-12
+      },
+      {
+        "index": 36,
+        "difference": 5.4569682106375694e-12
+      },
+      {
+        "index": 72,
+        "difference": 5.4569682106375694e-12
+      }
+    ],
+    "scope": "Actual wrapper vs direct juliet with the same documented Generator. Diagnostic truncation is not an admission or production stopping rule. No kernel/prior/scientific input changes.",
+    "source_review": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-seed-source-review.json",
+      "sha256": "37ba5600ac47d3eafc066b2b02e2a9007ecdf7ca0969bb3e1656de9bc9cb3eb6"
+    },
+    "control": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/control-wrapper/juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "2cccec80fe2a1174aa62ba95ae6cb478c61184490b32b3d8d4da3d12ee41a488"
+    },
+    "reference": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/control-direct-juliet/_dynesty_DNS_posteriors.pkl",
+      "sha256": "2cccec80fe2a1174aa62ba95ae6cb478c61184490b32b3d8d4da3d12ee41a488"
+    },
+    "helper": {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/validate_nested_seed.py",
+      "sha256": "19d203dfd89f01ee0dc8474b9a5df0d02b17d66637e2cf0cc96cfb069a99d1a4"
+    }
+  },
+  "freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2102612750272489216/native-freeze.json",
+    "sha256": "1e4f8e3bc04a50cda422d313c0572ecc3e0796eda542fa63a0bf1315e67b9374"
+  },
+  "scope": "Own-SAP/stellar inputs, bounded alias diagnostic and seed controls support native execution, not converged clock/body/scene or FPP. Selected paired TIC route and explicit missing-error model fixed before fit."
+}

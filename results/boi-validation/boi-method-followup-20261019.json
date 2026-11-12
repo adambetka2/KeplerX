@@ -1,0 +1,2658 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-19T17:15:26.470776+00:00",
+  "scope": "Clarify exact orbital rules, verify bounded Kepler implementation details, bind historical software and distinguish fitted ephemerides from final-ephemeris probability campaigns. No production rerun.",
+  "reference": "https://arxiv.org/html/2608.21560v3",
+  "orbital_rules": {
+    "ours": {
+      "odd_even": "z=abs(weighted odd depth-weighted even depth)/hypot(errors); BIC gain=z^2-ln(N), conflict when gain>10; N is sum of local sample counts. Event errors include local excess scatter and duration-bin beta inflation.",
+      "secondary": "Half-phase weighted event depths; sigma>=7 AND depth/primary>0.5. Eccentric secondary phases untested by this gate."
+    },
+    "reference": {
+      "odd_even": "Formal BLS plus robust median depth with transit-timescale red noise; both discrepancies>3 sigma. Robust measurement requires3events and10in-transit cadences per parity; unavailable robust measurement uses BLS>10 sigma.",
+      "secondary": "Secondary/primary>0.1 AND secondary SNR>3."
+    },
+    "equivalent_ours_z_for_N1000": 4.111904094088545,
+    "not_a_universal_stricter_or_looser_comparison": true
+  },
+  "verification": {
+    "utc": "2026-10-19T17:13:55.137930+00:00",
+    "history": {
+      "ledger_path": "/Users/adam/Other/spacelab/results/boi-validation/boi-validation-20261012.json",
+      "ledger_sha256": "0bdff71a2de56661e6b2e8432bdcd13fac7501018251cc1d7a506a798e8f272d",
+      "targets": [
+        {
+          "source_id": "2077554781499350144",
+          "old_final_config": {
+            "source_id": "2077554781499350144",
+            "flat_planet_priors": false,
+            "unresolved_radius_arcsec": 2.2,
+            "background_area_factor": 1.0,
+            "population_area_deg2": 0.1,
+            "period_days": 15.113694597194007,
+            "epoch_bkjd": 829.9577910141717,
+            "exposure_days": 0.020433598216918748,
+            "integration_samples": 54,
+            "noise_quadrature_nodes": 128,
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "phase_grid_nodes_per_cycle": 800,
+            "observed_gaia_component_flux": "COMPOSITE_OBSERVED_G"
+          },
+          "source_hash_comparisons": [
+            {
+              "path": "statistical/run_field_importance_v22.py",
+              "expected": "655b6d33fae73b4f22bbcbcbef89a3ec50d2795fb129613268c57e66a952e91d",
+              "current": "655b6d33fae73b4f22bbcbcbef89a3ec50d2795fb129613268c57e66a952e91d",
+              "identical": true
+            },
+            {
+              "path": "statistical/prepared_total_binned_likelihood_v4.py",
+              "expected": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+              "current": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+              "identical": true
+            },
+            {
+              "path": "statistical/field_aperture_prior_v18.py",
+              "expected": "895560bc41adc0e1f728448e5e7181a7543fef206cb82d48b7617ae000c32127",
+              "current": "895560bc41adc0e1f728448e5e7181a7543fef206cb82d48b7617ae000c32127",
+              "identical": true
+            },
+            {
+              "path": "rv/kepler-route/dr2_scene_prior.py",
+              "expected": "22d3209fe7b1f0cfd88cc83289acb11c5066053e3c7c9f579e35a2be44743436",
+              "current": "22d3209fe7b1f0cfd88cc83289acb11c5066053e3c7c9f579e35a2be44743436",
+              "identical": true
+            },
+            {
+              "path": "rv/kepler-route/field_scene_prior.py",
+              "expected": "26084d96a4dff7b8be6ababba11e6049ade0495cdac73023afd9d12a11f8c083",
+              "current": "26084d96a4dff7b8be6ababba11e6049ade0495cdac73023afd9d12a11f8c083",
+              "identical": true
+            },
+            {
+              "path": "statistical/kepler_scenarios_v22.py",
+              "expected": "b62f615bddb272630c1f1533083ad39c124f9a365dc9aa63388efaf963589764",
+              "current": "b62f615bddb272630c1f1533083ad39c124f9a365dc9aa63388efaf963589764",
+              "identical": true
+            },
+            {
+              "path": "statistical/kepler_scenarios_v3.py",
+              "expected": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+              "current": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+              "identical": true
+            },
+            {
+              "path": "statistical/planet_proposals_v3.py",
+              "expected": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+              "current": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+              "identical": true
+            },
+            {
+              "path": "statistical/binary_proposals_v3.py",
+              "expected": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+              "current": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+              "identical": true
+            }
+          ],
+          "field_hash_comparisons": [
+            {
+              "name": "field-identity.json",
+              "sha256": "638269a6fe29d1537e73b25927b053b9fd024782fab0ecc37b6fcea91c949fa3",
+              "identical": true
+            },
+            {
+              "name": "model-inputs.json",
+              "sha256": "cf225e97cd71c0d7cf948200e462efece5d043068dd8b463943d447a6b6e1396",
+              "identical": true
+            },
+            {
+              "name": "stellar-inventory.json",
+              "sha256": "274ea0f578e72cc8a98ecd3e4214176c51d2dfedf19acf54ef84621207f29054",
+              "identical": true
+            },
+            {
+              "name": "trilegal-gaia.dat",
+              "sha256": "2e7865d172b8d8bf8687bc71a14a498799dca2b4bc9e2bd31f4243fb5a0974b3",
+              "identical": true
+            },
+            {
+              "name": "trilegal-kepler.dat",
+              "sha256": "de5da027d44e20773de221fd4004dc9643f760997c6d41ee2c2da0b6cd1a857b",
+              "identical": true
+            }
+          ],
+          "geometry_hash_comparisons": {
+            "geometry": true,
+            "unresolved_geometry": true
+          },
+          "old_closure_sha256": null,
+          "current_closure_sha256": "a142aecc7d82736602444d0cf2ff0f73428732a16b8f280d3c8d85cc81e9803c",
+          "current_discovery_clock": {
+            "period_days": 15.113702872318472,
+            "epoch_bkjd_tdb": 134.73079465929638
+          },
+          "native_posterior_timing": {
+            "period_days": [
+              15.11362899917133,
+              15.113694597194007,
+              15.113755925838412
+            ],
+            "reference_epoch_bkjd_tdb": [
+              829.9562493746704,
+              829.9577910141717,
+              829.9593676448961
+            ],
+            "original_cycle_epoch_bkjd_tdb": [
+              134.72450404736162,
+              134.72778295461274,
+              134.73138929983588
+            ]
+          },
+          "final_packet_sha256": "48434a5b701ce8027f4daa92347672056c0195848a2fdd0d855c92f1f8785065",
+          "current_discovery_packet_sha256": "c6d3e65989c2672facbb4b4fc25e811f5561278cb6e8c64812f63db8e2af7a06",
+          "historical_final_probabilities": {
+            "astrophysical_fpp": 0.004622250399429909,
+            "resolved_nfpp": 3.993224125871146e-06,
+            "eb": 3.154381678576353e-05,
+            "intended_host_planet": 0.9953777496005706
+          },
+          "historical_final_with_only_pi_area_reweighting": {
+            "FPP": 0.004482271370286848,
+            "NFPP": 3.5215957535724804e-06,
+            "maximum_background_rate": 0.30007019193499135,
+            "scope": "Analytic reconstruction from archived full-family log probabilities. No new draws; not a 20-repeat final-clock census or new admission."
+          }
+        },
+        {
+          "source_id": "2127186564572468352",
+          "old_final_config": {
+            "source_id": "2127186564572468352",
+            "flat_planet_priors": false,
+            "unresolved_radius_arcsec": 2.2,
+            "background_area_factor": 1,
+            "population_area_deg2": 0.1,
+            "period_days": 4.566494216964835,
+            "epoch_bkjd": 1056.7281946499904,
+            "exposure_days": 0.020433598216918748,
+            "integration_samples": 54,
+            "noise_quadrature_nodes": 128,
+            "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+            "phase_grid_nodes_per_cycle": 800,
+            "observed_gaia_component_flux": "COMPOSITE_OBSERVED_G"
+          },
+          "source_hash_comparisons": [
+            {
+              "path": "statistical/run_prepared_importance_v4.py",
+              "expected": "531fe7fc2afece23b8d55ff9cd8296ee63ebd209e7d054aa4a7b151cba8f7d57",
+              "current": "531fe7fc2afece23b8d55ff9cd8296ee63ebd209e7d054aa4a7b151cba8f7d57",
+              "identical": true
+            },
+            {
+              "path": "statistical/prepared_total_binned_likelihood_v4.py",
+              "expected": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+              "current": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+              "identical": true
+            },
+            {
+              "path": "statistical/kepler_scenarios_v3.py",
+              "expected": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+              "current": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+              "identical": true
+            },
+            {
+              "path": "statistical/planet_proposals_v3.py",
+              "expected": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+              "current": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+              "identical": true
+            },
+            {
+              "path": "statistical/binary_proposals_v3.py",
+              "expected": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+              "current": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+              "identical": true
+            }
+          ],
+          "field_hash_comparisons": [],
+          "geometry_hash_comparisons": {},
+          "old_closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607",
+          "current_closure_sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607",
+          "current_discovery_clock": {
+            "period_days": 4.566536246516616,
+            "epoch_bkjd_tdb": 444.81414414233365
+          },
+          "native_posterior_timing": {
+            "period_days": [
+              4.566489109199412,
+              4.566494216964835,
+              4.566499196941955
+            ],
+            "reference_epoch_bkjd_tdb": [
+              1056.7278268330256,
+              1056.7281946499904,
+              1056.728562752559
+            ],
+            "original_cycle_epoch_bkjd_tdb": [
+              444.81725766930595,
+              444.81797179111976,
+              444.81868987672044
+            ]
+          },
+          "final_packet_sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d",
+          "current_discovery_packet_sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+          "historical_final_probabilities": {
+            "astrophysical_fpp": 0.008844384837384534,
+            "resolved_nfpp": 9.120578955669795e-50,
+            "eb": 3.75317214248339e-06,
+            "intended_host_planet": 0.991155615162622
+          },
+          "historical_final_with_only_pi_area_reweighting": {
+            "FPP": 0.00839235478836745,
+            "NFPP": 8.472838660559934e-50,
+            "maximum_background_rate": 0.14674999846429745,
+            "scope": "Analytic reconstruction from archived full-family log probabilities. No new draws; not a 20-repeat final-clock census or new admission."
+          }
+        }
+      ]
+    },
+    "photometry": {
+      "mist_color_identity_max_error_mag": 9.992007221626409e-16,
+      "kepler_limb_darkening_cases": 4,
+      "cached_reference_identical": true,
+      "new_field_paired_population_rows": 7260,
+      "unique_printed_physical_tuple_matches": 7260,
+      "radius_proposal_cdf_inverse_checks": [
+        {
+          "mass_solar": 0.3,
+          "quantiles": 99,
+          "inverse_cdf_error": 1.1102230246251565e-16
+        },
+        {
+          "mass_solar": 0.6,
+          "quantiles": 99,
+          "inverse_cdf_error": 1.1102230246251565e-16
+        },
+        {
+          "mass_solar": 1.2,
+          "quantiles": 99,
+          "inverse_cdf_error": 1.1102230246251565e-16
+        }
+      ],
+      "double_extinction_applied": false,
+      "AB_minus_Vega_mag": 0.122666,
+      "scope": "Passband routing, color arithmetic, existing Kepler table and exact paired population support. Not empirical validation of stellar-prior calibration."
+    },
+    "independent_curves": {
+      "cases": [
+        {
+          "radius_ratio": 0.025,
+          "impact": 0.2,
+          "maximum_difference_ppm": 0.00016286172410673316,
+          "within_predeclared_5ppm": true
+        },
+        {
+          "radius_ratio": 0.025,
+          "impact": 0.8,
+          "maximum_difference_ppm": 1.1999845561661004e-05,
+          "within_predeclared_5ppm": true
+        },
+        {
+          "radius_ratio": 0.05,
+          "impact": 0.2,
+          "maximum_difference_ppm": 0.000643851638670867,
+          "within_predeclared_5ppm": true
+        },
+        {
+          "radius_ratio": 0.05,
+          "impact": 0.8,
+          "maximum_difference_ppm": 4.8899106985800245e-05,
+          "within_predeclared_5ppm": true
+        },
+        {
+          "radius_ratio": 0.1,
+          "impact": 0.2,
+          "maximum_difference_ppm": 0.0025365840539137707,
+          "within_predeclared_5ppm": true
+        },
+        {
+          "radius_ratio": 0.1,
+          "impact": 0.8,
+          "maximum_difference_ppm": 0.045823245198306495,
+          "within_predeclared_5ppm": true
+        }
+      ],
+      "all_within_5ppm": true,
+      "exposure_days": 0.020433598216918748,
+      "integration_samples": 54,
+      "scope": "Independent batman versus adopted PyTransit occultation kernel at identical 54 exposure midpoints. Six circular planet controls, not a full EB/scene-probability gold test."
+    },
+    "current_packets": [
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/validation-input-2077554781499350144/tic-sap-1/binned-original-discovery-complete-groups.npz",
+        "sha256": "c6d3e65989c2672facbb4b4fc25e811f5561278cb6e8c64812f63db8e2af7a06",
+        "provenance": {
+          "input": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/validation-input-2077554781499350144/tic-sap-1/binned-original-discovery-complete-groups.npz",
+          "sha256": "c6d3e65989c2672facbb4b4fc25e811f5561278cb6e8c64812f63db8e2af7a06",
+          "native_points": 2744,
+          "selected_points": 2322,
+          "phase_bins": 200,
+          "retained_covariance_modes": 200,
+          "noise": "FIXED_EXPORTED_MAP_SCALE",
+          "covariance_projection_relative_threshold": 1e-06,
+          "observed_bin_reproduction_maximum_error": 4.440892098500626e-16,
+          "baseline_operator": "EXACT_PREPARED_AFFINE_MAP_CONSTANT_PLUS_XA_Y",
+          "scope": [
+            "Same immutable affine MAP detrending H precedes native photon binning for data and every model.",
+            "Full first-order J/error/bin covariance fixed at observed physical MAP; no independent-bin error approximation.",
+            "MAP physical-shape uncertainty and nonlinear covariance variation are not marginalized.",
+            "Only identical packet/noise/projection constants cancel within a scenario comparison."
+          ]
+        },
+        "exposure_days": 0.020433598216918748,
+        "covariance_reconstruction_passed": true,
+        "nonzero_residual_whitened_chi2": 26.918199693172784,
+        "independent_pseudoinverse_chi2": 26.918199693172767
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/binned-2127186564572468352/binned-total200-tic-original-discovery.npz",
+        "sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+        "provenance": {
+          "input": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/evidence/binned-2127186564572468352/binned-total200-tic-original-discovery.npz",
+          "sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed",
+          "native_points": 5274,
+          "selected_points": 5274,
+          "phase_bins": 198,
+          "retained_covariance_modes": 197,
+          "noise": "FIXED_EXPORTED_MAP_SCALE",
+          "covariance_projection_relative_threshold": 1e-06,
+          "observed_bin_reproduction_maximum_error": 1.631805801594055e-12,
+          "baseline_operator": "EXACT_PREPARED_AFFINE_MAP_CONSTANT_PLUS_XA_Y",
+          "scope": [
+            "Same immutable affine MAP detrending H precedes native photon binning for data and every model.",
+            "Full first-order J/error/bin covariance fixed at observed physical MAP; no independent-bin error approximation.",
+            "MAP physical-shape uncertainty and nonlinear covariance variation are not marginalized.",
+            "Only identical packet/noise/projection constants cancel within a scenario comparison."
+          ]
+        },
+        "exposure_days": 0.020433598216918748,
+        "covariance_reconstruction_passed": true,
+        "nonzero_residual_whitened_chi2": 1125.3663233327914,
+        "independent_pseudoinverse_chi2": 1125.3663233592204
+      },
+      {
+        "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/phase-packet/binned-original-discovery-complete-groups.npz",
+        "sha256": "1382c7e3933c235179ab6af698f752716c5b62b11b93a0a94849c2111b31bbad",
+        "provenance": {
+          "input": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/phase-packet/binned-original-discovery-complete-groups.npz",
+          "sha256": "1382c7e3933c235179ab6af698f752716c5b62b11b93a0a94849c2111b31bbad",
+          "native_points": 5000,
+          "selected_points": 2966,
+          "phase_bins": 200,
+          "retained_covariance_modes": 200,
+          "noise": "FIXED_EXPORTED_MAP_SCALE",
+          "covariance_projection_relative_threshold": 1e-06,
+          "observed_bin_reproduction_maximum_error": 4.440892098500626e-16,
+          "baseline_operator": "EXACT_PREPARED_AFFINE_MAP_CONSTANT_PLUS_XA_Y",
+          "scope": [
+            "Same immutable affine MAP detrending H precedes native photon binning for data and every model.",
+            "Full first-order J/error/bin covariance fixed at observed physical MAP; no independent-bin error approximation.",
+            "MAP physical-shape uncertainty and nonlinear covariance variation are not marginalized.",
+            "Only identical packet/noise/projection constants cancel within a scenario comparison."
+          ]
+        },
+        "exposure_days": 0.020433598216918748,
+        "covariance_reconstruction_passed": true,
+        "nonzero_residual_whitened_chi2": 1.2547783528232253,
+        "independent_pseudoinverse_chi2": 1.254778352823225
+      }
+    ],
+    "helper_sha256": "d02bac014afacc3213a95d4df9e96a8ecc1bf79476cfab4f3d9d2cd42578a7f2",
+    "production_repeats_started": 0,
+    "frozen_science_changed": false
+  },
+  "clock_status": [
+    {
+      "source_id": "2077554781499350144",
+      "discovery_period_days": 15.113702872318472,
+      "fitted_period_days": 15.113694597194007,
+      "fitted_original_cycle_epoch_bkjd_tdb": 134.72778295461274,
+      "native_fit_completed": true,
+      "historical_fitted_ephemeris_FPP_completed": true,
+      "matching20repeat_final_ephemeris_FPP_completed": false,
+      "preserved_full_count_TIC_final_runs": 1
+    },
+    {
+      "source_id": "2127186564572468352",
+      "discovery_period_days": 4.566536246516616,
+      "fitted_period_days": 4.566494216964835,
+      "fitted_original_cycle_epoch_bkjd_tdb": 444.81797179111976,
+      "native_fit_completed": true,
+      "historical_fitted_ephemeris_FPP_completed": true,
+      "matching20repeat_final_ephemeris_FPP_completed": false,
+      "preserved_full_count_TIC_final_runs": 2
+    },
+    {
+      "source_id": "2101047904706267264",
+      "discovery_period_days": 16.10546917493381,
+      "fitted_period_days": 16.105601406596346,
+      "fitted_original_cycle_epoch_bkjd_tdb": 120.8324572894926,
+      "native_fit_completed": true,
+      "historical_fitted_ephemeris_FPP_completed": false,
+      "matching20repeat_final_ephemeris_FPP_completed": false,
+      "posterior_timing_quantiles_16_50_84": {
+        "period_days": [
+          16.10547982653047,
+          16.105601406596346,
+          16.105748209329622
+        ],
+        "reference_epoch_bkjd_tdb": [
+          797.2650399550747,
+          797.2678785759924,
+          797.2709188809888
+        ],
+        "original_cycle_epoch_bkjd_tdb": [
+          120.8274552486208,
+          120.8324572894926,
+          120.8369464769911
+        ]
+      },
+      "preserved_full_count_TIC_final_runs": 0
+    }
+  ],
+  "change_account": {
+    "historical_scientific_source_hashes_identical": [
+      9,
+      5
+    ],
+    "second_target_complete_v2_closure_hash_identical": true,
+    "area_prior": "Before frozen40-run production, historical r^2 area was changed to pi*r^2 consistently with the uniform circular unresolved-position prior. This was already present in the parent campaign, before the hardware rewrite.",
+    "production_sampling": "Historical baseline plus selected-family allocations were replaced by20 independent repeats of1million attempted draws in every family. Proposal ratios and invalid-draw denominators remain.",
+    "hardware_derived_generation": "Output-root plan change and runtime-only caching/fused kernels/QoS; documented finite support/bound parity and posterior L1 tolerance1e-8. No scientific inputs, thresholds or ephemerides changed.",
+    "timing_scope": "The later plan explicitly restricts production to discovery ephemerides and rejects any other timing. Calling final timing unable to qualify the paper closeout was a protocol interpretation error.",
+    "new_target": "A separately frozen field with a low-parallax-SNR population host prior and two exact APOKASC3 Gold neighbors; these are target-specific choices, not necessary consequences of Kepler bandpass."
+  },
+  "proper_adjustment_assessment": {
+    "confirmed_implementation": [
+      "Kepler passband and limb-darkening routing",
+      "MIST Gaia-to-Kepler color identity",
+      "Unique paired population tuples for7260rows",
+      "Explicit Kepler coadd integration and documented270/live-frame sensitivity",
+      "Six circular planet curves independently agree with batman within0.046ppm",
+      "Three prepared covariance/data packets reconstruct, and nonzero residual quadratic forms agree with independent covariance pseudoinverses",
+      "Defensive proposal radius CDF inverts the upstream radius sampler at297points",
+      "Existing exact scalar/vector binary-prior controls pass"
+    ],
+    "not_established": [
+      "Full end-to-end probability calibration of custom stellar populations, composite-flux conditioning, fixed-MAP detrending/noise covariance, adopted PRF wings and background-estimator response",
+      "Full EB/scene probability equivalence inferred from the six planet-curve controls",
+      "Matching20-repeat final-ephemeris FPP closeout"
+    ]
+  },
+  "operational_lookup_failures": {
+    "historical_pool_paths_unavailable_locally": true,
+    "read_only_server_exact_pool_lookup_found_no_file": true,
+    "recovered_from": "Committed October12 ledger preserves full scenario marginals/log probabilities, source hashes and adopted configurations. These records were used; raw historical pool files were not freshly reverified.",
+    "exploratory_formatter_failure": "AttributeError: 'str' object has no attribute 'items'; corrected by treating pool_source_sha256 as a scalar.",
+    "all_new_scientific_checks_passed": true
+  },
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/campaign-hardware-v1/audit/generation-lineage.json",
+      "sha256": "4250894053ee7488603ba0a0afa2e86b56f7a2fcd27849435e7aefbbe0588e42",
+      "bytes": 24955
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/production-plan.json",
+      "sha256": "eed7fa52e328e4f6e3500b1fd6f565347d094bcffee0faf53e1e473e30439e88",
+      "bytes": 1026
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/scenario_context.py",
+      "sha256": "75bc67928b6698ee65eb94817b2e746febc7b29cef92d8c1ce1c7a3bdf0eea37",
+      "bytes": 1563
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/acquisition-integration-check.json",
+      "sha256": "781bb54d69d6a6509cc2220e8d2bcf083d1c427c3f549a16525df90ed9e853cc",
+      "bytes": 21258
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/configuration.json",
+      "sha256": "bedf707500d79e7ece10468a3d617b7a04d24783ed7849f2b44113bbddbabdb0",
+      "bytes": 8564
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/convergence.json",
+      "sha256": "f899232d4386a4c3e1ac9075ab7bdc9f967667fa427e56d98131d72a2fda9a77",
+      "bytes": 4779
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/posterior-numerical-check.json",
+      "sha256": "ae825621caa67df26fa08f42df5a396db9b6637d799d1394c1a4792d3ed561f3",
+      "bytes": 22941
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/further-study-20261019/goal-run/tic-sap-all/posterior-samples.npz",
+      "sha256": "43eabb92eb153fc96bc92f9c097a7fd0d7bc611cf08d92695b2f02c0020fe610",
+      "bytes": 17733420
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/dr2_scene_prior.py",
+      "sha256": "22d3209fe7b1f0cfd88cc83289acb11c5066053e3c7c9f579e35a2be44743436",
+      "bytes": 7875
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/rv/kepler-route/field_scene_prior.py",
+      "sha256": "26084d96a4dff7b8be6ababba11e6049ade0495cdac73023afd9d12a11f8c083",
+      "bytes": 5231
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/binary_proposals_v3.py",
+      "sha256": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e",
+      "bytes": 6021
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/field_aperture_prior_v18.py",
+      "sha256": "895560bc41adc0e1f728448e5e7181a7543fef206cb82d48b7617ae000c32127",
+      "bytes": 8568
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v22.py",
+      "sha256": "b62f615bddb272630c1f1533083ad39c124f9a365dc9aa63388efaf963589764",
+      "bytes": 11539
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/kepler_scenarios_v3.py",
+      "sha256": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4",
+      "bytes": 8407
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/planet_proposals_v3.py",
+      "sha256": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0",
+      "bytes": 6645
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/prepared_total_binned_likelihood_v4.py",
+      "sha256": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99",
+      "bytes": 4705
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/run_field_importance_v22.py",
+      "sha256": "655b6d33fae73b4f22bbcbcbef89a3ec50d2795fb129613268c57e66a952e91d",
+      "bytes": 21922
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/inputs/dump/boi-validation-20261011/statistical/run_prepared_importance_v4.py",
+      "sha256": "531fe7fc2afece23b8d55ff9cd8296ee63ebd209e7d054aa4a7b151cba8f7d57",
+      "bytes": 19331
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/kepler-followup-first.log",
+      "sha256": "7e2a4538ac9fea4003157b61ca37af1bbd9dc8c9ab237f8281575cc79d25dc49",
+      "bytes": 3903
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/kepler-followup-v2.log",
+      "sha256": "6e725187296c3d5b5ba981ae21aeb22ee078c06a1cde45918294e9371ae5aba6",
+      "bytes": 4316
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/kepler-followup-verification-20261019T171355137930Z.json",
+      "sha256": "e595fb76d07e9b652159d8a43a9175bea834f464e0016f37b77c0e204eb06ebf",
+      "bytes": 17759
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/verify_kepler_followup.py",
+      "sha256": "d02bac014afacc3213a95d4df9e96a8ecc1bf79476cfab4f3d9d2cd42578a7f2",
+      "bytes": 11548
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/verify_kepler_followup_v1.py",
+      "sha256": "d4ecde835ba75ede861f978c26ee911b0a90fbfdef199d0d492f5d96f2da6aea",
+      "bytes": 10668
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/reviewed-runtime/pipeline/vetting/statistical-validation.json",
+      "sha256": "63066fab03484fb0046ed1901be4356aaef6d2300cf84966864f42edcef78e0b",
+      "bytes": 3553
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/config.json",
+      "sha256": "79a6a93c4c41519bd40b00a99a16372e402e3d0e0ad076ca1aa92f0e56843759",
+      "bytes": 6345
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_disposition.py",
+      "sha256": "01678cadf0619a894afb6e87c5d5c568d552359071a0ea8daec29a21762c74bc",
+      "bytes": 50944
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_models.py",
+      "sha256": "2ec1dcdf7427a19ffc5fb924aafc0bf0a5473725c832cdef3fdcf6dafac518f8",
+      "bytes": 26392
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/pipeline/vetting/vetting_periodic.py",
+      "sha256": "cb33d3ac521fdbdc20d8d00135a3886d4d29170f8d57d8597516752c7a6f0d2b",
+      "bytes": 23628
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/results/boi-validation/boi-validation-20261012.json",
+      "sha256": "0bdff71a2de56661e6b2e8432bdcd13fac7501018251cc1d7a506a798e8f272d",
+      "bytes": 2094764
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/primitive-upstream-parity.json",
+      "sha256": "e587c51abab3ae68bdc9f1bcdd6d07f93ce812ce7fed3c4cc1ea7bc5da273a16",
+      "bytes": 1698
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/server-predecessor-snapshot-20261019T1718Z.json",
+      "sha256": "897878707e03f459a22a4c95509804281f01117b21fc7bfb1e927a61e62f4702",
+      "bytes": 1545927
+    }
+  ],
+  "production_campaigns_started": 0,
+  "frozen_science_modified": false,
+  "previous_results_rewritten": false,
+  "server_predecessor": {
+    "snapshot_path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/method-audit-20261019/server-predecessor-snapshot-20261019T1718Z.json",
+    "snapshot_sha256": "897878707e03f459a22a4c95509804281f01117b21fc7bfb1e927a61e62f4702",
+    "state": "STOPPED_BY_USER_REQUEST",
+    "required_runs": 160,
+    "actual_completed_runs": 13,
+    "model_counts": {
+      "2077554781499350144-gaia-final": 2,
+      "2077554781499350144-gaia-original": 2,
+      "2077554781499350144-tic-final": 1,
+      "2127186564572468352-gaia-final": 2,
+      "2127186564572468352-gaia-original": 2,
+      "2127186564572468352-tic-final": 2,
+      "2127186564572468352-tic-original": 2
+    },
+    "shared_scientific_dependencies_matching_current": [
+      {
+        "relative_path": "evidence/binned-2127186564572468352/binned-input.receipt.json",
+        "sha256": "03d4214cd26a0928bdad3007d018194bd760f849ff907a6fd18987c737d3cf11"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/binned-total200-gaia-final-native.npz",
+        "sha256": "812dd957e4be5dd01808bd2509742fb01dcd8795511d79bb32f831af58eee602"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/binned-total200-gaia-original-discovery.npz",
+        "sha256": "32b30857e3018e610729931b86ce22003db478b0a9ada278c04ed8abd4129a39"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/binned-total200-tic-final-native.npz",
+        "sha256": "6da1cd59c87129d266b8b363ba740d6e983ff7480b9e53d317d4708434f5934d"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/binned-total200-tic-original-discovery.npz",
+        "sha256": "6578f5389fad973772c0a9260a7c6ec9aaeffa190ce41f2018db01a8e81c13ed"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/gaia-fitted-duration.npz",
+        "sha256": "6112816e1626a75873fc42ca5cdb73c6303a2439690a57841fddf8fdfc6110dc"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/gaia-frozen-duration.npz",
+        "sha256": "7551e5ebc8a85d3d442269ce576ba489a9a131bf811fdd5b5138dbcf0e21f224"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/tic-fitted-duration.npz",
+        "sha256": "db9b137ae6f2e8d4185243262a28ea559bd219d55b7a9317d316d3a01d41b882"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/tic-frozen-duration.npz",
+        "sha256": "15debb833e935b25a3e933c77dbf94fb1553e8f0d9dc3bf2bd70cf9cd7e7f15b"
+      },
+      {
+        "relative_path": "evidence/binned-2127186564572468352/total200-ephemeris-control.receipt.json",
+        "sha256": "6106d2871ce0314e4aa39b9cc6e9fbe843bc65e223a598333af408409901d565"
+      },
+      {
+        "relative_path": "evidence/known-source-lightcurves/kplr008196180-2010265121752_llc.fits",
+        "sha256": "e08c5d6ecfa823052db8c90ab380f62276985173e297f3abf5b316d4f6dd6121"
+      },
+      {
+        "relative_path": "evidence/known-source-lightcurves/kplr008196180-2011271113734_llc.fits",
+        "sha256": "2210e96a93304ad046e6ab25b051e5dd77a5c6fd0c25093f79291b5ccf3480bf"
+      },
+      {
+        "relative_path": "evidence/native-2077554781499350144/gaia-sap-1/native-summary.json",
+        "sha256": "0732a8f38c1149f943c6ea3df3b97ac4865e9112e8f123f6514550d39f5515f5"
+      },
+      {
+        "relative_path": "evidence/native-2077554781499350144/gaia-sap-3/native-summary.json",
+        "sha256": "315c89ffd6fc24cc515621b768163d93f3d2ae1b3544afa13a2900c569dacecf"
+      },
+      {
+        "relative_path": "evidence/native-2077554781499350144/tic-psf-3/native-summary.json",
+        "sha256": "e921d8438aed3c67a717b158940e58eaea7ec8ceb5f0fda4379b5bcf76792f44"
+      },
+      {
+        "relative_path": "evidence/native-2077554781499350144/tic-sap-1/native-summary.json",
+        "sha256": "252775a34a8428b16516b8df72997709d32267ed84e7461ef79299ea97e591c1"
+      },
+      {
+        "relative_path": "evidence/native-2077554781499350144/tic-sap-3/native-summary.json",
+        "sha256": "736eb6caef2c75a32467116544904f1dbd8c9df49abf0b920e20c4122416a1a4"
+      },
+      {
+        "relative_path": "evidence/native-2127186564572468352/map.json",
+        "sha256": "b77ca5516acb247f5af1c8272fe8b5c7d129193662ead30d4f156eeadc8839ed"
+      },
+      {
+        "relative_path": "evidence/native-2127186564572468352/native-likelihood-input.npz",
+        "sha256": "035874fea39613ce2c354fd9eb8f79adca5fa9fbe3f8b62adf021601a5d62fa8"
+      },
+      {
+        "relative_path": "evidence/native-2127186564572468352/native-summary.json",
+        "sha256": "3bd4af0a4cad9e37c612864877c8b17fcbd9c4d0071871fdf42be167e84c961a"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/cached_native_likelihood.py",
+        "sha256": "eb85717d3595e203ef1feb66d26476debfde8dc145bb65c0057bac50935c9f1d"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/compressed_native_likelihood.py",
+        "sha256": "0c8fa15ae4fdf5be85a16dcb69457c67bfe8ecec1f66fbc3ce4a521dca6ea56a"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/fullphase-input.receipt.json",
+        "sha256": "f9ded31e8e7f4cc14873dd7bde612f226430e391827efb3184974a6a756933f1"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/native-fullphase-input.npz",
+        "sha256": "1d95b8277a3780a47ba27bbf6212b9c4ff2835450720e8e74d0651ba10285e8a"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/secondary_admission.py",
+        "sha256": "930bc9689401a73519e880dc8cf827a4d211a7ef11ea1290ffa679402d11be73"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/secondary_controls.py",
+        "sha256": "cd1fee6570e0a97d6b9daa75c6319e2cb5ade23552f776d3af6127dc8f216648"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/secondary_fullphase.py",
+        "sha256": "8b83260f897f369aa50f55b9335d0b673045c03783e8f2be47269432abbc9691"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/secondary_noise_sensitivity.py",
+        "sha256": "1e3ca8d12a25efede16f6a53660a59b666bcc98edcf1258e8ef1412cccc2e9b0"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/verify_cached_native_likelihood.py",
+        "sha256": "0ab1e94ee1a68f5c75cad0d3a8d1158ff044519aabe17b7110c43467574c4d00"
+      },
+      {
+        "relative_path": "evidence/secondary-2127186564572468352/verify_compressed_native_likelihood.py",
+        "sha256": "b77b4a8de0b3a0e20c90c4661c4b36ab828be43309562c882874d96fb3789e42"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-1/binned-final-native-complete-groups.npz",
+        "sha256": "fdd7922e846ca8ec8a72894f07502926235eb37dc7d3167edfbb7ab4f96f58f7"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-1/binned-input.receipt.json",
+        "sha256": "a800e98f34d48a0d73488020746601359b21a0c25d0c34330e93e6fef6fe7c14"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-1/binned-original-discovery-complete-groups.npz",
+        "sha256": "52f5deb2acc8cd49232f6d4aae6ca0dfba026fe13f4606c9ade6fca72707caf8"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-3/binned-final-native-complete-groups.npz",
+        "sha256": "2ac80efb129d138e993b1c3c48a8835b3fda19668c929440863180456a5e3d5a"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-3/binned-input.receipt.json",
+        "sha256": "cef17e4dfb37350e928adfe824068ec7442ef66ebadcc7ca8feaf5432b62a6b8"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/gaia-sap-3/binned-original-discovery-complete-groups.npz",
+        "sha256": "c86b215eb311f30d85679ebb8723c65225d2a3795ec13ea43242ab1172e985c8"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-psf3-timing-on-gaia-sap3-operator/binned-final-native-complete-groups.npz",
+        "sha256": "1cc1671e0ddc60050d0ce709918beed12083a8c257810861aebfdc9216e25296"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-psf3-timing-on-gaia-sap3-operator/binned-input.receipt.json",
+        "sha256": "71e51ae592c993187c15674e3108c1e3e291d5e59d584522514d12eb0e82b748"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-psf3-timing-on-gaia-sap3-operator/binned-original-discovery-complete-groups.npz",
+        "sha256": "e818d98a3fb99be3ebf22948ef660b7f2e08eeeab86254bfd855b9265cc12eca"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-sap-1/binned-final-native-complete-groups.npz",
+        "sha256": "48434a5b701ce8027f4daa92347672056c0195848a2fdd0d855c92f1f8785065"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-sap-1/binned-input.receipt.json",
+        "sha256": "079501c6799c84eda66ad72225d0a52c386d9acba9e8d9059d0cccbc2b0615c7"
+      },
+      {
+        "relative_path": "evidence/validation-input-2077554781499350144/tic-sap-1/binned-original-discovery-complete-groups.npz",
+        "sha256": "c6d3e65989c2672facbb4b4fc25e811f5561278cb6e8c64812f63db8e2af7a06"
+      },
+      {
+        "relative_path": "rv/kepler-route/UBVRIplus.txz",
+        "sha256": "524dc5d0fe7c9993ce9d07d32063fda8ce3dad09139739fff14868e89ae622c4"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_207804_field_readiness_v1.py",
+        "sha256": "4c2d94a33f89a4f08488c963f6beef1cb269fddf773c011c1073f5116d407f6b"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_field_population.py",
+        "sha256": "131d47e6c6c158c0e44ccb2a6cfdaedc3c33ba927e00b7084e54db5bf18a21d0"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_fourth_calibrations.py",
+        "sha256": "ec73a901bd68dc11978f576f69ccdd30ff1c8245d903b5335b1692ca148dab3d"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_fourth_dr2.py",
+        "sha256": "b4e3fcd933831aacd78c73de969e8d8f437843bdbcbf369003148a1eb319309a"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_fourth_links.py",
+        "sha256": "72682e89b0fc8d4727bf25db10c1a6c83ac0e2dba57535c57aeb79a85206912e"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_null_photometry.py",
+        "sha256": "127ed3629861a09949c712074b004f0ebf67facef5c19ba53936483f3a7c27da"
+      },
+      {
+        "relative_path": "rv/kepler-route/acquire_paired_population.py",
+        "sha256": "ca1ff96044b59e05725187114a0e47f5044a8a827b6aca0e35ca18bf584852a0"
+      },
+      {
+        "relative_path": "rv/kepler-route/audit_fourth_scene_priors.py",
+        "sha256": "30a1ddba68ef332dc8cf6b8eb0ab9292d845b2a99cf9c8bc084d0032210d3876"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_binned_support_v5.py",
+        "sha256": "cac7c043170bad9545ae02357ade9331c8187b4b1ebf6cef1e265d7bac3de8cc"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_corrected_dr2_priors.py",
+        "sha256": "7a531d013eb78ed4657d84fa2cfddef99ae9b5e009cb6e8dd95b63b172d7fd02"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_dr2_scene_prior.py",
+        "sha256": "9235581cf118e6e08fee0fcc17d289220cae4aa97046c5df20d9c07b1a360cac"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_field_scene.py",
+        "sha256": "a48bb724748746f76d24699e3f96fc8295c94084cd81f3d9528347eb2b2e0ccd"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_hybrid_scene_prior.py",
+        "sha256": "f86713b4232cd6994c366623a92349ade60ea35517cbb1985ac962eaeedec28a"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_hybrid_scene_prior.v1.executed.py",
+        "sha256": "ba4238e68d415c08eaade1712841a71ffbd18ca5042c3f73d373f91f262c8add"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_nearest_ld_v2.py",
+        "sha256": "1c516a078d4a8bc947324d8af906c4745d58e7ced221c0366283c99d039fd073"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_resolved_bound_v17.py",
+        "sha256": "0f5003eb7bf3ae9b8faea9a65eaf3e8c4853cf10b7f846dad6cfa330f1a5100c"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_third_field_closure.py",
+        "sha256": "8f4f9cd5751d3d87d2d5008a48f6888a04b241285aaea618523e0ce6ccce06e9"
+      },
+      {
+        "relative_path": "rv/kepler-route/check_vector_priors_v2.py",
+        "sha256": "0f4f1d53afac9c6843d6ae015d166f8e08e7df9804acf061f0e68d673162177e"
+      },
+      {
+        "relative_path": "rv/kepler-route/compare_scene_populations.py",
+        "sha256": "2c6eb4274e275fe2e4a2775ea5768388b21dac3bbf8b0942640fd6e8ba91f499"
+      },
+      {
+        "relative_path": "rv/kepler-route/dr2_passband_envelope.py",
+        "sha256": "9e6d5017860304af0612d8b0e0350da8c6f6f5614ac26e116613520075950a41"
+      },
+      {
+        "relative_path": "rv/kepler-route/dr2_scene_prior.py",
+        "sha256": "22d3209fe7b1f0cfd88cc83289acb11c5066053e3c7c9f579e35a2be44743436"
+      },
+      {
+        "relative_path": "rv/kepler-route/expanded_gaia_census.py",
+        "sha256": "b8e247119cc9a1a7f3217ac5cf4ab4781a6d80c75844c58d61279b974060bc4a"
+      },
+      {
+        "relative_path": "rv/kepler-route/expanded_tail_bound.py",
+        "sha256": "329300eec53088d177ed7c2c7f16c54581a63bf67f315e83fa3092c5bebc03c4"
+      },
+      {
+        "relative_path": "rv/kepler-route/fast_native_likelihood.py",
+        "sha256": "d520e45e5fe75d6be47c72d68a7a0b326d0e0ee7b7a9646e9bc5c188dbcaa9be"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/counterparts/gaia-dr2-exact.response",
+        "sha256": "cb41d02097b167f62910b83d6b7ebdce2a2ea23e938cabf02fd771d8375f6362"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/dr2-prior-check.v1.json",
+        "sha256": "b147d9401c49bdf57afe05440aef3d2186b217860e8c07d77bbbc1fcadbd3557"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/model-inputs.json",
+        "sha256": "cf225e97cd71c0d7cf948200e462efece5d043068dd8b463943d447a6b6e1396"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/original-sap-masks.npz",
+        "sha256": "0f76e3678ad0b32736b71d42b11814413c697bf876e744f977544a50355989b4"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/prf-wing-sensitivity.json",
+        "sha256": "1cce76a879ccc5263bbda04e809a32f44a7b264073eaeabb2b590964380f45bb"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/prf-wing-throughputs.npz",
+        "sha256": "c5af5d8edc51883540cd3a8e6a0bedb9d2ed419e8e685ef6a93aa3448095f9a5"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/quarter-geometry.json",
+        "sha256": "33a66300d90de899ffa8eb6e7c35d1ad1362bec3cc92310ee19c15af96e83310"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/stellar-inventory.json",
+        "sha256": "274ea0f578e72cc8a98ecd3e4214176c51d2dfedf19acf54ef84621207f29054"
+      },
+      {
+        "relative_path": "rv/kepler-route/field-2077554781499350144/unresolved-wing-throughputs.npz",
+        "sha256": "3f5da3faf8217085401eb68d59effda7cc47713e1e45f4e4054d0d52f8446161"
+      },
+      {
+        "relative_path": "rv/kepler-route/field_scene_prior.py",
+        "sha256": "26084d96a4dff7b8be6ababba11e6049ade0495cdac73023afd9d12a11f8c083"
+      },
+      {
+        "relative_path": "rv/kepler-route/finalize_212716_native.py",
+        "sha256": "677083d817573816d1ec60dbbb9999aef35f1c697eb03edffd272bd57edd6103"
+      },
+      {
+        "relative_path": "rv/kepler-route/fourth_missing_photometry.py",
+        "sha256": "3378864647cda7bfe1d07ea9148e36ed9e97a810576cebf3dd4441e622f1945b"
+      },
+      {
+        "relative_path": "rv/kepler-route/freeze_additional_field.py",
+        "sha256": "1e0a181e0ac7cefabcdfc27091fb1b05c7af1efde528e0b8059785eb3ea93b46"
+      },
+      {
+        "relative_path": "rv/kepler-route/freeze_reviews.py",
+        "sha256": "a11447510e276c573535144c07dce551483cf1528038e8024736e041aa6da32c"
+      },
+      {
+        "relative_path": "rv/kepler-route/hybrid_scene_prior.py",
+        "sha256": "70dbce63bc1a82dc8aca9ffdda0bfc62184e106e42893772c7f39fdb09c4d934"
+      },
+      {
+        "relative_path": "rv/kepler-route/inspect_prf_tail_support.py",
+        "sha256": "be61434b4caa383ccfe0119bd73807054ba077e74aee50e94e53f3b38d5cc3e7"
+      },
+      {
+        "relative_path": "rv/kepler-route/kepler_flux.py",
+        "sha256": "c44abff81308e9a0ab7329262c94cc4a22a1cb3ec95a06bb8fc7a5f9b88701f7"
+      },
+      {
+        "relative_path": "rv/kepler-route/nearest-ld-v2.receipt.json",
+        "sha256": "3408f6c108a9415cc798db0d4bbb08ff245b963497e733df81e8b76a12674a48"
+      },
+      {
+        "relative_path": "rv/kepler-route/nearest_ld_v2.py",
+        "sha256": "569534a7ff7268c683ce23d81c0426445a2a34faa51e1a384a1f85ef2cffda2e"
+      },
+      {
+        "relative_path": "rv/kepler-route/outer_catalogue_queries.py",
+        "sha256": "f902a3c57773a5472b4b25227d64270e59d37ef79aecf8025569af214534cd0c"
+      },
+      {
+        "relative_path": "rv/kepler-route/package_compact_results_v1.py",
+        "sha256": "9e5cbdcfdd92c025b405975ddbc040cb4316c7a42167b7ab2bd505577f4d8562"
+      },
+      {
+        "relative_path": "rv/kepler-route/package_compact_results_v2.py",
+        "sha256": "00ccfa99083546343e753167cf59f20e51f00407c2dadd53f0a1b0846465211b"
+      },
+      {
+        "relative_path": "rv/kepler-route/package_compact_results_v3.py",
+        "sha256": "65f4f0ce14caa10fe91bdb549ccee1919769352d8ec1b6d0436ff5f6f2887d14"
+      },
+      {
+        "relative_path": "rv/kepler-route/paired-native-original.json",
+        "sha256": "cc71a5f15b4d3d7a6b3570be6465ebd9270386d8bf71b7abc0ce4a43c7c38f51"
+      },
+      {
+        "relative_path": "rv/kepler-route/paired-native-original.npz",
+        "sha256": "8bfebf7c0ff746ca2fd13461d95efb788a019ea521e0f8de82da4e603fff13ab"
+      },
+      {
+        "relative_path": "rv/kepler-route/paired_flux_v2.py",
+        "sha256": "7332449290e0a284b058067afb0dcbae03dd26b78c141a6307c3bd938d69909b"
+      },
+      {
+        "relative_path": "rv/kepler-route/paired_population_photometry.py",
+        "sha256": "1c05f49086b502ec693ac3eed446a39d388586c4e2abb59f43539766341c222d"
+      },
+      {
+        "relative_path": "rv/kepler-route/passband_flux_bound.py",
+        "sha256": "77dc658a2fde63baec3ff9c5fc03a6eef74fde87ab9f57aaf1a7945c261c320a"
+      },
+      {
+        "relative_path": "rv/kepler-route/pinned-priors.py",
+        "sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722"
+      },
+      {
+        "relative_path": "rv/kepler-route/population-attempt-03/field-2077554781499350144/trilegal-kepler/poll-001.response",
+        "sha256": "de5da027d44e20773de221fd4004dc9643f760997c6d41ee2c2da0b6cd1a857b"
+      },
+      {
+        "relative_path": "rv/kepler-route/population-attempt-09/field-2077554781499350144/trilegal-gaia/poll-001.response",
+        "sha256": "2e7865d172b8d8bf8687bc71a14a498799dca2b4bc9e2bd31f4243fb5a0974b3"
+      },
+      {
+        "relative_path": "rv/kepler-route/population_attempt.py",
+        "sha256": "aae442b11d0a9c515bb2c2f78f2feb0935cbc1183bbe2d2ffe18dbd7ba242d42"
+      },
+      {
+        "relative_path": "rv/kepler-route/population_attempt.v1.executed.py",
+        "sha256": "c269493c18410bb506bba0782649f11df1df2f85c4287c3d152cec093e333271"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_207804_census_v71.py",
+        "sha256": "73e6215598b602908156f1b930f5a0865b9781ed6b85ba14ea4e391b6e6b646c"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_212718_admission.py",
+        "sha256": "7e6e86379fc25e774d3a597130894389259ec92ccbeca7f9f16de71fa33e2fcd"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_additional_scene.py",
+        "sha256": "288bdbaac7bfe35fbc00b756cd4b8d240c671905f18cb394c8273411439c9e8f"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_catalogue_field.py",
+        "sha256": "d37c1d65b8fa0183233a426edeb43279a11f331cfc5c40691a21b7da826cc525"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_expanded_census.py",
+        "sha256": "00fbb647d3644a462ba3feb66c1aa06111d962fba7f111508f1bb916a38e6427"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_field_scene.py",
+        "sha256": "6b7ed2e8c384148bee34d848c64aa6d9a353565d4dd974ecbcc51ca6119c50d9"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_fifth_field.py",
+        "sha256": "2175d925709625a1bdef2b4b4ea5e85468a48a1958bf204a8646dd17f6bb2620"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_fifth_scene.py",
+        "sha256": "54ca8ceb5f82bc8ea21301f10497a43034e0eb2de369c1586d3205a938d4dd96"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_fourth_field.py",
+        "sha256": "b838bd9d5e84759c7dd648106c854c327a4e4c314de4bb575b88fabc64cd45bc"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_fourth_inventory.py",
+        "sha256": "68ec4a1624facb90842dd22a5f7a345e3e7155642b14d142c9509cfae6433fa6"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_fourth_scene.py",
+        "sha256": "6638a1c3008060c09a6efe2268ae90a6f89ae6e45c0817cff7991a6b7ee5a62a"
+      },
+      {
+        "relative_path": "rv/kepler-route/prepare_lc2_field_scene.py",
+        "sha256": "ee8d28e1e23b0135d9962bb009d7f907141b76a1c99fea8729fa5574e62af1c6"
+      },
+      {
+        "relative_path": "rv/kepler-route/prf-wing-checks.receipt.json",
+        "sha256": "07ac89b75405bcaefe52d945766848f5a20aa1e2200810c6a6d44d6008e2c536"
+      },
+      {
+        "relative_path": "rv/kepler-route/prf-wing-sensitivity.json",
+        "sha256": "e1eb00a5cd57d8d034e06ddfcfe34fb1b8505026514161b710fc7f302a930eab"
+      },
+      {
+        "relative_path": "rv/kepler-route/prf-wing-throughputs.npz",
+        "sha256": "724d8235f6455f682438bba7fb375360b0907cb23b7a50fba0651681635bb583"
+      },
+      {
+        "relative_path": "rv/kepler-route/prf_wing_sensitivity.py",
+        "sha256": "515a3d93e01676dad53366c38d860a28d4159c182af3aae9793c99e565a86d35"
+      },
+      {
+        "relative_path": "rv/kepler-route/query_210032_exact_gate_v1.py",
+        "sha256": "bfb64e19d1d6b7d108a787c20de2e23fc2a5698babda4fdb01d1e3fec8cfa714"
+      },
+      {
+        "relative_path": "rv/kepler-route/query_210032_exact_gate_v2.py",
+        "sha256": "c41ceb1f1c00a6a333722780ef7cb4f1dfe3c5e2a4826d838a6ab5dc9f320fbb"
+      },
+      {
+        "relative_path": "rv/kepler-route/query_210032_exact_gate_v3.py",
+        "sha256": "1e80b595957b40e98e18fe437f41bc74d2e078cf834653aced69815a179de41a"
+      },
+      {
+        "relative_path": "rv/kepler-route/query_next_small_candidates_v1.py",
+        "sha256": "bd1197c9cfed8b3bbf0be7c5a1dc953c52be5aebb22baf59c44a5af3107d0db7"
+      },
+      {
+        "relative_path": "rv/kepler-route/retry_207804_gaia_population_v71.py",
+        "sha256": "96165e6acbf4c103cd4f0e296000d7450d748081f3b09d4af390237dd021b6c4"
+      },
+      {
+        "relative_path": "rv/kepler-route/retry_207804_gaia_population_v72.py",
+        "sha256": "898adfefbd6d1525b8ff2a37b2ada10973b3c87382aa3fed2b5ba513e47019b9"
+      },
+      {
+        "relative_path": "rv/kepler-route/retry_fourth_populations.py",
+        "sha256": "e212d2d984910bb4762cec60a598512d2abce7ded92b7bd0b4d9f2b931fddde7"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207638_minimal_v1.py",
+        "sha256": "ab2b4e845089603a6e1d183804ee90b76eb847a3814a4cb557c20936ded101c0"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207755_admission.py",
+        "sha256": "35129234f1d9eafffc3625e723af5b290ec765dd8e20957a178a3b8780e49ed9"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_geometry_v1.py",
+        "sha256": "f50b16dcd62ae2ba7ad47d2593724eb3aaa792430e04a83c0ffe98ad84569d66"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_native_and_census_v71.py",
+        "sha256": "0b08305d8d1837985b9e227b27ae15aa4a5187ffaeeb95e62d78b2cfb2165119"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_native_modes_v80_v1.py",
+        "sha256": "a5dd0e2b71e78cd28e4e7395a1e26c44298a8fafdcf15a01599fb9ba892d840b"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_original_pilot_v1.py",
+        "sha256": "7c1769233ef038b8b34e3a1500cca58ffd2aa0f9c0e77d418897d2560edd4b50"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_v76_v79_v1.py",
+        "sha256": "9b97f7de17ced7c952de89acf0fba1253710e5d04b2ec46ac00bbf5467c5b58a"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_v76_v79_v2.py",
+        "sha256": "8b37d19630eac52c03daeb5db652803e7307aac8e93f9e5df51faa333288883b"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_v77_v1.py",
+        "sha256": "2068f596e48f782ab44b60fb4595253a0b5a2057da84838f11309a575c7b8907"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_207804_v78_v1.py",
+        "sha256": "007bfc764569f291a2585784f8a091fbdfef07cbcb4cf2e6cef68bdee5ef2b37"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_210032_phase_v1.py",
+        "sha256": "dc6f4cd1edee7f8f7b53271ef39a2d2bcfbe2b877135bdac940a27101fb4f94f"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_212716_native.py",
+        "sha256": "b89126b7021dc20f4ae1323fd30641881fe2ca4fbe00dbfe92448f83e84949d6"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_212718_admission.py",
+        "sha256": "178d441e702dd3d68df26b4c48696b50c122aec111635a98e7673be4a02c4049"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_212718_final.py",
+        "sha256": "664cef3fa39d7db234c224d3256852acb32276c8465b2a2fc8a1be9bed756bc7"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_212805_primary_v1.py",
+        "sha256": "48716c32869ef9c81eacf22c5baa18cee3ff4f6ffacc5da77035a8f6d4f5fe1c"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_binned_v2.py",
+        "sha256": "39515af09e8411ba672557afb3ed6faf3f636324d3f73de9c42f33daef06588a"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_cold_bound.py",
+        "sha256": "cee2df742fc883b8a7af7663930cd36f1de13b91d8f60b49a26c593cf7895b67"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_live_cpu_affinity_v1.py",
+        "sha256": "d8e9b9838169fbd26dbea126c5ce96649c1a0141889b2f7021018233e928ebfb"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_native_likelihood.py",
+        "sha256": "e30dcfa603efcbc0f3aae1b661a2eae352211efea747a164a1b67d049f302a66"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_native_sixth_v65_v1.py",
+        "sha256": "d617dd67fa01bedb5c85c645edeadd1e033e1648fdf5ddfff32d7991d46fe0ae"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_native_v23.py",
+        "sha256": "7e6483eae70604a61ca3e9a3a74bbbaed24a112b71565ed297b51f4e95b4c954"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_native_v23.v1.executed.py",
+        "sha256": "8fd986e65c996a54c171eb418675a5a4f909372b91c56b2e5838e0b4db7bdd67"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_phoenix_v10.py",
+        "sha256": "8716c47396bb7a67d3d136fd2d28878f687cc0d074237c9181f7ce324cc7ecd4"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_source11_finite_route_v1.py",
+        "sha256": "4cd316afb010ff70c2a21197b6b04d4955eb1ad07dbb2382402b994f8e55da01"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_v36_precision.py",
+        "sha256": "011501edb9169c8fc4d8173a5d5b36740ba44a40c7113defefa2e24d518d2d2a"
+      },
+      {
+        "relative_path": "rv/kepler-route/review_v73_v74_particles_v1.py",
+        "sha256": "057f05452988a5c50c00738b142d88f46a0604e9a081dabc85510cd091788f0a"
+      },
+      {
+        "relative_path": "rv/kepler-route/seal_207804_review_endpoint_v1.py",
+        "sha256": "94736ade9308ad7e544488344e7195e03aaa812f0bce7bd7bee4211d1cd73ff3"
+      },
+      {
+        "relative_path": "rv/kepler-route/seal_next_small_priority_v1.py",
+        "sha256": "a2d001e8c52dc726bb2ad3b421db051141f32501d1eb905449376df53f600629"
+      },
+      {
+        "relative_path": "rv/kepler-route/seal_next_small_priority_v2.py",
+        "sha256": "2a3ed3bcf691bbea8de5890208513002981d98568546915c08a37e9c7b09ab99"
+      },
+      {
+        "relative_path": "rv/kepler-route/stellar_scene_prior.py",
+        "sha256": "52f2bf5dfc273c420ca8e682988c7dfbf483380b019668fd093062e7f673dd26"
+      },
+      {
+        "relative_path": "rv/kepler-route/substellar_scope.py",
+        "sha256": "c803d0b1f0c2bcb66fd9170745e0ed29ca25283b07380f99584be41ac92d5dd8"
+      },
+      {
+        "relative_path": "rv/kepler-route/test_kepler_flux.py",
+        "sha256": "d2ad539ab97fe6e95456e5570c1bf4ff848d703cc866404d592d91cf9d5d54cc"
+      },
+      {
+        "relative_path": "rv/kepler-route/unresolved-wing-throughputs.npz",
+        "sha256": "367c4238079b8aaffe54080dafbf5b4c77197bb2eae5fd73bb2f029284aabbcd"
+      },
+      {
+        "relative_path": "rv/kepler-route/unresolved-wing.receipt.json",
+        "sha256": "c0a263f6fade4777129d180ba1b1397b0b441f9c93b0cd19f2c7dd56a9bd487f"
+      },
+      {
+        "relative_path": "rv/kepler-route/unresolved_wing_geometry.py",
+        "sha256": "96c2e43e974d0fb1979c3371c8f12bb90054511e0436d56ee98b16b84c83b212"
+      },
+      {
+        "relative_path": "rv/kepler-route/vector-priors-v2.receipt.json",
+        "sha256": "2ade56833fcd89901ad49da969e79ccfca941ff62beacff68ec8556b4a1d83d0"
+      },
+      {
+        "relative_path": "rv/kepler-route/vector_priors_v2.py",
+        "sha256": "b54a07f365661e9bdfbe10520d8fd2329a235dd1b526f481b5392d2371743cf5"
+      },
+      {
+        "relative_path": "rv/kepler-route/verify_fast_native_likelihood.py",
+        "sha256": "87b3c45b1fbd3e6fdabb65a7db1a406f5c90a22ee410f4b5a8acbf5c3a5ba29f"
+      },
+      {
+        "relative_path": "rv/kepler-route/verify_prf_wings.py",
+        "sha256": "5ad3676f53df6f97875e0d156beec0b6928a3b4bf700a409374de4ac70198db4"
+      },
+      {
+        "relative_path": "rv/kepler-route/verify_stellar_prior.py",
+        "sha256": "c403ce7a1431ba092a94684441a31942e5840a019ea7e429cb80641c45b685c8"
+      },
+      {
+        "relative_path": "rv/known-object-controls/known-object-dossier.json",
+        "sha256": "4cd04f977d39ef0f5001ab5e8f463e8744804fc607697147c228fb333b91f590"
+      },
+      {
+        "relative_path": "statistical/BINNED_V2.md",
+        "sha256": "02a3dcf6478c91bfed2b0e5555e5d526d682bca8ac309d4db629b280480aa228"
+      },
+      {
+        "relative_path": "statistical/IMPORTANCE_V3.md",
+        "sha256": "d854f5f4b88944191e7a070cb00d86fea20638e952671af542ff202a15b44a04"
+      },
+      {
+        "relative_path": "statistical/acquire_cool_phoenix_v44.py",
+        "sha256": "ecfd36cc4a17d4f45e4984af27259e8ef04e025f52579ce4f95d2b2d844d4e8c"
+      },
+      {
+        "relative_path": "statistical/aggregate_field_repeats_v15.py",
+        "sha256": "56e7c2655c8a6bb2f1b5933a6ea5a654bf9ac3b18a4eeb8885eb1023f352e8ae"
+      },
+      {
+        "relative_path": "statistical/aggregate_importance_repeats.py",
+        "sha256": "f075b1289d5de1686105f9dff1331a07d2bcbf4a3cfeb76989dc4a9377c01621"
+      },
+      {
+        "relative_path": "statistical/analyze_eighth_proposal_v63.py",
+        "sha256": "70fb73280bfcfd2630e50a6fe2d1db325ef5a4863268f8295f5d36d6428214a3"
+      },
+      {
+        "relative_path": "statistical/analyze_sixth_proposal_v67.py",
+        "sha256": "d543cd207fb797a1eef9a2a858e5ee8c0579d96aa3c8ec033cd0c95ba0758d5a"
+      },
+      {
+        "relative_path": "statistical/analyze_sixth_proposal_v67_1.py",
+        "sha256": "22f51358326d37f37a0a4265b0f67da5911adeb8ecc97d610ef8333676c9694b"
+      },
+      {
+        "relative_path": "statistical/assemble_kepler_inputs.py",
+        "sha256": "09c6189a929f48e866e054db5e81b80b4fb6e16d8ad689e761dba6705e0c8fe8"
+      },
+      {
+        "relative_path": "statistical/audit_eighth_retention_v69.py",
+        "sha256": "ae13f69d23b1d8e2d77e49803719dcbca58dc8d982cae29ac23aca9b6538da58"
+      },
+      {
+        "relative_path": "statistical/binary_proposals_v3.py",
+        "sha256": "bce00957206a2340b92721032b0e817906a39c9ae2d97195ef7f113b8a99d38e"
+      },
+      {
+        "relative_path": "statistical/binned_scenario_likelihood.py",
+        "sha256": "28e048feb9a0c1559eb2ae54cf5534d00ff659af2decf2d0b8a895ce1ecbdb7d"
+      },
+      {
+        "relative_path": "statistical/binned_support_bound_v5.py",
+        "sha256": "daabf0b6c96b62e73edae4e9ea5c3306d2502f59d91aef266f87d110991bd258"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle.py",
+        "sha256": "0d80fb40015f511c75b4183a7e0af703e6920383cb83047b378af11248cbd889"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v10.py",
+        "sha256": "af06fcb1c3c9f601470d719832a562d0b1fd4602cc6cea4483ec709ab6ce6a86"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v16.py",
+        "sha256": "60b37c9d7c3eefade079ba78a6498c99c9489cf221b94188a403d25e92804df9"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v2.py",
+        "sha256": "f09da4b5aa6defe2af20e36a823aef07885251e246736f5af719aa7dad143740"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v23.py",
+        "sha256": "8092ef0e0f744249cff4f151b5a32a75cbd42e04fba95a91425c355e9fa4730c"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v23_1.py",
+        "sha256": "34e4b981a081e2e30e5769c2acf102a0bff67f773f7cd532673ded5e776a4273"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v3.py",
+        "sha256": "5ede7395e9456faf4f257097b6235f35eee06677c9fc55b8a396992296c72f1b"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v33.py",
+        "sha256": "eee003c39a0fcdd56734c5355556b2472bc800a67f80b335a9095f91f1d67700"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v36.py",
+        "sha256": "6be94a82580b5267ac8b4f87ba377f2848acc3c83a7cacb8517f1f18e7fb766d"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v4.py",
+        "sha256": "ac363a0d6bce1e8b06ba7b032d13f85591e9c5716de0865af96d1759bc4ef5fe"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v4_1.py",
+        "sha256": "f046715a33f21484b4d4bd07eeba7c95daaf2a7f68c05293707db78f2050d13e"
+      },
+      {
+        "relative_path": "statistical/build_server_bundle_v8.py",
+        "sha256": "e8aee1f051e3cbe6c7e180367d62c632378cc4deefc90e2be9ec8915626ad204"
+      },
+      {
+        "relative_path": "statistical/characterize_native_v42.py",
+        "sha256": "be742fa22950ca786cafeea9202b56c74b5f90caea652b69997fd128d6005dcb"
+      },
+      {
+        "relative_path": "statistical/characterize_planets_v25.py",
+        "sha256": "91cb3839bfaf7f5265a7e9c0de1816da53ec27b970802eb8b3c38c9afecdb58f"
+      },
+      {
+        "relative_path": "statistical/characterize_planets_v30.py",
+        "sha256": "11da5a319f3d9edc696244c9a8197ac2b8376f463e01600ef96441ec29acfda6"
+      },
+      {
+        "relative_path": "statistical/characterize_planets_v34.py",
+        "sha256": "e4ab04b019c042e689471d869664e302582ff34cdf2f45d141a88f07c63a5ace"
+      },
+      {
+        "relative_path": "statistical/check_207804_capture_v76.py",
+        "sha256": "2fb1a4b30c047f668e10c765a909be0a5dbcd5cf6b0cc3a0278982edfc09270d"
+      },
+      {
+        "relative_path": "statistical/check_argmax_v55_1.py",
+        "sha256": "4972eb323d9aa1448111b37aa8ed56d57345a0023dff326f34bc05021da5552b"
+      },
+      {
+        "relative_path": "statistical/check_binned_covariance_noise.py",
+        "sha256": "7950cc26c952d91ca808be243d30232be96ee0e274af2681e3953919ab967cb9"
+      },
+      {
+        "relative_path": "statistical/check_census_particles_v74.py",
+        "sha256": "adc691889a4cdb8aa4d18dcd34cff3a133e6b94451b756a267fbd320f789208e"
+      },
+      {
+        "relative_path": "statistical/check_census_particles_v74_1.py",
+        "sha256": "fb5dc5862b04400ebcb91d9354de469d40d4664326c9381c6686bab839c8fbbd"
+      },
+      {
+        "relative_path": "statistical/check_census_particles_v74_2.py",
+        "sha256": "174234c9e2bc2634948dadce36152c9a084ed8bdd44591dc460d7224f915576e"
+      },
+      {
+        "relative_path": "statistical/check_cold_evidence_bound.py",
+        "sha256": "a50a4ef52c816ef24a9397666eaaf6c58de7c5125949bfa9e19096823faf74b4"
+      },
+      {
+        "relative_path": "statistical/check_eccentricity_proposals_v6.py",
+        "sha256": "2f54462f119ce2048b519ff9141d001c1d02739aa187be1ebd60a3b953c76b71"
+      },
+      {
+        "relative_path": "statistical/check_field_aperture_prior_v7.py",
+        "sha256": "1e2ceb7829509acf6dfaa7b8f34390dbf192ce1224291e52202f78ae0b3658a6"
+      },
+      {
+        "relative_path": "statistical/check_followup_cases_v49.py",
+        "sha256": "60b0ad129388142ed32ca979820a133144675e3ad9397698123c4092ab6da7d8"
+      },
+      {
+        "relative_path": "statistical/check_full_importance_v3.py",
+        "sha256": "285cbf5b5bc3bd949f744b2110fdda5a41a8556240a0135261ab9c3f42a9b162"
+      },
+      {
+        "relative_path": "statistical/check_fullphase_cold_bound.py",
+        "sha256": "644ddab0b134d2d1475f8563039332410e392427f8d38ea98fa7f70f78553215"
+      },
+      {
+        "relative_path": "statistical/check_native_argmax_v56_1.py",
+        "sha256": "92bb61165658375c04065b8c6b38ddfb1879a1b0e46de2e73e0975f093768f9f"
+      },
+      {
+        "relative_path": "statistical/check_native_likelihood.py",
+        "sha256": "d8f37efa9b3f77d643b194d8c3e114068edc6ae154898d47ee431b15dec2e8d2"
+      },
+      {
+        "relative_path": "statistical/check_native_sixth_v54.py",
+        "sha256": "7c897bb6f637edc1f150d76f825d4a78d5f9547fc4cf3a34f795fe611aeb56cb"
+      },
+      {
+        "relative_path": "statistical/check_native_sixth_v54_1.py",
+        "sha256": "257338cc741f28db9e856afbaf3827e4a857e737d48721818ff6628b435d039c"
+      },
+      {
+        "relative_path": "statistical/check_phase_grid_v71.py",
+        "sha256": "750c37cdcfc5458728cbaffdc5b22a8e328cfa967131f7fe058b94a1ac729dc1"
+      },
+      {
+        "relative_path": "statistical/check_planet_proposals_v3.py",
+        "sha256": "3bd6f6fbd19e14c293a116141d8d820297b6680c3d9fe8bd22f447f29a827030"
+      },
+      {
+        "relative_path": "statistical/check_planet_proposals_v60.py",
+        "sha256": "70de868a35d11d3f3b554ba688a0bc1cb3a7c9992884b7295ecae32286f1e3aa"
+      },
+      {
+        "relative_path": "statistical/check_prepared_bins_v4.py",
+        "sha256": "583064a6f2b1bc3d9f73c3928de33f323492299d9f5934942bdafb6e7f396b83"
+      },
+      {
+        "relative_path": "statistical/check_resolved_evidence_bounds.py",
+        "sha256": "07a86d6a068f4038cac4e2fa6f4550f6e5070c94aa0ebf5a5a28b39f7225682e"
+      },
+      {
+        "relative_path": "statistical/check_resume_v2.py",
+        "sha256": "342d818400dc2f4c77326d6813ab93b1b8ee2b7f5b42a04fd5e456af56596daa"
+      },
+      {
+        "relative_path": "statistical/check_resume_v3.py",
+        "sha256": "dce7d5a41a33d88426ddf7a84aaac83a5dd3e6180e3b0368263e08b25851fc60"
+      },
+      {
+        "relative_path": "statistical/check_retained_models_v5.py",
+        "sha256": "427738d3e48a01229ccc97a5c490365f2e21d47f7e9829f683af510195b4fdc6"
+      },
+      {
+        "relative_path": "statistical/check_target_extinction_v75.py",
+        "sha256": "3f1eb403ce515699bcf404d2fd66e829fedc6bf07910c1fc6bb71bab52aadaf3"
+      },
+      {
+        "relative_path": "statistical/check_target_extinction_v77.py",
+        "sha256": "5157deff14a0616ee44fc42e5481802df56873d8f918388e68dc808971348f4e"
+      },
+      {
+        "relative_path": "statistical/check_total_binned_noise_v2.py",
+        "sha256": "828c109e9e699bd66f3ad7fac9a990f82c44848b0eec52e0cce573b21ee17ef5"
+      },
+      {
+        "relative_path": "statistical/cold_support_bounds.py",
+        "sha256": "34be353cc40752c7c97fcd520241cdb8d604fa572dc6c13877e49287be6344a2"
+      },
+      {
+        "relative_path": "statistical/compare_argmax_v55_1.py",
+        "sha256": "356048f13c498de20665ef9a664d3909ec4c8c21f20f637fa9f9d4bc154d8c4c"
+      },
+      {
+        "relative_path": "statistical/compare_literal_importance_v24.py",
+        "sha256": "db6dfaf23c22e14d547236c4f1c668c17c9d90ac84c09f61d373f9c66501ce57"
+      },
+      {
+        "relative_path": "statistical/compare_native_argmax_v56_1.py",
+        "sha256": "ffd531608721a87d1d94da32af4218266bbeb68643bce602c03c3cd6f79bd7a7"
+      },
+      {
+        "relative_path": "statistical/complete_quarters.py",
+        "sha256": "bfa3ae51f82adde253b07713fd1f07e48016a209ad2b3af62247ce6e90b244bc"
+      },
+      {
+        "relative_path": "statistical/eccentricity_proposals_v6.py",
+        "sha256": "658e5fbdb46c9c291ac8fea3ee886d00ff46c2d0b1286e7806f403a023ce5fa0"
+      },
+      {
+        "relative_path": "statistical/field-2077554781499350144/field-identity.json",
+        "sha256": "638269a6fe29d1537e73b25927b053b9fd024782fab0ecc37b6fcea91c949fa3"
+      },
+      {
+        "relative_path": "statistical/field-2077554781499350144/native-primary-check.v22.json",
+        "sha256": "edf35cfb9af54e7babd3e2b8d30abdcde1470bc8c8eb6c6531727c6dd14ce39b"
+      },
+      {
+        "relative_path": "statistical/field-2077554781499350144/scenario-config.v18.json",
+        "sha256": "fb738e1a522d7b19dd2ac6f2fe0cb0b8245237208de7337a477812b7135bd280"
+      },
+      {
+        "relative_path": "statistical/field-2077554781499350144/scenario-config.v22.json",
+        "sha256": "c7a392b861382f577d6b288da5c6a49968c7278cc31da93452f85af910639442"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/binned-v2-pilot4096.json",
+        "sha256": "e70052f82317f7f4d9b272633dbea44c296425cea6a19fe47d5b9040955dbf67"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/binned-v2-renderer-check.json",
+        "sha256": "eac704ade04e03b28ca64ad80e80ef4749464cde3ccd43e9d6258d0b211e4fe9"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/compressed-fullphase-pilot-EB.models.npz",
+        "sha256": "71d44102204fc044fcdf4f3a1e73c03d873db0f0da9108e95c86b3dc4f688e34"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/compressed-fullphase-pilot-EBx2P.models.npz",
+        "sha256": "b1b3369c8ed4b015858b6f539f0488772b7de774bedd38a87feb166b9ff5f32f"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/compressed-fullphase-pilot-TP.models.npz",
+        "sha256": "08be5f1829df8f3ac9245994a916d542947a1adf482d475ab29f9869aa9a6b0b"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/full-importance-v3-check.json",
+        "sha256": "1535d21995c0abeb21c1c1c9a9be642506b18e198ffca77530337a3b6f0dfd06"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/fullphase-pilot-EB.models.npz",
+        "sha256": "71d44102204fc044fcdf4f3a1e73c03d873db0f0da9108e95c86b3dc4f688e34"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/fullphase-pilot-EBx2P.models.npz",
+        "sha256": "b1b3369c8ed4b015858b6f539f0488772b7de774bedd38a87feb166b9ff5f32f"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/fullphase-pilot-TP.models.npz",
+        "sha256": "08be5f1829df8f3ac9245994a916d542947a1adf482d475ab29f9869aa9a6b0b"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/importance-renderer-v3-pilot4096.json",
+        "sha256": "5f3ffd41ffa175b9607b079c5574f1b12fba7ffb77a034d6a05bac90f6e2406b"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/model-inputs.json",
+        "sha256": "fcbd577a3cd204ae5d4a07035ace0ed86881686f6f92653310e5b841caeded15"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/planet-proposal-v3-check.json",
+        "sha256": "b2a1750670577dfc5565ebc1c9f5a1f4a8712e66de96a241590ae0306f89eda8"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/prepared-bins-v4-final-noise.json",
+        "sha256": "5a4261dc30b7dca121fc7b228c05f6b5be16bb77a47c733a4c1628e56368d80a"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/prepared-bins-v4-original-noise.json",
+        "sha256": "e3d5d4c67ceb6cdd049f85ee9af55d90e1d5550545e662957694ee11b85cfe98"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/prepared-bins-v4-reproduction.json",
+        "sha256": "2e11e006ddb89485ef04e773aaf4b03bf603d84ba91e217d47b70c83657f1a97"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/prepared-v4-original-discovery128.json",
+        "sha256": "a68fd8efc54be9345408803ace7fceaa85e4ae5c0b1fa14b37cbf20eb129ee86"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/resume-v2-check/receipt.json",
+        "sha256": "2e7761a01de4c7b8b5211d65673e6721b453d9d11d1184c3a9540929e3ed61e6"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/resume-v2-check/uninterrupted.json",
+        "sha256": "96f80df90f7928c64f0450ff88ecb61b31dc378b504dc06be8261df6a7be15e0"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/resume-v3-check/receipt.json",
+        "sha256": "41f6c50a540a1ad2aa0b127bb6d12b823f6d136e02d484676729f03086164ea6"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/resume-v3-check/uninterrupted.json",
+        "sha256": "6ecf72a69c8728641167b4a6b437da8630a9aec9555572c98c4d9d8ed6b4f3f3"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/selected-v8-tic-final128.json",
+        "sha256": "de73f4c27b834ed34c6ed7e89717068d15a2008003bfd81a44ac3c3b1a96e754"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/stellar-inventory.json",
+        "sha256": "8ee920caed852f1576486f1bc5d26eb96389a6a52e747c083d1994aafc5cd4bf"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/target-lower-config-gaia.json",
+        "sha256": "2d2551f3afe7dfe3c008b34692ccb83330ceab93f28ff25c2f5c2628659cc41c"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/target-lower-config-tic.json",
+        "sha256": "94b1148cb497814b6a9c2d07c6bc9f48cdb1d1b8cfef0df0397bf89b781f4f6a"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/target-lower-gaia-exp-certified.json",
+        "sha256": "98f261b0e492e056b7971b2fe498c36d06b8ccfe0a545f03077bea0bb59723e3"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/target-lower-gaia-exp-certified.npz",
+        "sha256": "5b6a229f729a38317002516b38f4bd4b2f19c4fad08c2934297f6e2d824d614f"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/total-binned-gaia-noise-v2.json",
+        "sha256": "d14a9e9f346c3c7626c247584f892223cf47ee2e8abcd8fa686bdc61d962a837"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/total-binned-tic-noise-v2.json",
+        "sha256": "1116532c7d2ba12c7cf48d7de06acc035c450f63818644661ec2f9261ca58031"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/trilegal-gaia-1deg.dat",
+        "sha256": "37e5033ff0726571f7ec7f176c3dd66b931ef7c22a17d904a446470d1f82d6d7"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/trilegal-gaia.dat",
+        "sha256": "58682adf97fb92c49f90f818b3d7148c9cf7d4fae37ba1bcd112ca5d310a82b4"
+      },
+      {
+        "relative_path": "statistical/field-2127186564572468352/trilegal-kepler.dat",
+        "sha256": "19361257dc26d0dae62748f2c2904abfa0f4f859c27794947485a084e074f28f"
+      },
+      {
+        "relative_path": "statistical/field_aperture_prior_v10.py",
+        "sha256": "97014ce6970982bbea617697fd5371075e85f64bec933d97a25a62c30f85d136"
+      },
+      {
+        "relative_path": "statistical/field_aperture_prior_v18.py",
+        "sha256": "895560bc41adc0e1f728448e5e7181a7543fef206cb82d48b7617ae000c32127"
+      },
+      {
+        "relative_path": "statistical/field_aperture_prior_v27.py",
+        "sha256": "fff6139a6586954ca5a027ef622928e6405c4dc606a5b1ddf66da1493d04e41c"
+      },
+      {
+        "relative_path": "statistical/field_aperture_prior_v29.py",
+        "sha256": "e9ba45e6d831694fbaef1fb350673dba420c1e50e4404748fe1469e25c6aab77"
+      },
+      {
+        "relative_path": "statistical/field_aperture_prior_v7.py",
+        "sha256": "f33ac22abd7fb78e41fcf7e3d91ba5b84650f2e1815e8abba1552838887e678a"
+      },
+      {
+        "relative_path": "statistical/field_prior_v2.py",
+        "sha256": "6ca6c784d152963364ab33861b4bac010c2bf16950822cbd9ad7c28eb3bb2ef2"
+      },
+      {
+        "relative_path": "statistical/followup_field_prior_v49.py",
+        "sha256": "a646a2ec2bb2d297e9b04aac68f341b2482055c817e2ae31b1fa07643fb38bd5"
+      },
+      {
+        "relative_path": "statistical/followup_phoenix_colors_v44.py",
+        "sha256": "862cf6d9a6b5664440824fb078da2c3c7c5be57b996c16dee806df6541789369"
+      },
+      {
+        "relative_path": "statistical/followup_phoenix_passbands_v47.py",
+        "sha256": "a34ba24f944247a88f250cce05169097997431f304183ae4e44e2e0d3888fe86"
+      },
+      {
+        "relative_path": "statistical/followup_phoenix_passbands_v47_1.py",
+        "sha256": "5791a72ce4722a7d2f827979f3c299e3e7ed468856d646c1120b5ab563bbd169"
+      },
+      {
+        "relative_path": "statistical/followup_scenarios_v49.py",
+        "sha256": "1719ef4dfa96893b70daa9defb2db1dbcdedcd1193e107658ab8898e95803af7"
+      },
+      {
+        "relative_path": "statistical/guard_native_field_v41.py",
+        "sha256": "62b0d754a18787c7dc68a2ecb324318f51579de9d721c423f61f1b88b6acd39c"
+      },
+      {
+        "relative_path": "statistical/guard_native_sixth_v54.py",
+        "sha256": "5bd0442c01b04a70e87ad950bb8690ca5f837e5da85b79f622bd047e864127b9"
+      },
+      {
+        "relative_path": "statistical/guard_native_sixth_v54_1.py",
+        "sha256": "41dd61601a614efe13f49c7e39fe8d1e4ed129c61aa8aea92819da9649c8cbbc"
+      },
+      {
+        "relative_path": "statistical/guard_native_v23.py",
+        "sha256": "0e557cb8666c32bf75f1476cfb34e7f7b10fa2fe98b27bd31f3ffb2ba05fe5d4"
+      },
+      {
+        "relative_path": "statistical/guard_selected_followup_v61.py",
+        "sha256": "b5d1c7aad42634948fd0a92db86a1ae8b069156920e3c9a33bfd1f31dd6e0e33"
+      },
+      {
+        "relative_path": "statistical/guard_selected_native_v51.py",
+        "sha256": "4f1bad66233c099418af9f2a259bdf1fd047a80b0bc374d40dd3d3e06700be8c"
+      },
+      {
+        "relative_path": "statistical/host_stress.py",
+        "sha256": "1597acb590b284e8ddc695274aed25f242c1f963f00df853f42b1633ce9e0a49"
+      },
+      {
+        "relative_path": "statistical/kepler_scenarios.py",
+        "sha256": "d6d5e858859c8bdf9083556fd2d5985efcbda9e01da38800ec481c96aa605591"
+      },
+      {
+        "relative_path": "statistical/kepler_scenarios_v18.py",
+        "sha256": "85c55530de980eda0bdcea0d771c0ac3f5be1623e62044dda6b66fc7b224f0f7"
+      },
+      {
+        "relative_path": "statistical/kepler_scenarios_v2.py",
+        "sha256": "bac5bb5fbcfdcbdce3898b99dd232f071c4a449ee5f27bd0bb74f84e39f44a88"
+      },
+      {
+        "relative_path": "statistical/kepler_scenarios_v22.py",
+        "sha256": "b62f615bddb272630c1f1533083ad39c124f9a365dc9aa63388efaf963589764"
+      },
+      {
+        "relative_path": "statistical/kepler_scenarios_v3.py",
+        "sha256": "93f006ca017f327310d3027f4c98480c5a0d7e99815a89906e9bab2578c5bbb4"
+      },
+      {
+        "relative_path": "statistical/launch_field_v27.py",
+        "sha256": "0214c1c64d856536159b75c07ab2bc98f7418002756c7dee0d7bc079abe38ad8"
+      },
+      {
+        "relative_path": "statistical/launch_field_v29.py",
+        "sha256": "241c26c91060f61c9d979c6b3ae5e72e20306405312991e5e119ed37cf6fbe72"
+      },
+      {
+        "relative_path": "statistical/launch_field_v29r2.py",
+        "sha256": "232ff487068329c47c0630c1dee2266cf01cec078171f85bd3e1aba0bdbaf81c"
+      },
+      {
+        "relative_path": "statistical/launch_field_v31.py",
+        "sha256": "8b3c02db8ba80a7962246fea8abb691f6470e2820f0fad039736e86fd77076e1"
+      },
+      {
+        "relative_path": "statistical/launch_fourth_tic47_v38.py",
+        "sha256": "1046bdd4ec388431b5fb98a2d5e82b7c931f3de4ec03c76f997b4aa55f5f659a"
+      },
+      {
+        "relative_path": "statistical/launch_native_v23.py",
+        "sha256": "aac30dbe1280a633e809b77e0bfe42925c50807def0e8d01577de06cb8312ec0"
+      },
+      {
+        "relative_path": "statistical/launch_selected_field_v26.py",
+        "sha256": "15911726f1ca42de22ce45ce22fcb293dcb4fc1a8e2b6dee4043ef7587c49f19"
+      },
+      {
+        "relative_path": "statistical/local-scientific-closure.v22-tic-sap1.json",
+        "sha256": "a142aecc7d82736602444d0cf2ff0f73428732a16b8f280d3c8d85cc81e9803c"
+      },
+      {
+        "relative_path": "statistical/local-scientific-closure.v22.json",
+        "sha256": "93d8ec58852647abeecca6360350fbbdf37ee7f107f3722a1c56c24251c1c382"
+      },
+      {
+        "relative_path": "statistical/metallicity_scene_prior_v29.py",
+        "sha256": "128dd9395bdb10c94e8676cf54dac4f7de9a87e2531900fe453c3e6a5ab3cb59"
+      },
+      {
+        "relative_path": "statistical/native_scenario_likelihood.py",
+        "sha256": "850d6b2c3bc804ed67c30b46096c1c91da895d50190aabe0f2efc1b5f11c0a72"
+      },
+      {
+        "relative_path": "statistical/pilot_eccentricity_v6.py",
+        "sha256": "93df94e99f96d585d0873e5a42f08038511093f07592ac11aaf502ecbdac0135"
+      },
+      {
+        "relative_path": "statistical/pixel_flux.py",
+        "sha256": "bc0a35cf431119f7aa2404265b2a3991e3b8709ad4675420864c97edd5fd73bf"
+      },
+      {
+        "relative_path": "statistical/planet_proposals_v3.py",
+        "sha256": "d714ce918270002976eab22fcc84b47c629a58f06a90234708ba9d29cae24ea0"
+      },
+      {
+        "relative_path": "statistical/planet_proposals_v60.py",
+        "sha256": "fadcbe2ecce2339f6bae1256f1b9bce52ee0cac268b5bfdd289d1c4387b10cc2"
+      },
+      {
+        "relative_path": "statistical/pool_correlated_followup_v64.py",
+        "sha256": "d1822f74ebe25391fa1ab5301521a75227c6a314f86a4f196229de0f806efa56"
+      },
+      {
+        "relative_path": "statistical/pool_correlated_followup_v64_1.py",
+        "sha256": "a5246409ff60f6cdcbbf88b21544524cb91bcc36418d75395c3752e21b060cf0"
+      },
+      {
+        "relative_path": "statistical/pool_followup_cases_v59.py",
+        "sha256": "75658ea102ead773bc51d31d2931a5154b7e4aba0962997c50e464143edae620"
+      },
+      {
+        "relative_path": "statistical/pool_followup_cases_v59_1.py",
+        "sha256": "ad63792d6dbab32b884596dcd7f6ba245f8bb9c9d474fddae4b942155c8b6517"
+      },
+      {
+        "relative_path": "statistical/pool_native47day_selected_v57.py",
+        "sha256": "57969b33af21e40f55e2f7364c524479159e2da0375c522f6b21cb15a760f19a"
+      },
+      {
+        "relative_path": "statistical/pool_native47day_selected_v57_1.py",
+        "sha256": "0383d23a6047ec87874c85961c20f91c38e2d4aa166f59d37311cdd848197d08"
+      },
+      {
+        "relative_path": "statistical/pool_native_selected_v40.py",
+        "sha256": "ae167752838e5d876252bab9fa10bf5529efd94c83c6ca7a577bdd139f1fe1e3"
+      },
+      {
+        "relative_path": "statistical/pool_native_sixth_v65.py",
+        "sha256": "2e394fc9fcbfa44da5eceb9de464976e35bb322ac79bf43ceb3ed6a095056478"
+      },
+      {
+        "relative_path": "statistical/pool_platform_diagnostic_v37.py",
+        "sha256": "0063fff6312d7fcb9da36155abc0fa38e06ff8702cc5b44163b2c84c57c2b257"
+      },
+      {
+        "relative_path": "statistical/pool_selected_evidence_v8.py",
+        "sha256": "50a5a127ed1764ee3f58917fe84018fa7ec8cc982f06bb52b1374f9c6dca15ee"
+      },
+      {
+        "relative_path": "statistical/pool_selected_field_v26.py",
+        "sha256": "8ba78cba356e754302c514137f1b8f421f9617b94141762bcddd0ddedb78859d"
+      },
+      {
+        "relative_path": "statistical/pool_selected_field_v32.py",
+        "sha256": "220757a570f1aa22288ef3af1150f2589a50d9ead5ff198cf76e73eb1a09110b"
+      },
+      {
+        "relative_path": "statistical/pool_sensitivity_v16.py",
+        "sha256": "4968e5f48ebaf83d3a30f85a18c0dd735ed87ca79947b77ea89bc40709571cf7"
+      },
+      {
+        "relative_path": "statistical/pool_sixth_selected_v53.py",
+        "sha256": "d786b25efcae617b048ab3e1aa7243398cf86e3fe375240c24534b688ebc971e"
+      },
+      {
+        "relative_path": "statistical/pool_transferred_fifth_v39.py",
+        "sha256": "92907503307c4254fce846e73c772f890e769fa751e172e17102121560df0e1d"
+      },
+      {
+        "relative_path": "statistical/prepare_207804_field_v73.py",
+        "sha256": "cd5e7a758bc2e64a4713fd433b10f80011546f372d98c94f571b9638b96ce985"
+      },
+      {
+        "relative_path": "statistical/prepare_207804_fpp_v76.py",
+        "sha256": "8bc88693e1d43aa6da846769576b996ef6da9a0e4e81dc67f96d780308371488"
+      },
+      {
+        "relative_path": "statistical/prepare_207804_fpp_v76_1.py",
+        "sha256": "19b35fec6aa433a7d1aa6af5f73a531d947b9afe21a89f5c1d7b43786a4ff6ab"
+      },
+      {
+        "relative_path": "statistical/prepare_207804_fpp_v76_2.py",
+        "sha256": "dfe651b26c0b816a34d9ea42680f26d67a0e6621d9ebf5bbb928412c072fed8f"
+      },
+      {
+        "relative_path": "statistical/prepare_207804_stellar_v70.py",
+        "sha256": "b7742b8c080ea7240b05a73a462fee6309ab1e645e1408bdde6185ecb5bb42a8"
+      },
+      {
+        "relative_path": "statistical/prepare_correlated_native_v60.py",
+        "sha256": "d2152d607569d00033be320292a8f601247014bf62a8ad42784e9d4ad6f6bbf5"
+      },
+      {
+        "relative_path": "statistical/prepare_field_server_v33.py",
+        "sha256": "ac085887a231ca3ee83e087923d837b6585ca9207c5f2365564d108ef9b3ce40"
+      },
+      {
+        "relative_path": "statistical/prepare_field_server_v36.py",
+        "sha256": "75861550f9b76af54fb547e3cb67120ef9da70914bb3f8f1088a959743ff949d"
+      },
+      {
+        "relative_path": "statistical/prepare_followup_fields_v49.py",
+        "sha256": "bb41378d3e22fecaa1580fa919e0f9291b45c7e600abdacf15d77c3531191622"
+      },
+      {
+        "relative_path": "statistical/prepare_followup_server_v55.py",
+        "sha256": "9d3df0b8388927a92e56687080502c0f64de60f447eac57c6b4763e60bdf0684"
+      },
+      {
+        "relative_path": "statistical/prepare_followup_server_v55_1.pre-freeze.py",
+        "sha256": "ed19c5f84518aab2dd2d05642272c61f9207536306853d2cd68bf547b73e22c9"
+      },
+      {
+        "relative_path": "statistical/prepare_followup_server_v55_1.py",
+        "sha256": "de42ef0e865c4a524ef92b51dab3395ddf66e90c7922b399ce862b6a91d3251b"
+      },
+      {
+        "relative_path": "statistical/prepare_kepler_field.py",
+        "sha256": "6ad21ef0df30e99aa803850d081bdc9e424f606053cf58873b592c7892dd8033"
+      },
+      {
+        "relative_path": "statistical/prepare_native_cases_v41.py",
+        "sha256": "bbb548f9554bd81a6c55cd3b88fa44315edbc59775c5db7a0afe50a890aee15e"
+      },
+      {
+        "relative_path": "statistical/prepare_native_server_v46.py",
+        "sha256": "b7cdfca90c376cf778d0647521d65a43755bc04aadc7d94a68d05c3fc8e5116b"
+      },
+      {
+        "relative_path": "statistical/prepare_native_sixth_correlated_v66.py",
+        "sha256": "47e94aa577524a983c44630e2b8e75eacdbeab59cf99ca6eb96d4f9858023f38"
+      },
+      {
+        "relative_path": "statistical/prepare_native_sixth_server_v56.py",
+        "sha256": "4aabb5ea648402898de423b21d1c74f3fdc7c24c62c63622a8ea8df2854189a6"
+      },
+      {
+        "relative_path": "statistical/prepare_native_sixth_server_v56_1.py",
+        "sha256": "b0674fb6047a1c8133f6f3c0b38d469466489b9cb5838bbd6c61c374fcbd6c5a"
+      },
+      {
+        "relative_path": "statistical/prepare_native_sixth_v54.py",
+        "sha256": "ae007afe4a055b76ce942d640fbb6d505c70f32c6390af8fd5e17b82d15e9e0a"
+      },
+      {
+        "relative_path": "statistical/prepare_second_field.py",
+        "sha256": "9da0e539365f92caa0ec5b25961e0dccd117802c5550a88b9d5ae1f9bdb368cf"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_server_v62.py",
+        "sha256": "30e171c00ad5be2ba011eebf6731e87b7f1e4b3291c955786f1c222ce50e5111"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_server_v62_1.py",
+        "sha256": "e40c0c61f845f03e469dbf90ea81a420daaf60886e04aaa24e7910e88070b4dc"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_server_v62_2.py",
+        "sha256": "80e746bbd4d6dafcb3bd1c700306743382b9695fcc66aa5109cf16802b4f5083"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_server_v62_3.py",
+        "sha256": "c6af353ea64597dbd5da55302178912099a6ad5f8e7d80e76c0946c2944429e4"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_server_v62_4.py",
+        "sha256": "714eb0140b06429d60dbf6126dc28fd71372f740b3b424e508419eb00922d9a5"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_followup_v61.py",
+        "sha256": "57517f9365b0c2d1e955efc74e90baf7eb6c755ac7a3e5b6f8a133967225b383"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_native_v51.py",
+        "sha256": "7cd878a0fa838c3eeace5e848d554b5243531ae50ef6290d7d614234572cf230"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_native_v51_1.py",
+        "sha256": "c66a04ae12e2570c867155038757ca06552a30f32521f0d0357fb1ac2174601c"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_server_v50.py",
+        "sha256": "dc7bcfeb57ed93ea6eb627a9404a4d2aa92661a298507489f76f6fcfc346f917"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_sixth_v48.py",
+        "sha256": "516aff3da2a17b9ad0150f11a9ede6d83752df2fa81ca4da5b707b8289ae55af"
+      },
+      {
+        "relative_path": "statistical/prepare_selected_sixth_v48_1.py",
+        "sha256": "2cdb0aeef6fe8f5aa447274df7c018890eeb131d1780b5b6179801f26841bf05"
+      },
+      {
+        "relative_path": "statistical/prepare_third_field.py",
+        "sha256": "a61f063e2fc74ee44096b7a99cb039f255ba88143045a8969bed8dccae0a135b"
+      },
+      {
+        "relative_path": "statistical/prepare_unresolved_geometry.py",
+        "sha256": "92fbc3aaa56daa266ef4e7fe25ebf886e49ce52a4073fcd75674bb592da00037"
+      },
+      {
+        "relative_path": "statistical/prepared_total_binned_likelihood_v4.py",
+        "sha256": "c6b03313ce426666d76d204c27295ef507efb376321acf3d1038dc6d8fbfcf99"
+      },
+      {
+        "relative_path": "statistical/repeat_binned_v2.py",
+        "sha256": "607aa7758f24a639bbaaadc1d8f643cdeef2a474883385d2e459200d0f8a770b"
+      },
+      {
+        "relative_path": "statistical/replay_207804_modes_v80.py",
+        "sha256": "8728cbbde2eee942ec0c34b46d2126e70c1b6b56bfd3bd0e513e9175a940a0ef"
+      },
+      {
+        "relative_path": "statistical/replay_207804_modes_v80_1.py",
+        "sha256": "6a6380f40151c3054e795490f8ded7805549ad5ea414c309b88dba8fe5d4b85f"
+      },
+      {
+        "relative_path": "statistical/replay_followup_control_v62_3.py",
+        "sha256": "647e349c08400c81b861b791fb738a736d64e6d4ea1990f31f205c167752719a"
+      },
+      {
+        "relative_path": "statistical/replay_followup_control_v62_4.py",
+        "sha256": "b7bcaaaa3e0d7716e36675fabc631d1417114e44f113ff8d923a7e0426433483"
+      },
+      {
+        "relative_path": "statistical/replay_native_argmax_v56_1.py",
+        "sha256": "782cf2a3a8b3508649232492464f6933ca5fec160022633cd6a2b599aaba2e43"
+      },
+      {
+        "relative_path": "statistical/replay_native_modes_v13.py",
+        "sha256": "cc9aaab086129ac2d2141a3c71bcffbd1d4ebe1dc46bc82c644737634f0c276b"
+      },
+      {
+        "relative_path": "statistical/resolved_box_bound_v17.py",
+        "sha256": "93f81d84fac0a3a640a8efba25a48fd1a8286ec8a258a624b33b7f3679d787c3"
+      },
+      {
+        "relative_path": "statistical/resolved_noise_bound_v19.py",
+        "sha256": "5b350672f0d23c40c193eed4a70cec983d830ace42c30712f1a65b576c794eb7"
+      },
+      {
+        "relative_path": "statistical/review_eighth_eventclasses_v68.py",
+        "sha256": "e379b47dc9c7e5efadb806b65557d59709aafd0ea2a8b83d0351a806732d0aa5"
+      },
+      {
+        "relative_path": "statistical/review_eighth_eventclasses_v68_1.py",
+        "sha256": "8e513e2486c64b1f5032a4e47f92f65f481edaf1a476145297e4ee5f320bbeed"
+      },
+      {
+        "relative_path": "statistical/run_207804_particles_v78.py",
+        "sha256": "802705d3b5937c65e66761cfc076631150246704b9e7ec6429a332fa081bf761"
+      },
+      {
+        "relative_path": "statistical/run_207804_pilot_v79.py",
+        "sha256": "babd5f9ec73e88726a4e4d125855db27bebb865fb48f173cdcf158e49f94b8aa"
+      },
+      {
+        "relative_path": "statistical/run_binned_v2.py",
+        "sha256": "e7ec874d748f50cf97bb2122c8c1da3c66afedba9dcee998043510b189c55e22"
+      },
+      {
+        "relative_path": "statistical/run_census_particles_v74.py",
+        "sha256": "2f3ecd5ec57a122379afd2dcfdbc3a62cba49a2bab5c356f448d0c37e4780460"
+      },
+      {
+        "relative_path": "statistical/run_census_particles_v74_1.py",
+        "sha256": "55e1580ba906aa9cb84c4775486911569e6d587e184d253cb44a2468d1493f9d"
+      },
+      {
+        "relative_path": "statistical/run_field_fold_only_v13.py",
+        "sha256": "49b1d216c41504b2026a545e609ebc68c48fb06f8001366d7015b78b21f3b1ed"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v10.py",
+        "sha256": "7d00ef05716bd188b4863015f8c442a1ad5b0cf93936dca38dfb4a3be3eadd5b"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v18.py",
+        "sha256": "bd1818c41ab517555efedb988ed0522432e3553c65cc445191f8f13e16297333"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v22.py",
+        "sha256": "655b6d33fae73b4f22bbcbcbef89a3ec50d2795fb129613268c57e66a952e91d"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v27.py",
+        "sha256": "c3ef2334bbcc070b41255d5d4e21888dd6b755e5ebcfe5194131b3424beaec19"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v29.py",
+        "sha256": "1daae33da0318061bb6cb5a55ee77a59cf1b58d27e89eb82aac76c5b752783fb"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v31.py",
+        "sha256": "461488a2be3ad30775f1da46126710e8f682640e4a7d2bf7285697a69d62cb5f"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v35.py",
+        "sha256": "40155ffd6ae8dcd8ffdf35d901751853370afc3ae8190e1f6a1d16e0b15d651e"
+      },
+      {
+        "relative_path": "statistical/run_field_importance_v7.py",
+        "sha256": "c76e3fe7944e877fc6e7b3cfdd503378f4b708c6f818ff5fb714a0bd06e116e3"
+      },
+      {
+        "relative_path": "statistical/run_followup_field_v49.py",
+        "sha256": "ebee2ab9446e255172828679842c3fe10ae2bee5e87ef5ca882fd4153f28f2f7"
+      },
+      {
+        "relative_path": "statistical/run_full_importance_v3.py",
+        "sha256": "aa209b861632e951747167af4aff1f362019ad1dd6dd36e0c6a7971533813b85"
+      },
+      {
+        "relative_path": "statistical/run_importance_v3.py",
+        "sha256": "4c1d79577d3bd020c8c47309084c3af5a421b3d92ea3adcadc8456aa597b8949"
+      },
+      {
+        "relative_path": "statistical/run_native_207804_v70.py",
+        "sha256": "0b4c30aca9e8bdf276a1132ae45e8d905bae925e6530871dbbc0506ef4bf7af7"
+      },
+      {
+        "relative_path": "statistical/run_native_207804_v70_1.py",
+        "sha256": "1369d2ad2116a3d37b24d8449f5670cb5c64ce2020b3650abc515a9f1eea1596"
+      },
+      {
+        "relative_path": "statistical/run_native_census_v20-pilot128.py",
+        "sha256": "31e01e8e04e96c0b84202a2c0c973640daa30f789b5ed87dfaed723b80bcece0"
+      },
+      {
+        "relative_path": "statistical/run_native_census_v20.py",
+        "sha256": "c1c54395394eb37d4a80b269012709fded99e74aee69fba949add0a4739f4933"
+      },
+      {
+        "relative_path": "statistical/run_native_correlated_v60.py",
+        "sha256": "c6482ccfaec7167af322a7aea07703e57f80dde13e3ca2fe51ebe536bff48fcb"
+      },
+      {
+        "relative_path": "statistical/run_native_field_v41.py",
+        "sha256": "a5e58874da39909560dc3b6085c98755fe81276915fc0fe0e4d42dcdb933058c"
+      },
+      {
+        "relative_path": "statistical/run_native_selected_v14.py",
+        "sha256": "22f7b76c766c73e831a459110eae5797a345787ce040c19b6030b13ac3b287da"
+      },
+      {
+        "relative_path": "statistical/run_native_sixth_correlated_v66.py",
+        "sha256": "3d34815b43135a0bd84a50f7cc3cd9d7e754e41080e2f4ac7202ebf157e07f22"
+      },
+      {
+        "relative_path": "statistical/run_native_sixth_v54.py",
+        "sha256": "421ab4dce8a7356e641d81ac20ed1e5c48a7f105da62bd033400f4c9995b474e"
+      },
+      {
+        "relative_path": "statistical/run_planet_importance_v3.py",
+        "sha256": "445a1059975fc50a19ea565836fcfe8deb87e7cd794ea07baf2da3810895b582"
+      },
+      {
+        "relative_path": "statistical/run_prepared_importance_v4.py",
+        "sha256": "531fe7fc2afece23b8d55ff9cd8296ee63ebd209e7d054aa4a7b151cba8f7d57"
+      },
+      {
+        "relative_path": "statistical/run_selected_field_v26.py",
+        "sha256": "bc57c09c89741531288b63c4df06c36bdec1547e85fc025318558ee6e8c887c1"
+      },
+      {
+        "relative_path": "statistical/run_selected_field_v32.py",
+        "sha256": "2d57bafbf5a1a56696d32a6cae65467f673f98a6e0cd1781a530345090036d51"
+      },
+      {
+        "relative_path": "statistical/run_selected_field_v48.py",
+        "sha256": "7d1be25e38e056f866a2f929c6a7cae6ba8906979c3c55e0cde04ffef27985de"
+      },
+      {
+        "relative_path": "statistical/run_selected_followup_v61.py",
+        "sha256": "e0e5a12deb1c95f94ad6aaa7623fe355ba885a6fef0c28b6e7cc38520e700361"
+      },
+      {
+        "relative_path": "statistical/run_selected_importance_v8.py",
+        "sha256": "372e4d6d43930ba84ff5e93c82f2b9e91a4e9eb7b4810a2e1ba6c79854b5b2d7"
+      },
+      {
+        "relative_path": "statistical/sap_field.py",
+        "sha256": "04ce6fba9543f0da08bbe7efbe61c93ebfc865d462ca6ac4e6b86414529b3dd8"
+      },
+      {
+        "relative_path": "statistical/sap_recovery.py",
+        "sha256": "fadac793c8c516c846bd509684c6616d16de65a1a99cf059ac3b907a8bd0c374"
+      },
+      {
+        "relative_path": "statistical/selected-v8-gold128.receipt.json",
+        "sha256": "32f3c17ededc99a341c494013c3919a25ec9012bd4f8cb01f37d784491282702"
+      },
+      {
+        "relative_path": "statistical/server-bundle.v2.json",
+        "sha256": "b7f527b80bbc0c6e550d0bfb70e33e8ccda5d35e638578d0b2fc0491dc974607"
+      },
+      {
+        "relative_path": "statistical/server-bundle.v3.json",
+        "sha256": "cada6bba3c2b4d7eef76e87acee2b74978b75e1b481aed4477c39f33075b44ce"
+      },
+      {
+        "relative_path": "statistical/server-bundle.v4.json",
+        "sha256": "3dfff889a9595645c1a48667f35cb5bcee4e2bab3998d06e918475623470c59b"
+      },
+      {
+        "relative_path": "statistical/server-bundle.v4_1.json",
+        "sha256": "73e2f5211034cafeb24b3ca60abd9f289e19566a3fa480cd4808f3ccd37b6fdb"
+      },
+      {
+        "relative_path": "statistical/server-bundle.v8.json",
+        "sha256": "1df20296c616bb8e5a8b575d4c27be4a875ecde26e9034ea2204ec163cf42cd0"
+      },
+      {
+        "relative_path": "statistical/server-control-path-map.json",
+        "sha256": "32c6d9cc3dd90dcce670714b09908b806e1df073bbc4da55d76f28a65f2cfe93"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-beta2p5-composite/all114-seed2127254.checkpoint.json",
+        "sha256": "b5ac1d2c56933b9f6fd5c798b3b430d3df8e23432bfd8273b919646099011a1e"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-beta2p5-composite/all114-seed2127254.json",
+        "sha256": "6d42c3330c3dab7f239f08ba355a2995f14f0b6e107787cd60d51d748c865499"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-beta2p5-composite/parity.receipt.json",
+        "sha256": "e765a0a5dfd521ec818e4dd750a03632c839d25522897dd04156206e413d1bb8"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-exp-upstream/all114-seed2127254.checkpoint.json",
+        "sha256": "8bee3b5b914e03fcad4279b3aaadd8d7d9a96deaeb14edf7786f1f2cac827e81"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-exp-upstream/all114-seed2127254.json",
+        "sha256": "1b76bcdea07cb88e5b7a560102ded7cb14b5b3cfe8cc55db875e3326f09be8be"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-final-exp-upstream/parity.receipt.json",
+        "sha256": "0c1c87cab34c46451694c694ec730451fa2bdfeb96f5a5edee7950ccf828ee53"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-original-exp-composite/all114-seed2127254.checkpoint.json",
+        "sha256": "7234fe2de94046bc84a1f6e5ec53a8ebd8458186d5a7e08962a1f6eae6f7fe13"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-original-exp-composite/all114-seed2127254.json",
+        "sha256": "6eeaa1b99eba24eb4b60fd2e2676e1eca3bd4dc9bd8197f1c81da607006ceb5a"
+      },
+      {
+        "relative_path": "statistical/server-parity-v16/mac/tic-original-exp-composite/parity.receipt.json",
+        "sha256": "9ee44c89707133c93a03c3125367e234e43342ce0816fa19b3c48d1aefd853ca"
+      },
+      {
+        "relative_path": "statistical/server-parity-v4_1/mac/parity.receipt.json",
+        "sha256": "da5c45886964d22f7790f3747dd723d20a00f8f3da71328d30e805faa39fa6fe"
+      },
+      {
+        "relative_path": "statistical/server-parity-v8/mac-two-case/parity.receipt.json",
+        "sha256": "6a929673fa49775fb3b40c19bc8f4b24a94c5e390c2cdbf9d56946c21966422d"
+      },
+      {
+        "relative_path": "statistical/server-requirements.txt",
+        "sha256": "08979ee9562a229a58088ad7bc0e181e0b4ec7f7b77d9094d086ebc2850f7d67"
+      },
+      {
+        "relative_path": "statistical/server_parity.py",
+        "sha256": "afc0096f7d4874d0c2bc052a02e6ae863e3b8c8b739fc61772e50ec1b6715060"
+      },
+      {
+        "relative_path": "statistical/server_parity_field_v10.py",
+        "sha256": "61132ccb262dafc5d2a9b7e9763e86d8eff2e4ff6ef4cea03a56418d578da8f6"
+      },
+      {
+        "relative_path": "statistical/server_parity_fields_v33.py",
+        "sha256": "de8fb994ab6452b859f5532c2f50700b2614003309009a4c002ddb2fbd6ac8c0"
+      },
+      {
+        "relative_path": "statistical/server_parity_fields_v36.py",
+        "sha256": "785624dd23704bbb1a8d9eb73eabe7a731cbce422fa24cc1e8359f7f2c8a047d"
+      },
+      {
+        "relative_path": "statistical/server_parity_importance_v3.py",
+        "sha256": "d5f755aaf3a816ab26fff2fb0c59ad7bab69b1080562e67b39714d9048f66a35"
+      },
+      {
+        "relative_path": "statistical/server_parity_native_v23.py",
+        "sha256": "a0efd4fe0ec53d8d1385bcfc0ee589f56641ee0f8d1deae8fb1410d7f1483d2f"
+      },
+      {
+        "relative_path": "statistical/server_parity_prepared_v4.py",
+        "sha256": "2d0bb7da959a4d1c89db1223bf95e0147e04027b4570531385c5af7ce07313fc"
+      },
+      {
+        "relative_path": "statistical/server_parity_prepared_v4_1.py",
+        "sha256": "125954f1497ac848bc98aa9a4762b5b7dd26072abd2a251f705b1096f82ac1f9"
+      },
+      {
+        "relative_path": "statistical/server_parity_selected_v8.py",
+        "sha256": "22d9567b829a9daaf4d659dd046a74b060ba973bd2d43a1ffbfb01ac8c5863a2"
+      },
+      {
+        "relative_path": "statistical/server_parity_sensitivity_v16.py",
+        "sha256": "0d12e2dbda125271d070cf20057cb7ec810fa9cad9758b56db1a75e59bb2d097"
+      },
+      {
+        "relative_path": "statistical/server_parity_v2.py",
+        "sha256": "95a3fdec80c8e209c1567705786e148f50a3e8c73293d72ca2a2cf8925282f74"
+      },
+      {
+        "relative_path": "statistical/source_flux_bounds.py",
+        "sha256": "1e9ff4c65eb6aa32e723815a3ae3c989ceb36462ee64039ee7369a4ccf56f8be"
+      },
+      {
+        "relative_path": "statistical/summarize_207804_v72.py",
+        "sha256": "2dbe7eb84af7447fd0aeb7f35e2365b6a676b49a040df13dffc90ee2d0c17744"
+      },
+      {
+        "relative_path": "statistical/target_bound_v21.py",
+        "sha256": "0f7d939c4d37da0df6c01dc3802271bbcebb7f1508069b9448bdc3da4cb300e6"
+      },
+      {
+        "relative_path": "statistical/target_evidence_lower.py",
+        "sha256": "f3f4e1cc1ce7985c6aeaa696e523cdd60b5c9d554b3efd2a3a10afc67caafd24"
+      },
+      {
+        "relative_path": "statistical/target_extinction_v77.py",
+        "sha256": "4f8468d2dc62d61c4ca08ad4a5502875755810512e969f40d3dda811f0f624c9"
+      },
+      {
+        "relative_path": "statistical/verify_binned_likelihood.py",
+        "sha256": "10aca8f698a026c6c9a0c0a2463621b33847fc57391e66659e5080af95105b62"
+      },
+      {
+        "relative_path": "statistical/verify_binned_v2.py",
+        "sha256": "9d00d2a8d7489730686a2c932ed3c2a0a4f15037d5a5647a928360bf761d676c"
+      },
+      {
+        "relative_path": "statistical/verify_checkpoint_io_v35.py",
+        "sha256": "49fb3e123f946e8d5a921915a62323920024de0486902689bcfef44b61096aca"
+      },
+      {
+        "relative_path": "statistical/verify_cold_components.py",
+        "sha256": "4bcb3bdd1f744831a4875734f3c14313b225a0a9f07009a15585316cf777b0dc"
+      },
+      {
+        "relative_path": "statistical/verify_equal_radius.py",
+        "sha256": "657ece7ab238fa402b51316b8aa433757fcb6984aa00e9398d3b87777d877134"
+      },
+      {
+        "relative_path": "statistical/verify_field_phoenix_v10.py",
+        "sha256": "7c4bb4b6f1ee76a7f3df632324f4fa8a34fb162cc9eea127af54812787e372e2"
+      },
+      {
+        "relative_path": "statistical/verify_followup_adapter_v49.py",
+        "sha256": "61042e7f95c1330d864e84bcf7e4f4c13428b66c6d56f9e16038c4aca020bf51"
+      },
+      {
+        "relative_path": "statistical/verify_fourth_adapter_v18.py",
+        "sha256": "54b780f80da8876c65878e9010f857ddf74a737db31de1d1c87c9ae002657cc0"
+      },
+      {
+        "relative_path": "statistical/verify_importance_renderer_v3.py",
+        "sha256": "c28934e6aafd9786ac729de7262352b898c3270bed134c6c4cf4ae3fba3f3e32"
+      },
+      {
+        "relative_path": "statistical/verify_kepler_kernel.py",
+        "sha256": "49ba841008ca7abefdf343f7ed5132da1c5d6082c9e9bd2e6050a0920afeb9c8"
+      },
+      {
+        "relative_path": "statistical/verify_metallicity_v29.py",
+        "sha256": "07660658acd15235621f5564d1854c4e78ae164c1f6e2daf4ba5cff497803375"
+      },
+      {
+        "relative_path": "statistical/verify_native_primary_v22.py",
+        "sha256": "d88d5d3742d3f42d4ac9b2deb7e724cdecf444de9db954f34f32e40230388b53"
+      },
+      {
+        "relative_path": "statistical/verify_native_renderer.py",
+        "sha256": "aaf92d7199bd5e342f9a954765765583acf5841ac645fa64b5039aa90b05dc52"
+      },
+      {
+        "relative_path": "statistical/verify_target_lower.py",
+        "sha256": "2af94e1aadacd90da9e522ca07dde56a9052d4548bec767accd35d244b369a04"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/_numerics.py",
+        "sha256": "ebb567d0bf2e411605eb6462c7466a3a7e7dedad47616762a4fffc3cbe3cee0e"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/data/ldc_kepler.csv",
+        "sha256": "5b1d21c5677fa2926e0119bfc013df7185ac92fa44c2ed3864d41635a56507bc"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/data/ldc_tess.csv",
+        "sha256": "353afe9e7163da96ecf93412fea6e74b697f2c170ee10f16dac4ace35cbb9e54"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/data/mamajek_dwarf_sequence.csv",
+        "sha256": "07355ea6008ed3b0fd12702510036471c5f9455b63c0a4cbbaf23e99d1a83bb1"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/funcs.py",
+        "sha256": "234f18fa7fbd7ae122046dfbd50603e47a4a1eaba773a524bd42b04a0e7bdabf"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/likelihoods.py",
+        "sha256": "29935ef86963fa7beefac9d2c528daad0a1cc93019eafe192ae9c0da62a6b2d6"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/marginal_likelihoods.py",
+        "sha256": "45a476ea8a17453580e9f561626c229c70920c839f6837ead4804e59c43659f9"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/priors.py",
+        "sha256": "173b8c6a90c9bccaf02747d0cee2d7c65e8387e11613cf799394af5ee2d59722"
+      },
+      {
+        "relative_path": "statistical-upstream/triceratops-d20875c27d6761349cf032728bb4a59ec732a84d/triceratops/triceratops.py",
+        "sha256": "4082f9c1ccde1c7e6998744a75060203ffaecbce59d039dca4fec7ce7e33aaeb"
+      }
+    ],
+    "outside_shared_evidence_tree": [
+      "/srv/kbonus/dump/boi-validation-first-two-20261013/dump/boi-manual-126-20261011/forgotten-stars-126-bois/lightcurves/GaiaDR3-2107574403864920576.fits.gz",
+      "/srv/kbonus/dump/boi-validation-first-two-20261013/outputs/audit/requirements.lock.txt",
+      "/srv/kbonus/dump/boi-validation-first-two-20261013/pipeline/vetting/scenario_bounds.py",
+      "/srv/kbonus/dump/boi-validation-first-two-20261013/pipeline/vetting/statistical_validation.py"
+    ],
+    "preserved_TIC_final_runs": [
+      {
+        "receipt": {
+          "path": "/srv/kbonus/dump/boi-validation-first-two-20261013/outputs/runs/2077554781499350144-tic-final/seed-01/result.json",
+          "sha256": "18b7cacd23827a16f0caf1ee0c82146073e3f085a951c18b881870965dfb8fe3",
+          "bytes": 566448
+        },
+        "identity": {
+          "freeze_sha256": "1596aad961e537f67b1fcf977d53b1bd58631484fdd8516e69cebcc76aa109d4",
+          "model": "2077554781499350144-tic-final",
+          "seed": 10187432827014928340,
+          "run_index": 1,
+          "draws_per_scenario": 1000000,
+          "batch": 8192,
+          "render_batch": 256,
+          "pilot": false
+        },
+        "config": {
+          "source_id": "2077554781499350144",
+          "flat_planet_priors": false,
+          "unresolved_radius_arcsec": 2.2,
+          "background_area_factor": 3.141592653589793,
+          "population_area_deg2": 0.1,
+          "period_days": 15.113694597194007,
+          "epoch_bkjd": 829.9577910141717,
+          "exposure_days": 0.020433598216918748,
+          "integration_samples": 54,
+          "noise_quadrature_nodes": 128,
+          "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+          "phase_grid_nodes_per_cycle": 800,
+          "observed_gaia_component_flux": "COMPOSITE_OBSERVED_G"
+        },
+        "scenario_count": 210,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -5.471214554091105,
+            "probability": 0.004206120493575782,
+            "probability_lower": 0.004206120493575782,
+            "probability_upper": 0.004206120493575782
+          },
+          "NFPP": {
+            "log_probability": -12.42911088391223,
+            "probability": 4.000421273911019e-06,
+            "probability_lower": 4.000421273911019e-06,
+            "probability_upper": 4.000421273911019e-06
+          },
+          "EB": {
+            "log_probability": -11.720556400818083,
+            "probability": 8.125068485348048e-06,
+            "probability_lower": 8.125068485348163e-06,
+            "probability_upper": 8.125068485348163e-06
+          },
+          "bounded_posterior_mass_upper": 1.5736367726237876e-22
+        }
+      },
+      {
+        "receipt": {
+          "path": "/srv/kbonus/dump/boi-validation-first-two-20261013/outputs/runs/2127186564572468352-tic-final/seed-00/result.json",
+          "sha256": "cae977296c537fd86cbbd370dccb2b6cb45d6d0dd1f38410447b68e14c64f06a",
+          "bytes": 298482
+        },
+        "identity": {
+          "freeze_sha256": "1596aad961e537f67b1fcf977d53b1bd58631484fdd8516e69cebcc76aa109d4",
+          "model": "2127186564572468352-tic-final",
+          "seed": 13797737868583209128,
+          "run_index": 0,
+          "draws_per_scenario": 1000000,
+          "batch": 8192,
+          "render_batch": 256,
+          "pilot": false
+        },
+        "config": {
+          "source_id": "2127186564572468352",
+          "flat_planet_priors": false,
+          "unresolved_radius_arcsec": 2.2,
+          "background_area_factor": 3.141592653589793,
+          "population_area_deg2": 0.1,
+          "period_days": 4.566494216964835,
+          "epoch_bkjd": 1056.7281946499904,
+          "exposure_days": 0.020433598216918748,
+          "integration_samples": 54,
+          "noise_quadrature_nodes": 128,
+          "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+          "phase_grid_nodes_per_cycle": 800,
+          "observed_gaia_component_flux": "COMPOSITE_OBSERVED_G"
+        },
+        "scenario_count": 114,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -4.962793902684751,
+            "probability": 0.006993361740292455,
+            "probability_lower": 0.006993361740292455,
+            "probability_upper": 0.006993361740292455
+          },
+          "NFPP": {
+            "log_probability": -92.0300130537423,
+            "probability": 1.0761508703813052e-40,
+            "probability_lower": 1.0761508703813052e-40,
+            "probability_upper": 9.474566602715808e-23
+          },
+          "EB": {
+            "log_probability": -24.019016731647937,
+            "probability": 3.704022129623856e-11,
+            "probability_lower": 3.7040221296239085e-11,
+            "probability_upper": 3.704022129626856e-11
+          },
+          "bounded_posterior_mass_upper": 9.474566602715808e-23
+        }
+      },
+      {
+        "receipt": {
+          "path": "/srv/kbonus/dump/boi-validation-first-two-20261013/outputs/runs/2127186564572468352-tic-final/seed-01/result.json",
+          "sha256": "4d4461a7ac567819b4b69fa7504430309077de5e7ebc90c6fe0490245cd5efc2",
+          "bytes": 298402
+        },
+        "identity": {
+          "freeze_sha256": "1596aad961e537f67b1fcf977d53b1bd58631484fdd8516e69cebcc76aa109d4",
+          "model": "2127186564572468352-tic-final",
+          "seed": 9936848272702933252,
+          "run_index": 1,
+          "draws_per_scenario": 1000000,
+          "batch": 8192,
+          "render_batch": 256,
+          "pilot": false
+        },
+        "config": {
+          "source_id": "2127186564572468352",
+          "flat_planet_priors": false,
+          "unresolved_radius_arcsec": 2.2,
+          "background_area_factor": 3.141592653589793,
+          "population_area_deg2": 0.1,
+          "period_days": 4.566494216964835,
+          "epoch_bkjd": 1056.7281946499904,
+          "exposure_days": 0.020433598216918748,
+          "integration_samples": 54,
+          "noise_quadrature_nodes": 128,
+          "renderer": "PIECEWISE_LINEAR_PHASE_GRID",
+          "phase_grid_nodes_per_cycle": 800,
+          "observed_gaia_component_flux": "COMPOSITE_OBSERVED_G"
+        },
+        "scenario_count": 114,
+        "probabilities": {
+          "FPP": {
+            "log_probability": -4.877967610871664,
+            "probability": 0.007612469817064143,
+            "probability_lower": 0.007612469817064143,
+            "probability_upper": 0.007612469817064143
+          },
+          "NFPP": {
+            "log_probability": -58.666218311806105,
+            "probability": 3.323419112111152e-26,
+            "probability_lower": 3.323419112111152e-26,
+            "probability_upper": 9.476853742526974e-23
+          },
+          "EB": {
+            "log_probability": -27.27528150118914,
+            "probability": 1.4272358686924065e-12,
+            "probability_lower": 1.4272358686924065e-12,
+            "probability_upper": 1.4272358687220592e-12
+          },
+          "bounded_posterior_mass_upper": 9.473530323414882e-23
+        }
+      }
+    ],
+    "interpretation": "The first two already have partial full-count final-timing evidence under the circular-area convention.453shared archived scientific dependencies match current copies. No20repeat final-timing set is complete. No historical service was resumed or modified."
+  }
+}

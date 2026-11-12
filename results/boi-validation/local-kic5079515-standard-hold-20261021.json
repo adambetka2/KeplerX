@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-21T00:59:44.469391+00:00",
+  "source_id": "2103418559153168128",
+  "kic": 5079515,
+  "signal_id": "rust-v6-2103418559153168128-1",
+  "status": "HELD_CANDIDATE_APERTURE_RESPONSE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "native_clock_accepted": true,
+  "conditional_native_clock": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-accepted-clock-review-v1.json",
+    "sha256": "94a1476c0788b53b53bd08fbf3b782f13e6f634f73c82538d1b0d964ad44f7bd"
+  },
+  "probability_runs": 0,
+  "reason": "Upstream Gaussian and official Kepler calibrated core comparison disagree materially for the same capable sources. Target fractions span0.643..0.780 Gaussian versus0.767..0.927 core-normalized comparison. Scene allocation to contaminants remains unresolved; core comparison is not complete far-source measurement.",
+  "evidence": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/scene-preview-review-v1.json",
+      "sha256": "09eb77719a87138e6b16998bd75031204db9336713eb680b94330d61789b5f0e"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/aperture-response-review-v1.json",
+      "sha256": "afdc9459f4b14f69e048adc2e97274b16742ee1708a16f4fe5b8d8a5c3023224"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-nested-review-v1.json",
+      "sha256": "e20b0ecf025c4b8d3e0967b5da2d18e2194a6de3d78f49428cd85833c2cfe02f"
+    },
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2103418559153168128/native-posterior-review-measurements-v1.json",
+      "sha256": "6999f3abdeb8a7b5312f52aa8416556bf4ad733e93c827a19e5ca8e93d30accd"
+    }
+  ],
+  "scope": "All27Gaia sources and both raw TIC aliases preserved; unique official duplicate pointer was bound to canonical SPLIT identity with exact shared fields and no blended2MASS use. No favorable response choice, custom wings, omitted alternatives, new universal fraction cutoff or astrophysical FP denial. Original V1 duration failures remain untouched.",
+  "next": "Preserve precise scene hold and advance; no prolonged response reconstruction tonight."
+}

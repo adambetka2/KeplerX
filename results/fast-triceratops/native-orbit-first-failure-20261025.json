@@ -1,0 +1,12 @@
+{
+  "scope": "PERFORMANCE_PROTOTYPE_FIRST_FAILURE",
+  "local_date": "2026-10-25",
+  "stage": "In-memory MCJIT initialization before orbit evaluation",
+  "source_c_sha256": "a6b27a412b047a6c403d0e67fd731314736f65123a8ad71f7b540a904bad512f",
+  "reference_binary_sha256": "0fb9b316dc8b72b4556157a96aa761cf93554691e1ca5f10d3453caf89501bf4",
+  "exit_code": 134,
+  "error": "Assertion failed: M->getDataLayout() == getDataLayout(), DataLayout Mismatch; generateCodeForModule, MCJIT.cpp:205",
+  "cause": "Clang's emitted data layout was not set to the MCJIT target machine layout",
+  "repair": "Set module.triple and module.data_layout from the selected host target before finalization",
+  "scientific_fit_or_campaign_modified": false
+}

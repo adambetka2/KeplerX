@@ -1,0 +1,280 @@
+{
+  "schema": "MK_PROSPECTIVE_CONTROL_PROGRESS_V1",
+  "utc": "2026-10-20T01:18:19.500583+00:00",
+  "host": "kbonus",
+  "validated_new": 0,
+  "goal": 50,
+  "probability": {
+    "service": "mk-boi-probability-primary-20261020-v1",
+    "status": "RUNNING",
+    "required_full_repeats": 43,
+    "completed_full_repeats": 0,
+    "completed_million_draw_scenario_blocks": 490,
+    "first_failure": null,
+    "freeze": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/probability-campaign-v1/freeze.json",
+      "sha256": "df51d31339117a49cecc3573111821272211397e7d8099feaac89f561039988b"
+    },
+    "counts": {
+      "final_repeats_each": 20,
+      "draws_per_scenario": 1000000,
+      "workers": 32,
+      "numerical_threads": 1,
+      "batch": 256,
+      "render_batch": 64,
+      "phase_grid": 800,
+      "integration_samples": 54
+    }
+  },
+  "native_controls": {
+    "wider_window": {
+      "status": "LONG_NATIVE_WINDOW_MODEL_AND_INDEPENDENT_GAUSSIAN_CHECKS_PASSED",
+      "source_id": "2100258047339711488",
+      "tested_duration_above_old_cut_days": 0.32,
+      "maximum_svd_marginal_log_density_error": 5.868514563189819e-10,
+      "log_noise_scales": 7,
+      "models": 2,
+      "protected_OOT_mask": true,
+      "scope": "Authenticated known-object native photons, explicit wider window, asymmetric stellar-prior quadrature and independent SVD Gaussian marginalization. Native convergence, posterior quadrature, model comparison and empirical calibration are still required.",
+      "implementation_sha256": "4d7c0a7bf9e6d7449bb0ff38a4e31f12665c29acfeb26654ba4d1c37694dcce3"
+    },
+    "quadrature_review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/density-quadrature-controls-v2/review.json",
+      "sha256": "988384b5006b6aaa11afabf3f652aaf84ed0860c43f15bf6461855141fc53fb0"
+    },
+    "old_window_parity": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-window-controls-v1/parity.json",
+      "sha256": "abf17442cbe921c5afe03f6ffa439d2e89cb4380259139f5758e939d5782ba1b"
+    },
+    "asymmetric_quadrature_status": "PIECEWISE_ASYMMETRIC_DENSITY_QUADRATURE_AND_CDF_CONTROLS_PASSED",
+    "empirical_calibration_closed": false
+  },
+  "provenance": {
+    "transitive_receipt_audit": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/transitive-input-audit-v2/review.json",
+      "sha256": "a40f7530f2aab487a73a45cfa5d98304b994734973395d29385015fea7656b0d"
+    },
+    "transitive_status": "TRANSITIVE_RECEIPT_HASH_AUDIT_PASSED",
+    "indirect_receipt_bound_files": 46,
+    "full_geometry_reconstruction": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/active-geometry-replay-v1/summary.json",
+      "sha256": "3f4737008d81f5d61c770fceec0c948f8c47226293c973b656fd3f4d33095c93"
+    },
+    "geometry_status": "ACTIVE_FROZEN_GEOMETRY_EXACT_REPLAY_PASSED",
+    "all_four_aggregate_arrays_bitwise_equal": true
+  },
+  "native_queue": {
+    "active_coordinator": "mk-boi-native-fits-20261020-v5",
+    "queued_coordinator": "mk-boi-native-fits-20261020-v7",
+    "queued_plan": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native-coordinator-v7-plan.json",
+      "sha256": "5d660acf72f674522d3f327d3ed21aafb2e09dd62c44a60bd8921a413f08e8d9"
+    },
+    "control_before_new_boi_chains": "Converged Kepler442b native posterior and prospectively declared published-parameter recovery checks",
+    "next_targets": [
+      {
+        "source_id": "2053566049119753216",
+        "window_half_width_days": 0.40443359821692004,
+        "oot_start_days": 0.19200000000000003,
+        "duration_bounds_days": [
+          0.009600000000000001,
+          0.38400000000000006
+        ],
+        "density_bounds_rhosun": [
+          0.001,
+          100000.0
+        ],
+        "config": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2053566049119753216/run-input.json",
+          "sha256": "f4e80defd1f49b45606d52c3f8dec3d04c1f6910abb7f7a2b701370993a1ff39"
+        }
+      },
+      {
+        "source_id": "2126055064030395392",
+        "window_half_width_days": 0.35643359821692006,
+        "oot_start_days": 0.16800000000000004,
+        "duration_bounds_days": [
+          0.008400000000000001,
+          0.3360000000000001
+        ],
+        "density_bounds_rhosun": [
+          0.001,
+          100000.0
+        ],
+        "config": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2126055064030395392/run-input.json",
+          "sha256": "660b9c6b11297bed37c39c6075533f35266b59b35301cdd3fdac3ef412a9772e"
+        }
+      },
+      {
+        "source_id": "2100447124681568896",
+        "window_half_width_days": 0.50043359821692,
+        "oot_start_days": 0.24,
+        "duration_bounds_days": [
+          0.012,
+          0.48
+        ],
+        "density_bounds_rhosun": [
+          0.001,
+          100000.0
+        ],
+        "config": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2100447124681568896/run-input.json",
+          "sha256": "ef519c906927cdd6f9a4f7593423f1564431465e0ccc42343ee72760a68e3985"
+        }
+      },
+      {
+        "source_id": "2127108975982923008",
+        "window_half_width_days": 0.3,
+        "oot_start_days": 0.12,
+        "duration_bounds_days": [
+          0.004200000000000001,
+          0.16800000000000004
+        ],
+        "density_bounds_rhosun": [
+          0.001,
+          100000.0
+        ],
+        "config": {
+          "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/native-batch-v6/2127108975982923008/run-input.json",
+          "sha256": "164ceab15ad61490c813bf4965ee54e4d68537a7dab6de2b667abecdd5280eaf"
+        }
+      }
+    ],
+    "metadata_clarification": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/native-batch-v6-summary-clarification.json",
+      "sha256": "766c459c68d436af775830f429a38fd6669eb4073a0128e0ebeec7070dd89f54"
+    },
+    "scope": "Native inference only; no automatic probability launch or physical admission"
+  },
+  "source_ownership": {
+    "review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/postfit-localization-v2/summary.json",
+      "sha256": "f9f6a721a787bdab8ae2b66b886bb345cd40ec096b48237d724a5620fba09bc6"
+    },
+    "results": [
+      {
+        "source_id": "2128845796339643392",
+        "event_count": 27,
+        "failures": 0,
+        "source_attribution": {
+          "status": "TARGET_COMPATIBLE",
+          "good_quarters": 6,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            -1.9915073039709836,
+            -1.1500288499646483
+          ],
+          "offset_distance_arcsec": 2.2997103507878522,
+          "offset_uncertainty_arcsec": 1.3368776988027598,
+          "offset_significance": 1.7202099734682963,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.6608448511758362,
+            "quarter_scatter": 1.7616419815561624,
+            "jackknife": 0.6764525745549629
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        },
+        "scene_prf_compared_quarters": 6,
+        "scene_prf_target_preferred_quarters": 2
+      },
+      {
+        "source_id": "2127732197218050304",
+        "event_count": 62,
+        "failures": 0,
+        "source_attribution": {
+          "status": "ROBUST_OFFSET_CONFLICT",
+          "good_quarters": 11,
+          "minimum_good_quarters": 3,
+          "robust_offset_arcsec": [
+            -5.975353364908658,
+            1.6974750245103158
+          ],
+          "offset_distance_arcsec": 6.211784710883139,
+          "offset_uncertainty_arcsec": 1.3977453629765564,
+          "offset_significance": 4.444146176707671,
+          "required_significance": 3.0,
+          "uncertainty_variance_arcsec2": {
+            "formal": 0.20968224101422575,
+            "quarter_scatter": 0.5585386651944924,
+            "jackknife": 1.9280920997224653
+          },
+          "aggregate_systematic_arcsec": 0.16,
+          "method": "Unweighted Tukey-biweight coordinates with formal, quarter-scatter, and leave-one-quarter-out jackknife uncertainty; the largest statistical variance is combined with the astrometric systematic floor."
+        },
+        "scene_prf_compared_quarters": 11,
+        "scene_prf_target_preferred_quarters": 2
+      }
+    ],
+    "physical_hold": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/records/2127732197218050304-source-ownership-hold-v1.json",
+      "sha256": "28d1a40055bfdce7bcea380da107acb943fa8e2ab24164f3fc4dad4efdac8fdf"
+    },
+    "donor_diagnostics": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/source-ownership-controls-v1/summary.json",
+      "sha256": "afdb8d426760f860c63d0cf644ca73f2ec2706a4c27609f2cf8d10d04edf7354"
+    },
+    "reproduced_false_positive": false,
+    "scope": "A robust source offset creates a physical hold, not an EB mechanism or independent FPP evidence."
+  },
+  "known_controls": {
+    "scenes": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-gaia-v4/summary.json",
+      "sha256": "c42daded3c01c5e4bca5b2e5f24afd5417ba1150be89dc5f1f2b1c175668cfe3"
+    },
+    "native_photons": 52,
+    "stellar_review": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/known-control-stellar-v1/summary.json",
+      "sha256": "3cf1c501fa3989f559a7244b554824efb22d80ec22b8e09140360c994ae3ebc4"
+    },
+    "open_input_issue": "Kepler42 and Kepler16 TIC EBV/error are both zero; the strict uncertainty route rejects them. No error replacement, Solar fill, or host-extinction prior is inferred. Primary published host papers acquired for explicit review.",
+    "empirical_probability_calibration_closed": false
+  },
+  "performance": {
+    "warm_profile": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/performance-review-v2/receipt.json",
+      "sha256": "667db6512bfca23031d412bb7ae9ed4bb2ecea6a185a22b929db8b37b18413ce"
+    },
+    "actual_grid_benchmark": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/serial-kernel-experiment-v2/benchmark.json",
+      "sha256": "9e8580948ed5e7e1afc6fb34c85aebdf17fa0b0597fa6304b6eaec714ceb5b23"
+    },
+    "cpu_speed_ratios": [
+      0.9671822518094076,
+      0.9925877777876071,
+      0.9874586780922662
+    ],
+    "serial_change_adopted": false
+  },
+  "false_positive_statistics": {
+    "completed_candidate_followups": 0,
+    "reproduced_astrophysical_false_positives": 0,
+    "reproduced_instrumental_false_positives": 0,
+    "numerical_threshold_failures": 0,
+    "false_positive_rate": null
+  },
+  "checks": {
+    "ruff_and_complexity": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v5/check-0.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    "folder_tests": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v5/check-reader.log",
+      "sha256": "8d34dce37c27a3c4769b56bc43d98ab45ce99d5cdba361ac49363da850458329"
+    },
+    "folder_test_result": "13 passed",
+    "campaign_integrity": {
+      "path": "/srv/kbonus/dump/mk-statistical-validation-50-20261020-v1/checks-v5/active-campaign-verify.log",
+      "sha256": "c8cafcc5b076ee71c3ab8abbdd5ee6822097349bf5a134493e5697c66a92f7e7"
+    },
+    "scope": "Initial isolated test collection lacked PyArrow; the complete retained reader environment passed. Frozen numerical-runtime integrity independently passed."
+  },
+  "open_requirements": [
+    "Finish and deeply replay all required primary/diagnostic repeats",
+    "Resolve ownership, correlated noise, dilution-aware radius, companions and final literature before any physical admission",
+    "Complete known-object empirical support for prospective model changes",
+    "Preserve the separate deferred10,000-case detector recovery gate"
+  ]
+}

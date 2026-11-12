@@ -1,0 +1,361 @@
+{
+ "utc": "2026-10-25T20:44:43.745637+00:00",
+ "tool": {
+  "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/tools/multiplicity.py",
+  "sha256": "b0748ae147d9bfca8fe4d145676fa92e88a2c3312c35c7df327ab3613df941c4"
+ },
+ "rows": [
+  {
+   "case": "2073226966298407552",
+   "signal_id": "rust-v6-2073226966298407552-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.1032377972584491,
+   "NFPP_mean": 3.3010282343796222e-12,
+   "boosted_FPP": 0.020502280650459035,
+   "model_snr": 39.42494767930627,
+   "search_snr": null,
+   "tp_radius_earth_median": 7.9982162035263515,
+   "independent_siblings": [
+    "BOI-2073226966298407552-4"
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073226966298407552/multiplicity-v3.json",
+    "sha256": "93d8ef3395b819ba614c09d9c8f3c80b3987e2302706ceb4b4904cf3baae3a86"
+   }
+  },
+  {
+   "case": "2076383384993192576",
+   "signal_id": "rust-v6-2076383384993192576-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "radius below 9 Earth radii",
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.18305409334633632,
+   "NFPP_mean": 0.0,
+   "boosted_FPP": 0.03914543400623814,
+   "model_snr": 96.38628223575466,
+   "search_snr": null,
+   "tp_radius_earth_median": 11.990253196430062,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076383384993192576/multiplicity-v3.json",
+    "sha256": "816eb9f1e63683bbf5de769c130ac7caa8b73bb2696b2b1aa56c53cbdc452402"
+   }
+  },
+  {
+   "case": "2077020448903232640",
+   "signal_id": "rust-v6-2077020448903232640-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "radius below 9 Earth radii"
+   ],
+   "FPP_mean": 0.03420619103570123,
+   "NFPP_mean": 1.0452246682574306e-112,
+   "boosted_FPP": 0.00639837812467865,
+   "model_snr": 66.7414655587026,
+   "search_snr": null,
+   "tp_radius_earth_median": 11.3736644509062,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077020448903232640/multiplicity-v3.json",
+    "sha256": "4214b36355ee1a0b304571d8435c08f8ef6dc0665825a15d4c632689aa676034"
+   }
+  },
+  {
+   "case": "2077209775366626944",
+   "signal_id": "rust-v6-2077209775366626944-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.11052342124631602,
+   "NFPP_mean": 1.2282865440379548e-36,
+   "boosted_FPP": 0.02209299880093279,
+   "model_snr": 69.30097358711748,
+   "search_snr": null,
+   "tp_radius_earth_median": 5.861734068551184,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077209775366626944/multiplicity-v3.json",
+    "sha256": "f9a64d9cd57817125ccf71bf44df69347cf75a74629307b5e3cb229614500962"
+   }
+  },
+  {
+   "case": "2077554781499350144-g2",
+   "signal_id": "rust-v6-2077554781499350144-6",
+   "verdict": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+   "failed": [],
+   "FPP_mean": 0.02119499127963016,
+   "NFPP_mean": 2.545696756368238e-13,
+   "boosted_FPP": 0.003921641358991941,
+   "model_snr": 18.44081707432406,
+   "search_snr": null,
+   "tp_radius_earth_median": 2.482437284982784,
+   "independent_siblings": [
+    "mk-sap-20261019-2077554781499350144-1"
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077554781499350144-g2/multiplicity-v3.json",
+    "sha256": "0205d9346e13082d4dc70dd219f4fd13a73d111b94b6622e0003999ed0073969"
+   }
+  },
+  {
+   "case": "2079517512834068480",
+   "signal_id": "rust-v6-2079517512834068480-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "radius below 9 Earth radii",
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.08014242162164267,
+   "NFPP_mean": 2.0992841699594793e-97,
+   "boosted_FPP": 0.01559385519091254,
+   "model_snr": 48.35985273981581,
+   "search_snr": null,
+   "tp_radius_earth_median": 11.318208127853392,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079517512834068480/multiplicity-v3.json",
+    "sha256": "752e1c0e232c37bba488f7345acbbf1e680847089a83704d4aec55dd37a7f585"
+   }
+  },
+  {
+   "case": "2100325529865507712",
+   "signal_id": "rust-v6-2100325529865507712-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "radius below 9 Earth radii",
+    "no phase-0.5 secondary at SNR >= 3",
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.30370653949267457,
+   "NFPP_mean": 0.0,
+   "boosted_FPP": 0.07347761543811923,
+   "model_snr": 574.2147784240713,
+   "search_snr": null,
+   "tp_radius_earth_median": 15.941679926268371,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100325529865507712/multiplicity-v3.json",
+    "sha256": "f10ea6d5ff795f55214fddd6471e0439738d1ac3c53b7d15c60768494d2f956a"
+   }
+  },
+  {
+   "case": "2106817012155835904",
+   "signal_id": "rust-v6-2106817012155835904-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "no low-order ephemeris match on another star"
+   ],
+   "FPP_mean": 0.03529778016704752,
+   "NFPP_mean": 0.0,
+   "boosted_FPP": 0.006608635621868973,
+   "model_snr": 75.91455809951849,
+   "search_snr": null,
+   "tp_radius_earth_median": 6.551185253070044,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106817012155835904/multiplicity-v3.json",
+    "sha256": "9f85b4f9fc9ef5bc7861ffd779d83cb4ea843bfc0fdd75b74fefbf03c18de2dc"
+   }
+  },
+  {
+   "case": "2130460704041437824",
+   "signal_id": "rust-v6-2130460704041437824-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate"
+   ],
+   "FPP_mean": 0.019032203747453152,
+   "NFPP_mean": 1.9223166355766597e-25,
+   "boosted_FPP": 0.00351513771358122,
+   "model_snr": 51.990933089576075,
+   "search_snr": null,
+   "tp_radius_earth_median": 5.359109476901331,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130460704041437824/multiplicity-v3.json",
+    "sha256": "8e2eae9ebc870effbab944f0515ae863032610e3f0902bc2afdcbfbabef6718e"
+   }
+  },
+  {
+   "case": "2073896294004902272-4",
+   "signal_id": "mk-sap-20261019-2073896294004902272-4",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate"
+   ],
+   "FPP_mean": 0.02708565256161367,
+   "NFPP_mean": 3.836485389820799e-40,
+   "boosted_FPP": 0.005036272887449242,
+   "model_snr": 26.316917066531975,
+   "search_snr": 25.637738803174273,
+   "tp_radius_earth_median": 2.6234624831650684,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2073896294004902272-4/multiplicity-v3.json",
+    "sha256": "05ae17773a06eec32b74e05400df16eda19b4af3b3a3eae5a13abdc4b0f3b9ff"
+   }
+  },
+  {
+   "case": "2086313628562378624-1",
+   "signal_id": "mk-sap-20261019-2086313628562378624-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate"
+   ],
+   "FPP_mean": 0.026781705164691555,
+   "NFPP_mean": 1.0682828665675658e-26,
+   "boosted_FPP": 0.004978491151736417,
+   "model_snr": 22.357308379315967,
+   "search_snr": 22.23727151125886,
+   "tp_radius_earth_median": 2.620645837629862,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2086313628562378624-1/multiplicity-v3.json",
+    "sha256": "202e9bfc09634e0efd2c73214abed38044b8ad406024e7772d5d076176167043"
+   }
+  },
+  {
+   "case": "2100041954644727040-1",
+   "signal_id": "mk-sap-20261019-2100041954644727040-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "no low-order ephemeris match on another star"
+   ],
+   "FPP_mean": 0.022424200917729353,
+   "NFPP_mean": 0.00012912451355856874,
+   "boosted_FPP": 0.00415332886953541,
+   "model_snr": 14.966310140509789,
+   "search_snr": 16.121162132819364,
+   "tp_radius_earth_median": 3.027017662633032,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100041954644727040-1/multiplicity-v3.json",
+    "sha256": "c22995fc54c9c2d9fd9a27ddcd4a8f011e38610e34e4d800cda9bba944f6de79"
+   }
+  },
+  {
+   "case": "2101046397179609344-1",
+   "signal_id": "mk-sap-20261019-2101046397179609344-1",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate"
+   ],
+   "FPP_mean": 0.03575290446190479,
+   "NFPP_mean": 0.00036659984110841697,
+   "boosted_FPP": 0.00669641410990815,
+   "model_snr": 20.861545388947466,
+   "search_snr": 20.038439137404545,
+   "tp_radius_earth_median": 2.5024608434546725,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101046397179609344-1/multiplicity-v3.json",
+    "sha256": "269970e39b6ba957635c8de7b85be61e95a75b065d9c14e72aa8acbee7c800eb"
+   }
+  },
+  {
+   "case": "2102521666898377600-2",
+   "signal_id": "mk-sap-20261019-2102521666898377600-2",
+   "verdict": "NOT_VALIDATED_BY_MULTIPLICITY",
+   "failed": [
+    "independent sibling candidate",
+    "20 V3 repeats",
+    "mean NFPP < 0.1%",
+    "model S/N > 10",
+    "boosted FPP < 1.5%"
+   ],
+   "FPP_mean": 0.9576680083205488,
+   "NFPP_mean": 0.9545845597589897,
+   "boosted_FPP": 0.8044291180302978,
+   "model_snr": 6.832268585419187,
+   "search_snr": 13.691488597217369,
+   "tp_radius_earth_median": 1.3766725160581867,
+   "independent_siblings": [],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102521666898377600-2/multiplicity-v3.json",
+    "sha256": "207b402e8afcd8298c8b27d18d00eea88ab1b771b8d1ba44cab61d5f81078eb0"
+   }
+  },
+  {
+   "case": "2104058096963805696-2",
+   "signal_id": "mk-sap-20261019-2104058096963805696-2",
+   "verdict": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+   "failed": [],
+   "FPP_mean": 0.025662644479096997,
+   "NFPP_mean": 7.746469028662877e-26,
+   "boosted_FPP": 0.004766005797220775,
+   "model_snr": 28.578885140407206,
+   "search_snr": 31.45459959993174,
+   "tp_radius_earth_median": 4.24571895630935,
+   "independent_siblings": [
+    "mk-sap-20261019-2104058096963805696-3",
+    "mk-sap-20261019-2104058096963805696-4"
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-2/multiplicity-v3.json",
+    "sha256": "85e863c04e06d31124001005de5c23d1217db657c0c94392668ba3c885a0e773"
+   }
+  },
+  {
+   "case": "2104058096963805696-3",
+   "signal_id": "mk-sap-20261019-2104058096963805696-3",
+   "verdict": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+   "failed": [],
+   "FPP_mean": 0.020276843740353025,
+   "NFPP_mean": 1.3845449116648965e-22,
+   "boosted_FPP": 0.0037488935489941445,
+   "model_snr": 22.322624759733024,
+   "search_snr": 23.60251777376367,
+   "tp_radius_earth_median": 3.3203795957860036,
+   "independent_siblings": [
+    "mk-sap-20261019-2104058096963805696-2",
+    "mk-sap-20261019-2104058096963805696-4"
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-3/multiplicity-v3.json",
+    "sha256": "961259b3ac480466f203105501914e9a2a06f054b8086fd88fc13b11f065cd29"
+   }
+  },
+  {
+   "case": "2104058096963805696-4",
+   "signal_id": "mk-sap-20261019-2104058096963805696-4",
+   "verdict": "VALIDATED_BY_MULTIPLICITY_HOST_UNDETERMINED",
+   "failed": [],
+   "FPP_mean": 0.0232202404757888,
+   "NFPP_mean": 1.0121651549005976e-08,
+   "boosted_FPP": 0.0043036237784596365,
+   "model_snr": 16.40764689862634,
+   "search_snr": 19.000966751138556,
+   "tp_radius_earth_median": 2.8205760501704615,
+   "independent_siblings": [
+    "mk-sap-20261019-2104058096963805696-2",
+    "mk-sap-20261019-2104058096963805696-3"
+   ],
+   "record": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2104058096963805696-4/multiplicity-v3.json",
+    "sha256": "90c42abe67cfa070a62820d6f356fb51f84cbae60e46e03f41c31506f611040f"
+   }
+  }
+ ],
+ "notes": [
+  "Validated by multiplicity, host undetermined: KIC 6267058 (Gaia 2104058096963805696) 11.79, 16.74 and 29.31 days; KIC 6699887's 47.69-day signal (sibling of the validated KIC 6699887 b).",
+  "v1 (multiplicity-v1.json, preserved) let commensurate M/K pairs count as independent when their windows were 80% clear; a 1/k sub-harmonic leaves 1 - 1/k of its windows clear, so v2 judges aliases by S/N, rejects signals sharing two or more events and requires a Hill-stable system. The first v1 run also counted related M/K aliases as independent for two survey signals (preserved as multiplicity-v1-first-run-mk-alias-bug.json). No verdict changed between versions.",
+  "KIC 3975580's remaining sibling (BOI-4, shallow, 1.4626 d) is 0.4% from 3:1 and may be an alias; that verdict fails on boosted FPP regardless.",
+  "Unresolved low-order ephemeris matches on other stars: 2100041954644727040-1 (7.537 d) vs DR25 TCE KIC 8458662-2 (3.7683 d, 2:1, 12.2 deg); 2106817012155835904 (4.517 d) vs K02199.01 (9.033 d, 1:2, 4.9 deg). Expected chance of a low-order match: 0.14 and 0.15. Pixel-level analysis would be needed.",
+  "A survey BOI at the period of a counted M/K sibling is the same signal from the other pipeline and is counted once; the first KIC 6699887 run counted planet b twice and failed the Hill check (preserved as multiplicity-v2-first-run-duplicate-sibling-bug.json).",
+  "v3 adds Rowe et al. 2014 section 5.9 exactly: fitted-model S/N (not the search S/N) > 10, > 15 below 4 days; period above 1.6 days; not V-shaped. No verdict changed."
+ ],
+ "scope": "Every completed non-validated V3 campaign with FPP < 50% and NFPP < 0.1%, plus the KIC 6267058 system. A failed condition is a negative result; the candidates keep their TRICERATOPS+ categories."
+}

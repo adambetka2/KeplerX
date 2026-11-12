@@ -1,0 +1,354 @@
+{
+  "reviewed_utc": "2026-10-26T00:57:07.002718+00:00",
+  "scope": "READ_ONLY_REVIEW_OF_EXISTING_OUTPUTS_NO_NEW_SCIENCE_OR_BENCHMARK_RUNS",
+  "source_id": "2076573394349070464",
+  "signal_suffix": 4,
+  "host": "KIC 5458397",
+  "adoption_record": {
+    "path": "/Users/adam/Other/spacelab/results/boi-validation/engine-adoption-20261026.json",
+    "sha256": "4771d59296042235a4c5c25c5d724ea267c74a181e278f91ce6ebe873365bae8"
+  },
+  "experiment": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/experiment.json",
+    "sha256": "278f628f71b9a55c1f94e79b2eef706a84b0b11deee8ce33353598c57883dc70"
+  },
+  "source_plan": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/plan.json",
+    "sha256": "60b701582db388b129d2eddd5cf85a06f9f80cccd97a14b53db0887ad1542b23"
+  },
+  "source_freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/freeze.json",
+    "sha256": "d03c44deb16ea47de1c0bb63871166c09294974cc7d2729474ad69dcd8509670"
+  },
+  "summary": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/summary.json",
+    "sha256": "e2a66ba135e079e65b0dfe7fa8109b16adfcb2070255ccd5c5b2f26f12dc59b6"
+  },
+  "inventory": [
+    {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026",
+      "workers": 1,
+      "requested_repeats": 2,
+      "complete_repeats": 2,
+      "status": "COMPLETE_TWO_SEED_BENCHMARK"
+    }
+  ],
+  "queue_snapshot": {
+    "utc": "2026-10-26T00:56:40.428034+00:00",
+    "busy": 2,
+    "active": [
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073285721453427712-boi1",
+        "state": "native-running"
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076476504190366336-boi1-g2",
+        "state": "native-running"
+      }
+    ]
+  },
+  "reference": {
+    "cpu_budget": 5,
+    "complete_repeats": 20,
+    "interval_s": 2235.262377,
+    "first_two_interval_to_next_attempt_s": 207.379001,
+    "interval_definition": "Preserved first-attempt to final-audit timestamps; excludes earlier coordinator startup.",
+    "audit": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/audit-20261025T221031719247Z.json",
+      "sha256": "38136c97a10f79bc65f8612c11e2ecef3fee3d2cbffd40f00bc0a9a822f461ac"
+    },
+    "results": [
+      {
+        "index": 0,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-00/result.json",
+          "sha256": "71ea192d1691f4f3b2bde33e5714121254ee080307bb2934013413975afdb629"
+        },
+        "attempt_started_utc": "2026-10-25T21:33:16.456870+00:00"
+      },
+      {
+        "index": 1,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-01/result.json",
+          "sha256": "7397f1b5c824877f4a9f5068fb6b59601afe1fedd855c5a216f0cb8d014198de"
+        },
+        "attempt_started_utc": "2026-10-25T21:35:04.238276+00:00"
+      },
+      {
+        "index": 2,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-02/result.json",
+          "sha256": "5092fdc415aea3f6cf0554a1256aae328e75b79270e7cf00df7b26096ecb24cb"
+        },
+        "attempt_started_utc": "2026-10-25T21:36:43.835871+00:00"
+      },
+      {
+        "index": 3,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-03/result.json",
+          "sha256": "ef02030db85d6330894a5e3589f8191ba073517abb7230c6082d0a1213b22109"
+        },
+        "attempt_started_utc": "2026-10-25T21:38:29.267044+00:00"
+      },
+      {
+        "index": 4,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-04/result.json",
+          "sha256": "4ac0e3ae13201d3d530f6d1881784b612bbc35df84d2d2a3ffac8de18ef3c596"
+        },
+        "attempt_started_utc": "2026-10-25T21:40:19.193524+00:00"
+      },
+      {
+        "index": 5,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-05/result.json",
+          "sha256": "ae62f60c2c13130591cdc827ed75db88639f1d7c33a55f3d0ceb41880d242453"
+        },
+        "attempt_started_utc": "2026-10-25T21:42:10.268094+00:00"
+      },
+      {
+        "index": 6,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-06/result.json",
+          "sha256": "30682e859868afd6788e7b20dac5ae8d68780c85a4493b7a42ea7f80e820db7c"
+        },
+        "attempt_started_utc": "2026-10-25T21:44:01.340436+00:00"
+      },
+      {
+        "index": 7,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-07/result.json",
+          "sha256": "dea1bf571f3aba6b3b282ea882b1f5d58c8ea8123642505e61c36c815f433952"
+        },
+        "attempt_started_utc": "2026-10-25T21:45:44.991140+00:00"
+      },
+      {
+        "index": 8,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-08/result.json",
+          "sha256": "6dafe8892775ba61c3c7f8c941ec0b5f95ba79e3a1f0f27c1ca0557e91f5d7e6"
+        },
+        "attempt_started_utc": "2026-10-25T21:47:23.155497+00:00"
+      },
+      {
+        "index": 9,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-09/result.json",
+          "sha256": "37510027c55b0328cb296461dc6fd5e25386d2cd55bfff1bfdc854a64a6e51e3"
+        },
+        "attempt_started_utc": "2026-10-25T21:49:06.855198+00:00"
+      },
+      {
+        "index": 10,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-10/result.json",
+          "sha256": "66a47e82e20923b9511d837061cb0b602c535924f3f5469d3f41af0fb9e4ee85"
+        },
+        "attempt_started_utc": "2026-10-25T21:50:58.080572+00:00"
+      },
+      {
+        "index": 11,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-11/result.json",
+          "sha256": "1ce7fd176668bfe8bbc49e544c85bc955f2fdb457a760bb87c132eac2a7b7b45"
+        },
+        "attempt_started_utc": "2026-10-25T21:52:59.416461+00:00"
+      },
+      {
+        "index": 12,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-12/result.json",
+          "sha256": "6844765b2f9f7df229b71bce1f8b5fa54cb10d6288a394ce9c241ff7410a6172"
+        },
+        "attempt_started_utc": "2026-10-25T21:55:01.709987+00:00"
+      },
+      {
+        "index": 13,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-13/result.json",
+          "sha256": "8d355788dc6d06d2ea93a8208bc758fd8b47a0cb49d3b0ebdb811123f0de688c"
+        },
+        "attempt_started_utc": "2026-10-25T21:57:14.462867+00:00"
+      },
+      {
+        "index": 14,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-14/result.json",
+          "sha256": "daa76d2cefbc6cdbc26530dd168202dbd81a73fb1e3b46f2c55813ce90a72e5f"
+        },
+        "attempt_started_utc": "2026-10-25T21:59:14.102257+00:00"
+      },
+      {
+        "index": 15,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-15/result.json",
+          "sha256": "39771d1280e5becf31dd8da4d4f4fdddd19ae2b07233f2723d07d84fca32a7bd"
+        },
+        "attempt_started_utc": "2026-10-25T22:01:15.351236+00:00"
+      },
+      {
+        "index": 16,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-16/result.json",
+          "sha256": "8021456fc1421eb37226c2102b58f1ae67854a5f60869d04a58da65204c9de11"
+        },
+        "attempt_started_utc": "2026-10-25T22:03:09.801645+00:00"
+      },
+      {
+        "index": 17,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-17/result.json",
+          "sha256": "b09de186ae1fdab21bbb741dbd58cda2dadc399bdd6b94196beb65d9a057d56d"
+        },
+        "attempt_started_utc": "2026-10-25T22:05:04.052380+00:00"
+      },
+      {
+        "index": 18,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-18/result.json",
+          "sha256": "3dc39f02737037c820f37ce9f8fd70f86504af749878d1eb9e0399999b426f63"
+        },
+        "attempt_started_utc": "2026-10-25T22:06:50.820300+00:00"
+      },
+      {
+        "index": 19,
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/campaign/runs/final/seed-19/result.json",
+          "sha256": "737c32863e222c2b30bf8b4ca25acf5d9fc9384defc01c6e79accec3666fc2d9"
+        },
+        "attempt_started_utc": "2026-10-25T22:08:43.128153+00:00"
+      }
+    ]
+  },
+  "observed_engine": {
+    "workers": 1,
+    "threads_per_worker": 1,
+    "draws_per_scenario": 1000000,
+    "complete_repeats": 2,
+    "first_two_all_outputs_bitwise_equal": true,
+    "comparisons": [
+      {
+        "index": 0,
+        "seed": 738287232,
+        "same": {
+          "lnZ": true,
+          "scenarios.csv": true,
+          "stars.csv": true,
+          "FPP": true,
+          "NFPP": true
+        },
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/runs/final/seed-00/result.json",
+          "sha256": "0ebee957b4b1463b329fb89e447fca09524dee04c61138dfbe26127a376b320b"
+        },
+        "cpu_s": 313.1242279999999,
+        "wall_s": 363.995556791313,
+        "calculate": {
+          "cpu_s": 313.00145499999996,
+          "wall_s": 363.8445352073759
+        },
+        "worker_initialization": {
+          "cpu_s": 6.612803,
+          "wall_s": 29.466470791958272
+        }
+      },
+      {
+        "index": 1,
+        "seed": 2696110299,
+        "same": {
+          "lnZ": true,
+          "scenarios.csv": true,
+          "stars.csv": true,
+          "FPP": true,
+          "NFPP": true
+        },
+        "result": {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/runs/final/seed-01/result.json",
+          "sha256": "de4df6e5538433f7702c323b10b881c080cb4eacf2d1d494117c4b724225359b"
+        },
+        "cpu_s": 300.5451929999999,
+        "wall_s": 351.7987900422886,
+        "calculate": {
+          "cpu_s": 300.40290600000003,
+          "wall_s": 351.55631475057453
+        },
+        "worker_initialization": {
+          "cpu_s": 6.612803,
+          "wall_s": 29.466470791958272
+        }
+      }
+    ],
+    "coordinator_wall_s": 746.2297804169357,
+    "launch": {
+      "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2076573394349070464-4/probability-v3/engine-check-20261026/launch-20261025T232700946409Z.json",
+      "sha256": "d96ceef3f86393bb84b8c22986139827a13e18cb0815bb79cf0c907ad885c174"
+    },
+    "launch_wall_s": 747.5305535830557,
+    "original_coordinator_cpu_time_available": false
+  },
+  "hypothetical_twenty_repeat_schedule": [
+    {
+      "workers": 1,
+      "ideal_elapsed_s": 6030.095697999998,
+      "historical_interval_divided_by_model": 0.37068439523130114,
+      "repeats_per_worker": [
+        20
+      ]
+    },
+    {
+      "workers": 2,
+      "ideal_elapsed_s": 3024.643767999999,
+      "historical_interval_divided_by_model": 0.7390167399706823,
+      "repeats_per_worker": [
+        10,
+        10
+      ]
+    },
+    {
+      "workers": 5,
+      "ideal_elapsed_s": 1541.1096409999996,
+      "historical_interval_divided_by_model": 1.450423978627229,
+      "repeats_per_worker": [
+        5,
+        5,
+        4,
+        3,
+        3
+      ]
+    }
+  ],
+  "findings": [
+    "Only the two-seed one-worker engine verification was found; no completed five-worker twenty-repeat engine campaign exists in the checked case trees.",
+    "All two-seed evidence and retained tables reproduce the saved serial campaign exactly; every referenced result receipt was rechecked.",
+    "Original full twenty-repeat interval is 37 min 15 s with five numerical threads; new two-seed one-thread launch took 12 min 28 s beside production jobs.",
+    "Elapsed times from different thread budgets and machine loads are not a measured speedup or regression.",
+    "The harder case has about 300 CPU seconds per later engine repeat, compared with about 15 seconds in the earlier demonstration.",
+    "The idealized five-worker full-campaign model is around 26 minutes for this case, making the earlier 2-3x elapsed target unsuitable as a general forecast.",
+    "No new complete-fit or full-pipeline acceleration has been measured; current active jobs are native fits."
+  ],
+  "projection_limits": [
+    "Uses two observed engine seeds, with 19 later repeats assigned the second seed CPU cost.",
+    "Preserves the first-two gate and charges each new worker its observed cold and initialization CPU cost.",
+    "Converts CPU to elapsed time assuming a dedicated available core for each worker; excludes contention, frequency changes, coordinator startup and memory-bandwidth limits.",
+    "Historical source run and replay had different load and scheduling priority; comparison to this model is illustrative only."
+  ],
+  "workload_comparison": [
+    {
+      "source_id": "2076383384993192576",
+      "period_days": 51.528195064709784,
+      "scenarios": 21,
+      "phase_bins": 158,
+      "depth_to_bin_noise": 17.956349657600622,
+      "exposure_samples": 20
+    },
+    {
+      "source_id": "2076573394349070464",
+      "signal_suffix": 4,
+      "period_days": 1.4087851024269948,
+      "scenarios": 30,
+      "phase_bins": 200,
+      "depth_to_bin_noise": 2.7157222690622724,
+      "exposure_samples": 20
+    }
+  ]
+}

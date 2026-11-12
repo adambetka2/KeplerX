@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "status": "RUNNING_AT_RECORDED_TIME",
+  "recorded_utc": "2026-10-19T05:23:45.049458+00:00",
+  "server": "kbonus",
+  "run_directory": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1",
+  "source_commit": "f7e78fd5a6fc4508a744f189a55f1b5021122e04",
+  "scope": {
+    "original_sources": 57889,
+    "proposal_sources": 9182,
+    "detector_proposals": 17940,
+    "supplied_event_windows": 4645851,
+    "runs": [
+      "mk-sap-20261014-v1",
+      "mk-sap-dismissed-20261014-v1"
+    ]
+  },
+  "execution": {
+    "source_workers": 24,
+    "network_workers": 8,
+    "batch_size": 64,
+    "batches": 144,
+    "first_full_batch_started_utc": "2026-10-19T05:22:39.909672+00:00",
+    "progress": {
+      "utc": "2026-10-19T05:22:39.909672+00:00",
+      "stage": "vetting",
+      "state": "RUNNING",
+      "batch": 1,
+      "batches": 144,
+      "completed_sources": 0,
+      "total_sources": 9182
+    }
+  },
+  "verification": {
+    "status": "PREFLIGHT_COMPLETE",
+    "utc": "2026-10-19T05:22:39.909446+00:00",
+    "sources": 2,
+    "proposals": 3,
+    "events_preserved": 465,
+    "pipeline_files_equal_to_original": 192,
+    "every_saved_prepared_record_reproduced": true,
+    "complete_original_source_scene": 406547,
+    "legacy_catalogues_verified": 6
+  },
+  "checks": {
+    "ruff": "PASS",
+    "complexity": "PASS",
+    "unmodified_vetting_tests": {
+      "passed": 317,
+      "failed": 2,
+      "failure_diagnosis": "Two alias fixtures omit required complete catalogue evidence; both reproduce expected outcomes when only that fixture evidence is supplied. Production code is unchanged.",
+      "evidence": "setup/pytest.log",
+      "diagnostic": "setup/alias-fixture-diagnostic.json"
+    }
+  },
+  "bindings": {
+    "adapter.py": "51d593887840e994246111b2618a0c345517953657d42274fe0fd8d132ecbdf0",
+    "run-plan.json": "f3656fd4e26294df87422b6d982aef1f1d47b05fb030e0e2e9205b206be52427",
+    "inventory.json": "50fbadfc68e0b64c92eb3ea58b2944c5ef34a001db5635ef2abf4c15d44dcf87",
+    "exports.json": "ff24761819dc4568f2376d886028e37bed9811cf5c75e5a95e1610762150fc78",
+    "verification.json": "a10d4ab710fd5e4aa24bd9d0da4376f94f6076878b349d3621aa0f9cce64a075",
+    "setup/runtime-freeze.txt": "1b1e0ca1ff11bee7f35ba97ac7ddde81be4a5a2fd2e58124f7c3dc559476ab95",
+    "setup/preflight-input-checks.json": "a7939b371ded0b1cd60a54d3e7740919199ce158de1318204b9893b70b4487c5"
+  },
+  "scientific_limit": "BOI is a pipeline disposition; no physical validation, confirmation, novelty or recovery-gate claim."
+}

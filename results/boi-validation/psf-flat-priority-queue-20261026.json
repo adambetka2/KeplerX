@@ -1,0 +1,1143 @@
+{
+  "utc": "2026-10-26T21:29:16.921064+00:00",
+  "initial_groups": 48,
+  "conditional_second_wave_groups": 17,
+  "total_scheduled_groups": 65,
+  "entries": [
+    {
+      "boi_id": "BOI-2079714428492352768-1",
+      "source_id": "2079714428492352768",
+      "signal_id": "shallow-v1-2079714428492352768-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079714428492352768-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2079714428492352768-1.json",
+        "sha256": "97125f08beed718e9aa7688827185e74645563dab7a0d237bbb02b75d6d5ca2c"
+      }
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-4",
+      "source_id": "2126217104555818240",
+      "signal_id": "shallow-v1-2126217104555818240-8",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126217104555818240-4",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2126217104555818240-8.json",
+        "sha256": "81b1f7b855648512a0851e765934e86adc07968aae6c60650d3fd91c87c4973b"
+      }
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-1",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127936912539397632-1.json",
+        "sha256": "054d6bc29df24581d05c084854ca8c56af1020799a8ff25bb3bc26df469eb68b"
+      }
+    },
+    {
+      "boi_id": "BOI-2127186564572468352-2",
+      "source_id": "2127186564572468352",
+      "signal_id": "shallow-v1-2127186564572468352-26",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127186564572468352-2",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127186564572468352-26.json",
+        "sha256": "cb358002f1187ead0434560fd580a4df39741726fa96d9c4ac034cde24f1ae96"
+      }
+    },
+    {
+      "boi_id": "BOI-2127936912539397632-2",
+      "source_id": "2127936912539397632",
+      "signal_id": "shallow-v1-2127936912539397632-4",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127936912539397632-2",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2127936912539397632-4.json",
+        "sha256": "eb5779128e086e4cb2eccd0b7204baf9cfb972ad7c6d63cec1bdd4b309298eff"
+      }
+    },
+    {
+      "boi_id": "BOI-2102266442767690112-1",
+      "source_id": "2102266442767690112",
+      "signal_id": "shallow-v1-2102266442767690112-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2102266442767690112-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2102266442767690112-1.json",
+        "sha256": "6bc7252690cca8e2eb88580b44005686854e4809c8e9a4fa01f5125c0bafa5cb"
+      }
+    },
+    {
+      "boi_id": "BOI-2076057590261131392-1",
+      "source_id": "2076057590261131392",
+      "signal_id": "shallow-v1-2076057590261131392-3",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076057590261131392-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2076057590261131392-3.json",
+        "sha256": "6b2043278d1b1412369ce1a5df5d2776fb7e20c0850c0fa397c615150b45bc43"
+      }
+    },
+    {
+      "boi_id": "BOI-2100413245985138560-1",
+      "source_id": "2100413245985138560",
+      "signal_id": "shallow-v1-2100413245985138560-4",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2100413245985138560-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2100413245985138560-4.json",
+        "sha256": "7478b7acd8ce391aebb9cce72e737ec2e16db4704d5f54a18aef57c78d8e1a5e"
+      }
+    },
+    {
+      "boi_id": "BOI-2077515199080043264-2",
+      "source_id": "2077515199080043264",
+      "signal_id": "shallow-v1-2077515199080043264-7",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077515199080043264-2",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2077515199080043264-7.json",
+        "sha256": "fcceb47a8f9ad9fad8171eed008fa1c56ed7d149fab7e81eff1bce4a9260acdd"
+      }
+    },
+    {
+      "boi_id": "BOI-2077624600485371136-1",
+      "source_id": "2077624600485371136",
+      "signal_id": "shallow-v1-2077624600485371136-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077624600485371136-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2077624600485371136-1.json",
+        "sha256": "01be53bd7bac6b7738315a4d806e1ec14d238bd2d574ab647656e8d7172bfa12"
+      }
+    },
+    {
+      "boi_id": "BOI-2130546156710144256-1",
+      "source_id": "2130546156710144256",
+      "signal_id": "shallow-v1-2130546156710144256-1",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2130546156710144256-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2130546156710144256-1.json",
+        "sha256": "21796715cd44e0383a28cb5b66bd8bfaabc30fbf94efa3a0711a6d6dbb8e81dd"
+      }
+    },
+    {
+      "boi_id": "BOI-2107173460081536128-1",
+      "source_id": "2107173460081536128",
+      "signal_id": "shallow-v1-2107173460081536128-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2107173460081536128-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2107173460081536128-1.json",
+        "sha256": "9cc20dab2cc3610ec59ccd3349042dc1d945daddd336610fddd9c5d05613176c"
+      }
+    },
+    {
+      "boi_id": "BOI-2128925785810616832-1",
+      "source_id": "2128925785810616832",
+      "signal_id": "shallow-v1-2128925785810616832-1",
+      "lineage": "shallow",
+      "selection_reason": "seven_shallow_shortlist",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2128925785810616832-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2128925785810616832-1.json",
+        "sha256": "ebbccc21393748dc3bc4cef94b3cb2371d8383717502797dd1463471bfd65f86"
+      }
+    },
+    {
+      "boi_id": "BOI-2078082581439033856-1",
+      "source_id": "2078082581439033856",
+      "signal_id": "shallow-v1-2078082581439033856-2",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2078082581439033856-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2078082581439033856-2.json",
+        "sha256": "c045d4f3417aae28af36c55989c22a466b1b6754376b3e1885d99547a72740b6"
+      }
+    },
+    {
+      "boi_id": "BOI-2086390560018194816-1",
+      "source_id": "2086390560018194816",
+      "signal_id": "shallow-v1-2086390560018194816-3",
+      "lineage": "shallow",
+      "selection_reason": "explicit_additional_shallow",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2086390560018194816-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/shallow-v1-2086390560018194816-3.json",
+        "sha256": "6552a20522001832d66fb0da9af4cda0d3eff377b6d5108676787c562629707d"
+      }
+    },
+    {
+      "boi_id": "BOI-2076038211367869312-1",
+      "source_id": "2076038211367869312",
+      "signal_id": "rust-v6-2076038211367869312-1-sap_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076038211367869312-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076038211367869312-1-sap_qdiag.json",
+        "sha256": "cb4f48cc90aa6429efa4da8d47377bcce4bb70cb4e6562543ce5c4f8eb2cb30b"
+      }
+    },
+    {
+      "boi_id": "BOI-2051317406099391360-1",
+      "source_id": "2051317406099391360",
+      "signal_id": "rust-v6-2051317406099391360-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2051317406099391360-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2051317406099391360-1.json",
+        "sha256": "a158a770d606b53917ecfd741f75f2ccdd07fe0b2c19a4a9503854f1a6a438b4"
+      }
+    },
+    {
+      "boi_id": "BOI-2051702720499620224-1",
+      "source_id": "2051702720499620224",
+      "signal_id": "rust-v6-2051702720499620224-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2051702720499620224-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2051702720499620224-1.json",
+        "sha256": "ce8291b63280f824c18f5eece8c32b1a4db81efb1fd1045586e1d591ff3c53ea"
+      }
+    },
+    {
+      "boi_id": "BOI-2073774278260250880-1",
+      "source_id": "2073774278260250880",
+      "signal_id": "rust-v6-2073774278260250880-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2073774278260250880-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2073774278260250880-1.json",
+        "sha256": "e7051f6926654634df85c8efe8cdc384b4caa62459cb008a5f675bfba4f845c6"
+      }
+    },
+    {
+      "boi_id": "BOI-2076066111476425728-1",
+      "source_id": "2076066111476425728",
+      "signal_id": "rust-v6-2076066111476425728-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076066111476425728-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076066111476425728-1.json",
+        "sha256": "4308bbb4755db33a97c8cff24a77c5f8789461eadc26662157f6496f9fcdcf0c"
+      }
+    },
+    {
+      "boi_id": "BOI-2076229075413220352-1",
+      "source_id": "2076229075413220352",
+      "signal_id": "rust-v6-2076229075413220352-1-psf_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076229075413220352-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076229075413220352-1-psf_qdiag.json",
+        "sha256": "2b7dc33b1567ae52a850605d69b28d85edfd5ef449795d408be1892270946ca5"
+      }
+    },
+    {
+      "boi_id": "BOI-2076535358120385536-1",
+      "source_id": "2076535358120385536",
+      "signal_id": "rust-v6-2076535358120385536-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076535358120385536-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076535358120385536-1.json",
+        "sha256": "0913a4ad52ac1de31cd3fe974c2e87eea37014131d27963b748f75d7d59aded6"
+      }
+    },
+    {
+      "boi_id": "BOI-2076587142546708352-1",
+      "source_id": "2076587142546708352",
+      "signal_id": "rust-v6-2076587142546708352-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076587142546708352-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076587142546708352-1.json",
+        "sha256": "a2fb996da7ea3defadad1eb21b382de352e5b9dadb9ca9f93de6dcdc792c1778"
+      }
+    },
+    {
+      "boi_id": "BOI-2076784878540898560-1",
+      "source_id": "2076784878540898560",
+      "signal_id": "rust-v6-2076784878540898560-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076784878540898560-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076784878540898560-1.json",
+        "sha256": "0be1be8b4611d8eb049e980d3df24db8ce21e587de1dcd0b7cd6d450975783fa"
+      }
+    },
+    {
+      "boi_id": "BOI-2077554781499350144-2",
+      "source_id": "2077554781499350144",
+      "signal_id": "rust-v6-2077554781499350144-5",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077554781499350144-2",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077554781499350144-5.json",
+        "sha256": "a415bd9a753794c18976e64dfc429b8d7e4f844215af7ba1bfdfdb3416ac61c1"
+      }
+    },
+    {
+      "boi_id": "BOI-2077967368932890752-3",
+      "source_id": "2077967368932890752",
+      "signal_id": "rust-v6-2077967368932890752-20",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077967368932890752-3",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077967368932890752-20.json",
+        "sha256": "04eb0c014173d1e9738415ba2076b11b32128b4f82dd1a22d31973a2486f4a61"
+      }
+    },
+    {
+      "boi_id": "BOI-2078414771391537280-1",
+      "source_id": "2078414771391537280",
+      "signal_id": "rust-v6-2078414771391537280-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2078414771391537280-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078414771391537280-1.json",
+        "sha256": "d38d33522562aec843166b7a9ae06786deaec872864b8f7c47d81d0581e1cc91"
+      }
+    },
+    {
+      "boi_id": "BOI-2079376637907047040-1",
+      "source_id": "2079376637907047040",
+      "signal_id": "rust-v6-2079376637907047040-8",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079376637907047040-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079376637907047040-8.json",
+        "sha256": "368e4d416aeeb561e3ab972d13b51f915c4056e12c49c39aca21ab2a66ee37d6"
+      }
+    },
+    {
+      "boi_id": "BOI-2079821420415898368-1",
+      "source_id": "2079821420415898368",
+      "signal_id": "rust-v6-2079821420415898368-1-sap_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079821420415898368-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079821420415898368-1-sap_qdiag.json",
+        "sha256": "96989ddb745ce4950e56df6097258407a2578390c349ce315bdf6da83fd9bb8e"
+      }
+    },
+    {
+      "boi_id": "BOI-2080033974058174080-1",
+      "source_id": "2080033974058174080",
+      "signal_id": "rust-v6-2080033974058174080-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2080033974058174080-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2080033974058174080-1.json",
+        "sha256": "0d5b7f5934c4c6901f52bb704b2cfebe244674350e4c5e15432b3954e3a87374"
+      }
+    },
+    {
+      "boi_id": "BOI-2080290396483263616-1",
+      "source_id": "2080290396483263616",
+      "signal_id": "rust-v6-2080290396483263616-1-psf_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2080290396483263616-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2080290396483263616-1-psf_qdiag.json",
+        "sha256": "7063f8696e3312d722e6d617bfa28789789a8f56041aba37378ef008b525f051"
+      }
+    },
+    {
+      "boi_id": "BOI-2085457035981896448-1",
+      "source_id": "2085457035981896448",
+      "signal_id": "rust-v6-2085457035981896448-1-sap_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2085457035981896448-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2085457035981896448-1-sap_qdiag.json",
+        "sha256": "4f144e800d4f5c0e0db7d6c42e6193285e1e586fa4fd6b0a159dbbbbe97e8732"
+      }
+    },
+    {
+      "boi_id": "BOI-2086489481704614016-1",
+      "source_id": "2086489481704614016",
+      "signal_id": "rust-v6-2086489481704614016-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2086489481704614016-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2086489481704614016-1.json",
+        "sha256": "b4aef68009bf4e3ca70bdb1a8601b693eea93d253c5c79851388be5df36839ae"
+      }
+    },
+    {
+      "boi_id": "BOI-2100220316049730304-1",
+      "source_id": "2100220316049730304",
+      "signal_id": "rust-v6-2100220316049730304-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2100220316049730304-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100220316049730304-1.json",
+        "sha256": "b909c2c8ef059d25ba4d9a85d0b509cab8a5d65d73a8e7f1590281a727429899"
+      }
+    },
+    {
+      "boi_id": "BOI-2100223614584673664-1",
+      "source_id": "2100223614584673664",
+      "signal_id": "rust-v6-2100223614584673664-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2100223614584673664-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100223614584673664-1.json",
+        "sha256": "d78ceca60e9f017fdc1c277057dbecc7cf5c516b4b7097c9aafcfa3d3db1210e"
+      }
+    },
+    {
+      "boi_id": "BOI-2106533368217988864-1",
+      "source_id": "2106533368217988864",
+      "signal_id": "rust-v6-2106533368217988864-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2106533368217988864-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2106533368217988864-1.json",
+        "sha256": "31cf3c0fea5ed256cdd8731b236b44c166507f9d69757c5aae801c2713f6d12c"
+      }
+    },
+    {
+      "boi_id": "BOI-2107167653281504256-1",
+      "source_id": "2107167653281504256",
+      "signal_id": "rust-v6-2107167653281504256-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2107167653281504256-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2107167653281504256-1.json",
+        "sha256": "baf3db56e873e99f2a301b4897286c513784d6501169add6a6fec1419a73be7b"
+      }
+    },
+    {
+      "boi_id": "BOI-2125795682366018176-1",
+      "source_id": "2125795682366018176",
+      "signal_id": "rust-v6-2125795682366018176-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2125795682366018176-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2125795682366018176-1.json",
+        "sha256": "32579c586ec719164e0d512e31066576942ff806695cfd357526c9db00a0806a"
+      }
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-2",
+      "source_id": "2126354436132009088",
+      "signal_id": "rust-v6-2126354436132009088-4",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126354436132009088-2",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126354436132009088-4.json",
+        "sha256": "fac355d7a59f4e7002c798f90fb805924b4deec1f79c616080e952e988ebb334"
+      }
+    },
+    {
+      "boi_id": "BOI-2126446588949629952-1",
+      "source_id": "2126446588949629952",
+      "signal_id": "rust-v6-2126446588949629952-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126446588949629952-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126446588949629952-1.json",
+        "sha256": "2d882b6dde3049053efbc7bc2e28aa7d52b14770b5f8344160d33328dbf11346"
+      }
+    },
+    {
+      "boi_id": "BOI-2126865915195358720-1",
+      "source_id": "2126865915195358720",
+      "signal_id": "rust-v6-2126865915195358720-1-psf_qdiag",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126865915195358720-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126865915195358720-1-psf_qdiag.json",
+        "sha256": "c71156e51434cd00a7446179f7349d27296ebdcb89ef0ddf5079b240e083500c"
+      }
+    },
+    {
+      "boi_id": "BOI-2127355099085636864-1",
+      "source_id": "2127355099085636864",
+      "signal_id": "rust-v6-2127355099085636864-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127355099085636864-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2127355099085636864-1.json",
+        "sha256": "e75e4f342e6bf7558a36aad024dd7a3ca8ac7d769d08c84fc07f86449292a7a8"
+      }
+    },
+    {
+      "boi_id": "BOI-2127702609183750528-1",
+      "source_id": "2127702609183750528",
+      "signal_id": "rust-v6-2127702609183750528-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2127702609183750528-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2127702609183750528-1.json",
+        "sha256": "8b39409e91569654d78a4563823400fe67ffedb621590d26aa513a98e6bb77e1"
+      }
+    },
+    {
+      "boi_id": "BOI-2131801043071611776-1",
+      "source_id": "2131801043071611776",
+      "signal_id": "rust-v6-2131801043071611776-10",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2131801043071611776-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2131801043071611776-10.json",
+        "sha256": "f910844b1e4ef0b5464169aadb320dc2024ae3907063451ddc95d0321d8b4bf5"
+      }
+    },
+    {
+      "boi_id": "BOI-2131971879690727168-1",
+      "source_id": "2131971879690727168",
+      "signal_id": "rust-v6-2131971879690727168-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2131971879690727168-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2131971879690727168-1.json",
+        "sha256": "d465064e929ba60cc19f8730022d122ce0e49009573887449b4218d81569c28c"
+      }
+    },
+    {
+      "boi_id": "BOI-2133034969998575360-1",
+      "source_id": "2133034969998575360",
+      "signal_id": "rust-v6-2133034969998575360-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2133034969998575360-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133034969998575360-1.json",
+        "sha256": "4f99e8c3226e662f5550f68afa6f1b130c6db86cce7c67e9dbef1a49ec2b3f79"
+      }
+    },
+    {
+      "boi_id": "BOI-2133051978069556352-1",
+      "source_id": "2133051978069556352",
+      "signal_id": "rust-v6-2133051978069556352-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2133051978069556352-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133051978069556352-1.json",
+        "sha256": "da41675ea2d09bcf932a244ee544c0bc4e752c5b52c74d8dc8b0a206ad6fdc53"
+      }
+    },
+    {
+      "boi_id": "BOI-2133767416541087232-1",
+      "source_id": "2133767416541087232",
+      "signal_id": "rust-v6-2133767416541087232-1",
+      "lineage": "restored_rust",
+      "selection_reason": "initial_33_manual_exclusions",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2133767416541087232-1",
+      "likelihood_view": "psf_flat",
+      "wave": 1,
+      "measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2133767416541087232-1.json",
+        "sha256": "559c3615b6056ffe4266ebef3dbe80cc85523d8074c23b12148627e99a9a9f64"
+      }
+    },
+    {
+      "boi_id": "BOI-2104484363877066752-1",
+      "source_id": "2104484363877066752",
+      "signal_id": "rust-v6-2104484363877066752-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2104484363877066752-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2104484363877066752-boi1/native-v3/native-hold.json",
+        "sha256": "0cc78cbd2efdcd640458559c6559eaf4cbfe0e1e4d254a229a6c8e54d5ed9c82"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2104484363877066752-1.json",
+        "sha256": "1dd12378c27e09ba3c822f508483183923498ccfb1b28767f3952bfbc15b577c"
+      },
+      "psf_local_event_depth_snr": 251.83498993765795,
+      "clock": {
+        "period_days": 105.36614774355272,
+        "epoch_bkjd": 223.84785272533904,
+        "duration_days": 0.3086898859674396
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2078783726253023360-1",
+      "source_id": "2078783726253023360",
+      "signal_id": "rust-v6-2078783726253023360-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2078783726253023360-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078783726253023360-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078783726253023360-boi1/native-v3/native-hold.json",
+        "sha256": "73230a00fae021dc23a80543631dad8d45b876dbfd5b5c692e03cf102a3924bc"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078783726253023360-1.json",
+        "sha256": "363f51d08eef5149f7c19ba429b17fbbf595471524adcaf07c09b1a8854fdf4b"
+      },
+      "psf_local_event_depth_snr": 195.86115711516518,
+      "clock": {
+        "period_days": 14.00014074875728,
+        "epoch_bkjd": 139.20418579710304,
+        "duration_days": 0.08327221263201356
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2079536067092694016-1",
+      "source_id": "2079536067092694016",
+      "signal_id": "rust-v6-2079536067092694016-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2079536067092694016-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079536067092694016-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079536067092694016-boi1/native-v3/native-hold.json",
+        "sha256": "5e6f37d63e275db89f63637763ff02f9c73975ece487268bceac449c69fcc8bf"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2079536067092694016-1.json",
+        "sha256": "615b4f6740850590a4e79339d5c297c80332b5a85d6f8ca594bc0270e1563a29"
+      },
+      "psf_local_event_depth_snr": 178.75335569829716,
+      "clock": {
+        "period_days": 0.2720077189074989,
+        "epoch_bkjd": 120.76065820386626,
+        "duration_days": 0.021250603039648357
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2126217104555818240-1",
+      "source_id": "2126217104555818240",
+      "signal_id": "rust-v6-2126217104555818240-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126217104555818240-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126217104555818240",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126217104555818240/native-v3/native-hold.json",
+        "sha256": "c8d49a33493cf2cb92e2f712a78e45d7444f54f74ad68f4d3d7f5b81827e83cd"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126217104555818240-1.json",
+        "sha256": "bac85a917dd7069a7ea8a67fd8d4a23f768f6075c1863de474cefd4a6d883a32"
+      },
+      "psf_local_event_depth_snr": 137.2149654899867,
+      "clock": {
+        "period_days": 2.9536185072553347,
+        "epoch_bkjd": 123.10788649976786,
+        "duration_days": 0.06240039099835213
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2076894554826018304-1",
+      "source_id": "2076894554826018304",
+      "signal_id": "rust-v6-2076894554826018304-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2076894554826018304-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076894554826018304-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2076894554826018304-boi1/native-v3/native-hold.json",
+        "sha256": "6f55c972dd153c3b502bab32ec5fb646b06fb315bf3bfbfbcef46bf20c3c4094"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2076894554826018304-1.json",
+        "sha256": "4c1db9c755b496aa8bab8fb34b56f33f1aa390b54590540aff2d481d6dd945c0"
+      },
+      "psf_local_event_depth_snr": 113.01690827373852,
+      "clock": {
+        "period_days": 7.6530131343160726,
+        "epoch_bkjd": 132.9801860091182,
+        "duration_days": 0.12494715321332366
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2100123494603868416-1",
+      "source_id": "2100123494603868416",
+      "signal_id": "rust-v6-2100123494603868416-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2100123494603868416-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100123494603868416-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100123494603868416-boi1/native-v3/native-hold.json",
+        "sha256": "c815489b26823a9410fc048e7bbb9bfc9e9d9683f54204f9a4f7d47172e7ce6c"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100123494603868416-1.json",
+        "sha256": "54f5d108730a9207de449de0efcbc69b6432c0d2a9f5ba7571f517135c95ac21"
+      },
+      "psf_local_event_depth_snr": 109.7424679972754,
+      "clock": {
+        "period_days": 7.108701132874583,
+        "epoch_bkjd": 357.18548984956766,
+        "duration_days": 0.04163221746925085
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2100203999471640064-1",
+      "source_id": "2100203999471640064",
+      "signal_id": "rust-v6-2100203999471640064-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2100203999471640064-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2100203999471640064-boi1/native-v3/native-hold.json",
+        "sha256": "e15cd416bd2b434b99ea72ae81aa52e5557ccfbf67319a1f89cfb5f5229fe37e"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2100203999471640064-1.json",
+        "sha256": "b415543cf4dafac5e4d1ccd0e92042c24becd0cf0f07196da5f2238d6bea15be"
+      },
+      "psf_local_event_depth_snr": 105.52101610173867,
+      "clock": {
+        "period_days": 3.1412645576658482,
+        "epoch_bkjd": 134.47742788897983,
+        "duration_days": 0.04160615308166686
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2130658616133595264-1",
+      "source_id": "2130658616133595264",
+      "signal_id": "rust-v6-2130658616133595264-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2130658616133595264-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130658616133595264-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2130658616133595264-boi1/native-v3/native-hold.json",
+        "sha256": "909d827546787f045172fcb5397cc4c9b631df69a758de3c136c70dbc4332cb5"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2130658616133595264-1.json",
+        "sha256": "04e46fbce7e2a507fca2ead379a3f6653d7bf7a97a757b645970d9efc7884f9d"
+      },
+      "psf_local_event_depth_snr": 51.918138934852195,
+      "clock": {
+        "period_days": 32.95441924270739,
+        "epoch_bkjd": 124.87575975649114,
+        "duration_days": 0.08045512510426608
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2073628180652139904-1",
+      "source_id": "2073628180652139904",
+      "signal_id": "rust-v6-2073628180652139904-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2073628180652139904-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073628180652139904-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073628180652139904-boi1/native-v3/native-hold.json",
+        "sha256": "69da369ff313f7512062b7f6937bce867fe242058d2a89414b56db864f64dde7"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2073628180652139904-1.json",
+        "sha256": "0706c1aeeef23cc3850d57a1ccac47e3e427993a0801499397194621cdea23ba"
+      },
+      "psf_local_event_depth_snr": 49.30873977049998,
+      "clock": {
+        "period_days": 55.5236057723728,
+        "epoch_bkjd": 162.4661159414396,
+        "duration_days": 0.13555567815520703
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2101435138957164672-1",
+      "source_id": "2101435138957164672",
+      "signal_id": "rust-v6-2101435138957164672-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2101435138957164672-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2101435138957164672-boi1/native-v3/native-hold.json",
+        "sha256": "f64c5f2a8db30db0fd7510f786cfc1528353956f602dc6f1fb275537796df7b5"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2101435138957164672-1.json",
+        "sha256": "2b446a0798edab04dba96cf161e6b892cfc4d9c3f05e8d063a912c7cd494c541"
+      },
+      "psf_local_event_depth_snr": 49.14666098831134,
+      "clock": {
+        "period_days": 80.72162778644471,
+        "epoch_bkjd": 141.70134669535844,
+        "duration_days": 0.11824457195279987
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2050231500928700032-1",
+      "source_id": "2050231500928700032",
+      "signal_id": "rust-v6-2050231500928700032-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2050231500928700032-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2050231500928700032-boi1/native-v3/native-hold.json",
+        "sha256": "2ca61753a5ee81b219ca154a0bd56db946ee819a4ed6f55891e6e2e84b391593"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2050231500928700032-1.json",
+        "sha256": "8eff3ebbb1fb0b68f9cb44cede648e1eb9a6d8d369d080df84d8395d10605b04"
+      },
+      "psf_local_event_depth_snr": 47.15574122640403,
+      "clock": {
+        "period_days": 39.81077302538616,
+        "epoch_bkjd": 132.1734605523835,
+        "duration_days": 0.33046051827713124
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2077595974520134144-1",
+      "source_id": "2077595974520134144",
+      "signal_id": "rust-v6-2077595974520134144-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2077595974520134144-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2077595974520134144/native-v3/native-hold.json",
+        "sha256": "29d88c239022690765a52eace9618004f4c761f6ad79d520a8cb080dee82aec9"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2077595974520134144-1.json",
+        "sha256": "053d0ade323e5c291ac09a408cc6db79de019b02fcd222901a69ec9238982c06"
+      },
+      "psf_local_event_depth_snr": 45.70258108768433,
+      "clock": {
+        "period_days": 14.226578632436448,
+        "epoch_bkjd": 134.10941232993036,
+        "duration_days": 0.062488632353307975
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2099560128037101952-1",
+      "source_id": "2099560128037101952",
+      "signal_id": "rust-v6-2099560128037101952-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2099560128037101952-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099560128037101952",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099560128037101952/native-v3/native-hold.json",
+        "sha256": "72eb812fcf6f7a1069f14c1c478a45e45eb4ae01948e7b7f3e6942e2ea6a7747"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2099560128037101952-1.json",
+        "sha256": "c641b0b2279416de57159b0dd2234c319fe8249a63d5fc618c970711841a443a"
+      },
+      "psf_local_event_depth_snr": 29.94783868011733,
+      "clock": {
+        "period_days": 11.253472382955353,
+        "epoch_bkjd": 135.49992026246622,
+        "duration_days": 0.062461456334627304
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2078045782158649216-1",
+      "source_id": "2078045782158649216",
+      "signal_id": "rust-v6-2078045782158649216-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2078045782158649216-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2078045782158649216/native-v3/native-hold.json",
+        "sha256": "4c5cd51d595d928326821e24d3b0011bab39e9f59d0e9c537cf64e4607439abb"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2078045782158649216-1.json",
+        "sha256": "01ad2570b06f059696a1248201ec62685738e78aeca9b1401ccf48ddface9374"
+      },
+      "psf_local_event_depth_snr": 28.261865584300814,
+      "clock": {
+        "period_days": 4.327340860198641,
+        "epoch_bkjd": 356.1736223238477,
+        "duration_days": 0.04160904673267924
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2126354436132009088-1",
+      "source_id": "2126354436132009088",
+      "signal_id": "rust-v6-2126354436132009088-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2126354436132009088-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2126354436132009088-boi1/native-v3/native-hold.json",
+        "sha256": "eb3c7fc418f1781fc473f63bb08777f9c4d77f3b0c3052dad3e79b201647929d"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2126354436132009088-1.json",
+        "sha256": "29b9108403ceb76694a4597712663e1e9de23f10d1c44bfaa9d9f545b2b8e1f8"
+      },
+      "psf_local_event_depth_snr": 24.999347967996492,
+      "clock": {
+        "period_days": 18.670730620555183,
+        "epoch_bkjd": 140.2592970414537,
+        "duration_days": 0.1666099776513569
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2086643310248820352-1",
+      "source_id": "2086643310248820352",
+      "signal_id": "rust-v6-2086643310248820352-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2086643310248820352-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2086643310248820352",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2086643310248820352/native-v3/native-hold.json",
+        "sha256": "e137ed49bdc3fc95c965cd64da3bcc21c7fe7617458906ba60a825f7c5ad44e4"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2086643310248820352-1.json",
+        "sha256": "fe4330120c6a24ef94239666e5140fbf955942b2c93d7196ab87a283a877fe30"
+      },
+      "psf_local_event_depth_snr": 20.174753233919827,
+      "clock": {
+        "period_days": 18.59386574836072,
+        "epoch_bkjd": 140.0175107940814,
+        "duration_days": 0.062465394451379795
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    },
+    {
+      "boi_id": "BOI-2106383701495087232-1",
+      "source_id": "2106383701495087232",
+      "signal_id": "rust-v6-2106383701495087232-1",
+      "lineage": "main_rust",
+      "selection_reason": "SAP_native_significance_failed_but_PSF_FLAT_event_train_is_detected",
+      "likelihood_view": "psf_flat",
+      "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/cases/BOI-2106383701495087232-1",
+      "wave": 2,
+      "previous_case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232",
+      "previous_hold": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2106383701495087232/native-v3/native-hold.json",
+        "sha256": "09d8156b4a8efdbe332170b90416c076328f3fda0ab9300e4e385bdf5a0922bd"
+      },
+      "psf_measurement": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/measurements/rust-v6-2106383701495087232-1.json",
+        "sha256": "8b907db53ab2fc40ac2183507481d07ca100a7cb8db6d4da9cd6d30464529359"
+      },
+      "psf_local_event_depth_snr": 16.425950060708484,
+      "clock": {
+        "period_days": 1.6903662883094943,
+        "epoch_bkjd": 260.8946267148284,
+        "duration_days": 0.0858389130782165
+      },
+      "qualification": "Evidence for a new conditional native fit, not proof SAP caused the failure. PSF event-depth S/N and native radius-ratio significance are different statistics; no numerical speed/yield ratio or physical admission is inferred."
+    }
+  ],
+  "initial_manifest": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/manifest.json",
+    "sha256": "337d4d4a77a0af73f1b77fa9682a904ea5b996cdcaa7a31731b3186d31fbb89e"
+  },
+  "cheap_scan": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/scan-complete.json",
+    "sha256": "f7e2f186c0a70e6a16b808d384e0b34cfac673329ebd1a362a5acf151929639c"
+  },
+  "frozen_catalogue": {
+    "path": "/Users/adam/Other/spacelab/results/kbonus-20261010/boi-catalogue.json.gz",
+    "sha256": "b0fcd5f0bca7d70dbb2e02d36a30a6e6fbb062533dc8db348fb6e4cc5a4ff329"
+  },
+  "execution": "Initial 48 first. Historical 17 only after their evidence and first-wave work; full standard readiness/native review still applies. Other previously calculated FPP cases remain in the historical evidence-review pool until PSF response supports revisiting their probability result.",
+  "preparation_version": "Separate PSF_FLAT branch authorized by the PI; preparation/response qualification in progress",
+  "probability_ready": 0,
+  "native_queue": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/native-queue.json",
+  "preservation": "Original supplied clocks/events/views, all SAP studies and failed attempts remain unchanged; no 60-70 target quota is used as a scientific gate.",
+  "readiness_queue": {
+    "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-priority-20261026-v1/readiness-queue.json",
+    "sha256": "8fa6e79a9a149b5a72ab6fc741d88f31d49a745be2980c8ea3f4ca71159760d3"
+  }
+}

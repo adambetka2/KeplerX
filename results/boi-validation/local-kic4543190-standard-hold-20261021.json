@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-21T06:09:35.554404+00:00",
+  "source_id": "2100325529865507712",
+  "kic": 4543190,
+  "signal_id": "rust-v6-2100325529865507712-1",
+  "status": "HELD_NATIVE_ORBIT_SOLVER_FAILURE_NO_PRODUCTION",
+  "disposition": "REMAINS_PC",
+  "reason": "Seeded dynamic nested production aborted in batman eccentric-anomaly solver during a sampled likelihood. Exact failed geometry and RNG were not exported; no supported physical-orbit failure, out-of-prior cause, all-infinite likelihood or astrophysical false-positive mechanism is established. No posterior or checkpoint was saved. Successful short same-photon reference controls do not establish full prior-domain solver support.",
+  "failure": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native/failure.json",
+    "sha256": "57db3c5a27f345e356f3f45d403cda915ee672caa2e30b14ea0553f064ac0764"
+  },
+  "log": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-launcher.log",
+    "sha256": "b887be09fa76e25b0893a4305077eaeb3c2148bb61e39ef32ec958673929c8ca"
+  },
+  "freeze": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-freeze.json",
+    "sha256": "a21debe56701a1c3de3da19fe3eeabd69cd17ec5c20a795b979f06fea91d0fa5"
+  },
+  "controls": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-seed-revalidation.json",
+    "sha256": "cb0d1a78694d125178caea4c68d2523cad0e4c8f6cdfcc2499cb05632749a552"
+  },
+  "terminal_process_check": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/native-terminal-process-check-v1.json",
+    "sha256": "56790754c63e0963c80f8ceb4d4353a779b763e50681e24d71829b2c7faedeed"
+  },
+  "clock_adopted": false,
+  "probability_runs": 0,
+  "physical_false_positive_denied": false,
+  "next": "Preserve failed generation unchanged; no clipping, exception suppression, seed/prior changes or rescue tonight. Advance next eligible host.",
+  "case": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712",
+  "hold": {
+    "path": "/Users/adam/Other/spacelab/other/boi-validation-20261017/local-loop-standard-v2-20261020/2100325529865507712/readiness-hold-v1.json",
+    "sha256": "02169a088755da8ed88cb9e42279a158638eac26fcde02e18cb4d635032766b7"
+  }
+}

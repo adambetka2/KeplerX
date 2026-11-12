@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "status": "QUEUED_WAITING_FOR_VETTING",
+  "recorded_utc": "2026-10-19T15:04:48.485182+00:00",
+  "server": "kbonus",
+  "run_directory": "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1",
+  "predecessor_run": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1",
+  "expected_sources": 9182,
+  "expected_proposals": 17940,
+  "scope": [
+    "Final BOIs: period-ratio alias/harmonic flags and catalogue checks",
+    "All other final proposals, including HELD and DISMISSED: catalogue checks only"
+  ],
+  "start_condition": "Only after progress.state COMPLETE and final catalogue.status COMPLETE",
+  "queue": {
+    "status": "WAITING_FOR_VETTING",
+    "utc": "2026-10-19T15:03:32.264691+00:00",
+    "pid": 3637720,
+    "vetting_run": "/srv/kbonus/dump/mk-sap-vetting-20261019-v1",
+    "predecessor_pid": 3387931
+  },
+  "launch": {
+    "pid": 3637715,
+    "started_utc": "2026-10-19T15:03:32.153448+00:00",
+    "command": [
+      "nice",
+      "-n",
+      "10",
+      "/home/adam/.local/bin/uv",
+      "run",
+      "--no-project",
+      "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/runtime/bin/python",
+      "-B",
+      "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/wait_and_run.py"
+    ],
+    "scope": "Wait for full vetting, then BOI-only period flags and catalogue checks; all other proposals receive catalogue checks only."
+  },
+  "output_directory": "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/final",
+  "checks": {
+    "ruff": "PASS",
+    "complexity_maximum": 10,
+    "complexity": "PASS",
+    "tests_passed": 6
+  },
+  "code_and_input_bindings": {
+    "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/wait_and_run.py": "b7990efde70806155262bfff52a864dcb05686dbe8008eb081581726140bc679",
+    "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/source/pipeline/catalogue/annotate.py": "736b857fa376dc56c5df7cbb27b0d2873fa2a6594a41f037271a8a17c8b939e9",
+    "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/source/pipeline/catalogue/test_annotate.py": "3b4deae4ba8949babbc9662739702c4db77689389a5d61748cbc27058e2476c8",
+    "/srv/kbonus/dump/mk-sap-vetting-20261019-v1/source/pipeline/vetting/catalogue_search.py": "21cb20dad2eaa6dff62a7577facb02f6d170a84b0cebc1d58092d86b6b87f5b7",
+    "/srv/kbonus/survey/boi/catalogue-search-20261012-v3/manifest.json": "97a088b7ffacd744ef5878995f2f244376af8c09d70109998b169e257db6e60a",
+    "/srv/kbonus/dump/mk-catalogue-flags-20261019-v1/setup/checks.json": "4222a90f7896f52ad14ba83a3c32aa91cc5168e1d4fecd77550a808813e7306f"
+  },
+  "readiness_sha256": "3b267363ab2c8a227b4bc2b5c96134ee8181402eff0bb1580bace9da60e50d34",
+  "catalogue_rule": "complete-catalogue-common-recurrence-v1; reuse complete saved comparisons and compute missing/incomplete ones with the frozen matcher",
+  "catalogue_snapshot_date": "2026-10-12",
+  "automation_id": "finish-m-k-catalogue-checks",
+  "notification_policy": "Notify only completion, meaningful failure or required user action; pause monitor on completion or failure.",
+  "scientific_limit": "BOI-only period flags are possible aliases/harmonics, without timing or residual tests. Retain all original labels. Known-planet matches are host-compatible catalogue associations, not physical confirmation or overall survey recall."
+}

@@ -1,0 +1,2719 @@
+{
+  "reviewed_utc": "2026-10-26T14:33:21.361414+00:00",
+  "scope": "READ_ONLY_MEASURED_ADOPTED_ENGINE_CAMPAIGNS; NOT_A_PAIRED_STOCK_SPEEDUP_STUDY",
+  "timing_definition": "Launch wall time includes Python/process startup and all repeat phases through workflow completion; excludes earlier acquisition/native fitting/preparation/freeze and later scientific closeout.",
+  "summary": {
+    "all_campaigns": 32,
+    "all_repeats": 262,
+    "full_twenty_repeat": {
+      "campaigns": 11,
+      "repeats": 220,
+      "minimum_launch_wall_s": 143.70947695802897,
+      "median_launch_wall_s": 301.2976389164105,
+      "maximum_launch_wall_s": 977.2505016652867,
+      "sum_campaign_wall_s": 4438.157670081593,
+      "recorded_cpu_s": 15389.15486,
+      "failed_attempts": 0
+    },
+    "first_two_futility": {
+      "campaigns": 21,
+      "repeats": 42,
+      "minimum_launch_wall_s": 33.67343991715461,
+      "median_launch_wall_s": 50.7781044151634,
+      "maximum_launch_wall_s": 121.97333199996501,
+      "sum_campaign_wall_s": 1237.2379047898576,
+      "recorded_cpu_s": 1774.479269,
+      "failed_attempts": 0
+    },
+    "same_plan_stock_baselines": 0
+  },
+  "verification": {
+    "all_result_receipts": true,
+    "all_experiment_freeze_receipts": true,
+    "source_plan_and_freeze_receipts": true,
+    "seed_and_draw_identity": true,
+    "first_two_allocation_gate": true,
+    "scenario_normalization_and_FPP_NFPP": true,
+    "original_audit_statistics": true,
+    "manifest_files_checked": 544,
+    "result_files_checked": 1310,
+    "attempt_directories_checked": 262,
+    "extra_interrupted_attempt_directories": 0,
+    "recovery_diagnostic_repeats": 0
+  },
+  "queue_snapshot": {
+    "utc": "2026-10-26T14:32:42.902615+00:00",
+    "busy": 3,
+    "active": [
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052149122233322368-1-g2",
+        "state": "native-running"
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2079536067092694016-boi1",
+        "state": "native-running"
+      },
+      {
+        "case": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102612750272489216-boi1-g2",
+        "state": "native-running"
+      }
+    ]
+  },
+  "limits": [
+    "All full campaigns are new inputs without saved stock repeats for the identical frozen plans; no measured twenty-repeat stock/engine speedup ratio is available.",
+    "Results were measured on the active production machine and are not controlled idle-machine benchmarks.",
+    "Worker CPU seconds per elapsed second is observed CPU use, not a counterfactual speedup.",
+    "The 21 first-two futility exits retain the scientific allocation rule; they are not twenty-repeat timings.",
+    "Hash and normalization checks establish record integrity and arithmetic consistency, not physical validation."
+  ],
+  "campaigns": [
+    {
+      "case": "2103418559153168128-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T071255004875Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 33.67343991715461,
+      "coordinator_wall_s": 33.06659320741892,
+      "calculation_cpu_s": 31.026984999999996,
+      "repeat_phases_cpu_s": 31.211337999999998,
+      "worker_initialization_cpu_s": 10.461089,
+      "recorded_cpu_s": 41.68608,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.2602576485154888,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "0082ef14a6b185497e17f4bf9057b1878c1b809687e37c6fa71c9f9988371460"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "68614c69ba3ab020311d329908c6f95e32efc54744398e1533a6ca1367f0cf6a"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign/plan.json",
+        "sha256": "77f358af653425a5b48466ef9c584c1eeacdadf499ddbeb31c2c621d19430dbd"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "ac3c034d0b6dad873c89efe317f9b90c84d563d4ce19003f7b032f3dd393b4c0"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "5bafbb6183a7bc7bce8e5a0034c3f30e76273a1bf418c3bde0fbf85fe365f993"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/launch-20261026T071328646634Z.json",
+        "sha256": "24bf4a1d9b435541289c404c8b1a1f6a42a07db608039f122823fd52ae3df4c9"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/audit-20261026T071328794547Z.json",
+        "sha256": "c5bc4ace1be7cba8dcc53275b30f4f7d01631d408fd024e0a4ff9224a19b40b5"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "a03bfe063f932ab08d606f21950b5d3fd10d5ef963ebb0c55c3334a2f28b775a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2103418559153168128-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "12968555d32a16a3348338b0deb0467b1959ad536da1d52cf6b63bd0023450b9"
+        }
+      ]
+    },
+    {
+      "case": "2073175632853699968-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T124451685017Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 34.361930541694164,
+      "coordinator_wall_s": 33.732834874652326,
+      "calculation_cpu_s": 32.149037,
+      "repeat_phases_cpu_s": 32.336992,
+      "worker_initialization_cpu_s": 10.341828,
+      "recorded_cpu_s": 42.694824000000004,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.2652011062393664,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "b866322ca6083ddb66134707e27ac8c28ea111f9d78e3ced617bc9e7952a7df4"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "8529afeb671d5f395492e8a441d56319b059d6f3299286c0a69003223053f737"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign/plan.json",
+        "sha256": "df4b6f9aa150201420b501a9f64e4f85229222032df00ae9ea0eeab6f355daa6"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "fb0f552a4cccf30dfca864f90aec99b6a94bb69c62173a2e4068dc82911a8881"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "7e98e9e4f17ed3c5d1601497b77fc9439fdcbfaf133ce270098ae2aaa44ec750"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/launch-20261026T124526051713Z.json",
+        "sha256": "8663599b07639a35165ad0fd6f4b269f951814e1ed3aeadf2b335889acec8e51"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/audit-20261026T124526183245Z.json",
+        "sha256": "e3a608cb8aa655f3dc59ed308b76544ac83b2fa7265f51a10d7be8ad598c6342"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "2f3daf0e5a9c1fdb7dafda911ebf420038931dd838e091a8f73a5fb5ecd4a1fa"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073175632853699968-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "56c12da10af25135e0896e84a0df4ffaddb4059d4b8d34c8db89b59b9b211fa3"
+        }
+      ]
+    },
+    {
+      "case": "2077526743952548224-1-g2",
+      "cohort": "mk",
+      "created_utc": "20261026T075146021399Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 35.91999254189432,
+      "coordinator_wall_s": 35.276216957718134,
+      "calculation_cpu_s": 31.889843,
+      "repeat_phases_cpu_s": 32.103536,
+      "worker_initialization_cpu_s": 10.87286,
+      "recorded_cpu_s": 42.993326999999994,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.218282449376906,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "6b80d54fd8516315ac6a40282ac88c32b35b8ca1e57393e0f76ebe51b9944c63"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "91d9299c24a5b7847bb2db7de64f54dd0622460f4f9ee64939734af021c08cb8"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign/plan.json",
+        "sha256": "9c962127d668be4d4283f21f8553d9d2c86f907ffcfc0297e6162b5614caf67d"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign/freeze.json",
+        "sha256": "83aaaac8239ef321ef3a1291bf90900104c78a9af23692486e8f9f2291b798eb"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "44ff7c2a2016238de45f0779300352331ff442fe8413cfbc7cecbfb9bf326a7a"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/launch-20261026T075221946629Z.json",
+        "sha256": "3f518a27e07c09809efef301fbbf14c052233c608768cc5440c7d20d88c36c44"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/audit-20261026T075222078039Z.json",
+        "sha256": "e63077a9134e8fe4aa4aab3886fd97351181339b09d9858d09d04a15026e1688"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "a98a22862d6b82ffbe0bda574642854face64ff4aaa10fb45e77745f7a492124"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2077526743952548224-1-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "460fa80793ceabfc7ca424d3c660548060c756de5d0fc5cd40305d5d4d18bb52"
+        }
+      ]
+    },
+    {
+      "case": "2128554563197278080-8",
+      "cohort": "mk",
+      "created_utc": "20261026T051431427706Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 38.735579792410135,
+      "coordinator_wall_s": 38.11149099934846,
+      "calculation_cpu_s": 40.929665,
+      "repeat_phases_cpu_s": 41.12418399999999,
+      "worker_initialization_cpu_s": 10.257974,
+      "recorded_cpu_s": 51.39648899999999,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3482064504083138,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/experiment.json",
+        "sha256": "d4e7a7c5fed6eb16b6f5f9db29bd80e29408c77c7d24598ab5dd5d218a5bb2b7"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/freeze.json",
+        "sha256": "6c46400ff503c072c50ddf27e02068f53e167818f127dc8b74a6a3c5603bd1c0"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign/plan.json",
+        "sha256": "57c3f138465891ce62a70c9b3ec0edee93a928e1c336de88439d254f99e7769a"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign/freeze.json",
+        "sha256": "99d6f092b5397094b71888d5d27253a382c9d9c73fa8b387238ea69a330759b7"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/summary.json",
+        "sha256": "fcadfc740f2a089fb2e823d0a49c7d8942853846ca9a94cce8f60b507e34a585"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/launch-20261026T051510167943Z.json",
+        "sha256": "a92e9567f138bf6158f81a6a8df861229257ae0790c0fed63010503922184803"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/audit-20261026T051510297603Z.json",
+        "sha256": "e6965a387e075431eca715f61b42c212ce1467de4feb4deeb7f32bb9738d6c36"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "3ea0a262a92eea635c14df0ff817f2cffb67d3332f088903391ea9b85d14bb39"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128554563197278080-8/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "21e2e38634b7ffbce10bf34598cd836cf75aef8bed2e457e04aefa6c56bb9bca"
+        }
+      ]
+    },
+    {
+      "case": "2102918384442366592-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T071253840543Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 40.098823457956314,
+      "coordinator_wall_s": 39.46352279279381,
+      "calculation_cpu_s": 42.720891,
+      "repeat_phases_cpu_s": 42.923403,
+      "worker_initialization_cpu_s": 10.5028,
+      "recorded_cpu_s": 53.439395,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3538123111947784,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "fc6969c41daf5443bcb7e519a63de4bb463e64d00cbae2412e7465117b207385"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "ceb6f8f57e93b67de24dd2a0def6759ebe074c861d399c5a92e1cb8629dde3b8"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign/plan.json",
+        "sha256": "40c3213844b90ab03654f959b17bd21b75dac0a1e15c28224fc07237a259c795"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "dcd8e7bb28adaedadad0dd4048aff3da3a43d9af161311aee21ad43674b08e3c"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "8c5fecf214b2f605df8625e016747ecdd644329b2ef05a92d1ee279210bc8cd2"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/launch-20261026T071333904172Z.json",
+        "sha256": "8f2f21b02d71d688436ec75c9ef28f5210b3915c6b1cdcc0ec6da6687683bd6c"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/audit-20261026T071333995551Z.json",
+        "sha256": "2021b6f5921f37cce52271f657dd3c46adeb4e261c27a1ff4626aeb619d67b75"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "0655af9f45f72cc0720f31674e0a8c470e468ad54ce94b19ff022fac401cedcf"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2102918384442366592-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "b779acd6f83790528ebb1236e53ea0949cd8bb67d6ea55a2d8e58d16a0150de7"
+        }
+      ]
+    },
+    {
+      "case": "2101482490978833920-11-g2",
+      "cohort": "mk",
+      "created_utc": "20261026T062953914038Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 44.311650292016566,
+      "coordinator_wall_s": 43.718350207433105,
+      "calculation_cpu_s": 50.760714,
+      "repeat_phases_cpu_s": 50.967575999999994,
+      "worker_initialization_cpu_s": 10.784455000000001,
+      "recorded_cpu_s": 61.769211999999996,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.41249682815114,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "6e154b1a5858092c0b9a56bfde757ab0702e5aa8fcd4299b5dbca1a3fe29f1c4"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "650349609f5426e43a6f71d204384becd8ef107448309143ff8147e7259dce14"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign/plan.json",
+        "sha256": "fc6350acfb89b75ced17fe9d9299b7591d63099d99fc17995dbb7900d271c1ed"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign/freeze.json",
+        "sha256": "ba9356abfe7bd8b3747d85d5d2425e3c92ea9cb8c726493521134fec3a17766f"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "fb3adad5c4debde787b6cf3d9fe6cb65cdf7a41d8e11a2d28d992d65958d0b75"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/launch-20261026T063038231476Z.json",
+        "sha256": "48eb9f55374a4a235f2e25fd09682f6ee43eddd760f3839475f41d3b76513a46"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/audit-20261026T063038327632Z.json",
+        "sha256": "22caabae23689e2514e0e32431e5565bde22e5c38230a591a133a71c01e3b326"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "578556a091cc4c57fa03fbbeb572b6fa6706ada086ab74199b9b25c8c977616e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-11-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "9e757aab4cb35166f3b58a5cfd6704e3bd4011f3dca5aff15be228671c9510d8"
+        }
+      ]
+    },
+    {
+      "case": "2101482490978833920-6-g2",
+      "cohort": "mk",
+      "created_utc": "20261026T062952378065Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 45.38577120937407,
+      "coordinator_wall_s": 44.730926665477455,
+      "calculation_cpu_s": 52.753637999999995,
+      "repeat_phases_cpu_s": 52.968770000000006,
+      "worker_initialization_cpu_s": 10.70907,
+      "recorded_cpu_s": 63.693488,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.4235752475288075,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "0cd42c3dd7bb34f3400fe7991fe80e25ce3219c59d995655d4a94d19927c60c9"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "85caffac62900789381b520a2ab4312104c13c2fce09db353c844540804a7be2"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign/plan.json",
+        "sha256": "2bc375a7095d2decd67a0f5b18a53cf2733fe686d3d129440454b45cbfadd273"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign/freeze.json",
+        "sha256": "57f7a8dbe63b0373fb1d68a180e7e433c78d925b6dac591bd29b827b06102ee4"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "28a7b19390b23efd3f502249c5da611ffcb908425372a969f9a72b1f45b59d1d"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/launch-20261026T063037769759Z.json",
+        "sha256": "fed24a2f908a50ca864a2b71eda32d8adc7022794f5a6abdcfc5189c000f0580"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/audit-20261026T063037927285Z.json",
+        "sha256": "7596ea0e3372b2858375d2be36359a83bc59a577cf5e2445e55eb2718aa20ec5"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "4f7c1557c3a0c50402905bb61991376778d46923c5a5b0be9742fde6164d40c7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101482490978833920-6-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "b38da118f43dd5fc30e1a2be4546d594a51b668d9873091ce1d57de7fd30e85f"
+        }
+      ]
+    },
+    {
+      "case": "2079968312597885824-1-g2",
+      "cohort": "mk",
+      "created_utc": "20261026T112939971966Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 46.261802583001554,
+      "coordinator_wall_s": 45.63540237490088,
+      "calculation_cpu_s": 55.064079,
+      "repeat_phases_cpu_s": 55.25853199999999,
+      "worker_initialization_cpu_s": 10.558279,
+      "recorded_cpu_s": 65.82976199999999,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.4422314162874288,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "c2797de59d5260a6d1950471066b722bacdb09ff2c49c3f57f8e835b3e11c798"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "0d106f3f2df58279843e7565658e03c18e9960eaf4836c8dc12c41330ba50aeb"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign/plan.json",
+        "sha256": "0efdfda143cf7d0dfc04e6441869fd318417f3a8f025262fd18a00c9d81eb57a"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign/freeze.json",
+        "sha256": "284405f9eac8eb87372f4773deca007b92c26b070e089dfdef59683083c4181c"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "b2f11053e98174425e5e13953ed62d2e8db6dc5949c8235f7d57096aa3962e5d"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/launch-20261026T113026238535Z.json",
+        "sha256": "1b56f585d9501e0bca3281f51411b67c46c13110906bf2faea5b71b9f0ca9e7a"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/audit-20261026T113026334683Z.json",
+        "sha256": "54225f581e7749fb465a07b329b5554e2a4acf2acf8f731231b9fad8d69af6bc"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "0e83a59d49b584ddfb0526467c2f79cac6ae58b4bf6b7abeb6eb9774815aa64d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079968312597885824-1-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "d3cbefb2f6b8dd84e4c259e30c271ce233797f479a272f92818531a6be8ba546"
+        }
+      ]
+    },
+    {
+      "case": "2099197705814100480-boi1-g2",
+      "cohort": "survey",
+      "created_utc": "20261026T065223884389Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 47.23441991582513,
+      "coordinator_wall_s": 46.593755583278835,
+      "calculation_cpu_s": 49.541123999999996,
+      "repeat_phases_cpu_s": 49.757977000000004,
+      "worker_initialization_cpu_s": 10.983042999999999,
+      "recorded_cpu_s": 60.758968,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.303630051701568,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "673bdd1c33559987a75f1b59f981586cad3c4a3f37325523b09b4658cd7deef6"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "154eac36cd4af877c6402b685078649f7bf745368a9daf5a058c4b34524c546a"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign/plan.json",
+        "sha256": "1f09c02b3cab0004deb99271c959d88e3030d10e4b21c6d93e8ee20255acdb1c"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign/freeze.json",
+        "sha256": "47cb1a6860222c45cca5f6817afbd7ddd230c7803033036a9239e3b26a461af6"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "f4d83c8f443efcb6aa2087c55585fff6d61e450a05eb1ff9d8c4d9d0f4707c23"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/launch-20261026T065311125900Z.json",
+        "sha256": "c697d2e37808cb1c79ea9ca20a58d77661b3c5c9ac5e23f3d786db1ff0fe1461"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/audit-20261026T065311276095Z.json",
+        "sha256": "9a9ada4dda486c183278171d3c2dd3d3128fdeb6963e7c7086359543d879aa72"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "bbab2bb7fa7b85650ce2ab5ffa65c8afdbcbe7647b4ecb01e7192d55d4ce76b5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2099197705814100480-boi1-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "300c82a5fe6f44e3e3fedc174d1a7fc47ea2c88834fd01bbc3580ecb7984ebe9"
+        }
+      ]
+    },
+    {
+      "case": "2079529504382583936-10-g2",
+      "cohort": "mk",
+      "created_utc": "20261026T103151988384Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 50.758429707959294,
+      "coordinator_wall_s": 50.10107612516731,
+      "calculation_cpu_s": 60.851528,
+      "repeat_phases_cpu_s": 61.06313700000001,
+      "worker_initialization_cpu_s": 10.852007,
+      "recorded_cpu_s": 71.92862200000002,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.4354011842048005,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "0d7509ba3a0b027571a4bfdd44ff7b349697ed8a0d0a1b682efb3ac6162943ba"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "2d074029b47f2e7968ebac9235b8a0d6d53f101fe74a05eb87df56d5524c804f"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign/plan.json",
+        "sha256": "dd328a5381af1d736ca9773ac332df8145799ed550141a1e841ba7935b38a627"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign/freeze.json",
+        "sha256": "cbd4705eb1b3ed5f3d038189beed55cedeacec0839116dcb666006a85838ffa5"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/summary.json",
+        "sha256": "31a0f7dbb0d1674ca908d757c186777b159548cf82c4a1137e1bd319ee7f3b2e"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/launch-20261026T103242752069Z.json",
+        "sha256": "10733785af60d7bd9b2c885b54f3e665b03f266366da73fb94bfaac33e1c3df5"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/audit-20261026T103242884155Z.json",
+        "sha256": "9127b1b0f94d19c2fd5889bca9229ef42d17b8130407e77cb5765a1d21a96693"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "a68e5e1f0f785b2b38aafa30c087958dd9ceafd04e57b428d0b5deff8082959c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079529504382583936-10-g2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "305a88620826499d3cb27c5031a19161de90e933b7e4fbf9075308357f66b3a5"
+        }
+      ]
+    },
+    {
+      "case": "2131579354042736768-1",
+      "cohort": "mk",
+      "created_utc": "20261026T080058517270Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 50.7781044151634,
+      "coordinator_wall_s": 50.14198512490839,
+      "calculation_cpu_s": 57.091942,
+      "repeat_phases_cpu_s": 57.277972000000005,
+      "worker_initialization_cpu_s": 10.847884,
+      "recorded_cpu_s": 68.142524,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3586589328342726,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "f230882f2e608468a8ba3e32eebbdc8f1c5a2f4d99dee84782aacc4c75c9456d"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "f1fc693c66d1bfc9f118c8aa188fe0f5b5530a19b6aefd276568ae09fb466b83"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign/plan.json",
+        "sha256": "ff7c23e0b97032c312db6d60bf6725ad26c1f175427892d683e1d541724a2bba"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign/freeze.json",
+        "sha256": "b0f3ea9e8152e7028995a3876d76caddcf58419d67253a32b20f3c564be2c1ac"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "97e6c6ef9269b2dc3effd72cb048723d31bd43c737b1c6dd4fe8bd2171f2af76"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/launch-20261026T080149300599Z.json",
+        "sha256": "e36154aef091ef5ffb9682880ab2fcc24de09596dd6aee8a921b2590fa0a7b4a"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/audit-20261026T080149437954Z.json",
+        "sha256": "a7ede8823ce4b2209640ca14c84b60a79046765ad2e3706f32abdfd1f339c9b6"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "7e0c7acc329a6b47b9ba1c3c4ab3f039e49adaa0360889e710e26c519513a752"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131579354042736768-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "dc3c8bb5a2312dbc393e2ae95a91eb3577b6a53961d349cb53dc4d316540c8f2"
+        }
+      ]
+    },
+    {
+      "case": "2052956541719360000-7",
+      "cohort": "mk",
+      "created_utc": "20261026T072611557411Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 58.01730987522751,
+      "coordinator_wall_s": 57.10706258285791,
+      "calculation_cpu_s": 65.46264500000001,
+      "repeat_phases_cpu_s": 65.66991700000001,
+      "worker_initialization_cpu_s": 11.914465,
+      "recorded_cpu_s": 77.60300500000001,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3585777045953134,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/experiment.json",
+        "sha256": "e110cee1f47861662d2e3bc16ff2c7feed0be630d8af24c1804e3ac6756b9646"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/freeze.json",
+        "sha256": "3f4bb85ed7cea85937f9f749ef540180c2184174ba8e51f43a93daca8a10409e"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign/plan.json",
+        "sha256": "6dd04e24acc38bc6696e080ccfac3e951361c0209aeb0da7b998c6592dc6bdb2"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign/freeze.json",
+        "sha256": "d20a56827bacfe9110c5927f7571cd5bde006ab8c9c25bc55ffe3b5af83b8a6c"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/summary.json",
+        "sha256": "4fd20bc90bdbdaa5376c4f113d38811b84115483eb6d4352d6dfea9dfbbb1b82"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/launch-20261026T072709580451Z.json",
+        "sha256": "2630a6520c109c2a34cd4d48e44b816126016f4f822ea9f46856828b8f55b5b6"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/audit-20261026T072709739599Z.json",
+        "sha256": "cd30321de45d1cbe9fdd5fac571800703cbf97b8aa14cd69c071f26931f4ca34"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "01540292e71739e018099627b01bab12dcb0b7ddd4aa2d18a919b0a78ed8b0e4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2052956541719360000-7/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "3020e547d09621b5ecaa01d8cd658dcb08da8d7a047a2b96d212e17c4a0c1517"
+        }
+      ]
+    },
+    {
+      "case": "2128318374356038400-1",
+      "cohort": "mk",
+      "created_utc": "20261026T124658414890Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 58.6594977080822,
+      "coordinator_wall_s": 57.99559183418751,
+      "calculation_cpu_s": 73.716486,
+      "repeat_phases_cpu_s": 73.93437399999999,
+      "worker_initialization_cpu_s": 10.86847,
+      "recorded_cpu_s": 84.82298999999999,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.4622291335944264,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "3fdf567cfd6628eedd4ca3111e0532a5871ea2aa160643fb7b47cd2e52035102"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "2e966e6b77fa6ad7018fbb0c973fab3d23d8021870dcfb91ffc6d00bf0b6897b"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign/plan.json",
+        "sha256": "9df67b6d06fc0e7055e2ddefebc6d587210999ce23711b566d47a911fa59f8a6"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign/freeze.json",
+        "sha256": "87f0c1704666940736d4420420ce750ed6521b7ba4f3f4bd54eb9e33ab8d462e"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "627d93b1deb1c12e242ed52c81b4d21b92acba5a1f7829bbe469146b5f9f9a2a"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/launch-20261026T124757079346Z.json",
+        "sha256": "378307ea0eff41bb21eb6e6520ce1fe7498642c144cc20c8c9763395d17f4507"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/audit-20261026T124757211767Z.json",
+        "sha256": "0999261fbb7666f025c11288c883c0f1e14e1fa387fad79873ebec5ccddfc515"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "85b18537bfb7852fe93fe955847f37755d61c2cc043ec6da0cb5255ffd20ce26"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128318374356038400-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "4b209110b6418128ec2f02960abe4c053f523687eaf74b444f395c966e7aab2c"
+        }
+      ]
+    },
+    {
+      "case": "2106616626158535296-2",
+      "cohort": "mk",
+      "created_utc": "20261026T045624589340Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 60.67915937490761,
+      "coordinator_wall_s": 60.04623879119754,
+      "calculation_cpu_s": 84.828496,
+      "repeat_phases_cpu_s": 85.033659,
+      "worker_initialization_cpu_s": 10.306262,
+      "recorded_cpu_s": 95.354043,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.5877750700011595,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "3994ab147fd6acd17fa018af75f033f15ebf68544874b2c941c4491a60b7bfa2"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "68bc37df582d00172cb028ac81456fa72e3bbceb0f6a367968079221c8088ef1"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign/plan.json",
+        "sha256": "03e25c51d57935f266113ed5e31eca8c9fb19619e94720e9a8d162f9d3d02bc7"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign/freeze.json",
+        "sha256": "d7c88386f29121b5d9ad7f34eeed9f4c755a91420a959d2be3c6f5906eb8b1fb"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/summary.json",
+        "sha256": "d5427029c4c8318634eb6658f203e84851a9b4918cc7887a5ccbc9d164d6335c"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/launch-20261026T045725273718Z.json",
+        "sha256": "65191b0794eba0c805d070866a37574d9e37238ab8c8976a9b103d3feb60cd75"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/audit-20261026T045725402928Z.json",
+        "sha256": "66f04eec18672414afd8fec90876cd4ed18e1abd4ef5f58e17885cbf1b0b5f90"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "44776f8625f0114bafebb62ef517751db5640b5d8460d882ad3924d7c0e528c1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2106616626158535296-2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "3ed5dbccc7937702b55c6b8619bf913aad8784b93225d0a2570baaf33b70ec86"
+        }
+      ]
+    },
+    {
+      "case": "2127033079618738944-1",
+      "cohort": "mk",
+      "created_utc": "20261026T110613063362Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 61.47617979161441,
+      "coordinator_wall_s": 60.78363512456417,
+      "calculation_cpu_s": 72.215997,
+      "repeat_phases_cpu_s": 72.43067500000001,
+      "worker_initialization_cpu_s": 11.184629000000001,
+      "recorded_cpu_s": 83.63329100000001,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.375621971746948,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "a570c80fb4da3ddb267a0ccd4bab028ff00bf18357164fe0cf22224e3c4e3007"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "68c5680465b8675d73367720368a9a4f6665d94987fae10aee0b221da01f776b"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign/plan.json",
+        "sha256": "9fc959634a174ae9aaa8e67106e8576c265e7ca5009b17924b3897bac49b2d96"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign/freeze.json",
+        "sha256": "504df99e5764cc8da90f256d624c6dabfbf8549257bf28d331938526c9a6046e"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "495f16e309a01afc605216a2908d4c8cf977c14cbfab99d3cd199d964cd51243"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/launch-20261026T110714544750Z.json",
+        "sha256": "ef83869a0b1622bf80c8bcdf62ae35b3d3314c8e9eeccefe7c715abb1b403ba0"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/audit-20261026T110714736261Z.json",
+        "sha256": "b3950957c93d5d2027dbaa4d0110e25927b0c88c71613959716de4de4be2d041"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "cfb2706394d7db8892b89192760f365dd31bb3efe0fd3cee65ba145b8e2c8bec"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127033079618738944-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "d26c1d27c0c66f195bd44420c8d1e41f558c531a8ffcceb86c8b05310baa1ba6"
+        }
+      ]
+    },
+    {
+      "case": "2080571429081419520-2",
+      "cohort": "mk",
+      "created_utc": "20261026T025416428864Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 63.8068725829944,
+      "coordinator_wall_s": 62.96926504187286,
+      "calculation_cpu_s": 75.51532699999998,
+      "repeat_phases_cpu_s": 75.713962,
+      "worker_initialization_cpu_s": 11.204374000000001,
+      "recorded_cpu_s": 86.932514,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3803295296872475,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 27,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "5d42710564ed41eb5e1e030d46bbda7f245cc923a58b4031a4e43be104f894da"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "3f01889281ff3b5f96fd8e212ae2ee799fc6343a9167fb0bb048ed50b543f7db"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign/plan.json",
+        "sha256": "c154b0852e9d1f6a3231be7af61e06fd168b897bf000c21190c812a1b6683967"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign/freeze.json",
+        "sha256": "84cf8b19cbec163e1cd5aeda8d18adc7898098958c760b17abe1767a2b007bb8"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/summary.json",
+        "sha256": "677a423f5f3f0bc7ca4177079cce2159cd6c11394c45832871de3e6af59e39b0"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/launch-20261026T025520247710Z.json",
+        "sha256": "9cc24fb1f5738f7d095d21b674b0b01054e8273577039c849150e06c6ceb9458"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/audit-20261026T025520392120Z.json",
+        "sha256": "3a111655e9ab94671e572c4c5fc7e2698aa5c17b1e2f3bec70ce7fe7fea21b98"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "7fe67dc2b5b24ff7a0b0251fee42cc7e1ebc0e6b8c07c5e54ae80e768b2d350c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080571429081419520-2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "d397aff18d7465133e4dd4127008500d26683ab309834cb5d5c3e3a21108c3d2"
+        }
+      ]
+    },
+    {
+      "case": "2105418399005125376-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T031604556468Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 65.26983304135501,
+      "coordinator_wall_s": 64.6067014997825,
+      "calculation_cpu_s": 77.812679,
+      "repeat_phases_cpu_s": 78.04102,
+      "worker_initialization_cpu_s": 11.117284999999999,
+      "recorded_cpu_s": 89.176484,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.3800163594530537,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "706cda3ef9a736299d458c238e2334e2b2bf7977e2ff494876760dc9a022f67b"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "ef4096be4bbd73ab5c0c5ce08f7de1066dc84dc361055eccffc4c773e5556b78"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign/plan.json",
+        "sha256": "ef191853e260c94115b9a4fe7a2995dc1accee9c8745fc4c6673d56430fcb363"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "67a64d60b562df3683188cfdc6cf9e1cc30f5428db1ff68dd2582219a197dd18"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "e536fd7d0bb794411de6b5921a12cafcd44e6f396bbc34baf3cfe998f12e0f36"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/launch-20261026T031709830758Z.json",
+        "sha256": "d8eaa1466771852630fc1d333fecadf757b227700115e283e07a5d3aac9b6a44"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/audit-20261026T031709967569Z.json",
+        "sha256": "53adcac19c088ab1b2d8cb9d570706adf055ca8fce869a244423afa45139c82d"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "27db33efbdaa7e488e0e16755f66629b00a4cbf24a648ed9238a59c72da25e3d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2105418399005125376-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "c3cc751b091aaa3b9d1a9fdd533c658f273b654c86546d2cfc9f71d5da9eece4"
+        }
+      ]
+    },
+    {
+      "case": "2085686838216472448-1",
+      "cohort": "mk",
+      "created_utc": "20261026T112837082248Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 66.30501020792872,
+      "coordinator_wall_s": 65.68415783252567,
+      "calculation_cpu_s": 94.604925,
+      "repeat_phases_cpu_s": 94.79776799999999,
+      "worker_initialization_cpu_s": 10.294934,
+      "recorded_cpu_s": 105.10992599999999,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.5999703043761928,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 27,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "ed52daf9477045cfda884d22ab1e282b81e3f5a35d659ac3587af87e467d1d54"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "f33dff6c87e950d0b08ee34d31b1fa2e17d11ca0d16c8449d911838cee156234"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign/plan.json",
+        "sha256": "8e472ecc47f830f8639a31cefa1c37ec757eed10afebe93a504d1833c1df6d01"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign/freeze.json",
+        "sha256": "1e0c2b6857217ce9f419dc341e191cf5af57a8055017b650b2cdaf00c2eb999b"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "cbb7f26a375db9e580aefab1d9313fe886f569f8fea9491ed9631cc8f3f79476"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/launch-20261026T112943392014Z.json",
+        "sha256": "7623230aca57f253c7f66ee47a88a30054de62624f3fea580cb3d50bb89d5758"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/audit-20261026T112943495633Z.json",
+        "sha256": "ee102b55e1845a12751f5b73a3121fd344a95fafbe65fec78bb8a41718f3c03e"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "ebdd1b61826e0650fa5bd7e40e0f9c58a7171803a48dafb1adf31505b3c3cd53"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085686838216472448-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "de9274543626f17cfb82cf95e8584d0166fddbc144d0e14b5c6f6d2ee320e1db"
+        }
+      ]
+    },
+    {
+      "case": "2073296372971801728-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T060418827027Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 106.44113112520427,
+      "coordinator_wall_s": 105.77656491752714,
+      "calculation_cpu_s": 160.437207,
+      "repeat_phases_cpu_s": 160.633929,
+      "worker_initialization_cpu_s": 10.696095,
+      "recorded_cpu_s": 171.34801299999998,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.6197351855166044,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "db0996a3c19a2028f350248bddc1e246a97920588d21486918e8fa6373cedb5d"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "6eef2f37c0030af00623e82801ecc86253ce62a1fb3f0b61e3e6bd16d83415a8"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign/plan.json",
+        "sha256": "2ec8d8b9d7d8cad6e6e699a06a8f2da6c7dd1962272227f4541aa17239963372"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "1739c7a8bee209bfbd9fbe49e929a9461d1c48c0caca9d5d1d8f95e7b9bc8a03"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "d2697c72966f98233da1b2243ceee6c09b12220acb424a81c3bec55b067c2b20"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/launch-20261026T060605274104Z.json",
+        "sha256": "88fa683f9d5f5bc6b97eff5889d4cb61fa04d20e5a40c502e244ef2a2a9a800e"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/audit-20261026T060605454113Z.json",
+        "sha256": "be86edabc6f2407e1c1528877150474dbd2a2e8edfea8f9871d34ccbfa1afe38"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "21a1a7e38fe466aa56bcce8d41b30bdeecd7bde4f05e43d60e3fac3a73e1671f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073296372971801728-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "8acb1cf578dd1c11d54f2da7376e238fffa27c12444849dee0cdf683a811788c"
+        }
+      ]
+    },
+    {
+      "case": "2085171201622187904-1",
+      "cohort": "mk",
+      "created_utc": "20261026T073021344128Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 107.08963470812887,
+      "coordinator_wall_s": 106.288637958467,
+      "calculation_cpu_s": 144.37576900000002,
+      "repeat_phases_cpu_s": 144.60883800000005,
+      "worker_initialization_cpu_s": 12.097196,
+      "recorded_cpu_s": 156.72555700000004,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.4743441727161277,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 27,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "b6a9e501967de818b8e63fcfecbe763f2d0423fadebeeec546246d254102957f"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "c9e3923175f738aa50a32ad32cad8551315ac8413a817645ab9bb482b4f3f5bf"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign/plan.json",
+        "sha256": "c5b8194d199761b8af4e09139702791a0833c79293b75a7c7fb88ba29d47cdfc"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign/freeze.json",
+        "sha256": "0076b92e50e299ef6876bd92d212b63e6da7a13194e4ede0c2994d17b3a3c6a1"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "ccc739d2192041480e4b43989023e0a63d5eacfbac0144a6f3f5daa3dd5b9907"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/launch-20261026T073208440040Z.json",
+        "sha256": "707e27836ca78751b8cb2983472173037232c9fb0bd88f11a54d0a7016e17e88"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/audit-20261026T073208629907Z.json",
+        "sha256": "0383eb9845c615c1e9245cefaefd96df9ecd81675a48b4d1d94d90f0e77cfae9"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "b98a44553bf9ae92f2d0ba02f33ad4aa883c26e8f082e7971c0821dff9900363"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2085171201622187904-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "1d5654ad6f02808e81aadf6e9a8896e05c745424fdb25e88ec0b9bbac0a07daf"
+        }
+      ]
+    },
+    {
+      "case": "2079580081915382400-2",
+      "cohort": "mk",
+      "created_utc": "20261026T033114990481Z",
+      "complete_repeats": 2,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 2,
+      "launch_wall_s": 121.97333199996501,
+      "coordinator_wall_s": 121.24058274924755,
+      "calculation_cpu_s": 188.066153,
+      "repeat_phases_cpu_s": 188.28979700000002,
+      "worker_initialization_cpu_s": 11.134302,
+      "recorded_cpu_s": 199.44075500000002,
+      "worker_cpu_seconds_per_coordinator_wall_second": 1.6448625903791088,
+      "status": "STOPPED_EARLY_FUTILITY_REMAINS_PC",
+      "scenario_count": 30,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/experiment.json",
+        "sha256": "cb14b96e187e93a4272bc3228512399850340cb587b8946239261e57124d3cbf"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/freeze.json",
+        "sha256": "957a08651f5e904752cc114ea41c8e4ebab3b2d919c1246aa24ec173dd6fd515"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign/plan.json",
+        "sha256": "dba02d3645ad46fa3713a11eeb199535c0072b6f5194a79ef4c4b42a168117ac"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign/freeze.json",
+        "sha256": "1768a456618405b2d075df8b3a23638f2847dfed56bdad501ff8745fcd46cf53"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/summary.json",
+        "sha256": "396e6a023ee6791ecfe1525daa209810a7c93766c1da7e075b757b930ed282fc"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/launch-20261026T033316967928Z.json",
+        "sha256": "153f36f7f318525033bb12464c477401f9fae4ba08bed96decfc63492560bd14"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/audit-20261026T033317279723Z.json",
+        "sha256": "2df4af3c567186905d9439bcbafee040f168f8c7f6aeddccb6b5f77bbbbb0d4b"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "d6c1bf928c3d34ab19bb2fbde3b454e9e2fa815ef03df0de01e621cbf17605f4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2079580081915382400-2/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "0023b1094d4c49806474dbc161edcda3044b76c3842bce80066035d580eca0ae"
+        }
+      ]
+    },
+    {
+      "case": "2130921124535127424-3",
+      "cohort": "mk",
+      "created_utc": "20261026T101031735184Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 143.70947695802897,
+      "coordinator_wall_s": 142.98535725008696,
+      "calculation_cpu_s": 451.684097,
+      "repeat_phases_cpu_s": 453.687644,
+      "worker_initialization_cpu_s": 26.710852,
+      "recorded_cpu_s": 480.42849599999994,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.359774072248281,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 24,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/experiment.json",
+        "sha256": "aee67d1ee31e2d4c314a6431776ca67e542bc9b1a94dd4adb1fe6fde310fd1c2"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/freeze.json",
+        "sha256": "9c7be3cda558cd9347b738f41a3275c2a96f44a74781458eaffcf31e885b0c5a"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign/plan.json",
+        "sha256": "c36bf4a68e10e204b884d56728a544768b97e7569f2b06f4756fb371252a4e86"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign/freeze.json",
+        "sha256": "bd6abeebaf26927ee6f32cfc1fdc635dc66dfe3f8ba3e83ee2a4ed7dd199cb14"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/summary.json",
+        "sha256": "d695d186993561644cbfdcc18bb1c170f582bc79bb25ae04961ac3794f4142c4"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/launch-20261026T101255450758Z.json",
+        "sha256": "d384b6bac7e690cf0f9c67bd97e72776885abed96ac5a4205b95fda867de8f56"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/audit-20261026T101255592463Z.json",
+        "sha256": "e60d37f369007b96f7544a46e74bc9173ccb77a594a39acb82f55a393e4033fe"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "ddf8f36bcb35acbbbbe124ed0948242f2f7f13b5a76d5d238c703608f68c2601"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "aa8047ef091a60d9f527a2344612c2a70ce146bad057e5c79a69dfdf80e198e8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "ae80e31cb00818de45952a82e2bb5b206d98ddd53323ca51df276a67579f4593"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "d23810b937c34de0d6376bd22fb28b2037d994d4f0888595ae534d1a0782bf59"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "7e928c693de1be4af551bb7d72aad3d058e217f190d8db6183053f098e6d1bf6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "f2c652d9d4370a63572d850d31ea292409380a706401501bcef46c2958265710"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "c1fa2f908e05977c35f9622c09b46489e70e874934febfa4cf42957de3be61e7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "978b32b373cc601f79f3dc965f8e4b8ed7b5492fc4abff6a385884ebbc6f66f6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "b046c146c13fb89eba42c0974652e3df30805434bfd5693e6ecf881368ea7f93"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "2569daf90207d21281ef8b3c9ad0720682133c77de375be1452528c7555bea8d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "0dae000d93dbdf974eb2b99a16e57c4ea697aa9c7aa7157f9fcb32901091b401"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "f26186304af34ae6c1004410bc22d6e817f1ad242795f707a79dc95a05ccf2ca"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "e27544dca47ecca1cc57a2d9a7785edd25c9cd2f412b4b9021305d9cacfb5adf"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "5fe92f7ee075a73ee38555e2f64d0d933999e36f78cf9552d6a5a9a3d8dd8ae9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "b37d8085e737bf9fb47a174710cb7443cc3b5a1f0c0d8db5c4a5527a1d126f36"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "e21042cac422882ef4d60d647d16a95d0014923bddbc1249500db7e94dc7e0de"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "e02564b501894a147c22c67cb5109b36ead0d71c9d5cace6bcff2f78bca8747d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "2650f150235b1981a83fb24e6696d0b58e9a07817a470ad14dfbdafbc1b4d383"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "00baf74d85029fea50bc9392059c239d381ff3ee7d34f7f43c1ac4be67589637"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2130921124535127424-3/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "251ad17c0255b6d2a4410801a6deffb7c7c9fdb3e36baee41b21722d078fc59c"
+        }
+      ]
+    },
+    {
+      "case": "2131705076324568448-1",
+      "cohort": "mk",
+      "created_utc": "20261026T083821796517Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 144.90887591708452,
+      "coordinator_wall_s": 144.27225904166698,
+      "calculation_cpu_s": 434.084571,
+      "repeat_phases_cpu_s": 436.36184799999995,
+      "worker_initialization_cpu_s": 29.028164,
+      "recorded_cpu_s": 465.437552,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.2257761477595746,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "b79f318886bfb72d229bff823f6c2f530e95bec904daa3a7af9c9b99d18dc9ad"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "5a97a2a9b5daa769a122347a94c8e2ad7dbf589d59e35c63bdf9260da6b9375d"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign/plan.json",
+        "sha256": "d6cae2d854a813b5daa82a9a1a742391758c91663bee195080e643f93c882020"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign/freeze.json",
+        "sha256": "505ee00c85d0f1c43c234a5672df98f7d98379bda39344ba8e60380c4fde38a5"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "5de318ac6e874b5472a927afac3e7b44c1eedfdb31f04dfae052da4b633e93f1"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/launch-20261026T084046711544Z.json",
+        "sha256": "ab36405a18590b1e09c3138d85fc0016d93ece08ea590a154707e3c9c49bcb54"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/audit-20261026T084046834511Z.json",
+        "sha256": "0e203ea0f4ca7730f57c5dde1ec7cb2a7f439653d55b051e2f00779912bc9a88"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "bd8657b6142c5be3ce098d99b58b5c97756746b3a097513a3a7ecb9ab05daea3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "91ad7b38c58e36320062564ea5feba5b270d7fb086e78ad6b8343e4e432579c5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "c186aa8c6474a763e8ccdda675fbdc139b17249a47a2fb2d86ce39948b74cd11"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "f081abcc5e4fed46ee0694bd562c4081be3d9c42c1b18820c04b88cd8f6a6bf1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "014e110c67e1cb1089c5451296b686b8b5c09ecfb8b93334585eea5d38143e13"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "c7be2e6752d9f50bc221b249c418b27b160cf44690cf83bb88302e23725baedd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "4e94429d6d82147b8f180e67595ad3c5fe31c5db20792f2e9f3c69dd18379869"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "e18ea73786d1330c6743a3411c465eb31bc5abbab1e3d14ca545ccc63b460cd0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "5f01b53ec8e5183bc828a680848af4834c9fafbcbe2e289d9ec7b806d9be5a0c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "d025088ae3e9c014a1505757c071dea50b878cfcc9f1c591aea2ec45b59ee3cc"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "0124ff4a761b5462bc8e9e85babf784b939dc4d3bd599952d730ca9b077806de"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "4363790dec813a2863877169ba03dc331ea8b0d3ff927ae95180a6ea57c4b20c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "33dd2c4ee0d96d21d84f061069537f432beb3133fc0253d66fd9343ef5622ba0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "4815389c87b2a502a38a789ec77a1f7a9c0dd9641c34bbd561b9b9db091dfc30"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "b62beb7fefc3e80de45ded8ca9791ac538900f221e719fecce67629fc9d47b82"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "6b266ea677b449d4cd42437da4e175d5f10553faedcec1d37951aaf5aa745c70"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "3062fd9935c8043cd3274a38098f9aec7f0d48382c3ab342aa266b0667e3ea07"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "c947fe2970c105fb0f0885e00c91a765793fe3679821b8abe23b6dbf1f226e0d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "ee94a8c6816832f93b25157e4ec25081fd38d210c5c97d5505fca6442b033370"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2131705076324568448-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "aca4e998a97870169a5797656b6cc11f4c0d6e366c76c238e205fbc2e5e07062"
+        }
+      ]
+    },
+    {
+      "case": "2073666564790289664-boi1",
+      "cohort": "survey",
+      "created_utc": "20261026T022940782759Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 208.82424524985254,
+      "coordinator_wall_s": 208.11475233454257,
+      "calculation_cpu_s": 651.981824,
+      "repeat_phases_cpu_s": 654.252268,
+      "worker_initialization_cpu_s": 27.240848,
+      "recorded_cpu_s": 681.532215,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.2746026331881843,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "239e3f55178b6509eb2e4e4fb32653feb28806b7e9d00dc83fed9515b2e60784"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "80135748efce37d2a005c1b898a7ced642d070af04ceb5ea0ad9629b19309a1d"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign/plan.json",
+        "sha256": "c4c93b338e76d95c9a35310fcd9981f7416f65a4ffa7e2ad07c31cf8d6002dcd"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign/freeze.json",
+        "sha256": "4a93ee6f4621bd15bc60af8538e8bd9e36979c559956604871e14b57ae76c32d"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/summary.json",
+        "sha256": "b6c6b7b084359a6148e6d7246d35e680bad424afb805cf1556e31c548e7e361e"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/launch-20261026T023309614970Z.json",
+        "sha256": "baffc83b807c752f8997ea7f2775fa699695d1aad922d7322222867d20adf147"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/audit-20261026T023309783143Z.json",
+        "sha256": "68e052a0b3c1f3e0d3d8d15d76cd6c7defd152c38f702603cd5858c632d3afe5"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "e0f20e090b28b5d8eaaf8723bdb219ac0fa8187e5852d0bae462ae435be27dbc"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "7bb8c4e15554eafb1263b1308c03d543563e866fc5619be54a13018ebce218d9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "b725d19328b0261fa05872c949afbbc6446ea21b337d0693321c0df2863701d1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "cd9bc3b470f65ccf988d68274a4da6f47bd913815efa4fd854e7deb205d8d2f7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "5232794919b3530f2c888891cc6b3112592727cb2039edf08a36d95671eec978"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "2234acd686095a3f247eae754893d4df4f132f251c0d2cfe34a9a08bc72cefc8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "469914f3d25bbc524ecb95c7d46c8154360038285db44d062887c7897fdc5109"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "f5ab9f8984c13d88d4fb092821ab6d4413339295263926e3539da446e5eb8ae5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "38445888477d23ea084cdcd7b0c55f75f51c3f9c485b3b34f2fa1d10f793fddd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "6b0489e92593f19cf4e973f1766bbaa41791fcace87f210551311d75dfea62d0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "a563780b8611db906fcdc76ad09c63db88f776c1ff42491e5cd5ea8c227165b5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "4d24739f0156d73580c67210f07607b5c143f912b29e604a8a9c96f2ebfdb367"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "ae8a7939f153dfaf9ebabe4b706cc081cd52e02ff1648becc096a5e6886329ef"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "f6f16af51794a5ed30a9e13400c9ae1d28c70f631ff5cc77c148d79913eb1a64"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "d6491daad434495b411e41c00575ce4055c1f659ddca5cdba8d564269ffbca14"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "c0e9bb849cb453c766e4b96984e1bbceec286294ef89a1d51c75ce6507e39f1b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "e11e69bf6894865e347462e8fc041a248b55dc725daa5d9f459d60c4951a8332"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "4cad86aefc465366fe02e8b498436fde0a56272bae28ca41b72e558be015443d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "488cbae43d7a6f5ed576693a4327c65f370184dd5a8b851ec22a3052106b5637"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/cases/2073666564790289664-boi1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "ad43045d1e1df756838ff5bdc22b5dc1ffe83e396db6e5082d6cac8bbfecebe1"
+        }
+      ]
+    },
+    {
+      "case": "2128278272239907200-1",
+      "cohort": "mk",
+      "created_utc": "20261026T122132320227Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 219.60968570783734,
+      "coordinator_wall_s": 218.86783795803785,
+      "calculation_cpu_s": 625.974799,
+      "repeat_phases_cpu_s": 628.194973,
+      "worker_initialization_cpu_s": 27.395877,
+      "recorded_cpu_s": 655.6382120000001,
+      "worker_cpu_seconds_per_coordinator_wall_second": 2.9953731718485397,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "ffa00941b8b9542f8fef6d0aba0f1535fbf39b2252ce74a6847ea537ee70f902"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "a4827af103d6cdb53029e1c90f962bb6bb4069779d1b9249419524126ed0dbc6"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign/plan.json",
+        "sha256": "b2bd28bcc291665bb3ae759090e49de40e9533f8cda07bd4ec66525893f1c45c"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign/freeze.json",
+        "sha256": "3f930fcf41634c93be9bfab30a264acf6b88674121c7de1ea354592cdce1a608"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "f141458d5ab71bb4c5512e9861b63803f6ab1a272d4e1b27db4b3e366ca070e6"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/launch-20261026T122511937818Z.json",
+        "sha256": "0a2ee7a9ed3dda9fc49c7261ea7745b7d9b3ad2e6bfa94c9c932a61b38014b8e"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/audit-20261026T122512103650Z.json",
+        "sha256": "12143949ebdd6d363c4d1048e66a5d9cf35b691340684dd6da151efc87d53ad5"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "92045fe1545b6374f2f63ac28c98a8e917e2564f9575a9a04c3c135c74956957"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "93b139373d17cad5a5f41ab496ae96ab41ba75ef05743fa2d67ad0c4a9b8c67c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "449f0c6a4856692b73e41c9b03c3edefc913c84adda922c08e30a81521309f06"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "3214f1e22f838006b27c21791716bc0615834a349672e7d1803ab844b5789e57"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "758283c49e1bc910e04ef4a28c58cb7f73b8d2a943647f5735be6f19f43718a0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "7c7b305850ada020d381eb7979c7813ebcd0df2a7a5aec4f8c34d32f02ca8e15"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "ae83a932a57de1404e9f02db76cb0050326f661b8e0ef074cfdb9318d3230731"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "f0e7b5bc7f0dffc00c8d4e714c03a6ea44aa1434593ccadaeae39f5ad09fff87"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "942491a63bb576c7502137ace2ac31ec0e5eeee4fdd2b3eed570810f1777d7f7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "4686dad33cd771ea1310352910fbe756331b04d7509aa5481feb33dd8748428f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "9e2b356c474dc5d26b13c6b3d3a7b8d9bb5916037233d6764d7c0498f7c6ed6e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "277b4d42c1ebb122b279642f90218180599a5fe62182dfc8228d76bf856fa502"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "9fca27134f9d578cb9b3304e6752fd45c9822f4e76ac994d04850d717e8e7501"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "69e7851a8eb4cb42e91a412afb5a485224e71d85c65a67209312516c3f2165e6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "12af14369537df89e829f75386743e217981ddeb56e40c6454c3b6c475dfda4f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "fe09bcacf9bc4aa7fea69693760fb9ef09d08fd70bd48b0878e8bb7ccf2a0fd6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "3c183f845cff5efab2be8e14442124115b857b59231a33de0076ae4b6c4b38a9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "fb5c5e2b2b718514a2743eb2462ba5b7432852a94d1d440e768bb14f81f14ae3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "6cb3418b053003980cc25a43cf0c3381cab80bb7f239c2ae7f89611d74b2c32e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2128278272239907200-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "44c3b7ec3b3c14a567933af1f7c3406f9df5f7defc5186eb513dcbc016f94460"
+        }
+      ]
+    },
+    {
+      "case": "2103792461826460288-1",
+      "cohort": "mk",
+      "created_utc": "20261026T074233893128Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 275.83531979098916,
+      "coordinator_wall_s": 275.09361266717315,
+      "calculation_cpu_s": 824.785416,
+      "repeat_phases_cpu_s": 826.8478710000002,
+      "worker_initialization_cpu_s": 27.442603000000002,
+      "recorded_cpu_s": 854.3274790000002,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.105453687990853,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "0949ce6245580c980979ed08467a0ec48786963f98f7f7240e6a0a496ff3315f"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "f23f4435ff298d0a75978ce35ec4f1104d5214e64a96abf73343f8b5c4c8e175"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign/plan.json",
+        "sha256": "b8c49ccdbfed4e63333458eeec52d6df64b1f1f791093476ce73ee5ac5d8e425"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign/freeze.json",
+        "sha256": "b4c804c438dddd446ed6b8bc3ac58edf29f38f689f33f442ac6ececb81d7d51a"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "d3cc7a082e93e00cb1f7dc4b6b5fe10170781f95211dcae1d4fd37d6f40578b8"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/launch-20261026T074709736998Z.json",
+        "sha256": "9f8a16abb3b3afb072dea836dfab0d6a4d54a46486ad1bbff494d8ad3cf65f68"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/audit-20261026T074709906005Z.json",
+        "sha256": "e42397e291d0e9eed02e33af05019cb5a3ab9e0fdaf022682a96e0c7745bd2df"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "db1f7e309f999a0b27585734e751c07008d6b183740b946d080268dfd8f8d5cd"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "d7ed1c37d4f2e4dadd557bd22df3ef4db447fe7386485ae3ae4e9340ae7d7473"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "188acf04639b27aa51738eef32d6586aad9a73e8492e7dcd76bbcff4b0a8a9d4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "d2a8f7e1a4dee232fb76b63912da27bb28e1674d2da3d681c41cd4e3cda6eda0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "a6a64ba04ee8a9890017fada4df1602508ed10a8349741876fb6bb9ef53f4e40"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "7c57e9b8e3166d5d2a4b85c7c54d9d5082dd7dcf4576c0ad8f0e8add72243df6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "e0f94bd2b44d5a4ac523d267d8b42c04d928554fcd6d1ba8913097e4460a2450"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "9aa235c3610a355034ff05603d1b725059403e6cc7be8c4d5d7b8dd667af00ea"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "b2c03470f7bc96be5f97a2143e561f5c2c8dbbef0d71f2d147f10a1d4b6454d4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "a7de5169d6a7607a8f4e1a976f25d724ae7750c2c64ebb398ea3a237ebab6435"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "8dd29acca84f58fcc062c3e16afca1596ab150312f7b57a20a913d145add2f93"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "87c139b36739039a688d152c9553dd0665d3659535d012b36e88c8bd9fbd116a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "89e8efd7ad623ceda163b1637d806c91ed40b60bda00dced10912e7a1cc3cd25"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "9575c4d8fd1db3cbb642ddc7d687f4ac5fb3d5275c89bde6faccb51da0f9047a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "a497dab22280ae0996ecc20b71d2ae06674f408a7579bbe44d00dd03e496022f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "410008ade0a9b85fc6a5913293be3034ec2791979f8b519be971d0f2567d35e7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "4a09c47f95d82c084e93727e2528e423c4fc019f8c5e248f09f9b54e459a34be"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "90bd8dc1e60dd756e1cee570eb668037effdfc61500239773f6a5538567f4653"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "aa4085f9692af9cb6215ffe92935c24c28515a769c31d1fa9fb80fabdf10213a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2103792461826460288-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "e193cc0c16f3aa8effd22c8d087a0f16144dc25b52e46e7d3f4a740f01d3bce9"
+        }
+      ]
+    },
+    {
+      "case": "2100154070473374976-1",
+      "cohort": "mk",
+      "created_utc": "20261026T083719738966Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 301.2976389164105,
+      "coordinator_wall_s": 300.66406566556543,
+      "calculation_cpu_s": 1060.6566559999999,
+      "repeat_phases_cpu_s": 1062.9298770000003,
+      "worker_initialization_cpu_s": 27.698938,
+      "recorded_cpu_s": 1090.6674490000003,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.627399944139411,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 27,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "8bfbf0d2032e8572244d0c04d18af286a337aeccc568c3d9e09be52a084ed97a"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "d50cd4957bbda9ee12f4541e489c4c25694df1d98455795da0ac78a634132d84"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign/plan.json",
+        "sha256": "a0453183d8fe2df7584efda9b2a3041a36b74ab508473001590f15e08a19261d"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign/freeze.json",
+        "sha256": "8cdd006ce19f232bdc8a96622b86730b2ce21cfc8e9348b673634712ceb5c341"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "57670d50d731cb379579d4dd446c615c1f5c649e8484c32071ca6d331da2ef44"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/launch-20261026T084221044817Z.json",
+        "sha256": "5fa6dedc7b64d70efeb507756362ef9c23eeb6dec8273707b25b9c9d94e20f45"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/audit-20261026T084221157073Z.json",
+        "sha256": "dc6f3416e62b1427989e4557914e43ff281f46f29c6699bffd4d35c76dea132b"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "bc5136d7cb30f7d935f4a8ac065252befe4fc18a3cb0ac063ef20ffcb25d4ed2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "5d5621e35957361288d4c1ce1daef2a652602a2ebb7b992284aa87791a26e88c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "08d47609142e5dacf83140b9db2a28569f3d5c266ba3f4fde99cc7230285a5df"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "e9982111beca89e02dd1374b56f8060da3de173edb10b7db08654d88bf6ae3f8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "d0c638799ead3badb7a14c87d5c9f40eb54ec0bbd955899ef955c72e23f1eba3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "98482331f020f2ef556f9943df4fedaada73c45004e3fbb9c2a6a3f131bac9d8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "b3928a53d129c5ad2f8d395854356ffe3be4f59dfa42e7a650d00e8319f67ef0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "b866e9156aed103e76d519a4c5c2a5d81734921930332d1dc790296f398cc969"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "818158299cfd2d3b83db5e394a0927472fd46bea7f4dba1c46779a57a6d2521d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "e89987149c3c40ed792b8b791f1df687a5448c0efcbf386c3314292af867bcea"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "c81cae807169dabdd6fd883c2f949ce22be06e8874b87dbcf8002105e8311bd2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "5aaed6a42e793d40bf4c24957af5c0f24258a62f9d456a6f069defa62e4ce6f8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "66bd8689a7bdb7d4880c4e835ebb0ae2a82f21e4c95b2b32229018fbab78a692"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "4ecf01cf5e63363af7626e9f56dc51b4c78a7ca31d0f12b2a7e409a442e0264c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "b955e7417281745f178d665d89fb0d151bc0fb786f7cfb0bba67240d7d00558e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "05638e458511c706125ea715a8bd8bc1e33b08b24d659a4328f10c6d8ba1d31f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "e79289f8ef704b929e66ef89cdbd27370cf26fff1a2710d2915a98bf9560ae50"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "b8745d4e7edb0f9b7e1deb9c6958efa4ced4507edc3226c6ef881ad93174d7b8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "287718a68690e558a2fc76de9c1e3bd79f25ea4d18acd8c69d1c85eef22f7270"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2100154070473374976-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "0ab76c2ab6119d08fe8f35037fc2c490e458ba29146600eae1c14c046026706f"
+        }
+      ]
+    },
+    {
+      "case": "2127624204560927616-1",
+      "cohort": "mk",
+      "created_utc": "20261026T081609239161Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 348.1645124591887,
+      "coordinator_wall_s": 347.4628358744085,
+      "calculation_cpu_s": 1063.868725,
+      "repeat_phases_cpu_s": 1066.01315,
+      "worker_initialization_cpu_s": 26.992234,
+      "recorded_cpu_s": 1093.049052,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.14567565549678,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 24,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "c6f004b73ef71693a3cf770cd6d16f8b997bd5d2036f4c235a0881a02e24e715"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "8ff1face3af658dd6d0663be4c7ee178cbef44bbf445667bd1451fa8449f91e1"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign/plan.json",
+        "sha256": "42bdae05aae5954a334232eb5c063eead63706b6ca366c2234c1b95c48f24c10"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign/freeze.json",
+        "sha256": "d412cf01c9870636fb0ad89eead392aca85bd7004e65f49eb3f762ebcd752716"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "2d1cfb6b3a74c099d7b64ad943d8b1ca42a0b8adeb4047143923d9f8032eeaeb"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/launch-20261026T082157433630Z.json",
+        "sha256": "d2eca942bc08290ae6da5b293f596af544f2ee65f0d4e60dc2420797fd585c9b"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/audit-20261026T082157638865Z.json",
+        "sha256": "e7f97a95bc7766e584fd1425f75ab8bf9c50f8fe8fca200d5f93b2b97127fd53"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "4eb7107dfe1137694e3499532bd094abf6dda2ce2e235e613ff2450d3c273fb9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "12caed591c5dc688038631dea4cd3305d72f60120efad131ee46ac12615264f7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "9f4a598d88825e5e3589e7e5ea5208469a2e847e5acbbc01946f67014be4d657"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "0cf0c457f7a4e2eaa874f19679a9081502c9b7c8fe5f5828d5a83e8156cc9385"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "56066a43e06048bf44078b21533a6bdaf94599022d2e4974f858704280ed9f37"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "713c544ebfb7374ba02641e78ebeb796e6c39e2f2674251a8d98b388a5d93bef"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "527ab18ec87c10bb2918369073c3dbeaffb74bf27aa118f105498d53633487ec"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "3b22ec9d2b103a61e07770fedd1fbc4d5e1b0b1455a91b6b7038895c4b7c5a72"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "fd3a9d44f3fce89854a19a4190db2f720136b36bc31f210a95dcceb4c04aec5e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "436eda1fb50667499491dc62e7490db0852088ec6fbc63ffdb0031438a8b206d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "d910c80caebd4adffb6bca0f36a5a6bfd5e7ccad96aa1e4bd639a15c9f923fa1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "8cd5389e8381d25e14ad5f6a14426acab29e5a6754e9a0d3b0e9326471a21477"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "503ab379a9946b4fb608b8c2dc06f7e965efba759c9a6e739b29ac289c656b46"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "e4d935a66730b841f3d93844fa1438ca68cf9e1d768b116ee8bf05615b87c03e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "155da66944bc828984f43645fcd8d62998efbe99df06939aa70d192cbb80680c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "58059a8d85a95813c66bab48ddfcf69bdceace5fbc7094562083fba5ee5acedc"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "b543c458c439e781f74a1ee9689ec0b00483e2c856d97b73760952894664a20b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "8cd20340f522daa98928fba7f1b9f8b0ef3c1f43c4d5d9700acfb4a94fc4378b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "be0ebf7db55da93b711a4f28206ad04cabf39cf1c6bac1d46f88c43e211a3cb1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2127624204560927616-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "c8580484764f937eaf6f8ec0f12c7754ed2807fe3999624c420f51167686bbea"
+        }
+      ]
+    },
+    {
+      "case": "2080026346196588800-1",
+      "cohort": "mk",
+      "created_utc": "20261026T095119730561Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 525.863492959179,
+      "coordinator_wall_s": 524.9796465402469,
+      "calculation_cpu_s": 1552.2262170000001,
+      "repeat_phases_cpu_s": 1554.4897750000002,
+      "worker_initialization_cpu_s": 28.096155,
+      "recorded_cpu_s": 1582.6326800000002,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.014566260672495,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 21,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "47645f4af4c7915bef919eaefaf6d1c1e4a6ec2b860e1b89e3bffc935c7debce"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "366714c474bef62f15925b30e851c093b258dd661278c4fd4edc226b776c0ac3"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign/plan.json",
+        "sha256": "56e72b4b497b77beb8aff9b32731025bb021fb4faa2376b203bdfcd143ff8acd"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign/freeze.json",
+        "sha256": "7c968fbde7de471e5ce541c0becbd5572c7b1f0ceb00d5d45c0a7eebeca8a850"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "973b31752f82ac1e32b373ba9c0f38766e30195d1d24c60af6478e0c282633e4"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/launch-20261026T100005603972Z.json",
+        "sha256": "6e45c7cae93e62a4f6f43c2cefed67a2dfe1e1ce9745ba88d6f379d83fc6b2f7"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/audit-20261026T100005786653Z.json",
+        "sha256": "ab8af760618f346b7753ea44ab7fdfbe5b96f0e6535ac99e3ca5387732c55580"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "9c5be3724750f1a0955ab5affcab48266f604ad013604ee44d217a2b905822a4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "8742e21f035e9048dd5452e01d797e29334f64b8ba2188c8c2a67dca376adc0e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "20b42d3e45ca9365ac51f2b3f7cd5be373ebf4727b09846d8693ff85468c21df"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "548713845c171c5454c29c3e6ff96e459dc91869a92ecf1e7065c00869195638"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "61848ab9de5001755dc9547fc3439b6c51ded983328ae8b9d7fb068eff4e8db9"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "cc05b034a2125f95d8dcc57c048c6d6cd36fe1c83d90c585d7b237b9eb02f015"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "b230fda42d426ec62078dc436c1113409c29f1a5088a5a74cf6b227a3a77d7e6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "fc8d838cbe70047699ce433a5819f24d49a83beacb90bd0140f8d835f4ca88b4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "07af6edd17f330b94a0925311e16e3238c0b820a7796bd0fb11daef03458d149"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "0b85206cf27b8fc7dde0e1cea50834e5bb37bbde33dd3795e1d748195f8c3ec8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "3bed7559d0ffc05b58dc1e958bc02b6070a28061a1eca7e11c11e4a4d3b83475"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "30561fc102c5dc0908254281de15f5c920a11f84a20043c2c318fff7d9a59fa2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "c8a47112b0f4b08ca439d9d9e6c2e21a5a10f1f50742c344f7a915da8e9cb7c7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "a637008b37b2cbb9dff004805b1bfb48c9e37026e9cd5566120586439e0e015c"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "4413e9788e51ee79d51cf8a121cc1eb6d0034198f7a19cb3120c2a9d401475df"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "15bb83ed5e32d32ec46e598089ccd153b5de0b7d1db9a23667653c99cdc252a1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "163802976a7b43c0c74914fad1920b5ee4a3bcc80a5f53549bee0cc983f7b605"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "c11d7d019a602fbda74557a06ad0cd296253ebfc2124ad307e2f23ae7a8acc42"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "d2002f997379002bdc2e7f16796c710156cbdabdae0000d7d1f78b60d3907687"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2080026346196588800-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "7b8a59c7e94a95a53488c7da9479f43a3ded977cbb1fe841b13485790caa2f34"
+        }
+      ]
+    },
+    {
+      "case": "2101495509016649600-1",
+      "cohort": "mk",
+      "created_utc": "20261026T082816284258Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 643.2138428334147,
+      "coordinator_wall_s": 642.5394032923505,
+      "calculation_cpu_s": 2271.1390030000002,
+      "repeat_phases_cpu_s": 2273.315251,
+      "worker_initialization_cpu_s": 27.322139,
+      "recorded_cpu_s": 2300.6778,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.5805389960702962,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 27,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "55671d180531b860f60a635c716938b813554bc29bab6feee8909d8587085b1b"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "0b9506491f0241dd1c74c77c69ceb48650f538f491adfd2d913d7e992a77a3d6"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign/plan.json",
+        "sha256": "9db492dce86fd467d30e19382fc43e0cf2b0d8b45dae0921d1050b26ac8998de"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign/freeze.json",
+        "sha256": "39d973c0500facee4536cd93e456392655ac6e8e9f336869513b9ebe03302a09"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "9a0496bc54165dea77f70d048b68a81cca1b363ba5bf33c9bc18377bead54d99"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/launch-20261026T083859510223Z.json",
+        "sha256": "2dc09f6a4debbe8cc1c2e64a2fca57b9fb13487a1fcb2e3e7462ca4ec98081a1"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/audit-20261026T083859680013Z.json",
+        "sha256": "4f8532f392ea3b5b85d2c63a765525cff7e313cdee5f6b5d50ed691db0a00a2e"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "a5932b0579822ab95f48be483321dfde78ba9e1222dfd4890b9b3d239cd3242f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "e7fcc114a7bcf74f66c028924fa0a6fa8d12284f2be8fd7c1ae5415f9bf6e406"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "6e77ac43164f7357d1ba1b931e98ce4213efdf3761629a41a5e05c7b4d4afbe0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "0385c135ba9066cde4d304707f240bd0595b91ed7bb914be01bdc48c1108b36e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "f3a679b06e29a3289e20e6c2bc9f7e64b8960aa2d3bf7b3ddf0c2a262dd6be19"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "dd6d2913f03968a7b98fea1cd676773228ebb5666d725a177c0cacffa4e323c8"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "4d4a0b58b8bcec753211e11ece4d7c986e02e3b05acac2ceb3560251f39a6110"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "4b0257f1fc84b13b9e93d5762f9306f6d65b1c07c613bbdfaf76d45081f34cf2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "59a3f1ae15fa90908f919e652f67a74f214dd37edb594488deb447901b234243"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "d04103e1648b2db04e633b2c5f838a54429928947211ab4400153c7d4809c821"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "a0b79ae8b0c590f37c900a7abb19a5d35cd9fc1167147808ae19aaaeb4060dcc"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "e1ff28f027e9e7394283e1c8e8120049e2cfede9c3b3732de6d4a97b5b0dcf04"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "b6674187e557c878015be69715eb23d3483ab1933d3a5d1bb7681866b67fab20"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "444d79260622e240870b64f86dbf4c8c7fa9ef0060ce07ebf2dd60762cc5e964"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "b4d6271984452f4b8e56d2002d9fc30cfdcf2f0448a7ab17e0eb56a031d726f6"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "cc399e59bf518ed64ed19009d9494e647200caf08abac3cc967e46ae2862e692"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "4ceef072d2b6e4e7d6ad48e9ec46a91f625a15cb421dcbaf6b55de3e81843aeb"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "5775ac0185c477d3aabe5de5a6e035bca68cf56957cfe69f56852470e1fff471"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "aa79053f5a78c00791ca3776ccbc472fcadfd725b0b5245991a44f7cd9fc774d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2101495509016649600-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "244cbd8be07f9027911f4a017bba1942ff5b6ba631480bc8b56cdba900f1236e"
+        }
+      ]
+    },
+    {
+      "case": "2102952297504813184-1",
+      "cohort": "mk",
+      "created_utc": "20261026T101235620776Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 649.480077624321,
+      "coordinator_wall_s": 648.7887251656502,
+      "calculation_cpu_s": 2420.3329289999997,
+      "repeat_phases_cpu_s": 2422.423618,
+      "worker_initialization_cpu_s": 26.488529,
+      "recorded_cpu_s": 2448.952669,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.774591098781407,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 18,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "825432c81541b3e1116173ab61a3abe2893bb372d52f82af6b20d68e67e54c71"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "6cbde0625f713f195440992fd04890d23edbd6d19ef37dbc1e6d82bde1b50442"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign/plan.json",
+        "sha256": "e30a11ae74e8334b5815f177667fdd9ce30a358f37b50fe5cd1d03c43958114e"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign/freeze.json",
+        "sha256": "e74f74d602983a9e8d8f7379010c6506af572df6c61eee4ec096bdd1a765fafb"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "d1cc7d3bf4a58a2e310d7c233bef4a523edc640fd16ec0703990d5a78e54cc8d"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/launch-20261026T102325107440Z.json",
+        "sha256": "0c90df7084751e8b3ade7e623791d6abde13442acd0bfae4804846959d723839"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/audit-20261026T102325250102Z.json",
+        "sha256": "f1251c97eef7f386fe69204c0c0f456de9666717a46a2b4a84be1d24286c3e9a"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "f75e6fe6cda57098f415747f2a253aed6b553dd906778516e2285700e815f660"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "969d495ca489a3c86f2cbbbadc7cfeeb0c3ee5fb1c83d9d7b30a595205ebc8c4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "58d0871296cff3c8d749f6622b0211f636886cf393a3229cfd1ab307b0727244"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "400c4e096b4c1097251b37adf89b3c7686b2e617c09e4b1158fd72dc30545564"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "c57cd2d9b7ce158e1b820e3b5fe7360faaf9d689747b9792b9f2b94cbe0262e0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "623a2fca682922e35b083cd772ea83677308c645f00cffba922f667fbb887258"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "bb6ed72527c04c3f57d51dbd4448397291cd657d6564678677e560939e98d2d2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "f2e1b4dde40665e9e957f264409c610d9f3f5ce50ce92752b1123eaac2a62fb3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "a8cc94605f79df66384c4c9230dca65e735d24988f2103b54c94a1f440c1e5d0"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "3f4a7121d8f449185ca437cce182af16998e7b027929edc0b9c26433cd91cc38"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "e83b86156d51943d8edbbad3678fd349af76dc33228e427d30e84c034d757fb1"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "64d22e4bd2a8acddc7a8ad954ebf5f2d9f40958e6b8461364e03ea3db3485166"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "8f7657c92e5b1de8b4b749b5a3afda4a0127cf3d6c050ea56ab60d9f932c7cad"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "c08cb241952137b983393edd10f584a1d144a96c91b184daebad74f7cd093c87"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "cb8b62510a1fd1e5c1e83b94cfcd6787eb0337d7577278983cf7f73bb3146ab2"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "09142a13eb7760f840874b6bebe5071e37603861f81d63fed585418e81990294"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "3f87cf0634a5a8ce9d8198c68627981a9c43582ff3cdd78847704fc701bf49b7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "e3bbf848f892ab59d889dbe2798e50b7e29d9b7df1d8eaee2e11e1f5114a5ed5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "df356f2f9ac6a307e5fe93b2962fae6fba1e7ffa1176e3ee6fbca863ba080f7e"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2102952297504813184-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "1bf49029030484d667a6a497bfd98c4cf369b219f448bec5c3f638ad568046ee"
+        }
+      ]
+    },
+    {
+      "case": "2125749846474905600-1",
+      "cohort": "mk",
+      "created_utc": "20261026T110311959841Z",
+      "complete_repeats": 20,
+      "draws_per_scenario": 1000000,
+      "worker_budget": 5,
+      "actual_worker_processes": 5,
+      "launch_wall_s": 977.2505016652867,
+      "coordinator_wall_s": 976.4817002499476,
+      "calculation_cpu_s": 3706.920686,
+      "repeat_phases_cpu_s": 3709.1324959999997,
+      "worker_initialization_cpu_s": 26.632847,
+      "recorded_cpu_s": 3735.8112559999995,
+      "worker_cpu_seconds_per_coordinator_wall_second": 3.8257402489404204,
+      "status": "COMPLETE_PERFORMANCE_EXPERIMENT",
+      "scenario_count": 24,
+      "saved_stock_results_same_plan": 0,
+      "failed_attempts": 0,
+      "experiment": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/experiment.json",
+        "sha256": "e8ec228c971c1d013ec46e5d6857f2b207c36da5998d54105386b129dca065a1"
+      },
+      "freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/freeze.json",
+        "sha256": "acd1ac501dda2361801cb8ae85101435a4d66f1d997844b06026326168c5dafb"
+      },
+      "source_plan": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign/plan.json",
+        "sha256": "914d63563f2fd72b133082fe1c2af07e5d85d6c9e82cc4d10d91f5b747df6fc0"
+      },
+      "source_freeze": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign/freeze.json",
+        "sha256": "820aca3d2e494ba215a852d941b89abff5a1a6758b854653486ceb67c771acbf"
+      },
+      "summary": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/summary.json",
+        "sha256": "6e1aefe1f31c52514a1978123c653aff76c50f37e46fe83a17b042fe4a8310ed"
+      },
+      "launch": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/launch-20261026T111929211983Z.json",
+        "sha256": "917fa21a0ff34e5fafbf97b982cfdbaae02857e50a18bf12c23405dfd0762419"
+      },
+      "audit": {
+        "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/audit-20261026T111929381622Z.json",
+        "sha256": "7c6212f194de273fe13a4b417aa61acd71e01c8c0b1d4b0a81a1440c81a66584"
+      },
+      "results": [
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-00/result.json",
+          "sha256": "f9c3c6dd3cb535168b68e02a76cd9c7e828f6474f7d40deaa0114d4732ba2d6a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-01/result.json",
+          "sha256": "9dbec84fd99e546e2d69ebc4d0b042bde2dc57dcfa4600e91ee4fa59d7157f57"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-02/result.json",
+          "sha256": "c4aa7079b3f1e498f05ddb64cbece0524714cc95639d9e947d07ecfad0a14626"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-03/result.json",
+          "sha256": "6d5b035c3c1e6376d3d03d8c5e6698419fc88a15ca8350998ac35d2f00ce1b23"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-04/result.json",
+          "sha256": "147e76037e7c388271796eb2ae8cf8d712955105c6cd728c21ddf1a3d4d887e4"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-05/result.json",
+          "sha256": "590754484cb1c99c344eea1dfa70ed6670586ee5cf77475d46da578e39c1fba5"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-06/result.json",
+          "sha256": "ad55d6be9bdbb60da036d69d10847c947d357eac9be1010dc5d380d96c53df93"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-07/result.json",
+          "sha256": "c3452e139d567a5a7527293fcb73acb72e16afbebcbd0f6d1ff625c6eb1e49f3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-08/result.json",
+          "sha256": "15f6d922cb85ef1a4c47bdd3351799ea2494f1f647049b208cc7f55ed3bcb5b7"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-09/result.json",
+          "sha256": "c8abb1c4643a7f41a2808fc041660a3e4abbf1b4682ab4f485f6482a5c4e9bd3"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-10/result.json",
+          "sha256": "73b30f3dfb1b0f2b1dc85c470167b4846ceb8ef1f2d7637a29d94608fc7f972a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-11/result.json",
+          "sha256": "a0ef0f229eed085dba0f97bf43f39f62196d93ce280ee578b726d1fe3f9af032"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-12/result.json",
+          "sha256": "c481bb95f08e33d1406d663281c420b25ead5ad79eca2506b65821106c26661b"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-13/result.json",
+          "sha256": "513ea80b6dadc5e0d311b95dfe1477e2787f4f52a1da4f7a9b2be1338d025e73"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-14/result.json",
+          "sha256": "17a64ba4f9d40d8787d2599f88a21fbef6ac81097a82780b8383e537e671e971"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-15/result.json",
+          "sha256": "441c7201bbd4c2cd385f1ebcaef41a28b50866dafc9c1785b58e5dfd6fa21c5d"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-16/result.json",
+          "sha256": "a1c48dd927a060a906b4eb8e1aee697248025ac564eb7c1368b7932aec87945f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-17/result.json",
+          "sha256": "8804c9641543193fb5bed5934f36690d4561d2c6b5df780b4537b31a2d05093f"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-18/result.json",
+          "sha256": "dbd54a376ced5f797e91b4ab8cd74f61ded2db363d48308ced6735731ec7ab8a"
+        },
+        {
+          "path": "/Users/adam/Other/spacelab/other/boi-v3-20261025/mk/cases/2125749846474905600-1/probability-v3/campaign-engine/runs/final/seed-19/result.json",
+          "sha256": "38237b7eb00d229b5e4653f3c47e0e7596307e8beef036a9e952bc6e1367184e"
+        }
+      ]
+    }
+  ]
+}

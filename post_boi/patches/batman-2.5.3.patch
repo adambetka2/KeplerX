@@ -1,0 +1,90 @@
+--- a/c_src/_rsky.c
++++ b/c_src/_rsky.c
+@@ -17,6 +17,7 @@
+ 
+ #define NPY_NO_DEPRECATED_API NPY_2_0_API_VERSION
+ #include <Python.h>
++#include <float.h>
+ #include "numpy/arrayobject.h"
+ 
+ #if defined (_OPENACC) && defined(__PGI)
+@@ -40,28 +41,31 @@
+ 
+ static PyObject *_getf(PyObject *self, PyObject *args);
+ 
+-inline double getE(double M, double e)	//calculates the eccentric anomaly (see Seager Exoplanets book:  Murray & Correia eqn. 5 -- see section 3)
+-{
+-	double E = M, eps = 1.0e-7;
+-	double fe, fs;
+-  int ii, maxiter = 1000;
+-
+-	// modification from LK 05/07/2017:
+-	// add fmod to ensure convergence for diabolical inputs (following Eastman et al. 2013; Section 3.1)
+-  ii = 0;
+-	while ((fmod(fabs(E - e*sin(E) - M), 2.*M_PI) > eps) & (ii < maxiter))
+-	{
+-		fe = fmod(E - e*sin(E) - M, 2.*M_PI);
+-		fs = fmod(1 - e*cos(E), 2.*M_PI);
+-		E = E - fe/fs;
+-    ii++;
+-	}
+-  if (ii >= maxiter)
+-  {
+-    PyErr_SetString(PyExc_RuntimeError, "Eccentric anomaly computation reached the maximum number of interations");
+-    return E;
+-  }
+-	return E;
++inline double getE(double M, double e)
++{
++    /* Solve the same elliptic Kepler equation with a guaranteed bracket.
++     * Reducing M also avoids Newton divergence after many orbital cycles. */
++    M = remainder(M, 2.*M_PI);
++    double lower = M - e, upper = M + e, E = M;
++    double previous_step = upper - lower;
++    for (int i = 0; i < 128; i++)
++    {
++        double f = E - e*sin(E) - M;
++        if (f == 0.) return E;
++        if (f > 0.) upper = E;
++        else lower = E;
++        if (upper - lower <= 8.*DBL_EPSILON*(1. + fabs(E)))
++            return lower + (upper - lower)/2.;
++        double proposed = E - f/(1. - e*cos(E));
++        if (proposed == E) return E;
++        /* Newton must stay bracketed and shrink its preceding step. */
++        if (!isfinite(proposed) || proposed <= lower || proposed >= upper ||
++            fabs(proposed - E) > previous_step/2.)
++            proposed = lower + (upper - lower)/2.;
++        previous_step = fabs(proposed - E);
++        E = proposed;
++    }
++    return lower + (upper - lower)/2.;
+ }
+ 
+ static PyObject *_rsky_or_f(PyObject *self, PyObject *args, int f_only)
+@@ -82,7 +86,13 @@
+ 
+   	if(!PyArg_ParseTuple(args,"Oddddddii", &ts, &tc, &per, &a, &inc, &ecc, &omega, &transittype, &nthreads)) return NULL;
+ 
+-	dims[0] = PyArray_DIMS(ts)[0];
++	if (!isfinite(ecc) || ecc < 0. || ecc >= 1.)
++    {
++        PyErr_SetString(PyExc_ValueError, "Elliptic eccentricity must be finite and in [0, 1)");
++        return NULL;
++    }
++
++    dims[0] = PyArray_DIMS(ts)[0];
+ 	ds = (PyArrayObject *) PyArray_SimpleNew(1, dims, PyArray_TYPE(ts));
+ 
+ 	double *t_array = PyArray_DATA(ts);
+--- a/setup.py
++++ b/setup.py
+@@ -57,7 +57,7 @@
+ 
+ setup(
+     name="batman-package",
+-    version="2.5.3",
++    version="2.5.3+spacelab.2",
+     author="Laura Kreidberg",
+     author_email="laura.kreidberg@gmail.com",
+     url="https://github.com/lkreidberg/batman",

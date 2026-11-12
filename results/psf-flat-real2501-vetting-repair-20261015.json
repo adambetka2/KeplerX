@@ -1,0 +1,57 @@
+{
+  "status": "RUNNING_VERIFIED_RETRY",
+  "verified_at": "2026-10-15T11:48:10.039673+00:00",
+  "authorization": "Adam: Fix it, and get it back running!",
+  "change": "Expose the existing discSSD pixel cache in the private snapshot alongside the light curves.",
+  "original_attempt": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v1",
+  "retry": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v2",
+  "original_failure_stage": "pixel_retrieval",
+  "original_failed_evidence": {
+    "path": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/vetting2501-v1-evidence.json",
+    "sha256": "2b222b606d7d21f82cf19dbb3c0c7974bbece7a7cd13a50d7c51452e9aa58bc5"
+  },
+  "sources": 697,
+  "proposals": 2102,
+  "workers": 10,
+  "matching_input_archives": 697,
+  "pipeline_files_byte_identical": 194,
+  "artifacts_identical_after_attempt_path_normalization": {
+    "work/config.json": true,
+    "work/policy.json": true,
+    "work/queue.json": true,
+    "work/input-manifest.json": true,
+    "work/scene.jsonl": true,
+    "work/discovery-manifest.json": true
+  },
+  "pixel_reader_check": {
+    "status": "PASSED",
+    "original_failure_reproduced": "[Errno 2] No such file or directory: '/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v1/source/discSSD/data/pixels/kepler/kplr010025720-2009166043257_lpd-targ.fits.gz'",
+    "cached_parent_quarter_pairs_readable": 1073,
+    "timestamp_quarter_mappings": 18,
+    "pipeline_files_byte_identical": 194,
+    "pipeline_unchanged": true,
+    "new_snapshot": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/setup/pixel-path-preflight-v1/source"
+  },
+  "checks": {
+    "ruff_changed": 0,
+    "ruff_folder": 1,
+    "complexity": 0,
+    "tests": 0
+  },
+  "folder_ruff_existing_findings": 6,
+  "folder_tests": {
+    "passed": 49,
+    "skipped": 2,
+    "skipped_reason": "Frozen external pilot inputs unavailable"
+  },
+  "launch": {
+    "status": "WAITING_FOR_DETECTOR",
+    "started_at": "2026-10-15T11:45:32.443587+00:00",
+    "pid": 63956,
+    "process_group": 63956,
+    "caffeinate_pid": 63957,
+    "out": "/Users/adam/Other/spacelab-runs/psf-flat-real5000-20261015-v1/vetting2501-v2",
+    "launch_plan_sha256": "6df1688f5a400af9a7fc2778072418ae7d5135e816cc4130998d5d6c0e6d86d5"
+  },
+  "adapter_sha256": "96279fff8e9c6d7bb654d7fe19ceb51598255c8c3c8070a9b022a13c81eca1e0"
+}

@@ -1,0 +1,2194 @@
+{
+ "schema": 1,
+ "utc": "2026-10-26T18:53:06.661983+00:00",
+ "authorization": "2026-10-26 PI: investigate separate aperture-repair generation; redo Rust post-BOI work using PSF_FLAT, not SAP; all queued work must follow cheap vetted-signal scan, strongest-ready first, native fit then conditional probability allocation.",
+ "root": "/Users/adam/Other/spacelab/other/boi-v3-20261025/psf-flat-revalidation-20261026",
+ "scope": {
+  "historically_delivered_main_rust": 113,
+  "all_current_main_rust_including_restored": 147,
+  "additional_shallow": 70,
+  "total_groups": 217
+ },
+ "historical_preservation": "No existing SAP result, accepted validation, original source, mask, frozen run or catalogue membership is altered or retrospectively relabelled. New science uses separate PSF_FLAT generations; unsupported/missing PSF inputs remain explicit.",
+ "entries": [
+  {
+   "boi_id": "BOI-2050231500928700032-1",
+   "source_id": "2050231500928700032",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2051317406099391360-1",
+   "source_id": "2051317406099391360",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2051702720499620224-1",
+   "source_id": "2051702720499620224",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2052194442729351680-1",
+   "source_id": "2052194442729351680",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2052625863598225536-1",
+   "source_id": "2052625863598225536",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2052625863598225536-2",
+   "source_id": "2052625863598225536",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073175632853699968-1",
+   "source_id": "2073175632853699968",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-1",
+   "source_id": "2073226966298407552",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-2",
+   "source_id": "2073226966298407552",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073226966298407552-3",
+   "source_id": "2073226966298407552",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073476658526284800-1",
+   "source_id": "2073476658526284800",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073609042284178176-1",
+   "source_id": "2073609042284178176",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073628180652139904-1",
+   "source_id": "2073628180652139904",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-1",
+   "source_id": "2073666564790289664",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-2",
+   "source_id": "2073666564790289664",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073774278260250880-1",
+   "source_id": "2073774278260250880",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075057270893091200-1",
+   "source_id": "2075057270893091200",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075066857261081600-1",
+   "source_id": "2075066857261081600",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075066857261081600-2",
+   "source_id": "2075066857261081600",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075875758527635968-1",
+   "source_id": "2075875758527635968",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076038211367869312-1",
+   "source_id": "2076038211367869312",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076066111476425728-1",
+   "source_id": "2076066111476425728",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076221417495492736-1",
+   "source_id": "2076221417495492736",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076229075413220352-1",
+   "source_id": "2076229075413220352",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076248557386606336-1",
+   "source_id": "2076248557386606336",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076248557386606336-2",
+   "source_id": "2076248557386606336",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076324737227600768-1",
+   "source_id": "2076324737227600768",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076383384993192576-1",
+   "source_id": "2076383384993192576",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076468876327949568-1",
+   "source_id": "2076468876327949568",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076476504190366336-1",
+   "source_id": "2076476504190366336",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076535358120385536-1",
+   "source_id": "2076535358120385536",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076587142546708352-1",
+   "source_id": "2076587142546708352",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076784878540898560-1",
+   "source_id": "2076784878540898560",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076894554826018304-1",
+   "source_id": "2076894554826018304",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076894554826018304-2",
+   "source_id": "2076894554826018304",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076927677610525056-1",
+   "source_id": "2076927677610525056",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077020448903232640-1",
+   "source_id": "2077020448903232640",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077209775366626944-1",
+   "source_id": "2077209775366626944",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077240046296834304-1",
+   "source_id": "2077240046296834304",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077532516388848512-1",
+   "source_id": "2077532516388848512",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-1",
+   "source_id": "2077554781499350144",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-2",
+   "source_id": "2077554781499350144",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077554781499350144-3",
+   "source_id": "2077554781499350144",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077595974520134144-1",
+   "source_id": "2077595974520134144",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077621538166116736-1",
+   "source_id": "2077621538166116736",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077663010371347072-1",
+   "source_id": "2077663010371347072",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077663010371347072-2",
+   "source_id": "2077663010371347072",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077839967326211328-1",
+   "source_id": "2077839967326211328",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077839967326211328-2",
+   "source_id": "2077839967326211328",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-1",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-2",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-3",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-4",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-5",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077967368932890752-6",
+   "source_id": "2077967368932890752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078045782158649216-1",
+   "source_id": "2078045782158649216",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078414771391537280-1",
+   "source_id": "2078414771391537280",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078603367689924608-1",
+   "source_id": "2078603367689924608",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078783726253023360-1",
+   "source_id": "2078783726253023360",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079376637907047040-1",
+   "source_id": "2079376637907047040",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079433846869397376-1",
+   "source_id": "2079433846869397376",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079517512834068480-1",
+   "source_id": "2079517512834068480",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079536067092694016-1",
+   "source_id": "2079536067092694016",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079595131475231616-1",
+   "source_id": "2079595131475231616",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079821420415898368-1",
+   "source_id": "2079821420415898368",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2080033974058174080-1",
+   "source_id": "2080033974058174080",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2080290396483263616-1",
+   "source_id": "2080290396483263616",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2080290503866069888-1",
+   "source_id": "2080290503866069888",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2080481745869519488-1",
+   "source_id": "2080481745869519488",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2085457035981896448-1",
+   "source_id": "2085457035981896448",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086489481704614016-1",
+   "source_id": "2086489481704614016",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086643310248820352-1",
+   "source_id": "2086643310248820352",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2087252538472180608-1",
+   "source_id": "2087252538472180608",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2099129463076304128-1",
+   "source_id": "2099129463076304128",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2099197705814100480-1",
+   "source_id": "2099197705814100480",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2099560128037101952-1",
+   "source_id": "2099560128037101952",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100123494603868416-1",
+   "source_id": "2100123494603868416",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100203999471640064-1",
+   "source_id": "2100203999471640064",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100220316049730304-1",
+   "source_id": "2100220316049730304",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100223614584673664-1",
+   "source_id": "2100223614584673664",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100325529865507712-1",
+   "source_id": "2100325529865507712",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100442657917279616-1",
+   "source_id": "2100442657917279616",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100986778733554048-1",
+   "source_id": "2100986778733554048",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101047904706267264-1",
+   "source_id": "2101047904706267264",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101095943921811328-1",
+   "source_id": "2101095943921811328",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101354466593873152-1",
+   "source_id": "2101354466593873152",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101435138957164672-1",
+   "source_id": "2101435138957164672",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101926796748446336-1",
+   "source_id": "2101926796748446336",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-1",
+   "source_id": "2102612750272489216",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-2",
+   "source_id": "2102612750272489216",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-3",
+   "source_id": "2102612750272489216",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102612750272489216-4",
+   "source_id": "2102612750272489216",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102918384442366592-1",
+   "source_id": "2102918384442366592",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2103289985012370304-1",
+   "source_id": "2103289985012370304",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2103348117391603840-1",
+   "source_id": "2103348117391603840",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2103418559153168128-1",
+   "source_id": "2103418559153168128",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104048368859231232-1",
+   "source_id": "2104048368859231232",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104132687658252160-1",
+   "source_id": "2104132687658252160",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104132687658252160-2",
+   "source_id": "2104132687658252160",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104484363877066752-1",
+   "source_id": "2104484363877066752",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2105418399005125376-1",
+   "source_id": "2105418399005125376",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2106383701495087232-1",
+   "source_id": "2106383701495087232",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2106533368217988864-1",
+   "source_id": "2106533368217988864",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2106817012155835904-1",
+   "source_id": "2106817012155835904",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2106817012155835904-2",
+   "source_id": "2106817012155835904",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107167653281504256-1",
+   "source_id": "2107167653281504256",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-1",
+   "source_id": "2107574403864920576",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-2",
+   "source_id": "2107574403864920576",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107574403864920576-3",
+   "source_id": "2107574403864920576",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2116924474653194112-1",
+   "source_id": "2116924474653194112",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2125795682366018176-1",
+   "source_id": "2125795682366018176",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2125801656663271552-1",
+   "source_id": "2125801656663271552",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126097738825919104-1",
+   "source_id": "2126097738825919104",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-1",
+   "source_id": "2126217104555818240",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-2",
+   "source_id": "2126217104555818240",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-3",
+   "source_id": "2126217104555818240",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-1",
+   "source_id": "2126354436132009088",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126354436132009088-2",
+   "source_id": "2126354436132009088",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126446588949629952-1",
+   "source_id": "2126446588949629952",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126585921988564224-1",
+   "source_id": "2126585921988564224",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126728304441865728-1",
+   "source_id": "2126728304441865728",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126865915195358720-1",
+   "source_id": "2126865915195358720",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126910621514995968-1",
+   "source_id": "2126910621514995968",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127002808692040320-1",
+   "source_id": "2127002808692040320",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127169041106093184-1",
+   "source_id": "2127169041106093184",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127186564572468352-1",
+   "source_id": "2127186564572468352",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127355099085636864-1",
+   "source_id": "2127355099085636864",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127460755284375168-1",
+   "source_id": "2127460755284375168",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127460755284375168-2",
+   "source_id": "2127460755284375168",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127702609183750528-1",
+   "source_id": "2127702609183750528",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127956355854461952-1",
+   "source_id": "2127956355854461952",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128059130130482432-1",
+   "source_id": "2128059130130482432",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-1",
+   "source_id": "2128959007378441472",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-2",
+   "source_id": "2128959007378441472",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128959007378441472-3",
+   "source_id": "2128959007378441472",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130460704041437824-1",
+   "source_id": "2130460704041437824",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130460704041437824-2",
+   "source_id": "2130460704041437824",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130658616133595264-1",
+   "source_id": "2130658616133595264",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130965547378157568-1",
+   "source_id": "2130965547378157568",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2131801043071611776-1",
+   "source_id": "2131801043071611776",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2131971879690727168-1",
+   "source_id": "2131971879690727168",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2132313759090098688-1",
+   "source_id": "2132313759090098688",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2133034969998575360-1",
+   "source_id": "2133034969998575360",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2133051978069556352-1",
+   "source_id": "2133051978069556352",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2133767416541087232-1",
+   "source_id": "2133767416541087232",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2134754193866263936-1",
+   "source_id": "2134754193866263936",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2134754193866263936-2",
+   "source_id": "2134754193866263936",
+   "lineage": "main_rust",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": true,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079714428492352768-1",
+   "source_id": "2079714428492352768",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-1",
+   "source_id": "2127936912539397632",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127936912539397632-2",
+   "source_id": "2127936912539397632",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102266442767690112-1",
+   "source_id": "2102266442767690112",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077624600485371136-1",
+   "source_id": "2077624600485371136",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107173460081536128-1",
+   "source_id": "2107173460081536128",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128925785810616832-1",
+   "source_id": "2128925785810616832",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126217104555818240-4",
+   "source_id": "2126217104555818240",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2080330292442539008-1",
+   "source_id": "2080330292442539008",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079565719538722560-1",
+   "source_id": "2079565719538722560",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127186564572468352-2",
+   "source_id": "2127186564572468352",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2129405688275182336-1",
+   "source_id": "2129405688275182336",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2107158513594933504-1",
+   "source_id": "2107158513594933504",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086497556243295744-1",
+   "source_id": "2086497556243295744",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076931255328549504-1",
+   "source_id": "2076931255328549504",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130923460997369728-1",
+   "source_id": "2130923460997369728",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2085331867759290752-1",
+   "source_id": "2085331867759290752",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076931255328549504-2",
+   "source_id": "2076931255328549504",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076451043623754624-1",
+   "source_id": "2076451043623754624",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075343560542057984-1",
+   "source_id": "2075343560542057984",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079166218868440576-1",
+   "source_id": "2079166218868440576",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102597430124845440-1",
+   "source_id": "2102597430124845440",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2101591033392607104-1",
+   "source_id": "2101591033392607104",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127413545004364800-1",
+   "source_id": "2127413545004364800",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2106555362748081152-1",
+   "source_id": "2106555362748081152",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079751876308505984-1",
+   "source_id": "2079751876308505984",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2125883059180190336-1",
+   "source_id": "2125883059180190336",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128598715460826240-1",
+   "source_id": "2128598715460826240",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077775577176408832-1",
+   "source_id": "2077775577176408832",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104885200286773632-1",
+   "source_id": "2104885200286773632",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075429219372562176-1",
+   "source_id": "2075429219372562176",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086876269277888384-1",
+   "source_id": "2086876269277888384",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086476455063907840-1",
+   "source_id": "2086476455063907840",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2075394481676290944-1",
+   "source_id": "2075394481676290944",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079085988881291008-1",
+   "source_id": "2079085988881291008",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2126238304514968064-1",
+   "source_id": "2126238304514968064",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2105657989458802560-1",
+   "source_id": "2105657989458802560",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078854679119178624-1",
+   "source_id": "2078854679119178624",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076057590261131392-1",
+   "source_id": "2076057590261131392",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2100413245985138560-1",
+   "source_id": "2100413245985138560",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078194972142049280-1",
+   "source_id": "2078194972142049280",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073769231689080192-1",
+   "source_id": "2073769231689080192",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2085317775964234880-1",
+   "source_id": "2085317775964234880",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2125731116119557248-1",
+   "source_id": "2125731116119557248",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2085625540434817664-3",
+   "source_id": "2085625540434817664",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127087883405155456-1",
+   "source_id": "2127087883405155456",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2073666564790289664-3",
+   "source_id": "2073666564790289664",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2131141576613252224-1",
+   "source_id": "2131141576613252224",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2127087883405155456-2",
+   "source_id": "2127087883405155456",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2131933293706828672-1",
+   "source_id": "2131933293706828672",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077515199080043264-2",
+   "source_id": "2077515199080043264",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076458087370311808-1",
+   "source_id": "2076458087370311808",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2076797973904269184-1",
+   "source_id": "2076797973904269184",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2130546156710144256-1",
+   "source_id": "2130546156710144256",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2129890847781113344-1",
+   "source_id": "2129890847781113344",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078222219414706048-1",
+   "source_id": "2078222219414706048",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2132193603084255744-1",
+   "source_id": "2132193603084255744",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2104817618979591168-1",
+   "source_id": "2104817618979591168",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086840397710393728-1",
+   "source_id": "2086840397710393728",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2079630350212046848-1",
+   "source_id": "2079630350212046848",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2117126514212876416-1",
+   "source_id": "2117126514212876416",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2117442967403355008-1",
+   "source_id": "2117442967403355008",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2117442967403355008-2",
+   "source_id": "2117442967403355008",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2129966404845098880-1",
+   "source_id": "2129966404845098880",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2074285727289857536-1",
+   "source_id": "2074285727289857536",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2128034597276971520-1",
+   "source_id": "2128034597276971520",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2078082581439033856-1",
+   "source_id": "2078082581439033856",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2077405350997460992-1",
+   "source_id": "2077405350997460992",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2086390560018194816-1",
+   "source_id": "2086390560018194816",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  },
+  {
+   "boi_id": "BOI-2102056779643698560-1",
+   "source_id": "2102056779643698560",
+   "lineage": "shallow",
+   "target_likelihood_view": "PSF_FLAT",
+   "historical_delivered_main_rust": false,
+   "state": "QUEUED_FOR_PSF_FLAT_CHEAP_SCAN_AND_RESPONSE_READINESS",
+   "fpp_ready": false,
+   "priority_source": "Exact-signal vetted PSF_FLAT significance, coverage, source ownership and evidence readiness; never SAP strength as a substitute."
+  }
+ ],
+ "requirements": [
+  "Authenticate exact delivered PSF_FLAT column and original flags/masks against frozen discovery-view arrays.",
+  "Cheap scan every queued candidate using exact vetted significance, event/quarter coverage, aliases, ownership, stellar/scene and literature evidence; rank evidence readiness and cost, not desired FPP.",
+  "Review PSF extraction/flattening and actual flux convention; no automatic CROWDSAP application, raw-SAP substitution or treating a PSF fit as SAP divided by target flux share.",
+  "Establish PSF/source-response and noise adequacy with source/extraction and known-object/end-to-end controls before NFPP/FPP interpretation.",
+  "Fit exact PSF_FLAT signals through standard transit-protected preparation, joint clock and native model; assess observed-photon detrending transfer.",
+  "Only admit scientifically reviewed PSF-based cases to fixed20-repeat/1M V3 probability policy."
+ ],
+ "full_manifest_sha256": "d0116b7efd347c2f12e2b1be8bee1ad7931df86989e2b0cbedad65b3d7d613c1"
+}
